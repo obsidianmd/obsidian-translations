@@ -2,17 +2,17 @@
 
 Help translate Obsidian into your language.
 
-### Request a language
+## Request a language
 
 If the language you want to translate doesn't exist as a JSON file yet, submit an issue so that we can create a template for you to get started.
 
-### Submit changes
+## Submit changes
 
 To translate, [fork this repo](https://guides.github.com/activities/forking/) and edit the JSON file of your language. After that, [submit a pull request](https://guides.github.com/activities/forking/).
 
 Note that you don't have to clone your fork to make the edits; you can do everything on GitHub's web UI. Simply open a file in your own forked repo and click on the pencil icon to start editing.
 
-### Translating
+## Translating
 
 The trasnlation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
 
@@ -36,3 +36,22 @@ If you encounter something like
 "label-welcome": "Welcome, {{name}}!"
 ```
 leave the `{{name}}` part alone and do not translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
+
+## Existing languages
+
+Here is a table of language code to language name, in alphabetical order. These languages have their template file ready, but are not necessarily ready to be used in the app.
+
+| Language code | Language name | Native name |
+| --- | --- | --- |
+| `en` (default) | English | English |
+| `de` | German | Deutsch |
+| `es` | Spanish | Español |
+| `fr` | French | français |
+| `id` | Indonesian | Bahasa Indonesia |
+| `ja` | Japanese | 日本語 |
+| `ko` | Korean | 한국어 |
+| `pl` | Polish | język polski |
+| `pt` | Portuguese | Português |
+| `ru` | Russian | русский |
+| `tr` | Turkish | Türkçe |
+| `zh` | Chinese | 中文 |
