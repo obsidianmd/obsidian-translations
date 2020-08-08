@@ -413,26 +413,26 @@
 			"label-total-replacements": "Total replacements"
 		},
 		"daily-notes": {
-			"name": "Daily notes",
-			"desc": "Open today's daily note, or create one if not present.",
-			"action-open": "Open today's note",
-			"action-open-previous": "Open previous daily note",
-			"action-open-next": "Open next daily note",
-			"msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
-			"msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
-			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
-			"msg-no-previous": "There's no daily note before this one.",
-			"msg-no-next": "There's no daily note after this one.",
-			"option-date-format": "Date format",
-			"label-iso-format": "ISO (default): ",
-			"label-us-format": "US: MMMM Do, YYYY",
-			"label-refer-to-syntax": "For more syntax, refer to: ",
-			"label-syntax-link": "format reference",
-			"label-syntax-live-preview": "Here is what it will look like: ",
-			"option-new-file-location": "New file location",
-			"option-new-file-location-description": "The folder path to create the new daily note.",
-			"option-template": "Template file location",
-			"option-template-description": "The file path to use as template."
+			"name": "Tägliche Notizen",
+			"desc": "Öffnen Sie die heutige Notiz oder erstellen eine, wenn sie nicht vorhanden ist.",
+			"action-open": "Öffnen Sie die heutige Notiz",
+			"action-open-previous": "Vorherige Tagesnotiz öffnen",
+			"action-open-next": "Nächste tägliche Notiz öffnen",
+			"msg-fail-format": "Tägliche Notiz konnte nicht erstellt werden. \"{{format}}\" ist kein gültiges Format.",
+			"msg-fail-folder": "Tägliche Notiz konnte nicht erstellt werden. Ordner \"{{folderOption}}\" wurde nicht gefunden.",
+			"msg-fail-template-file": "Tägliche Notiz konnte nicht erstellt werden. Vorlagedatei \"{{template}}\" wurde nicht gefunden.",
+			"msg-no-previous": "Es gibt keine tägliche Notiz vor dieser.",
+			"msg-no-next": "Es gibt keine tägliche Notiz nach dieser.",
+			"option-date-format": "Datumsformat",
+			"label-iso-format": "ISO (Standard): ",
+			"label-us-format": "US: MMMM Do, JJJJ",
+			"label-refer-to-syntax": "Weitere Syntax finden Sie unter: ",
+			"label-syntax-link": "Format-Referenz",
+			"label-syntax-live-preview": "Hier ist, wie es aussehen wird: ",
+			"option-new-file-location": "Neuer Dateispeicherort",
+			"option-new-file-location-description": "Der Ordnerpfad, um die neue tägliche Notiz zu erstellen.",
+			"option-template": "Speicherort der Vorlagendatei",
+			"option-template-description": "Der Dateipfad, der als Vorlage verwendet werden soll."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten prefixer",
@@ -447,54 +447,54 @@
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
-			"name": "Random note",
-			"desc": "Opens a random note. Useful for reviewing and discovering.",
-			"action-open": "Open random note"
+			"name": "Zufällige Notiz",
+			"desc": "Öffnet eine zufällige Notiz. Nützlich für die Überprüfung und Entdeckung.",
+			"action-open": "Öffnet zufällige Notiz"
 		},
 		"outline": {
-			"name": "Outline",
-			"desc": "Displays the outline of the current file or linked pane.",
-			"action-open": "Open outline",
-			"action-open-pane": "Open the outline of the current file",
-			"tab-title": "Outline of {{displayText}}",
-			"label-no-headings": "No headings found."
+			"name": "Gliederung",
+			"desc": "Zeigt die Gliederung der aktuellen Datei oder des verknüpften Bereichs an.",
+			"action-open": "Gliederung öffnen",
+			"action-open-pane": "Gliederung der aktuellen Datei öffnen",
+			"tab-title": "Gliederung von {{displayText}}",
+			"label-no-headings": "Keine Überschriften gefunden."
 		},
 		"word-count": {
-			"name": "Word count",
-			"desc": "Show word count in the status bar."
+			"name": "Anzahl der Wörter",
+			"desc": "Anzahl der Wörter in der Statusleiste anzeigen."
 		},
 		"slides": {
-			"name": "Slides",
-			"desc": "Present from Markdown. Use \"---\" to separate slides.",
-			"action-start": "Start presentation"
+			"name": "Präsentation",
+			"desc": "Präsentieren Sie mit Markdown. Verwenden Sie \"---\", um Folien zu trennen.",
+			"action-start": "Präsentation starten"
 		},
 		"audio-recorder": {
-			"name": "Audio recorder",
-			"desc": "Record audio and save as attachment.",
-			"action-start": "Start recording audio",
-			"action-stop": "Stop recording audio",
-			"action-toggle": "Start/stop recording",
-			"msg-access-denied": "Microphone access was denied, please enable it from the preference pane.",
-			"msg-pending-grant": "Please grant microphone permission to start recording.",
-			"msg-no-microphone": "No microphone is connected."
+			"name": "Audio-Recorder",
+			"desc": "Audio aufzeichnen und als Anhang speichern.",
+			"action-start": "Audioaufzeichnung starten",
+			"action-stop": "Audioaufzeichnung stoppen",
+			"action-toggle": "Audioaufzeichnung starten/stoppen",
+			"msg-access-denied": "Der Mikrofonzugriff wurde verweigert. Aktivieren Sie ihn bitte über den Einstellungsbereich.",
+			"msg-pending-grant": "Bitte erteilen Sie dem Mikrofon die Berechtigung, die Aufnahme zu starten.",
+			"msg-no-microphone": "Es ist kein Mikrofon angeschlossen."
 		},
 		"open-with-default-app": {
-			"name": "Open with default app",
-			"desc": "Add button to open current file with the default app.",
-			"action-open-file": "Open with default app",
-			"action-show-in-folder": "Show in folder"
+			"name": "Mit Standard-App öffnen",
+			"desc": "Fügt einen Button hinzu, um die aktuelle Datei mit der Standard-App zu öffnen.",
+			"action-open-file": "Öffne mit Standard-App",
+			"action-show-in-folder": "Im Ordner anzeigen"
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
-		"character-with-count": "{{count}} character",
-		"character-with-count_plural": "{{count}} characters",
-		"link-with-count": "{{count}} link",
-		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
-		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlinks"
+		"word-with-count": "{{count}} Wort",
+		"word-with-count_plural": "{{count}} Wörter",
+		"character-with-count": "{{count}} Zeichen",
+		"character-with-count_plural": "{{count}} Zeichen",
+		"link-with-count": "{{count}} Verknüpfung",
+		"link-with-count_plural": "{{count}} Verknüpfungen",
+		"file-with-count": "{{count}} Datei",
+		"file-with-count_plural": "{{count}} Dateien",
+		"backlink-with-count": "{{count}} Rückverweis",
+		"backlink-with-count_plural": "{{count}} Rückverweise"
 	}
 }
