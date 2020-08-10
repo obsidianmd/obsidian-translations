@@ -58,6 +58,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ja` | Japanese | 日本語 |
 | `ko` | Korean | 한국어 |
 | `nl` | Dutch | Nederlands |
+| `no` | Norwegian | Norsk |
 | `pl` | Polish | język polski |
 | `pt` | Portuguese | Português |
 | `ru` | Russian | русский |
