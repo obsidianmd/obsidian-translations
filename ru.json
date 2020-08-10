@@ -16,7 +16,7 @@
 			"option-strict-line-break-description": "Игнорировать одиночные переносы строк в режиме просмотра в соответствии со стандартом Markdown. Отключите эту опцию, чтобы в режиме просмотра отображались одиночные переносы строк.",
 			"option-auto-pair-brackets": "Автоматически закрывать скобки",
 			"option-auto-pair-brackets-description": "Автоматически закрывает скобки и кавычки.",
-			"option-auto-pair-markdown": "Автоматически закрывает теги Markdown",
+			"option-auto-pair-markdown": "Автоматически закрывать теги Markdown",
 			"option-auto-pair-markdown-description": "Автоматически закрывает теги для жирного и курсивного начертания.",
 			"option-smart-indent-lists": "Интеллектуальный отступ для списков",
 			"option-smart-indent-lists-description": "Автоматически добавляет отступы и теги для списков.",
@@ -29,13 +29,13 @@
 			"option-use-tabs": "Использовать табуляцию",
 			"option-use-tabs-description": "Использовать табуляцию для отступов при нажатии клавиши \"Tab\". Отключите, чтобы вместо табуляции использовались символы пробела.",
 			"option-vim-key-bindings": "Использовать сочетания клавиш Vim",
-			"option-vim-key-bindings-description": "Позволяет использовать сочетания клавиш из Vim в режиме редактирования."
+			"option-vim-key-bindings-description": "Позволяет использовать сочетания клавиш Vim в режиме редактирования."
 		},
 		"file": {
 			"name": "Файл",
 			"option-confirm-file-deletion": "Подтверждать удаление файла",
 			"option-confirm-file-deletion-description": "Отображает окно с подтверждением удаления файла.",
-			"option-delete-destination": "Удалённые файлы",
+			"option-delete-destination": "Удаленные файлы",
 			"option-delete-destination-description": "Что делать с файлами после удаления.",
 			"option-choice-system-trash": "Перемещать в системную корзину",
 			"option-choice-vault-trash": "Перемещать в корзину Obsidian (папка .trash)",
@@ -61,7 +61,7 @@
 			"name": "Оформление",
 			"option-base-mode": "Основной режим",
 			"option-base-mode-description": "Основная тема оформления Obsidian.",
-			"dark-mode": "Тёмная тема",
+			"dark-mode": "Темная тема",
 			"light-mode": "Светлая тема",
 			"option-community-themes": "Посмотреть темы сообщества",
 			"option-community-themes-description": "Предпросмотр и использование тем, созданных сообществом.",
@@ -121,7 +121,7 @@
 			"label-insider": "инсайдер",
 			"label-supporter": "саппортер",
 			"label-vip": "VIP",
-			"label-role-text": "Вы - {{- role}}!",
+			"label-role-text": "Вы {{- role}}!",
 			"label-insider-build-access": "Спасибо за поддержку. У вас есть доступ к ранним сборкам программы.",
 			"label-action-suggestion": "Вы могли бы...",
 			"button-get-commercial-license": "Получить коммерческую лицензию",
@@ -211,7 +211,7 @@
 		"split-horizontally": "Разделить окно по горизонтали",
 		"navigate-back": "Вернуться назад",
 		"navigate-forward": "Перейти вперед",
-		"use-dark-mode": "Использовать тёмную тему",
+		"use-dark-mode": "Использовать темную тему",
 		"use-light-mode": "Использовать светлую тему",
 		"search-current-file": "Поиск в текущем файле",
 		"search-replace-current-file": "Поиск и замена в текущем файле",
@@ -377,12 +377,12 @@
 			"msg-successfully-used": "Теперь вы используете \"{{name}}\" от {{author}} в качестве пользовательского CSS."
 		},
 		"command-palette": {
-			"name": "Командное меню",
-			"desc": "Выводится командой и позволяет обращаться к функциям Obsidian без взаимодействия с интерфейсом и запоминания сочетаний клавиш.",
-			"action-open": "Открыть командное меню",
+			"name": "Палитра команд",
+			"desc": "Введите команду, которую хотите запустить. Позволяет обращаться к функциям Obsidian без взаимодействия с интерфейсом и запоминания сочетаний клавиш.",
+			"action-open": "Открыть палитру команд",
 			"instruction-navigate": "навигация",
-			"instruction-use": "выбрать",
-			"instruction-dismiss": "закрыть окно",
+			"instruction-use": "использовать",
+			"instruction-dismiss": "отменить",
 			"label-no-commands": "Команда не найдена.",
 			"prompt-type-command": "Введите название команды..."
 		},
@@ -406,8 +406,8 @@
 			"label-stop": "Остановить",
 			"label-go-back": "Назад",
 			"label-done": "Закрыть",
-			"label-processing": "Обрабатываю...",
-			"label-cancelling": "Завершаю...",
+			"label-processing": "Обработка...",
+			"label-cancelling": "Отмена...",
 			"label-finished": "Готово!",
 			"label-processed-files": "Обработано",
 			"label-modified-files": "Изменено",
@@ -437,7 +437,7 @@
 		},
 		"zettelkasten-prefixer": {
 			"name": "Цеттелькастен",
-			"desc": "Создает новую заметку с 12-значным номером в Цеттелькастен-формате ГодМесяцДеньЧасМинута (Пример: 202001010000).",
+			"desc": "Создает новую заметку с 12-значным номером в Цеттелькастен-формате ГГГГММДДЧЧММ (Пример: 202001010000).",
 			"action-create-note": "Создать новую Цеттелькастен-заметку",
 			"option-new-file-location": "Расположение нового файла",
 			"option-new-file-location-description": "Путь к папке, в которой будет создаваться новая Цеттелькастен-заметка.",
@@ -461,7 +461,7 @@
 			"label-no-headings": "Не найдено ни одного заголовка."
 		},
 		"word-count": {
-			"name": "Счётчик слов",
+			"name": "Счетчик слов",
 			"desc": "Показывает количество слов в строке состояния."
 		},
 		"slides": {
@@ -475,7 +475,7 @@
 			"action-start": "Начать запись аудио",
 			"action-stop": "Остановить запись аудио",
 			"action-toggle": "Начать/остановить запись",
-			"msg-access-denied": "Доступ к микрофону был отклонён. Пожалуйста, разрешите доступ из панели настроек вашей системы.",
+			"msg-access-denied": "Доступ к микрофону был отклонен. Пожалуйста, разрешите доступ из панели настроек вашей системы.",
 			"msg-pending-grant": "Дайте разрешение на доступ к микрофону, чтобы начать запись.",
 			"msg-no-microphone": "Не удалось обнаружить микрофон."
 		},
