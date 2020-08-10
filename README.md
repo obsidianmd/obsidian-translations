@@ -51,6 +51,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `de` | German | Deutsch | 🚧 | 🔜 |
+| `el` | Greek | ελληνικά | 🔜 |
 | `es` | Spanish | Español | 🔜 |
 | `fr` | French | français | 🚧 | 🔜 |
 | `id` | Indonesian | Bahasa Indonesia | 🔜 |
@@ -65,3 +66,4 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ru` | Russian | русский | 🚧 |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `zh` | Chinese | 中文 | ✅ |
+
