@@ -48,7 +48,7 @@ leave the `{{name}}` part alone and do not translate it. "name" is not part of t
 Here is a table of language code to language name, in alphabetical order. These languages have their template files ready, but are not necessarily ready to be used in the app.
 
 | Language code | Language name | Native name | Status |
-| --- | --- | --- | --- |
+| --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `de` | German | Deutsch | 🚧 | 🔜 |
 | `es` | Spanish | Español | 🔜 |
