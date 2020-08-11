@@ -36,9 +36,9 @@
 			"option-confirm-file-deletion": "Confirme a exclusão do arquivo",
 			"option-confirm-file-deletion-description": "Whether you want to get prompted to confirm file deletion.",
 			"option-delete-destination": "Deletar arquivos",
-			"option-delete-destination-description": "What to do with files after you delete them.",
+			"option-delete-destination-description": "O que fazer com os arquivos depois de deletá-los.",
 			"option-choice-system-trash": "Move to system trash",
-			"option-choice-vault-trash": "Move to Obsidian trash (.trash folder)",
+			"option-choice-vault-trash": "Mover para a lixeira do Obsidian (pasta .trash)",
 			"option-choice-permanent-delete": "Deletar permanentemente",
 			"option-always-update-links": "Always update links when",
 			"option-always-update-links-description": "Whether to automatically update links after renaming a file or prompt.",
@@ -77,10 +77,10 @@
 		},
 		"about": {
 			"name": "Sobre",
-			"label-license-key": "License key",
-			"license-key-placeholder": "Your license key...",
-			"label-enter-commercial-license": "Please enter your commercial license key:",
-			"label-activate-license": "Activate license",
+			"label-license-key": "Chave de licença",
+			"license-key-placeholder": "Sua chave de licença...",
+			"label-enter-commercial-license": "Insira sua chave de licença comercial:",
+			"label-activate-license": "Ativar licença",
 			"button-activate": "Activate",
 			"label-unknown-version": "Unknown",
 			"label-current-version": "Versão atual: ",
@@ -100,7 +100,7 @@
 			"option-open-help": "Obsidian help",
 			"option-open-help-description": "Open the help documentation.",
 			"button-open": "Abrir",
-			"option-language": "Linguage",
+			"option-language": "Idioma",
 			"option-language-description": "Change the display language.",
 			"option-insider-build": "Receive insider builds",
 			"option-insider-build-description": "Auto-update to insider builds to try out new features. Note that these builds are bleeding edge and might be less stable.",
@@ -109,10 +109,10 @@
 			"label-commercial-license-info": "Registered to \"{{company}}\" for {{seats}} users. Valid until {{expiry}}.",
 			"label-validating-commercial-license": "Validating...",
 			"label-invalid-commercial-license": "License invalid: ",
-			"button-activate-commercial-license": "Activate commercial license",
-			"label-personal-license": " personal license. ",
-			"label-thank-you-for-support": "Thank you for your support!",
-			"label-free-personal-license": "Personal license: free for personal use."
+			"button-activate-commercial-license": "Ativar licença comercial",
+			"label-personal-license": " licença pessoal. ",
+			"label-thank-you-for-support": " Obrigado por seu apoio!",
+			"label-free-personal-license": "Licença pessoal: grátis para uso pessoal"
 		},
 		"account": {
 			"name": "Conta",
@@ -130,17 +130,17 @@
 			"button-upgrade-catalyst-license": "Upgrade to a higher tier",
 			"button-log-out": "Log out",
 			"label-log-in": "Log in",
-			"label-email": "Email",
-			"placeholder-email": "Seu email...",
+			"label-email": "E-mail",
+			"placeholder-email": "Seu e-mail...",
 			"label-password": "Senha",
 			"placeholder-password": "Sua senha...",
 			"button-login": "Login",
-			"message-empty-email": "Email não pode estar vazio.",
-			"message-invalid-email": "Email não é valido.",
+			"message-empty-email": "E-mail não pode estar vazio.",
+			"message-invalid-email": "E-mail não é valido.",
 			"message-empty-password": "Senha não pode estar vazia.",
 			"message-login-failed": "Login failed, please double check your email and password.",
-			"label-no-account": "Don't have an account? ",
-			"link-sign-up-now": "Sign up now"
+			"label-no-account": "Não tem uma conta? ",
+			"link-sign-up-now": "Crie uma conta agora"
 		}
 	},
 	"editor": {
@@ -460,8 +460,8 @@
 			"label-no-headings": "No headings found."
 		},
 		"word-count": {
-			"name": "Word count",
-			"desc": "Show word count in the status bar."
+			"name": "Contador de palavras",
+			"desc": "Mostra a quantidade de palavras na barra de status."
 		},
 		"slides": {
 			"name": "Slides",
@@ -469,31 +469,31 @@
 			"action-start": "Start presentation"
 		},
 		"audio-recorder": {
-			"name": "Audio recorder",
-			"desc": "Record audio and save as attachment.",
-			"action-start": "Start recording audio",
-			"action-stop": "Stop recording audio",
-			"action-toggle": "Start/stop recording",
-			"msg-access-denied": "Microphone access was denied, please enable it from the preference pane.",
+			"name": "Gravador de áudio",
+			"desc": "Grava áudio e salva como anexo.",
+			"action-start": "Começar a gravar áudio",
+			"action-stop": "Parar de gravar áudio",
+			"action-toggle": "Começar/parar gravação",
+			"msg-access-denied": "Acesso ao microfone foi negado. Habilite-o no painel de preferências.", 
 			"msg-pending-grant": "Please grant microphone permission to start recording.",
-			"msg-no-microphone": "No microphone is connected."
+			"msg-no-microphone": "Nenhum microfone está conectado."
 		},
 		"open-with-default-app": {
-			"name": "Open with default app",
-			"desc": "Add button to open current file with the default app.",
-			"action-open-file": "Open with default app",
-			"action-show-in-folder": "Show in folder"
+			"name": "Abrir com aplicativo padrão",
+			"desc": "Adiciona um botão para abrir o arquivo atual com o aplicativo padrão.", 
+			"action-open-file": "Abrir com aplicativo padrão",
+			"action-show-in-folder": "Mostrar na pasta"
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
-		"character-with-count": "{{count}} character",
-		"character-with-count_plural": "{{count}} characters",
+		"word-with-count": "{{count}} palavra",
+		"word-with-count_plural": "{{count}} palavras",
+		"character-with-count": "{{count}} caracter",
+		"character-with-count_plural": "{{count}} caracteres",
 		"link-with-count": "{{count}} link",
 		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
+		"file-with-count": "{{count}} arquivo",
+		"file-with-count_plural": "{{count}} arquivos",
 		"backlink-with-count": "{{count}} backlink",
 		"backlink-with-count_plural": "{{count}} backlinks"
 	}
