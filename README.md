@@ -66,5 +66,5 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ru` | Russian | русский | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `zh` | Chinese (Simplified) | 简体中文 | ✅ |
-| `zh` | Chinese (Traditional) | 繁體中文 | 🔜 |
+| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
