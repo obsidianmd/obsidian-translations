@@ -196,6 +196,10 @@
 			"unlink-pane": "未連結面板",
 			"link-pane": "連結面板...",
 			"delete-file": "刪除檔案"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "摺疊搜尋結果",
 			"label-match-case": "區分大小寫",
 			"label-explain-search-term": "說明搜尋含義",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "輸入並開始搜尋...",
 			"label-match-text": "匹配文字: ",
 			"label-match-regex": "匹配正則表示式: ",
@@ -317,14 +322,15 @@
 			"name": "關係圖譜",
 			"desc": "總覽筆記間的聯絡。",
 			"action-open": "查看圖譜",
+			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "複製截圖",
 			"tab-title": "圖譜： {{displayText}}"
 		},
 		"backlinks": {
 			"name": "反向連結",
 			"desc": "在狀態列中顯示反向連結的數量。",
-			"action-open": "顯示當前筆記的相關連結",
-			"action-open-for-current": "開啟反向連結",
+			"action-open": "開啟反向連結",
+			"action-open-for-current": "顯示當前筆記的相關連結",
 			"label-linked-mentions": "標題被連結",
 			"label-no-backlinks": "沒有反向連結。",
 			"label-unlinked-mentions": "提及標題",

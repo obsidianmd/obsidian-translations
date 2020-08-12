@@ -196,6 +196,10 @@
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereye bağla...",
 			"delete-file": "Dosyayı sil"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "Sonuçları gizle",
 			"label-match-case": "Harf boyutunu kullan",
 			"label-explain-search-term": "Aramayı anlat",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "Aramak için yazın...",
 			"label-match-text": "Uyan yazı: ",
 			"label-match-regex": "Uyan regex: ",
@@ -317,14 +322,15 @@
 			"name": "Graph view",
 			"desc": "See a graph overview of which notes link to which.",
 			"action-open": "Open graph view",
+			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}"
 		},
 		"backlinks": {
 			"name": "Backlinks",
 			"desc": "Show number of backlinks in the status bar.",
-			"action-open": "Open backlinks for the current file",
-			"action-open-for-current": "Open backlinks",
+			"action-open": "Open backlinks",
+			"action-open-for-current": "Open backlinks for the current file",
 			"label-linked-mentions": "Linked mentions",
 			"label-no-backlinks": "No backlinks found.",
 			"label-unlinked-mentions": "Unlinked mentions",
@@ -479,9 +485,9 @@
 			"msg-no-microphone": "No microphone is connected."
 		},
 		"open-with-default-app": {
-			"name": "Open with default app",
-			"desc": "Add button to open current file with the default app.",
-			"action-open-file": "Open with default app",
+			"name": "Open in default app",
+			"desc": "Add button to open current file in the default app.",
+			"action-open-file": "Open in default app",
 			"action-show-in-folder": "Show in folder"
 		}
 	},
