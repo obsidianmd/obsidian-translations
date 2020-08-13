@@ -110,7 +110,7 @@
 			"label-validating-commercial-license": "Validation en cours...",
 			"label-invalid-commercial-license": "Licence invalide : ",
 			"button-activate-commercial-license": "Activer une licence commerciale",
-			"label-personal-license": " Licence personnelle ",
+			"label-personal-license": " Licence personnelle. ",
 			"label-thank-you-for-support": "Merci de votre soutien !",
 			"label-free-personal-license": "Licence personnelle: gratuit à usage personnel."
 		},
@@ -184,8 +184,8 @@
 			"close": "Fermer"
 		},
 		"menu": {
-			"edit-view": "Éditer (Ctrl/Cmd+Click pour éditer dans un nouveau volet)",
-			"preview-view": "Prévisualiser (Ctrl/Cmd+Click pour ouvrir dans un nouveau volet)",
+			"edit-view": "Éditer (Ctrl/Cmd+Clic pour éditer dans un nouveau volet)",
+			"preview-view": "Prévisualiser (Ctrl/Cmd+Clic pour ouvrir dans un nouveau volet)",
 			"find": "Chercher...",
 			"replace": "Remplacer...",
 			"edit": "Éditer",
@@ -196,12 +196,16 @@
 			"unlink-pane": "Dissocier le volet",
 			"link-pane": "Associer avec le volet...",
 			"delete-file": "Supprimer le fichier"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
 		"save-file": "Enregistrer le fichier courant",
 		"follow-cursor-link": "Suivre le lien sous le curseur",
-		"open-cursor-link-in-new-pane": "Ouvrir le lien dans un nouveau volet under cursor in new pane",
+		"open-cursor-link-in-new-pane": "Ouvrir le lien sous le curseur dans un nouveau volet",
 		"navigate-pane-above": "Donner le focus au volet au-dessus",
 		"navigate-pane-below": "Donner le focus au volet en-dessous",
 		"navigate-pane-left": "Donner le focus au volet à gauche",
@@ -285,6 +289,7 @@
 			"label-collapse-results": "Réduire les résultats",
 			"label-match-case": "Respecter la casse",
 			"label-explain-search-term": "Expliquer le terme de recherche",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "Taper pour lancer la recherche...",
 			"label-match-text": "Correspond au texte : ",
 			"label-match-regex": "Correspond au regex: ",
@@ -394,7 +399,7 @@
 			"option-roam-tag-fixer-description": "Convertit \"#tag\" et \"#[[tag]]\" en \"[[tag]]\".",
 			"option-roam-highlight-fixer": "Répare le surlignage de Roam Research",
 			"option-roam-highlight-fixer-description": "Convertit \"^^highlight^^\" en \"==highlight==\".",
-			"option-roam-todo-converter": "Roam Research TODO converter",
+			"option-roam-todo-converter": "Convertit les TODO de Roam Research",
 			"option-roam-todo-converter-description": "Convertit \"{{[[TODO]]}}\" en \"[ ]\".",
 			"zettelkasten-link-fixer": "Répare les liens Zettelkasten",
 			"zettelkasten-link-fixer-description": "Fixes \"[[UID]]\" links to full \"[[UID File Name]]\".",

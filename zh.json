@@ -196,6 +196,10 @@
 			"unlink-pane": "拆分面板",
 			"link-pane": "同步面板...",
 			"delete-file": "删除文件"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "折叠搜索结果",
 			"label-match-case": "区分大小写",
 			"label-explain-search-term": "说明搜索含义",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "输入并开始搜索...",
 			"label-match-text": "匹配文本: ",
 			"label-match-regex": "匹配正则表达式: ",
@@ -317,14 +322,15 @@
 			"name": "关系图谱",
 			"desc": "总览笔记间的联系。",
 			"action-open": "查看图谱",
+			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "复制截图",
 			"tab-title": "Graph of {{displayText}}"
 		},
 		"backlinks": {
 			"name": "反向链接",
 			"desc": "在状态栏中显示反向链接的数量。",
-			"action-open": "显示当前笔记的相关链接",
-			"action-open-for-current": "打开反向链接",
+			"action-open": "打开反向链接",
+			"action-open-for-current": "显示当前笔记的相关链接",
 			"label-linked-mentions": "标题被链接",
 			"label-no-backlinks": "没有反向链接。",
 			"label-unlinked-mentions": "提及标题",
