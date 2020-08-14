@@ -6,29 +6,29 @@
 		"file-path-example-placeholder": "Example: folder/note",
 		"editor": {
 			"name": "Editor",
-			"option-spellcheck": "Spell check",
-			"option-spellcheck-description": "Turns on the spell checker. Currently only works for English (US).",
-			"spellcheck-dict": "Spellcheck dictionary",
-			"spellcheck-dict-empty": "The spellcheck dictionary is empty.",
-			"option-readable-line-length": "Readable line length",
-			"option-readable-line-description": "Limit maximum line length. Fits less content on the screen, but makes long paragraphs more readable.",
-			"option-strict-line-break": "Strict line breaks",
-			"option-strict-line-break-description": "In preview mode, ignore single line breaks according to the Markdown specs. Turn this off for single line breaks to show in preview.",
-			"option-auto-pair-brackets": "Auto pair brackets",
-			"option-auto-pair-brackets-description": "Pair brackets and quotes automatically.",
+			"option-spellcheck": "Rechtschreibprüfung",
+			"option-spellcheck-description": "Schaltet die Rechtschreibprüfung ein. Funktioniert derzeit nur für Englisch (US).",
+			"spellcheck-dict": "Wörterbuch für die Rechtschreibprüfung",
+			"spellcheck-dict-empty": "Das Wörterbuch für die Rechtschreibprüfung ist leer.",
+			"option-readable-line-length": "Lesbare Zeilenlänge",
+			"option-readable-line-description": "Begrenzt die maximale Zeilenlänge. Es passt weniger Inhalt auf den Bildschirm, dafür sind lange Absätze besser lesbar.",
+			"option-strict-line-break": "Strikte Zeilenbegrenzung",
+			"option-strict-line-break-description": "Im Vorschau-Modus werden einzelne Zeilenumbrüche gemäß der Markdown-Spezifikationen ignoriert. Schalte dies aus, um einzelne Zeilenumbrüche im Vorschau-Modus anzuzeigen.",
+			"option-auto-pair-brackets": "Automatische Klammerpaare",
+			"option-auto-pair-brackets-description": "Setze automatisch Klammern- und Anführungszeichen-Paare.",
 			"option-auto-pair-markdown": "Auto pair Markdown syntax",
-			"option-auto-pair-markdown-description": "Pair symbols automatically for bold and italics.",
-			"option-smart-indent-lists": "Smart indent lists",
-			"option-smart-indent-lists-description": "Take care of indentation and list marker for you.",
-			"option-fold-heading": "Fold heading",
-			"option-fold-heading-description": "Let you fold everything under a heading.",
-			"option-fold-indent": "Fold indent",
-			"option-fold-indent-description": "Let you fold a portion of the same indentation, such as lists.",
-			"option-show-line-number": "Show line number",
+			"option-auto-pair-markdown-description": "Setze automatisch Symbol-Paare für Fett- und Kursivschrift.",
+			"option-smart-indent-lists": "Intelligenter Zeileneinzug",
+			"option-smart-indent-lists-description": "Kümmert sich um den automatischen Zeilen- und Listeneinzug.",
+			"option-fold-heading": "Überschriften einklappen",
+			"option-fold-heading-description": "Klappt alles unterhalb einer Überschrift ein.",
+			"option-fold-indent": "Zeileneinzug einklappen",
+			"option-fold-indent-description": "Klappt einen Teil des gleichen Zeileneinzugs, etwa bei Listen, ein.",
+			"option-show-line-number": "Zeige Zeilennummern",
 			"option-show-line-number-description": "Show line number in the gutter.",
-			"option-use-tabs": "Use tabs",
-			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
-			"option-vim-key-bindings": "Vim key bindings",
+			"option-use-tabs": "Nutze Tabs",
+			"option-use-tabs-description": "Nutze Tabs für Zeileneinzug wenn die \"Tab\"-Taste gedrückt wird. Schalte dies aus, um Leerzeichen zu verwenden.",
+			"option-vim-key-bindings": "Vim-Tastenbindung",
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
 		"file": {
@@ -40,7 +40,7 @@
 			"option-choice-system-trash": "Move to system trash",
 			"option-choice-vault-trash": "Move to Obsidian trash (.trash folder)",
 			"option-choice-permanent-delete": "Permanent delete",
-			"option-always-update-links": "Always update links when",
+			"option-always-update-links": "Always update links",
 			"option-always-update-links-description": "Whether to automatically update links after renaming a file or prompt.",
 			"option-new-note-location": "New note default location",
 			"option-new-note-location-description": "Where to put newly created notes. Plugin settings will override this.",
@@ -58,14 +58,14 @@
 			"option-attachment-folder-path-description": "Newly created attachment files will appear here. That includes images created via drag and drop or pasting, and audio recordings."
 		},
 		"appearance": {
-			"name": "Appearance",
-			"option-base-mode": "Base mode",
-			"option-base-mode-description": "The base color scheme of Obsidian.",
-			"dark-mode": "Dark mode",
-			"light-mode": "Light mode",
-			"option-community-themes": "Open community themes",
-			"option-community-themes-description": "Preview and use amazing themes created by the community.",
-			"see-community-themes": "See community themes"
+			"name": "Darstellung",
+			"option-base-mode": "Standardmodus",
+			"option-base-mode-description": "Das Standard-Farbschema von Obsidian.",
+			"dark-mode": "Dunkler Modus",
+			"light-mode": "Heller Modus",
+			"option-community-themes": "Öffne Community-Themes",
+			"option-community-themes-description": "Prüfe und nutze tolle, durch die Community erstellte Themes.",
+			"see-community-themes": "Community-Themes ansehen"
 		},
 		"hotkeys": {
 			"name": "Hotkeys",
@@ -196,6 +196,10 @@
 			"unlink-pane": "Unlink pane",
 			"link-pane": "Link with pane...",
 			"delete-file": "Delete file"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "Collapse results",
 			"label-match-case": "Match case",
 			"label-explain-search-term": "Explain search term",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "Type to start search...",
 			"label-match-text": "Matches text: ",
 			"label-match-regex": "Matches regex: ",
@@ -317,14 +322,15 @@
 			"name": "Graph view",
 			"desc": "See a graph overview of which notes link to which.",
 			"action-open": "Open graph view",
+			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}"
 		},
 		"backlinks": {
 			"name": "Backlinks",
 			"desc": "Show number of backlinks in the status bar.",
-			"action-open": "Open backlinks for the current file",
-			"action-open-for-current": "Open backlinks",
+			"action-open": "Open backlinks",
+			"action-open-for-current": "Open backlinks for the current file",
 			"label-linked-mentions": "Linked mentions",
 			"label-no-backlinks": "No backlinks found.",
 			"label-unlinked-mentions": "Unlinked mentions",
@@ -413,26 +419,26 @@
 			"label-total-replacements": "Total replacements"
 		},
 		"daily-notes": {
-			"name": "Daily notes",
-			"desc": "Open today's daily note, or create one if not present.",
-			"action-open": "Open today's note",
-			"action-open-previous": "Open previous daily note",
-			"action-open-next": "Open next daily note",
-			"msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
-			"msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
-			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
-			"msg-no-previous": "There's no daily note before this one.",
-			"msg-no-next": "There's no daily note after this one.",
-			"option-date-format": "Date format",
-			"label-iso-format": "ISO (default): ",
-			"label-us-format": "US: MMMM Do, YYYY",
-			"label-refer-to-syntax": "For more syntax, refer to: ",
-			"label-syntax-link": "format reference",
-			"label-syntax-live-preview": "Here is what it will look like: ",
-			"option-new-file-location": "New file location",
-			"option-new-file-location-description": "The folder path to create the new daily note.",
-			"option-template": "Template file location",
-			"option-template-description": "The file path to use as template."
+			"name": "Tägliche Notizen",
+			"desc": "Öffnen Sie die heutige Notiz oder erstellen eine, wenn sie nicht vorhanden ist.",
+			"action-open": "Öffnen Sie die heutige Notiz",
+			"action-open-previous": "Vorherige Tagesnotiz öffnen",
+			"action-open-next": "Nächste tägliche Notiz öffnen",
+			"msg-fail-format": "Tägliche Notiz konnte nicht erstellt werden. \"{{format}}\" ist kein gültiges Format.",
+			"msg-fail-folder": "Tägliche Notiz konnte nicht erstellt werden. Ordner \"{{folderOption}}\" wurde nicht gefunden.",
+			"msg-fail-template-file": "Tägliche Notiz konnte nicht erstellt werden. Vorlagedatei \"{{template}}\" wurde nicht gefunden.",
+			"msg-no-previous": "Es gibt keine tägliche Notiz vor dieser.",
+			"msg-no-next": "Es gibt keine tägliche Notiz nach dieser.",
+			"option-date-format": "Datumsformat",
+			"label-iso-format": "ISO (Standard): ",
+			"label-us-format": "US: MMMM Do, JJJJ",
+			"label-refer-to-syntax": "Weitere Syntax finden Sie unter: ",
+			"label-syntax-link": "Format-Referenz",
+			"label-syntax-live-preview": "Hier ist, wie es aussehen wird: ",
+			"option-new-file-location": "Neuer Dateispeicherort",
+			"option-new-file-location-description": "Der Ordnerpfad, um die neue tägliche Notiz zu erstellen.",
+			"option-template": "Speicherort der Vorlagendatei",
+			"option-template-description": "Der Dateipfad, der als Vorlage verwendet werden soll."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten prefixer",
@@ -447,54 +453,54 @@
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
-			"name": "Random note",
-			"desc": "Opens a random note. Useful for reviewing and discovering.",
-			"action-open": "Open random note"
+			"name": "Zufällige Notiz",
+			"desc": "Öffnet eine zufällige Notiz. Nützlich für die Überprüfung und Entdeckung.",
+			"action-open": "Öffnet zufällige Notiz"
 		},
 		"outline": {
-			"name": "Outline",
-			"desc": "Displays the outline of the current file or linked pane.",
-			"action-open": "Open outline",
-			"action-open-pane": "Open the outline of the current file",
-			"tab-title": "Outline of {{displayText}}",
-			"label-no-headings": "No headings found."
+			"name": "Gliederung",
+			"desc": "Zeigt die Gliederung der aktuellen Datei oder des verknüpften Bereichs an.",
+			"action-open": "Gliederung öffnen",
+			"action-open-pane": "Gliederung der aktuellen Datei öffnen",
+			"tab-title": "Gliederung von {{displayText}}",
+			"label-no-headings": "Keine Überschriften gefunden."
 		},
 		"word-count": {
-			"name": "Word count",
-			"desc": "Show word count in the status bar."
+			"name": "Anzahl der Wörter",
+			"desc": "Anzahl der Wörter in der Statusleiste anzeigen."
 		},
 		"slides": {
-			"name": "Slides",
-			"desc": "Present from Markdown. Use \"---\" to separate slides.",
-			"action-start": "Start presentation"
+			"name": "Präsentation",
+			"desc": "Präsentieren Sie mit Markdown. Verwenden Sie \"---\", um Folien zu trennen.",
+			"action-start": "Präsentation starten"
 		},
 		"audio-recorder": {
-			"name": "Audio recorder",
-			"desc": "Record audio and save as attachment.",
-			"action-start": "Start recording audio",
-			"action-stop": "Stop recording audio",
-			"action-toggle": "Start/stop recording",
-			"msg-access-denied": "Microphone access was denied, please enable it from the preference pane.",
-			"msg-pending-grant": "Please grant microphone permission to start recording.",
-			"msg-no-microphone": "No microphone is connected."
+			"name": "Audio-Recorder",
+			"desc": "Audio aufzeichnen und als Anhang speichern.",
+			"action-start": "Audioaufzeichnung starten",
+			"action-stop": "Audioaufzeichnung stoppen",
+			"action-toggle": "Audioaufzeichnung starten/stoppen",
+			"msg-access-denied": "Der Mikrofonzugriff wurde verweigert. Aktivieren Sie ihn bitte über den Einstellungsbereich.",
+			"msg-pending-grant": "Bitte erteilen Sie dem Mikrofon die Berechtigung, die Aufnahme zu starten.",
+			"msg-no-microphone": "Es ist kein Mikrofon angeschlossen."
 		},
 		"open-with-default-app": {
-			"name": "Open with default app",
-			"desc": "Add button to open current file with the default app.",
-			"action-open-file": "Open with default app",
-			"action-show-in-folder": "Show in folder"
+			"name": "Mit Standard-App öffnen",
+			"desc": "Fügt einen Button hinzu, um die aktuelle Datei mit der Standard-App zu öffnen.",
+			"action-open-file": "Öffne mit Standard-App",
+			"action-show-in-folder": "Im Ordner anzeigen"
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
-		"character-with-count": "{{count}} character",
-		"character-with-count_plural": "{{count}} characters",
-		"link-with-count": "{{count}} link",
-		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
-		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlinks"
+		"word-with-count": "{{count}} Wort",
+		"word-with-count_plural": "{{count}} Wörter",
+		"character-with-count": "{{count}} Zeichen",
+		"character-with-count_plural": "{{count}} Zeichen",
+		"link-with-count": "{{count}} Verknüpfung",
+		"link-with-count_plural": "{{count}} Verknüpfungen",
+		"file-with-count": "{{count}} Datei",
+		"file-with-count_plural": "{{count}} Dateien",
+		"backlink-with-count": "{{count}} Rückverweis",
+		"backlink-with-count_plural": "{{count}} Rückverweise"
 	}
 }
