@@ -8,8 +8,8 @@
       "name": "Editor",
       "option-spellcheck": "Revisión ortográfica",
       "option-spellcheck-description": "Activar el corrector de ortografía. Por ahora sólo funciona para Inglés (US).",
-      "spellcheck-dict": "Diccionario del comprobador de ortografía",
-      "spellcheck-dict-empty": "El diccionario del comprobador de ortografía está vacío.",
+      "spellcheck-dict": "Diccionario del corrector de ortografía",
+      "spellcheck-dict-empty": "El diccionario del corrector de ortografía está vacío.",
       "option-readable-line-length": "Longitud de línea legible",
       "option-readable-line-description": "Limitar el máximo de la longitud de línea. Muestra menos contenido en pantalla, pero los párrafos largos son más legibles.",
       "option-strict-line-break": "Saltos de línea estrictos",
@@ -24,7 +24,7 @@
       "option-fold-heading-description": "Permite colapsar todo bajo un encabezado.",
       "option-fold-indent": "Colapsar texto indentado",
       "option-fold-indent-description": "Permite colapsar una porción con el mismo indentado como, por ejemplo, listas.",
-      "option-show-line-number": "Muestra número de línea",
+      "option-show-line-number": "Mostrar número de línea",
       "option-show-line-number-description": "Mostrar los números de línea en la canaleta.",
       "option-use-tabs": "Usar tabulador",
       "option-use-tabs-description": "Usa el tabulador para indentar cuando se presiona la tecla \"Tab\". Desactivar para usar espacios.",
@@ -33,7 +33,7 @@
     },
     "file": {
       "name": "Archivo",
-      "option-confirm-file-deletion": "Confirmar borrado de fichero",
+      "option-confirm-file-deletion": "Confirmar borrado de archivo",
       "option-confirm-file-deletion-description": "Si se desea confirmar el borrado del archivo.",
       "option-delete-destination": "Archivos borrados",
       "option-delete-destination-description": "Qué hacer con los archivos una vez han sido borrados.",
@@ -43,7 +43,7 @@
       "option-always-update-links": "Siempre actualizar enlaces cuando",
       "option-always-update-links-description": "Si los enlaces se actualizan automaticamente después de renombrar un archivo o preguntar.",
       "option-new-note-location": "Lugar por defecto para nuevas notas",
-      "option-new-note-location-description": "Dónde poner las nuevas notas.Es sobreescrito por configuraciones de plugins.",
+      "option-new-note-location-description": "Dónde poner las nuevas notas. Es sobreescrito por configuraciones de plugins.",
       "option-choice-vault-root": "Ruta raíz de Vault",
       "option-choice-current-folder": "Misma carpeta donde está el archivo",
       "option-choice-specified-folder": "En la carpeta especificada debajo",
@@ -71,7 +71,7 @@
       "name": "Atajos",
       "prompt-filter": "Filtrar...",
       "tooltip-delete-hotkey": "Borrar atajo",
-      "label-waiting-for-hotkey-press": "Presionar tecla...",
+      "label-waiting-for-hotkey-press": "Presionar teclas...",
       "tooltip-restore-default": "Restaurar los valores por defecto",
       "tooltip-customize-command": "Modificar este comando"
     },
@@ -90,13 +90,13 @@
       "label-manual-install-required": "Necesita instalar la última versión de forma manual.",
       "label-download-link": "Descargar aquí.",
       "label-new-version-ready": "Una nueva versión está lista para instalarse. ",
-      "label-relaunch-to-update": "Vuelve a lanzar la app para actualizar.",
+      "label-relaunch-to-update": "Vuelva a lanzar la app para actualizar.",
       "label-disabled-updates": "Las actualizaciones están desactivadas.",
       "label-checking-for-updates": "Buscando actualizaciones...",
       "button-relaunch": "Volver a lanzar",
       "button-check-for-updates": "Buscar actualizaciones",
       "option-auto-update": "Actualizaciones automáticas",
-      "option-auto-update-description": "Desactiva esto para evitar que la app busque actualizaciones.",
+      "option-auto-update-description": "Desactive esto para evitar que la app busque actualizaciones.",
       "option-open-help": "Ayuda de Obsidian",
       "option-open-help-description": "Abrir la documentación de ayuda.",
       "button-open": "Abrir",
@@ -111,7 +111,7 @@
       "label-invalid-commercial-license": "Licencia inválida: ",
       "button-activate-commercial-license": "Activar licencia comercial",
       "label-personal-license": " licencia personal. ",
-      "label-thank-you-for-support": "¡Gracias por tu apoyo!",
+      "label-thank-you-for-support": "¡Gracias por su apoyo!",
       "label-free-personal-license": "Licencia personal: gratis para uso personal."
     },
     "account": {
@@ -154,7 +154,7 @@
     },
     "link-suggestion": {
       "label-type-hash": "Escriba #",
-      "label-link-heading": "para enlazar la cabecera",
+      "label-link-heading": "para enlazar el encabezado",
       "label-type-pipe": "Escriba |",
       "label-change-display-text": "para cambiar el texto mostrado"
     },
@@ -164,24 +164,24 @@
     }
   },
   "interface": {
-    "embed-open-in-default-app-tooltip": "Open in default app",
-    "empty-sidebar": "The sidebar is empty, try dragging a pane here.",
-    "sidebar-expand": "Expand",
-    "sidebar-collapse": "Collapse",
-    "msg-fail-to-save-file": "Failed to save file \"{{filepath}}\". {{message}}.",
-    "no-file": "No file",
-    "switch-vault": "Open another vault",
-    "help": "Help",
-    "settings": "Settings",
-    "drag-to-rearrange": "Drag to rearrange",
-    "msg-switched-to-preview": "Switched default view mode to preview.",
-    "msg-switched-to-edit": "Switched default view mode to editor.",
+    "embed-open-in-default-app-tooltip": "Abrir en la app por defecto",
+    "empty-sidebar": "La barra lateral esta vacia, intente arrastrar un panel aquí.",
+    "sidebar-expand": "Expandir",
+    "sidebar-collapse": "Colapsar",
+    "msg-fail-to-save-file": "Error al guardar el archivo \"{{filepath}}\". {{message}}.",
+    "no-file": "No hay archivo",
+    "switch-vault": "Abrir otra bóveda",
+    "help": "Ayuda",
+    "settings": "Preferencias",
+    "drag-to-rearrange": "Arrastre para reordenar",
+    "msg-switched-to-preview": "Cambió el modo de visualización por defecto a vista previa.",
+    "msg-switched-to-edit": "Cambió modo de visualización por defecto a editor.",
     "empty-state": {
-      "no-file-open": "No file is open",
-      "create-new-file": "Create new file",
-      "go-to-file": "Go to file",
-      "see-recent-files": "See recent files",
-      "close": "Close"
+      "no-file-open": "Ningún archivo está abierto",
+      "create-new-file": "Crear nuevo archivo",
+      "go-to-file": "Ir a archivo",
+      "see-recent-files": "Ver archivos recientes",
+      "close": "Cerrar"
     },
     "menu": {
       "edit-view": "Edit (Ctrl/Cmd+Click to edit in new pane)",
@@ -419,32 +419,32 @@
       "label-total-replacements": "Total replacements"
     },
     "daily-notes": {
-      "name": "Daily notes",
-      "desc": "Open today's daily note, or create one if not present.",
-      "action-open": "Open today's note",
-      "action-open-previous": "Open previous daily note",
-      "action-open-next": "Open next daily note",
-      "msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
-      "msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
-      "msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
-      "msg-no-previous": "There's no daily note before this one.",
-      "msg-no-next": "There's no daily note after this one.",
-      "option-date-format": "Date format",
-      "label-iso-format": "ISO (default): ",
+      "name": "Notas diarias",
+      "desc": "Abrir la nota de hoy o crear una si no hay una presente.",
+      "action-open": "Abrir la nota de hoy",
+      "action-open-previous": "Abrir la nota diaria anterior",
+      "action-open-next": "Abrir la siguiente nota diaria",
+      "msg-fail-format": "Error al crear nota diariaFailed to create daily note. \"{{format}}\" no es un formato válido.",
+      "msg-fail-folder": "Error al crear nota diaria. La carpeta \"{{folderOption}}\" no existe.",
+      "msg-fail-template-file": "Error al crear nota diaria. El archivo de plantilla \"{{template}}\" no existe.",
+      "msg-no-previous": "No hay nota diaria antes de esta.",
+      "msg-no-next": "No hay nota diaria después de esta.",
+      "option-date-format": "Formato de fecha",
+      "label-iso-format": "ISO (por defecto): ",
       "label-us-format": "US: MMMM Do, YYYY",
-      "label-refer-to-syntax": "For more syntax, refer to: ",
-      "label-syntax-link": "format reference",
-      "label-syntax-live-preview": "Here is what it will look like: ",
-      "option-new-file-location": "New file location",
+      "label-refer-to-syntax": "Para mas opciones, vea: ",
+      "label-syntax-link": "referencia de formato",
+      "label-syntax-live-preview": "Así es como se verá: ",
+      "option-new-file-location": "Ubicación del nuevo archivo",
       "option-new-file-location-description": "The folder path to create the new daily note.",
       "option-template": "Template file location",
       "option-template-description": "The file path to use as template."
     },
     "zettelkasten-prefixer": {
-      "name": "Zettelkasten prefixer",
-      "desc": "Create a new note with the 12-digit Zettelkasten ID format YYYYMMDDHHII (Example 202001010000).",
+      "name": "Prefijo para Zettelkasten",
+      "desc": "Crear nota nueva con 12 dígitos en el formato de ID de Zettelkasten YYYYMMDDHHII (Por ejemplo 202001010000).",
       "action-create-note": "Create new Zettelkasten note",
-      "option-new-file-location": "New file location",
+      "option-new-file-location": "Ubicación del nuevo archivo",
       "option-new-file-location-description": "The folder path to create the new Zettelkasten note.",
       "msg-folder-not-found": "Failed to create Zettelkasten note. Folder \"{{folderOption}}\" not found.",
       "option-template-file": "Template file location",
@@ -453,42 +453,42 @@
       "msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
     },
     "random-note": {
-      "name": "Random note",
-      "desc": "Opens a random note. Useful for reviewing and discovering.",
-      "action-open": "Open random note"
+      "name": "Nota al azar",
+      "desc": "Abre una nota al azar. Útil para revisiones y descubrimientos.",
+      "action-open": "Abrir nota al azar"
     },
     "outline": {
       "name": "Outline",
-      "desc": "Displays the outline of the current file or linked pane.",
-      "action-open": "Open outline",
-      "action-open-pane": "Open the outline of the current file",
-      "tab-title": "Outline of {{displayText}}",
-      "label-no-headings": "No headings found."
+      "desc": "Muestra el outline del archivo actual o el panel enlazado.",
+      "action-open": "Abrir el outline",
+      "action-open-pane": "Abrir el outline del archivo actual",
+      "tab-title": "Outline de {{displayText}}",
+      "label-no-headings": "No se encontraron encabezados."
     },
     "word-count": {
-      "name": "Word count",
-      "desc": "Show word count in the status bar."
+      "name": "Conteo de palabras",
+      "desc": "Mostrar el número de palabras en la barra de estado."
     },
     "slides": {
-      "name": "Slides",
-      "desc": "Present from Markdown. Use \"---\" to separate slides.",
-      "action-start": "Start presentation"
+      "name": "Diapositivas",
+      "desc": "Presente desde Markdown. Use \"---\" para separar diapositivas.",
+      "action-start": "Empezar presentación"
     },
     "audio-recorder": {
-      "name": "Audio recorder",
+      "name": "Grabadora de audio",
       "desc": "Record audio and save as attachment.",
-      "action-start": "Start recording audio",
-      "action-stop": "Stop recording audio",
-      "action-toggle": "Start/stop recording",
+      "action-start": "Empezar a grabar audio",
+      "action-stop": "Parar de grabar audio",
+      "action-toggle": "Empezar/Parar de grabar",
       "msg-access-denied": "Microphone access was denied, please enable it from the preference pane.",
-      "msg-pending-grant": "Please grant microphone permission to start recording.",
-      "msg-no-microphone": "No microphone is connected."
+      "msg-pending-grant": "Por favor autorice acceso al microfono para empezar a grabar.",
+      "msg-no-microphone": "No hay microfono conectado."
     },
     "open-with-default-app": {
-      "name": "Open in default app",
-      "desc": "Add button to open current file in the default app.",
-      "action-open-file": "Open in default app",
-      "action-show-in-folder": "Show in folder"
+      "name": "Abrir en la app por defecto",
+      "desc": "Añadir botón para abrir el archivo actual en la app por defecto.",
+      "action-open-file": "Abrir en la app por defecto",
+      "action-show-in-folder": "Mostrar en carpeta"
     }
   },
   "nouns": {
