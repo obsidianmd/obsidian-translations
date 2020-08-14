@@ -91,12 +91,12 @@
 			"label-download-link": "Télécharger ici.",
 			"label-new-version-ready": "Une nouvelle version est prête pour l'installation. ",
 			"label-relaunch-to-update": "Relancer l'application pour faire la mise à jour.",
-			"label-disabled-updates": "Les mises à jours sont désactivées.",
-			"label-checking-for-updates": "Recherche de mises à jours...",
+			"label-disabled-updates": "Les mises à jour sont désactivées.",
+			"label-checking-for-updates": "Recherche de mises à jour...",
 			"button-relaunch": "Relancer",
-			"button-check-for-updates": "Rechercher les mises à jours",
-			"option-auto-update": "Mises à jours automatiques",
-			"option-auto-update-description": "Désactiver pour empêcher l'app de chercher les mises à jours.",
+			"button-check-for-updates": "Rechercher les mises à jour",
+			"option-auto-update": "Mises à jour automatiques",
+			"option-auto-update-description": "Désactiver pour empêcher l'application de chercher les mises à jour.",
 			"option-open-help": "Aide d'Obsidian",
 			"option-open-help-description": "Ouvrir la documentation d'aide.",
 			"button-open": "Ouvrir",
@@ -112,7 +112,7 @@
 			"button-activate-commercial-license": "Activer une licence commerciale",
 			"label-personal-license": " Licence personnelle. ",
 			"label-thank-you-for-support": "Merci de votre soutien !",
-			"label-free-personal-license": "Licence personnelle: gratuit à usage personnel."
+			"label-free-personal-license": "Licence personnelle : gratuit pour usage personnel."
 		},
 		"account": {
 			"name": "Compte",
@@ -122,7 +122,7 @@
 			"label-supporter": "supporter",
 			"label-vip": "VIP",
 			"label-role-text": "Vous êtes un {{- role}}!",
-			"label-insider-build-access": "Merci de votre soutien. Vous avez accès à nos pré-versions insider.",
+			"label-insider-build-access": "Merci de votre soutien. Vous avez accès à nos pré-versions internes.",
 			"label-action-suggestion": "Vous voudrez peut-être...",
 			"button-get-commercial-license": "Obtenir une licence commerciale",
 			"button-get-catalyst-license": "Soutenir Obsidian avec Obsidian Catalyst",
@@ -145,7 +145,7 @@
 	},
 	"editor": {
 		"search": {
-			"label-previous": "Préc",
+			"label-previous": "Précédent",
 			"label-next": "Suivant",
 			"label-all": "Tout",
 			"label-exit-search": "Quitter la recherche",
@@ -153,9 +153,9 @@
 			"label-replace-all": "Remplacer tout"
 		},
 		"link-suggestion": {
-			"label-type-hash": "Taper #",
+			"label-type-hash": "Saisir #",
 			"label-link-heading": "pour lier l'en-tête",
-			"label-type-pipe": "Taper |",
+			"label-type-pipe": "Saisir |",
 			"label-change-display-text": "pour changer le texte d'affichage"
 		},
 		"spellcheck": {
@@ -198,8 +198,8 @@
 			"delete-file": "Supprimer le fichier"
 		},
 		"tooltip": {
-			"click-to-expand": "Click to expand",
-			"click-to-collapse": "Click to collapse"
+			"click-to-expand": "Cliquer pour afficher",
+			"click-to-collapse": "Cliquer pour réduire"
 		}
 	},
 	"commands": {
@@ -289,8 +289,8 @@
 			"label-collapse-results": "Réduire les résultats",
 			"label-match-case": "Respecter la casse",
 			"label-explain-search-term": "Expliquer le terme de recherche",
-			"label-more-context": "Show more context",
-			"prompt-start-search": "Taper pour lancer la recherche...",
+			"label-more-context": "Afficher plus de contexte",
+			"prompt-start-search": "Saisir pour lancer la recherche...",
 			"label-match-text": "Correspond au texte : ",
 			"label-match-regex": "Correspond au regex: ",
 			"label-match-exact-text": "Contient le texte exact : ",
@@ -315,7 +315,7 @@
 			"instruction-create": "pour créer",
 			"instruction-dismiss": "pour annuler",
 			"label-no-note-create-new": "Aucune note trouvée. Appuyer sur Entrer pour en créer une nouvelle.",
-			"prompt-type-file-name": "Taper le fichier vers lequel basculer ou créer...",
+			"prompt-type-file-name": "Saisir le fichier vers lequel basculer ou créer...",
 			"label-enter-to-create": "Entrer pour créer"
 		},
 		"graph-view": {
@@ -328,9 +328,9 @@
 		},
 		"backlinks": {
 			"name": "Liens retours",
-			"desc": "Afficher le nombre de liens retours dans la barre d'état.",
-			"action-open": "Ouvrir les liens retours",
-			"action-open-for-current": "Ouvrir les liens retours du fichier courant",
+			"desc": "Afficher le nombre de liens retour dans la barre d'état.",
+			"action-open": "Ouvrir les liens retour",
+			"action-open-for-current": "Ouvrir les liens retour du fichier courant",
 			"label-linked-mentions": "Occurences liées",
 			"label-no-backlinks": "Aucun lien retour trouvé.",
 			"label-unlinked-mentions": "Occurences non liées",
@@ -353,7 +353,7 @@
 			"name": "Favoris",
 			"desc": "Mettez en favoris les fichiers et les recherches fréquemment utilisés.",
 			"action-toggle": "Ajoute/Retire le fichier courant des favoris",
-			"action-toggle-search": "Ajoute/Retire la recherche courante des favoris ",
+			"action-toggle-search": "Ajoute/Retire la recherche courante des favoris",
 			"action-star": "Ajouter aux favoris",
 			"action-unstar": "Retirer des favoris",
 			"menu-opt-remove": "Retirer",
@@ -370,7 +370,7 @@
 			"label-dark-mode-only": "Mode sombre uniquement",
 			"label-light-mode-only": "Mode clair uniquement",
 			"label-preview": "Aperçu",
-			"label-stop-preview": "Arêter l'aperçu",
+			"label-stop-preview": "Arrêter l'aperçu",
 			"label-use": "Utiliser",
 			"label-visit-on-github": "Visiter sur GitHub",
 			"msg-fetching-css": "Récupération du CSS...",
@@ -383,13 +383,13 @@
 		},
 		"command-palette": {
 			"name": "Palette de commandes",
-			"desc": "Taper une commande pour l'invoquer. Pas besoin d'utiliser l'interface utilisateur ou de mémoriser le raccourci.",
+			"desc": "Saisir une commande pour l'invoquer. Pas besoin d'utiliser l'interface utilisateur ou de mémoriser le raccourci.",
 			"action-open": "Ouvrir la palette de commandes",
 			"instruction-navigate": "pour naviguer",
 			"instruction-use": "pour utiliser",
 			"instruction-dismiss": "pour rejeter",
 			"label-no-commands": "Aucune commande trouvée.",
-			"prompt-type-command": "Taper une commande..."
+			"prompt-type-command": "Saisir une commande..."
 		},
 		"markdown-format-importer": {
 			"name": "Importateur de format Markdown",
@@ -463,7 +463,7 @@
 			"action-open": "Ouvrir le plan",
 			"action-open-pane": "Ouvrir le plan du fichier courant",
 			"tab-title": "Plan de {{displayText}}",
-			"label-no-headings": "Aucune en-tête trouvée."
+			"label-no-headings": "Aucun en-tête trouvé."
 		},
 		"word-count": {
 			"name": "Nombre de mots",
@@ -486,7 +486,7 @@
 		},
 		"open-with-default-app": {
 			"name": "Ouvrir avec l'application par défaut",
-			"desc": "Ajouter un bouton pour ouvrir le fichier actuel avec l'application par défaut.",
+			"desc": "Ajouter un bouton pour ouvrir le fichier actuel avec l'application par défaut",
 			"action-open-file": "Ouvrir avec l'application par défaut",
 			"action-show-in-folder": "Afficher dans le dossier"
 		}
@@ -501,6 +501,6 @@
 		"file-with-count": "{{count}} fichier",
 		"file-with-count_plural": "{{count}} fichiers",
 		"backlink-with-count": "{{count}} lien retour",
-		"backlink-with-count_plural": "{{count}} liens retours"
+		"backlink-with-count_plural": "{{count}} liens retour"
 	}
 }
