@@ -6,6 +6,12 @@ Help translate Obsidian into your language.
 
 If the language you want to translate doesn't exist as a JSON file yet, submit an issue so that we can create a template for you to get started.
 
+## Staying up-to-date
+
+Merge conflicts are nasty. They happen when you're translating an outdated version of the template, part of which might have been translated by someone else. To prevent this, try to fork our respository right before you translate.
+
+If you want to do multiple translation pull requests, before doing work each time, use the "Compare" UI on your own fork to pull in all the newest changes from `obsidianmd:master` first by creating a pull request on your own repository and merge it in yourself, so that your own copy is up-to-update.
+
 ## Submit changes
 
 To translate, [fork this repo](https://guides.github.com/activities/forking/) and edit the JSON file of your language. After that, [submit a pull request](https://guides.github.com/activities/forking/).
@@ -41,18 +47,25 @@ leave the `{{name}}` part alone and do not translate it. "name" is not part of t
 
 Here is a table of language code to language name, in alphabetical order. These languages have their template files ready, but are not necessarily ready to be used in the app.
 
-| Language code | Language name | Native name |
-| --- | --- | --- |
-| `en` (default) | English | English |
-| `de` | German | Deutsch |
-| `es` | Spanish | Español |
-| `fr` | French | français |
-| `id` | Indonesian | Bahasa Indonesia |
-| `it` | Italian | Italiano |
-| `ja` | Japanese | 日本語 |
-| `ko` | Korean | 한국어 |
-| `pl` | Polish | język polski |
-| `pt` | Portuguese | Português |
-| `ru` | Russian | русский |
-| `tr` | Turkish | Türkçe |
-| `zh` | Chinese | 中文 |
+| Language code | Language name | Native name | Status |
+| --- | --- | --- | :---: |
+| `en` (default) | English | English | ✅ |
+| `de` | German | Deutsch | 🚧 | 🔜 |
+| `el` | Greek | ελληνικά | 🔜 |
+| `es` | Spanish | Español | 🔜 |
+| `fr` | French | français | 🚧 | 🔜 |
+| `hi` | Hindi | हिन्दी | 🔜 |
+| `id` | Indonesian | Bahasa Indonesia | 🔜 |
+| `it` | Italian | Italiano | 🔜 |
+| `ja` | Japanese | 日本語 | 🔜 |
+| `ko` | Korean | 한국어 | 🔜 |
+| `nl` | Dutch | Nederlands | 🔜 |
+| `no` | Norwegian | Norsk | 🔜 |
+| `ro` | Romanian | Română | 🚧 |
+| `pl` | Polish | język polski | 🔜 |
+| `pt` | Portuguese | Português | 🔜 |
+| `ru` | Russian | русский | ✅ |
+| `tr` | Turkish | Türkçe | 🚧 |
+| `zh` | Chinese (Simplified) | 简体中文 | ✅ |
+| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
+

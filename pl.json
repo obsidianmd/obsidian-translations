@@ -1,45 +1,45 @@
 {
 	"setting": {
-		"core": "Core",
-		"plugin": "Plugin",
-		"folder-path-example-placeholder": "Example: folder 1/folder 2",
-		"file-path-example-placeholder": "Example: folder/note",
+		"core": "Podstawowe",
+		"plugin": "Wtyczki",
+		"folder-path-example-placeholder": "Przykład: folder 1/folder 2",
+		"file-path-example-placeholder": "Przykład: folder/notatka",
 		"editor": {
-			"name": "Editor",
-			"option-spellcheck": "Spell check",
-			"option-spellcheck-description": "Turns on the spell checker. Currently only works for English (US).",
-			"spellcheck-dict": "Spellcheck dictionary",
-			"spellcheck-dict-empty": "The spellcheck dictionary is empty.",
-			"option-readable-line-length": "Readable line length",
-			"option-readable-line-description": "Limit maximum line length. Fits less content on the screen, but makes long paragraphs more readable.",
-			"option-strict-line-break": "Strict line breaks",
-			"option-strict-line-break-description": "In preview mode, ignore single line breaks according to the Markdown specs. Turn this off for single line breaks to show in preview.",
-			"option-auto-pair-brackets": "Auto pair brackets",
-			"option-auto-pair-brackets-description": "Pair brackets and quotes automatically.",
-			"option-auto-pair-markdown": "Auto pair Markdown syntax",
-			"option-auto-pair-markdown-description": "Pair symbols automatically for bold and italics.",
-			"option-smart-indent-lists": "Smart indent lists",
-			"option-smart-indent-lists-description": "Take care of indentation and list marker for you.",
-			"option-fold-heading": "Fold heading",
-			"option-fold-heading-description": "Let you fold everything under a heading.",
-			"option-fold-indent": "Fold indent",
-			"option-fold-indent-description": "Let you fold a portion of the same indentation, such as lists.",
-			"option-show-line-number": "Show line number",
-			"option-show-line-number-description": "Show line number in the gutter.",
-			"option-use-tabs": "Use tabs",
-			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
-			"option-vim-key-bindings": "Vim key bindings",
-			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
+			"name": "Edytor",
+			"option-spellcheck": "Sprawdzanie pisowni",
+			"option-spellcheck-description": "Włącza sprawdzanie pisowni. Obecnie dostępny jedynie język angielski (US).",
+			"spellcheck-dict": "Słownik sprawdzania pisowni",
+			"spellcheck-dict-empty": "Słownik sprawdzania pisowni jest pusty.",
+			"option-readable-line-length": "Optymalna długość wiersza do czytania",
+			"option-readable-line-description": "Ogranicza maksymalną długość wiersza. Zmniejsza ilość tekstu na ekranie, ale poprawia czytelność długich paragrafów.",
+			"option-strict-line-break": "Ignoruj pojedyncze podziały wierszy",
+			"option-strict-line-break-description": "W trybie podglądu, ignoruj pojedyncze podziały wierszy zgodnie ze specyfikacją Markdown. Wyłącz aby wyświetlać pojedyncze podziały wierszy w trybie podglądu.",
+			"option-auto-pair-brackets": "Automatyczne parowanie nawiasów",
+			"option-auto-pair-brackets-description": "Automatycznie paruj nawiasy i cudzysłowy.",
+			"option-auto-pair-markdown": "Automatycznie paruj składnię Markdown",
+			"option-auto-pair-markdown-description": "Automatycznie paruj znaczniki pogrubienia i kursywy.",
+			"option-smart-indent-lists": "Inteligentne wcięcia list",
+			"option-smart-indent-lists-description": "Zatroszczy się o wcięcia i znaczniki list za Ciebie.",
+			"option-fold-heading": "Zwijanie nagłówków",
+			"option-fold-heading-description": "Pozwala na zwijanie treści pod nagłówek.",
+			"option-fold-indent": "Zwijanie wcięć",
+			"option-fold-indent-description": "Pozwala na zwijanie wciętych fragmentów tekstu, na przykład list.",
+			"option-show-line-number": "Wyświetl numery wierszy",
+			"option-show-line-number-description": "Wyświetl numery wierszy na marginesie.",
+			"option-use-tabs": "Użyj klawisza Tab",
+			"option-use-tabs-description": "Użyj klawisza \"Tab\" aby wstawić wcięcie. Wyłącz aby używać spacji.",
+			"option-vim-key-bindings": "Skróty klawiszowe Vim",
+			"option-vim-key-bindings-description": "Pozwala na używanie skrótów klawiszowych Vim w trybie edycji."
 		},
 		"file": {
-			"name": "File",
-			"option-confirm-file-deletion": "Confirm file deletion",
-			"option-confirm-file-deletion-description": "Whether you want to get prompted to confirm file deletion.",
-			"option-delete-destination": "Deleted files",
-			"option-delete-destination-description": "What to do with files after you delete them.",
-			"option-choice-system-trash": "Move to system trash",
-			"option-choice-vault-trash": "Move to Obsidian trash (.trash folder)",
-			"option-choice-permanent-delete": "Permanent delete",
+			"name": "Plik",
+			"option-confirm-file-deletion": "Potwierdź usunięcie pliku",
+			"option-confirm-file-deletion-description": "Włącz aby wyświetlać okno dialogowe potwierdzenia usunięcia pliku.",
+			"option-delete-destination": "Usunięte pliki",
+			"option-delete-destination-description": "Co robić z usuniętymi plikami.",
+			"option-choice-system-trash": "Przenieś do systemowego kosza",
+			"option-choice-vault-trash": "Przenieś do kosza aplikacji (folderu .trash)",
+			"option-choice-permanent-delete": "Trwale usuń",
 			"option-always-update-links": "Always update links when",
 			"option-always-update-links-description": "Whether to automatically update links after renaming a file or prompt.",
 			"option-new-note-location": "New note default location",
@@ -58,7 +58,7 @@
 			"option-attachment-folder-path-description": "Newly created attachment files will appear here. That includes images created via drag and drop or pasting, and audio recordings."
 		},
 		"appearance": {
-			"name": "Appearance",
+			"name": "Wygląd",
 			"option-base-mode": "Base mode",
 			"option-base-mode-description": "The base color scheme of Obsidian.",
 			"dark-mode": "Dark mode",
@@ -68,15 +68,15 @@
 			"see-community-themes": "See community themes"
 		},
 		"hotkeys": {
-			"name": "Hotkeys",
-			"prompt-filter": "Filter...",
-			"tooltip-delete-hotkey": "Delete hotkey",
-			"label-waiting-for-hotkey-press": "Press hotkey...",
-			"tooltip-restore-default": "Restore default",
-			"tooltip-customize-command": "Customize this command"
+			"name": "Klawisze skrótów",
+			"prompt-filter": "Filtruj...",
+			"tooltip-delete-hotkey": "Usuń klawisz skrótu",
+			"label-waiting-for-hotkey-press": "Wciśnij klawisz skrótu...",
+			"tooltip-restore-default": "Przywróć domyślne",
+			"tooltip-customize-command": "Dostosuj to polecenie"
 		},
 		"about": {
-			"name": "About",
+			"name": "O programie",
 			"label-license-key": "License key",
 			"license-key-placeholder": "Your license key...",
 			"label-enter-commercial-license": "Please enter your commercial license key:",
@@ -145,57 +145,61 @@
 	},
 	"editor": {
 		"search": {
-			"label-previous": "Prev",
-			"label-next": "Next",
-			"label-all": "All",
-			"label-exit-search": "Exit search",
-			"label-replace": "Replace",
-			"label-replace-all": "Replace all"
+			"label-previous": "Poprz.",
+			"label-next": "Nast.",
+			"label-all": "Wszystkie",
+			"label-exit-search": "Zakończ wyszukiwanie",
+			"label-replace": "Zamień",
+			"label-replace-all": "Zamień wszystkie"
 		},
 		"link-suggestion": {
-			"label-type-hash": "Type #",
-			"label-link-heading": "to link heading",
-			"label-type-pipe": "Type |",
-			"label-change-display-text": "to change display text"
+			"label-type-hash": "Wpisz #",
+			"label-link-heading": "aby utworzyć link do nagłówka",
+			"label-type-pipe": "Wpisz |",
+			"label-change-display-text": "aby zmienić wyświetlany tekst"
 		},
 		"spellcheck": {
-			"no-suggestion": "No suggestions...",
-			"add-to-dictionary": "Add to dictionary"
+			"no-suggestion": "Brak sugestii...",
+			"add-to-dictionary": "Dodaj do słownika"
 		}
 	},
 	"interface": {
-		"embed-open-in-default-app-tooltip": "Open in default app",
-		"empty-sidebar": "The sidebar is empty, try dragging a pane here.",
-		"sidebar-expand": "Expand",
-		"sidebar-collapse": "Collapse",
-		"msg-fail-to-save-file": "Failed to save file \"{{filepath}}\". {{message}}.",
-		"no-file": "No file",
-		"switch-vault": "Open another vault",
-		"help": "Help",
-		"settings": "Settings",
-		"drag-to-rearrange": "Drag to rearrange",
-		"msg-switched-to-preview": "Switched default view mode to preview.",
-		"msg-switched-to-edit": "Switched default view mode to editor.",
+		"embed-open-in-default-app-tooltip": "Otwórz za pomocą aplikacji domyślnej",
+		"empty-sidebar": "Pasek boczny jest pusty, spróbuj przeciągnąć tu jedno z okien.",
+		"sidebar-expand": "Rozwiń",
+		"sidebar-collapse": "Zwiń",
+		"msg-fail-to-save-file": "Nie zapisano pliku \"{{filepath}}\". {{message}}.",
+		"no-file": "Brak pliku",
+		"switch-vault": "Otwórz inny skarbiec",
+		"help": "Pomoc",
+		"settings": "Ustawienia",
+		"drag-to-rearrange": "Przeciągnij aby zmienić położenie",
+		"msg-switched-to-preview": "Przełączono domyślny tryb widoku na podgląd.",
+		"msg-switched-to-edit": "Przełączono domyślny tryb widoku na edytor.",
 		"empty-state": {
-			"no-file-open": "No file is open",
-			"create-new-file": "Create new file",
-			"go-to-file": "Go to file",
-			"see-recent-files": "See recent files",
-			"close": "Close"
+			"no-file-open": "Żaden plik nie jest otwarty",
+			"create-new-file": "Utwórz nowy plik",
+			"go-to-file": "Idź do pliku",
+			"see-recent-files": "Zobacz ostatnie pliki",
+			"close": "Zamknij"
 		},
 		"menu": {
 			"edit-view": "Edit (Ctrl/Cmd+Click to edit in new pane)",
 			"preview-view": "Preview (Ctrl/Cmd+Click to open in new pane)",
-			"find": "Find...",
-			"replace": "Replace...",
-			"edit": "Edit",
-			"preview": "Preview",
-			"more-options": "More options",
-			"close": "Close",
-			"pin": "Pin",
+			"find": "Znajdź...",
+			"replace": "Zamień...",
+			"edit": "Edytuj",
+			"preview": "Podgląd",
+			"more-options": "Więcej opcji",
+			"close": "Zamknij",
+			"pin": "Przypnij",
 			"unlink-pane": "Unlink pane",
-			"link-pane": "Link with pane...",
-			"delete-file": "Delete file"
+			"link-pane": "Powiąż z oknem...",
+			"delete-file": "Usuń plik"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "Collapse results",
 			"label-match-case": "Match case",
 			"label-explain-search-term": "Explain search term",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "Type to start search...",
 			"label-match-text": "Matches text: ",
 			"label-match-regex": "Matches regex: ",
@@ -317,6 +322,7 @@
 			"name": "Graph view",
 			"desc": "See a graph overview of which notes link to which.",
 			"action-open": "Open graph view",
+			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}"
 		},
@@ -339,21 +345,21 @@
 			"label-no-tags": "No tags found."
 		},
 		"page-preview": {
-			"name": "Page preview",
-			"desc": "Preview a note when hovering an internal link. Ctrl/Cmd + hover in editor mode.",
-			"label-empty-note": "\"{{linktext}}\" is not created yet. Click to create."
+			"name": "Podgląd stron",
+			"desc": "Wyświetl podgląd notatki po najechaniu kursorem na link wewnętrzny. Ctrl/Cmd + najechanie kursora w trybie edycji.",
+			"label-empty-note": "\"{{linktext}}\" jeszcze nie istnieje. Kliknij aby utworzyć."
 		},
 		"starred": {
-			"name": "Starred",
-			"desc": "Star frequently used files and searches.",
-			"action-toggle": "Star/unstar current file",
-			"action-toggle-search": "Star/unstar current search",
+			"name": "Oznaczone gwiazdką",
+			"desc": "Oznacz gwiazdką często używane pliki i wyszukiwane frazy.",
+			"action-toggle": "Oznacz/odznacz bieżący plik",
+			"action-toggle-search": "Oznacz/odznacz bieżące wyszukiwanie",
 			"action-star": "Star",
-			"action-unstar": "Unstar",
-			"menu-opt-remove": "Remove",
-			"msg-successfully-starred": "Successfully starred {{type}} \"{{title}}\".",
-			"msg-removed-starred": "Removed starred {{type}} \"{{title}}\".",
-			"msg-cannot-find-path": "Cannot find file at \"{{path}}\"."
+			"action-unstar": "Oznacz gwiazdką",
+			"menu-opt-remove": "Usuń gwiazdkę",
+			"msg-successfully-starred": "Oznaczono gwiazdką {{type}} \"{{title}}\".",
+			"msg-removed-starred": "Usunięto {{type}} \"{{title}}\" z oznaczonych.",
+			"msg-cannot-find-path": "Nie odnaleziono pliku w \"{{path}}\"."
 		},
 		"custom-css": {
 			"name": "Custom CSS",
@@ -413,88 +419,88 @@
 			"label-total-replacements": "Total replacements"
 		},
 		"daily-notes": {
-			"name": "Daily notes",
-			"desc": "Open today's daily note, or create one if not present.",
-			"action-open": "Open today's note",
-			"action-open-previous": "Open previous daily note",
-			"action-open-next": "Open next daily note",
-			"msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
-			"msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
-			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
-			"msg-no-previous": "There's no daily note before this one.",
-			"msg-no-next": "There's no daily note after this one.",
-			"option-date-format": "Date format",
-			"label-iso-format": "ISO (default): ",
-			"label-us-format": "US: MMMM Do, YYYY",
-			"label-refer-to-syntax": "For more syntax, refer to: ",
-			"label-syntax-link": "format reference",
-			"label-syntax-live-preview": "Here is what it will look like: ",
-			"option-new-file-location": "New file location",
-			"option-new-file-location-description": "The folder path to create the new daily note.",
-			"option-template": "Template file location",
-			"option-template-description": "The file path to use as template."
+			"name": "Codzienne notatki",
+			"desc": "Otwórz dzisiejszą notatkę, lub stwórz jeśli nie istnieje.",
+			"action-open": "Otwórz dzisiejszą notatkę",
+			"action-open-previous": "Otwórz wcześniejszą notatkę",
+			"action-open-next": "Otwórz późniejszą notatkę",
+			"msg-fail-format": "Nie utworzono notatki. \"{{format}}\" nie jest poprawnym formatem.",
+			"msg-fail-folder": "Nie utworzono notatki. Folder \"{{folderOption}}\" nie został odnaleziony.",
+			"msg-fail-template-file": "Nie utworzono notatki. Plik szablonu \"{{template}}\" nie został odnaleziony.",
+			"msg-no-previous": "Nie ma wcześniejszej notatki.",
+			"msg-no-next": "Nie ma późniejszej notatki.",
+			"option-date-format": "Format daty",
+			"label-iso-format": "ISO (domyślny): ",
+			"label-us-format": "USA: MMMM Do, YYYY",
+			"label-refer-to-syntax": "Aby uzyskać więcej informacji na temat składni, zobacz: ",
+			"label-syntax-link": "dokumentację dot. formatu dat (EN)",
+			"label-syntax-live-preview": "Przykładowa data w wybranym formacie: ",
+			"option-new-file-location": "Lokalizacja dla nowych plików",
+			"option-new-file-location-description": "Ścieżka dostępu do folderu, w którym tworzone będą nowe codzienne notatki.",
+			"option-template": "Lokalizacja szablonu",
+			"option-template-description": "Ścieżka dostępu do pliku, który będzie wykorzystany jako szablon."
 		},
 		"zettelkasten-prefixer": {
-			"name": "Zettelkasten prefixer",
-			"desc": "Create a new note with the 12-digit Zettelkasten ID format YYYYMMDDHHII (Example 202001010000).",
-			"action-create-note": "Create new Zettelkasten note",
-			"option-new-file-location": "New file location",
-			"option-new-file-location-description": "The folder path to create the new Zettelkasten note.",
-			"msg-folder-not-found": "Failed to create Zettelkasten note. Folder \"{{folderOption}}\" not found.",
-			"option-template-file": "Template file location",
-			"option-template-file-description": "The file path to use as template.",
-			"option-template-file-placeholder": "Example: folder1/note",
-			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
+			"name": "Automatyczne tworzenie prefiksów Zettelkasten",
+			"desc": "Utwórz nową notatkę z 12-cyfrowym ID systemu Zettelkasten w formacie YYYYMMDDHHII (Przykład: 202001010000).",
+			"action-create-note": "Utwórz nową notatkę Zettelkasten",
+			"option-new-file-location": "Lokalizacja dla nowych plików",
+			"option-new-file-location-description": "Ścieżka dostępu do folderu, w którym tworzone będą nowe notatki Zettelkasten.",
+			"msg-folder-not-found": "Nie utworzono notatki Zettelkasten. Folder \"{{folderOption}}\" nie został odnaleziony.",
+			"option-template-file": "Lokalizacja szablonu",
+			"option-template-file-description": "Ścieżka dostępu do pliku, który będzie wykorzystany jako szablon.",
+			"option-template-file-placeholder": "Przykład: folder1/notatka",
+			"msg-template-file-not-found": "Nie utworzono notatki Zettelkasten. Plik szablonu \"{{template}}\" nie został odnaleziony."
 		},
 		"random-note": {
-			"name": "Random note",
-			"desc": "Opens a random note. Useful for reviewing and discovering.",
-			"action-open": "Open random note"
+			"name": "Losowa notatka",
+			"desc": "Otwiera losową notatkę. Przydatne przy powtarzaniu i odkrywaniu.",
+			"action-open": "Otwórz losową notatkę"
 		},
 		"outline": {
-			"name": "Outline",
-			"desc": "Displays the outline of the current file or linked pane.",
-			"action-open": "Open outline",
-			"action-open-pane": "Open the outline of the current file",
-			"tab-title": "Outline of {{displayText}}",
-			"label-no-headings": "No headings found."
+			"name": "Zarys",
+			"desc": "Wyświetla zarys bieżącego pliku lub dokumentu w powiązanym oknie.",
+			"action-open": "Otwórz zarys",
+			"action-open-pane": "Otwórz zarys bieżącego pliku",
+			"tab-title": "Zarys {{displayText}}",
+			"label-no-headings": "Nie znaleziono nagłówków."
 		},
 		"word-count": {
-			"name": "Word count",
-			"desc": "Show word count in the status bar."
+			"name": "Liczba słów",
+			"desc": "Wyświetlaj liczbę słów na pasku stanu."
 		},
 		"slides": {
-			"name": "Slides",
-			"desc": "Present from Markdown. Use \"---\" to separate slides.",
-			"action-start": "Start presentation"
+			"name": "Slajdy",
+			"desc": "Prezentuj w formacie Markdown. Użyj \"---\" aby oddzielić slajdy.",
+			"action-start": "Rozpocznij prezentację"
 		},
 		"audio-recorder": {
-			"name": "Audio recorder",
-			"desc": "Record audio and save as attachment.",
-			"action-start": "Start recording audio",
-			"action-stop": "Stop recording audio",
-			"action-toggle": "Start/stop recording",
-			"msg-access-denied": "Microphone access was denied, please enable it from the preference pane.",
-			"msg-pending-grant": "Please grant microphone permission to start recording.",
-			"msg-no-microphone": "No microphone is connected."
+			"name": "Nagrywanie dźwięku",
+			"desc": "Nagraj dźwięk i zapisz jako załącznik.",
+			"action-start": "Rozpocznij nagrywanie dźwięku",
+			"action-stop": "Zakończ nagrywanie dźwięku",
+			"action-toggle": "Rozpocznij/zakończ nagrywanie",
+			"msg-access-denied": "Zablokowano dostęp do mikrofonu, udostępnij go w ustawieniach.",
+			"msg-pending-grant": "Zezwól na dostęp do mikrofonu aby rozpocząć nagrywanie.",
+			"msg-no-microphone": "Nie podłączono mikrofonu."
 		},
 		"open-with-default-app": {
-			"name": "Open with default app",
-			"desc": "Add button to open current file with the default app.",
-			"action-open-file": "Open with default app",
-			"action-show-in-folder": "Show in folder"
+			"name": "Otwórz za pomocą aplikacji domyślnej",
+			"desc": "Dodaj przycisk otwierający bieżący plik w aplikacji domyślnej.",
+			"action-open-file": "Otwórz za pomocą aplikacji domyślnej",
+			"action-show-in-folder": "Pokaż w folderze"
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
-		"character-with-count": "{{count}} character",
-		"character-with-count_plural": "{{count}} characters",
+		"word-with-count": "{{count}} słowo",                    
+		"word-with-count_plural": "słowa: {{count}}",
+		"character-with-count": "{{count}} znak",
+		"character-with-count_plural": "znaki: {{count}}",
 		"link-with-count": "{{count}} link",
-		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
-		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlinks"
+		"link-with-count_plural": "linki: {{count}}",
+		"file-with-count": "{{count}} plik",
+		"file-with-count_plural": "pliki: {{count}}", 
+		"backlink-with-count": "{{count}} link zwrotny",
+		"backlink-with-count_plural": "linki zwrotne: {{count}}"
 	}
 }
