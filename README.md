@@ -60,10 +60,11 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ko` | Korean | 한국어 | 🔜 |
 | `nl` | Dutch | Nederlands | 🔜 |
 | `no` | Norwegian | Norsk | 🔜 |
-| `ro` | Romanian | Română | 🔜 |
+| `ro` | Romanian | Română | 🚧 |
 | `pl` | Polish | język polski | 🔜 |
 | `pt` | Portuguese | Português | 🔜 |
-| `ru` | Russian | русский | 🚧 |
+| `ru` | Russian | русский | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
-| `zh` | Chinese | 中文 | ✅ |
+| `zh` | Chinese (Simplified) | 简体中文 | ✅ |
+| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 

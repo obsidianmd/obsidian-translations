@@ -10,24 +10,24 @@
 			"option-spellcheck-description": "打开拼写检查器。目前只适用于英语（美式）。",
 			"spellcheck-dict": "拼写检查词典",
 			"spellcheck-dict-empty": "拼写检查词典是空的。",
-			"option-readable-line-length": "缩减栏宽",
+			"option-readable-line-length": "缩减栏宽，提升易读性",
 			"option-readable-line-description": "开启后将限制每行字数，使屏幕显示的内容减少，但使长段落更具可读性。",
 			"option-strict-line-break": "精确的换行符",
 			"option-strict-line-break-description": "在预览模式下，根据Markdown语法忽略单个换行符。将此选项关闭可在预览中显示单个换行符。",
-			"option-auto-pair-brackets": "自动补全双括号",
-			"option-auto-pair-brackets-description": "自动补全括号和引号。",
+			"option-auto-pair-brackets": "自动补全英文标点符号",
+			"option-auto-pair-brackets-description": "自动补全英文括号和引号。",
 			"option-auto-pair-markdown": "自动补全Markdown语法",
 			"option-auto-pair-markdown-description": "自动补全表示粗体和斜体的标记。",
 			"option-smart-indent-lists": "智能列表",
 			"option-smart-indent-lists-description": "开启后obsidian将根据换行和缩进情况自动调整列表符号。",
 			"option-fold-heading": "折叠标题",
-			"option-fold-heading-description": "把相关的正文内容都折叠到标题行。",
+			"option-fold-heading-description": "开启后可以将正文内容折叠到标题行。",
 			"option-fold-indent": "折叠缩进",
-			"option-fold-indent-description": "把相同的缩进内容（如列表）折叠起来。",
+			"option-fold-indent-description": "开启后可以将缩进内容（如列表）折叠起来。",
 			"option-show-line-number": "显示行号",
 			"option-show-line-number-description": "在左侧显示行号。",
-			"option-use-tabs": "使用Tab键缩进",
-			"option-use-tabs-description": "按下Tab键可发送制表符来缩进。关闭此项后可发送空格来缩进。",
+			"option-use-tabs": "使用制表符",
+			"option-use-tabs-description": "开启后，Tab键将使用制表符来完成缩进。关闭后Tab键将使用空格完成缩进。",
 			"option-vim-key-bindings": "Vim键绑定",
 			"option-vim-key-bindings-description": "允许在编辑器中使用Vim键绑定。"
 		},
@@ -128,7 +128,7 @@
 			"button-get-catalyst-license": "支持并使用 Obsidian Catalyst",
 			"button-check-for-catalyst-license": "检查 Obsidian Catalyst",
 			"button-upgrade-catalyst-license": "升级到更高级别",
-			"button-log-out": "退出",
+			"button-log-out": "退出登录",
 			"label-log-in": "登录",
 			"label-email": "邮箱",
 			"placeholder-email": "您的邮箱...",
@@ -196,6 +196,10 @@
 			"unlink-pane": "拆分面板",
 			"link-pane": "同步面板...",
 			"delete-file": "删除文件"
+		},
+		"tooltip": {
+			"click-to-expand": "点击以展开",
+			"click-to-collapse": "点击以折叠"
 		}
 	},
 	"commands": {
@@ -236,8 +240,8 @@
 		"delete-paragraph": "删除段落"
 	},
 	"dialogue": {
-		"label-link-affected": "这将影响 {{files}} 文件中的 {{links}} 链接。",
-		"msg-updated-links": "更新 {{files}} 文件中的 {{links}} 链接。",
+		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
+		"msg-updated-links": "更新 {{files}} 中的 {{links}}。",
 		"label-update-links": "更新链接",
 		"label-confirm-update-link-to-file": "您是否需要更新与此文件相关联的内部链接？",
 		"button-always-update": "总是更新",
@@ -252,7 +256,7 @@
 		"label-delete-folder": "删除文件夹",
 		"button-delete": "删除",
 		"button-delete-do-not-ask-again": "删除，并且不要再询问。",
-		"label-existing-backlink": "目前有 {{links}} 条内部链接与该文件相关。",
+		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
 		"label-delete-file": "删除文件"
 	},
 	"plugins": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "折叠搜索结果",
 			"label-match-case": "区分大小写",
 			"label-explain-search-term": "说明搜索含义",
+			"label-more-context": "显示上下文",
 			"prompt-start-search": "输入并开始搜索...",
 			"label-match-text": "匹配文本: ",
 			"label-match-regex": "匹配正则表达式: ",
@@ -316,21 +321,22 @@
 		"graph-view": {
 			"name": "关系图谱",
 			"desc": "总览笔记间的联系。",
-			"action-open": "查看图谱",
+			"action-open": "查看关系图",
+			"action-open-local": "打开局部关系图",
 			"action-copy-screenshot": "复制截图",
-			"tab-title": "Graph of {{displayText}}"
+			"tab-title": "{{displayText}} 的关系图"
 		},
 		"backlinks": {
 			"name": "反向链接",
-			"desc": "在状态栏中显示反向链接的数量。",
-			"action-open": "显示当前笔记的相关链接",
-			"action-open-for-current": "打开反向链接",
-			"label-linked-mentions": "标题被链接",
-			"label-no-backlinks": "没有反向链接。",
-			"label-unlinked-mentions": "提及标题",
+			"desc": "在状态栏中显示当前文件反向链接的数量。",
+			"action-open": "打开反向链接",
+			"action-open-for-current": "显示当前笔记的相关链接",
+			"label-linked-mentions": "以下笔记链接了该文件",
+			"label-no-backlinks": "没有笔记链接该文件",
+			"label-unlinked-mentions": "以下笔记提及了该文件",
 			"label-link-button-text": "链接",
 			"tab-title": "{{displayText}} 的反向链接",
-			"label-no-unlinked-mentions": "未发现文本。",
+			"label-no-unlinked-mentions": "没有笔记提及该文件",
 			"ellipsis": "..."
 		},
 		"tag-pane": {
@@ -340,12 +346,12 @@
 		},
 		"page-preview": {
 			"name": "页面预览",
-			"desc": "鼠标悬停在内部链接上显示预览窗口。编辑模式时需按住Ctrl/Cmd键。",
+			"desc": "开启后鼠标悬停在内部链接上时将显示预览。编辑模式下需要在鼠标悬停的同时按住Ctrl/Cmd键才可预览。",
 			"label-empty-note": "\"{{linktext}}\" 未创建成功！请点击以创建。"
 		},
 		"starred": {
 			"name": "星标",
-			"desc": "星标一些常用的文档并搜索。",
+			"desc": "星标一些常用的文件和搜索结果。",
 			"action-toggle": "取消/星标当前文件",
 			"action-toggle-search": "取消/星标当前搜索结果",
 			"action-star": "星标",
@@ -454,7 +460,7 @@
 		"outline": {
 			"name": "大纲",
 			"desc": "显示当前文件或链接页面的大纲标题。",
-			"action-open": "打开大纲。",
+			"action-open": "打开大纲",
 			"action-open-pane": "显示当前笔记的大纲",
 			"tab-title": "{{displayText}} 的大纲",
 			"label-no-headings": "未发现标题行。"
