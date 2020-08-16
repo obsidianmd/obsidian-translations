@@ -40,7 +40,7 @@
 			"option-choice-system-trash": "Move to system trash",
 			"option-choice-vault-trash": "Move to Obsidian trash (.trash folder)",
 			"option-choice-permanent-delete": "Permanent delete",
-			"option-always-update-links": "Always update links when",
+			"option-always-update-links": "Always update links",
 			"option-always-update-links-description": "Whether to automatically update links after renaming a file or prompt.",
 			"option-new-note-location": "New note default location",
 			"option-new-note-location-description": "Where to put newly created notes. Plugin settings will override this.",
@@ -196,6 +196,10 @@
 			"unlink-pane": "Unlink pane",
 			"link-pane": "Link with pane...",
 			"delete-file": "Delete file"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -285,6 +289,7 @@
 			"label-collapse-results": "Collapse results",
 			"label-match-case": "Match case",
 			"label-explain-search-term": "Explain search term",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "Type to start search...",
 			"label-match-text": "Matches text: ",
 			"label-match-regex": "Matches regex: ",
@@ -317,14 +322,15 @@
 			"name": "Graph view",
 			"desc": "See a graph overview of which notes link to which.",
 			"action-open": "Open graph view",
+			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}"
 		},
 		"backlinks": {
 			"name": "Backlinks",
 			"desc": "Show number of backlinks in the status bar.",
-			"action-open": "Open backlinks for the current file",
-			"action-open-for-current": "Open backlinks",
+			"action-open": "Open backlinks",
+			"action-open-for-current": "Open backlinks for the current file",
 			"label-linked-mentions": "Linked mentions",
 			"label-no-backlinks": "No backlinks found.",
 			"label-unlinked-mentions": "Unlinked mentions",
