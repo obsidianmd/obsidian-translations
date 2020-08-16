@@ -86,7 +86,7 @@
 			"label-current-version": "當前版本: ",
 			"label-install-version": "(安裝程式版本: {{version}})",
 			"label-up-to-date": "您使用的是最新版本!",
-			"label-read-changelog": "閱讀更新日誌。",
+			"label-read-changelog": "閱讀更新日誌",
 			"label-manual-install-required": "您必須手動安裝最新版本。",
 			"label-download-link": "從此下載。",
 			"label-new-version-ready": "準備安裝新版本。 ",
@@ -97,8 +97,8 @@
 			"button-check-for-updates": "檢查更新",
 			"option-auto-update": "自動更新",
 			"option-auto-update-description": "關閉後Obsidian將不會自動更新。",
-			"option-open-help": "查看說明檔案",
-			"option-open-help-description": "開啟說明檔案。",
+			"option-open-help": "查看說明文件",
+			"option-open-help-description": "開啟說明文件。",
 			"button-open": "開啟",
 			"option-language": "語言",
 			"option-language-description": "更改介面語言。",
@@ -117,7 +117,7 @@
 		"account": {
 			"name": "帳戶",
 			"label-welcome": "歡迎您, {{name}}!",
-			"label-your-account-email": "您的帳戶是 ",
+			"label-your-account-email": "您的帳戶信箱是 ",
 			"label-insider": "內測人士",
 			"label-supporter": "支持用戶",
 			"label-vip": "VIP",
@@ -128,7 +128,7 @@
 			"button-get-catalyst-license": "支持並使用 Obsidian Catalyst",
 			"button-check-for-catalyst-license": "檢查 Obsidian Catalyst",
 			"button-upgrade-catalyst-license": "升級到更高級別",
-			"button-log-out": "退出",
+			"button-log-out": "登出",
 			"label-log-in": "登入",
 			"label-email": "電子信箱",
 			"placeholder-email": "您的電子信箱...",
@@ -190,7 +190,7 @@
 			"replace": "取代...",
 			"edit": "編輯",
 			"preview": "預覽",
-			"more-options": "更多設定",
+			"more-options": "更多選項",
 			"close": "關閉",
 			"pin": "釘選",
 			"unlink-pane": "未連結面板",
@@ -198,8 +198,8 @@
 			"delete-file": "刪除檔案"
 		},
 		"tooltip": {
-			"click-to-expand": "Click to expand",
-			"click-to-collapse": "Click to collapse"
+			"click-to-expand": "點擊以展開",
+			"click-to-collapse": "點擊以摺疊"
 		}
 	},
 	"commands": {
@@ -240,8 +240,8 @@
 		"delete-paragraph": "刪除段落"
 	},
 	"dialogue": {
-		"label-link-affected": "這將影響 {{files}} 檔案中的 {{links}} 連結。",
-		"msg-updated-links": "更新 {{files}} 檔案中的 {{links}} 連結。",
+		"label-link-affected": "這將影響 {{files}} 中的 {{links}} 連結。",
+		"msg-updated-links": "更新 {{files}} 中的 {{links}} 連結。",
 		"label-update-links": "更新連結",
 		"label-confirm-update-link-to-file": "您是否需要更新與此檔案相關聯的內部連結？",
 		"button-always-update": "總是更新",
@@ -256,7 +256,7 @@
 		"label-delete-folder": "刪除資料夾",
 		"button-delete": "刪除",
 		"button-delete-do-not-ask-again": "刪除，並且不要再詢問。",
-		"label-existing-backlink": "目前有 {{links}} 條內部連結與該檔案相關。",
+		"label-existing-backlink": "目前有 {{links}} 與該文件相關。",
 		"label-delete-file": "刪除檔案"
 	},
 	"plugins": {
@@ -319,12 +319,12 @@
 			"label-enter-to-create": "建立該筆記"
 		},
 		"graph-view": {
-			"name": "關係圖譜",
-			"desc": "總覽筆記間的聯絡。",
+			"name": "圖譜檢視",
+			"desc": "總覽筆記間的關聯。",
 			"action-open": "查看圖譜",
-			"action-open-local": "Open local graph",
+			"action-open-local": "開啟當前筆記圖譜",
 			"action-copy-screenshot": "複製截圖",
-			"tab-title": "圖譜： {{displayText}}"
+			"tab-title": "{{displayText}} 的圖譜"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -460,7 +460,7 @@
 		"outline": {
 			"name": "大綱",
 			"desc": "顯示當前檔案或連結頁面的大綱標題。",
-			"action-open": "開啟大綱。",
+			"action-open": "開啟大綱",
 			"action-open-pane": "顯示當前筆記的大綱",
 			"tab-title": "{{displayText}} 的大綱",
 			"label-no-headings": "未發現標題行。"
