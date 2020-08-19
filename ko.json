@@ -185,7 +185,7 @@
 		},
 		"menu": {
 			"edit-view": "편집 (Ctrl/Cmd+클릭 으로 새로운 패널에서 편집)",
-			"preview-view": "Preview (Ctrl/Cmd+클릭으로 새로운 패널에서 열기)",
+			"preview-view": "프리뷰 (Ctrl/Cmd+클릭으로 새로운 패널에서 열기)",
 			"find": "검색...",
 			"replace": "바꾸기...",
 			"edit": "편집",
@@ -322,7 +322,7 @@
 			"name": "그래프 뷰",
 			"desc": "노트들이 어떻게 링크되어 있는지 보여주는 그래프를 보여줍니다.",
 			"action-open": "그래프 뷰 열기",
-			"action-open-local": "Open local graph",
+			"action-open-local": "로컬 그래프 열기",
 			"action-copy-screenshot": "스크린샷 복사",
 			"tab-title": "{{displayText}} 그래프"
 		},
@@ -345,8 +345,8 @@
 			"label-no-tags": "발견된 태그가 없습니다."
 		},
 		"page-preview": {
-			"name": "페이지 프리뷰",
-			"desc": "링크에 마우스를 올려놓으면 프리뷰를 볼수 있습니다. 편집 모드일 경우 Ctrl/Cmd를 누른 상태에서 마우스를 올리시면 볼수 있습니다.",
+			"name": "페이지 미리보기",
+			"desc": "링크에 마우스를 올려놓으면 미리보기를 볼수 있습니다. 편집 모드일 경우 Ctrl/Cmd를 누른 상태에서 마우스를 올리시면 볼수 있습니다.",
 			"label-empty-note": "\"{{linktext}}\"의 파일이 아직 없습니다. 클릭해서 만들어주세요."
 		},
 		"starred": {
@@ -382,14 +382,14 @@
 			"msg-successfully-used": "{{author}}의 \"{{name}}\"를 사용합니다."
 		},
 		"command-palette": {
-			"name": "Command palette",
-			"desc": "Type a command to invoke it. No need to use the UI or remember the shortcut.",
-			"action-open": "Open command palette",
-			"instruction-navigate": "to navigate",
-			"instruction-use": "to use",
-			"instruction-dismiss": "to dismiss",
-			"label-no-commands": "No commands found.",
-			"prompt-type-command": "Type a command..."
+			"name": "명령어 팔레트",
+			"desc": "명령어를 입력해서 사용합니다. UI를 사용하거나 단축키를 외우실 필요가 없습니다.",
+			"action-open": "커멘드 팔레트 열기",
+			"instruction-navigate": "선택하기",
+			"instruction-use": "사용하기",
+			"instruction-dismiss": "닫기",
+			"label-no-commands": "명령어.",
+			"prompt-type-command": "명령어를 입력해주세요..."
 		},
 		"markdown-format-importer": {
 			"name": "마크다운 임포터",
@@ -430,11 +430,11 @@
 			"msg-no-previous": "이전 일간 노트가 없습니다.",
 			"msg-no-next": "다음 일간 노트가 없습니다.",
 			"option-date-format": "날짜 서식",
-			"label-iso-format": "ISO (default): ",
-			"label-us-format": "US: MMMM Do, YYYY",
-			"label-refer-to-syntax": "For more syntax, refer to: ",
-			"label-syntax-link": "format reference",
-			"label-syntax-live-preview": "Here is what it will look like: ",
+			"label-iso-format": "ISO (기본): ",
+			"label-us-format": "미국: MMMM Do, YYYY",
+			"label-refer-to-syntax": "더 다양한 문법은 여길 참고해주세요: ",
+			"label-syntax-link": "서식 참조",
+			"label-syntax-live-preview": "파일 이름이 다음과 같이 생성됩니다: ",
 			"option-new-file-location": "새 파일 경로",
 			"option-new-file-location-description": "새로운 일간 노트를 만들 경로입니다.",
 			"option-template": "템플릿 파일 경로",
@@ -458,12 +458,12 @@
 			"action-open": "랜덤 노트 열기"
 		},
 		"outline": {
-			"name": "Outline",
-			"desc": "Displays the outline of the current file or linked pane.",
-			"action-open": "Open outline",
-			"action-open-pane": "Open the outline of the current file",
-			"tab-title": "Outline of {{displayText}}",
-			"label-no-headings": "No headings found."
+			"name": "개요",
+			"desc": "현재 파일, 혹은 링크된 패널의 개요를 보여줍니다.",
+			"action-open": "개요 열기",
+			"action-open-pane": "현재 파일의 개요 열기",
+			"tab-title": "{{displayText}}의 개요",
+			"label-no-headings": "헤더를 발견하지 못했습니다."
 		},
 		"word-count": {
 			"name": "단어 갯수",
