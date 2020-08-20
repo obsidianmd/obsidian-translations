@@ -50,19 +50,20 @@ Here is a table of language code to language name, in alphabetical order. These 
 | Language code | Language name | Native name | Status |
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
-| `de` | German | Deutsch | 🚧 | 🔜 |
+| `de` | German | Deutsch | 🚧 |
 | `el` | Greek | ελληνικά | 🔜 |
-| `es` | Spanish | Español | 🔜 |
-| `fr` | French | français | 🚧 | 🔜 |
-| `id` | Indonesian | Bahasa Indonesia | 🔜 |
+| `es` | Spanish | Español | 🚧 |
+| `fr` | French | français | 🚧 
+| `hi` | Hindi | हिन्दी | 🚧 |
+| `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | 🔜 |
 | `ja` | Japanese | 日本語 | 🔜 |
-| `ko` | Korean | 한국어 | 🔜 |
-| `nl` | Dutch | Nederlands | 🔜 |
-| `no` | Norwegian | Norsk | 🔜 |
-| `ro` | Romanian | Română | 🚧 |
-| `pl` | Polish | język polski | 🔜 |
+| `ko` | Korean | 한국어 | ✅ |
+| `nl` | Dutch | Nederlands | 🚧 |
+| `no` | Norwegian | Norsk | 🚧 |
+| `pl` | Polish | język polski | 🚧 |
 | `pt` | Portuguese | Português | 🔜 |
+| `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `zh` | Chinese (Simplified) | 简体中文 | ✅ |

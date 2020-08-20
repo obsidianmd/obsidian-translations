@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Limitează lungimea maximă a unui rând. Încadrează mai puțin conținut pe ecran, dar face paragrafele lungi mai ușor de citit.",
 			"option-strict-line-break": "Mod strict spații între rânduri",
 			"option-strict-line-break-description": "În modul de previzualizare, ignoră spațiile de un rând conform specificațiilor Markdown. Dezactivează această setare ca spațiile de un rând să apară în previzualizare.",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Creează automat perechi de paranteze",
 			"option-auto-pair-brackets-description": "Grupează automat parantezele și ghilimelele.",
 			"option-auto-pair-markdown": "Grupează automat elemente de sintaxă Markdown",
@@ -140,7 +144,9 @@
 			"message-empty-password": "Câmpul de parolă nu poate fi gol.",
 			"message-login-failed": "Autentificare nereușită, te rugăm să verifici emailul și parola.",
 			"label-no-account": "Nu ai un cont? ",
-			"link-sign-up-now": "Înregistrează-te acum"
+			"link-sign-up-now": "Înregistrează-te acum",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -198,8 +204,8 @@
 			"delete-file": "Șterge fișier"
 		},
 		"tooltip": {
-			"click-to-expand": "Click to expand",
-			"click-to-collapse": "Click to collapse"
+			"click-to-expand": "Click pentru a extinde",
+			"click-to-collapse": "Click pentru a restrânge"
 		}
 	},
 	"commands": {
@@ -268,6 +274,8 @@
 			"action-new-note": "Notă nouă",
 			"action-new-folder": "Director nou",
 			"action-change-sort": "Schimbă ordinea de sortare",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "Sortează după numele fișierului (de la A la Z)",
 			"label-sort-z-to-a": "Sortează după numele fișierului (de la Z la A)",
 			"label-sort-new-to-old": "Sortează dupa timpul editării (de la noi la vechi)",
@@ -289,7 +297,7 @@
 			"label-collapse-results": "Restrânge rezultatele",
 			"label-match-case": "Căutare exactă după minuscule sau majuscule",
 			"label-explain-search-term": "Explică termenul de căutare",
-			"label-more-context": "Show more context",
+			"label-more-context": "Extinde contextul",
 			"prompt-start-search": "Scrie pentru a începe căutarea...",
 			"label-match-text": "Se potrivește cu textul: ",
 			"label-match-regex": "Se potrivește cu formula regex: ",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "Nu există nicio notă zilnică înaintea celei curente.",
 			"msg-no-next": "Nu există nicio notă zilnică după cea curentă.",
 			"option-date-format": "Formatul datei",
-			"label-iso-format": "ISO (implicit): ",
-			"label-us-format": "US: LLLL Zi, AAAA",
 			"label-refer-to-syntax": "Pentru mai multe informații despre sintaxă, vezi: ",
 			"label-syntax-link": "referință format",
 			"label-syntax-live-preview": "Iată cum va arăta: ",
@@ -489,6 +495,26 @@
 			"desc": "Adaugă un buton pentru a deschide fișierul curent în aplicația implicită.",
 			"action-open-file": "Deschide în aplicația implicită",
 			"action-show-in-folder": "Arată în director"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {
