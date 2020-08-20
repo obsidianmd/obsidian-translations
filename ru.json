@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Ограничивает максимальную длину строки. Повышает удобство чтения длинных абзацев, но уменьшает количество помещающейся на экране информации.",
 			"option-strict-line-break": "Строгий перенос строк",
 			"option-strict-line-break-description": "Игнорировать одиночные переносы строк в режиме просмотра в соответствии со стандартом Markdown. Отключите эту опцию, чтобы в режиме просмотра отображались одиночные переносы строк.",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Автоматически закрывать скобки",
 			"option-auto-pair-brackets-description": "Автоматически закрывает скобки и кавычки.",
 			"option-auto-pair-markdown": "Автоматически закрывать теги Markdown",
@@ -140,7 +144,9 @@
 			"message-empty-password": "Пароль не может быть пустым.",
 			"message-login-failed": "Неправильный адрес электронной почты или пароль.",
 			"label-no-account": "Нет аккаунта? ",
-			"link-sign-up-now": "Зарегистрироваться"
+			"link-sign-up-now": "Зарегистрироваться",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "Новая заметка",
 			"action-new-folder": "Новая папка",
 			"action-change-sort": "Изменить порядок сортировки",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "Сортировать по имени файла (A -> Z)",
 			"label-sort-z-to-a": "Сортировать по имени файла (Z -> A)",
 			"label-sort-new-to-old": "Сортировать по времени последнего редактирования (от новых к старым)",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "Более ранние ежедневные заметки отсутствуют.",
 			"msg-no-next": "Более поздние ежедневные заметки отсутствуют.",
 			"option-date-format": "Формат даты",
-			"label-iso-format": "ISO (стандартный): ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "Для более подробной информации о синтаксисе даты перейдите по ",
 			"label-syntax-link": "ссылке",
 			"label-syntax-live-preview": "Вот как будет выглядеть ваш формат даты: ",
@@ -489,6 +495,26 @@
 			"desc": "Добавляет возможность открывать текущий файл в приложении по умолчанию.",
 			"action-open-file": "Открыть в приложении по умолчанию",
 			"action-show-in-folder": "Показать содержащую папку"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {
