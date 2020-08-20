@@ -17,7 +17,7 @@
 			"option-show-frontmatter": "Tampilkan frontmatter",
 			"option-show-frontmatter-description": "Dalam mode tinjau, tampilkan frontmatter sebagai blok kode. Matikan untuk menyembunyikan bagian frontmatter.",
 			"option-use-markdown-links": "Gunakan link markdown",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
+			"option-use-markdown-links-description": "Penyaranan link melengkapi secara otomatis link markdown dan gambar sebagai ganti wikilinks.",
 			"option-auto-pair-brackets": "Otomatisasi tanda kurung",
 			"option-auto-pair-brackets-description": "Memasangkan tanda kurung dan tanda kutip secara otomatis.",
 			"option-auto-pair-markdown": "Otomatisasi sintkasis Markdown",
@@ -145,8 +145,8 @@
 			"message-login-failed": "Masuk gagal, mohon periksa kembali surel dan kata sandi Anda.",
 			"label-no-account": "Belum memiliki akun? ",
 			"link-sign-up-now": "Daftar sekarang",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
-			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+			"message-get-community-badges": "Untuk lencana komunitas, silakan kirim surel support@obsidian.md jika Anda belum menerimanya dalam waktu 24 jam setelah mendapatkan lisensi Anda.",
+			"message-obtain-commercial-license": "Untuk mendapatkan lisensi komersial, kunjungi {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -274,8 +274,8 @@
 			"action-new-note": "Catatan baru",
 			"action-new-folder": "Folder baru",
 			"action-change-sort": "Ubah tata urutan",
-			"action-reveal-file": "Reveal file in file explorer",
-			"action-reveal-active-file": "Reveal active file in file explorer",
+			"action-reveal-file": "Perlihatkan file dalam file explorer",
+			"action-reveal-active-file": "Perlihatkan file yang aktif dalam file explorer",
 			"label-sort-a-to-z": "Urutkan berdasarkan nama file (A to Z)",
 			"label-sort-z-to-a": "Urutkan berdasarkan name file (Z to A)",
 			"label-sort-new-to-old": "Urutkan berdasarkan waktu pengeditan (new to old)",
@@ -497,24 +497,24 @@
 			"action-show-in-folder": "Tampilkan dalam folder"
 		},
 		"templates": {
-			"name": "Templates",
-			"desc": "Insert template content from a folder of template files.",
-			"action-insert": "Insert template",
-			"option-template-folder-location": "Template folder location",
-			"option-template-folder-location-description": "Files in this folder will be available as templates.",
-			"option-template-date-format": "Date format",
-			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
-			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
-			"option-template-time-format": "Time format",
-			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
-			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
-			"instruction-navigate": "to navigate",
-			"instruction-insert": "to insert template",
-			"instruction-dismiss": "to dismiss",
-			"msg-no-templates-found": "No templates found",
-			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
-			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
-			"prompt-type-template": "Type name of a template..."
+			"name": "Template",
+			"desc": "Memasukan konten template dari folder file template.",
+			"action-insert": "Masukan template",
+			"option-template-folder-location": "Lokasi folder template",
+			"option-template-folder-location-description": "File-file dalam folder ini akan tersedia sebagai template.",
+			"option-template-date-format": "Format tanggal",
+			"option-template-date-format-description": "{{date}} pada file template akan diganti dengan nilai ini.",
+			"option-template-date-format-description2": "Anda juga bisa menggunakan {{date:YYYY-MM-DD}} untuk mengganti format sekali.",
+			"option-template-time-format": "Format waktu",
+			"option-template-time-format-description": "{{time}} pada file template akan diganti dengan nilai ini.",
+			"option-template-time-format-description2": "Anda juga bisa menggunakan {{time:HH:mm}} untuk mengganti format sekali.",
+			"instruction-navigate": "untuk mengarahkan",
+			"instruction-insert": "untuk memasukan template",
+			"instruction-dismiss": "untuk membatalkan",
+			"msg-no-templates-found": "Tidak ada template yang ditemukan",
+			"msg-fail-invalid-folder": "Gagal untuk mencantumkan template. Folder template tidak valid.",
+			"msg-fail-folder-not-found": "Gagal untuk mencantumkan template. Folder \"{{folderOption}}\" tidak ditemukan.",
+			"prompt-type-template": "Ketik nama template..."
 		}
 	},
 	"nouns": {
