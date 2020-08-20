@@ -14,6 +14,10 @@
 			"option-readable-line-description": "글줄의 길이를 제한시킵니다. 화면에 글이 덜 들어가지만, 문단을 읽기 편해집니다.",
 			"option-strict-line-break": "개행 규칙 따르기",
 			"option-strict-line-break-description": "프리뷰 모드에서 마크다운의 서식대로 개행 한번한 것은 무시합니다. 프리뷰 모드에서 개행 한번 한걸 보고 싶으시면 이걸 꺼주세요.",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "괄호 자동 생성",
 			"option-auto-pair-brackets-description": "닫는 괄호와 따옴표가 자동으로 생성합니다.",
 			"option-auto-pair-markdown": "마크다운 자동 생성",
@@ -140,7 +144,9 @@
 			"message-empty-password": "비밀번호를 입력해주세요.",
 			"message-login-failed": "로그인에 실패했습니다, 이메일과 비밀번호를 다시 확인해주세요.",
 			"label-no-account": "계정이 없으신가요? ",
-			"link-sign-up-now": "회원가입"
+			"link-sign-up-now": "회원가입",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "새 노트",
 			"action-new-folder": "새 폴더",
 			"action-change-sort": "순서 변경하기",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "파일 이름 순서 (A ~ Z)",
 			"label-sort-z-to-a": "파일 이름 역순 (Z ~ A)",
 			"label-sort-new-to-old": "편집 시간 순서 (최신부터)",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "이전 일간 노트가 없습니다.",
 			"msg-no-next": "다음 일간 노트가 없습니다.",
 			"option-date-format": "날짜 서식",
-			"label-iso-format": "ISO (기본): ",
-			"label-us-format": "미국: MMMM Do, YYYY",
 			"label-refer-to-syntax": "더 다양한 문법은 여길 참고해주세요: ",
 			"label-syntax-link": "서식 참조",
 			"label-syntax-live-preview": "파일 이름이 다음과 같이 생성됩니다: ",
@@ -489,6 +495,26 @@
 			"desc": "현재 파일을 기본 앱으로 여는 버튼을 추가합니다",
 			"action-open-file": "기본 앱으로 열기",
 			"action-show-in-folder": "폴더에 보여주기"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {

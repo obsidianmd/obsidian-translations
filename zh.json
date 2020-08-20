@@ -14,6 +14,10 @@
 			"option-readable-line-description": "开启后将限制每行字数，使屏幕显示的内容减少，但使长段落更具可读性。",
 			"option-strict-line-break": "严格换行",
 			"option-strict-line-break-description": "开启后，根据Markdown标准，单个换行符在预览模式下不再生效。",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "自动补全英文标点符号",
 			"option-auto-pair-brackets-description": "自动补全英文括号和引号。",
 			"option-auto-pair-markdown": "自动补全Markdown语法",
@@ -140,7 +144,9 @@
 			"message-empty-password": "密码不能为空。",
 			"message-login-failed": "登录失败，请检查您的邮箱和密码。",
 			"label-no-account": "没有帐户？ ",
-			"link-sign-up-now": "现在注册"
+			"link-sign-up-now": "现在注册",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "新建笔记",
 			"action-new-folder": "新建文件夹",
 			"action-change-sort": "排序",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "按文件名升序排列 (A-Z)",
 			"label-sort-z-to-a": "按文件名降序排列 (Z-A)",
 			"label-sort-new-to-old": "按编辑时间排序（从新到旧）",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "没有更旧的日记了。",
 			"msg-no-next": "没有更新的日记了。",
 			"option-date-format": "日期格式",
-			"label-iso-format": "ISO (默认): ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "更多语法，请参阅: ",
 			"label-syntax-link": "时间格式参考",
 			"label-syntax-live-preview": "这是当前所用格式的样例: ",
@@ -489,6 +495,26 @@
 			"desc": "在菜单中添加使用默认应用打开当前文件这一选项。",
 			"action-open-file": "使用默认应用打开",
 			"action-show-in-folder": "在资源管理器中显示"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {
