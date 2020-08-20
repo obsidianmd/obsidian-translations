@@ -14,10 +14,10 @@
 			"option-readable-line-description": "Ограничивает максимальную длину строки. Повышает удобство чтения длинных абзацев, но уменьшает количество помещающейся на экране информации.",
 			"option-strict-line-break": "Строгий перенос строк",
 			"option-strict-line-break-description": "Игнорировать одиночные переносы строк в режиме просмотра в соответствии со стандартом Markdown. Отключите эту опцию, чтобы в режиме просмотра отображались одиночные переносы строк.",
-			"option-show-frontmatter": "Show frontmatter",
-			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
+			"option-show-frontmatter": "Отображение frontmatter",
+			"option-show-frontmatter-description": "В режиме просмотра отображать frontmatter как блок кода. Отключение скроет раздел frontmatter.",
+			"option-use-markdown-links": "Использование markdown-ссылок",
+			"option-use-markdown-links-description": "Автозаполнение предлагает markdown-ссылки и изображения вместо wiki-ссылок.",
 			"option-auto-pair-brackets": "Автоматически закрывать скобки",
 			"option-auto-pair-brackets-description": "Автоматически закрывает скобки и кавычки.",
 			"option-auto-pair-markdown": "Автоматически закрывать теги Markdown",
@@ -145,8 +145,8 @@
 			"message-login-failed": "Неправильный адрес электронной почты или пароль.",
 			"label-no-account": "Нет аккаунта? ",
 			"link-sign-up-now": "Зарегистрироваться",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
-			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+			"message-get-community-badges": "Напишите на support@obsidian.md если вы не получили значки сообщества через сутки после получения лицензии.",
+			"message-obtain-commercial-license": "Для получения коммерческой лицензии перейдите по ссылке: {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -274,8 +274,8 @@
 			"action-new-note": "Новая заметка",
 			"action-new-folder": "Новая папка",
 			"action-change-sort": "Изменить порядок сортировки",
-			"action-reveal-file": "Reveal file in file explorer",
-			"action-reveal-active-file": "Reveal active file in file explorer",
+			"action-reveal-file": "Показать файл в файловом менеджере",
+			"action-reveal-active-file": "Показать текущий файл в файловом менеджере",
 			"label-sort-a-to-z": "Сортировать по имени файла (A -> Z)",
 			"label-sort-z-to-a": "Сортировать по имени файла (Z -> A)",
 			"label-sort-new-to-old": "Сортировать по времени последнего редактирования (от новых к старым)",
@@ -443,7 +443,7 @@
 			"label-syntax-live-preview": "Вот как будет выглядеть ваш формат даты: ",
 			"option-new-file-location": "Расположение нового файла",
 			"option-new-file-location-description": "Путь к папке, в которой будет создаваться новая ежедневная заметка.",
-			"option-template": "Расположение файла-шаблона",
+			"option-template": "Расположение шаблона",
 			"option-template-description": "Путь к файлу, который будет использоваться как шаблон."
 		},
 		"zettelkasten-prefixer": {
@@ -497,24 +497,24 @@
 			"action-show-in-folder": "Показать содержащую папку"
 		},
 		"templates": {
-			"name": "Templates",
-			"desc": "Insert template content from a folder of template files.",
-			"action-insert": "Insert template",
-			"option-template-folder-location": "Template folder location",
-			"option-template-folder-location-description": "Files in this folder will be available as templates.",
-			"option-template-date-format": "Date format",
-			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
-			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
-			"option-template-time-format": "Time format",
-			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
-			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
-			"instruction-navigate": "to navigate",
-			"instruction-insert": "to insert template",
-			"instruction-dismiss": "to dismiss",
-			"msg-no-templates-found": "No templates found",
-			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
-			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
-			"prompt-type-template": "Type name of a template..."
+			"name": "Шаблоны", 
+			"desc": "Вставить содержимое шаблона из папки шаблонных файлов.",
+			"action-insert": "Вставить шаблон",
+			"option-template-folder-location": "Путь к папке с шаблонами",
+			"option-template-folder-location-description": "Файлы из этой папки будут доступны как шаблоны.",
+			"option-template-date-format": "Формат даты",
+			"option-template-date-format-description": "{{date}} в шаблонном файле заменится на это значение.",
+			"option-template-date-format-description2": "Использование {{date:YYYY-MM-DD}} единожды переопределит формат.",
+			"option-template-time-format": "Формат времени",
+			"option-template-time-format-description": "{{time}} в шаблонном файле заменится на это значение.",
+			"option-template-time-format-description2": "Использование {{time:HH:mm}} единожды переопределит формат.",
+			"instruction-navigate": "навигация",
+			"instruction-insert": "вставить шаблон",
+			"instruction-dismiss": "отменить",
+			"msg-no-templates-found": "Шаблоны не найдены",
+			"msg-fail-invalid-folder": "Не удалось отобразить шаблоны. Недопустимое имя папки шаблонов.",
+			"msg-fail-folder-not-found": "Не удалось отобразить шаблоны. Папка \"{{folderOption}}\" не найдена.",
+			"prompt-type-template": "Введите имя шаблона..."
 		}
 	},
 	"nouns": {
