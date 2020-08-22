@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Limita o tamanho máximo da linha. Cabe menos conteúdo na tela, mas faz os parágrafos mais fácil de ler.",
 			"option-strict-line-break": "Quebra de linha estrita",
 			"option-strict-line-break-description": "In preview mode, ignore single line breaks according to the Markdown specs. Turn this off for single line breaks to show in preview.",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Fecha parênteses automaticamente",
 			"option-auto-pair-brackets-description": "Fecha parênteses e aspas automaticamente.",
 			"option-auto-pair-markdown": "Combinar símbolos Markdown automaticamente",
@@ -140,7 +144,9 @@
 			"message-empty-password": "Senha não pode estar vazia.",
 			"message-login-failed": "Login falhou. Cheque se seu e-mail e senha estão corretos.",
 			"label-no-account": "Não tem uma conta? ",
-			"link-sign-up-now": "Crie uma conta agora"
+			"link-sign-up-now": "Crie uma conta agora",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "Nova nota",
 			"action-new-folder": "Nova pasta",
 			"action-change-sort": "Mudar ordenamento",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "Ordenar por nome (A-Z)",
 			"label-sort-z-to-a": "Ordenar por nome (Z-A)",
 			"label-sort-new-to-old": "Ordenar por última edição (recentes-antigas)",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "Não há nota diária anterior a esta.",
 			"msg-no-next": "Nao há nota diária posterior a esta.",
 			"option-date-format": "Formato de data",
-			"label-iso-format": "ISO (padrão): ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "Para maix sintaxe, confira: ",
 			"label-syntax-link": "formato de referência",
 			"label-syntax-live-preview": "Aqui está como vai aparecer: ",
@@ -480,15 +486,35 @@
 			"action-start": "Começar a gravar áudio",
 			"action-stop": "Parar de gravar áudio",
 			"action-toggle": "Começar/parar gravação",
-			"msg-access-denied": "Acesso ao microfone foi negado. Habilite-o no painel de preferências.", 
+			"msg-access-denied": "Acesso ao microfone foi negado. Habilite-o no painel de preferências.",
 			"msg-pending-grant": "Please grant microphone permission to start recording.",
 			"msg-no-microphone": "Nenhum microfone está conectado."
 		},
 		"open-with-default-app": {
 			"name": "Abrir com aplicativo padrão",
-			"desc": "Adiciona um botão para abrir o arquivo atual com o aplicativo padrão.", 
+			"desc": "Adiciona um botão para abrir o arquivo atual com o aplicativo padrão.",
 			"action-open-file": "Abrir com aplicativo padrão",
 			"action-show-in-folder": "Mostrar na pasta"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {

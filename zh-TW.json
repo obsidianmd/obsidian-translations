@@ -14,6 +14,10 @@
 			"option-readable-line-description": "開啟後將限制每行字數，使螢幕顯示的內容減少，但使長段落更具可讀性。",
 			"option-strict-line-break": "精確的換行符號",
 			"option-strict-line-break-description": "在預覽模式下，根據Markdown語法忽略單個換行符號。將此選項關閉可在預覽中顯示單個換行符號。",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "自動補全雙括號",
 			"option-auto-pair-brackets-description": "自動補全括號和引號。",
 			"option-auto-pair-markdown": "自動補全Markdown語法",
@@ -140,7 +144,9 @@
 			"message-empty-password": "密碼不能為空。",
 			"message-login-failed": "登入失敗，請檢查您的電子信箱與密碼。",
 			"label-no-account": "沒有帳戶？ ",
-			"link-sign-up-now": "現在註冊"
+			"link-sign-up-now": "現在註冊",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "新增筆記",
 			"action-new-folder": "新增資料夾",
 			"action-change-sort": "排序",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "按檔案名升冪排列 (A-Z)",
 			"label-sort-z-to-a": "按檔案名降冪排列 (Z-A)",
 			"label-sort-new-to-old": "按編輯時間排序（從新到舊）",
@@ -289,7 +297,7 @@
 			"label-collapse-results": "摺疊搜尋結果",
 			"label-match-case": "區分大小寫",
 			"label-explain-search-term": "說明搜尋含義",
-			"label-more-context": "Show more context",
+			"label-more-context": "顯示更多內容",
 			"prompt-start-search": "輸入並開始搜尋...",
 			"label-match-text": "匹配文字: ",
 			"label-match-regex": "匹配正則表示式: ",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "在這個之前沒有日記。",
 			"msg-no-next": "在這個之後沒有日記。",
 			"option-date-format": "日期格式",
-			"label-iso-format": "ISO (預設): ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "有關更多語法，請參閱: ",
 			"label-syntax-link": "格式參考",
 			"label-syntax-live-preview": "這是參考樣式: ",
@@ -488,7 +494,27 @@
 			"name": "使用預設應用開啟",
 			"desc": "在選單中添加使用預設應用開啟當前檔案這一選項。",
 			"action-open-file": "使用預設應用開啟",
-			"action-show-in-folder": "在資源管理器中顯示"
+			"action-show-in-folder": "在檔案總管中顯示"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {

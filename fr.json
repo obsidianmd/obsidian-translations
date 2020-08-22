@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Limite la longueur de ligne maximale. Affiche moins de contenu à l'écran, mais rend les longs paragraphes plus lisibles.",
 			"option-strict-line-break": "Sauts de ligne stricts",
 			"option-strict-line-break-description": "En mode prévisualisation, ignore les sauts de ligne selon les spécifications Markdown. Désactivez cette option pour que les sauts de ligne uniques s'affichent en mode prévisualisation.",
+			"option-show-frontmatter": "Afficher frontmatter",
+			"option-show-frontmatter-description": "En mode prévisualisation, affiche frontmatter en bloc de code. Désactiver pour cacher la section frontmatter.",
+			"option-use-markdown-links": "Utiliser les liens markdown",
+			"option-use-markdown-links-description": "La suggestion de lien complète automatiquement les liens et images markdown au lieu des wikilinks.",
 			"option-auto-pair-brackets": "Association automatique des crochets",
 			"option-auto-pair-brackets-description": "Associer automatiquement les crochets et les guillemets.",
 			"option-auto-pair-markdown": "Association automatique des syntaxes Markdown",
@@ -140,7 +144,9 @@
 			"message-empty-password": "Le mot de passe ne peut pas être vide.",
 			"message-login-failed": "Échec de connexion, vérifiez à nouveau l'adresse électronique et le mot de passe.",
 			"label-no-account": "Vous n'avez pas de compte ? ",
-			"link-sign-up-now": "S'inscrire maintenant"
+			"link-sign-up-now": "S'inscrire maintenant",
+			"message-get-community-badges": "Pour les badges communautaires, veuillez envoyer un e-mail à support@obsidian.md si vous ne les avez pas reçus 24 heures après l'obtention de votre licence.",
+			"message-obtain-commercial-license": "Pour obtenir une licence commercial, visiter {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "Nouvelle note",
 			"action-new-folder": "Nouveau dossier",
 			"action-change-sort": "Modifier l'ordre de triage",
+			"action-reveal-file": "Révèle le fichier dans l'explorateur de fichiers",
+			"action-reveal-active-file": "Révèle le fichier actif dans l'explorateur de fichiers",
 			"label-sort-a-to-z": "Trier par nom de fichier (A à Z)",
 			"label-sort-z-to-a": "Trier par nom de fichier (Z à A)",
 			"label-sort-new-to-old": "Trier par heure d'édition (nouveau à ancien)",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "Il n'y a pas de note quotidienne avant celle-ci.",
 			"msg-no-next": "Il n'y a pas de note quotidienne après celle-ci.",
 			"option-date-format": "Format de date",
-			"label-iso-format": "ISO (défaut) : ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "Pour plus de syntaxe, reportez-vous à : ",
 			"label-syntax-link": "référence de format",
 			"label-syntax-live-preview": "Voici à quoi cela ressemblera : ",
@@ -489,6 +495,26 @@
 			"desc": "Ajouter un bouton pour ouvrir le fichier actuel avec l'application par défaut",
 			"action-open-file": "Ouvrir avec l'application par défaut",
 			"action-show-in-folder": "Afficher dans le dossier"
+		},
+		"templates": {
+			"name": "Modèles",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insérer le modèle",
+			"option-template-folder-location": "Emmplacement du dossier modèle",
+			"option-template-folder-location-description": "Les fichiers dans ce dossier seront disponibles en modèles.",
+			"option-template-date-format": "Format de date",
+			"option-template-date-format-description": "{{date}} dans ce fichier modèle sera remplacé par cette valeur.",
+			"option-template-date-format-description2": "Vous pouvez aussi utiliser {{date:YYYY-MM-DD}} pour passer outre le format cette fois.",
+			"option-template-time-format": "Format de temps",
+			"option-template-time-format-description": "{{time}} dans ce fichier modèle sera remplacé par cette valeur.",
+			"option-template-time-format-description2": "Vous pouvez aussi utiliser {{time:HH:mm}} pour passer outre le format cette fois.",
+			"instruction-navigate": "pour naviguer",
+			"instruction-insert": "pour insérer le modèle",
+			"instruction-dismiss": "pour annuler",
+			"msg-no-templates-found": "Aucun modèle trouvé",
+			"msg-fail-invalid-folder": "Échec du listage des modèles. Le dossier modèle n'est pas valide.",
+			"msg-fail-folder-not-found": "Échec du listage des modèles. Le dossier \"{{folderOption}}\" est introuvable.",
+			"prompt-type-template": "Saisir le nom d'un modèle..."
 		}
 	},
 	"nouns": {
