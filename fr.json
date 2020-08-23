@@ -1,7 +1,7 @@
 {
 	"setting": {
 		"core": "Noyau",
-		"plugin": "Plugin",
+		"plugin": "Module d'extension",
 		"folder-path-example-placeholder": "Exemple: dossier 1/dossier 2",
 		"file-path-example-placeholder": "Exemple: dossier/note",
 		"editor": {
@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Limite la longueur de ligne maximale. Affiche moins de contenu à l'écran, mais rend les longs paragraphes plus lisibles.",
 			"option-strict-line-break": "Sauts de ligne stricts",
 			"option-strict-line-break-description": "En mode prévisualisation, ignore les sauts de ligne selon les spécifications Markdown. Désactivez cette option pour que les sauts de ligne uniques s'affichent en mode prévisualisation.",
+			"option-show-frontmatter": "Afficher frontmatter",
+			"option-show-frontmatter-description": "En mode prévisualisation, affiche frontmatter en bloc de code. Désactiver pour cacher la section frontmatter.",
+			"option-use-markdown-links": "Utiliser les liens markdown",
+			"option-use-markdown-links-description": "La suggestion de lien complète automatiquement les liens et images markdown au lieu des wikilinks.",
 			"option-auto-pair-brackets": "Association automatique des crochets",
 			"option-auto-pair-brackets-description": "Associer automatiquement les crochets et les guillemets.",
 			"option-auto-pair-markdown": "Association automatique des syntaxes Markdown",
@@ -43,17 +47,17 @@
 			"option-always-update-links": "Toujours mettre à jour les liens internes",
 			"option-always-update-links-description": "S'il faut mettre à jour automatiquement les liens après avoir renommé un fichier ou s'il faut demander.",
 			"option-new-note-location": "Emplacement par défaut de la nouvelle note",
-			"option-new-note-location-description": "Où mettre les notes nouvellement créées. Les paramètres des plugins remplaceront cela.",
-			"option-choice-vault-root": "Racine du coffre",
+			"option-new-note-location-description": "Où mettre les notes nouvellement créées. Les paramètres des modules d'extension remplaceront cela.",
+			"option-choice-vault-root": "Racine du projet",
 			"option-choice-current-folder": "Même dossier que le fichier",
 			"option-choice-specified-folder": "Dans le dossier spécifié ci-dessous",
 			"option-new-file-folder-path": "Dossier dans lequel créer de nouvelles notes",
-			"option-new-file-folder-path-description": "Les notes nouvellement créées apparaîtront sous ce dossier. Les paramètres des plugins primeront en cas de conflit.",
+			"option-new-file-folder-path-description": "Les notes nouvellement créées apparaîtront sous ce dossier. Les paramètres des modules d'extension primeront en cas de conflit.",
 			"option-link-autocompleted-format": "Nouveau format de lien",
 			"option-link-autocompleted-format-description": "Quels liens insérer lors de la génération automatique de liens internes.",
 			"option-choice-shortest-linktext": "Chemin le plus court si possible",
 			"option-choice-relative-path": "Chemin relatif au fichier",
-			"option-choice-absolute-path": "Chemin absolue dans le coffre",
+			"option-choice-absolute-path": "Chemin absolue dans le projet",
 			"option-attachment-folder-path": "Chemin du dossier des pièces jointes",
 			"option-attachment-folder-path-description": "Les fichiers joints nouvellement créés apparaîtront ici. Cela inclut les images créées par glisser-déposer ou collées et les enregistrements audio."
 		},
@@ -140,7 +144,9 @@
 			"message-empty-password": "Le mot de passe ne peut pas être vide.",
 			"message-login-failed": "Échec de connexion, vérifiez à nouveau l'adresse électronique et le mot de passe.",
 			"label-no-account": "Vous n'avez pas de compte ? ",
-			"link-sign-up-now": "S'inscrire maintenant"
+			"link-sign-up-now": "S'inscrire maintenant",
+			"message-get-community-badges": "Pour les badges communautaires, veuillez envoyer un e-mail à support@obsidian.md si vous ne les avez pas reçus 24 heures après l'obtention de votre licence.",
+			"message-obtain-commercial-license": "Pour obtenir une licence commercial, visiter {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -170,7 +176,7 @@
 		"sidebar-collapse": "Réduire",
 		"msg-fail-to-save-file": "Échec de l'enregistrement du fichier \"{{filepath}}\". {{message}}.",
 		"no-file": "Pas de fichier",
-		"switch-vault": "Ouvrir un autre coffre",
+		"switch-vault": "Ouvrir un autre projet",
 		"help": "Aide",
 		"settings": "Paramètres",
 		"drag-to-rearrange": "Faites glisser pour réorganiser",
@@ -249,7 +255,7 @@
 		"button-do-not-update": "Ne pas mettre à jour",
 		"label-confirm-deletion": "Voulez-vous vraiment supprimer \"{{filename}}\"?",
 		"label-move-to-system-trash": "Il sera déplacé vers la corbeille de votre système.",
-		"label-move-to-vault-trash": "Il sera déplacé vers votre corbeille Obsidian, qui se trouve dans le dossier caché \".trash\" de votre coffre.",
+		"label-move-to-vault-trash": "Il sera déplacé vers votre corbeille Obsidian, qui se trouve dans le dossier caché \".trash\" de votre projet.",
 		"label-permanent-delete": "Le fichier sera définitivement supprimé.",
 		"label-non-empty-folder": "Ce dossier n'est pas vide.",
 		"label-delete-folder-warning": "Si vous continuez, tous les fichiers de ce dossier seront supprimés.",
@@ -260,14 +266,16 @@
 		"label-delete-file": "Supprimer le fichier"
 	},
 	"plugins": {
-		"name": "Plugins",
+		"name": "Modules d'extension",
 		"file-explorer": {
 			"name": "Explorateur de fichiers",
-			"desc": "Voir tous les fichiers de votre coffre.",
+			"desc": "Voir tous les fichiers de votre projet.",
 			"action-create-note": "Créer une nouvelle note",
 			"action-new-note": "Nouvelle note",
 			"action-new-folder": "Nouveau dossier",
 			"action-change-sort": "Modifier l'ordre de triage",
+			"action-reveal-file": "Révèle le fichier dans l'explorateur de fichiers",
+			"action-reveal-active-file": "Révèle le fichier actif dans l'explorateur de fichiers",
 			"label-sort-a-to-z": "Trier par nom de fichier (A à Z)",
 			"label-sort-z-to-a": "Trier par nom de fichier (Z à A)",
 			"label-sort-new-to-old": "Trier par heure d'édition (nouveau à ancien)",
@@ -363,7 +371,7 @@
 		},
 		"custom-css": {
 			"name": "CSS personnalisé",
-			"desc": "Lit \"obsidian.css\" dans le coffre et l'applique.",
+			"desc": "Lit \"obsidian.css\" dans le projet et l'applique.",
 			"setting-community-themes": "Thèmes communautaires",
 			"msg-fetching-themes": "Récupération des données des thèmes de la communauté...",
 			"prompt-filter": "Filtrer...",
@@ -405,7 +413,7 @@
 			"zettelkasten-link-fixer-description": "Fixes \"[[UID]]\" links to full \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Embellisseur de lien Zettelkasten",
 			"zettelkasten-link-beautifier-description": "Fixes \"[[UID]]\" links and also beautify them \"[[UID File Name|File Name]]\".",
-			"msg-all-files-warning": "Attention : l'importateur convertira tous les fichiers de votre coffre, pas seulement le fichier actuel.",
+			"msg-all-files-warning": "Attention : l'importateur convertira tous les fichiers de votre projet, pas seulement le fichier actuel.",
 			"msg-override-files-warning": "Vos fichiers seront écrasés. Sauvegardez tous vos fichiers avant de tenter la conversion.",
 			"label-start-conversion": "Lancer la conversion",
 			"label-stop": "Arrêter",
@@ -430,8 +438,6 @@
 			"msg-no-previous": "Il n'y a pas de note quotidienne avant celle-ci.",
 			"msg-no-next": "Il n'y a pas de note quotidienne après celle-ci.",
 			"option-date-format": "Format de date",
-			"label-iso-format": "ISO (défaut) : ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "Pour plus de syntaxe, reportez-vous à : ",
 			"label-syntax-link": "référence de format",
 			"label-syntax-live-preview": "Voici à quoi cela ressemblera : ",
@@ -489,6 +495,26 @@
 			"desc": "Ajouter un bouton pour ouvrir le fichier actuel avec l'application par défaut",
 			"action-open-file": "Ouvrir avec l'application par défaut",
 			"action-show-in-folder": "Afficher dans le dossier"
+		},
+		"templates": {
+			"name": "Modèles",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insérer le modèle",
+			"option-template-folder-location": "Emmplacement du dossier modèle",
+			"option-template-folder-location-description": "Les fichiers dans ce dossier seront disponibles en modèles.",
+			"option-template-date-format": "Format de date",
+			"option-template-date-format-description": "{{date}} dans ce fichier modèle sera remplacé par cette valeur.",
+			"option-template-date-format-description2": "Vous pouvez aussi utiliser {{date:YYYY-MM-DD}} pour passer outre le format cette fois.",
+			"option-template-time-format": "Format de temps",
+			"option-template-time-format-description": "{{time}} dans ce fichier modèle sera remplacé par cette valeur.",
+			"option-template-time-format-description2": "Vous pouvez aussi utiliser {{time:HH:mm}} pour passer outre le format cette fois.",
+			"instruction-navigate": "pour naviguer",
+			"instruction-insert": "pour insérer le modèle",
+			"instruction-dismiss": "pour annuler",
+			"msg-no-templates-found": "Aucun modèle trouvé",
+			"msg-fail-invalid-folder": "Échec du listage des modèles. Le dossier modèle n'est pas valide.",
+			"msg-fail-folder-not-found": "Échec du listage des modèles. Le dossier \"{{folderOption}}\" est introuvable.",
+			"prompt-type-template": "Saisir le nom d'un modèle..."
 		}
 	},
 	"nouns": {

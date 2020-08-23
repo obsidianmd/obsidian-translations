@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Membatasi panjang maksimum baris tulisan. Memuat lebih sedikit konten pada tampilan, tetapi membuat paragraf-paragraf yang panjang lebih mudah dibaca.",
 			"option-strict-line-break": "Jarak antar baris ketat",
 			"option-strict-line-break-description": "Dalam mode tinjau, abaikan tiap jarak antar baris tulisan sesuai dengan spesifikasi Markdown. Matikan fitur ini untuk menampilkannya pada mode peninjauan.",
+			"option-show-frontmatter": "Tampilkan frontmatter",
+			"option-show-frontmatter-description": "Dalam mode tinjau, tampilkan frontmatter sebagai blok kode. Matikan untuk menyembunyikan bagian frontmatter.",
+			"option-use-markdown-links": "Gunakan link markdown",
+			"option-use-markdown-links-description": "Penyaranan link melengkapi secara otomatis link markdown dan gambar sebagai ganti wikilinks.",
 			"option-auto-pair-brackets": "Otomatisasi tanda kurung",
 			"option-auto-pair-brackets-description": "Memasangkan tanda kurung dan tanda kutip secara otomatis.",
 			"option-auto-pair-markdown": "Otomatisasi sintkasis Markdown",
@@ -140,7 +144,9 @@
 			"message-empty-password": "Kata sandi tidak boleh kosong.",
 			"message-login-failed": "Masuk gagal, mohon periksa kembali surel dan kata sandi Anda.",
 			"label-no-account": "Belum memiliki akun? ",
-			"link-sign-up-now": "Daftar sekarang"
+			"link-sign-up-now": "Daftar sekarang",
+			"message-get-community-badges": "Untuk lencana komunitas, silakan kirim surel support@obsidian.md jika Anda belum menerimanya dalam waktu 24 jam setelah mendapatkan lisensi Anda.",
+			"message-obtain-commercial-license": "Untuk mendapatkan lisensi komersial, kunjungi {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -268,6 +274,8 @@
 			"action-new-note": "Catatan baru",
 			"action-new-folder": "Folder baru",
 			"action-change-sort": "Ubah tata urutan",
+			"action-reveal-file": "Perlihatkan file dalam file explorer",
+			"action-reveal-active-file": "Perlihatkan file yang aktif dalam file explorer",
 			"label-sort-a-to-z": "Urutkan berdasarkan nama file (A to Z)",
 			"label-sort-z-to-a": "Urutkan berdasarkan name file (Z to A)",
 			"label-sort-new-to-old": "Urutkan berdasarkan waktu pengeditan (new to old)",
@@ -322,7 +330,7 @@
 			"name": "Penampilan grafik",
 			"desc": "Lihat gambaran grafik bagaimana catatan-catatan dihubungkan.",
 			"action-open": "Buka penampilan grafik",
-			"action-open-local": "Buka grafik lokal",			
+			"action-open-local": "Buka grafik lokal",
 			"action-copy-screenshot": "Salin tangkapan layar",
 			"tab-title": "Grafik {{displayText}}"
 		},
@@ -430,8 +438,6 @@
 			"msg-no-previous": "Tidak ada catatan harian sebelum ini.",
 			"msg-no-next": "Tidak ada catatan harian setelah ini.",
 			"option-date-format": "Format tanggal",
-			"label-iso-format": "ISO (default): ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "Untuk format tanggal lebih lanjut, rujuk ke: ",
 			"label-syntax-link": "referensi format",
 			"label-syntax-live-preview": "Tampilannya akan seperti ini: ",
@@ -489,6 +495,26 @@
 			"desc": "Menambahkan tombol untuk membuka file di aplikasi default.",
 			"action-open-file": "Buka di aplikasi default",
 			"action-show-in-folder": "Tampilkan dalam folder"
+		},
+		"templates": {
+			"name": "Template",
+			"desc": "Memasukan konten template dari folder file template.",
+			"action-insert": "Masukan template",
+			"option-template-folder-location": "Lokasi folder template",
+			"option-template-folder-location-description": "File-file dalam folder ini akan tersedia sebagai template.",
+			"option-template-date-format": "Format tanggal",
+			"option-template-date-format-description": "{{date}} pada file template akan diganti dengan nilai ini.",
+			"option-template-date-format-description2": "Anda juga bisa menggunakan {{date:YYYY-MM-DD}} untuk mengganti format sekali.",
+			"option-template-time-format": "Format waktu",
+			"option-template-time-format-description": "{{time}} pada file template akan diganti dengan nilai ini.",
+			"option-template-time-format-description2": "Anda juga bisa menggunakan {{time:HH:mm}} untuk mengganti format sekali.",
+			"instruction-navigate": "untuk mengarahkan",
+			"instruction-insert": "untuk memasukan template",
+			"instruction-dismiss": "untuk membatalkan",
+			"msg-no-templates-found": "Tidak ada template yang ditemukan",
+			"msg-fail-invalid-folder": "Gagal untuk mencantumkan template. Folder template tidak valid.",
+			"msg-fail-folder-not-found": "Gagal untuk mencantumkan template. Folder \"{{folderOption}}\" tidak ditemukan.",
+			"prompt-type-template": "Ketik nama template..."
 		}
 	},
 	"nouns": {
