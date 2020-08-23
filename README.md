@@ -47,19 +47,25 @@ leave the `{{name}}` part alone and do not translate it. "name" is not part of t
 
 Here is a table of language code to language name, in alphabetical order. These languages have their template files ready, but are not necessarily ready to be used in the app.
 
-| Language code | Language name | Native name |
-| --- | --- | --- |
-| `en` (default) | English | English |
-| `de` | German | Deutsch |
-| `es` | Spanish | Español |
-| `fr` | French | français |
-| `id` | Indonesian | Bahasa Indonesia |
-| `it` | Italian | Italiano |
-| `ja` | Japanese | 日本語 |
-| `ko` | Korean | 한국어 |
-| `nl` | Dutch | Nederlands |
-| `pl` | Polish | język polski |
-| `pt` | Portuguese | Português |
-| `ru` | Russian | русский |
-| `tr` | Turkish | Türkçe |
-| `zh` | Chinese | 中文 |
+| Language code | Language name | Native name | Status |
+| --- | --- | --- | :---: |
+| `en` (default) | English | English | ✅ |
+| `de` | German | Deutsch | 🚧 |
+| `el` | Greek | ελληνικά | 🔜 |
+| `es` | Spanish | Español | 🚧 |
+| `fr` | French | français | 🚧 
+| `hi` | Hindi | हिन्दी | 🚧 |
+| `id` | Indonesian | Bahasa Indonesia | ✅ |
+| `it` | Italian | Italiano | 🔜 |
+| `ja` | Japanese | 日本語 | 🔜 |
+| `ko` | Korean | 한국어 | ✅ |
+| `nl` | Dutch | Nederlands | 🚧 |
+| `no` | Norwegian | Norsk | 🚧 |
+| `pl` | Polish | język polski | 🚧 |
+| `pt` | Portuguese | Português | 🔜 |
+| `ro` | Romanian | Română | ✅ |
+| `ru` | Russian | русский | ✅ |
+| `tr` | Turkish | Türkçe | 🚧 |
+| `zh` | Chinese (Simplified) | 简体中文 | ✅ |
+| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
+
