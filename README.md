@@ -63,6 +63,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `no` | Norwegian | Norsk | 🚧 |
 | `pl` | Polish | język polski | 🚧 |
 | `pt` | Portuguese | Português | 🔜 |
+| `pt-BR` | Brazilian Portuguese | Portugues do Brasil | 🔜 |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
