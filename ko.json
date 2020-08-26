@@ -309,6 +309,7 @@
 			"label-case-insensitive": "대소문자 구분 없이",
 			"label-match-file-path": "파일 경로 맞추기: ",
 			"label-match-file-name": "파일 이름 맞추기: ",
+			"label-match-content": "Match file content: ",
 			"label-no-matches": "맞는 결과가 없습니다.",
 			"matches-with-count": "... 그리고 {{count}}개 더.",
 			"matches-with-count_plural": "... 그리고 {{count}}개 더."
@@ -332,7 +333,9 @@
 			"action-open": "그래프 뷰 열기",
 			"action-open-local": "로컬 그래프 열기",
 			"action-copy-screenshot": "스크린샷 복사",
-			"tab-title": "{{displayText}} 그래프"
+			"tab-title": "{{displayText}} 그래프",
+			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -498,23 +501,23 @@
 		},
 		"templates": {
 			"name": "템플릿",
-			"desc": "Insert template content from a folder of template files.",
-			"action-insert": "템플릿을 삽입하요",
-			"option-template-folder-location": "Template folder location",
-			"option-template-folder-location-description": "Files in this folder will be available as templates.",
-			"option-template-date-format": "날짜의 서식 설정",
-			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
-			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
-			"option-template-time-format": "시간의 서식 설정",
-			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
-			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
-			"instruction-navigate": "to navigate",
-			"instruction-insert": "to insert template",
-			"instruction-dismiss": "to dismiss",
-			"msg-no-templates-found": "No templates found",
-			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
-			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
-			"prompt-type-template": "Type name of a template..."
+			"desc": "템플릿 폴더에서 템플릿 파일을 가져와서 사용합니다",
+			"action-insert": "템플릿 삽입",
+			"option-template-folder-location": "템플릿 폴더 경로",
+			"option-template-folder-location-description": "이 폴더에 있는 파일들은 템플릿으로 사용이 가능해집니다.",
+			"option-template-date-format": "날짜 서식",
+			"option-template-date-format-description": "템플릿 파일의 {{date}}가 다음으로 변환됩니다.",
+			"option-template-date-format-description2": "{{date:YYYY-MM-DD}}으로 날짜 서식을 한번 무시할 수 있습니다.",
+			"option-template-time-format": "시간 서식",
+			"option-template-time-format-description": "템플릿 파일의 {{time}} 가 다음으로 변환됩니다.",
+			"option-template-time-format-description2": "{{time:HH:mm}}으로 시간 서식을 한번 무시할 수 있습니다",
+			"instruction-navigate": "선택하기",
+			"instruction-insert": "삽입하기",
+			"instruction-dismiss": "닫기",
+			"msg-no-templates-found": "발견된 템플릿이 없습니다.",
+			"msg-fail-invalid-folder": "템플릿을 불러오는데 실패했습니다. 폴더 경로를 다시 확인해주세요.",
+			"msg-fail-folder-not-found": "템플릿을 불러오는데 실패했습니다. \"{{folderOption}}\" 폴더를 찾을 수 없습니다.",
+			"prompt-type-template": "템플릿 이름 검색..."
 		}
 	},
 	"nouns": {
