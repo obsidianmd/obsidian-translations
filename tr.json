@@ -14,6 +14,10 @@
 			"option-readable-line-description": "Satır uzunluğunu kısıtla. Ekrana daha az yazı sığar ama uzun paragraflar daha okunabilir olur.",
 			"option-strict-line-break": "Katı kurallı yeni satırlar",
 			"option-strict-line-break-description": "Önizleme modunda tekil yeni satırları Markdown tanımlarına göre gözardı et. Önizlemede tekil yeni satırları görmek istiyorsanız bunu kapatın.",
+			"option-show-frontmatter": "Show frontmatter",
+			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
+			"option-use-markdown-links": "Use markdown links",
+			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Parantezleri otomatik eşle",
 			"option-auto-pair-brackets-description": "Parantez ve tırnak işaretlerini otomatik eşle.",
 			"option-auto-pair-markdown": "Markdown işaretlerini otomatik eşle.",
@@ -140,7 +144,9 @@
 			"message-empty-password": "Şifre boş olamaz.",
 			"message-login-failed": "Giriş başarısız, lütfen email ve şifrenizi kontrol edin.",
 			"label-no-account": "Hesabınız yok mu? ",
-			"link-sign-up-now": "Hemen kaydolun"
+			"link-sign-up-now": "Hemen kaydolun",
+			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -196,6 +202,10 @@
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereye bağla...",
 			"delete-file": "Dosyayı sil"
+		},
+		"tooltip": {
+			"click-to-expand": "Click to expand",
+			"click-to-collapse": "Click to collapse"
 		}
 	},
 	"commands": {
@@ -264,6 +274,8 @@
 			"action-new-note": "Yeni not",
 			"action-new-folder": "Yeni klasör",
 			"action-change-sort": "Sıralamayı değiştir",
+			"action-reveal-file": "Reveal file in file explorer",
+			"action-reveal-active-file": "Reveal active file in file explorer",
 			"label-sort-a-to-z": "İsme göre sırala (A'dan Z'ye)",
 			"label-sort-z-to-a": "İsme göre sırala (Z'den A'ya)",
 			"label-sort-new-to-old": "Değiştirme zamanına göre sırala (yeniden eskiye)",
@@ -285,6 +297,7 @@
 			"label-collapse-results": "Sonuçları gizle",
 			"label-match-case": "Harf boyutunu kullan",
 			"label-explain-search-term": "Aramayı anlat",
+			"label-more-context": "Show more context",
 			"prompt-start-search": "Aramak için yazın...",
 			"label-match-text": "Uyan yazı: ",
 			"label-match-regex": "Uyan regex: ",
@@ -296,6 +309,7 @@
 			"label-case-insensitive": "Harf boyutu önemsiz",
 			"label-match-file-path": "Dosya yolunu uydur: ",
 			"label-match-file-name": "Dosya adını uydur: ",
+			"label-match-content": "Match file content: ",
 			"label-no-matches": "Sonuç bulunamadı.",
 			"matches-with-count": "... ve {{count}} tane daha sonuc.",
 			"matches-with-count_plural": "... ve {{count}} tane daha sonuc."
@@ -314,27 +328,30 @@
 			"label-enter-to-create": "Yaratmak için Enter"
 		},
 		"graph-view": {
-			"name": "Graph view",
-			"desc": "See a graph overview of which notes link to which.",
-			"action-open": "Open graph view",
-			"action-copy-screenshot": "Copy screenshot",
-			"tab-title": "Graph of {{displayText}}"
+			"name": "Grafik görünümü",
+			"desc": "Hangi notların hangilerine bağlandığına dair bir grafik genel bakışı görün.",
+			"action-open": "Grafik görünümünü aç",
+			"action-open-local": "Yerel grafiği aç",
+			"action-copy-screenshot": "Ekran görüntüsünü kopyala",
+			"tab-title": "{{displayText}}'in grafiği",
+			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
 		},
 		"backlinks": {
-			"name": "Backlinks",
+			"name": "Geri bağlantılar",
 			"desc": "Show number of backlinks in the status bar.",
-			"action-open": "Open backlinks for the current file",
-			"action-open-for-current": "Open backlinks",
-			"label-linked-mentions": "Linked mentions",
-			"label-no-backlinks": "No backlinks found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"label-link-button-text": "Link",
-			"tab-title": "Backlinks for {{displayText}}",
-			"label-no-unlinked-mentions": "No unlinked mentions found.",
+			"action-open": "Geri bağlantıları aç",
+			"action-open-for-current": "Open backlinks for the current file",
+			"label-linked-mentions": "Bağlantılı bahsetmeler",
+			"label-no-backlinks": "Geri bağlantı bulunamadı.",
+			"label-unlinked-mentions": "Bağlantılı olmayan bahsetmeler",
+			"label-link-button-text": "Bağlantı",
+			"tab-title": "{{displayText}} için geri bağlantılar",
+			"label-no-unlinked-mentions": "Bağlantılı olmayan bahsetmeler bulunmadı.",
 			"ellipsis": "..."
 		},
 		"tag-pane": {
-			"name": "Tag pane",
+			"name": "Etiket paneli",
 			"desc": "Displays all your tags and along with their number of occurrences.",
 			"label-no-tags": "No tags found."
 		},
@@ -344,30 +361,30 @@
 			"label-empty-note": "\"{{linktext}}\" is not created yet. Click to create."
 		},
 		"starred": {
-			"name": "Starred",
-			"desc": "Star frequently used files and searches.",
-			"action-toggle": "Star/unstar current file",
-			"action-toggle-search": "Star/unstar current search",
-			"action-star": "Star",
-			"action-unstar": "Unstar",
-			"menu-opt-remove": "Remove",
+			"name": "Yıldızlanmış",
+			"desc": "Sık kullanılan dosyaları ve aramaları yıldızla.",
+			"action-toggle": "Şu anki dosya için yıldızla/yıldızı kaldır",
+			"action-toggle-search": "Bu aramayı yıldızla/yıldızı kaldır",
+			"action-star": "Yıldız",
+			"action-unstar": "Yıldızı kaldır",
+			"menu-opt-remove": "Kaldır",
 			"msg-successfully-starred": "Successfully starred {{type}} \"{{title}}\".",
 			"msg-removed-starred": "Removed starred {{type}} \"{{title}}\".",
 			"msg-cannot-find-path": "Cannot find file at \"{{path}}\"."
 		},
 		"custom-css": {
-			"name": "Custom CSS",
+			"name": "Özel CSS",
 			"desc": "Reads \"obsidian.css\" in the vault and applies it.",
 			"setting-community-themes": "Community themes",
 			"msg-fetching-themes": "Fetching community theme data...",
-			"prompt-filter": "Filter...",
+			"prompt-filter": "Filtrele...",
 			"label-dark-mode-only": "Dark mode only",
 			"label-light-mode-only": "Light mode only",
-			"label-preview": "Preview",
-			"label-stop-preview": "Stop preview",
-			"label-use": "Use",
-			"label-visit-on-github": "Visit on GitHub",
-			"msg-fetching-css": "Fetching CSS...",
+			"label-preview": "Ön izleme",
+			"label-stop-preview": "Ön izlemeyi durdur",
+			"label-use": "Kullan",
+			"label-visit-on-github": "GitHub'ı ziyaret et",
+			"msg-fetching-css": "CSS getiriliyor...",
 			"theme-title": "\"{{name}}\" by {{author}}",
 			"msg-override-theme": "Override current CSS",
 			"msg-existing-theme": "You already have the \"obsidian.css\" custom CSS file.",
@@ -424,8 +441,6 @@
 			"msg-no-previous": "There's no daily note before this one.",
 			"msg-no-next": "There's no daily note after this one.",
 			"option-date-format": "Date format",
-			"label-iso-format": "ISO (default): ",
-			"label-us-format": "US: MMMM Do, YYYY",
 			"label-refer-to-syntax": "For more syntax, refer to: ",
 			"label-syntax-link": "format reference",
 			"label-syntax-live-preview": "Here is what it will look like: ",
@@ -479,10 +494,30 @@
 			"msg-no-microphone": "No microphone is connected."
 		},
 		"open-with-default-app": {
-			"name": "Open with default app",
-			"desc": "Add button to open current file with the default app.",
-			"action-open-file": "Open with default app",
+			"name": "Open in default app",
+			"desc": "Add button to open current file in the default app.",
+			"action-open-file": "Open in default app",
 			"action-show-in-folder": "Show in folder"
+		},
+		"templates": {
+			"name": "Templates",
+			"desc": "Insert template content from a folder of template files.",
+			"action-insert": "Insert template",
+			"option-template-folder-location": "Template folder location",
+			"option-template-folder-location-description": "Files in this folder will be available as templates.",
+			"option-template-date-format": "Date format",
+			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
+			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
+			"option-template-time-format": "Time format",
+			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
+			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
+			"instruction-navigate": "to navigate",
+			"instruction-insert": "to insert template",
+			"instruction-dismiss": "to dismiss",
+			"msg-no-templates-found": "No templates found",
+			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
+			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
+			"prompt-type-template": "Type name of a template..."
 		}
 	},
 	"nouns": {
