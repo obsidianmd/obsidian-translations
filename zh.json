@@ -271,6 +271,7 @@
 			"name": "文件管理器",
 			"desc": "查看库中所有文件。",
 			"action-create-note": "新建笔记",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "新建笔记",
 			"action-new-folder": "新建文件夹",
 			"action-change-sort": "排序",
@@ -280,6 +281,8 @@
 			"label-sort-z-to-a": "按文件名降序排列 (Z-A)",
 			"label-sort-new-to-old": "按编辑时间排序（从新到旧）",
 			"label-sort-old-to-new": "按编辑时间排序（从旧到新）",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "新建笔记",
 			"menu-opt-new-folder": "新建文件夹",
 			"menu-opt-set-attachment-folder": "将其设置为附件文件夹",
@@ -310,6 +313,7 @@
 			"label-match-file-path": "匹配文件路径: ",
 			"label-match-file-name": "匹配文件名: ",
 			"label-match-content": "匹配文件内容: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
 			"matches-with-count_plural": "... 文中还有 {{count}} 处匹配。"
@@ -335,7 +339,8 @@
 			"action-copy-screenshot": "复制截图",
 			"tab-title": "{{displayText}} 的关系图",
 			"tooltip-drag-to-adjust": "显示 {{count}} 段链接可到达的节点，拖动以调整。",
-			"tooltip-drag-to-adjust_plural": "显示 {{count}} 段链接可到达的节点，拖动以调整。"
+			"tooltip-drag-to-adjust_plural": "显示 {{count}} 段链接可到达的节点，拖动以调整。",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "反向链接",
@@ -459,6 +464,7 @@
 			"option-template-file": "ZK 卡片模板位置",
 			"option-template-file-description": "指定 ZK 卡片模板文件的路径。",
 			"option-template-file-placeholder": "例: 文件夹/模板文件.md",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "创建 ZK 卡片未成功。 未找到 \"{{template}}\" 模板文件。"
 		},
 		"random-note": {
@@ -518,6 +524,11 @@
 			"msg-fail-invalid-folder": "插入模板未成功，模板文件夹无效。",
 			"msg-fail-folder-not-found": "插入模板未成功，未找到 \"{{folderOption}}\" 文件夹。",
 			"prompt-type-template": "请输入模板名称..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
+			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
 		}
 	},
 	"nouns": {

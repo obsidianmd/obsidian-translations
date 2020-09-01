@@ -271,6 +271,7 @@
 			"name": "Explorator de fișiere",
 			"desc": "Vezi toate fișierele din seiful tău.",
 			"action-create-note": "Creează notă nouă",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Notă nouă",
 			"action-new-folder": "Director nou",
 			"action-change-sort": "Schimbă ordinea de sortare",
@@ -280,6 +281,8 @@
 			"label-sort-z-to-a": "Sortează după numele fișierului (de la Z la A)",
 			"label-sort-new-to-old": "Sortează dupa timpul editării (de la noi la vechi)",
 			"label-sort-old-to-new": "Sortează dupa timpul editării (de la vechi la noi)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Notă nouă",
 			"menu-opt-new-folder": "Director nou",
 			"menu-opt-set-attachment-folder": "Setează ca director de atașamente",
@@ -310,6 +313,7 @@
 			"label-match-file-path": "Potrivește calea fișierului: ",
 			"label-match-file-name": "Potrivește numele fișierului: ",
 			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Nu au fost găsite rezultate.",
 			"matches-with-count": "... și încă {{count}} rezultat.",
 			"matches-with-count_plural": "... și încă {{count}} rezultate."
@@ -335,7 +339,8 @@
 			"action-copy-screenshot": "Copiază captura de ecran",
 			"tab-title": "Graficul {{displayText}}",
 			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "Referințe",
@@ -459,6 +464,7 @@
 			"option-template-file": "Locația fișierului șablon",
 			"option-template-file-description": "Calea fișierului pentru șablon.",
 			"option-template-file-placeholder": "Exemplu: director1/nota",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Nu am reușit să creez nota Zettelkasten. Fișierul șablon \"{{template}}\" nu a fost găsit."
 		},
 		"random-note": {
@@ -518,6 +524,11 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
+			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
 		}
 	},
 	"nouns": {

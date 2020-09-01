@@ -271,6 +271,7 @@
 			"name": "파일 탐색기",
 			"desc": "워크스페이스 안에 모든 파일 보기.",
 			"action-create-note": "새로운 노트 만들기",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "새 노트",
 			"action-new-folder": "새 폴더",
 			"action-change-sort": "순서 변경하기",
@@ -280,6 +281,8 @@
 			"label-sort-z-to-a": "파일 이름 역순 (Z ~ A)",
 			"label-sort-new-to-old": "편집 시간 순서 (최신부터)",
 			"label-sort-old-to-new": "편집 시간 역순 (옛날부터)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "새 노트",
 			"menu-opt-new-folder": "새 폴더",
 			"menu-opt-set-attachment-folder": "첨부파일 폴더로 설정",
@@ -310,6 +313,7 @@
 			"label-match-file-path": "파일 경로 검색: ",
 			"label-match-file-name": "파일 이름 검색: ",
 			"label-match-content": "검색 결과: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "검색 결과가 없습니다.",
 			"matches-with-count": "... 그리고 {{count}}개 더.",
 			"matches-with-count_plural": "... 그리고 {{count}}개 더."
@@ -335,7 +339,8 @@
 			"action-copy-screenshot": "스크린샷 복사",
 			"tab-title": "{{displayText}} 그래프",
 			"tooltip-drag-to-adjust": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정.",
-			"tooltip-drag-to-adjust_plural": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정."
+			"tooltip-drag-to-adjust_plural": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -459,6 +464,7 @@
 			"option-template-file": "템플릿 파일 경로",
 			"option-template-file-description": "템플릿으로 사용할 파일 경로.",
 			"option-template-file-placeholder": "예시: 폴더1/노트",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Zettelkasten 노트를 만드는데 실패했습니다. 템플릿 파일 \"{{template}}\" 을 찾지 못했습니다."
 		},
 		"random-note": {
@@ -518,6 +524,11 @@
 			"msg-fail-invalid-folder": "템플릿을 불러오는데 실패했습니다. 폴더 경로를 다시 확인해주세요.",
 			"msg-fail-folder-not-found": "템플릿을 불러오는데 실패했습니다. \"{{folderOption}}\" 폴더를 찾을 수 없습니다.",
 			"prompt-type-template": "템플릿 이름 검색..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
+			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
 		}
 	},
 	"nouns": {
