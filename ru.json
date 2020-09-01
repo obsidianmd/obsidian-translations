@@ -271,7 +271,7 @@
 			"name": "Файловый менеджер",
 			"desc": "Показывает все файлы вашего хранилища.",
 			"action-create-note": "Создать новую заметку",
-			"action-create-note-in-new-pane": "Create note in new pane",
+			"action-create-note-in-new-pane": "Создать заметку в новой области",
 			"action-new-note": "Новая заметка",
 			"action-new-folder": "Новая папка",
 			"action-change-sort": "Изменить порядок сортировки",
@@ -281,8 +281,8 @@
 			"label-sort-z-to-a": "Сортировать по имени файла (Z -> A)",
 			"label-sort-new-to-old": "Сортировать по времени последнего редактирования (от новых к старым)",
 			"label-sort-old-to-new": "Сортировать по времени последнего редактирования (от старых к новым)",
-			"label-sort-created-old-to-new": "Created time (old to new)",
-			"label-sort-created-new-to-old": "Created time (new to old)",
+			"label-sort-created-old-to-new": "Сортировать по времени создания (от старых к новым)",
+			"label-sort-created-new-to-old": "Сортировать по времени создания (от новых к старым)",
 			"menu-opt-new-note": "Новая заметка",
 			"menu-opt-new-folder": "Новая папка",
 			"menu-opt-set-attachment-folder": "Установить как папку для вложенных файлов",
@@ -313,7 +313,7 @@
 			"label-match-file-path": "Совпадает с путем файла: ",
 			"label-match-file-name": "Совпадает с именем файла: ",
 			"label-match-content": "В содержимом файла: ",
-			"label-match-tag": "Match tag: ",
+			"label-match-tag": "Совпадает с тэгом: ",
 			"label-no-matches": "Совпадений не найдено.",
 			"matches-with-count": "... и еще {{count}} совпадения.",
 			"matches-with-count_plural": "... и еще {{count}} совпадений."
@@ -340,7 +340,7 @@
 			"tab-title": "Граф {{displayText}}",
 			"tooltip-drag-to-adjust": "Глубина отображения связей: {{count}}",
 			"tooltip-drag-to-adjust_plural": "Глубина отображения связей: {{count}}",
-			"tooltip-show-interlinks": "Show links between neighbors."
+			"tooltip-show-interlinks": "Показывать связи с соседними заметками."
 		},
 		"backlinks": {
 			"name": "Обратные ссылки",
@@ -464,7 +464,7 @@
 			"option-template-file": "Расположение шаблона",
 			"option-template-file-description": "Путь к файлу, который будет использоваться как шаблон.",
 			"option-template-file-placeholder": "Пример: папка1/заметка",
-			"option-id-format": "Zettel ID format",
+			"option-id-format": "Формат Zettel ID",
 			"msg-template-file-not-found": "Не получилось создать Zettelkasten-заметку. Файл шаблона \"{{template}}\" не найден."
 		},
 		"random-note": {
@@ -526,9 +526,9 @@
 			"prompt-type-template": "Введите имя шаблона..."
 		},
 		"translucency": {
-			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"name": "Полупрозрачное окно",
+			"desc": "Добавляет интерфейсу ощущения глубины, особенно в темном режиме. Не работает под Линукс.",
+			"message-upgrade-installer-for-translucency": "Скачайте свежий файл установки и переустановите Obsidian, чтобы включить эффект полупрозрачности."
 		}
 	},
 	"nouns": {
