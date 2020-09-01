@@ -271,6 +271,7 @@
 			"name": "File explorer",
 			"desc": "Lihat semua file di dalam vault Anda.",
 			"action-create-note": "Buat catatan baru",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Catatan baru",
 			"action-new-folder": "Folder baru",
 			"action-change-sort": "Ubah tata urutan",
@@ -280,6 +281,8 @@
 			"label-sort-z-to-a": "Urutkan berdasarkan name file (Z to A)",
 			"label-sort-new-to-old": "Urutkan berdasarkan waktu pengeditan (baru ke lama)",
 			"label-sort-old-to-new": "Urutkan berdasarkan waktu pengeditan (lama ke baru)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Catatan baru",
 			"menu-opt-new-folder": "Folder baru",
 			"menu-opt-set-attachment-folder": "Tetapkan sebagai folder lampiran",
@@ -310,6 +313,7 @@
 			"label-match-file-path": "Cari lokasi file: ",
 			"label-match-file-name": "Cari nama file: ",
 			"label-match-content": "Cari konten file: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Pencarian tidak ditemukan.",
 			"matches-with-count": "... dan {{count}} pencarian yang sesuai.",
 			"matches-with-count_plural": "... dan {{count}} pencarian yang sesuai."
@@ -335,7 +339,8 @@
 			"action-copy-screenshot": "Salin tangkapan layar",
 			"tab-title": "Grafik {{displayText}}",
 			"tooltip-drag-to-adjust": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Seret untuk mengatur.",
-			"tooltip-drag-to-adjust_plural": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Seret untuk mengatur."
+			"tooltip-drag-to-adjust_plural": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Seret untuk mengatur.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -459,6 +464,7 @@
 			"option-template-file": "Lokasi file template",
 			"option-template-file-description": "Lokasi file yang digunakan sebagai template.",
 			"option-template-file-placeholder": "Contoh: folder1/file",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Gagal membuat catatan Zettelkasten. File template \"{{template}}\" tidak ditemukan."
 		},
 		"random-note": {
@@ -518,6 +524,11 @@
 			"msg-fail-invalid-folder": "Gagal untuk mencantumkan template. Folder template tidak valid.",
 			"msg-fail-folder-not-found": "Gagal untuk mencantumkan template. Folder \"{{folderOption}}\" tidak ditemukan.",
 			"prompt-type-template": "Ketik nama template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
+			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
 		}
 	},
 	"nouns": {
