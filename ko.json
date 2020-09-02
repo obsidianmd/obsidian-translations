@@ -14,10 +14,10 @@
 			"option-readable-line-description": "글줄의 길이를 제한시킵니다. 화면에 글이 덜 들어가지만, 문단을 읽기 편해집니다.",
 			"option-strict-line-break": "개행 규칙 따르기",
 			"option-strict-line-break-description": "프리뷰 모드에서 마크다운의 서식대로 개행 한번한 것은 무시합니다. 프리뷰 모드에서 개행 한번 한걸 보고 싶으시면 이걸 꺼주세요.",
-			"option-show-frontmatter": "Show frontmatter",
-			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
+			"option-show-frontmatter": "프론트 매터 보여주기",
+			"option-show-frontmatter-description": "프리뷰 모드에서 프론트 매터를 코드 블록으로 보여줍니다. 프론트매터를 숨기고 싶다면 꺼주세요.",
+			"option-use-markdown-links": "마크다운 링크를 사용하기",
+			"option-use-markdown-links-description": "링크 자동완성이 링크 혹은 이미지를 위키링크 대신 마크다운 링크로 완성시킵니다.",
 			"option-auto-pair-brackets": "괄호 자동 생성",
 			"option-auto-pair-brackets-description": "닫는 괄호와 따옴표가 자동으로 생성합니다.",
 			"option-auto-pair-markdown": "마크다운 자동 생성",
@@ -84,7 +84,7 @@
 			"label-license-key": "제품 키",
 			"license-key-placeholder": "제품 키를 입력해주세요.",
 			"label-enter-commercial-license": "상업용 제품 키를 입력해주세요: ",
-			"label-activate-license": "제품키 등록하기",
+			"label-activate-license": "제품 키 등록하기",
 			"button-activate": "등록",
 			"label-unknown-version": "알수없음",
 			"label-current-version": "현재 버전: ",
@@ -108,11 +108,11 @@
 			"option-language-description": "언어 바꾸기.",
 			"option-insider-build": "내부 빌드 받기",
 			"option-insider-build-description": "자동 업데이트로 내부 빌드를 사용해봅니다. 내부 빌드들은 시험이 덜 되어 안정화가 덜 되어있습니다.",
-			"label-license": "제품키",
-			"label-your-commercial-license": "사용중인 상업용 제품키: ",
+			"label-license": "제품 키",
+			"label-your-commercial-license": "사용중인 상업용 제품 키: ",
 			"label-commercial-license-info": "회사: \"{{company}}\" , 사용자 수: {{seats}}, 유효기간: {{expiry}}.",
 			"label-validating-commercial-license": "확인 중...",
-			"label-invalid-commercial-license": "제품키 불량: ",
+			"label-invalid-commercial-license": "제품 키 불량: ",
 			"button-activate-commercial-license": "상업용 제품 키 등록하기",
 			"label-personal-license": " 개인 제품 키. ",
 			"label-thank-you-for-support": "후원해주셔서 감사합니다!",
@@ -145,8 +145,8 @@
 			"message-login-failed": "로그인에 실패했습니다, 이메일과 비밀번호를 다시 확인해주세요.",
 			"label-no-account": "계정이 없으신가요? ",
 			"link-sign-up-now": "회원가입",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
-			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+			"message-get-community-badges": "제품 키를 등록하고 24시간 이후에도 커뮤니티 뱃지를 받지 못하셨다면 support@obsidian.md로 문의해주세요",
+			"message-obtain-commercial-license": "상업용 제품 키를 구하시고 싶으시면 {{pricingPageLink}}를 방문해주세요."
 		}
 	},
 	"editor": {
@@ -340,7 +340,7 @@
 			"tab-title": "{{displayText}} 그래프",
 			"tooltip-drag-to-adjust": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정.",
 			"tooltip-drag-to-adjust_plural": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정.",
-			"tooltip-show-interlinks": "Show links between neighbors."
+			"tooltip-show-interlinks": "노트 사이 링크 전부 보여주기."
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -526,9 +526,9 @@
 			"prompt-type-template": "템플릿 이름 검색..."
 		},
 		"translucency": {
-			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"name": "반투명 창",
+			"desc": "반투명한 효과를 켜서 깊이감을 향상시킵니다. 다크 모드에서 가장 좋은 효과를 볼 수 있습니다. 현재 리눅스에서는 지원하지 않습니다.",
+			"message-upgrade-installer-for-translucency": "반투명 창을 사용하기 위해서는 Obsidian을 최신 인스톨러로 다시 설치해주세요."
 		}
 	},
 	"nouns": {
