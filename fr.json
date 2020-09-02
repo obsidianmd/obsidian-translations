@@ -57,7 +57,7 @@
 			"option-link-autocompleted-format-description": "Quels liens insérer lors de la génération automatique de liens internes.",
 			"option-choice-shortest-linktext": "Chemin le plus court si possible",
 			"option-choice-relative-path": "Chemin relatif au fichier",
-			"option-choice-absolute-path": "Chemin absolue dans le projet",
+			"option-choice-absolute-path": "Chemin absolu dans le projet",
 			"option-attachment-folder-path": "Chemin du dossier des pièces jointes",
 			"option-attachment-folder-path-description": "Les fichiers joints nouvellement créés apparaîtront ici. Cela inclut les images créées par glisser-déposer ou collées et les enregistrements audio."
 		},
@@ -271,15 +271,18 @@
 			"name": "Explorateur de fichiers",
 			"desc": "Voir tous les fichiers de votre projet.",
 			"action-create-note": "Créer une nouvelle note",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Nouvelle note",
 			"action-new-folder": "Nouveau dossier",
 			"action-change-sort": "Modifier l'ordre de triage",
-			"action-reveal-file": "Révèle le fichier dans l'explorateur de fichiers",
-			"action-reveal-active-file": "Révèle le fichier actif dans l'explorateur de fichiers",
+			"action-reveal-file": "Affiche le fichier dans l'explorateur de fichiers",
+			"action-reveal-active-file": "Affiche le fichier actif dans l'explorateur de fichiers",
 			"label-sort-a-to-z": "Trier par nom de fichier (A à Z)",
 			"label-sort-z-to-a": "Trier par nom de fichier (Z à A)",
 			"label-sort-new-to-old": "Trier par heure d'édition (nouveau à ancien)",
 			"label-sort-old-to-new": "Trier par heure d'édition (ancien à nouveau)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Nouvelle note",
 			"menu-opt-new-folder": "Nouveau dossier",
 			"menu-opt-set-attachment-folder": "Définir comme dossier de pièces jointes",
@@ -309,7 +312,8 @@
 			"label-case-insensitive": "Insensible à la casse",
 			"label-match-file-path": "Correspond au chemin d'accès au fichier : ",
 			"label-match-file-name": "Correspond au nom du fichier : ",
-			"label-match-content": "Match file content: ",
+			"label-match-content": "Correspond au contenu : ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Aucun résultat.",
 			"matches-with-count": "... et {{count}} autre résultat.",
 			"matches-with-count_plural": "... et {{count}} autres résultats."
@@ -334,8 +338,9 @@
 			"action-open-local": "Ouvrir la vue graphique autour du fichier courant",
 			"action-copy-screenshot": "Copier la capture d'écran",
 			"tab-title": "Graphique de {{displayText}}",
-			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"tooltip-drag-to-adjust": "Afficher les nœuds à {{count}} nœud de distance. Glisser pour ajuster.",
+			"tooltip-drag-to-adjust_plural": "Afficher les nœuds à {{count}} nœuds de distance. Glisser pour ajuster.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "Liens retours",
@@ -459,6 +464,7 @@
 			"option-template-file": "Emplacement du fichier de modèle",
 			"option-template-file-description": "Le chemin du fichier à utiliser comme modèle.",
 			"option-template-file-placeholder": "Exemple: dossier1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Échec de la création de la note Zettelkasten. Fichier de modèle \"{{template}}\" non trouvé."
 		},
 		"random-note": {
@@ -501,7 +507,7 @@
 		},
 		"templates": {
 			"name": "Modèles",
-			"desc": "Insert template content from a folder of template files.",
+			"desc": "Insérer le contenu d'un modèle à partir d'un dossier de fichiers de modèles.",
 			"action-insert": "Insérer le modèle",
 			"option-template-folder-location": "Emmplacement du dossier modèle",
 			"option-template-folder-location-description": "Les fichiers dans ce dossier seront disponibles en modèles.",
@@ -515,9 +521,14 @@
 			"instruction-insert": "pour insérer le modèle",
 			"instruction-dismiss": "pour annuler",
 			"msg-no-templates-found": "Aucun modèle trouvé",
-			"msg-fail-invalid-folder": "Échec du listage des modèles. Le dossier modèle n'est pas valide.",
-			"msg-fail-folder-not-found": "Échec du listage des modèles. Le dossier \"{{folderOption}}\" est introuvable.",
+			"msg-fail-invalid-folder": "Échec de l'affichage de la liste des modèles. Le dossier modèle n'est pas valide.",
+			"msg-fail-folder-not-found": "Échec de l'affichage de la liste des modèles. Le dossier \"{{folderOption}}\" est introuvable.",
 			"prompt-type-template": "Saisir le nom d'un modèle..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
+			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
 		}
 	},
 	"nouns": {
