@@ -55,9 +55,9 @@
 			"option-new-file-folder-path-description": "Catatan yang baru dibuat akan muncul di dalam folder ini. Pengaturan ekstensi akan mengesampingkan ini.",
 			"option-link-autocompleted-format": "Format link baru",
 			"option-link-autocompleted-format-description": "Link apa yang harus disisipkan saat membuat link internal secara otomatis.",
-			"option-choice-shortest-linktext": "Yang terdekat jika memungkinkan",
-			"option-choice-relative-path": "Yang relatif terhadap file",
-			"option-choice-absolute-path": "Yang absolut terhadap vault",
+			"option-choice-shortest-linktext": "Jalur terdekat jika memungkinkan",
+			"option-choice-relative-path": "Jalur relatif terhadap file",
+			"option-choice-absolute-path": "Jalur absolut dalam vault",
 			"option-attachment-folder-path": "Lokasi folder lampiran",
 			"option-attachment-folder-path-description": "File lampiran baru akan ditaruh di sini. Itu termasuk gambar yang disalin ke Obsidian dan rekaman suara."
 		},
@@ -65,8 +65,8 @@
 			"name": "Tampilan",
 			"option-base-mode": "Mode dasar",
 			"option-base-mode-description": "Skema warna dasar Obsidian.",
-			"dark-mode": "Mode Gelap",
-			"light-mode": "Mode Terang",
+			"dark-mode": "Mode gelap",
+			"light-mode": "Mode terang",
 			"option-community-themes": "Buka tema-tema komunitas",
 			"option-community-themes-description": "Tampilkan dan gunakan tema-tema luar biasa yang dibuat oleh komunitas.",
 			"see-community-themes": "Lihat tema-tema komunitas"
@@ -160,7 +160,7 @@
 		},
 		"link-suggestion": {
 			"label-type-hash": "Ketik #",
-			"label-link-heading": "untuk menautkan ke heading",
+			"label-link-heading": "untuk menghubungkan ke heading",
 			"label-type-pipe": "Ketik |",
 			"label-change-display-text": "untuk mengganti tampilan teks"
 		},
@@ -180,13 +180,13 @@
 		"help": "Bantuan",
 		"settings": "Pengaturan",
 		"drag-to-rearrange": "Seret untuk mengatur ulang",
-		"msg-switched-to-preview": "Mengganti mode tampilan ke mode peninjauan.",
-		"msg-switched-to-edit": "Mengganti mode tampilan ke mode pengeditan.",
+		"msg-switched-to-preview": "Mengganti mode tampilan default ke peninjauan.",
+		"msg-switched-to-edit": "Mengganti mode tampilan default ke pengeditan.",
 		"empty-state": {
-			"no-file-open": "Tidak ada file yang terbuka",
+			"no-file-open": "Tidak ada file yang dibuka",
 			"create-new-file": "Buat file baru",
 			"go-to-file": "Buka file",
-			"see-recent-files": "Lihat file terakhir dibuka",
+			"see-recent-files": "Lihat file yang terakhir dibuka",
 			"close": "Tutup"
 		},
 		"menu": {
@@ -196,11 +196,11 @@
 			"replace": "Ganti...",
 			"edit": "Edit",
 			"preview": "Tinjau",
-			"more-options": "Pilihan lain",
+			"more-options": "Opsi lain",
 			"close": "Tutup",
 			"pin": "Pin",
-			"unlink-pane": "Lepaskan tautan panel",
-			"link-pane": "Tautkan dengan panel...",
+			"unlink-pane": "Lepaskan hubungan panel",
+			"link-pane": "Hubungkan dengan panel...",
 			"delete-file": "Hapus file"
 		},
 		"tooltip": {
@@ -233,7 +233,7 @@
 		"close-other-panes": "Tutup semua panel lainnya",
 		"toggle-left-sidebar": "Buka/tutup bilah samping kiri",
 		"toggle-right-sidebar": "Buka/tutup bilah samping kanan",
-		"toggle-default-view-mode": "Aktifkan/matikan mode tampilan default",
+		"toggle-default-view-mode": "Ubah mode tampilan default",
 		"toggle-fold": "Gulung sebuah heading/indentasi",
 		"fold-all": "Gulung semua heading dan indentasi",
 		"unfold-all": "Jabarkan semua heading dan indentasi",
@@ -270,16 +270,19 @@
 		"file-explorer": {
 			"name": "File explorer",
 			"desc": "Lihat semua file di dalam vault Anda.",
-			"action-create-note": "Buat catatan baru",
+			"action-create-note": "Buat catatan",
+			"action-create-note-in-new-pane": "Buat catatan di panel baru",
 			"action-new-note": "Catatan baru",
 			"action-new-folder": "Folder baru",
 			"action-change-sort": "Ubah tata urutan",
 			"action-reveal-file": "Perlihatkan file dalam file explorer",
 			"action-reveal-active-file": "Perlihatkan file yang aktif dalam file explorer",
-			"label-sort-a-to-z": "Urutkan berdasarkan nama file (A to Z)",
-			"label-sort-z-to-a": "Urutkan berdasarkan name file (Z to A)",
-			"label-sort-new-to-old": "Urutkan berdasarkan waktu pengeditan (baru ke lama)",
-			"label-sort-old-to-new": "Urutkan berdasarkan waktu pengeditan (lama ke baru)",
+			"label-sort-a-to-z": "Berdasarkan nama file (A to Z)",
+			"label-sort-z-to-a": "Berdasarkan name file (Z to A)",
+			"label-sort-new-to-old": "Berdasarkan waktu pengeditan (baru ke lama)",
+			"label-sort-old-to-new": "Berdasarkan waktu pengeditan (lama ke baru)",
+			"label-sort-created-old-to-new": "Berdasarkan waktu pembuatan (lama ke baru)",
+			"label-sort-created-new-to-old": "Berdasarkan waktu pembuatan (baru ke lama)",
 			"menu-opt-new-note": "Catatan baru",
 			"menu-opt-new-folder": "Folder baru",
 			"menu-opt-set-attachment-folder": "Tetapkan sebagai folder lampiran",
@@ -310,6 +313,7 @@
 			"label-match-file-path": "Cari lokasi file: ",
 			"label-match-file-name": "Cari nama file: ",
 			"label-match-content": "Cari konten file: ",
+			"label-match-tag": "Cari tag: ",
 			"label-no-matches": "Pencarian tidak ditemukan.",
 			"matches-with-count": "... dan {{count}} pencarian yang sesuai.",
 			"matches-with-count_plural": "... dan {{count}} pencarian yang sesuai."
@@ -328,25 +332,26 @@
 			"label-enter-to-create": "Enter untuk membuat"
 		},
 		"graph-view": {
-			"name": "Penampilan grafik",
-			"desc": "Lihat gambaran grafik bagaimana catatan-catatan dihubungkan.",
-			"action-open": "Buka penampilan grafik",
+			"name": "Grafik catatan",
+			"desc": "Lihat sebuah grafik yang menunjukan bagaimana catatan-catatan saling terhubung.",
+			"action-open": "Buka grafik catatan",
 			"action-open-local": "Buka grafik lokal",
 			"action-copy-screenshot": "Salin tangkapan layar",
 			"tab-title": "Grafik {{displayText}}",
-			"tooltip-drag-to-adjust": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Seret untuk mengatur.",
-			"tooltip-drag-to-adjust_plural": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Seret untuk mengatur."
+			"tooltip-drag-to-adjust": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Geser untuk mengatur.",
+			"tooltip-drag-to-adjust_plural": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Geser untuk mengatur.",
+			"tooltip-show-interlinks": "Tampilkan link antar catatan bertetangga."
 		},
 		"backlinks": {
 			"name": "Backlinks",
 			"desc": "Tampilkan peninjauan link di bilah status.",
 			"action-open": "Buka backlinks",
-			"action-open-for-current": "Buka backlinks file ini",
+			"action-open-for-current": "Buka backlinks",
 			"label-linked-mentions": "Link yang terhubung",
 			"label-no-backlinks": "Tidak ada link yang ditemukan.",
 			"label-unlinked-mentions": "Link yang tidak terhubung",
 			"label-link-button-text": "Hubungkan",
-			"tab-title": "Peninjauan link {{displayText}}",
+			"tab-title": "Backlink {{displayText}}",
 			"label-no-unlinked-mentions": "Tidak ditemukan link yang tidak terhubung.",
 			"ellipsis": "..."
 		},
@@ -459,12 +464,13 @@
 			"option-template-file": "Lokasi file template",
 			"option-template-file-description": "Lokasi file yang digunakan sebagai template.",
 			"option-template-file-placeholder": "Contoh: folder1/file",
+			"option-id-format": "Format ID Zettel",
 			"msg-template-file-not-found": "Gagal membuat catatan Zettelkasten. File template \"{{template}}\" tidak ditemukan."
 		},
 		"random-note": {
 			"name": "Catatan acak",
-			"desc": "Buka sebuah catatan hasil pengacakan. Berguna untuk mengulas ulang dan menemukan ide.",
-			"action-open": "Buka catatan acak"
+			"desc": "Buka sebuah catatan secara acak. Berguna untuk mengulas ulang dan menemukan ide.",
+			"action-open": "Buka catatan secara acak"
 		},
 		"outline": {
 			"name": "Outline",
@@ -518,6 +524,11 @@
 			"msg-fail-invalid-folder": "Gagal untuk mencantumkan template. Folder template tidak valid.",
 			"msg-fail-folder-not-found": "Gagal untuk mencantumkan template. Folder \"{{folderOption}}\" tidak ditemukan.",
 			"prompt-type-template": "Ketik nama template..."
+		},
+		"translucency": {
+			"name": "Jendela transparan",
+			"desc": "Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux.",
+			"message-upgrade-installer-for-translucency": "Harap gunakan installer terbaru untuk menginstal ulang Obsidian untuk mengaktifkan efek transparan."
 		}
 	},
 	"nouns": {
