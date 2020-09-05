@@ -13,11 +13,11 @@
 			"option-readable-line-length": "縮減欄寬",
 			"option-readable-line-description": "開啟後將限制每行字數，使螢幕顯示的內容減少，但使長段落更具可讀性。",
 			"option-strict-line-break": "精確的換行符號",
-			"option-strict-line-break-description": "在預覽模式下，根據Markdown語法忽略單個換行符號。將此選項關閉可在預覽中顯示單個換行符號。",
+			"option-strict-line-break-description": "在預覽模式下，根據Markdown語法忽略單行換行符號。將此選項關閉可在預覽中顯示單行換行符號。",
 			"option-show-frontmatter": "顯示正文前頁",
 			"option-show-frontmatter-description": "在預覽狀態時顯示正文前頁。關閉選項則隱藏前頁內容。",
 			"option-use-markdown-links": "使用Markdown連結格式",
-			"option-use-markdown-links-description": "自動補全的連結格式是否採用標準的Markdown格式。啟用的話`[[]]`變成`[]()`",
+			"option-use-markdown-links-description": "自動補全的連結格式是否採用標準的Markdown格式。啟用的話 [[]]變成[]()",
 			"option-auto-pair-brackets": "自動補全雙括號",
 			"option-auto-pair-brackets-description": "自動補全括號和引號。",
 			"option-auto-pair-markdown": "自動補全Markdown語法",
@@ -25,7 +25,7 @@
 			"option-smart-indent-lists": "智慧列表",
 			"option-smart-indent-lists-description": "開啟後Obsidian將根據換行和縮排情況自動調整列表符號。",
 			"option-fold-heading": "摺疊標題",
-			"option-fold-heading-description": "把相關的正文內容都摺疊到標題行。",
+			"option-fold-heading-description": "將標題行下層所有文字都摺疊到標題行。",
 			"option-fold-indent": "摺疊縮排",
 			"option-fold-indent-description": "把相同的縮排內容（如列表）摺疊起來。",
 			"option-show-line-number": "顯示行號",
@@ -53,8 +53,8 @@
 			"option-choice-specified-folder": "下方指定的資料夾",
 			"option-new-file-folder-path": "儲存新建筆記的資料夾",
 			"option-new-file-folder-path-description": "指定儲存新筆記的資料夾，外掛可能會修改此設定。",
-			"option-link-autocompleted-format": "內部連結樣式",
-			"option-link-autocompleted-format-description": "設定內部連結的插入形式。",
+			"option-link-autocompleted-format": "內部連結格式",
+			"option-link-autocompleted-format-description": "設定在筆記中引用其他文件時插入 [[ ]] 中的檔案路徑類型。",
 			"option-choice-shortest-linktext": "以儘可能簡短的形式插入",
 			"option-choice-relative-path": "插入對應當前檔案的相對路徑",
 			"option-choice-absolute-path": "插入對應儲存庫的絕對路徑",
@@ -92,7 +92,7 @@
 			"label-up-to-date": "您使用的是最新版本!",
 			"label-read-changelog": "閱讀更新日誌",
 			"label-manual-install-required": "您必須手動安裝最新版本。",
-			"label-download-link": "從此下載。",
+			"label-download-link": "由此下載。",
 			"label-new-version-ready": "準備安裝新版本。 ",
 			"label-relaunch-to-update": "重新啟動應用以進行更新。",
 			"label-disabled-updates": "更新已禁用。",
@@ -120,7 +120,7 @@
 		},
 		"account": {
 			"name": "帳戶",
-			"label-welcome": "歡迎您, {{name}}!",
+			"label-welcome": "歡迎您，{{name}}!",
 			"label-your-account-email": "您的帳戶信箱是 ",
 			"label-insider": "內測人士",
 			"label-supporter": "支持用戶",
@@ -146,7 +146,7 @@
 			"label-no-account": "沒有帳戶？ ",
 			"link-sign-up-now": "現在註冊",
 			"message-get-community-badges": "若在24小時後未取得註冊後的社群身分時，請寄信至 support@obsidian.md。",
-			"message-obtain-commercial-license": "欲取得商用授權請拜訪 {{pricingPageLink}}。"
+			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
 		}
 	},
 	"editor": {
@@ -199,7 +199,7 @@
 			"more-options": "更多選項",
 			"close": "關閉",
 			"pin": "釘選",
-			"unlink-pane": "未連結面板",
+			"unlink-pane": "取消面板連結",
 			"link-pane": "連結面板...",
 			"delete-file": "刪除檔案"
 		},
@@ -271,6 +271,7 @@
 			"name": "檔案管理器",
 			"desc": "查看儲存庫中所有檔案。",
 			"action-create-note": "新增筆記",
+			"action-create-note-in-new-pane": "在新面板建立筆記",
 			"action-new-note": "新增筆記",
 			"action-new-folder": "新增資料夾",
 			"action-change-sort": "排序",
@@ -280,6 +281,8 @@
 			"label-sort-z-to-a": "按檔案名降冪排列 (Z-A)",
 			"label-sort-new-to-old": "按編輯時間排序（從新到舊）",
 			"label-sort-old-to-new": "按編輯時間排序（從舊到新）",
+			"label-sort-created-old-to-new": "按建檔時間排序（從舊到新）",
+			"label-sort-created-new-to-old": "按建檔時間排序（從新到舊）",
 			"menu-opt-new-note": "新增筆記",
 			"menu-opt-new-folder": "新增資料夾",
 			"menu-opt-set-attachment-folder": "將其設定為附件資料夾",
@@ -309,7 +312,8 @@
 			"label-case-insensitive": "忽略大小寫",
 			"label-match-file-path": "匹配檔案路徑: ",
 			"label-match-file-name": "匹配檔案名: ",
-			"label-match-content": "Match file content: ",
+			"label-match-content": "匹配檔案內容: ",
+			"label-match-tag": "匹配標籤: ",
 			"label-no-matches": "未找到匹配結果。",
 			"matches-with-count": "... 文中還有 {{count}} 處匹配。",
 			"matches-with-count_plural": "... 文中還有 {{count}} 處匹配。"
@@ -334,8 +338,9 @@
 			"action-open-local": "開啟當前筆記關聯圖",
 			"action-copy-screenshot": "複製螢幕截圖",
 			"tab-title": "{{displayText}} 的關聯圖",
-			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"tooltip-drag-to-adjust": "顯示 {{count}} 個階層內的節點；以拖拉調整階層。",
+			"tooltip-drag-to-adjust_plural": "顯示 {{count}} 個階層內的節點；以拖拉調整階層。",
+			"tooltip-show-interlinks": "顯示鄰近節點的內部連結。"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -459,6 +464,7 @@
 			"option-template-file": "樣板檔案位置",
 			"option-template-file-description": "儲存樣板檔案的資料夾路徑。",
 			"option-template-file-placeholder": "例: 資料夾/樣板檔案.md",
+			"option-id-format": "ZK卡片 ID 格式",
 			"msg-template-file-not-found": "未成功建立ZK卡片。 未找到 \"{{template}}\" 樣板檔案。"
 		},
 		"random-note": {
@@ -518,6 +524,11 @@
 			"msg-fail-invalid-folder": "無法列示樣板清單。樣板資料夾設定錯誤。",
 			"msg-fail-folder-not-found": "無法列示樣板清單。無此資料夾：\"{{folderOption}}\"。",
 			"prompt-type-template": "輸入樣板檔名..."
+		},
+		"translucency": {
+			"name": "半透明視窗",
+			"desc": "啟用半透明特效以加強深度感，最適合使用於黑暗主題。未支援 Linux。",
+			"message-upgrade-installer-for-translucency": "請使用最新的安裝程式重新安裝 Obsidian 以啟用半透明特效。"
 		}
 	},
 	"nouns": {
