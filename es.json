@@ -14,10 +14,10 @@
                         "option-readable-line-description": "Limitar el máximo de la longitud de línea. Muestra menos contenido en pantalla, pero los párrafos largos son más legibles.",
                         "option-strict-line-break": "Saltos de línea estrictos",
                         "option-strict-line-break-description": "En modo previsualización, ignora los saltos de una sola línea según las especificaciones de Markdown. Desactivalo para que los saltos de una sola línea se muestren en previsualización.",
-                        "option-show-frontmatter": "Show frontmatter",
-                        "option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-                        "option-use-markdown-links": "Use markdown links",
-                        "option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
+                        "option-show-frontmatter": "Mostrar frontmatter",
+                        "option-show-frontmatter-description": "En modo de vista previa, mostrar frantmatter como un bloque de código. Desactivelo para ocultar la sección frontmatter.",
+                        "option-use-markdown-links": "Usar enlaces markdown",
+                        "option-use-markdown-links-description": "Las sugerencias de enlace autocompletan los enlaces markdown y las imágenes en lugar de wikilinks.",
                         "option-auto-pair-brackets": "Emparejamiento automático de corchetes",
                         "option-auto-pair-brackets-description": "Empareja automáticamente los corchetes y comillas.",
                         "option-auto-pair-markdown": "Emparejamiento automático de sintaxis Markdown",
@@ -48,7 +48,7 @@
                         "option-always-update-links-description": "Si los enlaces se actualizan automaticamente después de renombrar un archivo o preguntar.",
                         "option-new-note-location": "Lugar por defecto para nuevas notas",
                         "option-new-note-location-description": "Dónde poner las nuevas notas. Es sobreescrito por configuraciones de plugins.",
-                        "option-choice-vault-root": "Ruta raíz de Vault",
+                        "option-choice-vault-root": "Ruta raíz de bóveda",
                         "option-choice-current-folder": "Misma carpeta donde está el archivo",
                         "option-choice-specified-folder": "En la carpeta especificada debajo",
                         "option-new-file-folder-path": "Carpeta en la que crear nuevas notas",
@@ -57,7 +57,7 @@
                         "option-link-autocompleted-format-description": "Qué enlaces insertar cuando se autogeneran los enlaces internos.",
                         "option-choice-shortest-linktext": "Camino más corto cuando sea posible",
                         "option-choice-relative-path": "Ruta relativa al archivo",
-                        "option-choice-absolute-path": "Ruta absoluta en el vault",
+                        "option-choice-absolute-path": "Ruta absoluta en el bóveda",
                         "option-attachment-folder-path": "Ruta de la carpeta de adjuntos",
                         "option-attachment-folder-path-description": "Los adjuntos nuevos aparecerán aquí. Incluye imágenes creadas mediante drag al arrastrar y soltar o al pegar, y grabaciones de audio."
                 },
@@ -89,7 +89,7 @@
                         "label-unknown-version": "Desconocido",
                         "label-current-version": "Versión actual: ",
                         "label-install-version": "(Versión del instalador: {{version}})",
-                        "label-up-to-date": "¡Su app esta actualizada!",
+                        "label-up-to-date": "¡Su aplicación está actualizada!",
                         "label-read-changelog": "Leer el log de cambios.",
                         "label-manual-install-required": "Necesita instalar la última versión de forma manual.",
                         "label-download-link": "Descargar aquí.",
@@ -142,11 +142,11 @@
                         "message-empty-email": "Email no puede estar vacío.",
                         "message-invalid-email": "Email no es válido.",
                         "message-empty-password": "Contraseña no puede estar vacía.",
-                        "message-login-failed": "El login falló. Por favor, revise su email y contraseña.",
+                        "message-login-failed": "El ingreso falló. Por favor, revise su email y contraseña.",
                         "label-no-account": "¿Aún no tiene una cuenta? ",
                         "link-sign-up-now": "Regístrese ahora",
-                        "message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
-                        "message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+                        "message-get-community-badges": "Para las insignias de comunidad, por favor envíe un correo a support@obsidian.md si no las ha recibido en 24 horas después de obtener su licencia.",
+                        "message-obtain-commercial-license": "Para obtener una licencia comercial, visite {{pricingPageLink}}."
                 }
         },
         "editor": {
@@ -328,14 +328,14 @@
                         "label-enter-to-create": "Presione Enter para crear"
                 },
                 "graph-view": {
-                        "name": "Vista de Gráfo",
+                        "name": "Vista de Gráfico",
                         "desc": "Vea un resumen gráfico de cuales notas están enlazadas con cuales.",
-                        "action-open": "Abrir vista de gráfo",
-                        "action-open-local": "Abrir gráfo local",
+                        "action-open": "Abrir vista de gráfico",
+                        "action-open-local": "Abrir gráfico local",
                         "action-copy-screenshot": "Copiar captura de pantalla",
-                        "tab-title": "Gráfo de {{displayText}}",
-                        "tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-                        "tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+                        "tab-title": "Gráfico de {{displayText}}",
+                        "tooltip-drag-to-adjust": "Mostrando nodos, {{count}} conexión fuera. Arrastre para ajustar.",
+                        "tooltip-drag-to-adjust_plural": "Mostrando nodos, {{count}} conexiones fuera. Arrastre para ajustar."
                 },
                 "backlinks": {
                         "name": "Backlinks",
@@ -376,8 +376,8 @@
                         "name": "Personalizar CSS",
                         "desc": "Lee \"obsidian.css\" en la bóveda y lo aplica.",
                         "setting-community-themes": "Temas de la comunidad",
-                        "msg-fetching-themes": "Fetching community theme data...",
-                        "prompt-filter": "Filter...",
+                        "msg-fetching-themes": "Obteniendo datos de los temas de la comunidad...",
+                        "prompt-filter": "Filtrar...",
                         "label-dark-mode-only": "Solo modo oscuro",
                         "label-light-mode-only": "Solo modo claro",
                         "label-preview": "Vista previa",
@@ -467,11 +467,11 @@
                         "action-open": "Abrir nota al azar"
                 },
                 "outline": {
-                        "name": "Outline",
-                        "desc": "Muestra el outline del archivo actual o el panel enlazado.",
-                        "action-open": "Abrir el outline",
-                        "action-open-pane": "Abrir el outline del archivo actual",
-                        "tab-title": "Outline de {{displayText}}",
+                        "name": "Esquema",
+                        "desc": "Muestra el esquema del archivo actual o el panel enlazado.",
+                        "action-open": "Abrir el esquema",
+                        "action-open-pane": "Abrir el esquema del archivo actual",
+                        "tab-title": "Esquema de {{displayText}}",
                         "label-no-headings": "No se encontraron encabezados."
                 },
                 "word-count": {
