@@ -246,7 +246,7 @@
 		"delete-paragraph": "Excluir parágrafo"
 	},
 	"dialogue": {
-		"label-link-affected": "Ira afetar os links {{links}} nos {{files}}.",
+		"label-link-affected": "Irá afetar os links {{links}} nos {{files}}.",
 		"msg-updated-links": "{{links}} atualizados em {{files}}.",
 		"label-update-links": "Atualizar links",
 		"label-confirm-update-link-to-file": "Deseja atualizar os links internos para esse arquivo?",
@@ -334,7 +334,7 @@
 			"action-open-local": "Abrir grafo local",
 			"action-copy-screenshot": "Copiar captura de tela",
 			"tab-title": "Grafo de {{displayText}}",
-			"tooltip-drag-to-adjust": "Mostrando  {{count}} coonexões. Arraste para ajustar.",
+			"tooltip-drag-to-adjust": "Mostrando  {{count}} conexões. Arraste para ajustar.",
 			"tooltip-drag-to-adjust_plural": "Mostrando {{count}} conexões. Arraste para ajustar."
 		},
 		"backlinks": {
@@ -374,7 +374,7 @@
 		},
 		"custom-css": {
 			"name": "CSS customizado",
-			"desc": "Utiliza o \"obsidian.css\" presente no cofre.",
+			"desc": "Utiliza o \"obsidian.css\" presente no vault.",
 			"setting-community-themes": "Temas da comunidade",
 			"msg-fetching-themes": "Buscando informações dos temas da comunidade",
 			"prompt-filter": "Filtrar...",
@@ -416,7 +416,7 @@
 			"zettelkasten-link-fixer-description": "Conserta links \"[[UID]]\" para completo \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Embelezador de link de Zettelkasten",
 			"zettelkasten-link-beautifier-description": "Conserta links \"[[UID]]\" e também os embeleza \"[[UID File Name|File Name]]\".",
-			"msg-all-files-warning": "Avisto: o importador converterá todos os arquivos do seu cofre, não apenas o arquivo atual.",
+			"msg-all-files-warning": "Avisto: o importador converterá todos os arquivos do seu vault, não apenas o arquivo atual.",
 			"msg-override-files-warning": "Seus arquivos serão sobrescritos. Faça back up de todos os seus arquivos antes de tentar a conversão.",
 			"label-start-conversion": "Começar a conversão",
 			"label-stop": "Parar",
@@ -441,25 +441,25 @@
 			"msg-no-previous": "Não há nota diária anterior a esta.",
 			"msg-no-next": "Nao há nota diária posterior a esta.",
 			"option-date-format": "Formato de data",
-			"label-refer-to-syntax": "Para maix sintaxe, confira: ",
+			"label-refer-to-syntax": "Para mais sintaxe, confira: ",
 			"label-syntax-link": "formato de referência",
 			"label-syntax-live-preview": "Aqui está como vai aparecer: ",
-			"option-new-file-location": "Nova localização de arquivo",
+			"option-new-file-location": "Local para arquivos novos",
 			"option-new-file-location-description": "O caminho da pasta para criar a nova nota diária.",
-			"option-template": "Localização do arquivo modelo",
+			"option-template": "Local do arquivo modelo",
 			"option-template-description": "O caminho do arquivo utilizado como modelo."
 		},
 		"zettelkasten-prefixer": {
-			"name": "prefixador de Zettelkasten",
-			"desc": "Criar uma nova nota com o formato Zettelkasten de identificação de 12 dígitos - AAAAMMDDHHII (Exemplos 202001010000).",
-			"action-create-note": "Criar nova nota de Zettelkasten",
-			"option-new-file-location": "Nova localização de arquivo",
-			"option-new-file-location-description": "O caminho da pasta para criar a nova nota de Zettelkasten.",
-			"msg-folder-not-found": "Falha ao criar a nota de Zettelkasten. Pasta \"{{folderOption}}\" não encontrada.",
-			"option-template-file": "Localização de arquivo modelo",
+			"name": "prefixador Zettelkasten",
+			"desc": "Criar uma nova nota com o formato Zettelkasten de identificação de 12 dígitos - YYYYMMDDHHII (Exemplo 202001010000).",
+			"action-create-note": "Criar nova nota Zettelkasten",
+			"option-new-file-location": "Local para arquivos novos",
+			"option-new-file-location-description": "O caminho da pasta para criar a nova nota Zettelkasten.",
+			"msg-folder-not-found": "Falha ao criar a nota Zettelkasten. Pasta \"{{folderOption}}\" não encontrada.",
+			"option-template-file": "Local do arquivo modelo",
 			"option-template-file-description": "O caminho do arquivo usado como modelo.",
 			"option-template-file-placeholder": "Exemplos: pasta1/nota",
-			"msg-template-file-not-found": "Falha na criação de nota de Zettelkasten. Arquivo modelo \"{{template}}\" não encontrado."
+			"msg-template-file-not-found": "Falha na criação de nota Zettelkasten. Arquivo modelo \"{{template}}\" não encontrado."
 		},
 		"random-note": {
 			"name": "Nota aleatória",
@@ -490,7 +490,7 @@
 			"action-stop": "Parar de gravar áudio",
 			"action-toggle": "Começar/parar gravação",
 			"msg-access-denied": "Acesso ao microfone foi negado. Habilite-o no painel de preferências.",
-			"msg-pending-grant": "Porfavor forneça permissão ao microfone.",
+			"msg-pending-grant": "Por favor forneça permissão ao microfone.",
 			"msg-no-microphone": "Nenhum microfone está conectado."
 		},
 		"open-with-default-app": {
@@ -500,8 +500,8 @@
 			"action-show-in-folder": "Mostrar na pasta"
 		},
 		"templates": {
-			"name": "Templates",
-			"desc": "Insert template content from a folder of template files.",
+			"name": "Modelos",
+			"desc": "Insira conteúdo padronizado a partir de uma pasta de modelos.",
 			"action-insert": "Inserir templates",
 			"option-template-folder-location": "Localização da pasta de templates",
 			"option-template-folder-location-description": "Arquivos nesta pasta serão templates.",
