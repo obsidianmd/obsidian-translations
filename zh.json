@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "在左侧显示行号。",
 			"option-use-tabs": "使用制表符",
 			"option-use-tabs-description": "开启后，Tab 键将使用制表符来完成缩进。关闭后 Tab 键将使用空格完成缩进。",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim 键绑定",
 			"option-vim-key-bindings-description": "允许在编辑器中使用 Vim 键绑定。"
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "拖动以调整布局",
 		"msg-switched-to-preview": "切换默认视图为预览模式。",
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -243,7 +246,9 @@
 		"toggle-italics": "切换所选文本的斜体效果",
 		"toggle-highlight": "切换所选文本的高亮效果",
 		"insert-link": "插入链接",
-		"delete-paragraph": "删除段落"
+		"delete-paragraph": "删除段落",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -347,12 +352,12 @@
 			"desc": "在状态栏中显示当前文件反向链接的数量。",
 			"action-open": "打开反向链接",
 			"action-open-for-current": "显示当前笔记的相关链接",
-			"label-linked-mentions": "以下笔记链接了该文件",
-			"label-no-backlinks": "没有笔记链接该文件",
-			"label-unlinked-mentions": "以下笔记提到了该文件",
+			"label-linked-mentions": "以下笔记链接了当前文件",
+			"label-no-backlinks": "没有笔记链接当前文件",
+			"label-unlinked-mentions": "以下笔记提到了当前文件名",
 			"label-link-button-text": "链接",
 			"tab-title": "{{displayText}} 的反向链接",
-			"label-no-unlinked-mentions": "没有笔记提及该文件",
+			"label-no-unlinked-mentions": "没有笔记提到当前文件名",
 			"ellipsis": "..."
 		},
 		"tag-pane": {
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "半透明效果",
-			"desc": "开启半透明效果以增强沉浸感（黑暗主题下开启效果更佳）。Linux不支持此效果。",
-			"message-upgrade-installer-for-translucency": "请使用最新的安装程序重新安装 Obsidian 以启用半透明效果。"
+			"desc": "开启半透明效果以增强沉浸感（黑暗主题下开启效果更佳）。Linux不支持此效果。"
 		}
 	},
 	"nouns": {

@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Добавляет нумерацию строк на полях.",
 			"option-use-tabs": "Использовать табуляцию",
 			"option-use-tabs-description": "Использовать табуляцию для отступов при нажатии клавиши \"Tab\". Отключите, чтобы вместо табуляции использовались символы пробела.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Использовать сочетания клавиш Vim",
 			"option-vim-key-bindings-description": "Позволяет использовать сочетания клавиш Vim в режиме редактирования."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Перетащите, чтобы упорядочить",
 		"msg-switched-to-preview": "Режим просмотра включен по умолчанию.",
 		"msg-switched-to-edit": "Режим редактирования включен по умолчанию.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Включить/выключить курсивное начертание для выделения",
 		"toggle-highlight": "Включить/выключить тег подсветки для выделения",
 		"insert-link": "Вставить ссылку",
-		"delete-paragraph": "Удалить абзац"
+		"delete-paragraph": "Удалить абзац",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
@@ -277,12 +282,12 @@
 			"action-change-sort": "Порядок сортировки",
 			"action-reveal-file": "Показать в файловом менеджере",
 			"action-reveal-active-file": "Показать текущий файл в файловом менеджере",
-	    "label-sort-a-to-z": "По имени файла (A -> Z)",
-	    "label-sort-z-to-a": "По имени файла (Z -> A)",
-	    "label-sort-new-to-old": "По времени последнего изменения (от новых к старым)",
-	    "label-sort-old-to-new": "По времени последнего изменения (от старых к новым)",
-	    "label-sort-created-old-to-new": "По времени создания (от старых к новым)",
-	    "label-sort-created-new-to-old": "По времени создания (от новых к старым)",
+			"label-sort-a-to-z": "По имени файла (A -> Z)",
+			"label-sort-z-to-a": "По имени файла (Z -> A)",
+			"label-sort-new-to-old": "По времени последнего изменения (от новых к старым)",
+			"label-sort-old-to-new": "По времени последнего изменения (от старых к новым)",
+			"label-sort-created-old-to-new": "По времени создания (от старых к новым)",
+			"label-sort-created-new-to-old": "По времени создания (от новых к старым)",
 			"menu-opt-new-note": "Новая заметка",
 			"menu-opt-new-folder": "Новая папка",
 			"menu-opt-set-attachment-folder": "Установить как папку для вложенных файлов",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Полупрозрачное окно",
-			"desc": "Добавляет интерфейсу ощущения глубины, особенно в темном режиме. Не работает под Linux.",
-			"message-upgrade-installer-for-translucency": "Скачайте свежий файл установки и переустановите Obsidian, чтобы включить эффект полупрозрачности."
+			"desc": "Добавляет интерфейсу ощущения глубины, особенно в темном режиме. Не работает под Linux."
 		}
 	},
 	"nouns": {
