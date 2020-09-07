@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Satır numaralarını en altta göster.",
 			"option-use-tabs": "Boşluklar için tab kullan",
 			"option-use-tabs-description": "\"Tab\" tuşuyla içerleme yaparken tab karakterleri kullan. Boşluk karakterleri kullanmak için bunu kapat.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim tuş ayarları",
 			"option-vim-key-bindings-description": "Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Düzenlemek için sürükle",
 		"msg-switched-to-preview": "Varsayılan gösterim şekli önizleme yapıldı.",
 		"msg-switched-to-edit": "Varsayılan gösterim şekli editör yapıldı.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Açık dosya yok",
 			"create-new-file": "Yeni dosya yarat",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Seçileni italik/normal yap",
 		"toggle-highlight": "Seçilenin üstünü çiz/çizme",
 		"insert-link": "Bağ ekle",
-		"delete-paragraph": "Paragrafı sil"
+		"delete-paragraph": "Paragrafı sil",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

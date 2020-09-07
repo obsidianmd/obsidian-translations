@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Afficher le numéro de ligne dans la marge.",
 			"option-use-tabs": "Utiliser des tabulations",
 			"option-use-tabs-description": "Utiliser des tabulations pour indenter lorsque vous appuyez sur la touche \"Tab\". Désactivez cette option pour utiliser des espaces.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Raccourcis clavier Vim",
 			"option-vim-key-bindings-description": "Vous permet d'utiliser les raccourcis clavier Vim dans l'éditeur."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Faites glisser pour réorganiser",
 		"msg-switched-to-preview": "Changement du mode d'affichage par défaut à prévisualisation.",
 		"msg-switched-to-edit": "Changement du mode d'affichage par défaut à éditeur.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
 			"create-new-file": "Créer un nouveau fichier",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Mettre en italique la sélection",
 		"toggle-highlight": "Mettre en surbrillance la sélection",
 		"insert-link": "Insérer un lien",
-		"delete-paragraph": "Supprimer le paragraphe"
+		"delete-paragraph": "Supprimer le paragraphe",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -274,7 +279,7 @@
 			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Nouvelle note",
 			"action-new-folder": "Nouveau dossier",
-			"action-change-sort": "Modifier l'ordre de triage",
+			"action-change-sort": "Modifier l'ordre de tri",
 			"action-reveal-file": "Affiche le fichier dans l'explorateur de fichiers",
 			"action-reveal-active-file": "Affiche le fichier actif dans l'explorateur de fichiers",
 			"label-sort-a-to-z": "Trier par nom de fichier (A à Z)",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

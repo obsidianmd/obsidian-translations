@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Show line number in the gutter.",
 			"option-use-tabs": "Use tabs",
 			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Drag to rearrange",
 		"msg-switched-to-preview": "Switched default view mode to preview.",
 		"msg-switched-to-edit": "Switched default view mode to editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Toggle italics for selection",
 		"toggle-highlight": "Toggle highlight for selection",
 		"insert-link": "Insert link",
-		"delete-paragraph": "Delete paragraph"
+		"delete-paragraph": "Delete paragraph",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -266,29 +271,32 @@
 		"label-delete-file": "Delete file"
 	},
 	"plugins": {
-		"name": "Plugins",
+		"name": "الإضافات",
 		"file-explorer": {
-			"name": "File explorer",
+			"name": "مستكشف الملفات",
 			"desc": "See all the files in your vault.",
-			"action-create-note": "Create new note",
-			"action-new-note": "New note",
-			"action-new-folder": "New folder",
-			"action-change-sort": "Change sort order",
-			"action-reveal-file": "Reveal file in file explorer",
-			"action-reveal-active-file": "Reveal active file in file explorer",
-			"label-sort-a-to-z": "Sort by file name (A to Z)",
-			"label-sort-z-to-a": "Sort by file name (Z to A)",
-			"label-sort-new-to-old": "Sort by edit time (new to old)",
-			"label-sort-old-to-new": "Sort by edit time (old to new)",
-			"menu-opt-new-note": "New note",
-			"menu-opt-new-folder": "New folder",
-			"menu-opt-set-attachment-folder": "Set as attachment folder",
-			"menu-opt-rename": "Rename",
-			"menu-opt-delete": "Delete",
-			"menu-opt-make-copy": "Make a copy",
-			"msg-invalid-characters": "File name cannot contain any of the following characters: ",
-			"msg-file-already-exists": "There's already a file with the same name",
-			"msg-empty-file-name": "File name cannot be empty."
+			"action-create-note": "إنشاء ملاحظة جديدة",
+			"action-create-note-in-new-pane": "Create note in new pane",
+			"action-new-note": "ملاحظة جديدة",
+			"action-new-folder": "مجلد جديد",
+			"action-change-sort": "تغيير ترتيب الفرز",
+			"action-reveal-file": "إظهار الملف في مستكشف الملفات",
+			"action-reveal-active-file": "إظهار الملف الحالي في مستكشف الملفات",
+			"label-sort-a-to-z": "فرز حسب اسم الملف (أ إلى ي)",
+			"label-sort-z-to-a": "فرز حسب اسم الملف (ي إلى أ)",
+			"label-sort-new-to-old": "فرز حسب وقت التعديل (جديد إلى الأقدم)",
+			"label-sort-old-to-new": "فرز حسب وقت التعديل (قديم إلى الأحدث)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
+			"menu-opt-new-note": "ملاحظة جديدة",
+			"menu-opt-new-folder": "مجلد جديد",
+			"menu-opt-set-attachment-folder": "تعيين كمجلد المرفقات",
+			"menu-opt-rename": "تغيير الاسم",
+			"menu-opt-delete": "حذف",
+			"menu-opt-make-copy": "إنشاء نسخة",
+			"msg-invalid-characters": "لا يمكن أن يحوي اسم الملف أي من الأحرف: ",
+			"msg-file-already-exists": "يوجد ملف بنفس الاسم",
+			"msg-empty-file-name": "لا يمكن أن يكون اسم الملف فارغاً."
 		},
 		"search": {
 			"name": "Search",
@@ -310,6 +318,7 @@
 			"label-match-file-path": "Match file path: ",
 			"label-match-file-name": "Match file name: ",
 			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "No matches found.",
 			"matches-with-count": "... and {{count}} more match.",
 			"matches-with-count_plural": "... and {{count}} more matches."
@@ -335,19 +344,20 @@
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}",
 			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
-			"name": "Backlinks",
-			"desc": "Show number of backlinks in the status bar.",
-			"action-open": "Open backlinks",
-			"action-open-for-current": "Open backlinks for the current file",
-			"label-linked-mentions": "Linked mentions",
-			"label-no-backlinks": "No backlinks found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"label-link-button-text": "Link",
-			"tab-title": "Backlinks for {{displayText}}",
-			"label-no-unlinked-mentions": "No unlinked mentions found.",
+			"name": "روابط خلفية",
+			"desc": "أظهر عدد الروابط الخلفية في شريط الحالة.",
+			"action-open": "افتح الروابط الخلفية",
+			"action-open-for-current": "افتح الروابط الخلفية للملف الحالي",
+			"label-linked-mentions": "الروابط المذكورة",
+			"label-no-backlinks": "لا يوجد رواابط خلفية.",
+			"label-unlinked-mentions": "إلغاء الربط",
+			"label-link-button-text": "ربط",
+			"tab-title": "الروابط الخلفية من أجل {{displayText}}",
+			"label-no-unlinked-mentions": "لا يوجد روابط غير مذكورة.",
 			"ellipsis": "..."
 		},
 		"tag-pane": {
@@ -459,6 +469,7 @@
 			"option-template-file": "Template file location",
 			"option-template-file-description": "The file path to use as template.",
 			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
@@ -475,8 +486,8 @@
 			"label-no-headings": "No headings found."
 		},
 		"word-count": {
-			"name": "Word count",
-			"desc": "Show word count in the status bar."
+			"name": "عدد الكلمات",
+			"desc": "أظهر عدد الكلمات في شريط الحالة."
 		},
 		"slides": {
 			"name": "Slides",
@@ -518,18 +529,22 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
-		"character-with-count": "{{count}} character",
-		"character-with-count_plural": "{{count}} characters",
-		"link-with-count": "{{count}} link",
-		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
-		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlinks"
+		"word-with-count": "{{count}} كلمة",
+		"word-with-count_plural": "{{count}} كلمات",
+		"character-with-count": "{{count}} حرف",
+		"character-with-count_plural": "{{count}} أحرف",
+		"link-with-count": "{{count}} رابط",
+		"link-with-count_plural": "{{count}} روابط",
+		"file-with-count": "{{count}} ملف",
+		"file-with-count_plural": "{{count}} ملفات",
+		"backlink-with-count": "{{count}} رابط خلفي",
+		"backlink-with-count_plural": "{{count}} روابط خلفية"
 	}
 }
