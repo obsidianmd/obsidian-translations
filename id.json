@@ -30,8 +30,10 @@
 			"option-fold-indent-description": "Memungkinkan Anda untuk menggulung bagian indentasi yang sederet, seperti deret daftar.",
 			"option-show-line-number": "Tampilkan nomor baris",
 			"option-show-line-number-description": "Menampilkan nomor baris pada tepi editor.",
-			"option-use-tabs": "Menggunakan tab",
+			"option-use-tabs": "Gunakan tab",
 			"option-use-tabs-description": "Menggunakan tab untuk menginden ketika menekan tombol \"Tab.\" Matikan fitur ini untuk menggunakan spasi.",
+			"option-line-wrap": "Pengemasan teks",
+			"option-line-wrap-description": "Mengemas panjang baris teks agar sesuai dengan ukuran jendela, tanpa harus menggulir dari kiri ke kanan.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Memungkinkan Anda untuk menggunakan Vim dalam mengedit."
 		},
@@ -88,7 +90,7 @@
 			"button-activate": "Aktifkan",
 			"label-unknown-version": "Tidak diketahui",
 			"label-current-version": "Versi sekarang: ",
-			"label-install-version": "(Versi installer: {{version}})",
+			"label-install-version": "(Versi penginstal: {{version}})",
 			"label-up-to-date": "Aplikasi Anda sudah yang terbaru!",
 			"label-read-changelog": "Baca catatan perubahan.",
 			"label-manual-install-required": "Anda harus memasang versi terbaru secara manual.",
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Seret untuk mengatur ulang",
 		"msg-switched-to-preview": "Mengganti mode tampilan default ke peninjauan.",
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke pengeditan.",
+		"msg-upgrade-installer": "Untuk menggunakan fitur ini, harap instal ulang dengan penginstal terbaru yang tersedia dari situs web kami.",
 		"empty-state": {
 			"no-file-open": "Tidak ada file yang dibuka",
 			"create-new-file": "Buat file baru",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Miringkan tulisan yang dipilih",
 		"toggle-highlight": "Soroti tulisan yang dipilih dengan warna",
 		"insert-link": "Masukan tautan",
-		"delete-paragraph": "Hapus paragraf"
+		"delete-paragraph": "Hapus paragraf",
+		"edit-file-title": "Edit judul file",
+		"copy-path": "Salin jalur lokasi file"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} pada {{files}}.",
@@ -332,9 +337,9 @@
 			"label-enter-to-create": "Enter untuk membuat"
 		},
 		"graph-view": {
-			"name": "Grafik catatan",
+			"name": "Tampilan grafik",
 			"desc": "Lihat sebuah grafik yang menunjukan bagaimana catatan-catatan saling terhubung.",
-			"action-open": "Buka grafik catatan",
+			"action-open": "Buka tampilan grafik",
 			"action-open-local": "Buka grafik lokal",
 			"action-copy-screenshot": "Salin tangkapan layar",
 			"tab-title": "Grafik {{displayText}}",
@@ -343,10 +348,10 @@
 			"tooltip-show-interlinks": "Tampilkan link antar catatan bertetangga."
 		},
 		"backlinks": {
-			"name": "Backlinks",
+			"name": "Backlink",
 			"desc": "Tampilkan peninjauan link di bilah status.",
-			"action-open": "Buka backlinks",
-			"action-open-for-current": "Buka backlinks",
+			"action-open": "Buka backlink",
+			"action-open-for-current": "Buka backlink",
 			"label-linked-mentions": "Link yang terhubung",
 			"label-no-backlinks": "Tidak ada link yang ditemukan.",
 			"label-unlinked-mentions": "Link yang tidak terhubung",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Jendela transparan",
-			"desc": "Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux.",
-			"message-upgrade-installer-for-translucency": "Harap gunakan installer terbaru untuk menginstal ulang Obsidian untuk mengaktifkan efek transparan."
+			"desc": "Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux."
 		}
 	},
 	"nouns": {
