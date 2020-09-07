@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "在左側顯示行號。",
 			"option-use-tabs": "使用Tab鍵縮排",
 			"option-use-tabs-description": "按下Tab鍵可發送製表符來縮排。關閉此項後可發送空格來縮排。",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim鍵綁定",
 			"option-vim-key-bindings-description": "允許在編輯器中使用Vim鍵綁定。"
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "拖動以調整佈局",
 		"msg-switched-to-preview": "切換預設檢視為預覽模式。",
 		"msg-switched-to-edit": "切換預設檢視為編輯模式。",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
@@ -243,7 +246,9 @@
 		"toggle-italics": "切換所選文字的斜體效果",
 		"toggle-highlight": "切換所選文字的高亮效果",
 		"insert-link": "插入連結",
-		"delete-paragraph": "刪除段落"
+		"delete-paragraph": "刪除段落",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "半透明視窗",
-			"desc": "啟用半透明特效以加強深度感，最適合使用於黑暗主題。未支援 Linux。",
-			"message-upgrade-installer-for-translucency": "請使用最新的安裝程式重新安裝 Obsidian 以啟用半透明特效。"
+			"desc": "啟用半透明特效以加強深度感，最適合使用於黑暗主題。未支援 Linux。"
 		}
 	},
 	"nouns": {

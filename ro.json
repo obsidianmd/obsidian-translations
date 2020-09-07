@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Afișează numărul liniilor de text.",
 			"option-use-tabs": "Folosește taburi",
 			"option-use-tabs-description": "Folosește taburi pentru a indenta atunci când apeși tasta \"Tab\". Setează pe \"oprit\" pentru a folosi spații.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Scurtături Vim",
 			"option-vim-key-bindings-description": "Îți permite să folosești combinațiile de taste din Vim în editor."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Trage pentru a rearanja",
 		"msg-switched-to-preview": "Modul de afișare implicit a fost schimbat pe previzualizare.",
 		"msg-switched-to-edit": "Modul de afișare implicit a fost schimbat pe editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Comută textul cursiv pentru selecție",
 		"toggle-highlight": "Comută textul evidențiat pentru selecție",
 		"insert-link": "Inserează legătură",
-		"delete-paragraph": "Șterge paragraf"
+		"delete-paragraph": "Șterge paragraf",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {
