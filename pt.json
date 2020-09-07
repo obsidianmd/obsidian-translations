@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Mostra os números das linhas.",
 			"option-use-tabs": "Usar tabulações",
 			"option-use-tabs-description": "Usar tabulações para indentação quando a tecla \"Tab\" é pressionada. Desligue para usar espaços.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Atalhos do Vim",
 			"option-vim-key-bindings-description": "Utilize atalhos do Vim no editor de códigos."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Arraste para reorganizar",
 		"msg-switched-to-preview": "Modo de visualização padrão mudado para visualização.",
 		"msg-switched-to-edit": "Modo de visualização padrão mudado para normal.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Ativar o itálico para seleção",
 		"toggle-highlight": "Grifar a seleção",
 		"insert-link": "Inserir link",
-		"delete-paragraph": "Excluir parágrafo"
+		"delete-paragraph": "Excluir parágrafo",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Ira afetar os links {{links}} nos {{files}}.",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

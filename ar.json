@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Show line number in the gutter.",
 			"option-use-tabs": "Use tabs",
 			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Drag to rearrange",
 		"msg-switched-to-preview": "Switched default view mode to preview.",
 		"msg-switched-to-edit": "Switched default view mode to editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Toggle italics for selection",
 		"toggle-highlight": "Toggle highlight for selection",
 		"insert-link": "Insert link",
-		"delete-paragraph": "Delete paragraph"
+		"delete-paragraph": "Delete paragraph",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -271,6 +276,7 @@
 			"name": "مستكشف الملفات",
 			"desc": "See all the files in your vault.",
 			"action-create-note": "إنشاء ملاحظة جديدة",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "ملاحظة جديدة",
 			"action-new-folder": "مجلد جديد",
 			"action-change-sort": "تغيير ترتيب الفرز",
@@ -280,6 +286,8 @@
 			"label-sort-z-to-a": "فرز حسب اسم الملف (ي إلى أ)",
 			"label-sort-new-to-old": "فرز حسب وقت التعديل (جديد إلى الأقدم)",
 			"label-sort-old-to-new": "فرز حسب وقت التعديل (قديم إلى الأحدث)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "ملاحظة جديدة",
 			"menu-opt-new-folder": "مجلد جديد",
 			"menu-opt-set-attachment-folder": "تعيين كمجلد المرفقات",
@@ -310,6 +318,7 @@
 			"label-match-file-path": "Match file path: ",
 			"label-match-file-name": "Match file name: ",
 			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "No matches found.",
 			"matches-with-count": "... and {{count}} more match.",
 			"matches-with-count_plural": "... and {{count}} more matches."
@@ -335,7 +344,8 @@
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}",
 			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "روابط خلفية",
@@ -459,6 +469,7 @@
 			"option-template-file": "Template file location",
 			"option-template-file-description": "The file path to use as template.",
 			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
@@ -518,6 +529,10 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Menampilkan nomor baris pada tepi editor.",
 			"option-use-tabs": "Menggunakan tab",
 			"option-use-tabs-description": "Menggunakan tab untuk menginden ketika menekan tombol \"Tab.\" Matikan fitur ini untuk menggunakan spasi.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Memungkinkan Anda untuk menggunakan Vim dalam mengedit."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Seret untuk mengatur ulang",
 		"msg-switched-to-preview": "Mengganti mode tampilan default ke peninjauan.",
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke pengeditan.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Tidak ada file yang dibuka",
 			"create-new-file": "Buat file baru",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Miringkan tulisan yang dipilih",
 		"toggle-highlight": "Soroti tulisan yang dipilih dengan warna",
 		"insert-link": "Masukan tautan",
-		"delete-paragraph": "Hapus paragraf"
+		"delete-paragraph": "Hapus paragraf",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} pada {{files}}.",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Jendela transparan",
-			"desc": "Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux.",
-			"message-upgrade-installer-for-translucency": "Harap gunakan installer terbaru untuk menginstal ulang Obsidian untuk mengaktifkan efek transparan."
+			"desc": "Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux."
 		}
 	},
 	"nouns": {

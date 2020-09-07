@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Viser linjenummer ved siden av innholdet.",
 			"option-use-tabs": "Bruk tab-er",
 			"option-use-tabs-description": "Setter inn et tab-tegn når du trykker \"Tab\"-knappen. Skru funksjonen av for å bruke mellomrom-tegn.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim-hurtigtaster",
 			"option-vim-key-bindings-description": "Lar deg bruke hurtigtaster som i Vim."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Dra for å omordne",
 		"msg-switched-to-preview": "Endret standard modus til forhåndsvisning.",
 		"msg-switched-to-edit": "Endret standard modus til editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Ingen åpne filer",
 			"create-new-file": "Lag ny fil",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Kursiv for markert tekst",
 		"toggle-highlight": "Fremhev markert tekst",
 		"insert-link": "Sett inn lenke",
-		"delete-paragraph": "Slett avsnitt"
+		"delete-paragraph": "Slett avsnitt",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Gjennomsiktig vindu",
-			"desc": "Skru på gjennomsiktighet for å gi en følelse av dybde. Funker best i mørkt modus. Støttes ikke av Linux.",
-			"message-upgrade-installer-for-translucency": "Vennligst bruk den nyeste installeren for å reinstallere Obsidian og gi tilgang til gjennomsiktighet."
+			"desc": "Skru på gjennomsiktighet for å gi en følelse av dybde. Funker best i mørkt modus. Støttes ikke av Linux."
 		}
 	},
 	"nouns": {

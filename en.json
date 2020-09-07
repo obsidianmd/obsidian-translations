@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Show line number in the gutter.",
 			"option-use-tabs": "Use tabs",
 			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Drag to rearrange",
 		"msg-switched-to-preview": "Switched default view mode to preview.",
 		"msg-switched-to-edit": "Switched default view mode to editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Toggle italics for selection",
 		"toggle-highlight": "Toggle highlight for selection",
 		"insert-link": "Insert link",
-		"delete-paragraph": "Delete paragraph"
+		"delete-paragraph": "Delete paragraph",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -527,8 +532,7 @@
 		},
 		"translucency": {
 			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux.",
-			"message-upgrade-installer-for-translucency": "Please use the newest installer to re-install Obsidian to enable translucency."
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Mostra os números das linhas.",
 			"option-use-tabs": "Usar tabulações",
 			"option-use-tabs-description": "Usar tabulações para indentação quando a tecla \"Tab\" é pressionada. Desligue para usar espaços.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Atalhos do Vim",
 			"option-vim-key-bindings-description": "Utilize atalhos do Vim no editor de códigos."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Arraste para reorganizar",
 		"msg-switched-to-preview": "Modo de visualização padrão mudado para visualização.",
 		"msg-switched-to-edit": "Modo de visualização padrão mudado para normal.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Ativar o itálico para seleção",
 		"toggle-highlight": "Grifar a seleção",
 		"insert-link": "Inserir link",
-		"delete-paragraph": "Excluir parágrafo"
+		"delete-paragraph": "Excluir parágrafo",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Irá afetar os links {{links}} nos {{files}}.",
@@ -271,6 +276,7 @@
 			"name": "Explorador de arquivos",
 			"desc": "Veja todos os arquivos da vault.",
 			"action-create-note": "Criar nova nota",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Nova nota",
 			"action-new-folder": "Nova pasta",
 			"action-change-sort": "Mudar ordenamento",
@@ -280,6 +286,8 @@
 			"label-sort-z-to-a": "Ordenar por nome (Z-A)",
 			"label-sort-new-to-old": "Ordenar por última edição (recentes-antigas)",
 			"label-sort-old-to-new": "Ordenar por última edição (antigas-recentes)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Nova nota",
 			"menu-opt-new-folder": "Nova pasta",
 			"menu-opt-set-attachment-folder": "Definir como pasta de anexos",
@@ -310,6 +318,7 @@
 			"label-match-file-path": "Caminho do arquivo correspondente: ",
 			"label-match-file-name": "Nome do arquivo correspondente: ",
 			"label-match-content": "Pesquisar pelo conteudo do arquivo: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Nenhuma correspondência encontrada.",
 			"matches-with-count": "... e mais {{count}} correspondência.",
 			"matches-with-count_plural": "... e mais {{count}} correspondências."
@@ -335,7 +344,8 @@
 			"action-copy-screenshot": "Copiar captura de tela",
 			"tab-title": "Grafo de {{displayText}}",
 			"tooltip-drag-to-adjust": "Mostrando  {{count}} conexões. Arraste para ajustar.",
-			"tooltip-drag-to-adjust_plural": "Mostrando {{count}} conexões. Arraste para ajustar."
+			"tooltip-drag-to-adjust_plural": "Mostrando {{count}} conexões. Arraste para ajustar.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -459,6 +469,7 @@
 			"option-template-file": "Local do arquivo modelo",
 			"option-template-file-description": "O caminho do arquivo usado como modelo.",
 			"option-template-file-placeholder": "Exemplos: pasta1/nota",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Falha na criação de nota Zettelkasten. Arquivo modelo \"{{template}}\" não encontrado."
 		},
 		"random-note": {
@@ -518,6 +529,10 @@
 			"msg-fail-invalid-folder": "Erro ao listar os templates. Sua pasta está inválida.",
 			"msg-fail-folder-not-found": "Erro ao listar os templates. A pasta \"{{folderOption}}\" não foi encontrada.",
 			"prompt-type-template": "Digite o nome do template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {
