@@ -12,8 +12,8 @@
 			"spellcheck-dict-empty": "Словарь пуст.",
 			"option-readable-line-length": "Ограничить максимальную длину строки",
 			"option-readable-line-description": "Повышает удобство чтения длинных абзацев, но уменьшает количество помещающейся на экране информации.",
-			"option-strict-line-break": "Строгий перенос строк",
-			"option-strict-line-break-description": "Игнорировать одиночные переносы строк в режиме просмотра в соответствии со стандартом Markdown. Отключите, чтобы одиночные переносы отображались в режиме просмотра.",
+			"option-strict-line-break": "Двойной разделитель строк",
+			"option-strict-line-break-description": "Игнорировать одиночные разделители строк в режиме просмотра в соответствии со стандартом Markdown. Отключите, чтобы одиночные разделители отображались в режиме просмотра.",
 			"option-show-frontmatter": "Отображать frontmatter",
 			"option-show-frontmatter-description": "В режиме просмотра отображать frontmatter как блок кода. Отключение скроет раздел frontmatter.",
 			"option-use-markdown-links": "Использовать Markdown-ссылки",
@@ -32,8 +32,8 @@
 			"option-show-line-number-description": "Добавляет нумерацию строк на полях.",
 			"option-use-tabs": "Использовать табуляцию",
 			"option-use-tabs-description": "Использовать табуляцию для отступов при нажатии клавиши \"Tab\". Отключите, чтобы вместо табуляции использовались символы пробела.",
-			"option-line-wrap": "Line wrap",
-			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-line-wrap": "Переносить строки",
+			"option-line-wrap-description": "Переносить длинные строки, чтобы они умещались в области без необходимости горизонтальной прокрутки.",
 			"option-vim-key-bindings": "Использовать сочетания клавиш Vim",
 			"option-vim-key-bindings-description": "Позволяет использовать сочетания клавиш Vim в режиме редактирования."
 		},
@@ -184,7 +184,7 @@
 		"drag-to-rearrange": "Перетащите, чтобы упорядочить",
 		"msg-switched-to-preview": "Режим просмотра включен по умолчанию.",
 		"msg-switched-to-edit": "Режим редактирования включен по умолчанию.",
-		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"msg-upgrade-installer": "Скачайте актуальную версию с сайта и переустановите Obsidian, чтобы включить эту функцию.",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
@@ -199,7 +199,7 @@
 			"replace": "Заменить...",
 			"edit": "Редактировать",
 			"preview": "Просмотр",
-			"more-options": "Больше опций",
+			"more-options": "Ещё",
 			"close": "Закрыть",
 			"pin": "Закрепить",
 			"unlink-pane": "Отвязать область",
@@ -247,8 +247,8 @@
 		"toggle-highlight": "Включить/выключить тег подсветки для выделения",
 		"insert-link": "Вставить ссылку",
 		"delete-paragraph": "Удалить абзац",
-		"edit-file-title": "Edit file title",
-		"copy-path": "Copy file path"
+		"edit-file-title": "Редактировать заголовок файла",
+		"copy-path": "Скопировать путь к файлу"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
