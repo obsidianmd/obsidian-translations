@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Toon regelnummer in de goot.",
 			"option-use-tabs": "Gebruik inspringen",
 			"option-use-tabs-description": "Gebruik inspringen om in te springen wanneer de\"Tab\"-toets gebruikt wordt. Schakel dit uit om spaties te gebruiken.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim-sneltoetsen",
 			"option-vim-key-bindings-description": "Hiermee gebruikt u Vim-sneltoetsen bij het bewerken van het bronbestand.."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Drag to rearrange",
 		"msg-switched-to-preview": "Switched default view mode to preview.",
 		"msg-switched-to-edit": "Switched default view mode to editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Toggle italics for selection",
 		"toggle-highlight": "Toggle highlight for selection",
 		"insert-link": "Insert link",
-		"delete-paragraph": "Delete paragraph"
+		"delete-paragraph": "Delete paragraph",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -271,6 +276,7 @@
 			"name": "File explorer",
 			"desc": "See all the files in your vault.",
 			"action-create-note": "Create new note",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "New note",
 			"action-new-folder": "New folder",
 			"action-change-sort": "Change sort order",
@@ -280,6 +286,8 @@
 			"label-sort-z-to-a": "Sort by file name (Z to A)",
 			"label-sort-new-to-old": "Sort by edit time (new to old)",
 			"label-sort-old-to-new": "Sort by edit time (old to new)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "New note",
 			"menu-opt-new-folder": "New folder",
 			"menu-opt-set-attachment-folder": "Set as attachment folder",
@@ -309,6 +317,8 @@
 			"label-case-insensitive": "Case insensitive",
 			"label-match-file-path": "Match file path: ",
 			"label-match-file-name": "Match file name: ",
+			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "No matches found.",
 			"matches-with-count": "... and {{count}} more match.",
 			"matches-with-count_plural": "... and {{count}} more matches."
@@ -332,7 +342,10 @@
 			"action-open": "Open graph view",
 			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
-			"tab-title": "Graph of {{displayText}}"
+			"tab-title": "Graph of {{displayText}}",
+			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -456,6 +469,7 @@
 			"option-template-file": "Template file location",
 			"option-template-file-description": "The file path to use as template.",
 			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
@@ -515,6 +529,10 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

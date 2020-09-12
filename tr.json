@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Satır numaralarını en altta göster.",
 			"option-use-tabs": "Boşluklar için tab kullan",
 			"option-use-tabs-description": "\"Tab\" tuşuyla içerleme yaparken tab karakterleri kullan. Boşluk karakterleri kullanmak için bunu kapat.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim tuş ayarları",
 			"option-vim-key-bindings-description": "Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar."
 		},
@@ -182,6 +184,7 @@
 		"drag-to-rearrange": "Düzenlemek için sürükle",
 		"msg-switched-to-preview": "Varsayılan gösterim şekli önizleme yapıldı.",
 		"msg-switched-to-edit": "Varsayılan gösterim şekli editör yapıldı.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"empty-state": {
 			"no-file-open": "Açık dosya yok",
 			"create-new-file": "Yeni dosya yarat",
@@ -243,7 +246,9 @@
 		"toggle-italics": "Seçileni italik/normal yap",
 		"toggle-highlight": "Seçilenin üstünü çiz/çizme",
 		"insert-link": "Bağ ekle",
-		"delete-paragraph": "Paragrafı sil"
+		"delete-paragraph": "Paragrafı sil",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -271,6 +276,7 @@
 			"name": "Dosyalar",
 			"desc": "Kasanızdaki tüm dosyaları gösterir.",
 			"action-create-note": "Yeni not yarat",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Yeni not",
 			"action-new-folder": "Yeni klasör",
 			"action-change-sort": "Sıralamayı değiştir",
@@ -280,6 +286,8 @@
 			"label-sort-z-to-a": "İsme göre sırala (Z'den A'ya)",
 			"label-sort-new-to-old": "Değiştirme zamanına göre sırala (yeniden eskiye)",
 			"label-sort-old-to-new": "Değiştirme zamanına göre sırala (eskiden yeniye)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Yeni not",
 			"menu-opt-new-folder": "Yeni klasör",
 			"menu-opt-set-attachment-folder": "Eklenti klasörü olarak kullan",
@@ -309,6 +317,8 @@
 			"label-case-insensitive": "Harf boyutu önemsiz",
 			"label-match-file-path": "Dosya yolunu uydur: ",
 			"label-match-file-name": "Dosya adını uydur: ",
+			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Sonuç bulunamadı.",
 			"matches-with-count": "... ve {{count}} tane daha sonuc.",
 			"matches-with-count_plural": "... ve {{count}} tane daha sonuc."
@@ -332,7 +342,10 @@
 			"action-open": "Grafik görünümünü aç",
 			"action-open-local": "Yerel grafiği aç",
 			"action-copy-screenshot": "Ekran görüntüsünü kopyala",
-			"tab-title": "{{displayText}}'in grafiği"
+			"tab-title": "{{displayText}}'in grafiği",
+			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
+			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
+			"tooltip-show-interlinks": "Show links between neighbors."
 		},
 		"backlinks": {
 			"name": "Geri bağlantılar",
@@ -456,6 +469,7 @@
 			"option-template-file": "Template file location",
 			"option-template-file-description": "The file path to use as template.",
 			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
@@ -515,6 +529,10 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

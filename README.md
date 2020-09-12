@@ -50,19 +50,21 @@ Here is a table of language code to language name, in alphabetical order. These 
 | Language code | Language name | Native name | Status |
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
+| `ar` | Arabic | العربية | 🚧 |
 | `de` | German | Deutsch | 🚧 |
 | `el` | Greek | ελληνικά | 🔜 |
-| `es` | Spanish | Español | 🚧 |
-| `fr` | French | français | 🚧 
+| `es` | Spanish | Español | ✅ |
+| `fr` | French | français | ✅ 
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
-| `it` | Italian | Italiano | 🔜 |
-| `ja` | Japanese | 日本語 | 🔜 |
+| `it` | Italian | Italiano | ✅ |
+| `ja` | Japanese | 日本語 | 🚧 |
 | `ko` | Korean | 한국어 | ✅ |
 | `nl` | Dutch | Nederlands | 🚧 |
-| `no` | Norwegian | Norsk | 🚧 |
+| `no` | Norwegian | Norsk | ✅ |
 | `pl` | Polish | język polski | 🚧 |
-| `pt` | Portuguese | Português | 🔜 |
+| `pt` | Portuguese | Português | ✅ |
+| `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
