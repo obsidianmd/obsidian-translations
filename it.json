@@ -14,10 +14,10 @@
 			"option-readable-line-description": "Limita la lunghezza massima della riga. Mostra meno contenuti sullo schermo, ma rende i paragrafi lunghi più leggibili.",
 			"option-strict-line-break": "Interruzione di riga secondo la specifica",
 			"option-strict-line-break-description": "In modalità anteprima, ignora gli a capo singoli seguendo la specifica Markdown. Disattiva questa opzione per mostrare gli a capo nell'anteprima.",
-			"option-show-frontmatter": "Show frontmatter",
-			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
+			"option-show-frontmatter": "Mostra introduzione",
+			"option-show-frontmatter-description": "In modalità anteprima, mostra l'introduzione come un blocco di codice. Disattiva questa opzione per nascondere l'introduzione.",
+			"option-use-markdown-links": "Usa i collegamenti markdown",
+			"option-use-markdown-links-description": "I suggerimenti per i collegamenti auto-completano utilizzando i collegamenti markdown e le immagini invece dei wikilinks.",
 			"option-auto-pair-brackets": "Auto chiusura delle parentesi",
 			"option-auto-pair-brackets-description": "Chiude le parentesi e le virgolette automaticamente",
 			"option-auto-pair-markdown": "Auto completamento della sintassi Markdown",
@@ -32,8 +32,8 @@
 			"option-show-line-number-description": "Mostra il numero di riga al lato dell'editor.",
 			"option-use-tabs": "Utilizza i tab",
 			"option-use-tabs-description": "Utilizza i tab per indentare quando viene premuto il tasto \"Tab\". Disattiva per utilizzare gli spazi.",
-			"option-line-wrap": "Line wrap",
-			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-line-wrap": "Interruzione di riga",
+			"option-line-wrap-description": "Manda a capo le righe lunghe per farle entrare nella finestra, senza dover scorrere da sinistra verso destra.",
 			"option-vim-key-bindings": "Mappatura dei tasti di Vim",
 			"option-vim-key-bindings-description": "Ti permette di utilizzare la mappatura dei tasti di Vim nell'editor."
 		},
@@ -147,8 +147,8 @@
 			"message-login-failed": "Login fallito, per favore controlla email e password",
 			"label-no-account": "Non hai un account? ",
 			"link-sign-up-now": "Iscriviti ora",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
-			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+			"message-get-community-badges": "Per i badge della community, per favore invia un email a support@obsidian.md se non li hai ancora ricevuti 24 ore dopo aver ottenuto la tua licenza.",
+			"message-obtain-commercial-license": "Per ottenere una licenza commerciale, visita {{pricingPageLink}}."
 		}
 	},
 	"editor": {
@@ -184,7 +184,7 @@
 		"drag-to-rearrange": "Trascina per riordinare",
 		"msg-switched-to-preview": "Passato dalla modalità predefinita all'anteprima.",
 		"msg-switched-to-edit": "Passato dalla modalità anteprima all'editor.",
-		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"msg-upgrade-installer": "Per usare questa funzionalità, per favore reinstalla con il file di installazione più recente disponibile sul nostro sito.",
 		"empty-state": {
 			"no-file-open": "Nessun file è aperto",
 			"create-new-file": "Crea un nuovo file",
@@ -247,8 +247,8 @@
 		"toggle-highlight": "Evidenzia la selezione",
 		"insert-link": "Inserisci collegamento",
 		"delete-paragraph": "Cancella il paragrafo",
-		"edit-file-title": "Edit file title",
-		"copy-path": "Copy file path"
+		"edit-file-title": "Modifica il titolo del file",
+		"copy-path": "Copia percorso del file"
 	},
 	"dialogue": {
 		"label-link-affected": "Questo influenzerà {{links}} che si trovano in {{files}}.",
@@ -273,21 +273,21 @@
 	"plugins": {
 		"name": "Plugins",
 		"file-explorer": {
-			"name": "File explorer",
+			"name": "Gestore di file",
 			"desc": "Vedi tutti i file nella cassaforte.",
 			"action-create-note": "Crea una nuova nota",
-			"action-create-note-in-new-pane": "Create note in new pane",
+			"action-create-note-in-new-pane": "Crea nota in un nuovo pannello",
 			"action-new-note": "Nuova nota",
 			"action-new-folder": "Nuova cartella",
 			"action-change-sort": "Cambia ordine",
-			"action-reveal-file": "Reveal file in file explorer",
-			"action-reveal-active-file": "Reveal active file in file explorer",
+			"action-reveal-file": "Mostra file nel gestore di file",
+			"action-reveal-active-file": "Mostra file attivo nel gestore di file",
 			"label-sort-a-to-z": "Ordina per nome del file (dalla A alla Z)",
 			"label-sort-z-to-a": "Ordina per nome del file (dalla Z alla A)",
 			"label-sort-new-to-old": "Ordina per data di modifica (dal nuovo al vecchio)",
 			"label-sort-old-to-new": "Ordina per data di modifica (dal vecchio al nuovo)",
-			"label-sort-created-old-to-new": "Created time (old to new)",
-			"label-sort-created-new-to-old": "Created time (new to old)",
+			"label-sort-created-old-to-new": "Data di creazione (meno recente)",
+			"label-sort-created-new-to-old": "Data di creazione (più recente)",
 			"menu-opt-new-note": "Nuova nota",
 			"menu-opt-new-folder": "Nuova cartella",
 			"menu-opt-set-attachment-folder": "Imposta come cartella per gli allegati",
@@ -317,8 +317,8 @@
 			"label-case-insensitive": "Non tenere conto di maiuscole e minuscole",
 			"label-match-file-path": "Fai corrispondere il percorso del file a: ",
 			"label-match-file-name": "Fai corrispondere il nome del file: ",
-			"label-match-content": "Match file content: ",
-			"label-match-tag": "Match tag: ",
+			"label-match-content": "Fai corrispondere contenuto del file: ",
+			"label-match-tag": "Fai corrispondere tag: ",
 			"label-no-matches": "Nessuna corrispondenza trovata.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
 			"matches-with-count_plural": "... e {{count}} altre corrispondenze."
@@ -343,9 +343,9 @@
 			"action-open-local": "Apri il grafo locale",
 			"action-copy-screenshot": "Copia screenshot",
 			"tab-title": "Grafo di {{displayText}}",
-			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
-			"tooltip-show-interlinks": "Show links between neighbors."
+			"tooltip-drag-to-adjust": "Nodi a distanza di {{count}} connessione. Trascina per aggiustare.",
+			"tooltip-drag-to-adjust_plural": "Nodi a distanza di {{count}} connessione. Trascina per aggiustare.",
+			"tooltip-show-interlinks": "Mostra collegamenti tra i vicini."
 		},
 		"backlinks": {
 			"name": "Collegamenti in entrata",
@@ -511,28 +511,28 @@
 			"action-show-in-folder": "Mostra nella cartella"
 		},
 		"templates": {
-			"name": "Templates",
-			"desc": "Insert template content from a folder of template files.",
-			"action-insert": "Insert template",
-			"option-template-folder-location": "Template folder location",
-			"option-template-folder-location-description": "Files in this folder will be available as templates.",
-			"option-template-date-format": "Date format",
-			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
-			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
-			"option-template-time-format": "Time format",
-			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
-			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
-			"instruction-navigate": "to navigate",
-			"instruction-insert": "to insert template",
-			"instruction-dismiss": "to dismiss",
-			"msg-no-templates-found": "No templates found",
-			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
-			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
-			"prompt-type-template": "Type name of a template..."
+			"name": "Modelli",
+			"desc": "Inserisci modello da una cartella di file modello.",
+			"action-insert": "Inserisci modello",
+			"option-template-folder-location": "Posizione della cartella dei modelli",
+			"option-template-folder-location-description": "File in questa cartella saranno disponibili come modelli.",
+			"option-template-date-format": "Formato della data",
+			"option-template-date-format-description": "{{date}} nel file modello sarà sostituita con questo valore.",
+			"option-template-date-format-description2": "Puoi anche usare {{date:YYYY-MM-DD}} per sovrascrivere il formato una volta.",
+			"option-template-time-format": "Formato dell'ora",
+			"option-template-time-format-description": "{{time}} nel file modello sarà sostituita con questo valore.",
+			"option-template-time-format-description2": "Puoi anche usare {{time:HH:mm}} per sovrascrivere il formato una volta.",
+			"instruction-navigate": "per navigare",
+			"instruction-insert": "per inserire un file modello",
+			"instruction-dismiss": "per annullare",
+			"msg-no-templates-found": "Nessun file modello trovato",
+			"msg-fail-invalid-folder": "Creazione elenco dei file modello fallita. Cartella dei file modello non valida.",
+			"msg-fail-folder-not-found": "Creazione elenco dei file modello fallita. Cartella \"{{folderOption}}\" non trovata.",
+			"prompt-type-template": "Digita nome di un file modello..."
 		},
 		"translucency": {
-			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
+			"name": "Finestra traslucente",
+			"desc": "Attiva l'effetto di traslucenza per aumentare il senso di profondità. Rende meglio in modalità scura. Non supportato su Linux."
 		}
 	},
 	"nouns": {
