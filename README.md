@@ -68,6 +68,8 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
-| `zh` | Chinese (Simplified) | 简体中文 | ✅ |
+| `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
+
+> Note: the Chinese translation is maintained by the Chinese Obsidian QQ group. If you want to discuss it, please join the QQ group: 774176839.
 
