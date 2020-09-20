@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "Click pentru a extinde",
 			"click-to-collapse": "Click pentru a restrânge"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "Șterge",
 		"button-delete-do-not-ask-again": "Șterge și nu mai verifica încă o dată",
 		"label-existing-backlink": "În acest moment sunt {{links}} care trimit către această notă.",
-		"label-delete-file": "Șterge fișier"
+		"label-delete-file": "Șterge fișier",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Module",
@@ -343,9 +368,27 @@
 			"action-open-local": "Deschide graficul local",
 			"action-copy-screenshot": "Copiază captura de ecran",
 			"tab-title": "Graficul {{displayText}}",
-			"tooltip-drag-to-adjust": "Afișează noduri la o distanță de {{count}} legătură. Trage pentru a ajusta.",
-			"tooltip-drag-to-adjust_plural": "Afișează noduri la o distanță de {{count}} legături. Trage pentru a ajusta.",
-			"tooltip-show-interlinks": "Afișează legături între vecini."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Afișează legături între vecini.",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "Referințe",
@@ -422,6 +465,8 @@
 			"option-roam-highlight-fixer-description": "Convertește \"^^highlight^^\" în \"==highlight==\".",
 			"option-roam-todo-converter": "Convertor Roam Research TODO",
 			"option-roam-todo-converter-description": "Convertește \"{{[[TODO]]}}\" în \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Reparare legături Zettelkasten",
 			"zettelkasten-link-fixer-description": "Repară legăturile \"[[UID]]\" și le transformă în \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Îmbunătățire legături Zettelkasten",

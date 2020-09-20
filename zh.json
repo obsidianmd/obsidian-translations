@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "点击以展开",
 			"click-to-collapse": "点击以折叠"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "删除",
 		"button-delete-do-not-ask-again": "删除，并且不要再询问。",
 		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
-		"label-delete-file": "删除文件"
+		"label-delete-file": "删除文件",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "插件",
@@ -343,9 +368,27 @@
 			"action-open-local": "打开局部关系图",
 			"action-copy-screenshot": "复制截图",
 			"tab-title": "{{displayText}} 的关系图",
-			"tooltip-drag-to-adjust": "显示 {{count}} 层关系图",
-			"tooltip-drag-to-adjust_plural": "显示 {{count}} 层关系图，拖动以调整。",
-			"tooltip-show-interlinks": "显示节点间的所有链接"
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "显示节点间的所有链接",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "反向链接",
@@ -422,6 +465,8 @@
 			"option-roam-highlight-fixer-description": "将 Roam Research 中的 \"^^highlight^^\" 转换为 \"==highlight==\"。",
 			"option-roam-todo-converter": "Roam Research 待办标签转换",
 			"option-roam-todo-converter-description": "将 Roam Research 中的 \"{{[[TODO]]}}\" 转换为 \"[ ]\"。",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "ZK 卡片链接转换",
 			"zettelkasten-link-fixer-description": "将 ZK 卡片中使用的 \"[[UID]]\" 链接转换为 \"[[UID 文件名]]\" 的形式。",
 			"zettelkasten-link-beautifier": "美化 ZK 卡片链接",

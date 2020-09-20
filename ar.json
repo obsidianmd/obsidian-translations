@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "Click to expand",
 			"click-to-collapse": "Click to collapse"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "Delete",
 		"button-delete-do-not-ask-again": "Delete and don't ask again",
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
-		"label-delete-file": "Delete file"
+		"label-delete-file": "Delete file",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "الإضافات",
@@ -343,9 +368,27 @@
 			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}",
-			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust.",
-			"tooltip-show-interlinks": "Show links between neighbors."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Show links between neighbors.",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "روابط خلفية",
@@ -422,6 +465,8 @@
 			"option-roam-highlight-fixer-description": "Converts \"^^highlight^^\" to \"==highlight==\".",
 			"option-roam-todo-converter": "Roam Research TODO converter",
 			"option-roam-todo-converter-description": "Converts \"{{[[TODO]]}}\" to \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Zettelkasten link fixer",
 			"zettelkasten-link-fixer-description": "Fixes \"[[UID]]\" links to full \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Zettelkasten link beautifier",

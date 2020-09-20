@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "Klikk for å utvide",
 			"click-to-collapse": "Klikk for å lukke"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "Slett",
 		"button-delete-do-not-ask-again": "Slett og ikke spør igjen",
 		"label-existing-backlink": "Det er {{links}} som peker mot denne filen.",
-		"label-delete-file": "Slett fil"
+		"label-delete-file": "Slett fil",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Utvidelser",
@@ -343,9 +368,27 @@
 			"action-open-local": "Åpne lokal graf",
 			"action-copy-screenshot": "Kopier skjermbilde",
 			"tab-title": "Graf til {{displayText}}",
-			"tooltip-drag-to-adjust": "Viser noder {{count}} kobling unna. Dra for å justere.",
-			"tooltip-drag-to-adjust_plural": "Viser noder {{count}} koblinger unna. Dra for å justere.",
-			"tooltip-show-interlinks": "Vis koblinger mellom naboer."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Vis koblinger mellom naboer.",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "Lenker tilbake",
@@ -422,6 +465,8 @@
 			"option-roam-highlight-fixer-description": "Endrer \"^^highlight^^\" til \"==highlight==\".",
 			"option-roam-todo-converter": "Fiks TODOs fra Roam Research",
 			"option-roam-todo-converter-description": "Endrer \"{{[[TODO]]}}\" til \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Fiks Zettelkasten-lenker",
 			"zettelkasten-link-fixer-description": "Endrer \"[[UID]]\" til det fulle formatet \"[[UID Filnavn]]\".",
 			"zettelkasten-link-beautifier": "Endre til vakre Zettelkasten-lenker",
@@ -476,7 +521,7 @@
 			"name": "Tilfeldig notat",
 			"desc": "Åpner et tilfeldig notat. Nyttig for å gjenoppdage gamle notater.",
 			"action-open": "Åpne tilfeldig notat"
-		},3
+		},
 		"outline": {
 			"name": "Disposisjon",
 			"desc": "Viser en disposisjon av den aktive filen.",

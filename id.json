@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "Klik untuk membuka",
 			"click-to-collapse": "Klik untuk menutup"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "Hapus",
 		"button-delete-do-not-ask-again": "Hapus dan jangan tanyakan lagi",
 		"label-existing-backlink": "Saat ini terdapat {{links}} merujuk pada catatan ini.",
-		"label-delete-file": "Hapus file"
+		"label-delete-file": "Hapus file",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Ekstensi",
@@ -343,9 +368,27 @@
 			"action-open-local": "Buka grafik lokal",
 			"action-copy-screenshot": "Salin tangkapan layar",
 			"tab-title": "Grafik {{displayText}}",
-			"tooltip-drag-to-adjust": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Geser untuk mengatur.",
-			"tooltip-drag-to-adjust_plural": "Menampilkan titik dengan {{count}} hubungan lebih jauh. Geser untuk mengatur.",
-			"tooltip-show-interlinks": "Tampilkan link antar catatan bertetangga."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Tampilkan link antar catatan bertetangga.",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "Backlink",
@@ -422,6 +465,8 @@
 			"option-roam-highlight-fixer-description": "Konversi \"^^highlight^^\" ke \"==highlight==\".",
 			"option-roam-todo-converter": "Roam Research TODO converter",
 			"option-roam-todo-converter-description": "Konversi \"{{[[TODO]]}}\" ke \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Zettelkasten link fixer",
 			"zettelkasten-link-fixer-description": "Memperbaiki link \"[[UID]]\" menjadi \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Zettelkasten link beautifier",
