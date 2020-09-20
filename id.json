@@ -15,7 +15,7 @@
 			"option-strict-line-break": "Pemisah baris ketat",
 			"option-strict-line-break-description": "Spesifikasi Markdown mengabaikan tiap pemisah baris teks dalam mode pratinjau. Matikan untuk menampilkan tiap pemisah baris.",
 			"option-show-frontmatter": "Tampilkan frontmatter",
-			"option-show-frontmatter-description": "Dalam mode pratinjau, Tampilkan frontmatter sebagai sebuah blok kode. Matikan untuk menyembunyikan bagian frontmatter.",
+			"option-show-frontmatter-description": "Dalam mode pratinjau, Tampilkan frontmatter sebagai blok kode. Matikan untuk menyembunyikan bagian frontmatter.",
 			"option-use-markdown-links": "Gunakan link markdown",
 			"option-use-markdown-links-description": "Penyaranan link melengkapi secara otomatis link dan gambar markdown sebagai ganti wikilink.",
 			"option-auto-pair-brackets": "Pasangkan otomatis tanda kurung",
@@ -85,7 +85,7 @@
 			"name": "Tentang",
 			"label-license-key": "Kunci lisensi",
 			"license-key-placeholder": "Kunci lisensi Anda...",
-			"label-enter-commercial-license": "Silakan masukan kunci lisensi komersial Anda:",
+			"label-enter-commercial-license": "Silakan masukkan kunci lisensi komersial Anda:",
 			"label-activate-license": "Aktifkan lisensi",
 			"button-activate": "Aktifkan",
 			"label-unknown-version": "Tidak diketahui",
@@ -168,12 +168,12 @@
 		},
 		"spellcheck": {
 			"no-suggestion": "Tidak ada saran...",
-			"add-to-dictionary": "Masukan ke kamus"
+			"add-to-dictionary": "Masukkan ke kamus"
 		}
 	},
 	"interface": {
 		"embed-open-in-default-app-tooltip": "Buka pada aplikasi default",
-		"empty-sidebar": "Bilah sisi kosong, cobalah seret sebuah panel ke sini.",
+		"empty-sidebar": "Bilah sisi kosong, cobalah seret panel ke sini.",
 		"sidebar-expand": "Buka",
 		"sidebar-collapse": "Tutup",
 		"msg-fail-to-save-file": "Gagal menyimpan file \"{{filepath}}\". {{message}}.",
@@ -213,26 +213,26 @@
 		"start-screen": {
 			"label-beta-version": "Versi beta",
 			"option-open-folder-as-vault": "Buka folder sebagai vault",
-			"option-open-folder-as-vault-description": "Pilih sebuah folder yang berisikan file Markdown.",
+			"option-open-folder-as-vault-description": "Pilih folder yang berisikan file Markdown.",
 			"option-create-vault": "Buat vault baru",
-			"option-create-vault-description": "Buat sebuah vault Obsidian baru dalam sebuah folder.",
+			"option-create-vault-description": "Buat vault Obsidian baru dalam sebuah folder.",
 			"option-open-help-vault": "Buka vault bantuan",
-			"option-open-help-vault-description": "Buka sebuah vault \"Demo & Bantuan\".",
+			"option-open-help-vault-description": "Buka vault \"Demo & Bantuan\".",
 			"option-new-vault-name": "Nama vault",
-			"option-new-vault-name-description": "Beri sebuah nama untuk vault Anda yang mengagumkan.",
+			"option-new-vault-name-description": "Beri nama untuk vault Anda yang mengagumkan.",
 			"option-new-vault-location": "Lokasi",
-			"option-new-vault-location-description": "Pilih sebuah lokasi untuk menaruh vault baru Anda.",
+			"option-new-vault-location-description": "Pilih lokasi untuk menaruh vault baru Anda.",
 			"button-open": "Buka",
 			"button-help": "Bantuan",
 			"button-browse": "Telusuri",
 			"button-create-vault": "Buat",
 			"button-back": "Kembali",
 			"msg-empty-vault-name": "Nama vault tidak dapat kosong.",
-			"msg-invalid-folder": "Mohon pilih sebuah folder yang valid.",
+			"msg-invalid-folder": "Mohon pilih folder yang valid.",
 			"msg-failed-to-create-vault": "Gagal membuat vault.",
 			"msg-failed-to-create-vault-at-location": "Tidak dapat membuat vault pada lokasi yang dipilih. Mohon periksa kembali lokasi dan perizinan.",
 			"msg-error-failed-to-open-vault": "Gagal membuka.",
-			"msg-error-remove-current-open-vault": "Tidak dapat menghapus sebuah vault yang sekarang terbuka."
+			"msg-error-remove-current-open-vault": "Tidak dapat menghapus vault yang sekarang terbuka."
 		}
 	},
 	"commands": {
@@ -455,7 +455,7 @@
 			"instruction-use": "untuk menggunakan",
 			"instruction-dismiss": "untuk menutup",
 			"label-no-commands": "Tidak ada perintah yang ditemukan.",
-			"prompt-type-command": "Ketik sebuah perintah..."
+			"prompt-type-command": "Ketik perintah..."
 		},
 		"markdown-format-importer": {
 			"name": "Importir format Markdown",
@@ -494,7 +494,7 @@
 			"action-open-next": "Buka catatan harian selanjutnya",
 			"msg-fail-format": "Gagal membuat catatan harian. \"{{format}}\" adalah format yang tidak valid.",
 			"msg-fail-folder": "Gagal membuat catatan harian. Folder \"{{folderOption}}\" tidak ditemukan.",
-			"msg-fail-template-file": "Gagal membuat catatan harian. Template file \"{{template}}\" tidak ditemukan.",
+			"msg-fail-template-file": "Gagal membuat catatan harian. File template \"{{template}}\" tidak ditemukan.",
 			"msg-no-previous": "Tidak ada catatan harian sebelum ini.",
 			"msg-no-next": "Tidak ada catatan harian setelah ini.",
 			"option-date-format": "Format tanggal",
@@ -521,16 +521,16 @@
 		},
 		"random-note": {
 			"name": "Catatan acak",
-			"desc": "Buka sebuah catatan secara acak. Berguna untuk mengulas ulang dan menemukan ide.",
+			"desc": "Buka sebuah catatan secara acak untuk menemukan atau mengulas ulang.",
 			"action-open": "Buka catatan secara acak"
 		},
 		"outline": {
-			"name": "Outline",
-			"desc": "Tampilkan outline dari file yang aktif atau dari panel yang tertaut.",
-			"action-open": "Buka outline",
-			"action-open-pane": "Buka outline dari file yang aktif",
-			"tab-title": "Outline {{displayText}}",
-			"label-no-headings": "Tidak ada heading yang ditemukan."
+			"name": "Kerangka",
+			"desc": "Tampilkan kerangka dari catatan saat ini atau dari panel yang tertaut.",
+			"action-open": "Buka kerangka",
+			"action-open-pane": "Buka kerangka dari catatan saat ini",
+			"tab-title": "Kerangka dari {{displayText}}",
+			"label-no-headings": "Tidak ada judul yang ditemukan."
 		},
 		"word-count": {
 			"name": "Jumlah kata",
@@ -538,7 +538,7 @@
 		},
 		"slides": {
 			"name": "Slide",
-			"desc": "Mempresentasikan dari Markdown. Gunakan \"---\" untuk memisahkan slide.",
+			"desc": "Presentasi dari Markdown. Gunakan \"---\" untuk memisahkan slide.",
 			"action-start": "Mulai presentasi"
 		},
 		"audio-recorder": {
@@ -559,19 +559,19 @@
 		},
 		"templates": {
 			"name": "Template",
-			"desc": "Memasukan konten template dari folder file template.",
-			"action-insert": "Masukan template",
+			"desc": "Masukkan konten template dari folder file template.",
+			"action-insert": "Masukkan template",
 			"option-template-folder-location": "Lokasi folder template",
 			"option-template-folder-location-description": "File-file dalam folder ini akan tersedia sebagai template.",
 			"option-template-date-format": "Format tanggal",
 			"option-template-date-format-description": "{{date}} pada file template akan diganti dengan nilai ini.",
-			"option-template-date-format-description2": "Anda juga bisa menggunakan {{date:YYYY-MM-DD}} untuk mengganti format sekali.",
+			"option-template-date-format-description2": "Anda juga bisa menggunakan {{date:YYYY-MM-DD}} untuk menimpa format sekali.",
 			"option-template-time-format": "Format waktu",
 			"option-template-time-format-description": "{{time}} pada file template akan diganti dengan nilai ini.",
-			"option-template-time-format-description2": "Anda juga bisa menggunakan {{time:HH:mm}} untuk mengganti format sekali.",
-			"instruction-navigate": "untuk mengarahkan",
-			"instruction-insert": "untuk memasukan template",
-			"instruction-dismiss": "untuk membatalkan",
+			"option-template-time-format-description2": "Anda juga bisa menggunakan {{time:HH:mm}} untuk menimpa format sekali.",
+			"instruction-navigate": "untuk menavigasi",
+			"instruction-insert": "untuk memasukkan template",
+			"instruction-dismiss": "untuk menutup",
 			"msg-no-templates-found": "Tidak ada template yang ditemukan",
 			"msg-fail-invalid-folder": "Gagal untuk mencantumkan template. Folder template tidak valid.",
 			"msg-fail-folder-not-found": "Gagal untuk mencantumkan template. Folder \"{{folderOption}}\" tidak ditemukan.",
