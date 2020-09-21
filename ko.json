@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
 			"click-to-collapse": "클릭해서 접기"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "삭제",
 		"button-delete-do-not-ask-again": "삭제하고 다음부터 묻지 않기",
 		"label-existing-backlink": "이 노트로 연결되는 링크가 {{links}}개 있습니다.",
-		"label-delete-file": "파일 삭제"
+		"label-delete-file": "파일 삭제",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "플러그인",
@@ -343,9 +368,29 @@
 			"action-open-local": "로컬 그래프 열기",
 			"action-copy-screenshot": "스크린샷 복사",
 			"tab-title": "{{displayText}} 그래프",
-			"tooltip-drag-to-adjust": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정.",
-			"tooltip-drag-to-adjust_plural": "{{count}}개까지 떨어져 있는 노드 보여주기. 드래그로 갯수 조정.",
-			"tooltip-show-interlinks": "노트 사이 링크 전부 보여주기."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "노트 사이 링크 전부 보여주기.",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-show-arrows": "Arrows",
+			"option-show-arrows-description": "Show arrows when zoomed in",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -422,6 +467,8 @@
 			"option-roam-highlight-fixer-description": "\"^^하이라이트^^\"를 \"==하이라이트==\"로 변환합니다.",
 			"option-roam-todo-converter": "Roam Research TODO 변환기",
 			"option-roam-todo-converter-description": "\"{{[[TODO]]}}\"를 \"[ ]\"로 변환합니다.",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Zettelkasten 링크 고치기",
 			"zettelkasten-link-fixer-description": "\"[[UID]]\" 링크를 \"[[UID 파일 이름]]\"으로 변환합니다.",
 			"zettelkasten-link-beautifier": "Zettelkasten 링크 꾸미기",
