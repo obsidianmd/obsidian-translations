@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
 			"click-to-collapse": "點擊以摺疊"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta版",
+			"option-open-folder-as-vault": "開啟資料夾為儲存庫",
+			"option-open-folder-as-vault-description": "選擇已存在的Markdown檔案資料夾。",
+			"option-create-vault": "建立新的儲存庫",
+			"option-create-vault-description": "於資料夾內建立新的 Obsidian 儲存庫。",
+			"option-open-help-vault": "開啟說明文件儲存庫",
+			"option-open-help-vault-description": "開啟 \"示範與說明\" 儲存庫。",
+			"option-new-vault-name": "儲存庫名稱",
+			"option-new-vault-name-description": "挑選適當的儲存庫名稱。",
+			"option-new-vault-location": "位置",
+			"option-new-vault-location-description": "挑選置放儲存庫的位置。",
+			"button-open": "開啟",
+			"button-help": "說明",
+			"button-browse": "瀏覽",
+			"button-create-vault": "建立",
+			"button-back": "返回",
+			"msg-empty-vault-name": "儲存庫名稱必須輸入。",
+			"msg-invalid-folder": "請選擇適當的資料夾。",
+			"msg-failed-to-create-vault": "建立儲存庫失敗。",
+			"msg-failed-to-create-vault-at-location": "指定的位置無法建立儲存庫，請確認存放位置與資料夾權限。",
+			"msg-error-failed-to-open-vault": "開檔失敗。",
+			"msg-error-remove-current-open-vault": "開啟中的儲存庫無法刪除。"
 		}
 	},
 	"commands": {
@@ -268,7 +292,8 @@
 		"button-delete": "刪除",
 		"button-delete-do-not-ask-again": "刪除，並且不要再詢問。",
 		"label-existing-backlink": "目前有 {{links}} 與該文件相關。",
-		"label-delete-file": "刪除檔案"
+		"label-delete-file": "刪除檔案",
+		"button-cancel": "取消"
 	},
 	"plugins": {
 		"name": "外掛",
@@ -343,9 +368,29 @@
 			"action-open-local": "開啟當前筆記關聯圖",
 			"action-copy-screenshot": "複製螢幕截圖",
 			"tab-title": "{{displayText}} 的關聯圖",
-			"tooltip-drag-to-adjust": "顯示 {{count}} 個階層內的節點；以拖拉調整階層。",
-			"tooltip-drag-to-adjust_plural": "顯示 {{count}} 個階層內的節點；以拖拉調整階層。",
-			"tooltip-show-interlinks": "顯示鄰近節點的內部連結。"
+			"label-filters": "過濾設定",
+			"prompt-filter-nodes": "搜尋檔案...",
+			"option-depth": "深度",
+			"option-depth-description": "以此數字顯示連結階層",
+			"option-neighbor-links": "鄰近的連結",
+			"option-neighbor-links-description": "顯示鄰近節點的內部連結。",
+			"option-show-tags": "標籤",
+			"option-show-tags-description": "標籤連結至含有該標籤的檔案",
+			"option-show-attachments": "附件",
+			"option-show-attachments-description": "顯示檔案含有的附件",
+			"option-show-existing-files-only": "只顯示已存在檔案",
+			"option-show-existing-files-only-description": "勾選時，不顯示未存在的檔案連結",
+			"option-show-orphans": "孤立連結",
+			"option-show-orphans-description": "顯示未連結到其他檔案的檔案",
+			"label-layout": "佈局",
+			"option-show-arrows": "方向箭頭",
+			"option-show-arrows-description": "放大時顯示方向箭頭",
+			"option-node-size": "節點大小",
+			"option-link-thickness": "連結階層",
+			"option-center-force": "強制集中",
+			"option-link-force": "強制連結",
+			"option-link-distance": "連結的距離",
+			"option-repel-force": "強制排除"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -422,6 +467,8 @@
 			"option-roam-highlight-fixer-description": "將Roam Research中的 \"^^highlight^^\" 轉換為 \"==highlight==\"。",
 			"option-roam-todo-converter": "Roam Research待辦標籤轉換",
 			"option-roam-todo-converter-description": "將Roam Research中的 \"{{[[TODO]]}}\" 轉換為 \"[ ]\"。",
+			"option-bear-highlight-fixer": "Bear 高亮度修正",
+			"option-bear-highlight-fixer-description": "轉換 \"::highlight::\" 為 \"==highlight==\"。",
 			"zettelkasten-link-fixer": "ZK卡片連結轉換",
 			"zettelkasten-link-fixer-description": "將ZK卡片中使用的 \"[[UID]]\" 連結轉換為 \"[[UID 檔案名]]\" 的形式。",
 			"zettelkasten-link-beautifier": "美化ZK卡片連結",
