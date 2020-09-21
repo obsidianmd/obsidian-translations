@@ -2,7 +2,7 @@
 	"setting": {
 		"core": "设置",
 		"plugin": "插件",
-		"folder-path-example-placeholder": "例: 文件夹 1/文件夹 2",
+		"folder-path-example-placeholder": "例: 文件夹1/文件夹2",
 		"file-path-example-placeholder": "例: 文件夹/笔记.md",
 		"editor": {
 			"name": "编辑器",
@@ -32,8 +32,8 @@
 			"option-show-line-number-description": "在左侧显示行号。",
 			"option-use-tabs": "使用制表符",
 			"option-use-tabs-description": "开启后，Tab 键将使用制表符来完成缩进。关闭后 Tab 键将使用空格完成缩进。",
-			"option-line-wrap": "Line wrap",
-			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-line-wrap": "按窗口换行",
+			"option-line-wrap-description": "将长行文字换行以适合窗口大小，而无需左右滑屏。",
 			"option-vim-key-bindings": "Vim 键绑定",
 			"option-vim-key-bindings-description": "允许在编辑器中使用 Vim 键绑定。"
 		},
@@ -124,8 +124,8 @@
 			"name": "帐户",
 			"label-welcome": "欢迎您, {{name}}!",
 			"label-your-account-email": "您的帐户是 ",
-			"label-insider": "insider",
-			"label-supporter": "supporter",
+			"label-insider": "内部",
+			"label-supporter": "支持者",
 			"label-vip": "VIP",
 			"label-role-text": "您是一位 {{- role}} 用户!",
 			"label-insider-build-access": "感谢您的支持。您可以使用我们的内部版本。",
@@ -184,7 +184,7 @@
 		"drag-to-rearrange": "拖动以调整布局",
 		"msg-switched-to-preview": "切换默认视图为预览模式。",
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
-		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"msg-upgrade-installer": "若要使用此功能，请使用我们网站上提供的最新安装程序来重新安装。",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -209,6 +209,30 @@
 		"tooltip": {
 			"click-to-expand": "点击以展开",
 			"click-to-collapse": "点击以折叠"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -247,8 +271,8 @@
 		"toggle-highlight": "切换所选文本的高亮效果",
 		"insert-link": "插入链接",
 		"delete-paragraph": "删除段落",
-		"edit-file-title": "Edit file title",
-		"copy-path": "Copy file path"
+		"edit-file-title": "编辑当前标题",
+		"copy-path": "复制当前文件的路径"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -268,20 +292,21 @@
 		"button-delete": "删除",
 		"button-delete-do-not-ask-again": "删除，并且不要再询问。",
 		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
-		"label-delete-file": "删除文件"
+		"label-delete-file": "删除文件",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "插件",
 		"file-explorer": {
-			"name": "文件管理器",
+			"name": "文件列表",
 			"desc": "查看库中所有文件。",
 			"action-create-note": "新建笔记",
 			"action-create-note-in-new-pane": "在新面板中新建笔记",
 			"action-new-note": "新建笔记",
 			"action-new-folder": "新建文件夹",
 			"action-change-sort": "排序",
-			"action-reveal-file": "在文件管理器中显示",
-			"action-reveal-active-file": "在 Obsidian 的文件管理器中定位当前文件",
+			"action-reveal-file": "在文件列表中显示",
+			"action-reveal-active-file": "在 Obsidian 的文件列表中定位当前文件",
 			"label-sort-a-to-z": "按文件名升序排列 (A-Z)",
 			"label-sort-z-to-a": "按文件名降序排列 (Z-A)",
 			"label-sort-new-to-old": "按编辑时间排序（从新到旧）",
@@ -318,7 +343,7 @@
 			"label-match-file-path": "匹配文件路径: ",
 			"label-match-file-name": "匹配文件名: ",
 			"label-match-content": "匹配文件内容: ",
-			"label-match-tag": "Match tag: ",
+			"label-match-tag": "匹配标签: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
 			"matches-with-count_plural": "... 文中还有 {{count}} 处匹配。"
@@ -343,21 +368,41 @@
 			"action-open-local": "打开局部关系图",
 			"action-copy-screenshot": "复制截图",
 			"tab-title": "{{displayText}} 的关系图",
-			"tooltip-drag-to-adjust": "显示 {{count}} 段链接可到达的节点，拖动以调整。",
-			"tooltip-drag-to-adjust_plural": "显示 {{count}} 段链接可到达的节点，拖动以调整。",
-			"tooltip-show-interlinks": "显示节点间的所有链接"
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "显示节点间的所有链接",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-layout": "Layout",
+			"option-show-arrows": "Arrows",
+			"option-show-arrows-description": "Show arrows when zoomed in",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force"
 		},
 		"backlinks": {
 			"name": "反向链接",
-			"desc": "在状态栏中显示当前文件反向链接的数量。",
+			"desc": "在状态栏中显示当前笔记反向链接的数量。",
 			"action-open": "打开反向链接",
 			"action-open-for-current": "显示当前笔记的相关链接",
-			"label-linked-mentions": "以下笔记链接了当前文件",
-			"label-no-backlinks": "没有笔记链接当前文件",
-			"label-unlinked-mentions": "以下笔记提到了当前文件名",
-			"label-link-button-text": "链接",
+			"label-linked-mentions": "链接当前笔记",
+			"label-no-backlinks": "没有其它笔记链接到当前笔记",
+			"label-unlinked-mentions": "提到当前标题",
+			"label-link-button-text": "转为内部链接",
 			"tab-title": "{{displayText}} 的反向链接",
-			"label-no-unlinked-mentions": "没有笔记提到当前文件名",
+			"label-no-unlinked-mentions": "没有其它笔记提及当前笔记的标题",
 			"ellipsis": "..."
 		},
 		"tag-pane": {
@@ -372,7 +417,7 @@
 		},
 		"starred": {
 			"name": "星标",
-			"desc": "星标一些常用的文件和搜索结果。",
+			"desc": "给常用的文件和搜索结果加注星标记。",
 			"action-toggle": "取消/星标当前文件",
 			"action-toggle-search": "取消/星标当前搜索结果",
 			"action-star": "星标",
@@ -422,6 +467,8 @@
 			"option-roam-highlight-fixer-description": "将 Roam Research 中的 \"^^highlight^^\" 转换为 \"==highlight==\"。",
 			"option-roam-todo-converter": "Roam Research 待办标签转换",
 			"option-roam-todo-converter-description": "将 Roam Research 中的 \"{{[[TODO]]}}\" 转换为 \"[ ]\"。",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "ZK 卡片链接转换",
 			"zettelkasten-link-fixer-description": "将 ZK 卡片中使用的 \"[[UID]]\" 链接转换为 \"[[UID 文件名]]\" 的形式。",
 			"zettelkasten-link-beautifier": "美化 ZK 卡片链接",
@@ -469,7 +516,7 @@
 			"option-template-file": "ZK 卡片模板位置",
 			"option-template-file-description": "指定 ZK 卡片模板文件的路径。",
 			"option-template-file-placeholder": "例: 文件夹/模板文件.md",
-			"option-id-format": "Zettel ID format",
+			"option-id-format": "ZK卡ID 格式",
 			"msg-template-file-not-found": "创建 ZK 卡片未成功。 未找到 \"{{template}}\" 模板文件。"
 		},
 		"random-note": {
@@ -479,11 +526,11 @@
 		},
 		"outline": {
 			"name": "大纲",
-			"desc": "显示当前文件或链接页面的大纲标题。",
+			"desc": "显示当前笔记或链接笔记的小标题列表。",
 			"action-open": "打开大纲",
-			"action-open-pane": "显示当前笔记的大纲",
+			"action-open-pane": "显示当前笔记的小标题列表",
 			"tab-title": "{{displayText}} 的大纲",
-			"label-no-headings": "未发现标题行。"
+			"label-no-headings": "未发现小标题行。"
 		},
 		"word-count": {
 			"name": "字数统计",
@@ -491,7 +538,7 @@
 		},
 		"slides": {
 			"name": "幻灯片",
-			"desc": "演示当前笔记。您可以通过键入 \"---\" 来指定每一页幻灯片的内容。",
+			"desc": "演示当前笔记。您可以通过键入 \"---\" 来分隔每一页幻灯片的内容。",
 			"action-start": "开始演示"
 		},
 		"audio-recorder": {
@@ -506,7 +553,7 @@
 		},
 		"open-with-default-app": {
 			"name": "使用默认应用打开",
-			"desc": "在菜单中添加使用默认应用打开当前文件这一选项。",
+			"desc": "在菜单中添加【使用默认应用打开当前文件】这一选项。",
 			"action-open-file": "使用默认应用打开",
 			"action-show-in-folder": "在系统资源管理器中显示"
 		},
