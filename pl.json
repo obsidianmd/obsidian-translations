@@ -185,6 +185,7 @@
 		"msg-switched-to-preview": "Przełączono domyślny tryb widoku na podgląd.",
 		"msg-switched-to-edit": "Przełączono domyślny tryb widoku na edytor.",
 		"msg-upgrade-installer": "Aby użyć tej funkcji, zainstaluj aplikację na nowo, używając najnowszej wersji instalatora dostępnej na naszej stronie.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "Żaden plik nie jest otwarty",
 			"create-new-file": "Utwórz nowy plik",
@@ -370,10 +371,15 @@
 			"tab-title": "Graf: {{displayText}}",
 			"label-filters": "Filtry",
 			"prompt-filter-nodes": "Szukaj plików...",
+			"label-currently-searching-for": "Currently searching for:",
 			"option-depth": "Głębokość",
 			"option-depth-description": "Pokazuj wierzchołki oddalone o wskazaną liczbę połączeń.",
 			"option-neighbor-links": "Krawędzie między sąsiadami",
 			"option-neighbor-links-description": "Wyświetlaj krawędzie między sąsiednimi wierzchołkami.",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
 			"option-show-tags": "Tagi",
 			"option-show-tags-description": "Pokazuj tagi połączone z plikami, w których są zawarte",
 			"option-show-attachments": "Załączniki",
@@ -382,7 +388,7 @@
 			"option-show-existing-files-only-description": "Jeśli ta opcja jest zaznaczona, nieistniejące pliki nie są wyświetlane",
 			"option-show-orphans": "Sieroty",
 			"option-show-orphans-description": "Pokazuj pliki, które nie mają połączeń z żadnym innym plikiem",
-			"label-layout": "Wygląd",
+			"label-display": "Display",
 			"option-show-arrows": "Strzałki",
 			"option-show-arrows-description": "Pokazuj strzałki w widoku powiększonym",
 			"option-node-size": "Rozmiar wierzchołków",
@@ -390,7 +396,9 @@
 			"option-center-force": "Siła przyciągania do środka",
 			"option-link-force": "Siła połączeń",
 			"option-link-distance": "Długość krawędzi",
-			"option-repel-force": "Siła odpychania"
+			"option-repel-force": "Siła odpychania",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Linki zwrotne",

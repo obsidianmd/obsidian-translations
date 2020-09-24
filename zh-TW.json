@@ -185,6 +185,7 @@
 		"msg-switched-to-preview": "切換預設檢視為預覽模式。",
 		"msg-switched-to-edit": "切換預設檢視為編輯模式。",
 		"msg-upgrade-installer": "欲使用此功能時，請由官網下載並重新安裝最新版本的應用程式。",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
@@ -370,10 +371,15 @@
 			"tab-title": "{{displayText}} 的關聯圖",
 			"label-filters": "過濾設定",
 			"prompt-filter-nodes": "搜尋檔案...",
+			"label-currently-searching-for": "Currently searching for:",
 			"option-depth": "深度",
 			"option-depth-description": "以此數字顯示連結階層",
 			"option-neighbor-links": "鄰近的連結",
 			"option-neighbor-links-description": "顯示鄰近節點的內部連結。",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
 			"option-show-tags": "標籤",
 			"option-show-tags-description": "標籤連結至含有該標籤的檔案",
 			"option-show-attachments": "附件",
@@ -382,7 +388,7 @@
 			"option-show-existing-files-only-description": "勾選時，不顯示未存在的檔案連結",
 			"option-show-orphans": "孤立連結",
 			"option-show-orphans-description": "顯示未連結到其他檔案的檔案",
-			"label-layout": "佈局",
+			"label-display": "Display",
 			"option-show-arrows": "方向箭頭",
 			"option-show-arrows-description": "連接線顯示方向箭頭",
 			"option-node-size": "節點尺寸",
@@ -390,7 +396,9 @@
 			"option-center-force": "節點集中強度",
 			"option-link-force": "節點連結強度",
 			"option-link-distance": "連接線距離",
-			"option-repel-force": "節點互斥強度"
+			"option-repel-force": "節點互斥強度",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "反向連結",

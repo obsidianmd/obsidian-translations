@@ -185,6 +185,7 @@
 		"msg-switched-to-preview": "Cambió el modo de visualización por defecto a vista previa.",
 		"msg-switched-to-edit": "Cambió modo de visualización por defecto a editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "Ningún archivo está abierto",
 			"create-new-file": "Crear nuevo archivo",
@@ -370,10 +371,15 @@
 			"tab-title": "Gráfico de {{displayText}}",
 			"label-filters": "Filters",
 			"prompt-filter-nodes": "Search files...",
+			"label-currently-searching-for": "Currently searching for:",
 			"option-depth": "Depth",
 			"option-depth-description": "Show nodes this number of links away",
 			"option-neighbor-links": "Neighbor links",
 			"option-neighbor-links-description": "Mostrar enlaces entre vecinos.",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
 			"option-show-tags": "Tags",
 			"option-show-tags-description": "Tags are linked to the files that contain them",
 			"option-show-attachments": "Attachments",
@@ -382,7 +388,7 @@
 			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
 			"option-show-orphans": "Orphans",
 			"option-show-orphans-description": "Show files that are not linked to any other file",
-			"label-layout": "Layout",
+			"label-display": "Display",
 			"option-show-arrows": "Arrows",
 			"option-show-arrows-description": "Show arrows when zoomed in",
 			"option-node-size": "Node size",
@@ -390,7 +396,9 @@
 			"option-center-force": "Center force",
 			"option-link-force": "Link force",
 			"option-link-distance": "Link distance",
-			"option-repel-force": "Repel force"
+			"option-repel-force": "Repel force",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Backlinks",

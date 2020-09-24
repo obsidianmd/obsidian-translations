@@ -185,6 +185,7 @@
 		"msg-switched-to-preview": "Режим просмотра включен по умолчанию.",
 		"msg-switched-to-edit": "Режим редактирования включен по умолчанию.",
 		"msg-upgrade-installer": "Скачайте актуальную версию с сайта и переустановите Obsidian, чтобы включить эту функцию.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
@@ -370,10 +371,15 @@
 			"tab-title": "Граф {{displayText}}",
 			"label-filters": "Фильтры",
 			"prompt-filter-nodes": "Искать в...",
+			"label-currently-searching-for": "Currently searching for:",
 			"option-depth": "Глубина",
 			"option-depth-description": "Глубина отображения связей",
 			"option-neighbor-links": "Связи с соседними заметками",
 			"option-neighbor-links-description": "Показывать связи с соседними заметками",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
 			"option-show-tags": "Теги",
 			"option-show-tags-description": "Теги привязаны к содержащим их заметкам",
 			"option-show-attachments": "Вложения",
@@ -382,7 +388,7 @@
 			"option-show-existing-files-only-description": "При включении, ссылки на еще не созданные заметки не будут отображены",
 			"option-show-orphans": "Одиночные заметки",
 			"option-show-orphans-description": "Показывать заметки без ссылок на другие файлы",
-			"label-layout": "Настройка",
+			"label-display": "Display",
 			"option-show-arrows": "Направление связей",
 			"option-show-arrows-description": "Показывать направление при увеличении",
 			"option-node-size": "Размер узла ",
@@ -390,7 +396,9 @@
 			"option-center-force": "Сила притяжения",
 			"option-link-force": "Сила связи",
 			"option-link-distance": "Расстояние между узлами",
-			"option-repel-force": "Сила отталкивания"
+			"option-repel-force": "Сила отталкивания",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Обратные ссылки",
