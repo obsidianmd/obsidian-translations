@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Satır numaralarını en altta göster.",
 			"option-use-tabs": "Boşluklar için tab kullan",
 			"option-use-tabs-description": "\"Tab\" tuşuyla içerleme yaparken tab karakterleri kullan. Boşluk karakterleri kullanmak için bunu kapat.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim tuş ayarları",
 			"option-vim-key-bindings-description": "Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar."
 		},
@@ -182,6 +184,8 @@
 		"drag-to-rearrange": "Düzenlemek için sürükle",
 		"msg-switched-to-preview": "Varsayılan gösterim şekli önizleme yapıldı.",
 		"msg-switched-to-edit": "Varsayılan gösterim şekli editör yapıldı.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "Açık dosya yok",
 			"create-new-file": "Yeni dosya yarat",
@@ -206,6 +210,30 @@
 		"tooltip": {
 			"click-to-expand": "Click to expand",
 			"click-to-collapse": "Click to collapse"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -243,7 +271,9 @@
 		"toggle-italics": "Seçileni italik/normal yap",
 		"toggle-highlight": "Seçilenin üstünü çiz/çizme",
 		"insert-link": "Bağ ekle",
-		"delete-paragraph": "Paragrafı sil"
+		"delete-paragraph": "Paragrafı sil",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -263,7 +293,8 @@
 		"button-delete": "Sil",
 		"button-delete-do-not-ask-again": "Sil ve tekrar sorma",
 		"label-existing-backlink": "Bu notu gösteren {{links}} bağ var.",
-		"label-delete-file": "Dosyayı sil"
+		"label-delete-file": "Dosyayı sil",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -271,6 +302,7 @@
 			"name": "Dosyalar",
 			"desc": "Kasanızdaki tüm dosyaları gösterir.",
 			"action-create-note": "Yeni not yarat",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Yeni not",
 			"action-new-folder": "Yeni klasör",
 			"action-change-sort": "Sıralamayı değiştir",
@@ -280,6 +312,8 @@
 			"label-sort-z-to-a": "İsme göre sırala (Z'den A'ya)",
 			"label-sort-new-to-old": "Değiştirme zamanına göre sırala (yeniden eskiye)",
 			"label-sort-old-to-new": "Değiştirme zamanına göre sırala (eskiden yeniye)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Yeni not",
 			"menu-opt-new-folder": "Yeni klasör",
 			"menu-opt-set-attachment-folder": "Eklenti klasörü olarak kullan",
@@ -310,6 +344,7 @@
 			"label-match-file-path": "Dosya yolunu uydur: ",
 			"label-match-file-name": "Dosya adını uydur: ",
 			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Sonuç bulunamadı.",
 			"matches-with-count": "... ve {{count}} tane daha sonuc.",
 			"matches-with-count_plural": "... ve {{count}} tane daha sonuc."
@@ -334,8 +369,36 @@
 			"action-open-local": "Yerel grafiği aç",
 			"action-copy-screenshot": "Ekran görüntüsünü kopyala",
 			"tab-title": "{{displayText}}'in grafiği",
-			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"label-currently-searching-for": "Currently searching for:",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Show links between neighbors.",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-display": "Display",
+			"option-show-arrows": "Arrows",
+			"option-show-arrows-description": "Show arrows when zoomed in",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Geri bağlantılar",
@@ -412,6 +475,8 @@
 			"option-roam-highlight-fixer-description": "Converts \"^^highlight^^\" to \"==highlight==\".",
 			"option-roam-todo-converter": "Roam Research TODO converter",
 			"option-roam-todo-converter-description": "Converts \"{{[[TODO]]}}\" to \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Zettelkasten link fixer",
 			"zettelkasten-link-fixer-description": "Fixes \"[[UID]]\" links to full \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Zettelkasten link beautifier",
@@ -459,6 +524,7 @@
 			"option-template-file": "Template file location",
 			"option-template-file-description": "The file path to use as template.",
 			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
@@ -518,6 +584,10 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

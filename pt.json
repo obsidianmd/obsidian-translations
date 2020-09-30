@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Mostra os números das linhas.",
 			"option-use-tabs": "Usar tabulações",
 			"option-use-tabs-description": "Usar tabulações para indentação quando a tecla \"Tab\" é pressionada. Desligue para usar espaços.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Atalhos do Vim",
 			"option-vim-key-bindings-description": "Utilize atalhos do Vim no editor de códigos."
 		},
@@ -182,6 +184,8 @@
 		"drag-to-rearrange": "Arraste para reorganizar",
 		"msg-switched-to-preview": "Modo de visualização padrão mudado para visualização.",
 		"msg-switched-to-edit": "Modo de visualização padrão mudado para normal.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
@@ -206,6 +210,30 @@
 		"tooltip": {
 			"click-to-expand": "Clique para expandir",
 			"click-to-collapse": "Clique para recolher"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -243,7 +271,9 @@
 		"toggle-italics": "Ativar o itálico para seleção",
 		"toggle-highlight": "Grifar a seleção",
 		"insert-link": "Inserir link",
-		"delete-paragraph": "Excluir parágrafo"
+		"delete-paragraph": "Excluir parágrafo",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "Ira afetar os links {{links}} nos {{files}}.",
@@ -263,7 +293,8 @@
 		"button-delete": "Excluir",
 		"button-delete-do-not-ask-again": "Apague e não pergunte novamente",
 		"label-existing-backlink": "Há {{links}} direcionando a esta nota.",
-		"label-delete-file": "Excluir arquivo"
+		"label-delete-file": "Excluir arquivo",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -271,6 +302,7 @@
 			"name": "Explorador de arquivos",
 			"desc": "See all the files in your vault.",
 			"action-create-note": "Criar nova nota",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Nova nota",
 			"action-new-folder": "Nova pasta",
 			"action-change-sort": "Mudar ordenamento",
@@ -280,6 +312,8 @@
 			"label-sort-z-to-a": "Ordenar por nome (Z-A)",
 			"label-sort-new-to-old": "Ordenar por última edição (recentes-antigas)",
 			"label-sort-old-to-new": "Ordenar por última edição (antigas-recentes)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Nova nota",
 			"menu-opt-new-folder": "Nova pasta",
 			"menu-opt-set-attachment-folder": "Definir como pasta de anexos",
@@ -310,6 +344,7 @@
 			"label-match-file-path": "Caminho do arquivo correspondente: ",
 			"label-match-file-name": "Nome do arquivo correspondente: ",
 			"label-match-content": "Pesquisar pelo conteudo do arquivo: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Nenhuma correspondência encontrada.",
 			"matches-with-count": "... e mais {{count}} correspondência.",
 			"matches-with-count_plural": "... e mais {{count}} correspondências."
@@ -334,8 +369,36 @@
 			"action-open-local": "Abrir grafo local",
 			"action-copy-screenshot": "Copiar captura de tela",
 			"tab-title": "Grafo de {{displayText}}",
-			"tooltip-drag-to-adjust": "Mostrando  {{count}} coonexões. Arraste para ajustar.",
-			"tooltip-drag-to-adjust_plural": "Mostrando {{count}} conexões. Arraste para ajustar."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"label-currently-searching-for": "Currently searching for:",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Show links between neighbors.",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-display": "Display",
+			"option-show-arrows": "Arrows",
+			"option-show-arrows-description": "Show arrows when zoomed in",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -412,6 +475,8 @@
 			"option-roam-highlight-fixer-description": "Converte \"^^highlight^^\" para \"==highlight==\".",
 			"option-roam-todo-converter": "Conversor de TODO do Roam Research",
 			"option-roam-todo-converter-description": "Converte \"{{[[TODO]]}}\" em \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Consertador de links de Zettelkasten",
 			"zettelkasten-link-fixer-description": "Conserta links \"[[UID]]\" para completo \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Embelezador de link de Zettelkasten",
@@ -459,6 +524,7 @@
 			"option-template-file": "Localização de arquivo modelo",
 			"option-template-file-description": "O caminho do arquivo usado como modelo.",
 			"option-template-file-placeholder": "Exemplos: pasta1/nota",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Falha na criação de nota de Zettelkasten. Arquivo modelo \"{{template}}\" não encontrado."
 		},
 		"random-note": {
@@ -518,6 +584,10 @@
 			"msg-fail-invalid-folder": "Erro ao listar os templates. Sua pasta está inválida.",
 			"msg-fail-folder-not-found": "Erro ao listar os templates. A pasta \"{{folderOption}}\" não foi encontrada.",
 			"prompt-type-template": "Digite o nome do template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {

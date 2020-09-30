@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Afficher le numéro de ligne dans la marge.",
 			"option-use-tabs": "Utiliser des tabulations",
 			"option-use-tabs-description": "Utiliser des tabulations pour indenter lorsque vous appuyez sur la touche \"Tab\". Désactivez cette option pour utiliser des espaces.",
+			"option-line-wrap": "Renvoi automatique à la ligne",
+			"option-line-wrap-description": "Renvoi automatiquement à la ligne quand la taille d'une ligne dépasse la largeur de la fenêtre.",
 			"option-vim-key-bindings": "Raccourcis clavier Vim",
 			"option-vim-key-bindings-description": "Vous permet d'utiliser les raccourcis clavier Vim dans l'éditeur."
 		},
@@ -106,7 +108,7 @@
 			"button-open": "Ouvrir",
 			"option-language": "Langue",
 			"option-language-description": "Changer la langue d'affichage.",
-			"option-insider-build": "Reçevoir les pré-versions d'insider",
+			"option-insider-build": "Recevoir les pré-versions d'insider",
 			"option-insider-build-description": "Mise à jour automatique sur des versions en accès anticipé pour essayer des nouvelles fonctionnalités. Notez que ces versions peuvent être moins stables.",
 			"label-license": "Licence",
 			"label-your-commercial-license": "Votre clé de licence commerciale est ",
@@ -182,6 +184,8 @@
 		"drag-to-rearrange": "Faites glisser pour réorganiser",
 		"msg-switched-to-preview": "Changement du mode d'affichage par défaut à prévisualisation.",
 		"msg-switched-to-edit": "Changement du mode d'affichage par défaut à éditeur.",
+		"msg-upgrade-installer": "Pour utiliser cette fonctionnalité, veuillez réinstaller Obsdian avec le dernier programme d'installation disponible sur notre site web.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
 			"create-new-file": "Créer un nouveau fichier",
@@ -206,6 +210,30 @@
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
 			"click-to-collapse": "Cliquer pour réduire"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -243,7 +271,9 @@
 		"toggle-italics": "Mettre en italique la sélection",
 		"toggle-highlight": "Mettre en surbrillance la sélection",
 		"insert-link": "Insérer un lien",
-		"delete-paragraph": "Supprimer le paragraphe"
+		"delete-paragraph": "Supprimer le paragraphe",
+		"edit-file-title": "Modifier le titre du fichier",
+		"copy-path": "Copier le chemin du fichier"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -263,7 +293,8 @@
 		"button-delete": "Supprimer",
 		"button-delete-do-not-ask-again": "Supprimer et ne plus redemander",
 		"label-existing-backlink": "Il y a actuellement {{links}} pointant vers cette note.",
-		"label-delete-file": "Supprimer le fichier"
+		"label-delete-file": "Supprimer le fichier",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Modules d'extension",
@@ -271,15 +302,18 @@
 			"name": "Explorateur de fichiers",
 			"desc": "Voir tous les fichiers de votre projet.",
 			"action-create-note": "Créer une nouvelle note",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Nouvelle note",
 			"action-new-folder": "Nouveau dossier",
-			"action-change-sort": "Modifier l'ordre de triage",
+			"action-change-sort": "Modifier l'ordre de tri",
 			"action-reveal-file": "Affiche le fichier dans l'explorateur de fichiers",
 			"action-reveal-active-file": "Affiche le fichier actif dans l'explorateur de fichiers",
 			"label-sort-a-to-z": "Trier par nom de fichier (A à Z)",
 			"label-sort-z-to-a": "Trier par nom de fichier (Z à A)",
 			"label-sort-new-to-old": "Trier par heure d'édition (nouveau à ancien)",
 			"label-sort-old-to-new": "Trier par heure d'édition (ancien à nouveau)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "Nouvelle note",
 			"menu-opt-new-folder": "Nouveau dossier",
 			"menu-opt-set-attachment-folder": "Définir comme dossier de pièces jointes",
@@ -310,6 +344,7 @@
 			"label-match-file-path": "Correspond au chemin d'accès au fichier : ",
 			"label-match-file-name": "Correspond au nom du fichier : ",
 			"label-match-content": "Correspond au contenu : ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Aucun résultat.",
 			"matches-with-count": "... et {{count}} autre résultat.",
 			"matches-with-count_plural": "... et {{count}} autres résultats."
@@ -334,8 +369,36 @@
 			"action-open-local": "Ouvrir la vue graphique autour du fichier courant",
 			"action-copy-screenshot": "Copier la capture d'écran",
 			"tab-title": "Graphique de {{displayText}}",
-			"tooltip-drag-to-adjust": "Afficher les nœuds à {{count}} nœud de distance. Glisser pour ajuster.",
-			"tooltip-drag-to-adjust_plural": "Afficher les nœuds à {{count}} nœuds de distance. Glisser pour ajuster."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"label-currently-searching-for": "Currently searching for:",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Show links between neighbors.",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-display": "Display",
+			"option-show-arrows": "Arrows",
+			"option-show-arrows-description": "Show arrows when zoomed in",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Liens retours",
@@ -412,6 +475,8 @@
 			"option-roam-highlight-fixer-description": "Convertit \"^^highlight^^\" en \"==highlight==\".",
 			"option-roam-todo-converter": "Convertit les TODO de Roam Research",
 			"option-roam-todo-converter-description": "Convertit \"{{[[TODO]]}}\" en \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Répare les liens Zettelkasten",
 			"zettelkasten-link-fixer-description": "Fixes \"[[UID]]\" links to full \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Embellisseur de lien Zettelkasten",
@@ -459,6 +524,7 @@
 			"option-template-file": "Emplacement du fichier de modèle",
 			"option-template-file-description": "Le chemin du fichier à utiliser comme modèle.",
 			"option-template-file-placeholder": "Exemple: dossier1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Échec de la création de la note Zettelkasten. Fichier de modèle \"{{template}}\" non trouvé."
 		},
 		"random-note": {
@@ -518,6 +584,10 @@
 			"msg-fail-invalid-folder": "Échec de l'affichage de la liste des modèles. Le dossier modèle n'est pas valide.",
 			"msg-fail-folder-not-found": "Échec de l'affichage de la liste des modèles. Le dossier \"{{folderOption}}\" est introuvable.",
 			"prompt-type-template": "Saisir le nom d'un modèle..."
+		},
+		"translucency": {
+			"name": "Fenêtre translucide",
+			"desc": "Activez l'effet de translucidité pour améliorer la sensation de profondeur. À utiliser de préférence avec le mode sombre. Non pris en charge sous Linux."
 		}
 	},
 	"nouns": {

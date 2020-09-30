@@ -32,6 +32,8 @@
 			"option-show-line-number-description": "Show line number in the gutter.",
 			"option-use-tabs": "Use tabs",
 			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
+			"option-line-wrap": "Line wrap",
+			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
@@ -182,6 +184,8 @@
 		"drag-to-rearrange": "Drag to rearrange",
 		"msg-switched-to-preview": "Switched default view mode to preview.",
 		"msg-switched-to-edit": "Switched default view mode to editor.",
+		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
+		"tooltip-restore-default-settings": "Restore default settings",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -206,6 +210,30 @@
 		"tooltip": {
 			"click-to-expand": "Click to expand",
 			"click-to-collapse": "Click to collapse"
+		},
+		"start-screen": {
+			"label-beta-version": "Beta version",
+			"option-open-folder-as-vault": "Open folder as vault",
+			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
+			"option-create-vault": "Create new vault",
+			"option-create-vault-description": "Create a new Obsidian vault under a folder.",
+			"option-open-help-vault": "Open help vault",
+			"option-open-help-vault-description": "Open a \"Demo & Help\" vault.",
+			"option-new-vault-name": "Vault name",
+			"option-new-vault-name-description": "Pick a name for your awesome vault.",
+			"option-new-vault-location": "Location",
+			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"button-open": "Open",
+			"button-help": "Help",
+			"button-browse": "Browse",
+			"button-create-vault": "Create",
+			"button-back": "Back",
+			"msg-empty-vault-name": "Vault name cannot be empty.",
+			"msg-invalid-folder": "Please pick a valid folder.",
+			"msg-failed-to-create-vault": "Failed to create vault.",
+			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
+			"msg-error-failed-to-open-vault": "Failed to open.",
+			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
 		}
 	},
 	"commands": {
@@ -243,7 +271,9 @@
 		"toggle-italics": "Toggle italics for selection",
 		"toggle-highlight": "Toggle highlight for selection",
 		"insert-link": "Insert link",
-		"delete-paragraph": "Delete paragraph"
+		"delete-paragraph": "Delete paragraph",
+		"edit-file-title": "Edit file title",
+		"copy-path": "Copy file path"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -263,7 +293,8 @@
 		"button-delete": "Delete",
 		"button-delete-do-not-ask-again": "Delete and don't ask again",
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
-		"label-delete-file": "Delete file"
+		"label-delete-file": "Delete file",
+		"button-cancel": "Cancel"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -271,6 +302,7 @@
 			"name": "File explorer",
 			"desc": "See all the files in your vault.",
 			"action-create-note": "Create new note",
+			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "New note",
 			"action-new-folder": "New folder",
 			"action-change-sort": "Change sort order",
@@ -280,6 +312,8 @@
 			"label-sort-z-to-a": "Sort by file name (Z to A)",
 			"label-sort-new-to-old": "Sort by edit time (new to old)",
 			"label-sort-old-to-new": "Sort by edit time (old to new)",
+			"label-sort-created-old-to-new": "Created time (old to new)",
+			"label-sort-created-new-to-old": "Created time (new to old)",
 			"menu-opt-new-note": "New note",
 			"menu-opt-new-folder": "New folder",
 			"menu-opt-set-attachment-folder": "Set as attachment folder",
@@ -310,6 +344,7 @@
 			"label-match-file-path": "Match file path: ",
 			"label-match-file-name": "Match file name: ",
 			"label-match-content": "Match file content: ",
+			"label-match-tag": "Match tag: ",
 			"label-no-matches": "No matches found.",
 			"matches-with-count": "... and {{count}} more match.",
 			"matches-with-count_plural": "... and {{count}} more matches."
@@ -334,8 +369,36 @@
 			"action-open-local": "Open local graph",
 			"action-copy-screenshot": "Copy screenshot",
 			"tab-title": "Graph of {{displayText}}",
-			"tooltip-drag-to-adjust": "Showing nodes {{count}} connection away. Drag to adjust.",
-			"tooltip-drag-to-adjust_plural": "Showing nodes {{count}} connections away. Drag to adjust."
+			"label-filters": "Filters",
+			"prompt-filter-nodes": "Search files...",
+			"label-currently-searching-for": "Currently searching for:",
+			"option-depth": "Depth",
+			"option-depth-description": "Show nodes this number of links away",
+			"option-neighbor-links": "Neighbor links",
+			"option-neighbor-links-description": "Show links between neighbors.",
+			"option-forelinks": "Outgoing links",
+			"option-forelinks-description": "Show links to other files",
+			"option-backlinks": "Incoming links",
+			"option-backlinks-description": "Show links from other files",
+			"option-show-tags": "Tags",
+			"option-show-tags-description": "Tags are linked to the files that contain them",
+			"option-show-attachments": "Attachments",
+			"option-show-attachments-description": "Show attachments included by files",
+			"option-show-existing-files-only": "Existing files only",
+			"option-show-existing-files-only-description": "When checked, links to nonexistent files are not shown",
+			"option-show-orphans": "Orphans",
+			"option-show-orphans-description": "Show files that are not linked to any other file",
+			"label-display": "Display",
+			"option-show-arrows": "Arrows",
+			"option-show-arrows-description": "Show arrows when zoomed in",
+			"option-node-size": "Node size",
+			"option-link-thickness": "Link thickness",
+			"option-center-force": "Center force",
+			"option-link-force": "Link force",
+			"option-link-distance": "Link distance",
+			"option-repel-force": "Repel force",
+			"tooltip-open-graph-settings": "Open graph settings",
+			"msg-screenshot-copied": "Screenshot copied to the clipboard."
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -412,6 +475,8 @@
 			"option-roam-highlight-fixer-description": "Converts \"^^highlight^^\" to \"==highlight==\".",
 			"option-roam-todo-converter": "Roam Research TODO converter",
 			"option-roam-todo-converter-description": "Converts \"{{[[TODO]]}}\" to \"[ ]\".",
+			"option-bear-highlight-fixer": "Bear highlight fixer",
+			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
 			"zettelkasten-link-fixer": "Zettelkasten link fixer",
 			"zettelkasten-link-fixer-description": "Fixes \"[[UID]]\" links to full \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Zettelkasten link beautifier",
@@ -459,6 +524,7 @@
 			"option-template-file": "Template file location",
 			"option-template-file-description": "The file path to use as template.",
 			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Zettel ID format",
 			"msg-template-file-not-found": "Failed to create Zettelkasten note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
@@ -518,6 +584,10 @@
 			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
 			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
 			"prompt-type-template": "Type name of a template..."
+		},
+		"translucency": {
+			"name": "Translucent window",
+			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		}
 	},
 	"nouns": {
