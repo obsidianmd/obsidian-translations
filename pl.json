@@ -163,6 +163,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Użyj #",
 			"label-link-heading": "aby utworzyć link do nagłówka",
+			"label-type-block": "Type ^",
+			"label-link-block": "to link blocks",
 			"label-type-pipe": "Użyj |",
 			"label-change-display-text": "aby zmienić wyświetlany tekst"
 		},
@@ -272,6 +274,7 @@
 		"toggle-highlight": "Zakreślenie",
 		"insert-link": "Wstaw link",
 		"delete-paragraph": "Usuń paragraf",
+		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edytuj tytuł pliku",
 		"copy-path": "Skopiuj ścieżkę pliku"
 	},
@@ -294,7 +297,8 @@
 		"button-delete-do-not-ask-again": "Usuń i nie pytaj ponownie",
 		"label-existing-backlink": "Do tej notatki istnieje {{links}}.",
 		"label-delete-file": "Usuń plik",
-		"button-cancel": "Anuluj"
+		"button-cancel": "Anuluj",
+		"button-done": "Done"
 	},
 	"plugins": {
 		"name": "Wtyczki",
@@ -347,7 +351,23 @@
 			"label-match-tag": "Wyszukiwany tag: ",
 			"label-no-matches": "Brak wyników.",
 			"matches-with-count": "... i {{count}} dodatkowych wystąpień.",
-			"matches-with-count_plural": "... i {{count}} dodatkowych wystąpień."
+			"matches-with-count_plural": "... i {{count}} dodatkowych wystąpień.",
+			"label-copy-search-results": "Copy search results",
+			"button-copy-results": "Copy results",
+			"msg-successfully-copied": "Results copied to your clipboard.",
+			"option-show-path": "Show path",
+			"option-show-path-description": "Display full path of the file rather than just the file name.",
+			"option-link-style": "Link style",
+			"option-link-style-description": "Optionally turn each file result in to a link.",
+			"option-choice-link-style-none": "None",
+			"option-choice-link-style-wikilink": "Wikilink",
+			"option-choice-link-style-markdown-link": "Markdown link",
+			"option-list-prefix": "List prefix",
+			"option-list-prefix-description": "Optionally add a list item prefix to each file result.",
+			"option-choice-list-style-none": "None",
+			"option-choice-list-style-dash": "Dash (-)",
+			"option-choice-list-style-asterisk": "Asterisk (*)",
+			"option-choice-list-style-numbered": "Numbered"
 		},
 		"quick-switcher": {
 			"name": "Szybka zmiana pliku",
@@ -630,6 +650,10 @@
 			"option-show-graph-description": "Wyświetlaj mały lokalny graf na każdej stronie.",
 			"option-show-outline": "Pokaż spis treści",
 			"option-show-outline-description": "Wyświetlaj spis treści zawierający wszyskie nagłówki na każdej stronie.",
+			"option-show-backlinks": "Show backlinks",
+			"option-show-backlinks-description": "Show backlink section at the end of each page.",
+			"option-sliding-window-mode": "Use sliding windows",
+			"option-sliding-window-mode-description": "Open pages in new panes to the right. Allows scrolling through panes horizontally.",
 			"option-hover-preview-file": "Pokaż podgląd w dymku",
 			"option-hover-preview-file-description": "Wyświetlaj podgląd stron gdy użytkownik najedzie kursorem na link.",
 			"option-readable-line-length": "Optymalna długość wiersza do czytania",
@@ -646,6 +670,7 @@
 			"tooltip-open-site-options": "Zmień ustawienia strony",
 			"label-no-changes-detected": "Nie wykryto żadnych zmian.",
 			"label-changed-files-to-be-published": "Zmiany",
+			"label-unchanged-files-already-published": "Unchanged (select to delete)",
 			"label-file-selected": " zaznaczone",
 			"button-select-all-files": "Zaznacz wszystkie",
 			"button-deselect-all-files": "Odznacz wszystkie",
