@@ -163,8 +163,8 @@
 		"link-suggestion": {
 			"label-type-hash": "输入 #",
 			"label-link-heading": "可以链接到标题",
-			"label-type-block": "Type ^",
-			"label-link-block": "to link blocks",
+			"label-type-block": "输入 ^",
+			"label-link-block": "链接文本块",
 			"label-type-pipe": "输入 |",
 			"label-change-display-text": "指定显示的文本"
 		},
@@ -274,7 +274,7 @@
 		"toggle-highlight": "切换所选文本的高亮效果",
 		"insert-link": "插入链接",
 		"delete-paragraph": "删除段落",
-		"toggle-checklist": "Toggle checklist status",
+		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
 		"copy-path": "复制当前文件的路径"
 	},
@@ -298,7 +298,7 @@
 		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
-		"button-done": "Done"
+		"button-done": "完成"
 	},
 	"plugins": {
 		"name": "插件",
@@ -650,10 +650,10 @@
 			"option-show-graph-description": "在每个页面上显示一个小的局部关系图。",
 			"option-show-outline": "显示大纲",
 			"option-show-outline-description": "显示由笔记中小标题组成的大纲。",
-			"option-show-backlinks": "Show backlinks",
-			"option-show-backlinks-description": "Show backlink section at the end of each page.",
-			"option-sliding-window-mode": "Use sliding windows",
-			"option-sliding-window-mode-description": "Open pages in new panes to the right. Allows scrolling through panes horizontally.",
+			"option-show-backlinks": "显示反向链接",
+			"option-show-backlinks-description": "在每页末尾显示反向链接内容。",
+			"option-sliding-window-mode": "使用滑动窗口",
+			"option-sliding-window-mode-description": "在右侧的新窗口中打开页面，允许水平滚动。",
 			"option-hover-preview-file": "开启悬停预览",
 			"option-hover-preview-file-description": "开启后，当光标悬停在链接时显示页面预览。",
 			"option-readable-line-length": "限制栏宽",
@@ -670,7 +670,7 @@
 			"tooltip-open-site-options": "更改站点选项",
 			"label-no-changes-detected": "未检测到更改。",
 			"label-changed-files-to-be-published": "更改",
-			"label-unchanged-files-already-published": "Unchanged (select to delete)",
+			"label-unchanged-files-already-published": "未更改（选择可删除）",
 			"label-file-selected": " 已选择",
 			"button-select-all-files": "全部选中",
 			"button-deselect-all-files": "取消全选",
