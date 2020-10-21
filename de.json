@@ -163,6 +163,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Tippe #",
 			"label-link-heading": "um mit Überschrift zu verknüpfen",
+			"label-type-block": "Type ^",
+			"label-link-block": "to link blocks",
 			"label-type-pipe": "Tippe |",
 			"label-change-display-text": "um den Anzeigetext zu ändern"
 		},
@@ -272,6 +274,7 @@
 		"toggle-highlight": "Tausche hervorgehoben für Auswahl",
 		"insert-link": "Link einfügen",
 		"delete-paragraph": "Absatz löschen",
+		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Dateinamen ändern",
 		"copy-path": "Dateipfad kopieren"
 	},
@@ -294,7 +297,8 @@
 		"button-delete-do-not-ask-again": "Löschen und nicht mehr fragen",
 		"label-existing-backlink": "Es existieren {{links}} die auf diese Notiz verweisen.",
 		"label-delete-file": "Datei löschen",
-		"button-cancel": "Abbrechen"
+		"button-cancel": "Abbrechen",
+		"button-done": "Done"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -347,7 +351,23 @@
 			"label-match-tag": "Tag stimmt überein: ",
 			"label-no-matches": "Keine Übereinstimmungen gefunden.",
 			"matches-with-count": "... und {{count}} weitere Übereinstimmung.",
-			"matches-with-count_plural": "... und {{count}} weitere Übereinstimmungen."
+			"matches-with-count_plural": "... und {{count}} weitere Übereinstimmungen.",
+			"label-copy-search-results": "Copy search results",
+			"button-copy-results": "Copy results",
+			"msg-successfully-copied": "Results copied to your clipboard.",
+			"option-show-path": "Show path",
+			"option-show-path-description": "Display full path of the file rather than just the file name.",
+			"option-link-style": "Link style",
+			"option-link-style-description": "Optionally turn each file result in to a link.",
+			"option-choice-link-style-none": "None",
+			"option-choice-link-style-wikilink": "Wikilink",
+			"option-choice-link-style-markdown-link": "Markdown link",
+			"option-list-prefix": "List prefix",
+			"option-list-prefix-description": "Optionally add a list item prefix to each file result.",
+			"option-choice-list-style-none": "None",
+			"option-choice-list-style-dash": "Dash (-)",
+			"option-choice-list-style-asterisk": "Asterisk (*)",
+			"option-choice-list-style-numbered": "Numbered"
 		},
 		"quick-switcher": {
 			"name": "Schnellauswahl",
@@ -630,6 +650,10 @@
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",
 			"option-show-outline-description": "Display the outline of headings on each page.",
+			"option-show-backlinks": "Show backlinks",
+			"option-show-backlinks-description": "Show backlink section at the end of each page.",
+			"option-sliding-window-mode": "Use sliding windows",
+			"option-sliding-window-mode-description": "Open pages in new panes to the right. Allows scrolling through panes horizontally.",
 			"option-hover-preview-file": "Show hover preview",
 			"option-hover-preview-file-description": "Display page preview when hovering links.",
 			"option-readable-line-length": "Readable line length",
@@ -646,6 +670,7 @@
 			"tooltip-open-site-options": "Change site options",
 			"label-no-changes-detected": "No changes were detected.",
 			"label-changed-files-to-be-published": "Changes",
+			"label-unchanged-files-already-published": "Unchanged (select to delete)",
 			"label-file-selected": " selected",
 			"button-select-all-files": "Select all",
 			"button-deselect-all-files": "Deselect all",
