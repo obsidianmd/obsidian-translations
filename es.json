@@ -149,6 +149,17 @@
 			"link-sign-up-now": "Regístrese ahora",
 			"message-get-community-badges": "Para las insignias de comunidad, por favor envíe un correo a support@obsidian.md si no las ha recibido en 24 horas después de obtener su licencia.",
 			"message-obtain-commercial-license": "Para obtener una licencia comercial, visite {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -188,6 +199,8 @@
 		"msg-switched-to-edit": "Cambió modo de visualización por defecto a editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Ningún archivo está abierto",
 			"create-new-file": "Crear nuevo archivo",
@@ -276,7 +289,8 @@
 		"delete-paragraph": "Eliminar paragrafo",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Editar nombre del archivo",
-		"copy-path": "Copiar ruta del archivo"
+		"copy-path": "Copiar ruta del archivo",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Esto afectará a {{links}} en {{files}}.",

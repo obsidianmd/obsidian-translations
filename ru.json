@@ -149,6 +149,17 @@
 			"link-sign-up-now": "Зарегистрироваться",
 			"message-get-community-badges": "Напишите на support@obsidian.md если вы не получили значки сообщества через сутки после получения лицензии.",
 			"message-obtain-commercial-license": "Для получения коммерческой лицензии перейдите по ссылке: {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -163,8 +174,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Введите #",
 			"label-link-heading": ", чтобы сослаться на заголовок",
-			"label-type-block": "Type ^",
-			"label-link-block": "to link blocks",
+			"label-type-block": "Введите ^",
+			"label-link-block": ", чтобы сослаться на блок",
 			"label-type-pipe": "Введите |",
 			"label-change-display-text": ", чтобы изменить отображаемый текст"
 		},
@@ -188,6 +199,8 @@
 		"msg-switched-to-edit": "Режим редактирования включен по умолчанию.",
 		"msg-upgrade-installer": "Скачайте актуальную версию с сайта и переустановите Obsidian, чтобы включить эту функцию.",
 		"tooltip-restore-default-settings": "Восстановить настройки по умолчанию",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
@@ -274,9 +287,10 @@
 		"toggle-highlight": "Включить/выключить тег подсветки для выделения",
 		"insert-link": "Вставить ссылку",
 		"delete-paragraph": "Удалить абзац",
-		"toggle-checklist": "Toggle checklist status",
+		"toggle-checklist": "Переключить состояние флажка",
 		"edit-file-title": "Редактировать заголовок файла",
-		"copy-path": "Скопировать путь к файлу"
+		"copy-path": "Скопировать путь к файлу",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
