@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Noyau",
 		"plugin": "Module d'extension",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Exemple: dossier 1/dossier 2",
 		"file-path-example-placeholder": "Exemple: dossier/note",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Changement du mode d'affichage par défaut à éditeur.",
 		"msg-upgrade-installer": "Pour utiliser cette fonctionnalité, merci de réinstaller Obsdian avec le dernier programme d'installation disponible sur notre site web.",
 		"tooltip-restore-default-settings": "Restoration des paramètres par défaut",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
 			"create-new-file": "Créer un nouveau fichier",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "Supprimer le paragraphe",
 		"toggle-checklist": "Basculer l'état de l'élément de la checklist",
 		"edit-file-title": "Modifier le titre du fichier",
-		"copy-path": "Copier le chemin du fichier"
+		"copy-path": "Copier le chemin du fichier",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "Il y a actuellement {{links}} rétroliens pointant vers cette note.",
 		"label-delete-file": "Supprimer le fichier",
 		"button-cancel": "Annuler",
-		"button-done": "Valider"
+		"button-done": "Valider",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Modules d'extension",

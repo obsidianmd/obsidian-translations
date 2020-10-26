@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Obsidian Core",
 		"plugin": "Plug-In",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Beispiel: Ordner 1/Ordner 2",
 		"file-path-example-placeholder": "Beispiel: Ordner/Notiz",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Standard-Ansichtsmodus auf Editor umgeschaltet.",
 		"msg-upgrade-installer": "Bitte installiere die Anwendung mit dem aktuellsten Installer von unserer Website neu, um dieses Feature nutzen zu können.",
 		"tooltip-restore-default-settings": "Standard-Einstellungen wieder herstellen",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Keine Datei geöffnet",
 			"create-new-file": "Neue Datei erzeugen",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "Absatz löschen",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Dateinamen ändern",
-		"copy-path": "Dateipfad kopieren"
+		"copy-path": "Dateipfad kopieren",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Das betrifft {{links}} in {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "Es existieren {{links}} die auf diese Notiz verweisen.",
 		"label-delete-file": "Datei löschen",
 		"button-cancel": "Abbrechen",
-		"button-done": "Fertig"
+		"button-done": "Fertig",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Plugins",

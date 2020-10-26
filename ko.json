@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "주요 설정",
 		"plugin": "추가 설정",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "예시: 폴더 1/폴더 2",
 		"file-path-example-placeholder": "예시: 폴더/파일",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "기본 뷰어 모드를 에디터 모드로 바꿨습니다.",
 		"msg-upgrade-installer": "이 기능을 사용하기 위해서는 웹사이트에서 인스톨러를 새로 다운받아서 설치해주세요.",
 		"tooltip-restore-default-settings": "기본값으로 되돌리기",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "열려있는 파일이 없습니다.",
 			"create-new-file": "새 파일 만들기",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "문단 삭제",
 		"toggle-checklist": "체크 박스 상태 토글",
 		"edit-file-title": "파일 제목 편집",
-		"copy-path": "파일 경로 복사"
+		"copy-path": "파일 경로 복사",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "이 노트로 연결되는 링크가 {{links}}개 있습니다.",
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
-		"button-done": "완료"
+		"button-done": "완료",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "플러그인",

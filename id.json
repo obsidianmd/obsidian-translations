@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Inti",
 		"plugin": "Ekstensi",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Contoh: folder 1/folder 2",
 		"file-path-example-placeholder": "Contoh: folder/file",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke editor.",
 		"msg-upgrade-installer": "Untuk menggunakan fitur ini, instal ulang dengan penginstal terbaru yang tersedia di situs web kami.",
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "Hapus paragraf",
 		"toggle-checklist": "Centang daftar periksa",
 		"edit-file-title": "Ubah judul file",
-		"copy-path": "Salin jalur file"
+		"copy-path": "Salin jalur file",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "Saat ini terdapat {{links}} menunjuk ke catatan ini.",
 		"label-delete-file": "Hapus file",
 		"button-cancel": "Batal",
-		"button-done": "Selesai"
+		"button-done": "Selesai",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Ekstensi",

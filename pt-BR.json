@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Core",
 		"plugin": "Plugin",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Exemplos: pasta 1/pasta 2",
 		"file-path-example-placeholder": "Exemplos: pasta/nota",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Modo de visualização padrão mudado para normal.",
 		"msg-upgrade-installer": "Para usar este recurso, instale novamente com o instalador mais recente disponível em nosso site.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "Excluir parágrafo",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Editar o título do arquivo",
-		"copy-path": "Copiar caminho do arquivo"
+		"copy-path": "Copiar caminho do arquivo",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Irá afetar os links {{links}} nos {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "Há {{links}} direcionando a esta nota.",
 		"label-delete-file": "Excluir arquivo",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Plugins",

@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "コア",
 		"plugin": "プラグイン",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "例: フォルダ1/フォルダ2",
 		"file-path-example-placeholder": "例: フォルダ/ノート",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "デフォルトの閲覧モードをエディタに変更しました。",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
 			"create-new-file": "新しいファイルを作成",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "パラグラフを削除",
 		"toggle-checklist": "チェックリストの状態を切り替える",
 		"edit-file-title": "ファイルタイトルの編集",
-		"copy-path": "ファイルパスをコピーする"
+		"copy-path": "ファイルパスをコピーする",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
 		"label-delete-file": "Delete file",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Plugins",

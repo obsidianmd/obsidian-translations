@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Kjerne",
 		"plugin": "Utvidelse",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Eksempel: mappe 1/mappe 2",
 		"file-path-example-placeholder": "Eksempel: mappe/notat",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Endret standard modus til editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Ingen åpne filer",
 			"create-new-file": "Lag ny fil",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "Slett avsnitt",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Rediger tittel",
-		"copy-path": "Kopier søkesti"
+		"copy-path": "Kopier søkesti",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "Det er {{links}} som peker mot denne filen.",
 		"label-delete-file": "Slett fil",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Utvidelser",

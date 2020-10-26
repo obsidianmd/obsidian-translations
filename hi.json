@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "कोर",
 		"plugin": "प्लग-इन",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "उदाहरण के लिए: फोल्डर १/फोल्डर २",
 		"file-path-example-placeholder": "उदाहरण के लिए: फोल्डर/नोट",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Switched default view mode to editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "पैराग्राफ हटाएं",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
-		"copy-path": "Copy file path"
+		"copy-path": "Copy file path",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "यह {{links}} को इन {{files}} मैं प्रभावित करेगा।",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "अभी के लिए इस नोट की ओर {{links}} संकेत हैं।",
 		"label-delete-file": "फ़ाइल नष्ट करें",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Plugins",

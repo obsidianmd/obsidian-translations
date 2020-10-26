@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Podstawowe",
 		"plugin": "Wtyczki",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Przykład: folder 1/folder 2",
 		"file-path-example-placeholder": "Przykład: folder/notatka",
 		"editor": {
@@ -188,6 +189,8 @@
 		"msg-switched-to-edit": "Przełączono domyślny tryb widoku na edytor.",
 		"msg-upgrade-installer": "Aby użyć tej funkcji, zainstaluj aplikację na nowo, używając najnowszej wersji instalatora dostępnej na naszej stronie.",
 		"tooltip-restore-default-settings": "Przywróć ustawienia domyślne",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Żaden plik nie jest otwarty",
 			"create-new-file": "Utwórz nowy plik",
@@ -276,7 +279,8 @@
 		"delete-paragraph": "Usuń paragraf",
 		"toggle-checklist": "Zaznacz / odznacz element listy",
 		"edit-file-title": "Edytuj tytuł pliku",
-		"copy-path": "Skopiuj ścieżkę pliku"
+		"copy-path": "Skopiuj ścieżkę pliku",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -298,7 +302,13 @@
 		"label-existing-backlink": "Do tej notatki istnieje {{links}}.",
 		"label-delete-file": "Usuń plik",
 		"button-cancel": "Anuluj",
-		"button-done": "Done"
+		"button-done": "Done",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Wtyczki",
