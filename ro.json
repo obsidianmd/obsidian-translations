@@ -149,6 +149,17 @@
 			"link-sign-up-now": "Înregistrează-te acum",
 			"message-get-community-badges": "Pentru insignele comunității, te rugăm să trimiți un email la support@obsidian.md dacă nu le-ai primit la cel mult 24 de ore după ce ai obținut licența.",
 			"message-obtain-commercial-license": "Pentru a obține o licență comercială, vizitează {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -163,8 +174,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Scrie #",
 			"label-link-heading": "pentru a trimite către un titlu",
-			"label-type-block": "Type ^",
-			"label-link-block": "to link blocks",
+			"label-type-block": "Tastează ^",
+			"label-link-block": "pentru a lega blocurile",
 			"label-type-pipe": "Scrie |",
 			"label-change-display-text": "pentru a schimba textul afișat"
 		},
@@ -188,6 +199,8 @@
 		"msg-switched-to-edit": "Modul de afișare implicit a fost schimbat pe editor.",
 		"msg-upgrade-installer": "Pentru a folosi această caracteristică, reinstalează Obsidian folosind ultima versiune de pe site..",
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",
@@ -274,9 +287,10 @@
 		"toggle-highlight": "Comută textul evidențiat pentru selecție",
 		"insert-link": "Inserează legătură",
 		"delete-paragraph": "Șterge paragraf",
-		"toggle-checklist": "Toggle checklist status",
+		"toggle-checklist": "Comută starea listei DE FĂCUT",
 		"edit-file-title": "Editează titlul fișierului",
-		"copy-path": "Copiază calea fișierului"
+		"copy-path": "Copiază calea fișierului",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",

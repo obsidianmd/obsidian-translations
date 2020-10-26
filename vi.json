@@ -2,6 +2,7 @@
 	"setting": {
 		"core": "Core",
 		"plugin": "Plugin",
+		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Example: folder 1/folder 2",
 		"file-path-example-placeholder": "Example: folder/note",
 		"editor": {
@@ -163,6 +164,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Type #",
 			"label-link-heading": "to link heading",
+			"label-type-block": "Type ^",
+			"label-link-block": "to link blocks",
 			"label-type-pipe": "Type |",
 			"label-change-display-text": "to change display text"
 		},
@@ -186,6 +189,8 @@
 		"msg-switched-to-edit": "Switched default view mode to editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -272,8 +277,10 @@
 		"toggle-highlight": "Toggle highlight for selection",
 		"insert-link": "Insert link",
 		"delete-paragraph": "Delete paragraph",
+		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
-		"copy-path": "Copy file path"
+		"copy-path": "Copy file path",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -294,7 +301,14 @@
 		"button-delete-do-not-ask-again": "Delete and don't ask again",
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
 		"label-delete-file": "Delete file",
-		"button-cancel": "Cancel"
+		"button-cancel": "Cancel",
+		"button-done": "Done",
+		"label-safe-mode": "Safe Mode",
+		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
+		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+		"button-keep-safe-mode": "Keep Safe Mode on",
+		"button-disable-safe-mode": "Turn off Safe Mode"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -347,7 +361,23 @@
 			"label-match-tag": "Match tag: ",
 			"label-no-matches": "No matches found.",
 			"matches-with-count": "... and {{count}} more match.",
-			"matches-with-count_plural": "... and {{count}} more matches."
+			"matches-with-count_plural": "... and {{count}} more matches.",
+			"label-copy-search-results": "Copy search results",
+			"button-copy-results": "Copy results",
+			"msg-successfully-copied": "Results copied to your clipboard.",
+			"option-show-path": "Show path",
+			"option-show-path-description": "Display full path of the file rather than just the file name.",
+			"option-link-style": "Link style",
+			"option-link-style-description": "Optionally turn each file result in to a link.",
+			"option-choice-link-style-none": "None",
+			"option-choice-link-style-wikilink": "Wikilink",
+			"option-choice-link-style-markdown-link": "Markdown link",
+			"option-list-prefix": "List prefix",
+			"option-list-prefix-description": "Optionally add a list item prefix to each file result.",
+			"option-choice-list-style-none": "None",
+			"option-choice-list-style-dash": "Dash (-)",
+			"option-choice-list-style-asterisk": "Asterisk (*)",
+			"option-choice-list-style-numbered": "Numbered"
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
@@ -630,6 +660,10 @@
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",
 			"option-show-outline-description": "Display the outline of headings on each page.",
+			"option-show-backlinks": "Show backlinks",
+			"option-show-backlinks-description": "Show backlink section at the end of each page.",
+			"option-sliding-window-mode": "Use sliding windows",
+			"option-sliding-window-mode-description": "Open pages in new panes to the right. Allows scrolling through panes horizontally.",
 			"option-hover-preview-file": "Show hover preview",
 			"option-hover-preview-file-description": "Display page preview when hovering links.",
 			"option-readable-line-length": "Readable line length",
@@ -646,6 +680,7 @@
 			"tooltip-open-site-options": "Change site options",
 			"label-no-changes-detected": "No changes were detected.",
 			"label-changed-files-to-be-published": "Changes",
+			"label-unchanged-files-already-published": "Unchanged (select to delete)",
 			"label-file-selected": " selected",
 			"button-select-all-files": "Select all",
 			"button-deselect-all-files": "Deselect all",

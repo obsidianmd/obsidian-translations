@@ -149,6 +149,17 @@
 			"link-sign-up-now": "現在註冊",
 			"message-get-community-badges": "若在24小時後未取得註冊後的社群身分時，請寄信至 support@obsidian.md。",
 			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -162,9 +173,9 @@
 		},
 		"link-suggestion": {
 			"label-type-hash": "輸入 #",
-			"label-link-heading": "可以連結到標題",
-			"label-type-block": "Type ^",
-			"label-link-block": "to link blocks",
+			"label-link-heading": "以連結到標題",
+			"label-type-block": "輸入 ^",
+			"label-link-block": "以連結到區塊",
 			"label-type-pipe": "輸入 |",
 			"label-change-display-text": "指定顯示的文字"
 		},
@@ -188,6 +199,8 @@
 		"msg-switched-to-edit": "切換預設檢視為編輯模式。",
 		"msg-upgrade-installer": "欲使用此功能時，請由官網下載並重新安裝最新版本的應用程式。",
 		"tooltip-restore-default-settings": "還原為預設設定",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
@@ -274,9 +287,10 @@
 		"toggle-highlight": "切換所選文字的高亮效果",
 		"insert-link": "插入連結",
 		"delete-paragraph": "刪除段落",
-		"toggle-checklist": "Toggle checklist status",
+		"toggle-checklist": "切換待辦事項狀態",
 		"edit-file-title": "編輯檔案標題",
-		"copy-path": "複製檔案路徑"
+		"copy-path": "複製檔案路徑",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -408,17 +422,17 @@
 			"option-show-existing-files-only-description": "勾選時，不顯示未存在的檔案連結",
 			"option-show-orphans": "孤立連結",
 			"option-show-orphans-description": "顯示未連結到其他檔案的檔案",
-			"label-display": "顯示",
+			"label-display": "外觀設定",
 			"option-show-arrows": "方向箭頭",
 			"option-show-arrows-description": "連接線顯示方向箭頭",
-			"option-text-fade": "文字淡入淡出臨界值",
+			"option-text-fade": "文字透明度",
 			"option-node-size": "節點尺寸",
 			"option-link-thickness": "連接線寬度",
-			"label-forces": "強度",
+			"label-forces": "強度設定",
 			"option-center-force": "節點集中強度",
-			"option-link-force": "節點連結強度",
+			"option-link-force": "節點間的連結強度",
 			"option-link-distance": "連接線距離",
-			"option-repel-force": "節點互斥強度",
+			"option-repel-force": "節點間的互斥強度",
 			"tooltip-open-graph-settings": "開啟關聯圖設定",
 			"msg-screenshot-copied": "螢幕截圖複製到剪貼簿。"
 		},
