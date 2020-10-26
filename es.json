@@ -2,7 +2,6 @@
 	"setting": {
 		"core": "Base",
 		"plugin": "Plugin",
-		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "Ejemplo: carpeta 1/carpeta 2",
 		"file-path-example-placeholder": "Ejemplo: carpeta/nota",
 		"editor": {
@@ -150,6 +149,17 @@
 			"link-sign-up-now": "Regístrese ahora",
 			"message-get-community-badges": "Para las insignias de comunidad, por favor envíe un correo a support@obsidian.md si no las ha recibido en 24 horas después de obtener su licencia.",
 			"message-obtain-commercial-license": "Para obtener una licencia comercial, visite {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -302,13 +312,7 @@
 		"label-existing-backlink": "Actualmente hay {{links}} enlazando a esta nota.",
 		"label-delete-file": "Eliminar archivo",
 		"button-cancel": "Cancel",
-		"button-done": "Done",
-		"label-safe-mode": "Safe Mode",
-		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
-		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-		"button-keep-safe-mode": "Keep Safe Mode on",
-		"button-disable-safe-mode": "Turn off Safe Mode"
+		"button-done": "Done"
 	},
 	"plugins": {
 		"name": "Plugins",

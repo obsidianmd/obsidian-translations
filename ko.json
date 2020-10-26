@@ -2,7 +2,6 @@
 	"setting": {
 		"core": "주요 설정",
 		"plugin": "추가 설정",
-		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "예시: 폴더 1/폴더 2",
 		"file-path-example-placeholder": "예시: 폴더/파일",
 		"editor": {
@@ -150,6 +149,17 @@
 			"link-sign-up-now": "회원가입",
 			"message-get-community-badges": "제품 키를 등록하고 24시간 이후에도 커뮤니티 뱃지를 받지 못하셨다면 support@obsidian.md로 문의해주세요",
 			"message-obtain-commercial-license": "상업용 제품 키를 구하시고 싶으시면 {{pricingPageLink}}를 방문해주세요."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -302,13 +312,7 @@
 		"label-existing-backlink": "이 노트로 연결되는 링크가 {{links}}개 있습니다.",
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
-		"button-done": "완료",
-		"label-safe-mode": "Safe Mode",
-		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
-		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-		"button-keep-safe-mode": "Keep Safe Mode on",
-		"button-disable-safe-mode": "Turn off Safe Mode"
+		"button-done": "완료"
 	},
 	"plugins": {
 		"name": "플러그인",

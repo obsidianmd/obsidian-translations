@@ -2,7 +2,6 @@
 	"setting": {
 		"core": "設定",
 		"plugin": "外掛",
-		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "例: 資料夾1/資料夾2",
 		"file-path-example-placeholder": "例: 資料夾/筆記.md",
 		"editor": {
@@ -150,6 +149,17 @@
 			"link-sign-up-now": "現在註冊",
 			"message-get-community-badges": "若在24小時後未取得註冊後的社群身分時，請寄信至 support@obsidian.md。",
 			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -302,13 +312,7 @@
 		"label-existing-backlink": "目前有 {{links}} 與該文件相關。",
 		"label-delete-file": "刪除檔案",
 		"button-cancel": "取消",
-		"button-done": "完成",
-		"label-safe-mode": "Safe Mode",
-		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
-		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-		"button-keep-safe-mode": "Keep Safe Mode on",
-		"button-disable-safe-mode": "Turn off Safe Mode"
+		"button-done": "完成"
 	},
 	"plugins": {
 		"name": "外掛",

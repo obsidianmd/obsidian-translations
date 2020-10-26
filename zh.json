@@ -2,7 +2,6 @@
 	"setting": {
 		"core": "设置",
 		"plugin": "插件",
-		"community-plugin": "Community plugin",
 		"folder-path-example-placeholder": "例: 文件夹1/文件夹2",
 		"file-path-example-placeholder": "例: 文件夹/笔记.md",
 		"editor": {
@@ -150,6 +149,17 @@
 			"link-sign-up-now": "现在注册",
 			"message-get-community-badges": "如果您在激活许可证后的24小时内未收到社区徽章，请通过邮件联系 support@obsidian.md 。",
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -302,13 +312,7 @@
 		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
-		"button-done": "完成",
-		"label-safe-mode": "Safe Mode",
-		"label-safe-mode-explanation": "This vault contains community plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-		"label-third-party-plugin-warning": "Third-party community plugins can access files on your computer, connect the internet, and even install additional programs.",
-		"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-		"button-keep-safe-mode": "Keep Safe Mode on",
-		"button-disable-safe-mode": "Turn off Safe Mode"
+		"button-done": "完成"
 	},
 	"plugins": {
 		"name": "插件",
