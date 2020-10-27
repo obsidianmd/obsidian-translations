@@ -149,6 +149,17 @@
 			"link-sign-up-now": "Zaregistrujte se",
 			"message-get-community-badges": "Kvůli komunitní odznakům, napište email na support@obsidian.md pokud ste je neobdrželi během 24 hodin po získání vaší licence.",
 			"message-obtain-commercial-license": "Pro získání komeční licence, navštivte {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -163,6 +174,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Napište #",
 			"label-link-heading": "pro odkaz na nadpis",
+			"label-type-block": "Type ^",
+			"label-link-block": "to link blocks",
 			"label-type-pipe": "Napište |",
 			"label-change-display-text": "pro změnu zobrazovaného textu"
 		},
@@ -186,6 +199,8 @@
 		"msg-switched-to-edit": "Přepnuto výchozího zobrazení na mód úprav.",
 		"msg-upgrade-installer": "Pro použít této funkce, nainstalujte znovu pomocí nejnovějšího instalátoru, který je dostupný na našem webu.",
 		"tooltip-restore-default-settings": "Obnovit výchozí nastavení",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Není otevřený žádný soubor",
 			"create-new-file": "Vytvořit nový soubor",
@@ -272,8 +287,10 @@
 		"toggle-highlight": "Přepnout zvýraznění pro výběr",
 		"insert-link": "Vložit odkaz",
 		"delete-paragraph": "Odstranit odstavec",
+		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Upravit název souboru",
-		"copy-path": "Kopírovat cestu souboru"
+		"copy-path": "Kopírovat cestu souboru",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "Tohle ovlivní {{links}} ve {{files}}.",
@@ -331,7 +348,7 @@
 			"action-open-search": "Hledat ve všech souborech",
 			"label-collapse-results": "Sbalit výsledky",
 			"label-match-case": "Rozlišovat velká a malá písmena",
-			"label-explains-search-term": "Vysvětlit hledaný výraz",
+			"label-explain-search-term": "Vysvětlit hledaný výraz",
 			"label-more-context": "Zobrazit více kontextu",
 			"prompt-start-search": "Pište pro zahájení hledání ...",
 			"label-match-text": "Odpovídá textu:",
@@ -347,11 +364,11 @@
 			"label-match-content": "Shoduje se s obsahem souboru:",
 			"label-match-tag": "Shoduje se s štítkem:",
 			"label-no-matches": "Nebyly nalezeny žádné shody.",
-			"match-with-count": "... a {{count}} další shoda.",
-			"match-with-count_plural": "... a {{count}} dalších shod.",
+			"matches-with-count": "... a {{count}} další shoda.",
+			"matches-with-count_plural": "... a {{count}} dalších shod.",
 			"label-copy-search-results": "Kopírovat výsledky hledání",
 			"button-copy-results": "Kopírovat výsledky",
-			"msg-successful-copied": "Výsledky zkopírovány do schránky.",
+			"msg-successfully-copied": "Výsledky zkopírovány do schránky.",
 			"option-show-path": "Zobrazit cestu",
 			"option-show-path-description": "Zobrazit celou cestu k souboru, nikoli pouze jeho název.",
 			"option-link-style": "Styl odkazu",
@@ -662,10 +679,6 @@
 			"tooltip-switch-site": "Změnit stránku",
 			"button-add-linked": "Přidat propojené odkazy",
 			"tooltip-add-linked": "Přidejte všechny soubory, které jsou propojeny k aktuálně vybraným položkám",
-			"button-toggle-published-files-show": "Zobrazit publikované",
-			"tooltip-toggle-published-files-show": "Zobrazit soubory které už byly publikovány",
-			"button-toggle-published-files-hide": "Skrýt publikované",
-			"tooltip-toggle-published-files-hide": "Skrýt soubory které už byly publikovány",
 			"msg-added-linked-files": "{{count}} propojený soubor byl přidán.",
 			"msg-added-linked-files_plural": "{{count}} propojených souborů bylo přidáno.",
 			"tooltip-open-site-options": "Změna nastavení stránky",

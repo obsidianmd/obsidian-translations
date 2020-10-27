@@ -149,6 +149,17 @@
 			"link-sign-up-now": "现在注册",
 			"message-get-community-badges": "如果您在激活许可证后的24小时内未收到社区徽章，请通过邮件联系 support@obsidian.md 。",
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode"
 		}
 	},
 	"editor": {
@@ -188,6 +199,8 @@
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
 		"msg-upgrade-installer": "若要使用此功能，请到我们的网站上下载并安装Obsidian 的最新版本。",
 		"tooltip-restore-default-settings": "恢复默认设置",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -276,7 +289,8 @@
 		"delete-paragraph": "删除段落",
 		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
-		"copy-path": "复制当前文件的路径"
+		"copy-path": "复制当前文件的路径",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
