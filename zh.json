@@ -149,6 +149,42 @@
 			"link-sign-up-now": "现在注册",
 			"message-get-community-badges": "如果您在激活许可证后的24小时内未收到社区徽章，请通过邮件联系 support@obsidian.md 。",
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"option-browse-community-plugins": "Community plugins",
+			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
+			"button-browse": "Browse",
+			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
+			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode",
+			"label-select-a-plugin": "Select a plugin to install or learn more about it.",
+			"placeholder-community-plugins": "Search community plugins...",
+			"msg-failed-load-plugins": "Failed to load community plugins.",
+			"label-installed": "Installed",
+			"button-install": "Install",
+			"label-no-results-found": "No results found.",
+			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
+			"label-version": "Version: {{version}}",
+			"label-currently-installed-version": " (currently installed: {{version}})",
+			"label-by-author": "By ",
+			"label-repository": "Repository: ",
+			"button-update": "Update",
+			"label-no-readme": "This plugin did not provide a README file.",
+			"msg-installing-plugin": "Installing plugin \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Failed to install plugin \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Successfully installed plugin \"{{name}}\".",
+			"label-installed-plugins": "Installed plugins",
+			"button-reload-plugins": "Reload plugins",
+			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
+			"label-uninstall": "Uninstall",
+			"label-uninstall-plugin": "Uninstall plugin",
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
 		}
 	},
 	"editor": {
@@ -163,8 +199,8 @@
 		"link-suggestion": {
 			"label-type-hash": "输入 #",
 			"label-link-heading": "可以链接到标题",
-			"label-type-block": "Type ^",
-			"label-link-block": "to link blocks",
+			"label-type-block": "输入 ^",
+			"label-link-block": "链接文本块",
 			"label-type-pipe": "输入 |",
 			"label-change-display-text": "指定显示的文本"
 		},
@@ -188,6 +224,8 @@
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
 		"msg-upgrade-installer": "若要使用此功能，请到我们的网站上下载并安装Obsidian 的最新版本。",
 		"tooltip-restore-default-settings": "恢复默认设置",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -274,9 +312,10 @@
 		"toggle-highlight": "切换所选文本的高亮效果",
 		"insert-link": "插入链接",
 		"delete-paragraph": "删除段落",
-		"toggle-checklist": "Toggle checklist status",
+		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
-		"copy-path": "复制当前文件的路径"
+		"copy-path": "复制当前文件的路径",
+		"copy-url": "Copy obsidian url"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -298,7 +337,7 @@
 		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
-		"button-done": "Done"
+		"button-done": "完成"
 	},
 	"plugins": {
 		"name": "插件",
@@ -650,10 +689,10 @@
 			"option-show-graph-description": "在每个页面上显示一个小的局部关系图。",
 			"option-show-outline": "显示大纲",
 			"option-show-outline-description": "显示由笔记中小标题组成的大纲。",
-			"option-show-backlinks": "Show backlinks",
-			"option-show-backlinks-description": "Show backlink section at the end of each page.",
-			"option-sliding-window-mode": "Use sliding windows",
-			"option-sliding-window-mode-description": "Open pages in new panes to the right. Allows scrolling through panes horizontally.",
+			"option-show-backlinks": "显示反向链接",
+			"option-show-backlinks-description": "在每页末尾显示反向链接内容。",
+			"option-sliding-window-mode": "使用滑动窗口",
+			"option-sliding-window-mode-description": "在右侧的新窗口中打开页面，允许水平滚动。",
 			"option-hover-preview-file": "开启悬停预览",
 			"option-hover-preview-file-description": "开启后，当光标悬停在链接时显示页面预览。",
 			"option-readable-line-length": "限制栏宽",
@@ -670,7 +709,7 @@
 			"tooltip-open-site-options": "更改站点选项",
 			"label-no-changes-detected": "未检测到更改。",
 			"label-changed-files-to-be-published": "更改",
-			"label-unchanged-files-already-published": "Unchanged (select to delete)",
+			"label-unchanged-files-already-published": "未更改（选择可删除）",
 			"label-file-selected": " 已选择",
 			"button-select-all-files": "全部选中",
 			"button-deselect-all-files": "取消全选",
