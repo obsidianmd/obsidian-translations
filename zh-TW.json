@@ -151,15 +151,40 @@
 			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
 		},
 		"third-party-plugin": {
-			"name": "Third-party plugin",
-			"option-safe-mode": "Safe mode",
-			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
-			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
-			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
-			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-			"button-keep-safe-mode": "Keep Safe Mode on",
-			"button-disable-safe-mode": "Turn off Safe Mode"
+			"name": "第三方外掛",
+			"option-safe-mode": "安全模式",
+			"option-safe-mode-description-on": "安全模式已啟用，所有社群外掛已被停用。",
+			"option-safe-mode-description-off": "安全模式已關閉，已可啟用社群外掛。",
+			"option-browse-community-plugins": "Community plugins",
+			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
+			"button-browse": "Browse",
+			"label-safe-mode-explanation": "本儲存庫含有來自第三方開發人員的外掛，安全模式可停用這些外掛以保護你的安全。",
+			"label-third-party-plugin-warning": "第三方外掛能存取你電腦裡的檔案、連接網際網路，甚至安裝額外應用程式。",
+			"label-disable-safe-mode-confirmation": "欲停用安全模式以允許使用這些第三方外掛嗎？",
+			"button-keep-safe-mode": "繼續啟用安全模式",
+			"button-disable-safe-mode": "關閉安全模式",
+			"label-select-a-plugin": "Select a plugin to install or learn more about it.",
+			"placeholder-community-plugins": "Search community plugins...",
+			"msg-failed-load-plugins": "Failed to load community plugins.",
+			"label-installed": "Installed",
+			"button-install": "Install",
+			"label-no-results-found": "No results found.",
+			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
+			"label-version": "Version: {{version}}",
+			"label-currently-installed-version": " (currently installed: {{version}})",
+			"label-by-author": "By ",
+			"label-repository": "Repository: ",
+			"button-update": "Update",
+			"label-no-readme": "This plugin did not provide a README file.",
+			"msg-installing-plugin": "Installing plugin \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Failed to install plugin \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Successfully installed plugin \"{{name}}\".",
+			"label-installed-plugins": "Installed plugins",
+			"button-reload-plugins": "Reload plugins",
+			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
+			"label-uninstall": "Uninstall",
+			"label-uninstall-plugin": "Uninstall plugin",
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
 		}
 	},
 	"editor": {
@@ -199,7 +224,7 @@
 		"msg-switched-to-edit": "切換預設檢視為編輯模式。",
 		"msg-upgrade-installer": "欲使用此功能時，請由官網下載並重新安裝最新版本的應用程式。",
 		"tooltip-restore-default-settings": "還原為預設設定",
-		"copied": "{{item}} copied to your clipboard",
+		"copied": "{{item}} 已複製到系統剪貼簿",
 		"url": "Url",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
@@ -290,7 +315,7 @@
 		"toggle-checklist": "切換待辦事項狀態",
 		"edit-file-title": "編輯檔案標題",
 		"copy-path": "複製檔案路徑",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "複製Obsidian網址"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",

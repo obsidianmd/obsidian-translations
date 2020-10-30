@@ -151,15 +151,40 @@
 			"message-obtain-commercial-license": "Pentru a obține o licență comercială, vizitează {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
-			"name": "Third-party plugin",
-			"option-safe-mode": "Safe mode",
-			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
-			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
-			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
-			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-			"button-keep-safe-mode": "Keep Safe Mode on",
-			"button-disable-safe-mode": "Turn off Safe Mode"
+			"name": "Module terțe",
+			"option-safe-mode": "Mod de Siguranță",
+			"option-safe-mode-description-on": "Modul de Siguranță este ACTIVAT. Toate modulele comunității sunt dezactivate.",
+			"option-safe-mode-description-off": "Modul de Siguranță este DEZACTIVAT. Modulele comunității pot fi activate acum.",
+			"option-browse-community-plugins": "Community plugins",
+			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
+			"button-browse": "Browse",
+			"label-safe-mode-explanation": "Acest seif conține module terțe de la dezvoltatori terți. Dezactivând aceste module, Modul de Siguranță te va menține protejat.",
+			"label-third-party-plugin-warning": "Modulele terțe pot accesa fișiere de pe calculatorul tău, se pot conecta la internet și pot chiar instala programe suplimentare.",
+			"label-disable-safe-mode-confirmation": "Dorești să dezactivezi Modul de Siguranță pentru a permite aceste module?",
+			"button-keep-safe-mode": "Păstrează Modul de Siguranță activat",
+			"button-disable-safe-mode": "Dezactivează Modul de Siguranță",
+			"label-select-a-plugin": "Select a plugin to install or learn more about it.",
+			"placeholder-community-plugins": "Search community plugins...",
+			"msg-failed-load-plugins": "Failed to load community plugins.",
+			"label-installed": "Installed",
+			"button-install": "Install",
+			"label-no-results-found": "No results found.",
+			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
+			"label-version": "Version: {{version}}",
+			"label-currently-installed-version": " (currently installed: {{version}})",
+			"label-by-author": "By ",
+			"label-repository": "Repository: ",
+			"button-update": "Update",
+			"label-no-readme": "This plugin did not provide a README file.",
+			"msg-installing-plugin": "Installing plugin \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Failed to install plugin \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Successfully installed plugin \"{{name}}\".",
+			"label-installed-plugins": "Installed plugins",
+			"button-reload-plugins": "Reload plugins",
+			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
+			"label-uninstall": "Uninstall",
+			"label-uninstall-plugin": "Uninstall plugin",
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
 		}
 	},
 	"editor": {
@@ -290,7 +315,7 @@
 		"toggle-checklist": "Comută starea listei DE FĂCUT",
 		"edit-file-title": "Editează titlul fișierului",
 		"copy-path": "Copiază calea fișierului",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copiază URL-ul obsidian"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
