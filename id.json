@@ -1,7 +1,7 @@
 {
 	"setting": {
 		"core": "Inti",
-		"plugin": "Ekstensi",
+		"plugin": "Plugin",
 		"folder-path-example-placeholder": "Contoh: folder 1/folder 2",
 		"file-path-example-placeholder": "Contoh: folder/file",
 		"editor": {
@@ -49,12 +49,12 @@
 			"option-always-update-links": "Secara otomatis perbarui link internal",
 			"option-always-update-links-description": "Matikan untuk diperingatkan memperbarui link setelah menamai file.",
 			"option-new-note-location": "Lokasi default untuk catatan baru",
-			"option-new-note-location-description": "Di mana menaruh setiap catatan yang baru dibuat. Pengaturan ekstensi akan mengesampingkan ini.",
+			"option-new-note-location-description": "Di mana menaruh setiap catatan yang baru dibuat. Pengaturan plugin akan mengesampingkan ini.",
 			"option-choice-vault-root": "Folder vault",
 			"option-choice-current-folder": "Satu folder dengan file sekarang",
 			"option-choice-specified-folder": "Dalam folder yang dikhususkan ini",
 			"option-new-file-folder-path": "Folder untuk membuat catatan baru",
-			"option-new-file-folder-path-description": "Catatan yang baru dibuat akan muncul di dalam folder ini. Pengaturan ekstensi akan mengesampingkan ini.",
+			"option-new-file-folder-path-description": "Catatan yang baru dibuat akan muncul di dalam folder ini. Pengaturan plugin akan mengesampingkan ini.",
 			"option-link-autocompleted-format": "Format link baru",
 			"option-link-autocompleted-format-description": "Link apa yang disisipkan saat pembuatan otomatis link internal.",
 			"option-choice-shortest-linktext": "Jalur terdekat jika memungkinkan",
@@ -151,15 +151,41 @@
 			"message-obtain-commercial-license": "Untuk mendapatkan lisensi komersial, kunjungi {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
-			"name": "Third-party plugin",
-			"option-safe-mode": "Safe mode",
-			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
-			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
-			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
-			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-			"button-keep-safe-mode": "Keep Safe Mode on",
-			"button-disable-safe-mode": "Turn off Safe Mode"
+			"name": "Plugin pihak ketiga",
+			"option-safe-mode": "Mode aman",
+			"option-safe-mode-description-on": "Mode aman AKTIF. Semua plugin komunitas dinonaktifkan.",
+			"option-safe-mode-description-off": "Mode aman NONAKTIF. Plugin komunitas sekarang dapat diaktifkan.",
+			"option-browse-community-plugins": "Plugin komunitas",
+			"option-browse-community-plugins-description": "Telusur dan instal plugin yang dibuat oleh komunitas kami yang menajubkan.",
+			"button-browse": "Telusur",
+			"label-third-party-plugin-warning": "Plugin pihak ketiga dapat mengakses file dalam komputer Anda, menghubung internet, dan bahkan menginstal program tambahan.",
+			"label-disable-safe-mode-confirmation": "Apakah Anda berkenan menonaktifkan mode aman untuk mengizinkan plugin ini?",
+			"button-keep-safe-mode": "Tetap aktifkan mode aman",
+			"button-disable-safe-mode": "Matikan mode aman",
+			"label-select-a-plugin": "Pilih plugin untuk menginstal atau mempelajarinya lebih lanjut.",
+			"placeholder-community-plugins": "Cari plugin komunitas...",
+			"msg-failed-load-plugins": "Gagal memuat plugin komunitas.",
+			"label-installed": "Terinstal",
+			"tooltip-downloaded-times": "Downloaded {{count}} time",
+			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
+			"button-install": "Instal",
+			"label-no-results-found": "Tidak ada hasil.",
+			"msg-failed-to-load-manifest": "Gagal memuat manifes plugin.",
+			"label-version": "Versi: {{version}}",
+			"label-currently-installed-version": " (saat ini terinstal: {{version}})",
+			"label-by-author": "Oleh ",
+			"label-repository": "Repositori: ",
+			"button-update": "Perbarui",
+			"label-no-readme": "Plugin ini tidak menyediakan file README.",
+			"msg-installing-plugin": "Menginstal plugin \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Gagal menginstal plugin \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Berhasil menginstal plugin \"{{name}}\".",
+			"label-installed-plugins": "Plugin terinstal",
+			"button-reload-plugins": "Muat ulang plugin",
+			"msg-reloaded-third-party-plugins": "Plugin pihak ketiga termuat ulang.",
+			"label-uninstall": "Hapus instalan",
+			"label-uninstall-plugin": "Hapus plugin",
+			"label-uninstall-plugin-confirmation": "Apa Anda yakin Anda ingin menghapus plugin ini? Ini akan menghapus folder dari plugin."
 		}
 	},
 	"editor": {
@@ -199,7 +225,7 @@
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke editor.",
 		"msg-upgrade-installer": "Untuk menggunakan fitur ini, instal ulang dengan penginstal terbaru yang tersedia di situs web kami.",
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
-		"copied": "{{item}} copied to your clipboard",
+		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
@@ -290,7 +316,7 @@
 		"toggle-checklist": "Centang daftar periksa",
 		"edit-file-title": "Ubah judul file",
 		"copy-path": "Salin jalur file",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Salin url Obsidian"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -315,7 +341,7 @@
 		"button-done": "Selesai"
 	},
 	"plugins": {
-		"name": "Ekstensi",
+		"name": "Plugin",
 		"file-explorer": {
 			"name": "File explorer",
 			"desc": "Lihat file dan folder dalam vault Anda.",

@@ -151,15 +151,41 @@
 			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
 		},
 		"third-party-plugin": {
-			"name": "Third-party plugin",
-			"option-safe-mode": "Safe mode",
-			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
-			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
-			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
-			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-			"button-keep-safe-mode": "Keep Safe Mode on",
-			"button-disable-safe-mode": "Turn off Safe Mode"
+			"name": "第三方外掛",
+			"option-safe-mode": "安全模式",
+			"option-safe-mode-description-on": "安全模式已啟用，所有社群外掛已被停用。",
+			"option-safe-mode-description-off": "安全模式已關閉，已可啟用社群外掛。",
+			"option-browse-community-plugins": "社群外掛",
+			"option-browse-community-plugins-description": "瀏覽並安裝我們令人歎服的社群所製作的第三方外掛。",
+			"button-browse": "瀏覽",
+			"label-third-party-plugin-warning": "第三方外掛能存取你電腦裡的檔案、連接網際網路，甚至安裝額外應用程式。",
+			"label-disable-safe-mode-confirmation": "欲停用安全模式以允許使用這些第三方外掛嗎？",
+			"button-keep-safe-mode": "繼續啟用安全模式",
+			"button-disable-safe-mode": "關閉安全模式",
+			"label-select-a-plugin": "選用外掛以安裝或閱讀其使用說明。",
+			"placeholder-community-plugins": "搜尋社群外掛...",
+			"msg-failed-load-plugins": "載入社群外掛失敗。",
+			"label-installed": "已安裝",
+			"tooltip-downloaded-times": "Downloaded {{count}} time",
+			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
+			"button-install": "安裝",
+			"label-no-results-found": "無符合結果。",
+			"msg-failed-to-load-manifest": "無法載入外掛的設定描述檔。",
+			"label-version": "版本: {{version}}",
+			"label-currently-installed-version": " (目前已安裝: {{version}})",
+			"label-by-author": "作者: ",
+			"label-repository": "儲存庫: ",
+			"button-update": "更新",
+			"label-no-readme": "此外掛未提供 README 檔案。",
+			"msg-installing-plugin": "外掛 \"{{name}}\" 安裝中...",
+			"msg-failed-to-install-plugin": "外掛 \"{{name}}\" 安裝失敗。",
+			"msg-successfully-installed-plugin": "外掛 \"{{name}}\" 已成功安裝。",
+			"label-installed-plugins": "已安裝的外掛",
+			"button-reload-plugins": "重新載入外掛",
+			"msg-reloaded-third-party-plugins": "已重新載入的第三方外掛。",
+			"label-uninstall": "移除安裝",
+			"label-uninstall-plugin": "移除已安裝之外掛",
+			"label-uninstall-plugin-confirmation": "確定要移除這個外掛嗎？此動作將刪除外掛的資料夾。"
 		}
 	},
 	"editor": {
@@ -199,7 +225,7 @@
 		"msg-switched-to-edit": "切換預設檢視為編輯模式。",
 		"msg-upgrade-installer": "欲使用此功能時，請由官網下載並重新安裝最新版本的應用程式。",
 		"tooltip-restore-default-settings": "還原為預設設定",
-		"copied": "{{item}} copied to your clipboard",
+		"copied": "{{item}} 已複製到系統剪貼簿",
 		"url": "Url",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
@@ -290,7 +316,7 @@
 		"toggle-checklist": "切換待辦事項狀態",
 		"edit-file-title": "編輯檔案標題",
 		"copy-path": "複製檔案路徑",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "複製obsidian網址"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -709,19 +735,19 @@
 			"msg-network-error": "發生了網路錯誤。"
 		},
 		"workspaces": {
-			"name": "工作區",
-			"desc": "儲存並載入工作區佈局。",
-			"action-load": "載入工作區",
-			"action-manage-workspaces": "管理工作區",
-			"placeholder-save-current-workspace-as": "將目前工作區儲存為...",
+			"name": "工作空間",
+			"desc": "儲存並載入工作空間佈局。",
+			"action-load": "載入工作空間",
+			"action-manage-workspaces": "管理工作空間",
+			"placeholder-save-current-workspace-as": "將目前工作空間儲存為...",
 			"button-save": "儲存",
 			"button-load": "載入",
-			"tooltip-delete-workspace": "刪除工作區",
-			"msg-delete-workspace-success": "工作區已刪除。",
-			"msg-please-enter-name": "請為此新的工作區命名。",
-			"msg-save-workspace-success": "工作區已儲存。",
-			"label-no-workspaces-found": "無法尋獲指定的工作區。",
-			"placeholder-type-to-search-workspaces": "輸入工作區名稱..."
+			"tooltip-delete-workspace": "刪除工作空間",
+			"msg-delete-workspace-success": "工作空間已刪除。",
+			"msg-please-enter-name": "請為此新的工作空間命名。",
+			"msg-save-workspace-success": "工作空間已儲存。",
+			"label-no-workspaces-found": "無法尋獲指定的工作空間。",
+			"placeholder-type-to-search-workspaces": "輸入工作空間名稱..."
 		}
 	},
 	"nouns": {

@@ -151,15 +151,41 @@
 			"message-obtain-commercial-license": "Pour obtenir une licence commercial, visiter {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
-			"name": "Third-party plugin",
-			"option-safe-mode": "Safe mode",
-			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
-			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
-			"label-safe-mode-explanation": "This vault contains third-party plugins from third party developers. Safe Mode keeps you safe by disabling these plugins.",
-			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
-			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-			"button-keep-safe-mode": "Keep Safe Mode on",
-			"button-disable-safe-mode": "Turn off Safe Mode"
+			"name": "Plug-in tiers",
+			"option-safe-mode": "Mode sans échec",
+			"option-safe-mode-description-on": "Le mode sans échec est activé. Tous les plugins de la communauté sont désactivés.",
+			"option-safe-mode-description-off": "Le mode sans échec est désactivé. Les plugins communautaires peuvent désormais être activés.",
+			"option-browse-community-plugins": "Community plugins",
+			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
+			"button-browse": "Browse",
+			"label-third-party-plugin-warning": "Les plugins tiers peuvent accéder aux fichiers de votre ordinateur, se connecter à Internet et même installer des programmes supplémentaires.",
+			"label-disable-safe-mode-confirmation": "Souhaitez-vous désactiver le mode sans échec pour autoriser ces plugins ?",
+			"button-keep-safe-mode": "Garder le mode sans échec activé",
+			"button-disable-safe-mode": "Désactiver le mode sans échec",
+			"label-select-a-plugin": "Select a plugin to install or learn more about it.",
+			"placeholder-community-plugins": "Search community plugins...",
+			"msg-failed-load-plugins": "Failed to load community plugins.",
+			"label-installed": "Installed",
+			"tooltip-downloaded-times": "Downloaded {{count}} time",
+			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
+			"button-install": "Install",
+			"label-no-results-found": "No results found.",
+			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
+			"label-version": "Version: {{version}}",
+			"label-currently-installed-version": " (currently installed: {{version}})",
+			"label-by-author": "By ",
+			"label-repository": "Repository: ",
+			"button-update": "Update",
+			"label-no-readme": "This plugin did not provide a README file.",
+			"msg-installing-plugin": "Installing plugin \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Failed to install plugin \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Successfully installed plugin \"{{name}}\".",
+			"label-installed-plugins": "Installed plugins",
+			"button-reload-plugins": "Reload plugins",
+			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
+			"label-uninstall": "Uninstall",
+			"label-uninstall-plugin": "Uninstall plugin",
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
 		}
 	},
 	"editor": {
@@ -199,7 +225,7 @@
 		"msg-switched-to-edit": "Changement du mode d'affichage par défaut à éditeur.",
 		"msg-upgrade-installer": "Pour utiliser cette fonctionnalité, merci de réinstaller Obsdian avec le dernier programme d'installation disponible sur notre site web.",
 		"tooltip-restore-default-settings": "Restoration des paramètres par défaut",
-		"copied": "{{item}} copied to your clipboard",
+		"copied": "{{item}} copié dans le presse-papier",
 		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
@@ -290,7 +316,7 @@
 		"toggle-checklist": "Basculer l'état de l'élément de la checklist",
 		"edit-file-title": "Modifier le titre du fichier",
 		"copy-path": "Copier le chemin du fichier",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copier l'url Obsidian"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
