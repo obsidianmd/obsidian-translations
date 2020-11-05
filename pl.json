@@ -149,6 +149,43 @@
 			"link-sign-up-now": "Zarejestruj się teraz",
 			"message-get-community-badges": "Aby uzyskać odznaki społeczności Obsidian, napisz na adres support@obsidian.md, jeśli nie otrzymałeś ich w 24 godziny po zakupie licencji.",
 			"message-obtain-commercial-license": "Aby uzyskać licencję komercyjną, odwiedź {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Wtyczki stworzone przez społeczność",
+			"option-safe-mode": "Tryb bezpieczny",
+			"option-safe-mode-description-on": "Tryb Bezpieczny jest WŁĄCZONY. Wszystkie wtyczki stworzone przez społeczność są zablokowane.",
+			"option-safe-mode-description-off": "Tryb Bezpieczny jest WYŁĄCZONY. Wtyczki stworzone przez społeczność mogą zostać aktywowane.",
+			"option-browse-community-plugins": "Wtyczki stworzone przez społeczność",
+			"option-browse-community-plugins-description": "Przeglądaj i instaluj wtyczki stworzone przez społeczność użytkowników Obsidian.",
+			"button-browse": "Przeglądaj",
+			"label-third-party-plugin-warning": "Wtyczki stworzone przez społeczność mogą mieć dostęp do Twoich plików, łączyć się z internetem, a nawet instalować dodatkowe oprogramowanie.",
+			"label-disable-safe-mode-confirmation": "Czy chcesz wyłączyć Tryb Bezpieczny aby móc używać tych wtyczek?",
+			"button-keep-safe-mode": "Pozostań w Trybie Bezpiecznym",
+			"button-disable-safe-mode": "Wyłącz Tryb Bezpieczny",
+			"label-select-a-plugin": "Wybierz wtyczkę aby zainstalować lub dowiedzieć się więcej.",
+			"placeholder-community-plugins": "Szukaj we wtyczkach społeczności...",
+			"msg-failed-load-plugins": "Ładowanie wtyczek stworzonych przez społeczność nie powiodło się.",
+			"label-installed": "Zainstalowane",
+			"tooltip-downloaded-times": "Pobrano {{count}} raz",
+			"tooltip-downloaded-times_plural": "Pobrano {{count}} razy",
+			"button-install": "Instaluj",
+			"label-no-results-found": "Brak wyników wyszukiwania.",
+			"msg-failed-to-load-manifest": "Ładowanie manifestu wtyczki nie powiodło się.",
+			"label-version": "Wersja: {{version}}",
+			"label-currently-installed-version": " (obecnie zainstalowana: {{version}})",
+			"label-by-author": "Autorstwa ",
+			"label-repository": "Repozytorium: ",
+			"button-update": "Aktualizuj",
+			"label-no-readme": "Ta wtyczka nie posiada pliku README.",
+			"msg-installing-plugin": "Instalacja wtyczki \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Instalacja wtyczki \"{{name}}\" nie powiodła się.",
+			"msg-successfully-installed-plugin": "Zainstalowano wtyczkę \"{{name}}\".",
+			"label-installed-plugins": "Zainstalowane wtyczki",
+			"button-reload-plugins": "Ponownie załaduj wtyczki",
+			"msg-reloaded-third-party-plugins": "Wtyczki załadowano ponownie.",
+			"label-uninstall": "Odinstaluj",
+			"label-uninstall-plugin": "Odinstaluj wtyczkę",
+			"label-uninstall-plugin-confirmation": "Czy na pewno chcesz odinstalować tę wtyczkę? Folder wtyczki zostanie usunięty."
 		}
 	},
 	"editor": {
@@ -188,6 +225,8 @@
 		"msg-switched-to-edit": "Przełączono domyślny tryb widoku na edytor.",
 		"msg-upgrade-installer": "Aby użyć tej funkcji, zainstaluj aplikację na nowo, używając najnowszej wersji instalatora dostępnej na naszej stronie.",
 		"tooltip-restore-default-settings": "Przywróć ustawienia domyślne",
+		"copied": "{{item}} skopiowano do schowka",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Żaden plik nie jest otwarty",
 			"create-new-file": "Utwórz nowy plik",
@@ -276,7 +315,8 @@
 		"delete-paragraph": "Usuń paragraf",
 		"toggle-checklist": "Zaznacz / odznacz element listy",
 		"edit-file-title": "Edytuj tytuł pliku",
-		"copy-path": "Skopiuj ścieżkę pliku"
+		"copy-path": "Skopiuj ścieżkę pliku",
+		"copy-url": "Skopiuj url Obsidian"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -298,7 +338,7 @@
 		"label-existing-backlink": "Do tej notatki istnieje {{links}}.",
 		"label-delete-file": "Usuń plik",
 		"button-cancel": "Anuluj",
-		"button-done": "Done"
+		"button-done": "Zakończ"
 	},
 	"plugins": {
 		"name": "Wtyczki",

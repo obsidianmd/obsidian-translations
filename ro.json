@@ -149,6 +149,43 @@
 			"link-sign-up-now": "Înregistrează-te acum",
 			"message-get-community-badges": "Pentru insignele comunității, te rugăm să trimiți un email la support@obsidian.md dacă nu le-ai primit la cel mult 24 de ore după ce ai obținut licența.",
 			"message-obtain-commercial-license": "Pentru a obține o licență comercială, vizitează {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Module terțe",
+			"option-safe-mode": "Mod de Siguranță",
+			"option-safe-mode-description-on": "Modul de Siguranță este ACTIVAT. Toate modulele comunității sunt dezactivate.",
+			"option-safe-mode-description-off": "Modul de Siguranță este DEZACTIVAT. Modulele comunității pot fi activate acum.",
+			"option-browse-community-plugins": "Module ale comunității",
+			"option-browse-community-plugins-description": "Răsfoiește și instalează modulele terțe create de comunitatea noastră fantastică.",
+			"button-browse": "Răsfoiește",
+			"label-third-party-plugin-warning": "Modulele terțe pot accesa fișiere de pe calculatorul tău, se pot conecta la internet și pot chiar instala programe suplimentare.",
+			"label-disable-safe-mode-confirmation": "Dorești să dezactivezi Modul de Siguranță pentru a permite aceste module?",
+			"button-keep-safe-mode": "Păstrează Modul de Siguranță activat",
+			"button-disable-safe-mode": "Dezactivează Modul de Siguranță",
+			"label-select-a-plugin": "Selectează un modul pentru a-l instala sau citește mai mult despre el.",
+			"placeholder-community-plugins": "Caută module ale comunității...",
+			"msg-failed-load-plugins": "Am eșuat să încarc modulele comunității.",
+			"label-installed": "Instalat",
+			"tooltip-downloaded-times": "Descărcat de {{count}} ori",
+			"tooltip-downloaded-times_plural": "Descărcate de {{count}} ori",
+			"button-install": "Instalează",
+			"label-no-results-found": "Nu am găsit niciun rezultat.",
+			"msg-failed-to-load-manifest": "Am eșuat să încarc declarația modulului.",
+			"label-version": "Versiune: {{version}}",
+			"label-currently-installed-version": " (Instalat în: {{version}})",
+			"label-by-author": "De ",
+			"label-repository": "Magazin: ",
+			"button-update": "Actualizează",
+			"label-no-readme": "Acest modul nu a furnizat un fișier README.",
+			"msg-installing-plugin": "Instalez modulul \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Am eșuat să instalez modulul \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Modulul a fost instalat cu succes \"{{name}}\".",
+			"label-installed-plugins": "Module instalate",
+			"button-reload-plugins": "Reîncarcă modulele",
+			"msg-reloaded-third-party-plugins": "Reîncarcă modulele terțe.",
+			"label-uninstall": "Dezinstalează",
+			"label-uninstall-plugin": "Dezinstalează modulul",
+			"label-uninstall-plugin-confirmation": "Sigur dorești să dezinstalezi acest modul? Această acțiune va șterge directorul modulului."
 		}
 	},
 	"editor": {
@@ -188,6 +225,8 @@
 		"msg-switched-to-edit": "Modul de afișare implicit a fost schimbat pe editor.",
 		"msg-upgrade-installer": "Pentru a folosi această caracteristică, reinstalează Obsidian folosind ultima versiune de pe site..",
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",
@@ -276,7 +315,8 @@
 		"delete-paragraph": "Șterge paragraf",
 		"toggle-checklist": "Comută starea listei DE FĂCUT",
 		"edit-file-title": "Editează titlul fișierului",
-		"copy-path": "Copiază calea fișierului"
+		"copy-path": "Copiază calea fișierului",
+		"copy-url": "Copiază URL-ul obsidian"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
