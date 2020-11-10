@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Jádro",
+		"options": "Options",
 		"plugin": "Doplněk",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Příklad: složka 1/složka 2",
 		"file-path-example-placeholder": "Příklad: složka/poznámka",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "V režimu náhledu ignorovat jednotlivé zalomení konce řádků podle specifikací Markdownu. Tuto možnost vypněte, aby se jednotlivé zalomení řádků zobrazovaly v náhledu.",
 			"option-show-frontmatter": "Zobrazit hlavičku",
 			"option-show-frontmatter-description": "V režimu náhledu zobrazit hlavičku jako blok kódu. Tuto možnost vypněte pro skrytí hlavičky.",
-			"option-use-markdown-links": "Používat markdown odkazy",
-			"option-use-markdown-links-description": "Návrh odkazu automaticky dokončí markdown odkazy a obrázky na místo wikilinků.",
 			"option-auto-pair-brackets": "Automatické spárování závorek",
 			"option-auto-pair-brackets-description": "Automaticky spáruje závorky a citace.",
 			"option-auto-pair-markdown": "Automatické spárování pomocí Markdown syntaxe",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Ve složce specifikované níže",
 			"option-new-file-folder-path": "Složka do které se budou vytvářet nové poznámky",
 			"option-new-file-folder-path-description": "Nově vytvořené poznámky se vytvoří v této složce. Nastavení doplňků toto nastavení přepíšou.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Nový formát odkazů",
 			"option-link-autocompleted-format-description": "Jak se vytvoří odkazy při automatickém generování interních odkazů.",
 			"option-choice-shortest-linktext": "Nejkratší možná cesta",
@@ -246,7 +248,8 @@
 			"pin": "Připnout",
 			"unlink-pane": "Odpojit panel",
 			"link-pane": "Propojit s panelem...",
-			"delete-file": "Smazat soubor"
+			"delete-file": "Smazat soubor",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknutím rozbalíte",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Upravit název souboru",
 		"copy-path": "Kopírovat cestu souboru",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Tohle ovlivní {{links}} ve {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Tento počet odkazů odkazuje na tuto poznámku: {{links}}.",
 		"label-delete-file": "Odstranit soubor",
 		"button-cancel": "Zrušit",
-		"button-done": "Hotovo"
+		"button-done": "Hotovo",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Doplňky",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Žádný",
 			"option-choice-list-style-dash": "Pomlčka (-)",
 			"option-choice-list-style-asterisk": "Hvězdička (*)",
-			"option-choice-list-style-numbered": "Očíslovaný"
+			"option-choice-list-style-numbered": "Očíslovaný",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Rychlé přepínání",
