@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "设置",
+		"options": "Options",
 		"plugin": "插件",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "例: 文件夹1/文件夹2",
 		"file-path-example-placeholder": "例: 文件夹/笔记.md",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "开启后，根据 Markdown 标准，单个换行符在预览模式下不再生效。",
 			"option-show-frontmatter": "显示 Front-matter ",
 			"option-show-frontmatter-description": "在预览模式下，笔记顶部的 Front-matter 将以代码块的方式显示。关闭此设置后，预览模式将不显示 Front-matter 。",
-			"option-use-markdown-links": "使用 Markdown 链接",
-			"option-use-markdown-links-description": "开启后，插入的 Wiki 链接将被转换为 Markdown 链接。此设置不影响手动输入的 Wiki 链接和已存在的 Wiki 链接。",
 			"option-auto-pair-brackets": "自动补全英文标点符号",
 			"option-auto-pair-brackets-description": "自动补全英文括号和引号。",
 			"option-auto-pair-markdown": "自动补全 Markdown 语法",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "下方指定的文件夹",
 			"option-new-file-folder-path": "存放新建笔记的文件夹",
 			"option-new-file-folder-path-description": "指定存放新笔记的文件夹，插件可能会修改此设置。",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "内部链接类型",
 			"option-link-autocompleted-format-description": "设置在笔记中引用其他文件时插入 \"[[ ]]\" 中的文件路径类型。",
 			"option-choice-shortest-linktext": "以尽可能简短的形式插入",
@@ -246,7 +248,8 @@
 			"pin": "锁定",
 			"unlink-pane": "解除同步",
 			"link-pane": "与其他面板同步",
-			"delete-file": "删除文件"
+			"delete-file": "删除文件",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
 		"copy-path": "复制当前文件的路径",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "目前有 {{links}} 与该文件相关。",
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
-		"button-done": "完成"
+		"button-done": "完成",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "插件",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "无",
 			"option-choice-list-style-dash": "无序列表(-)",
 			"option-choice-list-style-asterisk": "无序列表(*)",
-			"option-choice-list-style-numbered": "有序列表"
+			"option-choice-list-style-numbered": "有序列表",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "快速切换",

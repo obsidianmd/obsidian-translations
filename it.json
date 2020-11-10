@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Core",
+		"options": "Options",
 		"plugin": "Plugin",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Esempio: cartella 1/cartella 2",
 		"file-path-example-placeholder": "Esempio: cartella/nota",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "In modalità anteprima, ignora gli a capo singoli seguendo la specifica Markdown. Disattiva questa opzione per mostrare gli a capo nell'anteprima.",
 			"option-show-frontmatter": "Mostra introduzione",
 			"option-show-frontmatter-description": "In modalità anteprima, mostra l'introduzione come un blocco di codice. Disattiva questa opzione per nascondere l'introduzione.",
-			"option-use-markdown-links": "Usa i collegamenti markdown",
-			"option-use-markdown-links-description": "I suggerimenti per i collegamenti auto-completano utilizzando i collegamenti markdown e le immagini invece dei wikilinks.",
 			"option-auto-pair-brackets": "Auto chiusura delle parentesi",
 			"option-auto-pair-brackets-description": "Chiude le parentesi e le virgolette automaticamente",
 			"option-auto-pair-markdown": "Auto completamento della sintassi Markdown",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Nella cartella specificata sotto",
 			"option-new-file-folder-path": "Cartella nella quale creare le nuove note",
 			"option-new-file-folder-path-description": "Le note appena create verranno inserite in questa cartella. I plugin sovrascriveranno questa impostazione.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Formato dei nuovi collegamenti",
 			"option-link-autocompleted-format-description": "Che formato di collegamenti inserire quando si auto generano i collegamenti interni.",
 			"option-choice-shortest-linktext": "Percorso più breve quando possibile",
@@ -246,7 +248,8 @@
 			"pin": "Fissa",
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con il pannello...",
-			"delete-file": "Elimina file"
+			"delete-file": "Elimina file",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Attiva/disattiva stato della checklist",
 		"edit-file-title": "Modifica il titolo del file",
 		"copy-path": "Copia percorso del file",
-		"copy-url": "Copia URL obsidian"
+		"copy-url": "Copia URL obsidian",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Questo influenzerà {{links}} che si trovano in {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Ci sono attualmente {{links}} che puntano a questa nota.",
 		"label-delete-file": "Elimina file",
 		"button-cancel": "Annulla",
-		"button-done": "Fatto"
+		"button-done": "Fatto",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Trattino (-)",
 			"option-choice-list-style-asterisk": "Asterisco (*)",
-			"option-choice-list-style-numbered": "Numerato"
+			"option-choice-list-style-numbered": "Numerato",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Cambio rapido",

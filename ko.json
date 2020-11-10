@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "주요 설정",
+		"options": "Options",
 		"plugin": "추가 설정",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "예시: 폴더 1/폴더 2",
 		"file-path-example-placeholder": "예시: 폴더/파일",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "프리뷰 모드에서 마크다운의 서식대로 개행 한번한 것은 무시합니다. 프리뷰 모드에서 개행 한번 한걸 보고 싶으시면 이걸 꺼주세요.",
 			"option-show-frontmatter": "프론트 매터 보여주기",
 			"option-show-frontmatter-description": "프리뷰 모드에서 프론트 매터를 코드 블록으로 보여줍니다. 프론트매터를 숨기고 싶다면 꺼주세요.",
-			"option-use-markdown-links": "마크다운 링크를 사용하기",
-			"option-use-markdown-links-description": "링크 자동완성이 링크 혹은 이미지를 위키링크 대신 마크다운 링크로 완성시킵니다.",
 			"option-auto-pair-brackets": "괄호 자동 생성",
 			"option-auto-pair-brackets-description": "닫는 괄호와 따옴표가 자동으로 생성합니다.",
 			"option-auto-pair-markdown": "마크다운 자동 생성",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "아래에 특정되어 있는 경로",
 			"option-new-file-folder-path": "새로운 노트가 만들어질 파일",
 			"option-new-file-folder-path-description": "새로운 노트들은 아래 폴더에 생성됩니다. 다만 추가 설정이 우선시됩니다.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "새로운 링크 서식",
 			"option-link-autocompleted-format-description": "링크를 자동생성할때, 어떤 링크를 사용할까요",
 			"option-choice-shortest-linktext": "가장 짧은 링크",
@@ -246,7 +248,8 @@
 			"pin": "고정",
 			"unlink-pane": "패널 링크 끊기",
 			"link-pane": "퍼널에 링크하기...",
-			"delete-file": "파일 삭제"
+			"delete-file": "파일 삭제",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "체크 박스 상태 토글",
 		"edit-file-title": "파일 제목 편집",
 		"copy-path": "파일 경로 복사",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "이 노트로 연결되는 링크가 {{links}}개 있습니다.",
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
-		"button-done": "완료"
+		"button-done": "완료",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "플러그인",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "없음",
 			"option-choice-list-style-dash": "줄표 (-)",
 			"option-choice-list-style-asterisk": "별표 (*)",
-			"option-choice-list-style-numbered": "숫자"
+			"option-choice-list-style-numbered": "숫자",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "빠른 파일 변경",

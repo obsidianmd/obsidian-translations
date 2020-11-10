@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Kern",
+		"options": "Options",
 		"plugin": "Plugin",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Voorbeeld: map 1/map 2",
 		"file-path-example-placeholder": "Voorbeeld: map/notitie",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "In voorbeschouwingsmodus, negeer enkele regeleindes als volgens de Markdownspecificaties. Zet dit af om enkele regeleindes te tonen in de voorbeschouwing.",
 			"option-show-frontmatter": "Laat voorwerk zien",
 			"option-show-frontmatter-description": "Toon voorwerk in de voorbeeldmodus als een codeblok. Schakel uit om het voorwerk-gedeelte te verbergen.",
-			"option-use-markdown-links": "Gebruik markdown-links",
-			"option-use-markdown-links-description": "Linksuggestie vult markdown-links en afbeeldingen automatisch aan in plaats van wikilinks.",
 			"option-auto-pair-brackets": "Automatisch haakjes toevoegen",
 			"option-auto-pair-brackets-description": "Haakjes en aanhalingstekens automatisch toevoegen.",
 			"option-auto-pair-markdown": "Automatisch Markdownsyntaxis toevoegen",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "In de onderstaande map",
 			"option-new-file-folder-path": "Map om nieuwe notities in te maken",
 			"option-new-file-folder-path-description": "Nieuwe notities verschijnen in deze map. Plugin-instellingen zullen dit overschrijven.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Formaat van een nieuwe link",
 			"option-link-autocompleted-format-description": "Welke links moeten worden ingevoegd bij het automatisch genereren van interne links.",
 			"option-choice-shortest-linktext": "Kortste pad indien mogelijk",
@@ -246,7 +248,8 @@
 			"pin": "Vastzetten",
 			"unlink-pane": "Ontkoppelen venster",
 			"link-pane": "Koppelen met venster...",
-			"delete-file": "Wissen bestand"
+			"delete-file": "Wissen bestand",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik om uit te breiden",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
 		"label-delete-file": "Delete file",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",

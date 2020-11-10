@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Podstawowe",
+		"options": "Options",
 		"plugin": "Wtyczki",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Przykład: folder 1/folder 2",
 		"file-path-example-placeholder": "Przykład: folder/notatka",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "W trybie podglądu, ignoruj pojedyncze podziały wierszy zgodnie ze specyfikacją Markdown. Wyłącz aby wyświetlać pojedyncze podziały wierszy w trybie podglądu.",
 			"option-show-frontmatter": "Pokaż frontmatter",
 			"option-show-frontmatter-description": "W trybie podglądu, pokaż frontmatter (metadane) jako blok kodu. Wyłącz aby ukryć sekcję frontmatter.",
-			"option-use-markdown-links": "Użyj linków Markdown",
-			"option-use-markdown-links-description": "Włącz aby autouzupełnienie wstawiało linki w formacie Markdown: []() / ![]() zamiast wiki: [[]] / ![[]].",
 			"option-auto-pair-brackets": "Automatyczne parowanie nawiasów",
 			"option-auto-pair-brackets-description": "Automatycznie paruj nawiasy i cudzysłowy.",
 			"option-auto-pair-markdown": "Automatycznie paruj składnię Markdown",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Folder określony poniżej",
 			"option-new-file-folder-path": "Folder, w którym będą tworzone nowe notatki",
 			"option-new-file-folder-path-description": "Nowe notatki będą pojawiać się w tym folderze. Ustawienia wtyczek mają pierwszeństwo.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Format nowych linków",
 			"option-link-autocompleted-format-description": "Jakiego formatu używać dla automatycznie generowanych linków wewnętrznych.",
 			"option-choice-shortest-linktext": "Najkrótsza możliwa ścieżka dostępu",
@@ -246,7 +248,8 @@
 			"pin": "Przypnij / odepnij",
 			"unlink-pane": "Usuń powiązanie z oknem",
 			"link-pane": "Powiąż z oknem...",
-			"delete-file": "Usuń plik"
+			"delete-file": "Usuń plik",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Zaznacz / odznacz element listy",
 		"edit-file-title": "Edytuj tytuł pliku",
 		"copy-path": "Skopiuj ścieżkę pliku",
-		"copy-url": "Skopiuj url Obsidian"
+		"copy-url": "Skopiuj url Obsidian",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Do tej notatki istnieje {{links}}.",
 		"label-delete-file": "Usuń plik",
 		"button-cancel": "Anuluj",
-		"button-done": "Zakończ"
+		"button-done": "Zakończ",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Wtyczki",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Brak",
 			"option-choice-list-style-dash": "Myślnik (-)",
 			"option-choice-list-style-asterisk": "Asterysk (*)",
-			"option-choice-list-style-numbered": "Numeracja"
+			"option-choice-list-style-numbered": "Numeracja",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Szybka zmiana pliku",
