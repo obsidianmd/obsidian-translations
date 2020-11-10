@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Merkez",
+		"options": "Options",
 		"plugin": "Eklenti",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Örnek: klasör 1/klasör 2",
 		"file-path-example-placeholder": "Örnek: klasör/not",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "Önizleme modunda tekil yeni satırları Markdown tanımlarına göre gözardı et. Önizlemede tekil yeni satırları görmek istiyorsanız bunu kapatın.",
 			"option-show-frontmatter": "Show frontmatter",
 			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Parantezleri otomatik eşle",
 			"option-auto-pair-brackets-description": "Parantez ve tırnak işaretlerini otomatik eşle.",
 			"option-auto-pair-markdown": "Markdown işaretlerini otomatik eşle.",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Aşağıda belirtilen klasöre",
 			"option-new-file-folder-path": "Yeni notların kaydedileceği klasör",
 			"option-new-file-folder-path-description": "Yeni notlar bu klasörde yaratılır. Eklenti ayarları bu ayarı değiştirebilir.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Yeni bağlantı formatı",
 			"option-link-autocompleted-format-description": "Otomatik bağlantı yaratırken hangi baülantıların ekleneceği.",
 			"option-choice-shortest-linktext": "Mümkünse en kısa yol",
@@ -246,7 +248,8 @@
 			"pin": "İğnele",
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereye bağla...",
-			"delete-file": "Dosyayı sil"
+			"delete-file": "Dosyayı sil",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Click to expand",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Bu notu gösteren {{links}} bağ var.",
 		"label-delete-file": "Dosyayı sil",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Hızlı geçiş",

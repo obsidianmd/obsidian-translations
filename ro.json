@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Nucleu",
+		"options": "Options",
 		"plugin": "Modul",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Exemplu: director 1/director 2",
 		"file-path-example-placeholder": "Exemplu: director/notă",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "În modul de previzualizare, ignoră spațiile de un rând conform specificațiilor Markdown. Dezactivează această setare ca spațiile de un rând să apară în previzualizare.",
 			"option-show-frontmatter": "Afișează frontmatter",
 			"option-show-frontmatter-description": "În modul de previzualizare, afișează frontmatter ca un bloc de cod. Dezactivează pentru a ascunde secțiunea frontmatter.",
-			"option-use-markdown-links": "Folosește legături markdown",
-			"option-use-markdown-links-description": "Sugestiile de legături sunt auto-completate cu legături și imagini markdown în loc de legături tip wiki.",
 			"option-auto-pair-brackets": "Creează automat perechi de paranteze",
 			"option-auto-pair-brackets-description": "Grupează automat parantezele și ghilimelele.",
 			"option-auto-pair-markdown": "Grupează automat elemente de sintaxă Markdown",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "În directorul menționat mai jos",
 			"option-new-file-folder-path": "Directorul în care vor fi create notele noi",
 			"option-new-file-folder-path-description": "Notele nou create vor apărea sub acest director. Setările din module vor suprascrie această opțiune.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Formatul legăturilor noi",
 			"option-link-autocompleted-format-description": "Ce fel de legături să insereze atunci când sunt auto-generate legături interne.",
 			"option-choice-shortest-linktext": "Calea cea mai scurtă atunci când e posibil",
@@ -166,8 +168,8 @@
 			"placeholder-community-plugins": "Caută module ale comunității...",
 			"msg-failed-load-plugins": "Am eșuat să încarc modulele comunității.",
 			"label-installed": "Instalat",
-			"tooltip-downloaded-times": "Downloaded {{count}} time",
-			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
+			"tooltip-downloaded-times": "Descărcat de {{count}} ori",
+			"tooltip-downloaded-times_plural": "Descărcate de {{count}} ori",
 			"button-install": "Instalează",
 			"label-no-results-found": "Nu am găsit niciun rezultat.",
 			"msg-failed-to-load-manifest": "Am eșuat să încarc declarația modulului.",
@@ -246,7 +248,8 @@
 			"pin": "Fixează",
 			"unlink-pane": "Șterge legătura panoului",
 			"link-pane": "Creează legătură cu un panou...",
-			"delete-file": "Șterge fișier"
+			"delete-file": "Șterge fișier",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Click pentru a extinde",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Comută starea listei DE FĂCUT",
 		"edit-file-title": "Editează titlul fișierului",
 		"copy-path": "Copiază calea fișierului",
-		"copy-url": "Copiază URL-ul obsidian"
+		"copy-url": "Copiază URL-ul obsidian",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "În acest moment sunt {{links}} care trimit către această notă.",
 		"label-delete-file": "Șterge fișier",
 		"button-cancel": "Anulează",
-		"button-done": "Gata"
+		"button-done": "Gata",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Module",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Fără",
 			"option-choice-list-style-dash": "Cratimă (-)",
 			"option-choice-list-style-asterisk": "Asterisc (*)",
-			"option-choice-list-style-numbered": "Număr"
+			"option-choice-list-style-numbered": "Număr",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Comutare rapidă",

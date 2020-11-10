@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Kjerne",
+		"options": "Options",
 		"plugin": "Utvidelse",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Eksempel: mappe 1/mappe 2",
 		"file-path-example-placeholder": "Eksempel: mappe/notat",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "Krever doble linjeskift, slik som i Markdown-spesifikasjonene. Skru denne av for å vise enkle linjeskift i forhåndsvisningsmodus.",
 			"option-show-frontmatter": "Vis forord",
 			"option-show-frontmatter-description": "I forhåndsvisningsmodus, vis forord formattert som kode. Skru denne av for å skjule forord.",
-			"option-use-markdown-links": "Bruk Markdown-lenker",
-			"option-use-markdown-links-description": "Lenkeforslag setter automatisk inn Markdown-lenker og bilder i stedet for wiki-lenker.",
 			"option-auto-pair-brackets": "Automatiske parenteser",
 			"option-auto-pair-brackets-description": "Lukker parenteser og anførselstegn automatisk.",
 			"option-auto-pair-markdown": "Automatisk Markdown syntaks",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Egendefinert mappe (spesifisert nedenfor)",
 			"option-new-file-folder-path": "Nye notater plasseres i denne mappen:",
 			"option-new-file-folder-path-description": "Innstillinger for utvidelsene overkjører denne regelen.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Format på nye lenker",
 			"option-link-autocompleted-format-description": "Hvilket format som ønskes på automatisk genererte interne lenker.",
 			"option-choice-shortest-linktext": "Kortest mulig søkesti",
@@ -246,7 +248,8 @@
 			"pin": "Fest",
 			"unlink-pane": "Opphev kobling",
 			"link-pane": "Koble til panel...",
-			"delete-file": "Slett fil"
+			"delete-file": "Slett fil",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Klikk for å utvide",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Rediger tittel",
 		"copy-path": "Kopier søkesti",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Det er {{links}} som peker mot denne filen.",
 		"label-delete-file": "Slett fil",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Utvidelser",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Hurtigåpner",
