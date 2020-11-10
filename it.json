@@ -1,9 +1,9 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "Opzioni",
 		"plugin": "Plugin",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"builtin-plugins": "Plugin principali",
+		"plugin-options": "Opzioni plugin",
 		"folder-path-example-placeholder": "Esempio: cartella 1/cartella 2",
 		"file-path-example-placeholder": "Esempio: cartella/nota",
 		"editor": {
@@ -55,10 +55,10 @@
 			"option-choice-specified-folder": "Nella cartella specificata sotto",
 			"option-new-file-folder-path": "Cartella nella quale creare le nuove note",
 			"option-new-file-folder-path-description": "Le note appena create verranno inserite in questa cartella. I plugin sovrascriveranno questa impostazione.",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "Usa [[Wikilinks]]",
+			"option-use-wiki-links-description": "Crea automaticamente Wikilink per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilita questa opzione per utilizzare il formato Markdown.",
 			"option-link-autocompleted-format": "Formato dei nuovi collegamenti",
-			"option-link-autocompleted-format-description": "Che formato di collegamenti inserire quando si auto generano i collegamenti interni.",
+			"option-link-autocompleted-format-description": "Quale formato dei collegamenti utilizzare quando vengono generati automaticamente i collegamenti interni.",
 			"option-choice-shortest-linktext": "Percorso più breve quando possibile",
 			"option-choice-relative-path": "Percorso relativo al file",
 			"option-choice-absolute-path": "Percorso assoluto nella cassaforte",
@@ -249,7 +249,7 @@
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con il pannello...",
 			"delete-file": "Elimina file",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Apri in nuovo pannello"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -320,7 +320,7 @@
 		"edit-file-title": "Modifica il titolo del file",
 		"copy-path": "Copia percorso del file",
 		"copy-url": "Copia URL obsidian",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Esporta in PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Questo influenzerà {{links}} che si trovano in {{files}}.",
@@ -343,7 +343,7 @@
 		"label-delete-file": "Elimina file",
 		"button-cancel": "Annulla",
 		"button-done": "Fatto",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "Preparazione del PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -413,7 +413,7 @@
 			"option-choice-list-style-dash": "Trattino (-)",
 			"option-choice-list-style-asterisk": "Asterisco (*)",
 			"option-choice-list-style-numbered": "Numerato",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "Cancella ricerca"
 		},
 		"quick-switcher": {
 			"name": "Cambio rapido",
@@ -454,7 +454,7 @@
 			"option-show-existing-files-only-description": "Quando è attivato, i collegamenti a file non esistenti non sono mostrati",
 			"option-show-orphans": "Orfani",
 			"option-show-orphans-description": "Mostra file che non sono collegati a nessun'altro file",
-			"label-display": "Display",
+			"label-display": "Aspetto",
 			"option-show-arrows": "Frecce",
 			"option-show-arrows-description": "Mostra frecce quando si usa lo zoom",
 			"option-text-fade": "Soglia di dissolvenza del testo",
@@ -524,9 +524,9 @@
 			"msg-successfully-used": "Ora stai usando \"{{name}}\" di {{author}} come tuo CSS personalizzato."
 		},
 		"command-palette": {
-			"name": "Menù dei comandi",
+			"name": "Riquadro comandi",
 			"desc": "Digita un comando per invocarlo. Nessun bisogno di usare la UI o ricordare la combinazione dei tasti.",
-			"action-open": "Apri il menù dei comandi",
+			"action-open": "Apri riquadro comandi",
 			"instruction-navigate": "per navigare",
 			"instruction-use": "per usare",
 			"instruction-dismiss": "per annullare",
