@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Core",
+		"options": "Options",
 		"plugin": "Plugin",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Exemplos: pasta 1/pasta 2",
 		"file-path-example-placeholder": "Exemplos: pasta/nota",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "In preview mode, ignore single line breaks according to the Markdown specs. Turn this off for single line breaks to show in preview.",
 			"option-show-frontmatter": "Show frontmatter",
 			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use links do markdown",
-			"option-use-markdown-links-description": "Linkar sugestões dos links em markdowns e imagens no lugar de wikilinks.",
 			"option-auto-pair-brackets": "Fecha parênteses automaticamente",
 			"option-auto-pair-brackets-description": "Fecha parênteses e aspas automaticamente.",
 			"option-auto-pair-markdown": "Combinar símbolos Markdown automaticamente",
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Utilize atalhos do Vim no editor de códigos."
 		},
 		"file": {
-			"name": "Arquivos",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Confirme a exclusão do arquivo",
 			"option-confirm-file-deletion-description": "Determine se você precisa confirmar para excluir arquivos.",
 			"option-delete-destination": "Excluir arquivos",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Na pasta especificada abaixo",
 			"option-new-file-folder-path": "Pasta em que novas notas serão criadas",
 			"option-new-file-folder-path-description": "Novas notas vão aparecer nessa pasta. Configurações de Plugin substituem essa.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Novo formato do link",
 			"option-link-autocompleted-format-description": "Quais links inserir, ao gerar links internos.",
 			"option-choice-shortest-linktext": "Menor caminho, quando possível",
@@ -246,7 +248,8 @@
 			"pin": "Pin",
 			"unlink-pane": "Desvincular painel",
 			"link-pane": "Vincular painel...",
-			"delete-file": "Deletar arquivo"
+			"delete-file": "Deletar arquivo",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Clique para expandir",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Ira afetar os links {{links}} nos {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Há {{links}} direcionando a esta nota.",
 		"label-delete-file": "Excluir arquivo",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "troca rápida",

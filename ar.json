@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Core",
+		"options": "Options",
 		"plugin": "إضافة",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "مثال: folder 1/folder 2",
 		"file-path-example-placeholder": "مثال: folder/note",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "In preview mode, ignore single line breaks according to the Markdown specs. Turn this off for single line breaks to show in preview.",
 			"option-show-frontmatter": "Show frontmatter",
 			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Auto pair brackets",
 			"option-auto-pair-brackets-description": "Pair brackets and quotes automatically.",
 			"option-auto-pair-markdown": "Auto pair Markdown syntax",
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
 		"file": {
-			"name": "File",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Confirm file deletion",
 			"option-confirm-file-deletion-description": "Whether you want to get prompted to confirm file deletion.",
 			"option-delete-destination": "Deleted files",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "In the folder specified below",
 			"option-new-file-folder-path": "Folder to create new notes in",
 			"option-new-file-folder-path-description": "Newly created notes will appear under this folder. Plugin settings will override this.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "New link format",
 			"option-link-autocompleted-format-description": "What links to insert when auto generating internal links.",
 			"option-choice-shortest-linktext": "Shortest path when possible",
@@ -246,7 +248,8 @@
 			"pin": "Pin",
 			"unlink-pane": "Unlink pane",
 			"link-pane": "Link with pane...",
-			"delete-file": "Delete file"
+			"delete-file": "Delete file",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Click to expand",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
 		"label-delete-file": "Delete file",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "الإضافات",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
