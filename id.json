@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Inti",
+		"options": "Pengaturan",
 		"plugin": "Plugin",
+		"builtin-plugins": "Plugin inti",
+		"plugin-options": "Pengaturan plugin",
 		"folder-path-example-placeholder": "Contoh: folder 1/folder 2",
 		"file-path-example-placeholder": "Contoh: folder/file",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "Spesifikasi Markdown mengabaikan tiap pemisah baris teks dalam mode pratinjau. Matikan untuk menampilkan tiap pemisah baris.",
 			"option-show-frontmatter": "Tampilkan frontmatter",
 			"option-show-frontmatter-description": "Dalam mode pratinjau, Tampilkan frontmatter sebagai blok kode. Matikan untuk menyembunyikan bagian frontmatter.",
-			"option-use-markdown-links": "Gunakan link markdown",
-			"option-use-markdown-links-description": "Penyaranan link melengkapi secara otomatis link dan gambar markdown sebagai ganti wikilink.",
 			"option-auto-pair-brackets": "Pasangkan otomatis tanda kurung",
 			"option-auto-pair-brackets-description": "Pasangkan tanda kurung dan tanda kutip secara otomatis.",
 			"option-auto-pair-markdown": "Pasangkan otomatis sintaksis Markdown",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Dalam folder yang dikhususkan ini",
 			"option-new-file-folder-path": "Folder untuk membuat catatan baru",
 			"option-new-file-folder-path-description": "Catatan yang baru dibuat akan muncul di dalam folder ini. Pengaturan plugin akan mengesampingkan ini.",
+			"option-use-wiki-links": "Gunakan [[Wikilink]]",
+			"option-use-wiki-links-description": "Buat otomatis Wikilink untuk [[link]] and ![[gambar]] sebagai ganti dari link dan gambar Markdown. Nonaktifkan opsi ini untuk membuat link Markdown.",
 			"option-link-autocompleted-format": "Format link baru",
 			"option-link-autocompleted-format-description": "Link apa yang disisipkan saat pembuatan otomatis link internal.",
 			"option-choice-shortest-linktext": "Jalur terdekat jika memungkinkan",
@@ -166,8 +168,8 @@
 			"placeholder-community-plugins": "Cari plugin komunitas...",
 			"msg-failed-load-plugins": "Gagal memuat plugin komunitas.",
 			"label-installed": "Terinstal",
-			"tooltip-downloaded-times": "Downloaded {{count}} time",
-			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
+			"tooltip-downloaded-times": "Terunduh {{count}} kali",
+			"tooltip-downloaded-times_plural": "Terunduh {{count}} kali",
 			"button-install": "Instal",
 			"label-no-results-found": "Tidak ada hasil.",
 			"msg-failed-to-load-manifest": "Gagal memuat manifes plugin.",
@@ -246,7 +248,8 @@
 			"pin": "Pin",
 			"unlink-pane": "Lepaskan hubungan panel",
 			"link-pane": "Hubungkan dengan panel...",
-			"delete-file": "Hapus file"
+			"delete-file": "Hapus file",
+			"open-in-new-pane": "Buka di panel baru"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Centang daftar periksa",
 		"edit-file-title": "Ubah judul file",
 		"copy-path": "Salin jalur file",
-		"copy-url": "Salin url Obsidian"
+		"copy-url": "Salin url Obsidian",
+		"export-pdf": "Ekspor ke PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Saat ini terdapat {{links}} menunjuk ke catatan ini.",
 		"label-delete-file": "Hapus file",
 		"button-cancel": "Batal",
-		"button-done": "Selesai"
+		"button-done": "Selesai",
+		"preparing-pdf": "Menyiapkan PDF..."
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Tidak ada",
 			"option-choice-list-style-dash": "Tanda hubung (-)",
 			"option-choice-list-style-asterisk": "Asterik (*)",
-			"option-choice-list-style-numbered": "Bernomor"
+			"option-choice-list-style-numbered": "Bernomor",
+			"tooltip-clear-search": "Hapus pencarian"
 		},
 		"quick-switcher": {
 			"name": "Pengalih cepat",

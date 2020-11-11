@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "コア",
+		"options": "Options",
 		"plugin": "プラグイン",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "例: フォルダ1/フォルダ2",
 		"file-path-example-placeholder": "例: フォルダ/ノート",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "プレビュー画面での行の折り返しを、マークダウンの仕様に従って無視します。プレビュー画面でも行を折り返したい場合には、この設定をオフにしてください。",
 			"option-show-frontmatter": "Show frontmatter",
 			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "括弧の自動的なペアリング",
 			"option-auto-pair-brackets-description": "括弧や引用符を自動的にペアにします。",
 			"option-auto-pair-markdown": "マークダウン記法の自動的なペアリング",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "以下で指定されたフォルダ",
 			"option-new-file-folder-path": "新しいメモを作成するフォルダ",
 			"option-new-file-folder-path-description": "新しく作成したメモはこのフォルダに置かれます。プラグインの設定によって上書きされます。",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "新しいリンクの形式",
 			"option-link-autocompleted-format-description": "内部リンクを自動で作成する際に、どの形式でリンクを張るか決めます。",
 			"option-choice-shortest-linktext": "可能であれば最短経路",
@@ -246,7 +248,8 @@
 			"pin": "ピン",
 			"unlink-pane": "ペインのリンクを解除する",
 			"link-pane": "ペインをリンクする…",
-			"delete-file": "ファイルを削除する"
+			"delete-file": "ファイルを削除する",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "チェックリストの状態を切り替える",
 		"edit-file-title": "ファイルタイトルの編集",
 		"copy-path": "ファイルパスをコピーする",
-		"copy-url": "Copy obsidian url"
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "There are currently {{links}} pointing to this note.",
 		"label-delete-file": "Delete file",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
