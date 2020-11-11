@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "設定",
+		"options": "Options",
 		"plugin": "外掛",
+		"builtin-plugins": "核心外掛",
+		"plugin-options": "外掛選項",
 		"folder-path-example-placeholder": "例: 資料夾1/資料夾2",
 		"file-path-example-placeholder": "例: 資料夾/筆記.md",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "在預覽模式下，根據Markdown語法忽略單行換行符號。將此選項關閉可在預覽中顯示單行換行符號。",
 			"option-show-frontmatter": "顯示正文前頁",
 			"option-show-frontmatter-description": "在預覽狀態時顯示正文前頁。關閉選項則隱藏前頁內容。",
-			"option-use-markdown-links": "使用Markdown連結格式",
-			"option-use-markdown-links-description": "自動補全的連結格式是否採用標準的Markdown格式。啟用的話 [[]]變成[]()",
 			"option-auto-pair-brackets": "自動補全雙括號",
 			"option-auto-pair-brackets-description": "自動補全括號和引號。",
 			"option-auto-pair-markdown": "自動補全Markdown語法",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "下方指定的資料夾",
 			"option-new-file-folder-path": "儲存新建筆記的資料夾",
 			"option-new-file-folder-path-description": "指定儲存新筆記的資料夾，外掛可能會修改此設定。",
+			"option-use-wiki-links": "使用 [[Wikilinks]]",
+			"option-use-wiki-links-description": "自動產生Wikilinks [[連結]] 與 ![[圖片]] 以取代Markdown連結與圖片。關閉本選項則產生 Markdown 格式。",
 			"option-link-autocompleted-format": "內部連結格式",
 			"option-link-autocompleted-format-description": "設定在筆記中引用其他文件時插入 [[ ]] 中的檔案路徑類型。",
 			"option-choice-shortest-linktext": "以儘可能簡短的形式插入",
@@ -246,7 +248,8 @@
 			"pin": "釘選",
 			"unlink-pane": "取消面板連結",
 			"link-pane": "連結面板...",
-			"delete-file": "刪除檔案"
+			"delete-file": "刪除檔案",
+			"open-in-new-pane": "開啟於新面板"
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "切換待辦事項狀態",
 		"edit-file-title": "編輯檔案標題",
 		"copy-path": "複製檔案路徑",
-		"copy-url": "複製obsidian網址"
+		"copy-url": "複製obsidian網址",
+		"export-pdf": "匯出 PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "目前有 {{links}} 與該文件相關。",
 		"label-delete-file": "刪除檔案",
 		"button-cancel": "取消",
-		"button-done": "完成"
+		"button-done": "完成",
+		"preparing-pdf": "PDF 準備中..."
 	},
 	"plugins": {
 		"name": "外掛",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "無",
 			"option-choice-list-style-dash": "減號 (-)",
 			"option-choice-list-style-asterisk": "星號 (*)",
-			"option-choice-list-style-numbered": "數字."
+			"option-choice-list-style-numbered": "數字. ",
+			"tooltip-clear-search": "清除搜尋"
 		},
 		"quick-switcher": {
 			"name": "快速切換",
