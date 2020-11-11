@@ -1,9 +1,9 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "Opcje",
 		"plugin": "Wtyczki",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"builtin-plugins": "Wbudowane wtyczki",
+		"plugin-options": "Opcje wtyczek",
 		"folder-path-example-placeholder": "Przykład: folder 1/folder 2",
 		"file-path-example-placeholder": "Przykład: folder/notatka",
 		"editor": {
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Pozwala na używanie skrótów klawiszowych Vim w trybie edycji."
 		},
 		"file": {
-			"name": "Plik",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Potwierdź usunięcie pliku",
 			"option-confirm-file-deletion-description": "Włącz aby wyświetlać okno dialogowe potwierdzenia usunięcia pliku.",
 			"option-delete-destination": "Usunięte pliki",
@@ -55,8 +55,8 @@
 			"option-choice-specified-folder": "Folder określony poniżej",
 			"option-new-file-folder-path": "Folder, w którym będą tworzone nowe notatki",
 			"option-new-file-folder-path-description": "Nowe notatki będą pojawiać się w tym folderze. Ustawienia wtyczek mają pierwszeństwo.",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "Użyj [[Wikilinków]]",
+			"option-use-wiki-links-description": "Automatycznie generuj Wikilinki dla [[linków]] i ![[obrazów]] zamiast używać formatu Markdown. Wyłącz tę opcję aby nadal używać linków w formacie Markdown.",
 			"option-link-autocompleted-format": "Format nowych linków",
 			"option-link-autocompleted-format-description": "Jakiego formatu używać dla automatycznie generowanych linków wewnętrznych.",
 			"option-choice-shortest-linktext": "Najkrótsza możliwa ścieżka dostępu",
@@ -249,7 +249,7 @@
 			"unlink-pane": "Usuń powiązanie z oknem",
 			"link-pane": "Powiąż z oknem...",
 			"delete-file": "Usuń plik",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Otwórz w nowym oknie"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
@@ -320,7 +320,7 @@
 		"edit-file-title": "Edytuj tytuł pliku",
 		"copy-path": "Skopiuj ścieżkę pliku",
 		"copy-url": "Skopiuj url Obsidian",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Eksportuj do PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -343,7 +343,7 @@
 		"label-delete-file": "Usuń plik",
 		"button-cancel": "Anuluj",
 		"button-done": "Zakończ",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "Przygotowywanie PDF..."
 	},
 	"plugins": {
 		"name": "Wtyczki",
@@ -413,7 +413,7 @@
 			"option-choice-list-style-dash": "Myślnik (-)",
 			"option-choice-list-style-asterisk": "Asterysk (*)",
 			"option-choice-list-style-numbered": "Numeracja",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "Wyczyść wyszukiwanie"
 		},
 		"quick-switcher": {
 			"name": "Szybka zmiana pliku",
