@@ -1,9 +1,9 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "Opzioni",
 		"plugin": "Plugin",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"builtin-plugins": "Plugin principali",
+		"plugin-options": "Opzioni plugin",
 		"folder-path-example-placeholder": "Esempio: cartella 1/cartella 2",
 		"file-path-example-placeholder": "Esempio: cartella/nota",
 		"editor": {
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Ti permette di utilizzare la mappatura dei tasti di Vim nell'editor."
 		},
 		"file": {
-			"name": "File",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Conferma eliminazione dei file",
 			"option-confirm-file-deletion-description": "Indica se desideri che ti venga chiesto di confermare l'eliminazione dei file.",
 			"option-delete-destination": "File eliminati",
@@ -50,18 +50,18 @@
 			"option-always-update-links-description": "Indica se aggiornare automaticamente i collegamenti dopo aver rinominato un file.",
 			"option-new-note-location": "Posizione predefinita di una nuova nota",
 			"option-new-note-location-description": "Indica dove inserire le note appena create. I plugin sovrascriveranno questa impostazione.",
-			"option-choice-vault-root": "Posizione della cassaforte",
+			"option-choice-vault-root": "Posizione del vault",
 			"option-choice-current-folder": "Nella stessa cartella nella quale si trova il file",
 			"option-choice-specified-folder": "Nella cartella specificata sotto",
 			"option-new-file-folder-path": "Cartella nella quale creare le nuove note",
 			"option-new-file-folder-path-description": "Le note appena create verranno inserite in questa cartella. I plugin sovrascriveranno questa impostazione.",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "Usa [[Wikilinks]]",
+			"option-use-wiki-links-description": "Crea automaticamente Wikilink per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilita questa opzione per utilizzare il formato Markdown.",
 			"option-link-autocompleted-format": "Formato dei nuovi collegamenti",
-			"option-link-autocompleted-format-description": "Che formato di collegamenti inserire quando si auto generano i collegamenti interni.",
+			"option-link-autocompleted-format-description": "Quale formato dei collegamenti utilizzare quando vengono generati automaticamente i collegamenti interni.",
 			"option-choice-shortest-linktext": "Percorso più breve quando possibile",
 			"option-choice-relative-path": "Percorso relativo al file",
-			"option-choice-absolute-path": "Percorso assoluto nella cassaforte",
+			"option-choice-absolute-path": "Percorso assoluto nel vault",
 			"option-attachment-folder-path": "Percorso della cartella degli allegati",
 			"option-attachment-folder-path-description": "I file allegati appena creati verranno inseriti qui. Questo include le immagini create tramite drag and drop o copia/incolla, e le registrazioni audio."
 		},
@@ -219,7 +219,7 @@
 		"sidebar-collapse": "Comprimi",
 		"msg-fail-to-save-file": "Salvataggio del file \"{{filepath}}\" fallito. {{message}}.",
 		"no-file": "Nessun file",
-		"switch-vault": "Apri un'altra cassaforte",
+		"switch-vault": "Apri un altro vault",
 		"help": "Aiuto",
 		"settings": "Impostazioni",
 		"drag-to-rearrange": "Trascina per riordinare",
@@ -249,7 +249,7 @@
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con il pannello...",
 			"delete-file": "Elimina file",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Apri in nuovo pannello"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -257,27 +257,27 @@
 		},
 		"start-screen": {
 			"label-beta-version": "Versione beta",
-			"option-open-folder-as-vault": "Apri cartella come cassaforte",
-			"option-open-folder-as-vault-description": "Scegli una cartella di file Markdown esistente .",
-			"option-create-vault": "Crea nuova cassaforte",
-			"option-create-vault-description": "Crea una nuova cassaforte Obsidian in una cartella.",
-			"option-open-help-vault": "Apri cassaforte di aiuto",
-			"option-open-help-vault-description": "Apri una cassaforte \"Demo & Aiuto\".",
-			"option-new-vault-name": "Nome cassaforte",
-			"option-new-vault-name-description": "Scegli un nome per la tua nuova cassaforte.",
+			"option-open-folder-as-vault": "Apri cartella come vault",
+			"option-open-folder-as-vault-description": "Scegli una cartella di file Markdown esistente.",
+			"option-create-vault": "Crea nuovo vault",
+			"option-create-vault-description": "Crea un nuovo vault Obsidian in una cartella.",
+			"option-open-help-vault": "Apri vault di aiuto",
+			"option-open-help-vault-description": "Apri un vault \"Demo & Aiuto\".",
+			"option-new-vault-name": "Nome vault",
+			"option-new-vault-name-description": "Scegli un nome per il tuo vault.",
 			"option-new-vault-location": "Posizione",
-			"option-new-vault-location-description": "Scegli una posizione per la tua nuova cassaforte.",
+			"option-new-vault-location-description": "Scegli una posizione per il tuo nuovo vault.",
 			"button-open": "Apri",
 			"button-help": "Aiuto",
 			"button-browse": "Naviga",
 			"button-create-vault": "Crea",
 			"button-back": "Indietro",
-			"msg-empty-vault-name": "Il nome della cassaforte non può essere vuoto.",
+			"msg-empty-vault-name": "Il nome del vault non può essere vuoto.",
 			"msg-invalid-folder": "Scegli una cartella valida.",
-			"msg-failed-to-create-vault": "Creazione della cassaforte fallita.",
-			"msg-failed-to-create-vault-at-location": "Creazione della cassaforte nel percorso indicato fallita. Controlla il percorso e i permessi.",
+			"msg-failed-to-create-vault": "Creazione del vault fallita.",
+			"msg-failed-to-create-vault-at-location": "Impossibile creare il vault nella posizione specificata. Controlla il percorso e i permessi.",
 			"msg-error-failed-to-open-vault": "Apertura fallita.",
-			"msg-error-remove-current-open-vault": "Impossibile rimuovere una cassaforte attualmente in uso."
+			"msg-error-remove-current-open-vault": "Impossibile rimuovere un vault attualmente in uso."
 		}
 	},
 	"commands": {
@@ -320,7 +320,7 @@
 		"edit-file-title": "Modifica il titolo del file",
 		"copy-path": "Copia percorso del file",
 		"copy-url": "Copia URL obsidian",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Esporta in PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Questo influenzerà {{links}} che si trovano in {{files}}.",
@@ -332,7 +332,7 @@
 		"button-do-not-update": "Non aggiornare",
 		"label-confirm-deletion": "Sei sicuro di voler eliminare \"{{filename}}\"?",
 		"label-move-to-system-trash": "Verrà spostato nel cestino di sistema.",
-		"label-move-to-vault-trash": "Verrà spostato nel cestino di Obsidian, che si trova nella cartella nascosta \".trash\" nella tua cassaforte.",
+		"label-move-to-vault-trash": "Verrà spostato nel cestino di Obsidian che si trova nella cartella nascosta \".trash\" del tuo vault.",
 		"label-permanent-delete": "Questo file verrà eliminato definitivamente.",
 		"label-non-empty-folder": "Questa cartella non è vuota.",
 		"label-delete-folder-warning": "Se continui, tutti i file in questa cartella verranno eliminati.",
@@ -343,14 +343,14 @@
 		"label-delete-file": "Elimina file",
 		"button-cancel": "Annulla",
 		"button-done": "Fatto",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "Preparazione del PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
 		"file-explorer": {
 			"name": "Gestore di file",
-			"desc": "Vedi tutti i file nella cassaforte.",
-			"action-create-note": "Crea una nuova nota",
+			"desc": "Mostra tutti i file nel tuo vault.",
+			"action-create-note": "Crea nuova nota",
 			"action-create-note-in-new-pane": "Crea nota in un nuovo pannello",
 			"action-new-note": "Nuova nota",
 			"action-new-folder": "Nuova cartella",
@@ -413,7 +413,7 @@
 			"option-choice-list-style-dash": "Trattino (-)",
 			"option-choice-list-style-asterisk": "Asterisco (*)",
 			"option-choice-list-style-numbered": "Numerato",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "Cancella ricerca"
 		},
 		"quick-switcher": {
 			"name": "Cambio rapido",
@@ -454,7 +454,7 @@
 			"option-show-existing-files-only-description": "Quando è attivato, i collegamenti a file non esistenti non sono mostrati",
 			"option-show-orphans": "Orfani",
 			"option-show-orphans-description": "Mostra file che non sono collegati a nessun'altro file",
-			"label-display": "Display",
+			"label-display": "Aspetto",
 			"option-show-arrows": "Frecce",
 			"option-show-arrows-description": "Mostra frecce quando si usa lo zoom",
 			"option-text-fade": "Soglia di dissolvenza del testo",
@@ -505,7 +505,7 @@
 		},
 		"custom-css": {
 			"name": "CSS personalizzati",
-			"desc": "Legge \"obsidian.css\" nella cassaforte e lo applica.",
+			"desc": "Legge il file \"obsidian.css\" nel vault e lo applica.",
 			"setting-community-themes": "Temi della community",
 			"msg-fetching-themes": "Recupero i dati dei temi della community...",
 			"prompt-filter": "Filtra...",
@@ -524,9 +524,9 @@
 			"msg-successfully-used": "Ora stai usando \"{{name}}\" di {{author}} come tuo CSS personalizzato."
 		},
 		"command-palette": {
-			"name": "Menù dei comandi",
+			"name": "Riquadro comandi",
 			"desc": "Digita un comando per invocarlo. Nessun bisogno di usare la UI o ricordare la combinazione dei tasti.",
-			"action-open": "Apri il menù dei comandi",
+			"action-open": "Apri riquadro comandi",
 			"instruction-navigate": "per navigare",
 			"instruction-use": "per usare",
 			"instruction-dismiss": "per annullare",
@@ -549,7 +549,7 @@
 			"zettelkasten-link-fixer-description": "Converte i collegamenti \"[[UID]]\" in completi \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Abbellitore di collegamenti di Zettelkasten",
 			"zettelkasten-link-beautifier-description": "Aggiusta i collegamenti \"[[UID]]\" e li abbellisce \"[[UID File Name|File Name]]\".",
-			"msg-all-files-warning": "Attenzione: l'Strumento di importazione convertirà tutti i file nella cassaforte, non solo il file corrente.",
+			"msg-all-files-warning": "Attenzione: lo strumento di importazione convertirà tutti i file nel vault, non solo il file corrente.",
 			"msg-override-files-warning": "I tuoi file saranno sovrascritti. Esegui un back up di tutti i file prima di tentare la conversione.",
 			"label-start-conversion": "Avvia la conversione",
 			"label-stop": "Stop",
