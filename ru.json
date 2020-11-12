@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Основные",
+		"options": "Options",
 		"plugin": "Плагины",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Пример: папка 1/папка 2",
 		"file-path-example-placeholder": "Пример: папка/заметка",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "Игнорировать одиночные разделители строк в режиме просмотра в соответствии со стандартом Markdown. Отключите, чтобы одиночные разделители отображались в режиме просмотра.",
 			"option-show-frontmatter": "Отображать frontmatter",
 			"option-show-frontmatter-description": "В режиме просмотра отображать frontmatter как блок кода. Отключение скроет раздел frontmatter.",
-			"option-use-markdown-links": "Использовать Markdown-ссылки",
-			"option-use-markdown-links-description": "Предлагать стандартный Markdown-синтаксис вместо Wiki-синтаксиса при создании ссылок между документами и вставке изображений.",
 			"option-auto-pair-brackets": "Закрывать скобки",
 			"option-auto-pair-brackets-description": "Автоматически закрывает скобки и кавычки.",
 			"option-auto-pair-markdown": "Закрывать теги Markdown",
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Позволяет использовать сочетания клавиш Vim в режиме редактирования."
 		},
 		"file": {
-			"name": "Файл",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Подтверждать удаление файла",
 			"option-confirm-file-deletion-description": "Отображает окно с подтверждением удаления файла.",
 			"option-delete-destination": "Удаленные файлы",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "В каталоге, указанном ниже",
 			"option-new-file-folder-path": "Папка, в которой создавать новые заметки",
 			"option-new-file-folder-path-description": "Новые заметки будут создаваться в этой папке. Настройки плагинов могут переопределить это значение.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Формат новой ссылки",
 			"option-link-autocompleted-format-description": "Какой формат использовать при создании внутренних ссылок.",
 			"option-choice-shortest-linktext": "Самый короткий путь к файлу из возможных",
@@ -246,7 +248,8 @@
 			"pin": "Закрепить",
 			"unlink-pane": "Отвязать",
 			"link-pane": "Связать с областью...",
-			"delete-file": "Удалить файл"
+			"delete-file": "Удалить файл",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Переключить состояние флажка",
 		"edit-file-title": "Редактировать заголовок файла",
 		"copy-path": "Скопировать путь к файлу",
-		"copy-url": "Скопировать obsidian url"
+		"copy-url": "Скопировать obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Сейчас {{links}} указывают на эту заметку.",
 		"label-delete-file": "Удалить файл",
 		"button-cancel": "Отменить",
-		"button-done": "Готово"
+		"button-done": "Готово",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Плагины",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Без префикса",
 			"option-choice-list-style-dash": "Тире (-)",
 			"option-choice-list-style-asterisk": "Звездочка (*)",
-			"option-choice-list-style-numbered": "Нумерация"
+			"option-choice-list-style-numbered": "Нумерация",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Быстрый переход",
