@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Obsidian Core",
-		"plugin": "Plug-In",
+		"options": "Options",
+		"plugin": "Erweiterungen",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Beispiel: Ordner 1/Ordner 2",
 		"file-path-example-placeholder": "Beispiel: Ordner/Notiz",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "Im Vorschau-Modus werden einzelne Zeilenumbrüche gemäß der Markdown-Spezifikationen ignoriert. Schalte dies aus, um einzelne Zeilenumbrüche im Vorschau-Modus anzuzeigen.",
 			"option-show-frontmatter": "Frontmatter anzeigen",
 			"option-show-frontmatter-description": "Zeigt den Frontmatter im Vorschaumodus als Code-BLock. Schalte dies aus, um den Frontmatter Bereich zu deaktivieren.",
-			"option-use-markdown-links": "Markdown-Links benutzen",
-			"option-use-markdown-links-description": "Vervollständigt automatisch Links und Bilder mit Markdown-Links anstelle von Wiki-Links.",
 			"option-auto-pair-brackets": "Automatische Klammerpaare",
 			"option-auto-pair-brackets-description": "Setzt automatisch Klammern- und Anführungszeichen-Paare.",
 			"option-auto-pair-markdown": "Automatische Markdown-Vervollständigung",
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Erlaubt die Nutzung der VIM-Tastenbelegung im Quellcode Editor."
 		},
 		"file": {
-			"name": "Datei",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Löschen der Datei bestätigen",
 			"option-confirm-file-deletion-description": "Zeigt Bestätigungsdialog zum Löschen einer Datei.",
 			"option-delete-destination": "Gelöschte Dateien",
@@ -49,12 +49,14 @@
 			"option-always-update-links": "Links immer aktualisieren",
 			"option-always-update-links-description": "Aktualisiert Links automatisch, wenn eine Datei oder Prompt umbenannt wird.",
 			"option-new-note-location": "Standardordner für neue Notizen",
-			"option-new-note-location-description": "Speichert neue Notizen an diesem Ort. Plug-In-Einstellungen überschreiben dies.",
+			"option-new-note-location-description": "Speichert neue Notizen an diesem Ort. Erweiterungs-Einstellungen überschreiben dies.",
 			"option-choice-vault-root": "Im Vault Hauptordner",
 			"option-choice-current-folder": "Im aktuellen Ordner (bei geöffneter Notiz)",
 			"option-choice-specified-folder": "Eigenen Ordner unten festlegen",
 			"option-new-file-folder-path": "Ordner für neue Notizen",
-			"option-new-file-folder-path-description": "Speichert neue Notizen an diesem Ort. Plug-In-Einstellungen überschreiben dies.",
+			"option-new-file-folder-path-description": "Speichert neue Notizen an diesem Ort. Erweiterungs-Einstellungen überschreiben dies.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Link-Format",
 			"option-link-autocompleted-format-description": "Welche Form haben automatisch erzeugte, interne Links?",
 			"option-choice-shortest-linktext": "Wenn möglich: kürzester Pfad",
@@ -217,7 +219,7 @@
 		"sidebar-collapse": "Zuklappen",
 		"msg-fail-to-save-file": "Fehler beim Speichern der Datei \"{{filepath}}\". {{message}}.",
 		"no-file": "Keine Datei",
-		"switch-vault": "Eine andere Vault öffnen",
+		"switch-vault": "Einen andere Vault öffnen",
 		"help": "Hilfe",
 		"settings": "Einstellungen",
 		"drag-to-rearrange": "Zum Umordnen ziehen",
@@ -242,11 +244,12 @@
 			"edit": "Bearbeite",
 			"preview": "Vorschau",
 			"more-options": "Weitere Optionen",
-			"close": "Schliessen",
+			"close": "Schließen",
 			"pin": "Pin",
 			"unlink-pane": "Link zu Fensterbereich lösen",
 			"link-pane": "Mit Fensterbereich verlinken...",
-			"delete-file": "Datei löschen"
+			"delete-file": "Datei löschen",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Dateinamen ändern",
 		"copy-path": "Dateipfad kopieren",
-		"copy-url": "Obsidian URL kopieren"
+		"copy-url": "Obsidian URL kopieren",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Das betrifft {{links}} in {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Es existieren {{links}} die auf diese Notiz verweisen.",
 		"label-delete-file": "Datei löschen",
 		"button-cancel": "Abbrechen",
-		"button-done": "Fertig"
+		"button-done": "Fertig",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Keines",
 			"option-choice-list-style-dash": "Bindestrich (-)",
 			"option-choice-list-style-asterisk": "Sternchen (*)",
-			"option-choice-list-style-numbered": "Nummeriert"
+			"option-choice-list-style-numbered": "Nummeriert",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Schnellauswahl",

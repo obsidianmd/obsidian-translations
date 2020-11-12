@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Noyau",
+		"options": "Options",
 		"plugin": "Module d'extension",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Exemple: dossier 1/dossier 2",
 		"file-path-example-placeholder": "Exemple: dossier/note",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "En mode prévisualisation, ignore les sauts de ligne selon les spécifications Markdown. Désactiver cette option pour que les sauts de ligne uniques s'affichent en mode prévisualisation.",
 			"option-show-frontmatter": "Afficher frontmatter",
 			"option-show-frontmatter-description": "En mode prévisualisation, affiche frontmatter en bloc de code. Désactiver pour cacher la section frontmatter.",
-			"option-use-markdown-links": "Utiliser les liens Markdown",
-			"option-use-markdown-links-description": "La suggestion de lien complète automatiquement les liens et les images Markdown au lieu des wikilinks.",
 			"option-auto-pair-brackets": "Association automatique des crochets",
 			"option-auto-pair-brackets-description": "Associe automatiquement les crochets et les guillemets.",
 			"option-auto-pair-markdown": "Association automatique des syntaxes Markdown",
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "Permet d'utiliser les raccourcis clavier Vim en mode éditeur."
 		},
 		"file": {
-			"name": "Fichier",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Confirmer la suppression du fichier",
 			"option-confirm-file-deletion-description": "Pour recevoir une invite de confirmation à la suppression du fichier.",
 			"option-delete-destination": "Fichiers supprimés",
@@ -55,6 +55,8 @@
 			"option-choice-specified-folder": "Dans le dossier spécifié ci-dessous",
 			"option-new-file-folder-path": "Dossier dans lequel créer de nouvelles notes",
 			"option-new-file-folder-path-description": "Les notes nouvellement créées apparaîtront dans ce dossier. Les paramètres des modules d'extension primeront en cas de conflit.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Nouveau format de lien",
 			"option-link-autocompleted-format-description": "Quels liens insérer lors de la génération automatique de liens internes.",
 			"option-choice-shortest-linktext": "Chemin le plus court si possible",
@@ -246,7 +248,8 @@
 			"pin": "Épingler",
 			"unlink-pane": "Dissocier le volet",
 			"link-pane": "Associer avec le volet...",
-			"delete-file": "Supprimer le fichier"
+			"delete-file": "Supprimer le fichier",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
@@ -316,7 +319,8 @@
 		"toggle-checklist": "Basculer l'état de l'élément de la checklist",
 		"edit-file-title": "Modifier le titre du fichier",
 		"copy-path": "Copier le chemin du fichier",
-		"copy-url": "Copier l'url Obsidian"
+		"copy-url": "Copier l'url Obsidian",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -338,7 +342,8 @@
 		"label-existing-backlink": "Il y a actuellement {{links}} rétroliens pointant vers cette note.",
 		"label-delete-file": "Supprimer le fichier",
 		"button-cancel": "Annuler",
-		"button-done": "Valider"
+		"button-done": "Valider",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Modules d'extension",
@@ -407,7 +412,8 @@
 			"option-choice-list-style-none": "Aucun",
 			"option-choice-list-style-dash": "Tiret (-)",
 			"option-choice-list-style-asterisk": "Astérisque (*)",
-			"option-choice-list-style-numbered": "Numéroté"
+			"option-choice-list-style-numbered": "Numéroté",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Sélecteur rapide",
