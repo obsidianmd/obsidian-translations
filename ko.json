@@ -1,9 +1,9 @@
 {
 	"setting": {
-		"options": "Options",
-		"plugin": "추가 설정",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"options": "설정",
+		"plugin": "플러그인",
+		"builtin-plugins": "주요 플러그인",
+		"plugin-options": "플러그인 설정",
 		"folder-path-example-placeholder": "예시: 폴더 1/폴더 2",
 		"file-path-example-placeholder": "예시: 폴더/파일",
 		"editor": {
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "소스 에디터에서 Vim의 키 바인딩을 쓸수 있게 해줍니다."
 		},
 		"file": {
-			"name": "파일",
+			"name": "파일 & 링크",
 			"option-confirm-file-deletion": "파일 삭제 확인",
 			"option-confirm-file-deletion-description": "파일을 삭제하기 전에 한번 더 확인합니다",
 			"option-delete-destination": "삭제된 파일들",
@@ -55,8 +55,8 @@
 			"option-choice-specified-folder": "아래에 특정되어 있는 경로",
 			"option-new-file-folder-path": "새로운 노트가 만들어질 파일",
 			"option-new-file-folder-path-description": "새로운 노트들은 아래 폴더에 생성됩니다. 다만 추가 설정이 우선시됩니다.",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "[[위키링크]] 사용",
+			"option-use-wiki-links-description": "마크다운 링크와 이미지 대신에 위키 [[링크]] 와 ![[이미지]]로 자동 생성됩니다. 마크다운 링크로 생성하고 싶다면 이 옵션을 꺼주세요.",
 			"option-link-autocompleted-format": "새로운 링크 서식",
 			"option-link-autocompleted-format-description": "링크를 자동생성할때, 어떤 링크를 사용할까요",
 			"option-choice-shortest-linktext": "가장 짧은 링크",
@@ -227,7 +227,7 @@
 		"msg-switched-to-edit": "기본 뷰어 모드를 에디터 모드로 바꿨습니다.",
 		"msg-upgrade-installer": "이 기능을 사용하기 위해서는 웹사이트에서 인스톨러를 새로 다운받아서 설치해주세요.",
 		"tooltip-restore-default-settings": "기본값으로 되돌리기",
-		"copied": "{{item}} copied to your clipboard",
+		"copied": "{{item}}가 클립보드에 복사되었습니다",
 		"url": "Url",
 		"empty-state": {
 			"no-file-open": "열려있는 파일이 없습니다.",
@@ -249,7 +249,7 @@
 			"unlink-pane": "패널 링크 끊기",
 			"link-pane": "퍼널에 링크하기...",
 			"delete-file": "파일 삭제",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "새로운 패널에 열기"
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
@@ -319,8 +319,8 @@
 		"toggle-checklist": "체크 박스 상태 토글",
 		"edit-file-title": "파일 제목 편집",
 		"copy-path": "파일 경로 복사",
-		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"copy-url": "obsidian url 복사하기",
+		"export-pdf": "PDF 생성하기"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -343,7 +343,7 @@
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
 		"button-done": "완료",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "PDF를 준비중입니다..."
 	},
 	"plugins": {
 		"name": "플러그인",
@@ -413,7 +413,7 @@
 			"option-choice-list-style-dash": "줄표 (-)",
 			"option-choice-list-style-asterisk": "별표 (*)",
 			"option-choice-list-style-numbered": "숫자",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "검색어 지우기"
 		},
 		"quick-switcher": {
 			"name": "빠른 파일 변경",

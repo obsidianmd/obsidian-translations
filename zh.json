@@ -1,9 +1,9 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "选项",
 		"plugin": "插件",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"builtin-plugins": "核心插件",
+		"plugin-options": "插件选项",
 		"folder-path-example-placeholder": "例: 文件夹1/文件夹2",
 		"file-path-example-placeholder": "例: 文件夹/笔记.md",
 		"editor": {
@@ -38,7 +38,7 @@
 			"option-vim-key-bindings-description": "允许在编辑器中使用 Vim 键绑定。"
 		},
 		"file": {
-			"name": "文件",
+			"name": "文件与链接",
 			"option-confirm-file-deletion": "确认删除提示",
 			"option-confirm-file-deletion-description": "是否需要弹出提示窗口以确认删除文件。",
 			"option-delete-destination": "删除文件设置",
@@ -55,8 +55,8 @@
 			"option-choice-specified-folder": "下方指定的文件夹",
 			"option-new-file-folder-path": "存放新建笔记的文件夹",
 			"option-new-file-folder-path-description": "指定存放新笔记的文件夹，插件可能会修改此设置。",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "使用 Wiki 链接",
+			"option-use-wiki-links-description": "开启后，在笔记中链接其他笔记或图像时，使用如 [[文件名]] 和 ![[图片名]] 这样的Wiki链接。关闭此选项则默认使用标准的 Markdown 超链接语法，如 []()。",
 			"option-link-autocompleted-format": "内部链接类型",
 			"option-link-autocompleted-format-description": "设置在笔记中引用其他文件时插入 \"[[ ]]\" 中的文件路径类型。",
 			"option-choice-shortest-linktext": "以尽可能简短的形式插入",
@@ -153,41 +153,41 @@
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
 		},
 		"third-party-plugin": {
-			"name": "Third-party plugin",
-			"option-safe-mode": "Safe mode",
-			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
-			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
-			"option-browse-community-plugins": "Community plugins",
-			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
-			"button-browse": "Browse",
-			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
-			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
-			"button-keep-safe-mode": "Keep Safe Mode on",
-			"button-disable-safe-mode": "Turn off Safe Mode",
-			"label-select-a-plugin": "Select a plugin to install or learn more about it.",
-			"placeholder-community-plugins": "Search community plugins...",
-			"msg-failed-load-plugins": "Failed to load community plugins.",
-			"label-installed": "Installed",
-			"tooltip-downloaded-times": "Downloaded {{count}} time",
-			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
-			"button-install": "Install",
-			"label-no-results-found": "No results found.",
-			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
-			"label-version": "Version: {{version}}",
-			"label-currently-installed-version": " (currently installed: {{version}})",
-			"label-by-author": "By ",
-			"label-repository": "Repository: ",
-			"button-update": "Update",
-			"label-no-readme": "This plugin did not provide a README file.",
-			"msg-installing-plugin": "Installing plugin \"{{name}}\"...",
-			"msg-failed-to-install-plugin": "Failed to install plugin \"{{name}}\".",
-			"msg-successfully-installed-plugin": "Successfully installed plugin \"{{name}}\".",
-			"label-installed-plugins": "Installed plugins",
-			"button-reload-plugins": "Reload plugins",
-			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
-			"label-uninstall": "Uninstall",
-			"label-uninstall-plugin": "Uninstall plugin",
-			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
+			"name": "第三方插件",
+			"option-safe-mode": "安全模式",
+			"option-safe-mode-description-on": "安全模式已打开。所有社区插件被禁用。",
+			"option-safe-mode-description-off": "安全模式已关闭。您现在可以启用社区插件。",
+			"option-browse-community-plugins": "社区插件",
+			"option-browse-community-plugins-description": "浏览、安装社区成员制作的第三方插件。",
+			"button-browse": "浏览",
+			"label-third-party-plugin-warning": "第三方插件可以访问您计算机上的文件，连接互联网，甚至安装额外的程序。",
+			"label-disable-safe-mode-confirmation": "您是否需要禁用安全模式以允许这些插件运行？",
+			"button-keep-safe-mode": "保持安全模式开启",
+			"button-disable-safe-mode": "关闭安全模式",
+			"label-select-a-plugin": "请选择一个插件，安装或了解更多关于它的信息。",
+			"placeholder-community-plugins": "搜索社区插件...",
+			"msg-failed-load-plugins": "无法加载社区插件",
+			"label-installed": "已安装",
+			"tooltip-downloaded-times": "已被下载 {{count}} 次",
+			"tooltip-downloaded-times_plural": "已被下载 {{count}} 次",
+			"button-install": "安装",
+			"label-no-results-found": "未找到相关插件",
+			"msg-failed-to-load-manifest": "无法加载插件列表",
+			"label-version": "版本: {{version}}",
+			"label-currently-installed-version": " (当前已安装版本: {{version}})",
+			"label-by-author": "作者：",
+			"label-repository": "仓库地址：",
+			"button-update": "更新",
+			"label-no-readme": "这个插件没有提供 README 文件。",
+			"msg-installing-plugin": "正在安装插件 \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "无法安装插件 \"{{name}}\" ",
+			"msg-successfully-installed-plugin": "成功安装插件 \"{{name}}\".",
+			"label-installed-plugins": "已安装插件",
+			"button-reload-plugins": "重新加载插件",
+			"msg-reloaded-third-party-plugins": "重新加载第三方插件",
+			"label-uninstall": "卸载",
+			"label-uninstall-plugin": "卸载插件",
+			"label-uninstall-plugin-confirmation": "您确定要卸载此插件吗？这将删除插件的文件夹。"
 		}
 	},
 	"editor": {
@@ -227,7 +227,7 @@
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
 		"msg-upgrade-installer": "若要使用此功能，请到我们的网站上下载并安装Obsidian 的最新版本。",
 		"tooltip-restore-default-settings": "恢复默认设置",
-		"copied": "{{item}} copied to your clipboard",
+		"copied": "{{item}} 已复制到您的剪贴板",
 		"url": "Url",
 		"empty-state": {
 			"no-file-open": "未打开文件",
@@ -249,7 +249,7 @@
 			"unlink-pane": "解除同步",
 			"link-pane": "与其他面板同步",
 			"delete-file": "删除文件",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "在新面板中打开"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -319,8 +319,8 @@
 		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
 		"copy-path": "复制当前文件的路径",
-		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"copy-url": "复制 obsidian url",
+		"export-pdf": "导出为PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -343,7 +343,7 @@
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
 		"button-done": "完成",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "正在生成PDF..."
 	},
 	"plugins": {
 		"name": "插件",
@@ -413,7 +413,7 @@
 			"option-choice-list-style-dash": "无序列表(-)",
 			"option-choice-list-style-asterisk": "无序列表(*)",
 			"option-choice-list-style-numbered": "有序列表",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "清除搜索"
 		},
 		"quick-switcher": {
 			"name": "快速切换",
