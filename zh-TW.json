@@ -2,8 +2,8 @@
 	"setting": {
 		"options": "Options",
 		"plugin": "外掛",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"builtin-plugins": "核心外掛",
+		"plugin-options": "外掛選項",
 		"folder-path-example-placeholder": "例: 資料夾1/資料夾2",
 		"file-path-example-placeholder": "例: 資料夾/筆記.md",
 		"editor": {
@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "將標題行下層所有文字都摺疊到標題行。",
 			"option-fold-indent": "摺疊縮排",
 			"option-fold-indent-description": "把相同的縮排內容（如列表）摺疊起來。",
+			"option-default-view-mode": "Default view mode",
+			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Preview",
 			"option-show-line-number": "顯示行號",
 			"option-show-line-number-description": "在左側顯示行號。",
 			"option-use-tabs": "使用Tab鍵縮排",
@@ -38,7 +42,7 @@
 			"option-vim-key-bindings-description": "允許在編輯器中使用Vim鍵綁定。"
 		},
 		"file": {
-			"name": "Files & Links",
+			"name": "檔案與連結",
 			"option-confirm-file-deletion": "確認刪除提示",
 			"option-confirm-file-deletion-description": "是否需要彈出提示對話窗以確認刪除檔案。",
 			"option-delete-destination": "刪除檔案設定",
@@ -55,8 +59,8 @@
 			"option-choice-specified-folder": "下方指定的資料夾",
 			"option-new-file-folder-path": "儲存新建筆記的資料夾",
 			"option-new-file-folder-path-description": "指定儲存新筆記的資料夾，外掛可能會修改此設定。",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "使用 [[Wikilinks]]",
+			"option-use-wiki-links-description": "自動產生Wikilinks [[連結]] 與 ![[圖片]] 以取代Markdown連結與圖片。關閉本選項則產生 Markdown 格式。",
 			"option-link-autocompleted-format": "內部連結格式",
 			"option-link-autocompleted-format-description": "設定在筆記中引用其他文件時插入 [[ ]] 中的檔案路徑類型。",
 			"option-choice-shortest-linktext": "以儘可能簡短的形式插入",
@@ -249,11 +253,12 @@
 			"unlink-pane": "取消面板連結",
 			"link-pane": "連結面板...",
 			"delete-file": "刪除檔案",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "開啟於新面板"
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
-			"click-to-collapse": "點擊以摺疊"
+			"click-to-collapse": "點擊以摺疊",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "Beta版",
@@ -320,7 +325,7 @@
 		"edit-file-title": "編輯檔案標題",
 		"copy-path": "複製檔案路徑",
 		"copy-url": "複製obsidian網址",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "匯出 PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -343,7 +348,7 @@
 		"label-delete-file": "刪除檔案",
 		"button-cancel": "取消",
 		"button-done": "完成",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "PDF 準備中..."
 	},
 	"plugins": {
 		"name": "外掛",
@@ -412,8 +417,8 @@
 			"option-choice-list-style-none": "無",
 			"option-choice-list-style-dash": "減號 (-)",
 			"option-choice-list-style-asterisk": "星號 (*)",
-			"option-choice-list-style-numbered": "數字.",
-			"tooltip-clear-search": "Clear search"
+			"option-choice-list-style-numbered": "數字. ",
+			"tooltip-clear-search": "清除搜尋"
 		},
 		"quick-switcher": {
 			"name": "快速切換",
