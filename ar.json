@@ -36,21 +36,21 @@
 			"option-show-line-number-description": "Show line number in the gutter.",
 			"option-use-tabs": "Use tabs",
 			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
-			"option-line-wrap": "Line wrap",
-			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-line-wrap": "اجمع السطر",
+			"option-line-wrap-description": "اجمع الأسطر الطويلة لتناسب حجم نافذة العرض",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Let you use Vim key bindings in the source editor."
 		},
 		"file": {
-			"name": "Files & Links",
-			"option-confirm-file-deletion": "Confirm file deletion",
+			"name": "الملفات والروابط",
+			"option-confirm-file-deletion": "تأكيد حذف الملف",
 			"option-confirm-file-deletion-description": "Whether you want to get prompted to confirm file deletion.",
-			"option-delete-destination": "Deleted files",
-			"option-delete-destination-description": "What to do with files after you delete them.",
-			"option-choice-system-trash": "Move to system trash",
-			"option-choice-vault-trash": "Move to Obsidian trash (.trash folder)",
-			"option-choice-permanent-delete": "Permanent delete",
-			"option-always-update-links": "Always update internal links",
+			"option-delete-destination": "الملفات المحذوفة",
+			"option-delete-destination-description": "ماذا تفعل بالملفات بعد حذفها",
+			"option-choice-system-trash": "انقل الى حاوية النظام",
+			"option-choice-vault-trash": "انقل الى حاوية اوبسيدين (.trash folder)",
+			"option-choice-permanent-delete": "حذف نهائي",
+			"option-always-update-links": "جدد الروابط الداخلية دائما",
 			"option-always-update-links-description": "Whether to automatically update links after renaming a file or prompt.",
 			"option-new-note-location": "New note default location",
 			"option-new-note-location-description": "Where to put newly created notes. Plugin settings will override this.",
@@ -70,11 +70,11 @@
 			"option-attachment-folder-path-description": "Newly created attachment files will appear here. That includes images created via drag and drop or pasting, and audio recordings."
 		},
 		"appearance": {
-			"name": "Appearance",
-			"option-base-mode": "Base mode",
-			"option-base-mode-description": "The base color scheme of Obsidian.",
-			"dark-mode": "Dark mode",
-			"light-mode": "Light mode",
+			"name": "المظهر",
+			"option-base-mode": "الوضع الأساسي",
+			"option-base-mode-description": "وضع اوبسيدين",
+			"dark-mode": "الوضع الداكن",
+			"light-mode": "الوضع الفاتح",
 			"option-community-themes": "Open community themes",
 			"option-community-themes-description": "Preview and use amazing themes created by the community.",
 			"see-community-themes": "See community themes"
@@ -88,7 +88,7 @@
 			"tooltip-customize-command": "Customize this command"
 		},
 		"about": {
-			"name": "About",
+			"name": "معلومات اضافية"
 			"label-license-key": "رمز الترخيص",
 			"license-key-placeholder": "رمز الترخيص الخاص بك...",
 			"label-enter-commercial-license": "يرجى إدخال رمز الترخيص التجاري الخاص بك:",
@@ -379,7 +379,7 @@
 			"msg-empty-file-name": "لا يمكن أن يكون اسم الملف فارغاً."
 		},
 		"search": {
-			"name": "Search",
+			"name": "البحث",
 			"desc": "Search for keyword in all the notes.",
 			"action-open-search": "Search in all files",
 			"label-collapse-results": "Collapse results",
