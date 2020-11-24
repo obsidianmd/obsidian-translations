@@ -28,10 +28,10 @@
 			"option-fold-heading-description": "Permette di comprimere il contenuto all'interno delle intestazioni.",
 			"option-fold-indent": "Comprimi indentazioni",
 			"option-fold-indent-description": "Permette di comprimere una parte del contenuto con lo stesso livello d'indentazione, come le liste.",
-			"option-default-view-mode": "Default view mode",
-			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode": "Modalità predefinita",
+			"option-default-view-mode-description": "Modalità di visualizzazione predefinita dei file.",
 			"option-default-view-mode-source": "Editor",
-			"option-default-view-mode-preview": "Preview",
+			"option-default-view-mode-preview": "Anteprima",
 			"option-show-line-number": "Mostra numero delle righe",
 			"option-show-line-number-description": "Mostra il numero delle righe sul margine dell'editor.",
 			"option-use-tabs": "Utilizza le tabulazioni",
@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Aspetto",
-			"option-base-mode": "Modalità di base",
-			"option-base-mode-description": "La combinazione dei colori di base di Obsidian.",
-			"dark-mode": "Tema scuro",
-			"light-mode": "Tema chiaro",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Temi della comunità",
 			"option-community-themes-description": "Visualizza in anteprima e utilizza i temi creati dalla comunità.",
-			"see-community-themes": "Mostra temi della comunità"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "Ripristina impostazioni predefinite",
 		"copied": "{{item}} copiato negli appunti",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Nessun file aperto",
 			"create-new-file": "Crea nuovo file",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "Pannello dei tag",
 			"desc": "Mostra tutti i tag insieme al loro numero di occorrenze.",
-			"label-no-tags": "Nessun tag trovato."
+			"label-no-tags": "Nessun tag trovato.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Anteprima pagina",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "Temi della comunità",
 			"msg-fetching-themes": "Recupero temi della comunità in corso...",
 			"prompt-filter": "Filtro...",
-			"label-dark-mode-only": "Solo temi scuri",
-			"label-light-mode-only": "Solo temi chiari",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Anteprima",
 			"label-stop-preview": "Ferma anteprima",
 			"label-use": "Applica",
+			"label-override": "Override",
 			"label-visit-on-github": "Vedi su GitHub",
 			"msg-fetching-css": "Recupero CSS in corso...",
 			"theme-title": "\"{{name}}\" di {{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "Un CSS personalizzato \"obsidian.css\" è già presente.",
 			"msg-confirm-override": "Sovrascrivere il file? Il tuo file CSS originale verrà perduto. Esegui un backup se necessario.",
 			"msg-load-error": "Impossibile caricare i temi della comunità, controllare la connessione di rete.",
-			"msg-successfully-used": "\"{{name}}\" di {{author}} impostato come CSS personalizzato."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Riquadro comandi",

@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Оформление",
-			"option-base-mode": "Основной режим",
-			"option-base-mode-description": "Основная тема оформления Obsidian.",
-			"dark-mode": "Темная тема",
-			"light-mode": "Светлая тема",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Посмотреть темы сообщества",
 			"option-community-themes-description": "Предпросмотр и использование тем, созданных сообществом.",
-			"see-community-themes": "Перейти к темам сообщества"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Сочетания клавиш",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "Восстановить настройки по умолчанию",
 		"copied": "{{item}} в буфере обмена",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "Панель тегов",
 			"desc": "Показывает все теги и количество их упоминаний.",
-			"label-no-tags": "Не найдено ни одного тега."
+			"label-no-tags": "Не найдено ни одного тега.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Предпросмотр страницы",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "Темы сообщества",
 			"msg-fetching-themes": "Получаю данные о темах сообщества...",
 			"prompt-filter": "Фильтр...",
-			"label-dark-mode-only": "Только темные темы",
-			"label-light-mode-only": "Только светлые темы",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Предпросмотр",
 			"label-stop-preview": "Отменить",
 			"label-use": "Использовать",
+			"label-override": "Override",
 			"label-visit-on-github": "Перейти на GitHub",
 			"msg-fetching-css": "Получаю CSS...",
 			"theme-title": "\"{{name}}\" от {{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "У вас уже есть пользовательский CSS \"obsidian.css\".",
 			"msg-confirm-override": "Вы уверены, что хотите перезаписать его? Ваш оригинальный CSS-файл будет утерян. Пожалуйста, при необходимости сделайте бекап.",
 			"msg-load-error": "Не удалось загрузить темы сообщества. Пожалуйста, проверьте соединение с интернетом.",
-			"msg-successfully-used": "Теперь вы используете \"{{name}}\" от {{author}} в качестве пользовательского CSS."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Палитра команд",

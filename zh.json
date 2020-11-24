@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "外观",
-			"option-base-mode": "基本主题",
-			"option-base-mode-description": " Obsidian 的基本配色方案。",
-			"dark-mode": "黑暗主题",
-			"light-mode": "明亮主题",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "查看社区主题",
 			"option-community-themes-description": "预览、使用社区用户创建的优秀主题。",
-			"see-community-themes": "浏览社区主题"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "快捷键",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "恢复默认设置",
 		"copied": "{{item}} 已复制到您的剪贴板",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "标签面板",
 			"desc": "显示所有标签及其出现的次数。",
-			"label-no-tags": "未发现标签。"
+			"label-no-tags": "未发现标签。",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "页面预览",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "社区主题",
 			"msg-fetching-themes": "正在获取社区主题数据...",
 			"prompt-filter": "搜索...",
-			"label-dark-mode-only": "仅限黑暗主题",
-			"label-light-mode-only": "仅限明亮主题",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "预览",
 			"label-stop-preview": "停止预览",
 			"label-use": "使用",
+			"label-override": "Override",
 			"label-visit-on-github": "访问 GitHub",
 			"msg-fetching-css": "正在获取...",
 			"theme-title": "\"{{name}}\" 作者：{{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "您已经有了 \"obsidian.css\" 自定义主题文件。",
 			"msg-confirm-override": "您确定要覆盖它吗? 删除这个主题文件之前，请做好备份。",
 			"msg-load-error": "无法加载社区主题，请检查您的网络。",
-			"msg-successfully-used": "您正在使用 {{author}} 制作或设计的 \"{{name}}\" 主题文件。"
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "命令面板",
