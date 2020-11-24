@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Base",
+		"options": "Options",
 		"plugin": "Plugin",
+		"builtin-plugins": "Core plugins",
+		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Ejemplo: carpeta 1/carpeta 2",
 		"file-path-example-placeholder": "Ejemplo: carpeta/nota",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "En modo previsualización, ignora los saltos de una sola línea según las especificaciones de Markdown. Desactivalo para que los saltos de una sola línea se muestren en previsualización.",
 			"option-show-frontmatter": "Mostrar frontmatter",
 			"option-show-frontmatter-description": "En modo de vista previa, mostrar frantmatter como un bloque de código. Desactivelo para ocultar la sección frontmatter.",
-			"option-use-markdown-links": "Usar enlaces markdown",
-			"option-use-markdown-links-description": "Las sugerencias de enlace autocompletan los enlaces markdown y las imágenes en lugar de wikilinks.",
 			"option-auto-pair-brackets": "Emparejamiento automático de corchetes",
 			"option-auto-pair-brackets-description": "Empareja automáticamente los corchetes y comillas.",
 			"option-auto-pair-markdown": "Emparejamiento automático de sintaxis Markdown",
@@ -28,17 +28,21 @@
 			"option-fold-heading-description": "Permite colapsar todo bajo un encabezado.",
 			"option-fold-indent": "Colapsar texto indentado",
 			"option-fold-indent-description": "Permite colapsar una porción con el mismo indentado como, por ejemplo, listas.",
+			"option-default-view-mode": "Default view mode",
+			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Preview",
 			"option-show-line-number": "Mostrar número de línea",
 			"option-show-line-number-description": "Mostrar los números de línea en la canaleta.",
 			"option-use-tabs": "Usar tabulador",
 			"option-use-tabs-description": "Usa el tabulador para indentar cuando se presiona la tecla \"Tab\". Desactivar para usar espacios.",
-			"option-line-wrap": "Line wrap",
-			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-line-wrap": "Ajustar la línea",
+			"option-line-wrap-description": "Ajusta las líneas largas para que no tengas que desplazar de derecha a izquierda.",
 			"option-vim-key-bindings": "Atajos de teclado de Vim",
 			"option-vim-key-bindings-description": "Permite el uso de los atajos de teclado de Vim en el editor."
 		},
 		"file": {
-			"name": "Archivo",
+			"name": "Files & Links",
 			"option-confirm-file-deletion": "Confirmar borrado de archivo",
 			"option-confirm-file-deletion-description": "Si se desea confirmar el borrado del archivo.",
 			"option-delete-destination": "Archivos borrados",
@@ -55,6 +59,8 @@
 			"option-choice-specified-folder": "En la carpeta especificada debajo",
 			"option-new-file-folder-path": "Carpeta en la que crear nuevas notas",
 			"option-new-file-folder-path-description": "Las notas nuevas aparecerán bajo esta carpeta. Es sobreescrito por configuraciones de plugins.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Formato de enlace nuevo",
 			"option-link-autocompleted-format-description": "Qué enlaces insertar cuando se autogeneran los enlaces internos.",
 			"option-choice-shortest-linktext": "Camino más corto cuando sea posible",
@@ -65,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Apariencia",
-			"option-base-mode": "Modo base",
-			"option-base-mode-description": "El esquema de color base de Obsidian.",
-			"dark-mode": "Modo oscuro",
-			"light-mode": "Modo claro",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Abrir temas de la comunidad",
 			"option-community-themes-description": "Previsualizar y usar temas increíbles creados por la comunidad.",
-			"see-community-themes": "Ver temas de la comunidad"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Atajos",
@@ -149,6 +170,43 @@
 			"link-sign-up-now": "Regístrese ahora",
 			"message-get-community-badges": "Para las insignias de comunidad, por favor envíe un correo a support@obsidian.md si no las ha recibido en 24 horas después de obtener su licencia.",
 			"message-obtain-commercial-license": "Para obtener una licencia comercial, visite {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Plugins externos",
+			"option-safe-mode": "Modo seguro",
+			"option-safe-mode-description-on": "El modo seguro está activado: no se podrán usar plugins de la comunidad.",
+			"option-safe-mode-description-off": "El modo seguro está desactivado, ahora puedes encender tus plugins.",
+			"option-browse-community-plugins": "Plugins creados por la comunidad",
+			"option-browse-community-plugins-description": "Busca e instala plugins hechos por nuestra comunidad",
+			"button-browse": "Buscar",
+			"label-third-party-plugin-warning": "Los plugins de terceros pueden leer archivos, conectarse a internet e incluso instalar programas.",
+			"label-disable-safe-mode-confirmation": "Te gustaría desactivar el modo seguro para activar estos plugins?",
+			"button-keep-safe-mode": "Dejar el Modo Seguro activado",
+			"button-disable-safe-mode": "Apagar el Modo Seguro",
+			"label-select-a-plugin": "Selecciona un plugin para instalarlo o aprender más sobre él.",
+			"placeholder-community-plugins": "Busca plugins...",
+			"msg-failed-load-plugins": "Ha ocurrido un fallo al cargar los plugins.",
+			"label-installed": "Instalado correctamente",
+			"tooltip-downloaded-times": "Descargado {{count}} vez",
+			"tooltip-downloaded-times_plural": "Descargado {{count}} veces",
+			"button-install": "Instalar",
+			"label-no-results-found": "Sin resultados.",
+			"msg-failed-to-load-manifest": "Error al cargar el manifesto.",
+			"label-version": "Versión: {{version}}",
+			"label-currently-installed-version": " (Instalada: {{version}})",
+			"label-by-author": "Por ",
+			"label-repository": "Repositorio: ",
+			"button-update": "Actualizar",
+			"label-no-readme": "Este plugin no tiene un archivo README",
+			"msg-installing-plugin": "Instalando \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Ha ocurrido un fallo al instalar \"{{name}}\".",
+			"msg-successfully-installed-plugin": "\"{{name}}\" se ha instalado correctamente.",
+			"label-installed-plugins": "Plugins instalados",
+			"button-reload-plugins": "Recargar",
+			"msg-reloaded-third-party-plugins": "Se han recargado los plugins.",
+			"label-uninstall": "Desinstalar",
+			"label-uninstall-plugin": "Desinstalar plugin",
+			"label-uninstall-plugin-confirmation": "Estás seguro de que quieres desinstalar este plugin? Esto borrará la carpeta en la que está descargado."
 		}
 	},
 	"editor": {
@@ -163,6 +221,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Escriba #",
 			"label-link-heading": "para enlazar el encabezado",
+			"label-type-block": "Type ^",
+			"label-link-block": "to link blocks",
 			"label-type-pipe": "Escriba |",
 			"label-change-display-text": "para cambiar el texto mostrado"
 		},
@@ -186,6 +246,9 @@
 		"msg-switched-to-edit": "Cambió modo de visualización por defecto a editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Ningún archivo está abierto",
 			"create-new-file": "Crear nuevo archivo",
@@ -205,11 +268,13 @@
 			"pin": "Fijar",
 			"unlink-pane": "Desligar panel",
 			"link-pane": "Ligar panel...",
-			"delete-file": "Eliminar archivo"
+			"delete-file": "Eliminar archivo",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Click para expandir",
-			"click-to-collapse": "Click para colapsar"
+			"click-to-collapse": "Click para colapsar",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "Beta version",
@@ -272,8 +337,11 @@
 		"toggle-highlight": "Alternar resaltado para selección",
 		"insert-link": "Insertar enlace",
 		"delete-paragraph": "Eliminar paragrafo",
+		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Editar nombre del archivo",
-		"copy-path": "Copiar ruta del archivo"
+		"copy-path": "Copiar ruta del archivo",
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Esto afectará a {{links}} en {{files}}.",
@@ -295,7 +363,8 @@
 		"label-existing-backlink": "Actualmente hay {{links}} enlazando a esta nota.",
 		"label-delete-file": "Eliminar archivo",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -364,7 +433,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
@@ -435,7 +505,11 @@
 		"tag-pane": {
 			"name": "Panel de Etiquetas",
 			"desc": "Muestra sus etiquetas junto con el número de ocurrencias.",
-			"label-no-tags": "Etiquetas no encontradas."
+			"label-no-tags": "Etiquetas no encontradas.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Vista previa",
@@ -460,11 +534,12 @@
 			"setting-community-themes": "Temas de la comunidad",
 			"msg-fetching-themes": "Obteniendo datos de los temas de la comunidad...",
 			"prompt-filter": "Filtrar...",
-			"label-dark-mode-only": "Solo modo oscuro",
-			"label-light-mode-only": "Solo modo claro",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Vista previa",
 			"label-stop-preview": "Salir de vista previa",
 			"label-use": "Aplicar",
+			"label-override": "Override",
 			"label-visit-on-github": "Ver en GitHub",
 			"msg-fetching-css": "Buscando CSS...",
 			"theme-title": "\"{{name}}\" por {{author}}",
@@ -472,7 +547,7 @@
 			"msg-existing-theme": "Ya tiene el archivo \"obsidian.css\" personalizado.",
 			"msg-confirm-override": "Está seguro que quiere sobreescribirlo? Perderá su archivo CSS original. Por favor haga un respaldo si es necesario.",
 			"msg-load-error": "No se han podido cargar los temas de la comunidad, por favor revise su conexión.",
-			"msg-successfully-used": "Ahora está usando \"{{name}}\" por {{author}} como su CSS personalizado."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Paleta de Commandos",
@@ -662,10 +737,6 @@
 			"tooltip-switch-site": "Switch site",
 			"button-add-linked": "Add linked",
 			"tooltip-add-linked": "Add all files that are linked by currently selected items",
-			"button-toggle-published-files-show": "Show published",
-			"tooltip-toggle-published-files-show": "Show files that are already published",
-			"button-toggle-published-files-hide": "Hide published",
-			"tooltip-toggle-published-files-hide": "Hide files that are already published",
 			"msg-added-linked-files": "{{count}} linked file has been added.",
 			"msg-added-linked-files_plural": "{{count}} linked files have been added.",
 			"tooltip-open-site-options": "Change site options",

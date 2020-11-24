@@ -1,7 +1,9 @@
 {
 	"setting": {
-		"core": "Merkez",
+		"options": "Seçenekler",
 		"plugin": "Eklenti",
+		"builtin-plugins": "Temel eklentiler",
+		"plugin-options": "Eklenti seçenekleri",
 		"folder-path-example-placeholder": "Örnek: klasör 1/klasör 2",
 		"file-path-example-placeholder": "Örnek: klasör/not",
 		"editor": {
@@ -16,8 +18,6 @@
 			"option-strict-line-break-description": "Önizleme modunda tekil yeni satırları Markdown tanımlarına göre gözardı et. Önizlemede tekil yeni satırları görmek istiyorsanız bunu kapatın.",
 			"option-show-frontmatter": "Show frontmatter",
 			"option-show-frontmatter-description": "In preview mode, show frontmatter as a code block. Turn off to hide frontmatter section.",
-			"option-use-markdown-links": "Use markdown links",
-			"option-use-markdown-links-description": "Link suggestion auto-completes markdown links and images instead of wikilinks.",
 			"option-auto-pair-brackets": "Parantezleri otomatik eşle",
 			"option-auto-pair-brackets-description": "Parantez ve tırnak işaretlerini otomatik eşle.",
 			"option-auto-pair-markdown": "Markdown işaretlerini otomatik eşle.",
@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "Başlıklar altındaki herşeyi katlayabilmeni sağlar.",
 			"option-fold-indent": "İçerlemeleri katla",
 			"option-fold-indent-description": "Liste vb. çoklu içerliklerin yalnızca bir kısmını katlayabilmeni sağlar.",
+			"option-default-view-mode": "Default view mode",
+			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Preview",
 			"option-show-line-number": "Satır numaralarını göster",
 			"option-show-line-number-description": "Satır numaralarını en altta göster.",
 			"option-use-tabs": "Boşluklar için tab kullan",
@@ -38,7 +42,7 @@
 			"option-vim-key-bindings-description": "Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar."
 		},
 		"file": {
-			"name": "Dosya",
+			"name": "Dosyalar & Linkler",
 			"option-confirm-file-deletion": "Dosya silmek için onay al",
 			"option-confirm-file-deletion-description": "Açılır pencere ile dosya silme işlemini onaylatır.",
 			"option-delete-destination": "Silinmiş dosyalar",
@@ -55,6 +59,8 @@
 			"option-choice-specified-folder": "Aşağıda belirtilen klasöre",
 			"option-new-file-folder-path": "Yeni notların kaydedileceği klasör",
 			"option-new-file-folder-path-description": "Yeni notlar bu klasörde yaratılır. Eklenti ayarları bu ayarı değiştirebilir.",
+			"option-use-wiki-links": "Use [[Wikilinks]]",
+			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
 			"option-link-autocompleted-format": "Yeni bağlantı formatı",
 			"option-link-autocompleted-format-description": "Otomatik bağlantı yaratırken hangi baülantıların ekleneceği.",
 			"option-choice-shortest-linktext": "Mümkünse en kısa yol",
@@ -65,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Görünüş",
-			"option-base-mode": "Temel mod",
-			"option-base-mode-description": "Obsidian'ın temel renk düzeni.",
-			"dark-mode": "Karanlık mod",
-			"light-mode": "Aydınlık mod",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Topluluk renk düzenlerini aç",
 			"option-community-themes-description": "Topluluk tarafından yaratılmış fevkalade renk düzenlerinin önizlemerini yap veya kullan.",
-			"see-community-themes": "Topluluk yapımı renk düzenlerini gör"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Kısayollar",
@@ -149,6 +170,43 @@
 			"link-sign-up-now": "Hemen kaydolun",
 			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
 			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+		},
+		"third-party-plugin": {
+			"name": "Third-party plugin",
+			"option-safe-mode": "Safe mode",
+			"option-safe-mode-description-on": "Safe Mode is ON. All community plugins are disabled.",
+			"option-safe-mode-description-off": "Safe Mode is OFF. Community plugins can now be enabled.",
+			"option-browse-community-plugins": "Community plugins",
+			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
+			"button-browse": "Browse",
+			"label-third-party-plugin-warning": "Third-party plugins can access files on your computer, connect the internet, and even install additional programs.",
+			"label-disable-safe-mode-confirmation": "Would you like to disable Safe Mode to allow these plugins?",
+			"button-keep-safe-mode": "Keep Safe Mode on",
+			"button-disable-safe-mode": "Turn off Safe Mode",
+			"label-select-a-plugin": "Select a plugin to install or learn more about it.",
+			"placeholder-community-plugins": "Search community plugins...",
+			"msg-failed-load-plugins": "Failed to load community plugins.",
+			"label-installed": "İndirildi",
+			"tooltip-downloaded-times": "{{count}} kere indirildi",
+			"tooltip-downloaded-times_plural": "{{count}} kere indirildi",
+			"button-install": "İndir",
+			"label-no-results-found": "No results found.",
+			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
+			"label-version": "Versiyon: {{version}}",
+			"label-currently-installed-version": " (currently installed: {{version}})",
+			"label-by-author": "By ",
+			"label-repository": "Repository: ",
+			"button-update": "Güncelle",
+			"label-no-readme": "Bu eklenti bir README dosyası sağlamadı.",
+			"msg-installing-plugin": "\"{{name}}\" eklentisi indiriliyor...",
+			"msg-failed-to-install-plugin": "Failed to install plugin \"{{name}}\".",
+			"msg-successfully-installed-plugin": "Successfully installed plugin \"{{name}}\".",
+			"label-installed-plugins": "Installed plugins",
+			"button-reload-plugins": "Eklentileri tekrardan yükle",
+			"msg-reloaded-third-party-plugins": "Eklentiler tekrardan yüklendi",
+			"label-uninstall": "Kaldır",
+			"label-uninstall-plugin": "Eklentiyi kaldır",
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
 		}
 	},
 	"editor": {
@@ -163,6 +221,8 @@
 		"link-suggestion": {
 			"label-type-hash": "Başlığa bağlantı kurmak için",
 			"label-link-heading": "# yazın",
+			"label-type-block": "Type ^",
+			"label-link-block": "to link blocks",
 			"label-type-pipe": "Görünecek yazıyı değiştirmek için",
 			"label-change-display-text": "| yazın"
 		},
@@ -186,6 +246,9 @@
 		"msg-switched-to-edit": "Varsayılan gösterim şekli editör yapıldı.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"copied": "{{item}} copied to your clipboard",
+		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Açık dosya yok",
 			"create-new-file": "Yeni dosya yarat",
@@ -205,14 +268,16 @@
 			"pin": "İğnele",
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereye bağla...",
-			"delete-file": "Dosyayı sil"
+			"delete-file": "Dosyayı sil",
+			"open-in-new-pane": "Open in new pane"
 		},
 		"tooltip": {
 			"click-to-expand": "Click to expand",
-			"click-to-collapse": "Click to collapse"
+			"click-to-collapse": "Click to collapse",
+			"alias": "Alias"
 		},
 		"start-screen": {
-			"label-beta-version": "Beta version",
+			"label-beta-version": "Beta versiyonu",
 			"option-open-folder-as-vault": "Open folder as vault",
 			"option-open-folder-as-vault-description": "Choose an existing folder of Markdown files.",
 			"option-create-vault": "Create new vault",
@@ -272,8 +337,11 @@
 		"toggle-highlight": "Seçilenin üstünü çiz/çizme",
 		"insert-link": "Bağ ekle",
 		"delete-paragraph": "Paragrafı sil",
+		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
-		"copy-path": "Copy file path"
+		"copy-path": "Copy file path",
+		"copy-url": "Copy obsidian url",
+		"export-pdf": "Export to PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -295,7 +363,8 @@
 		"label-existing-backlink": "Bu notu gösteren {{links}} bağ var.",
 		"label-delete-file": "Dosyayı sil",
 		"button-cancel": "Cancel",
-		"button-done": "Done"
+		"button-done": "Done",
+		"preparing-pdf": "Preparing PDF..."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -364,7 +433,8 @@
 			"option-choice-list-style-none": "None",
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
-			"option-choice-list-style-numbered": "Numbered"
+			"option-choice-list-style-numbered": "Numbered",
+			"tooltip-clear-search": "Clear search"
 		},
 		"quick-switcher": {
 			"name": "Hızlı geçiş",
@@ -435,7 +505,11 @@
 		"tag-pane": {
 			"name": "Etiket paneli",
 			"desc": "Displays all your tags and along with their number of occurrences.",
-			"label-no-tags": "No tags found."
+			"label-no-tags": "No tags found.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Page preview",
@@ -460,11 +534,12 @@
 			"setting-community-themes": "Community themes",
 			"msg-fetching-themes": "Fetching community theme data...",
 			"prompt-filter": "Filtrele...",
-			"label-dark-mode-only": "Dark mode only",
-			"label-light-mode-only": "Light mode only",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Ön izleme",
 			"label-stop-preview": "Ön izlemeyi durdur",
 			"label-use": "Kullan",
+			"label-override": "Override",
 			"label-visit-on-github": "GitHub'ı ziyaret et",
 			"msg-fetching-css": "CSS getiriliyor...",
 			"theme-title": "\"{{name}}\" by {{author}}",
@@ -472,7 +547,7 @@
 			"msg-existing-theme": "You already have the \"obsidian.css\" custom CSS file.",
 			"msg-confirm-override": "Are you sure you want to override it? You will lose your original CSS file. Please make a back up if necessary.",
 			"msg-load-error": "Could not load community themes, please check your network.",
-			"msg-successfully-used": "You're now using \"{{name}}\" by {{author}} as your custom CSS."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Command palette",
@@ -503,8 +578,8 @@
 			"msg-all-files-warning": "Warning: the importer will convert all the files in your vault, not just the current file.",
 			"msg-override-files-warning": "Your files will be overwritten. Back up all your files before attempting conversion.",
 			"label-start-conversion": "Start Conversion",
-			"label-stop": "Stop",
-			"label-go-back": "Go back",
+			"label-stop": "Dur",
+			"label-go-back": "Geri git",
 			"label-done": "Done",
 			"label-processing": "Processing...",
 			"label-cancelling": "Cancelling...",
@@ -560,8 +635,8 @@
 			"label-no-headings": "No headings found."
 		},
 		"word-count": {
-			"name": "Word count",
-			"desc": "Show word count in the status bar."
+			"name": "Kelime sayısı",
+			"desc": "Durum barında kelime sayısını göster."
 		},
 		"slides": {
 			"name": "Slides",
@@ -579,10 +654,10 @@
 			"msg-no-microphone": "No microphone is connected."
 		},
 		"open-with-default-app": {
-			"name": "Open in default app",
+			"name": "Varsayılan uygulamada aç",
 			"desc": "Add button to open current file in the default app.",
 			"action-open-file": "Open in default app",
-			"action-show-in-folder": "Show in folder"
+			"action-show-in-folder": "Klasörde göster"
 		},
 		"templates": {
 			"name": "Templates",
@@ -609,17 +684,17 @@
 			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
 		},
 		"publish": {
-			"name": "Publish",
+			"name": "Yayınla",
 			"desc": "Publish your notes through Obsidian Publish.",
 			"action-publish-changes": "Publish changes",
 			"label-no-internet-access": "You need access to the internet to publish changes.",
 			"label-publish-service-description": "Obsidian Publish is an add-on paid service that lets you publish your notes online directly from Obsidian.",
 			"label-please-login": "To start publishing, please log in or create a new Obsidian account.",
 			"label-no-publish-subscription": "You do not have an Obsidian Publish subscription yet.",
-			"button-purchase": "Purchase",
-			"label-manage-sites": "Manage sites",
+			"button-purchase": "Satın al",
+			"label-manage-sites": "Siteleri yönet",
 			"label-no-sites": "You don't have any sites.",
-			"button-choose": "Choose",
+			"button-choose": "Seç",
 			"tooltip-edit-site-id": "Edit site ID",
 			"tooltip-delete-site": "Delete site",
 			"label-delete-site-confirmation": "Are you sure you want to delete this site?",
@@ -628,7 +703,7 @@
 			"option-site-id": "Site ID",
 			"option-site-id-description": "Your site will be at https://publish.obsidian.md/{site id}. You can change this later. Only lower case letters, numbers, and dashes are allowed.",
 			"option-site-id-placeholder": "Pick a site ID",
-			"button-create": "Create",
+			"button-create": "Oluştur",
 			"msg-invalid-site-id": "Site ID can only contain lowercase letters, numbers, and dashes.",
 			"msg-site-id-in-use": "This site ID is in use, please try another one.",
 			"msg-create-site-issue": "That was an issue when creating your site.",
@@ -639,7 +714,7 @@
 			"option-home-page-file": "Homepage file",
 			"option-home-page-file-description": "The first page the user sees when landing on your published site",
 			"option-home-page-file-placeholder": "Pick a published file",
-			"option-theme": "Theme",
+			"option-theme": "Tema",
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
 			"option-show-navigation-description": "Display a list of all published pages on the left side of your published site.",
@@ -657,15 +732,11 @@
 			"option-readable-line-length-description": "Limit maximum line length. Fits less content on the screen, but makes long paragraphs more readable.",
 			"button-save-site-settings": "Save site settings",
 			"msg-updated-options": "Updated options for your site.",
-			"button-go-back": "Back",
+			"button-go-back": "Geri",
 			"label-publishing-to": "Publishing to",
 			"tooltip-switch-site": "Switch site",
 			"button-add-linked": "Add linked",
 			"tooltip-add-linked": "Add all files that are linked by currently selected items",
-			"button-toggle-published-files-show": "Show published",
-			"tooltip-toggle-published-files-show": "Show files that are already published",
-			"button-toggle-published-files-hide": "Hide published",
-			"tooltip-toggle-published-files-hide": "Hide files that are already published",
 			"msg-added-linked-files": "{{count}} linked file has been added.",
 			"msg-added-linked-files_plural": "{{count}} linked files have been added.",
 			"tooltip-open-site-options": "Change site options",
@@ -673,23 +744,23 @@
 			"label-changed-files-to-be-published": "Changes",
 			"label-unchanged-files-already-published": "Unchanged (select to delete)",
 			"label-file-selected": " selected",
-			"button-select-all-files": "Select all",
-			"button-deselect-all-files": "Deselect all",
-			"label-new-files-to-be-published": "New",
-			"button-publish": "Publish",
+			"button-select-all-files": "Hepsini seç",
+			"button-deselect-all-files": "Hepsini kaldır",
+			"label-new-files-to-be-published": "Yeni",
+			"button-publish": "Yayınla",
 			"msg-no-permission-to-publish-to-site": "You do not have permissions to publish to the current site.",
 			"msg-select-at-least-one-file": "Please select at least one file.",
-			"label-upload-changes": "Upload changes",
-			"button-done": "Done",
-			"button-stop": "Stop",
-			"label-status-uploading": "Uploading",
+			"label-upload-changes": "Değişiklikleri yükle",
+			"button-done": "Tamamlandı",
+			"button-stop": "Dur",
+			"label-status-uploading": "Yükleniyor",
 			"label-status-to-publish": "To publish",
 			"label-status-to-delete": "To delete",
-			"label-status-published": "Published",
-			"label-status-deleted": "Deleted",
+			"label-status-published": "Yayınlandı",
+			"label-status-deleted": "Silindi",
 			"label-status-failed": "Failed",
-			"label-status-cancelled": "Cancelled",
-			"button-change": "Change",
+			"label-status-cancelled": "İptal edildi",
+			"button-change": "Değiştir",
 			"label-clear-cache": "It takes up to a few minutes for the changes to show up on your site. If you do not see your latest changes, try clearing the cache in your browser.",
 			"label-visit-site": "You can visit your site here: ",
 			"msg-something-went-wrong": "Something went wrong. Please check the developer console for details.",
