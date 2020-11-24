@@ -28,10 +28,10 @@
 			"option-fold-heading-description": "將標題行下層所有文字都摺疊到標題行。",
 			"option-fold-indent": "摺疊縮排",
 			"option-fold-indent-description": "把相同的縮排內容（如列表）摺疊起來。",
-			"option-default-view-mode": "Default view mode",
-			"option-default-view-mode-description": "The default mode a file gets opened in.",
-			"option-default-view-mode-source": "Editor",
-			"option-default-view-mode-preview": "Preview",
+			"option-default-view-mode": "預設檢視模式",
+			"option-default-view-mode-description": "開啟檔案後的預設模式。",
+			"option-default-view-mode-source": "編輯模式",
+			"option-default-view-mode-preview": "預覽模式",
 			"option-show-line-number": "顯示行號",
 			"option-show-line-number-description": "在左側顯示行號。",
 			"option-use-tabs": "使用Tab鍵縮排",
@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "外觀",
-			"option-base-mode": "基本主題",
-			"option-base-mode-description": "Obsidian的基本配色方案。",
-			"dark-mode": "黑暗主題",
-			"light-mode": "明亮主題",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "查看社群主題",
 			"option-community-themes-description": "預覽、使用社群用戶建立的優秀主題。",
-			"see-community-themes": "瀏覽社群主題"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "快捷鍵",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "還原為預設設定",
 		"copied": "{{item}} 已複製到系統剪貼簿",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
@@ -258,7 +274,7 @@
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
 			"click-to-collapse": "點擊以摺疊",
-			"alias": "Alias"
+			"alias": "別名"
 		},
 		"start-screen": {
 			"label-beta-version": "Beta版",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "標籤面板",
 			"desc": "顯示所有標籤及其出現的次數。",
-			"label-no-tags": "未發現標籤。"
+			"label-no-tags": "未發現標籤。",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "頁面預覽",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "社群主題",
 			"msg-fetching-themes": "正在獲取社群主題資料...",
 			"prompt-filter": "搜尋...",
-			"label-dark-mode-only": "僅限黑暗主題",
-			"label-light-mode-only": "僅限明亮主題",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "預覽",
 			"label-stop-preview": "停止預覽",
 			"label-use": "使用",
+			"label-override": "Override",
 			"label-visit-on-github": "訪問 GitHub",
 			"msg-fetching-css": "正在獲取...",
 			"theme-title": "\"{{name}}\" 作者：{{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "您已經有了 \"Obsidian.css\" 自訂主題檔案。",
 			"msg-confirm-override": "您確定要覆蓋它嗎? 刪除這個主題檔案之前，請做好備份。",
 			"msg-load-error": "無法載入社群主題，請檢查您的網路。",
-			"msg-successfully-used": "您正在使用 {{author}} 編寫的 \"{{name}}\" 主題檔案。"
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "命令面板",

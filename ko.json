@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "테마",
-			"option-base-mode": "기본 테마",
-			"option-base-mode-description": "Obsidian의 기본 색 테마",
-			"dark-mode": "다크 모드",
-			"light-mode": "라이트 모드",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "오픈 커뮤니티 테마",
 			"option-community-themes-description": "커뮤니티에서 만든 테마들을 구경해보고 사용하세요.",
-			"see-community-themes": "커뮤니티 테마 "
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "단축키",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "기본값으로 되돌리기",
 		"copied": "{{item}}가 클립보드에 복사되었습니다",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "열려있는 파일이 없습니다.",
 			"create-new-file": "새 파일 만들기",
@@ -258,7 +274,7 @@
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
 			"click-to-collapse": "클릭해서 접기",
-			"alias": "Alias"
+			"alias": "별명"
 		},
 		"start-screen": {
 			"label-beta-version": "베타 버전",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "태그 패널",
 			"desc": "태그들과 태그들의 사용 횟수들을 같이 표시합니다.",
-			"label-no-tags": "발견된 태그가 없습니다."
+			"label-no-tags": "발견된 태그가 없습니다.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "페이지 미리보기",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "커뮤니티 테마",
 			"msg-fetching-themes": "커뮤니티 테마들을 가져오는 중입니다...",
 			"prompt-filter": "필터...",
-			"label-dark-mode-only": "다크모드만 찾기",
-			"label-light-mode-only": "라이트모드만 찾기",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "프리뷰",
 			"label-stop-preview": "프리뷰 그만두기",
 			"label-use": "사용하기",
+			"label-override": "Override",
 			"label-visit-on-github": "GitHub에서 보기",
 			"msg-fetching-css": "CSS를 가져오는 중입니다...",
 			"theme-title": "{{author}}의 \"{{name}}\"",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "이미 \"obsidian.css\" 파일이 있습니다.",
 			"msg-confirm-override": "정말 덮어쓰시겠습니까? 기존에 있던 CSS파일을 잃습니다. 필요하시다면 꼭 백업해주세요.",
 			"msg-load-error": "커뮤니티 테마를 가져올수 없습니다, 네트워크 상태를 확인해주세요.",
-			"msg-successfully-used": "{{author}}의 \"{{name}}\"를 사용합니다."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "명령어 팔레트",
