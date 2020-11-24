@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Programstil",
-			"option-base-mode": "Modus",
-			"option-base-mode-description": "Fargetemaet til Obsidian.",
-			"dark-mode": "Mørkt tema",
-			"light-mode": "Lyst tema",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Åpne Brukerstiler",
 			"option-community-themes-description": "Forhåndsvis og bruk stiler lagd av andre brukere.",
-			"see-community-themes": "Se brukerstiler"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Hurtigtaster",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "Restore default settings",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Ingen åpne filer",
 			"create-new-file": "Lag ny fil",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "Tag-panel",
 			"desc": "Viser alle tags og antall ganger de er brukt.",
-			"label-no-tags": "Ingen tags funnet."
+			"label-no-tags": "Ingen tags funnet.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Forhåndsvisning av notat",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "Stiler av andre brukere",
 			"msg-fetching-themes": "Henter brukerstiler...",
 			"prompt-filter": "Filtrer...",
-			"label-dark-mode-only": "Bare mørk modus",
-			"label-light-mode-only": "Bare lys modus",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Forhåndsvis",
 			"label-stop-preview": "Stopp forhåndsvisning",
 			"label-use": "Bruk",
+			"label-override": "Override",
 			"label-visit-on-github": "Se på GitHub",
 			"msg-fetching-css": "Henter CSS...",
 			"theme-title": "\"{{name}}\" av {{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "Du har allerede \"obsidian.css\" CSS-filen.",
 			"msg-confirm-override": "Er du sikker på du vil skrive over filen? Den originale CSS-filen går tapt. Vennligst lag en backup om nødvendig.",
 			"msg-load-error": "Fikk ikke lastet brukerstiler, vennligst sjekk nettverket.",
-			"msg-successfully-used": "Du bruker nå \"{{name}}\" av {{author}}."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Kommandovelger",
