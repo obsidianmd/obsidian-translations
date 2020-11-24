@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "المظهر",
-			"option-base-mode": "الوضع الأساسي",
-			"option-base-mode-description": "وضع اوبسيدين",
-			"dark-mode": "الوضع الداكن",
-			"light-mode": "الوضع الفاتح",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Open community themes",
 			"option-community-themes-description": "Preview and use amazing themes created by the community.",
-			"see-community-themes": "See community themes"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Hotkeys",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "Restore default settings",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "Tag pane",
 			"desc": "Displays all your tags and along with their number of occurrences.",
-			"label-no-tags": "No tags found."
+			"label-no-tags": "No tags found.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Page preview",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "Community themes",
 			"msg-fetching-themes": "Fetching community theme data...",
 			"prompt-filter": "Filter...",
-			"label-dark-mode-only": "Dark mode only",
-			"label-light-mode-only": "Light mode only",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Preview",
 			"label-stop-preview": "Stop preview",
 			"label-use": "Use",
+			"label-override": "Override",
 			"label-visit-on-github": "Visit on GitHub",
 			"msg-fetching-css": "Fetching CSS...",
 			"theme-title": "\"{{name}}\" by {{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "You already have the \"obsidian.css\" custom CSS file.",
 			"msg-confirm-override": "Are you sure you want to override it? You will lose your original CSS file. Please make a back up if necessary.",
 			"msg-load-error": "Could not load community themes, please check your network.",
-			"msg-successfully-used": "You're now using \"{{name}}\" by {{author}} as your custom CSS."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Command palette",

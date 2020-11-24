@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Tampilan",
-			"option-base-mode": "Mode dasar",
-			"option-base-mode-description": "Pilih skema warna default Obsidian.",
-			"dark-mode": "Mode gelap",
-			"light-mode": "Mode terang",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Buka tema-tema komunitas",
 			"option-community-themes-description": "Tampilkan dan gunakan tema-tema luar biasa yang dibuat oleh komunitas.",
-			"see-community-themes": "Lihat tema-tema komunitas"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Pintasan",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
 		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "Panel tag",
 			"desc": "Tampilkan tag Anda dan jumlah kemunculannya.",
-			"label-no-tags": "Tidak ditemukan tag."
+			"label-no-tags": "Tidak ditemukan tag.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Pratinjau halaman",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "Tema komunitas",
 			"msg-fetching-themes": "Mengambil data tema komunitas...",
 			"prompt-filter": "Filter...",
-			"label-dark-mode-only": "Hanya mode gelap",
-			"label-light-mode-only": "Hanya mode terang",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Pratinjau",
 			"label-stop-preview": "Hentikan pratinjau",
 			"label-use": "Gunakan",
+			"label-override": "Override",
 			"label-visit-on-github": "Kunjungi ke GitHub",
 			"msg-fetching-css": "Mengambil CSS...",
 			"theme-title": "\"{{name}}\" oleh {{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "Anda sudah memiliki file CSS kustom \"obsidian.css\".",
 			"msg-confirm-override": "Anda yakin ingin menimpanya? Anda akan kehilangan file CSS asli Anda. Buat cadangan apabila perlu.",
 			"msg-load-error": "Tidak dapat memuat tema komunitas, periksa koneksi internet Anda.",
-			"msg-successfully-used": "Anda sekarang menggunakan \"{{name}}\" oleh {{author}} sebagai CSS kustom Anda."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Palet perintah",
