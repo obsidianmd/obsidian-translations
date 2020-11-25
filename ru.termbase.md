@@ -44,6 +44,7 @@ repository|репозиторий
 screenshot|скриншот
 sidebar|панель
 site|сайт
+snippet | фрагмент
 starred|избранное
 supporter|саппортер
 to link|связать
