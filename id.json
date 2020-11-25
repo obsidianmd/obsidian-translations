@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "Memungkinkan Anda untuk melipat konten di bawah judul.",
 			"option-fold-indent": "Lipat inden",
 			"option-fold-indent-description": "Memungkinkan Anda untuk melipat bagian indentasi yang sederet, seperti deret daftar.",
+			"option-default-view-mode": "Mode tampilan default",
+			"option-default-view-mode-description": "Mode default file ketika dibuka.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Pratinjau",
 			"option-show-line-number": "Tampilkan nomor baris",
 			"option-show-line-number-description": "Tampilkan nomor baris di tepian.",
 			"option-use-tabs": "Gunakan tab",
@@ -67,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Tampilan",
-			"option-base-mode": "Mode dasar",
-			"option-base-mode-description": "Pilih skema warna default Obsidian.",
-			"dark-mode": "Mode gelap",
-			"light-mode": "Mode terang",
+			"option-base-theme": "Tema dasar",
+			"option-base-theme-description": "Pilih skema warna default Obsidian.",
+			"dark-theme": "Gelap",
+			"light-theme": "Terang",
+			"option-use-obsidian-css": "Terapkan CSS kustom",
+			"option-use-obsidian-css-description": "Baca dan terapkan “obsidian.css” di folder vault. Ini adalah pengaturan warisan, pertimbangkan memindahkan file CSS kustom Anda ke folder cuplikan di bawah ini.",
 			"option-community-themes": "Buka tema-tema komunitas",
 			"option-community-themes-description": "Tampilkan dan gunakan tema-tema luar biasa yang dibuat oleh komunitas.",
-			"see-community-themes": "Lihat tema-tema komunitas"
+			"button-browse-community-themes": "Telusur",
+			"option-themes": "Tema",
+			"option-theme": "Tema",
+			"option-theme-description": "Tema komunitas mana yang digunakan. Tema tersimpan di \"vault/.obsidian/tema/\".",
+			"option-choice-none": "Tidak ada",
+			"button-reload-themes": "Muat ulang tema",
+			"msg-reloaded-themes": "Tema CSS kustom termuat ulang.",
+			"button-open-themes-folder": "Buka folder tema",
+			"option-css-snippets": "Cuplikan CSS",
+			"label-no-css-snippets-found": "Cuplikan CSS tidak ditemukan di folder cuplikan.",
+			"button-reload-snippets": "Mualt ulang cuplikan",
+			"button-open-snippets-folder": "Buka folder cuplikan",
+			"msg-reloaded-snippets": "Cuplikan CSS termuat ulang.",
+			"option-toggle-snippet-description": "Terapkan cuplikan CSS di \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Pintasan",
@@ -229,6 +248,7 @@
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
 		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
+		"label-invalid-frontmatter": "Gagal mengurai front matter, cek ulang sintaks Anda.",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -253,7 +273,8 @@
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
-			"click-to-collapse": "Klik untuk ciutkan"
+			"click-to-collapse": "Klik untuk ciutkan",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "Versi beta",
@@ -484,7 +505,11 @@
 		"tag-pane": {
 			"name": "Panel tag",
 			"desc": "Tampilkan tag Anda dan jumlah kemunculannya.",
-			"label-no-tags": "Tidak ditemukan tag."
+			"label-no-tags": "Tidak ditemukan tag.",
+			"label-sort-by-name-a-to-z": "Nama tag (A ke Z)",
+			"label-sort-by-name-z-to-a": "Nama tag (Z ke A)",
+			"label-sort-by-frequency-high-to-low": "Frekuensi (tinggi ke rendah)",
+			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)"
 		},
 		"page-preview": {
 			"name": "Pratinjau halaman",
@@ -509,11 +534,12 @@
 			"setting-community-themes": "Tema komunitas",
 			"msg-fetching-themes": "Mengambil data tema komunitas...",
 			"prompt-filter": "Filter...",
-			"label-dark-mode-only": "Hanya mode gelap",
-			"label-light-mode-only": "Hanya mode terang",
+			"label-dark-theme-only": "Tema gelap saja",
+			"label-light-theme-only": "Tema terang saja",
 			"label-preview": "Pratinjau",
 			"label-stop-preview": "Hentikan pratinjau",
 			"label-use": "Gunakan",
+			"label-override": "Tumpuk",
 			"label-visit-on-github": "Kunjungi ke GitHub",
 			"msg-fetching-css": "Mengambil CSS...",
 			"theme-title": "\"{{name}}\" oleh {{author}}",
@@ -521,7 +547,7 @@
 			"msg-existing-theme": "Anda sudah memiliki file CSS kustom \"obsidian.css\".",
 			"msg-confirm-override": "Anda yakin ingin menimpanya? Anda akan kehilangan file CSS asli Anda. Buat cadangan apabila perlu.",
 			"msg-load-error": "Tidak dapat memuat tema komunitas, periksa koneksi internet Anda.",
-			"msg-successfully-used": "Anda sekarang menggunakan \"{{name}}\" oleh {{author}} sebagai CSS kustom Anda."
+			"msg-now-using-theme": "Anda sekarang menggunakan {{title}} sebagai tema CSS."
 		},
 		"command-palette": {
 			"name": "Palet perintah",

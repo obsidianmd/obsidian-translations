@@ -1,9 +1,9 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "Optionen",
 		"plugin": "Erweiterungen",
-		"builtin-plugins": "Core plugins",
-		"plugin-options": "Plugin options",
+		"builtin-plugins": "Obsidian-Erweiterungen",
+		"plugin-options": "Erweiterungs-Einstellungen",
 		"folder-path-example-placeholder": "Beispiel: Ordner 1/Ordner 2",
 		"file-path-example-placeholder": "Beispiel: Ordner/Notiz",
 		"editor": {
@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "Klappt alles unterhalb einer Überschrift ein.",
 			"option-fold-indent": "Zeileneinzug einklappen",
 			"option-fold-indent-description": "Klappt einen Teil des gleichen Zeileneinzugs, etwa bei Listen, ein.",
+			"option-default-view-mode": "Standardansicht",
+			"option-default-view-mode-description": "Die Standardansicht, in der Dateien geöffnet werden.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Vorschau",
 			"option-show-line-number": "Zeige Zeilennummern",
 			"option-show-line-number-description": "Zeigt Zeilennummern im Steg an.",
 			"option-use-tabs": "Nutze Tabs",
@@ -38,7 +42,7 @@
 			"option-vim-key-bindings-description": "Erlaubt die Nutzung der VIM-Tastenbelegung im Quellcode Editor."
 		},
 		"file": {
-			"name": "Files & Links",
+			"name": "Dateien & Links",
 			"option-confirm-file-deletion": "Löschen der Datei bestätigen",
 			"option-confirm-file-deletion-description": "Zeigt Bestätigungsdialog zum Löschen einer Datei.",
 			"option-delete-destination": "Gelöschte Dateien",
@@ -55,25 +59,40 @@
 			"option-choice-specified-folder": "Eigenen Ordner unten festlegen",
 			"option-new-file-folder-path": "Ordner für neue Notizen",
 			"option-new-file-folder-path-description": "Speichert neue Notizen an diesem Ort. Erweiterungs-Einstellungen überschreiben dies.",
-			"option-use-wiki-links": "Use [[Wikilinks]]",
-			"option-use-wiki-links-description": "Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.",
+			"option-use-wiki-links": "[[Wiki-Links]] benutzen",
+			"option-use-wiki-links-description": "Erzeugt automatisch Wiki-Links für [[Links]] und ![[Bilder]] anstelle von Markdown-Links und Bildern. Deaktiviere diese Option, um stattdessen Markdown-Links zu erzeugen.",
 			"option-link-autocompleted-format": "Link-Format",
 			"option-link-autocompleted-format-description": "Welche Form haben automatisch erzeugte, interne Links?",
 			"option-choice-shortest-linktext": "Wenn möglich: kürzester Pfad",
 			"option-choice-relative-path": "Relativer Pfad (von der aktuellen Datei)",
-			"option-choice-absolute-path": "Absoluter Pfad in der Vault",
+			"option-choice-absolute-path": "Absoluter Pfad im Vault",
 			"option-attachment-folder-path": "Ordnerpfad für Anhänge",
 			"option-attachment-folder-path-description": "Speichert neu angehängte Dateien hier. Das schließt eingefügte Bilder (auch per Drag-and-Drop) ein, sowie Audioaufzeichnungen."
 		},
 		"appearance": {
 			"name": "Darstellung",
-			"option-base-mode": "Standardmodus",
-			"option-base-mode-description": "Das Standard-Farbschema von Obsidian.",
-			"dark-mode": "Dunkler Modus",
-			"light-mode": "Heller Modus",
+			"option-base-theme": "Standard Farbthema",
+			"option-base-theme-description": "Wähle das Standard-Farbthema für Obsidian.",
+			"dark-theme": "Dunkel",
+			"light-theme": "Hell",
+			"option-use-obsidian-css": "Eigenes CSS nutzen",
+			"option-use-obsidian-css-description": "Wendet “obsidian.css” im Vault-Ordner an. Dies ist eine veraltete Einstellung: Bitte nutze die Möglichkeit, Deine CSS-Datei in den Ordner für CSS-Bausteine zu verschieben (siehe unten).",
 			"option-community-themes": "Öffne Community-Themes",
 			"option-community-themes-description": "Zeige und nutze tolle, durch die Community erstellte Themes.",
-			"see-community-themes": "Community-Themes ansehen"
+			"button-browse-community-themes": "Durchsuchen",
+			"option-themes": "Themen",
+			"option-theme": "Thema",
+			"option-theme-description": "Welches Community-Thema wird angewendet. Themen sind in \"vault/.obsidian/themes/\" gespeichert.",
+			"option-choice-none": "Keines",
+			"button-reload-themes": "Themen neu laden",
+			"msg-reloaded-themes": "Eigene CSS-Themen neu geladen.",
+			"button-open-themes-folder": "Öffne Themen-Ordner",
+			"option-css-snippets": "CSS-Bausteine",
+			"label-no-css-snippets-found": "Keine CSS-Bausteine im Ordner gefunden.",
+			"button-reload-snippets": "Bausteine neu laden",
+			"button-open-snippets-folder": "Öffne Baustein-Ordner",
+			"msg-reloaded-snippets": "CSS-Bausteine neu geladen.",
+			"option-toggle-snippet-description": "Wende CSS-Baustein unter \"{{path}}\" an."
 		},
 		"hotkeys": {
 			"name": "Tastenkürzel",
@@ -153,41 +172,41 @@
 			"message-obtain-commercial-license": "Um eine kommerzielle Lizenz zu erwerben, besuche {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
-			"name": "Externe Plug-Ins",
+			"name": "Externe Erweiterungen",
 			"option-safe-mode": "Sicherer Modus",
-			"option-safe-mode-description-on": "Sicherer Modus ist AN. Alle Community-Plug-Ins sind deaktiviert.",
-			"option-safe-mode-description-off": "Sicherer Modus ias AUS. Community-Plug-Ins können aktiviert werden.",
-			"option-browse-community-plugins": "Community-Plug-Ins",
-			"option-browse-community-plugins-description": "Durchsuche und installiere von unserer großartigen Community erstellte Plug-Ins.",
+			"option-safe-mode-description-on": "Sicherer Modus ist AN. Alle Community-Erweiterungen sind deaktiviert.",
+			"option-safe-mode-description-off": "Sicherer Modus ias AUS. Community-Erweiterungen können aktiviert werden.",
+			"option-browse-community-plugins": "Community-Erweiterungen",
+			"option-browse-community-plugins-description": "Durchsuche und installiere von unserer großartigen Community erstellte Erweiterungen.",
 			"button-browse": "Durchsuchen",
-			"label-third-party-plugin-warning": "Drittanbieter-Plug-Ins können auf die Dateien auf Deinem Rechner zugreifen, eine Verbindung zum Internet herstellen und sogar zusätzliche Programme installieren.",
-			"label-disable-safe-mode-confirmation": "Möchtest Du den sicheren Modus deaktivieren, um solche Plug-Ins zu erlauben?",
+			"label-third-party-plugin-warning": "Drittanbieter-Erweiterungen können auf die Dateien auf Deinem Rechner zugreifen, eine Verbindung zum Internet herstellen und sogar zusätzliche Programme installieren.",
+			"label-disable-safe-mode-confirmation": "Möchtest Du den sicheren Modus deaktivieren, um solche Erweiterungen zu erlauben?",
 			"button-keep-safe-mode": "Sicheren Modus aktiviert lassen",
 			"button-disable-safe-mode": "Sicheren Modus deaktivieren",
-			"label-select-a-plugin": "Wähle ein Plug-In zum Installieren oder erfahre mehr darüber.",
-			"placeholder-community-plugins": "Durchsuche Community-Plug-Ins...",
-			"msg-failed-load-plugins": "Laden der Community-Plug-Ins fehlgeschlagen.",
+			"label-select-a-plugin": "Wähle eine Erweiterung zum Installieren oder erfahre mehr darüber.",
+			"placeholder-community-plugins": "Durchsuche Community-Erweiterungen...",
+			"msg-failed-load-plugins": "Laden der Community-Erweiterungen fehlgeschlagen.",
 			"label-installed": "Installiert",
 			"tooltip-downloaded-times": "{{count}} Mal heruntergeladen",
 			"tooltip-downloaded-times_plural": "{{count}} Mal heruntergeladen",
 			"button-install": "Installieren",
 			"label-no-results-found": "Keine Ergebnisse gefunden.",
-			"msg-failed-to-load-manifest": "Laden des Plug-In Manifestes fehlgeschlagen.",
+			"msg-failed-to-load-manifest": "Laden des Erweiterungs-Manifestes fehlgeschlagen.",
 			"label-version": "Version: {{version}}",
 			"label-currently-installed-version": " (aktuell installiert: {{version}})",
 			"label-by-author": "Von ",
 			"label-repository": "Repository: ",
 			"button-update": "Aktualisieren",
-			"label-no-readme": "Dieses Plug-In enthält keine README Datei.",
-			"msg-installing-plugin": "Installiere Plug-in \"{{name}}\"...",
-			"msg-failed-to-install-plugin": "Installieren des Plug-Ins \"{{name}}\" fehlgeschlagen.",
-			"msg-successfully-installed-plugin": "Installation des Plug-Ins \"{{name}}\" erfolgreich.",
-			"label-installed-plugins": "Installierte Plug-Ins",
-			"button-reload-plugins": "Plug-ins neu laden",
-			"msg-reloaded-third-party-plugins": "Drittanbieter-Plug-Ins neu geladen.",
+			"label-no-readme": "Diese Erweiterung enthält keine README Datei.",
+			"msg-installing-plugin": "Installiere Erweiterung \"{{name}}\"...",
+			"msg-failed-to-install-plugin": "Installieren der Erweiterung \"{{name}}\" fehlgeschlagen.",
+			"msg-successfully-installed-plugin": "Installation der Erweiterung \"{{name}}\" erfolgreich.",
+			"label-installed-plugins": "Installierte Erweiterungen",
+			"button-reload-plugins": "Erweiterungen neu laden",
+			"msg-reloaded-third-party-plugins": "Drittanbieter-Erweiterungen neu geladen.",
 			"label-uninstall": "Deinstallieren",
-			"label-uninstall-plugin": "Plug-In deinstallieren",
-			"label-uninstall-plugin-confirmation": "Bist Du sicher, dass Du dieses Plug-In deinstallieren möchtest? Dies wird den Ordner des Plug-Ins löschen."
+			"label-uninstall-plugin": "Erweiterung deinstallieren",
+			"label-uninstall-plugin-confirmation": "Bist Du sicher, dass Du diese Erweiterung deinstallieren möchtest? Dies wird den Ordner der Erweiterung löschen."
 		}
 	},
 	"editor": {
@@ -219,7 +238,7 @@
 		"sidebar-collapse": "Zuklappen",
 		"msg-fail-to-save-file": "Fehler beim Speichern der Datei \"{{filepath}}\". {{message}}.",
 		"no-file": "Keine Datei",
-		"switch-vault": "Einen andere Vault öffnen",
+		"switch-vault": "Einen anderen Vault öffnen",
 		"help": "Hilfe",
 		"settings": "Einstellungen",
 		"drag-to-rearrange": "Zum Umordnen ziehen",
@@ -228,7 +247,8 @@
 		"msg-upgrade-installer": "Bitte installiere die Anwendung mit dem aktuellsten Installer von unserer Website neu, um dieses Feature nutzen zu können.",
 		"tooltip-restore-default-settings": "Standard-Einstellungen wieder herstellen",
 		"copied": "{{item}} in die Zwischenablage kopiert",
-		"url": "Url",
+		"url": "URL",
+		"label-invalid-frontmatter": "Frontmatter konnte nicht geparst werden, bitte prüfe die Syntax, die Du nutzt.",
 		"empty-state": {
 			"no-file-open": "Keine Datei geöffnet",
 			"create-new-file": "Neue Datei erzeugen",
@@ -245,28 +265,29 @@
 			"preview": "Vorschau",
 			"more-options": "Weitere Optionen",
 			"close": "Schließen",
-			"pin": "Pin",
+			"pin": "Anheften",
 			"unlink-pane": "Link zu Fensterbereich lösen",
 			"link-pane": "Mit Fensterbereich verlinken...",
 			"delete-file": "Datei löschen",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "In neuem Fensterbereich öffnen"
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
-			"click-to-collapse": "Klick zum Zuklappen"
+			"click-to-collapse": "Klick zum Zuklappen",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "Beta Version",
 			"option-open-folder-as-vault": "Öffne Ordner als Vault",
 			"option-open-folder-as-vault-description": "Wähle einen vorhandenen Ordner mit Markdown Dateien.",
-			"option-create-vault": "Erstelle eine neue Vault.",
-			"option-create-vault-description": "Erstelle eine neue Obsidian Vault innerhalb eines Ordners.",
+			"option-create-vault": "Erstelle einen neuen Vault.",
+			"option-create-vault-description": "Erstelle einen neuen Obsidian Vault innerhalb eines Ordners.",
 			"option-open-help-vault": "Öffne Hilfe-Vault.",
-			"option-open-help-vault-description": "Öffne eine \"Demo & Hilfe\" Vault.",
-			"option-new-vault-name": "Vault Name",
-			"option-new-vault-name-description": "Wähle einen Namen für Deine wunderbare Vault.",
+			"option-open-help-vault-description": "Öffne einen \"Demo & Hilfe\" Vault.",
+			"option-new-vault-name": "Name des Vaults",
+			"option-new-vault-name-description": "Wähle einen Namen für Deinen wunderbaren Vault.",
 			"option-new-vault-location": "Speicherort",
-			"option-new-vault-location-description": "Wähle einen Speicherort für Deine neue Vault.",
+			"option-new-vault-location-description": "Wähle einen Speicherort für Deinen neuen Vault.",
 			"button-open": "Öffnen",
 			"button-help": "Hilfe",
 			"button-browse": "Wählen",
@@ -274,10 +295,10 @@
 			"button-back": "Zurück",
 			"msg-empty-vault-name": "Der Vault-Name darf nicht leer sein.",
 			"msg-invalid-folder": "Bitte wähle einen gültigen Ordner.",
-			"msg-failed-to-create-vault": "Erstellung der Vault fehlgeschlagen.",
-			"msg-failed-to-create-vault-at-location": "Die Vault konnte unter dem angegebenen Ort nicht erstellt werden. Bitte prüfe den Speicherort und die Berechtigung.",
+			"msg-failed-to-create-vault": "Erstellung des Vaults fehlgeschlagen.",
+			"msg-failed-to-create-vault-at-location": "Der Vault konnte unter dem angegebenen Ort nicht erstellt werden. Bitte prüfe den Speicherort und die Berechtigung.",
 			"msg-error-failed-to-open-vault": "Öffnen fehlgeschlagen.",
-			"msg-error-remove-current-open-vault": "Die Vault ist gerade geöffnet und kann nicht entfernt werden."
+			"msg-error-remove-current-open-vault": "Der Vault ist gerade geöffnet und kann nicht entfernt werden."
 		}
 	},
 	"commands": {
@@ -316,11 +337,11 @@
 		"toggle-highlight": "Tausche hervorgehoben für Auswahl",
 		"insert-link": "Link einfügen",
 		"delete-paragraph": "Absatz löschen",
-		"toggle-checklist": "Toggle checklist status",
+		"toggle-checklist": "Status der Checkliste umschalten",
 		"edit-file-title": "Dateinamen ändern",
 		"copy-path": "Dateipfad kopieren",
 		"copy-url": "Obsidian URL kopieren",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Nach PDF exporieren"
 	},
 	"dialogue": {
 		"label-link-affected": "Das betrifft {{links}} in {{files}}.",
@@ -343,13 +364,13 @@
 		"label-delete-file": "Datei löschen",
 		"button-cancel": "Abbrechen",
 		"button-done": "Fertig",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "PDF wird vorbereitet..."
 	},
 	"plugins": {
-		"name": "Plugins",
+		"name": "Erweiterungen",
 		"file-explorer": {
 			"name": "Dateiexplorer",
-			"desc": "Zeige alle Dateien in Deiner Vault.",
+			"desc": "Zeige alle Dateien in Deinem Vault.",
 			"action-create-note": "Neue Notiz erstellen",
 			"action-create-note-in-new-pane": "Neue Notiz in neuem Fensterbereich erstellen",
 			"action-new-note": "Neue Notiz",
@@ -413,7 +434,7 @@
 			"option-choice-list-style-dash": "Bindestrich (-)",
 			"option-choice-list-style-asterisk": "Sternchen (*)",
 			"option-choice-list-style-numbered": "Nummeriert",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "Suche leeren"
 		},
 		"quick-switcher": {
 			"name": "Schnellauswahl",
@@ -482,9 +503,13 @@
 			"ellipsis": "..."
 		},
 		"tag-pane": {
-			"name": "Kategoriebereich",
-			"desc": "Zeigt alle Deine Kategorien und die Anzahl der Vorkommen.",
-			"label-no-tags": "Keine Kategorien gefunden."
+			"name": "Tag-Bereich",
+			"desc": "Zeigt alle Deine Tags und die Anzahl der Vorkommen.",
+			"label-no-tags": "Keine Tags gefunden.",
+			"label-sort-by-name-a-to-z": "Tag (A - Z)",
+			"label-sort-by-name-z-to-a": "Tag (Z - A)",
+			"label-sort-by-frequency-high-to-low": "Häufigkeit (hoch - niedrig)",
+			"label-sort-by-frequency-low-to-high": "Häufigkeit (niedrig - hoch)"
 		},
 		"page-preview": {
 			"name": "Seitenvorschau",
@@ -509,11 +534,12 @@
 			"setting-community-themes": "Community Themes",
 			"msg-fetching-themes": "Lade die Community Theme Dateien...",
 			"prompt-filter": "Filter...",
-			"label-dark-mode-only": "Nur dunkler Modus",
-			"label-light-mode-only": "Nur heller Modus",
+			"label-dark-theme-only": "Nur dunkle Themen",
+			"label-light-theme-only": "Nur helle Themen",
 			"label-preview": "Vorschau",
 			"label-stop-preview": "Vorschau beenden",
 			"label-use": "Aktivieren",
+			"label-override": "Überschreiben",
 			"label-visit-on-github": "Auf GitHub besuchen",
 			"msg-fetching-css": "Lade CSS...",
 			"theme-title": "\"{{name}}\" von {{author}}",
@@ -521,7 +547,7 @@
 			"msg-existing-theme": "Du hast bereits eine benutzerdefinierte CSS Datei \"obsidian.css\".",
 			"msg-confirm-override": "Bist Du Dir sicher, dass Du die Datei überschreiben willst? Du wirst die überschriebene CSS Datei dauerhaft verlieren. Bitte erstelle eine Sicherungsdatei falls notwendig.",
 			"msg-load-error": "Die Community Themes konnten nicht geladen werden. Bitte überprüfe Deine Netzwerkverbindung.",
-			"msg-successfully-used": "Du benutzt jetzt \"{{name}}\" von {{author}} als Dein benutzerdefiniertes Theme."
+			"msg-now-using-theme": "Du nutzt jetzt {{title}} als Dein CSS-Thema."
 		},
 		"command-palette": {
 			"name": "Befehlspalette",
@@ -547,9 +573,9 @@
 			"option-bear-highlight-fixer-description": "Konvertiert \"::highlight::\" zu \"==highlight==\".",
 			"zettelkasten-link-fixer": "Korrekturregel für Zettelkasten-Links",
 			"zettelkasten-link-fixer-description": "Korrigiert \"[[UID]]\" Links zu vollständigen \"[[UID File Name]]\".",
-			"zettelkasten-link-beautifier": "Zettelkasten Link Verschönerer",
+			"zettelkasten-link-beautifier": "Verschönerer für Zettelkasten Links",
 			"zettelkasten-link-beautifier-description": "Korrigiert \"[[UID]]\" Links und verschönert sie zu \"[[UID File Name|File Name]]\".",
-			"msg-all-files-warning": "Warnung: Das Importprogramm wird alle Dateien in der Vault konvertierten, nicht nur die aktuelle Datei.",
+			"msg-all-files-warning": "Warnung: Das Importprogramm wird alle Dateien im Vault konvertierten, nicht nur die aktuelle Datei.",
 			"msg-override-files-warning": "Deine Dateien werden überschrieben. Erstelle eine Sicherungskopie Deiner Dateien vor der Konvertierung.",
 			"label-start-conversion": "Starte Konvertierung",
 			"label-stop": "Stop",
@@ -618,7 +644,7 @@
 			"action-start": "Präsentation starten"
 		},
 		"audio-recorder": {
-			"name": "Audio-Recorder",
+			"name": "Audio-Rekorder",
 			"desc": "Ermöglicht die Aufzeichnung von Audio und das Speichern von Aufzeichnungen als Anhang.",
 			"action-start": "Audioaufzeichnung starten",
 			"action-stop": "Audioaufzeichnung stoppen",

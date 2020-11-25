@@ -2,7 +2,7 @@
 	"setting": {
 		"options": "Opțiuni",
 		"plugin": "Modul",
-		"builtin-plugins": "Module de nucleu",
+		"builtin-plugins": "Module integrate",
 		"plugin-options": "Opțiuni modul",
 		"folder-path-example-placeholder": "Exemplu: director 1/director 2",
 		"file-path-example-placeholder": "Exemplu: director/notă",
@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "Îți permite să pliezi tot conținutul aflat sub un titlu.",
 			"option-fold-indent": "Pliere indentare",
 			"option-fold-indent-description": "Permite să pliezi o porțiune cu aceeași indentare, cum ar fi listele.",
+			"option-default-view-mode": "Modul de vizualizare implicit",
+			"option-default-view-mode-description": "Modul implicit al fișierului se va deschide în.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Vizualizare",
 			"option-show-line-number": "Arată numărul liniei",
 			"option-show-line-number-description": "Afișează numărul liniilor de text.",
 			"option-use-tabs": "Folosește taburi",
@@ -38,7 +42,7 @@
 			"option-vim-key-bindings-description": "Îți permite să folosești combinațiile de taste din Vim în editor."
 		},
 		"file": {
-			"name": "Files & Links",
+			"name": "Fișiere și Legături",
 			"option-confirm-file-deletion": "Confirmă ștergerea fișierelor",
 			"option-confirm-file-deletion-description": "Vei primi o întrebare prin care confirmi ștergerea fișierelor.",
 			"option-delete-destination": "Fișiere șterse",
@@ -55,8 +59,8 @@
 			"option-choice-specified-folder": "În directorul menționat mai jos",
 			"option-new-file-folder-path": "Directorul în care vor fi create notele noi",
 			"option-new-file-folder-path-description": "Notele nou create vor apărea sub acest director. Setările din module vor suprascrie această opțiune.",
-			"option-use-wiki-links": "Folosețte legături [[Wikilinks]]",
-			"option-use-wiki-links-description": "Generează automat legături Wiki pentru [[legături]] și ![[imagini]] în loc de cele Markdown pentru legături și imagini. Dezactivează această opțiunea pentru a genera legături Markdown.",
+			"option-use-wiki-links": "Folosește legături [[Wiki]]",
+			"option-use-wiki-links-description": "Generează automat [[legături]] și ![[imagini]] Wiki în loc de cele Markdown. Dezactivează această opțiunea pentru a genera legături Markdown.",
 			"option-link-autocompleted-format": "Formatul legăturilor noi",
 			"option-link-autocompleted-format-description": "Ce fel de legături să insereze atunci când sunt auto-generate legături interne.",
 			"option-choice-shortest-linktext": "Calea cea mai scurtă atunci când e posibil",
@@ -67,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Aspect",
-			"option-base-mode": "Mod implicit",
-			"option-base-mode-description": "Schema de culori de bază a Obsidian.",
-			"dark-mode": "Mod întunecat",
-			"light-mode": "Mod luminos",
+			"option-base-theme": "Tema principală",
+			"option-base-theme-description": "Alege schema de culoare implicită a Obsidian.",
+			"dark-theme": "Întunecată",
+			"light-theme": "Luminoasă",
+			"option-use-obsidian-css": "Aplică un CSS personalizat",
+			"option-use-obsidian-css-description": "Citește și aplică „obsidian.css” în dosarul seifului. Aceasta este o setare veche, te rog să iei în considerare mutarea fișierului CSS personalizat în dosarul de mai jos.",
 			"option-community-themes": "Deschide temele create de comunitate",
 			"option-community-themes-description": "Previzualizează și folosește temele fantastice create de comunitate.",
-			"see-community-themes": "Vezi temele create de comunitate"
+			"button-browse-community-themes": "Răsfoiește",
+			"option-themes": "Teme",
+			"option-theme": "Temă",
+			"option-theme-description": "Ce temă comunitară vrei să folosești. Temele sunt stocate în \"vault/.obsidian/themes/\".",
+			"option-choice-none": "Niciuna",
+			"button-reload-themes": "Reîncarcă temele",
+			"msg-reloaded-themes": "Temele CSS personalizate reîncărcate.",
+			"button-open-themes-folder": "Deschide dosarul temelor",
+			"option-css-snippets": " Fragmente CSS",
+			"label-no-css-snippets-found": "Nu am găsit fragmente CSS în dosar.",
+			"button-reload-snippets": "Reîncarcă fragmentele",
+			"button-open-snippets-folder": "Deschide dosarul de fragmente",
+			"msg-reloaded-snippets": "Fragmentele CSS reîncărcate.",
+			"option-toggle-snippet-description": "Aplică fragmentul CSS la \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Combinații de taste",
@@ -229,6 +248,7 @@
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
+		"label-invalid-frontmatter": "Nu s-a putut analiza frontmatter-ul, te rog, verifică din nou sintaxa.",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",
@@ -253,7 +273,8 @@
 		},
 		"tooltip": {
 			"click-to-expand": "Click pentru a extinde",
-			"click-to-collapse": "Click pentru a restrânge"
+			"click-to-collapse": "Click pentru a restrânge",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "Versiunea Beta",
@@ -320,7 +341,7 @@
 		"edit-file-title": "Editează titlul fișierului",
 		"copy-path": "Copiază calea fișierului",
 		"copy-url": "Copiază URL-ul obsidian",
-		"export-pdf": "Exportă ca PDF"
+		"export-pdf": "Exportă ca fișier PDF"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
@@ -343,7 +364,7 @@
 		"label-delete-file": "Șterge fișier",
 		"button-cancel": "Anulează",
 		"button-done": "Gata",
-		"preparing-pdf": "Pregătesc fițierul PDF..."
+		"preparing-pdf": "Pregătesc fișierul PDF..."
 	},
 	"plugins": {
 		"name": "Module",
@@ -484,7 +505,11 @@
 		"tag-pane": {
 			"name": "Panoul cu etichete",
 			"desc": "Afișează toate etichetele tale împreună cu ocurența lor.",
-			"label-no-tags": "Nu au fost găsite etichete."
+			"label-no-tags": "Nu au fost găsite etichete.",
+			"label-sort-by-name-a-to-z": "Numele etichetei (A la Z)",
+			"label-sort-by-name-z-to-a": "Numele etichetei (Z la A)",
+			"label-sort-by-frequency-high-to-low": "Frecvența (mare la mică)",
+			"label-sort-by-frequency-low-to-high": "Frecvența (mică la mare)"
 		},
 		"page-preview": {
 			"name": "Previzualizare pagină",
@@ -509,11 +534,12 @@
 			"setting-community-themes": "Teme ale comunității",
 			"msg-fetching-themes": "Sunt preluate temele din comunitate...",
 			"prompt-filter": "Filtrează...",
-			"label-dark-mode-only": "Doar mod întunecat",
-			"label-light-mode-only": "Doar mod luminos",
+			"label-dark-theme-only": "Doar teme întunecate",
+			"label-light-theme-only": "Doar teme luminoase",
 			"label-preview": "Previzualizează",
 			"label-stop-preview": "Oprește previzualizarea",
 			"label-use": "Folosește",
+			"label-override": "Suprascrie",
 			"label-visit-on-github": "Vizitează pe GitHub",
 			"msg-fetching-css": "Preia CSS...",
 			"theme-title": "\"{{name}}\" de {{author}}",
@@ -521,7 +547,7 @@
 			"msg-existing-theme": "Ai deja fișierul CSS \"obsidian.css\" personalizat.",
 			"msg-confirm-override": "Vrei să îl suprascrii? Vei pierde fișierul CSS original. Te rog să faci o copie de rezervă dacă este necesar.",
 			"msg-load-error": "Nu au putut fi încărcate temele din comunitate, te rog să verifici conexiunea la internet.",
-			"msg-successfully-used": "Acum folosești \"{{name}}\" de {{author}} pe post de CSS personalizat."
+			"msg-now-using-theme": "Acum folosești {{title}} ca temă CSS."
 		},
 		"command-palette": {
 			"name": "Paleta de comenzi",

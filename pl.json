@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "Pozwala na zwijanie treści pod nagłówek.",
 			"option-fold-indent": "Zwijanie wcięć",
 			"option-fold-indent-description": "Pozwala na zwijanie wciętych fragmentów tekstu, na przykład list.",
+			"option-default-view-mode": "Default view mode",
+			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Preview",
 			"option-show-line-number": "Wyświetl numery wierszy",
 			"option-show-line-number-description": "Wyświetl numery wierszy na marginesie.",
 			"option-use-tabs": "Użyj klawisza Tab",
@@ -38,7 +42,7 @@
 			"option-vim-key-bindings-description": "Pozwala na używanie skrótów klawiszowych Vim w trybie edycji."
 		},
 		"file": {
-			"name": "Files & Links",
+			"name": "Pliki i linki",
 			"option-confirm-file-deletion": "Potwierdź usunięcie pliku",
 			"option-confirm-file-deletion-description": "Włącz aby wyświetlać okno dialogowe potwierdzenia usunięcia pliku.",
 			"option-delete-destination": "Usunięte pliki",
@@ -67,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Wygląd",
-			"option-base-mode": "Domyślny tryb",
-			"option-base-mode-description": "Domyślny schemat kolorów.",
-			"dark-mode": "Tryb ciemny",
-			"light-mode": "Tryb jasny",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Otwórz motywy stworzone przez społeczność",
 			"option-community-themes-description": "Przeglądaj i używaj motywów stworzonych przez społeczność użytkowników.",
-			"see-community-themes": "Zobacz motywy"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Klawisze skrótów",
@@ -229,6 +248,7 @@
 		"tooltip-restore-default-settings": "Przywróć ustawienia domyślne",
 		"copied": "{{item}} skopiowano do schowka",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Żaden plik nie jest otwarty",
 			"create-new-file": "Utwórz nowy plik",
@@ -253,7 +273,8 @@
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
-			"click-to-collapse": "Kliknij aby rozwinąć"
+			"click-to-collapse": "Kliknij aby rozwinąć",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "wersja Beta",
@@ -484,7 +505,11 @@
 		"tag-pane": {
 			"name": "Tagi",
 			"desc": "Wyświetla wszystkie tagi wraz z liczbą wystąpień.",
-			"label-no-tags": "Nie znaleziono tagów."
+			"label-no-tags": "Nie znaleziono tagów.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Podgląd stron",
@@ -509,11 +534,12 @@
 			"setting-community-themes": "Motywy stworzone przez społeczność",
 			"msg-fetching-themes": "Pobieranie motywów stworzonych przez społeczność...",
 			"prompt-filter": "Filtruj...",
-			"label-dark-mode-only": "Tylko tryb ciemny",
-			"label-light-mode-only": "Tylko tryb jasny",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Podgląd",
 			"label-stop-preview": "Anuluj podgląd",
 			"label-use": "Użyj",
+			"label-override": "Override",
 			"label-visit-on-github": "Odwiedź na portalu GitHub",
 			"msg-fetching-css": "Pobieranie motywu...",
 			"theme-title": "\"{{name}}\" autorstwa {{author}}",
@@ -521,7 +547,7 @@
 			"msg-existing-theme": "Już posiadasz plik \"obsidian.css\" z niestadardowym motywem CSS.",
 			"msg-confirm-override": "Czy na pewno chcesz go nadpisać? Spowoduje to utratę oryginalnej wersji pliku. Stwórz kopię zapasową, jeśli to konieczne.",
 			"msg-load-error": "Ładowanie motywów nie powiodło się, sprawdź połączenie z siecią.",
-			"msg-successfully-used": "Używasz niestandardowego motywu CSS \"{{name}}\" autorstwa {{author}}."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Paleta poleceń",

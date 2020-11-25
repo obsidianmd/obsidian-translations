@@ -28,6 +28,10 @@
 			"option-fold-heading-description": "Umožní schovat vše pod nadpisem.",
 			"option-fold-indent": "Srolovatelné odsazení",
 			"option-fold-indent-description": "Umožní schovat část stejného odsazení, třeba seznam.",
+			"option-default-view-mode": "Default view mode",
+			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-source": "Editor",
+			"option-default-view-mode-preview": "Preview",
 			"option-show-line-number": "Zobrazovat čísla řádků",
 			"option-show-line-number-description": "Zobrazení čísla řádku v levém žlábku.",
 			"option-use-tabs": "Používat odrážky",
@@ -67,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Vzhled",
-			"option-base-mode": "Základní režim",
-			"option-base-mode-description": "Základní barevné schéma Obsidianu.",
-			"dark-mode": "Dark mode",
-			"light-mode": "Light mode",
+			"option-base-theme": "Base theme",
+			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
+			"dark-theme": "Dark",
+			"light-theme": "Light",
+			"option-use-obsidian-css": "Apply custom CSS",
+			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
 			"option-community-themes": "Otevřít komunitní motivy",
 			"option-community-themes-description": "Prouzkoumejte a vyberte si z úžasných motivů vytvořených komunitou.",
-			"see-community-themes": "Podívat se na komunitní motivy"
+			"button-browse-community-themes": "Browse",
+			"option-themes": "Themes",
+			"option-theme": "Theme",
+			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-choice-none": "None",
+			"button-reload-themes": "Reload themes",
+			"msg-reloaded-themes": "Reloaded custom CSS themes.",
+			"button-open-themes-folder": "Open themes folder",
+			"option-css-snippets": "CSS snippets",
+			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"button-reload-snippets": "Reload snippets",
+			"button-open-snippets-folder": "Open snippets folder",
+			"msg-reloaded-snippets": "Reloaded CSS snippets.",
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Klávesové Zkratky",
@@ -229,6 +248,7 @@
 		"tooltip-restore-default-settings": "Obnovit výchozí nastavení",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
+		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Není otevřený žádný soubor",
 			"create-new-file": "Vytvořit nový soubor",
@@ -253,7 +273,8 @@
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknutím rozbalíte",
-			"click-to-collapse": "Kliknutím sbalíte"
+			"click-to-collapse": "Kliknutím sbalíte",
+			"alias": "Alias"
 		},
 		"start-screen": {
 			"label-beta-version": "Beta verze",
@@ -484,7 +505,11 @@
 		"tag-pane": {
 			"name": "Panel tagů",
 			"desc": "Zobrazuje všechny vaše tagy s množstvím výskytů.",
-			"label-no-tags": "Žádné tagy."
+			"label-no-tags": "Žádné tagy.",
+			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
+			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
+			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
 		},
 		"page-preview": {
 			"name": "Náhled poznámky",
@@ -509,11 +534,12 @@
 			"setting-community-themes": "Komunitní motivy",
 			"msg-fetching-themes": "Načítání komunitních motivů...",
 			"prompt-filter": "Filtr...",
-			"label-dark-mode-only": "Pouze tmavý režim",
-			"label-light-mode-only": "Pouze světlý režim",
+			"label-dark-theme-only": "Dark themes only",
+			"label-light-theme-only": "Light themes only",
 			"label-preview": "Náhled",
 			"label-stop-preview": "Vypnout náhled",
 			"label-use": "Použít",
+			"label-override": "Override",
 			"label-visit-on-github": "Zobrazit na GitHubu",
 			"msg-fetching-css": "Načítání CSS...",
 			"theme-title": "\"{{name}}\" od {{author}}",
@@ -521,7 +547,7 @@
 			"msg-existing-theme": "Již máte \"obsidian.css\" vlastní CSS soubor.",
 			"msg-confirm-override": "Jste si jisti že je chcete přepsat? Ztratíte originální CSS soubor. Udělejte si prosím zálohu pokud ji budete potřebovat.",
 			"msg-load-error": "Nepodařilo se načíct komunitní motivy, zkontrolujte své internetové připojení.",
-			"msg-successfully-used": "Nyní používáte \"{{name}}\" od {{author}} jako vlastní CSS."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
 		},
 		"command-palette": {
 			"name": "Paleta příkazů",
