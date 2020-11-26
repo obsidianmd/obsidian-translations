@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "Aspect",
-			"option-base-mode": "Mod implicit",
-			"option-base-mode-description": "Schema de culori de bază a Obsidian.",
-			"dark-mode": "Mod întunecat",
-			"light-mode": "Mod luminos",
+			"option-base-theme": "Tema principală",
+			"option-base-theme-description": "Alege schema de culoare implicită a Obsidian.",
+			"dark-theme": "Întunecată",
+			"light-theme": "Luminoasă",
+			"option-use-obsidian-css": "Aplică un CSS personalizat",
+			"option-use-obsidian-css-description": "Citește și aplică „obsidian.css” în dosarul seifului. Aceasta este o setare veche, te rog să iei în considerare mutarea fișierului CSS personalizat în dosarul de mai jos.",
 			"option-community-themes": "Deschide temele create de comunitate",
 			"option-community-themes-description": "Previzualizează și folosește temele fantastice create de comunitate.",
-			"see-community-themes": "Vezi temele create de comunitate"
+			"button-browse-community-themes": "Răsfoiește",
+			"option-themes": "Teme",
+			"option-theme": "Temă",
+			"option-theme-description": "Ce temă comunitară vrei să folosești. Temele sunt stocate în \"vault/.obsidian/themes/\".",
+			"option-choice-none": "Niciuna",
+			"button-reload-themes": "Reîncarcă temele",
+			"msg-reloaded-themes": "Temele CSS personalizate reîncărcate.",
+			"button-open-themes-folder": "Deschide dosarul temelor",
+			"option-css-snippets": " Fragmente CSS",
+			"label-no-css-snippets-found": "Nu am găsit fragmente CSS în dosar.",
+			"button-reload-snippets": "Reîncarcă fragmentele",
+			"button-open-snippets-folder": "Deschide dosarul de fragmente",
+			"msg-reloaded-snippets": "Fragmentele CSS reîncărcate.",
+			"option-toggle-snippet-description": "Aplică fragmentul CSS la \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Combinații de taste",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
+		"label-invalid-frontmatter": "Nu s-a putut analiza frontmatter-ul, te rog, verifică din nou sintaxa.",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "Panoul cu etichete",
 			"desc": "Afișează toate etichetele tale împreună cu ocurența lor.",
-			"label-no-tags": "Nu au fost găsite etichete."
+			"label-no-tags": "Nu au fost găsite etichete.",
+			"label-sort-by-name-a-to-z": "Numele etichetei (A la Z)",
+			"label-sort-by-name-z-to-a": "Numele etichetei (Z la A)",
+			"label-sort-by-frequency-high-to-low": "Frecvența (mare la mică)",
+			"label-sort-by-frequency-low-to-high": "Frecvența (mică la mare)"
 		},
 		"page-preview": {
 			"name": "Previzualizare pagină",
@@ -514,11 +534,12 @@
 			"setting-community-themes": "Teme ale comunității",
 			"msg-fetching-themes": "Sunt preluate temele din comunitate...",
 			"prompt-filter": "Filtrează...",
-			"label-dark-mode-only": "Doar mod întunecat",
-			"label-light-mode-only": "Doar mod luminos",
+			"label-dark-theme-only": "Doar teme întunecate",
+			"label-light-theme-only": "Doar teme luminoase",
 			"label-preview": "Previzualizează",
 			"label-stop-preview": "Oprește previzualizarea",
 			"label-use": "Folosește",
+			"label-override": "Suprascrie",
 			"label-visit-on-github": "Vizitează pe GitHub",
 			"msg-fetching-css": "Preia CSS...",
 			"theme-title": "\"{{name}}\" de {{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "Ai deja fișierul CSS \"obsidian.css\" personalizat.",
 			"msg-confirm-override": "Vrei să îl suprascrii? Vei pierde fișierul CSS original. Te rog să faci o copie de rezervă dacă este necesar.",
 			"msg-load-error": "Nu au putut fi încărcate temele din comunitate, te rog să verifici conexiunea la internet.",
-			"msg-successfully-used": "Acum folosești \"{{name}}\" de {{author}} pe post de CSS personalizat."
+			"msg-now-using-theme": "Acum folosești {{title}} ca temă CSS."
 		},
 		"command-palette": {
 			"name": "Paleta de comenzi",
