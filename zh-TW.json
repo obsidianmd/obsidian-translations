@@ -71,13 +71,28 @@
 		},
 		"appearance": {
 			"name": "外觀",
-			"option-base-mode": "基本主題",
-			"option-base-mode-description": "Obsidian的基本配色方案。",
-			"dark-mode": "黑暗主題",
-			"light-mode": "明亮主題",
+			"option-base-theme": "基本佈景主題",
+			"option-base-theme-description": "選擇Obsidian預設的配色方案。",
+			"dark-theme": "黑暗",
+			"light-theme": "明亮",
+			"option-use-obsidian-css": "套用自訂CSS",
+			"option-use-obsidian-css-description": "於此儲存庫資料夾讀取並套用“obsidian.css”，此為舊式設置，請考慮將你的自訂CSS搬移到下方的snippet資料夾。",
 			"option-community-themes": "查看社群主題",
 			"option-community-themes-description": "預覽、使用社群用戶建立的優秀主題。",
-			"see-community-themes": "瀏覽社群主題"
+			"button-browse-community-themes": "瀏覽",
+			"option-themes": "佈景主題",
+			"option-theme": "佈景主題",
+			"option-theme-description": "要使用那個社群主題，佈景主題存放於 \"儲存庫/.obsidian/themes/\"。",
+			"option-choice-none": "無",
+			"button-reload-themes": "重新載入佈景主題",
+			"msg-reloaded-themes": "自訂CSS佈景主題已重新載入。",
+			"button-open-themes-folder": "開啟佈景主題資料夾",
+			"option-css-snippets": "CSS 片段",
+			"label-no-css-snippets-found": "在snippets資料夾裡找不到CSS片段。",
+			"button-reload-snippets": "重新載入CSS片段",
+			"button-open-snippets-folder": "開啟CSS片段資料夾",
+			"msg-reloaded-snippets": "重新載入CSS片段。",
+			"option-toggle-snippet-description": "在 \"{{path}}\" 套用CSS片段。"
 		},
 		"hotkeys": {
 			"name": "快捷鍵",
@@ -233,6 +248,7 @@
 		"tooltip-restore-default-settings": "還原為預設設定",
 		"copied": "{{item}} 已複製到系統剪貼簿",
 		"url": "Url",
+		"label-invalid-frontmatter": "解析正文前頁失敗，請再次檢查其語法。",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
@@ -489,7 +505,11 @@
 		"tag-pane": {
 			"name": "標籤面板",
 			"desc": "顯示所有標籤及其出現的次數。",
-			"label-no-tags": "未發現標籤。"
+			"label-no-tags": "未發現標籤。",
+			"label-sort-by-name-a-to-z": "標籤名稱 (A to Z)",
+			"label-sort-by-name-z-to-a": "標籤名稱 (Z to A)",
+			"label-sort-by-frequency-high-to-low": "使用頻率 (高到低)",
+			"label-sort-by-frequency-low-to-high": "使用頻率 (低到高)"
 		},
 		"page-preview": {
 			"name": "頁面預覽",
@@ -510,15 +530,16 @@
 		},
 		"custom-css": {
 			"name": "自訂主題",
-			"desc": "載入並使用 \"Obsidian.css\" 主題。",
-			"setting-community-themes": "社群主題",
-			"msg-fetching-themes": "正在獲取社群主題資料...",
+			"desc": "載入並使用 \"Obsidian.css\" 佈景主題。",
+			"setting-community-themes": "社群佈景主題",
+			"msg-fetching-themes": "正在獲取社群佈景主題資料...",
 			"prompt-filter": "搜尋...",
-			"label-dark-mode-only": "僅限黑暗主題",
-			"label-light-mode-only": "僅限明亮主題",
+			"label-dark-theme-only": "只有黑暗主題",
+			"label-light-theme-only": "只有明亮主題",
 			"label-preview": "預覽",
 			"label-stop-preview": "停止預覽",
 			"label-use": "使用",
+			"label-override": "覆蓋",
 			"label-visit-on-github": "訪問 GitHub",
 			"msg-fetching-css": "正在獲取...",
 			"theme-title": "\"{{name}}\" 作者：{{author}}",
@@ -526,7 +547,7 @@
 			"msg-existing-theme": "您已經有了 \"Obsidian.css\" 自訂主題檔案。",
 			"msg-confirm-override": "您確定要覆蓋它嗎? 刪除這個主題檔案之前，請做好備份。",
 			"msg-load-error": "無法載入社群主題，請檢查您的網路。",
-			"msg-successfully-used": "您正在使用 {{author}} 編寫的 \"{{name}}\" 主題檔案。"
+			"msg-now-using-theme": "你的CSS佈景主題已變更為 {{title}}。"
 		},
 		"command-palette": {
 			"name": "命令面板",
