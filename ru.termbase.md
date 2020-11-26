@@ -18,6 +18,7 @@ catalyst|catalyst
 checklist|флажок
 collapse|свернуть
 command palette|палитра команд
+CSS theme|CSS-тема
 expand|развернуть
 file|заметка или файл
 fold|сворачивать
