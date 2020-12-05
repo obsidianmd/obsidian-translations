@@ -89,10 +89,11 @@
 			"button-open-themes-folder": "Deschide dosarul temelor",
 			"option-css-snippets": " Fragmente CSS",
 			"label-no-css-snippets-found": "Nu am găsit fragmente CSS în dosar.",
+			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
 			"button-reload-snippets": "Reîncarcă fragmentele",
 			"button-open-snippets-folder": "Deschide dosarul de fragmente",
 			"msg-reloaded-snippets": "Fragmentele CSS reîncărcate.",
-			"option-toggle-snippet-description": "Aplică fragmentul CSS la \"{{path}}\"."
+			"option-toggle-snippet-description": "Aplică fragmentul CSS din \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Combinații de taste",
@@ -206,7 +207,16 @@
 			"msg-reloaded-third-party-plugins": "Reîncarcă modulele terțe.",
 			"label-uninstall": "Dezinstalează",
 			"label-uninstall-plugin": "Dezinstalează modulul",
-			"label-uninstall-plugin-confirmation": "Sigur dorești să dezinstalezi acest modul? Această acțiune va șterge directorul modulului."
+			"label-uninstall-plugin-confirmation": "Sigur dorești să dezinstalezi acest modul? Această acțiune va șterge directorul modulului.",
+			"button-open-plugins-folder": "Open plugins folder",
+			"button-check-for-updates": "Check for updates",
+			"label-current-plugins": "Current plugins",
+			"label-currently-installed": "You currently have {{count}} plugin installed.",
+			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
+			"msg-no-updates-found": "No plugin updates found.",
+			"msg-updates-found": "Found {{count}} plugin to update.",
+			"msg-updates-found_plural": "Found {{count}} plugins to update.",
+			"msg-update-plugin": "Update to version {{version}}"
 		}
 	},
 	"editor": {
@@ -248,7 +258,6 @@
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
-		"label-invalid-frontmatter": "Nu s-a putut analiza frontmatter-ul, te rog, verifică din nou sintaxa.",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",
