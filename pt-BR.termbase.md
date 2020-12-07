@@ -10,9 +10,9 @@ Please keep the term list **alphabetically sorted**.
 
 |Original Term|pt-BR translation|
 |-|-|
-backlinks |
+backlinks | Link inverso
 build | Compilação
-catalyst |
+catalyst | Catalyst
 checklist | Caixa de marcação
 clipboard | Área de transferência
 collapse | Recolher
@@ -21,30 +21,30 @@ converter | Conversor
 custom | **-->** Customizado **ou** Personalizado (Customizado seria o "certo", mas é mais comum vermos o termo "Personalizado)
 expand | Expandir
 fixer | Conversor
-fold |
-frontmatter |
+fold | Tornar colapsável/Seção colapsável
+frontmatter | Pré-texto
 graph | Gráfico
-heading | **-->** Cabeçalho **ou** Títulos (Geralmente, títulos são únicos, mas o termo cabeçalho não é tão usual)
+heading | Seção
 ID | Identificação
 indent | Indentar/indentação
-link | Vincular/vínculo
+link | Inserir link/link
 Obsidian | Obsidian (Always capitalized)
 palette | Paleta
 pane | Painel
 plugin | Plugin
 preview | Visualizar/visualização
-quick switcher |
+quick switcher | Navegação rápida
 regex | Regex
 screenshot | Captura de tela
 sidebar | Barra lateral
-site| Site
-snippet |
+site | Site
+snippet | --> Extrato **ou** Fragmento (Ambos fazem sentido)
 starred | Favoritos/Favoritado
 supporter | Apoiador
 tag | etiqueta
-unlink | desvincular
+unlink | remover link
 vault | Cofre
 VIP | VIP
-wikilink |
+wikilink | wikilink
 workspace | Área de trabalho
 wrap | Quebra automática de linha
