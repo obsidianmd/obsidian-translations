@@ -85,14 +85,15 @@
 			"option-theme-description": "Ce temă comunitară vrei să folosești. Temele sunt stocate în \"vault/.obsidian/themes/\".",
 			"option-choice-none": "Niciuna",
 			"button-reload-themes": "Reîncarcă temele",
-			"msg-reloaded-themes": "Temele CSS personalizate reîncărcate.",
+			"msg-reloaded-themes": "Temele CSS personalizate au fost reîncărcate.",
 			"button-open-themes-folder": "Deschide dosarul temelor",
 			"option-css-snippets": " Fragmente CSS",
 			"label-no-css-snippets-found": "Nu am găsit fragmente CSS în dosar.",
+			"no-snippet-description": "Fragmentele CSS sunt în \"{{path}}\".",
 			"button-reload-snippets": "Reîncarcă fragmentele",
 			"button-open-snippets-folder": "Deschide dosarul de fragmente",
-			"msg-reloaded-snippets": "Fragmentele CSS reîncărcate.",
-			"option-toggle-snippet-description": "Aplică fragmentul CSS la \"{{path}}\"."
+			"msg-reloaded-snippets": "Fragmentele CSS au fost reîncărcate.",
+			"option-toggle-snippet-description": "Aplică fragmentul CSS din \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Combinații de taste",
@@ -206,7 +207,16 @@
 			"msg-reloaded-third-party-plugins": "Reîncarcă modulele terțe.",
 			"label-uninstall": "Dezinstalează",
 			"label-uninstall-plugin": "Dezinstalează modulul",
-			"label-uninstall-plugin-confirmation": "Sigur dorești să dezinstalezi acest modul? Această acțiune va șterge directorul modulului."
+			"label-uninstall-plugin-confirmation": "Sigur dorești să dezinstalezi acest modul? Această acțiune va șterge directorul modulului.",
+			"button-open-plugins-folder": "Deschide dosarul modulelor",
+			"button-check-for-updates": "Caută actualizări",
+			"label-current-plugins": "Modulele actuale",
+			"label-currently-installed": "Ai {{count}} modul instalat.",
+			"label-currently-installed_plural": "Ai {{count}} module instalate.",
+			"msg-no-updates-found": "Nu sunt actualizări ale modulelor.",
+			"msg-updates-found": "Am găsit actualizări pentru {{count}} modul.",
+			"msg-updates-found_plural": "Am găsit actualizări pentru {{count}} module.",
+			"msg-update-plugin": "Actualizează la versiunea {{version}}"
 		}
 	},
 	"editor": {
@@ -248,7 +258,6 @@
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
-		"label-invalid-frontmatter": "Nu s-a putut analiza frontmatter-ul, te rog, verifică din nou sintaxa.",
 		"empty-state": {
 			"no-file-open": "Niciun fișier nu este deschis",
 			"create-new-file": "Creează un nou fișier",

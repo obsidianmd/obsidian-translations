@@ -18,6 +18,7 @@ catalyst|catalyst
 checklist|флажок
 collapse|свернуть
 command palette|палитра команд
+CSS theme|CSS-тема
 expand|развернуть
 file|заметка или файл
 fold|сворачивать
@@ -44,6 +45,7 @@ repository|репозиторий
 screenshot|скриншот
 sidebar|панель
 site|сайт
+snippet | фрагмент
 starred|избранное
 supporter|саппортер
 to link|связать
