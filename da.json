@@ -89,6 +89,7 @@
 			"button-open-themes-folder": "Open themes folder",
 			"option-css-snippets": "CSS snippets",
 			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
 			"button-reload-snippets": "Reload snippets",
 			"button-open-snippets-folder": "Open snippets folder",
 			"msg-reloaded-snippets": "Reloaded CSS snippets.",
@@ -206,7 +207,16 @@
 			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
 			"label-uninstall": "Uninstall",
 			"label-uninstall-plugin": "Uninstall plugin",
-			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin.",
+			"button-open-plugins-folder": "Open plugins folder",
+			"button-check-for-updates": "Check for updates",
+			"label-current-plugins": "Current plugins",
+			"label-currently-installed": "You currently have {{count}} plugin installed.",
+			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
+			"msg-no-updates-found": "No plugin updates found.",
+			"msg-updates-found": "Found {{count}} plugin to update.",
+			"msg-updates-found_plural": "Found {{count}} plugins to update.",
+			"msg-update-plugin": "Update to version {{version}}"
 		}
 	},
 	"editor": {
@@ -248,7 +258,6 @@
 		"tooltip-restore-default-settings": "Restore default settings",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
-		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
@@ -378,6 +387,14 @@
 			"action-change-sort": "Change sort order",
 			"action-reveal-file": "Reveal file in file explorer",
 			"action-reveal-active-file": "Reveal active file in file explorer",
+			"command-move-file": "Move file to another folder",
+			"action-move-file": "Move file to...",
+			"action-move-folder": "Move folder to...",
+			"prompt-type-folder": "Type a folder",
+			"label-no-folders": "No folders found.",
+			"instruction-navigate": "to navigate",
+			"instruction-move": "to move",
+			"instruction-dismiss": "to dismiss",
 			"label-sort-a-to-z": "Sort by file name (A to Z)",
 			"label-sort-z-to-a": "Sort by file name (Z to A)",
 			"label-sort-new-to-old": "Sort by edit time (new to old)",
