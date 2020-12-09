@@ -34,7 +34,7 @@ ID | Identificação
 indent | Indentar/indentação
 link | Inserir/Criar link/link
 linked |
-node | elo
+node | nódulo
 note | nota
 Obsidian | Obsidian (Always capitalized)
 Obsidian Publish | Obsidian Publish  
