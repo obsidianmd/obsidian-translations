@@ -12,6 +12,8 @@ Please keep the term list **alphabetically sorted**.
 |-|-|
 alias | Apelido
 arrows | Setas
+auto-complete | Autocompletar/Autocompletamento
+auto-complete list | Lista de autocompletamento
 backlinks | Link inverso
 build | Compilação
 cache | cache
