@@ -12,6 +12,8 @@ Please keep the term list **alphabetically sorted**.
 |-|-|
 alias | Apelido
 arrows | Setas
+auto-complete | Autocompletar/Autocompletamento
+auto-complete list | Lista de autocompletamento
 backlinks | Link inverso
 build | Compilação
 cache | cache
@@ -34,7 +36,7 @@ ID | Identificação
 indent | Indentar/indentação
 link | Inserir/Criar link/link
 linked |
-node | elo
+node | nódulo
 note | nota
 Obsidian | Obsidian (Always capitalized)
 Obsidian Publish | Obsidian Publish  
