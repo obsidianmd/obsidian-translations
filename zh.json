@@ -36,8 +36,8 @@
 			"option-show-line-number-description": "在左侧显示行号。",
 			"option-use-tabs": "使用制表符",
 			"option-use-tabs-description": "开启后，Tab 键将使用制表符来完成缩进。关闭后 Tab 键将使用空格完成缩进。",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "制表符的大小",
+			"option-tab-size-description": "设置制表符等同的空格数。",
 			"option-line-wrap": "按栏宽换行",
 			"option-line-wrap-description": "自动为长段落换行，以适应当前栏宽，而无需左右拖动滚动条。",
 			"option-vim-key-bindings": "Vim 键绑定",
@@ -243,9 +243,9 @@
 			"add-to-dictionary": "添加到词典"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "导出为PDF",
+			"caption": "使用以下设置将 \"{{filename}}\" 导出为PDF。",
+			"setting-page-size": "页面尺寸",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
@@ -253,12 +253,12 @@
 			"setting-page-size-letter": "Letter",
 			"setting-page-size-tabloid": "Tabloid",
 			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-margin": "边距",
+			"setting-margin-default": "默认",
+			"setting-margin-minimal": "最小化",
+			"setting-margin-none": "无",
+			"setting-downscale-percent": "下降百分比",
+			"button-export-to-pdf": "导出"
 		}
 	},
 	"interface": {
@@ -330,12 +330,12 @@
 			"msg-error-remove-current-open-vault": "无法删除当前打开的库。"
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Insert link here",
-			"insert-links-here": "Insert links here",
-			"move-into-folder": "Move into \"{{folder}}\"",
-			"star-this-file": "Star this file",
-			"star-these-files": "Star these files",
-			"open-in-this-pane": "Open in this pane"
+			"insert-link-here": "在此处插入链接",
+			"insert-links-here": "在此处插入链接",
+			"move-into-folder": "移动至 \"{{folder}}\"",
+			"star-this-file": "为此文件打上星标",
+			"star-these-files": "为这些文件打上星标",
+			"open-in-this-pane": "在此面板中打开"
 		}
 	},
 	"commands": {
