@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "ガターに行番号を表示します。",
 			"option-use-tabs": "タブの使用",
 			"option-use-tabs-description": "\"Tab\"キーを押した際に、タブを使ってインデントできるようにします。スペースを使うにはこの設定をオフにしてください。",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "行の折り返し",
 			"option-line-wrap-description": "長い行を折り返してウィンドウに収め、左右にスクロールしなくてすむようにします。",
 			"option-vim-key-bindings": "Vimのキー設定",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "サジェスチョンがありません…",
 			"add-to-dictionary": "辞書に追加"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "指定の場所に保管庫を作成できませんでした。もういちど場所とパーミッションを確認してください。",
 			"msg-error-failed-to-open-vault": "開けませんでした。",
 			"msg-error-remove-current-open-vault": "現在開いている保管庫は削除できません。"
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {

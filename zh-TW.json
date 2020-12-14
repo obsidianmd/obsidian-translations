@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "在左側顯示行號。",
 			"option-use-tabs": "使用Tab鍵縮排",
 			"option-use-tabs-description": "按下Tab鍵可發送製表符來縮排。關閉此項後可發送空格來縮排。",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "文字自動換行",
 			"option-line-wrap-description": "文字過長時自動換行以避免水平捲動之操作。",
 			"option-vim-key-bindings": "Vim鍵綁定",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "沒有建議...",
 			"add-to-dictionary": "添加到詞典"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "指定的位置無法建立儲存庫，請確認存放位置與資料夾權限。",
 			"msg-error-failed-to-open-vault": "開檔失敗。",
 			"msg-error-remove-current-open-vault": "開啟中的儲存庫無法刪除。"
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
