@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Mostra il numero delle righe sul margine dell'editor.",
 			"option-use-tabs": "Utilizza le tabulazioni",
 			"option-use-tabs-description": "Utilizza le tabulazioni per indentare quando viene premuto il tasto \"Tab\". Disattivare per utilizzare gli spazi.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Ritorno a capo automatico",
 			"option-line-wrap-description": "Manda a capo le righe lunghe per adattarle alla finestra senza dover scorrere da sinistra verso destra.",
 			"option-vim-key-bindings": "Tasti di scelta rapida Vim",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Nessun suggerimento...",
 			"add-to-dictionary": "Aggiungi al dizionario"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Impossibile creare il vault nella posizione specificata. Controllare il percorso e i permessi.",
 			"msg-error-failed-to-open-vault": "Apertura non riuscita.",
 			"msg-error-remove-current-open-vault": "Impossibile rimuovere un vault attualmente in uso."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -387,14 +415,14 @@
 			"action-change-sort": "Ordinamento",
 			"action-reveal-file": "Mostra in Esplora risorse",
 			"action-reveal-active-file": "Mostra file attivo in Esplora risorse",
-			"command-move-file": "Move file to another folder",
-			"action-move-file": "Move file to...",
-			"action-move-folder": "Move folder to...",
-			"prompt-type-folder": "Type a folder",
-			"label-no-folders": "No folders found.",
-			"instruction-navigate": "to navigate",
-			"instruction-move": "to move",
-			"instruction-dismiss": "to dismiss",
+			"command-move-file": "Sposta file in un'altra cartella",
+			"action-move-file": "Sposta file in...",
+			"action-move-folder": "Sposta cartella in...",
+			"prompt-type-folder": "Digita una cartella",
+			"label-no-folders": "Nessuna cartella trovata.",
+			"instruction-navigate": "seleziona",
+			"instruction-move": "sposta",
+			"instruction-dismiss": "annulla",
 			"label-sort-a-to-z": "Nome file (dalla A alla Z)",
 			"label-sort-z-to-a": "Nome file (dalla Z alla A)",
 			"label-sort-new-to-old": "Data di modifica (più recente)",

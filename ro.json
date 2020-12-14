@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Afișează numărul liniilor de text.",
 			"option-use-tabs": "Folosește taburi",
 			"option-use-tabs-description": "Folosește taburi pentru a indenta atunci când apeși tasta \"Tab\". Setează pe \"oprit\" pentru a folosi spații.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Încadrare rânduri",
 			"option-line-wrap-description": "Încadrează rândurile lungi astfel încât să încapă în fereastră, fără a fi nevoie să derulezi de la stânga la dreapta.",
 			"option-vim-key-bindings": "Scurtături Vim",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Nicio sugestie...",
 			"add-to-dictionary": "Adaugă la dicționar"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Nu s-a putut creea seiful la acea destinație. Te rog verifică de două ori destinația și permisiunea.",
 			"msg-error-failed-to-open-vault": "Eroare la deschidere.",
 			"msg-error-remove-current-open-vault": "Nu se poate elimina un seif deschis."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -387,14 +415,14 @@
 			"action-change-sort": "Schimbă ordinea de sortare",
 			"action-reveal-file": "Arată fișier în explorator",
 			"action-reveal-active-file": "Arată fișierul activ în explorator",
-			"command-move-file": "Move file to another folder",
-			"action-move-file": "Move file to...",
-			"action-move-folder": "Move folder to...",
-			"prompt-type-folder": "Type a folder",
-			"label-no-folders": "No folders found.",
-			"instruction-navigate": "to navigate",
-			"instruction-move": "to move",
-			"instruction-dismiss": "to dismiss",
+			"command-move-file": "Mută fișierul în alt dosar",
+			"action-move-file": "Mută fițierul în...",
+			"action-move-folder": "Mută dosarul în...",
+			"prompt-type-folder": "Scrie numele dosarului",
+			"label-no-folders": "Nu am găsit dosare.",
+			"instruction-navigate": "pentru a răsfoi",
+			"instruction-move": "pentru a muta",
+			"instruction-dismiss": "pentru a înlătura",
 			"label-sort-a-to-z": "Sortează după numele fișierului (de la A la Z)",
 			"label-sort-z-to-a": "Sortează după numele fișierului (de la Z la A)",
 			"label-sort-new-to-old": "Sortează dupa timpul editării (de la noi la vechi)",
