@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Toon regelnummer in de goot.",
 			"option-use-tabs": "Gebruik inspringen",
 			"option-use-tabs-description": "Gebruik inspringen om in te springen wanneer de\"Tab\"-toets gebruikt wordt. Schakel dit uit om spaties te gebruiken.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Regelterugloop",
 			"option-line-wrap-description": "Laat lange regels teruglopen zodat ze in het venster passen, zonder van links naar rechts te hoeven scrollen.",
 			"option-vim-key-bindings": "Vim-sneltoetsen",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Geen suggesties...",
 			"add-to-dictionary": "Toevoegen aan woordenboek"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
 			"msg-error-failed-to-open-vault": "Failed to open.",
 			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
