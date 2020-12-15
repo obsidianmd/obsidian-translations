@@ -36,8 +36,8 @@
 			"option-show-line-number-description": "ガターに行番号を表示します。",
 			"option-use-tabs": "タブの使用",
 			"option-use-tabs-description": "\"Tab\"キーを押した際に、タブを使ってインデントできるようにします。スペースを使うにはこの設定をオフにしてください。",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "タブの間隔",
+			"option-tab-size-description": "タブを表すスペースの個数を決定します。",
 			"option-line-wrap": "行の折り返し",
 			"option-line-wrap-description": "長い行を折り返してウィンドウに収め、左右にスクロールしなくてすむようにします。",
 			"option-vim-key-bindings": "Vimのキー設定",
@@ -64,12 +64,12 @@
 			"option-use-wiki-links": "[[ウィキリンク]]を使用",
 			"option-use-wiki-links-description": "Markdown形式のリンクやイメージではなく、[[リンク]]および![[イメージ]]形式のウィキリンクを自動生成します。このオプションをオフにすると、Markdown形式のリンクを生成します。",
 			"option-link-autocompleted-format": "新規作成するリンクの形式",
-			"option-link-autocompleted-format-description": "内部リンクを自動生成する際に、どの形式でリンクを張るか決めます。",
+			"option-link-autocompleted-format-description": "内部リンクを自動生成する際に、どの形式でリンクを作成するか決めます。",
 			"option-choice-shortest-linktext": "可能であれば最短経路",
 			"option-choice-relative-path": "ファイルに対する相対パス",
 			"option-choice-absolute-path": "保管庫内での絶対パス",
 			"option-attachment-folder-path": "添付ファイルフォルダのパス",
-			"option-attachment-folder-path-description": "新規作成された添付ファイルはこのフォルダに置かれます。ドラッグドロップやペーストで作られた画像や、音声の録音ファイルなどが含まれます。"
+			"option-attachment-folder-path-description": "新規作成された添付ファイルはこのフォルダに置かれます。ドラッグ&ドロップやペーストで作成された画像や、音声の録音ファイルなどが含まれます。"
 		},
 		"appearance": {
 			"name": "外観",
@@ -243,22 +243,22 @@
 			"add-to-dictionary": "辞書に追加"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "PDFにエクスポート",
+			"caption": "\"{{filename}}\"を以下の設定でPDFにエクスポートします。",
+			"setting-page-size": "ページサイズ",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
-			"setting-page-size-legal": "Legal",
-			"setting-page-size-letter": "Letter",
-			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-page-size-legal": "リーガル",
+			"setting-page-size-letter": "レター",
+			"setting-page-size-tabloid": "タブロイド",
+			"setting-landscape": "横向き",
+			"setting-margin": "余白",
+			"setting-margin-default": "デフォルト",
+			"setting-margin-minimal": "最小",
+			"setting-margin-none": "なし",
+			"setting-downscale-percent": "倍率",
+			"button-export-to-pdf": "PDFにエクスポート"
 		}
 	},
 	"interface": {
@@ -330,12 +330,12 @@
 			"msg-error-remove-current-open-vault": "現在開いている保管庫は削除できません。"
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Insert link here",
-			"insert-links-here": "Insert links here",
-			"move-into-folder": "Move into \"{{folder}}\"",
-			"star-this-file": "Star this file",
-			"star-these-files": "Star these files",
-			"open-in-this-pane": "Open in this pane"
+			"insert-link-here": "ここにリンクを挿入する",
+			"insert-links-here": "ここにリンクを挿入する",
+			"move-into-folder": "\"{{folder}}\"に移動させる",
+			"star-this-file": "このファイルにスターを付ける",
+			"star-these-files": "これらのファイルにスターを付ける",
+			"open-in-this-pane": "このペインで開く"
 		}
 	},
 	"commands": {
