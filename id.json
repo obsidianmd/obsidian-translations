@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Tampilkan nomor baris di tepian.",
 			"option-use-tabs": "Gunakan tab",
 			"option-use-tabs-description": "Gunakan tab untuk menginden ketika menekan \"Tab\". Matikan untuk menggunakan spasi.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Pembungkusan teks",
 			"option-line-wrap-description": "Bungkus panjang baris teks agar sesuai dengan ukuran jendela, tanpa harus menggulir dari kiri ke kanan.",
 			"option-vim-key-bindings": "Vim key bindings",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Tidak ada saran...",
 			"add-to-dictionary": "Masukkan ke kamus"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Tidak dapat membuat vault di lokasi yang dipilih. Periksa kembali lokasi dan perizinan.",
 			"msg-error-failed-to-open-vault": "Gagal membuka.",
 			"msg-error-remove-current-open-vault": "Tidak dapat menghapus vault yang sekarang terbuka."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
