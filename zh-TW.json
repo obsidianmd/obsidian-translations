@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "在左側顯示行號。",
 			"option-use-tabs": "使用Tab鍵縮排",
 			"option-use-tabs-description": "按下Tab鍵可發送製表符來縮排。關閉此項後可發送空格來縮排。",
+			"option-tab-size": "Tab大小",
+			"option-tab-size-description": "一個Tab等於幾個空白。",
 			"option-line-wrap": "文字自動換行",
 			"option-line-wrap-description": "文字過長時自動換行以避免水平捲動之操作。",
 			"option-vim-key-bindings": "Vim鍵綁定",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "沒有建議...",
 			"add-to-dictionary": "添加到詞典"
+		},
+		"print-modal": {
+			"title": "匯出成PDF",
+			"caption": "以下列設定匯出 \"{{filename}}\" 為PDF。",
+			"setting-page-size": "紙張大小",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "橫向",
+			"setting-margin": "邊界",
+			"setting-margin-default": "預設",
+			"setting-margin-minimal": "最小",
+			"setting-margin-none": "無",
+			"setting-downscale-percent": "縮小百分比",
+			"button-export-to-pdf": "匯出成PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "指定的位置無法建立儲存庫，請確認存放位置與資料夾權限。",
 			"msg-error-failed-to-open-vault": "開檔失敗。",
 			"msg-error-remove-current-open-vault": "開啟中的儲存庫無法刪除。"
+		},
+		"drag-and-drop": {
+			"insert-link-here": "在此插入連結",
+			"insert-links-here": "在此插入連結",
+			"move-into-folder": "搬移至 \"{{folder}}\"",
+			"star-this-file": "本檔案加入最愛",
+			"star-these-files": "這些檔案加入最愛",
+			"open-in-this-pane": "於本面板開啟"
 		}
 	},
 	"commands": {
