@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Zobrazení čísla řádku v levém žlábku.",
 			"option-use-tabs": "Používat odrážky",
 			"option-use-tabs-description": "Použije odrážky při odsazení pomocí klávesy \"Tab\". Chcete-li používat mezery, nechte tuto možnost vypnutou.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Zalomení řádku",
 			"option-line-wrap-description": "Zalomení dlouhých řádků, aby se vešli do okna, takže nebude třeba scrollovat zleva do prava.",
 			"option-vim-key-bindings": "Vim klávesové zkrtaky",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Žádné návrhy...",
 			"add-to-dictionary": "Přidat do slovníku"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Trezor se nepodařilo vytvořit ve zvoleném umístění. Znovu zkontrolujte umístění a oprávnění.",
 			"msg-error-failed-to-open-vault": "Trezor se nepodařilo otevřít.",
 			"msg-error-remove-current-open-vault": "Nelze smazat právě otevřený trezor."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
