@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Show line number in the gutter.",
 			"option-use-tabs": "Use tabs",
 			"option-use-tabs-description": "Use tabs to indent when pressing the \"Tab\" key. Set this to off to use spaces.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Line wrap",
 			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Vim key bindings",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "No suggestions...",
 			"add-to-dictionary": "Add to dictionary"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
 			"msg-error-failed-to-open-vault": "Failed to open.",
 			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -387,6 +415,14 @@
 			"action-change-sort": "Change sort order",
 			"action-reveal-file": "Reveal file in file explorer",
 			"action-reveal-active-file": "Reveal active file in file explorer",
+			"command-move-file": "Move file to another folder",
+			"action-move-file": "Move file to...",
+			"action-move-folder": "Move folder to...",
+			"prompt-type-folder": "Type a folder",
+			"label-no-folders": "No folders found.",
+			"instruction-navigate": "to navigate",
+			"instruction-move": "to move",
+			"instruction-dismiss": "to dismiss",
 			"label-sort-a-to-z": "Sort by file name (A to Z)",
 			"label-sort-z-to-a": "Sort by file name (Z to A)",
 			"label-sort-new-to-old": "Sort by edit time (new to old)",

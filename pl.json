@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Wyświetl numery wierszy na marginesie.",
 			"option-use-tabs": "Użyj klawisza Tab",
 			"option-use-tabs-description": "Użyj klawisza \"Tab\" aby wstawić wcięcie. Wyłącz aby używać spacji.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Zawijaj tekst",
 			"option-line-wrap-description": "Zawijaj długie wiersze aby mieściły się w oknie bez konieczności przewijania okna w poziomie.",
 			"option-vim-key-bindings": "Skróty klawiszowe Vim",
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Brak sugestii...",
 			"add-to-dictionary": "Dodaj do słownika"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Próba utworzenia schowka we wskazanej lokalizacji nie powiodła się. Sprawdź lokalizację i uprawnienia dostępu.",
 			"msg-error-failed-to-open-vault": "Próba otwarcia schowka nie powiodła się.",
 			"msg-error-remove-current-open-vault": "Nie można usunąć obecnie otwartego schowka."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -387,6 +415,14 @@
 			"action-change-sort": "Sortuj",
 			"action-reveal-file": "Pokaż plik w przeglądarce plików",
 			"action-reveal-active-file": "Pokaż obecnie otwarty plik w przeglądarce plików",
+			"command-move-file": "Move file to another folder",
+			"action-move-file": "Move file to...",
+			"action-move-folder": "Move folder to...",
+			"prompt-type-folder": "Type a folder",
+			"label-no-folders": "No folders found.",
+			"instruction-navigate": "to navigate",
+			"instruction-move": "to move",
+			"instruction-dismiss": "to dismiss",
 			"label-sort-a-to-z": "Sortuj wg nazwy (A do Z)",
 			"label-sort-z-to-a": "Sortuj wg nazwy (Z do A)",
 			"label-sort-new-to-old": "Sortuj wg czasu edycji (od najnowszych)",

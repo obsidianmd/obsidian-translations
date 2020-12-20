@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Affiche la numérotation de ligne dans la marge.",
 			"option-use-tabs": "Utiliser des tabulations",
 			"option-use-tabs-description": "Utilise des tabulations pour indenter lorsque avec la touche \"Tab\". Désactiver cette option pour utiliser des espaces.",
+			"option-tab-size": "Taille de la tabulation",
+			"option-tab-size-description": "Nombre d'espaces auquel une tabulation équivaut.",
 			"option-line-wrap": "Renvoi automatique à la ligne",
 			"option-line-wrap-description": "Renvoi automatiquement à la ligne quand la taille d'une ligne dépasse la largeur de la fenêtre.",
 			"option-vim-key-bindings": "Raccourcis clavier Vim",
@@ -79,7 +81,7 @@
 			"option-use-obsidian-css-description": "Lit et applique «obsidian.css» à partir de la racine du coffre. Il s'agit d'un ancien paramètre, veuillez envisager de déplacer votre fichier CSS personnalisé vers le dossier d'extraits de code ci-dessous.",
 			"option-community-themes": "Ouvrir les thèmes communautaires",
 			"option-community-themes-description": "Prévisualiser et utiliser des thèmes incroyables créés par la communauté.",
-			"button-browse-community-themes": "Feuilleter",
+			"button-browse-community-themes": "Parcourir",
 			"option-themes": "Thèmes",
 			"option-theme": "Thème",
 			"option-theme-description": "Quel thème de communauté utiliser. Les thèmes sont stockés dans \"coffre/.obsidian/themes/\".",
@@ -89,7 +91,7 @@
 			"button-open-themes-folder": "Ouvrir le dossier des thèmes",
 			"option-css-snippets": "Extraits CSS",
 			"label-no-css-snippets-found": "Aucun extrait de code CSS trouvé dans le dossier des extraits de code.",
-			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
+			"no-snippet-description": "Les extraits CSS sont stockés dans \"{{path}}\".",
 			"button-reload-snippets": "Recharger les extraits",
 			"button-open-snippets-folder": "Ouvrir le dossier des extraits de code",
 			"msg-reloaded-snippets": "Extraits CSS rechargés.",
@@ -207,16 +209,16 @@
 			"msg-reloaded-third-party-plugins": "Plugins tiers rechargés.",
 			"label-uninstall": "Désinstaller",
 			"label-uninstall-plugin": "Désinstaller le plugin",
-			"label-uninstall-plugin-confirmation": "Êtes-vous sûr de vouloir désinstaller ce plugin ? Cela supprimera le aussi dossier du plugin.",
-			"button-open-plugins-folder": "Open plugins folder",
-			"button-check-for-updates": "Check for updates",
-			"label-current-plugins": "Current plugins",
-			"label-currently-installed": "You currently have {{count}} plugin installed.",
-			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
-			"msg-no-updates-found": "No plugin updates found.",
-			"msg-updates-found": "Found {{count}} plugin to update.",
-			"msg-updates-found_plural": "Found {{count}} plugins to update.",
-			"msg-update-plugin": "Update to version {{version}}"
+			"label-uninstall-plugin-confirmation": "Êtes-vous sûr de vouloir désinstaller le plugin ? Cela supprimera aussi son dossier.",
+			"button-open-plugins-folder": "Ouvrir le dossier des plugins",
+			"button-check-for-updates": "Rechercher des mises à jour",
+			"label-current-plugins": "Plugins actuels",
+			"label-currently-installed": "Vous avez {{count}} plugin installé.",
+			"label-currently-installed_plural": "Vous avez {{count}} plugins installés.",
+			"msg-no-updates-found": "Aucune mise à jour de plugin trouvée.",
+			"msg-updates-found": "{{count}} plugin peut être mis à jour.",
+			"msg-updates-found_plural": "{{count}} plugins peuvent être mis à jour.",
+			"msg-update-plugin": "Mettre à jour vers la version {{version}}"
 		}
 	},
 	"editor": {
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Aucune suggestions...",
 			"add-to-dictionary": "Ajouter au dictionnaire"
+		},
+		"print-modal": {
+			"title": "Exporter au format PDF",
+			"caption": "Exporter \"{{filename}}\" au format PDF avec les réglages ci-dessous.",
+			"setting-page-size": "Format de la page",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal US",
+			"setting-page-size-letter": "Lettre US",
+			"setting-page-size-tabloid": "Tabloïd",
+			"setting-landscape": "Paysage",
+			"setting-margin": "Marge",
+			"setting-margin-default": "Défaut",
+			"setting-margin-minimal": "Minimale",
+			"setting-margin-none": "Aucune",
+			"setting-downscale-percent": "Mise à l'échelle",
+			"button-export-to-pdf": "Exporter au format PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Impossible de créer le projet à cet emplacement. Merci de vérifier l'emplacement et ses permissions d'accès.",
 			"msg-error-failed-to-open-vault": "Échec de l'ouverture.",
 			"msg-error-remove-current-open-vault": "Impossible de supprimer un projet en cours d'utilisation."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insérer le lien ici",
+			"insert-links-here": "Insérer des liens ici",
+			"move-into-folder": "Déplacer dans \"{{folder}}\"",
+			"star-this-file": "Ajouter aux favoris ce fichier",
+			"star-these-files": "Ajouter aux favoris ces fichiers",
+			"open-in-this-pane": "Ouvrir dans ce volet"
 		}
 	},
 	"commands": {
@@ -387,6 +415,14 @@
 			"action-change-sort": "Modifier l'ordre de tri",
 			"action-reveal-file": "Afficher le fichier dans l'explorateur de fichiers",
 			"action-reveal-active-file": "Afficher le fichier actif dans l'explorateur de fichiers",
+			"command-move-file": "Déplacer le fichier vers un autre dossier",
+			"action-move-file": "Déplacer le fichier vers...",
+			"action-move-folder": "Déplacer le dossier vers...",
+			"prompt-type-folder": "Saisir le nom d'un dossier",
+			"label-no-folders": "Aucun dossier trouvé.",
+			"instruction-navigate": "pour naviguer",
+			"instruction-move": "pour déplacer",
+			"instruction-dismiss": "pour annuler",
 			"label-sort-a-to-z": "Trier par nom de fichier (A à Z)",
 			"label-sort-z-to-a": "Trier par nom de fichier (Z à A)",
 			"label-sort-new-to-old": "Trier par date d'édition (nouveau à ancien)",
@@ -455,7 +491,7 @@
 			"instruction-create": "pour créer",
 			"instruction-dismiss": "pour annuler",
 			"label-no-note-create-new": "Aucune note trouvée. Appuyer sur Entrée pour en créer une nouvelle.",
-			"prompt-type-file-name": "Saisissez le fichier vers lequel basculer ou créer...",
+			"prompt-type-file-name": "Saisir le fichier vers lequel basculer ou créer...",
 			"label-enter-to-create": "Entrée pour créer"
 		},
 		"graph-view": {
@@ -541,7 +577,7 @@
 			"name": "CSS personnalisé",
 			"desc": "Lire \"obsidian.css\" dans le projet et l'appliquer.",
 			"setting-community-themes": "Thèmes communautaires",
-			"msg-fetching-themes": "Récupération des données des thèmes de la communauté...",
+			"msg-fetching-themes": "Récupération des thèmes de la communauté...",
 			"prompt-filter": "Filtrer...",
 			"label-dark-theme-only": "Thèmes sombres uniquement",
 			"label-light-theme-only": "Thèmes clairs uniquement",
@@ -555,7 +591,7 @@
 			"msg-override-theme": "Remplacer le CSS actuel",
 			"msg-existing-theme": "Il éxiste déjà un fichier CSS \"obsidian.css\" personnalisé.",
 			"msg-confirm-override": "Confirmer le remplacement ? Le fichier CSS d'origine sera perdu. Merci d'en faire une sauvegarde si nécessaire.",
-			"msg-load-error": "Impossible de charger les thèmes de la communauté, merci vérifier votre connexion internet.",
+			"msg-load-error": "Impossible de charger les thèmes de la communauté, merci vérifier la connexion internet.",
 			"msg-now-using-theme": "Vous utilisez maintenant {{title}} comme thème CSS."
 		},
 		"command-palette": {

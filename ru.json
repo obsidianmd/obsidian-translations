@@ -3,7 +3,7 @@
 		"options": "Настройки",
 		"plugin": "Плагины",
 		"builtin-plugins": "Основные плагины",
-		"plugin-options": "Другие плагины",
+		"plugin-options": "Плагины",
 		"folder-path-example-placeholder": "Пример: папка 1/папка 2",
 		"file-path-example-placeholder": "Пример: папка/заметка",
 		"editor": {
@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Добавляет нумерацию строк на полях.",
 			"option-use-tabs": "Использовать табуляцию",
 			"option-use-tabs-description": "Использовать табуляцию для отступов при нажатии клавиши \"Tab\". Отключите, чтобы вместо табуляции использовались символы пробела.",
+			"option-tab-size": "Ширина табуляции",
+			"option-tab-size-description": "Количество пробелов, которому соответствует табуляция.",
 			"option-line-wrap": "Переносить строки",
 			"option-line-wrap-description": "Переносить длинные строки, чтобы они умещались в области без необходимости горизонтальной прокрутки.",
 			"option-vim-key-bindings": "Использовать сочетания клавиш Vim",
@@ -202,21 +204,21 @@
 			"msg-installing-plugin": "Устанавливается плагин \"{{name}}\"...",
 			"msg-failed-to-install-plugin": "Не удалось установить плагин \"{{name}}\".",
 			"msg-successfully-installed-plugin": "Установлен плагин \"{{name}}\".",
-			"label-installed-plugins": "Установленные плагины",
+			"label-installed-plugins": "Управление плагинами",
 			"button-reload-plugins": "Перезагрузить плагины",
 			"msg-reloaded-third-party-plugins": "Сторонние плагины перезагружены.",
 			"label-uninstall": "Удалить",
 			"label-uninstall-plugin": "Удалить плагин",
 			"label-uninstall-plugin-confirmation": "Вы точно хотите удалить плагин? Это действие удалит папку плагина.",
-			"button-open-plugins-folder": "Open plugins folder",
-			"button-check-for-updates": "Check for updates",
-			"label-current-plugins": "Current plugins",
-			"label-currently-installed": "You currently have {{count}} plugin installed.",
-			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
-			"msg-no-updates-found": "No plugin updates found.",
-			"msg-updates-found": "Found {{count}} plugin to update.",
-			"msg-updates-found_plural": "Found {{count}} plugins to update.",
-			"msg-update-plugin": "Update to version {{version}}"
+			"button-open-plugins-folder": "Открыть папку с плагинами",
+			"button-check-for-updates": "Проверить обновления",
+			"label-current-plugins": "Установленные плагины",
+			"label-currently-installed": "Количество установленных плагинов: {{count}}",
+			"label-currently-installed_plural": "Количество установленных плагинов: {{count}}",
+			"msg-no-updates-found": "Обновления не найдены.",
+			"msg-updates-found": "Найдено обновлений для плагинов: {{count}}",
+			"msg-updates-found_plural": "Найдено обновлений для плагинов: {{count}}",
+			"msg-update-plugin": "Обновить до версии {{version}}"
 		}
 	},
 	"editor": {
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "Нет предложений...",
 			"add-to-dictionary": "Добавить в словарь"
+		},
+		"print-modal": {
+			"title": "Экспорт в PDF",
+			"caption": "Экспорт \"{{filename}}\" в PDF со следующими параметрами",
+			"setting-page-size": "Размер страницы",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Альбомная",
+			"setting-margin": "Отступ",
+			"setting-margin-default": "Обычный",
+			"setting-margin-minimal": "Минимальный",
+			"setting-margin-none": "Без отступа",
+			"setting-downscale-percent": "Масштабирование",
+			"button-export-to-pdf": "Экспорт в PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "Не удалось создать хранилище в указанном местоположении. Перепроверьте пути и права доступа.",
 			"msg-error-failed-to-open-vault": "Не удалось открыть.",
 			"msg-error-remove-current-open-vault": "Невозможно удалить открытое хранилище."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -349,7 +377,7 @@
 		"toggle-checklist": "Переключить состояние флажка",
 		"edit-file-title": "Редактировать заголовок файла",
 		"copy-path": "Скопировать путь к файлу",
-		"copy-url": "Скопировать obsidian url",
+		"copy-url": "Скопировать Obsidian URL",
 		"export-pdf": "Экспортировать в PDF"
 	},
 	"dialogue": {
@@ -371,7 +399,7 @@
 		"button-delete-do-not-ask-again": "Удалить и больше не спрашивать",
 		"label-existing-backlink": "Сейчас {{links}} указывают на эту заметку.",
 		"label-delete-file": "Удалить файл",
-		"button-cancel": "Отменить",
+		"button-cancel": "Отмена",
 		"button-done": "Готово",
 		"preparing-pdf": "Подготовка PDF..."
 	},
@@ -387,6 +415,14 @@
 			"action-change-sort": "Порядок сортировки",
 			"action-reveal-file": "Показать в файловом менеджере",
 			"action-reveal-active-file": "Показать текущий файл в файловом менеджере",
+			"command-move-file": "Переместить файл в другую папку",
+			"action-move-file": "Переместить файл в...",
+			"action-move-folder": "Переместить папку в...",
+			"prompt-type-folder": "Введите название папки",
+			"label-no-folders": "Папка с таким названием не найдена.",
+			"instruction-navigate": "навигация",
+			"instruction-move": "переместить",
+			"instruction-dismiss": "отмена",
 			"label-sort-a-to-z": "По имени файла (A -> Z)",
 			"label-sort-z-to-a": "По имени файла (Z -> A)",
 			"label-sort-new-to-old": "По времени последнего изменения (от новых к старым)",
@@ -564,7 +600,7 @@
 			"action-open": "Открыть палитру команд",
 			"instruction-navigate": "навигация",
 			"instruction-use": "использовать",
-			"instruction-dismiss": "отменить",
+			"instruction-dismiss": "отмена",
 			"label-no-commands": "Команда не найдена.",
 			"prompt-type-command": "Введите название команды..."
 		},
@@ -682,7 +718,7 @@
 			"option-template-time-format-description2": "Используйте конструкцию {{time:HH:mm}}, чтобы задать формат прямо в шаблоне.",
 			"instruction-navigate": "навигация",
 			"instruction-insert": "вставить шаблон",
-			"instruction-dismiss": "отменить",
+			"instruction-dismiss": "отмена",
 			"msg-no-templates-found": "Шаблоны не найдены",
 			"msg-fail-invalid-folder": "Не удалось отобразить шаблоны. Недопустимое имя папки шаблонов.",
 			"msg-fail-folder-not-found": "Не удалось отобразить шаблоны. Папка \"{{folderOption}}\" не найдена.",
@@ -695,7 +731,7 @@
 		"publish": {
 			"name": "Публикация",
 			"desc": "Публикуйте свои заметки с помощью Obsidian Publish.",
-			"action-publish-changes": "Опубликовать изменения",
+			"action-publish-changes": "Публикация изменений",
 			"label-no-internet-access": "Для публикации изменений требуется доступ к интернету",
 			"label-publish-service-description": "Obsidian Publish это дополнительный платный сервис для публикации заметок в интернет напрямую из Obsidian.",
 			"label-please-login": "Перед началом публикации войдите в свой аккаунт Obsidian или зарегистрируйте новый.",

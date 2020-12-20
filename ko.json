@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "줄 번호를 보여줍니다.",
 			"option-use-tabs": "탭 키 쓰기",
 			"option-use-tabs-description": "탭 키로 들여쓰기를 합니다. 띄어쓰기로 하고 싶으시다면 꺼주세요.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "줄 바꿈",
 			"option-line-wrap-description": "긴 줄들을 좌우 스크롤 할 필요 없이 창에 들어가도록 자동으로 줄을 바꿔줍니다",
 			"option-vim-key-bindings": "Vim 키 바인딩",
@@ -89,7 +91,7 @@
 			"button-open-themes-folder": "테마 폴더 열기",
 			"option-css-snippets": "CSS 스니펫",
 			"label-no-css-snippets-found": "스니펫 폴더에 CSS 스니펫이 없습니다.",
-			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
+			"no-snippet-description": "\"{{path}}\"에 CSS 스니펫이 저장됩니다.",
 			"button-reload-snippets": "스니펫 새로고침",
 			"button-open-snippets-folder": "스니펫 폴더열기",
 			"msg-reloaded-snippets": "CSS 스니펫 새로고침 완료.",
@@ -208,15 +210,15 @@
 			"label-uninstall": "삭제하기",
 			"label-uninstall-plugin": "플러그인 삭제하기",
 			"label-uninstall-plugin-confirmation": "정말로 플러그인을 삭제하시겠습니까? 삭제시 플러그인의 폴더가 삭제됩니다.",
-			"button-open-plugins-folder": "Open plugins folder",
-			"button-check-for-updates": "Check for updates",
-			"label-current-plugins": "Current plugins",
-			"label-currently-installed": "You currently have {{count}} plugin installed.",
-			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
-			"msg-no-updates-found": "No plugin updates found.",
-			"msg-updates-found": "Found {{count}} plugin to update.",
-			"msg-updates-found_plural": "Found {{count}} plugins to update.",
-			"msg-update-plugin": "Update to version {{version}}"
+			"button-open-plugins-folder": "플러그인 폴더 열기",
+			"button-check-for-updates": "업데이트 확인",
+			"label-current-plugins": "사용중인 플러그인",
+			"label-currently-installed": "{{count}}개의 프러그인들이 설치되어 있습니다.",
+			"label-currently-installed_plural": "{{count}}개의 프러그인들이 설치되어 있습니다.",
+			"msg-no-updates-found": "플러그인 업데이트가 없습니다.",
+			"msg-updates-found": "{{count}}개의 플러그인 업데이트가 있습니다.",
+			"msg-updates-found_plural": "{{count}}개의 플러그인 업데이트가 있습니다.",
+			"msg-update-plugin": "버전 {{version}}으로 업데이트 하기"
 		}
 	},
 	"editor": {
@@ -239,6 +241,24 @@
 		"spellcheck": {
 			"no-suggestion": "제안 단어가 없습니다...",
 			"add-to-dictionary": "사전에 추가"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -308,6 +328,14 @@
 			"msg-failed-to-create-vault-at-location": "경로에 보관함을 만드는데 실패했습니다. 경로와 권한을 다시 확인해주세요.",
 			"msg-error-failed-to-open-vault": "여는데 실패했습니다.",
 			"msg-error-remove-current-open-vault": "열려있는 보관함은 삭제하실 수 없습니다."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -387,6 +415,14 @@
 			"action-change-sort": "파일 정렬하기",
 			"action-reveal-file": "파일을 탐색기에서 열기",
 			"action-reveal-active-file": "활성화된 파일을 탐색기에서 열기",
+			"command-move-file": "다른 폴더로 파일 옮기기",
+			"action-move-file": "파일 옮기기",
+			"action-move-folder": "폴더 옮기기",
+			"prompt-type-folder": "폴더를 치세요",
+			"label-no-folders": "폴더를 찾지 못했습니다.",
+			"instruction-navigate": "이동하기",
+			"instruction-move": "옮기기",
+			"instruction-dismiss": "닫기",
 			"label-sort-a-to-z": "파일 이름 순서 (A ~ Z)",
 			"label-sort-z-to-a": "파일 이름 역순 (Z ~ A)",
 			"label-sort-new-to-old": "수정 시간 순서 (최신부터)",
