@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Combinații de taste",
 			"prompt-filter": "Filtrează...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Șterge combinația",
 			"label-waiting-for-hotkey-press": "Apasă o combinație de taste...",
 			"tooltip-restore-default": "Restaurează varianta implicită",
-			"tooltip-customize-command": "Modifică această comandă"
+			"tooltip-customize-command": "Modifică această comandă",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Despre",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Șterge legătura panoului",
 			"link-pane": "Creează legătură cu un panou...",
 			"delete-file": "Șterge fișier",
-			"open-in-new-pane": "Deschide într-un panou nou"
+			"open-in-new-pane": "Deschide într-un panou nou",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Click pentru a extinde",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Creează o copie",
 			"msg-invalid-characters": "Numele fișierului nu poate conține niciunul din următoarele caractere: ",
 			"msg-file-already-exists": "Există deja un fișier cu același nume",
-			"msg-empty-file-name": "Numele fișierului nu poate rămâne gol."
+			"msg-empty-file-name": "Numele fișierului nu poate rămâne gol.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Caută",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Potrivește calea fișierului: ",
 			"label-match-file-name": "Potrivește numele fișierului: ",
 			"label-match-content": "Potrivește în conținutul fișierului: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Potrivește eticheta: ",
 			"label-no-matches": "Nu au fost găsite rezultate.",
 			"matches-with-count": "... și încă {{count}} rezultat.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Numele etichetei (A la Z)",
 			"label-sort-by-name-z-to-a": "Numele etichetei (Z la A)",
 			"label-sort-by-frequency-high-to-low": "Frecvența (mare la mică)",
-			"label-sort-by-frequency-low-to-high": "Frecvența (mică la mare)"
+			"label-sort-by-frequency-low-to-high": "Frecvența (mică la mare)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Previzualizare pagină",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Alege culoarea implicită a siteului.",
 			"option-show-navigation": "Arată navigarea",
 			"option-show-navigation-description": "Afișează o listă cu toate paginile publicate în partea stângă a siteului.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Afișează graficul",
 			"option-show-graph-description": "Afișează un grafic local mic pe fiecare pagină.",
 			"option-show-outline": "Afișează cuprinsul",

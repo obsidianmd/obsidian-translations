@@ -36,8 +36,8 @@
 			"option-show-line-number-description": "在左侧显示行号。",
 			"option-use-tabs": "使用制表符",
 			"option-use-tabs-description": "开启后，Tab 键将使用制表符来完成缩进。关闭后 Tab 键将使用空格完成缩进。",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "制表符宽度",
+			"option-tab-size-description": "设置制表符等同的空格数。",
 			"option-line-wrap": "按栏宽换行",
 			"option-line-wrap-description": "自动为长段落换行，以适应当前栏宽，而无需左右拖动滚动条。",
 			"option-vim-key-bindings": "Vim 键绑定",
@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "快捷键",
 			"prompt-filter": "搜索...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "删除快捷键",
 			"label-waiting-for-hotkey-press": "按下快捷键...",
 			"tooltip-restore-default": "恢复默认",
-			"tooltip-customize-command": "自定义快捷键"
+			"tooltip-customize-command": "自定义快捷键",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "关于",
@@ -243,22 +246,22 @@
 			"add-to-dictionary": "添加到词典"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "导出为PDF",
+			"caption": "使用以下设置将 \"{{filename}}\" 导出为PDF。",
+			"setting-page-size": "页面尺寸",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
 			"setting-page-size-legal": "Legal",
 			"setting-page-size-letter": "Letter",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-landscape": "横向打印",
+			"setting-margin": "边距",
+			"setting-margin-default": "默认",
+			"setting-margin-minimal": "小",
+			"setting-margin-none": "无",
+			"setting-downscale-percent": "缩放百分比",
+			"button-export-to-pdf": "导出"
 		}
 	},
 	"interface": {
@@ -298,7 +301,8 @@
 			"unlink-pane": "解除同步",
 			"link-pane": "与其他面板同步",
 			"delete-file": "删除文件",
-			"open-in-new-pane": "在新面板中打开"
+			"open-in-new-pane": "在新面板中打开",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -330,12 +334,12 @@
 			"msg-error-remove-current-open-vault": "无法删除当前打开的库。"
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Insert link here",
-			"insert-links-here": "Insert links here",
-			"move-into-folder": "Move into \"{{folder}}\"",
-			"star-this-file": "Star this file",
-			"star-these-files": "Star these files",
-			"open-in-this-pane": "Open in this pane"
+			"insert-link-here": "在此处插入链接",
+			"insert-links-here": "在此处插入链接",
+			"move-into-folder": "移动至 \"{{folder}}\"",
+			"star-this-file": "为此文件打上星标",
+			"star-these-files": "为这些文件打上星标",
+			"open-in-this-pane": "在此面板中打开"
 		}
 	},
 	"commands": {
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "创建副本",
 			"msg-invalid-characters": "文件名不能包含下列字符: ",
 			"msg-file-already-exists": "已经存在一个同名文件",
-			"msg-empty-file-name": "文件名不能为空。"
+			"msg-empty-file-name": "文件名不能为空。",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "搜索",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "匹配文件路径: ",
 			"label-match-file-name": "匹配文件名: ",
 			"label-match-content": "匹配文件内容: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "匹配标签: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "标签名称 (A to Z)",
 			"label-sort-by-name-z-to-a": "标签名称 (Z to A)",
 			"label-sort-by-frequency-high-to-low": "使用频次 (high to low)",
-			"label-sort-by-frequency-low-to-high": "使用频次 (low to high)"
+			"label-sort-by-frequency-low-to-high": "使用频次 (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "页面预览",
@@ -763,6 +771,8 @@
 			"option-theme-description": "为您的网站选择默认的配色方案。",
 			"option-show-navigation": "显示导航",
 			"option-show-navigation-description": "在已发布网站的左侧显示所有已发布页面的列表。",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "显示局部关系图",
 			"option-show-graph-description": "在每个页面上显示一个小的局部关系图。",
 			"option-show-outline": "显示大纲",

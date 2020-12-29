@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Hurtigtaster",
 			"prompt-filter": "Filtrer...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Slett hurtigtast",
 			"label-waiting-for-hotkey-press": "Trykk hurtigtast...",
 			"tooltip-restore-default": "Tilbake til standard",
-			"tooltip-customize-command": "Endre hurtigtast"
+			"tooltip-customize-command": "Endre hurtigtast",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Om",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Opphev kobling",
 			"link-pane": "Koble til panel...",
 			"delete-file": "Slett fil",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klikk for å utvide",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Lag en kopi",
 			"msg-invalid-characters": "Filnavn kan ikke inneholde noen av de følgende tegnene: ",
 			"msg-file-already-exists": "Det finnes allerede en fil med det samme navnet",
-			"msg-empty-file-name": "Du må oppgi et filnavn."
+			"msg-empty-file-name": "Du må oppgi et filnavn.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Søk",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Søker etter søkesti: ",
 			"label-match-file-name": "Søker etter filnavn: ",
 			"label-match-content": "Søker etter innhold: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Søker etter tag: ",
 			"label-no-matches": "Ingen søkeresultater.",
 			"matches-with-count": "... og {{count}} søkeresultat til.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Forhåndsvisning av notat",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
 			"option-show-navigation-description": "Display a list of all published pages on the left side of your published site.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Show graph view",
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",
