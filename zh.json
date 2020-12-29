@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "快捷键",
 			"prompt-filter": "搜索...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "删除快捷键",
 			"label-waiting-for-hotkey-press": "按下快捷键...",
 			"tooltip-restore-default": "恢复默认",
-			"tooltip-customize-command": "自定义快捷键"
+			"tooltip-customize-command": "自定义快捷键",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "关于",
@@ -298,7 +301,8 @@
 			"unlink-pane": "解除同步",
 			"link-pane": "与其他面板同步",
 			"delete-file": "删除文件",
-			"open-in-new-pane": "在新面板中打开"
+			"open-in-new-pane": "在新面板中打开",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "创建副本",
 			"msg-invalid-characters": "文件名不能包含下列字符: ",
 			"msg-file-already-exists": "已经存在一个同名文件",
-			"msg-empty-file-name": "文件名不能为空。"
+			"msg-empty-file-name": "文件名不能为空。",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "搜索",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "匹配文件路径: ",
 			"label-match-file-name": "匹配文件名: ",
 			"label-match-content": "匹配文件内容: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "匹配标签: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "标签名称 (A to Z)",
 			"label-sort-by-name-z-to-a": "标签名称 (Z to A)",
 			"label-sort-by-frequency-high-to-low": "使用频次 (high to low)",
-			"label-sort-by-frequency-low-to-high": "使用频次 (low to high)"
+			"label-sort-by-frequency-low-to-high": "使用频次 (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "页面预览",
@@ -763,6 +771,8 @@
 			"option-theme-description": "为您的网站选择默认的配色方案。",
 			"option-show-navigation": "显示导航",
 			"option-show-navigation-description": "在已发布网站的左侧显示所有已发布页面的列表。",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "显示局部关系图",
 			"option-show-graph-description": "在每个页面上显示一个小的局部关系图。",
 			"option-show-outline": "显示大纲",

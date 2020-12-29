@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Raccourcis clavier",
 			"prompt-filter": "Filtrer...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Supprimer le raccourci clavier",
 			"label-waiting-for-hotkey-press": "Appuyer sur la touche de raccourci...",
 			"tooltip-restore-default": "Restaurer par défaut",
-			"tooltip-customize-command": "Personnaliser la commande"
+			"tooltip-customize-command": "Personnaliser la commande",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "À propos",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Dissocier le volet",
 			"link-pane": "Associer avec le volet...",
 			"delete-file": "Supprimer le fichier",
-			"open-in-new-pane": "Ouvrir dans un nouveau volet"
+			"open-in-new-pane": "Ouvrir dans un nouveau volet",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Faire une copie",
 			"msg-invalid-characters": "Le nom de fichier ne peut contenir aucun des caractères suivants : ",
 			"msg-file-already-exists": "Il y a déjà un fichier du même nom",
-			"msg-empty-file-name": "Le nom de fichier ne peut pas être vide."
+			"msg-empty-file-name": "Le nom de fichier ne peut pas être vide.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Rechercher",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Correspond au chemin d'accès au fichier : ",
 			"label-match-file-name": "Correspond au nom du fichier : ",
 			"label-match-content": "Correspond au contenu : ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Correspond au tag : ",
 			"label-no-matches": "Aucun résultat.",
 			"matches-with-count": "... et {{count}} autre résultat.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nom de tag (A à Z)",
 			"label-sort-by-name-z-to-a": "Nom de tag (Z à A)",
 			"label-sort-by-frequency-high-to-low": "Fréquence (Haute à Basse)",
-			"label-sort-by-frequency-low-to-high": "Fréquence (Basse à Haute)"
+			"label-sort-by-frequency-low-to-high": "Fréquence (Basse à Haute)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Aperçu de la page",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Choisir le jeu de couleurs par défaut pour votre site.",
 			"option-show-navigation": "Afficher la navigation",
 			"option-show-navigation-description": "Affiche une liste de toutes les pages publiées sur le côté gauche de votre site publié.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Afficher la vue graphique",
 			"option-show-graph-description": "Afficher un petit graphique local sur chaque page.",
 			"option-show-outline": "Afficher la table des matières",

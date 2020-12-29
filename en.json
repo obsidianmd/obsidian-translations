@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Hotkeys",
 			"prompt-filter": "Filter...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Delete hotkey",
 			"label-waiting-for-hotkey-press": "Press hotkey...",
 			"tooltip-restore-default": "Restore default",
-			"tooltip-customize-command": "Customize this command"
+			"tooltip-customize-command": "Customize this command",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "About",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Unlink pane",
 			"link-pane": "Link with pane...",
 			"delete-file": "Delete file",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Click to expand",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Make a copy",
 			"msg-invalid-characters": "File name cannot contain any of the following characters: ",
 			"msg-file-already-exists": "There's already a file with the same name",
-			"msg-empty-file-name": "File name cannot be empty."
+			"msg-empty-file-name": "File name cannot be empty.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Search",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Match file path: ",
 			"label-match-file-name": "Match file name: ",
 			"label-match-content": "Match file content: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Match tag: ",
 			"label-no-matches": "No matches found.",
 			"matches-with-count": "... and {{count}} more match.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Page preview",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
 			"option-show-navigation-description": "Display a list of all published pages on the left side of your published site.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Show graph view",
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",

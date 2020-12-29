@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Pintasan",
 			"prompt-filter": "Filter...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Hapus tombol pintasan",
 			"label-waiting-for-hotkey-press": "Tekan tombol pintasan...",
 			"tooltip-restore-default": "Pulihkan default",
-			"tooltip-customize-command": "Kustomisasi pintasan ini"
+			"tooltip-customize-command": "Kustomisasi pintasan ini",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Tentang",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Lepaskan hubungan panel",
 			"link-pane": "Hubungkan dengan panel...",
 			"delete-file": "Hapus file",
-			"open-in-new-pane": "Buka di panel baru"
+			"open-in-new-pane": "Buka di panel baru",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Buat salinan",
 			"msg-invalid-characters": "Nama file tidak boleh berisi salah satu diantara karakter berikut: ",
 			"msg-file-already-exists": "Sudah ada file dengan nama yang sama",
-			"msg-empty-file-name": "Nama file tidak boleh kosong."
+			"msg-empty-file-name": "Nama file tidak boleh kosong.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Pencarian",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Cocokkan jalur file: ",
 			"label-match-file-name": "Cocokkan nama file: ",
 			"label-match-content": "Cocokkan konten file: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Cocokkan tag: ",
 			"label-no-matches": "Tidak ditemukan kecocokan.",
 			"matches-with-count": "... dan {{count}} kecocokan.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nama tag (A ke Z)",
 			"label-sort-by-name-z-to-a": "Nama tag (Z ke A)",
 			"label-sort-by-frequency-high-to-low": "Frekuensi (tinggi ke rendah)",
-			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)"
+			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Pratinjau halaman",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Pilih skema warna default untuk situs Anda.",
 			"option-show-navigation": "Tampilkan navigasi",
 			"option-show-navigation-description": "Tampilkan daftar dari semua halaman di sisi kiri dari situs terpublikasi Anda.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Tampilkan tapilan grafik",
 			"option-show-graph-description": "Tampilkan grafik lokal kecil untuk setiap halaman.",
 			"option-show-outline": "Tampilkan daftar isi",

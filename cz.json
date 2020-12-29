@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Klávesové Zkratky",
 			"prompt-filter": "Filtrovat...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Smazat klávesovou zkratku",
 			"label-waiting-for-hotkey-press": "Stikněte klávesovou zkratku...",
 			"tooltip-restore-default": "Vrátit vychozí nastavení",
-			"tooltip-customize-command": "Přizpůsobte si tento příkaz"
+			"tooltip-customize-command": "Přizpůsobte si tento příkaz",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "O Obsidianu",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Odpojit panel",
 			"link-pane": "Propojit s panelem...",
 			"delete-file": "Smazat soubor",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknutím rozbalíte",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Vytvořit kopii",
 			"msg-invalid-characters": "Název souborů nemůže obsahovat žádný z nasledujících znaků: ",
 			"msg-file-already-exists": "Již existuje soubor se stejným názvem",
-			"msg-empty-file-name": "Název souboru nemůže být prázdný."
+			"msg-empty-file-name": "Název souboru nemůže být prázdný.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Hledat",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Shoduje se s cestou k souboru:",
 			"label-match-file-name": "Shoduje se s názevem souboru:",
 			"label-match-content": "Shoduje se s obsahem souboru:",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Shoduje se s štítkem:",
 			"label-no-matches": "Nebyly nalezeny žádné shody.",
 			"matches-with-count": "... a {{count}} další shoda.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Náhled poznámky",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Zvolte vychozí barevný motiv pro vaše stránky.",
 			"option-show-navigation": "Zobrazovat navigaci",
 			"option-show-navigation-description": "Zobrazit seznam všech publikovaných stránek na levé straně publikovaného webu.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Zobrazovat graf",
 			"option-show-graph-description": "Na každé stránce zobrazit malý lokální graf.",
 			"option-show-outline": "Zobrazovat tabulku obsahu",

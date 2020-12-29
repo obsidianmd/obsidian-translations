@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "快捷鍵",
 			"prompt-filter": "搜尋...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "刪除快捷鍵",
 			"label-waiting-for-hotkey-press": "按下快捷鍵...",
 			"tooltip-restore-default": "恢復預設",
-			"tooltip-customize-command": "自訂快捷鍵"
+			"tooltip-customize-command": "自訂快捷鍵",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "關於",
@@ -298,7 +301,8 @@
 			"unlink-pane": "取消面板連結",
 			"link-pane": "連結面板...",
 			"delete-file": "刪除檔案",
-			"open-in-new-pane": "開啟於新面板"
+			"open-in-new-pane": "開啟於新面板",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "建立副本",
 			"msg-invalid-characters": "檔案名不能包含下列字元: ",
 			"msg-file-already-exists": "已經存在一個同名檔案",
-			"msg-empty-file-name": "檔案名不能為空。"
+			"msg-empty-file-name": "檔案名不能為空。",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "搜尋",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "匹配檔案路徑: ",
 			"label-match-file-name": "匹配檔案名: ",
 			"label-match-content": "匹配檔案內容: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "匹配標籤: ",
 			"label-no-matches": "未找到匹配結果。",
 			"matches-with-count": "... 文中還有 {{count}} 處匹配。",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "標籤名稱 (A to Z)",
 			"label-sort-by-name-z-to-a": "標籤名稱 (Z to A)",
 			"label-sort-by-frequency-high-to-low": "使用頻率 (高到低)",
-			"label-sort-by-frequency-low-to-high": "使用頻率 (低到高)"
+			"label-sort-by-frequency-low-to-high": "使用頻率 (低到高)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "頁面預覽",
@@ -763,6 +771,8 @@
 			"option-theme-description": "選擇網站預設的顏色方案。",
 			"option-show-navigation": "顯示導覽",
 			"option-show-navigation-description": "在網站左側顯示所有已發佈頁面的清單",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "顯示關聯圖",
 			"option-show-graph-description": "在每個頁面顯示小型本地關聯圖。",
 			"option-show-outline": "顯示筆記目錄",
