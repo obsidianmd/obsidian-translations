@@ -28,16 +28,16 @@
 			"option-fold-heading-description": "제목, 헤더, 혹은 리스트 등을 접을수 있게 해줍니다.",
 			"option-fold-indent": "들여쓰기 접기",
 			"option-fold-indent-description": "목록과 같이 들여쓰기가 같은 내용을 접게 해줍니다.",
-			"option-default-view-mode": "Default view mode",
-			"option-default-view-mode-description": "The default mode a file gets opened in.",
-			"option-default-view-mode-source": "Editor",
-			"option-default-view-mode-preview": "Preview",
+			"option-default-view-mode": "기본 보기 모드",
+			"option-default-view-mode-description": "파일을 열 때 사용할 기본 보기 모드를 선택합니다.",
+			"option-default-view-mode-source": "편집 모드",
+			"option-default-view-mode-preview": "미리보기 모드",
 			"option-show-line-number": "줄 번호",
 			"option-show-line-number-description": "줄 번호를 보여줍니다.",
 			"option-use-tabs": "탭 키 쓰기",
 			"option-use-tabs-description": "탭 키로 들여쓰기를 합니다. 띄어쓰기로 하고 싶으시다면 꺼주세요.",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "탭 크기",
+			"option-tab-size-description": "탭 한개당 스페이스의 갯수",
 			"option-line-wrap": "줄 바꿈",
 			"option-line-wrap-description": "긴 줄들을 좌우 스크롤 할 필요 없이 창에 들어가도록 자동으로 줄을 바꿔줍니다",
 			"option-vim-key-bindings": "Vim 키 바인딩",
@@ -78,13 +78,13 @@
 			"dark-theme": "다크",
 			"light-theme": "라이트",
 			"option-use-obsidian-css": "커스텀 CSS 적용",
-			"option-use-obsidian-css-description": "보관함의 최상위 폴더에 있는 “obsidian.css”를 적용시킵니다. 레가시 설정입니다. 커스텀 css 파일을 아래의 스니펫 폴더에 옮기는 것을 추천합니다.",
-			"option-community-themes": "오픈 커뮤니티 테마",
+			"option-use-obsidian-css-description": "보관함의 최상위 폴더에 있는 “obsidian.css”를 적용시킵니다. 현재 지원이 중단된 설정입니다. obsidian.css 파일을 vault/.obisidan/snippets 폴더로 옮겨주세요.",
+			"option-community-themes": "공개된 커뮤니티 테마",
 			"option-community-themes-description": "커뮤니티에서 만든 테마들을 구경해보고 사용하세요.",
 			"button-browse-community-themes": "검색",
 			"option-themes": "테마",
 			"option-theme": "테마",
-			"option-theme-description": "사용할 커뮤티니 테마를 골라주세요. 테마들은 \"vault/.obsidian/themes/\"에 저장되어 있습니다.",
+			"option-theme-description": "사용할 커뮤니티 테마를 골라주세요. 테마들은 \"vault/.obsidian/themes/\"에 저장되어 있습니다.",
 			"option-choice-none": "없음",
 			"button-reload-themes": "테마 새로고침",
 			"msg-reloaded-themes": "CSS 테마 새로고침 완료.",
@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "단축키",
 			"prompt-filter": "검색...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "단축키 삭제",
 			"label-waiting-for-hotkey-press": "단축키를 누르세요...",
 			"tooltip-restore-default": "기본값으로 되돌리기",
-			"tooltip-customize-command": "단축키 바꾸기"
+			"tooltip-customize-command": "단축키 바꾸기",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "앱 정보",
@@ -133,7 +136,7 @@
 			"option-language": "언어",
 			"option-language-description": "언어 바꾸기.",
 			"option-insider-build": "내부 빌드 받기",
-			"option-insider-build-description": "자동 업데이트로 내부 빌드를 사용해봅니다. 내부 빌드들은 시험이 덜 되어 안정화가 덜 되어있습니다.",
+			"option-insider-build-description": "자동 업데이트로 내부 빌드를 사용해봅니다. 내부 빌드들은 불안정합니다.",
 			"label-license": "제품 키",
 			"label-your-commercial-license": "사용중인 상업용 제품 키: ",
 			"label-commercial-license-info": "회사: \"{{company}}\" , 사용자 수: {{seats}}, 유효기간: {{expiry}}.",
@@ -243,22 +246,22 @@
 			"add-to-dictionary": "사전에 추가"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "PDF로 변환하기",
+			"caption": "\"{{filename}}\"을 아래 설정에 따라 PDF로 변환하기",
+			"setting-page-size": "페이지 크기",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
-			"setting-page-size-legal": "Legal",
-			"setting-page-size-letter": "Letter",
-			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-page-size-legal": "리걸",
+			"setting-page-size-letter": "레터",
+			"setting-page-size-tabloid": "타블로이드",
+			"setting-landscape": "가로",
+			"setting-margin": "마진",
+			"setting-margin-default": "기본",
+			"setting-margin-minimal": "최소",
+			"setting-margin-none": "없음",
+			"setting-downscale-percent": "축소 %",
+			"button-export-to-pdf": "PDF로 변환"
 		}
 	},
 	"interface": {
@@ -298,7 +301,8 @@
 			"unlink-pane": "패널 링크 끊기",
 			"link-pane": "퍼널에 링크하기...",
 			"delete-file": "파일 삭제",
-			"open-in-new-pane": "새로운 패널에 열기"
+			"open-in-new-pane": "새로운 패널에 열기",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "복사본 만들기",
 			"msg-invalid-characters": "파일 이름에 다음 문자들을 사용할수 없습니다: ",
 			"msg-file-already-exists": "같은 이름의 파일이 이미 존재합니다",
-			"msg-empty-file-name": "파일 이름을 써주세요."
+			"msg-empty-file-name": "파일 이름을 써주세요.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "검색",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "파일 경로 검색: ",
 			"label-match-file-name": "파일 이름 검색: ",
 			"label-match-content": "검색 결과: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "태그 검색: ",
 			"label-no-matches": "검색 결과가 없습니다.",
 			"matches-with-count": "... 그리고 {{count}}개 더.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "태그 이름 (A ~ Z)",
 			"label-sort-by-name-z-to-a": "태그 이름 (Z ~ A)",
 			"label-sort-by-frequency-high-to-low": "빈도수 (높음 ~ 낮음)",
-			"label-sort-by-frequency-low-to-high": "빈도수 (낮음 ~ 높음)"
+			"label-sort-by-frequency-low-to-high": "빈도수 (낮음 ~ 높음)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "페이지 미리보기",
@@ -763,6 +771,8 @@
 			"option-theme-description": "사이트의 기본 색상을 골라주세요",
 			"option-show-navigation": "네비게이션 표시",
 			"option-show-navigation-description": "사이트의 옆에 출판된 페이지들을 모두 보여줍니다",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "그래프 보기",
 			"option-show-graph-description": "각 페이지에 작게 로컬 그래프를 보여줍니다",
 			"option-show-outline": "목차 보기",

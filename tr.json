@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Kısayollar",
 			"prompt-filter": "Filtrele...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Silme kısayolu",
 			"label-waiting-for-hotkey-press": "Kısayolu tuşla...",
 			"tooltip-restore-default": "Varsayılana geri dön",
-			"tooltip-customize-command": "Komutu kişiselleştir"
+			"tooltip-customize-command": "Komutu kişiselleştir",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Hakkında",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereye bağla...",
 			"delete-file": "Dosyayı sil",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Click to expand",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Kopyasını yarat",
 			"msg-invalid-characters": "Dosya adı bu karakterleri içeremez: ",
 			"msg-file-already-exists": "Aynı isimde bir dosya zaten var",
-			"msg-empty-file-name": "Dosya adı boş olamaz."
+			"msg-empty-file-name": "Dosya adı boş olamaz.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Ara",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Dosya yolunu uydur: ",
 			"label-match-file-name": "Dosya adını uydur: ",
 			"label-match-content": "Match file content: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Sonuç bulunamadı.",
 			"matches-with-count": "... ve {{count}} tane daha sonuc.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Page preview",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
 			"option-show-navigation-description": "Display a list of all published pages on the left side of your published site.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Show graph view",
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",
