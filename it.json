@@ -36,8 +36,8 @@
 			"option-show-line-number-description": "Mostra il numero delle righe sul margine dell'editor.",
 			"option-use-tabs": "Utilizza le tabulazioni",
 			"option-use-tabs-description": "Utilizza le tabulazioni per indentare quando viene premuto il tasto \"Tab\". Disattivare per utilizzare gli spazi.",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "Dimensione tabulazione",
+			"option-tab-size-description": "Numero di spazi da usare per la tabulazione.",
 			"option-line-wrap": "Ritorno a capo automatico",
 			"option-line-wrap-description": "Manda a capo le righe lunghe per adattarle alla finestra senza dover scorrere da sinistra verso destra.",
 			"option-vim-key-bindings": "Tasti di scelta rapida Vim",
@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
 			"prompt-filter": "Filtra...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Elimina tasto di scelta rapida",
 			"label-waiting-for-hotkey-press": "Premi tasti di scelta rapida...",
 			"tooltip-restore-default": "Ripristina predefinito",
-			"tooltip-customize-command": "Personalizza comando"
+			"tooltip-customize-command": "Personalizza comando",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Informazioni",
@@ -243,22 +246,22 @@
 			"add-to-dictionary": "Aggiungi al dizionario"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "Esporta in PDF",
+			"caption": "Esporta \"{{filename}}\" in PDF con le seguenti impostazioni.",
+			"setting-page-size": "Dimensione pagina",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
-			"setting-page-size-legal": "Legal",
-			"setting-page-size-letter": "Letter",
+			"setting-page-size-legal": "Legale",
+			"setting-page-size-letter": "Lettera",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-landscape": "Orizzontale",
+			"setting-margin": "Margine",
+			"setting-margin-default": "Normale",
+			"setting-margin-minimal": "Stretto",
+			"setting-margin-none": "Nessuno",
+			"setting-downscale-percent": "Riduzione in percentuale",
+			"button-export-to-pdf": "Esporta in PDF"
 		}
 	},
 	"interface": {
@@ -298,7 +301,8 @@
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con pannello...",
 			"delete-file": "Elimina file",
-			"open-in-new-pane": "Apri in nuovo pannello"
+			"open-in-new-pane": "Apri in nuovo pannello",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -330,12 +334,12 @@
 			"msg-error-remove-current-open-vault": "Impossibile rimuovere un vault attualmente in uso."
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Insert link here",
-			"insert-links-here": "Insert links here",
-			"move-into-folder": "Move into \"{{folder}}\"",
-			"star-this-file": "Star this file",
-			"star-these-files": "Star these files",
-			"open-in-this-pane": "Open in this pane"
+			"insert-link-here": "Inserisci collegamento qui",
+			"insert-links-here": "Inserisci collegamenti qui",
+			"move-into-folder": "Sposta in \"{{folder}}\"",
+			"star-this-file": "Aggiungi ai Preferiti",
+			"star-these-files": "Aggiungi ai Preferiti",
+			"open-in-this-pane": "Apri in questo pannello"
 		}
 	},
 	"commands": {
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Crea una copia",
 			"msg-invalid-characters": "Il nome del file non può contenere i seguenti caratteri: ",
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
-			"msg-empty-file-name": "Il nome del file non può essere vuoto."
+			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Ricerca",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Corrispondenza percorso file: ",
 			"label-match-file-name": "Corrispondenza nome file: ",
 			"label-match-content": "Corrispondenza contenuto file: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Corrispondenza tag: ",
 			"label-no-matches": "Nessun risultato trovato.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nome tag (dalla A alla Z)",
 			"label-sort-by-name-z-to-a": "Nome tag (dalla Z alla A)",
 			"label-sort-by-frequency-high-to-low": "Frequenza (decrescente)",
-			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)"
+			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Anteprima pagina",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Scegli la combinazione di colori predefinita per il sito.",
 			"option-show-navigation": "Mostra navigazione",
 			"option-show-navigation-description": "Visualizza un elenco di tutte le pagine pubblicate sul lato sinistro del tuo sito.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Mostra grafo",
 			"option-show-graph-description": "Visualizza un piccolo grafo locale su ogni pagina.",
 			"option-show-outline": "Mostra indice",

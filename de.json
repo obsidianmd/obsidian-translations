@@ -36,8 +36,8 @@
 			"option-show-line-number-description": "Zeigt Zeilennummern im Steg an.",
 			"option-use-tabs": "Nutze Tabs",
 			"option-use-tabs-description": "Nutzt Tabs für den Zeileneinzug, wenn die \"Tab\"-Taste gedrückt wird. Schalte dies aus, um Leerzeichen zu verwenden.",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "Länge der Tabs",
+			"option-tab-size-description": "Anzahl der Leerzeichen, die einem Tab entsprechen.",
 			"option-line-wrap": "Zeilenumbruch",
 			"option-line-wrap-description": "Aktiviert den Zeilenumbruch, damit lange Zeilen komplett angezeigt werden können, ohne scrollen zu müssen.",
 			"option-vim-key-bindings": "Vim-Tastenbindung",
@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Tastenkürzel",
 			"prompt-filter": "Filter...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Kürzel löschen",
 			"label-waiting-for-hotkey-press": "Tastenkürzel drücken...",
 			"tooltip-restore-default": "Standard wiederherstellen",
-			"tooltip-customize-command": "Eigenes Kürzel festlegen"
+			"tooltip-customize-command": "Eigenes Kürzel festlegen",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Über",
@@ -243,22 +246,22 @@
 			"add-to-dictionary": "In das Wörterbuch/Dictionary aufnehmen"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "Nach PDF exportieren",
+			"caption": "Exportiert \"{{filename}}\" nach PDF mit den folgenden Einstellungen.",
+			"setting-page-size": "Seitenformat",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
 			"setting-page-size-legal": "Legal",
-			"setting-page-size-letter": "Letter",
+			"setting-page-size-letter": "Brief (Letter)",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
+			"setting-landscape": "Querformat",
+			"setting-margin": "Rand",
+			"setting-margin-default": "Standard",
 			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-margin-none": "Kein",
+			"setting-downscale-percent": "Verkleinern (Prozent)",
+			"button-export-to-pdf": "Nach PDF exportieren"
 		}
 	},
 	"interface": {
@@ -298,7 +301,8 @@
 			"unlink-pane": "Link zu Fensterbereich lösen",
 			"link-pane": "Mit Fensterbereich verlinken...",
 			"delete-file": "Datei löschen",
-			"open-in-new-pane": "In neuem Fensterbereich öffnen"
+			"open-in-new-pane": "In neuem Fensterbereich öffnen",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -330,12 +334,12 @@
 			"msg-error-remove-current-open-vault": "Der Vault ist gerade geöffnet und kann nicht entfernt werden."
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Insert link here",
-			"insert-links-here": "Insert links here",
-			"move-into-folder": "Move into \"{{folder}}\"",
-			"star-this-file": "Star this file",
-			"star-these-files": "Star these files",
-			"open-in-this-pane": "Open in this pane"
+			"insert-link-here": "Link hier einfügen",
+			"insert-links-here": "Links hier einfügen",
+			"move-into-folder": "Nach \"{{folder}}\" verschieben",
+			"star-this-file": "Diese Datei mit Stern markieren",
+			"star-these-files": "Diese Dateien mit Stern markieren",
+			"open-in-this-pane": "Diesen Fensterbereich öffnen"
 		}
 	},
 	"commands": {
@@ -415,14 +419,14 @@
 			"action-change-sort": "Sortierreihenfolge ändern",
 			"action-reveal-file": "Zeige Datei im Dateiexplorer",
 			"action-reveal-active-file": "Zeige aktive Datei im Dateiexplorer",
-			"command-move-file": "Move file to another folder",
-			"action-move-file": "Move file to...",
-			"action-move-folder": "Move folder to...",
-			"prompt-type-folder": "Type a folder",
-			"label-no-folders": "No folders found.",
-			"instruction-navigate": "to navigate",
-			"instruction-move": "to move",
-			"instruction-dismiss": "to dismiss",
+			"command-move-file": "Datei in anderen Ordner verschieben",
+			"action-move-file": "Datei verschieben nach...",
+			"action-move-folder": "Ordner verschieben nach...",
+			"prompt-type-folder": "Ordnernamen eingeben",
+			"label-no-folders": "Keine Ordner gefunden.",
+			"instruction-navigate": "zum Navigieren",
+			"instruction-move": "zum Verschieben",
+			"instruction-dismiss": "zum Abbrechen",
 			"label-sort-a-to-z": "Nach Dateinamen sortieren (A bis Z)",
 			"label-sort-z-to-a": "Nach Dateinamen sortieren (Z bis A)",
 			"label-sort-new-to-old": "Nach Bearbeitungszeitpunkt sortieren (Neueste zuerst)",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Kopie erstellen",
 			"msg-invalid-characters": "Dateiname darf keines der folgenden Symbole enthalten: ",
 			"msg-file-already-exists": "Es existiert bereits eine Datei mit demselben Namen",
-			"msg-empty-file-name": "Der Dateiname darf nicht leer sein."
+			"msg-empty-file-name": "Der Dateiname darf nicht leer sein.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Suchen",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Dateipfad stimmt überein: ",
 			"label-match-file-name": "Dateiname stimmt überein: ",
 			"label-match-content": "Dateiinhalt stimmt überein: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Tag stimmt überein: ",
 			"label-no-matches": "Keine Übereinstimmungen gefunden.",
 			"matches-with-count": "... und {{count}} weitere Übereinstimmung.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag (A - Z)",
 			"label-sort-by-name-z-to-a": "Tag (Z - A)",
 			"label-sort-by-frequency-high-to-low": "Häufigkeit (hoch - niedrig)",
-			"label-sort-by-frequency-low-to-high": "Häufigkeit (niedrig - hoch)"
+			"label-sort-by-frequency-low-to-high": "Häufigkeit (niedrig - hoch)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Seitenvorschau",
@@ -566,17 +574,17 @@
 			"desc": "Ermöglicht das Kennzeichnen häufig benutzter Dateien und Suchen mit einem Stern.",
 			"action-toggle": "hinzufügen/entfernen des Sterns zu aktueller Datei",
 			"action-toggle-search": "hinzufügen/entfernen des Sterns zu aktueller Suche",
-			"action-star": "Stern hinzufügen",
+			"action-star": "Mit Stern markieren",
 			"action-unstar": "Stern entfernen",
 			"menu-opt-remove": "Entfernen",
-			"msg-successfully-starred": "Erfolgreich Stern hinzugefügt {{type}} \"{{title}}\".",
+			"msg-successfully-starred": "Erfolgreich mit Stern markiert {{type}} \"{{title}}\".",
 			"msg-removed-starred": "Mit Stern markierte {{type}} \"{{title}}\" entfernt.",
 			"msg-cannot-find-path": "Datei kann unter folgendem Pfad \"{{path}}\" nicht gefunden werden."
 		},
 		"custom-css": {
 			"name": "Benutzerdefiniertes CSS",
 			"desc": "Liest \"obsidian.css\" im Tresor und wendet es an.",
-			"setting-community-themes": "Community Themes",
+			"setting-community-themes": "Community Themen",
 			"msg-fetching-themes": "Lade die Community Theme Dateien...",
 			"prompt-filter": "Filter...",
 			"label-dark-theme-only": "Nur dunkle Themen",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Wähle ein Standard-Theme für Deine Seite.",
 			"option-show-navigation": "Navigation anzeigen",
 			"option-show-navigation-description": "Zeigt eine Liste aller Deiner veröffentlichten Seiten am linken Rand der Seiten.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Zeige Graphenansicht",
 			"option-show-graph-description": "Zeigt einen kleinen, lokalen Graphen auf jeder Seite an.",
 			"option-show-outline": "Zeige Inhaltsverzeichnis",

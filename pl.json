@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Klawisze skrótów",
 			"prompt-filter": "Filtruj...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Usuń klawisz skrótu",
 			"label-waiting-for-hotkey-press": "Wciśnij klawisz skrótu...",
 			"tooltip-restore-default": "Przywróć domyślne",
-			"tooltip-customize-command": "Dostosuj to polecenie"
+			"tooltip-customize-command": "Dostosuj to polecenie",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "O programie",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Usuń powiązanie z oknem",
 			"link-pane": "Powiąż z oknem...",
 			"delete-file": "Usuń plik",
-			"open-in-new-pane": "Otwórz w nowym oknie"
+			"open-in-new-pane": "Otwórz w nowym oknie",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Utwórz kopię",
 			"msg-invalid-characters": "Nazwa pliku nie może zawierać żadnego z podanych znaków: ",
 			"msg-file-already-exists": "Plik o takiej nazwie już istnieje",
-			"msg-empty-file-name": "Nazwa pliku nie może być pusta."
+			"msg-empty-file-name": "Nazwa pliku nie może być pusta.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Szukaj",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Wyszukiwana ścieżka pliku: ",
 			"label-match-file-name": "Wyszukiwana nazwa pliku: ",
 			"label-match-content": "Wyszukiwana treść pliku: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Wyszukiwany tag: ",
 			"label-no-matches": "Brak wyników.",
 			"matches-with-count": "... i {{count}} dodatkowych wystąpień.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Podgląd stron",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Wybierz domyślny motyw dla swojej strony.",
 			"option-show-navigation": "Pokaż nawigację",
 			"option-show-navigation-description": "Wyświetlaj listę wszystkich opublikowanych stron po lewej stronie.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Pokaż widok grafu",
 			"option-show-graph-description": "Wyświetlaj mały lokalny graf na każdej stronie.",
 			"option-show-outline": "Pokaż spis treści",
