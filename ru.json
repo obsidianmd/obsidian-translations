@@ -29,7 +29,7 @@
 			"option-fold-indent": "Сворачивать отступы",
 			"option-fold-indent-description": "Сворачивает текст с одинаковыми отступами, например списки.",
 			"option-default-view-mode": "Вид по умолчанию",
-			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-description": "По умолчанию файл открывается в выбранном режиме.",
 			"option-default-view-mode-source": "Редактор",
 			"option-default-view-mode-preview": "Просмотр",
 			"option-show-line-number": "Отображать номера строк",
@@ -100,13 +100,13 @@
 		"hotkeys": {
 			"name": "Сочетания клавиш",
 			"prompt-filter": "Фильтр...",
-			"tooltip-legacy": "Legacy hotkey",
+			"tooltip-legacy": "Устаревшее сочетание",
 			"tooltip-delete-hotkey": "Удалить сочетание клавиш",
 			"label-waiting-for-hotkey-press": "Нажмите сочетание клавиш...",
 			"tooltip-restore-default": "Восстановить значение по умолчанию",
 			"tooltip-customize-command": "Настроить эту команду",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Это сочетание конфликтует с командой \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Количество конфликтов этого сочетания с другими командами: {{count}}"
 		},
 		"about": {
 			"name": "О программе",
@@ -130,7 +130,7 @@
 			"button-check-for-updates": "Проверить обновления",
 			"option-auto-update": "Автоматические обновления",
 			"option-auto-update-description": "Проверять и скачивать доступные обновления автоматически.",
-			"option-open-help": "Помощь Obsidian",
+			"option-open-help": "Документация Obsidian",
 			"option-open-help-description": "Открывает справочную документацию.",
 			"button-open": "Открыть",
 			"option-language": "Язык",
@@ -301,8 +301,8 @@
 			"unlink-pane": "Отвязать",
 			"link-pane": "Связать с областью...",
 			"delete-file": "Удалить файл",
-			"open-in-new-pane": "Открыть в новой вкладке",
-			"copy-url": "Copy url"
+			"open-in-new-pane": "Открыть в новой области",
+			"copy-url": "Скопировать url"
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -334,12 +334,12 @@
 			"msg-error-remove-current-open-vault": "Невозможно удалить открытое хранилище."
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Вставьте сюда ссылку",
-			"insert-links-here": "Вставьте сюда ссылки",
+			"insert-link-here": "Вставить ссылку",
+			"insert-links-here": "Вставить ссылки",
 			"move-into-folder": "Переместить в \"{{folder}}\"",
 			"star-this-file": "Пометить этот файл",
 			"star-these-files": "Пометить эти файлы",
-			"open-in-this-pane": "Открыть в этой вкладке"
+			"open-in-this-pane": "Открыть в этой области"
 		}
 	},
 	"commands": {
@@ -442,8 +442,8 @@
 			"msg-invalid-characters": "Имя файла не должно содержать следующие символы: ",
 			"msg-file-already-exists": "Файл с таким именем уже есть",
 			"msg-empty-file-name": "Имя файла не может оставаться пустым.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "Время последнего изменения {{time}}",
+			"tooltip-created-time": "Время создания {{time}}"
 		},
 		"search": {
 			"name": "Поиск",
@@ -465,7 +465,7 @@
 			"label-match-file-path": "Совпадает с путем файла: ",
 			"label-match-file-name": "Совпадает с именем файла: ",
 			"label-match-content": "В содержимом файла: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "Совпадение в строке: ",
 			"label-match-tag": "Совпадает с тегом: ",
 			"label-no-matches": "Совпадений не найдено.",
 			"matches-with-count": "... и еще {{count}} совпадения.",
@@ -562,7 +562,7 @@
 			"label-sort-by-name-z-to-a": "По тегу (Я -> А)",
 			"label-sort-by-frequency-high-to-low": "По частоте (часто -> редко)",
 			"label-sort-by-frequency-low-to-high": "По частоте (редко -> часто)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "Отображать вложенные теги"
 		},
 		"page-preview": {
 			"name": "Предпросмотр страницы",
@@ -771,8 +771,8 @@
 			"option-theme-description": "Выберите цветовую тему оформления сайта.",
 			"option-show-navigation": "Отображение навигации",
 			"option-show-navigation-description": "Отображать в левой части список всех опубликованных страниц.",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "Отображение строки поиска",
+			"option-show-search-description": "Отображать строку поиска над навигацией, чтобы посетители могли искать по содержимому и заголовкам вашего сайта.",
 			"option-show-graph": "Отображение графа",
 			"option-show-graph-description": "Отображать маленький граф на каждой странице.",
 			"option-show-outline": "Отображение оглавления",
