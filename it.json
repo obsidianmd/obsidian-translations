@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Mostra il numero delle righe sul margine dell'editor.",
 			"option-use-tabs": "Utilizza le tabulazioni",
 			"option-use-tabs-description": "Utilizza le tabulazioni per indentare quando viene premuto il tasto \"Tab\". Disattivare per utilizzare gli spazi.",
+			"option-tab-size": "Dimensione tabulazione",
+			"option-tab-size-description": "Numero di spazi da usare per la tabulazione.",
 			"option-line-wrap": "Ritorno a capo automatico",
 			"option-line-wrap-description": "Manda a capo le righe lunghe per adattarle alla finestra senza dover scorrere da sinistra verso destra.",
 			"option-vim-key-bindings": "Tasti di scelta rapida Vim",
@@ -82,13 +84,14 @@
 			"button-browse-community-themes": "Sfoglia",
 			"option-themes": "Temi",
 			"option-theme": "Tema",
-			"option-theme-description": "Tema della comunità da utilizzare. I temi sono conservati in \"vault/.obsidian/themes/\".",
+			"option-theme-description": "Tema della comunità da utilizzare. I temi sono archiviati in \"vault/.obsidian/themes/\".",
 			"option-choice-none": "Nessuno",
 			"button-reload-themes": "Ricarica temi",
 			"msg-reloaded-themes": "Temi CSS personalizzati ricaricati.",
 			"button-open-themes-folder": "Apri cartella dei temi",
 			"option-css-snippets": "Snippet CSS",
 			"label-no-css-snippets-found": "Nessuno snippet CSS trovato nella cartella degli snippet.",
+			"no-snippet-description": "Gli Snippet CSS sono archiviati in \"{{path}}\".",
 			"button-reload-snippets": "Ricarica snippet",
 			"button-open-snippets-folder": "Apri cartella snippet",
 			"msg-reloaded-snippets": "Snippet CSS ricaricati.",
@@ -97,10 +100,13 @@
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
 			"prompt-filter": "Filtra...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Elimina tasto di scelta rapida",
 			"label-waiting-for-hotkey-press": "Premi tasti di scelta rapida...",
 			"tooltip-restore-default": "Ripristina predefinito",
-			"tooltip-customize-command": "Personalizza comando"
+			"tooltip-customize-command": "Personalizza comando",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Informazioni",
@@ -206,7 +212,16 @@
 			"msg-reloaded-third-party-plugins": "Plugin di terze parti ricaricati.",
 			"label-uninstall": "Disinstalla",
 			"label-uninstall-plugin": "Disinstallazione plugin",
-			"label-uninstall-plugin-confirmation": "Disinstallare questo plugin? La cartella del plugin verrà cancellata."
+			"label-uninstall-plugin-confirmation": "Disinstallare questo plugin? La cartella del plugin verrà cancellata.",
+			"button-open-plugins-folder": "Apri cartella dei plugin",
+			"button-check-for-updates": "Controlla aggiornamenti",
+			"label-current-plugins": "Plugin installati",
+			"label-currently-installed": "{{count}} plugin attualmente installato.",
+			"label-currently-installed_plural": "{{count}} plugin attualmente installati.",
+			"msg-no-updates-found": "Nessun aggiornamento trovato.",
+			"msg-updates-found": "{{count}} plugin da aggiornare.",
+			"msg-updates-found_plural": "{{count}} plugin da aggiornare.",
+			"msg-update-plugin": "Aggiorna alla versione {{version}}"
 		}
 	},
 	"editor": {
@@ -229,6 +244,24 @@
 		"spellcheck": {
 			"no-suggestion": "Nessun suggerimento...",
 			"add-to-dictionary": "Aggiungi al dizionario"
+		},
+		"print-modal": {
+			"title": "Esporta in PDF",
+			"caption": "Esporta \"{{filename}}\" in PDF con le seguenti impostazioni.",
+			"setting-page-size": "Dimensione pagina",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legale",
+			"setting-page-size-letter": "Lettera",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Orizzontale",
+			"setting-margin": "Margine",
+			"setting-margin-default": "Normale",
+			"setting-margin-minimal": "Stretto",
+			"setting-margin-none": "Nessuno",
+			"setting-downscale-percent": "Riduzione in percentuale",
+			"button-export-to-pdf": "Esporta in PDF"
 		}
 	},
 	"interface": {
@@ -248,7 +281,6 @@
 		"tooltip-restore-default-settings": "Ripristina impostazioni predefinite",
 		"copied": "{{item}} copiato negli appunti",
 		"url": "Url",
-		"label-invalid-frontmatter": "Impossibile analizzare il frontespizio, ricontrollare la sintassi.",
 		"empty-state": {
 			"no-file-open": "Nessun file aperto",
 			"create-new-file": "Crea nuovo file",
@@ -269,7 +301,8 @@
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con pannello...",
 			"delete-file": "Elimina file",
-			"open-in-new-pane": "Apri in nuovo pannello"
+			"open-in-new-pane": "Apri in nuovo pannello",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -299,6 +332,14 @@
 			"msg-failed-to-create-vault-at-location": "Impossibile creare il vault nella posizione specificata. Controllare il percorso e i permessi.",
 			"msg-error-failed-to-open-vault": "Apertura non riuscita.",
 			"msg-error-remove-current-open-vault": "Impossibile rimuovere un vault attualmente in uso."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Inserisci collegamento qui",
+			"insert-links-here": "Inserisci collegamenti qui",
+			"move-into-folder": "Sposta in \"{{folder}}\"",
+			"star-this-file": "Aggiungi ai Preferiti",
+			"star-these-files": "Aggiungi ai Preferiti",
+			"open-in-this-pane": "Apri in questo pannello"
 		}
 	},
 	"commands": {
@@ -378,6 +419,14 @@
 			"action-change-sort": "Ordinamento",
 			"action-reveal-file": "Mostra in Esplora risorse",
 			"action-reveal-active-file": "Mostra file attivo in Esplora risorse",
+			"command-move-file": "Sposta file in un'altra cartella",
+			"action-move-file": "Sposta file in...",
+			"action-move-folder": "Sposta cartella in...",
+			"prompt-type-folder": "Digita una cartella",
+			"label-no-folders": "Nessuna cartella trovata.",
+			"instruction-navigate": "seleziona",
+			"instruction-move": "sposta",
+			"instruction-dismiss": "annulla",
 			"label-sort-a-to-z": "Nome file (dalla A alla Z)",
 			"label-sort-z-to-a": "Nome file (dalla Z alla A)",
 			"label-sort-new-to-old": "Data di modifica (più recente)",
@@ -392,7 +441,9 @@
 			"menu-opt-make-copy": "Crea una copia",
 			"msg-invalid-characters": "Il nome del file non può contenere i seguenti caratteri: ",
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
-			"msg-empty-file-name": "Il nome del file non può essere vuoto."
+			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Ricerca",
@@ -414,6 +465,7 @@
 			"label-match-file-path": "Corrispondenza percorso file: ",
 			"label-match-file-name": "Corrispondenza nome file: ",
 			"label-match-content": "Corrispondenza contenuto file: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Corrispondenza tag: ",
 			"label-no-matches": "Nessun risultato trovato.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
@@ -509,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nome tag (dalla A alla Z)",
 			"label-sort-by-name-z-to-a": "Nome tag (dalla Z alla A)",
 			"label-sort-by-frequency-high-to-low": "Frequenza (decrescente)",
-			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)"
+			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Anteprima pagina",
@@ -563,15 +616,15 @@
 			"name": "Strumento importazione Markdown",
 			"desc": "Converti Markdown da altre app al formato di Obsidian.",
 			"action-open": "Apri importazione Markdown",
-			"option-roam-tag-fixer": "Importazione tag usati in Roam Research",
+			"option-roam-tag-fixer": "Conversione tag di Roam Research",
 			"option-roam-tag-fixer-description": "Converte \"#tag\" e \"#[[tag]]\" in \"[[tag]]\".",
-			"option-roam-highlight-fixer": "Importazione sottolineature usate in Roam Research",
+			"option-roam-highlight-fixer": "Conversione evidenziazioni di Roam Research",
 			"option-roam-highlight-fixer-description": "Converte \"^^highlight^^\" in \"==highlight==\".",
-			"option-roam-todo-converter": "Conversione TODO usati in Roam Research",
+			"option-roam-todo-converter": "Conversione TODO di Roam Research",
 			"option-roam-todo-converter-description": "Converte \"{{[[TODO]]}}\" in \"[ ]\".",
-			"option-bear-highlight-fixer": "Conversione sottolineature di Bear",
+			"option-bear-highlight-fixer": "Conversione evidenziazioni di Bear",
 			"option-bear-highlight-fixer-description": "Converte \"::highlight::\" in \"==highlight==\".",
-			"zettelkasten-link-fixer": "Importazione collegamenti Zettelkasten",
+			"zettelkasten-link-fixer": "Conversione collegamenti Zettelkasten",
 			"zettelkasten-link-fixer-description": "Converte i collegamenti \"[[UID]]\" in \"[[UID File Name]]\".",
 			"zettelkasten-link-beautifier": "Abbellimento collegamenti Zettelkasten",
 			"zettelkasten-link-beautifier-description": "Converte i collegamenti \"[[UID]]\" e li abbellisce in \"[[UID File Name|File Name]]\".",
@@ -718,6 +771,8 @@
 			"option-theme-description": "Scegli la combinazione di colori predefinita per il sito.",
 			"option-show-navigation": "Mostra navigazione",
 			"option-show-navigation-description": "Visualizza un elenco di tutte le pagine pubblicate sul lato sinistro del tuo sito.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Mostra grafo",
 			"option-show-graph-description": "Visualizza un piccolo grafo locale su ogni pagina.",
 			"option-show-outline": "Mostra indice",

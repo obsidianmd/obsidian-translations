@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "在左侧显示行号。",
 			"option-use-tabs": "使用制表符",
 			"option-use-tabs-description": "开启后，Tab 键将使用制表符来完成缩进。关闭后 Tab 键将使用空格完成缩进。",
+			"option-tab-size": "制表符宽度",
+			"option-tab-size-description": "设置制表符等同的空格数。",
 			"option-line-wrap": "按栏宽换行",
 			"option-line-wrap-description": "自动为长段落换行，以适应当前栏宽，而无需左右拖动滚动条。",
 			"option-vim-key-bindings": "Vim 键绑定",
@@ -76,31 +78,35 @@
 			"dark-theme": "黑暗",
 			"light-theme": "明亮",
 			"option-use-obsidian-css": "使用自定义主题",
-			"option-use-obsidian-css-description": "Obsidian 将应用存放于当前库的根目录中名为“obsidian.css”的主题文件。该设置已弃用，请将您的自定义 CSS 文件移动到 CSS 代码文件夹中。",
+			"option-use-obsidian-css-description": "Obsidian 将应用存放于当前库的根目录中名为“obsidian.css”的主题文件。该设置已停用，请关闭该选项并将您的自定义 CSS 文件移动到 CSS 代码段文件夹中。",
 			"option-community-themes": "查看社区主题",
 			"option-community-themes-description": "预览、使用社区用户创建的优秀主题。",
 			"button-browse-community-themes": "浏览",
 			"option-themes": "主题",
-			"option-theme": "主题",
-			"option-theme-description": "请选择需要使用的社区主题。主题存放于 \"vault/.obsidian/themes/\" 路径中。",
+			"option-theme": "更换主题",
+			"option-theme-description": "请选择需要使用的主题。主题文件的存放路径为：\"vault/.obsidian/themes/\"。",
 			"option-choice-none": "无",
 			"button-reload-themes": "重新加载主题",
 			"msg-reloaded-themes": "重新加载自定义主题",
 			"button-open-themes-folder": "打开主题文件夹",
-			"option-css-snippets": "CSS 代码",
-			"label-no-css-snippets-found": "没有在文件夹中找到相应的 CSS 代码片段。",
-			"button-reload-snippets": "重新加载代码",
+			"option-css-snippets": "CSS 代码段",
+			"label-no-css-snippets-found": "没有在代码段文件夹中发现 CSS 代码段。",
+			"no-snippet-description": "CSS 代码段的存放路径为：\"{{path}}\"。",
+			"button-reload-snippets": "重新加载代码段",
 			"button-open-snippets-folder": "打开代码段文件夹",
-			"msg-reloaded-snippets": "重新加载 CSS 代码片段",
-			"option-toggle-snippet-description": "应用路径为 \"{{path}}\" 的 CSS 代码片段。"
+			"msg-reloaded-snippets": "重新加载 CSS 代码段",
+			"option-toggle-snippet-description": "应用当前代码段。该代码段的存放路径为：\"{{path}}\"。"
 		},
 		"hotkeys": {
 			"name": "快捷键",
 			"prompt-filter": "搜索...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "删除快捷键",
 			"label-waiting-for-hotkey-press": "按下快捷键...",
 			"tooltip-restore-default": "恢复默认",
-			"tooltip-customize-command": "自定义快捷键"
+			"tooltip-customize-command": "自定义快捷键",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "关于",
@@ -133,7 +139,7 @@
 			"option-insider-build-description": "自动更新至内部版本以体验最新功能。请注意，内部版本可能不太稳定。",
 			"label-license": "许可证",
 			"label-your-commercial-license": "您的商业许可证密钥是 ",
-			"label-commercial-license-info": "注册给用户： \"{{company}}\" - {{seats}} 。有效期至 {{expiry}}.",
+			"label-commercial-license-info": "注册给用户： \"{{company}}\" - {{seats}} 。有效期至 {{expiry}}。",
 			"label-validating-commercial-license": "正在验证...",
 			"label-invalid-commercial-license": "无效的许可证: ",
 			"button-activate-commercial-license": "激活商业许可证",
@@ -200,13 +206,22 @@
 			"label-no-readme": "这个插件没有提供 README 文件。",
 			"msg-installing-plugin": "正在安装插件 \"{{name}}\"...",
 			"msg-failed-to-install-plugin": "无法安装插件 \"{{name}}\" ",
-			"msg-successfully-installed-plugin": "成功安装插件 \"{{name}}\".",
+			"msg-successfully-installed-plugin": "成功安装插件 \"{{name}}\"。",
 			"label-installed-plugins": "已安装插件",
 			"button-reload-plugins": "重新加载插件",
 			"msg-reloaded-third-party-plugins": "重新加载第三方插件",
 			"label-uninstall": "卸载",
 			"label-uninstall-plugin": "卸载插件",
-			"label-uninstall-plugin-confirmation": "您确定要卸载此插件吗？这将删除插件的文件夹。"
+			"label-uninstall-plugin-confirmation": "您确定要卸载此插件吗？这将删除插件的文件夹。",
+			"button-open-plugins-folder": "打开插件文件夹",
+			"button-check-for-updates": "检查更新",
+			"label-current-plugins": "插件安装情况",
+			"label-currently-installed": "您目前已经安装了 {{count}} 个插件。",
+			"label-currently-installed_plural": "您目前已经安装了 {{count}} 个插件。",
+			"msg-no-updates-found": "没有插件需要更新。",
+			"msg-updates-found": "发现 {{count}} 个插件需要更新。",
+			"msg-updates-found_plural": "发现 {{count}} 个插件需要更新。",
+			"msg-update-plugin": "更新至版本 {{version}}"
 		}
 	},
 	"editor": {
@@ -229,6 +244,24 @@
 		"spellcheck": {
 			"no-suggestion": "没有建议...",
 			"add-to-dictionary": "添加到词典"
+		},
+		"print-modal": {
+			"title": "导出为PDF",
+			"caption": "使用以下设置将 \"{{filename}}\" 导出为PDF。",
+			"setting-page-size": "页面尺寸",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "横向打印",
+			"setting-margin": "边距",
+			"setting-margin-default": "默认",
+			"setting-margin-minimal": "小",
+			"setting-margin-none": "无",
+			"setting-downscale-percent": "缩放百分比",
+			"button-export-to-pdf": "导出"
 		}
 	},
 	"interface": {
@@ -248,7 +281,6 @@
 		"tooltip-restore-default-settings": "恢复默认设置",
 		"copied": "{{item}} 已复制到您的剪贴板",
 		"url": "Url",
-		"label-invalid-frontmatter": "未能解析 front matter，请仔细检查语法。",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -269,7 +301,8 @@
 			"unlink-pane": "解除同步",
 			"link-pane": "与其他面板同步",
 			"delete-file": "删除文件",
-			"open-in-new-pane": "在新面板中打开"
+			"open-in-new-pane": "在新面板中打开",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -299,6 +332,14 @@
 			"msg-failed-to-create-vault-at-location": "无法在给定位置创建库文件夹。请仔细检查位置和权限。",
 			"msg-error-failed-to-open-vault": "无法打开。",
 			"msg-error-remove-current-open-vault": "无法删除当前打开的库。"
+		},
+		"drag-and-drop": {
+			"insert-link-here": "在此处插入链接",
+			"insert-links-here": "在此处插入链接",
+			"move-into-folder": "移动至 \"{{folder}}\"",
+			"star-this-file": "为此文件打上星标",
+			"star-these-files": "为这些文件打上星标",
+			"open-in-this-pane": "在此面板中打开"
 		}
 	},
 	"commands": {
@@ -378,6 +419,14 @@
 			"action-change-sort": "排序",
 			"action-reveal-file": "在文件列表中显示",
 			"action-reveal-active-file": "在 Obsidian 的文件列表中定位当前文件",
+			"command-move-file": "将文件移动到其他文件夹",
+			"action-move-file": "将文件移动到...",
+			"action-move-folder": "将文件夹移动到...",
+			"prompt-type-folder": "输入文件夹名称",
+			"label-no-folders": "未找到相关文件夹。",
+			"instruction-navigate": "导航",
+			"instruction-move": "移动",
+			"instruction-dismiss": "退出",
 			"label-sort-a-to-z": "按文件名升序排列 (A-Z)",
 			"label-sort-z-to-a": "按文件名降序排列 (Z-A)",
 			"label-sort-new-to-old": "按编辑时间排序（从新到旧）",
@@ -392,7 +441,9 @@
 			"menu-opt-make-copy": "创建副本",
 			"msg-invalid-characters": "文件名不能包含下列字符: ",
 			"msg-file-already-exists": "已经存在一个同名文件",
-			"msg-empty-file-name": "文件名不能为空。"
+			"msg-empty-file-name": "文件名不能为空。",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "搜索",
@@ -414,6 +465,7 @@
 			"label-match-file-path": "匹配文件路径: ",
 			"label-match-file-name": "匹配文件名: ",
 			"label-match-content": "匹配文件内容: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "匹配标签: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
@@ -509,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "标签名称 (A to Z)",
 			"label-sort-by-name-z-to-a": "标签名称 (Z to A)",
 			"label-sort-by-frequency-high-to-low": "使用频次 (high to low)",
-			"label-sort-by-frequency-low-to-high": "使用频次 (low to high)"
+			"label-sort-by-frequency-low-to-high": "使用频次 (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "页面预览",
@@ -534,8 +587,8 @@
 			"setting-community-themes": "社区主题",
 			"msg-fetching-themes": "正在获取社区主题数据...",
 			"prompt-filter": "搜索...",
-			"label-dark-theme-only": "Dark themes only",
-			"label-light-theme-only": "Light themes only",
+			"label-dark-theme-only": "只有黑暗配色的主题",
+			"label-light-theme-only": "只有明亮配色的主题",
 			"label-preview": "预览",
 			"label-stop-preview": "停止预览",
 			"label-use": "使用",
@@ -569,8 +622,8 @@
 			"option-roam-highlight-fixer-description": "将 Roam Research 中的 \"^^highlight^^\" 转换为 \"==highlight==\"。",
 			"option-roam-todo-converter": "Roam Research 待办标签转换",
 			"option-roam-todo-converter-description": "将 Roam Research 中的 \"{{[[TODO]]}}\" 转换为 \"[ ]\"。",
-			"option-bear-highlight-fixer": "Bear highlight fixer",
-			"option-bear-highlight-fixer-description": "Converts \"::highlight::\" to \"==highlight==\".",
+			"option-bear-highlight-fixer": "Bear 高亮标签转换",
+			"option-bear-highlight-fixer-description": "将 Bear 中的 \"::highlight::\" 转换为 \"==highlight==\"。",
 			"zettelkasten-link-fixer": "ZK 卡片链接转换",
 			"zettelkasten-link-fixer-description": "将 ZK 卡片中使用的 \"[[UID]]\" 链接转换为 \"[[UID 文件名]]\" 的形式。",
 			"zettelkasten-link-beautifier": "美化 ZK 卡片链接",
@@ -718,6 +771,8 @@
 			"option-theme-description": "为您的网站选择默认的配色方案。",
 			"option-show-navigation": "显示导航",
 			"option-show-navigation-description": "在已发布网站的左侧显示所有已发布页面的列表。",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "显示局部关系图",
 			"option-show-graph-description": "在每个页面上显示一个小的局部关系图。",
 			"option-show-outline": "显示大纲",

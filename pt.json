@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Mostra os números das linhas.",
 			"option-use-tabs": "Usar tabulações",
 			"option-use-tabs-description": "Usar tabulações para indentação quando a tecla \"Tab\" é pressionada. Desligue para usar espaços.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Line wrap",
 			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
 			"option-vim-key-bindings": "Atalhos do Vim",
@@ -89,6 +91,7 @@
 			"button-open-themes-folder": "Open themes folder",
 			"option-css-snippets": "CSS snippets",
 			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
 			"button-reload-snippets": "Reload snippets",
 			"button-open-snippets-folder": "Open snippets folder",
 			"msg-reloaded-snippets": "Reloaded CSS snippets.",
@@ -97,10 +100,13 @@
 		"hotkeys": {
 			"name": "Atalhos",
 			"prompt-filter": "Filtrar...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Excluir atalho",
 			"label-waiting-for-hotkey-press": "Pressione atalho...",
 			"tooltip-restore-default": "Restaurar ao padrão",
-			"tooltip-customize-command": "Customize esse comando"
+			"tooltip-customize-command": "Customize esse comando",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Sobre",
@@ -206,7 +212,16 @@
 			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
 			"label-uninstall": "Uninstall",
 			"label-uninstall-plugin": "Uninstall plugin",
-			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin.",
+			"button-open-plugins-folder": "Open plugins folder",
+			"button-check-for-updates": "Check for updates",
+			"label-current-plugins": "Current plugins",
+			"label-currently-installed": "You currently have {{count}} plugin installed.",
+			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
+			"msg-no-updates-found": "No plugin updates found.",
+			"msg-updates-found": "Found {{count}} plugin to update.",
+			"msg-updates-found_plural": "Found {{count}} plugins to update.",
+			"msg-update-plugin": "Update to version {{version}}"
 		}
 	},
 	"editor": {
@@ -229,6 +244,24 @@
 		"spellcheck": {
 			"no-suggestion": "Sem sugestões...",
 			"add-to-dictionary": "Adicionar ao dicionário"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -248,7 +281,6 @@
 		"tooltip-restore-default-settings": "Restore default settings",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
-		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
@@ -269,7 +301,8 @@
 			"unlink-pane": "Desvincular painel",
 			"link-pane": "Vincular painel...",
 			"delete-file": "Deletar arquivo",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Clique para expandir",
@@ -299,6 +332,14 @@
 			"msg-failed-to-create-vault-at-location": "Could not create vault at the given location. Please double check the location and permission.",
 			"msg-error-failed-to-open-vault": "Failed to open.",
 			"msg-error-remove-current-open-vault": "Can't remove a currently open vault."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -378,6 +419,14 @@
 			"action-change-sort": "Mudar ordenamento",
 			"action-reveal-file": "Reveal file in file explorer",
 			"action-reveal-active-file": "Reveal active file in file explorer",
+			"command-move-file": "Move file to another folder",
+			"action-move-file": "Move file to...",
+			"action-move-folder": "Move folder to...",
+			"prompt-type-folder": "Type a folder",
+			"label-no-folders": "No folders found.",
+			"instruction-navigate": "to navigate",
+			"instruction-move": "to move",
+			"instruction-dismiss": "to dismiss",
 			"label-sort-a-to-z": "Ordenar por nome (A-Z)",
 			"label-sort-z-to-a": "Ordenar por nome (Z-A)",
 			"label-sort-new-to-old": "Ordenar por última edição (recentes-antigas)",
@@ -392,7 +441,9 @@
 			"menu-opt-make-copy": "Fazer uma cópia",
 			"msg-invalid-characters": "O nome do arquivo não pode ter nenhum destes caracteres: ",
 			"msg-file-already-exists": "Já existe um arquivo com esse nome",
-			"msg-empty-file-name": "O nome do arquivo não pode ficar vazio."
+			"msg-empty-file-name": "O nome do arquivo não pode ficar vazio.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Procurar",
@@ -414,6 +465,7 @@
 			"label-match-file-path": "Caminho do arquivo correspondente: ",
 			"label-match-file-name": "Nome do arquivo correspondente: ",
 			"label-match-content": "Pesquisar pelo conteudo do arquivo: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Nenhuma correspondência encontrada.",
 			"matches-with-count": "... e mais {{count}} correspondência.",
@@ -509,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Pré-visualização de página",
@@ -718,6 +771,8 @@
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
 			"option-show-navigation-description": "Display a list of all published pages on the left side of your published site.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Show graph view",
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",

@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Zobrazení čísla řádku v levém žlábku.",
 			"option-use-tabs": "Používat odrážky",
 			"option-use-tabs-description": "Použije odrážky při odsazení pomocí klávesy \"Tab\". Chcete-li používat mezery, nechte tuto možnost vypnutou.",
+			"option-tab-size": "Tab size",
+			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Zalomení řádku",
 			"option-line-wrap-description": "Zalomení dlouhých řádků, aby se vešli do okna, takže nebude třeba scrollovat zleva do prava.",
 			"option-vim-key-bindings": "Vim klávesové zkrtaky",
@@ -89,6 +91,7 @@
 			"button-open-themes-folder": "Open themes folder",
 			"option-css-snippets": "CSS snippets",
 			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
+			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
 			"button-reload-snippets": "Reload snippets",
 			"button-open-snippets-folder": "Open snippets folder",
 			"msg-reloaded-snippets": "Reloaded CSS snippets.",
@@ -97,10 +100,13 @@
 		"hotkeys": {
 			"name": "Klávesové Zkratky",
 			"prompt-filter": "Filtrovat...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Smazat klávesovou zkratku",
 			"label-waiting-for-hotkey-press": "Stikněte klávesovou zkratku...",
 			"tooltip-restore-default": "Vrátit vychozí nastavení",
-			"tooltip-customize-command": "Přizpůsobte si tento příkaz"
+			"tooltip-customize-command": "Přizpůsobte si tento příkaz",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "O Obsidianu",
@@ -206,7 +212,16 @@
 			"msg-reloaded-third-party-plugins": "Reloaded third-party plugins.",
 			"label-uninstall": "Uninstall",
 			"label-uninstall-plugin": "Uninstall plugin",
-			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin."
+			"label-uninstall-plugin-confirmation": "Are you sure you want to uninstall this plugin? This will delete the folder of the plugin.",
+			"button-open-plugins-folder": "Open plugins folder",
+			"button-check-for-updates": "Check for updates",
+			"label-current-plugins": "Current plugins",
+			"label-currently-installed": "You currently have {{count}} plugin installed.",
+			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
+			"msg-no-updates-found": "No plugin updates found.",
+			"msg-updates-found": "Found {{count}} plugin to update.",
+			"msg-updates-found_plural": "Found {{count}} plugins to update.",
+			"msg-update-plugin": "Update to version {{version}}"
 		}
 	},
 	"editor": {
@@ -229,6 +244,24 @@
 		"spellcheck": {
 			"no-suggestion": "Žádné návrhy...",
 			"add-to-dictionary": "Přidat do slovníku"
+		},
+		"print-modal": {
+			"title": "Export to PDF",
+			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"setting-page-size": "Page size",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Landscape",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "None",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Export to PDF"
 		}
 	},
 	"interface": {
@@ -248,7 +281,6 @@
 		"tooltip-restore-default-settings": "Obnovit výchozí nastavení",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
-		"label-invalid-frontmatter": "Failed to parse front matter, please double check your syntax.",
 		"empty-state": {
 			"no-file-open": "Není otevřený žádný soubor",
 			"create-new-file": "Vytvořit nový soubor",
@@ -269,7 +301,8 @@
 			"unlink-pane": "Odpojit panel",
 			"link-pane": "Propojit s panelem...",
 			"delete-file": "Smazat soubor",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknutím rozbalíte",
@@ -299,6 +332,14 @@
 			"msg-failed-to-create-vault-at-location": "Trezor se nepodařilo vytvořit ve zvoleném umístění. Znovu zkontrolujte umístění a oprávnění.",
 			"msg-error-failed-to-open-vault": "Trezor se nepodařilo otevřít.",
 			"msg-error-remove-current-open-vault": "Nelze smazat právě otevřený trezor."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Insert link here",
+			"insert-links-here": "Insert links here",
+			"move-into-folder": "Move into \"{{folder}}\"",
+			"star-this-file": "Star this file",
+			"star-these-files": "Star these files",
+			"open-in-this-pane": "Open in this pane"
 		}
 	},
 	"commands": {
@@ -378,6 +419,14 @@
 			"action-change-sort": "Změnit pořadí řazení",
 			"action-reveal-file": "Zobrazit soubor v průzkumníku souborů",
 			"action-reveal-active-file": "Zobrazit aktivní soubor v průzkumníku souborů",
+			"command-move-file": "Move file to another folder",
+			"action-move-file": "Move file to...",
+			"action-move-folder": "Move folder to...",
+			"prompt-type-folder": "Type a folder",
+			"label-no-folders": "No folders found.",
+			"instruction-navigate": "to navigate",
+			"instruction-move": "to move",
+			"instruction-dismiss": "to dismiss",
 			"label-sort-a-to-z": "Seřadit podle jména (A do Z)",
 			"label-sort-z-to-a": "Seřadit podle jména (Z po A)",
 			"label-sort-new-to-old": "Seřadit podle data upravení (od nejnovéjšího po nejstarší)",
@@ -392,7 +441,9 @@
 			"menu-opt-make-copy": "Vytvořit kopii",
 			"msg-invalid-characters": "Název souborů nemůže obsahovat žádný z nasledujících znaků: ",
 			"msg-file-already-exists": "Již existuje soubor se stejným názvem",
-			"msg-empty-file-name": "Název souboru nemůže být prázdný."
+			"msg-empty-file-name": "Název souboru nemůže být prázdný.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Hledat",
@@ -414,6 +465,7 @@
 			"label-match-file-path": "Shoduje se s cestou k souboru:",
 			"label-match-file-name": "Shoduje se s názevem souboru:",
 			"label-match-content": "Shoduje se s obsahem souboru:",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Shoduje se s štítkem:",
 			"label-no-matches": "Nebyly nalezeny žádné shody.",
 			"matches-with-count": "... a {{count}} další shoda.",
@@ -509,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Náhled poznámky",
@@ -718,6 +771,8 @@
 			"option-theme-description": "Zvolte vychozí barevný motiv pro vaše stránky.",
 			"option-show-navigation": "Zobrazovat navigaci",
 			"option-show-navigation-description": "Zobrazit seznam všech publikovaných stránek na levé straně publikovaného webu.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Zobrazovat graf",
 			"option-show-graph-description": "Na každé stránce zobrazit malý lokální graf.",
 			"option-show-outline": "Zobrazovat tabulku obsahu",

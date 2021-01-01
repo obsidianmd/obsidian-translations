@@ -36,6 +36,8 @@
 			"option-show-line-number-description": "Tampilkan nomor baris di tepian.",
 			"option-use-tabs": "Gunakan tab",
 			"option-use-tabs-description": "Gunakan tab untuk menginden ketika menekan \"Tab\". Matikan untuk menggunakan spasi.",
+			"option-tab-size": "Ukuran tab",
+			"option-tab-size-description": "Jumlah spasi yang setara dengan tab.",
 			"option-line-wrap": "Pembungkusan teks",
 			"option-line-wrap-description": "Bungkus panjang baris teks agar sesuai dengan ukuran jendela, tanpa harus menggulir dari kiri ke kanan.",
 			"option-vim-key-bindings": "Vim key bindings",
@@ -89,6 +91,7 @@
 			"button-open-themes-folder": "Buka folder tema",
 			"option-css-snippets": "Cuplikan CSS",
 			"label-no-css-snippets-found": "Cuplikan CSS tidak ditemukan di folder cuplikan.",
+			"no-snippet-description": "Cuplikan CSS tersimpan di \"{{path}}\".",
 			"button-reload-snippets": "Mualt ulang cuplikan",
 			"button-open-snippets-folder": "Buka folder cuplikan",
 			"msg-reloaded-snippets": "Cuplikan CSS termuat ulang.",
@@ -97,10 +100,13 @@
 		"hotkeys": {
 			"name": "Pintasan",
 			"prompt-filter": "Filter...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Hapus tombol pintasan",
 			"label-waiting-for-hotkey-press": "Tekan tombol pintasan...",
 			"tooltip-restore-default": "Pulihkan default",
-			"tooltip-customize-command": "Kustomisasi pintasan ini"
+			"tooltip-customize-command": "Kustomisasi pintasan ini",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Tentang",
@@ -206,7 +212,16 @@
 			"msg-reloaded-third-party-plugins": "Plugin pihak ketiga termuat ulang.",
 			"label-uninstall": "Hapus instalan",
 			"label-uninstall-plugin": "Hapus plugin",
-			"label-uninstall-plugin-confirmation": "Apa Anda yakin Anda ingin menghapus plugin ini? Ini akan menghapus folder dari plugin."
+			"label-uninstall-plugin-confirmation": "Apa Anda yakin Anda ingin menghapus plugin ini? Ini akan menghapus folder dari plugin.",
+			"button-open-plugins-folder": "Buka folde plugin",
+			"button-check-for-updates": "Cek pembaruan",
+			"label-current-plugins": "Plugin saat ini",
+			"label-currently-installed": "Anda saat ini memiliki {{count}} plugin terinstal.",
+			"label-currently-installed_plural": "Anda saat ini {{count}} plugin terinstal.",
+			"msg-no-updates-found": "Pembaruan plugin tidak ditemukan.",
+			"msg-updates-found": "Ditemukan {{count}} plugin untuk pembaruan.",
+			"msg-updates-found_plural": "Ditemukan {{count}} plugin untuk pembaruan.",
+			"msg-update-plugin": "Membarui ke versi {{version}}"
 		}
 	},
 	"editor": {
@@ -229,6 +244,24 @@
 		"spellcheck": {
 			"no-suggestion": "Tidak ada saran...",
 			"add-to-dictionary": "Masukkan ke kamus"
+		},
+		"print-modal": {
+			"title": "Ekspor ke PDF",
+			"caption": "Ekspor \"{{filename}}\" ke PDF dengan dengan pengaturan di bawah.",
+			"setting-page-size": "Ukuran halaman",
+			"setting-page-size-a3": "A3",
+			"setting-page-size-a4": "A4",
+			"setting-page-size-a5": "A5",
+			"setting-page-size-legal": "Legal",
+			"setting-page-size-letter": "Letter",
+			"setting-page-size-tabloid": "Tabloid",
+			"setting-landscape": "Lanskap",
+			"setting-margin": "Margin",
+			"setting-margin-default": "Default",
+			"setting-margin-minimal": "Minimal",
+			"setting-margin-none": "Tidak ada",
+			"setting-downscale-percent": "Downscale percent",
+			"button-export-to-pdf": "Ekspor ke PDF"
 		}
 	},
 	"interface": {
@@ -248,7 +281,6 @@
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
 		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
-		"label-invalid-frontmatter": "Gagal mengurai front matter, cek ulang sintaks Anda.",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -269,7 +301,8 @@
 			"unlink-pane": "Lepaskan hubungan panel",
 			"link-pane": "Hubungkan dengan panel...",
 			"delete-file": "Hapus file",
-			"open-in-new-pane": "Buka di panel baru"
+			"open-in-new-pane": "Buka di panel baru",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -299,6 +332,14 @@
 			"msg-failed-to-create-vault-at-location": "Tidak dapat membuat vault di lokasi yang dipilih. Periksa kembali lokasi dan perizinan.",
 			"msg-error-failed-to-open-vault": "Gagal membuka.",
 			"msg-error-remove-current-open-vault": "Tidak dapat menghapus vault yang sekarang terbuka."
+		},
+		"drag-and-drop": {
+			"insert-link-here": "Sisipkan link di sini",
+			"insert-links-here": "Sisipkan link di sini",
+			"move-into-folder": "Pindah ke \"{{folder}}\"",
+			"star-this-file": "Beri bintang file ini",
+			"star-these-files": "Beri bintang file ini",
+			"open-in-this-pane": "Buka di panel ini"
 		}
 	},
 	"commands": {
@@ -378,6 +419,14 @@
 			"action-change-sort": "Ubah urutan sortir",
 			"action-reveal-file": "Tunjukan file di file explorer",
 			"action-reveal-active-file": "Tunjukan file aktif di file explorer",
+			"command-move-file": "Pindah file ke folder lain",
+			"action-move-file": "Pindah file ke...",
+			"action-move-folder": "Pindah folder ke...",
+			"prompt-type-folder": "Ketik folder",
+			"label-no-folders": "Folder tidak ditemukan.",
+			"instruction-navigate": "untuk navigasi",
+			"instruction-move": "untuk pindah",
+			"instruction-dismiss": "untuk tutup",
 			"label-sort-a-to-z": "Nama file (A ke Z)",
 			"label-sort-z-to-a": "Name file (Z ke A)",
 			"label-sort-new-to-old": "Waktu modifikasi (baru ke lama)",
@@ -392,7 +441,9 @@
 			"menu-opt-make-copy": "Buat salinan",
 			"msg-invalid-characters": "Nama file tidak boleh berisi salah satu diantara karakter berikut: ",
 			"msg-file-already-exists": "Sudah ada file dengan nama yang sama",
-			"msg-empty-file-name": "Nama file tidak boleh kosong."
+			"msg-empty-file-name": "Nama file tidak boleh kosong.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Pencarian",
@@ -414,6 +465,7 @@
 			"label-match-file-path": "Cocokkan jalur file: ",
 			"label-match-file-name": "Cocokkan nama file: ",
 			"label-match-content": "Cocokkan konten file: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Cocokkan tag: ",
 			"label-no-matches": "Tidak ditemukan kecocokan.",
 			"matches-with-count": "... dan {{count}} kecocokan.",
@@ -509,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nama tag (A ke Z)",
 			"label-sort-by-name-z-to-a": "Nama tag (Z ke A)",
 			"label-sort-by-frequency-high-to-low": "Frekuensi (tinggi ke rendah)",
-			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)"
+			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Pratinjau halaman",
@@ -718,6 +771,8 @@
 			"option-theme-description": "Pilih skema warna default untuk situs Anda.",
 			"option-show-navigation": "Tampilkan navigasi",
 			"option-show-navigation-description": "Tampilkan daftar dari semua halaman di sisi kiri dari situs terpublikasi Anda.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Tampilkan tapilan grafik",
 			"option-show-graph-description": "Tampilkan grafik lokal kecil untuk setiap halaman.",
 			"option-show-outline": "Tampilkan daftar isi",
