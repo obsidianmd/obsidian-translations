@@ -21,7 +21,7 @@
 			"option-auto-pair-brackets": "Pasangkan otomatis tanda kurung",
 			"option-auto-pair-brackets-description": "Pasangkan tanda kurung dan tanda kutip secara otomatis.",
 			"option-auto-pair-markdown": "Pasangkan otomatis sintaksis Markdown",
-			"option-auto-pair-markdown-description": "Pasangkan simbol secara otomatis untuk cetak huruf tebal dan miring.",
+			"option-auto-pair-markdown-description": "Pasangkan simbol secara otomatis untuk cetak teks tebal, miring, sorot, coret. dan kode",
 			"option-smart-indent-lists": "Inden daftar cerdas",
 			"option-smart-indent-lists-description": "Atur secara otomatis indentasi dan menempatkan daftar item dengan benar.",
 			"option-fold-heading": "Lipat judul",
@@ -100,13 +100,13 @@
 		"hotkeys": {
 			"name": "Pintasan",
 			"prompt-filter": "Filter...",
-			"tooltip-legacy": "Legacy hotkey",
+			"tooltip-legacy": "Pintasan warisan",
 			"tooltip-delete-hotkey": "Hapus tombol pintasan",
 			"label-waiting-for-hotkey-press": "Tekan tombol pintasan...",
 			"tooltip-restore-default": "Pulihkan default",
 			"tooltip-customize-command": "Kustomisasi pintasan ini",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Pintasan ini konflik dengan \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Pintasan ini konflik dengan {{count}} perintah lain"
 		},
 		"about": {
 			"name": "Tentang",
@@ -302,7 +302,7 @@
 			"link-pane": "Hubungkan dengan panel...",
 			"delete-file": "Hapus file",
 			"open-in-new-pane": "Buka di panel baru",
-			"copy-url": "Copy url"
+			"copy-url": "Salin url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -442,8 +442,8 @@
 			"msg-invalid-characters": "Nama file tidak boleh berisi salah satu diantara karakter berikut: ",
 			"msg-file-already-exists": "Sudah ada file dengan nama yang sama",
 			"msg-empty-file-name": "Nama file tidak boleh kosong.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "Terakhir diubah pada {{time}}",
+			"tooltip-created-time": "Dibuat pada {{time}}"
 		},
 		"search": {
 			"name": "Pencarian",
@@ -465,7 +465,7 @@
 			"label-match-file-path": "Cocokkan jalur file: ",
 			"label-match-file-name": "Cocokkan nama file: ",
 			"label-match-content": "Cocokkan konten file: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "Cocokan baris: ",
 			"label-match-tag": "Cocokkan tag: ",
 			"label-no-matches": "Tidak ditemukan kecocokan.",
 			"matches-with-count": "... dan {{count}} kecocokan.",
@@ -562,7 +562,7 @@
 			"label-sort-by-name-z-to-a": "Nama tag (Z ke A)",
 			"label-sort-by-frequency-high-to-low": "Frekuensi (tinggi ke rendah)",
 			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "Tampilkan tag bersarang"
 		},
 		"page-preview": {
 			"name": "Pratinjau halaman",
@@ -771,8 +771,8 @@
 			"option-theme-description": "Pilih skema warna default untuk situs Anda.",
 			"option-show-navigation": "Tampilkan navigasi",
 			"option-show-navigation-description": "Tampilkan daftar dari semua halaman di sisi kiri dari situs terpublikasi Anda.",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "Tampilkan bilah pencarian",
+			"option-show-search-description": "Tampilkan bilah pencarian di atas navigasi yang memungkinkan pengunjung mencari halaman dan judul di situs Anda.",
 			"option-show-graph": "Tampilkan tapilan grafik",
 			"option-show-graph-description": "Tampilkan grafik lokal kecil untuk setiap halaman.",
 			"option-show-outline": "Tampilkan daftar isi",
