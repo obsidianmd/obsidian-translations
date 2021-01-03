@@ -100,13 +100,13 @@
 		"hotkeys": {
 			"name": "단축키",
 			"prompt-filter": "검색...",
-			"tooltip-legacy": "Legacy hotkey",
+			"tooltip-legacy": "레거시 단축키",
 			"tooltip-delete-hotkey": "단축키 삭제",
 			"label-waiting-for-hotkey-press": "단축키를 누르세요...",
 			"tooltip-restore-default": "기본값으로 되돌리기",
 			"tooltip-customize-command": "단축키 바꾸기",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "단축키가 \"{{command}}\"의 단축키와 겹칩니다.",
+			"tooltip-hotkey-multiple-conflicts": "이 단축키는 {{count}}개의 단축키오 겹칩니다"
 		},
 		"about": {
 			"name": "앱 정보",
@@ -302,7 +302,7 @@
 			"link-pane": "퍼널에 링크하기...",
 			"delete-file": "파일 삭제",
 			"open-in-new-pane": "새로운 패널에 열기",
-			"copy-url": "Copy url"
+			"copy-url": "url 복사"
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
@@ -334,12 +334,12 @@
 			"msg-error-remove-current-open-vault": "열려있는 보관함은 삭제하실 수 없습니다."
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Insert link here",
-			"insert-links-here": "Insert links here",
-			"move-into-folder": "Move into \"{{folder}}\"",
-			"star-this-file": "Star this file",
-			"star-these-files": "Star these files",
-			"open-in-this-pane": "Open in this pane"
+			"insert-link-here": "링크 입력",
+			"insert-links-here": "링크 입력",
+			"move-into-folder": "\"{{folder}}\"로 옮기기",
+			"star-this-file": "파일 별표하기",
+			"star-these-files": "파일들 별표하기",
+			"open-in-this-pane": "이 패널에 열기"
 		}
 	},
 	"commands": {
@@ -442,8 +442,8 @@
 			"msg-invalid-characters": "파일 이름에 다음 문자들을 사용할수 없습니다: ",
 			"msg-file-already-exists": "같은 이름의 파일이 이미 존재합니다",
 			"msg-empty-file-name": "파일 이름을 써주세요.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "최신 편집 시간: {{time}}",
+			"tooltip-created-time": "생성 시간: {{time}}"
 		},
 		"search": {
 			"name": "검색",
@@ -465,7 +465,7 @@
 			"label-match-file-path": "파일 경로 검색: ",
 			"label-match-file-name": "파일 이름 검색: ",
 			"label-match-content": "검색 결과: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "줄 겁색:",
 			"label-match-tag": "태그 검색: ",
 			"label-no-matches": "검색 결과가 없습니다.",
 			"matches-with-count": "... 그리고 {{count}}개 더.",
@@ -562,7 +562,7 @@
 			"label-sort-by-name-z-to-a": "태그 이름 (Z ~ A)",
 			"label-sort-by-frequency-high-to-low": "빈도수 (높음 ~ 낮음)",
 			"label-sort-by-frequency-low-to-high": "빈도수 (낮음 ~ 높음)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "중첩된 태그 보기"
 		},
 		"page-preview": {
 			"name": "페이지 미리보기",
@@ -771,8 +771,8 @@
 			"option-theme-description": "사이트의 기본 색상을 골라주세요",
 			"option-show-navigation": "네비게이션 표시",
 			"option-show-navigation-description": "사이트의 옆에 출판된 페이지들을 모두 보여줍니다",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "검색바 보기",
+			"option-show-search-description": "네비게이션 위에 검색바를 표시해서 방문자들이 페이지와 헤더를 검색할수 있게 해줍니다.",
 			"option-show-graph": "그래프 보기",
 			"option-show-graph-description": "각 페이지에 작게 로컬 그래프를 보여줍니다",
 			"option-show-outline": "목차 보기",
