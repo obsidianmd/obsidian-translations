@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
 			"prompt-filter": "Filtra...",
-			"tooltip-delete-hotkey": "Elimina tasto di scelta rapida",
+			"tooltip-legacy": "Combinazione legacy",
+			"tooltip-delete-hotkey": "Elimina combinazione di tasti",
 			"label-waiting-for-hotkey-press": "Premi tasti di scelta rapida...",
 			"tooltip-restore-default": "Ripristina predefinito",
-			"tooltip-customize-command": "Personalizza comando"
+			"tooltip-customize-command": "Personalizza comando",
+			"tooltip-hotkey-single-conflict": "Questa combinazione è in conflitto con \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Questa combinazione è in conflitto con {{count}} altri comandi"
 		},
 		"about": {
 			"name": "Informazioni",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con pannello...",
 			"delete-file": "Elimina file",
-			"open-in-new-pane": "Apri in nuovo pannello"
+			"open-in-new-pane": "Apri in nuovo pannello",
+			"copy-url": "Copia URL"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Crea una copia",
 			"msg-invalid-characters": "Il nome del file non può contenere i seguenti caratteri: ",
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
-			"msg-empty-file-name": "Il nome del file non può essere vuoto."
+			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
+			"tooltip-modified-time": "Ultima modifica il {{time}}",
+			"tooltip-created-time": "Creato il {{time}}"
 		},
 		"search": {
 			"name": "Ricerca",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Corrispondenza percorso file: ",
 			"label-match-file-name": "Corrispondenza nome file: ",
 			"label-match-content": "Corrispondenza contenuto file: ",
+			"label-match-line": "Corrispondenza riga: ",
 			"label-match-tag": "Corrispondenza tag: ",
 			"label-no-matches": "Nessun risultato trovato.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nome tag (dalla A alla Z)",
 			"label-sort-by-name-z-to-a": "Nome tag (dalla Z alla A)",
 			"label-sort-by-frequency-high-to-low": "Frequenza (decrescente)",
-			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)"
+			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)",
+			"action-show-nested-tags": "Mostra tag annidati"
 		},
 		"page-preview": {
 			"name": "Anteprima pagina",
@@ -754,15 +762,17 @@
 			"msg-create-site-issue": "C'è stato un problema durante la creazione del sito.",
 			"label-site-options": "Opzioni sito",
 			"option-site-name": "Nome sito",
-			"option-site-name-description": "Nome del sito pubblicato. Apparirà nel titolo della pagina del tuo sito.",
-			"option-site-name-placeholder": "Nome del tuo sito",
+			"option-site-name-description": "Nome del sito pubblicato. Apparirà nel titolo della pagina del sito.",
+			"option-site-name-placeholder": "Nome del sito",
 			"option-home-page-file": "File homepage",
-			"option-home-page-file-description": "La prima pagina che l'utente vede quando accede al tuo sito pubblicato",
+			"option-home-page-file-description": "La prima pagina che l'utente vede quando accede al sito pubblicato",
 			"option-home-page-file-placeholder": "Scegli un file pubblicato",
 			"option-theme": "Tema",
 			"option-theme-description": "Scegli la combinazione di colori predefinita per il sito.",
 			"option-show-navigation": "Mostra navigazione",
-			"option-show-navigation-description": "Visualizza un elenco di tutte le pagine pubblicate sul lato sinistro del tuo sito.",
+			"option-show-navigation-description": "Visualizza un elenco di tutte le pagine pubblicate sul lato sinistro del sito.",
+			"option-show-search": "Mostra barra di ricerca",
+			"option-show-search-description": "Mostra una barra di ricerca nella parte superiore della navigazione che consente ai visitatori di cercare pagine e titoli nel sito.",
 			"option-show-graph": "Mostra grafo",
 			"option-show-graph-description": "Visualizza un piccolo grafo locale su ogni pagina.",
 			"option-show-outline": "Mostra indice",

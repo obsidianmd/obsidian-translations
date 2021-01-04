@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Tastenkürzel",
 			"prompt-filter": "Filter...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Kürzel löschen",
 			"label-waiting-for-hotkey-press": "Tastenkürzel drücken...",
 			"tooltip-restore-default": "Standard wiederherstellen",
-			"tooltip-customize-command": "Eigenes Kürzel festlegen"
+			"tooltip-customize-command": "Eigenes Kürzel festlegen",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Über",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Link zu Fensterbereich lösen",
 			"link-pane": "Mit Fensterbereich verlinken...",
 			"delete-file": "Datei löschen",
-			"open-in-new-pane": "In neuem Fensterbereich öffnen"
+			"open-in-new-pane": "In neuem Fensterbereich öffnen",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Kopie erstellen",
 			"msg-invalid-characters": "Dateiname darf keines der folgenden Symbole enthalten: ",
 			"msg-file-already-exists": "Es existiert bereits eine Datei mit demselben Namen",
-			"msg-empty-file-name": "Der Dateiname darf nicht leer sein."
+			"msg-empty-file-name": "Der Dateiname darf nicht leer sein.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Suchen",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Dateipfad stimmt überein: ",
 			"label-match-file-name": "Dateiname stimmt überein: ",
 			"label-match-content": "Dateiinhalt stimmt überein: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Tag stimmt überein: ",
 			"label-no-matches": "Keine Übereinstimmungen gefunden.",
 			"matches-with-count": "... und {{count}} weitere Übereinstimmung.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag (A - Z)",
 			"label-sort-by-name-z-to-a": "Tag (Z - A)",
 			"label-sort-by-frequency-high-to-low": "Häufigkeit (hoch - niedrig)",
-			"label-sort-by-frequency-low-to-high": "Häufigkeit (niedrig - hoch)"
+			"label-sort-by-frequency-low-to-high": "Häufigkeit (niedrig - hoch)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Seitenvorschau",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Wähle ein Standard-Theme für Deine Seite.",
 			"option-show-navigation": "Navigation anzeigen",
 			"option-show-navigation-description": "Zeigt eine Liste aller Deiner veröffentlichten Seiten am linken Rand der Seiten.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Zeige Graphenansicht",
 			"option-show-graph-description": "Zeigt einen kleinen, lokalen Graphen auf jeder Seite an.",
 			"option-show-outline": "Zeige Inhaltsverzeichnis",

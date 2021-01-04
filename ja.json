@@ -100,16 +100,19 @@
 		"hotkeys": {
 			"name": "ホットキー",
 			"prompt-filter": "フィルタ…",
+			"tooltip-legacy": "レガシーホットキー",
 			"tooltip-delete-hotkey": "ホットキーを削除",
-			"label-waiting-for-hotkey-press": "キーを押して下さい",
+			"label-waiting-for-hotkey-press": "キーを押してください",
 			"tooltip-restore-default": "デフォルトに戻す",
-			"tooltip-customize-command": "コマンドをカスタマイズ"
+			"tooltip-customize-command": "コマンドをカスタマイズ",
+			"tooltip-hotkey-single-conflict": "このホットキーは \"{{command}}\" と衝突しています",
+			"tooltip-hotkey-multiple-conflicts": "このホットキーは{{count}}個のコマンドと衝突しています"
 		},
 		"about": {
 			"name": "Obsidianについて",
 			"label-license-key": "ライセンスキー",
 			"license-key-placeholder": "ここにライセンスキーを入力",
-			"label-enter-commercial-license": "商用ライセンスキーを入力して下さい:",
+			"label-enter-commercial-license": "商用ライセンスキーを入力してください:",
 			"label-activate-license": "ライセンス認証する",
 			"button-activate": "認証",
 			"label-unknown-version": "バージョン不明",
@@ -120,13 +123,13 @@
 			"label-manual-install-required": "手動で最新版をインストールする必要があります。",
 			"label-download-link": "ここにダウンロードします。",
 			"label-new-version-ready": "最新バージョンがインストールできます。",
-			"label-relaunch-to-update": "更新のために再起動して下さい。",
+			"label-relaunch-to-update": "更新のために再起動してください。",
 			"label-disabled-updates": "更新は無効になっています。",
 			"label-checking-for-updates": "更新を確認しています…",
 			"button-relaunch": "再起動",
 			"button-check-for-updates": "更新を確認",
 			"option-auto-update": "自動更新",
-			"option-auto-update-description": "アプリに更新を確認させないようにするには、このオプションをオフにして下さい。",
+			"option-auto-update-description": "アプリに更新を確認させないようにするには、このオプションをオフにしてください。",
 			"option-open-help": "ヘルプ",
 			"option-open-help-description": "ヘルプ用のドキュメンテーションを開く。",
 			"button-open": "開く",
@@ -298,7 +301,8 @@
 			"unlink-pane": "ペインのリンクを解除",
 			"link-pane": "ペインをリンク…",
 			"delete-file": "ファイルを削除",
-			"open-in-new-pane": "新規ペインで開く"
+			"open-in-new-pane": "新規ペインで開く",
+			"copy-url": "URLをコピー"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "コピーを作成",
 			"msg-invalid-characters": "ファイル名には次の文字を使えません: ",
 			"msg-file-already-exists": "同じ名前のファイルがあります。",
-			"msg-empty-file-name": "ファイル名を空にはできません。"
+			"msg-empty-file-name": "ファイル名を空にはできません。",
+			"tooltip-modified-time": "更新日時 {{time}}",
+			"tooltip-created-time": "作成日時 {{time}}"
 		},
 		"search": {
 			"name": "検索",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "ファイルパスに一致: ",
 			"label-match-file-name": "ファイル名に一致: ",
 			"label-match-content": "ファイルの内容に一致: ",
+			"label-match-line": "行に一致: ",
 			"label-match-tag": "タグに一致: ",
 			"label-no-matches": "一致する箇所は見つかりませんでした。",
 			"matches-with-count": "… さらに {{count}} 箇所で一致。",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "タグ名称で並べ替え (A to Z)",
 			"label-sort-by-name-z-to-a": "タグ名称で並べ替え (Z to A)",
 			"label-sort-by-frequency-high-to-low": "頻度で並べ替え (high to low)",
-			"label-sort-by-frequency-low-to-high": "頻度で並べ替え (low to high)"
+			"label-sort-by-frequency-low-to-high": "頻度で並べ替え (low to high)",
+			"action-show-nested-tags": "ネストされたタグを表示"
 		},
 		"page-preview": {
 			"name": "ページプレビュー",
@@ -763,6 +771,8 @@
 			"option-theme-description": "サイトのデフォルトの配色を選択します。",
 			"option-show-navigation": "ナビゲーションを表示",
 			"option-show-navigation-description": "公開サイトの左側に、公開されているすべてのページのリストを表示します。",
+			"option-show-search": "検索バーを表示",
+			"option-show-search-description": "訪問者がサイト上のページと見出しを検索できるようにナビゲーションのトップに検索バーを表示します。",
 			"option-show-graph": "グラフビューを表示",
 			"option-show-graph-description": "各ページに小さなローカルグラフを表示します。",
 			"option-show-outline": "目次を表示",

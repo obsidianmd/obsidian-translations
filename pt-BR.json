@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Atalhos",
 			"prompt-filter": "Filtrar...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Excluir atalho",
 			"label-waiting-for-hotkey-press": "Pressione atalho...",
 			"tooltip-restore-default": "Restaurar ao padrão",
-			"tooltip-customize-command": "Personalizar esse comando"
+			"tooltip-customize-command": "Personalizar esse comando",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "Sobre",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Desvincular painel",
 			"link-pane": "Vincular painel...",
 			"delete-file": "Deletar arquivo",
-			"open-in-new-pane": "Abrir em um novo painel"
+			"open-in-new-pane": "Abrir em um novo painel",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Clique para expandir",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Fazer uma cópia",
 			"msg-invalid-characters": "O nome do arquivo não pode conter nenhum desses caracteres: ",
 			"msg-file-already-exists": "Já existe um arquivo com este nome",
-			"msg-empty-file-name": "O nome do arquivo não pode estar em branco."
+			"msg-empty-file-name": "O nome do arquivo não pode estar em branco.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Procurar",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Pesquisar pelo caminho do arquivo: ",
 			"label-match-file-name": "Pesquisar pelo nome do arquivo: ",
 			"label-match-content": "Pesquisar pelo conteúdo do arquivo: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Pesquisar por etiqueta: ",
 			"label-no-matches": "Nada foi encontrado.",
 			"matches-with-count": "... e mais {{count}} correspondência.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Nome da etiqueta (A - Z)",
 			"label-sort-by-name-z-to-a": "Nome da etiqueta (Z - A)",
 			"label-sort-by-frequency-high-to-low": "Frequência (alta para baixa)",
-			"label-sort-by-frequency-low-to-high": "Frequência (baixa para alta)"
+			"label-sort-by-frequency-low-to-high": "Frequência (baixa para alta)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Espiar página",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Escolha o esquema de cores padrão para o seu site.",
 			"option-show-navigation": "Mostrar navegação",
 			"option-show-navigation-description": "Mostra uma lista de todas as páginas duplicadas no lado esquerdo do seu site.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Mostrar visualização em gráfico",
 			"option-show-graph-description": "Mostra um pequeno gráfico local em cada página.",
 			"option-show-outline": "Mostrar índice",

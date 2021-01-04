@@ -100,10 +100,13 @@
 		"hotkeys": {
 			"name": "Atajos",
 			"prompt-filter": "Filtrar...",
+			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Borrar atajo",
 			"label-waiting-for-hotkey-press": "Presionar teclas...",
 			"tooltip-restore-default": "Restaurar los valores por defecto",
-			"tooltip-customize-command": "Modificar este comando"
+			"tooltip-customize-command": "Modificar este comando",
+			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
 		},
 		"about": {
 			"name": "About",
@@ -298,7 +301,8 @@
 			"unlink-pane": "Desligar panel",
 			"link-pane": "Ligar panel...",
 			"delete-file": "Eliminar archivo",
-			"open-in-new-pane": "Open in new pane"
+			"open-in-new-pane": "Open in new pane",
+			"copy-url": "Copy url"
 		},
 		"tooltip": {
 			"click-to-expand": "Click para expandir",
@@ -437,7 +441,9 @@
 			"menu-opt-make-copy": "Hacer una copia",
 			"msg-invalid-characters": "El nombre de archivo no puede contener ninguno de los siguientes caracteres: ",
 			"msg-file-already-exists": "Ya hay un archivo con ese nombre",
-			"msg-empty-file-name": "El nombre de archivo no puede estar vacio."
+			"msg-empty-file-name": "El nombre de archivo no puede estar vacio.",
+			"tooltip-modified-time": "Last modified at {{time}}",
+			"tooltip-created-time": "Created at {{time}}"
 		},
 		"search": {
 			"name": "Buscar",
@@ -459,6 +465,7 @@
 			"label-match-file-path": "Concide con la ruta de archivo: ",
 			"label-match-file-name": "Coincide con el nombre de archivo: ",
 			"label-match-content": "Coincide con el contenido del archivo: ",
+			"label-match-line": "Match line: ",
 			"label-match-tag": "Coincide con la etiqueta: ",
 			"label-no-matches": "No hay coincidencias.",
 			"matches-with-count": "... y {{count}} correspondencia más.",
@@ -554,7 +561,8 @@
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
 			"label-sort-by-frequency-high-to-low": "Frequency (high to low)",
-			"label-sort-by-frequency-low-to-high": "Frequency (low to high)"
+			"label-sort-by-frequency-low-to-high": "Frequency (low to high)",
+			"action-show-nested-tags": "Show nested tags"
 		},
 		"page-preview": {
 			"name": "Vista previa",
@@ -763,6 +771,8 @@
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
 			"option-show-navigation-description": "Display a list of all published pages on the left side of your published site.",
+			"option-show-search": "Show search bar",
+			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
 			"option-show-graph": "Show graph view",
 			"option-show-graph-description": "Display a small local graph on each page.",
 			"option-show-outline": "Show table of contents",
