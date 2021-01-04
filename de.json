@@ -73,22 +73,22 @@
 		},
 		"appearance": {
 			"name": "Darstellung",
-			"option-base-theme": "Standard Farbthema",
-			"option-base-theme-description": "Wähle das Standard-Farbthema für Obsidian.",
+			"option-base-theme": "Standard Farbschema",
+			"option-base-theme-description": "Wähle das Standard-Farbschema für Obsidian.",
 			"dark-theme": "Dunkel",
 			"light-theme": "Hell",
 			"option-use-obsidian-css": "Eigenes CSS nutzen",
 			"option-use-obsidian-css-description": "Wendet “obsidian.css” im Vault-Ordner an. Dies ist eine veraltete Einstellung: Bitte nutze die Möglichkeit, Deine CSS-Datei in den Ordner für CSS-Bausteine zu verschieben (siehe unten).",
-			"option-community-themes": "Öffne Community-Themes",
-			"option-community-themes-description": "Zeige und nutze tolle, durch die Community erstellte Themes.",
+			"option-community-themes": "Öffne Farbschemen aus der Community",
+			"option-community-themes-description": "Zeige und nutze tolle, durch die Community erstellte Farbschemen.",
 			"button-browse-community-themes": "Durchsuchen",
-			"option-themes": "Themen",
-			"option-theme": "Thema",
-			"option-theme-description": "Welches Community-Thema wird angewendet. Themen sind in \"vault/.obsidian/themes/\" gespeichert.",
+			"option-themes": "Farbschemen",
+			"option-theme": "Farbschema",
+			"option-theme-description": "Welches Community-Farbschema wird angewendet. Farbschemen sind in \"vault/.obsidian/themes/\" gespeichert.",
 			"option-choice-none": "Keines",
-			"button-reload-themes": "Themen neu laden",
-			"msg-reloaded-themes": "Eigene CSS-Themen neu geladen.",
-			"button-open-themes-folder": "Öffne Themen-Ordner",
+			"button-reload-themes": "Farbschemen neu laden",
+			"msg-reloaded-themes": "Eigene CSS-Schemen neu geladen.",
+			"button-open-themes-folder": "Öffne Schemen-Ordner",
 			"option-css-snippets": "CSS-Bausteine",
 			"label-no-css-snippets-found": "Keine CSS-Bausteine im Ordner gefunden.",
 			"no-snippet-description": "CSS -Bausteine sind in \"{{path}}\" gespeichert.",
@@ -100,13 +100,13 @@
 		"hotkeys": {
 			"name": "Tastenkürzel",
 			"prompt-filter": "Filter...",
-			"tooltip-legacy": "Legacy hotkey",
+			"tooltip-legacy": "Altes Tastenkürzel",
 			"tooltip-delete-hotkey": "Kürzel löschen",
 			"label-waiting-for-hotkey-press": "Tastenkürzel drücken...",
 			"tooltip-restore-default": "Standard wiederherstellen",
 			"tooltip-customize-command": "Eigenes Kürzel festlegen",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Dieses Kürzel und \"{{command}}\" überschneiden sich.",
+			"tooltip-hotkey-multiple-conflicts": "Dieses Kürzel überschneidet sich mit {{count}} anderen."
 		},
 		"about": {
 			"name": "Über",
@@ -302,7 +302,7 @@
 			"link-pane": "Mit Fensterbereich verlinken...",
 			"delete-file": "Datei löschen",
 			"open-in-new-pane": "In neuem Fensterbereich öffnen",
-			"copy-url": "Copy url"
+			"copy-url": "URL kopieren"
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -442,8 +442,8 @@
 			"msg-invalid-characters": "Dateiname darf keines der folgenden Symbole enthalten: ",
 			"msg-file-already-exists": "Es existiert bereits eine Datei mit demselben Namen",
 			"msg-empty-file-name": "Der Dateiname darf nicht leer sein.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "Zuletzt bearbeitet: {{time}}",
+			"tooltip-created-time": "Erstellt: {{time}}"
 		},
 		"search": {
 			"name": "Suchen",
@@ -465,7 +465,7 @@
 			"label-match-file-path": "Dateipfad stimmt überein: ",
 			"label-match-file-name": "Dateiname stimmt überein: ",
 			"label-match-content": "Dateiinhalt stimmt überein: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "Zeile stimmt überein: ",
 			"label-match-tag": "Tag stimmt überein: ",
 			"label-no-matches": "Keine Übereinstimmungen gefunden.",
 			"matches-with-count": "... und {{count}} weitere Übereinstimmung.",
@@ -562,7 +562,7 @@
 			"label-sort-by-name-z-to-a": "Tag (Z - A)",
 			"label-sort-by-frequency-high-to-low": "Häufigkeit (hoch - niedrig)",
 			"label-sort-by-frequency-low-to-high": "Häufigkeit (niedrig - hoch)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "Zeige verschachtelte Tags"
 		},
 		"page-preview": {
 			"name": "Seitenvorschau",
@@ -584,11 +584,11 @@
 		"custom-css": {
 			"name": "Benutzerdefiniertes CSS",
 			"desc": "Liest \"obsidian.css\" im Tresor und wendet es an.",
-			"setting-community-themes": "Community Themen",
-			"msg-fetching-themes": "Lade die Community Theme Dateien...",
+			"setting-community-themes": "Community Farbschemen",
+			"msg-fetching-themes": "Lade die Community Farbschema Dateien...",
 			"prompt-filter": "Filter...",
-			"label-dark-theme-only": "Nur dunkle Themen",
-			"label-light-theme-only": "Nur helle Themen",
+			"label-dark-theme-only": "Nur dunkle Farbschemen",
+			"label-light-theme-only": "Nur helle Farbschemen",
 			"label-preview": "Vorschau",
 			"label-stop-preview": "Vorschau beenden",
 			"label-use": "Aktivieren",
@@ -599,7 +599,7 @@
 			"msg-override-theme": "Aktuelle CSS Datei überschreiben",
 			"msg-existing-theme": "Du hast bereits eine benutzerdefinierte CSS Datei \"obsidian.css\".",
 			"msg-confirm-override": "Bist Du Dir sicher, dass Du die Datei überschreiben willst? Du wirst die überschriebene CSS Datei dauerhaft verlieren. Bitte erstelle eine Sicherungsdatei falls notwendig.",
-			"msg-load-error": "Die Community Themes konnten nicht geladen werden. Bitte überprüfe Deine Netzwerkverbindung.",
+			"msg-load-error": "Die Community Farbschemen konnten nicht geladen werden. Bitte überprüfe Deine Netzwerkverbindung.",
 			"msg-now-using-theme": "Du nutzt jetzt {{title}} als Dein CSS-Thema."
 		},
 		"command-palette": {
@@ -767,12 +767,12 @@
 			"option-home-page-file": "Homepage Datei",
 			"option-home-page-file-description": "Die erste Seite, die Nutzer sehen, wenn sie Deine veröffentlichte Seite aufrufen",
 			"option-home-page-file-placeholder": "Wähle eine veröffentlichte Datei",
-			"option-theme": "Theme",
-			"option-theme-description": "Wähle ein Standard-Theme für Deine Seite.",
+			"option-theme": "Schema",
+			"option-theme-description": "Wähle ein Standard-Schema für Deine Seite.",
 			"option-show-navigation": "Navigation anzeigen",
 			"option-show-navigation-description": "Zeigt eine Liste aller Deiner veröffentlichten Seiten am linken Rand der Seiten.",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "Zeige Suchbereich",
+			"option-show-search-description": "Zeigt einen Suchbereich über der Navigation, mit dem Besucher Seiten und Titel auf Deiner Seite durchsuchen können.",
 			"option-show-graph": "Zeige Graphenansicht",
 			"option-show-graph-description": "Zeigt einen kleinen, lokalen Graphen auf jeder Seite an.",
 			"option-show-outline": "Zeige Inhaltsverzeichnis",
