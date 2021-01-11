@@ -40,6 +40,8 @@
 			"option-tab-size-description": "탭 한개당 스페이스의 갯수",
 			"option-line-wrap": "줄 바꿈",
 			"option-line-wrap-description": "긴 줄들을 좌우 스크롤 할 필요 없이 창에 들어가도록 자동으로 줄을 바꿔줍니다",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim 키 바인딩",
 			"option-vim-key-bindings-description": "소스 에디터에서 Vim의 키 바인딩을 쓸수 있게 해줍니다."
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "가장 짧은 링크",
 			"option-choice-relative-path": "열려있는 파일을 기준으로 상대경로",
 			"option-choice-absolute-path": "보관함의 최상위 폴더에서부터 절대경로",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "첨부파일 폴더 경로",
-			"option-attachment-folder-path-description": "새로 생성된 첨부파일들이 이 폴더에 보관됩니다. 이는 복사 붙여넣기, 혹은 끌어서 가져온 사진들과 음성데이터도 포함됩니다."
+			"option-attachment-folder-path-description": "새로 생성된 첨부파일들이 이 폴더에 보관됩니다. 이는 복사 붙여넣기, 혹은 끌어서 가져온 사진들과 음성데이터도 포함됩니다.",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "테마",
@@ -100,7 +108,6 @@
 		"hotkeys": {
 			"name": "단축키",
 			"prompt-filter": "검색...",
-			"tooltip-legacy": "레거시 단축키",
 			"tooltip-delete-hotkey": "단축키 삭제",
 			"label-waiting-for-hotkey-press": "단축키를 누르세요...",
 			"tooltip-restore-default": "기본값으로 되돌리기",
@@ -443,7 +450,8 @@
 			"msg-file-already-exists": "같은 이름의 파일이 이미 존재합니다",
 			"msg-empty-file-name": "파일 이름을 써주세요.",
 			"tooltip-modified-time": "최신 편집 시간: {{time}}",
-			"tooltip-created-time": "생성 시간: {{time}}"
+			"tooltip-created-time": "생성 시간: {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "검색",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "빠른 파일 변경",
 			"desc": "키보드에서 손을 떼지 않고 다른 파일을 엽니다. Ctrl/Cmd+O로 사용해보세요.",
+			"short-name": "Switcher",
 			"action-open": "빠른 파일 변경 열기",
 			"instruction-navigate": "파일 선택",
 			"instruction-open": "파일 열기",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "일간 노트",
 			"desc": "오늘의 일간 노트를 엽니다. 없다면 새로 만듭니다.",
+			"short-name": "Today",
 			"action-open": "오늘의 일간 노트 열기",
 			"action-open-previous": "이전 일간 노트 열기",
 			"action-open-next": "다음 일간 노트 열기",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten 서식 사용",
 			"desc": "새로운 노트를 만들 때 12글자의 Zettelkasten ID 사용 YYYYMMDDHHII (예시. 202001010000).",
+			"short-name": "ZK note",
 			"action-create-note": "Zettelkasten 노트 만들기",
 			"option-new-file-location": "새로운 노트 생성 장소",
 			"option-new-file-location-description": "새로운 Zettelkasten 노트를 만들 폴더 경로.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "랜덤 노트",
 			"desc": "랜덤한 노트를 엽니다. 리뷰하거나 발견하는데 효과적입니다.",
+			"short-name": "Random",
 			"action-open": "랜덤 노트 열기"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "사이트 ID 가 이미 사용중입니다. 다른 ID를 골라주세요.",
 			"msg-create-site-issue": "사이트를 만드는데 문제가 있었습니다.",
 			"label-site-options": "사이트 옵션",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "사이트 이름",
 			"option-site-name-description": "생성된 사이트 이름. 사이트의 제목에 표시됩니다.",
 			"option-site-name-placeholder": "사이트 이름",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "링크에 커서를 올리면 미리보기를 보여줍니다",
 			"option-readable-line-length": "읽기 편한 줄길이",
 			"option-readable-line-length-description": "각 줄의 길이에 제한을 줍니다. 화면에 표시되는 글은 제한되지만, 긴 문단을 읽기 편해집니다.",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "사이트 설정 저장",
 			"msg-updated-options": "사이트 설정이 변경되었습니다.",
 			"button-go-back": "취소",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "바뀐점들이 사이트에 적용되는데 몇분의 시간이 걸립니다. 가장 최근 변경이 보이지 않는다면 브라우저 캐시를 비워주세요.",
 			"label-visit-site": "사이트는 여기서 보실수 있습니다: ",
 			"msg-something-went-wrong": "문제가 발생했습니다. 자세한 정보는 개발자 콘솔을 확인해주세요.",
-			"msg-network-error": "네트워크 에러가 발생했습니다. "
+			"msg-network-error": "네트워크 에러가 발생했습니다. ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "워크스페이스",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "워크스페이스를 저장했습니다.",
 			"label-no-workspaces-found": "저장된 워크스페이스가 없습니다.",
 			"placeholder-type-to-search-workspaces": "워크스페이스 이름을 입력하세요..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} 링크",
 		"file-with-count": "{{count}} 파일",
 		"file-with-count_plural": "{{count}} 파일",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} 백링크",
 		"backlink-with-count_plural": "{{count}} 백링크"
 	}

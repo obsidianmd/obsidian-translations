@@ -40,6 +40,8 @@
 			"option-tab-size-description": "Numero di spazi da usare per la tabulazione.",
 			"option-line-wrap": "Ritorno a capo automatico",
 			"option-line-wrap-description": "Manda a capo le righe lunghe per adattarle alla finestra senza dover scorrere da sinistra verso destra.",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Tasti di scelta rapida Vim",
 			"option-vim-key-bindings-description": "Permette di utilizzare la mappatura dei tasti di Vim nell'editor."
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "Percorso più breve",
 			"option-choice-relative-path": "Percorso relativo al file",
 			"option-choice-absolute-path": "Percorso assoluto nel vault",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "Percorso cartella degli allegati",
-			"option-attachment-folder-path-description": "I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite drag and drop o copia/incolla e le registrazioni audio."
+			"option-attachment-folder-path-description": "I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite drag and drop o copia/incolla e le registrazioni audio.",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "Aspetto",
@@ -100,7 +108,6 @@
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
 			"prompt-filter": "Filtra...",
-			"tooltip-legacy": "Combinazione legacy",
 			"tooltip-delete-hotkey": "Elimina combinazione di tasti",
 			"label-waiting-for-hotkey-press": "Premi tasti di scelta rapida...",
 			"tooltip-restore-default": "Ripristina predefinito",
@@ -443,7 +450,8 @@
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
 			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
 			"tooltip-modified-time": "Ultima modifica il {{time}}",
-			"tooltip-created-time": "Creato il {{time}}"
+			"tooltip-created-time": "Creato il {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "Ricerca",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "Selezione rapida",
 			"desc": "Passa a un file senza lasciare la tastiera. Ctrl/Cmd+O per attivare.",
+			"short-name": "Switcher",
 			"action-open": "Apri selezione rapida",
 			"instruction-navigate": "seleziona",
 			"instruction-open": "apri",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "Note del giorno",
 			"desc": "Apre la nota del giorno o ne crea una se non è presente.",
+			"short-name": "Today",
 			"action-open": "Apri nota del giorno",
 			"action-open-previous": "Apri nota del giorno precedente",
 			"action-open-next": "Apri nota del giorno successiva",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Prefissi Zettelkasten",
 			"desc": "Crea una nuova nota in formato Zettelkasten con ID a 12 cifre YYYYMMDDHHII (Esempio 202001010000).",
+			"short-name": "ZK note",
 			"action-create-note": "Nuova nota Zettelkasten",
 			"option-new-file-location": "Posizione dei nuovi file",
 			"option-new-file-location-description": "Percorso della cartella per le nuove note Zettelkasten.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "Note casuali",
 			"desc": "Apre una nota casuale. Utile per riesaminare e ritrovare note.",
+			"short-name": "Random",
 			"action-open": "Apri nota casuale"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "Questo ID è già in uso, provane un altro.",
 			"msg-create-site-issue": "C'è stato un problema durante la creazione del sito.",
 			"label-site-options": "Opzioni sito",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "Nome sito",
 			"option-site-name-description": "Nome del sito pubblicato. Apparirà nel titolo della pagina del sito.",
 			"option-site-name-placeholder": "Nome del sito",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "Visualizza l'anteprima della pagina quando si passa il mouse sui link.",
 			"option-readable-line-length": "Migliora leggibilità delle righe",
 			"option-readable-line-length-description": "Limita la lunghezza massima delle righe. Mostra meno contenuti sullo schermo ma rende i paragrafi lunghi più leggibili.",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "Salva opzioni sito",
 			"msg-updated-options": "Le impostazioni del sito sono state aggiornate.",
 			"button-go-back": "Indietro",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "Sono necessari alcuni minuti prima che le modifiche vengano visualizzate sul sito. Se le modifiche non vengono visualizzate, provare a svuotare la cache del browser.",
 			"label-visit-site": "Visita il sito qui: ",
 			"msg-something-went-wrong": "Si è verificato un errore. Per informazioni dettagliate controllare la console sviluppatori.",
-			"msg-network-error": "Si è verificato un errore di rete. "
+			"msg-network-error": "Si è verificato un errore di rete. ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "Aree di lavoro",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "L'area di lavoro è stata salvata.",
 			"label-no-workspaces-found": "Nessuna area di lavoro salvata.",
 			"placeholder-type-to-search-workspaces": "Digita nome dell'area di lavoro..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} collegamenti",
 		"file-with-count": "{{count}} file",
 		"file-with-count_plural": "{{count}} file",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} riferimento",
 		"backlink-with-count_plural": "{{count}} riferimenti"
 	}
