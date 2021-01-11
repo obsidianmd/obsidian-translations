@@ -40,6 +40,8 @@
 			"option-tab-size-description": "一個Tab等於幾個空白。",
 			"option-line-wrap": "文字自動換行",
 			"option-line-wrap-description": "文字過長時自動換行以避免水平捲動之操作。",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim鍵綁定",
 			"option-vim-key-bindings-description": "允許在編輯器中使用Vim鍵綁定。"
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "以儘可能簡短的形式插入",
 			"option-choice-relative-path": "插入對應當前檔案的相對路徑",
 			"option-choice-absolute-path": "插入對應儲存庫的絕對路徑",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "附件資料夾路徑",
-			"option-attachment-folder-path-description": "指定用於儲存附件的資料夾。新建的附件會儲存於此，如音訊記錄或通過拖放或粘貼建立的影像等。"
+			"option-attachment-folder-path-description": "指定用於儲存附件的資料夾。新建的附件會儲存於此，如音訊記錄或通過拖放或粘貼建立的影像等。",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "外觀",
@@ -100,7 +108,6 @@
 		"hotkeys": {
 			"name": "快捷鍵",
 			"prompt-filter": "搜尋...",
-			"tooltip-legacy": "舊版熱鍵",
 			"tooltip-delete-hotkey": "刪除快捷鍵",
 			"label-waiting-for-hotkey-press": "按下快捷鍵...",
 			"tooltip-restore-default": "恢復預設",
@@ -443,7 +450,8 @@
 			"msg-file-already-exists": "已經存在一個同名檔案",
 			"msg-empty-file-name": "檔案名不能為空。",
 			"tooltip-modified-time": "最後修改時間：{{time}}",
-			"tooltip-created-time": "建檔時間：{{time}}"
+			"tooltip-created-time": "建檔時間：{{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "搜尋",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "快速切換",
 			"desc": "輸入關鍵字即可跳轉到相應檔案（按下Ctrl/Cmd+O 啟用此功能）。",
+			"short-name": "Switcher",
 			"action-open": "開啟快速切換",
 			"instruction-navigate": "導航",
 			"instruction-open": "開啟",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "日記",
 			"desc": "開啟今天的日記（如果不存在，則建立一個）。",
+			"short-name": "Today",
 			"action-open": "開啟今天的日記",
 			"action-open-previous": "開啟前一日記",
 			"action-open-next": "開啟後一日記",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "ZK卡片",
 			"desc": "建立以12位數字ID命名的ZK卡片，命名格式為 YYYYMMDDHHII (例：202001010000)。",
+			"short-name": "ZK note",
 			"action-create-note": "建立新的ZK卡片",
 			"option-new-file-location": "新建ZK卡片的儲存目錄",
 			"option-new-file-location-description": "儲存ZK卡片的資料夾路徑。",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "漫遊筆記",
 			"desc": "隨機開啟一則筆記，以助於回顧和發現。",
+			"short-name": "Random",
 			"action-open": "開始漫遊筆記"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "此網站 ID已被使用，請再試別的ID。",
 			"msg-create-site-issue": "建立網站時發生錯誤。",
 			"label-site-options": "網站選項",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "網站名稱",
 			"option-site-name-description": "發佈筆記的網站名稱，將顯示為網站的標題抬頭。",
 			"option-site-name-placeholder": "網站命名",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "當滑鼠懸停於連結上時顯示內容預覽。",
 			"option-readable-line-length": "縮減行寬",
 			"option-readable-line-length-description": "限制每行字數，使螢幕顯示的內容減少，但使長段落更具可讀性。",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "儲存網站設定",
 			"msg-updated-options": "網站的已更新選項。",
 			"button-go-back": "返回",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "網站的變動在幾分鐘後才會顯示，如果無法看剽最後的變動內容，請試著清除瀏覽器的快取。",
 			"label-visit-site": "可在此參觀你的網站：",
 			"msg-something-went-wrong": "發生錯誤了，請開啟開發者主控台以查看問題細節。",
-			"msg-network-error": "發生了網路錯誤。"
+			"msg-network-error": "發生了網路錯誤。",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "工作空間",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "工作空間已儲存。",
 			"label-no-workspaces-found": "無法尋獲指定的工作空間。",
 			"placeholder-type-to-search-workspaces": "輸入工作空間名稱..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} 個連結",
 		"file-with-count": "{{count}} 個檔案",
 		"file-with-count_plural": "{{count}} 個檔案",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} 個反向連結",
 		"backlink-with-count_plural": "{{count}} 個反向連結"
 	}
