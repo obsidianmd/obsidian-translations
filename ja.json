@@ -40,6 +40,8 @@
 			"option-tab-size-description": "タブを表すスペースの個数を決定します。",
 			"option-line-wrap": "行の折り返し",
 			"option-line-wrap-description": "長い行を折り返してウィンドウに収め、左右にスクロールしなくてすむようにします。",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vimのキー設定",
 			"option-vim-key-bindings-description": "ソースエディタでVimのキーバインディングが使用できるようにします。"
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "可能であれば最短経路",
 			"option-choice-relative-path": "ファイルに対する相対パス",
 			"option-choice-absolute-path": "保管庫内での絶対パス",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "添付ファイルフォルダのパス",
-			"option-attachment-folder-path-description": "新規作成された添付ファイルはこのフォルダに置かれます。ドラッグ&ドロップやペーストで作成された画像や、音声の録音ファイルなどが含まれます。"
+			"option-attachment-folder-path-description": "新規作成された添付ファイルはこのフォルダに置かれます。ドラッグ&ドロップやペーストで作成された画像や、音声の録音ファイルなどが含まれます。",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "外観",
@@ -100,19 +108,18 @@
 		"hotkeys": {
 			"name": "ホットキー",
 			"prompt-filter": "フィルタ…",
-			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "ホットキーを削除",
-			"label-waiting-for-hotkey-press": "キーを押して下さい",
+			"label-waiting-for-hotkey-press": "キーを押してください",
 			"tooltip-restore-default": "デフォルトに戻す",
 			"tooltip-customize-command": "コマンドをカスタマイズ",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "このホットキーは \"{{command}}\" と衝突しています",
+			"tooltip-hotkey-multiple-conflicts": "このホットキーは{{count}}個のコマンドと衝突しています"
 		},
 		"about": {
 			"name": "Obsidianについて",
 			"label-license-key": "ライセンスキー",
 			"license-key-placeholder": "ここにライセンスキーを入力",
-			"label-enter-commercial-license": "商用ライセンスキーを入力して下さい:",
+			"label-enter-commercial-license": "商用ライセンスキーを入力してください:",
 			"label-activate-license": "ライセンス認証する",
 			"button-activate": "認証",
 			"label-unknown-version": "バージョン不明",
@@ -123,13 +130,13 @@
 			"label-manual-install-required": "手動で最新版をインストールする必要があります。",
 			"label-download-link": "ここにダウンロードします。",
 			"label-new-version-ready": "最新バージョンがインストールできます。",
-			"label-relaunch-to-update": "更新のために再起動して下さい。",
+			"label-relaunch-to-update": "更新のために再起動してください。",
 			"label-disabled-updates": "更新は無効になっています。",
 			"label-checking-for-updates": "更新を確認しています…",
 			"button-relaunch": "再起動",
 			"button-check-for-updates": "更新を確認",
 			"option-auto-update": "自動更新",
-			"option-auto-update-description": "アプリに更新を確認させないようにするには、このオプションをオフにして下さい。",
+			"option-auto-update-description": "アプリに更新を確認させないようにするには、このオプションをオフにしてください。",
 			"option-open-help": "ヘルプ",
 			"option-open-help-description": "ヘルプ用のドキュメンテーションを開く。",
 			"button-open": "開く",
@@ -302,7 +309,7 @@
 			"link-pane": "ペインをリンク…",
 			"delete-file": "ファイルを削除",
 			"open-in-new-pane": "新規ペインで開く",
-			"copy-url": "Copy url"
+			"copy-url": "URLをコピー"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
@@ -442,8 +449,9 @@
 			"msg-invalid-characters": "ファイル名には次の文字を使えません: ",
 			"msg-file-already-exists": "同じ名前のファイルがあります。",
 			"msg-empty-file-name": "ファイル名を空にはできません。",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "更新日時 {{time}}",
+			"tooltip-created-time": "作成日時 {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "検索",
@@ -465,7 +473,7 @@
 			"label-match-file-path": "ファイルパスに一致: ",
 			"label-match-file-name": "ファイル名に一致: ",
 			"label-match-content": "ファイルの内容に一致: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "行に一致: ",
 			"label-match-tag": "タグに一致: ",
 			"label-no-matches": "一致する箇所は見つかりませんでした。",
 			"matches-with-count": "… さらに {{count}} 箇所で一致。",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "クイックスイッチャー",
 			"desc": "キーボードから指を離すことなくファイルに移動できます。Ctrl/Cmd+Oで開始します。",
+			"short-name": "Switcher",
 			"action-open": "クイックスイッチャーを開く",
 			"instruction-navigate": "選択",
 			"instruction-open": "開く",
@@ -562,7 +571,7 @@
 			"label-sort-by-name-z-to-a": "タグ名称で並べ替え (Z to A)",
 			"label-sort-by-frequency-high-to-low": "頻度で並べ替え (high to low)",
 			"label-sort-by-frequency-low-to-high": "頻度で並べ替え (low to high)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "ネストされたタグを表示"
 		},
 		"page-preview": {
 			"name": "ページプレビュー",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "デイリーノート",
 			"desc": "今日のノートを開きます。ない場合は作成します。",
+			"short-name": "Today",
 			"action-open": "今日のノートを開く",
 			"action-open-previous": "前日のデイリーノートを開く",
 			"action-open-next": "翌日のデイリーノートを開く",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkastenプレフィクサー",
 			"desc": "12桁のZettelkasten IDフォーマット YYYYMMDDHHII（たとえば202001010000）を使用して新規ノートを作成します。",
+			"short-name": "ZK note",
 			"action-create-note": "新規Zettelkastenノートを作成",
 			"option-new-file-location": "新規ファイルの場所",
 			"option-new-file-location-description": "新規Zettelkastenノートを作成するフォルダのパス。",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "ランダムノート",
 			"desc": "ランダムにノートをひとつ開きます。振返りと発見に役立ちます。",
+			"short-name": "Random",
 			"action-open": "ランダムノートを開く"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "このサイトIDは使用中です。別のサイトIDを試してください。",
 			"msg-create-site-issue": "それはあなたのサイトを作成するときの問題でした。",
 			"label-site-options": "サイトオプション",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "サイト名称",
 			"option-site-name-description": "公開サイトの名前。あなたのサイトのページタイトルに表示されます。",
 			"option-site-name-placeholder": "あなたのサイトの名称",
@@ -771,8 +788,8 @@
 			"option-theme-description": "サイトのデフォルトの配色を選択します。",
 			"option-show-navigation": "ナビゲーションを表示",
 			"option-show-navigation-description": "公開サイトの左側に、公開されているすべてのページのリストを表示します。",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "検索バーを表示",
+			"option-show-search-description": "訪問者がサイト上のページと見出しを検索できるようにナビゲーションのトップに検索バーを表示します。",
 			"option-show-graph": "グラフビューを表示",
 			"option-show-graph-description": "各ページに小さなローカルグラフを表示します。",
 			"option-show-outline": "目次を表示",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "リンクにカーソルを合わせると、ページのプレビューが表示されます。",
 			"option-readable-line-length": "読み取り可能な行の長さ",
 			"option-readable-line-length-description": "最大行長を制限します。 画面に収まるコンテンツは少なくなりますが、長い段落が読みやすくなります。",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "サイト設定を保存",
 			"msg-updated-options": "サイトのオプションを更新しました。",
 			"button-go-back": "戻る",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "変更がサイトに表示されるまでに最大数分かかります。 最新の変更が表示されない場合は、ブラウザのキャッシュをクリアしてみてください。",
 			"label-visit-site": "ここからあなたのサイトを訪問できます: ",
 			"msg-something-went-wrong": "何かがうまくいきませんでした。詳細は、開発者コンソールを確認してください。",
-			"msg-network-error": "ネットワークエラーが発生しました。 "
+			"msg-network-error": "ネットワークエラーが発生しました。 ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "ワークスペース",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "ワークスペースが正常に保存されました。",
 			"label-no-workspaces-found": "保存されたワークスペースが見つかりません。",
 			"placeholder-type-to-search-workspaces": "ワークスペース名を入力…"
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} リンク",
 		"file-with-count": "{{count}} ファイル",
 		"file-with-count_plural": "{{count}} ファイル",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} バックリンク",
 		"backlink-with-count_plural": "{{count}} バックリンク"
 	}

@@ -29,7 +29,7 @@
 			"option-fold-indent": "Сворачивать отступы",
 			"option-fold-indent-description": "Сворачивает текст с одинаковыми отступами, например списки.",
 			"option-default-view-mode": "Вид по умолчанию",
-			"option-default-view-mode-description": "The default mode a file gets opened in.",
+			"option-default-view-mode-description": "По умолчанию файл открывается в выбранном режиме.",
 			"option-default-view-mode-source": "Редактор",
 			"option-default-view-mode-preview": "Просмотр",
 			"option-show-line-number": "Отображать номера строк",
@@ -40,6 +40,8 @@
 			"option-tab-size-description": "Количество пробелов, которому соответствует табуляция.",
 			"option-line-wrap": "Переносить строки",
 			"option-line-wrap-description": "Переносить длинные строки, чтобы они умещались в области без необходимости горизонтальной прокрутки.",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Использовать сочетания клавиш Vim",
 			"option-vim-key-bindings-description": "Позволяет использовать сочетания клавиш Vim в режиме редактирования."
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "Самый короткий путь к файлу из возможных",
 			"option-choice-relative-path": "Относительный путь к файлу",
 			"option-choice-absolute-path": "Абсолютный путь относительно хранилища",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "Путь к папке для вложенных файлов",
-			"option-attachment-folder-path-description": "Новые вложенные файлы будут сохраняться в этой папке. В том числе любые вставленные изображения и аудиозаписи."
+			"option-attachment-folder-path-description": "Новые вложенные файлы будут сохраняться в этой папке. В том числе любые вставленные изображения и аудиозаписи.",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "Оформление",
@@ -100,13 +108,12 @@
 		"hotkeys": {
 			"name": "Сочетания клавиш",
 			"prompt-filter": "Фильтр...",
-			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Удалить сочетание клавиш",
 			"label-waiting-for-hotkey-press": "Нажмите сочетание клавиш...",
 			"tooltip-restore-default": "Восстановить значение по умолчанию",
 			"tooltip-customize-command": "Настроить эту команду",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Это сочетание конфликтует с командой \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Количество конфликтов этого сочетания с другими командами: {{count}}"
 		},
 		"about": {
 			"name": "О программе",
@@ -130,7 +137,7 @@
 			"button-check-for-updates": "Проверить обновления",
 			"option-auto-update": "Автоматические обновления",
 			"option-auto-update-description": "Проверять и скачивать доступные обновления автоматически.",
-			"option-open-help": "Помощь Obsidian",
+			"option-open-help": "Документация Obsidian",
 			"option-open-help-description": "Открывает справочную документацию.",
 			"button-open": "Открыть",
 			"option-language": "Язык",
@@ -301,8 +308,8 @@
 			"unlink-pane": "Отвязать",
 			"link-pane": "Связать с областью...",
 			"delete-file": "Удалить файл",
-			"open-in-new-pane": "Открыть в новой вкладке",
-			"copy-url": "Copy url"
+			"open-in-new-pane": "Открыть в новой области",
+			"copy-url": "Скопировать url"
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -334,12 +341,12 @@
 			"msg-error-remove-current-open-vault": "Невозможно удалить открытое хранилище."
 		},
 		"drag-and-drop": {
-			"insert-link-here": "Вставьте сюда ссылку",
-			"insert-links-here": "Вставьте сюда ссылки",
+			"insert-link-here": "Вставить ссылку",
+			"insert-links-here": "Вставить ссылки",
 			"move-into-folder": "Переместить в \"{{folder}}\"",
 			"star-this-file": "Пометить этот файл",
 			"star-these-files": "Пометить эти файлы",
-			"open-in-this-pane": "Открыть в этой вкладке"
+			"open-in-this-pane": "Открыть в этой области"
 		}
 	},
 	"commands": {
@@ -442,8 +449,9 @@
 			"msg-invalid-characters": "Имя файла не должно содержать следующие символы: ",
 			"msg-file-already-exists": "Файл с таким именем уже есть",
 			"msg-empty-file-name": "Имя файла не может оставаться пустым.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "Время последнего изменения {{time}}",
+			"tooltip-created-time": "Время создания {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "Поиск",
@@ -465,7 +473,7 @@
 			"label-match-file-path": "Совпадает с путем файла: ",
 			"label-match-file-name": "Совпадает с именем файла: ",
 			"label-match-content": "В содержимом файла: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "Совпадение в строке: ",
 			"label-match-tag": "Совпадает с тегом: ",
 			"label-no-matches": "Совпадений не найдено.",
 			"matches-with-count": "... и еще {{count}} совпадения.",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "Быстрый переход",
 			"desc": "Быстро переходите к любому файлу, не отрывая рук от клавиатуры. Вызывается по сочетанию клавиш Ctrl/Cmd+O.",
+			"short-name": "Switcher",
 			"action-open": "Меню быстрого перехода",
 			"instruction-navigate": "навигация",
 			"instruction-open": "открыть",
@@ -562,7 +571,7 @@
 			"label-sort-by-name-z-to-a": "По тегу (Я -> А)",
 			"label-sort-by-frequency-high-to-low": "По частоте (часто -> редко)",
 			"label-sort-by-frequency-low-to-high": "По частоте (редко -> часто)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "Отображать вложенные теги"
 		},
 		"page-preview": {
 			"name": "Предпросмотр страницы",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "Ежедневные заметки",
 			"desc": "Открывает сегодняшнюю ежедневную заметку, либо создает ее впервые.",
+			"short-name": "Today",
 			"action-open": "Сегодняшняя заметка",
 			"action-open-previous": "Открыть предыдущую ежедневную заметку",
 			"action-open-next": "Открыть следующую ежедневную заметку",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten",
 			"desc": "Создает новую заметку с 12-значным номером в Zettelkasten-формате ГГГГММДДЧЧММ (Пример: 202001010000).",
+			"short-name": "ZK note",
 			"action-create-note": "Создать новую Zettelkasten-заметку",
 			"option-new-file-location": "Расположение нового файла",
 			"option-new-file-location-description": "Путь к папке, в которой будет создаваться новая Zettelkasten-заметка.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "Случайная заметка",
 			"desc": "Открывает случайную заметку. Может пригодиться для повторного чтения и неожиданных открытий.",
+			"short-name": "Random",
 			"action-open": "Открыть случайную заметку"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "Такой ID сайта уже занят, попробуйте другой.",
 			"msg-create-site-issue": "При создании сайта произошла ошибка.",
 			"label-site-options": "Настройки сайта",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "Название сайта",
 			"option-site-name-description": "Название публикуемого сайта. Оно будет отображаться в заголовке страниц сайта.",
 			"option-site-name-placeholder": "Название сайта",
@@ -771,8 +788,8 @@
 			"option-theme-description": "Выберите цветовую тему оформления сайта.",
 			"option-show-navigation": "Отображение навигации",
 			"option-show-navigation-description": "Отображать в левой части список всех опубликованных страниц.",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "Отображение строки поиска",
+			"option-show-search-description": "Отображать строку поиска над навигацией, чтобы посетители могли искать по содержимому и заголовкам вашего сайта.",
 			"option-show-graph": "Отображение графа",
 			"option-show-graph-description": "Отображать маленький граф на каждой странице.",
 			"option-show-outline": "Отображение оглавления",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "Отображать предпросмотр при наведении курсора на ссылки.",
 			"option-readable-line-length": "Ограничить максимальную длину строки",
 			"option-readable-line-length-description": "Повышает удобство чтения длинных абзацев, но уменьшает количество помещающейся на экране информации.",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "Сохранить настройки сайта",
 			"msg-updated-options": "Настройки для сайта сохранены.",
 			"button-go-back": "Назад",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "Изменения на сайте отобразятся в течении нескольких минут. Попробуйте очистить кэш браузера если изменения не видны.",
 			"label-visit-site": "Ваш сайт доступен по адресу ",
 			"msg-something-went-wrong": "Что-то пошло не так. Подробности в консоли для разработчиков.",
-			"msg-network-error": "Произошла сетевая ошибка. "
+			"msg-network-error": "Произошла сетевая ошибка. ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "Пространства",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "Пространство сохранено.",
 			"label-no-workspaces-found": "Нет сохраненных пространств.",
 			"placeholder-type-to-search-workspaces": "Введите имя пространства..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} ссылок",
 		"file-with-count": "{{count}} файл",
 		"file-with-count_plural": "{{count}} файлов",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "Обратных ссылок: {{count}}",
 		"backlink-with-count_plural": "Обратных ссылок: {{count}}"
 	}
