@@ -40,6 +40,8 @@
 			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Line wrap",
 			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim tuş ayarları",
 			"option-vim-key-bindings-description": "Kaynak editöründe Vim tuşlarını kullanabilmenizi sağlar."
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "Mümkünse en kısa yol",
 			"option-choice-relative-path": "Dosyaya göre belirli yol",
 			"option-choice-absolute-path": "Kasa içinde belirli yol",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "Eklenti klasörü yolu",
-			"option-attachment-folder-path-description": "Yeni yaratılan eklenti dosyaları bu klasörde yaratılır. Sürükle bırak, kopyala yapıştır ve ses kayıtları gibi dosyaları içerir."
+			"option-attachment-folder-path-description": "Yeni yaratılan eklenti dosyaları bu klasörde yaratılır. Sürükle bırak, kopyala yapıştır ve ses kayıtları gibi dosyaları içerir.",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "Görünüş",
@@ -100,7 +108,6 @@
 		"hotkeys": {
 			"name": "Kısayollar",
 			"prompt-filter": "Filtrele...",
-			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Silme kısayolu",
 			"label-waiting-for-hotkey-press": "Kısayolu tuşla...",
 			"tooltip-restore-default": "Varsayılana geri dön",
@@ -443,7 +450,8 @@
 			"msg-file-already-exists": "Aynı isimde bir dosya zaten var",
 			"msg-empty-file-name": "Dosya adı boş olamaz.",
 			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-created-time": "Created at {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "Ara",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "Hızlı geçiş",
 			"desc": "Klavyenizi bırakmadan hızlıca başka bir dosyaya geçin. Ctrl/Cmd+O ile kullanın.",
+			"short-name": "Switcher",
 			"action-open": "Hızlı geçişi aç",
 			"instruction-navigate": "geçmek için",
 			"instruction-open": "açmak için",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "Daily notes",
 			"desc": "Open today's daily note, or create one if not present.",
+			"short-name": "Today",
 			"action-open": "Open today's note",
 			"action-open-previous": "Open previous daily note",
 			"action-open-next": "Open next daily note",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten prefixer",
 			"desc": "Create a new note with the 12-digit Zettelkasten ID format YYYYMMDDHHII (Example 202001010000).",
+			"short-name": "ZK note",
 			"action-create-note": "Create new Zettelkasten note",
 			"option-new-file-location": "New file location",
 			"option-new-file-location-description": "The folder path to create the new Zettelkasten note.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "Random note",
 			"desc": "Opens a random note. Useful for reviewing and discovering.",
+			"short-name": "Random",
 			"action-open": "Open random note"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "This site ID is in use, please try another one.",
 			"msg-create-site-issue": "That was an issue when creating your site.",
 			"label-site-options": "Site options",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "Site name",
 			"option-site-name-description": "Name of your published site. It will show up in the page title of your site.",
 			"option-site-name-placeholder": "Name of your site",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "Display page preview when hovering links.",
 			"option-readable-line-length": "Readable line length",
 			"option-readable-line-length-description": "Limit maximum line length. Fits less content on the screen, but makes long paragraphs more readable.",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "Save site settings",
 			"msg-updated-options": "Updated options for your site.",
 			"button-go-back": "Geri",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "It takes up to a few minutes for the changes to show up on your site. If you do not see your latest changes, try clearing the cache in your browser.",
 			"label-visit-site": "You can visit your site here: ",
 			"msg-something-went-wrong": "Something went wrong. Please check the developer console for details.",
-			"msg-network-error": "A network error occurred. "
+			"msg-network-error": "A network error occurred. ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "Çalışma Alanları",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "Çalışma alanı başarıyla kaydedildi.",
 			"label-no-workspaces-found": "Kayıtlı çalışma alanı bulunamadı.",
 			"placeholder-type-to-search-workspaces": "Çalışma alanı adını yazın..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} bağlantı",
 		"file-with-count": "{{count}} dosya",
 		"file-with-count_plural": "{{count}} dosya",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} geri bağlantı",
 		"backlink-with-count_plural": "{{count}} geri bağlantı"
 	}
