@@ -40,6 +40,8 @@
 			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Zalomení řádku",
 			"option-line-wrap-description": "Zalomení dlouhých řádků, aby se vešli do okna, takže nebude třeba scrollovat zleva do prava.",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim klávesové zkrtaky",
 			"option-vim-key-bindings-description": "Umožní použitím klávesových zkratek v zdrojovém editoru."
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "Nejkratší možná cesta",
 			"option-choice-relative-path": "Relativní cesta k souboru",
 			"option-choice-absolute-path": "Absolutní cesta k souboru",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "Umístění složky příloh",
-			"option-attachment-folder-path-description": "Nově vytvořené přílohy se přesunou sem. Mezi přílohy patří vložené obrázky nebo audio nahrávky."
+			"option-attachment-folder-path-description": "Nově vytvořené přílohy se přesunou sem. Mezi přílohy patří vložené obrázky nebo audio nahrávky.",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "Vzhled",
@@ -100,7 +108,6 @@
 		"hotkeys": {
 			"name": "Klávesové Zkratky",
 			"prompt-filter": "Filtrovat...",
-			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Smazat klávesovou zkratku",
 			"label-waiting-for-hotkey-press": "Stikněte klávesovou zkratku...",
 			"tooltip-restore-default": "Vrátit vychozí nastavení",
@@ -443,7 +450,8 @@
 			"msg-file-already-exists": "Již existuje soubor se stejným názvem",
 			"msg-empty-file-name": "Název souboru nemůže být prázdný.",
 			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-created-time": "Created at {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "Hledat",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "Rychlé přepínání",
 			"desc": "Skakejte mezi soubory bez sundání rukou z klávesnice. Ctrl/Cmd+O pro aktivování.",
+			"short-name": "Switcher",
 			"action-open": "Otevřít rychlé přepínání",
 			"instruction-navigate": "pro navigaci",
 			"instruction-open": "pro otevření",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "Denní poznámky",
 			"desc": "Otevře dnešní poznámku a pokud ještě neexistuje tak ji vytvoří.",
+			"short-name": "Today",
 			"action-open": "Otevřít dnešní poznámku",
 			"action-open-previous": "Otevřít předchozí denní poznámku",
 			"action-open-next": "Otevřít následující denní poznámku",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten předpona",
 			"desc": "Vytvoří novou poznámku s 12-ti číselným Zettelkasten ID formátem YYYYMMDDHHII (Příklad 202001010000).",
+			"short-name": "ZK note",
 			"action-create-note": "Vytvořit novou Zettelkasten poznámku",
 			"option-new-file-location": "Umístění nových souborů",
 			"option-new-file-location-description": "Umístění kde se budou vytvářet nové Zettelkasten poznámky.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "Náhodná poznámka",
 			"desc": "Otevře náhodnou poznámku. Užitečné pro kontrolu a objevování.",
+			"short-name": "Random",
 			"action-open": "Otevřít náhodnou poznámku"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "Toto ID stránky je už používáno, zkuste prosím jiné.",
 			"msg-create-site-issue": "Při vytváření stránky došlo k chybě.",
 			"label-site-options": "Možnosti stránky",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "Jméno stránky",
 			"option-site-name-description": "Jméno vaší publikované stránky. Ukáže se jako nadpis vaší stránky.",
 			"option-site-name-placeholder": "Jméno vaší stránky",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "Zobrazí náhled stránky při najetí kurzorem na odkaz.",
 			"option-readable-line-length": "Čitelná délka řádku",
 			"option-readable-line-length-description": "Omezit maximální délku řádku. Na obrazovku se vleze méně informací, ale dlouhé odstavce budou lépe čitelné.",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "Uložit nastavení stránky",
 			"msg-updated-options": "Nastavení vaší stránky bylo aktualizováno.",
 			"button-go-back": "Zpět",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "Publikování vašich změn může zabrat pár minut než se na vaších stránkých objeví. Pokud změny stále nevidíte, zkuste vymazat mezipaměť prohlížeče.",
 			"label-visit-site": "Vaše stránky můžete navštívit zde: ",
 			"msg-something-went-wrong": "Něco se nezdařilo. Pro více informací zkontrolujte vývojařskou konzoli.",
-			"msg-network-error": "Problém s internetovým připojením. "
+			"msg-network-error": "Problém s internetovým připojením. ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "Pracovní prostory",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "Pracovní prostor byl uložen.",
 			"label-no-workspaces-found": "Nebyly nalezeny žádné uložené pracovní prostory.",
 			"placeholder-type-to-search-workspaces": "Jméno pracovního prostoru..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} odkazů",
 		"file-with-count": "{{count}} soubor",
 		"file-with-count_plural": "{{count}} souborů",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} zpětný odkaz",
 		"backlink-with-count_plural": "{{count}} zpětných odkazů"
 	}

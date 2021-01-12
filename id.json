@@ -21,7 +21,7 @@
 			"option-auto-pair-brackets": "Pasangkan otomatis tanda kurung",
 			"option-auto-pair-brackets-description": "Pasangkan tanda kurung dan tanda kutip secara otomatis.",
 			"option-auto-pair-markdown": "Pasangkan otomatis sintaksis Markdown",
-			"option-auto-pair-markdown-description": "Pasangkan simbol secara otomatis untuk cetak huruf tebal dan miring.",
+			"option-auto-pair-markdown-description": "Pasangkan simbol secara otomatis untuk cetak teks tebal, miring, sorot, coret. dan kode",
 			"option-smart-indent-lists": "Inden daftar cerdas",
 			"option-smart-indent-lists-description": "Atur secara otomatis indentasi dan menempatkan daftar item dengan benar.",
 			"option-fold-heading": "Lipat judul",
@@ -40,6 +40,8 @@
 			"option-tab-size-description": "Jumlah spasi yang setara dengan tab.",
 			"option-line-wrap": "Pembungkusan teks",
 			"option-line-wrap-description": "Bungkus panjang baris teks agar sesuai dengan ukuran jendela, tanpa harus menggulir dari kiri ke kanan.",
+			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim key bindings",
 			"option-vim-key-bindings-description": "Memungkinkan Anda untuk menggunakan Vim key bindings dalam editor sumber."
 		},
@@ -68,8 +70,14 @@
 			"option-choice-shortest-linktext": "Jalur terdekat jika memungkinkan",
 			"option-choice-relative-path": "Jalur relatif terhadap file",
 			"option-choice-absolute-path": "Jalur absolut dalam vault",
+			"option-new-attachment-location": "Default location for new attachments",
+			"option-new-attachment-location-description": "Where newly added attachments are placed.",
+			"option-choice-subdirectory": "In subfolder under current folder",
 			"option-attachment-folder-path": "Lokasi folder lampiran",
-			"option-attachment-folder-path-description": "Menempatkan file lampiran yang baru dibuat, seperti gambar yang melalui seret-dan-jatuhkan atau rekaman audio, dalam folder ini."
+			"option-attachment-folder-path-description": "Menempatkan file lampiran yang baru dibuat, seperti gambar yang melalui seret-dan-jatuhkan atau rekaman audio, dalam folder ini.",
+			"option-attachment-subfolder-path": "Subfolder name",
+			"option-attachment-subfolder-path-description": "If your file is under \"vault/folder\", and your set subfolder name to \"attachments\", attachments will be saved to \"vault/folder/attachments\".",
+			"option-attachment-subfolder-path-placeholder": "attachments"
 		},
 		"appearance": {
 			"name": "Tampilan",
@@ -100,13 +108,12 @@
 		"hotkeys": {
 			"name": "Pintasan",
 			"prompt-filter": "Filter...",
-			"tooltip-legacy": "Legacy hotkey",
 			"tooltip-delete-hotkey": "Hapus tombol pintasan",
 			"label-waiting-for-hotkey-press": "Tekan tombol pintasan...",
 			"tooltip-restore-default": "Pulihkan default",
 			"tooltip-customize-command": "Kustomisasi pintasan ini",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Pintasan ini konflik dengan \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Pintasan ini konflik dengan {{count}} perintah lain"
 		},
 		"about": {
 			"name": "Tentang",
@@ -302,7 +309,7 @@
 			"link-pane": "Hubungkan dengan panel...",
 			"delete-file": "Hapus file",
 			"open-in-new-pane": "Buka di panel baru",
-			"copy-url": "Copy url"
+			"copy-url": "Salin url"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -442,8 +449,9 @@
 			"msg-invalid-characters": "Nama file tidak boleh berisi salah satu diantara karakter berikut: ",
 			"msg-file-already-exists": "Sudah ada file dengan nama yang sama",
 			"msg-empty-file-name": "Nama file tidak boleh kosong.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "Terakhir diubah pada {{time}}",
+			"tooltip-created-time": "Dibuat pada {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "Pencarian",
@@ -465,7 +473,7 @@
 			"label-match-file-path": "Cocokkan jalur file: ",
 			"label-match-file-name": "Cocokkan nama file: ",
 			"label-match-content": "Cocokkan konten file: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "Cocokan baris: ",
 			"label-match-tag": "Cocokkan tag: ",
 			"label-no-matches": "Tidak ditemukan kecocokan.",
 			"matches-with-count": "... dan {{count}} kecocokan.",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "Pengalih cepat",
 			"desc": "Tekan Ctrl/Cmd+O untuk beralih ke file lain dengan menggunakan keyboard Anda.",
+			"short-name": "Switcher",
 			"action-open": "Buka pengalih cepat",
 			"instruction-navigate": "untuk navigasi",
 			"instruction-open": "untuk buka",
@@ -562,7 +571,7 @@
 			"label-sort-by-name-z-to-a": "Nama tag (Z ke A)",
 			"label-sort-by-frequency-high-to-low": "Frekuensi (tinggi ke rendah)",
 			"label-sort-by-frequency-low-to-high": "Frekuensi (rendah ke tinggi)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "Tampilkan tag bersarang"
 		},
 		"page-preview": {
 			"name": "Pratinjau halaman",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "Catatan harian",
 			"desc": "Buka catatan harian hari ini, atau buat baru jika belum ada.",
+			"short-name": "Today",
 			"action-open": "Buka catatan hari ini",
 			"action-open-previous": "Buka catatan harian sebelumnya",
 			"action-open-next": "Buka catatan harian selanjutnya",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten prefixer",
 			"desc": "Membuat catatan baru dengan format 12-digit YYYYMMDDHHII ID Zettelkasten (Contoh 202001010000).",
+			"short-name": "ZK note",
 			"action-create-note": "Buat catatan Zettelkasten baru",
 			"option-new-file-location": "Lokasi file baru",
 			"option-new-file-location-description": "Lokasi folder untuk catatan Zettelkasten yang baru dibuat.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "Catatan acak",
 			"desc": "Buka catatan secara acak untuk menemukan atau mengulas ulang.",
+			"short-name": "Random",
 			"action-open": "Buka catatan secara acak"
 		},
 		"outline": {
@@ -761,6 +773,11 @@
 			"msg-site-id-in-use": "Situs ID ini sedang digunakan, coba yang lain.",
 			"msg-create-site-issue": "Terdapat masalah ketika membuat situs Anda.",
 			"label-site-options": "Opsi situs",
+			"option-site-metadata": "Metadata",
+			"option-site-components": "Components",
+			"option-site-appearance": "Appearance",
+			"option-site-reading-experience": "Reading experience",
+			"option-site-security": "Security",
 			"option-site-name": "Nama situs",
 			"option-site-name-description": "Nama dari situs terpublikasi Anda. Itu akan ditampilkan di judul halaman dari situs Anda.",
 			"option-site-name-placeholder": "Nama dari situs Anda",
@@ -771,8 +788,8 @@
 			"option-theme-description": "Pilih skema warna default untuk situs Anda.",
 			"option-show-navigation": "Tampilkan navigasi",
 			"option-show-navigation-description": "Tampilkan daftar dari semua halaman di sisi kiri dari situs terpublikasi Anda.",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-search": "Tampilkan bilah pencarian",
+			"option-show-search-description": "Tampilkan bilah pencarian di atas navigasi yang memungkinkan pengunjung mencari halaman dan judul di situs Anda.",
 			"option-show-graph": "Tampilkan tapilan grafik",
 			"option-show-graph-description": "Tampilkan grafik lokal kecil untuk setiap halaman.",
 			"option-show-outline": "Tampilkan daftar isi",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "Tampilkan halaman pratinjau ketika melayang pada link.",
 			"option-readable-line-length": "Panjang baris yang dapat dibaca",
 			"option-readable-line-length-description": "Batasi panjang maksimum baris teks. Memuat lebih sedikit konten pada layar, tetapi membuat paragraf-paragraf yang panjang lebih mudah dibaca.",
+			"option-site-password": "Passwords",
+			"option-site-password-description": "Restrict access to your site with passwords.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "Simpan pengaturan situs",
 			"msg-updated-options": "Pengaturan untuk situs Anda terbarui.",
 			"button-go-back": "Kembali",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "Ini membutuhkan beberapa menit agar perubahan tampil di situs Anda. Jika Anda tidak melihat perubahan terakhir Anda, coba hapus cache di browser Anda.",
 			"label-visit-site": "Anda dapat mengunjungi situs Anda di sini: ",
 			"msg-something-went-wrong": "Terjadi kesalahan. Periksa konsol pengembang untuk rincian.",
-			"msg-network-error": "Terjadi kesalahan jaringan. "
+			"msg-network-error": "Terjadi kesalahan jaringan. ",
+			"label-manage-passwords": "Manage passwords",
+			"label-add-password": "Add password",
+			"action-new-password": "New password",
+			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
+			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
+			"option-password-name": "Password",
+			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
+			"option-password-placeholder": "Your password",
+			"option-nickname-name": "Nickname (optional)",
+			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
+			"action-add-password": "Add this password",
+			"label-untitled-password": "Untitled password",
+			"label-password-created-time": "Created {{time}}",
+			"msg-added-new-password": "Added new password."
 		},
 		"workspaces": {
 			"name": "Ruang kerja",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "Ruang kerja berhasil tersimpan.",
 			"label-no-workspaces-found": "Tidak ditemukan ruang kerja.",
 			"placeholder-type-to-search-workspaces": "Ketik nama ruang kerja..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Synchronize your files through Obsidian Sync.",
+			"action-view-version-history": "View version history",
+			"label-load-more": "Load more",
+			"label-restore-this-version": "Restore this version",
+			"msg-already-latest-version": "This version is already the latest version.",
+			"msg-restored-version": "Successfully restored version from {{time}}",
+			"label-file-deleted": "This file was deleted",
+			"label-no-earlier-version": "There was no earlier versions of this file.",
+			"label-empty-file": "Empty",
+			"label-deleted-files": "Deleted files",
+			"label-click-to-see-history": "Click on a deleted file to see its history.",
+			"label-create-remote-vault": "Create remote vault",
+			"msg-please-enter-password": "Please enter a password.",
+			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
+			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
+			"option-vault-name": "Vault name",
+			"option-vault-name-desc": "Helps you remember what this vault is for.",
+			"option-vault-name-placeholder": "My awesome vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} link",
 		"file-with-count": "{{count}} file",
 		"file-with-count_plural": "{{count}} file",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} backlink",
 		"backlink-with-count_plural": "{{count}} backlink"
 	}
