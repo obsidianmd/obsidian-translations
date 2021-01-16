@@ -40,6 +40,8 @@
 			"option-tab-size-description": "Numero di spazi da usare per la tabulazione.",
 			"option-line-wrap": "Ritorno a capo automatico",
 			"option-line-wrap-description": "Manda a capo le righe lunghe per adattarle alla finestra senza dover scorrere da sinistra verso destra.",
+			"option-auto-convert-html": "Converti automaticamente HTML",
+			"option-auto-convert-html-description": "Converte automaticamente HTML in Markdown quando si usa copia/incolla o trascina e rilascia da pagine web. Usare Ctrl/Cmd+Shift+V per incollare senza convertire.",
 			"option-vim-key-bindings": "Tasti di scelta rapida Vim",
 			"option-vim-key-bindings-description": "Permette di utilizzare la mappatura dei tasti di Vim nell'editor."
 		},
@@ -62,14 +64,20 @@
 			"option-new-file-folder-path": "Cartella personalizzata per le nuove note",
 			"option-new-file-folder-path-description": "Le nuove note verranno inserite nella cartella specificata. I plugin sovrascriveranno questa impostazione.",
 			"option-use-wiki-links": "Usa [[Wikilink]]",
-			"option-use-wiki-links-description": "Crea automaticamente Wikilink per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilita questa opzione per utilizzare il formato Markdown.",
+			"option-use-wiki-links-description": "Crea automaticamente Wikilink per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilitare questa opzione per utilizzare il formato Markdown.",
 			"option-link-autocompleted-format": "Formato dei nuovi collegamenti",
 			"option-link-autocompleted-format-description": "Formato dei collegamenti da utilizzare quando vengono generati automaticamente i collegamenti interni.",
 			"option-choice-shortest-linktext": "Percorso più breve",
 			"option-choice-relative-path": "Percorso relativo al file",
 			"option-choice-absolute-path": "Percorso assoluto nel vault",
+			"option-new-attachment-location": "Posizione predefinita dei nuovi allegati",
+			"option-new-attachment-location-description": "Indica dove inserire gli allegati appena aggiunti.",
+			"option-choice-subdirectory": "Sottocartella della cartella corrente",
 			"option-attachment-folder-path": "Percorso cartella degli allegati",
-			"option-attachment-folder-path-description": "I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite drag and drop o copia/incolla e le registrazioni audio."
+			"option-attachment-folder-path-description": "I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite drag and drop o copia/incolla e le registrazioni audio.",
+			"option-attachment-subfolder-path": "Nome della sottocartella",
+			"option-attachment-subfolder-path-description": "Se il file si trova in \"vault/cartella\", e il nome della sottocartella è \"allegati\", gli allegati verranno salvati in \"vault/cartella/allegati\".",
+			"option-attachment-subfolder-path-placeholder": "allegati"
 		},
 		"appearance": {
 			"name": "Aspetto",
@@ -100,20 +108,19 @@
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
 			"prompt-filter": "Filtra...",
-			"tooltip-legacy": "Legacy hotkey",
-			"tooltip-delete-hotkey": "Elimina tasto di scelta rapida",
+			"tooltip-delete-hotkey": "Elimina combinazione di tasti",
 			"label-waiting-for-hotkey-press": "Premi tasti di scelta rapida...",
 			"tooltip-restore-default": "Ripristina predefinito",
 			"tooltip-customize-command": "Personalizza comando",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Questa combinazione è in conflitto con \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Questa combinazione è in conflitto con {{count}} altri comandi"
 		},
 		"about": {
 			"name": "Informazioni",
 			"label-license-key": "Chiave di licenza",
 			"license-key-placeholder": "La tua chiave di licenza...",
-			"label-enter-commercial-license": "Inserisci la tua chiave di licenza commerciale:",
-			"label-activate-license": "Attiva la licenza",
+			"label-enter-commercial-license": "Inserire la chiave di licenza commerciale:",
+			"label-activate-license": "Attivazione licenza",
 			"button-activate": "Attiva",
 			"label-unknown-version": "Sconosciuto",
 			"label-current-version": "Versione attuale: ",
@@ -175,7 +182,7 @@
 			"label-no-account": "Non hai un account? ",
 			"link-sign-up-now": "Iscriviti ora",
 			"message-get-community-badges": "Per i badge della comunità, invia un'email a support@obsidian.md se non li ricevi entro 24 ore dall'ottenimento della licenza.",
-			"message-obtain-commercial-license": "Per ottenere una licenza commerciale, visita {{pricingPageLink}}."
+			"message-obtain-commercial-license": "Per ottenere una licenza commerciale, visitare {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
 			"name": "Plugin di terze parti",
@@ -302,7 +309,7 @@
 			"link-pane": "Collega con pannello...",
 			"delete-file": "Elimina file",
 			"open-in-new-pane": "Apri in nuovo pannello",
-			"copy-url": "Copy url"
+			"copy-url": "Copia URL"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -442,8 +449,9 @@
 			"msg-invalid-characters": "Il nome del file non può contenere i seguenti caratteri: ",
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
 			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
-			"tooltip-modified-time": "Last modified at {{time}}",
-			"tooltip-created-time": "Created at {{time}}"
+			"tooltip-modified-time": "Ultima modifica il {{time}}",
+			"tooltip-created-time": "Creato il {{time}}",
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
 			"name": "Ricerca",
@@ -465,7 +473,7 @@
 			"label-match-file-path": "Corrispondenza percorso file: ",
 			"label-match-file-name": "Corrispondenza nome file: ",
 			"label-match-content": "Corrispondenza contenuto file: ",
-			"label-match-line": "Match line: ",
+			"label-match-line": "Corrispondenza riga: ",
 			"label-match-tag": "Corrispondenza tag: ",
 			"label-no-matches": "Nessun risultato trovato.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
@@ -491,6 +499,7 @@
 		"quick-switcher": {
 			"name": "Selezione rapida",
 			"desc": "Passa a un file senza lasciare la tastiera. Ctrl/Cmd+O per attivare.",
+			"short-name": "Selezione",
 			"action-open": "Apri selezione rapida",
 			"instruction-navigate": "seleziona",
 			"instruction-open": "apri",
@@ -562,7 +571,7 @@
 			"label-sort-by-name-z-to-a": "Nome tag (dalla Z alla A)",
 			"label-sort-by-frequency-high-to-low": "Frequenza (decrescente)",
 			"label-sort-by-frequency-low-to-high": "Frequenza (crescente)",
-			"action-show-nested-tags": "Show nested tags"
+			"action-show-nested-tags": "Mostra tag annidati"
 		},
 		"page-preview": {
 			"name": "Anteprima pagina",
@@ -614,7 +623,7 @@
 		},
 		"markdown-format-importer": {
 			"name": "Strumento importazione Markdown",
-			"desc": "Converti Markdown da altre app al formato di Obsidian.",
+			"desc": "Converte Markdown da altre app al formato di Obsidian.",
 			"action-open": "Apri importazione Markdown",
 			"option-roam-tag-fixer": "Conversione tag di Roam Research",
 			"option-roam-tag-fixer-description": "Converte \"#tag\" e \"#[[tag]]\" in \"[[tag]]\".",
@@ -644,6 +653,7 @@
 		"daily-notes": {
 			"name": "Note del giorno",
 			"desc": "Apre la nota del giorno o ne crea una se non è presente.",
+			"short-name": "Oggi",
 			"action-open": "Apri nota del giorno",
 			"action-open-previous": "Apri nota del giorno precedente",
 			"action-open-next": "Apri nota del giorno successiva",
@@ -664,6 +674,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Prefissi Zettelkasten",
 			"desc": "Crea una nuova nota in formato Zettelkasten con ID a 12 cifre YYYYMMDDHHII (Esempio 202001010000).",
+			"short-name": "Note ZK",
 			"action-create-note": "Nuova nota Zettelkasten",
 			"option-new-file-location": "Posizione dei nuovi file",
 			"option-new-file-location-description": "Percorso della cartella per le nuove note Zettelkasten.",
@@ -677,6 +688,7 @@
 		"random-note": {
 			"name": "Note casuali",
 			"desc": "Apre una nota casuale. Utile per riesaminare e ritrovare note.",
+			"short-name": "Casuale",
 			"action-open": "Apri nota casuale"
 		},
 		"outline": {
@@ -761,18 +773,23 @@
 			"msg-site-id-in-use": "Questo ID è già in uso, provane un altro.",
 			"msg-create-site-issue": "C'è stato un problema durante la creazione del sito.",
 			"label-site-options": "Opzioni sito",
+			"option-site-metadata": "Metadati",
+			"option-site-components": "Componenti",
+			"option-site-appearance": "Aspetto",
+			"option-site-reading-experience": "Esperienza di lettura",
+			"option-site-security": "Sicurezza",
 			"option-site-name": "Nome sito",
-			"option-site-name-description": "Nome del sito pubblicato. Apparirà nel titolo della pagina del tuo sito.",
-			"option-site-name-placeholder": "Nome del tuo sito",
+			"option-site-name-description": "Nome del sito pubblicato. Apparirà nel titolo della pagina del sito.",
+			"option-site-name-placeholder": "Nome del sito",
 			"option-home-page-file": "File homepage",
-			"option-home-page-file-description": "La prima pagina che l'utente vede quando accede al tuo sito pubblicato",
+			"option-home-page-file-description": "La prima pagina che l'utente vede quando accede al sito pubblicato",
 			"option-home-page-file-placeholder": "Scegli un file pubblicato",
 			"option-theme": "Tema",
 			"option-theme-description": "Scegli la combinazione di colori predefinita per il sito.",
 			"option-show-navigation": "Mostra navigazione",
-			"option-show-navigation-description": "Visualizza un elenco di tutte le pagine pubblicate sul lato sinistro del tuo sito.",
-			"option-show-search": "Show search bar",
-			"option-show-search-description": "Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.",
+			"option-show-navigation-description": "Visualizza un elenco di tutte le pagine pubblicate sul lato sinistro del sito.",
+			"option-show-search": "Mostra barra di ricerca",
+			"option-show-search-description": "Mostra una barra di ricerca nella parte superiore della navigazione che consente ai visitatori di cercare pagine e titoli nel sito.",
 			"option-show-graph": "Mostra grafo",
 			"option-show-graph-description": "Visualizza un piccolo grafo locale su ogni pagina.",
 			"option-show-outline": "Mostra indice",
@@ -785,6 +802,9 @@
 			"option-hover-preview-file-description": "Visualizza l'anteprima della pagina quando si passa il mouse sui link.",
 			"option-readable-line-length": "Migliora leggibilità delle righe",
 			"option-readable-line-length-description": "Limita la lunghezza massima delle righe. Mostra meno contenuti sullo schermo ma rende i paragrafi lunghi più leggibili.",
+			"option-site-password": "Password",
+			"option-site-password-description": "Limita l'accesso al sito con password.",
+			"button-manage-passwords": "Manage",
 			"button-save-site-settings": "Salva opzioni sito",
 			"msg-updated-options": "Le impostazioni del sito sono state aggiornate.",
 			"button-go-back": "Indietro",
@@ -819,7 +839,21 @@
 			"label-clear-cache": "Sono necessari alcuni minuti prima che le modifiche vengano visualizzate sul sito. Se le modifiche non vengono visualizzate, provare a svuotare la cache del browser.",
 			"label-visit-site": "Visita il sito qui: ",
 			"msg-something-went-wrong": "Si è verificato un errore. Per informazioni dettagliate controllare la console sviluppatori.",
-			"msg-network-error": "Si è verificato un errore di rete. "
+			"msg-network-error": "Si è verificato un errore di rete. ",
+			"label-manage-passwords": "Gestione password",
+			"label-add-password": "Aggiungi password",
+			"action-new-password": "Nuova password",
+			"label-no-password": "Non sono presenti password per il sito. Chiunque può visitarlo.",
+			"label-have-password": "Il sito è protetto da password. Quando sono presenti più password, i visitatori possono accedere usandone una qualsiasi.",
+			"option-password-name": "Password",
+			"option-password-desc": "Un hash della password verrà archiviato in modo sicuro. Una volta impostata, la password non potrà essere rivelata in chiaro.",
+			"option-password-placeholder": "Password",
+			"option-nickname-name": "Alias (opzionale)",
+			"option-nickname-desc": "Impostare un alias per ricordare per cosa o per chi è destinata la password.",
+			"action-add-password": "Aggiungi questa password",
+			"label-untitled-password": "Password senza titolo",
+			"label-password-created-time": "Creata il {{time}}",
+			"msg-added-new-password": "Nuova password aggiunta."
 		},
 		"workspaces": {
 			"name": "Aree di lavoro",
@@ -835,6 +869,28 @@
 			"msg-save-workspace-success": "L'area di lavoro è stata salvata.",
 			"label-no-workspaces-found": "Nessuna area di lavoro salvata.",
 			"placeholder-type-to-search-workspaces": "Digita nome dell'area di lavoro..."
+		},
+		"sync": {
+			"name": "Sync",
+			"desc": "Sincronizza i file con Obsidian Sync.",
+			"action-view-version-history": "Visualizza cronologia delle versioni",
+			"label-load-more": "Carica altro",
+			"label-restore-this-version": "Ripristina questa versione",
+			"msg-already-latest-version": "Questa versione è già la più recente.",
+			"msg-restored-version": "Versione {{time}} ripristinata con successo",
+			"label-file-deleted": "Questo file è stato eliminato",
+			"label-no-earlier-version": "Non sono presenti versioni precedenti del file.",
+			"label-empty-file": "Vuoto",
+			"label-deleted-files": "File eliminati",
+			"label-click-to-see-history": "Fare clic su un file eliminato per vedere la sua cronologia.",
+			"label-create-remote-vault": "Crea vault remoto",
+			"msg-please-enter-password": "Immettere una password.",
+			"msg-vault-name-cannot-be-empty": "Il nome del vault non può essere vuoto.",
+			"msg-successfully-created-vault": "Vault remoto \"{{name}}\" creato con successo.",
+			"label-remote-vault-explanation": "I vault remoti permettono di sincronizzare in modo sicuro un vault tra dispositivi.",
+			"option-vault-name": "Nome vault",
+			"option-vault-name-desc": "Consente di ricordare a cosa serve questo vault.",
+			"option-vault-name-placeholder": "Il mio vault"
 		}
 	},
 	"nouns": {
@@ -846,6 +902,8 @@
 		"link-with-count_plural": "{{count}} collegamenti",
 		"file-with-count": "{{count}} file",
 		"file-with-count_plural": "{{count}} file",
+		"folder-with-count": "{{count}} folder",
+		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} riferimento",
 		"backlink-with-count_plural": "{{count}} riferimenti"
 	}
