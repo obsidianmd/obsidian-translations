@@ -52,7 +52,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `en` (default) | English | English | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `cz` | Czech | čeština | ✅ |
-| `da` | Danish | dansk | 🚧 |
+| `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | ελληνικά | 🚧 |
 | `es` | Spanish | Español | ✅ |
