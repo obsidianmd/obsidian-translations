@@ -1,4 +1,4 @@
-{
+ui{
 	"setting": {
 		"options": "Pengaturan",
 		"plugin": "Plugin",
@@ -222,7 +222,7 @@
 			"label-uninstall-plugin-confirmation": "Apa Anda yakin Anda ingin menghapus plugin ini? Ini akan menghapus folder dari plugin.",
 			"button-open-plugins-folder": "Buka folde plugin",
 			"button-check-for-updates": "Cek pembaruan",
-			"button-update-all-plugins": "Update all",
+			"button-update-all-plugins": "Perbarui semua",
 			"label-current-plugins": "Plugin saat ini",
 			"label-currently-installed": "Anda saat ini memiliki {{count}} plugin terinstal.",
 			"label-currently-installed_plural": "Anda saat ini {{count}} plugin terinstal.",
@@ -242,7 +242,7 @@
 			"label-replace-all": "Ganti semua",
 			"key-enter": "Enter",
 			"key-shift-f3": "Shift + F3",
-			"key-enter-or-f3": "Enter or F3"
+			"key-enter-or-f3": "Enter / F3"
 		},
 		"link-suggestion": {
 			"label-type-hash": "Ketik #",
@@ -292,8 +292,8 @@
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
 		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
-		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
-		"msg-file-not-found-through-uri": "File \"{{name}}\" not found.",
+		"msg-open-file-through-uri": "File \"{{path}}\" terbuka",
+		"msg-file-not-found-through-uri": "File \"{{name}}\" tidak ditemukan.",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -355,12 +355,12 @@
 			"open-in-this-pane": "Buka di panel ini"
 		},
 		"window": {
-			"maximize": "Maximize",
-			"minimize": "Minimize",
-			"restore-down": "Restore down",
-			"close-window": "Close window",
-			"go-back": "Go back",
-			"go-forward": "Go forward"
+			"maximize": "Maksimalkan",
+			"minimize": "Minimalkan",
+			"restore-down": "Kecilkan",
+			"close-window": "Tutup cendela",
+			"go-back": "Sebelumnya",
+			"go-forward": "Sesudahnya"
 		}
 	},
 	"commands": {
@@ -854,29 +854,29 @@
 			"label-visit-site": "Anda dapat mengunjungi situs Anda di sini: ",
 			"msg-something-went-wrong": "Terjadi kesalahan. Periksa konsol pengembang untuk rincian.",
 			"msg-network-error": "Terjadi kesalahan jaringan. ",
-			"label-manage-passwords": "Manage passwords",
-			"label-add-password": "Add password",
-			"action-new-password": "New password",
-			"label-no-password": "Your site currently does not have any passwords. Anyone can visit it.",
-			"label-have-password": "Your site is password protected. If you have multiple passwords, visitors can access your site by entering any of them.",
-			"option-password-name": "Password",
-			"option-password-desc": "A hash of your password will be stored securely. Once the password is set, it cannot be revealed in plaintext.",
-			"option-password-placeholder": "Your password",
-			"option-nickname-name": "Nickname (optional)",
-			"option-nickname-desc": "Set a nickname to remind yourself what or who the password is for.",
-			"action-add-password": "Add this password",
-			"label-untitled-password": "Untitled password",
-			"label-password-created-time": "Created {{time}}",
-			"msg-added-new-password": "Added new password.",
-			"option-custom-domain": "Custom domain",
-			"option-custom-domain-desc": "Use your own domain rather than the https://publish.obsidian.md/{site id} URL.",
-			"button-configure": "Configure",
-			"label-configure-custom-domain": "Configure custom domain",
-			"option-custom-url-name": "Custom URL",
-			"option-custom-url-desc": "The URL that your site will be located at.",
-			"option-custom-url-placeholder": "www.yourdomain.com",
-			"button-update-custom-domain": "Update domain setting",
-			"label-custom-domain-guide": "Please search for \"custom domain\" in our help docs for more information (or maybe put link here?)."
+			"label-manage-passwords": "Kelola kata sandi",
+			"label-add-password": "Tambahkan kata sandi",
+			"action-new-password": "Kata sandi baru",
+			"label-no-password": "Situs Anda sekarang belum memiliki kata sandi. Semua orang dapat mengunjunginya.",
+			"label-have-password": "Situs Anda terproteksi kata sandi. Jika Anda punya beberapa kata sandi, pengunjung dapat mengakses situs Anda dengan memasukan salah satunya.",
+			"option-password-name": "Kata sandi",
+			"option-password-desc": "Hash dari kata sandi Anda akan aman tersimpan. Sekali kata sandi ditetapkan, tidak dapat ditampilkan dalam teks biasa.",
+			"option-password-placeholder": "Kata sandi Anda",
+			"option-nickname-name": "Nama panggilan (opsional)",
+			"option-nickname-desc": "Beri nama panggilan untuk mengingatkan Anda untuk apa atau untuk siapa kata sandi.",
+			"action-add-password": "Tambahkan kata sandi ini",
+			"label-untitled-password": "Kata sandi tanpa judul",
+			"label-password-created-time": "Dibuat {{time}}",
+			"msg-added-new-password": "Tambahkan kata sandi baru.",
+			"option-custom-domain": "Domain kustom",
+			"option-custom-domain-desc": "Gunakan domain Anda sendiri ganti dari URL https://publish.obsidian.md/{situs id}.",
+			"button-configure": "Konfigurasi",
+			"label-configure-custom-domain": "Konfigurasikan domain kustom",
+			"option-custom-url-name": "URL kustom",
+			"option-custom-url-desc": "URL yang situs Anda akan berada.",
+			"option-custom-url-placeholder": "www.domainanda.com",
+			"button-update-custom-domain": "Perbarui pengaturan domain",
+			"label-custom-domain-guide": "Cari \"domain kustom\" dalam dokumen bantuan kami informasi lebih lanjut."
 		},
 		"workspaces": {
 			"name": "Ruang kerja",
