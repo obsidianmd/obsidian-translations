@@ -65,6 +65,8 @@
 			"option-new-file-folder-path-description": "指定儲存新筆記的資料夾，外掛可能會修改此設定。",
 			"option-use-wiki-links": "使用 [[Wikilinks]]",
 			"option-use-wiki-links-description": "自動產生Wikilinks [[連結]] 與 ![[圖片]] 以取代Markdown連結與圖片。關閉本選項則產生 Markdown 格式。",
+			"option-show-unsupported-files": "Detect all file extensions",
+			"option-show-unsupported-files-description": "Show files with any extension even if Obsidian can't open them natively, so that you can link to them and see them in File Explorer and Quick Switcher.",
 			"option-link-autocompleted-format": "內部連結格式",
 			"option-link-autocompleted-format-description": "設定在筆記中引用其他文件時插入 [[ ]] 中的檔案路徑類型。",
 			"option-choice-shortest-linktext": "以儘可能簡短的形式插入",
@@ -876,7 +878,8 @@
 			"option-custom-url-desc": "The URL that your site will be located at.",
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "Update domain setting",
-			"label-custom-domain-guide": "Please search for \"custom domain\" in our help docs for more information (or maybe put link here?)."
+			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
+			"label-custom-domain-link-name": "custom domain setup guide"
 		},
 		"workspaces": {
 			"name": "工作空間",
