@@ -65,13 +65,13 @@
 			"option-new-file-folder-path-description": "Nye noter vil blive lagt i denne mappe. Plug-in indstillinger vil tilsidesætte det.",
 			"option-use-wiki-links": "Benyt [[Wikilinks]]",
 			"option-use-wiki-links-description": "Auto-generer Wikilinks for [[links]] og ![[images]] i stedet for Markdown links og billeder. Slå denne indstilling fra for at generere Markdown links i stedet.",
-			"option-show-unsupported-files": "Detect all file extensions",
-			"option-show-unsupported-files-description": "Show files with any extension even if Obsidian can't open them natively, so that you can link to them and see them in File Explorer and Quick Switcher.",
+			"option-show-unsupported-files": "Vis alle filtyper",
+			"option-show-unsupported-files-description": "Viser alle filtyper, selv dem Obsidian ikke undersøtter direkte, så du kan linke til dem og vise dem i stifinderen og i hurtig skifteren.",
 			"option-link-autocompleted-format": "Ny link format",
 			"option-link-autocompleted-format-description": "Hvilke links som skal indsættes, når der auto-genereres interne links.",
 			"option-choice-shortest-linktext": "Korteste sti, når det er muligt",
 			"option-choice-relative-path": "Relativ stil til fil",
-			"option-choice-absolute-path": "Absolut sti til boks.",
+			"option-choice-absolute-path": "Absolut sti til boks",
 			"option-new-attachment-location": "Standard placering for nye vedhæftede filer",
 			"option-new-attachment-location-description": "Hvor nye vedhæftede filer er placeret.",
 			"option-choice-subdirectory": "I undermappe under nuværende mappe",
@@ -183,7 +183,7 @@
 			"message-login-failed": "Log på fejlede. Vær venlig at tjekke email og kodeord.",
 			"label-no-account": "Har du ikke en konto? ",
 			"link-sign-up-now": "Opret dig nu",
-			"message-get-community-badges": "For fællesskabs badges, skriv venligst email til support@obsidian.md hvis du ikke har modtaget dem senest 24 timer efter at du har anskaffet licensen.",
+			"message-get-community-badges": "For fællesskabs badges, skriv venligst email til support@obsidian.md, hvis du ikke har modtaget dem senest 24 timer efter, at du har anskaffet licensen.",
 			"message-obtain-commercial-license": "For at hente en kommerciel licens skal du besøge {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
@@ -268,7 +268,7 @@
 			"setting-page-size-legal": "Legal",
 			"setting-page-size-letter": "Letter",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
+			"setting-landscape": "Landskab",
 			"setting-margin": "Margin",
 			"setting-margin-default": "Standard",
 			"setting-margin-minimal": "Minimal",
@@ -357,12 +357,12 @@
 			"open-in-this-pane": "Åben i denne rude"
 		},
 		"window": {
-			"maximize": "Maximize",
-			"minimize": "Minimize",
-			"restore-down": "Restore down",
-			"close-window": "Close window",
-			"go-back": "Go back",
-			"go-forward": "Go forward"
+			"maximize": "Maksimer",
+			"minimize": "Minimer",
+			"restore-down": "Gendan fra maksimeret",
+			"close-window": "Luk vindue",
+			"go-back": "Gå tilbage",
+			"go-forward": "Gå frem"
 		}
 	},
 	"commands": {
@@ -461,7 +461,7 @@
 			"menu-opt-set-attachment-folder": "Angiv som vedhæftningsmappe",
 			"menu-opt-rename": "Omdøb",
 			"menu-opt-delete": "Slet",
-			"menu-opt-make-copy": "Lave en kopi",
+			"menu-opt-make-copy": "Opret en kopi",
 			"msg-invalid-characters": "Filnavnet kan ikke indeholde nogle af følgende tegn: ",
 			"msg-file-already-exists": "Der findes allerede en fil med dette navn",
 			"msg-empty-file-name": "Et filnavn kan ikke være tomt.",
@@ -513,10 +513,10 @@
 			"tooltip-clear-search": "Nulstil søgning"
 		},
 		"quick-switcher": {
-			"name": "Hurtig skifter",
+			"name": "Hurtigskifter",
 			"desc": "Benyt Ctrl/Cmd+O for at skifte til andre filer med dit tastatur.",
 			"short-name": "Skifter",
-			"action-open": "Åben hurtig skifter",
+			"action-open": "Åben hurtigskifter",
 			"instruction-navigate": "for at navigere",
 			"instruction-open": "for at åbne",
 			"instruction-open-in-new-pane": "for at åbne i ny rude",
@@ -569,7 +569,7 @@
 		"backlinks": {
 			"name": "Tilbagelinks",
 			"desc": "Vis antallet af tilbagelinks i statuslinjen, og vis tilbagelinks og vis tilbagelinks og ikke-linkede bemærkninger i en sidepanel fane.",
-			"action-open": "Åben tilbageinks",
+			"action-open": "Åben tilbagelinks",
 			"action-open-for-current": "Åben tilbagelinks i den nuværende fil",
 			"label-linked-mentions": "Linkede bemærkninger",
 			"label-no-backlinks": "Ingen tilbagelinks fundet.",
@@ -590,7 +590,7 @@
 			"action-show-nested-tags": "Vis indlejrede tags"
 		},
 		"page-preview": {
-			"name": "Side forhåndsvis",
+			"name": "Forhåndsvisning af side",
 			"desc": "Før musen over et internt link for at forhåndsvise indholdet. I redigeringstilstand, tryk Ctrl/Cmd mens musen holdes over linket.",
 			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for a oprette."
 		},
@@ -667,7 +667,7 @@
 			"label-total-replacements": "Total antal erstatninger"
 		},
 		"daily-notes": {
-			"name": "Daglige notes",
+			"name": "Daglige noter",
 			"desc": "Opret eller åben dagens daglige note.",
 			"short-name": "I dag",
 			"action-open": "Åben dagens note",
@@ -702,7 +702,7 @@
 			"msg-template-file-not-found": "Kunne ikke oprette Zettelkasten note. Skabelon filen \"{{template}}\" blev ikke fundet."
 		},
 		"random-note": {
-			"name": "Tilføldig note",
+			"name": "Tilfældig note",
 			"desc": "Åben en tilfældig note for at genopdage eller vurdere den.",
 			"short-name": "Tilfældig",
 			"action-open": "Åben tilfældig note"
@@ -878,8 +878,8 @@
 			"option-custom-url-desc": "Den URL hvor dit websted skal placeres.",
 			"option-custom-url-placeholder": "www.ditdomæne.com",
 			"button-update-custom-domain": "Opdater domæne indstilinger",
-			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
-			"label-custom-domain-link-name": "custom domain setup guide"
+			"label-custom-domain-instructions": "Der henvises til vores {{link}} på vores hjælpewebsted for mere information.",
+			"label-custom-domain-link-name": "guide til brugerdefineret domæne konfiguration"
 		},
 		"workspaces": {
 			"name": "Arbejdsområder",
@@ -897,7 +897,7 @@
 			"placeholder-type-to-search-workspaces": "Skriv navn på arbejdsområde..."
 		},
 		"sync": {
-			"name": "Skynkroniser",
+			"name": "Synkroniser",
 			"desc": "Synkroniser dine filer ved hjælp af Obsidian Sync.",
 			"action-view-version-history": "Vis versionshistorik",
 			"label-load-more": "Indlæs mere",
