@@ -279,7 +279,7 @@
 	},
 	"interface": {
 		"embed-open-in-default-app-tooltip": "Åben i standard app",
-		"empty-sidebar": "Sidepanelet er tomt, prøv at trække en rude derhen.",
+		"empty-sidebar": "Sidebjælken er tom, prøv at trække et panel derhen.",
 		"sidebar-expand": "Udvid",
 		"sidebar-collapse": "Skjul",
 		"msg-fail-to-save-file": "Kunne ikke gemme filen \"{{filepath}}\". {{message}}.",
@@ -304,8 +304,8 @@
 			"close": "Luk"
 		},
 		"menu": {
-			"edit-view": "Rediger (Ctrl/Cmd+Klik for at redigere i ny rude)",
-			"preview-view": "Forhåndsvis (Ctrl/Cmd+Klik for at åbne i ny rude)",
+			"edit-view": "Rediger (Ctrl/Cmd+Klik for at redigere i nyt panel)",
+			"preview-view": "Forhåndsvis (Ctrl/Cmd+Klik for at åbne i nyt panel)",
 			"find": "Søg...",
 			"replace": "Erstat...",
 			"edit": "Rediger",
@@ -313,10 +313,10 @@
 			"more-options": "Flere muligheder",
 			"close": "Luk",
 			"pin": "Fastgør",
-			"unlink-pane": "Fjern link til rude",
-			"link-pane": "Link til rude...",
+			"unlink-pane": "Fjern link til panel",
+			"link-pane": "Link til panel...",
 			"delete-file": "Slet fil",
-			"open-in-new-pane": "Åben i ny rude",
+			"open-in-new-pane": "Åben i ny panel",
 			"copy-url": "Kopier url"
 		},
 		"tooltip": {
@@ -354,7 +354,7 @@
 			"move-into-folder": "Flyt til \"{{folder}}\"",
 			"star-this-file": "Stjernemarker denne fil",
 			"star-these-files": "Stjernemarker disse filer",
-			"open-in-this-pane": "Åben i denne rude"
+			"open-in-this-pane": "Åben i dette panel"
 		},
 		"window": {
 			"maximize": "Maksimer",
@@ -368,11 +368,11 @@
 	"commands": {
 		"save-file": "Gem nuværende fil",
 		"follow-cursor-link": "Følg link under markør",
-		"open-cursor-link-in-new-pane": "Åben link under markør i ny rude",
-		"navigate-pane-above": "Fokuser på rude foroven",
-		"navigate-pane-below": "Fokuser på rude forneden",
-		"navigate-pane-left": "Fokuser på rude til venstre",
-		"navigate-pane-right": "Fokuser på rude til højre",
+		"open-cursor-link-in-new-pane": "Åben link under markør i nyt panel",
+		"navigate-pane-above": "Fokuser på panel foroven",
+		"navigate-pane-below": "Fokuser på panel forneden",
+		"navigate-pane-left": "Fokuser på panel til venstre",
+		"navigate-pane-right": "Fokuser på panel til højre",
 		"toggle-pin": "Tilføj/Fjern nål",
 		"split-vertically": "Split lodret",
 		"split-horizontally": "Split vandret",
@@ -386,10 +386,10 @@
 		"open-help": "Åben hjælp",
 		"toggle-preview": "Skift mellem redigering- og forhåndsvisningstilstand",
 		"delete-current-file": "Slet nuværende fil",
-		"close-active-pane": "Luk aktive ruder",
-		"close-other-panes": "Luk alle andre ruder",
-		"toggle-left-sidebar": "Slå venstre sidepanel til og fra",
-		"toggle-right-sidebar": "Slå højre sidepanel til og fra",
+		"close-active-pane": "Luk aktive paneler",
+		"close-other-panes": "Luk alle andre paneler",
+		"toggle-left-sidebar": "Slå venstre sidebjælke til og fra",
+		"toggle-right-sidebar": "Slå højre sidebjælke til og fra",
 		"toggle-default-view-mode": "Slå standard visningstilstand til og fra",
 		"toggle-fold": "Slå foldning på den nuværende linje til og fra",
 		"fold-all": "Fold alle overskrifter og lister",
@@ -436,7 +436,7 @@
 			"name": "Stifinder",
 			"desc": "Se filer og mapper i din boks.",
 			"action-create-note": "Opret ny note",
-			"action-create-note-in-new-pane": "Opret note i ny rude",
+			"action-create-note-in-new-pane": "Opret note i nyt panel",
 			"action-new-note": "Ny note",
 			"action-new-folder": "Ny mappe",
 			"action-change-sort": "Skift sorteringsrækkefølge",
@@ -519,7 +519,7 @@
 			"action-open": "Åben hurtigskifter",
 			"instruction-navigate": "for at navigere",
 			"instruction-open": "for at åbne",
-			"instruction-open-in-new-pane": "for at åbne i ny rude",
+			"instruction-open-in-new-pane": "for at åbne i nyt panel",
 			"instruction-create": "for at oprette",
 			"instruction-dismiss": "for at annullere",
 			"label-no-note-create-new": "Ingen noter fundet. Tast Enter for at oprette en ny.",
@@ -568,7 +568,7 @@
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
-			"desc": "Vis antallet af tilbagelinks i statuslinjen, og vis tilbagelinks og vis tilbagelinks og ikke-linkede nævnelser i en sidepanel fane.",
+			"desc": "Vis antallet af tilbagelinks i statuslinjen, og vis tilbagelinks og vis tilbagelinks og ikke-linkede nævnelser i et sidebjælke panel.",
 			"action-open": "Åben tilbagelinks",
 			"action-open-for-current": "Åben tilbagelinks i den nuværende fil",
 			"label-linked-mentions": "Linkede nævnelser",
@@ -580,7 +580,7 @@
 			"ellipsis": "..."
 		},
 		"tag-pane": {
-			"name": "Tag rude",
+			"name": "Tag panel",
 			"desc": "Viser dine tags og antallet af forekomster.",
 			"label-no-tags": "Der er ikke fundet nogle tags.",
 			"label-sort-by-name-a-to-z": "Tag navn (A to Å)",
@@ -709,7 +709,7 @@
 		},
 		"outline": {
 			"name": "Disposition",
-			"desc": "Den den nuværende fils disposition eller linkede rude.",
+			"desc": "Den nuværende fils disposition eller linkede panel.",
 			"action-open": "Åben disposition",
 			"action-open-pane": "Åben dispositionen for den nuværende fil",
 			"tab-title": "Disposition for {{displayText}}",
@@ -813,7 +813,7 @@
 			"option-show-backlinks": "Vis tilbagelinks",
 			"option-show-backlinks-description": "Vis tilbagelink sektion i slutningen af hver side.",
 			"option-sliding-window-mode": "Benyt glidende vinduer",
-			"option-sliding-window-mode-description": "Åben sider i nye ruder til højre. Tilader rulning gennem ruder vandret.",
+			"option-sliding-window-mode-description": "Åben sider i nye paneler til højre. Tilader rulning gennem paneler vandret.",
 			"option-hover-preview-file": "Vis forhåndsvisning når musen er over",
 			"option-hover-preview-file-description": "Forhåndsviser den side, som et link peger på, når musen føres over.",
 			"option-readable-line-length": "Læsbar linjelængde",
