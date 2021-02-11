@@ -54,7 +54,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `cz` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
-| `el` | Greek | ελληνικά | 🚧 |
+| `el` | Greek | Ελληνικά | 🚧 |
 | `es` | Spanish | Español | ✅ |
 | `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
