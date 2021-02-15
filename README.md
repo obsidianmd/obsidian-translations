@@ -20,7 +20,7 @@ Note that you don't have to clone your fork to make the edits; you can do everyt
 
 ## Translating
 
-The trasnlation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
+The translation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
 
 To translate, simply edit the value. For example, let's say you see
 
