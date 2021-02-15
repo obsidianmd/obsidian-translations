@@ -65,13 +65,13 @@
 			"option-new-file-folder-path-description": "Nye noter vil blive lagt i denne mappe. Plug-in indstillinger vil tilsidesætte det.",
 			"option-use-wiki-links": "Benyt [[Wikilinks]]",
 			"option-use-wiki-links-description": "Auto-generer Wikilinks for [[links]] og ![[images]] i stedet for Markdown links og billeder. Slå denne indstilling fra for at generere Markdown links i stedet.",
-			"option-show-unsupported-files": "Detect all file extensions",
-			"option-show-unsupported-files-description": "Show files with any extension even if Obsidian can't open them natively, so that you can link to them and see them in File Explorer and Quick Switcher.",
+			"option-show-unsupported-files": "Vis alle filtyper",
+			"option-show-unsupported-files-description": "Viser alle filtyper, selv dem Obsidian ikke undersøtter direkte, så du kan linke til dem og vise dem i stifinderen og i hurtig skifteren.",
 			"option-link-autocompleted-format": "Ny link format",
 			"option-link-autocompleted-format-description": "Hvilke links som skal indsættes, når der auto-genereres interne links.",
 			"option-choice-shortest-linktext": "Korteste sti, når det er muligt",
 			"option-choice-relative-path": "Relativ stil til fil",
-			"option-choice-absolute-path": "Absolut sti til boks.",
+			"option-choice-absolute-path": "Absolut sti til boks",
 			"option-new-attachment-location": "Standard placering for nye vedhæftede filer",
 			"option-new-attachment-location-description": "Hvor nye vedhæftede filer er placeret.",
 			"option-choice-subdirectory": "I undermappe under nuværende mappe",
@@ -84,7 +84,7 @@
 		"appearance": {
 			"name": "Udseende",
 			"option-base-theme": "Basis tema",
-			"option-base-theme-description": "Vælg Obsidian’s standard farve skema.",
+			"option-base-theme-description": "Vælg Obsidian’s standard farvetema.",
 			"dark-theme": "Mørk",
 			"light-theme": "Lys",
 			"option-use-obsidian-css": "Anvend brugerdefineret CSS",
@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "Gendan standard",
 			"tooltip-customize-command": "Tilpas denne genvejstast",
 			"tooltip-hotkey-single-conflict": "Denne genvejstast er i konflikt med \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "Denne genvejstast er i konflikt med {{count}} andre genvejstaster"
+			"tooltip-hotkey-multiple-conflicts": "Denne genvejstast er i konflikt med {{count}} andre genvejstaster",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "Om",
@@ -183,7 +184,7 @@
 			"message-login-failed": "Log på fejlede. Vær venlig at tjekke email og kodeord.",
 			"label-no-account": "Har du ikke en konto? ",
 			"link-sign-up-now": "Opret dig nu",
-			"message-get-community-badges": "For fællesskabs badges, skriv venligst email til support@obsidian.md hvis du ikke har modtaget dem senest 24 timer efter at du har anskaffet licensen.",
+			"message-get-community-badges": "For fællesskabs badges, skriv venligst email til support@obsidian.md, hvis du ikke har modtaget dem senest 24 timer efter, at du har anskaffet licensen.",
 			"message-obtain-commercial-license": "For at hente en kommerciel licens skal du besøge {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
@@ -231,7 +232,13 @@
 			"msg-no-updates-found": "Der er ikke fundet plug-in opdateringer.",
 			"msg-updates-found": "Fandt {{count}} plug-in der kan opdateres.",
 			"msg-updates-found_plural": "Fandt {{count}} plug-ins der kan opdateres.",
-			"msg-update-plugin": "Opdater til version {{version}}"
+			"msg-update-plugin": "Opdater til version {{version}}",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
 		}
 	},
 	"editor": {
@@ -268,7 +275,7 @@
 			"setting-page-size-legal": "Legal",
 			"setting-page-size-letter": "Letter",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
+			"setting-landscape": "Landskab",
 			"setting-margin": "Margin",
 			"setting-margin-default": "Standard",
 			"setting-margin-minimal": "Minimal",
@@ -279,7 +286,7 @@
 	},
 	"interface": {
 		"embed-open-in-default-app-tooltip": "Åben i standard app",
-		"empty-sidebar": "Sidepanelet er tomt, prøv at trække en rude derhen.",
+		"empty-sidebar": "Sidebjælken er tom, prøv at trække et panel derhen.",
 		"sidebar-expand": "Udvid",
 		"sidebar-collapse": "Skjul",
 		"msg-fail-to-save-file": "Kunne ikke gemme filen \"{{filepath}}\". {{message}}.",
@@ -292,6 +299,7 @@
 		"msg-switched-to-edit": "Skiftede standard visningstilstand til editor.",
 		"msg-upgrade-installer": "For at benytte denne funktion skal det seneste installationsprogram fra vores hjemmeside være installeret.",
 		"tooltip-restore-default-settings": "Gendan standard indstillinger",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}} blev kopieret til udklipsholderen.",
 		"url": "Url",
 		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
@@ -304,8 +312,8 @@
 			"close": "Luk"
 		},
 		"menu": {
-			"edit-view": "Rediger (Ctrl/Cmd+Klik for at redigere i ny rude)",
-			"preview-view": "Forhåndsvis (Ctrl/Cmd+Klik for at åbne i ny rude)",
+			"edit-view": "Rediger (Ctrl/Cmd+Klik for at redigere i nyt panel)",
+			"preview-view": "Forhåndsvis (Ctrl/Cmd+Klik for at åbne i nyt panel)",
 			"find": "Søg...",
 			"replace": "Erstat...",
 			"edit": "Rediger",
@@ -313,10 +321,10 @@
 			"more-options": "Flere muligheder",
 			"close": "Luk",
 			"pin": "Fastgør",
-			"unlink-pane": "Fjern link til rude",
-			"link-pane": "Link til rude...",
+			"unlink-pane": "Fjern link til panel",
+			"link-pane": "Link til panel...",
 			"delete-file": "Slet fil",
-			"open-in-new-pane": "Åben i ny rude",
+			"open-in-new-pane": "Åben i ny panel",
 			"copy-url": "Kopier url"
 		},
 		"tooltip": {
@@ -354,25 +362,25 @@
 			"move-into-folder": "Flyt til \"{{folder}}\"",
 			"star-this-file": "Stjernemarker denne fil",
 			"star-these-files": "Stjernemarker disse filer",
-			"open-in-this-pane": "Åben i denne rude"
+			"open-in-this-pane": "Åben i dette panel"
 		},
 		"window": {
-			"maximize": "Maximize",
-			"minimize": "Minimize",
-			"restore-down": "Restore down",
-			"close-window": "Close window",
-			"go-back": "Go back",
-			"go-forward": "Go forward"
+			"maximize": "Maksimer",
+			"minimize": "Minimer",
+			"restore-down": "Gendan fra maksimeret",
+			"close-window": "Luk vindue",
+			"go-back": "Gå tilbage",
+			"go-forward": "Gå frem"
 		}
 	},
 	"commands": {
 		"save-file": "Gem nuværende fil",
 		"follow-cursor-link": "Følg link under markør",
-		"open-cursor-link-in-new-pane": "Åben link under markør i ny rude",
-		"navigate-pane-above": "Fokuser på rude foroven",
-		"navigate-pane-below": "Fokuser på rude forneden",
-		"navigate-pane-left": "Fokuser på rude til venstre",
-		"navigate-pane-right": "Fokuser på rude til højre",
+		"open-cursor-link-in-new-pane": "Åben link under markør i nyt panel",
+		"navigate-pane-above": "Fokuser på panel foroven",
+		"navigate-pane-below": "Fokuser på panel forneden",
+		"navigate-pane-left": "Fokuser på panel til venstre",
+		"navigate-pane-right": "Fokuser på panel til højre",
 		"toggle-pin": "Tilføj/Fjern nål",
 		"split-vertically": "Split lodret",
 		"split-horizontally": "Split vandret",
@@ -386,10 +394,10 @@
 		"open-help": "Åben hjælp",
 		"toggle-preview": "Skift mellem redigering- og forhåndsvisningstilstand",
 		"delete-current-file": "Slet nuværende fil",
-		"close-active-pane": "Luk aktive ruder",
-		"close-other-panes": "Luk alle andre ruder",
-		"toggle-left-sidebar": "Slå venstre sidepanel til og fra",
-		"toggle-right-sidebar": "Slå højre sidepanel til og fra",
+		"close-active-pane": "Luk aktive paneler",
+		"close-other-panes": "Luk alle andre paneler",
+		"toggle-left-sidebar": "Slå venstre sidebjælke til og fra",
+		"toggle-right-sidebar": "Slå højre sidebjælke til og fra",
 		"toggle-default-view-mode": "Slå standard visningstilstand til og fra",
 		"toggle-fold": "Slå foldning på den nuværende linje til og fra",
 		"fold-all": "Fold alle overskrifter og lister",
@@ -428,7 +436,10 @@
 		"label-delete-file": "Slet fil",
 		"button-cancel": "Annuller",
 		"button-done": "Færdig",
-		"preparing-pdf": "Klargører PDF..."
+		"preparing-pdf": "Klargører PDF...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -436,7 +447,7 @@
 			"name": "Stifinder",
 			"desc": "Se filer og mapper i din boks.",
 			"action-create-note": "Opret ny note",
-			"action-create-note-in-new-pane": "Opret note i ny rude",
+			"action-create-note-in-new-pane": "Opret note i nyt panel",
 			"action-new-note": "Ny note",
 			"action-new-folder": "Ny mappe",
 			"action-change-sort": "Skift sorteringsrækkefølge",
@@ -461,7 +472,7 @@
 			"menu-opt-set-attachment-folder": "Angiv som vedhæftningsmappe",
 			"menu-opt-rename": "Omdøb",
 			"menu-opt-delete": "Slet",
-			"menu-opt-make-copy": "Lave en kopi",
+			"menu-opt-make-copy": "Opret en kopi",
 			"msg-invalid-characters": "Filnavnet kan ikke indeholde nogle af følgende tegn: ",
 			"msg-file-already-exists": "Der findes allerede en fil med dette navn",
 			"msg-empty-file-name": "Et filnavn kan ikke være tomt.",
@@ -479,7 +490,7 @@
 			"label-more-context": "Vis mere kontekst",
 			"prompt-start-search": "Skriv for at starte søgning...",
 			"label-match-text": "Matcher tekst: ",
-			"label-match-regex": "Matcher søgemønster: ",
+			"label-match-regex": "Matcher regulært søgeudtryk: ",
 			"label-match-exact-text": "Indeholder nøjagtig tekst: ",
 			"label-match-all": "Matcher alle: ",
 			"label-match-any": "Matcher nogle: ",
@@ -510,16 +521,25 @@
 			"option-choice-list-style-dash": "Streg (-)",
 			"option-choice-list-style-asterisk": "Stjerne (*)",
 			"option-choice-list-style-numbered": "Nummereret",
-			"tooltip-clear-search": "Nulstil søgning"
+			"tooltip-clear-search": "Nulstil søgning",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
-			"name": "Hurtig skifter",
+			"name": "Hurtigskifter",
 			"desc": "Benyt Ctrl/Cmd+O for at skifte til andre filer med dit tastatur.",
 			"short-name": "Skifter",
-			"action-open": "Åben hurtig skifter",
+			"action-open": "Åben hurtigskifter",
 			"instruction-navigate": "for at navigere",
 			"instruction-open": "for at åbne",
-			"instruction-open-in-new-pane": "for at åbne i ny rude",
+			"instruction-open-in-new-pane": "for at åbne i nyt panel",
 			"instruction-create": "for at oprette",
 			"instruction-dismiss": "for at annullere",
 			"label-no-note-create-new": "Ingen noter fundet. Tast Enter for at oprette en ny.",
@@ -535,7 +555,6 @@
 			"tab-title": "Graf af {{displayText}}",
 			"label-filters": "Filtre",
 			"prompt-filter-nodes": "Søg filer...",
-			"label-currently-searching-for": "Søger i øjeblikket efter:",
 			"option-depth": "Dybde",
 			"option-depth-description": "Vis noder, så mange links væk",
 			"option-neighbor-links": "Nabolinks",
@@ -564,23 +583,27 @@
 			"option-link-distance": "Link afstand",
 			"option-repel-force": "Afvis kraft",
 			"tooltip-open-graph-settings": "Åben graf indstillinger",
-			"msg-screenshot-copied": "Skærmbillede er kopieret til udklipsholderen."
+			"msg-screenshot-copied": "Skærmbillede er kopieret til udklipsholderen.",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group"
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
-			"desc": "Vis antallet af tilbagelinks i statuslinjen, og vis tilbagelinks og vis tilbagelinks og ikke-linkede bemærkninger i en sidepanel fane.",
-			"action-open": "Åben tilbageinks",
+			"desc": "Vis antallet af tilbagelinks i statuslinjen, og vis tilbagelinks og vis tilbagelinks og ikke-linkede omtaler i et sidebjælke panel.",
+			"action-open": "Åben tilbagelinks",
 			"action-open-for-current": "Åben tilbagelinks i den nuværende fil",
-			"label-linked-mentions": "Linkede bemærkninger",
+			"label-linked-mentions": "Linkede omtaler",
 			"label-no-backlinks": "Ingen tilbagelinks fundet.",
-			"label-unlinked-mentions": "ikke-linkede bemærkninger",
+			"label-unlinked-mentions": "Ikke-linkede omtaler",
 			"label-link-button-text": "Link",
 			"tab-title": "Tilbagelinks for {{displayText}}",
-			"label-no-unlinked-mentions": "Ingen ikke-linkede bemærkninger fundet.",
+			"label-no-unlinked-mentions": "Ingen ikke-linkede omtaler fundet.",
 			"ellipsis": "..."
 		},
 		"tag-pane": {
-			"name": "Tag rude",
+			"name": "Tag panel",
 			"desc": "Viser dine tags og antallet af forekomster.",
 			"label-no-tags": "Der er ikke fundet nogle tags.",
 			"label-sort-by-name-a-to-z": "Tag navn (A to Å)",
@@ -590,7 +613,7 @@
 			"action-show-nested-tags": "Vis indlejrede tags"
 		},
 		"page-preview": {
-			"name": "Side forhåndsvis",
+			"name": "Forhåndsvisning af side",
 			"desc": "Før musen over et internt link for at forhåndsvise indholdet. I redigeringstilstand, tryk Ctrl/Cmd mens musen holdes over linket.",
 			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for a oprette."
 		},
@@ -667,7 +690,7 @@
 			"label-total-replacements": "Total antal erstatninger"
 		},
 		"daily-notes": {
-			"name": "Daglige notes",
+			"name": "Daglige noter",
 			"desc": "Opret eller åben dagens daglige note.",
 			"short-name": "I dag",
 			"action-open": "Åben dagens note",
@@ -685,7 +708,9 @@
 			"option-new-file-location": "Placering af nye filer",
 			"option-new-file-location-description": "Nye daglige noter vil blive placeret her.",
 			"option-template": "Placering af skabelon fil",
-			"option-template-description": "Vælg den fil, som skal benyttes som skabelon."
+			"option-template-description": "Vælg den fil, som skal benyttes som skabelon.",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten præfikser",
@@ -702,14 +727,14 @@
 			"msg-template-file-not-found": "Kunne ikke oprette Zettelkasten note. Skabelon filen \"{{template}}\" blev ikke fundet."
 		},
 		"random-note": {
-			"name": "Tilføldig note",
+			"name": "Tilfældig note",
 			"desc": "Åben en tilfældig note for at genopdage eller vurdere den.",
 			"short-name": "Tilfældig",
 			"action-open": "Åben tilfældig note"
 		},
 		"outline": {
 			"name": "Disposition",
-			"desc": "Den den nuværende fils disposition eller linkede rude.",
+			"desc": "Den nuværende fils disposition eller linkede panel.",
 			"action-open": "Åben disposition",
 			"action-open-pane": "Åben dispositionen for den nuværende fil",
 			"tab-title": "Disposition for {{displayText}}",
@@ -768,7 +793,7 @@
 			"name": "Udgiv",
 			"desc": "Udgiv dine noter gennem Obsidian Publish.",
 			"action-publish-changes": "Udgiv ændringer",
-			"label-no-internet-access": "Du skal have adgang ti linternettet for at kunne udgive ændringer.",
+			"label-no-internet-access": "Du skal have adgang til internettet for at kunne udgive ændringer.",
 			"label-publish-service-description": "Obsidian Publish er en separat tilføjelse og betalt service, som gør dig i stand til at udgive dine noter direkte fra Obsidian.",
 			"label-please-login": "For at begynde at udgive skal du logge på eller oprette en ny Obsidian konto.",
 			"label-no-publish-subscription": "Du har ikke et Obsidian Publish abonnement endnu.",
@@ -813,7 +838,7 @@
 			"option-show-backlinks": "Vis tilbagelinks",
 			"option-show-backlinks-description": "Vis tilbagelink sektion i slutningen af hver side.",
 			"option-sliding-window-mode": "Benyt glidende vinduer",
-			"option-sliding-window-mode-description": "Åben sider i nye ruder til højre. Tilader rulning gennem ruder vandret.",
+			"option-sliding-window-mode-description": "Åben sider i nye paneler til højre. Tilader rulning gennem paneler vandret.",
 			"option-hover-preview-file": "Vis forhåndsvisning når musen er over",
 			"option-hover-preview-file-description": "Forhåndsviser den side, som et link peger på, når musen føres over.",
 			"option-readable-line-length": "Læsbar linjelængde",
@@ -872,14 +897,18 @@
 			"msg-added-new-password": "Tilføjede nyt kodeord.",
 			"option-custom-domain": "Brugerdefineret domæne",
 			"option-custom-domain-desc": "Benyt dit eget domæne i stedet for https://publish.obsidian.md/{websteds id} URL.",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "Konfigurer",
 			"label-configure-custom-domain": "Konfigurer brugerdefineret domæne",
 			"option-custom-url-name": "Brugerdefineret URL",
 			"option-custom-url-desc": "Den URL hvor dit websted skal placeres.",
 			"option-custom-url-placeholder": "www.ditdomæne.com",
 			"button-update-custom-domain": "Opdater domæne indstilinger",
-			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
-			"label-custom-domain-link-name": "custom domain setup guide"
+			"label-custom-domain-instructions": "Der henvises til vores {{link}} på vores hjælpewebsted for mere information.",
+			"label-custom-domain-link-name": "guide til brugerdefineret domæne konfiguration",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "Arbejdsområder",
@@ -897,10 +926,11 @@
 			"placeholder-type-to-search-workspaces": "Skriv navn på arbejdsområde..."
 		},
 		"sync": {
-			"name": "Skynkroniser",
+			"name": "Synkroniser",
 			"desc": "Synkroniser dine filer ved hjælp af Obsidian Sync.",
 			"action-view-version-history": "Vis versionshistorik",
 			"label-load-more": "Indlæs mere",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "Gendan denne version",
 			"msg-already-latest-version": "Denne version er allerede den seneste version.",
 			"msg-restored-version": "Gendannede version fra {{time}}",
@@ -963,6 +993,13 @@
 			"option-sync-log": "Synkroniseringsaktivitet",
 			"option-sync-log-desc": "Vis seneste synkroniseringsaktivitet for fejlfinding.",
 			"button-view": "Vis",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "Selektiv synkronisering",
 			"option-excluded-folders": "Udelukkede mapper",
 			"option-excluded-folder-desc": "Udeluk nogle mapper fra at blive synkroniseret.",
@@ -999,6 +1036,8 @@
 		"folder-with-count": "{{count}} mappe",
 		"folder-with-count_plural": "{{count}} mapper",
 		"backlink-with-count": "{{count}} tilbagelink",
-		"backlink-with-count_plural": "{{count}} tilbagelinks"
+		"backlink-with-count_plural": "{{count}} tilbagelinks",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites"
 	}
 }
