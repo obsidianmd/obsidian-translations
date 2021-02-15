@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "Pulihkan default",
 			"tooltip-customize-command": "Kustomisasi pintasan ini",
 			"tooltip-hotkey-single-conflict": "Pintasan ini konflik dengan \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "Pintasan ini konflik dengan {{count}} perintah lain"
+			"tooltip-hotkey-multiple-conflicts": "Pintasan ini konflik dengan {{count}} perintah lain",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "Tentang",
@@ -231,7 +232,13 @@
 			"msg-no-updates-found": "Pembaruan plugin tidak ditemukan.",
 			"msg-updates-found": "Ditemukan {{count}} plugin untuk pembaruan.",
 			"msg-updates-found_plural": "Ditemukan {{count}} plugin untuk pembaruan.",
-			"msg-update-plugin": "Membarui ke versi {{version}}"
+			"msg-update-plugin": "Membarui ke versi {{version}}",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
 		}
 	},
 	"editor": {
@@ -292,6 +299,7 @@
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke editor.",
 		"msg-upgrade-installer": "Untuk menggunakan fitur ini, instal ulang dengan penginstal terbaru yang tersedia di situs web kami.",
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
 		"msg-open-file-through-uri": "File \"{{path}}\" terbuka",
@@ -428,7 +436,10 @@
 		"label-delete-file": "Hapus file",
 		"button-cancel": "Batal",
 		"button-done": "Selesai",
-		"preparing-pdf": "Menyiapkan PDF..."
+		"preparing-pdf": "Menyiapkan PDF...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -510,7 +521,16 @@
 			"option-choice-list-style-dash": "Tanda hubung (-)",
 			"option-choice-list-style-asterisk": "Asterik (*)",
 			"option-choice-list-style-numbered": "Bernomor",
-			"tooltip-clear-search": "Hapus pencarian"
+			"tooltip-clear-search": "Hapus pencarian",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
 			"name": "Pengalih cepat",
@@ -535,7 +555,6 @@
 			"tab-title": "Grafik dari {{displayText}}",
 			"label-filters": "Filter",
 			"prompt-filter-nodes": "Cari file...",
-			"label-currently-searching-for": "Sekarang mencari:",
 			"option-depth": "Kedalaman",
 			"option-depth-description": "Tampilkan titik ini sejauh beberapa link",
 			"option-neighbor-links": "Link tetangga",
@@ -564,7 +583,11 @@
 			"option-link-distance": "Jarak link",
 			"option-repel-force": "Gaya tolak",
 			"tooltip-open-graph-settings": "Buka pengaturan grafik",
-			"msg-screenshot-copied": "Cuplikan layar disalin ke clipboard."
+			"msg-screenshot-copied": "Cuplikan layar disalin ke clipboard.",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group"
 		},
 		"backlinks": {
 			"name": "Backlink",
@@ -685,7 +708,9 @@
 			"option-new-file-location": "Lokasi file baru",
 			"option-new-file-location-description": "Lokasi folder untuk catatan harian yang baru dibuat.",
 			"option-template": "Lokasi file template",
-			"option-template-description": "Lokasi file yang digunakan sebagai template."
+			"option-template-description": "Lokasi file yang digunakan sebagai template.",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten prefixer",
@@ -872,6 +897,8 @@
 			"msg-added-new-password": "Tambahkan kata sandi baru.",
 			"option-custom-domain": "Domain kustom",
 			"option-custom-domain-desc": "Gunakan domain Anda sendiri ganti dari URL https://publish.obsidian.md/{situs id}.",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "Konfigurasi",
 			"label-configure-custom-domain": "Konfigurasikan domain kustom",
 			"option-custom-url-name": "URL kustom",
@@ -879,7 +906,9 @@
 			"option-custom-url-placeholder": "www.domainanda.com",
 			"button-update-custom-domain": "Perbarui pengaturan domain",
 			"label-custom-domain-instructions": "Rujuk ke {{link}} kami pada situs bantuan kami untuk informasi lebih lanjut.",
-			"label-custom-domain-link-name": "panduan penyetelan domain kustom"
+			"label-custom-domain-link-name": "panduan penyetelan domain kustom",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "Ruang kerja",
@@ -901,6 +930,7 @@
 			"desc": "Sinkronisasi file Anda dengan Obsidian Sync.",
 			"action-view-version-history": "Lihat riwayat versi",
 			"label-load-more": "Muat lebih banyak",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "Pulihkan versi ini",
 			"msg-already-latest-version": "Versi ini sudah versi terbaru.",
 			"msg-restored-version": "Berhasil mengembalikan versi dari {{time}}",
@@ -963,6 +993,13 @@
 			"option-sync-log": "Aktivitas sinkronisasi",
 			"option-sync-log-desc": "Tampilkan aktivitas sinkronisasi terakhir untuk penelusuran kesalahan.",
 			"button-view": "Tampilkan",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "Sinkronisasi selektif",
 			"option-excluded-folders": "Folder yang dikecualikan",
 			"option-excluded-folder-desc": "Cegah folder tertentu dari sinkronisasi.",
@@ -999,6 +1036,8 @@
 		"folder-with-count": "{{count}} folder",
 		"folder-with-count_plural": "{{count}} folder",
 		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlink"
+		"backlink-with-count_plural": "{{count}} backlink",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites"
 	}
 }
