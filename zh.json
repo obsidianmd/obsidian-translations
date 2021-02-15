@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "恢复默认",
 			"tooltip-customize-command": "自定义快捷键",
 			"tooltip-hotkey-single-conflict": "该快捷键与 \"{{command}}\" 冲突",
-			"tooltip-hotkey-multiple-conflicts": "该快捷键与其他 {{count}} 个快捷键冲突"
+			"tooltip-hotkey-multiple-conflicts": "该快捷键与其他 {{count}} 个快捷键冲突",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "关于",
@@ -231,7 +232,13 @@
 			"msg-no-updates-found": "没有插件需要更新。",
 			"msg-updates-found": "发现 {{count}} 个插件需要更新。",
 			"msg-updates-found_plural": "发现 {{count}} 个插件需要更新。",
-			"msg-update-plugin": "更新至版本 {{version}}"
+			"msg-update-plugin": "更新至版本 {{version}}",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
 		}
 	},
 	"editor": {
@@ -292,6 +299,7 @@
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
 		"msg-upgrade-installer": "若要使用此功能，请到我们的网站上下载并安装Obsidian 的最新版本。",
 		"tooltip-restore-default-settings": "恢复默认设置",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}} 已复制到你的剪贴板",
 		"url": "Url",
 		"msg-open-file-through-uri": "打开文件 \"{{path}}\"",
@@ -428,7 +436,10 @@
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
 		"button-done": "完成",
-		"preparing-pdf": "正在生成PDF..."
+		"preparing-pdf": "正在生成PDF...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "插件",
@@ -510,7 +521,16 @@
 			"option-choice-list-style-dash": "无序列表(-)",
 			"option-choice-list-style-asterisk": "无序列表(*)",
 			"option-choice-list-style-numbered": "有序列表",
-			"tooltip-clear-search": "清除搜索"
+			"tooltip-clear-search": "清除搜索",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
 			"name": "快速切换",
@@ -535,7 +555,6 @@
 			"tab-title": "{{displayText}} 的关系图",
 			"label-filters": "筛选",
 			"prompt-filter-nodes": "搜索文件...",
-			"label-currently-searching-for": "当前正在搜索:",
 			"option-depth": "深度",
 			"option-depth-description": "显示从当前节点出发经 n 段链接可到达的节点，n 为设置值。",
 			"option-neighbor-links": "其他节点间的链接",
@@ -564,7 +583,11 @@
 			"option-link-distance": "连线长度",
 			"option-repel-force": "节点间的排斥力",
 			"tooltip-open-graph-settings": "打开图谱设置",
-			"msg-screenshot-copied": "屏幕截图已复制到剪贴板。"
+			"msg-screenshot-copied": "屏幕截图已复制到剪贴板。",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group"
 		},
 		"backlinks": {
 			"name": "反向链接",
@@ -685,7 +708,9 @@
 			"option-new-file-location": "新建日记的存放位置",
 			"option-new-file-location-description": "指定新建日记的存放路径。",
 			"option-template": "日记模板位置",
-			"option-template-description": "指定日记模板文件的路径。"
+			"option-template-description": "指定日记模板文件的路径。",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "ZK 卡片",
@@ -872,6 +897,8 @@
 			"msg-added-new-password": "新密码已添加",
 			"option-custom-domain": "自定义域名",
 			"option-custom-domain-desc": "使用你自己的域名而不是 https://publish.obsidian.md/{网站 id} 。",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "设置",
 			"label-configure-custom-domain": "自定义域名设置",
 			"option-custom-url-name": "自定义 URL",
@@ -879,7 +906,9 @@
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "更新域名设置",
 			"label-custom-domain-instructions": "更多信息请参考 {{link}} 。",
-			"label-custom-domain-link-name": "自定义域名设置指南"
+			"label-custom-domain-link-name": "自定义域名设置指南",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "工作区",
@@ -901,6 +930,7 @@
 			"desc": "通过 Obsidian Sync 同步你的文件",
 			"action-view-version-history": "查看版本历史",
 			"label-load-more": "加载更多",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "恢复此版本",
 			"msg-already-latest-version": "此版本已经是最新版",
 			"msg-restored-version": "成功恢复版本：{{time}}",
@@ -963,6 +993,13 @@
 			"option-sync-log": "同步事件",
 			"option-sync-log-desc": "查看最近的同步事件以进行调试。",
 			"button-view": "查看",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "选择性同步",
 			"option-excluded-folders": "需要排除的文件夹",
 			"option-excluded-folder-desc": "防止某些文件夹被同步。",
@@ -999,6 +1036,8 @@
 		"folder-with-count": "{{count}} 个文件夹",
 		"folder-with-count_plural": "{{count}} 个文件夹",
 		"backlink-with-count": "{{count}} 个反向链接",
-		"backlink-with-count_plural": "{{count}} 个反向链接"
+		"backlink-with-count_plural": "{{count}} 个反向链接",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites"
 	}
 }
