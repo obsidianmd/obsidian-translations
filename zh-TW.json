@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "恢復預設",
 			"tooltip-customize-command": "自訂快捷鍵",
 			"tooltip-hotkey-single-conflict": "此熱鍵與 \"{{command}}\" 發生衝突",
-			"tooltip-hotkey-multiple-conflicts": "此熱鍵與其他 {{count}} 個命令發生衝突"
+			"tooltip-hotkey-multiple-conflicts": "此熱鍵與其他 {{count}} 個命令發生衝突",
+			"label-blank-hotkey": "無"
 		},
 		"about": {
 			"name": "關於",
@@ -231,7 +232,13 @@
 			"msg-no-updates-found": "尚無更新的外掛。",
 			"msg-updates-found": "尋獲 {{count}} 個須更新的外掛。",
 			"msg-updates-found_plural": "尋獲 {{count}} 個須更新的外掛。",
-			"msg-update-plugin": "更新至版本 {{version}}"
+			"msg-update-plugin": "更新至版本 {{version}}",
+			"label-sort-downloads-high-to-low": "下載次數 (高到低)",
+			"label-sort-downloads-low-to-high": "下載次數 (低到高)",
+			"label-sort-release-date-new-to-old": "初次釋出時間 (新到舊)",
+			"label-sort-release-date-old-to-new": "初次釋出時間 (舊到新)",
+			"label-sort-alphabetical": "外掛名稱 (A到Z)",
+			"label-sort-alphabetical-reverse": "外掛名稱 (Z到A)"
 		}
 	},
 	"editor": {
@@ -292,6 +299,7 @@
 		"msg-switched-to-edit": "切換預設檢視為編輯模式。",
 		"msg-upgrade-installer": "欲使用此功能時，請由官網下載並重新安裝最新版本的應用程式。",
 		"tooltip-restore-default-settings": "還原為預設設定",
+		"label-copy": "複製到系統剪貼簿",
 		"copied": "{{item}} 已複製到系統剪貼簿",
 		"url": "Url",
 		"msg-open-file-through-uri": "已開啟檔案: \"{{path}}\"",
@@ -428,7 +436,10 @@
 		"label-delete-file": "刪除檔案",
 		"button-cancel": "取消",
 		"button-done": "完成",
-		"preparing-pdf": "PDF 準備中..."
+		"preparing-pdf": "PDF 準備中...",
+		"label-rename-file": "重新命名",
+		"label-new-name": "新名稱",
+		"msg-rename-success": "檔案重新命名成功。"
 	},
 	"plugins": {
 		"name": "外掛",
@@ -510,7 +521,16 @@
 			"option-choice-list-style-dash": "減號 (-)",
 			"option-choice-list-style-asterisk": "星號 (*)",
 			"option-choice-list-style-numbered": "數字. ",
-			"tooltip-clear-search": "清除搜尋"
+			"tooltip-clear-search": "清除搜尋",
+			"label-search-options": "搜尋選項",
+			"tooltip-read-more": "閱讀更多",
+			"label-history": "歷史",
+			"tooltip-clear-history": "清除搜尋歷史",
+			"label-path-option-description": "匹配的檔案路徑",
+			"label-file-name-option-description": "匹配檔案名稱",
+			"label-tag-option-description": "搜尋標籤",
+			"label-line-option-description": "搜尋同行的關鍵字",
+			"label-section-option-description": "搜尋同一標題下的關鍵字"
 		},
 		"quick-switcher": {
 			"name": "快速切換",
@@ -535,7 +555,6 @@
 			"tab-title": "{{displayText}} 的關聯圖",
 			"label-filters": "過濾設定",
 			"prompt-filter-nodes": "搜尋檔案...",
-			"label-currently-searching-for": "目前搜尋目標:",
 			"option-depth": "深度",
 			"option-depth-description": "以此數字顯示連結階層",
 			"option-neighbor-links": "鄰近的連結",
@@ -564,7 +583,11 @@
 			"option-link-distance": "連接線距離",
 			"option-repel-force": "節點間的互斥強度",
 			"tooltip-open-graph-settings": "開啟關聯圖設定",
-			"msg-screenshot-copied": "螢幕截圖複製到剪貼簿。"
+			"msg-screenshot-copied": "螢幕截圖複製到剪貼簿。",
+			"label-groups": "群組",
+			"placeholder-enter-query": "輸入查詢...",
+			"tooltip-delete-graph": "刪除群組",
+			"button-new-group": "新群組"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -685,7 +708,9 @@
 			"option-new-file-location": "新檔案儲存目錄",
 			"option-new-file-location-description": "儲存日記的資料夾路徑。",
 			"option-template": "樣板檔案位置",
-			"option-template-description": "樣板檔案的儲存路徑。"
+			"option-template-description": "樣板檔案的儲存路徑。",
+			"option-open-on-start": "啟動時開啟每日筆記",
+			"option-open-on-start-description": "當開啟此儲存庫時自動開啟每日筆記。"
 		},
 		"zettelkasten-prefixer": {
 			"name": "ZK卡片",
@@ -872,6 +897,8 @@
 			"msg-added-new-password": "新密碼已添加。",
 			"option-custom-domain": "自訂域名",
 			"option-custom-domain-desc": "不使用https://publish.obsidian.md/{site id}網址而使用自己的域名。",
+			"option-noindex": "禁用搜尋引擎索引",
+			"option-noindex-desc": "預防搜尋引擎對你的網站製作索引。",
 			"button-configure": "設定",
 			"label-configure-custom-domain": "設定自訂域名",
 			"option-custom-url-name": "自訂網址",
@@ -879,7 +906,9 @@
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "更新域名設定",
 			"label-custom-domain-instructions": "請參考我們說明網站{{link}}以獲知更多資訊。",
-			"label-custom-domain-link-name": "自訂域名設定指引"
+			"label-custom-domain-link-name": "自訂域名設定指引",
+			"label-site-usage": "網站 {{site}} 已超過限制 {{limit}}.",
+			"button-add-more-sites": "購買更多網站"
 		},
 		"workspaces": {
 			"name": "工作空間",
@@ -901,6 +930,7 @@
 			"desc": "透過 Obsidian Sync 以同步你的檔案。",
 			"action-view-version-history": "檢視版本歷史",
 			"label-load-more": "載入更多",
+			"label-copy-to-clipboard": "複製到系統剪貼簿",
 			"label-restore-this-version": "回復到此版本",
 			"msg-already-latest-version": "此版本已是最後的版本。",
 			"msg-restored-version": "成功回復版本時間: {{time}}",
@@ -963,6 +993,13 @@
 			"option-sync-log": "同步活動",
 			"option-sync-log-desc": "檢視最近的同步活動以除錯。",
 			"button-view": "檢視",
+			"option-over-size": "儲存庫大小超過限制",
+			"option-over-size-desc": "你的儲存庫為 {{size}} 而限制為 {{limit}}。",
+			"msg-largest-files": "檢視最大檔案",
+			"msg-largest-files-desc": "這些是佔用最多容量的遠端檔案，刪除附件後，使用清除按鈕以釋出遠端儲存庫的空間。",
+			"button-purge-remote": "清除",
+			"tooltip-purge-remote": "由遠端儲存庫永久清除已刪除附件以節省空間。",
+			"msg-purge-complete": "清除完成。",
 			"option-selective-sync": "選擇性同步",
 			"option-excluded-folders": "已排除資料夾",
 			"option-excluded-folder-desc": "阻止特定資料夾被同步。",
@@ -999,6 +1036,8 @@
 		"folder-with-count": "{{count}} 個資料夾",
 		"folder-with-count_plural": "{{count}} 個資料夾",
 		"backlink-with-count": "{{count}} 個反向連結",
-		"backlink-with-count_plural": "{{count}} 個反向連結"
+		"backlink-with-count_plural": "{{count}} 個反向連結",
+		"site-with-count": "{{count}} 個網站",
+		"site-with-count_plural": "{{count}} 個網站"
 	}
 }
