@@ -116,7 +116,7 @@
 			"tooltip-customize-command": "Personalizza comando",
 			"tooltip-hotkey-single-conflict": "Questa combinazione è in conflitto con \"{{command}}\"",
 			"tooltip-hotkey-multiple-conflicts": "Questa combinazione è in conflitto con {{count}} altri comandi",
-			"label-blank-hotkey": "Blank"
+			"label-blank-hotkey": "Vuoto"
 		},
 		"about": {
 			"name": "Informazioni",
@@ -233,12 +233,12 @@
 			"msg-updates-found": "{{count}} plugin da aggiornare.",
 			"msg-updates-found_plural": "{{count}} plugin da aggiornare.",
 			"msg-update-plugin": "Aggiorna alla versione {{version}}",
-			"label-sort-downloads-high-to-low": "Download count (high to low)",
-			"label-sort-downloads-low-to-high": "Download count (low to high)",
-			"label-sort-release-date-new-to-old": "First released time (new to old)",
-			"label-sort-release-date-old-to-new": "First released time (old to new)",
-			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-downloads-high-to-low": "Conteggio download (decrescente)",
+			"label-sort-downloads-low-to-high": "Conteggio download (crescente)",
+			"label-sort-release-date-new-to-old": "Data di rilascio (più recente)",
+			"label-sort-release-date-old-to-new": "Data di rilascio (meno recente)",
+			"label-sort-alphabetical": "Nome plugin (dalla A alla Z)",
+			"label-sort-alphabetical-reverse": "Nome plugin (dalla Z alla A)"
 		}
 	},
 	"editor": {
@@ -299,7 +299,7 @@
 		"msg-switched-to-edit": "Modalità editor impostata come predefinita.",
 		"msg-upgrade-installer": "Per usare questa funzionalità, reinstalla con il file d'installazione più recente disponibile sul nostro sito.",
 		"tooltip-restore-default-settings": "Ripristina impostazioni predefinite",
-		"label-copy": "Copy to clipboard",
+		"label-copy": "Copia negli Appunti",
 		"copied": "{{item}} copiato negli appunti",
 		"url": "Url",
 		"msg-open-file-through-uri": "File \"{{path}}\" aperto",
@@ -437,9 +437,9 @@
 		"button-cancel": "Annulla",
 		"button-done": "Fatto",
 		"preparing-pdf": "Preparazione del PDF...",
-		"label-rename-file": "Rename file",
-		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"label-rename-file": "Rinomina file",
+		"label-new-name": "Nuovo nome",
+		"msg-rename-success": "File rinominato con successo."
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -492,8 +492,8 @@
 			"label-match-text": "Corrispondenza testo: ",
 			"label-match-regex": "Corrispondenza regex: ",
 			"label-match-exact-text": "Contiene il testo esatto: ",
-			"label-match-all": "Corrispondenza a tutti i: ",
-			"label-match-any": "Corrispondenza a qualsiasi: ",
+			"label-match-all": "Corrispondenze a tutti: ",
+			"label-match-any": "Corrispondenze a qualsiasi: ",
 			"label-excluding": "Escluso: ",
 			"label-case-sensitive": "Distinzione maiuscole/minuscole",
 			"label-case-insensitive": "Senza distinzione maiuscole/minuscole",
@@ -504,7 +504,7 @@
 			"label-match-tag": "Corrispondenza tag: ",
 			"label-no-matches": "Nessun risultato trovato.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
-			"matches-with-count_plural": "... e {{count}} altre corrispondenze.",
+			"matches-with-count_plural": "... e altre {{count}} corrispondenze.",
 			"label-copy-search-results": "Copia risultati della ricerca",
 			"button-copy-results": "Copia risultati",
 			"msg-successfully-copied": "Risultati copiati negli appunti.",
@@ -522,15 +522,15 @@
 			"option-choice-list-style-asterisk": "Asterisco (*)",
 			"option-choice-list-style-numbered": "Numerato",
 			"tooltip-clear-search": "Cancella ricerca",
-			"label-search-options": "Search options",
-			"tooltip-read-more": "Read more",
-			"label-history": "History",
-			"tooltip-clear-history": "Clear search history",
-			"label-path-option-description": "match path of the file",
-			"label-file-name-option-description": "match file name",
-			"label-tag-option-description": "search for tags",
-			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-search-options": "Opzioni di ricerca",
+			"tooltip-read-more": "Maggiori informazioni",
+			"label-history": "Cronologia",
+			"tooltip-clear-history": "Cancella cronologia",
+			"label-path-option-description": "corrispondenze al percorso del file",
+			"label-file-name-option-description": "corrispondenze al nome del file",
+			"label-tag-option-description": "ricerca tag",
+			"label-line-option-description": "ricerca parole nella stessa riga",
+			"label-section-option-description": "ricerca parole nella stessa intestazione"
 		},
 		"quick-switcher": {
 			"name": "Selezione rapida",
@@ -584,10 +584,10 @@
 			"option-repel-force": "Forza di repulsione",
 			"tooltip-open-graph-settings": "Apri impostazioni grafo",
 			"msg-screenshot-copied": "Schermata copiata negli appunti.",
-			"label-groups": "Groups",
-			"placeholder-enter-query": "Enter query...",
-			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"label-groups": "Gruppi",
+			"placeholder-enter-query": "Inserisci query...",
+			"tooltip-delete-graph": "Elimina gruppo",
+			"button-new-group": "Nuovo gruppo"
 		},
 		"backlinks": {
 			"name": "Riferimenti",
@@ -709,8 +709,8 @@
 			"option-new-file-location-description": "Percorso della cartella per le nuove note del giorno.",
 			"option-template": "Posizione file modello",
 			"option-template-description": "Il percorso del file da usare come modello.",
-			"option-open-on-start": "Open daily note on startup",
-			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
+			"option-open-on-start": "Apri nota del giorno all'avvio",
+			"option-open-on-start-description": "Apre automaticamente la nota del giorno ogni volta che si apre questo vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Prefissi Zettelkasten",
@@ -897,8 +897,8 @@
 			"msg-added-new-password": "Nuova password aggiunta.",
 			"option-custom-domain": "Dominio personalizzato",
 			"option-custom-domain-desc": "Usa un dominio personale anziché l'URL https://publish.obsidian.md/{site id}.",
-			"option-noindex": "Disallow search engine indexing",
-			"option-noindex-desc": "Prevent search engines from indexing your site.",
+			"option-noindex": "Non consentire l'indicizzazione nei motore di ricerca",
+			"option-noindex-desc": "Impedisce ai motori di ricerca di indicizzare il sito.",
 			"button-configure": "Configura",
 			"label-configure-custom-domain": "Configura dominio personalizzato",
 			"option-custom-url-name": "URL personalizzato",
@@ -907,8 +907,8 @@
 			"button-update-custom-domain": "Aggiorna impostazioni dominio",
 			"label-custom-domain-instructions": "Per maggiori informazioni vedere la {{link}} sul nostro sito di aiuto.",
 			"label-custom-domain-link-name": "guida alla configurazione del dominio personalizzato",
-			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
-			"button-add-more-sites": "Buy more sites"
+			"label-site-usage": "Stai utilizzando {{site}} su {{limit}}.",
+			"button-add-more-sites": "Acquista più siti"
 		},
 		"workspaces": {
 			"name": "Aree di lavoro",
@@ -930,7 +930,7 @@
 			"desc": "Sincronizza i file con Obsidian Sync.",
 			"action-view-version-history": "Visualizza cronologia delle versioni",
 			"label-load-more": "Carica altro",
-			"label-copy-to-clipboard": "Copy to clipboard",
+			"label-copy-to-clipboard": "Copia negli Appunti",
 			"label-restore-this-version": "Ripristina questa versione",
 			"msg-already-latest-version": "Questa versione è già la più recente.",
 			"msg-restored-version": "Versione {{time}} ripristinata con successo",
@@ -993,13 +993,13 @@
 			"option-sync-log": "Attività di Sync",
 			"option-sync-log-desc": "Mostra le attività recenti di Sync per il debug.",
 			"button-view": "Mostra",
-			"option-over-size": "Vault size over limit",
-			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
-			"msg-largest-files": "View largest files",
-			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
-			"button-purge-remote": "Purge",
-			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
-			"msg-purge-complete": "Purge complete.",
+			"option-over-size": "Limite di spazio del vault superato",
+			"option-over-size-desc": "Il vault occupa {{size}} su {{limit}}.",
+			"msg-largest-files": "Mostra i file più grandi",
+			"msg-largest-files-desc": "Questi sono i file remoti che occupano più spazio. Elimina gli allegati e usa il tasto Ripulisci per liberare spazio nel vault remoto.",
+			"button-purge-remote": "Ripulisci",
+			"tooltip-purge-remote": "Elimina definitivamente gli allegati rimossi dal vault remoto per risparmiare spazio.",
+			"msg-purge-complete": "Pulizia completata.",
 			"option-selective-sync": "Sincronizzazione selettiva",
 			"option-excluded-folders": "Cartelle escluse",
 			"option-excluded-folder-desc": "Impedisce la sincronizzazione di determinate cartelle.",
@@ -1037,7 +1037,7 @@
 		"folder-with-count_plural": "{{count}} cartelle",
 		"backlink-with-count": "{{count}} riferimento",
 		"backlink-with-count_plural": "{{count}} riferimenti",
-		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count": "{{count}} sito",
+		"site-with-count_plural": "{{count}} siti"
 	}
 }
