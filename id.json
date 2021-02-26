@@ -116,7 +116,7 @@
 			"tooltip-customize-command": "Kustomisasi pintasan ini",
 			"tooltip-hotkey-single-conflict": "Pintasan ini konflik dengan \"{{command}}\"",
 			"tooltip-hotkey-multiple-conflicts": "Pintasan ini konflik dengan {{count}} perintah lain",
-			"label-blank-hotkey": "Blank"
+			"label-blank-hotkey": "Kosong"
 		},
 		"about": {
 			"name": "Tentang",
@@ -233,12 +233,13 @@
 			"msg-updates-found": "Ditemukan {{count}} plugin untuk pembaruan.",
 			"msg-updates-found_plural": "Ditemukan {{count}} plugin untuk pembaruan.",
 			"msg-update-plugin": "Membarui ke versi {{version}}",
-			"label-sort-downloads-high-to-low": "Download count (high to low)",
-			"label-sort-downloads-low-to-high": "Download count (low to high)",
-			"label-sort-release-date-new-to-old": "First released time (new to old)",
-			"label-sort-release-date-old-to-new": "First released time (old to new)",
-			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-downloads-high-to-low": "Jumlah unduh (tinggi ke rendah)",
+			"label-sort-downloads-low-to-high": "Jumlah unduh (rendah ke tinggi)",
+			"label-sort-release-date-new-to-old": "Waktu awal rilis (baru ke lama)",
+			"label-sort-release-date-old-to-new": "Waktu awal rilis (lama ke baru)",
+			"label-sort-alphabetical": "Nama plugin (A ke Z)",
+			"label-sort-alphabetical-reverse": "Nama plugin (Z ke A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Ketik ^",
 			"label-link-block": "untuk hubungkan ke blok",
 			"label-type-pipe": "Ketik |",
-			"label-change-display-text": "untuk ganti tampilan teks"
+			"label-change-display-text": "untuk ganti tampilan teks",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Tidak ada saran...",
@@ -299,7 +301,7 @@
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke editor.",
 		"msg-upgrade-installer": "Untuk menggunakan fitur ini, instal ulang dengan penginstal terbaru yang tersedia di situs web kami.",
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
-		"label-copy": "Copy to clipboard",
+		"label-copy": "Salin ke clipboard",
 		"copied": "{{item}} tersalin ke clipboard Anda",
 		"url": "Url",
 		"msg-open-file-through-uri": "File \"{{path}}\" terbuka",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Tebalkan teks yang dipilih",
 		"toggle-italics": "Miringkan teks yang dipilih",
 		"toggle-highlight": "Sorot teks yang dipilih",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Sisipkan tautan",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Hapus paragraf",
 		"toggle-checklist": "Centang daftar periksa",
 		"edit-file-title": "Ubah judul file",
 		"copy-path": "Salin jalur file",
 		"copy-url": "Salin url Obsidian",
-		"export-pdf": "Ekspor ke PDF"
+		"export-pdf": "Ekspor ke PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -437,9 +442,9 @@
 		"button-cancel": "Batal",
 		"button-done": "Selesai",
 		"preparing-pdf": "Menyiapkan PDF...",
-		"label-rename-file": "Rename file",
-		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"label-rename-file": "Ubah nama file",
+		"label-new-name": "Nama baru",
+		"msg-rename-success": "Berhasil ubah nama file."
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Hapus",
 			"menu-opt-make-copy": "Buat salinan",
 			"msg-invalid-characters": "Nama file tidak boleh berisi salah satu diantara karakter berikut: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Sudah ada file dengan nama yang sama",
 			"msg-empty-file-name": "Nama file tidak boleh kosong.",
 			"tooltip-modified-time": "Terakhir diubah pada {{time}}",
@@ -522,15 +528,15 @@
 			"option-choice-list-style-asterisk": "Asterik (*)",
 			"option-choice-list-style-numbered": "Bernomor",
 			"tooltip-clear-search": "Hapus pencarian",
-			"label-search-options": "Search options",
-			"tooltip-read-more": "Read more",
-			"label-history": "History",
-			"tooltip-clear-history": "Clear search history",
-			"label-path-option-description": "match path of the file",
-			"label-file-name-option-description": "match file name",
-			"label-tag-option-description": "search for tags",
-			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-search-options": "Opsi pencarian",
+			"tooltip-read-more": "Baca selengkapnya",
+			"label-history": "Riwayat",
+			"tooltip-clear-history": "Hapus riwayat pencarian",
+			"label-path-option-description": "cocokan jalur file",
+			"label-file-name-option-description": "cocokan nama file",
+			"label-tag-option-description": "cari tag",
+			"label-line-option-description": "cari kata kunci di baris yang sama",
+			"label-section-option-description": "cari kata kunci di bawah judul yang sama"
 		},
 		"quick-switcher": {
 			"name": "Pengalih cepat",
@@ -584,10 +590,12 @@
 			"option-repel-force": "Gaya tolak",
 			"tooltip-open-graph-settings": "Buka pengaturan grafik",
 			"msg-screenshot-copied": "Cuplikan layar disalin ke clipboard.",
-			"label-groups": "Groups",
-			"placeholder-enter-query": "Enter query...",
-			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"label-groups": "Grup",
+			"placeholder-enter-query": "Masukan kueri...",
+			"tooltip-delete-graph": "Hapus grup",
+			"button-new-group": "Grup baru",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Backlink",
@@ -709,11 +717,11 @@
 			"option-new-file-location-description": "Lokasi folder untuk catatan harian yang baru dibuat.",
 			"option-template": "Lokasi file template",
 			"option-template-description": "Lokasi file yang digunakan sebagai template.",
-			"option-open-on-start": "Open daily note on startup",
-			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
+			"option-open-on-start": "Buka catatan harian saat mulai",
+			"option-open-on-start-description": "Buka catatan harian Anda secara otomatis kapanpun Anda buka vault ini."
 		},
 		"zettelkasten-prefixer": {
-			"name": "Zettelkasten prefixer",
+			"name": "Awalan Zettelkasten",
 			"desc": "Membuat catatan baru dengan format 12-digit YYYYMMDDHHII ID Zettelkasten (Contoh 202001010000).",
 			"short-name": "ZK note",
 			"action-create-note": "Buat catatan Zettelkasten baru",
@@ -837,7 +845,7 @@
 			"option-show-outline-description": "Tampilkan kerangka dari judul setiap halaman.",
 			"option-show-backlinks": "Tampilkan backlink",
 			"option-show-backlinks-description": "Tampilkan bagian backlink di setiap akhir halaman.",
-			"option-sliding-window-mode": "Gunakan jendela menggeser",
+			"option-sliding-window-mode": "Gunakan jendela geser",
 			"option-sliding-window-mode-description": "Buka halaman di panel baru sebelah kanan. Memungkinkan menggulir panel secara horizontal.",
 			"option-hover-preview-file": "Tampilkan pratinjau melayang",
 			"option-hover-preview-file-description": "Tampilkan halaman pratinjau ketika melayang pada link.",
@@ -897,8 +905,8 @@
 			"msg-added-new-password": "Tambahkan kata sandi baru.",
 			"option-custom-domain": "Domain kustom",
 			"option-custom-domain-desc": "Gunakan domain Anda sendiri ganti dari URL https://publish.obsidian.md/{situs id}.",
-			"option-noindex": "Disallow search engine indexing",
-			"option-noindex-desc": "Prevent search engines from indexing your site.",
+			"option-noindex": "Tidak izinkan mesin cari mengindeks",
+			"option-noindex-desc": "Mencegah mesin cari dari mengindeks situs Anda.",
 			"button-configure": "Konfigurasi",
 			"label-configure-custom-domain": "Konfigurasikan domain kustom",
 			"option-custom-url-name": "URL kustom",
@@ -907,8 +915,8 @@
 			"button-update-custom-domain": "Perbarui pengaturan domain",
 			"label-custom-domain-instructions": "Rujuk ke {{link}} kami pada situs bantuan kami untuk informasi lebih lanjut.",
 			"label-custom-domain-link-name": "panduan penyetelan domain kustom",
-			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
-			"button-add-more-sites": "Buy more sites"
+			"label-site-usage": "Anda menggunakan {{site}} melebihi {{limit}} Anda.",
+			"button-add-more-sites": "Beli situs lebih"
 		},
 		"workspaces": {
 			"name": "Ruang kerja",
@@ -930,7 +938,7 @@
 			"desc": "Sinkronisasi file Anda dengan Obsidian Sync.",
 			"action-view-version-history": "Lihat riwayat versi",
 			"label-load-more": "Muat lebih banyak",
-			"label-copy-to-clipboard": "Copy to clipboard",
+			"label-copy-to-clipboard": "Salin ke clipboard",
 			"label-restore-this-version": "Pulihkan versi ini",
 			"msg-already-latest-version": "Versi ini sudah versi terbaru.",
 			"msg-restored-version": "Berhasil mengembalikan versi dari {{time}}",
@@ -993,13 +1001,13 @@
 			"option-sync-log": "Aktivitas sinkronisasi",
 			"option-sync-log-desc": "Tampilkan aktivitas sinkronisasi terakhir untuk penelusuran kesalahan.",
 			"button-view": "Tampilkan",
-			"option-over-size": "Vault size over limit",
-			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
-			"msg-largest-files": "View largest files",
-			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
-			"button-purge-remote": "Purge",
-			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
-			"msg-purge-complete": "Purge complete.",
+			"option-over-size": "Ukuran vault melebihi batas",
+			"option-over-size-desc": "Vault Anda {{size}} melebihi {{limit}}.",
+			"msg-largest-files": "Tampilkan file-file terbersar",
+			"msg-largest-files-desc": "Ini adalah file jarak jauh yang mengambil banyak ruang. Setelah hapus lampiran, gunakan tombol bersihkan untuk kosongkan ruang vault jarak jauh.",
+			"button-purge-remote": "Bersihkan",
+			"tooltip-purge-remote": "Secara permanen bersihkan lampiran yang dihapus dari vault jarak jauh untuk menghemat ruang.",
+			"msg-purge-complete": "Pembersian selesai.",
 			"option-selective-sync": "Sinkronisasi selektif",
 			"option-excluded-folders": "Folder yang dikecualikan",
 			"option-excluded-folder-desc": "Cegah folder tertentu dari sinkronisasi.",
@@ -1037,7 +1045,9 @@
 		"folder-with-count_plural": "{{count}} folder",
 		"backlink-with-count": "{{count}} backlink",
 		"backlink-with-count_plural": "{{count}} backlink",
-		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count": "{{count}} situs",
+		"site-with-count_plural": "{{count}} situs",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

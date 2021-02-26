@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Użyj ^",
 			"label-link-block": "aby utworzyć link do bloku",
 			"label-type-pipe": "Użyj |",
-			"label-change-display-text": "aby zmienić wyświetlany tekst"
+			"label-change-display-text": "aby zmienić wyświetlany tekst",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Brak sugestii...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Pogrubienie",
 		"toggle-italics": "Kursywa",
 		"toggle-highlight": "Zakreślenie",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Wstaw link",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Usuń paragraf",
 		"toggle-checklist": "Zaznacz / odznacz element listy",
 		"edit-file-title": "Edytuj tytuł pliku",
 		"copy-path": "Skopiuj ścieżkę pliku",
 		"copy-url": "Skopiuj url Obsidian",
-		"export-pdf": "Eksportuj do PDF"
+		"export-pdf": "Eksportuj do PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Usuń",
 			"menu-opt-make-copy": "Utwórz kopię",
 			"msg-invalid-characters": "Nazwa pliku nie może zawierać żadnego z podanych znaków: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Plik o takiej nazwie już istnieje",
 			"msg-empty-file-name": "Nazwa pliku nie może być pusta.",
 			"tooltip-modified-time": "Data ostatniej modyfikacji: {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Linki zwrotne",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} link zwrotny",
 		"backlink-with-count_plural": "linki zwrotne: {{count}}",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

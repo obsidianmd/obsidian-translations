@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Type ^",
 			"label-link-block": "to link blocks",
 			"label-type-pipe": "Görünecek yazıyı değiştirmek için",
-			"label-change-display-text": "| yazın"
+			"label-change-display-text": "| yazın",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Tavsiye bulunamadı...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Seçileni koyu/normal yap",
 		"toggle-italics": "Seçileni italik/normal yap",
 		"toggle-highlight": "Seçilenin üstünü çiz/çizme",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Bağ ekle",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Paragrafı sil",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
 		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Export to PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Sil",
 			"menu-opt-make-copy": "Kopyasını yarat",
 			"msg-invalid-characters": "Dosya adı bu karakterleri içeremez: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Aynı isimde bir dosya zaten var",
 			"msg-empty-file-name": "Dosya adı boş olamaz.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Geri bağlantılar",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} geri bağlantı",
 		"backlink-with-count_plural": "{{count}} geri bağlantı",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }
