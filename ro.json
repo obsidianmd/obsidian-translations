@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Tastează ^",
 			"label-link-block": "pentru a lega blocurile",
 			"label-type-pipe": "Scrie |",
-			"label-change-display-text": "pentru a schimba textul afișat"
+			"label-change-display-text": "pentru a schimba textul afișat",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Nicio sugestie...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Comută textul îngroșat pentru selecție",
 		"toggle-italics": "Comută textul cursiv pentru selecție",
 		"toggle-highlight": "Comută textul evidențiat pentru selecție",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Inserează legătură",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Șterge paragraf",
 		"toggle-checklist": "Comută starea listei DE FĂCUT",
 		"edit-file-title": "Editează titlul fișierului",
 		"copy-path": "Copiază calea fișierului",
 		"copy-url": "Copiază URL-ul obsidian",
-		"export-pdf": "Exportă ca fișier PDF"
+		"export-pdf": "Exportă ca fișier PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Șterge",
 			"menu-opt-make-copy": "Creează o copie",
 			"msg-invalid-characters": "Numele fișierului nu poate conține niciunul din următoarele caractere: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Există deja un fișier cu același nume",
 			"msg-empty-file-name": "Numele fișierului nu poate rămâne gol.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Referințe",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} referință",
 		"backlink-with-count_plural": "{{count}} referințe",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

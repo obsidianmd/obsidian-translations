@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "Første gang udgivet (nye til ældre)",
 			"label-sort-release-date-old-to-new": "Første gang udgivet (ældre til nye)",
 			"label-sort-alphabetical": "Plug-in navn (A to Å)",
-			"label-sort-alphabetical-reverse": "Plug-in navn (Å to A)"
+			"label-sort-alphabetical-reverse": "Plug-in navn (Å to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Skriv ^",
 			"label-link-block": "for at linke blokke",
 			"label-type-pipe": "Skriv |",
-			"label-change-display-text": "for at ændre visningstekst"
+			"label-change-display-text": "for at ændre visningstekst",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Ingen forslag...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Slå fed tekst til og fra for markering",
 		"toggle-italics": "Slå kursiv tekst til og fra for markering",
 		"toggle-highlight": "Slå fremhævet tekst til og fra for markering",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Indsæt link",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Slet afsnit",
 		"toggle-checklist": "Slå status tjekliste til og fra",
 		"edit-file-title": "Rediger fil titel",
 		"copy-path": "Kopier fil sti",
 		"copy-url": "Kopier obsidian url",
-		"export-pdf": "Eksporter til PDF"
+		"export-pdf": "Eksporter til PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Slet",
 			"menu-opt-make-copy": "Opret en kopi",
 			"msg-invalid-characters": "Filnavnet kan ikke indeholde nogle af følgende tegn: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Der findes allerede en fil med dette navn",
 			"msg-empty-file-name": "Et filnavn kan ikke være tomt.",
 			"tooltip-modified-time": "Sidst modificeret {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Grupper",
 			"placeholder-enter-query": "Angiv forespørgsel...",
 			"tooltip-delete-graph": "Slet gruppe",
-			"button-new-group": "Ny gruppe"
+			"button-new-group": "Ny gruppe",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} tilbagelink",
 		"backlink-with-count_plural": "{{count}} tilbagelinks",
 		"site-with-count": "{{count}} websted",
-		"site-with-count_plural": "{{count}} websteder"
+		"site-with-count_plural": "{{count}} websteder",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

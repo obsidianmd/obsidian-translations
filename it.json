@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "Data di rilascio (più recente)",
 			"label-sort-release-date-old-to-new": "Data di rilascio (meno recente)",
 			"label-sort-alphabetical": "Nome plugin (dalla A alla Z)",
-			"label-sort-alphabetical-reverse": "Nome plugin (dalla Z alla A)"
+			"label-sort-alphabetical-reverse": "Nome plugin (dalla Z alla A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Digita ^",
 			"label-link-block": "per collegare un blocco",
 			"label-type-pipe": "Digita |",
-			"label-change-display-text": "per cambiare il testo mostrato"
+			"label-change-display-text": "per cambiare il testo mostrato",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Nessun suggerimento...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Imposta il grassetto per la selezione",
 		"toggle-italics": "Imposta il corsivo per la selezione",
 		"toggle-highlight": "Evidenzia la selezione",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Inserisci collegamento",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Cancella paragrafo",
 		"toggle-checklist": "Attiva/disattiva stato della checklist",
 		"edit-file-title": "Modifica titolo del file",
 		"copy-path": "Copia percorso del file",
 		"copy-url": "Copia URL obsidian",
-		"export-pdf": "Esporta in PDF"
+		"export-pdf": "Esporta in PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Questa operazione influirà su {{links}} in {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Elimina",
 			"menu-opt-make-copy": "Crea una copia",
 			"msg-invalid-characters": "Il nome del file non può contenere i seguenti caratteri: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
 			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
 			"tooltip-modified-time": "Ultima modifica il {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Gruppi",
 			"placeholder-enter-query": "Inserisci query...",
 			"tooltip-delete-graph": "Elimina gruppo",
-			"button-new-group": "Nuovo gruppo"
+			"button-new-group": "Nuovo gruppo",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Riferimenti",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} riferimento",
 		"backlink-with-count_plural": "{{count}} riferimenti",
 		"site-with-count": "{{count}} sito",
-		"site-with-count_plural": "{{count}} siti"
+		"site-with-count_plural": "{{count}} siti",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }
