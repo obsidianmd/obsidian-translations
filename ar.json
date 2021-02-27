@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Type ^",
 			"label-link-block": "to link blocks",
 			"label-type-pipe": "اكتب |",
-			"label-change-display-text": "لتغيير نص العرض"
+			"label-change-display-text": "لتغيير نص العرض",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "لا اقتراحات...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Toggle bold for selection",
 		"toggle-italics": "Toggle italics for selection",
 		"toggle-highlight": "Toggle highlight for selection",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Insert link",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Delete paragraph",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
 		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Export to PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "حذف",
 			"menu-opt-make-copy": "إنشاء نسخة",
 			"msg-invalid-characters": "لا يمكن أن يحوي اسم الملف أي من الأحرف: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "يوجد ملف بنفس الاسم",
 			"msg-empty-file-name": "لا يمكن أن يكون اسم الملف فارغاً.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "روابط خلفية",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} رابط خلفي",
 		"backlink-with-count_plural": "{{count}} روابط خلفية",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

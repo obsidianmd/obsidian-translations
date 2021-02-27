@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "^를 쓰시면",
 			"label-link-block": "블록으로 링크가 됩니다.",
 			"label-type-pipe": "|를 쓰시면",
-			"label-change-display-text": "보이는 텍스트가 바뀝니다."
+			"label-change-display-text": "보이는 텍스트가 바뀝니다.",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "제안 단어가 없습니다...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "선택된 텍스트 굵게 표시/해제",
 		"toggle-italics": "선택된 텍스트 기울이기/해제",
 		"toggle-highlight": "선택된 텍스트 하이라이트 토글",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "링크 입력",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "문단 삭제",
 		"toggle-checklist": "체크 박스 상태 토글",
 		"edit-file-title": "파일 제목 편집",
 		"copy-path": "파일 경로 복사",
 		"copy-url": "obsidian url 복사하기",
-		"export-pdf": "PDF 생성하기"
+		"export-pdf": "PDF 생성하기",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "삭제",
 			"menu-opt-make-copy": "복사본 만들기",
 			"msg-invalid-characters": "파일 이름에 다음 문자들을 사용할수 없습니다: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "같은 이름의 파일이 이미 존재합니다",
 			"msg-empty-file-name": "파일 이름을 써주세요.",
 			"tooltip-modified-time": "최신 편집 시간: {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} 백링크",
 		"backlink-with-count_plural": "{{count}} 백링크",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

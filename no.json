@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Type ^",
 			"label-link-block": "to link blocks",
 			"label-type-pipe": "Skriv |",
-			"label-change-display-text": "for å endre tekst på lenke"
+			"label-change-display-text": "for å endre tekst på lenke",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Ingen forslag...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Fet skrift for markert tekst",
 		"toggle-italics": "Kursiv for markert tekst",
 		"toggle-highlight": "Fremhev markert tekst",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Sett inn lenke",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Slett avsnitt",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Rediger tittel",
 		"copy-path": "Kopier søkesti",
 		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Export to PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Slett",
 			"menu-opt-make-copy": "Lag en kopi",
 			"msg-invalid-characters": "Filnavn kan ikke inneholde noen av de følgende tegnene: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Det finnes allerede en fil med det samme navnet",
 			"msg-empty-file-name": "Du må oppgi et filnavn.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Lenker tilbake",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} lenke tilbake",
 		"backlink-with-count_plural": "{{count}} lenker tilbake",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

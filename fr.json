@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "Date de première release (nouveau vers ancien)",
 			"label-sort-release-date-old-to-new": "Date de première release (ancien vers nouveau)",
 			"label-sort-alphabetical": "Nom du plugin (A to Z)",
-			"label-sort-alphabetical-reverse": "Nom du plugin (Z to A)"
+			"label-sort-alphabetical-reverse": "Nom du plugin (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Saisir ^",
 			"label-link-block": "pour lier les blocs",
 			"label-type-pipe": "Saisir |",
-			"label-change-display-text": "pour changer le texte d'affichage"
+			"label-change-display-text": "pour changer le texte d'affichage",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Aucune suggestions...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Mettre en gras la sélection",
 		"toggle-italics": "Mettre en italique la sélection",
 		"toggle-highlight": "Mettre en surbrillance la sélection",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Insérer un lien",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Supprimer le paragraphe",
 		"toggle-checklist": "Basculer l'état de l'élément de la checklist",
 		"edit-file-title": "Modifier le titre du fichier",
 		"copy-path": "Copier le chemin du fichier",
 		"copy-url": "Copier l'url Obsidian",
-		"export-pdf": "Exporter en PDF"
+		"export-pdf": "Exporter en PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -472,8 +477,9 @@
 			"menu-opt-set-attachment-folder": "Définir comme dossier de pièces jointes",
 			"menu-opt-rename": "Renommer",
 			"menu-opt-delete": "Supprimer",
-			"menu-opt-make-copy": "Faire une copie",
+			"menu-opt-make-copy": "Dupliquer",
 			"msg-invalid-characters": "Le nom de fichier ne peut contenir aucun des caractères suivants : ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Il y a déjà un fichier du même nom",
 			"msg-empty-file-name": "Le nom de fichier ne peut pas être vide.",
 			"tooltip-modified-time": "Dernière modification à {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groupes",
 			"placeholder-enter-query": "Entrer la requête...",
 			"tooltip-delete-graph": "Supprimer le groupe",
-			"button-new-group": "Nouveau groupe"
+			"button-new-group": "Nouveau groupe",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Rétroliens",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} rétrolien",
 		"backlink-with-count_plural": "{{count}} rétroliens",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

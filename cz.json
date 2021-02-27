@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Napište ^",
 			"label-link-block": "pro blokovou referenci",
 			"label-type-pipe": "Napište |",
-			"label-change-display-text": "pro změnu zobrazovaného textu"
+			"label-change-display-text": "pro změnu zobrazovaného textu",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Žádné návrhy...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Přepnout tučně pro výběr",
 		"toggle-italics": "Přepnout kurzívu pro výběr",
 		"toggle-highlight": "Přepnout zvýraznění pro výběr",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Vložit odkaz",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Odstranit odstavec",
 		"toggle-checklist": "Změnit odfajfkování",
 		"edit-file-title": "Upravit název souboru",
 		"copy-path": "Kopírovat cestu souboru",
 		"copy-url": "Kopírovat url obsidianu",
-		"export-pdf": "Exportovat do PDF"
+		"export-pdf": "Exportovat do PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Tohle ovlivní {{links}} ve {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Smazat",
 			"menu-opt-make-copy": "Vytvořit kopii",
 			"msg-invalid-characters": "Název souborů nemůže obsahovat žádný z nasledujících znaků: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Již existuje soubor se stejným názvem",
 			"msg-empty-file-name": "Název souboru nemůže být prázdný.",
 			"tooltip-modified-time": "Naposledy upraveno {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Zpětné odkazy",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} zpětný odkaz",
 		"backlink-with-count_plural": "{{count}} zpětných odkazů",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

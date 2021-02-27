@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "发布时间（从新到旧）",
 			"label-sort-release-date-old-to-new": "发布时间（从旧到新）",
 			"label-sort-alphabetical": "插件名称（A-Z）",
-			"label-sort-alphabetical-reverse": "插件名称（Z-A）"
+			"label-sort-alphabetical-reverse": "插件名称（Z-A）",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "输入 ^",
 			"label-link-block": "链接文本块",
 			"label-type-pipe": "输入 |",
-			"label-change-display-text": "指定显示的文本"
+			"label-change-display-text": "指定显示的文本",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "没有建议...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "切换所选文本的粗体效果",
 		"toggle-italics": "切换所选文本的斜体效果",
 		"toggle-highlight": "切换所选文本的高亮效果",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "插入链接",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "删除段落",
 		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
 		"copy-path": "复制当前文件的路径",
 		"copy-url": "复制 obsidian url",
-		"export-pdf": "导出为PDF"
+		"export-pdf": "导出为PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "删除",
 			"menu-opt-make-copy": "创建副本",
 			"msg-invalid-characters": "文件名不能包含下列字符: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "已经存在一个同名文件",
 			"msg-empty-file-name": "文件名不能为空。",
 			"tooltip-modified-time": "最后修改于 {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "颜色组",
 			"placeholder-enter-query": "请输入检索式...",
 			"tooltip-delete-graph": "删除组",
-			"button-new-group": "新建颜色组"
+			"button-new-group": "新建颜色组",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "反向链接",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} 个反向链接",
 		"backlink-with-count_plural": "{{count}} 个反向链接",
 		"site-with-count": "{{count}} 个网站",
-		"site-with-count_plural": "{{count}} 个网站"
+		"site-with-count_plural": "{{count}} 个网站",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }
