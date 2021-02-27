@@ -239,7 +239,7 @@
 			"label-sort-release-date-old-to-new": "发布时间（从旧到新）",
 			"label-sort-alphabetical": "插件名称（A-Z）",
 			"label-sort-alphabetical-reverse": "插件名称（Z-A）",
-			"label-search-summary": "Showing {{pluginCount}}:"
+			"label-search-summary": "当前显示了 {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -261,7 +261,7 @@
 			"label-link-block": "链接文本块",
 			"label-type-pipe": "输入 |",
 			"label-change-display-text": "指定显示的文本",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "未找到匹配结果"
 		},
 		"spellcheck": {
 			"no-suggestion": "没有建议...",
@@ -296,7 +296,7 @@
 		"switch-vault": "打开其他库",
 		"help": "帮助",
 		"settings": "设置",
-		"drag-to-rearrange": "拖动以调整布局",
+		"drag-to-rearrange": "拖动可调整布局",
 		"msg-switched-to-preview": "切换默认视图为预览模式。",
 		"msg-switched-to-edit": "切换默认视图为编辑模式。",
 		"msg-upgrade-installer": "若要使用此功能，请到我们的网站上下载并安装Obsidian 的最新版本。",
@@ -409,16 +409,16 @@
 		"toggle-bold": "切换所选文本的粗体效果",
 		"toggle-italics": "切换所选文本的斜体效果",
 		"toggle-highlight": "切换所选文本的高亮效果",
-		"toggle-comments": "Toggle comments for selection",
+		"toggle-comments": "切换所选文本的注释效果",
 		"insert-link": "插入链接",
-		"toggle-spellcheck": "Toggle spellcheck",
+		"toggle-spellcheck": "开启/关闭拼写检查",
 		"delete-paragraph": "删除段落",
 		"toggle-checklist": "切换待办标签状态",
 		"edit-file-title": "编辑当前标题",
 		"copy-path": "复制当前文件的路径",
 		"copy-url": "复制 obsidian url",
 		"export-pdf": "导出为PDF",
-		"reload": "Reload app without saving"
+		"reload": "重新加载 Obsidian（不保存当前编辑内容）"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -479,7 +479,7 @@
 			"menu-opt-delete": "删除",
 			"menu-opt-make-copy": "创建副本",
 			"msg-invalid-characters": "文件名不能包含下列字符: ",
-			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
+			"msg-unsafe-characters": "如果文件名中包含以下任何一个字符，链接将不起作用：",
 			"msg-file-already-exists": "已经存在一个同名文件",
 			"msg-empty-file-name": "文件名不能为空。",
 			"tooltip-modified-time": "最后修改于 {{time}}",
@@ -594,8 +594,8 @@
 			"placeholder-enter-query": "请输入检索式...",
 			"tooltip-delete-graph": "删除组",
 			"button-new-group": "新建颜色组",
-			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"tooltip-click-to-change-drag-to-reorder": "点击可更改颜色\n拖动可对颜色组排序",
+			"action-timelapse": "播放关系图谱生长动画"
 		},
 		"backlinks": {
 			"name": "反向链接",
@@ -1047,7 +1047,7 @@
 		"backlink-with-count_plural": "{{count}} 个反向链接",
 		"site-with-count": "{{count}} 个网站",
 		"site-with-count_plural": "{{count}} 个网站",
-		"plugin-with-count": "{{count}} plugin",
-		"plugin-with-count_plural": "{{count}} plugins"
+		"plugin-with-count": "{{count}} 个插件",
+		"plugin-with-count_plural": "{{count}} 个插件"
 	}
 }
