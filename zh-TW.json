@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "初次釋出時間 (新到舊)",
 			"label-sort-release-date-old-to-new": "初次釋出時間 (舊到新)",
 			"label-sort-alphabetical": "外掛名稱 (A到Z)",
-			"label-sort-alphabetical-reverse": "外掛名稱 (Z到A)"
+			"label-sort-alphabetical-reverse": "外掛名稱 (Z到A)",
+			"label-search-summary": "顯示 {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "輸入 ^",
 			"label-link-block": "以連結到區塊",
 			"label-type-pipe": "輸入 |",
-			"label-change-display-text": "指定顯示的文字"
+			"label-change-display-text": "指定顯示的文字",
+			"label-no-match-found": "未找到匹配結果"
 		},
 		"spellcheck": {
 			"no-suggestion": "沒有建議...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "切換所選文字的粗體效果",
 		"toggle-italics": "切換所選文字的斜體效果",
 		"toggle-highlight": "切換所選文字的高亮效果",
+		"toggle-comments": "切換所選文字的註解",
 		"insert-link": "插入連結",
+		"toggle-spellcheck": "切換拚寫檢查",
 		"delete-paragraph": "刪除段落",
 		"toggle-checklist": "切換待辦事項狀態",
 		"edit-file-title": "編輯檔案標題",
 		"copy-path": "複製檔案路徑",
 		"copy-url": "複製obsidian網址",
-		"export-pdf": "匯出 PDF"
+		"export-pdf": "匯出 PDF",
+		"reload": "放棄儲存並重新載入程式"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "刪除",
 			"menu-opt-make-copy": "建立副本",
 			"msg-invalid-characters": "檔案名不能包含下列字元: ",
+			"msg-unsafe-characters": "檔名含有下列字元時無法形成可用的連結: ",
 			"msg-file-already-exists": "已經存在一個同名檔案",
 			"msg-empty-file-name": "檔案名不能為空。",
 			"tooltip-modified-time": "最後修改時間：{{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "群組",
 			"placeholder-enter-query": "輸入查詢...",
 			"tooltip-delete-graph": "刪除群組",
-			"button-new-group": "新群組"
+			"button-new-group": "新群組",
+			"tooltip-click-to-change-drag-to-reorder": "點擊以變更顏色\n拖拉以重排群組順序",
+			"action-timelapse": "開始關聯圖動畫展示"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} 個反向連結",
 		"backlink-with-count_plural": "{{count}} 個反向連結",
 		"site-with-count": "{{count}} 個網站",
-		"site-with-count_plural": "{{count}} 個網站"
+		"site-with-count_plural": "{{count}} 個網站",
+		"plugin-with-count": "{{count}} 個外掛",
+		"plugin-with-count_plural": "{{count}} 個外掛"
 	}
 }
