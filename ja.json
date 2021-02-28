@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "^を入力すると",
 			"label-link-block": "ブロックにリンクできます",
 			"label-type-pipe": "|を入力すると",
-			"label-change-display-text": "表示テキストを変更できます"
+			"label-change-display-text": "表示テキストを変更できます",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "サジェスチョンがありません…",
@@ -407,13 +409,16 @@
 		"toggle-bold": "選択範囲の太字を切り替える",
 		"toggle-italics": "選択範囲のイタリックを切り替える",
 		"toggle-highlight": "選択範囲のハイライトを切り替える",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "リンクを挿入",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "パラグラフを削除",
 		"toggle-checklist": "チェックリストの状態を切り替える",
 		"edit-file-title": "ファイルタイトルの編集",
 		"copy-path": "ファイルパスをコピーする",
 		"copy-url": "Obsidian URIをコピー",
-		"export-pdf": "PDFにエクスポート"
+		"export-pdf": "PDFにエクスポート",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}の{{links}}に影響があります。",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "削除",
 			"menu-opt-make-copy": "コピーを作成",
 			"msg-invalid-characters": "ファイル名には次の文字を使えません: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "同じ名前のファイルがあります。",
 			"msg-empty-file-name": "ファイル名を空にはできません。",
 			"tooltip-modified-time": "更新日時 {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "バックリンク",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} バックリンク",
 		"backlink-with-count_plural": "{{count}} バックリンク",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

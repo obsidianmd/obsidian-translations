@@ -16,8 +16,8 @@
 			"option-readable-line-description": "Begræns maksimum linje længde. Mindre indhold tilpasses skærmen, men længere blokke af tekst er mere læsbare.",
 			"option-strict-line-break": "Strengt linjeskift",
 			"option-strict-line-break-description": "Markdown specifikationerne ignorerer linjeskift i forhåndsvisning. Slå dette fra for at gøre enkelt linjeskift synligt.",
-			"option-show-frontmatter": "Vis Markdown metadata",
-			"option-show-frontmatter-description": "Vis Markdown metadata som en kodeblok i forhåndsvisning. Slå fra for at skjule metadata sektion.",
+			"option-show-frontmatter": "Vis YAML front matter metadata sektion",
+			"option-show-frontmatter-description": "Vis YAML front matter metadata som en kodeblok i forhåndsvisning. Slå fra for at skjule YAML front matter sektion.",
 			"option-auto-pair-brackets": "Auto par kantede parenteser",
 			"option-auto-pair-brackets-description": "Par kantede parenteser og citér automatisk.",
 			"option-auto-pair-markdown": "Auto par Markdown syntaks",
@@ -116,7 +116,7 @@
 			"tooltip-customize-command": "Tilpas denne genvejstast",
 			"tooltip-hotkey-single-conflict": "Denne genvejstast er i konflikt med \"{{command}}\"",
 			"tooltip-hotkey-multiple-conflicts": "Denne genvejstast er i konflikt med {{count}} andre genvejstaster",
-			"label-blank-hotkey": "Blank"
+			"label-blank-hotkey": "Ingen aktive genveje"
 		},
 		"about": {
 			"name": "Om",
@@ -139,17 +139,17 @@
 			"button-relaunch": "genstart",
 			"button-check-for-updates": "Tjek for opdateringer",
 			"option-auto-update": "Automatisk opdatering",
-			"option-auto-update-description": "Slå denne mulighed fra, for at undgå at Obsidian tjekker for opdateringer.",
+			"option-auto-update-description": "Hvis du deaktiverer denne indstilling vil Obsidian ikke tjekke for opdateringer.",
 			"option-open-help": "Obsidian hjælp",
 			"option-open-help-description": "Åben hjælpedokumentationen.",
 			"button-open": "Åben",
 			"option-language": "Sprog",
 			"option-language-description": "Skift det viste sprog.",
 			"option-insider-build": "Modtag insider versioner",
-			"option-insider-build-description": "Auto-opdater til insider versioner og prøv nye funktioner. Disse versioner er splinternye og kan være mindre stabile.",
+			"option-insider-build-description": "Opdater automatisk til insider versioner og prøv nye funktioner. Disse versioner er splinternye og kan være mindre stabile.",
 			"label-license": "Licens",
 			"label-your-commercial-license": "Den kommercielle licensnøgle er ",
-			"label-commercial-license-info": "Registered to \"{{company}}\" for {{seats}} users. Valid until {{expiry}}.",
+			"label-commercial-license-info": "Registreret til \"{{company}}\" til {{seats}} brugere. Gyldig indtil {{expiry}}.",
 			"label-validating-commercial-license": "Validerer...",
 			"label-invalid-commercial-license": "Licensen er ugyldig: ",
 			"button-activate-commercial-license": "Aktiver kommerciel licens",
@@ -170,7 +170,7 @@
 			"button-get-commercial-license": "Få en kommerciel licens",
 			"button-get-catalyst-license": "Supportere Obsidian med Obsidian Catalyst",
 			"button-check-for-catalyst-license": "Tjekke for Obsidian Catalyst",
-			"button-upgrade-catalyst-license": "Opgradere til en højere niveau",
+			"button-upgrade-catalyst-license": "Opgrader til et højere niveau",
 			"button-log-out": "Log ud",
 			"label-log-in": "Log på",
 			"label-email": "Email",
@@ -180,7 +180,7 @@
 			"button-login": "Log på",
 			"message-empty-email": "Email feltet kan ikke være tomt.",
 			"message-invalid-email": "Email er ikke gyldig.",
-			"message-empty-password": "Koeord feltet kan ikke være tomt.",
+			"message-empty-password": "Kodeord feltet kan ikke være tomt.",
 			"message-login-failed": "Log på fejlede. Vær venlig at tjekke email og kodeord.",
 			"label-no-account": "Har du ikke en konto? ",
 			"link-sign-up-now": "Opret dig nu",
@@ -233,12 +233,13 @@
 			"msg-updates-found": "Fandt {{count}} plug-in der kan opdateres.",
 			"msg-updates-found_plural": "Fandt {{count}} plug-ins der kan opdateres.",
 			"msg-update-plugin": "Opdater til version {{version}}",
-			"label-sort-downloads-high-to-low": "Download count (high to low)",
-			"label-sort-downloads-low-to-high": "Download count (low to high)",
-			"label-sort-release-date-new-to-old": "First released time (new to old)",
-			"label-sort-release-date-old-to-new": "First released time (old to new)",
-			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-downloads-high-to-low": "Antal downloads (høj til lav)",
+			"label-sort-downloads-low-to-high": "Antal downloads (lav til høj)",
+			"label-sort-release-date-new-to-old": "Første gang udgivet (nye til ældre)",
+			"label-sort-release-date-old-to-new": "Første gang udgivet (ældre til nye)",
+			"label-sort-alphabetical": "Plug-in navn (A to Å)",
+			"label-sort-alphabetical-reverse": "Plug-in navn (Å to A)",
+			"label-search-summary": "Fundet {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -251,7 +252,7 @@
 			"label-replace-all": "Erstat alt",
 			"key-enter": "Enter",
 			"key-shift-f3": "Shift + F3",
-			"key-enter-or-f3": "Enter or F3"
+			"key-enter-or-f3": "Enter eller F3"
 		},
 		"link-suggestion": {
 			"label-type-hash": "Skriv #",
@@ -259,7 +260,8 @@
 			"label-type-block": "Skriv ^",
 			"label-link-block": "for at linke blokke",
 			"label-type-pipe": "Skriv |",
-			"label-change-display-text": "for at ændre visningstekst"
+			"label-change-display-text": "for at ændre visningstekst",
+			"label-no-match-found": "Ingen match fundet"
 		},
 		"spellcheck": {
 			"no-suggestion": "Ingen forslag...",
@@ -287,7 +289,7 @@
 	"interface": {
 		"embed-open-in-default-app-tooltip": "Åben i standard app",
 		"empty-sidebar": "Sidebjælken er tom, prøv at trække et panel derhen.",
-		"sidebar-expand": "Udvid",
+		"sidebar-expand": "Udfold",
 		"sidebar-collapse": "Skjul",
 		"msg-fail-to-save-file": "Kunne ikke gemme filen \"{{filepath}}\". {{message}}.",
 		"no-file": "Ingen fil",
@@ -299,11 +301,11 @@
 		"msg-switched-to-edit": "Skiftede standard visningstilstand til editor.",
 		"msg-upgrade-installer": "For at benytte denne funktion skal det seneste installationsprogram fra vores hjemmeside være installeret.",
 		"tooltip-restore-default-settings": "Gendan standard indstillinger",
-		"label-copy": "Copy to clipboard",
+		"label-copy": "Kopier til udklipsholder",
 		"copied": "{{item}} blev kopieret til udklipsholderen.",
 		"url": "Url",
-		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
-		"msg-file-not-found-through-uri": "File \"{{name}}\" not found.",
+		"msg-open-file-through-uri": "Åbnede filen \"{{path}}\"",
+		"msg-file-not-found-through-uri": "Filen \"{{name}}\" blev ikke fundet.",
 		"empty-state": {
 			"no-file-open": "Ingen fil er åben",
 			"create-new-file": "Opret ny fil",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Slå fed tekst til og fra for markering",
 		"toggle-italics": "Slå kursiv tekst til og fra for markering",
 		"toggle-highlight": "Slå fremhævet tekst til og fra for markering",
+		"toggle-comments": "Slå kommentarer til og fra for markering",
 		"insert-link": "Indsæt link",
+		"toggle-spellcheck": "Slå stavekontrol til og fra",
 		"delete-paragraph": "Slet afsnit",
 		"toggle-checklist": "Slå status tjekliste til og fra",
 		"edit-file-title": "Rediger fil titel",
 		"copy-path": "Kopier fil sti",
 		"copy-url": "Kopier obsidian url",
-		"export-pdf": "Eksporter til PDF"
+		"export-pdf": "Eksporter til PDF",
+		"reload": "Genindlæs Obsidan uden at gemme"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -437,9 +442,9 @@
 		"button-cancel": "Annuller",
 		"button-done": "Færdig",
 		"preparing-pdf": "Klargører PDF...",
-		"label-rename-file": "Rename file",
-		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"label-rename-file": "Omdøb fil",
+		"label-new-name": "Nyt navn",
+		"msg-rename-success": "Filen er omdøbt."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Slet",
 			"menu-opt-make-copy": "Opret en kopi",
 			"msg-invalid-characters": "Filnavnet kan ikke indeholde nogle af følgende tegn: ",
+			"msg-unsafe-characters": "Links vil ikke fungere med filnavne, der indholder nogle af følgende tegn: ",
 			"msg-file-already-exists": "Der findes allerede en fil med dette navn",
 			"msg-empty-file-name": "Et filnavn kan ikke være tomt.",
 			"tooltip-modified-time": "Sidst modificeret {{time}}",
@@ -518,19 +524,19 @@
 			"option-list-prefix": "Liste præfix",
 			"option-list-prefix-description": "Mulighed for a tilføje et præfix til et punkt på en liste for hver filresultat.",
 			"option-choice-list-style-none": "Ingen",
-			"option-choice-list-style-dash": "Streg (-)",
+			"option-choice-list-style-dash": "Tankestreg (-)",
 			"option-choice-list-style-asterisk": "Stjerne (*)",
 			"option-choice-list-style-numbered": "Nummereret",
 			"tooltip-clear-search": "Nulstil søgning",
-			"label-search-options": "Search options",
-			"tooltip-read-more": "Read more",
-			"label-history": "History",
-			"tooltip-clear-history": "Clear search history",
-			"label-path-option-description": "match path of the file",
-			"label-file-name-option-description": "match file name",
-			"label-tag-option-description": "search for tags",
-			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-search-options": "Søgeindstillinger",
+			"tooltip-read-more": "Læs mere",
+			"label-history": "Historik",
+			"tooltip-clear-history": "Nulstil søgehistorik",
+			"label-path-option-description": "match filens sti",
+			"label-file-name-option-description": "match fil navn",
+			"label-tag-option-description": "søg efter tags",
+			"label-line-option-description": "søg nøgleord på samme linje",
+			"label-section-option-description": "søg nøgleord under samme overskrift"
 		},
 		"quick-switcher": {
 			"name": "Hurtigskifter",
@@ -584,10 +590,12 @@
 			"option-repel-force": "Afvis kraft",
 			"tooltip-open-graph-settings": "Åben graf indstillinger",
 			"msg-screenshot-copied": "Skærmbillede er kopieret til udklipsholderen.",
-			"label-groups": "Groups",
-			"placeholder-enter-query": "Enter query...",
-			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"label-groups": "Grupper",
+			"placeholder-enter-query": "Angiv forespørgsel...",
+			"tooltip-delete-graph": "Slet gruppe",
+			"button-new-group": "Ny gruppe",
+			"tooltip-click-to-change-drag-to-reorder": "Klik for at ændre farve\nTræk for at omarrangere grupper",
+			"action-timelapse": "Start tidsforskydnings graf animation"
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
@@ -615,7 +623,7 @@
 		"page-preview": {
 			"name": "Forhåndsvisning af side",
 			"desc": "Før musen over et internt link for at forhåndsvise indholdet. I redigeringstilstand, tryk Ctrl/Cmd mens musen holdes over linket.",
-			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for a oprette."
+			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for at oprette."
 		},
 		"starred": {
 			"name": "Favoritter",
@@ -709,8 +717,8 @@
 			"option-new-file-location-description": "Nye daglige noter vil blive placeret her.",
 			"option-template": "Placering af skabelon fil",
 			"option-template-description": "Vælg den fil, som skal benyttes som skabelon.",
-			"option-open-on-start": "Open daily note on startup",
-			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
+			"option-open-on-start": "Åben daglig note ved start",
+			"option-open-on-start-description": "Åbner din daglige note automatisk, når du åbner denne boks."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten præfikser",
@@ -754,7 +762,7 @@
 			"desc": "Optag lyd og gem som vedhæftning.",
 			"action-start": "Start lydoptagelse",
 			"action-stop": "Stop lydoptagelse",
-			"action-toggle": "Start/stop optagelse",
+			"action-toggle": "Start/stop lydoptagelse",
 			"msg-access-denied": "Mikrofonadgang blev nægtet. Aktiver den på indstillingssiden.",
 			"msg-pending-grant": "Giv tilladelse til at benytte mikrofonen for at kunne optage lyd.",
 			"msg-no-microphone": "Der er ingen mikrofoner tilsluttet."
@@ -762,7 +770,7 @@
 		"open-with-default-app": {
 			"name": "Åben i standard app",
 			"desc": "Tilføj en knap til at kunne åbne den nuværende fil i dens standard app.",
-			"action-open-file": "Åben i standard app",
+			"action-open-file": "Åben i standard applikation",
 			"action-show-in-folder": "Vis i system stifinder"
 		},
 		"templates": {
@@ -834,7 +842,7 @@
 			"option-show-graph": "Vis graf",
 			"option-show-graph-description": "Viser en lille lokal graf på hver side.",
 			"option-show-outline": "Vis indholdsfortegnelse",
-			"option-show-outline-description": "Display the outline of headings on each page.",
+			"option-show-outline-description": "Viser en indholdsfortegnelse med sidens overskrifter på hver side.",
 			"option-show-backlinks": "Vis tilbagelinks",
 			"option-show-backlinks-description": "Vis tilbagelink sektion i slutningen af hver side.",
 			"option-sliding-window-mode": "Benyt glidende vinduer",
@@ -897,8 +905,8 @@
 			"msg-added-new-password": "Tilføjede nyt kodeord.",
 			"option-custom-domain": "Brugerdefineret domæne",
 			"option-custom-domain-desc": "Benyt dit eget domæne i stedet for https://publish.obsidian.md/{websteds id} URL.",
-			"option-noindex": "Disallow search engine indexing",
-			"option-noindex-desc": "Prevent search engines from indexing your site.",
+			"option-noindex": "Forbyd søgemaskine indeksering",
+			"option-noindex-desc": "Forhindrer søgemaskiner i at indeksere dit websted.",
 			"button-configure": "Konfigurer",
 			"label-configure-custom-domain": "Konfigurer brugerdefineret domæne",
 			"option-custom-url-name": "Brugerdefineret URL",
@@ -907,8 +915,8 @@
 			"button-update-custom-domain": "Opdater domæne indstilinger",
 			"label-custom-domain-instructions": "Der henvises til vores {{link}} på vores hjælpewebsted for mere information.",
 			"label-custom-domain-link-name": "guide til brugerdefineret domæne konfiguration",
-			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
-			"button-add-more-sites": "Buy more sites"
+			"label-site-usage": "Du benytter {{site}} ud af {{limit}}.",
+			"button-add-more-sites": "Køb flere websteder"
 		},
 		"workspaces": {
 			"name": "Arbejdsområder",
@@ -930,7 +938,7 @@
 			"desc": "Synkroniser dine filer ved hjælp af Obsidian Sync.",
 			"action-view-version-history": "Vis versionshistorik",
 			"label-load-more": "Indlæs mere",
-			"label-copy-to-clipboard": "Copy to clipboard",
+			"label-copy-to-clipboard": "Kopier til udklipsholder",
 			"label-restore-this-version": "Gendan denne version",
 			"msg-already-latest-version": "Denne version er allerede den seneste version.",
 			"msg-restored-version": "Gendannede version fra {{time}}",
@@ -942,7 +950,7 @@
 			"label-create-remote-vault": "Opret ekstern boks",
 			"msg-please-enter-password": "Angiv et kodeord.",
 			"msg-vault-name-cannot-be-empty": "Boksnavnet kan ikke være tomt.",
-			"msg-successfully-created-vault": "Opretede den eksterne boks \"{{name}}\".",
+			"msg-successfully-created-vault": "Oprettede den eksterne boks \"{{name}}\".",
 			"label-remote-vault-explanation": "Eksterne bokse synkroniserer din boks sikkert mellem enheder.",
 			"option-vault-name": "Boks navn",
 			"option-vault-name-desc": "Hjælper dig med at huske hvad denne boks er til for.",
@@ -993,13 +1001,13 @@
 			"option-sync-log": "Synkroniseringsaktivitet",
 			"option-sync-log-desc": "Vis seneste synkroniseringsaktivitet for fejlfinding.",
 			"button-view": "Vis",
-			"option-over-size": "Vault size over limit",
-			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
-			"msg-largest-files": "View largest files",
-			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
-			"button-purge-remote": "Purge",
-			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
-			"msg-purge-complete": "Purge complete.",
+			"option-over-size": "Boks størrelsen er over grænsen",
+			"option-over-size-desc": "Din boks er på {{size}} ud af {{limit}}.",
+			"msg-largest-files": "Vis største filer",
+			"msg-largest-files-desc": "Dette er de eksterne filer, som tager mest plads. Efter sletning af vedhæftninger, så benyt fjern knappen for at frigive plads i den eksterne boks.",
+			"button-purge-remote": "Fjern",
+			"tooltip-purge-remote": "Fjern slettede vedhæftninger permanent fra den eksterne boks for at spare plads.",
+			"msg-purge-complete": "Vedhæftninger fjernet.",
 			"option-selective-sync": "Selektiv synkronisering",
 			"option-excluded-folders": "Udelukkede mapper",
 			"option-excluded-folder-desc": "Udeluk nogle mapper fra at blive synkroniseret.",
@@ -1037,7 +1045,9 @@
 		"folder-with-count_plural": "{{count}} mapper",
 		"backlink-with-count": "{{count}} tilbagelink",
 		"backlink-with-count_plural": "{{count}} tilbagelinks",
-		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count": "{{count}} websted",
+		"site-with-count_plural": "{{count}} websteder",
+		"plugin-with-count": "{{count}} plug-in",
+		"plugin-with-count_plural": "{{count}} plug-ins"
 	}
 }

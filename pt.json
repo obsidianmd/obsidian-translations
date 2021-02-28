@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Type ^",
 			"label-link-block": "to link blocks",
 			"label-type-pipe": "Digite |",
-			"label-change-display-text": "para alterar o texto de exibição"
+			"label-change-display-text": "para alterar o texto de exibição",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Sem sugestões...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Ativar o negrito para seleção",
 		"toggle-italics": "Ativar o itálico para seleção",
 		"toggle-highlight": "Grifar a seleção",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Inserir link",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Excluir parágrafo",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Edit file title",
 		"copy-path": "Copy file path",
 		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Export to PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Ira afetar os links {{links}} nos {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Excluir",
 			"menu-opt-make-copy": "Fazer uma cópia",
 			"msg-invalid-characters": "O nome do arquivo não pode ter nenhum destes caracteres: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Já existe um arquivo com esse nome",
 			"msg-empty-file-name": "O nome do arquivo não pode ficar vazio.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "{{count}} backlink",
 		"backlink-with-count_plural": "{{count}} backlinks",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

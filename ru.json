@@ -238,7 +238,8 @@
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
 			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)"
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -259,7 +260,8 @@
 			"label-type-block": "Введите ^",
 			"label-link-block": ", чтобы сослаться на блок",
 			"label-type-pipe": "Введите |",
-			"label-change-display-text": ", чтобы изменить отображаемый текст"
+			"label-change-display-text": ", чтобы изменить отображаемый текст",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Нет предложений...",
@@ -407,13 +409,16 @@
 		"toggle-bold": "Включить/выключить жирное начертание для выделения",
 		"toggle-italics": "Включить/выключить курсивное начертание для выделения",
 		"toggle-highlight": "Включить/выключить тег подсветки для выделения",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Вставить ссылку",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Удалить абзац",
 		"toggle-checklist": "Переключить состояние флажка",
 		"edit-file-title": "Редактировать заголовок файла",
 		"copy-path": "Скопировать путь к файлу",
 		"copy-url": "Скопировать Obsidian URL",
-		"export-pdf": "Экспортировать в PDF"
+		"export-pdf": "Экспортировать в PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
@@ -474,6 +479,7 @@
 			"menu-opt-delete": "Удалить",
 			"menu-opt-make-copy": "Создать копию",
 			"msg-invalid-characters": "Имя файла не должно содержать следующие символы: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Файл с таким именем уже есть",
 			"msg-empty-file-name": "Имя файла не может оставаться пустым.",
 			"tooltip-modified-time": "Время последнего изменения {{time}}",
@@ -587,7 +593,9 @@
 			"label-groups": "Groups",
 			"placeholder-enter-query": "Enter query...",
 			"tooltip-delete-graph": "Delete group",
-			"button-new-group": "New group"
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Обратные ссылки",
@@ -1038,6 +1046,8 @@
 		"backlink-with-count": "Обратных ссылок: {{count}}",
 		"backlink-with-count_plural": "Обратных ссылок: {{count}}",
 		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites"
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }
