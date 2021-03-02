@@ -70,7 +70,8 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
-| `sk` | Slovak | Slovenčina |  🚧 |
+| `se` | Swedish | Svenska | 🚧 |
+| `sk` | Slovak | Slovenčina | 🚧 |
 | `tam` | Tamil | தமிழ் | 🚧 |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
