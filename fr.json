@@ -58,7 +58,7 @@
 			"option-always-update-links-description": "S'il faut mettre à jour automatiquement les liens après avoir renommé un fichier ou s'il faut demander.",
 			"option-new-note-location": "Emplacement par défaut de la nouvelle note",
 			"option-new-note-location-description": "Où mettre les notes nouvellement créées. Les paramètres des modules d'extension remplaceront cela.",
-			"option-choice-vault-root": "Racine du projet",
+			"option-choice-vault-root": "Racine du coffre",
 			"option-choice-current-folder": "Même dossier que le fichier",
 			"option-choice-specified-folder": "Dans le dossier spécifié ci-dessous",
 			"option-new-file-folder-path": "Dossier dans lequel créer de nouvelles notes",
@@ -71,7 +71,7 @@
 			"option-link-autocompleted-format-description": "Quels liens insérer lors de la génération automatique de liens internes.",
 			"option-choice-shortest-linktext": "Chemin le plus court si possible",
 			"option-choice-relative-path": "Chemin relatif au fichier",
-			"option-choice-absolute-path": "Chemin absolu dans le projet",
+			"option-choice-absolute-path": "Chemin absolu dans le coffre",
 			"option-new-attachment-location": "Emplacement par défaut des nouvelles pièces jointes",
 			"option-new-attachment-location-description": "Emplacement des pièces jointes nouvellement ajoutées.",
 			"option-choice-subdirectory": "Dans le sous-dossier sous le dossier actuel",
@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "Restaurer par défaut",
 			"tooltip-customize-command": "Personnaliser la commande",
 			"tooltip-hotkey-single-conflict": "Ce raccourci clavier entre en conflit avec \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "Ce raccourci clavier entre en conflit avec {{count}} autres commandes"
+			"tooltip-hotkey-multiple-conflicts": "Ce raccourci clavier entre en conflit avec {{count}} autres commandes",
+			"label-blank-hotkey": "Vide"
 		},
 		"about": {
 			"name": "À propos",
@@ -231,7 +232,14 @@
 			"msg-no-updates-found": "Aucune mise à jour de plugin trouvée.",
 			"msg-updates-found": "{{count}} plugin peut être mis à jour.",
 			"msg-updates-found_plural": "{{count}} plugins peuvent être mis à jour.",
-			"msg-update-plugin": "Mettre à jour vers la version {{version}}"
+			"msg-update-plugin": "Mettre à jour vers la version {{version}}",
+			"label-sort-downloads-high-to-low": "Nombre de téléchargements (bas vers haut)",
+			"label-sort-downloads-low-to-high": "Nombre de téléchargements (haut vers bas)",
+			"label-sort-release-date-new-to-old": "Date de première release (nouveau vers ancien)",
+			"label-sort-release-date-old-to-new": "Date de première release (ancien vers nouveau)",
+			"label-sort-alphabetical": "Nom du plugin (A to Z)",
+			"label-sort-alphabetical-reverse": "Nom du plugin (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -252,7 +260,8 @@
 			"label-type-block": "Saisir ^",
 			"label-link-block": "pour lier les blocs",
 			"label-type-pipe": "Saisir |",
-			"label-change-display-text": "pour changer le texte d'affichage"
+			"label-change-display-text": "pour changer le texte d'affichage",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Aucune suggestions...",
@@ -284,7 +293,7 @@
 		"sidebar-collapse": "Réduire",
 		"msg-fail-to-save-file": "Échec de l'enregistrement du fichier \"{{filepath}}\". {{message}}.",
 		"no-file": "Pas de fichier",
-		"switch-vault": "Ouvrir un autre projet",
+		"switch-vault": "Ouvrir un autre coffre",
 		"help": "Aide",
 		"settings": "Paramètres",
 		"drag-to-rearrange": "Faire glisser pour réorganiser",
@@ -292,6 +301,7 @@
 		"msg-switched-to-edit": "Changement du mode d'affichage par défaut à éditeur.",
 		"msg-upgrade-installer": "Pour utiliser cette fonctionnalité, merci de réinstaller Obsdian avec le dernier programme d'installation disponible sur notre site web.",
 		"tooltip-restore-default-settings": "Restoration des paramètres par défaut",
+		"label-copy": "Copier dans le presse-papier",
 		"copied": "{{item}} copié dans le presse-papier",
 		"url": "Url",
 		"msg-open-file-through-uri": "Fichier ouvert \"{{path}}\"",
@@ -326,27 +336,27 @@
 		},
 		"start-screen": {
 			"label-beta-version": "Version bêta",
-			"option-open-folder-as-vault": "Ouvrir le dossier en tant que projet",
+			"option-open-folder-as-vault": "Ouvrir le dossier en tant que coffre",
 			"option-open-folder-as-vault-description": "Choisir un dossier existant de fichiers Markdown.",
-			"option-create-vault": "Créer un nouveau projet",
-			"option-create-vault-description": "Créer un nouveau projet Obsidian dans un dossier.",
+			"option-create-vault": "Créer un nouveau coffre",
+			"option-create-vault-description": "Créer un nouveau coffre Obsidian dans un dossier.",
 			"option-open-help-vault": "Ouvrir l'aide",
-			"option-open-help-vault-description": "Ouvrir le projet de démonstration \"Démonstration et aide\".",
-			"option-new-vault-name": "Nom du projet",
-			"option-new-vault-name-description": "Choisir un nom pour votre merveilleux projet.",
+			"option-open-help-vault-description": "Ouvrir le coffre de démonstration \"Démonstration et aide\".",
+			"option-new-vault-name": "Nom du coffre",
+			"option-new-vault-name-description": "Choisir un nom pour votre merveilleux coffre.",
 			"option-new-vault-location": "Emplacement",
-			"option-new-vault-location-description": "Choisir un emplacement pour y déposer votre nouveau projet.",
+			"option-new-vault-location-description": "Choisir un emplacement pour y déposer votre nouveau coffre.",
 			"button-open": "Ouvrir",
 			"button-help": "Aide",
 			"button-browse": "Parcourir",
 			"button-create-vault": "Créer",
 			"button-back": "Retour",
-			"msg-empty-vault-name": "Le nom du projet ne peut pas être vide.",
+			"msg-empty-vault-name": "Le nom du coffre ne peut pas être vide.",
 			"msg-invalid-folder": "Merci de choisir un dossier valide.",
-			"msg-failed-to-create-vault": "Échec de la création du projet.",
-			"msg-failed-to-create-vault-at-location": "Impossible de créer le projet à cet emplacement. Merci de vérifier l'emplacement et ses permissions d'accès.",
+			"msg-failed-to-create-vault": "Échec de la création du coffre.",
+			"msg-failed-to-create-vault-at-location": "Impossible de créer le coffre à cet emplacement. Merci de vérifier l'emplacement et ses permissions d'accès.",
 			"msg-error-failed-to-open-vault": "Échec de l'ouverture.",
-			"msg-error-remove-current-open-vault": "Impossible de supprimer un projet en cours d'utilisation."
+			"msg-error-remove-current-open-vault": "Impossible de supprimer un coffre en cours d'utilisation."
 		},
 		"drag-and-drop": {
 			"insert-link-here": "Insérer le lien ici",
@@ -399,13 +409,16 @@
 		"toggle-bold": "Mettre en gras la sélection",
 		"toggle-italics": "Mettre en italique la sélection",
 		"toggle-highlight": "Mettre en surbrillance la sélection",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Insérer un lien",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Supprimer le paragraphe",
 		"toggle-checklist": "Basculer l'état de l'élément de la checklist",
 		"edit-file-title": "Modifier le titre du fichier",
 		"copy-path": "Copier le chemin du fichier",
 		"copy-url": "Copier l'url Obsidian",
-		"export-pdf": "Exporter en PDF"
+		"export-pdf": "Exporter en PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -417,7 +430,7 @@
 		"button-do-not-update": "Ne pas mettre à jour",
 		"label-confirm-deletion": "Confirmer la suppression de \"{{filename}}\" ?",
 		"label-move-to-system-trash": "Il sera déplacé vers la corbeille de votre système.",
-		"label-move-to-vault-trash": "Il sera déplacé vers votre corbeille Obsidian, qui se trouve dans le dossier caché \".trash\" de votre projet.",
+		"label-move-to-vault-trash": "Il sera déplacé vers votre corbeille Obsidian, qui se trouve dans le dossier caché \".trash\" de votre coffre.",
 		"label-permanent-delete": "Le fichier sera définitivement supprimé.",
 		"label-non-empty-folder": "Ce dossier n'est pas vide.",
 		"label-delete-folder-warning": "En cas de confirmation, tous les fichiers de ce dossier seront supprimés.",
@@ -428,13 +441,16 @@
 		"label-delete-file": "Supprimer le fichier",
 		"button-cancel": "Annuler",
 		"button-done": "Valider",
-		"preparing-pdf": "Préparation du PDF..."
+		"preparing-pdf": "Préparation du PDF...",
+		"label-rename-file": "Renommer le fichier",
+		"label-new-name": "Nouveau nom",
+		"msg-rename-success": "Fichier correctement renommé."
 	},
 	"plugins": {
 		"name": "Modules d'extension",
 		"file-explorer": {
 			"name": "Explorateur de fichiers",
-			"desc": "Voir tous les fichiers de votre projet.",
+			"desc": "Voir tous les fichiers de votre coffre.",
 			"action-create-note": "Créer une nouvelle note",
 			"action-create-note-in-new-pane": "Créer une nouvelle note dans un nouveau volet",
 			"action-new-note": "Nouvelle note",
@@ -461,8 +477,9 @@
 			"menu-opt-set-attachment-folder": "Définir comme dossier de pièces jointes",
 			"menu-opt-rename": "Renommer",
 			"menu-opt-delete": "Supprimer",
-			"menu-opt-make-copy": "Faire une copie",
+			"menu-opt-make-copy": "Dupliquer",
 			"msg-invalid-characters": "Le nom de fichier ne peut contenir aucun des caractères suivants : ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Il y a déjà un fichier du même nom",
 			"msg-empty-file-name": "Le nom de fichier ne peut pas être vide.",
 			"tooltip-modified-time": "Dernière modification à {{time}}",
@@ -510,7 +527,16 @@
 			"option-choice-list-style-dash": "Tiret (-)",
 			"option-choice-list-style-asterisk": "Astérisque (*)",
 			"option-choice-list-style-numbered": "Numéroté",
-			"tooltip-clear-search": "Effacer la recherche"
+			"tooltip-clear-search": "Effacer la recherche",
+			"label-search-options": "Options de recherche",
+			"tooltip-read-more": "Lire plus",
+			"label-history": "Historique",
+			"tooltip-clear-history": "Effacer l'historique de recherche",
+			"label-path-option-description": "correspondance avec le chemin du fichier",
+			"label-file-name-option-description": "correspondance avec le nom du fichier",
+			"label-tag-option-description": "recherche par tags",
+			"label-line-option-description": "recherche par mots-clés dans la même ligne",
+			"label-section-option-description": "recherche par mots-clés sous le même titre"
 		},
 		"quick-switcher": {
 			"name": "Sélecteur rapide",
@@ -535,7 +561,6 @@
 			"tab-title": "Graphique de {{displayText}}",
 			"label-filters": "Filtres",
 			"prompt-filter-nodes": "Rechercher des fichiers...",
-			"label-currently-searching-for": "Recherche actuellement :",
 			"option-depth": "Profondeur",
 			"option-depth-description": "Affiche les nœuds à ce nombre de nœuds de distance.",
 			"option-neighbor-links": "Liens voisins",
@@ -564,7 +589,13 @@
 			"option-link-distance": "Distance des liens",
 			"option-repel-force": "Force de répulsion",
 			"tooltip-open-graph-settings": "Ouvrir les paramètres du graphique",
-			"msg-screenshot-copied": "Capture d'écran copiée dans le presse-papiers."
+			"msg-screenshot-copied": "Capture d'écran copiée dans le presse-papiers.",
+			"label-groups": "Groupes",
+			"placeholder-enter-query": "Entrer la requête...",
+			"tooltip-delete-graph": "Supprimer le groupe",
+			"button-new-group": "Nouveau groupe",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Rétroliens",
@@ -608,7 +639,7 @@
 		},
 		"custom-css": {
 			"name": "CSS personnalisé",
-			"desc": "Lire \"obsidian.css\" dans le projet et l'appliquer.",
+			"desc": "Lire \"obsidian.css\" dans le coffre et l'appliquer.",
 			"setting-community-themes": "Thèmes communautaires",
 			"msg-fetching-themes": "Récupération des thèmes de la communauté...",
 			"prompt-filter": "Filtrer...",
@@ -653,7 +684,7 @@
 			"zettelkasten-link-fixer-description": "Répare les liens \"[[UID]]\" en liens \"[[UID Nom Du Fichier]]\" complet.",
 			"zettelkasten-link-beautifier": "Embellisseur de lien Zettelkasten",
 			"zettelkasten-link-beautifier-description": "Répare les liens \"[[UID]]\" et les embellient en \"[[UID Nom Du Fichier|Nom Du Fichier]]\".",
-			"msg-all-files-warning": "Attention : l'importateur convertira tous les fichiers de votre projet, pas seulement le fichier actuel.",
+			"msg-all-files-warning": "Attention : l'importateur convertira tous les fichiers de votre coffre, pas seulement le fichier actuel.",
 			"msg-override-files-warning": "Vos fichiers seront écrasés. Sauvegardez tous vos fichiers avant de tenter la conversion.",
 			"label-start-conversion": "Lancer la conversion",
 			"label-stop": "Arrêter",
@@ -685,7 +716,9 @@
 			"option-new-file-location": "Nouvel emplacement de fichier",
 			"option-new-file-location-description": "Emplacement du dossier où créer la nouvelle note quotidienne.",
 			"option-template": "Emplacement du fichier de modèle",
-			"option-template-description": "Emplacement du fichier à utiliser comme modèle."
+			"option-template-description": "Emplacement du fichier à utiliser comme modèle.",
+			"option-open-on-start": "Ouvrir les notes quotidiennes à l'ouverture",
+			"option-open-on-start-description": "Ouvrir les notes quotidiennes automatiquement a chaque fois que vous ouvrez ce vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Préfixeur Zettelkasten",
@@ -872,6 +905,8 @@
 			"msg-added-new-password": "Nouveau mot de passe ajouté.",
 			"option-custom-domain": "Domaine personnalisé",
 			"option-custom-domain-desc": "Utilisez votre propre domaine plutôt que l'URL https://publish.obsidian.md/{site id}.",
+			"option-noindex": "Refuser l'indexage du moteur de recherche",
+			"option-noindex-desc": "Empêcher les moteurs de recherche d'indéxer votre site.",
 			"button-configure": "Configurer",
 			"label-configure-custom-domain": "Configurer le domaine personnalisé",
 			"option-custom-url-name": "URL personnalisée",
@@ -879,7 +914,9 @@
 			"option-custom-url-placeholder": "www.votredomaine.fr",
 			"button-update-custom-domain": "Mettre à jour les paramètres du domaine",
 			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
-			"label-custom-domain-link-name": "custom domain setup guide"
+			"label-custom-domain-link-name": "Guide de démarrage du custom domain",
+			"label-site-usage": "Vous utilisez {{site}} en dehors de votre {{limit}}.",
+			"button-add-more-sites": "Acheter plus de sites"
 		},
 		"workspaces": {
 			"name": "Espaces de travail",
@@ -901,6 +938,7 @@
 			"desc": "Synchronisez vos fichiers via Obsidian Sync.",
 			"action-view-version-history": "Afficher l'historique des versions",
 			"label-load-more": "Charger plus",
+			"label-copy-to-clipboard": "Copier dans le presse-papiers",
 			"label-restore-this-version": "Restaurer cette version",
 			"msg-already-latest-version": "Cette version est déjà la dernière version.",
 			"msg-restored-version": "Version restaurée avec succès d'{{time}}",
@@ -963,6 +1001,13 @@
 			"option-sync-log": "Activité de synchronisation",
 			"option-sync-log-desc": "Afficher les activités de synchronisation récentes pour le débogage.",
 			"button-view": "Voir",
+			"option-over-size": "Taille du vault au dessus de la limite",
+			"option-over-size-desc": "Votre vault est à {{size}} au dessus {{limit}}.",
+			"msg-largest-files": "Voir les fichiers les plus volumineux",
+			"msg-largest-files-desc": "Voici les fichiers téléversés qui prennent le plus de place. Après suppression des pièces jointes, utilisez le bouton de purge afin de libérer le la place sur votre vault téléversé.",
+			"button-purge-remote": "Purger",
+			"tooltip-purge-remote": "Purger de manière permanente les pièces-jointes supprimées de votre vault téléversé pour libérer de l'espace.",
+			"msg-purge-complete": "Purge complète.",
 			"option-selective-sync": "Synchronisation sélective",
 			"option-excluded-folders": "Dossiers exclus",
 			"option-excluded-folder-desc": "Empêcher la synchronisation de certains dossiers.",
@@ -999,6 +1044,10 @@
 		"folder-with-count": "{{count}} dossier",
 		"folder-with-count_plural": "{{count}} dossiers",
 		"backlink-with-count": "{{count}} rétrolien",
-		"backlink-with-count_plural": "{{count}} rétroliens"
+		"backlink-with-count_plural": "{{count}} rétroliens",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "기본값으로 되돌리기",
 			"tooltip-customize-command": "단축키 바꾸기",
 			"tooltip-hotkey-single-conflict": "단축키가 \"{{command}}\"의 단축키와 겹칩니다.",
-			"tooltip-hotkey-multiple-conflicts": "이 단축키는 {{count}}개의 단축키오 겹칩니다"
+			"tooltip-hotkey-multiple-conflicts": "이 단축키는 {{count}}개의 단축키오 겹칩니다",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "앱 정보",
@@ -231,7 +232,14 @@
 			"msg-no-updates-found": "플러그인 업데이트가 없습니다.",
 			"msg-updates-found": "{{count}}개의 플러그인 업데이트가 있습니다.",
 			"msg-updates-found_plural": "{{count}}개의 플러그인 업데이트가 있습니다.",
-			"msg-update-plugin": "버전 {{version}}으로 업데이트 하기"
+			"msg-update-plugin": "버전 {{version}}으로 업데이트 하기",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -252,7 +260,8 @@
 			"label-type-block": "^를 쓰시면",
 			"label-link-block": "블록으로 링크가 됩니다.",
 			"label-type-pipe": "|를 쓰시면",
-			"label-change-display-text": "보이는 텍스트가 바뀝니다."
+			"label-change-display-text": "보이는 텍스트가 바뀝니다.",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "제안 단어가 없습니다...",
@@ -292,6 +301,7 @@
 		"msg-switched-to-edit": "기본 뷰어 모드를 에디터 모드로 바꿨습니다.",
 		"msg-upgrade-installer": "이 기능을 사용하기 위해서는 웹사이트에서 인스톨러를 새로 다운받아서 설치해주세요.",
 		"tooltip-restore-default-settings": "기본값으로 되돌리기",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}}가 클립보드에 복사되었습니다",
 		"url": "Url",
 		"msg-open-file-through-uri": "\"{{path}}\"을 열었습니다",
@@ -399,13 +409,16 @@
 		"toggle-bold": "선택된 텍스트 굵게 표시/해제",
 		"toggle-italics": "선택된 텍스트 기울이기/해제",
 		"toggle-highlight": "선택된 텍스트 하이라이트 토글",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "링크 입력",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "문단 삭제",
 		"toggle-checklist": "체크 박스 상태 토글",
 		"edit-file-title": "파일 제목 편집",
 		"copy-path": "파일 경로 복사",
 		"copy-url": "obsidian url 복사하기",
-		"export-pdf": "PDF 생성하기"
+		"export-pdf": "PDF 생성하기",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -428,7 +441,10 @@
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
 		"button-done": "완료",
-		"preparing-pdf": "PDF를 준비중입니다..."
+		"preparing-pdf": "PDF를 준비중입니다...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "플러그인",
@@ -463,6 +479,7 @@
 			"menu-opt-delete": "삭제",
 			"menu-opt-make-copy": "복사본 만들기",
 			"msg-invalid-characters": "파일 이름에 다음 문자들을 사용할수 없습니다: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "같은 이름의 파일이 이미 존재합니다",
 			"msg-empty-file-name": "파일 이름을 써주세요.",
 			"tooltip-modified-time": "최신 편집 시간: {{time}}",
@@ -510,7 +527,16 @@
 			"option-choice-list-style-dash": "줄표 (-)",
 			"option-choice-list-style-asterisk": "별표 (*)",
 			"option-choice-list-style-numbered": "숫자",
-			"tooltip-clear-search": "검색어 지우기"
+			"tooltip-clear-search": "검색어 지우기",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
 			"name": "빠른 파일 변경",
@@ -535,7 +561,6 @@
 			"tab-title": "{{displayText}} 그래프",
 			"label-filters": "필터",
 			"prompt-filter-nodes": "파일 검색...",
-			"label-currently-searching-for": "현재 검색중:",
 			"option-depth": "깊이",
 			"option-depth-description": "이만큼 떨어져있는 노드들 까지 보여줍니다.",
 			"option-neighbor-links": "이웃 링크",
@@ -564,7 +589,13 @@
 			"option-link-distance": "링크 거리",
 			"option-repel-force": "노드 척력",
 			"tooltip-open-graph-settings": "그래프 설정 열기",
-			"msg-screenshot-copied": "스크린샷이 클립보드에 복사되었습니다."
+			"msg-screenshot-copied": "스크린샷이 클립보드에 복사되었습니다.",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -685,7 +716,9 @@
 			"option-new-file-location": "새 파일 경로",
 			"option-new-file-location-description": "새로운 일간 노트를 만들 경로입니다.",
 			"option-template": "템플릿 파일 경로",
-			"option-template-description": "템플릿으로 사용할 파일의 경로."
+			"option-template-description": "템플릿으로 사용할 파일의 경로.",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten 서식 사용",
@@ -872,6 +905,8 @@
 			"msg-added-new-password": "새로운 비밀번호가 추가되었습니다.",
 			"option-custom-domain": "커스텀 도메인",
 			"option-custom-domain-desc": "https://publish.obsidian.md/{site id} 대신 본인의 개인 도메인을 사용합니다.",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "설정",
 			"label-configure-custom-domain": "커스텀 도메인 설정",
 			"option-custom-url-name": "커스텀 URL",
@@ -879,7 +914,9 @@
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "도메인 설정 업데이트 하기",
 			"label-custom-domain-instructions": "더 많은 정보를 위해서는 {{link}}를 방문해주세요.",
-			"label-custom-domain-link-name": "커스텀 도메인 설정 가이드"
+			"label-custom-domain-link-name": "커스텀 도메인 설정 가이드",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "워크스페이스",
@@ -901,6 +938,7 @@
 			"desc": "Obsidian Sync를 이용해서 파일을 동기화시키세요",
 			"action-view-version-history": "버전 역사 보기",
 			"label-load-more": "더보기",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "버전 복원하기",
 			"msg-already-latest-version": "이 버전이 최신 버전입니다.",
 			"msg-restored-version": "{{time}}으로부터 성공적으로 복원시켰습니다.",
@@ -963,6 +1001,13 @@
 			"option-sync-log": "동기화 기록",
 			"option-sync-log-desc": "디버깅을 위해 최근 동기화 기록을 확인합니다.",
 			"button-view": "보기",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "선택적 동기화",
 			"option-excluded-folders": "제외된 폴더들",
 			"option-excluded-folder-desc": "특정 폴더들이 동기화되는 것을 막습니다.",
@@ -999,6 +1044,10 @@
 		"folder-with-count": "{{count}} 폴더",
 		"folder-with-count_plural": "{{count}} 폴더",
 		"backlink-with-count": "{{count}} 백링크",
-		"backlink-with-count_plural": "{{count}} 백링크"
+		"backlink-with-count_plural": "{{count}} 백링크",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

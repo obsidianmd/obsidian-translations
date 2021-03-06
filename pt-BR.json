@@ -115,7 +115,8 @@
 			"tooltip-restore-default": "Restaurar ao padrão",
 			"tooltip-customize-command": "Personalizar esse comando",
 			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "Sobre",
@@ -231,7 +232,14 @@
 			"msg-no-updates-found": "Nenhuma atualização de plugin encontrada.",
 			"msg-updates-found": "Encontrada atualização para {{count}} plugin.",
 			"msg-updates-found_plural": "Encontrada atualizações para {{count}} plugins.",
-			"msg-update-plugin": "Atualizar para a versão {{version}}"
+			"msg-update-plugin": "Atualizar para a versão {{version}}",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -252,7 +260,8 @@
 			"label-type-block": "Digite ^",
 			"label-link-block": "para criar link com o bloco",
 			"label-type-pipe": "Digite |",
-			"label-change-display-text": "para alterar o texto de exibição"
+			"label-change-display-text": "para alterar o texto de exibição",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Sem sugestões...",
@@ -292,6 +301,7 @@
 		"msg-switched-to-edit": "Modo de visualização padrão alterado para edição.",
 		"msg-upgrade-installer": "Para usar este recurso, instale novamente com o instalador mais recente disponível em nosso site.",
 		"tooltip-restore-default-settings": "Restaurar configurações padrão",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}} copiado para a área de transferência",
 		"url": "Url",
 		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
@@ -399,13 +409,16 @@
 		"toggle-bold": "Alternar negrito para a seleção",
 		"toggle-italics": "Alternar itálico para a seleção",
 		"toggle-highlight": "Alternar destaque para a seleção",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Inserir link",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Deletar parágrafo",
 		"toggle-checklist": "Alternar status da caixa de marcação",
 		"edit-file-title": "Editar título do arquivo",
 		"copy-path": "Copiar caminho do arquivo",
 		"copy-url": "Copiar url do Obsidian",
-		"export-pdf": "Exportar para PDF"
+		"export-pdf": "Exportar para PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Isto irá afetar {{links}} em {{files}}.",
@@ -428,7 +441,10 @@
 		"label-delete-file": "Excluir arquivo",
 		"button-cancel": "Cancelar",
 		"button-done": "Pronto",
-		"preparing-pdf": "Preparando o PDF..."
+		"preparing-pdf": "Preparando o PDF...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -463,6 +479,7 @@
 			"menu-opt-delete": "Deletar",
 			"menu-opt-make-copy": "Fazer uma cópia",
 			"msg-invalid-characters": "O nome do arquivo não pode conter nenhum desses caracteres: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Já existe um arquivo com este nome",
 			"msg-empty-file-name": "O nome do arquivo não pode estar em branco.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -510,7 +527,16 @@
 			"option-choice-list-style-dash": "Traço (-)",
 			"option-choice-list-style-asterisk": "Asterisco (*)",
 			"option-choice-list-style-numbered": "Numerada",
-			"tooltip-clear-search": "Limpar pesquisa"
+			"tooltip-clear-search": "Limpar pesquisa",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
 			"name": "Navegação rápida",
@@ -535,7 +561,6 @@
 			"tab-title": "Gráfico de {{displayText}}",
 			"label-filters": "Filtros",
 			"prompt-filter-nodes": "Procurar arquivos...",
-			"label-currently-searching-for": "Atualmente procurando por:",
 			"option-depth": "Profundidade",
 			"option-depth-description": "Mostrar nódulos a esse número de links de distância",
 			"option-neighbor-links": "Links vizinhos",
@@ -564,7 +589,13 @@
 			"option-link-distance": "Distância dos links",
 			"option-repel-force": "Força de repulsão",
 			"tooltip-open-graph-settings": "Abrir configurações de gráfico",
-			"msg-screenshot-copied": "Captura de tela copiada para a área de transferência."
+			"msg-screenshot-copied": "Captura de tela copiada para a área de transferência.",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Links inversos",
@@ -685,7 +716,9 @@
 			"option-new-file-location": "Local para novos arquivos",
 			"option-new-file-location-description": "O caminho da pasta onde serão criadas as notas diárias.",
 			"option-template": "Local do arquivo modelo",
-			"option-template-description": "O caminho do arquivo que será utilizado como modelo."
+			"option-template-description": "O caminho do arquivo que será utilizado como modelo.",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Prefixador Zettelkasten",
@@ -872,6 +905,8 @@
 			"msg-added-new-password": "Added new password.",
 			"option-custom-domain": "Custom domain",
 			"option-custom-domain-desc": "Use your own domain rather than the https://publish.obsidian.md/{site id} URL.",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "Configure",
 			"label-configure-custom-domain": "Configure custom domain",
 			"option-custom-url-name": "Custom URL",
@@ -879,7 +914,9 @@
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "Update domain setting",
 			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
-			"label-custom-domain-link-name": "custom domain setup guide"
+			"label-custom-domain-link-name": "custom domain setup guide",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "Áreas de trabalho",
@@ -901,6 +938,7 @@
 			"desc": "Synchronize your files through Obsidian Sync.",
 			"action-view-version-history": "View version history",
 			"label-load-more": "Load more",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "Restore this version",
 			"msg-already-latest-version": "This version is already the latest version.",
 			"msg-restored-version": "Successfully restored version from {{time}}",
@@ -963,6 +1001,13 @@
 			"option-sync-log": "Sync activity",
 			"option-sync-log-desc": "View recent sync activities for debugging.",
 			"button-view": "View",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "Selective sync",
 			"option-excluded-folders": "Excluded folders",
 			"option-excluded-folder-desc": "Prevent certain folders from being synced.",
@@ -999,6 +1044,10 @@
 		"folder-with-count": "{{count}} folder",
 		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} link inverso",
-		"backlink-with-count_plural": "{{count}} links inversos"
+		"backlink-with-count_plural": "{{count}} links inversos",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }

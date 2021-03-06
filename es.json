@@ -1,8 +1,8 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "Opciones",
 		"plugin": "Plugin",
-		"builtin-plugins": "Core plugins",
+		"builtin-plugins": "Plugins principales",
 		"plugin-options": "Plugin options",
 		"folder-path-example-placeholder": "Ejemplo: carpeta 1/carpeta 2",
 		"file-path-example-placeholder": "Ejemplo: carpeta/nota",
@@ -15,7 +15,7 @@
 			"option-readable-line-length": "Longitud de línea legible",
 			"option-readable-line-description": "Limitar el máximo de la longitud de línea. Muestra menos contenido en pantalla, pero los párrafos largos son más legibles.",
 			"option-strict-line-break": "Saltos de línea estrictos",
-			"option-strict-line-break-description": "En modo previsualización, ignora los saltos de una sola línea según las especificaciones de Markdown. Desactivalo para que los saltos de una sola línea se muestren en previsualización.",
+			"option-strict-line-break-description": "En modo previsualización, ignora los saltos de una sola línea según las especificaciones de Markdown. Desactívalo para que los saltos de una sola línea se muestren en previsualización.",
 			"option-show-frontmatter": "Mostrar frontmatter",
 			"option-show-frontmatter-description": "En modo de vista previa, mostrar frantmatter como un bloque de código. Desactivelo para ocultar la sección frontmatter.",
 			"option-auto-pair-brackets": "Emparejamiento automático de corchetes",
@@ -83,29 +83,29 @@
 		},
 		"appearance": {
 			"name": "Apariencia",
-			"option-base-theme": "Base theme",
-			"option-base-theme-description": "Choose Obsidian’s default color scheme.",
-			"dark-theme": "Dark",
-			"light-theme": "Light",
-			"option-use-obsidian-css": "Apply custom CSS",
-			"option-use-obsidian-css-description": "Read and apply “obsidian.css” in the vault folder. This is a legacy setting, please consider moving your custom CSS file to the snippet folder below.",
+			"option-base-theme": "Tema base",
+			"option-base-theme-description": "Elige el esquema de colores por defecto de Obsidian.",
+			"dark-theme": "Oscuro",
+			"light-theme": "Claro",
+			"option-use-obsidian-css": "Aplicar CSS personalizado",
+			"option-use-obsidian-css-description": "Leer y aplicar “obsidian.css” en la carpeta bóveda. Este es un entorno heredado, por favor considera mover tu archivo CSS personalizado a la carpeta de fragmentos de abajo.",
 			"option-community-themes": "Abrir temas de la comunidad",
 			"option-community-themes-description": "Previsualizar y usar temas increíbles creados por la comunidad.",
-			"button-browse-community-themes": "Browse",
-			"option-themes": "Themes",
-			"option-theme": "Theme",
-			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
-			"option-choice-none": "None",
-			"button-reload-themes": "Reload themes",
-			"msg-reloaded-themes": "Reloaded custom CSS themes.",
-			"button-open-themes-folder": "Open themes folder",
-			"option-css-snippets": "CSS snippets",
-			"label-no-css-snippets-found": "No CSS snippets found in the snippets folder.",
-			"no-snippet-description": "CSS Snippets are stored in \"{{path}}\".",
-			"button-reload-snippets": "Reload snippets",
-			"button-open-snippets-folder": "Open snippets folder",
-			"msg-reloaded-snippets": "Reloaded CSS snippets.",
-			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
+			"button-browse-community-themes": "Navegar",
+			"option-themes": "Temas",
+			"option-theme": "Tema",
+			"option-theme-description": "Cuál tema de la comunidad usar. Los temas están almacenados en \"vault/.obsidian/themes/\".",
+			"option-choice-none": "Ninguno",
+			"button-reload-themes": "Recargar temas",
+			"msg-reloaded-themes": "Recargados temas CSS personalizados.",
+			"button-open-themes-folder": "Abrir carpeta de temas",
+			"option-css-snippets": "Fragmentos CSS",
+			"label-no-css-snippets-found": "No se encontraron fragmentos CSS en la carpeta de fragmentos.",
+			"no-snippet-description": "Los fragmentos de CSS están almacenados en \"{{path}}\".",
+			"button-reload-snippets": "Recargar fragmentos",
+			"button-open-snippets-folder": "Abrir carpeta de fragmentos",
+			"msg-reloaded-snippets": "Recargar fragmentos CSS.",
+			"option-toggle-snippet-description": "Aplicar fragmentos CSS en \"{{path}}\"."
 		},
 		"hotkeys": {
 			"name": "Atajos",
@@ -114,8 +114,9 @@
 			"label-waiting-for-hotkey-press": "Presionar teclas...",
 			"tooltip-restore-default": "Restaurar los valores por defecto",
 			"tooltip-customize-command": "Modificar este comando",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-single-conflict": "Éste atajo está en conflicto con \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Éste atajo está en conflicto con otros {{count}} comandos",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "About",
@@ -223,15 +224,22 @@
 			"label-uninstall-plugin": "Desinstalar plugin",
 			"label-uninstall-plugin-confirmation": "Estás seguro de que quieres desinstalar este plugin? Esto borrará la carpeta en la que está descargado.",
 			"button-open-plugins-folder": "Open plugins folder",
-			"button-check-for-updates": "Check for updates",
-			"button-update-all-plugins": "Update all",
+			"button-check-for-updates": "Buscar actualizaciones",
+			"button-update-all-plugins": "Actualizar todo",
 			"label-current-plugins": "Current plugins",
 			"label-currently-installed": "You currently have {{count}} plugin installed.",
 			"label-currently-installed_plural": "You currently have {{count}} plugins installed.",
 			"msg-no-updates-found": "No plugin updates found.",
 			"msg-updates-found": "Found {{count}} plugin to update.",
 			"msg-updates-found_plural": "Found {{count}} plugins to update.",
-			"msg-update-plugin": "Update to version {{version}}"
+			"msg-update-plugin": "Update to version {{version}}",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -249,18 +257,19 @@
 		"link-suggestion": {
 			"label-type-hash": "Escriba #",
 			"label-link-heading": "para enlazar el encabezado",
-			"label-type-block": "Type ^",
+			"label-type-block": "Escriba ^",
 			"label-link-block": "to link blocks",
 			"label-type-pipe": "Escriba |",
-			"label-change-display-text": "para cambiar el texto mostrado"
+			"label-change-display-text": "para cambiar el texto mostrado",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Sin sugerencias...",
 			"add-to-dictionary": "Añadir al diccionario"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
+			"title": "Exportar a PDF",
+			"caption": "Exportar \"{{filename}}\" a PDF con las configuraciónes a continuación.",
 			"setting-page-size": "Page size",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
@@ -268,13 +277,13 @@
 			"setting-page-size-legal": "Legal",
 			"setting-page-size-letter": "Letter",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
+			"setting-landscape": "Horizontal",
+			"setting-margin": "Márgenes",
+			"setting-margin-default": "Predeterminado",
+			"setting-margin-minimal": "Minimo",
+			"setting-margin-none": "Ninguno",
 			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"button-export-to-pdf": "Exportar a PDF"
 		}
 	},
 	"interface": {
@@ -292,6 +301,7 @@
 		"msg-switched-to-edit": "Cambió modo de visualización por defecto a editor.",
 		"msg-upgrade-installer": "To use this feature, please re-install with latest installer available from our website.",
 		"tooltip-restore-default-settings": "Restore default settings",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
 		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
@@ -399,13 +409,16 @@
 		"toggle-bold": "Alternar negrita para selección",
 		"toggle-italics": "Alternar italica para selección",
 		"toggle-highlight": "Alternar resaltado para selección",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Insertar enlace",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Eliminar paragrafo",
 		"toggle-checklist": "Toggle checklist status",
 		"edit-file-title": "Editar nombre del archivo",
 		"copy-path": "Copiar ruta del archivo",
 		"copy-url": "Copy obsidian url",
-		"export-pdf": "Export to PDF"
+		"export-pdf": "Export to PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Esto afectará a {{links}} en {{files}}.",
@@ -428,7 +441,10 @@
 		"label-delete-file": "Eliminar archivo",
 		"button-cancel": "Cancel",
 		"button-done": "Done",
-		"preparing-pdf": "Preparing PDF..."
+		"preparing-pdf": "Preparing PDF...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -463,6 +479,7 @@
 			"menu-opt-delete": "Borrar",
 			"menu-opt-make-copy": "Hacer una copia",
 			"msg-invalid-characters": "El nombre de archivo no puede contener ninguno de los siguientes caracteres: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Ya hay un archivo con ese nombre",
 			"msg-empty-file-name": "El nombre de archivo no puede estar vacio.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -510,7 +527,16 @@
 			"option-choice-list-style-dash": "Dash (-)",
 			"option-choice-list-style-asterisk": "Asterisk (*)",
 			"option-choice-list-style-numbered": "Numbered",
-			"tooltip-clear-search": "Clear search"
+			"tooltip-clear-search": "Clear search",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
@@ -535,7 +561,6 @@
 			"tab-title": "Gráfico de {{displayText}}",
 			"label-filters": "Filters",
 			"prompt-filter-nodes": "Search files...",
-			"label-currently-searching-for": "Currently searching for:",
 			"option-depth": "Depth",
 			"option-depth-description": "Show nodes this number of links away",
 			"option-neighbor-links": "Neighbor links",
@@ -564,7 +589,13 @@
 			"option-link-distance": "Link distance",
 			"option-repel-force": "Repel force",
 			"tooltip-open-graph-settings": "Open graph settings",
-			"msg-screenshot-copied": "Screenshot copied to the clipboard."
+			"msg-screenshot-copied": "Screenshot copied to the clipboard.",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -685,7 +716,9 @@
 			"option-new-file-location": "Ubicación del nuevo archivo",
 			"option-new-file-location-description": "La carpeta para crear una nota diaria nueva.",
 			"option-template": "Ubicación del archivo plantilla",
-			"option-template-description": "La ruta al archivo para usar como plantilla."
+			"option-template-description": "La ruta al archivo para usar como plantilla.",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Prefijo para Zettelkasten",
@@ -872,6 +905,8 @@
 			"msg-added-new-password": "Added new password.",
 			"option-custom-domain": "Custom domain",
 			"option-custom-domain-desc": "Use your own domain rather than the https://publish.obsidian.md/{site id} URL.",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "Configure",
 			"label-configure-custom-domain": "Configure custom domain",
 			"option-custom-url-name": "Custom URL",
@@ -879,7 +914,9 @@
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "Update domain setting",
 			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
-			"label-custom-domain-link-name": "custom domain setup guide"
+			"label-custom-domain-link-name": "custom domain setup guide",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "Workspaces",
@@ -901,6 +938,7 @@
 			"desc": "Synchronize your files through Obsidian Sync.",
 			"action-view-version-history": "View version history",
 			"label-load-more": "Load more",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "Restore this version",
 			"msg-already-latest-version": "This version is already the latest version.",
 			"msg-restored-version": "Successfully restored version from {{time}}",
@@ -963,6 +1001,13 @@
 			"option-sync-log": "Sync activity",
 			"option-sync-log-desc": "View recent sync activities for debugging.",
 			"button-view": "View",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "Selective sync",
 			"option-excluded-folders": "Excluded folders",
 			"option-excluded-folder-desc": "Prevent certain folders from being synced.",
@@ -999,6 +1044,10 @@
 		"folder-with-count": "{{count}} folder",
 		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlinks"
+		"backlink-with-count_plural": "{{count}} backlinks",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }
