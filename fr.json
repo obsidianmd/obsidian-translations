@@ -1,7 +1,7 @@
 {
 	"setting": {
 		"options": "Options",
-		"plugin": "Module d'extension",
+		"plugin": "Plugin",
 		"builtin-plugins": "Plugins principaux",
 		"plugin-options": "Options des plugins",
 		"folder-path-example-placeholder": "Exemple : dossier 1/dossier 2",
@@ -55,7 +55,7 @@
 			"option-choice-vault-trash": "Déplacer vers la corbeille d'Obsidian (dossier .trash)",
 			"option-choice-permanent-delete": "Supprimer définitivement",
 			"option-always-update-links": "Toujours mettre à jour les liens internes",
-			"option-always-update-links-description": "S'il faut mettre à jour automatiquement les liens après avoir renommé un fichier ou s'il faut demander.",
+			"option-always-update-links-description": "Mettre à jour automatiquement les liens internes après avoir renommé un fichier.",
 			"option-new-note-location": "Emplacement par défaut de la nouvelle note",
 			"option-new-note-location-description": "Où mettre les notes nouvellement créées. Les paramètres des modules d'extension remplaceront cela.",
 			"option-choice-vault-root": "Racine du coffre",
@@ -140,7 +140,7 @@
 			"button-check-for-updates": "Rechercher les mises à jour",
 			"option-auto-update": "Mises à jour automatiques",
 			"option-auto-update-description": "Désactiver pour empêcher l'application de chercher les mises à jour.",
-			"option-open-help": "Aide d'Obsidian",
+			"option-open-help": "Documentation d'Obsidian",
 			"option-open-help-description": "Ouvrir la documentation d'aide.",
 			"button-open": "Ouvrir",
 			"option-language": "Langue",
@@ -239,7 +239,7 @@
 			"label-sort-release-date-old-to-new": "Date de première release (ancien vers nouveau)",
 			"label-sort-alphabetical": "Nom du plugin (A to Z)",
 			"label-sort-alphabetical-reverse": "Nom du plugin (Z to A)",
-			"label-search-summary": "Showing {{pluginCount}}:"
+			"label-search-summary": "Affichage de {{pluginCount}} : "
 		}
 	},
 	"editor": {
@@ -261,7 +261,7 @@
 			"label-link-block": "pour lier les blocs",
 			"label-type-pipe": "Saisir |",
 			"label-change-display-text": "pour changer le texte d'affichage",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "Aucune correspondance trouvée"
 		},
 		"spellcheck": {
 			"no-suggestion": "Aucune suggestions...",
@@ -409,16 +409,16 @@
 		"toggle-bold": "Mettre en gras la sélection",
 		"toggle-italics": "Mettre en italique la sélection",
 		"toggle-highlight": "Mettre en surbrillance la sélection",
-		"toggle-comments": "Toggle comments for selection",
+		"toggle-comments": "Mettre en commentaire la séléction",
 		"insert-link": "Insérer un lien",
-		"toggle-spellcheck": "Toggle spellcheck",
+		"toggle-spellcheck": "Activer la vérification orthographique",
 		"delete-paragraph": "Supprimer le paragraphe",
 		"toggle-checklist": "Basculer l'état de l'élément de la checklist",
 		"edit-file-title": "Modifier le titre du fichier",
 		"copy-path": "Copier le chemin du fichier",
 		"copy-url": "Copier l'url Obsidian",
 		"export-pdf": "Exporter en PDF",
-		"reload": "Reload app without saving"
+		"reload": "Recharger l'application sans enregistrer"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -479,11 +479,11 @@
 			"menu-opt-delete": "Supprimer",
 			"menu-opt-make-copy": "Dupliquer",
 			"msg-invalid-characters": "Le nom de fichier ne peut contenir aucun des caractères suivants : ",
-			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
+			"msg-unsafe-characters": "Les liens ne fonctionneront pas avec les noms de fichiers contenant l'un de ces caractères : ",
 			"msg-file-already-exists": "Il y a déjà un fichier du même nom",
 			"msg-empty-file-name": "Le nom de fichier ne peut pas être vide.",
-			"tooltip-modified-time": "Dernière modification à {{time}}",
-			"tooltip-created-time": "Créé à {{time}}",
+			"tooltip-modified-time": "Dernière modification le {{time}}",
+			"tooltip-created-time": "Créé le {{time}}",
 			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
 		},
 		"search": {
@@ -594,8 +594,8 @@
 			"placeholder-enter-query": "Entrer la requête...",
 			"tooltip-delete-graph": "Supprimer le groupe",
 			"button-new-group": "Nouveau groupe",
-			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"tooltip-click-to-change-drag-to-reorder": "Cliquer pour changer la couleur\nFaire glisser pour réorganiser les groupes",
+			"action-timelapse": "Lancer l'animation timelapse du graphique"
 		},
 		"backlinks": {
 			"name": "Rétroliens",
