@@ -74,6 +74,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `tam` | Tamil | தமிழ் | 🚧 |
 | `tr` | Turkish | Türkçe | 🚧 |
+| `uk` | Ukrainian | Українська | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
