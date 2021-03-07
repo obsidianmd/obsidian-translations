@@ -20,7 +20,7 @@ Note that you don't have to clone your fork to make the edits; you can do everyt
 
 ## Translating
 
-The trasnlation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
+The translation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
 
 To translate, simply edit the value. For example, let's say you see
 
@@ -54,7 +54,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `cz` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
-| `el` | Greek | ελληνικά | 🚧 |
+| `el` | Greek | Ελληνικά | 🚧 |
 | `es` | Spanish | Español | ✅ |
 | `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
@@ -70,9 +70,11 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
-| `sk` | Slovak | Slovenčina |  🚧 |
+| `se` | Swedish | Svenska | 🚧 |
+| `sk` | Slovak | Slovenčina | 🚧 |
 | `tam` | Tamil | தமிழ் | 🚧 |
 | `tr` | Turkish | Türkçe | 🚧 |
+| `uk` | Ukrainian | Українська | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |

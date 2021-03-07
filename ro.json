@@ -65,6 +65,8 @@
 			"option-new-file-folder-path-description": "Notele nou create vor apărea sub acest director. Setările din module vor suprascrie această opțiune.",
 			"option-use-wiki-links": "Folosește legături [[Wiki]]",
 			"option-use-wiki-links-description": "Generează automat [[legături]] și ![[imagini]] Wiki în loc de cele Markdown. Dezactivează această opțiunea pentru a genera legături Markdown.",
+			"option-show-unsupported-files": "Detect all file extensions",
+			"option-show-unsupported-files-description": "Show files with any extension even if Obsidian can't open them natively, so that you can link to them and see them in File Explorer and Quick Switcher.",
 			"option-link-autocompleted-format": "Formatul legăturilor noi",
 			"option-link-autocompleted-format-description": "Ce fel de legături să insereze atunci când sunt auto-generate legături interne.",
 			"option-choice-shortest-linktext": "Calea cea mai scurtă atunci când e posibil",
@@ -113,7 +115,8 @@
 			"tooltip-restore-default": "Restaurează varianta implicită",
 			"tooltip-customize-command": "Modifică această comandă",
 			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands"
+			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands",
+			"label-blank-hotkey": "Blank"
 		},
 		"about": {
 			"name": "Despre",
@@ -229,7 +232,14 @@
 			"msg-no-updates-found": "Nu sunt actualizări ale modulelor.",
 			"msg-updates-found": "Am găsit actualizări pentru {{count}} modul.",
 			"msg-updates-found_plural": "Am găsit actualizări pentru {{count}} module.",
-			"msg-update-plugin": "Actualizează la versiunea {{version}}"
+			"msg-update-plugin": "Actualizează la versiunea {{version}}",
+			"label-sort-downloads-high-to-low": "Download count (high to low)",
+			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"label-sort-release-date-new-to-old": "First released time (new to old)",
+			"label-sort-release-date-old-to-new": "First released time (old to new)",
+			"label-sort-alphabetical": "Plugin name (A to Z)",
+			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-search-summary": "Showing {{pluginCount}}:"
 		}
 	},
 	"editor": {
@@ -250,7 +260,8 @@
 			"label-type-block": "Tastează ^",
 			"label-link-block": "pentru a lega blocurile",
 			"label-type-pipe": "Scrie |",
-			"label-change-display-text": "pentru a schimba textul afișat"
+			"label-change-display-text": "pentru a schimba textul afișat",
+			"label-no-match-found": "No match found"
 		},
 		"spellcheck": {
 			"no-suggestion": "Nicio sugestie...",
@@ -290,6 +301,7 @@
 		"msg-switched-to-edit": "Modul de afișare implicit a fost schimbat pe editor.",
 		"msg-upgrade-installer": "Pentru a folosi această caracteristică, reinstalează Obsidian folosind ultima versiune de pe site..",
 		"tooltip-restore-default-settings": "Restaurează setările implicite",
+		"label-copy": "Copy to clipboard",
 		"copied": "{{item}} copied to your clipboard",
 		"url": "Url",
 		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
@@ -397,13 +409,16 @@
 		"toggle-bold": "Comută textul îngroșat pentru selecție",
 		"toggle-italics": "Comută textul cursiv pentru selecție",
 		"toggle-highlight": "Comută textul evidențiat pentru selecție",
+		"toggle-comments": "Toggle comments for selection",
 		"insert-link": "Inserează legătură",
+		"toggle-spellcheck": "Toggle spellcheck",
 		"delete-paragraph": "Șterge paragraf",
 		"toggle-checklist": "Comută starea listei DE FĂCUT",
 		"edit-file-title": "Editează titlul fișierului",
 		"copy-path": "Copiază calea fișierului",
 		"copy-url": "Copiază URL-ul obsidian",
-		"export-pdf": "Exportă ca fișier PDF"
+		"export-pdf": "Exportă ca fișier PDF",
+		"reload": "Reload app without saving"
 	},
 	"dialogue": {
 		"label-link-affected": "Aceasta va afecta {{links}} în {{files}}.",
@@ -426,7 +441,10 @@
 		"label-delete-file": "Șterge fișier",
 		"button-cancel": "Anulează",
 		"button-done": "Gata",
-		"preparing-pdf": "Pregătesc fișierul PDF..."
+		"preparing-pdf": "Pregătesc fișierul PDF...",
+		"label-rename-file": "Rename file",
+		"label-new-name": "New name",
+		"msg-rename-success": "Successfully renamed file."
 	},
 	"plugins": {
 		"name": "Module",
@@ -461,6 +479,7 @@
 			"menu-opt-delete": "Șterge",
 			"menu-opt-make-copy": "Creează o copie",
 			"msg-invalid-characters": "Numele fișierului nu poate conține niciunul din următoarele caractere: ",
+			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
 			"msg-file-already-exists": "Există deja un fișier cu același nume",
 			"msg-empty-file-name": "Numele fișierului nu poate rămâne gol.",
 			"tooltip-modified-time": "Last modified at {{time}}",
@@ -508,7 +527,16 @@
 			"option-choice-list-style-dash": "Cratimă (-)",
 			"option-choice-list-style-asterisk": "Asterisc (*)",
 			"option-choice-list-style-numbered": "Număr",
-			"tooltip-clear-search": "Șterge căutarea"
+			"tooltip-clear-search": "Șterge căutarea",
+			"label-search-options": "Search options",
+			"tooltip-read-more": "Read more",
+			"label-history": "History",
+			"tooltip-clear-history": "Clear search history",
+			"label-path-option-description": "match path of the file",
+			"label-file-name-option-description": "match file name",
+			"label-tag-option-description": "search for tags",
+			"label-line-option-description": "search keywords on same line",
+			"label-section-option-description": "search keywords under same heading"
 		},
 		"quick-switcher": {
 			"name": "Comutare rapidă",
@@ -533,7 +561,6 @@
 			"tab-title": "Graficul {{displayText}}",
 			"label-filters": "Filtre",
 			"prompt-filter-nodes": "Caută fișiere...",
-			"label-currently-searching-for": "Momentan caută pentru:",
 			"option-depth": "Adâncime",
 			"option-depth-description": "Show nodes this number of links away",
 			"option-neighbor-links": "Legături vecine",
@@ -562,7 +589,13 @@
 			"option-link-distance": "Distanța legăturii",
 			"option-repel-force": "Forța de respingere",
 			"tooltip-open-graph-settings": "Deschide setările graficului",
-			"msg-screenshot-copied": "Captura de ecran a fost copiată în clipboard."
+			"msg-screenshot-copied": "Captura de ecran a fost copiată în clipboard.",
+			"label-groups": "Groups",
+			"placeholder-enter-query": "Enter query...",
+			"tooltip-delete-graph": "Delete group",
+			"button-new-group": "New group",
+			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
+			"action-timelapse": "Start graph timelapse animation"
 		},
 		"backlinks": {
 			"name": "Referințe",
@@ -683,7 +716,9 @@
 			"option-new-file-location": "Locația fișierelor noi",
 			"option-new-file-location-description": "Calea directorului unde va fi creată noua notă zilnică.",
 			"option-template": "Locația fișierului șablon",
-			"option-template-description": "Calea fișierului pentru șablon."
+			"option-template-description": "Calea fișierului pentru șablon.",
+			"option-open-on-start": "Open daily note on startup",
+			"option-open-on-start-description": "Open your daily note automatically whenever you open this vault."
 		},
 		"zettelkasten-prefixer": {
 			"name": "Prefix Zettelkasten",
@@ -870,13 +905,18 @@
 			"msg-added-new-password": "Added new password.",
 			"option-custom-domain": "Custom domain",
 			"option-custom-domain-desc": "Use your own domain rather than the https://publish.obsidian.md/{site id} URL.",
+			"option-noindex": "Disallow search engine indexing",
+			"option-noindex-desc": "Prevent search engines from indexing your site.",
 			"button-configure": "Configure",
 			"label-configure-custom-domain": "Configure custom domain",
 			"option-custom-url-name": "Custom URL",
 			"option-custom-url-desc": "The URL that your site will be located at.",
 			"option-custom-url-placeholder": "www.yourdomain.com",
 			"button-update-custom-domain": "Update domain setting",
-			"label-custom-domain-guide": "Please search for \"custom domain\" in our help docs for more information (or maybe put link here?)."
+			"label-custom-domain-instructions": "Please refer to our {{link}} on our help site for more information.",
+			"label-custom-domain-link-name": "custom domain setup guide",
+			"label-site-usage": "You're using {{site}} out of your {{limit}}.",
+			"button-add-more-sites": "Buy more sites"
 		},
 		"workspaces": {
 			"name": "Spații de lucru",
@@ -898,6 +938,7 @@
 			"desc": "Synchronize your files through Obsidian Sync.",
 			"action-view-version-history": "View version history",
 			"label-load-more": "Load more",
+			"label-copy-to-clipboard": "Copy to clipboard",
 			"label-restore-this-version": "Restore this version",
 			"msg-already-latest-version": "This version is already the latest version.",
 			"msg-restored-version": "Successfully restored version from {{time}}",
@@ -960,6 +1001,13 @@
 			"option-sync-log": "Sync activity",
 			"option-sync-log-desc": "View recent sync activities for debugging.",
 			"button-view": "View",
+			"option-over-size": "Vault size over limit",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"msg-largest-files": "View largest files",
+			"msg-largest-files-desc": "These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.",
+			"button-purge-remote": "Purge",
+			"tooltip-purge-remote": "Permanently purge deleted attachments from remote vault to save space.",
+			"msg-purge-complete": "Purge complete.",
 			"option-selective-sync": "Selective sync",
 			"option-excluded-folders": "Excluded folders",
 			"option-excluded-folder-desc": "Prevent certain folders from being synced.",
@@ -996,6 +1044,10 @@
 		"folder-with-count": "{{count}} folder",
 		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} referință",
-		"backlink-with-count_plural": "{{count}} referințe"
+		"backlink-with-count_plural": "{{count}} referințe",
+		"site-with-count": "{{count}} site",
+		"site-with-count_plural": "{{count}} sites",
+		"plugin-with-count": "{{count}} plugin",
+		"plugin-with-count_plural": "{{count}} plugins"
 	}
 }
