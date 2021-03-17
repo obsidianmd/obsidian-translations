@@ -43,7 +43,16 @@
 			"option-auto-convert-html": "Auto convert HTML",
 			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim key bindings",
-			"option-vim-key-bindings-description": "Memungkinkan Anda untuk menggunakan Vim key bindings dalam editor sumber."
+			"option-vim-key-bindings-description": "Memungkinkan Anda untuk menggunakan Vim key bindings dalam editor sumber.",
+			"label-confirm-enable-vim": "Confirm entering Vim mode",
+			"label-vim-warning": "Vim mode is for efficient text editing but can be quite counter-intuitive. If you're not familiar with Vim, this option might make it look like Obsidian has stopped working.",
+			"label-vim-test": "To verify that you know your way around Vim, please enter the command to quit Vim without saving below:",
+			"label-vim-your-answer": "Your answer",
+			"placeholder-enter-command": "Enter command...",
+			"button-confirm-enable-vim": "Let me enable Vim",
+			"msg-vim-mode-enabled": "Command is correct. Vim mode now enabled.",
+			"msg-vim-mode-not-enabled": "Command is incorrect. Vim mode remains disabled to protect you.",
+			"msg-vim-mode-please-enter-command": "Please enter the command to enable Vim mode"
 		},
 		"file": {
 			"name": "File & Link",
@@ -147,6 +156,9 @@
 			"option-language-description": "Ubah tampilan bahasa.",
 			"option-insider-build": "Dapatkan versi insider",
 			"option-insider-build-description": "Perbarui otomatis ke versi insider untuk mencoba fitur baru. Perhatikan bahwa versi ini adalah terdepan dan mungkin kurang stabil.",
+			"option-hw-acceleration": "Hardware Acceleration",
+			"option-hw-acceleration-description": "Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.",
+			"option-hw-acceleration-warning": "If you turn this off, app performance will be severely degraded.",
 			"label-license": "Lisensi",
 			"label-your-commercial-license": "Lisensi komersial Anda adalah ",
 			"label-commercial-license-info": "Terdaftar atas \"{{company}}\" untuk {{seats}} pengguna. Valid hingga {{expiry}}.",
@@ -239,7 +251,39 @@
 			"label-sort-release-date-old-to-new": "Waktu awal rilis (lama ke baru)",
 			"label-sort-alphabetical": "Nama plugin (A ke Z)",
 			"label-sort-alphabetical-reverse": "Nama plugin (Z ke A)",
-			"label-search-summary": "Showing {{pluginCount}}:"
+			"label-search-summary": "Menampilkan {{pluginCount}}:"
+		},
+		"mobile-toolbar": {
+			"name": "Mobile toolbar",
+			"option-internal-link": "Add internal link",
+			"option-internal-embed": "Add embed",
+			"option-tag": "Add tag",
+			"option-heading": "Toggle heading",
+			"option-bold": "Toggle bold",
+			"option-italics": "Toggle italics",
+			"option-strikethrough": "Toggle strikethrough",
+			"option-highlight": "Toggle highlight",
+			"option-code": "Toggle code",
+			"option-blockquote": "Toggle blockquote",
+			"option-comment": "Toggle comment",
+			"option-markdown-link": "Add Markdown link",
+			"option-bullet-list": "Toggle bullet list",
+			"option-numbered-list": "Toggle numbered list",
+			"option-checklist": "Toggle checklist",
+			"option-indent-list": "Indent list item",
+			"option-unindent-list": "Unindent list item",
+			"option-undo": "Undo",
+			"option-redo": "Redo",
+			"option-move-caret-up": "Move caret up",
+			"option-move-caret-down": "Move caret down",
+			"option-move-caret-left": "Move caret left",
+			"option-move-caret-right": "Move caret right",
+			"option-first-line": "Go to first line",
+			"option-last-line": "Go to last line",
+			"option-toggle-keyboard": "Toggle keyboard",
+			"option-configure-toolbar": "Configure mobile toolbar",
+			"option-added-options": "Added options",
+			"option-more-options": "More options"
 		}
 	},
 	"editor": {
@@ -261,7 +305,7 @@
 			"label-link-block": "untuk hubungkan ke blok",
 			"label-type-pipe": "Ketik |",
 			"label-change-display-text": "untuk ganti tampilan teks",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "Tidak ditemukan kecocokan"
 		},
 		"spellcheck": {
 			"no-suggestion": "Tidak ada saran...",
@@ -293,6 +337,7 @@
 		"sidebar-collapse": "Tutup",
 		"msg-fail-to-save-file": "Gagal menyimpan file \"{{filepath}}\". {{message}}.",
 		"no-file": "Tidak ada file",
+		"msg-file-changed": "\"{{file}}\" has been modified externally, merging changes automatically.",
 		"switch-vault": "Buka vault lain",
 		"help": "Bantuan",
 		"settings": "Pengaturan",
@@ -306,6 +351,7 @@
 		"url": "Url",
 		"msg-open-file-through-uri": "File \"{{path}}\" terbuka",
 		"msg-file-not-found-through-uri": "File \"{{name}}\" tidak ditemukan.",
+		"delete-action-short-name": "Delete",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -409,16 +455,16 @@
 		"toggle-bold": "Tebalkan teks yang dipilih",
 		"toggle-italics": "Miringkan teks yang dipilih",
 		"toggle-highlight": "Sorot teks yang dipilih",
-		"toggle-comments": "Toggle comments for selection",
+		"toggle-comments": "Beri komentar untuk pilihan",
 		"insert-link": "Sisipkan tautan",
-		"toggle-spellcheck": "Toggle spellcheck",
+		"toggle-spellcheck": "Aktifkan/Matikan pemeriksa ejaan",
 		"delete-paragraph": "Hapus paragraf",
 		"toggle-checklist": "Centang daftar periksa",
 		"edit-file-title": "Ubah judul file",
 		"copy-path": "Salin jalur file",
 		"copy-url": "Salin url Obsidian",
 		"export-pdf": "Ekspor ke PDF",
-		"reload": "Reload app without saving"
+		"reload": "Muat ulang aplikasi tanpa menyimpan"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -479,12 +525,13 @@
 			"menu-opt-delete": "Hapus",
 			"menu-opt-make-copy": "Buat salinan",
 			"msg-invalid-characters": "Nama file tidak boleh berisi salah satu diantara karakter berikut: ",
-			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
+			"msg-unsafe-characters": "Link tidak bekerja dengan nama file yang berisi satu diantara karakter ini: ",
 			"msg-file-already-exists": "Sudah ada file dengan nama yang sama",
 			"msg-empty-file-name": "Nama file tidak boleh kosong.",
 			"tooltip-modified-time": "Terakhir diubah pada {{time}}",
 			"tooltip-created-time": "Dibuat pada {{time}}",
-			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
+			"action-move-file-short-name": "Move"
 		},
 		"search": {
 			"name": "Pencarian",
@@ -594,8 +641,8 @@
 			"placeholder-enter-query": "Masukan kueri...",
 			"tooltip-delete-graph": "Hapus grup",
 			"button-new-group": "Grup baru",
-			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"tooltip-click-to-change-drag-to-reorder": "Klik untuk ubah warna\nSeret untuk tata ulang grup",
+			"action-timelapse": "Mulai animasi selang waktu grafik"
 		},
 		"backlinks": {
 			"name": "Backlink",
@@ -923,6 +970,7 @@
 			"desc": "Simpan dan muat tata-letak ruang kerja.",
 			"action-load": "Muat ruang kerja",
 			"action-manage-workspaces": "Kelola ruang kerja",
+			"action-save-and-load": "Save and load another workspace",
 			"placeholder-save-current-workspace-as": "Simpan ruang kerja saat ini sebagai...",
 			"button-save": "Simpan",
 			"button-load": "Muat",
@@ -1030,6 +1078,26 @@
 			"label-setup-connection": "Setelan koneksi",
 			"label-now-connected-to-vault": "Anda sekarang terhubung ke \"{{name}}\".",
 			"button-start-syncing": "Mulai sinkronisasi"
+		},
+		"file-recovery": {
+			"name": "File recovery",
+			"desc": "Let you restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.",
+			"action-open": "Open saved snapshots",
+			"option-interval": "Snapshot interval",
+			"option-interval-description": "Minimal interval in minutes between two snapshots.",
+			"option-keep": "History length",
+			"option-keep-description": "Length in days snapshots is kept for.",
+			"option-open-history": "Snapshots",
+			"option-open-history-description": "View and restore saved snapshots.",
+			"button-view-snapshots": "View",
+			"option-clear": "Clear history",
+			"option-clear-description": "Wipe all snapshots.",
+			"button-clear-history": "Clear",
+			"label-clear-warning": "Are you sure you want to delete all snapshots? Note that only snapshots will be removed. All files inside your vault will not be affected.",
+			"msg-clear-complete": "Snapshots cleared.",
+			"label-no-history-found": "No snapshots found.",
+			"placeholder-choose-file": "Choose a file...",
+			"label-select-file": "Please select a file on the left to view snapshots."
 		}
 	},
 	"nouns": {
@@ -1048,6 +1116,6 @@
 		"site-with-count": "{{count}} situs",
 		"site-with-count_plural": "{{count}} situs",
 		"plugin-with-count": "{{count}} plugin",
-		"plugin-with-count_plural": "{{count}} plugins"
+		"plugin-with-count_plural": "{{count}} plugin"
 	}
 }
