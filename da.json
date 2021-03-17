@@ -43,7 +43,16 @@
 			"option-auto-convert-html": "Autokonvertér HTML",
 			"option-auto-convert-html-description": "Konvertér HTML automatisk til Markdown ved indsætning og træk og slip fra websider. Benyt Ctrl/Cmd+Shift+V for at indsætte uden konvertering.",
 			"option-vim-key-bindings": "Vim tastaturgenveje",
-			"option-vim-key-bindings-description": "Lader dig benytte Vim tastaturgenveje i kildeeditoren."
+			"option-vim-key-bindings-description": "Lader dig benytte Vim tastaturgenveje i kildeeditoren.",
+			"label-confirm-enable-vim": "Confirm entering Vim mode",
+			"label-vim-warning": "Vim mode is for efficient text editing but can be quite counter-intuitive. If you're not familiar with Vim, this option might make it look like Obsidian has stopped working.",
+			"label-vim-test": "To verify that you know your way around Vim, please enter the command to quit Vim without saving below:",
+			"label-vim-your-answer": "Your answer",
+			"placeholder-enter-command": "Enter command...",
+			"button-confirm-enable-vim": "Let me enable Vim",
+			"msg-vim-mode-enabled": "Command is correct. Vim mode now enabled.",
+			"msg-vim-mode-not-enabled": "Command is incorrect. Vim mode remains disabled to protect you.",
+			"msg-vim-mode-please-enter-command": "Please enter the command to enable Vim mode"
 		},
 		"file": {
 			"name": "Filer & Links",
@@ -147,9 +156,12 @@
 			"option-language-description": "Skift det viste sprog.",
 			"option-insider-build": "Modtag insider versioner",
 			"option-insider-build-description": "Opdater automatisk til insider versioner og prøv nye funktioner. Disse versioner er splinternye og kan være mindre stabile.",
+			"option-hw-acceleration": "Hardware Acceleration",
+			"option-hw-acceleration-description": "Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.",
+			"option-hw-acceleration-warning": "If you turn this off, app performance will be severely degraded.",
 			"label-license": "Licens",
 			"label-your-commercial-license": "Den kommercielle licensnøgle er ",
-			"label-commercial-license-info": "Registered to \"{{company}}\" for {{seats}} users. Valid until {{expiry}}.",
+			"label-commercial-license-info": "Registreret til \"{{company}}\" til {{seats}} brugere. Gyldig indtil {{expiry}}.",
 			"label-validating-commercial-license": "Validerer...",
 			"label-invalid-commercial-license": "Licensen er ugyldig: ",
 			"button-activate-commercial-license": "Aktiver kommerciel licens",
@@ -170,7 +182,7 @@
 			"button-get-commercial-license": "Få en kommerciel licens",
 			"button-get-catalyst-license": "Supportere Obsidian med Obsidian Catalyst",
 			"button-check-for-catalyst-license": "Tjekke for Obsidian Catalyst",
-			"button-upgrade-catalyst-license": "Opgradere til en højere niveau",
+			"button-upgrade-catalyst-license": "Opgrader til et højere niveau",
 			"button-log-out": "Log ud",
 			"label-log-in": "Log på",
 			"label-email": "Email",
@@ -180,7 +192,7 @@
 			"button-login": "Log på",
 			"message-empty-email": "Email feltet kan ikke være tomt.",
 			"message-invalid-email": "Email er ikke gyldig.",
-			"message-empty-password": "Koeord feltet kan ikke være tomt.",
+			"message-empty-password": "Kodeord feltet kan ikke være tomt.",
 			"message-login-failed": "Log på fejlede. Vær venlig at tjekke email og kodeord.",
 			"label-no-account": "Har du ikke en konto? ",
 			"link-sign-up-now": "Opret dig nu",
@@ -239,7 +251,39 @@
 			"label-sort-release-date-old-to-new": "Første gang udgivet (ældre til nye)",
 			"label-sort-alphabetical": "Plug-in navn (A to Å)",
 			"label-sort-alphabetical-reverse": "Plug-in navn (Å to A)",
-			"label-search-summary": "Showing {{pluginCount}}:"
+			"label-search-summary": "Fundet {{pluginCount}}:"
+		},
+		"mobile-toolbar": {
+			"name": "Mobile toolbar",
+			"option-internal-link": "Add internal link",
+			"option-internal-embed": "Add embed",
+			"option-tag": "Add tag",
+			"option-heading": "Toggle heading",
+			"option-bold": "Toggle bold",
+			"option-italics": "Toggle italics",
+			"option-strikethrough": "Toggle strikethrough",
+			"option-highlight": "Toggle highlight",
+			"option-code": "Toggle code",
+			"option-blockquote": "Toggle blockquote",
+			"option-comment": "Toggle comment",
+			"option-markdown-link": "Add Markdown link",
+			"option-bullet-list": "Toggle bullet list",
+			"option-numbered-list": "Toggle numbered list",
+			"option-checklist": "Toggle checklist",
+			"option-indent-list": "Indent list item",
+			"option-unindent-list": "Unindent list item",
+			"option-undo": "Undo",
+			"option-redo": "Redo",
+			"option-move-caret-up": "Move caret up",
+			"option-move-caret-down": "Move caret down",
+			"option-move-caret-left": "Move caret left",
+			"option-move-caret-right": "Move caret right",
+			"option-first-line": "Go to first line",
+			"option-last-line": "Go to last line",
+			"option-toggle-keyboard": "Toggle keyboard",
+			"option-configure-toolbar": "Configure mobile toolbar",
+			"option-added-options": "Added options",
+			"option-more-options": "More options"
 		}
 	},
 	"editor": {
@@ -261,7 +305,7 @@
 			"label-link-block": "for at linke blokke",
 			"label-type-pipe": "Skriv |",
 			"label-change-display-text": "for at ændre visningstekst",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "Ingen match fundet"
 		},
 		"spellcheck": {
 			"no-suggestion": "Ingen forslag...",
@@ -289,10 +333,11 @@
 	"interface": {
 		"embed-open-in-default-app-tooltip": "Åben i standard app",
 		"empty-sidebar": "Sidebjælken er tom, prøv at trække et panel derhen.",
-		"sidebar-expand": "Udvid",
+		"sidebar-expand": "Udfold",
 		"sidebar-collapse": "Skjul",
 		"msg-fail-to-save-file": "Kunne ikke gemme filen \"{{filepath}}\". {{message}}.",
 		"no-file": "Ingen fil",
+		"msg-file-changed": "\"{{file}}\" has been modified externally, merging changes automatically.",
 		"switch-vault": "Åben en anden boks",
 		"help": "Hjælp",
 		"settings": "Indstillinger",
@@ -301,11 +346,12 @@
 		"msg-switched-to-edit": "Skiftede standard visningstilstand til editor.",
 		"msg-upgrade-installer": "For at benytte denne funktion skal det seneste installationsprogram fra vores hjemmeside være installeret.",
 		"tooltip-restore-default-settings": "Gendan standard indstillinger",
-		"label-copy": "Copy to clipboard",
+		"label-copy": "Kopier til udklipsholder",
 		"copied": "{{item}} blev kopieret til udklipsholderen.",
 		"url": "Url",
 		"msg-open-file-through-uri": "Åbnede filen \"{{path}}\"",
 		"msg-file-not-found-through-uri": "Filen \"{{name}}\" blev ikke fundet.",
+		"delete-action-short-name": "Delete",
 		"empty-state": {
 			"no-file-open": "Ingen fil er åben",
 			"create-new-file": "Opret ny fil",
@@ -409,16 +455,16 @@
 		"toggle-bold": "Slå fed tekst til og fra for markering",
 		"toggle-italics": "Slå kursiv tekst til og fra for markering",
 		"toggle-highlight": "Slå fremhævet tekst til og fra for markering",
-		"toggle-comments": "Toggle comments for selection",
+		"toggle-comments": "Slå kommentarer til og fra for markering",
 		"insert-link": "Indsæt link",
-		"toggle-spellcheck": "Toggle spellcheck",
+		"toggle-spellcheck": "Slå stavekontrol til og fra",
 		"delete-paragraph": "Slet afsnit",
 		"toggle-checklist": "Slå status tjekliste til og fra",
 		"edit-file-title": "Rediger fil titel",
 		"copy-path": "Kopier fil sti",
 		"copy-url": "Kopier obsidian url",
 		"export-pdf": "Eksporter til PDF",
-		"reload": "Reload app without saving"
+		"reload": "Genindlæs Obsidan uden at gemme"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -479,12 +525,13 @@
 			"menu-opt-delete": "Slet",
 			"menu-opt-make-copy": "Opret en kopi",
 			"msg-invalid-characters": "Filnavnet kan ikke indeholde nogle af følgende tegn: ",
-			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
+			"msg-unsafe-characters": "Links vil ikke fungere med filnavne, der indholder nogle af følgende tegn: ",
 			"msg-file-already-exists": "Der findes allerede en fil med dette navn",
 			"msg-empty-file-name": "Et filnavn kan ikke være tomt.",
 			"tooltip-modified-time": "Sidst modificeret {{time}}",
 			"tooltip-created-time": "Oprettet {{time}}",
-			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
+			"action-move-file-short-name": "Move"
 		},
 		"search": {
 			"name": "Søg",
@@ -594,8 +641,8 @@
 			"placeholder-enter-query": "Angiv forespørgsel...",
 			"tooltip-delete-graph": "Slet gruppe",
 			"button-new-group": "Ny gruppe",
-			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"tooltip-click-to-change-drag-to-reorder": "Klik for at ændre farve\nTræk for at omarrangere grupper",
+			"action-timelapse": "Start tidsforskydnings graf animation"
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
@@ -623,7 +670,7 @@
 		"page-preview": {
 			"name": "Forhåndsvisning af side",
 			"desc": "Før musen over et internt link for at forhåndsvise indholdet. I redigeringstilstand, tryk Ctrl/Cmd mens musen holdes over linket.",
-			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for a oprette."
+			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for at oprette."
 		},
 		"starred": {
 			"name": "Favoritter",
@@ -762,7 +809,7 @@
 			"desc": "Optag lyd og gem som vedhæftning.",
 			"action-start": "Start lydoptagelse",
 			"action-stop": "Stop lydoptagelse",
-			"action-toggle": "Start/stop optagelse",
+			"action-toggle": "Start/stop lydoptagelse",
 			"msg-access-denied": "Mikrofonadgang blev nægtet. Aktiver den på indstillingssiden.",
 			"msg-pending-grant": "Giv tilladelse til at benytte mikrofonen for at kunne optage lyd.",
 			"msg-no-microphone": "Der er ingen mikrofoner tilsluttet."
@@ -770,7 +817,7 @@
 		"open-with-default-app": {
 			"name": "Åben i standard app",
 			"desc": "Tilføj en knap til at kunne åbne den nuværende fil i dens standard app.",
-			"action-open-file": "Åben i standard app",
+			"action-open-file": "Åben i standard applikation",
 			"action-show-in-folder": "Vis i system stifinder"
 		},
 		"templates": {
@@ -800,7 +847,7 @@
 		"publish": {
 			"name": "Udgiv",
 			"desc": "Udgiv dine noter gennem Obsidian Publish.",
-			"action-publish-changes": "Udgiv ændringer",
+			"action-publish-changes": "Udgiv ændringer...",
 			"label-no-internet-access": "Du skal have adgang til internettet for at kunne udgive ændringer.",
 			"label-publish-service-description": "Obsidian Publish er en separat tilføjelse og betalt service, som gør dig i stand til at udgive dine noter direkte fra Obsidian.",
 			"label-please-login": "For at begynde at udgive skal du logge på eller oprette en ny Obsidian konto.",
@@ -923,6 +970,7 @@
 			"desc": "Gem og indlæs arbejdsområdelayout.",
 			"action-load": "Indlæs arbejdsområde",
 			"action-manage-workspaces": "Administrer arbejdsområder",
+			"action-save-and-load": "Save and load another workspace",
 			"placeholder-save-current-workspace-as": "Gem nuværende arbejdsområde som...",
 			"button-save": "Gem",
 			"button-load": "Indlæs",
@@ -938,7 +986,7 @@
 			"desc": "Synkroniser dine filer ved hjælp af Obsidian Sync.",
 			"action-view-version-history": "Vis versionshistorik",
 			"label-load-more": "Indlæs mere",
-			"label-copy-to-clipboard": "Copy to clipboard",
+			"label-copy-to-clipboard": "Kopier til udklipsholder",
 			"label-restore-this-version": "Gendan denne version",
 			"msg-already-latest-version": "Denne version er allerede den seneste version.",
 			"msg-restored-version": "Gendannede version fra {{time}}",
@@ -950,7 +998,7 @@
 			"label-create-remote-vault": "Opret ekstern boks",
 			"msg-please-enter-password": "Angiv et kodeord.",
 			"msg-vault-name-cannot-be-empty": "Boksnavnet kan ikke være tomt.",
-			"msg-successfully-created-vault": "Opretede den eksterne boks \"{{name}}\".",
+			"msg-successfully-created-vault": "Oprettede den eksterne boks \"{{name}}\".",
 			"label-remote-vault-explanation": "Eksterne bokse synkroniserer din boks sikkert mellem enheder.",
 			"option-vault-name": "Boks navn",
 			"option-vault-name-desc": "Hjælper dig med at huske hvad denne boks er til for.",
@@ -1030,6 +1078,26 @@
 			"label-setup-connection": "Opsæt forbindelse",
 			"label-now-connected-to-vault": "Du er nu forbundet til \"{{name}}\".",
 			"button-start-syncing": "Start synkronisering"
+		},
+		"file-recovery": {
+			"name": "File recovery",
+			"desc": "Let you restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.",
+			"action-open": "Open saved snapshots",
+			"option-interval": "Snapshot interval",
+			"option-interval-description": "Minimal interval in minutes between two snapshots.",
+			"option-keep": "History length",
+			"option-keep-description": "Length in days snapshots is kept for.",
+			"option-open-history": "Snapshots",
+			"option-open-history-description": "View and restore saved snapshots.",
+			"button-view-snapshots": "View",
+			"option-clear": "Clear history",
+			"option-clear-description": "Wipe all snapshots.",
+			"button-clear-history": "Clear",
+			"label-clear-warning": "Are you sure you want to delete all snapshots? Note that only snapshots will be removed. All files inside your vault will not be affected.",
+			"msg-clear-complete": "Snapshots cleared.",
+			"label-no-history-found": "No snapshots found.",
+			"placeholder-choose-file": "Choose a file...",
+			"label-select-file": "Please select a file on the left to view snapshots."
 		}
 	},
 	"nouns": {
@@ -1047,7 +1115,7 @@
 		"backlink-with-count_plural": "{{count}} tilbagelinks",
 		"site-with-count": "{{count}} websted",
 		"site-with-count_plural": "{{count}} websteder",
-		"plugin-with-count": "{{count}} plugin",
-		"plugin-with-count_plural": "{{count}} plugins"
+		"plugin-with-count": "{{count}} plug-in",
+		"plugin-with-count_plural": "{{count}} plug-ins"
 	}
 }
