@@ -43,7 +43,16 @@
 			"option-auto-convert-html": "Converti automaticamente HTML",
 			"option-auto-convert-html-description": "Converte automaticamente HTML in Markdown quando si usa copia/incolla o trascina e rilascia da pagine web. Usare Ctrl/Cmd+Shift+V per incollare senza convertire.",
 			"option-vim-key-bindings": "Tasti di scelta rapida Vim",
-			"option-vim-key-bindings-description": "Permette di utilizzare la mappatura dei tasti di Vim nell'editor."
+			"option-vim-key-bindings-description": "Permette di utilizzare la mappatura dei tasti di Vim nell'editor.",
+			"label-confirm-enable-vim": "Attivazione della modalità Vim",
+			"label-vim-warning": "La mappatura dei tasti di Vim è efficiente ma, se non si ha familiarità con Vim, può risultare contro-intuitiva. Attivare questa opzione potrebbe far sembrare che Obsidian abbia smesso di funzionare.",
+			"label-vim-test": "Per verificare la tua conoscenza di Vim, inserisci il comando per uscire da Vim senza salvare qui sotto:",
+			"label-vim-your-answer": "Risposta",
+			"placeholder-enter-command": "Inserisci comando...",
+			"button-confirm-enable-vim": "Attiva modalità Vim",
+			"msg-vim-mode-enabled": "Il comando è corretto. La modalità Vim è stata attivata.",
+			"msg-vim-mode-not-enabled": "Il comando non è corretto. Per sicurezza, la modalità Vim non è stata attivata.",
+			"msg-vim-mode-please-enter-command": "Inserire il comando per attivare la modalità Vim"
 		},
 		"file": {
 			"name": "File e link",
@@ -147,6 +156,9 @@
 			"option-language-description": "Cambia la lingua utilizzata.",
 			"option-insider-build": "Ricevi versioni insider",
 			"option-insider-build-description": "Aggiorna automaticamente alle versioni insider per provare nuove funzionalità. Attenzione: si tratta di versioni beta che potrebbero essere meno stabili.",
+			"option-hw-acceleration": "Accelerazione hardware",
+			"option-hw-acceleration-description": "Attiva l'accelerazione hardware. Utilizza la tua GPU per rendere Obsidian più fluido.",
+			"option-hw-acceleration-warning": "Se si disattiva questa opzione, le prestazioni dell'app saranno notevolmente ridotte.",
 			"label-license": "Licenza",
 			"label-your-commercial-license": "La tua chiave di licenza commerciale è ",
 			"label-commercial-license-info": "Registrata a nome di \"{{company}}\" per {{seats}} utenti. Valida fino al {{expiry}}.",
@@ -200,7 +212,7 @@
 			"button-keep-safe-mode": "Mantieni attiva la modalità sicura",
 			"button-disable-safe-mode": "Disattiva la modalità sicura",
 			"label-select-a-plugin": "Selezionare un plugin per installarlo o per maggiori informazioni.",
-			"placeholder-community-plugins": "Cerca plugin della comunità...",
+			"placeholder-community-plugins": "Cerca plugin...",
 			"msg-failed-load-plugins": "Impossibile caricare i plugin della comunità.",
 			"label-installed": "Installato",
 			"tooltip-downloaded-times": "Scaricato {{count}} volta",
@@ -239,7 +251,39 @@
 			"label-sort-release-date-old-to-new": "Data di rilascio (meno recente)",
 			"label-sort-alphabetical": "Nome plugin (dalla A alla Z)",
 			"label-sort-alphabetical-reverse": "Nome plugin (dalla Z alla A)",
-			"label-search-summary": "Showing {{pluginCount}}:"
+			"label-search-summary": "Visualizzazione di {{pluginCount}}:"
+		},
+		"mobile-toolbar": {
+			"name": "Strumenti mobile",
+			"option-internal-link": "Aggiungi link interno",
+			"option-internal-embed": "Incorpora",
+			"option-tag": "Aggiungi tag",
+			"option-heading": "Imposta intestazione",
+			"option-bold": "Imposta grassetto",
+			"option-italics": "Imposta corsivo",
+			"option-strikethrough": "Imposta barrato",
+			"option-highlight": "Imposta evidenziato",
+			"option-code": "Imposta codice",
+			"option-blockquote": "Imposta citazione",
+			"option-comment": "Imposta commento",
+			"option-markdown-link": "Aggiungi link Markdown",
+			"option-bullet-list": "Imposta lista puntata",
+			"option-numbered-list": "Imposta lista numerata",
+			"option-checklist": "Imposta checklist",
+			"option-indent-list": "Aumenta rientro lista",
+			"option-unindent-list": "Riduci rientro lista",
+			"option-undo": "Annulla",
+			"option-redo": "Ripeti",
+			"option-move-caret-up": "Sposta cursore in alto",
+			"option-move-caret-down": "Sposta cursore in basso",
+			"option-move-caret-left": "Sposta cursore a sinistra",
+			"option-move-caret-right": "Sposta cursore a destra",
+			"option-first-line": "Vai alla prima riga",
+			"option-last-line": "Vai all'ultima riga",
+			"option-toggle-keyboard": "Attiva/disattiva tastiera",
+			"option-configure-toolbar": "Configura strumenti mobile",
+			"option-added-options": "Opzioni aggiunte",
+			"option-more-options": "Altre opzioni"
 		}
 	},
 	"editor": {
@@ -261,7 +305,7 @@
 			"label-link-block": "per collegare un blocco",
 			"label-type-pipe": "Digita |",
 			"label-change-display-text": "per cambiare il testo mostrato",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "Nessuna corrispondenza trovata"
 		},
 		"spellcheck": {
 			"no-suggestion": "Nessun suggerimento...",
@@ -293,6 +337,7 @@
 		"sidebar-collapse": "Nascondi",
 		"msg-fail-to-save-file": "Impossibile salvare \"{{filepath}}\". {{message}}.",
 		"no-file": "Nessun file",
+		"msg-file-changed": "\"{{file}}\" è stato modificato esternamente, unione automatica delle modifiche.",
 		"switch-vault": "Apri un altro vault",
 		"help": "Aiuto",
 		"settings": "Impostazioni",
@@ -306,6 +351,7 @@
 		"url": "Url",
 		"msg-open-file-through-uri": "File \"{{path}}\" aperto",
 		"msg-file-not-found-through-uri": "File \"{{name}}\" non trovato.",
+		"delete-action-short-name": "Elimina",
 		"empty-state": {
 			"no-file-open": "Nessun file aperto",
 			"create-new-file": "Crea nuovo file",
@@ -409,16 +455,16 @@
 		"toggle-bold": "Imposta il grassetto per la selezione",
 		"toggle-italics": "Imposta il corsivo per la selezione",
 		"toggle-highlight": "Evidenzia la selezione",
-		"toggle-comments": "Toggle comments for selection",
+		"toggle-comments": "Imposta commento per la selezione",
 		"insert-link": "Inserisci collegamento",
-		"toggle-spellcheck": "Toggle spellcheck",
+		"toggle-spellcheck": "Attiva/disattiva controllo ortografico",
 		"delete-paragraph": "Cancella paragrafo",
 		"toggle-checklist": "Attiva/disattiva stato della checklist",
 		"edit-file-title": "Modifica titolo del file",
 		"copy-path": "Copia percorso del file",
 		"copy-url": "Copia URL obsidian",
 		"export-pdf": "Esporta in PDF",
-		"reload": "Reload app without saving"
+		"reload": "Ricarica l'app senza salvare"
 	},
 	"dialogue": {
 		"label-link-affected": "Questa operazione influirà su {{links}} in {{files}}.",
@@ -479,12 +525,13 @@
 			"menu-opt-delete": "Elimina",
 			"menu-opt-make-copy": "Crea una copia",
 			"msg-invalid-characters": "Il nome del file non può contenere i seguenti caratteri: ",
-			"msg-unsafe-characters": "Links will not work with file names containing any of these characters: ",
+			"msg-unsafe-characters": "I collegamenti non funzioneranno se i nomi dei file contengono uno di questi caratteri: ",
 			"msg-file-already-exists": "Esiste già un file con lo stesso nome",
 			"msg-empty-file-name": "Il nome del file non può essere vuoto.",
 			"tooltip-modified-time": "Ultima modifica il {{time}}",
 			"tooltip-created-time": "Creato il {{time}}",
-			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
+			"action-move-file-short-name": "Sposta"
 		},
 		"search": {
 			"name": "Ricerca",
@@ -594,8 +641,8 @@
 			"placeholder-enter-query": "Inserisci query...",
 			"tooltip-delete-graph": "Elimina gruppo",
 			"button-new-group": "Nuovo gruppo",
-			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"tooltip-click-to-change-drag-to-reorder": "Fare clic per cambiare colore\nTrascinare per riordinare",
+			"action-timelapse": "Avvia animazione timelapse"
 		},
 		"backlinks": {
 			"name": "Riferimenti",
@@ -923,6 +970,7 @@
 			"desc": "Salva e carica il layout dell'area di lavoro.",
 			"action-load": "Carica area di lavoro",
 			"action-manage-workspaces": "Gestione aree di lavoro",
+			"action-save-and-load": "Salva e carica un'altra area di lavoro",
 			"placeholder-save-current-workspace-as": "Salva area di lavoro corrente come...",
 			"button-save": "Salva",
 			"button-load": "Carica",
@@ -1030,6 +1078,26 @@
 			"label-setup-connection": "Configura connessione",
 			"label-now-connected-to-vault": "Sei connesso a \"{{name}}\".",
 			"button-start-syncing": "Avvia sincronizzazione"
+		},
+		"file-recovery": {
+			"name": "Recupero file",
+			"desc": "Consente di ripristinare istantanee recenti per recuperare una perdita di dati accidentale. Le istantanee vengono salvate solo per i file Markdown.",
+			"action-open": "Apri istantanee salvate",
+			"option-interval": "Intervallo istantanee",
+			"option-interval-description": "Intervallo minimo in minuti tra due istantanee.",
+			"option-keep": "Durata cronologia",
+			"option-keep-description": "Durata in giorni per cui vengono conservate le istantanee.",
+			"option-open-history": "Istantanee",
+			"option-open-history-description": "Visualizza e ripristina le istantanee salvate.",
+			"button-view-snapshots": "Visualizza",
+			"option-clear": "Cancella cronologia",
+			"option-clear-description": "Cancella tutte le istantanee.",
+			"button-clear-history": "Cancella",
+			"label-clear-warning": "Eliminare tutte le istantanee? Verranno rimosse solo le istantanee. Tutti i file all'interno del vault rimarranno intatti.",
+			"msg-clear-complete": "Istantanee cancellate.",
+			"label-no-history-found": "Nessuna istantanea trovata.",
+			"placeholder-choose-file": "Scegli un file...",
+			"label-select-file": "Selezionare un file a sinistra per visualizzare le istantanee."
 		}
 	},
 	"nouns": {
@@ -1048,6 +1116,6 @@
 		"site-with-count": "{{count}} sito",
 		"site-with-count_plural": "{{count}} siti",
 		"plugin-with-count": "{{count}} plugin",
-		"plugin-with-count_plural": "{{count}} plugins"
+		"plugin-with-count_plural": "{{count}} plugin"
 	}
 }
