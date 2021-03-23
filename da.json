@@ -43,7 +43,16 @@
 			"option-auto-convert-html": "Autokonvertér HTML",
 			"option-auto-convert-html-description": "Konvertér HTML automatisk til Markdown ved indsætning og træk og slip fra websider. Benyt Ctrl/Cmd+Shift+V for at indsætte uden konvertering.",
 			"option-vim-key-bindings": "Vim tastaturgenveje",
-			"option-vim-key-bindings-description": "Lader dig benytte Vim tastaturgenveje i kildeeditoren."
+			"option-vim-key-bindings-description": "Lader dig benytte Vim tastaturgenveje i kildeeditoren.",
+			"label-confirm-enable-vim": "Bekræft at du vil benytte Vim redigeringstilstand",
+			"label-vim-warning": "Vim redigeringstilstand kan anvendes til effektiv redigering men kan forekomme ulogisk. Hvis du ikke kender Vim, kan denne funktion få det til at se ud som om Obsidian ikke fungerer.",
+			"label-vim-test": "For at bekræfte at du har kendskab til Vim, bedes du skrive kommandoen til at afslutte Vim uden at gemme herunder:",
+			"label-vim-your-answer": "Dit svar",
+			"placeholder-enter-command": "Skriv kommando...",
+			"button-confirm-enable-vim": "Lad mig aktivere Vim",
+			"msg-vim-mode-enabled": "Kommandoen er korrekt. Vim redigeringstilstand er nu aktiveret.",
+			"msg-vim-mode-not-enabled": "Kommandoen er ikke korrekt. Vim tilstand forbliver deaktiveret for at beskytte dig.",
+			"msg-vim-mode-please-enter-command": "Skriv venligst kommandoen for at aktivere Vim redigeringstilstand"
 		},
 		"file": {
 			"name": "Filer & Links",
@@ -136,7 +145,7 @@
 			"label-relaunch-to-update": "Genstart Obsidian for at opdatere den.",
 			"label-disabled-updates": "Opdateringer er deaktiveret.",
 			"label-checking-for-updates": "Tjekker for nye opdateringer...",
-			"button-relaunch": "genstart",
+			"button-relaunch": "Genstart",
 			"button-check-for-updates": "Tjek for opdateringer",
 			"option-auto-update": "Automatisk opdatering",
 			"option-auto-update-description": "Hvis du deaktiverer denne indstilling vil Obsidian ikke tjekke for opdateringer.",
@@ -147,6 +156,9 @@
 			"option-language-description": "Skift det viste sprog.",
 			"option-insider-build": "Modtag insider versioner",
 			"option-insider-build-description": "Opdater automatisk til insider versioner og prøv nye funktioner. Disse versioner er splinternye og kan være mindre stabile.",
+			"option-hw-acceleration": "Hardware Acceleration",
+			"option-hw-acceleration-description": "Aktiverer hardware acceleration, som benytter din GPU for at øge Obsidians ydeevne.",
+			"option-hw-acceleration-warning": "Hvis du deaktiverer hardware acceleration vil ydeevnen blive alvorligt forringet.",
 			"label-license": "Licens",
 			"label-your-commercial-license": "Den kommercielle licensnøgle er ",
 			"label-commercial-license-info": "Registreret til \"{{company}}\" til {{seats}} brugere. Gyldig indtil {{expiry}}.",
@@ -240,6 +252,38 @@
 			"label-sort-alphabetical": "Plug-in navn (A to Å)",
 			"label-sort-alphabetical-reverse": "Plug-in navn (Å to A)",
 			"label-search-summary": "Fundet {{pluginCount}}:"
+		},
+		"mobile-toolbar": {
+			"name": "Mobil værktøjslinje",
+			"option-internal-link": "Tilføj internt link",
+			"option-internal-embed": "Tilføj indlejret",
+			"option-tag": "Tilføj tag",
+			"option-heading": "Skift overskrift",
+			"option-bold": "Skift fed",
+			"option-italics": "Skift kursiv",
+			"option-strikethrough": "Skift gennemstregning",
+			"option-highlight": "Skift fremhævet",
+			"option-code": "Skift kode",
+			"option-blockquote": "Skift blokcitat",
+			"option-comment": "Skift kommentar",
+			"option-markdown-link": "Tilføj Markdown link",
+			"option-bullet-list": "Skift punktliste",
+			"option-numbered-list": "Skift nummereret liste",
+			"option-checklist": "Skift tjekliste",
+			"option-indent-list": "Indent list item",
+			"option-unindent-list": "Fjernindryk listeelement",
+			"option-undo": "Fortryd",
+			"option-redo": "Gentag",
+			"option-move-caret-up": "Flyt indsætningspunkt op",
+			"option-move-caret-down": "Flyt indsætningspunkt ned",
+			"option-move-caret-left": "Flyt indsætningspunkt ti lvenstre",
+			"option-move-caret-right": "Flyt indsætningspunkt til højre",
+			"option-first-line": "Gå til første linje",
+			"option-last-line": "Gå til sidste linje",
+			"option-toggle-keyboard": "Skift tastatur",
+			"option-configure-toolbar": "Konfigurer mobil værktøjslinje",
+			"option-added-options": "Tilføjede indstillinger",
+			"option-more-options": "Flere indstillinger"
 		}
 	},
 	"editor": {
@@ -293,6 +337,7 @@
 		"sidebar-collapse": "Skjul",
 		"msg-fail-to-save-file": "Kunne ikke gemme filen \"{{filepath}}\". {{message}}.",
 		"no-file": "Ingen fil",
+		"msg-file-changed": "\"{{file}}\" er eksternt modificeret, fletter ændringer automatisk.",
 		"switch-vault": "Åben en anden boks",
 		"help": "Hjælp",
 		"settings": "Indstillinger",
@@ -306,6 +351,7 @@
 		"url": "Url",
 		"msg-open-file-through-uri": "Åbnede filen \"{{path}}\"",
 		"msg-file-not-found-through-uri": "Filen \"{{name}}\" blev ikke fundet.",
+		"delete-action-short-name": "Slet",
 		"empty-state": {
 			"no-file-open": "Ingen fil er åben",
 			"create-new-file": "Opret ny fil",
@@ -362,8 +408,8 @@
 			"insert-link-here": "Indsæt link her",
 			"insert-links-here": "Indsæt links her",
 			"move-into-folder": "Flyt til \"{{folder}}\"",
-			"star-this-file": "Stjernemarker denne fil",
-			"star-these-files": "Stjernemarker disse filer",
+			"star-this-file": "Marker denne fil som favorit",
+			"star-these-files": "Marker disse filer som favoritter",
 			"open-in-this-pane": "Åben i dette panel"
 		},
 		"window": {
@@ -484,7 +530,8 @@
 			"msg-empty-file-name": "Et filnavn kan ikke være tomt.",
 			"tooltip-modified-time": "Sidst modificeret {{time}}",
 			"tooltip-created-time": "Oprettet {{time}}",
-			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}"
+			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
+			"action-move-file-short-name": "Flyt"
 		},
 		"search": {
 			"name": "Søg",
@@ -800,7 +847,7 @@
 		"publish": {
 			"name": "Udgiv",
 			"desc": "Udgiv dine noter gennem Obsidian Publish.",
-			"action-publish-changes": "Udgiv ændringer",
+			"action-publish-changes": "Udgiv ændringer...",
 			"label-no-internet-access": "Du skal have adgang til internettet for at kunne udgive ændringer.",
 			"label-publish-service-description": "Obsidian Publish er en separat tilføjelse og betalt service, som gør dig i stand til at udgive dine noter direkte fra Obsidian.",
 			"label-please-login": "For at begynde at udgive skal du logge på eller oprette en ny Obsidian konto.",
@@ -923,6 +970,7 @@
 			"desc": "Gem og indlæs arbejdsområdelayout.",
 			"action-load": "Indlæs arbejdsområde",
 			"action-manage-workspaces": "Administrer arbejdsområder",
+			"action-save-and-load": "Save and load another workspace",
 			"placeholder-save-current-workspace-as": "Gem nuværende arbejdsområde som...",
 			"button-save": "Gem",
 			"button-load": "Indlæs",
@@ -1030,6 +1078,26 @@
 			"label-setup-connection": "Opsæt forbindelse",
 			"label-now-connected-to-vault": "Du er nu forbundet til \"{{name}}\".",
 			"button-start-syncing": "Start synkronisering"
+		},
+		"file-recovery": {
+			"name": "Filgenoprettelse",
+			"desc": "Lader dig gendanne nylige snapshots for at genoprette din boks fra tilfældige datatab. Snapshots bliver kun gemt for Markdown filer.",
+			"action-open": "Åben gemte snapshots",
+			"option-interval": "Snapshot interval",
+			"option-interval-description": "Minimums interval i minutter mellem to snapshots.",
+			"option-keep": "Historik længde",
+			"option-keep-description": "Antal dage som snapshots bliver gemt.",
+			"option-open-history": "Snapshots",
+			"option-open-history-description": "Vis og gendan gemte snapshots.",
+			"button-view-snapshots": "Vis",
+			"option-clear": "Ryd historik",
+			"option-clear-description": "Slet snapshots fuldstændigt.",
+			"button-clear-history": "Ryd",
+			"label-clear-warning": "Er du sikker på, at du vil slette alle snapshots? Bemærk at kun snapshots vil blive slettet. Alle filer i din boks vil ikke blive berørt.",
+			"msg-clear-complete": "Snapshots slettet.",
+			"label-no-history-found": "Ingen snapshots fundet.",
+			"placeholder-choose-file": "Vælg en fil...",
+			"label-select-file": "Vælg venligst en fil til venstre for at vise snapshots."
 		}
 	},
 	"nouns": {
