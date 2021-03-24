@@ -20,7 +20,7 @@ Note that you don't have to clone your fork to make the edits; you can do everyt
 
 ## Translating
 
-The trasnlation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
+The translation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
 
 To translate, simply edit the value. For example, let's say you see
 
@@ -51,26 +51,33 @@ Here is a table of language code to language name, in alphabetical order. These 
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
-| `de` | German | Deutsch | 🚧 |
-| `el` | Greek | ελληνικά | 🔜 |
+| `cz` | Czech | čeština | ✅ |
+| `da` | Danish | Dansk | ✅ |
+| `de` | German | Deutsch | ✅ |
+| `el` | Greek | Ελληνικά | 🚧 |
 | `es` | Spanish | Español | ✅ |
-| `fr` | French | français | ✅ 
+| `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
-| `ja` | Japanese | 日本語 | 🚧 |
+| `ja` | Japanese | 日本語 | ✅ |
 | `ko` | Korean | 한국어 | ✅ |
+| `ml` | Malayalam | മലയാളം | 🚧 |
 | `nl` | Dutch | Nederlands | 🚧 |
 | `no` | Norwegian | Norsk | ✅ |
-| `pl` | Polish | język polski | 🚧 |
+| `pl` | Polish | język polski | ✅ |
 | `pt` | Portuguese | Português | ✅ |
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
+| `se` | Swedish | Svenska | 🚧 |
+| `sk` | Slovak | Slovenčina | 🚧 |
+| `tam` | Tamil | தமிழ் | 🚧 |
 | `tr` | Turkish | Türkçe | 🚧 |
+| `uk` | Ukrainian | Українська | 🚧 |
+| `ur` | Urdu | اردو | 🚧 |
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
-| `ta` | Tamil | தமிழ் |🚧
 
 > Note: the Chinese translation is maintained by the Chinese Obsidian QQ group. If you want to discuss it, please join the QQ group: 774176839.
 

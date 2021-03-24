@@ -12,7 +12,7 @@ Obsidianの翻訳作業に興味を持っていただきありがとうござい
 
 ## 語彙対応表
 
-|Original Term|Japanese translation|
+|Original term|Japanese translation|
 |-|-|
 alias | エイリアス
 appearance | 外観
@@ -27,6 +27,7 @@ catalyst | カタリスト
 Catalyst license | カタリストライセンス
 collapse | 折りたたむ
 Commercial license | 商用ライセンス
+Components | コンポーネント
 connection | コネクション
 converter | コンバーター
 custom | カスタム
@@ -41,6 +42,7 @@ feature | 機能
 first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
 fixer | フィクサー
 fold | フォールド
+Folder | フォルダ
 format | フォーマット
 frontmatter | フロントマター
 graph | グラフ
@@ -56,6 +58,7 @@ link | リンク
 linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
+Metadata | メタデータ
 note | ノート
 note-taking | ノートテイキング
 Obsidian | Obsidian (常に大文字から始める)
@@ -73,10 +76,12 @@ preview | プレビュー
 preview mode | プレビューモード
 publish change | 変更の公開
 quick switcher | クイックスイッチャー
+Reading experience | リーディングエクスペリエンス
 regex | Regex
 remote vault | リモート保管庫
 search | 検索
 second brain | 第二の脳
+Security | セキュリティ
 selective sync | 選択的同期
 sidebar | サイドバー
 site | サイト
@@ -141,6 +146,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 			- `｢設定｣ → ｢外観｣` などのオプションやボタンの遷移を表す矢印と括弧の間には半角スペースをいれる。
 		- ファイル名(例: "Roam-Export-xxxxxxxxxxxxx.zip" など)、文字列パターン(例: "YYYY-MM-DD", "202001010000" など)の場合にはそのまま二重引用符で囲む。
 		- 二重引用符を使用する場合にはバッククォートと同様のルールを適用する。
+		- "vault/folder" 等のディレクトリの表示はそのままにする。
 		- 説明に使用する英単語は｢｣で囲む(例: エイリアスの項目ででてくる｢AI｣は｢Artificial intelligence｣の略)。
 	- ハイライト `== ==` やボールド `** **` などの装飾部分については実際に日本語で利用する場面に即して、囲む部分の前後には半角スペースを入れない(例: これは==ハイライト==です)。
 	- バッククォート ``` ` ` ``` について
@@ -148,6 +154,10 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 		-  文末に来る場合には `後に半角スペースを入れない`。
 		-  句読点や括弧の前後では半角スペースを入れない(例: ｢~で、`単語`、~です。`単語`｣)。
 		-  ``(`Shift+|`)``: これはこのままにする。
+		-  ホットキーやショートカットキーは `Ctrl+Shift+I` や `Ctrl/Cmd+P` のようにキーの間にスペースを入れずに `+` でつなぐ。
+   		-  `Ctrl` や `Cmd` などの特殊キーは頭文字を大文字にし、アルファベット単体のキーは `Ctrl/Cmd+P` のように大文字にする。
+   		-  `Ctrl/Cmd` の並び順は統一する。
+   		-  矢印キーは `Left arrow` などと記述する。
 -  他の記号について
 	- コロン `:` について
 		- 例: `ノート: これは説明です`。`:` の後にのみ半角スペースを挿入する。
