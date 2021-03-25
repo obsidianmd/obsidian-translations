@@ -463,7 +463,7 @@
 		"edit-file-title": "Dateinamen ändern",
 		"copy-path": "Dateipfad kopieren",
 		"copy-url": "Obsidian URL kopieren",
-		"export-pdf": "Nach PDF exporieren",
+		"export-pdf": "Nach PDF exportieren",
 		"reload": "Anwendung neu laden ohne zu speichern"
 	},
 	"dialogue": {
@@ -1080,24 +1080,24 @@
 			"button-start-syncing": "Synchronisation starten"
 		},
 		"file-recovery": {
-			"name": "File recovery",
-			"desc": "Let you restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.",
-			"action-open": "Open saved snapshots",
-			"option-interval": "Snapshot interval",
-			"option-interval-description": "Minimal interval in minutes between two snapshots.",
-			"option-keep": "History length",
-			"option-keep-description": "Length in days snapshots is kept for.",
-			"option-open-history": "Snapshots",
-			"option-open-history-description": "View and restore saved snapshots.",
-			"button-view-snapshots": "View",
-			"option-clear": "Clear history",
-			"option-clear-description": "Wipe all snapshots.",
-			"button-clear-history": "Clear",
-			"label-clear-warning": "Are you sure you want to delete all snapshots? Note that only snapshots will be removed. All files inside your vault will not be affected.",
-			"msg-clear-complete": "Snapshots cleared.",
-			"label-no-history-found": "No snapshots found.",
-			"placeholder-choose-file": "Choose a file...",
-			"label-select-file": "Please select a file on the left to view snapshots."
+			"name": "Datenwiederherstellung",
+			"desc": "Wiederherstellung älterer Dateiversionen bei versehentlichem Datenverlust. Sicherungskopien werden nur für Markdown-Dateien erstellt.",
+			"action-open": "Öffne gespeicherte Sicherungskopien",
+			"option-interval": "Sicherungsintervall",
+			"option-interval-description": "Mindestintervall zwischen zwei Sicherungskopien (in Minuten).",
+			"option-keep": "Archivierungsdauer",
+			"option-keep-description": "Zeitraum, für den Sicherungskopien aufbewahrt werden sollen (in Tagen).",
+			"option-open-history": "Sicherungskopien",
+			"option-open-history-description": "Gespeicherte Sicherungskopien ansehen und wiederherstellen.",
+			"button-view-snapshots": "Ansehen",
+			"option-clear": "Archiv leeren",
+			"option-clear-description": "Alle Sicherungskopien löschen.",
+			"button-clear-history": "Leeren",
+			"label-clear-warning": "Bist du sicher, dass du alle Sicherungskopien löschen möchtest? Es werden nur die Sicherungskopien entfernt. Sämtliche Dateien in deinem Vault bleiben erhalten.",
+			"msg-clear-complete": "Sicherungskopien gelöscht.",
+			"label-no-history-found": "Keine Sicherungskopien gefunden.",
+			"placeholder-choose-file": "Wähle eine Datei aus...",
+			"label-select-file": "Bitte wähle eine Datei auf der linken Seite, um gespeicherte ältere Versionen anzusehen."
 		}
 	},
 	"nouns": {
