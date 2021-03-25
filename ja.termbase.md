@@ -103,6 +103,7 @@ Audio recorder | オーディオレコーダー
 Command palette | コマンドパレット
 Daily notes | デイリーノート
 File explorer | ファイルエクスプローラ
+File recovery | ファイルリカバリー
 Graph view | グラフビュー
 Markdown format importer | Markdownフォーマットインポーター
 Open in default app | デフォルトアプリで開く
