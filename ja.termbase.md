@@ -19,6 +19,7 @@ appearance | 外観
 arrows | 矢印
 audio file | 音声ファイル
 backlinks | バックリンク
+blank | ブランク
 block | ブロック
 build | ビルド
 building block | 機能要素
