@@ -158,9 +158,13 @@
 			"option-language-description": "Изменяет язык интерфейса.",
 			"option-insider-build": "Получать ранние сборки",
 			"option-insider-build-description": "Автоматически обновляться до ранних сборок, чтобы попробовать новые возможности. Обратите внимание, что эти сборки могут быть менее стабильными.",
+			"option-advanced": "Advanced",
 			"option-hw-acceleration": "Аппаратное ускорение",
 			"option-hw-acceleration-description": "Включает Аппаратное ускорение, использующее GPU чтобы сделать работу Obsidian более плавной.",
 			"option-hw-acceleration-warning": "Если вы отключите эту функцию, производительность приложения сильно снизится.",
+			"option-config-location": "Override config folder",
+			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
+			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Лицензия",
 			"label-your-commercial-license": "Ваша коммерческая лицензия ",
 			"label-commercial-license-info": "Зарегистрирована на \"{{company}}\" для {{seats}} пользователей. Действительна до {{expiry}}.",
@@ -675,7 +679,11 @@
 		"page-preview": {
 			"name": "Предпросмотр страницы",
 			"desc": "Предварительный просмотр заметки при наведении курсора на внутреннюю ссылку. Наведение + Ctrl/Cmd в режиме редактирования.",
-			"label-empty-note": "\"{{linktext}}\" еще не создана. Нажмите, чтобы создать."
+			"label-empty-note": "\"{{linktext}}\" еще не создана. Нажмите, чтобы создать.",
+			"label-source-editor": "Editor",
+			"label-source-preview": "Preview",
+			"label-source-search-backlinks": "Search and Backlinks",
+			"label-require-mod": "Require {{key}} to trigger page preview on hover"
 		},
 		"starred": {
 			"name": "Избранное",
