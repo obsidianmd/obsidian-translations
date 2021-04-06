@@ -158,9 +158,13 @@
 			"option-language-description": "表示言語を変更する。",
 			"option-insider-build": "インサイダービルドを取得",
 			"option-insider-build-description": "新機能を試すにはインサイダービルドへの自動更新を有効にしてください。ビルドは最先端のものであり、不安定である可能性があります。",
+			"option-advanced": "Advanced",
 			"option-hw-acceleration": "ハードウェアアクセラレーション",
 			"option-hw-acceleration-description": "ハードウェアアクセラレーションを有効化し、Obisdianの動作をより軽快にするためGPUを利用します。",
 			"option-hw-acceleration-warning": "このオプションを無効化するとアプリパフォーマンスが大幅に低下します。",
+			"option-config-location": "Override config folder",
+			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
+			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "ライセンス",
 			"label-your-commercial-license": "あなたの商用ライセンスキーは以下です: ",
 			"label-commercial-license-info": "\"{{company}}\"によって{{seats}}人が登録されています。{{expiry}}まで有効です。",
@@ -675,7 +679,11 @@
 		"page-preview": {
 			"name": "ページプレビュー",
 			"desc": "マウスホバーするとノートのプレビューを表示します。編集モードではCtrl/Cmdを押してください。",
-			"label-empty-note": "\"{{linktext}}\" は作成されていません。クリックで作成します。"
+			"label-empty-note": "\"{{linktext}}\" は作成されていません。クリックで作成します。",
+			"label-source-editor": "Editor",
+			"label-source-preview": "Preview",
+			"label-source-search-backlinks": "Search and Backlinks",
+			"label-require-mod": "Require {{key}} to trigger page preview on hover"
 		},
 		"starred": {
 			"name": "スター",

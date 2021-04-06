@@ -158,9 +158,13 @@
 			"option-language-description": "تغيير لغة العرض.",
 			"option-insider-build": "Receive insider builds",
 			"option-insider-build-description": "Auto-update to insider builds to try out new features. Note that these builds are bleeding edge and might be less stable.",
+			"option-advanced": "Advanced",
 			"option-hw-acceleration": "Hardware Acceleration",
 			"option-hw-acceleration-description": "Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.",
 			"option-hw-acceleration-warning": "If you turn this off, app performance will be severely degraded.",
+			"option-config-location": "Override config folder",
+			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
+			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "الرخصة",
 			"label-your-commercial-license": "رمز الترخيص التجاري الخاص بك ",
 			"label-commercial-license-info": "Registered to \"{{company}}\" for {{seats}} users. Valid until {{expiry}}.",
@@ -675,7 +679,11 @@
 		"page-preview": {
 			"name": "Page preview",
 			"desc": "Preview a note when hovering an internal link. Ctrl/Cmd + hover in editor mode.",
-			"label-empty-note": "\"{{linktext}}\" is not created yet. Click to create."
+			"label-empty-note": "\"{{linktext}}\" is not created yet. Click to create.",
+			"label-source-editor": "Editor",
+			"label-source-preview": "Preview",
+			"label-source-search-backlinks": "Search and Backlinks",
+			"label-require-mod": "Require {{key}} to trigger page preview on hover"
 		},
 		"starred": {
 			"name": "Starred",

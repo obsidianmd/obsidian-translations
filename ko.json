@@ -158,9 +158,13 @@
 			"option-language-description": "언어 바꾸기.",
 			"option-insider-build": "내부 빌드 받기",
 			"option-insider-build-description": "자동 업데이트로 내부 빌드를 사용해봅니다. 내부 빌드들은 불안정합니다.",
+			"option-advanced": "Advanced",
 			"option-hw-acceleration": "Hardware Acceleration",
 			"option-hw-acceleration-description": "Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.",
 			"option-hw-acceleration-warning": "If you turn this off, app performance will be severely degraded.",
+			"option-config-location": "Override config folder",
+			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
+			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "제품 키",
 			"label-your-commercial-license": "사용중인 상업용 제품 키: ",
 			"label-commercial-license-info": "회사: \"{{company}}\" , 사용자 수: {{seats}}, 유효기간: {{expiry}}.",
@@ -675,7 +679,11 @@
 		"page-preview": {
 			"name": "페이지 미리보기",
 			"desc": "링크에 마우스를 올려놓으면 미리보기를 볼수 있습니다. 편집 모드일 경우 Ctrl/Cmd를 누른 상태에서 마우스를 올리시면 볼수 있습니다.",
-			"label-empty-note": "\"{{linktext}}\"의 파일이 아직 없습니다. 클릭해서 만들어주세요."
+			"label-empty-note": "\"{{linktext}}\"의 파일이 아직 없습니다. 클릭해서 만들어주세요.",
+			"label-source-editor": "Editor",
+			"label-source-preview": "Preview",
+			"label-source-search-backlinks": "Search and Backlinks",
+			"label-require-mod": "Require {{key}} to trigger page preview on hover"
 		},
 		"starred": {
 			"name": "즐겨찾기",
