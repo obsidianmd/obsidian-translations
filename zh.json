@@ -158,9 +158,13 @@
 			"option-language-description": "更改界面语言。",
 			"option-insider-build": "接收内部版本",
 			"option-insider-build-description": "自动更新至内部版本以体验最新功能。请注意，内部版本可能不太稳定。",
+			"option-advanced": "Advanced",
 			"option-hw-acceleration": "硬件加速",
 			"option-hw-acceleration-description": "开启硬件加速，即使用 GPU 让 Obsidian 运行更流畅。",
 			"option-hw-acceleration-warning": "如果关闭此选项，Obsidian 的性能将严重下降。",
+			"option-config-location": "Override config folder",
+			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
+			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "许可证",
 			"label-your-commercial-license": "你的商业许可证密钥是 ",
 			"label-commercial-license-info": "注册给用户： \"{{company}}\" - {{seats}} 。有效期至 {{expiry}}。",
@@ -675,7 +679,11 @@
 		"page-preview": {
 			"name": "页面预览",
 			"desc": "开启后鼠标悬停在内部链接上时将显示预览。编辑模式下需要在鼠标悬停的同时按住 Ctrl/Cmd 键才可预览。",
-			"label-empty-note": "\"{{linktext}}\" 未创建成功！请点击以创建。"
+			"label-empty-note": "\"{{linktext}}\" 未创建成功！请点击以创建。",
+			"label-source-editor": "Editor",
+			"label-source-preview": "Preview",
+			"label-source-search-backlinks": "Search and Backlinks",
+			"label-require-mod": "Require {{key}} to trigger page preview on hover"
 		},
 		"starred": {
 			"name": "星标",

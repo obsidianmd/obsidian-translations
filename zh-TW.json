@@ -28,10 +28,10 @@
 			"option-fold-heading-description": "將標題行下層所有文字都摺疊到標題行。",
 			"option-fold-indent": "摺疊縮排",
 			"option-fold-indent-description": "把相同的縮排內容（如列表）摺疊起來。",
-			"option-default-new-pane-mode": "Default new pane mode",
-			"option-default-new-pane-mode-description": "The default mode a new pane gets opened in.",
-			"option-default-new-pane-mode-source": "Editor",
-			"option-default-new-pane-mode-preview": "Preview",
+			"option-default-new-pane-mode": "預設新建面板模式",
+			"option-default-new-pane-mode-description": "新建面板預設開啟後的模式。",
+			"option-default-new-pane-mode-source": "編輯器",
+			"option-default-new-pane-mode-preview": "預覽",
 			"option-show-line-number": "顯示行號",
 			"option-show-line-number-description": "在左側顯示行號。",
 			"option-use-tabs": "使用Tab鍵縮排",
@@ -44,8 +44,8 @@
 			"option-auto-convert-html-description": "由網頁貼入或拖入時自動轉換HTML為Markdown，使用 Ctrl/Cmd+Shift+V 貼入則不轉換。",
 			"option-vim-key-bindings": "Vim鍵綁定",
 			"option-vim-key-bindings-description": "允許在編輯器中使用Vim鍵綁定。",
-			"option-emacsy-keys": "Legacy Emacs-style key bindings for macOS",
-			"option-emacsy-keys-description": "Allows you to use the additional Emacs-style navigation keys, which are standard on macOS, but may interfere with some key operations.",
+			"option-emacsy-keys": "MacOS的傳統 Emacs-style 按鍵",
+			"option-emacsy-keys-description": "允許你使用額外的 Emacs-style 方向鍵，雖是MacOS的標準，但可能干擾某些按鍵操作。",
 			"label-confirm-enable-vim": "確認進入Vim模式",
 			"label-vim-warning": "Vim模式可以快速編輯內容但其操作可能會違反直覺，若你不熟悉Vim的話，此選項可能會造成Obsidian似乎停止運作的假象。",
 			"label-vim-test": "為驗證你確實知道如何操作Vim，請輸入結束且不儲存的命令:",
@@ -158,9 +158,13 @@
 			"option-language-description": "更改介面語言。",
 			"option-insider-build": "接收內測版本",
 			"option-insider-build-description": "自動更新至內測版本以體驗最新功能。請注意，內測版本可能不太穩定。",
+			"option-advanced": "Advanced",
 			"option-hw-acceleration": "硬體加速",
 			"option-hw-acceleration-description": "開啟硬體加速，亦即使用GPU讓Obsidian能執行得更順暢。",
 			"option-hw-acceleration-warning": "若你關閉此選項，應用程式將會嚴重變慢。",
+			"option-config-location": "Override config folder",
+			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
+			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "註冊碼",
 			"label-your-commercial-license": "您的商業註冊碼是 ",
 			"label-commercial-license-info": "註冊給用戶： \"{{company}}\" - {{seats}} 。有效期至 {{expiry}}.",
@@ -286,7 +290,7 @@
 			"option-configure-toolbar": "設定行動版工具列",
 			"option-added-options": "已添加選項",
 			"option-more-options": "更多選項",
-			"option-attach": "Insert attachment"
+			"option-attach": "插入附件"
 		}
 	},
 	"editor": {
@@ -377,7 +381,7 @@
 			"delete-file": "刪除檔案",
 			"open-in-new-pane": "開啟於新面板",
 			"copy-url": "複製網址",
-			"close-current-pane": "Close current pane"
+			"close-current-pane": "關閉目前面板"
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
@@ -450,7 +454,7 @@
 		"close-other-panes": "關閉所有其他面板",
 		"toggle-left-sidebar": "摺疊/展開左側邊欄",
 		"toggle-right-sidebar": "摺疊/展開右側邊欄",
-		"toggle-default-new-pane-mode": "Toggle default new pane mode",
+		"toggle-default-new-pane-mode": "切換預設新建面板的模式",
 		"toggle-fold": "摺疊/展開當前行",
 		"fold-all": "摺疊所有標題和列表",
 		"unfold-all": "展開所有標題和列表",
@@ -656,7 +660,7 @@
 			"label-linked-mentions": "已連結本筆記的檔案",
 			"label-no-backlinks": "沒有反向連結。",
 			"label-unlinked-mentions": "未連結但提及本筆記的檔案",
-			"label-show-search": "Show search filter",
+			"label-show-search": "顯示搜尋過濾內容",
 			"label-link-button-text": "連結",
 			"tab-title": "{{displayText}} 的反向連結",
 			"label-no-unlinked-mentions": "未發現文字。",
@@ -675,7 +679,11 @@
 		"page-preview": {
 			"name": "頁面預覽",
 			"desc": "滑鼠懸停在內部連結上顯示預覽視窗。編輯模式時需按住Ctrl/Cmd鍵。",
-			"label-empty-note": "\"{{linktext}}\" 未建立成功！請點擊以建立。"
+			"label-empty-note": "\"{{linktext}}\" 未建立成功！請點擊以建立。",
+			"label-source-editor": "Editor",
+			"label-source-preview": "Preview",
+			"label-source-search-backlinks": "Search and Backlinks",
+			"label-require-mod": "Require {{key}} to trigger page preview on hover"
 		},
 		"starred": {
 			"name": "最愛標記",
@@ -878,7 +886,7 @@
 			"option-site-components": "組件",
 			"option-site-appearance": "外觀",
 			"option-site-reading-experience": "閱讀體驗",
-			"option-site-misc": "Other site settings",
+			"option-site-misc": "其他網站設定",
 			"option-site-name": "網站名稱",
 			"option-site-name-description": "發佈筆記的網站名稱，將顯示為網站的標題抬頭。",
 			"option-site-name-placeholder": "網站命名",
@@ -905,8 +913,8 @@
 			"option-readable-line-length-description": "限制每行字數，使螢幕顯示的內容減少，但使長段落更具可讀性。",
 			"option-site-password": "密碼",
 			"option-site-password-description": "以密碼限制網站的存取。",
-			"option-google-analytics": "Google Analytics tracking code",
-			"option-google-analytics-description": "Configure Google Analytics for your site. Only available for visitors from your custom domain URL. Please check with your local laws and regulations first.",
+			"option-google-analytics": "Google Analytics 追蹤程式碼",
+			"option-google-analytics-description": "為你的網站設置Google Analytics，只有透過你的自訂網址瀏覽的拜訪者才有效，請先檢查你當地的法規。",
 			"button-manage-passwords": "管理",
 			"button-save-site-settings": "儲存網站設定",
 			"msg-updated-options": "網站的已更新選項。",
