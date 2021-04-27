@@ -40,6 +40,7 @@ Components | コンポーネント
 connection | コネクション
 converter | コンバーター
 custom | カスタム
+Data loss | データ損失
 Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
@@ -61,6 +62,7 @@ heading | 見出し
 ID | ID
 image file | 画像ファイル
 indent | インデント
+indexing | インデキシング
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク 
@@ -78,10 +80,13 @@ Obsidian Publish | Obsidian Publish (サービス名のためそのまま)
 Obsidian Sync | Obsidian Sync (サービス名のためそのまま)
 Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
+OFF | オフ
+ON | オン
 page preview | ページプレビュー
 palette | パレット
 pane | ペイン
 Pane layout | ペインレイアウト
+pinned commmand | 固定コマンド
 plain text | プレーンテキスト
 plugin | プラグイン
 preview | プレビュー
@@ -142,7 +147,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 ヘルプドキュメントとUIの翻訳の際に採用したルールの一覧を載せています(このドキュメント自体にも同一のルールを適用しています)。ここに記載されていない細かいルールなどについて困った場合には[JTF(日本翻訳連盟)](https://www.jtf.jp/tips/styleguide)の翻訳スタイルガイドなどを参考にしてみてください。
 
 - スタイル全体
-  - コマンド名: コマンドパレットでの検索で引っかかりやすいように単語(特に目的語)を組み合わせ表現に一貫性を持たせる(例: 新規ノートの作成、縦方向にペインを分割)。
+  - コマンド名: コマンドパレットでの検索で引っかかりやすいように単語(特に目的語)を組み合わせて表現に一貫性を持たせる(例: 新規ノートの作成、縦方向にペインを分割)。
   - 日本語表現: 日本語の分かりやすさと読みやすさを心がける。
 - 漢字とひらがなについて
   - 常用外漢字を使用しない。
@@ -156,8 +161,10 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 	- 日付や日数などの数字には算用数字を使用する。
 	- 半角数字の前後にスペースは入れない(例: 半角スペース4文字分)。
 	- 半角文字と全角文字の間にスペースは入れない(例: カスタムURIプロトコル)。
-	- かぎ括弧、丸括弧、大括弧には半角文字を使用する。
-	- 中黒には全角文字を使用する。
+	- かぎ括弧`｢｣`、丸括弧`()`、大括弧`[]`には半角文字を使用する。
+	- 中黒には全角文字`・`を使用する。
+- 約物について
+  - 原文: `...` → 日本語: `…` に統一する(例: フォルダを入力…)。
 - インデントについて
     - 半角スペース4文字分をインデントとする。
 - 記号によって囲まれた単語について
