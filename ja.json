@@ -374,8 +374,8 @@
 		"msg-open-file-through-uri": "ファイル\"{{path}}\"を開きました。",
 		"msg-file-not-found-through-uri": "ファイル\"{{name}}\"が見つかりません。",
 		"delete-action-short-name": "削除",
-		"msg-indexing": "Obsidianが保管庫をインデキシングしています…\nこれは一度だけ実行されます。\nいくつかの機能はこれが完了するまで利用できない可能性があります。",
-		"msg-indexing-complete": "インデキシングが完了しました。",
+		"msg-indexing": "Obsidianが保管庫のインデックスを作成しています…\nこれは一度だけ実行されます。\nいくつかの機能はこれが完了するまで利用できない可能性があります。",
+		"msg-indexing-complete": "インデックス作成が完了しました。",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
 			"create-new-file": "新規ファイルを作成",
@@ -492,9 +492,9 @@
 		"toggle-bold": "選択範囲の太字を切り替える",
 		"toggle-italics": "選択範囲のイタリックを切り替える",
 		"toggle-highlight": "選択範囲のハイライトを切り替える",
-		"toggle-comments": "Toggle comments for selection",
+		"toggle-comments": "選択範囲のコメントをトグル",
 		"insert-link": "リンクを挿入",
-		"toggle-spellcheck": "Toggle spellcheck",
+		"toggle-spellcheck": "スペルチェックをトグル",
 		"delete-paragraph": "パラグラフを削除",
 		"toggle-checklist": "チェックリストの状態を切り替える",
 		"edit-file-title": "ファイルタイトルの編集",
@@ -571,8 +571,8 @@
 			"tooltip-created-time": "作成日時 {{time}}",
 			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
 			"action-move-file-short-name": "移動",
-			"label-untitled-file": "Untitled",
-			"label-untitled-folder": "Untitled",
+			"label-untitled-file": "無題のファイル",
+			"label-untitled-folder": "無題のフォルダ",
 			"msg-set-attachment-folder": "添付ファイルは今後\"{{path}}\"に保存されます。"
 		},
 		"search": {
@@ -761,7 +761,7 @@
 		},
 		"command-palette": {
 			"name": "コマンドパレット",
-			"desc": "コマンドを入力して機能を呼び出します。UIを使用したりショートカットを覚ることなくコマンドを使用できます。",
+			"desc": "コマンドを入力して機能を呼び出します。UIを使用したりショートカットを覚えることなくコマンドを使用できます。",
 			"action-open": "コマンドパレットを開く",
 			"instruction-navigate": "選択",
 			"instruction-use": "使用",

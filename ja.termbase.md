@@ -62,7 +62,7 @@ heading | 見出し
 ID | ID
 image file | 画像ファイル
 indent | インデント
-indexing | インデキシング
+indexing | インデックスを作成
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク 
