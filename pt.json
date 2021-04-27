@@ -103,6 +103,10 @@
 			"option-community-themes": "Abra os temas da comunidade",
 			"option-community-themes-description": "Visualize e use temas incríveis criados pela comunidade.",
 			"button-browse-community-themes": "Browse",
+			"option-font-size": "Font size",
+			"option-font-size-description": "Font size in pixels that affects editor and preview.",
+			"option-font-size-action": "Quick font size adjustment",
+			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Themes",
 			"option-theme": "Theme",
 			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
@@ -224,12 +228,15 @@
 			"tooltip-downloaded-times": "Downloaded {{count}} time",
 			"tooltip-downloaded-times_plural": "Downloaded {{count}} times",
 			"button-install": "Install",
+			"button-enable": "Enable",
+			"button-disable": "Disable",
 			"label-no-results-found": "No results found.",
 			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
 			"label-version": "Version: {{version}}",
 			"label-currently-installed-version": " (currently installed: {{version}})",
 			"label-by-author": "By ",
 			"label-repository": "Repository: ",
+			"label-unsupported": "This plugin does not support your device.",
 			"button-update": "Update",
 			"label-no-readme": "This plugin did not provide a README file.",
 			"msg-installing-plugin": "Installing plugin \"{{name}}\"...",
@@ -251,6 +258,9 @@
 			"msg-updates-found": "Found {{count}} plugin to update.",
 			"msg-updates-found_plural": "Found {{count}} plugins to update.",
 			"msg-update-plugin": "Update to version {{version}}",
+			"option-search-installed-plugin": "Search installed plugins",
+			"option-search-installed-plugin-description": "Filter installed plugins by name or description.",
+			"placeholder-search-installed-plugin": "Search installed plugins...",
 			"label-sort-downloads-high-to-low": "Download count (high to low)",
 			"label-sort-downloads-low-to-high": "Download count (low to high)",
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
@@ -261,6 +271,11 @@
 		},
 		"mobile-toolbar": {
 			"name": "Mobile toolbar",
+			"option-configure-quick-action": "Configure mobile Quick Action",
+			"option-configure-quick-action-description": "Configure which command to trigger when pull down from the top. The current command is set to \"{{command}}\".",
+			"button-configure": "Configure",
+			"placeholder-select-quick-action": "Select Quick Action...",
+			"manage-toolbar-options": "Manage toolbar options",
 			"option-internal-link": "Add internal link",
 			"option-internal-embed": "Add embed",
 			"option-tag": "Add tag",
@@ -289,7 +304,7 @@
 			"option-toggle-keyboard": "Toggle keyboard",
 			"option-configure-toolbar": "Configure mobile toolbar",
 			"option-added-options": "Added options",
-			"option-more-options": "More options",
+			"option-more-toolbar-options": "More toolbar options",
 			"option-attach": "Insert attachment"
 		}
 	},
@@ -359,6 +374,8 @@
 		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
 		"msg-file-not-found-through-uri": "File \"{{name}}\" not found.",
 		"delete-action-short-name": "Delete",
+		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
+		"msg-indexing-complete": "Indexing complete.",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
@@ -427,6 +444,18 @@
 			"close-window": "Close window",
 			"go-back": "Go back",
 			"go-forward": "Go forward"
+		},
+		"start-up": {
+			"loading-obsidian": "Loading Obsidian...",
+			"obsidian-load-error": "An error occurred while loading Obsidian.",
+			"button-reload-app": "Reload app",
+			"button-open-another-vault": "Open another vault",
+			"loading-components": "Loading components...",
+			"loading-plugins": "Loading plugins...",
+			"loading-vault": "Loading vault...",
+			"msg-failed-to-load-vault": "Failed to load vault: ",
+			"loading-cache": "Loading cache...",
+			"loading-workspace": "Loading workspace..."
 		}
 	},
 	"commands": {
@@ -505,6 +534,8 @@
 		"file-explorer": {
 			"name": "Explorador de arquivos",
 			"desc": "See all the files in your vault.",
+			"action-open": "Open file explorer",
+			"action-show": "Show file explorer",
 			"action-create-note": "Criar nova nota",
 			"action-create-note-in-new-pane": "Create note in new pane",
 			"action-new-note": "Nova nota",
@@ -539,7 +570,10 @@
 			"tooltip-modified-time": "Last modified at {{time}}",
 			"tooltip-created-time": "Created at {{time}}",
 			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
-			"action-move-file-short-name": "Move"
+			"action-move-file-short-name": "Move",
+			"label-untitled-file": "Untitled",
+			"label-untitled-folder": "Untitled",
+			"msg-set-attachment-folder": "Attachments will be saved to \"{{path}}\" from now on."
 		},
 		"search": {
 			"name": "Procurar",
@@ -561,6 +595,9 @@
 			"label-match-file-path": "Caminho do arquivo correspondente: ",
 			"label-match-file-name": "Nome do arquivo correspondente: ",
 			"label-match-content": "Pesquisar pelo conteudo do arquivo: ",
+			"label-match-task": "Match task: ",
+			"label-match-task-todo": "Match task (todo): ",
+			"label-match-task-done": "Match task (done): ",
 			"label-match-line": "Match line: ",
 			"label-match-tag": "Match tag: ",
 			"label-no-matches": "Nenhuma correspondência encontrada.",
@@ -656,7 +693,9 @@
 			"name": "Backlinks",
 			"desc": "Mostra o número de backlinks na barra de status.",
 			"action-open": "Abrir os backlinks que direcionam para o arquivo atual",
+			"action-show": "Show backlinks pane",
 			"action-open-for-current": "Abrir backlinks",
+			"action-toggle-backlinks-in-document": "Toggle backlinks in document",
 			"label-linked-mentions": "Menções vinculadas",
 			"label-no-backlinks": "Nenhum backlink encontrado.",
 			"label-unlinked-mentions": "Menções não-vinculadas",
@@ -669,6 +708,7 @@
 		"tag-pane": {
 			"name": "Painel de tags",
 			"desc": "Mostra todas suas tags junto com seu número de ocorrências.",
+			"action-show": "Show tag pane",
 			"label-no-tags": "Nenhuma tag encontrada.",
 			"label-sort-by-name-a-to-z": "Tag name (A to Z)",
 			"label-sort-by-name-z-to-a": "Tag name (Z to A)",
@@ -688,6 +728,7 @@
 		"starred": {
 			"name": "Favoritos",
 			"desc": "Favoritos arquivos e pesquisa frequentemente utilizados.",
+			"action-show": "Show starred pane",
 			"action-toggle": "Adicionar ou remover dos favoritos",
 			"action-toggle-search": "Adicionar ou remover dos favoritos a pesquisa atual",
 			"action-star": "Favoritar",
@@ -726,7 +767,10 @@
 			"instruction-use": "usar",
 			"instruction-dismiss": "ignorar",
 			"label-no-commands": "Nenhum comando encontrado.",
-			"prompt-type-command": "Digite um comando..."
+			"prompt-type-command": "Digite um comando...",
+			"label-pinned-commands": "Pinned commands",
+			"option-add-new-pin": "New pinned command",
+			"option-add-new-pin-description": "Pinned commands will appear at the top of all commands when no search query is present."
 		},
 		"markdown-format-importer": {
 			"name": "Importador de formato de Markdown",
@@ -804,7 +848,8 @@
 			"name": "Sumário",
 			"desc": "Mostra o sumário do arquivo atual ou do painel vinculado.",
 			"action-open": "Abrir sumário",
-			"action-open-pane": "Abrir o sumário do arquivo atual",
+			"action-show": "Show outline pane",
+			"action-open-for-current": "Open outline of the current file",
 			"tab-title": "Sumário de {{displayText}}",
 			"label-no-headings": "Título não encontrado."
 		},
@@ -893,6 +938,9 @@
 			"option-home-page-file": "Homepage file",
 			"option-home-page-file-description": "The first page the user sees when landing on your published site",
 			"option-home-page-file-placeholder": "Pick a published file",
+			"option-logo": "Logo",
+			"option-logo-description": "Pick an image file as your site logo.",
+			"option-logo-placeholder": "Any any uploaded image in your vault...",
 			"option-theme": "Theme",
 			"option-theme-description": "Choose default color scheme for your site.",
 			"option-show-navigation": "Show navigation",
@@ -1059,6 +1107,8 @@
 			"option-sync-status": "Sync status",
 			"option-sync-status-desc-paused": "Obsidian Sync is currently paused.",
 			"option-sync-status-desc-running": "Obsidian Sync is currently running.",
+			"option-device-name": "Device name",
+			"option-device-name-desc": "This name will be displayed in the sync log. Leave empty to use the default name.",
 			"button-resume": "Resume",
 			"button-pause": "Pause",
 			"option-view-deleted-files": "Deleted files",
