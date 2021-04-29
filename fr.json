@@ -17,7 +17,7 @@
 			"option-strict-line-break": "Sauts de ligne stricts",
 			"option-strict-line-break-description": "En mode aperçu, ignore les sauts de ligne selon les spécifications Markdown. Désactiver cette option pour que les sauts de ligne uniques s'affichent en mode prévisualisation.",
 			"option-show-frontmatter": "Afficher frontmatter",
-			"option-show-frontmatter-description": "En mode aperçu, affiche frontmatter en bloc de code. Désactiver pour cacher la section frontmatter.",
+			"option-show-frontmatter-description": "En mode aperçu, affiche frontmatter dans un bloc de code. Désactiver pour cacher la section frontmatter.",
 			"option-auto-pair-brackets": "Association automatique des crochets",
 			"option-auto-pair-brackets-description": "Associe automatiquement les crochets et les guillemets.",
 			"option-auto-pair-markdown": "Association automatique des syntaxes Markdown",
@@ -131,7 +131,7 @@
 			"tooltip-customize-command": "Personnaliser la commande",
 			"tooltip-hotkey-single-conflict": "Ce raccourci clavier entre en conflit avec \"{{command}}\"",
 			"tooltip-hotkey-multiple-conflicts": "Ce raccourci clavier entre en conflit avec {{count}} autres commandes",
-			"label-blank-hotkey": "Vide"
+			"label-blank-hotkey": "Non défini"
 		},
 		"about": {
 			"name": "À propos",
@@ -143,18 +143,18 @@
 			"label-unknown-version": "Inconnue",
 			"label-current-version": "Version actuelle : ",
 			"label-install-version": "(Version de l'installateur : {{version}})",
-			"label-up-to-date": "Votre application est à jour !",
+			"label-up-to-date": "Votre app est à jour !",
 			"label-read-changelog": "Lire le journal des modifications.",
 			"label-manual-install-required": "L'installation manuelle de la dernière version est requise.",
 			"label-download-link": "Télécharger ici.",
-			"label-new-version-ready": "Une nouvelle version est prête pour l'installation. ",
-			"label-relaunch-to-update": "Relancer l'application pour faire la mise à jour.",
+			"label-new-version-ready": "Une nouvelle version est prête à être installée. ",
+			"label-relaunch-to-update": "Relancer l'app pour faire la mise à jour.",
 			"label-disabled-updates": "Les mises à jour sont désactivées.",
 			"label-checking-for-updates": "Recherche des mises à jour...",
 			"button-relaunch": "Relancer",
 			"button-check-for-updates": "Rechercher les mises à jour",
 			"option-auto-update": "Mises à jour automatiques",
-			"option-auto-update-description": "Désactiver pour empêcher l'application de chercher les mises à jour.",
+			"option-auto-update-description": "Désactiver pour empêcher l'app de chercher les mises à jour.",
 			"option-open-help": "Documentation d'Obsidian",
 			"option-open-help-description": "Ouvrir la documentation d'aide.",
 			"button-open": "Ouvrir",
@@ -162,11 +162,11 @@
 			"option-language-description": "Changer la langue d'affichage.",
 			"option-insider-build": "Recevoir les pré-versions en accès anticipé (Insider)",
 			"option-insider-build-description": "Mise à jour automatique sur des versions en accès anticipé pour essayer des nouvelles fonctionnalités. Notez que ces versions peuvent être moins stables.",
-			"option-advanced": "Advanced",
+			"option-advanced": "Avancé",
 			"option-hw-acceleration": "Accélération matérielle",
 			"option-hw-acceleration-description": "Active l'accélération matérielle. Utilise votre GPU pour rendre Obsidian plus fluide.",
-			"option-hw-acceleration-warning": "Si vous désactivez cette option, les performances de l'application seront sévèrement dégradées.",
-			"option-config-location": "Remplacer le dossier de configuration",
+			"option-hw-acceleration-warning": "Si vous désactivez cette option, les performances de l'app seront sévèrement dégradées.",
+			"option-config-location": "Modifier le dossier de configuration",
 			"option-config-location-description": "Utiliser un dossier de configuration différent de celui par défaut. Doit commencer par un point.",
 			"option-config-location-warning": "L'emplacement de configuration doit être un nom de dossier valide commençant par un point.",
 			"label-license": "Licence",
@@ -233,10 +233,10 @@
 			"label-no-results-found": "Aucun resultat trouvé.",
 			"msg-failed-to-load-manifest": "Échec du chargement du manifeste du plugin.",
 			"label-version": "Version : {{version}}",
-			"label-currently-installed-version": " (actuellement installé : {{version}})",
+			"label-currently-installed-version": " (actuellement installée : {{version}})",
 			"label-by-author": "Par ",
 			"label-repository": "Dépôt : ",
-			"label-unsupported": "Ce plugin ne prend pas en charge cette appareil.",
+			"label-unsupported": "Ce plugin ne prend pas en charge cet appareil.",
 			"button-update": "Mise à jour",
 			"label-no-readme": "Ce plugin n'a pas fourni de fichier README.",
 			"msg-installing-plugin": "Installation du plugin \"{{name}}\"...",
@@ -272,7 +272,7 @@
 		"mobile-toolbar": {
 			"name": "Barre d'outils mobile",
 			"option-configure-quick-action": "Configurer les Actions Rapides",
-			"option-configure-quick-action-description": "Configurez la commande déclanchée lorsque vous tirez du haut vers le bas. La commande actuelle est \"{{command}}\".",
+			"option-configure-quick-action-description": "Configurez la commande déclanchée lorsque vous tirez du haut vers le bas. La commande actuelle est définie sur \"{{command}}\".",
 			"button-configure": "Configurer ",
 			"placeholder-select-quick-action": "Sélection de l'Action rapide...",
 			"manage-toolbar-options": "Gérer les options de la barre d'outils",
@@ -353,7 +353,7 @@
 		}
 	},
 	"interface": {
-		"embed-open-in-default-app-tooltip": "Ouvrir avec l'application par défaut",
+		"embed-open-in-default-app-tooltip": "Ouvrir avec l'app par défaut",
 		"empty-sidebar": "La barre latérale est vide, essayez de faire glisser un volet ici.",
 		"sidebar-expand": "Développer",
 		"sidebar-collapse": "Réduire",
@@ -448,7 +448,7 @@
 		"start-up": {
 			"loading-obsidian": "Chargement d'Obsidian",
 			"obsidian-load-error": "Une erreur s'est produite lors du chargement d'Obsidian.",
-			"button-reload-app": "Recharger l'application",
+			"button-reload-app": "Recharger l'app",
 			"button-open-another-vault": "Ouvrir un autre coffre",
 			"loading-components": "Chargement des composants...",
 			"loading-plugins": "Chargement des plugins...",
@@ -501,7 +501,7 @@
 		"copy-path": "Copier le chemin du fichier",
 		"copy-url": "Copier l'url Obsidian",
 		"export-pdf": "Exporter en PDF",
-		"reload": "Recharger l'application sans enregistrer"
+		"reload": "Recharger l'app sans enregistrer"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -723,7 +723,7 @@
 			"label-source-editor": "Éditeur",
 			"label-source-preview": "Aperçu",
 			"label-source-search-backlinks": "Recherche et Rétroliens",
-			"label-require-mod": "Forcer l'appuie de {{key}} pour déclencher l'aperçu de page au survol"
+			"label-require-mod": "Exiger l'appuie de {{key}} pour déclencher l'aperçu de page au survol"
 		},
 		"starred": {
 			"name": "Favoris",
@@ -770,7 +770,7 @@
 			"prompt-type-command": "Saisir une commande...",
 			"label-pinned-commands": "Commandes épinglées",
 			"option-add-new-pin": "Nouvelle commande épinglée",
-			"option-add-new-pin-description": "Les commandes épinglées apparaîtront en haut de toutes les commandes lorsqu'aucune requête de recherche n'est présente."
+			"option-add-new-pin-description": "Les commandes épinglées apparaîtront en haut de toutes les commandes lorsque aucune requête de recherche n'est présente."
 		},
 		"markdown-format-importer": {
 			"name": "Importateur depuis des fichiers Markdown",
