@@ -92,11 +92,13 @@ page preview | ページプレビュー
 palette | パレット
 pane | ペイン
 Pane layout | ペインレイアウト
-pinned commmand | 固定コマンド
+pin | ピン
+pinned command | ピン留めされたコマンド
 plain text | プレーンテキスト
 plugin | プラグイン
 preview | プレビュー
 preview mode | プレビューモード
+provider | プロバイダー
 publish change | 変更の公開
 quick switcher | クイックスイッチャー
 Reading experience | リーディングエクスペリエンス
