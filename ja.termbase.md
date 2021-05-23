@@ -42,6 +42,7 @@ catalyst | カタリスト
 Catalyst license | カタリストライセンス
 collapse | 折りたたむ
 Commercial license | 商用ライセンス
+Community plugin | コミュニティプラグイン
 Components | コンポーネント
 connection | コネクション
 converter | コンバーター
@@ -72,7 +73,7 @@ indent | インデント
 indexing | インデックスを作成
 Insider builds | インサイダービルド
 interface | インターフェース
-internal link | 内部リンク 
+internal link | 内部リンク
 konwledge base | ナレッジベース
 Landscape | 横向き
 link | リンク
@@ -115,12 +116,12 @@ snippet | スニペット
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
-today's note | 今日のノート
+today's note | 今日のデイリーノート
 unlinked mentions | リンクされていないメンション
-untitled | 無題のファイル・無題のフォルダ
+untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
 version history | バージョン履歴
-video file | 映像ファイル
+video file | 動画ファイル
 VIP | VIP
 wikilink | ウィキリンク
 
@@ -153,7 +154,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 |-|-|
 議論となる用語や気になる用語 | 用語の候補などをあげるか空白にしてください|
 
-## 日本語翻訳のスタイルガイド
+## 日本語翻訳のルールとスタイルガイド
 ヘルプドキュメントとUIの翻訳の際に採用しているルールの一覧を載せています(このドキュメント自体にも同一のルールを適用しています)。ここに記載されていない細かいルールなどについて困った場合には[JTF(日本翻訳連盟)](https://www.jtf.jp/tips/styleguide)の翻訳スタイルガイドなどを参考にしてみてください。
 
 - スタイル全体
