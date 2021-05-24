@@ -42,7 +42,7 @@
 			"option-line-wrap-description": "Zalomení dlouhých řádků, aby se vešli do okna, takže nebude třeba scrollovat zleva do prava.",
 			"option-auto-convert-html": "Automatická konverze HTML",
 			"option-auto-convert-html-description": "Automaticky konvertuje HTML do Markdownu při vkládání nebo přetažení z webových stránek. Použíjte Ctrl/Cmd+Shift+V pro vložení bez konverze.",
-			"option-vim-key-bindings": "Vim klávesové zkrtaky",
+			"option-vim-key-bindings": "Vim klávesové zkratky",
 			"option-vim-key-bindings-description": "Umožní použití Vim klávesových zkratek v zdrojovém editoru.",
 			"option-emacsy-keys": "Legacy Emacs-style key bindings for macOS",
 			"option-emacsy-keys-description": "Allows you to use the additional Emacs-style navigation keys, which are standard on macOS, but may interfere with some key operations.",
@@ -108,7 +108,7 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Motivy",
-			"option-theme": "Movit",
+			"option-theme": "Motiv",
 			"option-theme-description": "Který komunitní motiv používat. Motivy se ukládají v \"vault/.obsidian/themes/\".",
 			"option-choice-none": "Žádný",
 			"button-reload-themes": "Znovu načíst motivy",
@@ -206,7 +206,7 @@
 			"message-login-failed": "Přihlášení selhalo, zkontrolujte váš email a heslo.",
 			"label-no-account": "Nemáte účet? ",
 			"link-sign-up-now": "Zaregistrujte se",
-			"message-get-community-badges": "Kvůli komunitní odznakům, napište email na support@obsidian.md pokud ste je neobdrželi během 24 hodin po získání vaší licence.",
+			"message-get-community-badges": "Kvůli komunitní odznakům, napište email na support@obsidian.md pokud jste je neobdrželi během 24 hodin po získání vaší licence.",
 			"message-obtain-commercial-license": "Pro získání komeční licence, navštivte {{pricingPageLink}}."
 		},
 		"third-party-plugin": {
@@ -280,17 +280,13 @@
 			"option-internal-embed": "Add embed",
 			"option-tag": "Add tag",
 			"option-heading": "Toggle heading",
-			"option-bold": "Toggle bold",
-			"option-italics": "Toggle italics",
 			"option-strikethrough": "Toggle strikethrough",
 			"option-highlight": "Toggle highlight",
 			"option-code": "Toggle code",
 			"option-blockquote": "Toggle blockquote",
-			"option-comment": "Toggle comment",
 			"option-markdown-link": "Add Markdown link",
 			"option-bullet-list": "Toggle bullet list",
 			"option-numbered-list": "Toggle numbered list",
-			"option-checklist": "Toggle checklist",
 			"option-indent-list": "Indent list item",
 			"option-unindent-list": "Unindent list item",
 			"option-undo": "Undo",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "pro odmítnutís",
 			"label-no-note-create-new": "Žádné poznámky. Enter pro vytvoření nové.",
 			"prompt-type-file-name": "Napište soubor na který přepnout nebo jej vytvořit...",
-			"label-enter-to-create": "Enter pro vytvoření"
+			"label-enter-to-create": "Enter pro vytvoření",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Graf",
@@ -704,6 +703,18 @@
 			"tab-title": "Zpětné odkazy pro {{displayText}}",
 			"label-no-unlinked-mentions": "Nebyly nalezeny žádné nepropojené zmínky.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Panel tagů",

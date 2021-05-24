@@ -280,17 +280,13 @@
 			"option-internal-embed": "Tilføj indlejret",
 			"option-tag": "Tilføj tag",
 			"option-heading": "Skift overskrift",
-			"option-bold": "Skift fed",
-			"option-italics": "Skift kursiv",
 			"option-strikethrough": "Skift gennemstregning",
 			"option-highlight": "Skift fremhævet",
 			"option-code": "Skift kode",
 			"option-blockquote": "Skift blokcitat",
-			"option-comment": "Skift kommentar",
 			"option-markdown-link": "Tilføj Markdown link",
 			"option-bullet-list": "Skift punktliste",
 			"option-numbered-list": "Skift nummereret liste",
-			"option-checklist": "Skift tjekliste",
 			"option-indent-list": "Indent list item",
 			"option-unindent-list": "Fjernindryk listeelement",
 			"option-undo": "Fortryd",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "for at annullere",
 			"label-no-note-create-new": "Ingen noter fundet. Tast Enter for at oprette en ny.",
 			"prompt-type-file-name": "Skriv filnavnet du vil skifte til eller oprette...",
-			"label-enter-to-create": "Enter for at oprette"
+			"label-enter-to-create": "Enter for at oprette",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Grafvisning",
@@ -704,6 +703,18 @@
 			"tab-title": "Tilbagelinks for {{displayText}}",
 			"label-no-unlinked-mentions": "Ingen ikke-linkede omtaler fundet.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Tag panel",
