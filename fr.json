@@ -638,10 +638,10 @@
 			"instruction-dismiss": "pour annuler",
 			"label-no-note-create-new": "Aucune note trouvée. Appuyer sur Entrée pour en créer une nouvelle.",
 			"prompt-type-file-name": "Saisir le fichier vers lequel basculer ou créer...",
-			"label-enter-to-create": "Entrée pour créer",
-			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"label-enter-to-create": "Entrer pour créer le fichier",
+			"tooltip-not-created-yet": "Pas encore existant, selectionner pour créer.",
+			"option-show-existing-only": "Afficher uniquement des liens existants",
+			"option-show-existing-only-description": "Si coché, les liens vers des fichiers inexistants ne seront pas affichés."
 		},
 		"graph-view": {
 			"name": "Vue graphique",
@@ -665,7 +665,7 @@
 			"option-show-attachments": "Pièces jointes",
 			"option-show-attachments-description": "Afficher les pièces jointes incluses dans les notes",
 			"option-show-existing-files-only": "Fichiers existants uniquement",
-			"option-show-existing-files-only-description": "Si coché, les liens vers des fichiers inexistants ne sont pas affichés",
+			"option-show-existing-files-only-description": "Si coché, les liens vers des fichiers inexistants ne seront pas affichés",
 			"option-show-orphans": "Orphelins",
 			"option-show-orphans-description": "Afficher les fichiers qui ne sont liés à aucun autre fichier",
 			"label-display": "Afficher",
@@ -705,16 +705,16 @@
 			"ellipsis": "..."
 		},
 		"outgoing-links": {
-			"name": "Outgoing Links",
-			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
-			"action-open": "Open outgoing links",
-			"action-open-for-current": "Open outgoing links for the current file",
-			"tab-title": "Outgoing links from {{displayText}}",
-			"label-links": "Links",
-			"label-no-links": "No links found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"tooltip-link-file": "Link this file",
-			"tooltip-not-created": "Not created yet"
+			"name": "Liens sortants",
+			"desc": "Afficher les liens sortants et détecter des mentions non liées d'autres notes dans la note actuelle.",
+			"action-open": "Ouvrir les liens sortants",
+			"action-open-for-current": "Ouvre les liens sortants du fichier actuel",
+			"tab-title": "Liens sortants de {{displayText}}",
+			"label-links": "Liens",
+			"label-no-links": "Aucun liens trouvés.",
+			"label-unlinked-mentions": "Mention non liée",
+			"tooltip-link-file": "Lier ce fichier",
+			"tooltip-not-created": "Pas encore créé"
 		},
 		"tag-pane": {
 			"name": "Volet des tags",
@@ -776,7 +776,7 @@
 			"action-open": "Ouvrir la palette de commandes",
 			"instruction-navigate": "pour naviguer",
 			"instruction-use": "pour utiliser",
-			"instruction-dismiss": "pour rejeter",
+			"instruction-dismiss": "pour fermer",
 			"label-no-commands": "Aucune commande trouvée.",
 			"prompt-type-command": "Saisir une commande...",
 			"label-pinned-commands": "Commandes épinglées",
