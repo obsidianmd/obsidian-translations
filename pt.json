@@ -280,17 +280,13 @@
 			"option-internal-embed": "Embutir",
 			"option-tag": "Adicionar tag",
 			"option-heading": "Ativar título",
-			"option-bold": "Ativar negrito",
-			"option-italics": "Ativar itálico",
 			"option-strikethrough": "Ativar texto rasurado",
 			"option-highlight": "Ativar destaque",
 			"option-code": "Ativar código",
 			"option-blockquote": "Ativar bloco de citação",
-			"option-comment": "Ativar comentário",
 			"option-markdown-link": "Adicionar link Markdown",
 			"option-bullet-list": "Ativar lista de marcadores",
 			"option-numbered-list": "Ativar lista numerada",
-			"option-checklist": "Ativar lista de controlo",
 			"option-indent-list": "Indentar lista de items",
 			"option-unindent-list": "Reverter indentação do item da lista",
 			"option-undo": "Desfazer",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "Dispensar",
 			"label-no-note-create-new": "Nenhuma nota encontrada. Entre para criar uma nova.",
 			"prompt-type-file-name": "Digite nome de um arquivo para alternar ou criar...",
-			"label-enter-to-create": "Enter para criar"
+			"label-enter-to-create": "Enter para criar",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Visualização de diagrama de grafo",
@@ -704,6 +703,18 @@
 			"tab-title": "Backlinks para {{displayText}}",
 			"label-no-unlinked-mentions": "Nenhuma menção desvinculada encontrada.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Painel de tags",

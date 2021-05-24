@@ -280,17 +280,13 @@
 			"option-internal-embed": "添加嵌入",
 			"option-tag": "添加標籤",
 			"option-heading": "切換標題",
-			"option-bold": "切換粗體",
-			"option-italics": "切換斜體",
 			"option-strikethrough": "切換刪除線",
 			"option-highlight": "切換高亮效果",
 			"option-code": "切換程式碼",
 			"option-blockquote": "切換區塊引用",
-			"option-comment": "切換註解",
 			"option-markdown-link": "添加Markdown連結",
 			"option-bullet-list": "切換項目清單",
 			"option-numbered-list": "切換編號清單",
-			"option-checklist": "切換待辦事項狀態",
 			"option-indent-list": "內縮清單項目",
 			"option-unindent-list": "取消內縮清單項目",
 			"option-undo": "還原",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "退出",
 			"label-no-note-create-new": "未發現該筆記。按下 Enter 鍵以建立該筆記。",
 			"prompt-type-file-name": "輸入以切換或建立檔案...",
-			"label-enter-to-create": "建立該筆記"
+			"label-enter-to-create": "建立該筆記",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "關聯圖檢視",
@@ -704,6 +703,18 @@
 			"tab-title": "{{displayText}} 的反向連結",
 			"label-no-unlinked-mentions": "未發現文字。",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "標籤面板",

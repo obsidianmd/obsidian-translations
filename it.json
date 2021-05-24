@@ -280,17 +280,13 @@
 			"option-internal-embed": "Incorpora",
 			"option-tag": "Aggiungi tag",
 			"option-heading": "Imposta intestazione",
-			"option-bold": "Imposta grassetto",
-			"option-italics": "Imposta corsivo",
 			"option-strikethrough": "Imposta barrato",
 			"option-highlight": "Imposta evidenziato",
 			"option-code": "Imposta codice",
 			"option-blockquote": "Imposta citazione",
-			"option-comment": "Imposta commento",
 			"option-markdown-link": "Aggiungi link Markdown",
 			"option-bullet-list": "Imposta lista puntata",
 			"option-numbered-list": "Imposta lista numerata",
-			"option-checklist": "Imposta lista attività",
 			"option-indent-list": "Aumenta rientro lista",
 			"option-unindent-list": "Riduci rientro lista",
 			"option-undo": "Annulla",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "annulla",
 			"label-no-note-create-new": "Nessuna nota trovata. Premere Invio per crearne una nuova.",
 			"prompt-type-file-name": "Digita il file a cui passare o da creare...",
-			"label-enter-to-create": "Premi Invio per creare"
+			"label-enter-to-create": "Premi Invio per creare",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Vista grafo",
@@ -704,6 +703,18 @@
 			"tab-title": "Riferimenti a {{displayText}}",
 			"label-no-unlinked-mentions": "Nessuna menzione scollegata.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Pannello dei tag",

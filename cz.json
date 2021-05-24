@@ -280,17 +280,13 @@
 			"option-internal-embed": "Add embed",
 			"option-tag": "Add tag",
 			"option-heading": "Toggle heading",
-			"option-bold": "Toggle bold",
-			"option-italics": "Toggle italics",
 			"option-strikethrough": "Toggle strikethrough",
 			"option-highlight": "Toggle highlight",
 			"option-code": "Toggle code",
 			"option-blockquote": "Toggle blockquote",
-			"option-comment": "Toggle comment",
 			"option-markdown-link": "Add Markdown link",
 			"option-bullet-list": "Toggle bullet list",
 			"option-numbered-list": "Toggle numbered list",
-			"option-checklist": "Toggle checklist",
 			"option-indent-list": "Indent list item",
 			"option-unindent-list": "Unindent list item",
 			"option-undo": "Undo",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "pro odmítnutís",
 			"label-no-note-create-new": "Žádné poznámky. Enter pro vytvoření nové.",
 			"prompt-type-file-name": "Napište soubor na který přepnout nebo jej vytvořit...",
-			"label-enter-to-create": "Enter pro vytvoření"
+			"label-enter-to-create": "Enter pro vytvoření",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Graf",
@@ -704,6 +703,18 @@
 			"tab-title": "Zpětné odkazy pro {{displayText}}",
 			"label-no-unlinked-mentions": "Nebyly nalezeny žádné nepropojené zmínky.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Panel tagů",
