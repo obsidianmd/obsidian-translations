@@ -46,6 +46,7 @@ Community plugin | コミュニティプラグイン
 Components | コンポーネント
 connection | コネクション
 converter | コンバーター
+current note | 現在のファイル
 custom | カスタム
 Data loss | データ損失
 Default | デフォルト
@@ -90,6 +91,7 @@ Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
 OFF | オフ
 ON | オン
+outgoing link | フォワードリンク
 page preview | ページプレビュー
 palette | パレット
 pane | ペイン
