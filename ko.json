@@ -280,17 +280,13 @@
 			"option-internal-embed": "첨부 추가",
 			"option-tag": "태그 추가",
 			"option-heading": "헤더 열기/접기",
-			"option-bold": "굵은 글씨 토글",
-			"option-italics": "비스듬한 글씨 토글",
 			"option-strikethrough": "취소선 토글",
 			"option-highlight": "하이라이트 토글",
 			"option-code": "코드 토글",
 			"option-blockquote": "인용문 토글",
-			"option-comment": "댓글 토글",
 			"option-markdown-link": "마크다운 링크 추가",
 			"option-bullet-list": "불릿 목록 토글",
 			"option-numbered-list": "숫자 목록 토글",
-			"option-checklist": "체크리스트 토글",
 			"option-indent-list": "목록 들여쓰기",
 			"option-unindent-list": "목록 들여쓰기 끄기",
 			"option-undo": "되돌리기",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "닫기",
 			"label-no-note-create-new": "파일을 발견하지 못했습니다. 파일을 만들기 위해서는 엔터를 눌러주세요",
 			"prompt-type-file-name": "열거나 만들 파일 이름을 입력해주세요...",
-			"label-enter-to-create": "엔터를 눌러 파일 생성"
+			"label-enter-to-create": "엔터를 눌러 파일 생성",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "그래프 뷰",
@@ -704,6 +703,18 @@
 			"tab-title": "{{displayText}}의 백링크",
 			"label-no-unlinked-mentions": "링크가 없는 언급이 없습니다",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "태그 패널",

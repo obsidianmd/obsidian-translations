@@ -280,17 +280,13 @@
 			"option-internal-embed": "Tambahkan sematan",
 			"option-tag": "Tambahkan tag",
 			"option-heading": "Masukkan judul",
-			"option-bold": "Tebalkan teks",
-			"option-italics": "Miringkan teks",
 			"option-strikethrough": "Coret teks",
 			"option-highlight": "Sorot teks",
 			"option-code": "Masukkan kode",
 			"option-blockquote": "Tambahkan blok kutipan",
-			"option-comment": "Tambahkan komentar",
 			"option-markdown-link": "Tambahkan link Markdown",
 			"option-bullet-list": "Tambahkan daftar poin",
 			"option-numbered-list": "Tambahkan daftar angka",
-			"option-checklist": "Tambahkan daftar cek",
 			"option-indent-list": "Inden item daftar",
 			"option-unindent-list": "Balikan inden item daftar",
 			"option-undo": "Batalkan",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "untuk tutup",
 			"label-no-note-create-new": "Catatan tidak ditemukan. Enter untuk buat baru.",
 			"prompt-type-file-name": "Ketik nama file untuk beralih atau membuat...",
-			"label-enter-to-create": "Enter untuk buat"
+			"label-enter-to-create": "Enter untuk buat",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Tampilan grafik",
@@ -704,6 +703,18 @@
 			"tab-title": "Backlink pada {{displayText}}",
 			"label-no-unlinked-mentions": "Tidak ditemukan sebutan yang tidak terhubung.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Panel tag",

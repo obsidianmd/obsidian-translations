@@ -280,17 +280,13 @@
 			"option-internal-embed": "Intégrer un aperçu",
 			"option-tag": "Ajouter un tag",
 			"option-heading": "Basculer l'en-tête",
-			"option-bold": "Mettre en gras",
-			"option-italics": "Mettre en italique",
 			"option-strikethrough": "Mettre en barré",
 			"option-highlight": "Mettre en surbrillance",
 			"option-code": "Mettre en code",
 			"option-blockquote": "Mettre en bloc de citation",
-			"option-comment": "Mettre en commentaire",
 			"option-markdown-link": "Ajouter un lien Markdown",
 			"option-bullet-list": "Mettre en liste à puces",
 			"option-numbered-list": "Mettre en liste numérotée",
-			"option-checklist": "Mettre en checklist",
 			"option-indent-list": "Indenter l'item de liste",
 			"option-unindent-list": "Désindenter l'item de liste",
 			"option-undo": "Annuler",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "pour annuler",
 			"label-no-note-create-new": "Aucune note trouvée. Appuyer sur Entrée pour en créer une nouvelle.",
 			"prompt-type-file-name": "Saisir le fichier vers lequel basculer ou créer...",
-			"label-enter-to-create": "Entrée pour créer"
+			"label-enter-to-create": "Entrée pour créer",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Vue graphique",
@@ -704,6 +703,18 @@
 			"tab-title": "Rétrolien pour {{displayText}}",
 			"label-no-unlinked-mentions": "Aucune occurence non liée trouvée.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Volet des tags",
