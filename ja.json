@@ -639,9 +639,9 @@
 			"label-no-note-create-new": "ノートが見つかりません。Enterキーで新規ノートを作成します。",
 			"prompt-type-file-name": "移動/作成したいファイル名を入力…",
 			"label-enter-to-create": "Enterキーで作成",
-			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"tooltip-not-created-yet": "まだ作成されていません、作成するには選択してください",
+			"option-show-existing-only": "存在するファイルだけ表示",
+			"option-show-existing-only-description": "作成されていないファイルを表示するかどうかを決めます。"
 		},
 		"graph-view": {
 			"name": "グラフビュー",
@@ -705,16 +705,16 @@
 			"ellipsis": "…"
 		},
 		"outgoing-links": {
-			"name": "Outgoing Links",
-			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
-			"action-open": "Open outgoing links",
-			"action-open-for-current": "Open outgoing links for the current file",
-			"tab-title": "Outgoing links from {{displayText}}",
-			"label-links": "Links",
-			"label-no-links": "No links found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"tooltip-link-file": "Link this file",
-			"tooltip-not-created": "Not created yet"
+			"name": "フォワードリンク",
+			"desc": "フォワードリンクを表示し、現在のノートにある他のノートへのリンクされていないメンションを検知します。",
+			"action-open": "フォワードリンクを開く",
+			"action-open-for-current": "現在のファイルのフォワードリンクを開く",
+			"tab-title": "{{displayText}}からのフォワードリンク",
+			"label-links": "リンク",
+			"label-no-links": "リンクが見つかりません",
+			"label-unlinked-mentions": "リンクされていないメンション",
+			"tooltip-link-file": "このファイルをリンク",
+			"tooltip-not-created": "まだ作成されていません"
 		},
 		"tag-pane": {
 			"name": "タグペイン",
@@ -1143,8 +1143,8 @@
 			"option-sync-image-desc": "次の拡張子の画像ファイルを同期します: {{extensions}}",
 			"option-sync-audio": "音声を同期",
 			"option-sync-audio-desc": "次の拡張子の音声ファイルを同期します: {{extensions}}",
-			"option-sync-video": "映像を同期",
-			"option-sync-video-desc": "次の拡張子の映像ファイルを同期します: {{extensions}}",
+			"option-sync-video": "動画を同期",
+			"option-sync-video-desc": "次の拡張子の動画ファイルを同期します: {{extensions}}",
 			"option-sync-pdf": "PDFを同期",
 			"option-sync-pdf-desc": "PDFファイルを同期します。",
 			"label-sync-introduction": "Obsidian Syncはエンドツーエンド暗号化とバージョン履歴のためのアドオン同期サービスです。",
