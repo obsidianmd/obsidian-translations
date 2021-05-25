@@ -12,54 +12,54 @@ Please keep the term list **alphabetically sorted**.
 
 |-|-|
 
-alias | |
+| alias | |
 
-arrows | |
+| arrows | |
 
-auto-complete | |
+| auto-complete | |
 
-auto-complete list | |
+| auto-complete list | |
 
-backlinks | |
+| backlinks | |
 
-build | |
+| build | |
 
-cache | |
+| cache | |
 
-catalyst | |
+| catalyst | |
 
-checklist | |
+| checklist | |
 
-clipboard | |
+| clipboard | |
 
-collapse | |
+| collapse | |
 
-command palette | |
+| command palette | |
 
-converter | |
+| converter | |
 
-custom | |
+| custom | |
 
-delete | |
+| delete | |
 
-expand | |
+| expand | |
 
-fixer | |
+| fixer | |
 
-fold | |
+| fold | |
 
-frontmatter | |
+| frontmatter | |
 
-graph | |
+| graph | |
 
-heading | |
+| heading | |
 
-homepage | |
+| homepage | |
 
-ID | |
+| ID | |
 
-indent | |
+| indent | |
 
-link | |
+| link | |
 
-linked | |
+| linked | |
