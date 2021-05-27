@@ -51,6 +51,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
+| `bg` | Bulgarian | български език | 🚧 |
 | `cz` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
@@ -72,6 +73,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | русский | ✅ |
+| `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `tam` | Tamil | தமிழ் | 🚧 |
