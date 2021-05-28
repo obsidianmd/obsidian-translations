@@ -91,7 +91,7 @@ Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
 OFF | オフ
 ON | オン
-outgoing link | フォワードリンク
+outgoing link | アウトゴーイングリンク
 page preview | ページプレビュー
 palette | パレット
 pane | ペイン
@@ -115,6 +115,7 @@ selective sync | 選択的同期
 sidebar | サイドバー
 site | サイト
 snippet | スニペット
+starred pane | スターペイン
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
@@ -230,3 +231,4 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
     - label: ウィンドウの上に表示されるラベル。｢リモート保管庫の作成｣のように助詞｢の｣によって接続して体言止めにして読点を入れない。
     - msg: 通知されるメッセージ。｢~できません。｣、｢~してください。｣、｢~に成功しました。｣などの表現に統一する。
     - tootip: ボタンにホバーすると表示される。単語表現や幅を意識した短い表現にする。
+    - option- -placeholder: 入力欄に表示されるプレースホルダー。UIのボックス幅に入り切る短い表現にする。
