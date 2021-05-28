@@ -10,7 +10,7 @@ Please keep the term list **alphabetically sorted**.
 
 |Original Term| ms translation|
 |-|-|
-| alias | |
+| alias | alias |
 | arrows | |
 | auto-complete | |
 | auto-complete list | |
@@ -27,19 +27,19 @@ Please keep the term list **alphabetically sorted**.
 | delete | |
 | expand | |
 | fixer | |
-| fold | |
+| fold | Lipat |
 | frontmatter | |
-| graph | |
+| graph | graf |
 | heading | |
 | homepage | |
-| ID | |
+| ID | ID |
 | indent | |
 | link | |
 | linked | |
 | node | |
 | note | |
 | Obsidian | Obsidian (kata nama khas) |
-| Obsidian Publish | |
+| Obsidian Publish | Obsidian Publish |
 | palette | |
 | pane | |
 | plugin | |
@@ -54,10 +54,10 @@ Please keep the term list **alphabetically sorted**.
 | snippet | |
 | starred | |
 | supporter | |
-| tag | |
+| tag | tag |
 | unlink | |
 | vault | Peti Nota |
 | VIP | |
 | wikilink | |
-| workspace | |
+| workspace | Tempat kerja |
 | wrap | |
