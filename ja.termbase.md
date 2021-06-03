@@ -75,6 +75,7 @@ indexing | インデックスを作成
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク
+JavaScript flavor | JavaScriptフレーバーの
 konwledge base | ナレッジベース
 Landscape | 横向き
 link | リンク
