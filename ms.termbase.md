@@ -22,6 +22,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | catalyst | |
 | checklist | |
 | clipboard | |
+| code block | bongkah kod |
 | collapse | |
 | command palette | |
 | converter | |
@@ -32,10 +33,11 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | fold | lipat |
 | frontmatter | |
 | graph | graf |
-| heading | |
+| heading | pengepala |
 | homepage | |
 | ID | ID |
-| indent | |
+| indent | inden |
+| line break | penggal baris / pemenggalan baris |
 | link | |
 | linked | |
 | node | |
@@ -44,9 +46,9 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | Obsidian Publish | Obsidian Publish |
 | palette | |
 | pane | |
-| plugin | |
+| plugin / core plugin| plugin / plugin teras |
 | preview | |
-| page preview | |
+| page preview | pratonton halaman |
 | quick switcher | |
 | regex | |
 | screenshot | |
@@ -54,6 +56,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | sidebar | |
 | site | |
 | snippet | |
+| spell check / spell checker | semak ejaan / penyemak ejaan |
 | starred | |
 | supporter | |
 | tag | tag |
