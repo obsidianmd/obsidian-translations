@@ -6,6 +6,8 @@ In doubt, feel free to ask our amazing community their opinion on the [Discord](
 
 Please keep the term list **alphabetically sorted**.
 
+Please translate into lower case. Reserve upper case for proper nouns.
+
 ---
 
 |Original Term| ms translation|
@@ -27,7 +29,7 @@ Please keep the term list **alphabetically sorted**.
 | delete | |
 | expand | |
 | fixer | |
-| fold | Lipat |
+| fold | lipat |
 | frontmatter | |
 | graph | graf |
 | heading | |
@@ -38,7 +40,7 @@ Please keep the term list **alphabetically sorted**.
 | linked | |
 | node | |
 | note | |
-| Obsidian | Obsidian (kata nama khas) |
+| Obsidian | Obsidian |
 | Obsidian Publish | Obsidian Publish |
 | palette | |
 | pane | |
@@ -59,5 +61,5 @@ Please keep the term list **alphabetically sorted**.
 | vault | Peti Nota |
 | VIP | |
 | wikilink | |
-| workspace | Tempat kerja |
+| workspace | tempat kerja |
 | wrap | |
