@@ -210,7 +210,7 @@
 			"message-obtain-commercial-license": "商用ライセンスを取得するには、{{pricingPageLink}}を参照してください。"
 		},
 		"third-party-plugin": {
-			"name": "コミュニティ\nプラグイン",
+			"name": "コミュニティプラグイン",
 			"option-safe-mode": "セーフモード",
 			"option-safe-mode-description-on": "セーフモードはオンです。コミュニティプラグインは無効になっています。",
 			"option-safe-mode-description-off": "セーフモードはオフです。コミュニティプラグインを有効にできます。",
@@ -222,11 +222,11 @@
 			"button-keep-safe-mode": "セーフモードを有効にしておく",
 			"button-disable-safe-mode": "セーフモードを解除する",
 			"label-select-a-plugin": "プラグインを選択してインストールするか、プラグインの詳細を確認してください",
-			"placeholder-community-plugins": "コミュニティプラグインを検索…",
+			"placeholder-community-plugins": "プラグインを検索…",
 			"msg-failed-load-plugins": "コミュニティプラグインがロードできませんでした。",
 			"label-installed": "インストール済み",
-			"tooltip-downloaded-times": "{{count}} 回ダウンロードされました",
-			"tooltip-downloaded-times_plural": "{{count}} 回ダウンロードされました",
+			"tooltip-downloaded-times": "{{count}}回ダウンロードされました",
+			"tooltip-downloaded-times_plural": "{{count}}回ダウンロードされました",
 			"button-install": "インストール",
 			"button-enable": "有効化",
 			"button-disable": "無効化",
@@ -260,7 +260,7 @@
 			"msg-update-plugin": "version {{version}} にアップデートする",
 			"option-search-installed-plugin": "インストール済みのプラグインを検索",
 			"option-search-installed-plugin-description": "インストール済みのプラグインを名前や説明でフィルターします。",
-			"placeholder-search-installed-plugin": "インストール済みのプラグインを検索…",
+			"placeholder-search-installed-plugin": "プラグインを検索…",
 			"label-sort-downloads-high-to-low": "ダウンロード数 (多い順)",
 			"label-sort-downloads-low-to-high": "ダウンロード数 (少ない順)",
 			"label-sort-release-date-new-to-old": "初めてのリリース時期 (新しい順)",
@@ -398,7 +398,7 @@
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
-			"click-to-collapse": "クリックして縮小",
+			"click-to-collapse": "クリックして折りたたむ",
 			"alias": "エイリアス"
 		},
 		"start-screen": {
@@ -690,7 +690,7 @@
 		},
 		"backlinks": {
 			"name": "バックリンク",
-			"desc": "ステータスバーにバックリンクの数を表示します。",
+			"desc": "バックリンク(他のノートからのリンク)を表示し、他のノートから現在のノートへのリンクされていないメンションを検知します。また、ステータスバーにバックリンクの数を表示します。",
 			"action-open": "バックリンクを開く",
 			"action-show": "バックリンクペインを表示",
 			"action-open-for-current": "現在のファイルのバックリンクを開く",
@@ -705,11 +705,11 @@
 			"ellipsis": "…"
 		},
 		"outgoing-links": {
-			"name": "フォワードリンク",
-			"desc": "フォワードリンクを表示し、現在のノートにある他のノートへのリンクされていないメンションを検知します。",
-			"action-open": "フォワードリンクを開く",
-			"action-open-for-current": "現在のファイルのフォワードリンクを開く",
-			"tab-title": "{{displayText}}からのフォワードリンク",
+			"name": "アウトゴーイングリンク",
+			"desc": "アウトゴーイングリンク(他のノートへのリンク)を表示し、現在のノートから他のノートへのリンクされていないメンションを検知します。",
+			"action-open": "アウトゴーイングリンクを開く",
+			"action-open-for-current": "現在のファイルのアウトゴーイングリンクを開く",
+			"tab-title": "{{displayText}}からのアウトゴーイングリンク",
 			"label-links": "リンク",
 			"label-no-links": "リンクが見つかりません",
 			"label-unlinked-mentions": "リンクされていないメンション",
@@ -739,7 +739,7 @@
 		"starred": {
 			"name": "スター",
 			"desc": "よく使うファイルや検索にスターを付けます。",
-			"action-show": "スター付きのペインを表示",
+			"action-show": "スターペインを表示",
 			"action-toggle": "現在のファイルにスターを付ける/外す",
 			"action-toggle-search": "現在の検索にスターを付ける/外す",
 			"action-star": "スターを付ける",
@@ -859,7 +859,7 @@
 			"name": "アウトライン",
 			"desc": "現在のファイルやリンクされたペインのアウトラインを表示します。",
 			"action-open": "アウトラインを開く",
-			"action-show": "アウトラインペインを表示する",
+			"action-show": "アウトラインペインを表示",
 			"action-open-for-current": "現在のファイルのアウトラインを開く",
 			"tab-title": "{{displayText}}のアウトライン",
 			"label-no-headings": "見出しが見つかりません。"
@@ -948,10 +948,10 @@
 			"option-site-name-placeholder": "あなたのサイトの名称",
 			"option-home-page-file": "ホームページファイル",
 			"option-home-page-file-description": "公開サイトにアクセスした際にユーザーに表示される最初のページ。",
-			"option-home-page-file-placeholder": "公開されたファイルを選択します",
+			"option-home-page-file-placeholder": "公開ファイルを選択",
 			"option-logo": "ロゴ",
 			"option-logo-description": "サイトのロゴとして使用する画像ファイルを選択してください。",
-			"option-logo-placeholder": "保管庫にアップロードされた画像…",
+			"option-logo-placeholder": "保管庫内の画像…",
 			"option-theme": "テーマ",
 			"option-theme-description": "サイトのデフォルトの配色を選択します。",
 			"option-show-navigation": "ナビゲーションを表示",
