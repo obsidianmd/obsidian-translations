@@ -11,6 +11,7 @@ Please keep the term list **alphabetically sorted**.
 |original term|ru translation|
 |-|-|
 account|аккаунт
+attachment|вложение
 backlinks|входящие связи
 backlinks|обратные ссылки
 block|блок
@@ -21,6 +22,7 @@ command palette|палитра команд
 CSS theme|CSS-тема
 expand|развернуть
 file|заметка или файл
+file explorer|файловый менеджер
 fold|сворачивать
 folder|папка
 frontmatter|frontmatter
@@ -48,6 +50,7 @@ site|сайт
 snippet | фрагмент
 starred|избранное
 supporter|саппортер
+tag|тег
 to link|связать
 translucent|полупрозрачное
 unlink|отвязать
