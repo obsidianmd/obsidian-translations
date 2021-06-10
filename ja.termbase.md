@@ -46,7 +46,8 @@ Community plugin | コミュニティプラグイン
 Components | コンポーネント
 connection | コネクション
 converter | コンバーター
-current note | 現在のファイル
+current note | 現在のノート
+current file | 現在のファイル
 custom | カスタム
 Data loss | データ損失
 Default | デフォルト
