@@ -17,6 +17,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | auto-complete | |
 | auto-complete list | |
 | backlinks | |
+| binding | |
 | build | |
 | cache | |
 | catalyst | |
@@ -45,7 +46,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | Obsidian | Obsidian |
 | Obsidian Publish | Obsidian Publish |
 | palette | |
-| pane | |
+| pane | tetingkap |
 | plugin / core plugin| plugin / plugin teras |
 | preview | |
 | page preview | pratonton halaman |
