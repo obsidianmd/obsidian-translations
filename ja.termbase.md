@@ -35,6 +35,7 @@ audio file | 音声ファイル
 backlinks | バックリンク
 blank | ブランク
 block | ブロック
+bold | ボールド
 build | ビルド
 building block | 機能要素
 cache | キャッシュ
@@ -46,7 +47,8 @@ Community plugin | コミュニティプラグイン
 Components | コンポーネント
 connection | コネクション
 converter | コンバーター
-current note | 現在のファイル
+current file | 現在のファイル
+current note | 現在のノート
 custom | カスタム
 Data loss | データ損失
 Default | デフォルト
@@ -67,6 +69,7 @@ format | フォーマット
 frontmatter | フロントマター
 graph | グラフ
 heading | 見出し
+highlight | ハイライト
 hover | ホバー
 ID | ID
 image file | 画像ファイル
@@ -75,6 +78,8 @@ indexing | インデックスを作成
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク
+italic | イタリック
+JavaScript flavor | JavaScriptフレーバーの
 konwledge base | ナレッジベース
 Landscape | 横向き
 link | リンク
@@ -120,6 +125,7 @@ supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
+toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unlinked mentions | リンクされていないメンション
 untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
