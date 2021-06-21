@@ -280,17 +280,13 @@
 			"option-internal-embed": "Add embed",
 			"option-tag": "Add tag",
 			"option-heading": "Toggle heading",
-			"option-bold": "Toggle bold",
-			"option-italics": "Toggle italics",
 			"option-strikethrough": "Toggle strikethrough",
 			"option-highlight": "Toggle highlight",
 			"option-code": "Toggle code",
 			"option-blockquote": "Toggle blockquote",
-			"option-comment": "Toggle comment",
 			"option-markdown-link": "Add Markdown link",
 			"option-bullet-list": "Toggle bullet list",
 			"option-numbered-list": "Toggle numbered list",
-			"option-checklist": "Toggle checklist",
 			"option-indent-list": "Indent list item",
 			"option-unindent-list": "Unindent list item",
 			"option-undo": "Undo",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "to dismiss",
 			"label-no-note-create-new": "No notes found. Enter to create a new one.",
 			"prompt-type-file-name": "Type file to switch to or create...",
-			"label-enter-to-create": "Enter to create"
+			"label-enter-to-create": "Enter to create",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "Graph view",
@@ -704,6 +703,18 @@
 			"tab-title": "Backlinks for {{displayText}}",
 			"label-no-unlinked-mentions": "No unlinked mentions found.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "Tag pane",
@@ -1168,21 +1179,21 @@
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
-		"character-with-count": "{{count}} character",
-		"character-with-count_plural": "{{count}} characters",
-		"link-with-count": "{{count}} link",
-		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
-		"folder-with-count": "{{count}} folder",
-		"folder-with-count_plural": "{{count}} folders",
-		"backlink-with-count": "{{count}} backlink",
-		"backlink-with-count_plural": "{{count}} backlinks",
-		"site-with-count": "{{count}} site",
-		"site-with-count_plural": "{{count}} sites",
-		"plugin-with-count": "{{count}} plugin",
-		"plugin-with-count_plural": "{{count}} plugins"
+		"word-with-count": "{{count}} शब्द",
+		"word-with-count_plural": "{{count}} शब्द",
+		"character-with-count": "{{count}} अक्षर",
+		"character-with-count_plural": "{{count}} अक्षर",
+		"link-with-count": "{{count}} लिंक",
+		"link-with-count_plural": "{{count}} लिंक",
+		"file-with-count": "{{count}} फ़ाइल",
+		"file-with-count_plural": "{{count}} फ़ाइल",
+		"folder-with-count": "{{count}} फ़ोल्डर",
+		"folder-with-count_plural": "{{count}} फ़ोल्डर",
+		"backlink-with-count": "{{count}} बैकलिंक",
+		"backlink-with-count_plural": "{{count}} बैकलिंक",
+		"site-with-count": "{{count}} साइट",
+		"site-with-count_plural": "{{count}} साइट",
+		"plugin-with-count": "{{count}} प्लग-इन",
+		"plugin-with-count_plural": "{{count}} प्लग-इन"
 	}
 }

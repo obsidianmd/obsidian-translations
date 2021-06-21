@@ -280,17 +280,13 @@
 			"option-internal-embed": "嵌入内容",
 			"option-tag": "添加标签",
 			"option-heading": "小标题",
-			"option-bold": "加粗",
-			"option-italics": "倾斜",
 			"option-strikethrough": "添加删除线",
 			"option-highlight": "高亮",
 			"option-code": "代码块",
 			"option-blockquote": "引用",
-			"option-comment": "注释",
 			"option-markdown-link": "添加 Markdown 链接",
 			"option-bullet-list": "无序列表",
 			"option-numbered-list": "有序列表",
-			"option-checklist": "待办标签",
 			"option-indent-list": "缩进列表",
 			"option-unindent-list": "取消列表缩进",
 			"option-undo": "撤销",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "退出",
 			"label-no-note-create-new": "未发现该笔记。按下回车键以创建该笔记。",
 			"prompt-type-file-name": "输入以切换或创建文件...",
-			"label-enter-to-create": "创建该笔记"
+			"label-enter-to-create": "创建该笔记",
+			"tooltip-not-created-yet": "Not created yet, select to create",
+			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
 		},
 		"graph-view": {
 			"name": "关系图谱",
@@ -704,6 +703,18 @@
 			"tab-title": "{{displayText}} 的反向链接",
 			"label-no-unlinked-mentions": "没有笔记提到当前文件名",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Outgoing Links",
+			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
+			"action-open": "Open outgoing links",
+			"action-open-for-current": "Open outgoing links for the current file",
+			"tab-title": "Outgoing links from {{displayText}}",
+			"label-links": "Links",
+			"label-no-links": "No links found.",
+			"label-unlinked-mentions": "Unlinked mentions",
+			"tooltip-link-file": "Link this file",
+			"tooltip-not-created": "Not created yet"
 		},
 		"tag-pane": {
 			"name": "标签面板",

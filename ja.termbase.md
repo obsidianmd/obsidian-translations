@@ -35,6 +35,7 @@ audio file | 音声ファイル
 backlinks | バックリンク
 blank | ブランク
 block | ブロック
+bold | ボールド
 build | ビルド
 building block | 機能要素
 cache | キャッシュ
@@ -42,9 +43,12 @@ catalyst | カタリスト
 Catalyst license | カタリストライセンス
 collapse | 折りたたむ
 Commercial license | 商用ライセンス
+Community plugin | コミュニティプラグイン
 Components | コンポーネント
 connection | コネクション
 converter | コンバーター
+current file | 現在のファイル
+current note | 現在のノート
 custom | カスタム
 Data loss | データ損失
 Default | デフォルト
@@ -65,13 +69,17 @@ format | フォーマット
 frontmatter | フロントマター
 graph | グラフ
 heading | 見出し
+highlight | ハイライト
+hover | ホバー
 ID | ID
 image file | 画像ファイル
 indent | インデント
 indexing | インデックスを作成
 Insider builds | インサイダービルド
 interface | インターフェース
-internal link | 内部リンク 
+internal link | 内部リンク
+italic | イタリック
+JavaScript flavor | JavaScriptフレーバーの
 konwledge base | ナレッジベース
 Landscape | 横向き
 link | リンク
@@ -88,15 +96,18 @@ Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
 OFF | オフ
 ON | オン
+outgoing link | アウトゴーイングリンク
 page preview | ページプレビュー
 palette | パレット
 pane | ペイン
 Pane layout | ペインレイアウト
-pinned commmand | 固定コマンド
+pin | ピン
+pinned command | ピン留めされたコマンド
 plain text | プレーンテキスト
 plugin | プラグイン
 preview | プレビュー
 preview mode | プレビューモード
+provider | プロバイダー
 publish change | 変更の公開
 quick switcher | クイックスイッチャー
 Reading experience | リーディングエクスペリエンス
@@ -109,15 +120,17 @@ selective sync | 選択的同期
 sidebar | サイドバー
 site | サイト
 snippet | スニペット
+starred pane | スターペイン
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
-today's note | 今日のノート
+today's note | 今日のデイリーノート
+toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unlinked mentions | リンクされていないメンション
-untitled | 無題のファイル・無題のフォルダ
+untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
 version history | バージョン履歴
-video file | 映像ファイル
+video file | 動画ファイル
 VIP | VIP
 wikilink | ウィキリンク
 
@@ -150,7 +163,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 |-|-|
 議論となる用語や気になる用語 | 用語の候補などをあげるか空白にしてください|
 
-## 日本語翻訳のスタイルガイド
+## 日本語翻訳のルールとスタイルガイド
 ヘルプドキュメントとUIの翻訳の際に採用しているルールの一覧を載せています(このドキュメント自体にも同一のルールを適用しています)。ここに記載されていない細かいルールなどについて困った場合には[JTF(日本翻訳連盟)](https://www.jtf.jp/tips/styleguide)の翻訳スタイルガイドなどを参考にしてみてください。
 
 - スタイル全体
@@ -201,6 +214,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - 例: `ノート: これは説明です`。`:` の後にのみ半角スペースを挿入する。
         - `名詞: 説明` という原文の形のままにする。
         - 文になっている場合にはなるべく読点で終わらせる。
+        - `名詞: 列挙` の形の時はコロンの後の名詞はカンマで繋ぎ、ピリオドを打たない(例: `png`, `jpg`, `jpeg`, `gif`, `bmp`, `svg`)。
     - 矢印記号について
         - 半角の `←, ↓, ↑, →` を利用し、矢印の前後に半角スペースを挿入する。
 - 訳語の統一
@@ -223,3 +237,4 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
     - label: ウィンドウの上に表示されるラベル。｢リモート保管庫の作成｣のように助詞｢の｣によって接続して体言止めにして読点を入れない。
     - msg: 通知されるメッセージ。｢~できません。｣、｢~してください。｣、｢~に成功しました。｣などの表現に統一する。
     - tootip: ボタンにホバーすると表示される。単語表現や幅を意識した短い表現にする。
+    - option- -placeholder: 入力欄に表示されるプレースホルダー。UIのボックス幅に入り切る短い表現にする。

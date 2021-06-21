@@ -280,17 +280,13 @@
 			"option-internal-embed": "Incorpora",
 			"option-tag": "Aggiungi tag",
 			"option-heading": "Imposta intestazione",
-			"option-bold": "Imposta grassetto",
-			"option-italics": "Imposta corsivo",
 			"option-strikethrough": "Imposta barrato",
 			"option-highlight": "Imposta evidenziato",
 			"option-code": "Imposta codice",
 			"option-blockquote": "Imposta citazione",
-			"option-comment": "Imposta commento",
 			"option-markdown-link": "Aggiungi link Markdown",
 			"option-bullet-list": "Imposta lista puntata",
 			"option-numbered-list": "Imposta lista numerata",
-			"option-checklist": "Imposta lista attività",
 			"option-indent-list": "Aumenta rientro lista",
 			"option-unindent-list": "Riduci rientro lista",
 			"option-undo": "Annulla",
@@ -642,7 +638,10 @@
 			"instruction-dismiss": "annulla",
 			"label-no-note-create-new": "Nessuna nota trovata. Premere Invio per crearne una nuova.",
 			"prompt-type-file-name": "Digita il file a cui passare o da creare...",
-			"label-enter-to-create": "Premi Invio per creare"
+			"label-enter-to-create": "Premi Invio per creare",
+			"tooltip-not-created-yet": "Non ancora creato, seleziona per crearlo",
+			"option-show-existing-only": "Mostra solo esistenti",
+			"option-show-existing-only-description": "Indica se mostrare collegamenti a file che non sono ancora stati creati."
 		},
 		"graph-view": {
 			"name": "Vista grafo",
@@ -704,6 +703,18 @@
 			"tab-title": "Riferimenti a {{displayText}}",
 			"label-no-unlinked-mentions": "Nessuna menzione scollegata.",
 			"ellipsis": "..."
+		},
+		"outgoing-links": {
+			"name": "Collegamenti in uscita",
+			"desc": "Mostra collegamenti in uscita e rileva menzioni scollegate di altre note nella nota corrente.",
+			"action-open": "Apri collegamenti in uscita",
+			"action-open-for-current": "Apri collegamenti in uscita per il file corrente",
+			"tab-title": "Collegamenti in uscita da {{displayText}}",
+			"label-links": "Collegamenti",
+			"label-no-links": "Nessun collegamento trovato.",
+			"label-unlinked-mentions": "Menzioni scollegate",
+			"tooltip-link-file": "Collega questo file",
+			"tooltip-not-created": "Non ancora creato"
 		},
 		"tag-pane": {
 			"name": "Pannello dei tag",
