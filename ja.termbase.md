@@ -60,6 +60,7 @@ encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
 expand | 展開
 external link | 外部リンク
+extract | 抽出
 feature | 機能
 first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
 fixer | フィクサー
@@ -86,6 +87,7 @@ link | リンク
 linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
+merge | 統合
 Metadata | メタデータ
 note | ノート
 note-taking | ノートテイキング
@@ -143,6 +145,7 @@ File explorer | ファイルエクスプローラ
 File recovery | ファイルリカバリー
 Graph view | グラフビュー
 Markdown format importer | Markdownフォーマットインポーター
+Note composer | ノートコンポーザー
 Open in default app | デフォルトアプリで開く
 Outline | アウトライン
 Page preview | ページプレビュー
