@@ -158,6 +158,7 @@ Templates | テンプレート
 Word count | ワードカウント
 Workspaces | ワークスペース
 Zettelkasten prefixer | Zettelkastenプレフィクサー
+Note composer | ノートコンポーザー
 
 |Controversial term|Japanese translation|
 |-|-|
