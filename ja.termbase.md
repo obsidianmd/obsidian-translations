@@ -55,6 +55,7 @@ Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
+E-mail address | Eメールアドレス
 edit mode | 編集モード
 encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
@@ -226,6 +227,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - ｢全て｣ → ｢すべて｣に統一する。
         - ｢下さい｣ → ｢ください｣に統一する。
         - ｢既に｣ → ｢すでに｣に統一する。
+        - ｢極めて｣ → ｢きわめて｣に統一する。
         - ｢new, newly(新しい、新しく)｣ → ｢新規｣に不自然でない限り統一する(例: 新規作成、新規ノート)。
 - 特殊な表現
     - バージョンには先頭に｢v｣と付ける(例: v0.11.1)。
