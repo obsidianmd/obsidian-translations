@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "Configura strumenti mobile",
 			"option-added-options": "Opzioni aggiunte",
 			"option-more-toolbar-options": "More toolbar options",
-			"option-attach": "Inserisci allegato"
+			"option-attach": "Inserisci allegato",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "Nessuno",
 			"setting-downscale-percent": "Riduzione in percentuale",
 			"button-export-to-pdf": "Esporta in PDF"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "Elimina",
 		"msg-indexing": "Obsidian sta indicizzando il vault...\nDovrebbe accadere solo una volta.\nAlcune funzioni potrebbero non essere disponibili finché l'operazione non sarà completata.",
 		"msg-indexing-complete": "Indicizzazione completa.",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "Nessun file aperto",
 			"create-new-file": "Crea nuovo file",
@@ -394,15 +402,21 @@
 			"delete-file": "Elimina file",
 			"open-in-new-pane": "Apri in nuovo pannello",
 			"copy-url": "Copia URL",
-			"close-current-pane": "Chiudi pannello corrente"
+			"close-current-pane": "Chiudi pannello corrente",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
 			"click-to-collapse": "Clicca per comprimere",
-			"alias": "Alias"
+			"alias": "Alias",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "Versione beta",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "Apri cartella come vault",
 			"option-open-folder-as-vault-description": "Scegliere una cartella di file Markdown esistente.",
 			"option-create-vault": "Crea nuovo vault",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "Mostra/nascondi barra laterale sinistra",
 		"toggle-right-sidebar": "Mostra/nascondi barra laterale destra",
 		"toggle-default-new-pane-mode": "Cambia modalità di visualizzazione predefinita",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "Espandi/comprimi la riga corrente",
 		"fold-all": "Comprimi tutte le intestazioni e le liste",
 		"unfold-all": "Espandi tutte le intestazioni e le liste",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "Corrispondenza attività (da fare): ",
 			"label-match-task-done": "Corrispondenza attività (fatto): ",
 			"label-match-line": "Corrispondenza riga: ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "Corrispondenza tag: ",
 			"label-no-matches": "Nessun risultato trovato.",
 			"matches-with-count": "... e {{count}} altra corrispondenza.",
@@ -639,9 +656,13 @@
 			"label-no-note-create-new": "Nessuna nota trovata. Premere Invio per crearne una nuova.",
 			"prompt-type-file-name": "Digita il file a cui passare o da creare...",
 			"label-enter-to-create": "Premi Invio per creare",
-			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"tooltip-not-created-yet": "Non ancora creato, seleziona per crearlo",
+			"option-show-existing-only": "Mostra solo esistenti",
+			"option-show-existing-only-description": "Indica se mostrare collegamenti a file che non sono ancora stati creati.",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "Vista grafo",
@@ -705,16 +726,17 @@
 			"ellipsis": "..."
 		},
 		"outgoing-links": {
-			"name": "Outgoing Links",
-			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
-			"action-open": "Open outgoing links",
-			"action-open-for-current": "Open outgoing links for the current file",
-			"tab-title": "Outgoing links from {{displayText}}",
-			"label-links": "Links",
-			"label-no-links": "No links found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"tooltip-link-file": "Link this file",
-			"tooltip-not-created": "Not created yet"
+			"name": "Collegamenti in uscita",
+			"desc": "Mostra collegamenti in uscita e rileva menzioni scollegate di altre note nella nota corrente.",
+			"action-open": "Apri collegamenti in uscita",
+			"action-show": "Show outgoing links pane",
+			"action-open-for-current": "Apri collegamenti in uscita per il file corrente",
+			"tab-title": "Collegamenti in uscita da {{displayText}}",
+			"label-links": "Collegamenti",
+			"label-no-links": "Nessun collegamento trovato.",
+			"label-unlinked-mentions": "Menzioni scollegate",
+			"tooltip-link-file": "Collega questo file",
+			"tooltip-not-created": "Non ancora creato"
 		},
 		"tag-pane": {
 			"name": "Pannello dei tag",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" non è ancora stato creato. Clicca per crearlo.",
 			"label-source-editor": "Editor",
 			"label-source-preview": "Anteprima",
-			"label-source-search-backlinks": "Ricerca e riferimenti",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "Premere {{key}} per aprire l'anteprima al passaggio del mouse"
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "Modelli",
 			"desc": "Inserisci modello da una cartella di file modello.",
 			"action-insert": "Inserisci modello",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "Posizione cartella dei modelli",
 			"option-template-folder-location-description": "I file in questa cartella saranno disponibili come modelli.",
 			"option-template-date-format": "Formato data",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "Impedisce la sincronizzazione di determinate cartelle.",
 			"option-currently-excluded-folders": " Queste cartelle attualmente escluse:",
 			"button-manage-excluded-folders": "Gestisci",
-			"option-sync-images": "Sincronizza immagini",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "Sincronizza le immagini con queste estensioni: {{extensions}}.",
 			"option-sync-audio": "Sincronizza audio",
 			"option-sync-audio-desc": "Sincronizza file audio con queste estensioni: {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "Sincronizza file video con queste estensioni: {{extensions}}.",
 			"option-sync-pdf": "Sincronizza PDF",
 			"option-sync-pdf-desc": "Sincronizza i file PDF.",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Sync è un servizio aggiuntivo di Obsidian con crittografia end-to-end e cronologia delle versioni.",
 			"label-account-required": "Per iniziare a sincronizzare, effettuare il login o creare un nuovo account Obsidian.",
 			"button-sign-up": "Iscrizione",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "Nessuna istantanea trovata.",
 			"placeholder-choose-file": "Scegli un file...",
 			"label-select-file": "Selezionare un file a sinistra per visualizzare le istantanee."
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {

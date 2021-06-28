@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "設定行動版工具列",
 			"option-added-options": "已添加選項",
 			"option-more-toolbar-options": "更多工具列選項",
-			"option-attach": "插入附件"
+			"option-attach": "插入附件",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "無",
 			"setting-downscale-percent": "縮小百分比",
 			"button-export-to-pdf": "匯出成PDF"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "Delete",
 		"msg-indexing": "Obsidian正在索引你的儲存庫...\n這個動作應該只會發生一次，\n在索引完成前，可能會有部份功能無法使用。",
 		"msg-indexing-complete": "索引完成。",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
@@ -394,15 +402,21 @@
 			"delete-file": "刪除檔案",
 			"open-in-new-pane": "開啟於新面板",
 			"copy-url": "複製網址",
-			"close-current-pane": "關閉目前面板"
+			"close-current-pane": "關閉目前面板",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
 			"click-to-collapse": "點擊以摺疊",
-			"alias": "別名"
+			"alias": "別名",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "Beta版",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "開啟資料夾為儲存庫",
 			"option-open-folder-as-vault-description": "選擇已存在的Markdown檔案資料夾。",
 			"option-create-vault": "建立新的儲存庫",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "摺疊/展開左側邊欄",
 		"toggle-right-sidebar": "摺疊/展開右側邊欄",
 		"toggle-default-new-pane-mode": "切換預設新建面板的模式",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "摺疊/展開當前行",
 		"fold-all": "摺疊所有標題和列表",
 		"unfold-all": "展開所有標題和列表",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "匹配任務 (todo): ",
 			"label-match-task-done": "匹配任務 (done): ",
 			"label-match-line": "匹配行號: ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "匹配標籤: ",
 			"label-no-matches": "未找到匹配結果。",
 			"matches-with-count": "... 文中還有 {{count}} 處匹配。",
@@ -639,9 +656,13 @@
 			"label-no-note-create-new": "未發現該筆記。按下 Enter 鍵以建立該筆記。",
 			"prompt-type-file-name": "輸入以切換或建立檔案...",
 			"label-enter-to-create": "建立該筆記",
-			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"tooltip-not-created-yet": "尚未建立，請選用以建立",
+			"option-show-existing-only": "顯示已存在者",
+			"option-show-existing-only-description": "是否顯示尚未建立的檔案連結。",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "關聯圖檢視",
@@ -705,16 +726,17 @@
 			"ellipsis": "..."
 		},
 		"outgoing-links": {
-			"name": "Outgoing Links",
-			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
-			"action-open": "Open outgoing links",
-			"action-open-for-current": "Open outgoing links for the current file",
-			"tab-title": "Outgoing links from {{displayText}}",
-			"label-links": "Links",
-			"label-no-links": "No links found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"tooltip-link-file": "Link this file",
-			"tooltip-not-created": "Not created yet"
+			"name": "對外連結",
+			"desc": "顯示對外連結且偵測提及的未連結筆記。",
+			"action-open": "開啟對外連結",
+			"action-show": "Show outgoing links pane",
+			"action-open-for-current": "開啟目前檔案的對外連結",
+			"tab-title": "{{displayText}} 的對外連結",
+			"label-links": "連結",
+			"label-no-links": "未尋獲連結。",
+			"label-unlinked-mentions": "提及的未連結",
+			"tooltip-link-file": "連結到本檔案",
+			"tooltip-not-created": "尚未建立"
 		},
 		"tag-pane": {
 			"name": "標籤面板",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" 未建立成功！請點擊以建立。",
 			"label-source-editor": "編輯器",
 			"label-source-preview": "預覽",
-			"label-source-search-backlinks": "搜尋與反向連結",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "滑鼠懸停時必須按 {{key}} 才能預覽"
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "樣板",
 			"desc": "在樣板資料夾裡挑選要插入的樣板檔案。",
 			"action-insert": "插入樣板",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "樣板資料夾位置",
 			"option-template-folder-location-description": "在這個資料夾裡的所有檔案會被視為樣板檔案。",
 			"option-template-date-format": "日期格式",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "阻止特定資料夾被同步。",
 			"option-currently-excluded-folders": " 目前被排除同步的資料夾:",
 			"button-manage-excluded-folders": "管理",
-			"option-sync-images": "同步圖檔",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "使用下列副檔名以同步圖檔: {{extensions}}.",
 			"option-sync-audio": "同步音訊檔",
 			"option-sync-audio-desc": "使用下列副檔名以同步音訊檔: {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "使用下列副檔名以同步視訊檔: {{extensions}}.",
 			"option-sync-pdf": "同步PDF檔",
 			"option-sync-pdf-desc": "同步PDF檔案。",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Sync 係 Obsidian 的附加同步服務，具備點對點加密與版本歷史等功能。",
 			"label-account-required": "開始同步前，請登入或建立新的Obsidian帳號。",
 			"button-sign-up": "建立新帳號",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "找不到快照。",
 			"placeholder-choose-file": "選擇檔案...",
 			"label-select-file": "請於左側選擇檔案以檢視快照。"
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {

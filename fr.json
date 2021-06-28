@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "Configurer la barre d'outils mobile",
 			"option-added-options": "Options ajoutées",
 			"option-more-toolbar-options": "Plus d'options de barre d'outils",
-			"option-attach": "Insérer une pièce jointe"
+			"option-attach": "Insérer une pièce jointe",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "Aucune",
 			"setting-downscale-percent": "Mise à l'échelle",
 			"button-export-to-pdf": "Exporter au format PDF"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "Supprimer",
 		"msg-indexing": "Obsidian indexe votre coffre...\nTCela ne devrait se produire qu'une seule fois.\nCertaines fonctionnalités peuvent ne pas être disponibles tant que le processus n'est pas terminé.",
 		"msg-indexing-complete": "Indexation terminée.",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
 			"create-new-file": "Créer un nouveau fichier",
@@ -394,15 +402,21 @@
 			"delete-file": "Supprimer le fichier",
 			"open-in-new-pane": "Ouvrir dans un nouveau volet",
 			"copy-url": "Copier le lien",
-			"close-current-pane": "Fermer le volet actuel"
+			"close-current-pane": "Fermer le volet actuel",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
 			"click-to-collapse": "Cliquer pour réduire",
-			"alias": "Alias"
+			"alias": "Alias",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "Version bêta",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "Ouvrir un coffre",
 			"option-open-folder-as-vault-description": "Ouvre un dossier Obsidian existant.",
 			"option-create-vault": "Créer un nouveau coffre",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "Basculer la barre latérale gauche",
 		"toggle-right-sidebar": "Basculer la barre latérale droite",
 		"toggle-default-new-pane-mode": "Toggle default new pane mode",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "Basculer le pli sur la ligne actuelle",
 		"fold-all": "Plier tous les titres et listes",
 		"unfold-all": "Déplier tous les titres et listes",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "Correspond à la tâche (à faire) : ",
 			"label-match-task-done": "Correspond à la tâche (fait) : ",
 			"label-match-line": "Correspond à la ligne : ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "Correspond au tag : ",
 			"label-no-matches": "Aucun résultat.",
 			"matches-with-count": "... et {{count}} autre résultat.",
@@ -638,10 +655,14 @@
 			"instruction-dismiss": "pour annuler",
 			"label-no-note-create-new": "Aucune note trouvée. Appuyer sur Entrée pour en créer une nouvelle.",
 			"prompt-type-file-name": "Saisir le fichier vers lequel basculer ou créer...",
-			"label-enter-to-create": "Entrée pour créer",
-			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"label-enter-to-create": "Entrer pour créer le fichier",
+			"tooltip-not-created-yet": "Pas encore existant, selectionner pour créer.",
+			"option-show-existing-only": "Afficher uniquement des liens existants",
+			"option-show-existing-only-description": "Si coché, les liens vers des fichiers inexistants ne seront pas affichés.",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "Vue graphique",
@@ -665,7 +686,7 @@
 			"option-show-attachments": "Pièces jointes",
 			"option-show-attachments-description": "Afficher les pièces jointes incluses dans les notes",
 			"option-show-existing-files-only": "Fichiers existants uniquement",
-			"option-show-existing-files-only-description": "Si coché, les liens vers des fichiers inexistants ne sont pas affichés",
+			"option-show-existing-files-only-description": "Si coché, les liens vers des fichiers inexistants ne seront pas affichés",
 			"option-show-orphans": "Orphelins",
 			"option-show-orphans-description": "Afficher les fichiers qui ne sont liés à aucun autre fichier",
 			"label-display": "Afficher",
@@ -705,16 +726,17 @@
 			"ellipsis": "..."
 		},
 		"outgoing-links": {
-			"name": "Outgoing Links",
-			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
-			"action-open": "Open outgoing links",
-			"action-open-for-current": "Open outgoing links for the current file",
-			"tab-title": "Outgoing links from {{displayText}}",
-			"label-links": "Links",
-			"label-no-links": "No links found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"tooltip-link-file": "Link this file",
-			"tooltip-not-created": "Not created yet"
+			"name": "Liens sortants",
+			"desc": "Afficher les liens sortants et détecter des mentions non liées d'autres notes dans la note actuelle.",
+			"action-open": "Ouvrir les liens sortants",
+			"action-show": "Show outgoing links pane",
+			"action-open-for-current": "Ouvre les liens sortants du fichier actuel",
+			"tab-title": "Liens sortants de {{displayText}}",
+			"label-links": "Liens",
+			"label-no-links": "Aucun liens trouvés.",
+			"label-unlinked-mentions": "Mention non liée",
+			"tooltip-link-file": "Lier ce fichier",
+			"tooltip-not-created": "Pas encore créé"
 		},
 		"tag-pane": {
 			"name": "Volet des tags",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" n'est pas encore créé. Cliquer pour créer.",
 			"label-source-editor": "Éditeur",
 			"label-source-preview": "Aperçu",
-			"label-source-search-backlinks": "Recherche et Rétroliens",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "Exiger l'appuie de {{key}} pour déclencher l'aperçu de page au survol"
 		},
 		"starred": {
@@ -776,7 +798,7 @@
 			"action-open": "Ouvrir la palette de commandes",
 			"instruction-navigate": "pour naviguer",
 			"instruction-use": "pour utiliser",
-			"instruction-dismiss": "pour rejeter",
+			"instruction-dismiss": "pour fermer",
 			"label-no-commands": "Aucune commande trouvée.",
 			"prompt-type-command": "Saisir une commande...",
 			"label-pinned-commands": "Commandes épinglées",
@@ -893,6 +915,8 @@
 			"name": "Modèles",
 			"desc": "Insérer le contenu d'un modèle à partir d'un dossier de fichiers de modèles.",
 			"action-insert": "Insérer le modèle",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "Emmplacement du dossier modèle",
 			"option-template-folder-location-description": "Les fichiers dans ce dossier seront disponibles en modèles.",
 			"option-template-date-format": "Format de date",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "Empêcher la synchronisation de certains dossiers.",
 			"option-currently-excluded-folders": " Ces dossiers actuellement exclus :",
 			"button-manage-excluded-folders": "Gérer",
-			"option-sync-images": "Synchronisation des images",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "Synchroniser les fichiers image avec ces extensions : {{extensions}}.",
 			"option-sync-audio": "Synchronisation des audios",
 			"option-sync-audio-desc": "Synchronisez les fichiers audio avec ces extensions : {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "Synchroniser les fichiers vidéo avec ces extensions : {{extensions}}.",
 			"option-sync-pdf": "Synchronisation des PDFs",
 			"option-sync-pdf-desc": "Synchronisez les fichiers PDF.",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Sync est le service de synchronisation complémentaire d'Obsidian avec chiffrement de bout en bout et historique des versions.",
 			"label-account-required": "Pour démarrer la synchronisation, veuillez vous connecter ou créer un nouveau compte Obsidian.",
 			"button-sign-up": "S'inscrire",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "Aucun instantané trouvé.",
 			"placeholder-choose-file": "Choisir un fichier...",
 			"label-select-file": "Sélectionner un fichier sur la gauche pour en afficher les instantanés."
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {
