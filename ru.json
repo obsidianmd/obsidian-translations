@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "Настройка инструментария",
 			"option-added-options": "Добавленные опции",
 			"option-more-toolbar-options": "Другие настройки",
-			"option-attach": "Вложение"
+			"option-attach": "Вложение",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "Без отступа",
 			"setting-downscale-percent": "Масштабирование",
 			"button-export-to-pdf": "Экспорт в PDF"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "Удалить",
 		"msg-indexing": "Obsidian индексирует хранилище...\nЭто должно произойти лишь единожды.\nНекоторый функционал может быть недоступен пока процесс не закончен.",
 		"msg-indexing-complete": "Индексация завершена.",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
@@ -394,15 +402,21 @@
 			"delete-file": "Удалить файл",
 			"open-in-new-pane": "Открыть в новой области",
 			"copy-url": "Скопировать url",
-			"close-current-pane": "Закрыть текущую область"
+			"close-current-pane": "Закрыть текущую область",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
 			"click-to-collapse": "Свернуть",
-			"alias": "Псевдоним"
+			"alias": "Псевдоним",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "Бета-версия",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "Открыть папку как хранилище",
 			"option-open-folder-as-vault-description": "Выберите папку, содержащую Markdown-файлы.",
 			"option-create-vault": "Создать новое хранилище",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "Свернуть/развернуть левую панель",
 		"toggle-right-sidebar": "Свернуть/развернуть правую панель",
 		"toggle-default-new-pane-mode": "Поменять исходный режим новой области редактор/просмотр",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "Свернуть/развернуть текущий заголовок/список",
 		"fold-all": "Свернуть все заголовки и списки",
 		"unfold-all": "Развернуть все заголовки и списки",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "Совпадает с незавершенной задачей: ",
 			"label-match-task-done": "Совпадает с завершенной задачей: ",
 			"label-match-line": "Совпадение в строке: ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "Совпадает с тегом: ",
 			"label-no-matches": "Совпадений не найдено.",
 			"matches-with-count": "... и еще {{count}} совпадения.",
@@ -641,7 +658,11 @@
 			"label-enter-to-create": "Нажмите Enter для создания",
 			"tooltip-not-created-yet": "Пока не создан, выберите для создания",
 			"option-show-existing-only": "Отображать только существующие файлы",
-			"option-show-existing-only-description": "Отображать ли ссылки на файлы, которые пока не созданы."
+			"option-show-existing-only-description": "Отображать ли ссылки на файлы, которые пока не созданы.",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "Граф",
@@ -708,6 +729,7 @@
 			"name": "Исходящие ссылки",
 			"desc": "Показывает исходящие ссылки и обнаруживает в заметке упоминания, не связанные с другими заметками.",
 			"action-open": "Открыть исходящие ссылки",
+			"action-show": "Show outgoing links pane",
 			"action-open-for-current": "Открыть исходящие ссылки для текущего файла",
 			"tab-title": "Исходящие ссылки из {{displayText}}",
 			"label-links": "Ссылки",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" еще не создана. Нажмите, чтобы создать.",
 			"label-source-editor": "Редактор",
 			"label-source-preview": "Просмотр",
-			"label-source-search-backlinks": "Поиск и Обратные ссылки",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "Требуется нажать {{key}} для предварительного просмотра заметки при наведении курсора"
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "Шаблоны",
 			"desc": "Вставить содержимое шаблона из папки шаблонных файлов.",
 			"action-insert": "Вставить шаблон",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "Путь к папке с шаблонами",
 			"option-template-folder-location-description": "Файлы из этой папки будут доступны как шаблоны.",
 			"option-template-date-format": "Формат даты",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "Выберите папки, которые не будут синхронизированы.",
 			"option-currently-excluded-folders": " Текущий список исключений:",
 			"button-manage-excluded-folders": "Настроить",
-			"option-sync-images": "Изображения",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "Поддерживаемые расширения изображений: {{extensions}}.",
 			"option-sync-audio": "Аудио",
 			"option-sync-audio-desc": "Поддерживаемые расширения аудио: {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "Поддерживаемые расширения видео: {{extensions}}.",
 			"option-sync-pdf": "PDF",
 			"option-sync-pdf-desc": "Синхронизировать PDF-файлы.",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Sync — сервис для синхронизации хранилищ с поддержкой сквозного шифрования и версионности.",
 			"label-account-required": "Войдите или создайте аккаунт, чтобы начать пользоваться синхронизацией.",
 			"button-sign-up": "Зарегистрироваться",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "Снимки не найдены.",
 			"placeholder-choose-file": "Выберите файл...",
 			"label-select-file": "Пожалуйста выберите файл снимка слева для просмотра его содержимого."
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {

@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "모바일 툴바 설정",
 			"option-added-options": "추가된 옵션",
 			"option-more-toolbar-options": "툴바 옵션 더보기",
-			"option-attach": "첨부파일 입력하기"
+			"option-attach": "첨부파일 입력하기",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "없음",
 			"setting-downscale-percent": "축소 %",
 			"button-export-to-pdf": "PDF로 변환"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "삭제하기",
 		"msg-indexing": "Obsidian이 Vault를 인덱싱하는 중입니다...\n초기에 일회성으로 해당 작업이 필요합니다.\n해당 작업이 완료되기 이전까지 몇가지 기능을 사용할 수 없을 수 있습니다.",
 		"msg-indexing-complete": "인덱싱이 완료되었습니다.",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "열려있는 파일이 없습니다.",
 			"create-new-file": "새 파일 만들기",
@@ -394,15 +402,21 @@
 			"delete-file": "파일 삭제",
 			"open-in-new-pane": "새로운 패널에 열기",
 			"copy-url": "url 복사",
-			"close-current-pane": "현재 패널 닫기"
+			"close-current-pane": "현재 패널 닫기",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
 			"click-to-collapse": "클릭해서 접기",
-			"alias": "별명"
+			"alias": "별명",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "베타 버전",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "폴더를 보관함으로 열기",
 			"option-open-folder-as-vault-description": "마크다운 파일이 있는 폴더 고르기.",
 			"option-create-vault": "새로운 보관함 만들기",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "왼쪽 사이드바 열기/닫기",
 		"toggle-right-sidebar": "오른쪽 사이드바 열기/닫기",
 		"toggle-default-new-pane-mode": "기본 새 패널 모드 토글",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "현재 줄 펴기/접기",
 		"fold-all": "모든 헤더/리스트 접기",
 		"unfold-all": "모든 헤더/리스트 펴기",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "테스크 매치 (todo): ",
 			"label-match-task-done": "테스크 매치 (done): ",
 			"label-match-line": "줄 겁색:",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "태그 검색: ",
 			"label-no-matches": "검색 결과가 없습니다.",
 			"matches-with-count": "... 그리고 {{count}}개 더.",
@@ -641,7 +658,11 @@
 			"label-enter-to-create": "엔터를 눌러 파일 생성",
 			"tooltip-not-created-yet": "Not created yet, select to create",
 			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created.",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "그래프 뷰",
@@ -708,6 +729,7 @@
 			"name": "Outgoing Links",
 			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
 			"action-open": "Open outgoing links",
+			"action-show": "Show outgoing links pane",
 			"action-open-for-current": "Open outgoing links for the current file",
 			"tab-title": "Outgoing links from {{displayText}}",
 			"label-links": "Links",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\"의 파일이 아직 없습니다. 클릭해서 만들어주세요.",
 			"label-source-editor": "편집기",
 			"label-source-preview": "미리보기",
-			"label-source-search-backlinks": "검색 과 백링크",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "마우스를 올렸을 때 페이지 미리보기를 위해서는 {{key}}가 필요합니다."
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "템플릿",
 			"desc": "템플릿 폴더에서 템플릿 파일을 가져와서 사용합니다",
 			"action-insert": "템플릿 삽입",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "템플릿 폴더 경로",
 			"option-template-folder-location-description": "이 폴더에 있는 파일들은 템플릿으로 사용이 가능해집니다.",
 			"option-template-date-format": "날짜 서식",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "특정 폴더들이 동기화되는 것을 막습니다.",
 			"option-currently-excluded-folders": "현재 동기화에서 제외된 폴더들:",
 			"button-manage-excluded-folders": "관리",
-			"option-sync-images": "이미지 동기화",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "다음의 파일 확장자를 가진 이미지들을 연동합니다: {{extensions}}.",
 			"option-sync-audio": "오디오 동기화",
 			"option-sync-audio-desc": "다음의 파일 확장자를 가진 오디오들을 연동합니다: {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "다음의 파일 확장자를 가진 비디오들을 연동합니다: {{extensions}}.",
 			"option-sync-pdf": "PDF 동기화",
 			"option-sync-pdf-desc": "모든 PDF 파일 동기화.",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Sync는 종단 간 암호화와 버전 기록을 제공하는 Obsidian의 동기화 서비스입니다.",
 			"label-account-required": "동기화를 시작하시려면 로그인을 하거나 Obsidian 계정을 만들어주세요.",
 			"button-sign-up": "회원가입",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "스냅샷이 없습니다.",
 			"placeholder-choose-file": "파일 찾기...",
 			"label-select-file": "보고 싶으신 스냅샷을 왼쪽에서 골라주세요."
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {

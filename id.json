@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "Atur toolbar seluler",
 			"option-added-options": "Opsi yang ditambahkan",
 			"option-more-toolbar-options": "Opsi toolbar lainnya",
-			"option-attach": "Sisipkan lampiran"
+			"option-attach": "Sisipkan lampiran",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "Tidak ada",
 			"setting-downscale-percent": "Downscale percent",
 			"button-export-to-pdf": "Ekspor ke PDF"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "Hapus",
 		"msg-indexing": "Obsidian sedang mengindeks vault Anda...\nIni hanya dilakukan sekali.\nBeberapa fungsi mungkin tidak tersedia hingga ini selesai.",
 		"msg-indexing-complete": "Mengindeks selesai.",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
@@ -394,15 +402,21 @@
 			"delete-file": "Hapus file",
 			"open-in-new-pane": "Buka di panel baru",
 			"copy-url": "Salin url",
-			"close-current-pane": "Close current pane"
+			"close-current-pane": "Close current pane",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
 			"click-to-collapse": "Klik untuk ciutkan",
-			"alias": "Alias"
+			"alias": "Alias",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "Versi beta",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "Buka folder sebagai vault",
 			"option-open-folder-as-vault-description": "Pilih folder berisikan file Markdown.",
 			"option-create-vault": "Buat vault baru",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "Buka/Tutup bilah sisi kiri",
 		"toggle-right-sidebar": "Buka/Tutup bilah sisi kanan",
 		"toggle-default-new-pane-mode": "Ubah mode default panel baru",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "Lipat/Bentangkan baris teks",
 		"fold-all": "Lipat semua judul dan daftar",
 		"unfold-all": "Bentangkan semua judul dan daftar",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "Cocokan tugas (mengerjakan): ",
 			"label-match-task-done": "Cocokan tugas (selesai): ",
 			"label-match-line": "Cocokan baris: ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "Cocokkan tag: ",
 			"label-no-matches": "Tidak ditemukan kecocokan.",
 			"matches-with-count": "... dan {{count}} kecocokan.",
@@ -641,7 +658,11 @@
 			"label-enter-to-create": "Enter untuk buat",
 			"tooltip-not-created-yet": "Belum dibuat, pilih untuk buat",
 			"option-show-existing-only": "Tampilkan yang ada saja",
-			"option-show-existing-only-description": "Apakah menampilkan link ke file yang belum dibuat."
+			"option-show-existing-only-description": "Apakah menampilkan link ke file yang belum dibuat.",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "Tampilan grafik",
@@ -708,6 +729,7 @@
 			"name": "Link Keluar",
 			"desc": "Tampilkan link keluar dan deteksi sebutan yang belum terhubung dari catatan lain di catatan sekarang.",
 			"action-open": "Buka link keluar",
+			"action-show": "Show outgoing links pane",
 			"action-open-for-current": "Buka link keluar untuk file sekarang",
 			"tab-title": "Link keluar dari {{displayText}}",
 			"label-links": "Link",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" belum dibuat. Klik untuk buat.",
 			"label-source-editor": "Editor",
 			"label-source-preview": "Pratinjau",
-			"label-source-search-backlinks": "Pencarian dan Backlink",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "Membutuhkan {{key}} untuk memicu pratinjau halaman saat kursor di atasnya"
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "Template",
 			"desc": "Masukkan konten template dari folder file template.",
 			"action-insert": "Masukkan template",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "Lokasi folder template",
 			"option-template-folder-location-description": "File-file dalam folder ini akan tersedia sebagai template.",
 			"option-template-date-format": "Format tanggal",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "Cegah folder tertentu dari sinkronisasi.",
 			"option-currently-excluded-folders": " Folder ini sekarang dikecualikan:",
 			"button-manage-excluded-folders": "Kelola",
-			"option-sync-images": "Sinkronisasi gambar",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "Sinkronkan file gambar dengan ekstensi ini: {{extensions}}.",
 			"option-sync-audio": "Sinkronisasi audio",
 			"option-sync-audio-desc": "Sinkronkan file audio dengan ekstensi ini: {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "Sync video files with these extensions: {{extensions}}.",
 			"option-sync-pdf": "Sinkronisasi PDFs",
 			"option-sync-pdf-desc": "Sinkronkan file PDF.",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Sync adalah layanan sinkronisasi add-on Obsidian dengan enkripsi ujung-ke-ujung dan riwayat versi.",
 			"label-account-required": "Untuk mulai sinkronisasi, masuk atau buat akun Obsidian.",
 			"button-sign-up": "Daftar",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "Tidak ditemukan snapshot.",
 			"placeholder-choose-file": "Pilih file...",
 			"label-select-file": "Pilih file di sebelah kiri untuk melihat snapshot."
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {
