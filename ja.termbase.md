@@ -35,6 +35,7 @@ audio file | 音声ファイル
 backlinks | バックリンク
 blank | ブランク
 block | ブロック
+bold | ボールド
 build | ビルド
 building block | 機能要素
 cache | キャッシュ
@@ -46,18 +47,21 @@ Community plugin | コミュニティプラグイン
 Components | コンポーネント
 connection | コネクション
 converter | コンバーター
-current note | 現在のファイル
+current file | 現在のファイル
+current note | 現在のノート
 custom | カスタム
 Data loss | データ損失
 Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
+E-mail address | Eメールアドレス
 edit mode | 編集モード
 encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
 expand | 展開
 external link | 外部リンク
+extract | 抽出
 feature | 機能
 first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
 fixer | フィクサー
@@ -67,6 +71,7 @@ format | フォーマット
 frontmatter | フロントマター
 graph | グラフ
 heading | 見出し
+highlight | ハイライト
 hover | ホバー
 ID | ID
 image file | 画像ファイル
@@ -75,12 +80,15 @@ indexing | インデックスを作成
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク
+italic | イタリック
+JavaScript flavor | JavaScriptフレーバーの
 konwledge base | ナレッジベース
 Landscape | 横向き
 link | リンク
 linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
+merge | 統合
 Metadata | メタデータ
 note | ノート
 note-taking | ノートテイキング
@@ -91,7 +99,7 @@ Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
 OFF | オフ
 ON | オン
-outgoing link | フォワードリンク
+outgoing link | アウトゴーイングリンク
 page preview | ページプレビュー
 palette | パレット
 pane | ペイン
@@ -115,10 +123,12 @@ selective sync | 選択的同期
 sidebar | サイドバー
 site | サイト
 snippet | スニペット
+starred pane | スターペイン
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
+toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unlinked mentions | リンクされていないメンション
 untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
@@ -136,6 +146,7 @@ File explorer | ファイルエクスプローラ
 File recovery | ファイルリカバリー
 Graph view | グラフビュー
 Markdown format importer | Markdownフォーマットインポーター
+Note composer | ノートコンポーザー
 Open in default app | デフォルトアプリで開く
 Outline | アウトライン
 Page preview | ページプレビュー
@@ -216,6 +227,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - ｢全て｣ → ｢すべて｣に統一する。
         - ｢下さい｣ → ｢ください｣に統一する。
         - ｢既に｣ → ｢すでに｣に統一する。
+        - ｢極めて｣ → ｢きわめて｣に統一する。
         - ｢new, newly(新しい、新しく)｣ → ｢新規｣に不自然でない限り統一する(例: 新規作成、新規ノート)。
 - 特殊な表現
     - バージョンには先頭に｢v｣と付ける(例: v0.11.1)。
@@ -230,3 +242,4 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
     - label: ウィンドウの上に表示されるラベル。｢リモート保管庫の作成｣のように助詞｢の｣によって接続して体言止めにして読点を入れない。
     - msg: 通知されるメッセージ。｢~できません。｣、｢~してください。｣、｢~に成功しました。｣などの表現に統一する。
     - tootip: ボタンにホバーすると表示される。単語表現や幅を意識した短い表現にする。
+    - option- -placeholder: 入力欄に表示されるプレースホルダー。UIのボックス幅に入り切る短い表現にする。

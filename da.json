@@ -166,7 +166,7 @@
 			"option-hw-acceleration": "Hardware Acceleration",
 			"option-hw-acceleration-description": "Aktiverer hardware acceleration, som benytter din GPU for at øge Obsidians ydeevne.",
 			"option-hw-acceleration-warning": "Hvis du deaktiverer hardware acceleration vil ydeevnen blive alvorligt forringet.",
-			"option-config-location": "Tilsidesæt configurationsmappe",
+			"option-config-location": "Tilsidesæt konfigurationsmappe",
 			"option-config-location-description": "Benyt en anden konfigurationsmappe end standard mappen. Mappenavnet skal bengynde med et punktum.",
 			"option-config-location-warning": "Konfigurationsmappen skal være et gyldigt mappenavn, som begynder med et punktum.",
 			"label-license": "Licens",
@@ -300,8 +300,10 @@
 			"option-toggle-keyboard": "Skift tastatur",
 			"option-configure-toolbar": "Konfigurer mobil værktøjslinje",
 			"option-added-options": "Tilføjede indstillinger",
-			"option-more-toolbar-options": "Flere værktøjlinje indstillinger",
-			"option-attach": "Indsæt vedhæftning"
+			"option-more-toolbar-options": "Flere værktøjslinje indstillinger",
+			"option-attach": "Indsæt vedhæftning",
+			"option-add-command": "Tilføj global kommando",
+			"option-add-command-description": "Vælg enhver global kommando og tilføj til værktøjslinjen."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "Ingen",
 			"setting-downscale-percent": "Nedskaleringsprocent",
 			"button-export-to-pdf": "Eksporter til PDF"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Følg link",
+			"tooltip-open-link": "Åben link",
+			"tooltip-search-tag": "Søg tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "Slet",
 		"msg-indexing": "Obsidian indekserer din boks...\nDet bør kun ske én gang.\nNogle funktioner er muligvis ikke tilgængelige indtil indekseringen er færdig.",
 		"msg-indexing-complete": "Indeksering færdig.",
+		"label-enter-to-create": "Tryk Enter for at oprette",
 		"empty-state": {
 			"no-file-open": "Ingen fil er åben",
 			"create-new-file": "Opret ny fil",
@@ -394,15 +402,21 @@
 			"delete-file": "Slet fil",
 			"open-in-new-pane": "Åben i ny panel",
 			"copy-url": "Kopier url",
-			"close-current-pane": "Luk nuværende panel"
+			"close-current-pane": "Luk nuværende panel",
+			"copy": "Kopier",
+			"cut": "Klip",
+			"paste": "Indsæt",
+			"paste-as-plain-text": "Indsæt som almindelig tekst",
+			"select-all": "Vælg alt"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik for at udvide",
 			"click-to-collapse": "Klik for at skjule",
-			"alias": "Alias"
+			"alias": "Alias",
+			"not-created-yet": "Ikke oprettet endnu, vælg for at oprette"
 		},
 		"start-screen": {
-			"label-beta-version": "Beta version",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "Åben mappe som boks",
 			"option-open-folder-as-vault-description": "Vælg en eksisterende mappe med Markdown filer.",
 			"option-create-vault": "Opret ny boks",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "Slå venstre sidebjælke til og fra",
 		"toggle-right-sidebar": "Slå højre sidebjælke til og fra",
 		"toggle-default-new-pane-mode": "Toggle default new pane mode",
+		"focus-editor": "Fokus på editor",
 		"toggle-fold": "Slå foldning på den nuværende linje til og fra",
 		"fold-all": "Fold alle overskrifter og lister",
 		"unfold-all": "Udfold alle overskrifter og lister",
@@ -591,10 +606,12 @@
 			"label-match-file-path": "Matcher fil sti: ",
 			"label-match-file-name": "Matcher fil navn: ",
 			"label-match-content": "Matcher fil indhold: ",
-			"label-match-task": "Match opgave: ",
-			"label-match-task-todo": "Match opgave (skal gøres): ",
-			"label-match-task-done": "Match opgave (færdig): ",
+			"label-match-task": "Matcher opgave: ",
+			"label-match-task-todo": "Matcher opgave (skal gøres): ",
+			"label-match-task-done": "Matcher opgave (færdig): ",
 			"label-match-line": "Matcher linje: ",
+			"label-match-block": "Matcher blok: ",
+			"label-match-section": "Matcher sektion: ",
 			"label-match-tag": "Matcher tag: ",
 			"label-no-matches": "Ingen matcher fundet.",
 			"matches-with-count": "... og {{count}} mere match.",
@@ -641,7 +658,11 @@
 			"label-enter-to-create": "Tast Enter for at oprette",
 			"tooltip-not-created-yet": "Ikke oprettet endnu, vælg for at oprette",
 			"option-show-existing-only": "Vis kun eksisterende",
-			"option-show-existing-only-description": "Om der skal vises links til filer som endnu ikke er oprettet."
+			"option-show-existing-only-description": "Om der skal vises links til filer som endnu ikke er oprettet.",
+			"option-show-attachments": "Vis vedhæftninger",
+			"option-show-attachments-desc": "Viser vedhæftede filer, som f.eks. billeder, videoer, og PDFer.",
+			"option-show-all-file-types": "Vis alle filtyper",
+			"option-show-all-file-types-desc": "Viser alle filtyper inklusiv dem, som Obsidian ikke kan åbne. Filen vil blive åbnet med standard app'en for den fil type."
 		},
 		"graph-view": {
 			"name": "Grafvisning",
@@ -708,6 +729,7 @@
 			"name": "Udgående Links",
 			"desc": "Vis udgående links og find ikke-linkede omtaler fra andre noter i nuværende note.",
 			"action-open": "Åben udgående links",
+			"action-show": "Vis udgående links panel",
 			"action-open-for-current": "Åben udgående links for nuværende fil",
 			"tab-title": "Udgående links fra {{displayText}}",
 			"label-links": "Links",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" er ikke oprettet endnu. Klik for at oprette.",
 			"label-source-editor": "Editor",
 			"label-source-preview": "Forhåndsvis",
-			"label-source-search-backlinks": "Søg og tilbagelinks",
+			"label-source-search": "Søg, Tilbagelinks og Udgående links",
 			"label-require-mod": "Kræver {{key}} for at vise forhåndsvisning af side, når musemarkøren føres over linket"
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "Skabeloner",
 			"desc": "Indsæt skabelonindhold fra en mappe med skabelon filer.",
 			"action-insert": "Indsæt skabelon",
+			"action-insert-current-date": "Indsæt nuværende dato",
+			"action-insert-current-time": "Indsæt nuværende tidspunkt",
 			"option-template-folder-location": "Placering af skabelonmappe",
 			"option-template-folder-location-description": "Filer i denne mappe er tilgængelige som skabeloner.",
 			"option-template-date-format": "Dato format",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "Udeluk nogle mapper fra at blive synkroniseret.",
 			"option-currently-excluded-folders": " Disse mapper er udelukket:",
 			"button-manage-excluded-folders": "Administrer",
-			"option-sync-images": "Synkroniser billeder",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "Synkroniser billeder med disse filtypenavne: {{extensions}}.",
 			"option-sync-audio": "Synkroniser lydfiler",
 			"option-sync-audio-desc": "Synkroniser lydfiler med disse filtypenavne: {{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "Synkroniser videoer med disse filtypenavne: {{extensions}}.",
 			"option-sync-pdf": "Synkroniser PDF filer",
 			"option-sync-pdf-desc": "Synkroniser PDF filer.",
+			"option-sync-unsupported": "Synkroniser alle andre typer",
+			"option-sync-unsupported-desc": "Synkroniser usupporterede filtyper.",
+			"option-vault-config-sync": "Boks konfigurationssynkronisering",
+			"option-sync-app": "Hovedindstillinger",
+			"option-sync-app-desc": "Aktiverer synkronisering af editor indstillinger, filer & links indstillinger, brugerdefinerede genvejstaster osv.",
+			"option-sync-appearance": "Indstillinger for udseende",
+			"option-sync-appearance-desc": "Synkroniseringsindstillinger for udseende, såsom mørk tema, aktivt tema, og aktive CSS kodestykker.",
+			"option-sync-appearance-data": "Temaer og CSS kodestykker",
+			"option-sync-appearance-data-desc": "Synkroniser hentede temaer og CSS kodestykker. Om de er aktiveret afhænger af den foregående indstilling.",
+			"option-sync-core-plugin": "Aktive kerne plug-in liste",
+			"option-sync-core-plugin-desc": "Synkroniser hvilke kerne plug-ins, som er aktive.",
+			"option-sync-core-plugin-data": "Kerne plug-in indstillinger",
+			"option-sync-core-plugin-data-desc": "Synkroniser kerne plug-in indstillinger.",
+			"option-sync-community-plugin": "Aktive tredjeparts plug-in's liste",
+			"option-sync-community-plugin-desc": "Synkroniser aktive tredjeparts plug-ins liste, som er aktive.",
+			"option-sync-community-plugin-data": "Installerede fællesskabs plug-ins",
+			"option-sync-community-plugin-data-desc": "Synkroniser installerede fællesskabs plug-ins (.js, .css, og manifest.json filer) og deres indstillinger.",
 			"label-sync-introduction": "Obsidian Sync er en Obsidian's synkroniseringsservice udvidelse med slutpunkt-til-slutpunkt (end-to-end) kryptering og versionshistorik.",
 			"label-account-required": "For at begynde synkronisering skal du logge på eller oprette en ny Obsidian konto.",
 			"button-sign-up": "Opret konto",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "Ingen snapshots fundet.",
 			"placeholder-choose-file": "Vælg en fil...",
 			"label-select-file": "Vælg venligst en fil til venstre for at vise snapshots."
+		},
+		"note-composer": {
+			"name": "Note værktøj",
+			"desc": "Flet, del og omstrukturer noter.",
+			"option-confirm-file-merge": "Bekræft filfletning",
+			"option-confirm-file-merge-description": "Bed om bekræftelse før fletning af to filer.",
+			"option-split-replacement-text": "Tekst efter udtrækning",
+			"option-split-replacement-text-description": "Hvad som skal vises i stedet for den valgte tekst, efter udtrækning.",
+			"option-choice-split-replacement-text-link": "Link til ny fil",
+			"option-choice-split-replacement-text-embed": "Indlejr en ny fil",
+			"option-choice-split-replacement-text-none": "Intet",
+			"option-template-file": "Skabelon",
+			"option-template-file-description": "Skabelonen som skal benyttes ved fletning eller udtrækning. Tilgængelige variabler: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Flet nuværende fil med en anden fil...",
+			"action-merge-file": "Flet hele filen med...",
+			"label-no-files": "Ingen filer fundet.",
+			"instruction-navigate": "for at navigere",
+			"instruction-merge": "for at flette",
+			"instruction-create-new": "for at oprette",
+			"instruction-merge-at-top": "flet til toppen",
+			"instruction-dismiss": "for at annullere",
+			"prompt-select-file-to-merge": "Vælg filen som der skal flettes ind i...",
+			"label-merge-file": "Flet fil",
+			"label-confirm-file-merge": "Er du sikker på at du vil flette \"{{file}}\" i \"{{destination}}\"? \"{{file}}\" vil blive slettet.",
+			"button-merge": "Flet",
+			"button-merge-do-not-ask-again": "Flet og spørg ikke igen",
+			"command-split-file": "Udtræk nuværende markering...",
+			"instruction-append": "flyt til bunden",
+			"instruction-prepend": "flyt til toppen",
+			"msg-fail-template-file": "Kunne ikke oprette daglige note. Skabelonfilen \"{{template}}\" blev ikke fundet."
 		}
 	},
 	"nouns": {

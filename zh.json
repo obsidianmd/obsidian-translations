@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "设置移动工具栏",
 			"option-added-options": "已添加的选项",
 			"option-more-toolbar-options": "更多工具栏选项",
-			"option-attach": "插入附件"
+			"option-attach": "插入附件",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "无",
 			"setting-downscale-percent": "缩放百分比",
 			"button-export-to-pdf": "导出"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "删除",
 		"msg-indexing": "Obsidian 正在为当前库创建索引...\n索引只会进行一次。\n索引完成前一些功能可能无法使用。",
 		"msg-indexing-complete": "索引完成。",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -394,15 +402,21 @@
 			"delete-file": "删除文件",
 			"open-in-new-pane": "在新面板中打开",
 			"copy-url": "复制 url",
-			"close-current-pane": "关闭当前面板"
+			"close-current-pane": "关闭当前面板",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
 			"click-to-collapse": "点击以折叠",
-			"alias": "别名"
+			"alias": "别名",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "测试版本",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "打开库文件夹",
 			"option-open-folder-as-vault-description": "选择一个存放 Markdown 文档的文件夹。",
 			"option-create-vault": "创建新库",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "折叠/展开左侧边栏",
 		"toggle-right-sidebar": "折叠/展开右侧边栏",
 		"toggle-default-new-pane-mode": "切换默认视图模式",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "折叠/展开当前行",
 		"fold-all": "折叠所有标题和列表",
 		"unfold-all": "展开所有标题和列表",
@@ -537,8 +552,8 @@
 			"action-new-note": "新建笔记",
 			"action-new-folder": "新建文件夹",
 			"action-change-sort": "排序",
-			"action-reveal-file": "在文件列表中显示",
-			"action-reveal-active-file": "在 Obsidian 的文件列表中定位当前文件",
+			"action-reveal-file": "在文件列表中显示当前文件",
+			"action-reveal-active-file": "在文件列表中显示当前文件",
 			"command-move-file": "将文件移动到其他文件夹",
 			"action-move-file": "将文件移动到...",
 			"action-move-folder": "将文件夹移动到...",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "匹配待办任务：",
 			"label-match-task-done": "匹配已完成任务：",
 			"label-match-line": "匹配行: ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "匹配标签: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
@@ -639,9 +656,13 @@
 			"label-no-note-create-new": "未发现该笔记。按下回车键以创建该笔记。",
 			"prompt-type-file-name": "输入以切换或创建文件...",
 			"label-enter-to-create": "创建该笔记",
-			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Whether to show links to files that are not yet created."
+			"tooltip-not-created-yet": "该笔记尚未建立，选择以创建",
+			"option-show-existing-only": "仅显示已创建的笔记",
+			"option-show-existing-only-description": "是否在快速切换中显示那些已赋予名称、但尚未建立的笔记。",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "关系图谱",
@@ -690,10 +711,10 @@
 		},
 		"backlinks": {
 			"name": "反向链接",
-			"desc": "在状态栏中显示当前笔记反向链接的数量。",
-			"action-open": "打开反向链接面板",
+			"desc": "在状态栏中显示指向当前笔记的链接的情况。",
+			"action-open": "打开当前笔记的反向链接面板",
 			"action-show": "显示反向链接面板",
-			"action-open-for-current": "显示当前笔记的相关链接",
+			"action-open-for-current": "打开当前笔记的反向链接面板",
 			"action-toggle-backlinks-in-document": "在页面中显示反向链接面板",
 			"label-linked-mentions": "链接当前文件",
 			"label-no-backlinks": "没有笔记链接当前文件",
@@ -705,21 +726,22 @@
 			"ellipsis": "..."
 		},
 		"outgoing-links": {
-			"name": "Outgoing Links",
-			"desc": "Show outgoing links and detect unlinked mentions of other notes in the current note.",
-			"action-open": "Open outgoing links",
-			"action-open-for-current": "Open outgoing links for the current file",
-			"tab-title": "Outgoing links from {{displayText}}",
-			"label-links": "Links",
-			"label-no-links": "No links found.",
-			"label-unlinked-mentions": "Unlinked mentions",
-			"tooltip-link-file": "Link this file",
-			"tooltip-not-created": "Not created yet"
+			"name": "出链",
+			"desc": "显示当前笔记中已存在的链接并检测可能存在的链接。",
+			"action-open": "打开当前笔记的出链面板",
+			"action-show": "Show outgoing links pane",
+			"action-open-for-current": "打开当前笔记的出链面板",
+			"tab-title": "{{displayText}} 的出链面板",
+			"label-links": "当前笔记中的链接",
+			"label-no-links": "当前笔记中不存在链接",
+			"label-unlinked-mentions": "当前笔记中潜在的链接",
+			"tooltip-link-file": "链接该文件",
+			"tooltip-not-created": "尚未创建"
 		},
 		"tag-pane": {
 			"name": "标签面板",
 			"desc": "显示所有标签及其出现的次数。",
-			"action-show": "Show tag pane",
+			"action-show": "显示标签面板",
 			"label-no-tags": "未发现标签。",
 			"label-sort-by-name-a-to-z": "标签名称 (A-Z)",
 			"label-sort-by-name-z-to-a": "标签名称 (Z-A)",
@@ -730,10 +752,10 @@
 		"page-preview": {
 			"name": "页面预览",
 			"desc": "开启后鼠标悬停在内部链接上时将显示预览。编辑模式下需要在鼠标悬停的同时按住 Ctrl/Cmd 键才可预览（该设置可调节）。",
-			"label-empty-note": "\"{{linktext}}\" 未创建成功！请点击以创建。",
+			"label-empty-note": "\"{{linktext}}\" 未创建，点击以创建。",
 			"label-source-editor": "编辑模式",
 			"label-source-preview": "预览模式",
-			"label-source-search-backlinks": "搜索面板以及反向链接面板",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "需要按住 {{key}} 来触发悬停预览的情景"
 		},
 		"starred": {
@@ -893,6 +915,8 @@
 			"name": "模板",
 			"desc": "插入模板文件夹中的模板文件内容。",
 			"action-insert": "插入模板",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "模板文件夹位置",
 			"option-template-folder-location-description": "该文件夹中的文件都可以作为模板。",
 			"option-template-date-format": "日期格式",
@@ -1139,7 +1163,7 @@
 			"option-excluded-folder-desc": "防止某些文件夹被同步。",
 			"option-currently-excluded-folders": "目前这些文件夹被排除在外：",
 			"button-manage-excluded-folders": "管理",
-			"option-sync-images": "同步图片",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "同步以下类型的图片文件：{{extensions}}.",
 			"option-sync-audio": "同步音频",
 			"option-sync-audio-desc": "同步以下类型的音频文件：{{extensions}}.",
@@ -1147,6 +1171,23 @@
 			"option-sync-video-desc": "同步以下类型的视频文件：{{extensions}}.",
 			"option-sync-pdf": "同步 PDF",
 			"option-sync-pdf-desc": "同步 PDF 文件",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "同步是 Obsidian 提供的附加服务，具有端到端加密及版本历史等功能。",
 			"label-account-required": "要使用同步服务，请登陆或注册 Obsidian 账户。",
 			"button-sign-up": "注册",
@@ -1176,6 +1217,36 @@
 			"label-no-history-found": "未发现快照。",
 			"placeholder-choose-file": "请选择文件...",
 			"label-select-file": "请在左侧面板中选择一个文件以浏览其快照。"
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found."
 		}
 	},
 	"nouns": {
