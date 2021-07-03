@@ -12,9 +12,9 @@
 			"option-spellcheck-description": "スペルチェッカーをオンにします。現在はアメリカ英語でのみ機能します。",
 			"spellcheck-dict": "スペルチェック辞書",
 			"spellcheck-dict-empty": "スペルチェック辞書が指定されていません。",
-			"option-readable-line-length": "一度に表示される行数",
-			"option-readable-line-description": "一度に表示される最大の行数を制限します。画面に表示される情報は減りますが、長い文章が読みやすくなります。",
-			"option-strict-line-break": "行の折り返し",
+			"option-readable-line-length": "読みやすい行の長さ",
+			"option-readable-line-description": "最大行長を制限します。 画面に収まるコンテンツは少なくなりますが、長い段落が読みやすくなります。",
+			"option-strict-line-break": "厳密な改行",
 			"option-strict-line-break-description": "プレビューモードでは、Markdownの仕様に従って単一の改行を無視します。プレビューモードで改行させる場合にはオフにしてください。",
 			"option-show-frontmatter": "フロントマターを表示",
 			"option-show-frontmatter-description": "プレビューモードでフロントマターをコードブロックとして表示します。フロントマターを隠したい場合にはオフにしてください。",
@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "モバイルツールバーの設定を開く",
 			"option-added-options": "追加のオプション",
 			"option-more-toolbar-options": "他のツールバーオプション",
-			"option-attach": "添付ファイルを追加"
+			"option-attach": "添付ファイルを追加",
+			"option-add-command": "Add global command",
+			"option-add-command-description": "Select any global command to add to the toolbar."
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "なし",
 			"setting-downscale-percent": "倍率",
 			"button-export-to-pdf": "PDFにエクスポート"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "Follow link",
+			"tooltip-open-link": "Open link",
+			"tooltip-search-tag": "Search tag"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "削除",
 		"msg-indexing": "Obsidianが保管庫のインデックスを作成しています…\nこれは一度だけ実行されます。\nいくつかの機能はこれが完了するまで利用できない可能性があります。",
 		"msg-indexing-complete": "インデックス作成が完了しました。",
+		"label-enter-to-create": "Enter to create",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
 			"create-new-file": "新規ファイルを作成",
@@ -394,15 +402,21 @@
 			"delete-file": "ファイルを削除",
 			"open-in-new-pane": "新規ペインで開く",
 			"copy-url": "URLをコピー",
-			"close-current-pane": "現在のペインを閉じる"
+			"close-current-pane": "現在のペインを閉じる",
+			"copy": "Copy",
+			"cut": "Cut",
+			"paste": "Paste",
+			"paste-as-plain-text": "Paste as plain text",
+			"select-all": "Select all"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
 			"click-to-collapse": "クリックして折りたたむ",
-			"alias": "エイリアス"
+			"alias": "エイリアス",
+			"not-created-yet": "Not created yet, select to create"
 		},
 		"start-screen": {
-			"label-beta-version": "ベータ版",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "保管庫としてフォルダを開く",
 			"option-open-folder-as-vault-description": "Markdownファイルの入った既存のフォルダを選択してください。",
 			"option-create-vault": "保管庫を新規作成する",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "左のサイドバーを開閉",
 		"toggle-right-sidebar": "右のサイドバーを開閉",
 		"toggle-default-new-pane-mode": "新規ペインのデフォルトモードを切り替える",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "現在の行のフォールドを開閉",
 		"fold-all": "すべての見出しとリストをフォールド",
 		"unfold-all": "すべての見出しとリストのフォールドを解除",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "タスクに一致 (todo): ",
 			"label-match-task-done": "タスクに一致 (done): ",
 			"label-match-line": "行に一致: ",
+			"label-match-block": "Match block: ",
+			"label-match-section": "Match section: ",
 			"label-match-tag": "タグに一致: ",
 			"label-no-matches": "一致する箇所は見つかりませんでした。",
 			"matches-with-count": "… さらに {{count}} 箇所で一致。",
@@ -641,7 +658,11 @@
 			"label-enter-to-create": "Enterキーで作成",
 			"tooltip-not-created-yet": "まだ作成されていません、作成するには選択してください",
 			"option-show-existing-only": "存在するファイルだけ表示",
-			"option-show-existing-only-description": "作成されていないファイルを表示するかどうかを決めます。"
+			"option-show-existing-only-description": "作成されていないファイルを表示するかどうかを決めます。",
+			"option-show-attachments": "Show attachments",
+			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-all-file-types": "Show all file types",
+			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
 			"name": "グラフビュー",
@@ -708,6 +729,7 @@
 			"name": "アウトゴーイングリンク",
 			"desc": "アウトゴーイングリンク(他のノートへのリンク)を表示し、現在のノートから他のノートへのリンクされていないメンションを検知します。",
 			"action-open": "アウトゴーイングリンクを開く",
+			"action-show": "Show outgoing links pane",
 			"action-open-for-current": "現在のファイルのアウトゴーイングリンクを開く",
 			"tab-title": "{{displayText}}からのアウトゴーイングリンク",
 			"label-links": "リンク",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" は作成されていません。クリックで作成します。",
 			"label-source-editor": "エディタ",
 			"label-source-preview": "プレビュー",
-			"label-source-search-backlinks": "検索とバックリンク",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "ページプレビューを表示するには{{key}}キーを押しながらホバーします"
 		},
 		"starred": {
@@ -887,12 +909,15 @@
 			"name": "デフォルトアプリで開く",
 			"desc": "現在のファイルをデフォルトのアプリで開くためのボタンを追加します。",
 			"action-open-file": "デフォルトアプリで開く",
+			"action-open-file-mobile": "Share",
 			"action-show-in-folder": "フォルダに表示"
 		},
 		"templates": {
 			"name": "テンプレート",
 			"desc": "テンプレートファイルのフォルダからテンプレートの内容を挿入します。",
 			"action-insert": "テンプレートを挿入",
+			"action-insert-current-date": "Insert current date",
+			"action-insert-current-time": "Insert current time",
 			"option-template-folder-location": "テンプレートフォルダの場所",
 			"option-template-folder-location-description": "このフォルダ内のファイルをテンプレートとして利用できるようになります。",
 			"option-template-date-format": "日付の書式",
@@ -968,7 +993,7 @@
 			"option-sliding-window-mode-description": "右側の新規ペインでページを開きます。ペインを水平方向にスクロールできます。",
 			"option-hover-preview-file": "プレビューをホバー表示",
 			"option-hover-preview-file-description": "リンクにカーソルを合わせると、ページのプレビューが表示されます。",
-			"option-readable-line-length": "読み取り可能な行の長さ",
+			"option-readable-line-length": "読みやすい行の長さ",
 			"option-readable-line-length-description": "最大行長を制限します。 画面に収まるコンテンツは少なくなりますが、長い段落が読みやすくなります。",
 			"option-site-password": "パスワード",
 			"option-site-password-description": "パスワードと共にサイトへのアクセスを制限します。",
@@ -1139,7 +1164,7 @@
 			"option-excluded-folder-desc": "特定のフォルダが同期されるのを防ぎます。",
 			"option-currently-excluded-folders": "現在、次のフォルダが除外されています。",
 			"button-manage-excluded-folders": "管理",
-			"option-sync-images": "画像を同期",
+			"option-sync-image": "Sync images",
 			"option-sync-image-desc": "次の拡張子の画像ファイルを同期します: {{extensions}}",
 			"option-sync-audio": "音声を同期",
 			"option-sync-audio-desc": "次の拡張子の音声ファイルを同期します: {{extensions}}",
@@ -1147,6 +1172,23 @@
 			"option-sync-video-desc": "次の拡張子の動画ファイルを同期します: {{extensions}}",
 			"option-sync-pdf": "PDFを同期",
 			"option-sync-pdf-desc": "PDFファイルを同期します。",
+			"option-sync-unsupported": "Sync all other types",
+			"option-sync-unsupported-desc": "Sync unsupported file types.",
+			"option-vault-config-sync": "Vault configuration sync",
+			"option-sync-app": "Main settings",
+			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
+			"option-sync-appearance": "Appearance settings",
+			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
+			"option-sync-appearance-data": "Themes and snippets",
+			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-core-plugin": "Active core plugin list",
+			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
+			"option-sync-core-plugin-data": "Core plugin settings",
+			"option-sync-core-plugin-data-desc": "Sync core plugin settings.",
+			"option-sync-community-plugin": "Active community plugin list",
+			"option-sync-community-plugin-desc": "Sync which community plugins are enabled.",
+			"option-sync-community-plugin-data": "Installed community plugins",
+			"option-sync-community-plugin-data-desc": "Sync installed community plugins (.js, .css, and manifest.json files) and their settings.",
 			"label-sync-introduction": "Obsidian Syncはエンドツーエンド暗号化とバージョン履歴のためのアドオン同期サービスです。",
 			"label-account-required": "同期を開始するには、ログインするかObsidianの新規アカウントを作成してください。",
 			"button-sign-up": "サインアップ",
@@ -1176,6 +1218,37 @@
 			"label-no-history-found": "スナップショットが見つかりません。",
 			"placeholder-choose-file": "ファイルを選択…",
 			"label-select-file": "スナップショットを閲覧するには左からファイルを選択してください。"
+		},
+		"note-composer": {
+			"name": "Note composer",
+			"desc": "Merge, split, and refactor notes.",
+			"option-confirm-file-merge": "Confirm file merge",
+			"option-confirm-file-merge-description": "Prompt before merge two files.",
+			"option-split-replacement-text": "Text after extraction",
+			"option-split-replacement-text-description": "What to show in place of the selected text after extracting it.",
+			"option-choice-split-replacement-text-link": "Link to new file",
+			"option-choice-split-replacement-text-embed": "Embed new file",
+			"option-choice-split-replacement-text-none": "None",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.",
+			"command-merge-file": "Merge current file with another file...",
+			"action-merge-file": "Merge entire file with...",
+			"label-no-files": "No files found.",
+			"instruction-navigate": "to navigate",
+			"instruction-merge": "to merge",
+			"instruction-create-new": "to create new",
+			"instruction-merge-at-top": "to merge at top",
+			"instruction-dismiss": "to dismiss",
+			"prompt-select-file-to-merge": "Select file to merge into...",
+			"label-merge-file": "Merge file",
+			"label-confirm-file-merge": "Are you sure you want to merge \"{{file}}\" into \"{{destination}}\"? \"{{file}}\" will be deleted.",
+			"button-merge": "Merge",
+			"button-merge-do-not-ask-again": "Merge and don't ask again",
+			"command-split-file": "Extract current selection...",
+			"command-extract-heading": "Extract this heading...",
+			"instruction-append": "to move to bottom",
+			"instruction-prepend": "to move to top",
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
 		}
 	},
 	"nouns": {
