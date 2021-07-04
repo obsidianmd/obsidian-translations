@@ -26,6 +26,8 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 ## 語彙対応表
 
+### 用語の対応
+
 |Original term|Japanese translation|
 |-|-|
 alias | エイリアス
@@ -136,6 +138,19 @@ version history | バージョン履歴
 video file | 動画ファイル
 VIP | VIP
 wikilink | ウィキリンク
+global command | グローバルコマンド
+none | なし
+
+### 同一表現の使いまわし
+
+|Original expression|Japanese translation|
+|-|-|
+Template file location | テンプレートファイルの場所
+Not created yet, select to created | まだ作成されていません、作成するには選択してください
+something went wrong | エラーが発生しました
+don't ask again | 次からは確認しない
+
+### プラグインの名称
 
 |Plugin name|Japanese translation|
 |-|-|
