@@ -26,6 +26,8 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 ## 語彙対応表
 
+### 用語の対応
+
 |Original term|Japanese translation|
 |-|-|
 alias | エイリアス
@@ -55,11 +57,13 @@ Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
+E-mail address | Eメールアドレス
 edit mode | 編集モード
 encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
 expand | 展開
 external link | 外部リンク
+extract | 抽出
 feature | 機能
 first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
 fixer | フィクサー
@@ -67,6 +71,7 @@ fold | フォールド
 Folder | フォルダ
 format | フォーマット
 frontmatter | フロントマター
+global command | グローバルコマンド
 graph | グラフ
 heading | 見出し
 highlight | ハイライト
@@ -86,7 +91,9 @@ link | リンク
 linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
+merge | 統合
 Metadata | メタデータ
+none | なし
 note | ノート
 note-taking | ノートテイキング
 Obsidian | Obsidian (常に大文字から始める)
@@ -134,6 +141,18 @@ video file | 動画ファイル
 VIP | VIP
 wikilink | ウィキリンク
 
+### 同一表現の使いまわし
+
+|Original expression|Japanese translation|
+|-|-|
+don't ask again | 次からは確認しない
+Enter to create | Enterキーで作成
+Not created yet, select to created | まだ作成されていません、作成するには選択してください
+something went wrong | エラーが発生しました
+Template file location | テンプレートファイルの場所
+
+### プラグインの名称
+
 |Plugin name|Japanese translation|
 |-|-|
 Audio recorder | オーディオレコーダー
@@ -143,6 +162,7 @@ File explorer | ファイルエクスプローラ
 File recovery | ファイルリカバリー
 Graph view | グラフビュー
 Markdown format importer | Markdownフォーマットインポーター
+Note composer | ノートコンポーザー
 Open in default app | デフォルトアプリで開く
 Outline | アウトライン
 Page preview | ページプレビュー
@@ -223,6 +243,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - ｢全て｣ → ｢すべて｣に統一する。
         - ｢下さい｣ → ｢ください｣に統一する。
         - ｢既に｣ → ｢すでに｣に統一する。
+        - ｢極めて｣ → ｢きわめて｣に統一する。
         - ｢new, newly(新しい、新しく)｣ → ｢新規｣に不自然でない限り統一する(例: 新規作成、新規ノート)。
 - 特殊な表現
     - バージョンには先頭に｢v｣と付ける(例: v0.11.1)。
