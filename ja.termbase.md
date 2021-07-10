@@ -80,6 +80,7 @@ ID | ID
 image file | 画像ファイル
 indent | インデント
 indexing | インデックスを作成
+indicator | インジケータ
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク
