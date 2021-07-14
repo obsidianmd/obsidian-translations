@@ -26,6 +26,8 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 ## 語彙対応表
 
+### 用語の対応
+
 |Original term|Japanese translation|
 |-|-|
 alias | エイリアス
@@ -69,6 +71,7 @@ fold | フォールド
 Folder | フォルダ
 format | フォーマット
 frontmatter | フロントマター
+global command | グローバルコマンド
 graph | グラフ
 heading | 見出し
 highlight | ハイライト
@@ -77,6 +80,7 @@ ID | ID
 image file | 画像ファイル
 indent | インデント
 indexing | インデックスを作成
+indicator | インジケータ
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク
@@ -90,6 +94,7 @@ local vault | ローカル保管庫
 markdown | マークダウン
 merge | 統合
 Metadata | メタデータ
+none | なし
 note | ノート
 note-taking | ノートテイキング
 Obsidian | Obsidian (常に大文字から始める)
@@ -136,6 +141,18 @@ version history | バージョン履歴
 video file | 動画ファイル
 VIP | VIP
 wikilink | ウィキリンク
+
+### 同一表現の使いまわし
+
+|Original expression|Japanese translation|
+|-|-|
+don't ask again | 次からは確認しない
+Enter to create | Enterキーで作成
+Not created yet, select to created | まだ作成されていません、作成するには選択してください
+something went wrong | エラーが発生しました
+Template file location | テンプレートファイルの場所
+
+### プラグインの名称
 
 |Plugin name|Japanese translation|
 |-|-|
