@@ -80,6 +80,7 @@ ID | ID
 image file | 画像ファイル
 indent | インデント
 indexing | インデックスを作成
+indicator | インジケータ
 Insider builds | インサイダービルド
 interface | インターフェース
 internal link | 内部リンク
@@ -103,6 +104,7 @@ Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
 OFF | オフ
 ON | オン
+ordered list | 順序付きリスト
 outgoing link | アウトゴーイングリンク
 page preview | ページプレビュー
 palette | パレット
@@ -135,6 +137,7 @@ today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unlinked mentions | リンクされていないメンション
 untitled | 無題の~ (無題のファイル・無題のフォルダ)
+unordered list | 順序なしリスト
 vault | 保管庫
 version history | バージョン履歴
 video file | 動画ファイル
