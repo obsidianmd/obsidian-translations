@@ -48,13 +48,13 @@
 			"option-emacsy-keys-description": "Umożliwia korzystanie z dodatkowych klawiszy nawigacyjnych w stylu Emacsa, które są standardem w systemie macOS, ale mogą przeszkadzać w niektórych kluczowych operacjach.",
 			"label-confirm-enable-vim": "Potwierdź wejście do trybu Vim",
 			"label-vim-warning": "Tryb Vim służy do efektywnego edytowania tekstu, ale nie jest intuicyjny. Jeśli nie znasz Vim, ta opcja może sprawić, że Obsidian będzie wyglądał jakby przestał działać.",
-			"label-vim-test": "Żeby zweryfikować, że potrafisz poruszać się w Vim, proszę wpisz poniżej komendę, żeby zamknąć Vim bez zapisywania:",
+			"label-vim-test": "Żeby zweryfikować, że potrafisz poruszać się w Vim, proszę wpisz poniżej polecenie, żeby zamknąć Vim bez zapisywania:",
 			"label-vim-your-answer": "Twoja odpowiedź",
-			"placeholder-enter-command": "Wpisz komendę...",
+			"placeholder-enter-command": "Wpisz polecenie...",
 			"button-confirm-enable-vim": "Pozwól mi uruchomić tryb Vim",
-			"msg-vim-mode-enabled": "Komenda jest poprawna. Tryb Vim został uruchomiony.",
-			"msg-vim-mode-not-enabled": "Komenda jest błędna. Tryb Vim nie został uruchomiony.",
-			"msg-vim-mode-please-enter-command": "Proszę wpisz komendę, żeby uruchomić tryb Vim"
+			"msg-vim-mode-enabled": "Polecenie jest poprawne. Tryb Vim został uruchomiony.",
+			"msg-vim-mode-not-enabled": "Polecenie jest błędne. Tryb Vim nie został uruchomiony.",
+			"msg-vim-mode-please-enter-command": "Proszę wpisz polecenie, żeby uruchomić tryb Vim"
 		},
 		"file": {
 			"name": "Pliki i linki",
@@ -272,7 +272,7 @@
 		"mobile-toolbar": {
 			"name": "Mobilny pasek narzędzi",
 			"option-configure-quick-action": "Konfiguruj mobilny Szybki Wybór",
-			"option-configure-quick-action-description": "Skonfiguruj komendę, która ma być wyzwalana po przeciągnięciu od góry. Bieżąca komenda jest ustawiona na \"{{command}}\".",
+			"option-configure-quick-action-description": "Skonfiguruj polecenie, która ma być wyzwalana po przeciągnięciu od góry. Bieżące polecenie jest ustawiona na \"{{command}}\".",
 			"button-configure": "Konfiguruj",
 			"placeholder-select-quick-action": "Wybierz Szybki Wybór...",
 			"manage-toolbar-options": "Zarządzaj paskiem narzędzi",
@@ -290,7 +290,7 @@
 			"option-indent-list": "Dodaj akapit punktowi",
 			"option-unindent-list": "Usuń akapit punktowi",
 			"option-undo": "Cofnij",
-			"option-redo": "Ponó",
+			"option-redo": "Ponów",
 			"option-move-caret-up": "Przesuń kursor do góry",
 			"option-move-caret-down": "Przesuń kursor na dół",
 			"option-move-caret-left": "Przesuń kursor w lewo",
@@ -302,8 +302,8 @@
 			"option-added-options": "Dodano opcje",
 			"option-more-toolbar-options": "Więcej opcji paska narzędzi",
 			"option-attach": "Dodaj załącznik",
-			"option-add-command": "Dodaj globalną komendę",
-			"option-add-command-description": "Wybierz jakąkolwiek globalną komendę, aby dodać ją od paska narzędzi."
+			"option-add-command": "Dodaj globalne polecenie",
+			"option-add-command-description": "Wybierz jakiekolwiek globalne polecenie, aby dodać ją od paska narzędzi."
 		}
 	},
 	"editor": {
@@ -350,7 +350,7 @@
 			"button-export-to-pdf": "Eksportuj do PDF"
 		},
 		"link-popover": {
-			"tooltip-follow-link": "Follow link",
+			"tooltip-follow-link": "Podążaj za linkiem",
 			"tooltip-open-link": "Otwórz link",
 			"tooltip-search-tag": "Wyszukaj tag"
 		}
@@ -677,10 +677,10 @@
 			"option-depth-description": "Pokazuj wierzchołki oddalone o wskazaną liczbę połączeń.",
 			"option-neighbor-links": "Krawędzie między sąsiadami",
 			"option-neighbor-links-description": "Wyświetlaj krawędzie między sąsiednimi wierzchołkami.",
-			"option-forelinks": "Linki wychodzące",
-			"option-forelinks-description": "Pokazuj linki do innych plików",
+			"option-forelinks": "Połączenia wychodzące",
+			"option-forelinks-description": "Pokazuj połączenia do innych plików",
 			"option-backlinks": "Linki przychodzące",
-			"option-backlinks-description": "Pokazuj linki z innych plików",
+			"option-backlinks-description": "Pokazuj połączenia z innych plików",
 			"option-show-tags": "Tagi",
 			"option-show-tags-description": "Pokazuj tagi połączone z plikami, w których są zawarte",
 			"option-show-attachments": "Załączniki",
@@ -727,15 +727,15 @@
 		},
 		"outgoing-links": {
 			"name": "Linki wychodzące",
-			"desc": "Wyświetlaj linki wychodzące i wykrywaj niepołączone wzmianki o innych notatkach w bieżącej notatce.",
+			"desc": "Wyświetlaj linki wychodzące i wykrywaj niezlinkowane wzmianki o innych notatkach w bieżącej notatce.",
 			"action-open": "Otwórz linki wychodzące",
 			"action-show": "Pokaż okno linków wychodzących",
 			"action-open-for-current": "Otwórz wychodzące linki do obecnego pliku",
 			"tab-title": "Linki wychodzące z {{displayText}}",
 			"label-links": "Linki",
 			"label-no-links": "Nie znaleziono linków.",
-			"label-unlinked-mentions": "Niepołączone wzmianki",
-			"tooltip-link-file": "Połącz ten plik",
+			"label-unlinked-mentions": "Niezlinkowane wzmianki",
+			"tooltip-link-file": "Zlinkuj ten plik",
 			"tooltip-not-created": "Jeszcze nie stworzono"
 		},
 		"tag-pane": {
@@ -755,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" jeszcze nie istnieje. Kliknij aby utworzyć.",
 			"label-source-editor": "Edytor",
 			"label-source-preview": "Podgląd",
-			"label-source-search": "Wyszukaj, Linki zwrotne, Linki wychodzące",
+			"label-source-search": "Wyszukaj, Linki zwrotne i Linki wychodzące",
 			"label-require-mod": "Wymagaj {{key}} żeby wyświetlić podgląd po najechaniu na link"
 		},
 		"starred": {
@@ -997,7 +997,7 @@
 			"option-readable-line-length-description": "Ogranicza maksymalną długość wiersza. Zmniejsza ilość tekstu na ekranie, ale poprawia czytelność długich paragrafów.",
 			"option-site-password": "Hasła",
 			"option-site-password-description": "Ogranicz dostęp do swojej strony za pomocą haseł.",
-			"option-google-analytics": "Google Analytics kod śledzenia",
+			"option-google-analytics": "Kod śledzenia Google Analytics",
 			"option-google-analytics-description": "Skonfiguruj Google Analytics dla swojej strony. Dostępne tylko dla odwiedzających z niestandardowego adresu URL domeny. Proszę najpierw zapoznać się z lokalnymi przepisami prawa i regulacjach.",
 			"button-manage-passwords": "Zarządzaj",
 			"button-save-site-settings": "Zapisz ustawienia strony",
@@ -1041,7 +1041,7 @@
 			"label-no-password": "Twoja strona nie ma obecnie żadnych haseł. Każdy może ją odwiedzić.",
 			"label-have-password": "Twoja strona jest chroniona hasłem. Jeśli masz kilka haseł, odwiedzający mogą uzyskać dostęp do Twojej witryny, wprowadzając dowolne z nich.",
 			"option-password-name": "Hasło",
-			"option-password-desc": "Hash twojego hasła będzie bezpiecznie przechowywany. Po ustawieniu hasła nie można go ujawnić w postaci zwykłego tekstu.",
+			"option-password-desc": "Hash Twojego hasła będzie bezpiecznie przechowywany. Po ustawieniu hasła nie można go ujawnić w postaci zwykłego tekstu.",
 			"option-password-placeholder": "Twoje hasło",
 			"option-nickname-name": "Nazwa użytkownika (opcjonalne)",
 			"option-nickname-desc": "Ustaw nazwę użytkownika, aby zapamiętać, po co lub dla kogo jest hasło.",
@@ -1056,10 +1056,10 @@
 			"button-configure": "Konfiguruj",
 			"label-configure-custom-domain": "Konfiguruj niestandardową domenę",
 			"option-custom-url-name": "Niestandardowe URL",
-			"option-custom-url-desc": "Adres URL, pod którym będzie znajdować się twoja strona. ",
+			"option-custom-url-desc": "Adres URL, pod którym będzie znajdować się Twoja strona. ",
 			"option-custom-url-placeholder": "www.yourdomain.com",
-			"option-custom-url-redirect": "Przekieruj do twojej domeny niestandardowej",
-			"option-custom-url-redirect-desc": "Przekieruj odwiedzających z publish.obsidian.md/id do twojej domeny niestandardowej",
+			"option-custom-url-redirect": "Przekieruj do Twojej domeny niestandardowej",
+			"option-custom-url-redirect-desc": "Przekieruj odwiedzających z publish.obsidian.md/id do Twojej domeny niestandardowej",
 			"button-update-custom-domain": "Zaktualizuj ustawienia domeny",
 			"label-custom-domain-instructions": "Aby uzyskać więcej informacji, zapoznaj się z {{link}} na naszej stronie wsparcia.",
 			"label-custom-domain-link-name": "przewodnik po konfiguracji domeny niestandardowej",
@@ -1114,7 +1114,7 @@
 			"option-encryption-password-placeholder": "Twoje hasło",
 			"label-enter-encryption-password": "Wprowadź hasło szyfrowania",
 			"button-unlock-vault": "Odblokuj sejf",
-			"msg-verified-password": "Pomyślnie zweryfikowano twoje hasło.",
+			"msg-verified-password": "Pomyślnie zweryfikowano Twoje hasło.",
 			"label-remote-vaults": "Twoje zdalne sejfy",
 			"label-connected-vault": "Połączono",
 			"label-vault-created-time": "Stworzono {{time}}",
