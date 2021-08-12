@@ -114,12 +114,12 @@
 			"button-reload-themes": "重新加载主题",
 			"msg-reloaded-themes": "重新加载自定义主题",
 			"button-open-themes-folder": "打开主题文件夹",
-			"option-css-snippets": "CSS 代码段",
-			"label-no-css-snippets-found": "没有在代码段文件夹中发现 CSS 代码段。",
-			"no-snippet-description": "CSS 代码段的存放路径为：\"{{path}}\"。",
+			"option-css-snippets": "CSS 代码片段",
+			"label-no-css-snippets-found": "没有在代码段文件夹中发现 CSS 代码片段。",
+			"no-snippet-description": "CSS 代码片段的存放路径为：\"{{path}}\"。",
 			"button-reload-snippets": "重新加载代码段",
 			"button-open-snippets-folder": "打开代码段文件夹",
-			"msg-reloaded-snippets": "重新加载 CSS 代码段",
+			"msg-reloaded-snippets": "重新加载 CSS 代码片段",
 			"option-toggle-snippet-description": "应用当前代码段。该代码段的存放路径为：\"{{path}}\"。"
 		},
 		"hotkeys": {
@@ -276,7 +276,7 @@
 			"button-configure": "设置快捷命令",
 			"placeholder-select-quick-action": "选择一条命令...",
 			"manage-toolbar-options": "管理工具栏",
-			"option-internal-link": "添加内部链接",
+			"option-internal-link": "插入内部链接",
 			"option-internal-embed": "嵌入内容",
 			"option-tag": "添加标签",
 			"option-heading": "小标题",
@@ -301,7 +301,9 @@
 			"option-configure-toolbar": "设置移动工具栏",
 			"option-added-options": "已添加的选项",
 			"option-more-toolbar-options": "更多工具栏选项",
-			"option-attach": "插入附件"
+			"option-attach": "插入附件",
+			"option-add-command": "添加命令",
+			"option-add-command-description": "选择需要添加到工具栏的命令。"
 		}
 	},
 	"editor": {
@@ -346,6 +348,11 @@
 			"setting-margin-none": "无",
 			"setting-downscale-percent": "缩放百分比",
 			"button-export-to-pdf": "导出"
+		},
+		"link-popover": {
+			"tooltip-follow-link": "打开链接",
+			"tooltip-open-link": "打开链接",
+			"tooltip-search-tag": "搜索标签"
 		}
 	},
 	"interface": {
@@ -372,6 +379,7 @@
 		"delete-action-short-name": "删除",
 		"msg-indexing": "Obsidian 正在为当前库创建索引...\n索引只会进行一次。\n索引完成前一些功能可能无法使用。",
 		"msg-indexing-complete": "索引完成。",
+		"label-enter-to-create": "按下回车以创建",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
@@ -394,15 +402,21 @@
 			"delete-file": "删除文件",
 			"open-in-new-pane": "在新面板中打开",
 			"copy-url": "复制 url",
-			"close-current-pane": "关闭当前面板"
+			"close-current-pane": "关闭当前面板",
+			"copy": "复制",
+			"cut": "剪切",
+			"paste": "粘贴",
+			"paste-as-plain-text": "以纯文本形式粘贴",
+			"select-all": "全选"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
 			"click-to-collapse": "点击以折叠",
-			"alias": "别名"
+			"alias": "别名",
+			"not-created-yet": "尚未创建，请选择创建"
 		},
 		"start-screen": {
-			"label-beta-version": "测试版本",
+			"label-version": "Version",
 			"option-open-folder-as-vault": "打开库文件夹",
 			"option-open-folder-as-vault-description": "选择一个存放 Markdown 文档的文件夹。",
 			"option-create-vault": "创建新库",
@@ -480,6 +494,7 @@
 		"toggle-left-sidebar": "折叠/展开左侧边栏",
 		"toggle-right-sidebar": "折叠/展开右侧边栏",
 		"toggle-default-new-pane-mode": "切换默认视图模式",
+		"focus-editor": "Focus on editor",
 		"toggle-fold": "折叠/展开当前行",
 		"fold-all": "折叠所有标题和列表",
 		"unfold-all": "展开所有标题和列表",
@@ -595,6 +610,8 @@
 			"label-match-task-todo": "匹配待办任务：",
 			"label-match-task-done": "匹配已完成任务：",
 			"label-match-line": "匹配行: ",
+			"label-match-block": "匹配块：",
+			"label-match-section": "匹配章节: ",
 			"label-match-tag": "匹配标签: ",
 			"label-no-matches": "未找到匹配结果。",
 			"matches-with-count": "... 文中还有 {{count}} 处匹配。",
@@ -641,7 +658,11 @@
 			"label-enter-to-create": "创建该笔记",
 			"tooltip-not-created-yet": "该笔记尚未建立，选择以创建",
 			"option-show-existing-only": "仅显示已创建的笔记",
-			"option-show-existing-only-description": "是否在快速切换中显示那些已赋予名称、但尚未建立的笔记。"
+			"option-show-existing-only-description": "是否在快速切换中显示那些已赋予名称、但尚未建立的笔记。",
+			"option-show-attachments": "显示附件",
+			"option-show-attachments-desc": "在快速切换中显示如图片、视频、PDF 等附件文件。",
+			"option-show-all-file-types": "显示所有类型文件",
+			"option-show-all-file-types-desc": "显示所有类型文件，即使是那些无法在 Obsidian 中打开的文件。这些文件将使用该文件类型的系统默认应用打开。"
 		},
 		"graph-view": {
 			"name": "关系图谱",
@@ -692,14 +713,14 @@
 			"name": "反向链接",
 			"desc": "在状态栏中显示指向当前笔记的链接的情况。",
 			"action-open": "打开当前笔记的反向链接面板",
-			"action-show": "显示反向链接面板",
+			"action-show": "显示反向链接标签页",
 			"action-open-for-current": "打开当前笔记的反向链接面板",
 			"action-toggle-backlinks-in-document": "在页面中显示反向链接面板",
 			"label-linked-mentions": "链接当前文件",
 			"label-no-backlinks": "没有笔记链接当前文件",
 			"label-unlinked-mentions": "提到当前文件名",
 			"label-show-search": "筛选",
-			"label-link-button-text": "转为内部链接",
+			"label-link-button-text": "转为链接",
 			"tab-title": "{{displayText}} 的反向链接",
 			"label-no-unlinked-mentions": "没有笔记提到当前文件名",
 			"ellipsis": "..."
@@ -708,6 +729,7 @@
 			"name": "出链",
 			"desc": "显示当前笔记中已存在的链接并检测可能存在的链接。",
 			"action-open": "打开当前笔记的出链面板",
+			"action-show": "显示出链标签页",
 			"action-open-for-current": "打开当前笔记的出链面板",
 			"tab-title": "{{displayText}} 的出链面板",
 			"label-links": "当前笔记中的链接",
@@ -733,7 +755,7 @@
 			"label-empty-note": "\"{{linktext}}\" 未创建，点击以创建。",
 			"label-source-editor": "编辑模式",
 			"label-source-preview": "预览模式",
-			"label-source-search-backlinks": "搜索面板以及反向链接面板",
+			"label-source-search": "Search, Backlinks, and Outgoing links",
 			"label-require-mod": "需要按住 {{key}} 来触发悬停预览的情景"
 		},
 		"starred": {
@@ -887,12 +909,15 @@
 			"name": "使用默认应用打开",
 			"desc": "在菜单中添加【使用默认应用打开当前文件】这一选项。",
 			"action-open-file": "使用默认应用打开",
+			"action-open-file-mobile": "Share",
 			"action-show-in-folder": "在系统资源管理器中显示"
 		},
 		"templates": {
 			"name": "模板",
 			"desc": "插入模板文件夹中的模板文件内容。",
 			"action-insert": "插入模板",
+			"action-insert-current-date": "插入当前日期",
+			"action-insert-current-time": "插入当前时间",
 			"option-template-folder-location": "模板文件夹位置",
 			"option-template-folder-location-description": "该文件夹中的文件都可以作为模板。",
 			"option-template-date-format": "日期格式",
@@ -1139,7 +1164,7 @@
 			"option-excluded-folder-desc": "防止某些文件夹被同步。",
 			"option-currently-excluded-folders": "目前这些文件夹被排除在外：",
 			"button-manage-excluded-folders": "管理",
-			"option-sync-images": "同步图片",
+			"option-sync-image": "同步图片",
 			"option-sync-image-desc": "同步以下类型的图片文件：{{extensions}}.",
 			"option-sync-audio": "同步音频",
 			"option-sync-audio-desc": "同步以下类型的音频文件：{{extensions}}.",
@@ -1147,6 +1172,23 @@
 			"option-sync-video-desc": "同步以下类型的视频文件：{{extensions}}.",
 			"option-sync-pdf": "同步 PDF",
 			"option-sync-pdf-desc": "同步 PDF 文件",
+			"option-sync-unsupported": "同步所有其他类型文件",
+			"option-sync-unsupported-desc": "同步那些无法在 Obsidian 中打开的文件。",
+			"option-vault-config-sync": "同步配置文件",
+			"option-sync-app": "主要设置",
+			"option-sync-app-desc": "同步编辑器、文件与链接、快捷键等方面的设置。",
+			"option-sync-appearance": "外观设置",
+			"option-sync-appearance-desc": "同步外观设置，比如基础颜色、当前应用的主题、开启的 CSS 代码片段等设置信息。",
+			"option-sync-appearance-data": "主题与 CSS 代码片段",
+			"option-sync-appearance-data-desc": "同步已保存的主题与 CSS 代码片段文件。文件启用情况由上一同步设置决定。",
+			"option-sync-core-plugin": "核心插件的启用情况",
+			"option-sync-core-plugin-desc": "同步核心插件的启用情况。",
+			"option-sync-core-plugin-data": "核心插件设置",
+			"option-sync-core-plugin-data-desc": "同步核心插件的设置信息",
+			"option-sync-community-plugin": "第三方插件启用情况",
+			"option-sync-community-plugin-desc": "同步社区插件的启用情况。",
+			"option-sync-community-plugin-data": "已安装的第三方插件",
+			"option-sync-community-plugin-data-desc": "同步已安装的社区插件，包括插件中的 `.js`、`.css`、`manifest.json`等文件，以及插件的设置信息。",
 			"label-sync-introduction": "同步是 Obsidian 提供的附加服务，具有端到端加密及版本历史等功能。",
 			"label-account-required": "要使用同步服务，请登陆或注册 Obsidian 账户。",
 			"button-sign-up": "注册",
@@ -1176,6 +1218,37 @@
 			"label-no-history-found": "未发现快照。",
 			"placeholder-choose-file": "请选择文件...",
 			"label-select-file": "请在左侧面板中选择一个文件以浏览其快照。"
+		},
+		"note-composer": {
+			"name": "笔记重组",
+			"desc": "合并两篇笔记，或将笔记部分内容移动到另一笔记中。",
+			"option-confirm-file-merge": "合并文件提示",
+			"option-confirm-file-merge-description": "在合并两个文件之前通过对话框询问是否合并。",
+			"option-split-replacement-text": "替代原文的方式",
+			"option-split-replacement-text-description": "移动内容后，在原笔记中用于替代原内容的方式。",
+			"option-choice-split-replacement-text-link": "链接存放移动内容的文件",
+			"option-choice-split-replacement-text-embed": "嵌入存放移动内容的文件",
+			"option-choice-split-replacement-text-none": "无",
+			"option-template-file": "模板文件位置",
+			"option-template-file-description": "该选项用于指定合并或提取笔记时使用的模板文件。模板支持的变量为：{{content}}、{{fromTitle}}、{{newTitle}}、{{date:FORMAT}}, 比如 {{date:YYYY-MM-DD}}。",
+			"command-merge-file": "将当前文件合并到其他文件中",
+			"action-merge-file": "将整个文件合并到...",
+			"label-no-files": "未发现相应文件。",
+			"instruction-navigate": "导航",
+		"instruction-merge": "合并到选中文件末尾",
+			"instruction-create-new": "新建文件后合并",
+			"instruction-merge-at-top": "合并到选中文件开头",
+			"instruction-dismiss": "退出",
+			"prompt-select-file-to-merge": "选择需要合并到的文件...",
+			"label-merge-file": "合并文件",
+			"label-confirm-file-merge": "是否要将 \"{{file}}\" 合并到 \"{{destination}}\" 中？合并后 \"{{file}}\" 将会被删除。",
+			"button-merge": "合并",
+			"button-merge-do-not-ask-again": "合并，并不要再询问",
+			"command-split-file": "将当前选中内容移动到其他文件中",
+			"command-extract-heading": "移动当前章节",
+			"instruction-append": "移动到选中文件末尾",
+			"instruction-prepend": "移动到选中文件开头",
+			"msg-fail-to-fetch-template": "调用模板失败：模板文件 \"{{template}}\" 未找到。"
 		}
 	},
 	"nouns": {
