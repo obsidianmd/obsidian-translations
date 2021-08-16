@@ -1,6 +1,6 @@
 {
 	"setting": {
-		"options": "Options",
+		"options": "選項",
 		"plugin": "外掛",
 		"builtin-plugins": "核心外掛",
 		"plugin-options": "外掛選項",
@@ -53,7 +53,7 @@
 			"placeholder-enter-command": "輸入命令...",
 			"button-confirm-enable-vim": "讓我啟用 Vim",
 			"msg-vim-mode-enabled": "命令正確，Vim模式已啟用。",
-			"msg-vim-mode-not-enabled": "命令不正確，Vim模式未啟用以使能繼續運作。",
+			"msg-vim-mode-not-enabled": "命令不正確。為了保護您，Vim 未被啟用。",
 			"msg-vim-mode-please-enter-command": "請輸入命令以啟用Vim模式"
 		},
 		"file": {
@@ -90,7 +90,7 @@
 			"option-attachment-folder-path-description": "指定用於儲存附件的資料夾。新建的附件會儲存於此，如音訊記錄或通過拖放或粘貼建立的影像等。",
 			"option-attachment-subfolder-path": "子目錄名稱",
 			"option-attachment-subfolder-path-description": "若檔案存於 \"vault/folder\"，且子目錄名錄為 \"attachments\"，則附件會被存於 \"vault/folder/attachments\"。",
-			"option-attachment-subfolder-path-placeholder": "attachments"
+			"option-attachment-subfolder-path-placeholder": "附件"
 		},
 		"appearance": {
 			"name": "外觀",
@@ -137,7 +137,7 @@
 			"name": "關於",
 			"label-license-key": "註冊碼",
 			"license-key-placeholder": "您的註冊碼...",
-			"label-enter-commercial-license": "請輸入您的商業註冊碼:",
+			"label-enter-commercial-license": "請輸入您的商業註冊碼：",
 			"label-activate-license": "啟用註冊碼",
 			"button-activate": "啟用",
 			"label-unknown-version": "無標題",
@@ -186,7 +186,7 @@
 			"label-insider": "內測人士",
 			"label-supporter": "支持用戶",
 			"label-vip": "VIP",
-			"label-role-text": "您是一位 {{- role}}!",
+			"label-role-text": "您是一位 {{- role}}！",
 			"label-insider-build-access": "感謝您的支持。您可以訪問我們的內測版本。",
 			"label-action-suggestion": "您可能想要...",
 			"button-get-commercial-license": "獲得一個商用註冊碼。",
@@ -789,7 +789,7 @@
 			"msg-override-theme": "覆蓋當前主題檔案",
 			"msg-existing-theme": "您已經有了 \"Obsidian.css\" 自訂主題檔案。",
 			"msg-confirm-override": "您確定要覆蓋它嗎? 刪除這個主題檔案之前，請做好備份。",
-			"msg-load-error": "無法載入社群主題，請檢查您的網路。",
+			"msg-load-error": "無法載入社群主題，請檢查您的網路連線。",
 			"msg-now-using-theme": "你的CSS佈景主題已變更為 {{title}}。"
 		},
 		"command-palette": {
@@ -881,8 +881,8 @@
 			"name": "大綱",
 			"desc": "顯示當前檔案或連結頁面的大綱標題。",
 			"action-open": "開啟大綱",
-			"action-show": "Show outline pane",
-			"action-open-for-current": "Open outline of the current file",
+			"action-show": "顯示大綱面板",
+			"action-open-for-current": "顯示目前檔案的大綱",
 			"tab-title": "{{displayText}} 的大綱",
 			"label-no-headings": "未發現標題行。"
 		},
@@ -909,7 +909,7 @@
 			"name": "使用預設應用開啟",
 			"desc": "在選單中添加使用預設應用開啟當前檔案這一選項。",
 			"action-open-file": "使用預設應用開啟",
-			"action-open-file-mobile": "Share",
+			"action-open-file-mobile": "分享",
 			"action-show-in-folder": "在檔案總管中顯示"
 		},
 		"templates": {
@@ -960,7 +960,7 @@
 			"option-site-id-placeholder": "挑選網站 ID",
 			"button-create": "建立",
 			"msg-invalid-site-id": "網站 ID只允許使用小寫英文字母、數字與減號。",
-			"msg-site-id-in-use": "此網站 ID已被使用，請再試別的ID。",
+			"msg-site-id-in-use": "此網站 ID 已被使用，請試試別的 ID。",
 			"msg-create-site-issue": "建立網站時發生錯誤。",
 			"label-site-options": "網站選項",
 			"option-site-metadata": "詮釋資料",
@@ -1043,7 +1043,7 @@
 			"option-password-name": "密碼",
 			"option-password-desc": "密碼的雜湊值被安全地儲存，只要密碼設定後，便無法以明文文字形式呈現。",
 			"option-password-placeholder": "你的密碼",
-			"option-nickname-name": "暱稱 (可不使用)",
+			"option-nickname-name": "暱稱 (選填)",
 			"option-nickname-desc": "設定一個暱稱以提醒自己的密碼。",
 			"action-add-password": "添加此密碼",
 			"label-untitled-password": "未命名密碼",
@@ -1058,8 +1058,8 @@
 			"option-custom-url-name": "自訂網址",
 			"option-custom-url-desc": "你的網站所在的網址。",
 			"option-custom-url-placeholder": "www.yourdomain.com",
-			"option-custom-url-redirect": "Redirect to your custom domain",
-			"option-custom-url-redirect-desc": "Redirect visitors on publish.obsidian.md/id to your custom domain.",
+			"option-custom-url-redirect": "重新導向至您的自訂網域",
+			"option-custom-url-redirect-desc": "將前往 publish.obsidian.md/id 的使用者重新導向至您的自訂網域",
 			"button-update-custom-domain": "更新域名設定",
 			"label-custom-domain-instructions": "請參考我們說明網站{{link}}以獲知更多資訊。",
 			"label-custom-domain-link-name": "自訂域名設定指引",
@@ -1189,7 +1189,7 @@
 			"option-sync-community-plugin-desc": "同步社群外掛的啟用狀態。",
 			"option-sync-community-plugin-data": "已安裝社群外掛",
 			"option-sync-community-plugin-data-desc": "同步已安裝社群外掛 (.js, .css, and manifest.json 檔案) 與其設定。",
-			"label-sync-introduction": "Obsidian Sync 係 Obsidian 的附加同步服務，具備點對點加密與版本歷史等功能。",
+			"label-sync-introduction": "Obsidian Sync 是 Obsidian 的附加同步服務，具備點對點加密與版本歷史等功能。",
 			"label-account-required": "開始同步前，請登入或建立新的Obsidian帳號。",
 			"button-sign-up": "建立新帳號",
 			"button-log-in": "登入",
@@ -1247,8 +1247,8 @@
 			"command-split-file": "擷取目前選取...",
 			"instruction-append": "移至底端",
 			"instruction-prepend": "移至頂端",
-			"msg-fail-template-file": "建立每日筆記失敗，模板檔 \"{{template}}\" 未尋獲。"
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-template-file": "建立每日筆記失敗，模板檔 \"{{template}}\" 未尋獲。",
+			"msg-fail-to-fetch-template": "無法擷取模板檔案：找不到 \"{{template}}\"。"
 		}
 	},
 	"nouns": {
