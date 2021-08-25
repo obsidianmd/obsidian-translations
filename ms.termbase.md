@@ -17,7 +17,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | auto-complete | |
 | auto-complete list | |
 | backlinks | |
-| binding | |
+| binding | pemadanan |
 | build | |
 | cache | |
 | catalyst | |
@@ -28,29 +28,30 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | command palette | |
 | converter | |
 | custom | |
-| delete | |
+| delete | hapus |
 | expand | |
+| file explorer | peneroka fail |
 | fixer | |
 | fold | lipat |
-| frontmatter | |
+| frontmatter | frontmatter |
 | graph | graf |
 | heading | pengepala |
 | homepage | |
 | ID | ID |
 | indent | inden |
 | line break | penggal baris / pemenggalan baris |
-| link | |
+| link | pautan |
 | linked | |
 | node | |
-| note | |
+| note | nota |
 | Obsidian | Obsidian |
 | Obsidian Publish | Obsidian Publish |
 | palette | |
 | pane | tetingkap |
 | plugin / core plugin| plugin / plugin teras |
-| preview | |
+| preview | pratonton |
 | page preview | pratonton halaman |
-| quick switcher | |
+| quick switcher | penukaran pantas |
 | regex | |
 | screenshot | |
 | search | |
@@ -64,6 +65,6 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | unlink | |
 | vault | Peti Nota |
 | VIP | |
-| wikilink | |
+| wikilink | wikipautan |
 | workspace | tempat kerja |
-| wrap | |
+| wrap | balut |
