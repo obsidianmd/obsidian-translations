@@ -37,6 +37,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | graph | graf |
 | heading | pengepala |
 | homepage | |
+| hotkey | kekunci pintasan |
 | ID | ID |
 | indent | inden |
 | line break | penggal baris / pemenggalan baris |
