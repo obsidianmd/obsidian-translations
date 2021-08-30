@@ -13,56 +13,78 @@ Please translate into lower case. Reserve upper case for proper nouns.
 |Original Term| ms translation|
 |-|-|
 | alias | alias |
+| attachment | lampiran |
 | arrows | |
 | auto-complete | |
 | auto-complete list | |
 | backlinks | |
 | binding | pemadanan |
+| blockquote | bongkah petua |
+| bold | tulisan tebal |
+| browse | gelintar |
 | build | |
 | cache | |
 | catalyst | |
-| checklist | |
+| checklist | senarai semak |
 | clipboard | |
 | code block | bongkah kod |
 | collapse | |
 | command palette | |
 | converter | |
 | custom | |
+| drag | tarik masuk / tarik keluar |
 | delete | hapus |
+| embed | selit |
 | expand | |
 | file explorer | peneroka fail |
+| filter | tapis |
 | fixer | |
 | fold | lipat |
 | frontmatter | frontmatter |
 | graph | graf |
 | heading | pengepala |
+| highlight | tulisan tumpuan |
 | homepage | |
 | hotkey | kekunci pintasan |
 | ID | ID |
 | indent | inden |
+| -> indent (action) | -> inden masuk |
+| -> unindent | -> inden keluar |
+| italic | tulisan miring | 
 | line break | penggal baris / pemenggalan baris |
 | link | pautan |
+| -> internal link | -> pautan dalaman |
 | linked | |
+| list | senarai |
+| -> bullet list | -> senarai bertitik |
+| -> numbered list | -> senarai bernombor |
+| mobile | mudah alih / peranti mudah alih |
 | node | |
 | note | nota |
 | Obsidian | Obsidian |
 | Obsidian Publish | Obsidian Publish |
 | palette | |
 | pane | tetingkap |
-| plugin / core plugin| plugin / plugin teras |
+| plugin | plugin |
+| -> core plugin | -> plugin teras |
+| -> third-party plugin | -> plugin pihak ketiga |
 | preview | pratonton |
 | page preview | pratonton halaman |
+| quick action | tindakan pantas |
 | quick switcher | penukaran pantas |
 | regex | |
 | screenshot | |
 | search | |
-| sidebar | |
+| sidebar | ?sidebar |
 | site | |
 | snippet | |
 | spell check / spell checker | semak ejaan / penyemak ejaan |
 | starred | |
+| strikethrough | tulisan berpalang |
 | supporter | |
 | tag | tag |
+| toggle | buka/tutup (untuk perkara yang muncul atau keluar skrin seperti papan kekunci) / silih ganti (untuk menukarkan keadaan perkara yang sudah ada dalam skrin seperti tulisan) |
+| toolbar | ?jalur alat |
 | unlink | |
 | vault | Peti Nota |
 | VIP | |
