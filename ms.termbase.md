@@ -68,8 +68,8 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | plugin | plugin |
 | -> core plugin | -> plugin teras |
 | -> third-party plugin | -> plugin pihak ketiga |
-| preview | pratonton |
-| page preview | pratonton halaman |
+| preview | pralihat |
+| page preview | pralihat halaman |
 | quick action | tindakan pantas |
 | quick switcher | penukaran pantas |
 | regex | |
@@ -83,7 +83,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | strikethrough | tulisan berpalang |
 | supporter | |
 | tag | tag |
-| toggle | buka/tutup (untuk perkara yang muncul atau keluar skrin seperti papan kekunci) / silih ganti (untuk menukarkan keadaan perkara yang sudah ada dalam skrin seperti tulisan) |
+| toggle | buka/tutup (papan kekunci) / silih ganti (tulisan tebal, tulisan miring, tulisan tumpu, dll.) / letak/buang  / **perlu diteliti setiap kes** |
 | toolbar | ?jalur alat |
 | unlink | |
 | vault | Peti Nota |
