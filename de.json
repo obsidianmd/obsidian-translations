@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Falls Du Deine Community Badges nicht innerhalb von 24h nach Erwerb Deiner Lizenz erhalten hast, bitte support@obsidian.md kontaktieren.",
 			"message-obtain-commercial-license": "Um eine kommerzielle Lizenz zu erwerben, besuche {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Externe Erweiterungen",
 			"option-safe-mode": "Sicherer Modus",
@@ -407,7 +413,8 @@
 			"cut": "Ausschneiden",
 			"paste": "Einfügen",
 			"paste-as-plain-text": "Als unformatierten Text einfügen",
-			"select-all": "Alles auswählen"
+			"select-all": "Alles auswählen",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Laden des Vaults fehlgeschlagen: ",
 			"loading-cache": "Cache laden...",
 			"loading-workspace": "Workspace laden..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "PDF wird vorbereitet...",
 		"label-rename-file": "Datei umbenennen",
 		"label-new-name": "Neuer Name",
-		"msg-rename-success": "Datei erfolgreich umbenannt."
+		"msg-rename-success": "Datei erfolgreich umbenannt.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Erweiterungen",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "Dateiname stimmt überein",
 			"label-tag-option-description": "suche nach Tags",
 			"label-line-option-description": "suche Begriff in der gleichen Zeile",
-			"label-section-option-description": "suche Begriff unter der gleichen Überschrift"
+			"label-section-option-description": "suche Begriff unter der gleichen Überschrift",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Schnellauswahl",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Gruppe löschen",
 			"button-new-group": "Neue Gruppe",
 			"tooltip-click-to-change-drag-to-reorder": "Klicke, um Farbe zu ändern\nZiehe, um Gruppen neu zu sortieren",
-			"action-timelapse": "Zeitraffer-Animation des Graphen beginnen"
+			"action-timelapse": "Zeitraffer-Animation des Graphen beginnen",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Rückverweis",
@@ -841,6 +861,8 @@
 			"action-open": "Heutige Notiz öffnen",
 			"action-open-previous": "Vorherige Tagesnotiz öffnen",
 			"action-open-next": "Nächste tägliche Notiz öffnen",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Tägliche Notiz konnte nicht erstellt werden. \"{{format}}\" ist kein gültiges Format.",
 			"msg-fail-folder": "Tägliche Notiz konnte nicht erstellt werden. Ordner \"{{folderOption}}\" wurde nicht gefunden.",
 			"msg-fail-template-file": "Tägliche Notiz konnte nicht erstellt werden. Vorlagedatei \"{{template}}\" wurde nicht gefunden.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Alle anderen Dateien synchronisieren",
 			"option-sync-unsupported-desc": "Synchronisiert Dateien mit nicht unterstützten Dateiendungen.",
 			"option-vault-config-sync": "Vault-Konfiguration synchronisieren",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Allgemeine Einstellungen",
 			"option-sync-app-desc": "Aktiviere, um Editor-Einstellungen, Datei- und Link-Einstellungen, eigene Tastaturkürzel, etc. zu synchronisieren.",
 			"option-sync-appearance": "Ercheinungseinstellungen",
 			"option-sync-appearance-desc": "Synchronisiert Erscheinungseinstellungen wie dunklen Modus, aktives Thema und aktivierte CSS-Snippets.",
 			"option-sync-appearance-data": "Themen und Snippets",
 			"option-sync-appearance-data-desc": "Synchronisiert heruntergeladene Themen und Snippets. Ob diese aktiviert sind, entscheidet die vorherige Einstellung.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Aktive Kern-Erweiterungen",
 			"option-sync-core-plugin-desc": "Synchronisiert, welche Kern-Erweiterungen aktiviert sind.",
 			"option-sync-core-plugin-data": "Kern-Erweiterung Einstellungen",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Diese Überschrift extrahieren...",
 			"instruction-append": "um zum Ende zu verschieben",
 			"instruction-prepend": "um zum Anfang zu verschieben",
-			"msg-fail-to-fetch-template": "Vorlagen-Datei: \"{{template}}\" nicht gefunden."
+			"msg-fail-to-fetch-template": "Vorlagen-Datei: \"{{template}}\" nicht gefunden.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

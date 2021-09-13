@@ -209,6 +209,12 @@
 			"message-get-community-badges": "如果你在激活许可证后的24小时内未收到社区徽章，请通过邮件联系 support@obsidian.md 。",
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "第三方插件",
 			"option-safe-mode": "安全模式",
@@ -407,7 +413,8 @@
 			"cut": "剪切",
 			"paste": "粘贴",
 			"paste-as-plain-text": "以纯文本形式粘贴",
-			"select-all": "全选"
+			"select-all": "全选",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "加载库失败: ",
 			"loading-cache": "加载缓存中...",
 			"loading-workspace": "加载工作区中..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "正在生成PDF...",
 		"label-rename-file": "重命名文件",
 		"label-new-name": "新文件名",
-		"msg-rename-success": "已重命名该文件。"
+		"msg-rename-success": "已重命名该文件。",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "插件",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "匹配文件名",
 			"label-tag-option-description": "搜索标签",
 			"label-line-option-description": "以行为单位搜索关键词",
-			"label-section-option-description": "以章节为单位搜索关键词"
+			"label-section-option-description": "以章节为单位搜索关键词",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "快速切换",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "删除组",
 			"button-new-group": "新建颜色组",
 			"tooltip-click-to-change-drag-to-reorder": "点击可更改颜色\n拖动可对颜色组排序",
-			"action-timelapse": "播放关系图谱生长动画"
+			"action-timelapse": "播放关系图谱生长动画",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "反向链接",
@@ -841,6 +861,8 @@
 			"action-open": "打开/创建今天的日记",
 			"action-open-previous": "打开前一天的日记",
 			"action-open-next": "打开后一天的日记",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "创建日记未成功。 \"{{format}}\" 不是有效的格式。",
 			"msg-fail-folder": "创建日记未成功。 未找到 \"{{folderOption}}\" 文件夹。",
 			"msg-fail-template-file": "创建日记未成功。未找到 \"{{template}}\" 模板文件。",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "同步所有其他类型文件",
 			"option-sync-unsupported-desc": "同步那些无法在 Obsidian 中打开的文件。",
 			"option-vault-config-sync": "同步配置文件",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "主要设置",
 			"option-sync-app-desc": "同步编辑器、文件与链接、快捷键等方面的设置。",
 			"option-sync-appearance": "外观设置",
 			"option-sync-appearance-desc": "同步外观设置，比如基础颜色、当前应用的主题、开启的 CSS 代码片段等设置信息。",
 			"option-sync-appearance-data": "主题与 CSS 代码片段",
 			"option-sync-appearance-data-desc": "同步已保存的主题与 CSS 代码片段文件。文件启用情况由上一同步设置决定。",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "核心插件的启用情况",
 			"option-sync-core-plugin-desc": "同步核心插件的启用情况。",
 			"option-sync-core-plugin-data": "核心插件设置",
@@ -1235,7 +1261,7 @@
 			"action-merge-file": "将整个文件合并到...",
 			"label-no-files": "未发现相应文件。",
 			"instruction-navigate": "导航",
-		"instruction-merge": "合并到选中文件末尾",
+			"instruction-merge": "合并到选中文件末尾",
 			"instruction-create-new": "新建文件后合并",
 			"instruction-merge-at-top": "合并到选中文件开头",
 			"instruction-dismiss": "退出",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "移动当前章节",
 			"instruction-append": "移动到选中文件末尾",
 			"instruction-prepend": "移动到选中文件开头",
-			"msg-fail-to-fetch-template": "调用模板失败：模板文件 \"{{template}}\" 未找到。"
+			"msg-fail-to-fetch-template": "调用模板失败：模板文件 \"{{template}}\" 未找到。",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

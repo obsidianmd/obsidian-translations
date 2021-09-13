@@ -209,6 +209,12 @@
 			"message-get-community-badges": "For fællesskabs badges, skriv venligst email til support@obsidian.md, hvis du ikke har modtaget dem senest 24 timer efter, at du har anskaffet licensen.",
 			"message-obtain-commercial-license": "For at hente en kommerciel licens skal du besøge {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Tredjeparts plug-ins",
 			"option-safe-mode": "Sikker tilstand",
@@ -407,7 +413,8 @@
 			"cut": "Klip",
 			"paste": "Indsæt",
 			"paste-as-plain-text": "Indsæt som almindelig tekst",
-			"select-all": "Vælg alt"
+			"select-all": "Vælg alt",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klik for at udvide",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Fejlede ved åbning af boks: ",
 			"loading-cache": "Indlæser cache...",
 			"loading-workspace": "Åbner arbejdsområde..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Klargører PDF...",
 		"label-rename-file": "Omdøb fil",
 		"label-new-name": "Nyt navn",
-		"msg-rename-success": "Filen er omdøbt."
+		"msg-rename-success": "Filen er omdøbt.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "match fil navn",
 			"label-tag-option-description": "søg efter tags",
 			"label-line-option-description": "søg nøgleord på samme linje",
-			"label-section-option-description": "søg nøgleord under samme overskrift"
+			"label-section-option-description": "søg nøgleord under samme overskrift",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Hurtigskifter",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Slet gruppe",
 			"button-new-group": "Ny gruppe",
 			"tooltip-click-to-change-drag-to-reorder": "Klik for at ændre farve\nTræk for at omarrangere grupper",
-			"action-timelapse": "Start tidsforskydnings graf animation"
+			"action-timelapse": "Start tidsforskydnings graf animation",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
@@ -841,6 +861,8 @@
 			"action-open": "Åben dagens note",
 			"action-open-previous": "Åben forrige daglige note",
 			"action-open-next": "Åben efterfølgende daglige note",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Kunne ikke oprette daglig note. \"{{format}}\" er ikke et gyldigt format.",
 			"msg-fail-folder": "Kunne ikke oprette daglig note. Mappen \"{{folderOption}}\" blev ikke fundet.",
 			"msg-fail-template-file": "Kunne ikke oprette daglig note. Skabelonfilen \"{{template}}\" blev ikke fundet.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Synkroniser alle andre typer",
 			"option-sync-unsupported-desc": "Synkroniser usupporterede filtyper.",
 			"option-vault-config-sync": "Boks konfigurationssynkronisering",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Hovedindstillinger",
 			"option-sync-app-desc": "Aktiverer synkronisering af editor indstillinger, filer & links indstillinger, brugerdefinerede genvejstaster osv.",
 			"option-sync-appearance": "Indstillinger for udseende",
 			"option-sync-appearance-desc": "Synkroniseringsindstillinger for udseende, såsom mørk tema, aktivt tema, og aktive CSS kodestykker.",
 			"option-sync-appearance-data": "Temaer og CSS kodestykker",
 			"option-sync-appearance-data-desc": "Synkroniser hentede temaer og CSS kodestykker. Om de er aktiveret afhænger af den foregående indstilling.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Aktive kerne plug-in liste",
 			"option-sync-core-plugin-desc": "Synkroniser hvilke kerne plug-ins, som er aktive.",
 			"option-sync-core-plugin-data": "Kerne plug-in indstillinger",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Udtræk indhold fra denne overskrift...",
 			"instruction-append": "flyt til bunden",
 			"instruction-prepend": "flyt til toppen",
-			"msg-fail-to-fetch-template": "Kunne ikke indlæse skabelonfilen: \"{{template}}\" blev ikke fundet."
+			"msg-fail-to-fetch-template": "Kunne ikke indlæse skabelonfilen: \"{{template}}\" blev ikke fundet.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

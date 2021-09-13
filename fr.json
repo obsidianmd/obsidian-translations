@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Pour les badges communautaires, merci d'envoyer un e-mail à support@obsidian.md si vous ne les avez pas reçus 24 heures après l'obtention de votre licence.",
 			"message-obtain-commercial-license": "Pour obtenir une licence commerciale, visiter {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Plugins tiers",
 			"option-safe-mode": "Mode sans échec",
@@ -407,7 +413,8 @@
 			"cut": "Couper",
 			"paste": "Coller",
 			"paste-as-plain-text": "Coller en texte brut",
-			"select-all": "Tout sélectionner"
+			"select-all": "Tout sélectionner",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Échec du chargement du coffre : ",
 			"loading-cache": "Chargement du cache...",
 			"loading-workspace": "Chargement de l'espace de travail..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Préparation du PDF...",
 		"label-rename-file": "Renommer le fichier",
 		"label-new-name": "Nouveau nom",
-		"msg-rename-success": "Fichier correctement renommé."
+		"msg-rename-success": "Fichier correctement renommé.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Modules d'extension",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "correspondance avec le nom du fichier",
 			"label-tag-option-description": "recherche par tags",
 			"label-line-option-description": "recherche par mots-clés dans la même ligne",
-			"label-section-option-description": "recherche par mots-clés sous le même titre"
+			"label-section-option-description": "recherche par mots-clés sous le même titre",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Sélecteur rapide",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Supprimer le groupe",
 			"button-new-group": "Nouveau groupe",
 			"tooltip-click-to-change-drag-to-reorder": "Cliquer pour changer la couleur\nFaire glisser pour réorganiser les groupes",
-			"action-timelapse": "Lancer l'animation timelapse du graphique"
+			"action-timelapse": "Lancer l'animation timelapse du graphique",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Rétroliens",
@@ -841,6 +861,8 @@
 			"action-open": "Ouvrir la note quotidienne",
 			"action-open-previous": "Ouvrir la note quotidienne précédente",
 			"action-open-next": "Ouvrir la note quotidienne suivante",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Échec de la création de la note quotidienne. \"{{format}}\" n'est pas un format valide.",
 			"msg-fail-folder": "Échec de la création de la note quotidienne. Le dossier \"{{folderOption}}\" n'a pas été trouvé.",
 			"msg-fail-template-file": "Échec de la création de la note quotidienne. Le fichier modèle \"{{template}}\" n'a pas été trouvé.",
@@ -1153,7 +1175,7 @@
 			"option-sync-log-desc": "Afficher les activités de synchronisation récentes pour le débogage.",
 			"button-view": "Voir",
 			"option-over-size": "Taille du coffre au-dessus de la limite",
-			"": "Votre coffre est {{size}} au-dessus de la limite de {{limit}}.",
+			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
 			"msg-largest-files": "Voir les fichiers les plus volumineux",
 			"msg-largest-files-desc": "Voici les fichiers téléversés qui prennent le plus de place. Après suppression des pièces jointes, utilisez le bouton de purge afin de libérer le la place sur votre vault téléversé.",
 			"button-purge-remote": "Purger",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Synchronisation de tous les autres types",
 			"option-sync-unsupported-desc": "Synchronisation des types de fichiers non pris en charge.",
 			"option-vault-config-sync": "Configuration de la synchronisation du coffre",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Réglages principaux",
 			"option-sync-app-desc": "Activer pour synchroniser les paramètres de l'éditeur, des fichiers et liens, des raccourcis personnalisés, etc.",
 			"option-sync-appearance": "Paramètres d'apparence",
 			"option-sync-appearance-desc": "Synchroniser les paramètres d'apparence telles que le mode sombre, le thème actif et les extraits CSS activés.",
 			"option-sync-appearance-data": "Thèmes et extraits CSS",
 			"option-sync-appearance-data-desc": "Synchroniser les thèmes et les extraits CSS téléchargés. Si elles sont activées dépend des paramètres précédent.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Liste des plugins principaux actifs",
 			"option-sync-core-plugin-desc": "Synchroniser la liste des plugins principaux actifs.",
 			"option-sync-core-plugin-data": "Paramètres des plugins principaux",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Extraire cet en-tête...",
 			"instruction-append": "pour ajouter en bas",
 			"instruction-prepend": "pour ajouter en haut",
-			"msg-fail-to-fetch-template": "Échec de récupération du fichier de modèle : \"{{template}}\" n'a pas été trouvé."
+			"msg-fail-to-fetch-template": "Échec de récupération du fichier de modèle : \"{{template}}\" n'a pas été trouvé.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

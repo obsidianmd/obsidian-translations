@@ -44,7 +44,7 @@
 			"option-auto-convert-html-description": "Automaticamente converte HTML para Markdown quando colado ou arrastado de páginas web. Use Ctrl/Cmd+Shift+V para colar sem conversão.",
 			"option-vim-key-bindings": "Atalhos de teclado Vim",
 			"option-vim-key-bindings-description": "Permite utilizar atalhos Vim no editor.",
-			"option-emacsy-keys": "Teclas de aderência legado Emacs-style", 
+			"option-emacsy-keys": "Teclas de aderência legado Emacs-style",
 			"option-emacsy-keys-description": "Allows you to use the additional Emacs-style navigation keys, which are standard on macOS, but may interfere with some key operations.",
 			"label-confirm-enable-vim": "Confirme a ativação do modo Vim",
 			"label-vim-warning": "O modo Vim é eficiente para edição de texto, mas não é o mais intuitivo. Se você nunca usou Vim e escolher essa opção, vai parecer que o Obsedian parou de funcionar.",
@@ -208,6 +208,12 @@
 			"link-sign-up-now": "Crie uma conta agora",
 			"message-get-community-badges": "Para insígnias de comunidade, mande um e-mail para support@obsidian.md caso você não tenhas as recebido em até 24 horas após obter sua licença.",
 			"message-obtain-commercial-license": "Para obter uma licença comercial, visite {{pricingPageLink}}."
+		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Plugins não oficiais",
@@ -407,7 +413,8 @@
 			"cut": "Cut",
 			"paste": "Paste",
 			"paste-as-plain-text": "Paste as plain text",
-			"select-all": "Select all"
+			"select-all": "Select all",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Clique para expandir",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Failed to load vault: ",
 			"loading-cache": "Loading cache...",
 			"loading-workspace": "Loading workspace..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Preparando o PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "Novo nome",
-		"msg-rename-success": "Arquivo renomeado com sucesso."
+		"msg-rename-success": "Arquivo renomeado com sucesso.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "match file name",
 			"label-tag-option-description": "burcar tags",
 			"label-line-option-description": "pesquisar palavras-chave mesma linha",
-			"label-section-option-description": "pesquisar palavras-chave sob o mesmo título"
+			"label-section-option-description": "pesquisar palavras-chave sob o mesmo título",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Navegação rápida",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Deletar grupo",
 			"button-new-group": "Criar novo grupo",
 			"tooltip-click-to-change-drag-to-reorder": "Clique para mudar a cor\nArraste para re-ordenar os grupos",
-			"action-timelapse": "Start graph timelapse animation"
+			"action-timelapse": "Start graph timelapse animation",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Links inversos",
@@ -841,6 +861,8 @@
 			"action-open": "Abrir a nota de hoje",
 			"action-open-previous": "Abrir a nota diária anterior",
 			"action-open-next": "Abrir a próxima nota diária",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Falha ao criar nota diária. \"{{format}}\" não é um formato válido.",
 			"msg-fail-folder": "Falha ao criar nota diária. Pasta \"{{folderOption}}\" não encontrada.",
 			"msg-fail-template-file": "Falha ao criar nota diária. Arquivo modelo \"{{template}}\" não encontrado.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sync all other types",
 			"option-sync-unsupported-desc": "Sync unsupported file types.",
 			"option-vault-config-sync": "Vault configuration sync",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Main settings",
 			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
 			"option-sync-appearance": "Appearance settings",
 			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
 			"option-sync-appearance-data": "Themes and snippets",
 			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Active core plugin list",
 			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
 			"option-sync-core-plugin-data": "Core plugin settings",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "to move to bottom",
 			"instruction-prepend": "to move to top",
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
