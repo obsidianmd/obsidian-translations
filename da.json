@@ -210,10 +210,10 @@
 			"message-obtain-commercial-license": "For at hente en kommerciel licens skal du besøge {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "Plug-in liste",
+			"option-search-plugin": "Søg kerne plug-ins",
+			"option-search-plugin-description": "Filter plug-ins efter navn eller beskrivelse.",
+			"placeholder-search-plugin": "Søg plug-ins..."
 		},
 		"third-party-plugin": {
 			"name": "Tredjeparts plug-ins",
@@ -414,7 +414,7 @@
 			"paste": "Indsæt",
 			"paste-as-plain-text": "Indsæt som almindelig tekst",
 			"select-all": "Vælg alt",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "Omdøb denne overskrift..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klik for at udvide",
@@ -475,13 +475,13 @@
 			"loading-workspace": "Åbner arbejdsområde..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "Importer til boks",
+			"action-choose-file-to-insert": "Vælg en fil til at indsætte i",
+			"action-insert-text-into-file": "Indsæt tekst i {{filename}}",
+			"action-insert-link-into-file": "Indst link i {{filename}}",
+			"msg-importing": "Importerer...",
+			"msg-import-success": "Import gik fint",
+			"msg-failed-to-import-file": "Kunne ikke importere {{filename}}"
 		}
 	},
 	"commands": {
@@ -555,7 +555,7 @@
 		"label-rename-file": "Omdøb fil",
 		"label-new-name": "Nyt navn",
 		"msg-rename-success": "Filen er omdøbt.",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "Omdøb overskrift"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -659,7 +659,7 @@
 			"label-tag-option-description": "søg efter tags",
 			"label-line-option-description": "søg nøgleord på samme linje",
 			"label-section-option-description": "søg nøgleord under samme overskrift",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "Søg efter \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Hurtigskifter",
@@ -725,9 +725,9 @@
 			"tooltip-delete-graph": "Slet gruppe",
 			"button-new-group": "Ny gruppe",
 			"tooltip-click-to-change-drag-to-reorder": "Klik for at ændre farve\nTræk for at omarrangere grupper",
-			"action-timelapse": "Start tidsforskydnings graf animation",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"action-timelapse": "Start tidsgraf animation",
+			"tooltip-start-timelapse-animation": "Start tidsgraf animation",
+			"button-animate-timelapse": "Animer"
 		},
 		"backlinks": {
 			"name": "Tilbagelinks",
@@ -861,8 +861,8 @@
 			"action-open": "Åben dagens note",
 			"action-open-previous": "Åben forrige daglige note",
 			"action-open-next": "Åben efterfølgende daglige note",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "Indsæt tekst i daglig note",
+			"action-insert-link": "Indsæt link i daglig note",
 			"msg-fail-format": "Kunne ikke oprette daglig note. \"{{format}}\" er ikke et gyldigt format.",
 			"msg-fail-folder": "Kunne ikke oprette daglig note. Mappen \"{{folderOption}}\" blev ikke fundet.",
 			"msg-fail-template-file": "Kunne ikke oprette daglig note. Skabelonfilen \"{{template}}\" blev ikke fundet.",
@@ -1197,16 +1197,16 @@
 			"option-sync-unsupported": "Synkroniser alle andre typer",
 			"option-sync-unsupported-desc": "Synkroniser usupporterede filtyper.",
 			"option-vault-config-sync": "Boks konfigurationssynkronisering",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "Versionshistorie for indstillinger",
+			"option-view-config-files-desc": "Vis og gendan versionshistorie for indstillingsfiler.",
 			"option-sync-app": "Hovedindstillinger",
 			"option-sync-app-desc": "Aktiverer synkronisering af editor indstillinger, filer & links indstillinger, brugerdefinerede genvejstaster osv.",
 			"option-sync-appearance": "Indstillinger for udseende",
 			"option-sync-appearance-desc": "Synkroniseringsindstillinger for udseende, såsom mørk tema, aktivt tema, og aktive CSS kodestykker.",
 			"option-sync-appearance-data": "Temaer og CSS kodestykker",
 			"option-sync-appearance-data-desc": "Synkroniser hentede temaer og CSS kodestykker. Om de er aktiveret afhænger af den foregående indstilling.",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "Genvejstaster",
+			"option-sync-hotkey-desc": "Synkroniser brugerdefinerede genvejstaster.",
 			"option-sync-core-plugin": "Aktive kerne plug-in liste",
 			"option-sync-core-plugin-desc": "Synkroniser hvilke kerne plug-ins, som er aktive.",
 			"option-sync-core-plugin-data": "Kerne plug-in indstillinger",
@@ -1275,7 +1275,7 @@
 			"instruction-append": "flyt til bunden",
 			"instruction-prepend": "flyt til toppen",
 			"msg-fail-to-fetch-template": "Kunne ikke indlæse skabelonfilen: \"{{template}}\" blev ikke fundet.",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "Kunne ikke finde overskrift"
 		}
 	},
 	"nouns": {
