@@ -123,15 +123,15 @@
 			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
 		},
 		"hotkeys": {
-			"name": "Hotkeys",
-			"prompt-filter": "Filter...",
-			"tooltip-delete-hotkey": "Delete hotkey",
-			"label-waiting-for-hotkey-press": "Press hotkey...",
-			"tooltip-restore-default": "Restore default",
-			"tooltip-customize-command": "Customize this command",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands",
-			"label-blank-hotkey": "Blank"
+			"name": "हॉटकी",
+			"prompt-filter": "फ़िल्टर...",
+			"tooltip-delete-hotkey": "हॉटकी हटाएी",
+			"label-waiting-for-hotkey-press": "हॉटकी दबाएँ...",
+			"tooltip-restore-default": "डिफ़ॉल्ट सेटिंग्स को पुनर्स्थापित करें",
+			"tooltip-customize-command": "कमांड को बदलें",
+			"tooltip-hotkey-single-conflict": "यह हॉटकी संघर्ष करता है \"{{command}}\" कमांड के साथो",
+			"tooltip-hotkey-multiple-conflicts": "यह हॉटकी संघर्ष करता है  {{count}} कमांडो के साथो",
+			"label-blank-hotkey": "खाली"
 		},
 		"about": {
 			"name": "About",
@@ -180,34 +180,40 @@
 			"label-free-personal-license": "Personal license: free for personal use."
 		},
 		"account": {
-			"name": "Account",
-			"label-welcome": "Welcome, {{name}}!",
-			"label-your-account-email": "Your account is ",
-			"label-insider": "insider",
-			"label-supporter": "supporter",
-			"label-vip": "VIP",
-			"label-role-text": "You're a {{- role}}!",
-			"label-insider-build-access": "Thank you for your support. You have access to our insider builds.",
-			"label-action-suggestion": "You may want to...",
-			"button-get-commercial-license": "Get a commercial license",
-			"button-get-catalyst-license": "Support Obsidian with Obsidian Catalyst",
-			"button-check-for-catalyst-license": "Check for Obsidian Catalyst",
-			"button-upgrade-catalyst-license": "Upgrade to a higher tier",
-			"button-log-out": "Log out",
-			"label-log-in": "Log in",
-			"label-email": "Email",
-			"placeholder-email": "Your email...",
-			"label-password": "Password",
-			"placeholder-password": "Your password...",
-			"button-login": "Login",
-			"message-empty-email": "Email cannot be empty.",
-			"message-invalid-email": "Email is not valid.",
-			"message-empty-password": "Password cannot be empty.",
-			"message-login-failed": "Login failed, please double check your email and password.",
-			"label-no-account": "Don't have an account? ",
-			"link-sign-up-now": "Sign up now",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
-			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
+			"name": "खाता",
+			"label-welcome": "स्वागत हे, {{name}}!",
+			"label-your-account-email": "आपका खाता है ",
+			"label-insider": "इंसाईडर",
+			"label-supporter": "समर्थक",
+			"label-vip": "वीआईपी",
+			"label-role-text": "आप हैं एक {{- role}}!",
+			"label-insider-build-access": "आपके समर्थन के लिए धन्यवाद। आपके पास हमारे इनसाइडर बिल्ड पहुचने का एक्सेस है।",
+			"label-action-suggestion": "आप चाहे तो...",
+			"button-get-commercial-license": "व्यावसायिक लाइसेंस प्राप्त करें",
+			"button-get-catalyst-license": "ओब्सीडियन कटेलिस्ट के साथ ओब्सीडियन का समर्थन करें",
+			"button-check-for-catalyst-license": "ओब्सीडियन कटेलिस्ट के लिए जाँच",
+			"button-upgrade-catalyst-license": "उच्च टीयर पर अपग्रेड करें",
+			"button-log-out": "लॉग आउट ",
+			"label-log-in": "लॉग इन",
+			"label-email": "ईमेल",
+			"placeholder-email": "आपका ईमेल...",
+			"label-password": "पासवर्ड",
+			"placeholder-password": "आपका पासवर्ड...",
+			"button-login": "लॉग इन",
+			"message-empty-email": "ईमेल खाली नहीं हो सकता।",
+			"message-invalid-email": "ईमेल मान्य नहीं है।",
+			"message-empty-password": "पासवर्ड खाली नहीं हो सकता|",
+			"message-login-failed": "लॉगिन विफल, कृपया अपना ईमेल और पासवर्ड दोबारा जांचें।",
+			"label-no-account": "खाता नहीं है? ",
+			"link-sign-up-now": "अभी साइनअप करें",
+			"message-get-community-badges": "कम्युनिटी बैज के लिए, कृपया support@obsidian.md पर ईमेल करें यदि आपको अपना लाइसेंस प्राप्त करने के 24 घंटे बाद भी वे प्राप्त नहीं हुए हैं।",
+			"message-obtain-commercial-license": "एक वाणिज्यिक लाइसेंस प्राप्त करने के लिए, {{pricingPageLink}} पर जाएँ "
+		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Third-party plugin",
@@ -308,15 +314,15 @@
 	},
 	"editor": {
 		"search": {
-			"label-previous": "Prev",
-			"label-next": "Next",
-			"label-all": "All",
-			"label-exit-search": "Exit search",
-			"label-replace": "Replace",
-			"label-replace-all": "Replace all",
-			"key-enter": "Enter",
-			"key-shift-f3": "Shift + F3",
-			"key-enter-or-f3": "Enter or F3"
+			"label-previous": "पिछला",
+			"label-next": "अगला",
+			"label-all": "सब",
+			"label-exit-search": "खोज मोड से बाहर निकलें",
+			"label-replace": "बदलें",
+			"label-replace-all": "सबको बदली करें",
+			"key-enter": "एनटर",
+			"key-shift-f3": "शिफ़्ट + F3",
+			"key-enter-or-f3": "एनटर या F3"
 		},
 		"link-suggestion": {
 			"label-type-hash": "Type #",
@@ -407,7 +413,8 @@
 			"cut": "Cut",
 			"paste": "Paste",
 			"paste-as-plain-text": "Paste as plain text",
-			"select-all": "Select all"
+			"select-all": "Select all",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "बड़ा करने के लिए क्लिक करे ",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Failed to load vault: ",
 			"loading-cache": "Loading cache...",
 			"loading-workspace": "Loading workspace..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Preparing PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"msg-rename-success": "Successfully renamed file.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "match file name",
 			"label-tag-option-description": "search for tags",
 			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-section-option-description": "search keywords under same heading",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Delete group",
 			"button-new-group": "New group",
 			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"action-timelapse": "Start graph timelapse animation",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "बैकलिंक",
@@ -841,6 +861,8 @@
 			"action-open": "Open today's note",
 			"action-open-previous": "Open previous daily note",
 			"action-open-next": "Open next daily note",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
 			"msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
 			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sync all other types",
 			"option-sync-unsupported-desc": "Sync unsupported file types.",
 			"option-vault-config-sync": "Vault configuration sync",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Main settings",
 			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
 			"option-sync-appearance": "Appearance settings",
 			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
 			"option-sync-appearance-data": "Themes and snippets",
 			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Active core plugin list",
 			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
 			"option-sync-core-plugin-data": "Core plugin settings",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "to move to bottom",
 			"instruction-prepend": "to move to top",
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

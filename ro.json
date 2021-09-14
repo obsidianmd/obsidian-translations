@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Pentru insignele comunității, te rugăm să trimiți un email la support@obsidian.md dacă nu le-ai primit la cel mult 24 de ore după ce ai obținut licența.",
 			"message-obtain-commercial-license": "Pentru a obține o licență comercială, vizitează {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Module terțe",
 			"option-safe-mode": "Mod de Siguranță",
@@ -407,7 +413,8 @@
 			"cut": "Cut",
 			"paste": "Paste",
 			"paste-as-plain-text": "Paste as plain text",
-			"select-all": "Select all"
+			"select-all": "Select all",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Click pentru a extinde",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Failed to load vault: ",
 			"loading-cache": "Loading cache...",
 			"loading-workspace": "Loading workspace..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Pregătesc fișierul PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"msg-rename-success": "Successfully renamed file.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Module",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "match file name",
 			"label-tag-option-description": "search for tags",
 			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-section-option-description": "search keywords under same heading",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Comutare rapidă",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Delete group",
 			"button-new-group": "New group",
 			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"action-timelapse": "Start graph timelapse animation",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Referințe",
@@ -841,6 +861,8 @@
 			"action-open": "Deschide nota de azie",
 			"action-open-previous": "Deschide nota zilnică anterioară",
 			"action-open-next": "Deschide nota zilnică următoare",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Nu am reușit să creez nota zilnică. \"{{format}}\" nu este un format valid.",
 			"msg-fail-folder": "Nu am reușit să creez nota zilnică. Directorul \"{{folderOption}}\" nu a fost găsit.",
 			"msg-fail-template-file": "Nu am reușit să creez nota zilnică. Fișierul șablon \"{{template}}\" nu a fost găsit.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sync all other types",
 			"option-sync-unsupported-desc": "Sync unsupported file types.",
 			"option-vault-config-sync": "Vault configuration sync",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Main settings",
 			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
 			"option-sync-appearance": "Appearance settings",
 			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
 			"option-sync-appearance-data": "Themes and snippets",
 			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Active core plugin list",
 			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
 			"option-sync-core-plugin-data": "Core plugin settings",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "to move to bottom",
 			"instruction-prepend": "to move to top",
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

@@ -3,7 +3,7 @@
 		"options": "Opties",
 		"plugin": "Plugin",
 		"builtin-plugins": "Ingebouwde plugins",
-		"plugin-options": "Plugin opties",
+		"plugin-options": "Pluginopties",
 		"folder-path-example-placeholder": "Voorbeeld: map 1/map 2",
 		"file-path-example-placeholder": "Voorbeeld: map/notitie",
 		"editor": {
@@ -15,32 +15,32 @@
 			"option-readable-line-length": "Leesbare regellengte",
 			"option-readable-line-description": "Beperk maximale regellengte. Hierdoor past er minder op het scherm, maar het maakt langere alinea's leesbaarder.",
 			"option-strict-line-break": "Strikt regeleinde",
-			"option-strict-line-break-description": "In voorbeschouwingsmodus, negeer enkele regeleindes als volgens de Markdownspecificaties. Zet dit af om enkele regeleindes te tonen in de voorbeschouwing.",
-			"option-show-frontmatter": "Laat voorwerk zien",
-			"option-show-frontmatter-description": "Toon voorwerk in de voorbeeldmodus als een codeblok. Schakel uit om het voorwerk-gedeelte te verbergen.",
+			"option-strict-line-break-description": "Negeer in voorbeeldmodus enkele regeleindes als volgens de Markdownspecificaties. Zet dit af om enkele regeleindes te tonen in het voorbeeld.",
+			"option-show-frontmatter": "Laat voorblad zien",
+			"option-show-frontmatter-description": "Toon voorblad in de voorbeeldmodus als een codeblok. Schakel uit om het voorwerk-gedeelte te verbergen.",
 			"option-auto-pair-brackets": "Automatisch haakjes toevoegen",
 			"option-auto-pair-brackets-description": "Haakjes en aanhalingstekens automatisch toevoegen.",
 			"option-auto-pair-markdown": "Automatisch Markdownsyntaxis toevoegen",
 			"option-auto-pair-markdown-description": "Automatisch symbolen voor vet- en cursief drukken toevoegen.",
-			"option-smart-indent-lists": "Intelligent lijsten inspringen",
+			"option-smart-indent-lists": "Slim lijsten inspringen",
 			"option-smart-indent-lists-description": "Automatisch inspringen en opmaken van lijsten.",
-			"option-fold-heading": "Koppen invouwen",
-			"option-fold-heading-description": "Alles onder een kop kan ingevouwd worden..",
-			"option-fold-indent": "Invouwen van inspringing",
-			"option-fold-indent-description": "Laat je een deel van hetzelfde ingesprongen stuk invouwen, zoals een lijst.",
-			"option-default-new-pane-mode": "Default new pane mode",
-			"option-default-new-pane-mode-description": "The default mode a new pane gets opened in.",
-			"option-default-new-pane-mode-source": "Editor",
-			"option-default-new-pane-mode-preview": "Preview",
+			"option-fold-heading": "Koppen opvouwen",
+			"option-fold-heading-description": "Alles onder een kop kan opgevouwen worden.",
+			"option-fold-indent": "Opvouwen van inspringing",
+			"option-fold-indent-description": "Laat je een deel van hetzelfde ingesprongen stuk opvouwen, zoals een lijst.",
+			"option-default-new-pane-mode": "Standaard nieuw-paneel-modus",
+			"option-default-new-pane-mode-description": "De standaard modus waarin een nieuw paneel wordt geopend.",
+			"option-default-new-pane-mode-source": "Tekstbewerker",
+			"option-default-new-pane-mode-preview": "Voorbeeld",
 			"option-show-line-number": "Toon regelnummer",
-			"option-show-line-number-description": "Toon regelnummer in de goot.",
+			"option-show-line-number-description": "Toon regelnummer in de kantlijn.",
 			"option-use-tabs": "Gebruik inspringen",
 			"option-use-tabs-description": "Gebruik inspringen om in te springen wanneer de\"Tab\"-toets gebruikt wordt. Schakel dit uit om spaties te gebruiken.",
-			"option-tab-size": "Tab size",
-			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
+			"option-tab-size": "Tab-breedte",
+			"option-tab-size-description": "Het aantal spaties dat een tab breed is.",
 			"option-line-wrap": "Regelterugloop",
 			"option-line-wrap-description": "Laat lange regels teruglopen zodat ze in het venster passen, zonder van links naar rechts te hoeven scrollen.",
-			"option-auto-convert-html": "Auto convert HTML",
+			"option-auto-convert-html": "Automatisch HTML omzetten",
 			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim-sneltoetsen",
 			"option-vim-key-bindings-description": "Hiermee gebruikt u Vim-sneltoetsen bij het bewerken van het bronbestand..",
@@ -208,6 +208,12 @@
 			"link-sign-up-now": "Schrijf je nu in",
 			"message-get-community-badges": "Stuur voor community-badges een e-mail naar support@obsidian.md als je ze 24 uur na het verkrijgen van je licentie nog niet hebt ontvangen.",
 			"message-obtain-commercial-license": "Voor een commerciële licentie gaat u naar {{pricingPageLink}}."
+		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Externe plugin",
@@ -407,7 +413,8 @@
 			"cut": "Cut",
 			"paste": "Paste",
 			"paste-as-plain-text": "Paste as plain text",
-			"select-all": "Select all"
+			"select-all": "Select all",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klik om uit te breiden",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Failed to load vault: ",
 			"loading-cache": "Loading cache...",
 			"loading-workspace": "Loading workspace..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Preparing PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"msg-rename-success": "Successfully renamed file.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "match file name",
 			"label-tag-option-description": "search for tags",
 			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-section-option-description": "search keywords under same heading",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Delete group",
 			"button-new-group": "New group",
 			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"action-timelapse": "Start graph timelapse animation",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -841,6 +861,8 @@
 			"action-open": "Open today's note",
 			"action-open-previous": "Open previous daily note",
 			"action-open-next": "Open next daily note",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
 			"msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
 			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sync all other types",
 			"option-sync-unsupported-desc": "Sync unsupported file types.",
 			"option-vault-config-sync": "Vault configuration sync",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Main settings",
 			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
 			"option-sync-appearance": "Appearance settings",
 			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
 			"option-sync-appearance-data": "Themes and snippets",
 			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Active core plugin list",
 			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
 			"option-sync-core-plugin-data": "Core plugin settings",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "to move to bottom",
 			"instruction-prepend": "to move to top",
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
