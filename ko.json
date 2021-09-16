@@ -209,6 +209,12 @@
 			"message-get-community-badges": "제품 키를 등록하고 24시간 이후에도 커뮤니티 뱃지를 받지 못하셨다면 support@obsidian.md로 문의해주세요",
 			"message-obtain-commercial-license": "상업용 제품 키를 구하시고 싶으시면 {{pricingPageLink}}를 방문해주세요."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "서드파티 플러그인",
 			"option-safe-mode": "안전 모드",
@@ -407,7 +413,8 @@
 			"cut": "Cut",
 			"paste": "Paste",
 			"paste-as-plain-text": "Paste as plain text",
-			"select-all": "Select all"
+			"select-all": "Select all",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "볼트를 불러오는데 실패하였습니다: ",
 			"loading-cache": "캐쉬를 로딩 중...",
 			"loading-workspace": "워크스페이스 로딩 중..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "PDF를 준비중입니다...",
 		"label-rename-file": "파일 이름 변경",
 		"label-new-name": "새 이름",
-		"msg-rename-success": "파일의 이름을 바꿨습니다."
+		"msg-rename-success": "파일의 이름을 바꿨습니다.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "플러그인",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "파일 이름 맞추기",
 			"label-tag-option-description": "태그 검색",
 			"label-line-option-description": "같은 줄의 단어 검색하기",
-			"label-section-option-description": "같은 헤더 안에서 검색하기"
+			"label-section-option-description": "같은 헤더 안에서 검색하기",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "빠른 파일 변경",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "그룹 삭제",
 			"button-new-group": "새 그룹",
 			"tooltip-click-to-change-drag-to-reorder": "눌러서 색상 변경\n드래그해서 순서 변경",
-			"action-timelapse": "그래프 타임랩스 시작하기"
+			"action-timelapse": "그래프 타임랩스 시작하기",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "백링크",
@@ -841,6 +861,8 @@
 			"action-open": "오늘의 일간 노트 열기",
 			"action-open-previous": "이전 일간 노트 열기",
 			"action-open-next": "다음 일간 노트 열기",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "일간 노트를 만드는데 실패했습니다. \"{{format}}\"의 서식이 유효하지 않습니다.",
 			"msg-fail-folder": "일간 노트를 만드는데 실패했습니다. \"{{folderOption}}\" 폴더를 찾을 수 없스니다.",
 			"msg-fail-template-file": "일간 노트를 만드는데 실패했습니다. \"{{template}}\" 템플릿 파일을 찾지 못했습니다.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sync all other types",
 			"option-sync-unsupported-desc": "Sync unsupported file types.",
 			"option-vault-config-sync": "Vault configuration sync",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Main settings",
 			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
 			"option-sync-appearance": "Appearance settings",
 			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
 			"option-sync-appearance-data": "Themes and snippets",
 			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Active core plugin list",
 			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
 			"option-sync-core-plugin-data": "Core plugin settings",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "to move to bottom",
 			"instruction-prepend": "to move to top",
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
