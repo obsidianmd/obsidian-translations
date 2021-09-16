@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Напишите на support@obsidian.md, если вы не получили значки сообщества через сутки после получения лицензии.",
 			"message-obtain-commercial-license": "Для получения коммерческой лицензии перейдите по ссылке: {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Сторонние плагины",
 			"option-safe-mode": "Безопасный режим",
@@ -407,7 +413,8 @@
 			"cut": "Вырезать",
 			"paste": "Вставить",
 			"paste-as-plain-text": "Вставить как обычный текст",
-			"select-all": "Выделить все"
+			"select-all": "Выделить все",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Ошибка при загрузке хранилища: ",
 			"loading-cache": "Кэш загружается...",
 			"loading-workspace": "Рабочее пространство загружается..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Подготовка PDF...",
 		"label-rename-file": "Переименовать файл",
 		"label-new-name": "Новое имя",
-		"msg-rename-success": "Файл успешно переименован."
+		"msg-rename-success": "Файл успешно переименован.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Плагины",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "совпадение в имени файла",
 			"label-tag-option-description": "совпадение в тегах",
 			"label-line-option-description": "ключевые слова на одной строке",
-			"label-section-option-description": "ключевые слова под одним заголовком"
+			"label-section-option-description": "ключевые слова под одним заголовком",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Быстрый переход",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Удалить группу",
 			"button-new-group": "Новая группа",
 			"tooltip-click-to-change-drag-to-reorder": "Смена цвета\nУпорядочивание перетаскиванием",
-			"action-timelapse": "Запустить анимацию графа во времени"
+			"action-timelapse": "Запустить анимацию графа во времени",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Обратные ссылки",
@@ -841,6 +861,8 @@
 			"action-open": "Сегодняшняя заметка",
 			"action-open-previous": "Открыть предыдущую ежедневную заметку",
 			"action-open-next": "Открыть следующую ежедневную заметку",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Не удалось создать ежедневную заметку. Неверный формат \"{{format}}\".",
 			"msg-fail-folder": "Не удалось создать ежедневную заметку. Папка \"{{folderOption}}\" не найдена.",
 			"msg-fail-template-file": "Не удалось создать ежедневную заметку. Файл шаблона \"{{template}}\" не найден.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Синхронизировать все остальные типы файлов",
 			"option-sync-unsupported-desc": "Синхронизировать неподдерживаемые типы файлов.",
 			"option-vault-config-sync": "Настройка синхронизации хранилища",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Основные настройки",
 			"option-sync-app-desc": "Включить синхронизацию настроек из разделов Редактор, Файлы и ссылки, Сочетания клавиш и т.д",
 			"option-sync-appearance": "Настройки оформления",
 			"option-sync-appearance-desc": "Синхронизировать настройки оформления, такие как ночной режим, активная тема и включенные CSS-фрагменты.",
 			"option-sync-appearance-data": "Темы и CSS-фрагменты",
 			"option-sync-appearance-data-desc": "Синхронизировать загруженные темы и CSS-фрагменты. Какие из них будут включены, зависит от предыдущих настроек.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Список предустановленных плагинов, активных на данный момент",
 			"option-sync-core-plugin-desc": "Синхронизировать предустановленные плагины, которые активны.",
 			"option-sync-core-plugin-data": "Настройки предустановленных плагинов",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Извлечь этот заголовок...",
 			"instruction-append": "поместить в конец",
 			"instruction-prepend": "поместить в начало",
-			"msg-fail-to-fetch-template": "Не удалось вызвать шаблон: \"{{template}}\" не найден."
+			"msg-fail-to-fetch-template": "Не удалось вызвать шаблон: \"{{template}}\" не найден.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
