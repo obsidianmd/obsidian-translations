@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Aby uzyskać odznaki społeczności Obsidian, napisz na adres support@obsidian.md, jeśli nie otrzymałeś ich w 24 godziny po zakupie licencji.",
 			"message-obtain-commercial-license": "Aby uzyskać licencję komercyjną, odwiedź {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Wtyczki stworzone przez społeczność",
 			"option-safe-mode": "Tryb bezpieczny",
@@ -407,7 +413,8 @@
 			"cut": "Wytnij",
 			"paste": "Wklej",
 			"paste-as-plain-text": "Wklej jako zwykły tekst.",
-			"select-all": "Zaznacz wszystko"
+			"select-all": "Zaznacz wszystko",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Nie udało się wczytać sejfu: ",
 			"loading-cache": "Ładuję pamięć podręczną...",
 			"loading-workspace": "Ładuję obszar roboczy..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Przygotowywanie PDF...",
 		"label-rename-file": "Zmień nazwę pliku",
 		"label-new-name": "Nowa nazwa",
-		"msg-rename-success": "Zmiana nazwy zakończona sukcesem."
+		"msg-rename-success": "Zmiana nazwy zakończona sukcesem.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Wtyczki",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "szukaj w nazwie pliku",
 			"label-tag-option-description": "szukaj tagów",
 			"label-line-option-description": "szukaj w tej samej linii",
-			"label-section-option-description": "szukaj pod tym nagłówkiem"
+			"label-section-option-description": "szukaj pod tym nagłówkiem",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Szybka zmiana pliku",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Usuń grupę",
 			"button-new-group": "Nowa grupa",
 			"tooltip-click-to-change-drag-to-reorder": "Kliknij żeby zmienić kolor\nPrzeciągnij żeby zmienić kolejność",
-			"action-timelapse": "Uruchom animację timelapse grafu"
+			"action-timelapse": "Uruchom animację timelapse grafu",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Linki zwrotne",
@@ -841,6 +861,8 @@
 			"action-open": "Otwórz dzisiejszą notatkę",
 			"action-open-previous": "Otwórz wcześniejszą notatkę",
 			"action-open-next": "Otwórz późniejszą notatkę",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Nie utworzono notatki. \"{{format}}\" nie jest poprawnym formatem.",
 			"msg-fail-folder": "Nie utworzono notatki. Folder \"{{folderOption}}\" nie został odnaleziony.",
 			"msg-fail-template-file": "Nie utworzono notatki. Plik szablonu \"{{template}}\" nie został odnaleziony.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Synchronizuj wszystkie inne typy",
 			"option-sync-unsupported-desc": "Synchronizuj nieobsługiwane typy plików.",
 			"option-vault-config-sync": "Konfiguracja synchronizacji sejfu",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Główne ustawienia",
 			"option-sync-app-desc": "Włącz synchronizację ustawień edytora, plików i linków, niestandardowych skrótów klawiszowych itp.",
 			"option-sync-appearance": "Ustawienia wyglądu",
 			"option-sync-appearance-desc": "Synchronizuj ustawienia wyglądu, takie jak tryb ciemny, aktywny motyw i włączone snippety.",
 			"option-sync-appearance-data": "Motywy i snippety",
 			"option-sync-appearance-data-desc": "Synchronizuj pobrane motywy i fragmenty. To, czy są włączone, zależy od poprzedniego ustawienia.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Aktywna lista wbudowanych wtyczek",
 			"option-sync-core-plugin-desc": "Synchronizuj które wbudowane wtyczki są włączone.",
 			"option-sync-core-plugin-data": "Ustawienia wbudowanych wtyczek",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Wyodrębnij ten nagłówek...",
 			"instruction-append": "aby przesunąć na dół",
 			"instruction-prepend": "aby przesunąc na górę",
-			"msg-fail-to-fetch-template": "Nie udało się pobrać pliku szablonu: \"{{template}}\" nie znaleziony."
+			"msg-fail-to-fetch-template": "Nie udało się pobrać pliku szablonu: \"{{template}}\" nie znaleziony.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
