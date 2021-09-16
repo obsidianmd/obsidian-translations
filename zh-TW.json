@@ -209,6 +209,12 @@
 			"message-get-community-badges": "若在24小時後未取得註冊後的社群身分時，請寄信至 support@obsidian.md。",
 			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "第三方外掛",
 			"option-safe-mode": "安全模式",
@@ -407,7 +413,8 @@
 			"cut": "剪下",
 			"paste": "貼上",
 			"paste-as-plain-text": "以純文字貼上",
-			"select-all": "全選"
+			"select-all": "全選",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "無法載入儲存庫: ",
 			"loading-cache": "載入快取...",
 			"loading-workspace": "載入工作空間..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "PDF 準備中...",
 		"label-rename-file": "重新命名",
 		"label-new-name": "新名稱",
-		"msg-rename-success": "檔案重新命名成功。"
+		"msg-rename-success": "檔案重新命名成功。",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "外掛",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "匹配檔案名稱",
 			"label-tag-option-description": "搜尋標籤",
 			"label-line-option-description": "搜尋同行的關鍵字",
-			"label-section-option-description": "搜尋同一標題下的關鍵字"
+			"label-section-option-description": "搜尋同一標題下的關鍵字",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "快速切換",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "刪除群組",
 			"button-new-group": "新群組",
 			"tooltip-click-to-change-drag-to-reorder": "點擊以變更顏色\n拖拉以重排群組順序",
-			"action-timelapse": "開始關聯圖動畫展示"
+			"action-timelapse": "開始關聯圖動畫展示",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -841,6 +861,8 @@
 			"action-open": "開啟今天的日記",
 			"action-open-previous": "開啟前一日記",
 			"action-open-next": "開啟後一日記",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "未成功建立日記。 \"{{format}}\" 不是有效的格式。",
 			"msg-fail-folder": "未成功建立日記。 未發現 \"{{folderOption}}\" 資料夾。",
 			"msg-fail-template-file": "未成功建立日記。未找到 \"{{template}}\" 模板檔案。",
@@ -882,7 +904,7 @@
 			"desc": "顯示當前檔案或連結頁面的大綱標題。",
 			"action-open": "開啟大綱",
 			"action-show": "顯示大綱面板",
-			"action-open-for-current": "顯示目前檔案的大鋼",
+			"action-open-for-current": "顯示目前檔案的大綱",
 			"tab-title": "{{displayText}} 的大綱",
 			"label-no-headings": "未發現標題行。"
 		},
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "同步其餘類型",
 			"option-sync-unsupported-desc": "同步未支援的檔案類型。",
 			"option-vault-config-sync": "同步儲存庫設定",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "主要設定",
 			"option-sync-app-desc": "啟用同步編輯器設定、檔案與連結設定、自訂快捷鍵等。",
 			"option-sync-appearance": "外觀設定",
 			"option-sync-appearance-desc": "同步外觀設定，例如暗黑模式、樣式主題與啟用程式碼片段。",
 			"option-sync-appearance-data": "樣式主題與啟用程式碼片段",
 			"option-sync-appearance-data-desc": "同步已下載的樣式主題與啟用程式碼片段，與先前之啟用狀態。",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "作用中的核心外掛清單",
 			"option-sync-core-plugin-desc": "同步核心外掛的啟用狀態。",
 			"option-sync-core-plugin-data": "核心外掛設定",
@@ -1245,10 +1271,11 @@
 			"button-merge": "合併",
 			"button-merge-do-not-ask-again": "全併且不再詢問",
 			"command-split-file": "擷取目前選取...",
+			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "移至底端",
 			"instruction-prepend": "移至頂端",
-			"msg-fail-template-file": "建立每日筆記失敗，模板檔 \"{{template}}\" 未尋獲。",
-			"msg-fail-to-fetch-template": "無法擷取模板檔案：找不到 \"{{template}}\"。"
+			"msg-fail-to-fetch-template": "無法擷取模板檔案：找不到 \"{{template}}\"。",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

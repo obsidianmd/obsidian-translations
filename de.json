@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Falls Du Deine Community Badges nicht innerhalb von 24h nach Erwerb Deiner Lizenz erhalten hast, bitte support@obsidian.md kontaktieren.",
 			"message-obtain-commercial-license": "Um eine kommerzielle Lizenz zu erwerben, besuche {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Liste der Erweiterungen",
+			"option-search-plugin": "Durchsuche Kern-Erweiterungen",
+			"option-search-plugin-description": "Filtere Erweiterungen nach Name oder Beschreibung.",
+			"placeholder-search-plugin": "Durchsuche Erweiterungen..."
+		},
 		"third-party-plugin": {
 			"name": "Externe Erweiterungen",
 			"option-safe-mode": "Sicherer Modus",
@@ -261,7 +267,7 @@
 			"option-search-installed-plugin": "Installierte Plugins durchsuchen",
 			"option-search-installed-plugin-description": "Installierte Plugins nach Name oder Beschreibung filtern.",
 			"placeholder-search-installed-plugin": "Installierte Plugins durchsuchen...",
-			"label-sort-downloads-high-to-low": "Anzahl Downloaos (meiste zuerst)",
+			"label-sort-downloads-high-to-low": "Anzahl Downloads (meiste zuerst)",
 			"label-sort-downloads-low-to-high": "Anzahl Downloads (wenigste zuerst)",
 			"label-sort-release-date-new-to-old": "Zuerst veröffentlicht (neueste zuerst)",
 			"label-sort-release-date-old-to-new": "Zuerst veröffentlicht (älteste zuerst)",
@@ -407,7 +413,8 @@
 			"cut": "Ausschneiden",
 			"paste": "Einfügen",
 			"paste-as-plain-text": "Als unformatierten Text einfügen",
-			"select-all": "Alles auswählen"
+			"select-all": "Alles auswählen",
+			"rename-heading": "Diese Überschrift umbenennen..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Laden des Vaults fehlgeschlagen: ",
 			"loading-cache": "Cache laden...",
 			"loading-workspace": "Workspace laden..."
+		},
+		"mobile": {
+			"action-import": "In Vault importieren",
+			"action-choose-file-to-insert": "Wähle eine Datei zum Einfügen",
+			"action-insert-text-into-file": "Füge Text in {{filename}} ein",
+			"action-insert-link-into-file": "Füge Link in {{filename}} ein",
+			"msg-importing": "Importiere...",
+			"msg-import-success": "Import erfolgreich",
+			"msg-failed-to-import-file": "Fehler beim Import von {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "PDF wird vorbereitet...",
 		"label-rename-file": "Datei umbenennen",
 		"label-new-name": "Neuer Name",
-		"msg-rename-success": "Datei erfolgreich umbenannt."
+		"msg-rename-success": "Datei erfolgreich umbenannt.",
+		"label-rename-heading": "Überschrift umbenennen"
 	},
 	"plugins": {
 		"name": "Erweiterungen",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "Dateiname stimmt überein",
 			"label-tag-option-description": "suche nach Tags",
 			"label-line-option-description": "suche Begriff in der gleichen Zeile",
-			"label-section-option-description": "suche Begriff unter der gleichen Überschrift"
+			"label-section-option-description": "suche Begriff unter der gleichen Überschrift",
+			"menu-opt-search-for": "Suche nach \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Schnellauswahl",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Gruppe löschen",
 			"button-new-group": "Neue Gruppe",
 			"tooltip-click-to-change-drag-to-reorder": "Klicke, um Farbe zu ändern\nZiehe, um Gruppen neu zu sortieren",
-			"action-timelapse": "Zeitraffer-Animation des Graphen beginnen"
+			"action-timelapse": "Zeitraffer-Animation des Graphen beginnen",
+			"tooltip-start-timelapse-animation": "Zeitraffer-Animation starten",
+			"button-animate-timelapse": "Animieren"
 		},
 		"backlinks": {
 			"name": "Rückverweis",
@@ -751,7 +771,7 @@
 		},
 		"page-preview": {
 			"name": "Seitenvorschau",
-			"desc": "Vorschau for eine Notiz während der Mauszeiger über einem internen Link schwebt. Strg/Cmd + Schweben im Bearbeitungsmodus.",
+			"desc": "Vorschau der Notiz während der Mauszeiger über einem internen Link schwebt. Strg/Cmd + Schweben im Bearbeitungsmodus.",
 			"label-empty-note": "\"{{linktext}}\" ist noch nicht erstellt. Klicken zum Erstellen.",
 			"label-source-editor": "Editor",
 			"label-source-preview": "Vorschau",
@@ -841,6 +861,8 @@
 			"action-open": "Heutige Notiz öffnen",
 			"action-open-previous": "Vorherige Tagesnotiz öffnen",
 			"action-open-next": "Nächste tägliche Notiz öffnen",
+			"action-insert-text": "Text in tägliche Notiz einfügen",
+			"action-insert-link": "Link in tägliche Notiz einfügen",
 			"msg-fail-format": "Tägliche Notiz konnte nicht erstellt werden. \"{{format}}\" ist kein gültiges Format.",
 			"msg-fail-folder": "Tägliche Notiz konnte nicht erstellt werden. Ordner \"{{folderOption}}\" wurde nicht gefunden.",
 			"msg-fail-template-file": "Tägliche Notiz konnte nicht erstellt werden. Vorlagedatei \"{{template}}\" wurde nicht gefunden.",
@@ -1155,7 +1177,7 @@
 			"option-over-size": "Vault Größe über Limit",
 			"option-over-size-desc": "Deine Vault belegt {{size}} von {{limit}}.",
 			"msg-largest-files": "Zeige größte Dateien",
-			"msg-largest-files-desc": "Dies sind die Remote-Dateien, die den meisten Platz beanspruchen. Nachdem Du Anhänge gelöscht hast, nutze den Bereinigen-Knopf um Speciherplatz für deinen Remote-Vault freizugeben.",
+			"msg-largest-files-desc": "Dies sind die Remote-Dateien, die den meisten Platz beanspruchen. Nachdem Du Anhänge gelöscht hast, nutze den Bereinigen-Knopf um Speicherplatz für deinen Remote-Vault freizugeben.",
 			"button-purge-remote": "Bereinigen",
 			"tooltip-purge-remote": "Gelöschte Anhänge werden permanent vom Remote-Vault entfernt, um Speicherplatz zu sparen.",
 			"msg-purge-complete": "Bereinigung erfolgreich.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Alle anderen Dateien synchronisieren",
 			"option-sync-unsupported-desc": "Synchronisiert Dateien mit nicht unterstützten Dateiendungen.",
 			"option-vault-config-sync": "Vault-Konfiguration synchronisieren",
+			"option-view-config-files": "Einstellungsverlauf",
+			"option-view-config-files-desc": "Zeigt den Versionsverlauf der Einstellungsdateien, mit Option zum Wiederherstellen.",
 			"option-sync-app": "Allgemeine Einstellungen",
 			"option-sync-app-desc": "Aktiviere, um Editor-Einstellungen, Datei- und Link-Einstellungen, eigene Tastaturkürzel, etc. zu synchronisieren.",
 			"option-sync-appearance": "Ercheinungseinstellungen",
 			"option-sync-appearance-desc": "Synchronisiert Erscheinungseinstellungen wie dunklen Modus, aktives Thema und aktivierte CSS-Snippets.",
 			"option-sync-appearance-data": "Themen und Snippets",
 			"option-sync-appearance-data-desc": "Synchronisiert heruntergeladene Themen und Snippets. Ob diese aktiviert sind, entscheidet die vorherige Einstellung.",
+			"option-sync-hotkey": "Tastenkürzel",
+			"option-sync-hotkey-desc": "Synchronisiert eigene Tastenkürzel.",
 			"option-sync-core-plugin": "Aktive Kern-Erweiterungen",
 			"option-sync-core-plugin-desc": "Synchronisiert, welche Kern-Erweiterungen aktiviert sind.",
 			"option-sync-core-plugin-data": "Kern-Erweiterung Einstellungen",
@@ -1194,7 +1220,7 @@
 			"button-sign-up": "Account erstellen",
 			"button-log-in": "Einloggen",
 			"label-manage-excluded-folders": "Ausgeschlossene Ordner verwalten",
-			"label-number-of-folders-excluded": "{{folders}} sind momentan von der Sznchronisation ausgeschlossen.",
+			"label-number-of-folders-excluded": "{{folders}} sind momentan von der Synchronisation ausgeschlossen.",
 			"label-setup-connection": "Verbindung aufsetzen",
 			"label-now-connected-to-vault": "Du bist jetzt mit \"{{name}}\" verbunden.",
 			"button-start-syncing": "Synchronisation starten"
@@ -1222,7 +1248,7 @@
 		"note-composer": {
 			"name": "Notizen-Werkbank",
 			"desc": "Verbinden, Aufteilen und Umgestalten von Notizen.",
-			"option-confirm-file-merge": "Bestätigen bei Verbindung vin Dateien",
+			"option-confirm-file-merge": "Bestätigung der Verbindung von Dateien",
 			"option-confirm-file-merge-description": "Fragt nach, bevor zwei Dateien verbunden werden.",
 			"option-split-replacement-text": "Text nach Extrahierung",
 			"option-split-replacement-text-description": "Was wird an der Stelle des markierten Textes nach der Extrahierung angezeigt?",
@@ -1241,14 +1267,15 @@
 			"instruction-dismiss": "zum Verwerfen",
 			"prompt-select-file-to-merge": "Wähle Datei zum Verbinden...",
 			"label-merge-file": "Datei verbinden",
-			"label-confirm-file-merge": "Bist Du sicher, dass Du \"{{file}}\" mit \"{{destination}}\" verbinden wilst?? \"{{file}}\" wird dabei gelöscht.",
+			"label-confirm-file-merge": "Bist Du sicher, dass Du \"{{file}}\" mit \"{{destination}}\" verbinden willst?? \"{{file}}\" wird dabei gelöscht.",
 			"button-merge": "Verbinden",
 			"button-merge-do-not-ask-again": "Verbinden und nicht erneut nachfragen",
 			"command-split-file": "Aktuelle Auswahl extrahieren...",
 			"command-extract-heading": "Diese Überschrift extrahieren...",
 			"instruction-append": "um zum Ende zu verschieben",
 			"instruction-prepend": "um zum Anfang zu verschieben",
-			"msg-fail-to-fetch-template": "Vorlagen-Datei: \"{{template}}\" nicht gefunden."
+			"msg-fail-to-fetch-template": "Vorlagen-Datei: \"{{template}}\" nicht gefunden.",
+			"msg-fail-to-find-heading": "Überschrift konnte nicht gefunden werden"
 		}
 	},
 	"nouns": {
