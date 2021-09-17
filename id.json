@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Untuk lencana komunitas, kirim email support@obsidian.md jika Anda belum menerimanya dalam waktu 24 jam setelah mendapatkan lisensi Anda.",
 			"message-obtain-commercial-license": "Untuk mendapatkan lisensi komersial, kunjungi {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
+		},
 		"third-party-plugin": {
 			"name": "Plugin pihak ketiga",
 			"option-safe-mode": "Mode aman",
@@ -407,7 +413,8 @@
 			"cut": "Potong",
 			"paste": "Tempel",
 			"paste-as-plain-text": "Tempel sebagail teks biasa",
-			"select-all": "Pilih semua"
+			"select-all": "Pilih semua",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Gagal memuat fault: ",
 			"loading-cache": "Memuat cache...",
 			"loading-workspace": "Memuat ruang kerja..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Menyiapkan PDF...",
 		"label-rename-file": "Ubah nama file",
 		"label-new-name": "Nama baru",
-		"msg-rename-success": "Berhasil ubah nama file."
+		"msg-rename-success": "Berhasil ubah nama file.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "cocokan nama file",
 			"label-tag-option-description": "cari tag",
 			"label-line-option-description": "cari kata kunci di baris yang sama",
-			"label-section-option-description": "cari kata kunci di bawah judul yang sama"
+			"label-section-option-description": "cari kata kunci di bawah judul yang sama",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Pengalih cepat",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Hapus grup",
 			"button-new-group": "Grup baru",
 			"tooltip-click-to-change-drag-to-reorder": "Klik untuk ubah warna\nSeret untuk tata ulang grup",
-			"action-timelapse": "Mulai animasi selang waktu grafik"
+			"action-timelapse": "Mulai animasi selang waktu grafik",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Backlink",
@@ -841,6 +861,8 @@
 			"action-open": "Buka catatan hari ini",
 			"action-open-previous": "Buka catatan harian sebelumnya",
 			"action-open-next": "Buka catatan harian selanjutnya",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Gagal membuat catatan harian. \"{{format}}\" adalah format yang tidak valid.",
 			"msg-fail-folder": "Gagal membuat catatan harian. Folder \"{{folderOption}}\" tidak ditemukan.",
 			"msg-fail-template-file": "Gagal membuat catatan harian. File template \"{{template}}\" tidak ditemukan.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sinkronkan semua jenis lainnya",
 			"option-sync-unsupported-desc": "Sinkronkan file yang tidak didukung.",
 			"option-vault-config-sync": "Sinkronkan konfigurasi vault",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Pengaturan utama",
 			"option-sync-app-desc": "Aktifkan untuk sinkronkan pengaturan editor, pengaturan file & link, pintasan kustom, dsb.",
 			"option-sync-appearance": "Pengaturan tampilan",
 			"option-sync-appearance-desc": "Sinkronkan pengaturan tampilan seperti mode gelap, tema digunakan, dan cuplikan yang diaktifkan.",
 			"option-sync-appearance-data": "Tema and cuplikan",
 			"option-sync-appearance-data-desc": "Sinkronkan tema dan cuplikan yang didownload. Apakah mereka aktif atau tidak, tergantung pengaturan sebelumnya.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Daftar plugin inti aktif",
 			"option-sync-core-plugin-desc": "Sinkronkan plugin inti yang diaktifkan.",
 			"option-sync-core-plugin-data": "Pengaturan plugin inti",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Ekstrak judul ini...",
 			"instruction-append": "pindah ke bawah",
 			"instruction-prepend": "pindah ke atas",
-			"msg-fail-to-fetch-template": "Gagal menerapkan file template: \"{{template}}\" tidak ditemukan."
+			"msg-fail-to-fetch-template": "Gagal menerapkan file template: \"{{template}}\" tidak ditemukan.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
