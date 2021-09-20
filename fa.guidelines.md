@@ -50,7 +50,7 @@ italic | کج‌نویس
 strikethrough | خط‌خورده
 code | کد
 highlight | هایلایت
-command | فرمان
+command palette | جعبه‌فرمان
 version | نسخه
 filter | صافی
 redo | از-نو
@@ -87,3 +87,7 @@ slide | نمابرگ
 template | الگو
 custom | دلخواه
 unlock | قفل‌گشایی
+wikilink | ویکی‌پیوند
+snippet | تکه‌کد
+documentation | دبیزه / دبیزش
+clipboard | برگه‌دان
