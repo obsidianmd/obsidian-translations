@@ -75,3 +75,9 @@ frequently used | پراستفاده
 override | پایمال کردن
 command pallete | فرمان‌دان
 navigate | جابه‌جایی
+backlink | پشت‌وند
+copy | رونوشت
+zoom | زوم
+link | پیوند
+query | پرسمان
+CSS | سی‌اس‌اس
