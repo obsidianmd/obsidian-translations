@@ -72,12 +72,13 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | page preview | pralihat halaman |
 | quick action | tindakan pantas |
 | quick switcher | penukaran pantas |
-| regex | |
+| regex | regex |
 | screenshot | |
 | search | |
 | sidebar | ?sidebar |
 | site | |
 | snippet | |
+| sort | isih |
 | spell check / spell checker | semak ejaan / penyemak ejaan |
 | starred | |
 | strikethrough | tulisan berpalang |
