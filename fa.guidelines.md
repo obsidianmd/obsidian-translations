@@ -32,6 +32,7 @@ Want to contribute? Feel free to [join Telegram group]() where we discuss Obsidi
 |Original Term|Farsi Translation
 |-|-|
 zettelkasten | فیش‌دان
+file | فایل
 zettel | فیش
 Obsidian | اوبسیدیان
 block | بلوک
@@ -81,3 +82,8 @@ zoom | زوم
 link | پیوند
 query | پرسمان
 CSS | سی‌اس‌اس
+outline | برون‌نما
+slide | نمابرگ
+template | الگو
+custom | دلخواه
+unlock | قفل‌گشایی
