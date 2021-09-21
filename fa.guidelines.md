@@ -130,3 +130,5 @@ caret |
 match | همانند
 checklist | بازبینه
 numbered list | فهرست شماره‌دار
+fold | جمع کردن
+unfold | پهن کردن
