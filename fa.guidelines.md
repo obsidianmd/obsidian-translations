@@ -65,7 +65,7 @@ license | لایسنس
 open | گشودن
 insider | اندورنی
 build | بیلد
-third-party | دیگران
+third-party | شخصِ ثالث
 search | جست‌وجو
 vault | خزانه
 help | راهنما
@@ -91,3 +91,7 @@ wikilink | ویکی‌پیوند
 snippet | تکه‌کد
 documentation | دبیزه / دبیزش
 clipboard | برگه‌دان
+load | بارگیری
+upload | بارگیری
+download | دریافت
+manifest | مانیفست
