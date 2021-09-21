@@ -4,7 +4,7 @@ Please add any controversial terms to this file to aid future decisions during D
 Want to contribute? Feel free to [join Telegram group]() where we discuss Obsidian translation in Farsi.
 
 
-     Because Persian is an RTL (Right-To-Left) language and there is no official support for such languages in Obsidian yet, we prefer to translitrate the proper nouns in order to avoid issues. As soon as Obsidian team adds support for RTL we will write some of these terms in their original form.
+Because Persian is an RTL (Right-To-Left) language and there is no official support for such languages in Obsidian yet, we prefer to translitrate the proper nouns in order to avoid issues. As soon as Obsidian team adds support for RTL we will write some of these terms in their original form.
 - نقطهٔ پایان جمله‌ها گذاشته می‌شود که امیدواریم با اضافه‌شدن پشتیبانی از زبان‌های راست-به-چپ در جایگاه درست قرار بگیرد
 
 - تنوین‌ها به صورت «الف + نشانهٔ تنوین» نیستند بلکه با «ن» نوشته می‌شوند برای نمونه: لطفن، حتمن و مثلن
@@ -19,7 +19,7 @@ Want to contribute? Feel free to [join Telegram group]() where we discuss Obsidi
 
 - می‌توانید به جای ساخت مصدر با افزودنِ کردن، مصدرهای بسیط بسازید فقط احتیاط کنید و پیش‌تر مشورت بگیرید
 
-- 
+- حالت استمراری که وضعیت یا انجام عملیاتی را نشان می‌دهد طبیعی‌تر و بهتر است که به صورت مستمر ترجمه کنیم: دارد نصب می‌شود، دارد به‌روز می‌شود
 
 -
 
@@ -71,7 +71,7 @@ vault | خزانه
 help | راهنما
 star | ستاره‌دار کردن
 unstar | بی‌ستاره کردن
-pane | تخته
+pane | قاب
 frequently used | پراستفاده
 override | پایمال کردن
 command pallete | فرمان‌دان
@@ -95,3 +95,11 @@ load | بارگیری
 upload | بارگیری
 download | دریافت
 manifest | مانیفست
+uninstall | حذف / پاک کردن
+currently | اکنون / هم‌اکنون
+update (n.) | به‌روزرسانی
+update (v.) | به‌روزرساندن
+embed | جاساز
+toggle | روشن/خاموش
+caret | 
+match | همانند
