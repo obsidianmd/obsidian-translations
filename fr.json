@@ -210,10 +210,10 @@
 			"message-obtain-commercial-license": "Pour obtenir une licence commerciale, visiter {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "Liste des plugins",
+			"option-search-plugin": "Rechercher dans les plugins principaux",
+			"option-search-plugin-description": "Filtrer les plugins par nom ou description.",
+			"placeholder-search-plugin": "Rechercher dans les plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Plugins tiers",
@@ -414,7 +414,7 @@
 			"paste": "Coller",
 			"paste-as-plain-text": "Coller en texte brut",
 			"select-all": "Tout sélectionner",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "Renommer cet en-tête. ..."
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
@@ -475,13 +475,13 @@
 			"loading-workspace": "Chargement de l'espace de travail..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "Importer dans le coffre",
+			"action-choose-file-to-insert": "Choisir un fichier à insérer ",
+			"action-insert-text-into-file": "Insérer du texte dans {{filename}}",
+			"action-insert-link-into-file": "Insérer le lien dans {{filename}}",
+			"msg-importing": "Importation...",
+			"msg-import-success": "Importation réussie",
+			"msg-failed-to-import-file": "Échec de l'importation du fichier {{filename}}"
 		}
 	},
 	"commands": {
@@ -659,7 +659,7 @@
 			"label-tag-option-description": "recherche par tags",
 			"label-line-option-description": "recherche par mots-clés dans la même ligne",
 			"label-section-option-description": "recherche par mots-clés sous le même titre",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "Rechercher \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Sélecteur rapide",
@@ -726,8 +726,8 @@
 			"button-new-group": "Nouveau groupe",
 			"tooltip-click-to-change-drag-to-reorder": "Cliquer pour changer la couleur\nFaire glisser pour réorganiser les groupes",
 			"action-timelapse": "Lancer l'animation timelapse du graphique",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "Démarrer le timelapse",
+			"button-animate-timelapse": "Animer"
 		},
 		"backlinks": {
 			"name": "Rétroliens",
@@ -861,8 +861,8 @@
 			"action-open": "Ouvrir la note quotidienne",
 			"action-open-previous": "Ouvrir la note quotidienne précédente",
 			"action-open-next": "Ouvrir la note quotidienne suivante",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "Insérer du texte dans la note quotidienne",
+			"action-insert-link": "Insérer un lien dans la note quotidienne",
 			"msg-fail-format": "Échec de la création de la note quotidienne. \"{{format}}\" n'est pas un format valide.",
 			"msg-fail-folder": "Échec de la création de la note quotidienne. Le dossier \"{{folderOption}}\" n'a pas été trouvé.",
 			"msg-fail-template-file": "Échec de la création de la note quotidienne. Le fichier modèle \"{{template}}\" n'a pas été trouvé.",
@@ -1005,7 +1005,7 @@
 			"option-show-navigation-description": "Affiche une liste de toutes les pages publiées sur le côté gauche de votre site publié.",
 			"option-show-search": "Affichage de la barre de recherche",
 			"option-show-search-description": "Affiche une barre de recherche en haut de la navigation qui permet aux visiteurs de rechercher pages et titres sur votre site.",
-			"option-show-graph": "Affichage la vue graphique",
+			"option-show-graph": "Affichage de la vue graphique",
 			"option-show-graph-description": "Afficher un petit graphique local sur chaque page.",
 			"option-show-outline": "Affichage de la table des matières",
 			"option-show-outline-description": "Affiche le plan du fichier sur chaque page.",
@@ -1018,7 +1018,7 @@
 			"option-readable-line-length": "Longueur de ligne lisible",
 			"option-readable-line-length-description": "Limiter la longueur de ligne maximale. Affiche moins de contenu à l'écran mais rends les longs paragraphes plus lisibles.",
 			"option-site-password": "Mots de passe",
-			"option-site-password-description": "Restreindre l'accès à votre site par mots de passe.",
+			"option-site-password-description": "Restreindre l'accès à votre site avec un où des mots de passe.",
 			"option-google-analytics": "Code de suivi Google Analytics",
 			"option-google-analytics-description": "Configurer Google Analytics pour votre site. Uniquement disponible pour les visiteurs depuis l'URL de votre domaine personnalisé. Merci de d'abord vérifier les lois et réglementations locales.",
 			"button-manage-passwords": "Gérer",
@@ -1127,7 +1127,7 @@
 			"option-vault-name-desc": "Choisir un nom évoquant l'objet du coffre.",
 			"option-vault-name-placeholder": "Mon super coffre",
 			"option-use-custom-encryption-password": "Personnaliser le mot de passe de chiffrement de bout en bout",
-			"option-use-custom-encryption-password-desc": "Si cette option est désactivée, une clef de chiffrement sera générée automatiquement.",
+			"option-use-custom-encryption-password-desc": "Si cette option est désactivée, une clé de chiffrement sera générée automatiquement.",
 			"option-use-custom-encryption-password-desc-warning": "Cette option ne peut pas être modifiée ultérieurement.",
 			"option-encryption-password": "Mot de passe de chiffrement",
 			"option-encryption-password-desc": "Le mot de passe ne pourra pas être modifié ultérieurement.",
@@ -1175,7 +1175,7 @@
 			"option-sync-log-desc": "Afficher le journal des synchronisations récentes.",
 			"button-view": "Voir",
 			"option-over-size": "Taille du coffre au-dessus de la limite",
-			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
+			"option-over-size-desc": "Votre coffre est {{size}} au-dessus de la limite de {{limit}}.",
 			"msg-largest-files": "Voir les fichiers les plus volumineux",
 			"msg-largest-files-desc": "Voici les fichiers téléversés qui prennent le plus de place. Après la suppression des pièces jointes, utilisez le bouton purger pour libérer l'espace sur le coffre distant.",
 			"button-purge-remote": "Purger",
@@ -1197,16 +1197,16 @@
 			"option-sync-unsupported": "Synchronisation de tous les autres types",
 			"option-sync-unsupported-desc": "Synchronisation des types de fichiers non pris en charge par Obsidian.",
 			"option-vault-config-sync": "Configuration de la synchronisation du coffre",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "Historique des versions des paramètres",
+			"option-view-config-files-desc": "Afficher et restaurer l'historique des versions des fichiers de paramètres.",
 			"option-sync-app": "Réglages principaux",
 			"option-sync-app-desc": "Activer pour synchroniser les paramètres de l'éditeur, des fichiers, des liens, des raccourcis personnalisés, etc.",
 			"option-sync-appearance": "Paramètres d'apparence",
 			"option-sync-appearance-desc": "Synchroniser les paramètres d'apparence tels que le mode sombre, le thème actif et les extraits CSS activés.",
 			"option-sync-appearance-data": "Thèmes et extraits CSS",
 			"option-sync-appearance-data-desc": "Synchroniser les thèmes et les extraits CSS téléchargés. Dépend aussi du choix des paramètres précédents.",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "Raccourcis clavier",
+			"option-sync-hotkey-desc": "Synchroniser les raccourcis clavier personnalisés.",
 			"option-sync-core-plugin": "Liste des plugins principaux actifs",
 			"option-sync-core-plugin-desc": "Synchroniser la liste des plugins principaux actifs.",
 			"option-sync-core-plugin-data": "Paramètres des plugins principaux",
@@ -1275,7 +1275,7 @@
 			"instruction-append": "pour ajouter en bas",
 			"instruction-prepend": "pour ajouter en haut",
 			"msg-fail-to-fetch-template": "Échec de récupération du fichier de modèle : \"{{template}}\" n'a pas été trouvé.",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "Impossible de trouver l'en-tête"
 		}
 	},
 	"nouns": {

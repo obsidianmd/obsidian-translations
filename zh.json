@@ -210,10 +210,10 @@
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "插件列表",
+			"option-search-plugin": "搜索核心插件",
+			"option-search-plugin-description": "通过插件名称或描述来寻找插件。",
+			"placeholder-search-plugin": "输入插件名称或描述……"
 		},
 		"third-party-plugin": {
 			"name": "第三方插件",
@@ -510,7 +510,7 @@
 		"toggle-left-sidebar": "折叠/展开左侧边栏",
 		"toggle-right-sidebar": "折叠/展开右侧边栏",
 		"toggle-default-new-pane-mode": "切换默认视图模式",
-		"focus-editor": "专注于编辑器",
+		"focus-editor": "将焦点切换至编辑区",
 		"toggle-fold": "折叠/展开当前行",
 		"fold-all": "折叠所有标题和列表",
 		"unfold-all": "展开所有标题和列表",
@@ -775,7 +775,7 @@
 			"label-empty-note": "\"{{linktext}}\" 未创建，点击以创建。",
 			"label-source-editor": "编辑模式",
 			"label-source-preview": "预览模式",
-			"label-source-search": "搜索、反链和出链",
+			"label-source-search": "搜索面板、反向链接面板和出链面板",
 			"label-require-mod": "需要按住 {{key}} 来触发悬停预览的情景"
 		},
 		"starred": {
@@ -861,8 +861,8 @@
 			"action-open": "打开/创建今天的日记",
 			"action-open-previous": "打开前一天的日记",
 			"action-open-next": "打开后一天的日记",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "在日记中插入文本",
+			"action-insert-link": "在日记中插入链接",
 			"msg-fail-format": "创建日记未成功。 \"{{format}}\" 不是有效的格式。",
 			"msg-fail-folder": "创建日记未成功。 未找到 \"{{folderOption}}\" 文件夹。",
 			"msg-fail-template-file": "创建日记未成功。未找到 \"{{template}}\" 模板文件。",
@@ -997,7 +997,7 @@
 			"option-home-page-file-description": "设置用户在访问该网站时看到的第一个页面。",
 			"option-home-page-file-placeholder": "选择一个已发布的文件",
 			"option-logo": "图标",
-			"option-logo-description": "选择一个图片文件作为你的站点图标。",
+			"option-logo-description": "选择一个图片文件作为你的网站图标。",
 			"option-logo-placeholder": "选择一张库中已上传的图片……",
 			"option-theme": "主题",
 			"option-theme-description": "设置当前网站的配色方案。",
@@ -1197,16 +1197,16 @@
 			"option-sync-unsupported": "同步所有其他类型文件",
 			"option-sync-unsupported-desc": "同步那些无法在 Obsidian 中打开的文件。",
 			"option-vault-config-sync": "同步配置文件",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "配置文件的版本历史",
+			"option-view-config-files-desc": "浏览、恢复配置文件。",
 			"option-sync-app": "主要设置",
 			"option-sync-app-desc": "同步编辑器、文件与链接、快捷键等方面的设置。",
 			"option-sync-appearance": "外观设置",
 			"option-sync-appearance-desc": "同步外观设置，比如基础颜色、当前应用的主题、开启的 CSS 代码片段等设置信息。",
 			"option-sync-appearance-data": "主题与 CSS 代码片段",
 			"option-sync-appearance-data-desc": "同步已保存的主题与 CSS 代码片段文件。文件启用情况由上一同步设置决定。",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "快捷键",
+			"option-sync-hotkey-desc": "同步自定义快捷键.",
 			"option-sync-core-plugin": "核心插件的启用情况",
 			"option-sync-core-plugin-desc": "同步核心插件的启用情况。",
 			"option-sync-core-plugin-data": "核心插件设置",
@@ -1258,7 +1258,7 @@
 			"option-template-file": "模板文件位置",
 			"option-template-file-description": "该选项用于指定合并或提取笔记时使用的模板文件。模板支持的变量为：{{content}}、{{fromTitle}}、{{newTitle}}、{{date:FORMAT}}, 比如 {{date:YYYY-MM-DD}}。",
 			"command-merge-file": "将当前文件合并到其他文件中",
-			"action-merge-file": "将整个文件合并到……",
+			"action-merge-file": "将当前文件合并到……",
 			"label-no-files": "未发现相应文件。",
 			"instruction-navigate": "导航",
 			"instruction-merge": "合并到选中文件末尾",
@@ -1275,7 +1275,7 @@
 			"instruction-append": "移动到选中文件末尾",
 			"instruction-prepend": "移动到选中文件开头",
 			"msg-fail-to-fetch-template": "调用模板失败：模板文件 \"{{template}}\" 未找到。",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "未找到小标题"
 		}
 	},
 	"nouns": {
