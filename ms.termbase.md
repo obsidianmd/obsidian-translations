@@ -14,7 +14,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 |-|-|
 | alias | alias |
 | attachment | lampiran |
-| arrows | |
+| arrows | anak panah / anak anak panah |
 | auto-complete | |
 | auto-complete list | |
 | backlinks | |
@@ -86,9 +86,9 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | tag | tag |
 | toggle | buka/tutup (papan kekunci) / silih ganti (tulisan tebal, tulisan miring, tulisan tumpu, dll.) / letak/buang  / **perlu diteliti setiap kes** |
 | toolbar | ?jalur alat |
-| unlink | |
+| unlink | hapus pautan |
 | vault | Peti Nota |
-| VIP | |
+| VIP | VIP |
 | wikilink | wikipautan |
 | workspace | tempat kerja |
 | wrap | balut |
