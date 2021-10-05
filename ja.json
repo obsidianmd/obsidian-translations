@@ -54,7 +54,7 @@
 			"button-confirm-enable-vim": "Vimモードを有効化",
 			"msg-vim-mode-enabled": "正しいコマンドです。Vimモードが有効化されました。",
 			"msg-vim-mode-not-enabled": "コマンドが間違っています。保護のためVimモードは無効化されたままです。",
-			"msg-vim-mode-please-enter-command": "Vimモードを有効化するコマンドを入力してください"
+			"msg-vim-mode-please-enter-command": "Vimモードを有効化するコマンドを入力してください。"
 		},
 		"file": {
 			"name": "ファイルとリンク",
@@ -112,14 +112,14 @@
 			"option-theme-description": "使用するコミュニティテーマ。テーマは \"vault/.obsidian/themes/\" に保存されます。",
 			"option-choice-none": "なし",
 			"button-reload-themes": "テーマをリロード",
-			"msg-reloaded-themes": "カスタムCSSテーマをリロード。",
+			"msg-reloaded-themes": "カスタムCSSテーマをリロードしました。",
 			"button-open-themes-folder": "テーマフォルダを開く",
 			"option-css-snippets": "CSSスニペット",
 			"label-no-css-snippets-found": "スニペットフォルダにCSSスニペットが見つかりません。",
 			"no-snippet-description": "CSSスニペットは \"{{path}}\" に保存されています。",
 			"button-reload-snippets": "スニペットをリロード",
 			"button-open-snippets-folder": "スニペットフォルダを開く",
-			"msg-reloaded-snippets": "CSSスニペットをリロード。",
+			"msg-reloaded-snippets": "CSSスニペットをリロードしました。",
 			"option-toggle-snippet-description": "\"{{path}}\" のCSSスニペットを適用します。"
 		},
 		"hotkeys": {
@@ -210,10 +210,10 @@
 			"message-obtain-commercial-license": "商用ライセンスを取得するには、{{pricingPageLink}}を参照してください。"
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "プラグインリスト",
+			"option-search-plugin": "コアプラグインを検索",
+			"option-search-plugin-description": "プラグイン名または説明文でプラグインを検索します。",
+			"placeholder-search-plugin": "プラグインを検索…"
 		},
 		"third-party-plugin": {
 			"name": "コミュニティプラグイン",
@@ -245,8 +245,8 @@
 			"label-unsupported": "このプラグインはお使いのデバイスをサポートしていません。",
 			"button-update": "アップデート",
 			"label-no-readme": "このプラグインにはREADMEファイルがありません。",
-			"msg-installing-plugin": "プラグイン \"{{name}}\" をインストール中…",
-			"msg-failed-to-install-plugin": "プラグイン \"{{name}}\" のインストールに失敗。",
+			"msg-installing-plugin": "プラグイン \"{{name}}\" をインストールしています…",
+			"msg-failed-to-install-plugin": "プラグイン \"{{name}}\" のインストールに失敗しました。",
 			"msg-successfully-installed-plugin": "プラグイン \"{{name}}\" を正常にインストールしました。",
 			"label-installed-plugins": "インストールされたプラグイン",
 			"button-reload-plugins": "プラグインの再読み込み",
@@ -263,7 +263,7 @@
 			"msg-no-updates-found": "アップデートできるものは見つかりませんでした。",
 			"msg-updates-found": "{{count}}個のプラグインにアップデートが見つかりました。",
 			"msg-updates-found_plural": "{{count}}個のプラグインにアップデートが見つかりました。",
-			"msg-update-plugin": "version {{version}} にアップデートする",
+			"msg-update-plugin": "version {{version}} にアップデートします。",
 			"option-search-installed-plugin": "インストール済みのプラグインを検索",
 			"option-search-installed-plugin-description": "インストール済みのプラグインを名前や説明でフィルターします。",
 			"placeholder-search-installed-plugin": "プラグインを検索…",
@@ -414,7 +414,7 @@
 			"paste": "ペースト",
 			"paste-as-plain-text": "プレーンテキストとしてペースト",
 			"select-all": "すべてを選択",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "この見出しをリネーム…"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
@@ -475,13 +475,13 @@
 			"loading-workspace": "ワークスペースをロードしています…"
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "保管庫へインポート",
+			"action-choose-file-to-insert": "挿入するファイルを選択",
+			"action-insert-text-into-file": "{{filename}}にテキストを挿入",
+			"action-insert-link-into-file": "{{filename}}にリンクを挿入",
+			"msg-importing": "インポートしています…",
+			"msg-import-success": "インポートが成功しました。",
+			"msg-failed-to-import-file": "ファイル{{filename}}のインポートに失敗しました。"
 		}
 	},
 	"commands": {
@@ -555,7 +555,7 @@
 		"label-rename-file": "ファイル名を変更",
 		"label-new-name": "新規名称",
 		"msg-rename-success": "ファイル名の変更に成功しました。",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "見出しのリネーム"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -659,7 +659,7 @@
 			"label-tag-option-description": "タグを検索",
 			"label-line-option-description": "同一の行でキーワードを検索",
 			"label-section-option-description": "同一の見出しでキーワードを検索",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "\"{{keyword}}\"を検索"
 		},
 		"quick-switcher": {
 			"name": "クイックスイッチャー",
@@ -726,8 +726,8 @@
 			"button-new-group": "新規グループ",
 			"tooltip-click-to-change-drag-to-reorder": "クリックで色を変更\nドラッグでグループを並び替え",
 			"action-timelapse": "グラフのタイムラプスアニメーションを開始",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "タイムラプスアニメーションの開始",
+			"button-animate-timelapse": "アニメーション開始"
 		},
 		"backlinks": {
 			"name": "バックリンク",
@@ -795,7 +795,7 @@
 			"name": "カスタムCSS",
 			"desc": "保管庫にある\"obsidian.css\"を読み込み、適用します。",
 			"setting-community-themes": "コミュニティテーマ",
-			"msg-fetching-themes": "コミュニティテーマのデータを取得中…",
+			"msg-fetching-themes": "コミュニティテーマのデータを取得しています…",
 			"prompt-filter": "フィルタ…",
 			"label-dark-theme-only": "ダークテーマのみ",
 			"label-light-theme-only": "ライトテーマのみ",
@@ -804,12 +804,12 @@
 			"label-use": "使用",
 			"label-override": "上書き",
 			"label-visit-on-github": "GitHubで見る",
-			"msg-fetching-css": "CSSを取得中…",
+			"msg-fetching-css": "CSSを取得しています…",
 			"theme-title": "\"{{name}}\" by {{author}}",
 			"msg-override-theme": "現在のCSSを上書きします",
 			"msg-existing-theme": "すでにカスタムCSSファイル \"obsidian.css\" を利用しています。",
 			"msg-confirm-override": "上書きしますが良いですか？現在利用しているCSSファイルは失われます。必要ならバックアップしてください。",
-			"msg-load-error": "コミュニティテーマを読み込めませんでした。ネットワークの状態をご確認ください。",
+			"msg-load-error": "コミュニティテーマを読み込めませんでした。ネットワークの状態を確認してください。",
 			"msg-now-using-theme": "{{title}}を新規CSSテーマにしました。"
 		},
 		"command-palette": {
@@ -861,8 +861,8 @@
 			"action-open": "今日のデイリーノートを開く",
 			"action-open-previous": "前日のデイリーノートを開く",
 			"action-open-next": "翌日のデイリーノートを開く",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "デイリーノートにテキストを挿入",
+			"action-insert-link": "デイリーノートにリンクを挿入",
 			"msg-fail-format": "デイリーノートが作成できませんでした。\"{{format}}\" が有効な形式ではありません。",
 			"msg-fail-folder": "デイリーノートが作成できませんでした。\"{{folderOption}}\" フォルダが見つかりません。",
 			"msg-fail-template-file": "デイリーノートが作成できませんでした。テンプレートファイル \"{{template}}\" が見つかりません。",
@@ -983,7 +983,7 @@
 			"button-create": "作成",
 			"msg-invalid-site-id": "サイトIDには、小文字、数字、ダッシュのみを含めることができます。",
 			"msg-site-id-in-use": "このサイトIDは使用中です。別のサイトIDを試してください。",
-			"msg-create-site-issue": "それはあなたのサイトを作成するときの問題でした。",
+			"msg-create-site-issue": "サイト作成時に問題が発生しています。",
 			"label-site-options": "サイトオプション",
 			"option-site-metadata": "メタデータ",
 			"option-site-components": "コンポーネント",
@@ -1112,7 +1112,7 @@
 			"label-copy-to-clipboard": "クリップボードにコピー",
 			"label-restore-this-version": "このバージョンを復元",
 			"msg-already-latest-version": "このバージョンはすでに最新です。",
-			"msg-restored-version": "{{time}}から正常にバージョンを復元しました",
+			"msg-restored-version": "{{time}}から正常にバージョンを復元しました。",
 			"label-file-deleted": "このファイルは削除されました",
 			"label-no-earlier-version": "このファイルには以前のバージョンが存在しません。",
 			"label-empty-file": "ファイルがありません",
@@ -1176,7 +1176,7 @@
 			"button-view": "閲覧",
 			"option-over-size": "保管庫の許容サイズ",
 			"option-over-size-desc": "保管庫は{{limit}}中の{{size}}です。",
-			"msg-largest-files": "最大ファイルの閲覧",
+			"msg-largest-files": "最大サイズのファイルを確認してください。",
 			"msg-largest-files-desc": "これらは最もスペースを取っているリモートファイルです。添付ファイルを削除した後、リモート保管庫のスペース開放のためにパージボタンを使用してください。",
 			"button-purge-remote": "パージ",
 			"tooltip-purge-remote": "スペース確保のためにリモート保管庫から削除された添付ファイルを永続的にパージします。",
@@ -1197,16 +1197,16 @@
 			"option-sync-unsupported": "他のすべてのタイプのファイルを同期",
 			"option-sync-unsupported-desc": "サポートされていないファイルタイプを同期します。",
 			"option-vault-config-sync": "保管庫の設定を同期",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "設定のバージョン履歴",
+			"option-view-config-files-desc": "設定ファイルのバージョンの閲覧と復元を行います。",
 			"option-sync-app": "メイン設定",
 			"option-sync-app-desc": "エディタ設定、ファイルとリンクの設定、カスタムホットキー等の同期を有効化します。",
 			"option-sync-appearance": "外観設定",
 			"option-sync-appearance-desc": "ダークモード、アクティブテーマ、有効化されているスニペットなどの外観の設定を同期するかどうかを決めます。",
 			"option-sync-appearance-data": "テーマとスニペット",
-			"option-sync-appearance-data-desc": "ダウンロードされたテーマとスニペットを同期するかどうかを決めす。有効化されているかどうかは外観の同期設定に依存します。",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-appearance-data-desc": "ダウンロードされたテーマとスニペットを同期するかどうかを決めます。有効化されているかどうかは外観の同期設定に依存します。",
+			"option-sync-hotkey": "ホットキー",
+			"option-sync-hotkey-desc": "カスタムホットキーを同期するかどうかを決めます。",
 			"option-sync-core-plugin": "アクティブなコアプラグインのリスト",
 			"option-sync-core-plugin-desc": "有効化されているコアプラグインを同期するかどうかを決めます。",
 			"option-sync-core-plugin-data": "コアプラグイン設定",
@@ -1275,7 +1275,7 @@
 			"instruction-append": "ノート下部に移動",
 			"instruction-prepend": "ノート上部に移動",
 			"msg-fail-to-fetch-template": "テンプレートファイルの取得に失敗しました: \"{{template}}\" が見つかりません。",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "見出しの発見に失敗しました。"
 		}
 	},
 	"nouns": {
