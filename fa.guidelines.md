@@ -64,84 +64,81 @@
 
 لطفن ترم‌ها را به **ترتیب الفبا** بچینید
 ---
-
-
-|Original Term | Farsi Translation
-|-|-|
-zettelkasten | فیش‌دان
-file | فایل
-zettel | فیش
-Obsidian | اوبسیدیان
-block | بلوک
-gutter | کناره
-vim | ویم
-HTML | اچ‌تی‌ام‌ال
-Markdown | مارک‌داون
-alias | نام مستعار
-key binding | کلیدبندی
-spell check dictionary | فرهنگ املایی
-front matter | پیش‌درآمد
-syntax | نحو
-bold | درشت‌نویس
-italic | کج‌نویس
-strikethrough | خط‌خورده
-code | کد
-highlight | هایلایت
-command palette | جعبه‌فرمان
-version | نسخه
-filter | صافی
-redo | از-نو
-undo | واگرد
-hotkey | میانبر
-password | گذرواژه
-sign up | نام‌نویسی
-register | نام‌نویسی
-email | ایمیل
-catalyst | کاتالیست
-license | لایسنس
-open | گشودن
-insider | اندورنی
-build | بیلد
-third-party | شخصِ ثالث
-search | جست‌وجو
-vault | خزانه
-help | راهنما
-star | ستاره‌دار کردن
-unstar | بی‌ستاره کردن
-pane | قاب
-frequently used | پراستفاده
-override | پایمال کردن
-command pallete | فرمان‌دان
-navigate | جابه‌جایی
-backlink | پشت‌وند
-copy | رونوشت
-zoom | زوم
-link | پیوند
-query | پرسمان
-CSS | سی‌اس‌اس
-outline | برون‌نما
-slide | نمابرگ
-template | الگو
-custom | دلخواه
-unlock | قفل‌گشایی
-wikilink | ویکی‌پیوند
-snippet | تکه‌کد
-documentation | دبیزه / دبیزش
-clipboard | برگه‌دان
-load | بارگیری
-upload | بارگیری
-download | دریافت
-manifest | مانیفست
-uninstall | حذف / پاک کردن
-currently | اکنون / هم‌اکنون
-update (n.) | به‌روزرسانی
-update (v.) | به‌روزرساندن
-embed | جاساز
-toggle | روشن/خاموش / گشودن/بستن / تغییر حالت / نمایش/پنهان / حتا گاهی می‌توانید نادیده بگیریدش
-caret | 
-match | همانند
-checklist | بازبینه
-numbered list | فهرست شماره‌دار
-fold | جمع کردن
-unfold | پهن کردن
-remote | دورافتاده
+| Original Term          | Farsi                                                                                  |
+|:---------------------- |:-------------------------------------------------------------------------------------- |
+| CSS                    | سی‌اس‌اس                                                                               |
+| HTML                   | اچ‌تی‌ام‌ال                                                                            |
+| Markdown               | مارک‌داون                                                                              |
+| Obsidian               | اوبسیدیان                                                                              |
+| alias                  | نام مستعار                                                                             |
+| backlink               | پشت‌وند                                                                                |
+| block                  | بلوک                                                                                   |
+| bold                   | درشت‌نویس                                                                              |
+| build                  | بیلد                                                                                   |
+| caret                  |                                                                                        |
+| catalyst               | کاتالیست                                                                               |
+| checklist              | بازبینه                                                                                |
+| clipboard              | برگه‌دان                                                                               |
+| code                   | کد                                                                                     |
+| command palette        | جعبه‌فرمان                                                                             |
+| copy                   | رونوشت                                                                                 |
+| currently              | اکنون / هم‌اکنون                                                                       |
+| custom                 | دلخواه                                                                                 |
+| documentation          | دبیزه / دبیزش                                                                          |
+| download               | دریافت                                                                                 |
+| email                  | ایمیل                                                                                  |
+| embed                  | جاساز                                                                                  |
+| file                   | فایل                                                                                   |
+| filter                 | صافی                                                                                   |
+| fold                   | جمع کردن                                                                               |
+| frequently used        | پراستفاده                                                                              |
+| front matter           | پیش‌درآمد                                                                              |
+| gutter                 | کناره                                                                                  |
+| help                   | راهنما                                                                                 |
+| highlight              | هایلایت                                                                                |
+| hotkey                 | میانبر                                                                                 |
+| insider                | اندرونی                                                                                |
+| italic                 | کج‌نویس                                                                                |
+| key binding            | کلیدبندی                                                                               |
+| license                | لایسنس                                                                                 |
+| link                   | پیوند                                                                                  |
+| load                   | بارگیری                                                                                |
+| manifest               | مانیفست                                                                                |
+| match                  | همانند                                                                                 |
+| navigate               | جابه‌جایی                                                                              |
+| numbered list          | فهرستِ شماره‌دار                                                                       |
+| open                   | گشودن                                                                                  |
+| outline                | برون‌نما                                                                               |
+| override               | پایمال کردن                                                                            |
+| pane                   | قاب                                                                                    |
+| password               | گذرواژه                                                                                |
+| query                  | پرسمان                                                                                 |
+| redo                   | از-نو                                                                                  |
+| register               | نام‌نویسی                                                                              |
+| remote                 | دورافتاده                                                                              |
+| search                 | جست‌وجو                                                                                |
+| sign up                | نام‌نویسی                                                                              |
+| slide                  | نمابرگ                                                                                 |
+| snippet                | تکه‌کد                                                                                 |
+| spell check dictionary | فرهنگ املایی                                                                           |
+| star                   | ستاره‌دار کردن                                                                         |
+| strikethrough          | خط‌خورده                                                                               |
+| syntax                 | نحو                                                                                    |
+| template               | الگو                                                                                   |
+| third-party            | شخصِ ثالث                                                                              |
+| toggle                 | روشن/خاموش / گشودن/بستن / تغییر حالت / نمایش/پنهان / حتا گاهی می‌توانید نادیده بگیریدش |
+| undo                   | واگرد                                                                                  |
+| unfold                 | پهن کردن                                                                               |
+| uninstall              | حذف / پاک کردن                                                                         |
+| unlock                 | قفل‌گشایی                                                                              |
+| unstar                 | بی‌ستاره کردن                                                                          |
+| update (n.)            | به‌روزرسانی                                                                            |
+| update (v.)            | به‌روزرساندن                                                                           |
+| upload                 | بارگذاری                                                                               |
+| vault                  | خزانه                                                                                  |
+| version                | نسخه                                                                                   |
+| vim                    | ویم                                                                                    |
+| wikilink               | ویکی‌پیوند                                                                             |
+| zettel                 | فیش                                                                                    |
+| zettelkasten           | فیش‌دان                                                                                |
+| zoom                   | زوم                                                                                    |
