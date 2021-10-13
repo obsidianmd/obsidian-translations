@@ -50,6 +50,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | Language code | Language name | Native name | Status |
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
+| `af` | Afrikaans | Afrikaans | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
