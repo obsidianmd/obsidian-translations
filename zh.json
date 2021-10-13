@@ -403,8 +403,8 @@
 			"more-options": "更多选项",
 			"close": "关闭",
 			"pin": "锁定",
-			"unlink-pane": "解除同步",
-			"link-pane": "与其他面板同步",
+			"unlink-pane": "解除关联",
+			"link-pane": "与其他面板关联",
 			"delete-file": "删除文件",
 			"open-in-new-pane": "在新面板中打开",
 			"copy-url": "复制链接",
@@ -414,7 +414,7 @@
 			"paste": "粘贴",
 			"paste-as-plain-text": "以纯文本形式粘贴",
 			"select-all": "全选",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "重命名当前小标题……"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -475,13 +475,13 @@
 			"loading-workspace": "加载工作区中……"
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "导入库中",
+			"action-choose-file-to-insert": "选择要插入的文件",
+			"action-insert-text-into-file": "插入文本至文件 {{filename}}",
+			"action-insert-link-into-file": "插入链接至文件 {{filename}}",
+			"msg-importing": "导入中……",
+			"msg-import-success": "导入成功",
+			"msg-failed-to-import-file": "导入文件 {{filename}} 失败"
 		}
 	},
 	"commands": {
@@ -555,7 +555,7 @@
 		"label-rename-file": "重命名文件",
 		"label-new-name": "新文件名",
 		"msg-rename-success": "已重命名该文件。",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "重命名小标题"
 	},
 	"plugins": {
 		"name": "插件",
@@ -659,7 +659,7 @@
 			"label-tag-option-description": "搜索标签",
 			"label-line-option-description": "以行为单位搜索关键词",
 			"label-section-option-description": "以章节为单位搜索关键词",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "查找 \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "快速切换",
@@ -726,8 +726,8 @@
 			"button-new-group": "新建颜色组",
 			"tooltip-click-to-change-drag-to-reorder": "点击可更改颜色\n拖动可对颜色组排序",
 			"action-timelapse": "播放关系图谱生长动画",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "播放关系图谱生长动画",
+			"button-animate-timelapse": "播放动画"
 		},
 		"backlinks": {
 			"name": "反向链接",
