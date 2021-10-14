@@ -17,7 +17,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | arrows | anak panah / anak anak panah |
 | auto-complete | |
 | auto-complete list | |
-| backlinks | |
+| backlinks | pautan balik |
 | binding | pemadanan |
 | blockquote | bongkah petua |
 | bold | tulisan tebal |
@@ -42,6 +42,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | fold | lipat |
 | frontmatter | frontmatter |
 | graph | graf |
+| graph view | paparan graf |
 | heading | pengepala |
 | highlight | tulisan tumpuan |
 | homepage | |
@@ -59,10 +60,11 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | -> bullet list | -> senarai bertitik |
 | -> numbered list | -> senarai bernombor |
 | mobile | mudah alih / peranti mudah alih |
-| node | |
+| node | titik |
 | note | nota |
 | Obsidian | Obsidian |
 | Obsidian Publish | Obsidian Publish |
+| orphans | nota terpencil |
 | palette | |
 | pane | tetingkap |
 | plugin | plugin |
@@ -73,9 +75,9 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | quick action | tindakan pantas |
 | quick switcher | penukaran pantas |
 | regex | regex |
-| screenshot | |
+| screenshot | tangkap layar |
 | search | |
-| sidebar | ?sidebar |
+| sidebar | papan sisi |
 | site | |
 | snippet | |
 | sort | isih |
@@ -84,6 +86,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | strikethrough | tulisan berpalang |
 | supporter | |
 | tag | tag |
+| -> nested tag | tag bertingkat |
 | toggle | buka/tutup (papan kekunci) / silih ganti (tulisan tebal, tulisan miring, tulisan tumpu, dll.) / letak/buang  / **perlu diteliti setiap kes** |
 | toolbar | ?jalur alat |
 | unlink | hapus pautan |
