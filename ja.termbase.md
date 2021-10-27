@@ -92,6 +92,7 @@ link | リンク
 linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
+match-case | 大文字/小文字を区別
 merge | 統合
 Metadata | メタデータ
 none | なし
@@ -136,8 +137,8 @@ Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unlinked mentions | リンクされていないメンション
-untitled | 無題の~ (無題のファイル・無題のフォルダ)
 unordered list | 順序なしリスト
+untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
 version history | バージョン履歴
 video file | 動画ファイル
