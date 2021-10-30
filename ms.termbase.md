@@ -23,13 +23,13 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | bold | tulisan tebal |
 | browse | gelintar |
 | build | |
-| cache | |
+| cache | cache |
 | catalyst | |
 | checklist | senarai semak |
-| clipboard | |
+| clipboard | papan klip |
 | code block | bongkah kod |
 | collapse | |
-| command palette | |
+| command palette | palet arahan |
 | converter | |
 | custom | |
 | drag | tarik masuk / tarik keluar |
@@ -65,7 +65,7 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | Obsidian | Obsidian |
 | Obsidian Publish | Obsidian Publish |
 | orphans | nota terpencil |
-| palette | |
+| palette | palet |
 | pane | tetingkap |
 | plugin | plugin |
 | -> core plugin | -> plugin teras |
@@ -76,21 +76,23 @@ Please translate into lower case. Reserve upper case for proper nouns.
 | quick switcher | penukaran pantas |
 | regex | regex |
 | screenshot | tangkap layar |
-| search | |
+| search | carian |
 | sidebar | papan sisi |
-| site | |
+| site | laman |
+| snapshot | snapshot |
 | snippet | |
 | sort | isih |
 | spell check / spell checker | semak ejaan / penyemak ejaan |
-| starred | |
+| starred | dibintangkan |
 | strikethrough | tulisan berpalang |
 | supporter | |
 | tag | tag |
 | -> nested tag | tag bertingkat |
 | toggle | buka/tutup (papan kekunci) / silih ganti (tulisan tebal, tulisan miring, tulisan tumpu, dll.) / letak/buang  / **perlu diteliti setiap kes** |
-| toolbar | ?jalur alat |
+| toolbar | jalur alat |
 | unlink | hapus pautan |
 | vault | Peti Nota |
+| -> remote vault | peti awan |
 | VIP | VIP |
 | wikilink | wikipautan |
 | workspace | tempat kerja |
