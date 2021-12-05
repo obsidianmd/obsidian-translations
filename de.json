@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Falls Du Deine Community Badges nicht innerhalb von 24h nach Erwerb Deiner Lizenz erhalten hast, bitte support@obsidian.md kontaktieren.",
 			"message-obtain-commercial-license": "Um eine kommerzielle Lizenz zu erwerben, besuche {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Liste der Erweiterungen",
+			"option-search-plugin": "Durchsuche Kern-Erweiterungen",
+			"option-search-plugin-description": "Filtere Erweiterungen nach Name oder Beschreibung.",
+			"placeholder-search-plugin": "Durchsuche Erweiterungen..."
+		},
 		"third-party-plugin": {
 			"name": "Externe Erweiterungen",
 			"option-safe-mode": "Sicherer Modus",
@@ -370,7 +376,7 @@
 		"msg-switched-to-preview": "Standard-Ansichtsmodus auf Vorschau umgeschaltet.",
 		"msg-switched-to-edit": "Standard-Ansichtsmodus auf Editor umgeschaltet.",
 		"msg-upgrade-installer": "Bitte installiere die Anwendung mit dem aktuellsten Installer von unserer Website neu, um dieses Feature nutzen zu können.",
-		"tooltip-restore-default-settings": "Standard-Einstellungen wieder herstellen",
+		"tooltip-restore-default-settings": "Standard-Einstellungen wiederherstellen",
 		"label-copy": "In Zwischenablage kopieren",
 		"copied": "{{item}} in die Zwischenablage kopiert",
 		"url": "URL",
@@ -407,7 +413,8 @@
 			"cut": "Ausschneiden",
 			"paste": "Einfügen",
 			"paste-as-plain-text": "Als unformatierten Text einfügen",
-			"select-all": "Alles auswählen"
+			"select-all": "Alles auswählen",
+			"rename-heading": "Diese Überschrift umbenennen..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -450,7 +457,7 @@
 		"window": {
 			"maximize": "Maximieren",
 			"minimize": "Minimieren",
-			"restore-down": "Kleines Fenster wieder herstellen",
+			"restore-down": "Kleines Fenster wiederherstellen",
 			"close-window": "Fenster schließen",
 			"go-back": "Zurück",
 			"go-forward": "Weiter"
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Laden des Vaults fehlgeschlagen: ",
 			"loading-cache": "Cache laden...",
 			"loading-workspace": "Workspace laden..."
+		},
+		"mobile": {
+			"action-import": "In Vault importieren",
+			"action-choose-file-to-insert": "Wähle eine Datei zum Einfügen",
+			"action-insert-text-into-file": "Füge Text in {{filename}} ein",
+			"action-insert-link-into-file": "Füge Link in {{filename}} ein",
+			"msg-importing": "Importiere...",
+			"msg-import-success": "Import erfolgreich",
+			"msg-failed-to-import-file": "Fehler beim Import von {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "PDF wird vorbereitet...",
 		"label-rename-file": "Datei umbenennen",
 		"label-new-name": "Neuer Name",
-		"msg-rename-success": "Datei erfolgreich umbenannt."
+		"msg-rename-success": "Datei erfolgreich umbenannt.",
+		"label-rename-heading": "Überschrift umbenennen"
 	},
 	"plugins": {
 		"name": "Erweiterungen",
@@ -582,8 +599,8 @@
 			"tooltip-created-time": "Erstellt: {{time}}",
 			"tooltip-folders-files-count": "{{fileCount}}, {{folderCount}}",
 			"action-move-file-short-name": "Verschieben",
-			"label-untitled-file": "Unbennant",
-			"label-untitled-folder": "Unbennant",
+			"label-untitled-file": "Unbenannt",
+			"label-untitled-folder": "Unbenannt",
 			"msg-set-attachment-folder": "Anhänge werden von nun an in diesem Pfad \"{{path}}\" gespeichert."
 		},
 		"search": {
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "Dateiname stimmt überein",
 			"label-tag-option-description": "suche nach Tags",
 			"label-line-option-description": "suche Begriff in der gleichen Zeile",
-			"label-section-option-description": "suche Begriff unter der gleichen Überschrift"
+			"label-section-option-description": "suche Begriff unter der gleichen Überschrift",
+			"menu-opt-search-for": "Suche nach \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Schnellauswahl",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Gruppe löschen",
 			"button-new-group": "Neue Gruppe",
 			"tooltip-click-to-change-drag-to-reorder": "Klicke, um Farbe zu ändern\nZiehe, um Gruppen neu zu sortieren",
-			"action-timelapse": "Zeitraffer-Animation des Graphen beginnen"
+			"action-timelapse": "Zeitraffer-Animation des Graphen beginnen",
+			"tooltip-start-timelapse-animation": "Zeitraffer-Animation starten",
+			"button-animate-timelapse": "Animieren"
 		},
 		"backlinks": {
 			"name": "Rückverweis",
@@ -841,6 +861,8 @@
 			"action-open": "Heutige Notiz öffnen",
 			"action-open-previous": "Vorherige Tagesnotiz öffnen",
 			"action-open-next": "Nächste tägliche Notiz öffnen",
+			"action-insert-text": "Text in tägliche Notiz einfügen",
+			"action-insert-link": "Link in tägliche Notiz einfügen",
 			"msg-fail-format": "Tägliche Notiz konnte nicht erstellt werden. \"{{format}}\" ist kein gültiges Format.",
 			"msg-fail-folder": "Tägliche Notiz konnte nicht erstellt werden. Ordner \"{{folderOption}}\" wurde nicht gefunden.",
 			"msg-fail-template-file": "Tägliche Notiz konnte nicht erstellt werden. Vorlagedatei \"{{template}}\" wurde nicht gefunden.",
@@ -1088,9 +1110,9 @@
 			"action-view-version-history": "Zeige Versions-Verlauf",
 			"label-load-more": "Mehr laden",
 			"label-copy-to-clipboard": "In Zwischenablage kopieren",
-			"label-restore-this-version": "Diese Version wieder herstellen",
+			"label-restore-this-version": "Diese Version wiederherstellen",
 			"msg-already-latest-version": "Diese Version ist bereits die aktuellste Version.",
-			"msg-restored-version": "Erfolgreich Version von {{time}} wieder hergestellt.",
+			"msg-restored-version": "Erfolgreich Version von {{time}} wiederhergestellt.",
 			"label-file-deleted": "Diese Datei wurde gelöscht",
 			"label-no-earlier-version": "Es gibt keine frühere Versionen dieser Datei.",
 			"label-empty-file": "Leer",
@@ -1111,7 +1133,7 @@
 			"option-encryption-password-desc": "Dieses Passwort kann später nicht mehr verändert werden!",
 			"option-encryption-password-desc-warning": "Wenn Du dieses Passwort vergisst, werden alle Remote-Daten für immer unbrauchbar sein.",
 			"option-encryption-password-desc-2": "Dies betrifft nicht Deine lokalen Daten.",
-			"option-encryption-password-placeholder": "Dein Passswort",
+			"option-encryption-password-placeholder": "Dein Passwort",
 			"label-enter-encryption-password": "Passwort für Verschlüsselung eingeben",
 			"button-unlock-vault": "Vault freischalten",
 			"msg-verified-password": "Dein Passwort wurde erfolgreich verifiziert.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Alle anderen Dateien synchronisieren",
 			"option-sync-unsupported-desc": "Synchronisiert Dateien mit nicht unterstützten Dateiendungen.",
 			"option-vault-config-sync": "Vault-Konfiguration synchronisieren",
+			"option-view-config-files": "Einstellungsverlauf",
+			"option-view-config-files-desc": "Zeigt den Versionsverlauf der Einstellungsdateien, mit Option zum Wiederherstellen.",
 			"option-sync-app": "Allgemeine Einstellungen",
 			"option-sync-app-desc": "Aktiviere, um Editor-Einstellungen, Datei- und Link-Einstellungen, eigene Tastaturkürzel, etc. zu synchronisieren.",
 			"option-sync-appearance": "Ercheinungseinstellungen",
 			"option-sync-appearance-desc": "Synchronisiert Erscheinungseinstellungen wie dunklen Modus, aktives Thema und aktivierte CSS-Snippets.",
 			"option-sync-appearance-data": "Themen und Snippets",
 			"option-sync-appearance-data-desc": "Synchronisiert heruntergeladene Themen und Snippets. Ob diese aktiviert sind, entscheidet die vorherige Einstellung.",
+			"option-sync-hotkey": "Tastenkürzel",
+			"option-sync-hotkey-desc": "Synchronisiert eigene Tastenkürzel.",
 			"option-sync-core-plugin": "Aktive Kern-Erweiterungen",
 			"option-sync-core-plugin-desc": "Synchronisiert, welche Kern-Erweiterungen aktiviert sind.",
 			"option-sync-core-plugin-data": "Kern-Erweiterung Einstellungen",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Diese Überschrift extrahieren...",
 			"instruction-append": "um zum Ende zu verschieben",
 			"instruction-prepend": "um zum Anfang zu verschieben",
-			"msg-fail-to-fetch-template": "Vorlagen-Datei: \"{{template}}\" nicht gefunden."
+			"msg-fail-to-fetch-template": "Vorlagen-Datei: \"{{template}}\" nicht gefunden.",
+			"msg-fail-to-find-heading": "Überschrift konnte nicht gefunden werden"
 		}
 	},
 	"nouns": {

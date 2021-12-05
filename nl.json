@@ -41,20 +41,20 @@
 			"option-line-wrap": "Regelterugloop",
 			"option-line-wrap-description": "Laat lange regels teruglopen zodat ze in het venster passen, zonder van links naar rechts te hoeven scrollen.",
 			"option-auto-convert-html": "Automatisch HTML omzetten",
-			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
+			"option-auto-convert-html-description": "Zet automatisch HTML naar Markdown om wanneer inhoud van een website via drag-and-drop ingevoegd wordt. Gebruik Ctrl/Cmd+Shift+V om te plakken zonder het om te zetten.",
 			"option-vim-key-bindings": "Vim-sneltoetsen",
 			"option-vim-key-bindings-description": "Hiermee gebruikt u Vim-sneltoetsen bij het bewerken van het bronbestand..",
-			"option-emacsy-keys": "Legacy Emacs-style key bindings for macOS",
-			"option-emacsy-keys-description": "Allows you to use the additional Emacs-style navigation keys, which are standard on macOS, but may interfere with some key operations.",
-			"label-confirm-enable-vim": "Confirm entering Vim mode",
-			"label-vim-warning": "Vim mode is for efficient text editing but can be quite counter-intuitive. If you're not familiar with Vim, this option might make it look like Obsidian has stopped working.",
-			"label-vim-test": "To verify that you know your way around Vim, please enter the command to quit Vim without saving below:",
-			"label-vim-your-answer": "Your answer",
-			"placeholder-enter-command": "Enter command...",
-			"button-confirm-enable-vim": "Let me enable Vim",
-			"msg-vim-mode-enabled": "Command is correct. Vim mode now enabled.",
-			"msg-vim-mode-not-enabled": "Command is incorrect. Vim mode remains disabled to protect you.",
-			"msg-vim-mode-please-enter-command": "Please enter the command to enable Vim mode"
+			"option-emacsy-keys": "Legacy Emacs-stijl sneltoetsen voor macOS",
+			"option-emacsy-keys-description": "Laat je extra Emacs-stijl navigatietoetsen gebruiken, die standaard zijn op macOS, maar voor problemen kunnen zorgen met andere sneltoetsen.",
+			"label-confirm-enable-vim": "Bevestig vim-modus invoeren",
+			"label-vim-warning": "Vim-modus is efficiënt voor tekstbewerking maar kan verwarrend zijn. Als je niet bekend bent met Vim, kan deze optie ervoor zorgen dat het lijkt alsof Obsidian niet meer werkt",
+			"label-vim-test": "Om te bevestigen dat je weet hoe Vim werkt, voer hieronder de opdracht in om Vim te sluiten zonder op te slaan:",
+			"label-vim-your-answer": "Jouw antwoord",
+			"placeholder-enter-command": "Voer opdracht in...",
+			"button-confirm-enable-vim": "Laat me Vim aanzetten",
+			"msg-vim-mode-enabled": "Opdracht is correct. Vim-modus is nu aan.",
+			"msg-vim-mode-not-enabled": "Opdracht is incorrect. Vim-mode blijft uit om jou te beschermen.",
+			"msg-vim-mode-please-enter-command": "Voer de opdracht in om Vim-modus aan te zetten"
 		},
 		"file": {
 			"name": "Bestanden & Links",
@@ -128,7 +128,7 @@
 			"tooltip-delete-hotkey": "Wissen sneltoets",
 			"label-waiting-for-hotkey-press": "Druk sneltoets...",
 			"tooltip-restore-default": "Herstel standaard",
-			"tooltip-customize-command": "Pas dit commando aan",
+			"tooltip-customize-command": "Pas dit opdracht aan",
 			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
 			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands",
 			"label-blank-hotkey": "Blank"
@@ -208,6 +208,12 @@
 			"link-sign-up-now": "Schrijf je nu in",
 			"message-get-community-badges": "Stuur voor community-badges een e-mail naar support@obsidian.md als je ze 24 uur na het verkrijgen van je licentie nog niet hebt ontvangen.",
 			"message-obtain-commercial-license": "Voor een commerciële licentie gaat u naar {{pricingPageLink}}."
+		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Externe plugin",
@@ -316,43 +322,43 @@
 			"label-replace-all": "Vervang alles",
 			"key-enter": "Enter",
 			"key-shift-f3": "Shift + F3",
-			"key-enter-or-f3": "Enter or F3"
+			"key-enter-or-f3": "Enter of F3"
 		},
 		"link-suggestion": {
-			"label-type-hash": "Type #",
+			"label-type-hash": "Typ #",
 			"label-link-heading": "linken van kop",
-			"label-type-block": "Type ^",
+			"label-type-block": "Typ ^",
 			"label-link-block": "linken van blok",
-			"label-type-pipe": "Type |",
+			"label-type-pipe": "Typ |",
 			"label-change-display-text": "om de weergavetekst te wijzigen",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "geen match gevonden"
 		},
 		"spellcheck": {
 			"no-suggestion": "Geen suggesties...",
 			"add-to-dictionary": "Toevoegen aan woordenboek"
 		},
 		"print-modal": {
-			"title": "Export to PDF",
-			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
-			"setting-page-size": "Page size",
+			"title": "Exporteer naar PDF",
+			"caption": "Exporteer \"{{filename}}\" naar PDF met de instelling hierbeneden.",
+			"setting-page-size": "Paginagrootte",
 			"setting-page-size-a3": "A3",
 			"setting-page-size-a4": "A4",
 			"setting-page-size-a5": "A5",
 			"setting-page-size-legal": "Legal",
 			"setting-page-size-letter": "Letter",
 			"setting-page-size-tabloid": "Tabloid",
-			"setting-landscape": "Landscape",
-			"setting-margin": "Margin",
-			"setting-margin-default": "Default",
-			"setting-margin-minimal": "Minimal",
-			"setting-margin-none": "None",
-			"setting-downscale-percent": "Downscale percent",
-			"button-export-to-pdf": "Export to PDF"
+			"setting-landscape": "Landschap",
+			"setting-margin": "Marge",
+			"setting-margin-default": "Standaard",
+			"setting-margin-minimal": "Minimaal",
+			"setting-margin-none": "Geen",
+			"setting-downscale-percent": "Downscale percentage",
+			"button-export-to-pdf": "Exporteer naar PDF"
 		},
 		"link-popover": {
-			"tooltip-follow-link": "Follow link",
+			"tooltip-follow-link": "Volg link",
 			"tooltip-open-link": "Open link",
-			"tooltip-search-tag": "Search tag"
+			"tooltip-search-tag": "Zoek label"
 		}
 	},
 	"interface": {
@@ -362,7 +368,7 @@
 		"sidebar-collapse": "Inklappen",
 		"msg-fail-to-save-file": "Bestand opslaan mislukt \"{{filepath}}\". {{message}}.",
 		"no-file": "Geen bestand",
-		"msg-file-changed": "\"{{file}}\" has been modified externally, merging changes automatically.",
+		"msg-file-changed": "\"{{file}}\" is ergens anders gewijzigd, automatisch veranderingen samenvoegen.",
 		"switch-vault": "Open een andere kluis",
 		"help": "Help",
 		"settings": "Instellingen",
@@ -371,11 +377,11 @@
 		"msg-switched-to-edit": "Standaard weergavemodus omgeschakeld naar editor.",
 		"msg-upgrade-installer": "Om deze functie te gebruiken, moet u deze opnieuw installeren met het nieuwste installatieprogramma dat beschikbaar is op onze website.",
 		"tooltip-restore-default-settings": "Standaard instellingen terugzetten",
-		"label-copy": "Copy to clipboard",
+		"label-copy": "Kopieer naar klembord",
 		"copied": "{{item}} gekopieerd naar je klembord",
 		"url": "Url",
 		"msg-open-file-through-uri": "Opened file \"{{path}}\"",
-		"msg-file-not-found-through-uri": "File \"{{name}}\" not found.",
+		"msg-file-not-found-through-uri": "Bestand \"{{name}}\" niet gevonden.",
 		"delete-action-short-name": "Delete",
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indexing complete.",
@@ -406,8 +412,9 @@
 			"copy": "Copy",
 			"cut": "Cut",
 			"paste": "Paste",
-			"paste-as-plain-text": "Paste as plain text",
-			"select-all": "Select all"
+			"paste-as-plain-text": "Plak als platte tekst",
+			"select-all": "Selecteer alles",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Klik om uit te breiden",
@@ -452,7 +459,7 @@
 			"minimize": "Minimize",
 			"restore-down": "Restore down",
 			"close-window": "Close window",
-			"go-back": "Go back",
+			"go-back": "Ga terug",
 			"go-forward": "Go forward"
 		},
 		"start-up": {
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Failed to load vault: ",
 			"loading-cache": "Loading cache...",
 			"loading-workspace": "Loading workspace..."
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Preparing PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
-		"msg-rename-success": "Successfully renamed file."
+		"msg-rename-success": "Successfully renamed file.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "match file name",
 			"label-tag-option-description": "search for tags",
 			"label-line-option-description": "search keywords on same line",
-			"label-section-option-description": "search keywords under same heading"
+			"label-section-option-description": "search keywords under same heading",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Quick switcher",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Delete group",
 			"button-new-group": "New group",
 			"tooltip-click-to-change-drag-to-reorder": "Click to change color\nDrag to reorder groups",
-			"action-timelapse": "Start graph timelapse animation"
+			"action-timelapse": "Start graph timelapse animation",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Backlinks",
@@ -841,6 +861,8 @@
 			"action-open": "Open today's note",
 			"action-open-previous": "Open previous daily note",
 			"action-open-next": "Open next daily note",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Failed to create daily note. \"{{format}}\" is not a valid format.",
 			"msg-fail-folder": "Failed to create daily note. Folder \"{{folderOption}}\" not found.",
 			"msg-fail-template-file": "Failed to create daily note. Template file \"{{template}}\" not found.",
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Sync all other types",
 			"option-sync-unsupported-desc": "Sync unsupported file types.",
 			"option-vault-config-sync": "Vault configuration sync",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Main settings",
 			"option-sync-app-desc": "Enable to sync editor settings, files & links settings, custom hotkeys, etc.",
 			"option-sync-appearance": "Appearance settings",
 			"option-sync-appearance-desc": "Sync appearance settings like dark mode, active theme, and enabled snippets.",
 			"option-sync-appearance-data": "Themes and snippets",
 			"option-sync-appearance-data-desc": "Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Active core plugin list",
 			"option-sync-core-plugin-desc": "Sync which core plugins are enabled.",
 			"option-sync-core-plugin-data": "Core plugin settings",
@@ -1248,18 +1274,19 @@
 			"command-extract-heading": "Extract this heading...",
 			"instruction-append": "to move to bottom",
 			"instruction-prepend": "to move to top",
-			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found."
+			"msg-fail-to-fetch-template": "Failed to fetch template file: \"{{template}}\" not found.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {
-		"word-with-count": "{{count}} word",
-		"word-with-count_plural": "{{count}} words",
+		"word-with-count": "{{count}} woord",
+		"word-with-count_plural": "{{count}} woorden",
 		"character-with-count": "{{count}} character",
 		"character-with-count_plural": "{{count}} characters",
 		"link-with-count": "{{count}} link",
 		"link-with-count_plural": "{{count}} links",
-		"file-with-count": "{{count}} file",
-		"file-with-count_plural": "{{count}} file",
+		"file-with-count": "{{count}} bestand",
+		"file-with-count_plural": "{{count}} bestanden",
 		"folder-with-count": "{{count}} folder",
 		"folder-with-count_plural": "{{count}} folders",
 		"backlink-with-count": "{{count}} backlink",

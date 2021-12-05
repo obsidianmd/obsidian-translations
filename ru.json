@@ -209,6 +209,12 @@
 			"message-get-community-badges": "Напишите на support@obsidian.md, если вы не получили значки сообщества через сутки после получения лицензии.",
 			"message-obtain-commercial-license": "Для получения коммерческой лицензии перейдите по ссылке: {{pricingPageLink}}."
 		},
+		"core-plugin": {
+			"plugin-list": "Управление плагинами",
+			"option-search-plugin": "Поиск предустановленных плагинов",
+			"option-search-plugin-description": "Поиск предустановленных плагинов по наименованию или описанию.",
+			"placeholder-search-plugin": "Поиск предустановленных плагинов..."
+		},
 		"third-party-plugin": {
 			"name": "Сторонние плагины",
 			"option-safe-mode": "Безопасный режим",
@@ -302,8 +308,8 @@
 			"option-added-options": "Добавленные опции",
 			"option-more-toolbar-options": "Другие настройки",
 			"option-attach": "Вложение",
-			"option-add-command": "Add global command",
-			"option-add-command-description": "Select any global command to add to the toolbar."
+			"option-add-command": "Добавить глобальную команду",
+			"option-add-command-description": "Выберите любую глобальную команду для добавления в инструментарий."
 		}
 	},
 	"editor": {
@@ -350,9 +356,9 @@
 			"button-export-to-pdf": "Экспорт в PDF"
 		},
 		"link-popover": {
-			"tooltip-follow-link": "Follow link",
-			"tooltip-open-link": "Open link",
-			"tooltip-search-tag": "Search tag"
+			"tooltip-follow-link": "Перейти по ссылке",
+			"tooltip-open-link": "Открыть ссылку",
+			"tooltip-search-tag": "Искать тег"
 		}
 	},
 	"interface": {
@@ -407,7 +413,8 @@
 			"cut": "Вырезать",
 			"paste": "Вставить",
 			"paste-as-plain-text": "Вставить как обычный текст",
-			"select-all": "Выделить все"
+			"select-all": "Выделить все",
+			"rename-heading": "Переименовать заголовок..."
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -416,7 +423,7 @@
 			"not-created-yet": "Еще не создан, выбрать чтобы создать"
 		},
 		"start-screen": {
-			"label-version": "Version",
+			"label-version": "Версия",
 			"option-open-folder-as-vault": "Открыть папку как хранилище",
 			"option-open-folder-as-vault-description": "Выберите папку, содержащую Markdown-файлы.",
 			"option-create-vault": "Создать новое хранилище",
@@ -466,6 +473,15 @@
 			"msg-failed-to-load-vault": "Ошибка при загрузке хранилища: ",
 			"loading-cache": "Кэш загружается...",
 			"loading-workspace": "Рабочее пространство загружается..."
+		},
+		"mobile": {
+			"action-import": "Импортировать в хранилище",
+			"action-choose-file-to-insert": "Выберите файл для вставки",
+			"action-insert-text-into-file": "Вставить текст в {{filename}}",
+			"action-insert-link-into-file": "Вставить ссылку в {{filename}}",
+			"msg-importing": "Импортирование...",
+			"msg-import-success": "Импорт успешно завершен",
+			"msg-failed-to-import-file": "Не удалось импортировать файл {{filename}}"
 		}
 	},
 	"commands": {
@@ -538,7 +554,8 @@
 		"preparing-pdf": "Подготовка PDF...",
 		"label-rename-file": "Переименовать файл",
 		"label-new-name": "Новое имя",
-		"msg-rename-success": "Файл успешно переименован."
+		"msg-rename-success": "Файл успешно переименован.",
+		"label-rename-heading": "Переименовать заголовок"
 	},
 	"plugins": {
 		"name": "Плагины",
@@ -641,7 +658,8 @@
 			"label-file-name-option-description": "совпадение в имени файла",
 			"label-tag-option-description": "совпадение в тегах",
 			"label-line-option-description": "ключевые слова на одной строке",
-			"label-section-option-description": "ключевые слова под одним заголовком"
+			"label-section-option-description": "ключевые слова под одним заголовком",
+			"menu-opt-search-for": "Искать \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Быстрый переход",
@@ -707,7 +725,9 @@
 			"tooltip-delete-graph": "Удалить группу",
 			"button-new-group": "Новая группа",
 			"tooltip-click-to-change-drag-to-reorder": "Смена цвета\nУпорядочивание перетаскиванием",
-			"action-timelapse": "Запустить анимацию графа во времени"
+			"action-timelapse": "Запустить анимацию графа во времени",
+			"tooltip-start-timelapse-animation": "Запустить анимацию графа",
+			"button-animate-timelapse": "Запустить анимацию"
 		},
 		"backlinks": {
 			"name": "Обратные ссылки",
@@ -841,6 +861,8 @@
 			"action-open": "Сегодняшняя заметка",
 			"action-open-previous": "Открыть предыдущую ежедневную заметку",
 			"action-open-next": "Открыть следующую ежедневную заметку",
+			"action-insert-text": "Вставить текст в ежедневную заметку",
+			"action-insert-link": "Вставить ссылку в ежедневную заметку",
 			"msg-fail-format": "Не удалось создать ежедневную заметку. Неверный формат \"{{format}}\".",
 			"msg-fail-folder": "Не удалось создать ежедневную заметку. Папка \"{{folderOption}}\" не найдена.",
 			"msg-fail-template-file": "Не удалось создать ежедневную заметку. Файл шаблона \"{{template}}\" не найден.",
@@ -909,7 +931,7 @@
 			"name": "Открыть в приложении по умолчанию",
 			"desc": "Добавляет возможность открывать текущий файл в приложении по умолчанию.",
 			"action-open-file": "Открыть в приложении по умолчанию",
-			"action-open-file-mobile": "Share",
+			"action-open-file-mobile": "Поделиться",
 			"action-show-in-folder": "Показать содержащую папку"
 		},
 		"templates": {
@@ -1175,12 +1197,16 @@
 			"option-sync-unsupported": "Синхронизировать все остальные типы файлов",
 			"option-sync-unsupported-desc": "Синхронизировать неподдерживаемые типы файлов.",
 			"option-vault-config-sync": "Настройка синхронизации хранилища",
+			"option-view-config-files": "История файлов настроек",
+			"option-view-config-files-desc": "Просмотр и восстановление файлов настроек.",
 			"option-sync-app": "Основные настройки",
 			"option-sync-app-desc": "Включить синхронизацию настроек из разделов Редактор, Файлы и ссылки, Сочетания клавиш и т.д",
 			"option-sync-appearance": "Настройки оформления",
 			"option-sync-appearance-desc": "Синхронизировать настройки оформления, такие как ночной режим, активная тема и включенные CSS-фрагменты.",
 			"option-sync-appearance-data": "Темы и CSS-фрагменты",
 			"option-sync-appearance-data-desc": "Синхронизировать загруженные темы и CSS-фрагменты. Какие из них будут включены, зависит от предыдущих настроек.",
+			"option-sync-hotkey": "Сочетания клавиш",
+			"option-sync-hotkey-desc": "Синхронизировать пользовательские сочетания клавиш.",
 			"option-sync-core-plugin": "Список предустановленных плагинов, активных на данный момент",
 			"option-sync-core-plugin-desc": "Синхронизировать предустановленные плагины, которые активны.",
 			"option-sync-core-plugin-data": "Настройки предустановленных плагинов",
@@ -1248,7 +1274,8 @@
 			"command-extract-heading": "Извлечь этот заголовок...",
 			"instruction-append": "поместить в конец",
 			"instruction-prepend": "поместить в начало",
-			"msg-fail-to-fetch-template": "Не удалось вызвать шаблон: \"{{template}}\" не найден."
+			"msg-fail-to-fetch-template": "Не удалось вызвать шаблон: \"{{template}}\" не найден.",
+			"msg-fail-to-find-heading": "Не удалось найти заголовок"
 		}
 	},
 	"nouns": {
