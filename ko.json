@@ -108,8 +108,8 @@
 			"option-font-size-action": "폰트 크기 빠른 조정",
 			"option-font-size-action-description": "Ctrl + 스크롤 혹은 트랙패드 핀치-줌 제스쳐를 통한 폰트 크기 조정.",
 			"option-themes": "테마",
-			"option-theme": "테마",
-			"option-theme-description": "사용할 커뮤니티 테마를 골라주세요. 테마들은 \"vault/.obsidian/themes/\"에 저장되어 있습니다.",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "없음",
 			"button-reload-themes": "테마 새로고침",
 			"msg-reloaded-themes": "CSS 테마 새로고침 완료.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "스니펫 새로고침",
 			"button-open-snippets-folder": "스니펫 폴더열기",
 			"msg-reloaded-snippets": "CSS 스니펫 새로고침 완료.",
-			"option-toggle-snippet-description": "\"{{path}}\"에 CSS 스니펫 적용하기."
+			"option-toggle-snippet-description": "\"{{path}}\"에 CSS 스니펫 적용하기.",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "단축키",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "앱 정보",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "제품 키",
 			"license-key-placeholder": "제품 키를 입력해주세요.",
 			"label-enter-commercial-license": "상업용 제품 키를 입력해주세요: ",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "가장 최신 버전입니다!",
 			"label-read-changelog": "변경기록 읽기.",
 			"label-manual-install-required": "최신 버전을 웹사이트에서 다운받아서 설치해주세요",
-			"label-download-link": "다운로드",
+			"label-download": "Download",
 			"label-new-version-ready": "새로운 버전이 설치할 준비가 되엇습니다. ",
 			"label-relaunch-to-update": "업데이트를 위해서 앱을 재시작해주세요",
 			"label-disabled-updates": "업데이트가 해제되어있습니다.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "기본 Config 이외에 다른 폴더 사용하기. 폴더 이름이 . 으로 시작해야 합니다",
 			"option-config-location-warning": "Config 폴더는 . 으로 시작하는 유효한 폴더여야합니다.",
 			"label-license": "제품 키",
-			"label-your-commercial-license": "사용중인 상업용 제품 키: ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "회사: \"{{company}}\" , 사용자 수: {{seats}}, 유효기간: {{expiry}}.",
 			"label-validating-commercial-license": "확인 중...",
 			"label-invalid-commercial-license": "제품 키 불량: ",
 			"button-activate-commercial-license": "상업용 제품 키 등록하기",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " 개인 제품 키. ",
 			"label-thank-you-for-support": "후원해주셔서 감사합니다!",
 			"label-free-personal-license": "개인 제품 키: 개인 사용은 무료입니다."
@@ -206,7 +214,8 @@
 			"message-login-failed": "로그인에 실패했습니다, 이메일과 비밀번호를 다시 확인해주세요.",
 			"label-no-account": "계정이 없으신가요? ",
 			"link-sign-up-now": "회원가입",
-			"message-get-community-badges": "제품 키를 등록하고 24시간 이후에도 커뮤니티 뱃지를 받지 못하셨다면 support@obsidian.md로 문의해주세요",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "상업용 제품 키를 구하시고 싶으시면 {{pricingPageLink}}를 방문해주세요."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "설치",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "검색 결과 없음.",
 			"msg-failed-to-load-manifest": "플러그인 매니페스트를 로딩하는데 실패했습니다.",
 			"label-version": "버젼: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "다운로드 수(낮은 수부터)",
 			"label-sort-release-date-new-to-old": "첫 출시 순(최신부터)",
 			"label-sort-release-date-old-to-new": "첫 출시 순(옛날부터)",
-			"label-sort-alphabetical": "플러그인 이름(이름 순서)",
-			"label-sort-alphabetical-reverse": "플러그인 이름(이름 역순)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "{{pluginCount}}개의 결과:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "이전",
 			"label-next": "다음",
 			"label-all": "모두 선택",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian이 Vault를 인덱싱하는 중입니다...\n초기에 일회성으로 해당 작업이 필요합니다.\n해당 작업이 완료되기 이전까지 몇가지 기능을 사용할 수 없을 수 있습니다.",
 		"msg-indexing-complete": "인덱싱이 완료되었습니다.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "열려있는 파일이 없습니다.",
 			"create-new-file": "새 파일 만들기",
 			"go-to-file": "파일 열기",
 			"see-recent-files": "최근 파일 보기",
-			"close": "닫기"
+			"close": "닫기",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "편집 (Ctrl/Cmd+클릭 으로 새로운 패널에서 편집)",
@@ -528,7 +544,10 @@
 		"copy-path": "파일 경로 복사",
 		"copy-url": "Obsidian url 복사하기",
 		"export-pdf": "PDF 생성하기",
-		"reload": "저장하지 않고 새로고침"
+		"reload": "저장하지 않고 새로고침",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
 		"button-done": "완료",
+		"button-continue": "Continue",
 		"preparing-pdf": "PDF를 준비중입니다...",
 		"label-rename-file": "파일 이름 변경",
 		"label-new-name": "새 이름",
@@ -799,18 +819,14 @@
 			"prompt-filter": "필터...",
 			"label-dark-theme-only": "다크 테마만",
 			"label-light-theme-only": "라이트 테마만",
-			"label-preview": "프리뷰",
-			"label-stop-preview": "프리뷰 그만두기",
 			"label-use": "사용하기",
-			"label-override": "덮어쓰기",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "GitHub에서 보기",
-			"msg-fetching-css": "CSS를 가져오는 중입니다...",
-			"theme-title": "{{author}}의 \"{{name}}\"",
-			"msg-override-theme": "현재 CSS 덮어쓰기",
-			"msg-existing-theme": "이미 \"obsidian.css\" 파일이 있습니다.",
-			"msg-confirm-override": "정말 덮어쓰시겠습니까? 기존에 있던 CSS파일을 잃습니다. 필요하시다면 꼭 백업해주세요.",
 			"msg-load-error": "커뮤니티 테마를 가져올수 없습니다, 네트워크 상태를 확인해주세요.",
-			"msg-now-using-theme": "{{title}}을 CSS 테마로 사용합니다."
+			"msg-now-using-theme": "{{title}}을 CSS 테마로 사용합니다.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "명령어 팔레트",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "반투명 창",
 			"desc": "반투명한 효과를 켜서 깊이감을 향상시킵니다. 다크 모드에서 가장 좋은 효과를 볼 수 있습니다. 현재 리눅스에서는 지원하지 않습니다."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "출판",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "파일이 삭제되었습니다.",
 			"label-no-earlier-version": "이 파일의 이전 버전이 없습니다.",
 			"label-empty-file": "없음",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "삭제된 파일",
 			"label-click-to-see-history": "파일의 역사를 볼려면 삭제된 파일을 클릭하세요",
 			"label-create-remote-vault": "리모트 보관함 만들기",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "보관함 열기",
 			"msg-verified-password": "비밀번호 확인에 성공했습니다.",
 			"label-remote-vaults": "원격 보관함들",
-			"label-connected-vault": "연결됨",
 			"label-vault-created-time": "생성시간: {{time}}",
 			"tooltip-delete-remote-vault": "삭제",
 			"label-confirm-delete-remote-vault": "보관함 삭제 확인",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}}는 동기화로부터 제외됩니다.",
 			"label-setup-connection": "연결 구축",
 			"label-now-connected-to-vault": "\"{{name}}\"에 연결되었습니다.",
-			"button-start-syncing": "동기화 시작"
+			"button-start-syncing": "동기화 시작",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "파일 복구",

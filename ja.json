@@ -108,8 +108,8 @@
 			"option-font-size-action": "フォントサイズのクイック調整",
 			"option-font-size-action-description": "Ctrl+Scroll、もしくはトラックパッド上でピンチ＆ズームのジェスチャによってフォントサイズを調整できます。",
 			"option-themes": "テーマ",
-			"option-theme": "テーマ",
-			"option-theme-description": "使用するコミュニティテーマ。テーマは \"vault/.obsidian/themes/\" に保存されます。",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "なし",
 			"button-reload-themes": "テーマをリロード",
 			"msg-reloaded-themes": "カスタムCSSテーマをリロードしました。",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "スニペットをリロード",
 			"button-open-snippets-folder": "スニペットフォルダを開く",
 			"msg-reloaded-snippets": "CSSスニペットをリロードしました。",
-			"option-toggle-snippet-description": "\"{{path}}\" のCSSスニペットを適用します。"
+			"option-toggle-snippet-description": "\"{{path}}\" のCSSスニペットを適用します。",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "ホットキー",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "Obsidianについて",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "ライセンスキー",
 			"license-key-placeholder": "ここにライセンスキーを入力",
 			"label-enter-commercial-license": "商用ライセンスキーを入力してください:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "アプリは最新版です！",
 			"label-read-changelog": "変更履歴を閲覧する。",
 			"label-manual-install-required": "手動で最新版をインストールする必要があります。",
-			"label-download-link": "ここにダウンロードします。",
+			"label-download": "Download",
 			"label-new-version-ready": "最新バージョンがインストールできます。",
 			"label-relaunch-to-update": "更新のために再起動してください。",
 			"label-disabled-updates": "更新は無効になっています。",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "デフォルトの設定フォルダではなく別の設定フォルダを使用します。フォルダ名はドットで始まる必要があります。",
 			"option-config-location-warning": "設定フォルダはドットから始まる有効な名前である必要があります。",
 			"label-license": "ライセンス",
-			"label-your-commercial-license": "あなたの商用ライセンスキーは以下です: ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "\"{{company}}\" によって{{seats}}人が登録されています。{{expiry}}まで有効です。",
 			"label-validating-commercial-license": "検証しています…",
 			"label-invalid-commercial-license": "このライセンスは無効です: ",
 			"button-activate-commercial-license": "商用ライセンスを認証",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": "個人用ライセンスを使用中です。",
 			"label-thank-you-for-support": "ご支援ありがとうございます！",
 			"label-free-personal-license": "個人用ライセンス: 個人使用は無料です。"
@@ -206,7 +214,8 @@
 			"message-login-failed": "ログインに失敗しました、メールアドレスとパスワードを確認してください。",
 			"label-no-account": "アカウントを未取得ですか？",
 			"link-sign-up-now": "登録してください",
-			"message-get-community-badges": "ライセンスの取得後、24時間以内にコミュニティバッジを受け取れていない場合にはsupport@obsidian.mdまでご連絡ください。",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "商用ライセンスを取得するには、{{pricingPageLink}}を参照してください。"
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "インストール",
 			"button-enable": "有効化",
 			"button-disable": "無効化",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "結果が見つかりません。",
 			"msg-failed-to-load-manifest": "プラグインマニフェストの読み込みに失敗しました。",
 			"label-version": "バージョン: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "ダウンロード数 (少ない順)",
 			"label-sort-release-date-new-to-old": "初めてのリリース時期 (新しい順)",
 			"label-sort-release-date-old-to-new": "初めてのリリース時期 (古い順)",
-			"label-sort-alphabetical": "プラグイン名 (アルファベット順)",
-			"label-sort-alphabetical-reverse": "プラグイン名 (アルファベット逆順)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "{{pluginCount}}を表示中:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "前へ",
 			"label-next": "次へ",
 			"label-all": "全体を検索",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidianが保管庫のインデックスを作成しています…\nこれは一度だけ実行されます。\nいくつかの機能はこれが完了するまで利用できない可能性があります。",
 		"msg-indexing-complete": "インデックス作成が完了しました。",
 		"label-enter-to-create": "Enterキーで作成",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
 			"create-new-file": "新規ファイルを作成",
 			"go-to-file": "ファイルに移動する",
 			"see-recent-files": "最近のファイルを見る",
-			"close": "閉じる"
+			"close": "閉じる",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "編集(Ctrl/Cmd+クリックで新規ペインで編集)",
@@ -528,7 +544,10 @@
 		"copy-path": "ファイルパスをコピーする",
 		"copy-url": "Obsidian URIをコピー",
 		"export-pdf": "PDFにエクスポート",
-		"reload": "保存せずにアプリをリロード"
+		"reload": "保存せずにアプリをリロード",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}の{{links}}に影響があります。",
@@ -551,6 +570,7 @@
 		"label-delete-file": "ファイルの削除",
 		"button-cancel": "キャンセル",
 		"button-done": "完了",
+		"button-continue": "Continue",
 		"preparing-pdf": "PDFを準備…",
 		"label-rename-file": "ファイル名を変更",
 		"label-new-name": "新規名称",
@@ -799,18 +819,14 @@
 			"prompt-filter": "フィルタ…",
 			"label-dark-theme-only": "ダークテーマのみ",
 			"label-light-theme-only": "ライトテーマのみ",
-			"label-preview": "プレビュー",
-			"label-stop-preview": "プレビュー停止",
 			"label-use": "使用",
-			"label-override": "上書き",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "GitHubで見る",
-			"msg-fetching-css": "CSSを取得しています…",
-			"theme-title": "\"{{name}}\" by {{author}}",
-			"msg-override-theme": "現在のCSSを上書きします",
-			"msg-existing-theme": "すでにカスタムCSSファイル \"obsidian.css\" を利用しています。",
-			"msg-confirm-override": "上書きしますが良いですか？現在利用しているCSSファイルは失われます。必要ならバックアップしてください。",
 			"msg-load-error": "コミュニティテーマを読み込めませんでした。ネットワークの状態を確認してください。",
-			"msg-now-using-theme": "{{title}}を新規CSSテーマにしました。"
+			"msg-now-using-theme": "{{title}}を新規CSSテーマにしました。",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "コマンドパレット",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "半透明ウィンドウ",
 			"desc": "半透明効果をオンにし、奥行き感を高めます。ダークモードでの使用に最適です。Linuxではサポートされていません。"
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "パブリッシュ",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "このファイルは削除されました",
 			"label-no-earlier-version": "このファイルには以前のバージョンが存在しません。",
 			"label-empty-file": "ファイルがありません",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "削除されたファイル",
 			"label-click-to-see-history": "削除されたファイルのバージョン履歴を閲覧するにはファイルをクリックしてください。",
 			"label-create-remote-vault": "リモート保管庫の作成",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "保管庫をアンロック",
 			"msg-verified-password": "パスワードの確認に成功しました。",
 			"label-remote-vaults": "リモート保管庫",
-			"label-connected-vault": "接続済み",
 			"label-vault-created-time": "作成日時 {{time}}",
 			"tooltip-delete-remote-vault": "削除",
 			"label-confirm-delete-remote-vault": "削除された保管庫の確認",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "現在、{{folders}}が同期から除外されています。",
 			"label-setup-connection": "接続のセットアップ",
 			"label-now-connected-to-vault": "現在、\"{{name}}\" に接続されています。",
-			"button-start-syncing": "同期を開始"
+			"button-start-syncing": "同期を開始",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "ファイルリカバリー",

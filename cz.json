@@ -108,8 +108,8 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Motivy",
-			"option-theme": "Motiv",
-			"option-theme-description": "Který komunitní motiv používat. Motivy se ukládají v \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Žádný",
 			"button-reload-themes": "Znovu načíst motivy",
 			"msg-reloaded-themes": "Vlastní CSS byli aktualizovány.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Znovu načíst úryvky",
 			"button-open-snippets-folder": "Otevřít složku úryvků",
 			"msg-reloaded-snippets": "CSS úryvky byli aktualizovány.",
-			"option-toggle-snippet-description": "Použít CSS úryvky umistěné v \"{{path}}\"."
+			"option-toggle-snippet-description": "Použít CSS úryvky umistěné v \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Klávesové Zkratky",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "O Obsidianu",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Licenční klíč",
 			"license-key-placeholder": "Váš licenční klíč...",
 			"label-enter-commercial-license": "Prosím vložte svůj klíč komerční licence:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Vaše aplikace je aktuální!",
 			"label-read-changelog": "Přečíst seznam změn.",
 			"label-manual-install-required": "Nejnovější verzi musíte nainstalovat ručně.",
-			"label-download-link": "Stáhnout zde.",
+			"label-download": "Download",
 			"label-new-version-ready": "Nová verze je připravená k instalaci. ",
 			"label-relaunch-to-update": "Restartovat a aktualizovat aplikaci.",
 			"label-disabled-updates": "Aktualizace jsou vypnuté.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Licence",
-			"label-your-commercial-license": "Váš komerční licenční klíč je ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Registrováno \"{{company}}\" pro {{seats}} uživatelů. Platné do {{expiry}}.",
 			"label-validating-commercial-license": "Ověřování...",
 			"label-invalid-commercial-license": "Licence je neplatná: ",
 			"button-activate-commercial-license": "Aktivovat komerční licenci",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " personální licence. ",
 			"label-thank-you-for-support": "Děkujeme vám za vaši podporu!",
 			"label-free-personal-license": "Personální licence: zdarma pro personální použití."
@@ -206,7 +214,8 @@
 			"message-login-failed": "Přihlášení selhalo, zkontrolujte váš email a heslo.",
 			"label-no-account": "Nemáte účet? ",
 			"link-sign-up-now": "Zaregistrujte se",
-			"message-get-community-badges": "Kvůli komunitní odznakům, napište email na support@obsidian.md pokud jste je neobdrželi během 24 hodin po získání vaší licence.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Pro získání komeční licence, navštivte {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "Nainstalovat",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Žádné výsledky.",
 			"msg-failed-to-load-manifest": "Nepodařilo se načíct manifest doplňku.",
 			"label-version": "Verze: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Download count (low to high)",
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
-			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Showing {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Předchozí",
 			"label-next": "Následující",
 			"label-all": "Všechny",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indexing complete.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Není otevřený žádný soubor",
 			"create-new-file": "Vytvořit nový soubor",
 			"go-to-file": "Přejít k souboru",
 			"see-recent-files": "Nedávné soubory",
-			"close": "Zavřít"
+			"close": "Zavřít",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Režim úprav (Ctrl/Cmd+Klik pro úpravu v novém panelu)",
@@ -528,7 +544,10 @@
 		"copy-path": "Kopírovat cestu souboru",
 		"copy-url": "Kopírovat url obsidianu",
 		"export-pdf": "Exportovat do PDF",
-		"reload": "Reload app without saving"
+		"reload": "Reload app without saving",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Tohle ovlivní {{links}} ve {{files}}.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "Odstranit soubor",
 		"button-cancel": "Zrušit",
 		"button-done": "Hotovo",
+		"button-continue": "Continue",
 		"preparing-pdf": "Připravuje se PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filtr...",
 			"label-dark-theme-only": "Pouze tmavé motivy",
 			"label-light-theme-only": "Pouze světlé motivy",
-			"label-preview": "Náhled",
-			"label-stop-preview": "Vypnout náhled",
 			"label-use": "Použít",
-			"label-override": "Přepsat",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Zobrazit na GitHubu",
-			"msg-fetching-css": "Načítání CSS...",
-			"theme-title": "\"{{name}}\" od {{author}}",
-			"msg-override-theme": "Přepsat současné CSS",
-			"msg-existing-theme": "Již máte \"obsidian.css\" vlastní CSS soubor.",
-			"msg-confirm-override": "Jste si jisti že je chcete přepsat? Ztratíte originální CSS soubor. Udělejte si prosím zálohu pokud ji budete potřebovat.",
 			"msg-load-error": "Nepodařilo se načíct komunitní motivy, zkontrolujte své internetové připojení.",
-			"msg-now-using-theme": "Právě používáte {{title}} jako váš CSS motiv."
+			"msg-now-using-theme": "Právě používáte {{title}} jako váš CSS motiv.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Paleta příkazů",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Průhledné okno",
 			"desc": "Přidá efekt průhlednosti pro navození pocitu hloubky. Vhodnější pro tmavý režim. Není podporováno na Linuxu."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Publikovat",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Tento soubor byl smazán",
 			"label-no-earlier-version": "Neexistují žádné dřívější verze tohoto souboru.",
 			"label-empty-file": "Prízdné",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Smazané soubory",
 			"label-click-to-see-history": "Klikněte na smazaný soubor pro zobrazení jeho historie.",
 			"label-create-remote-vault": "Vytvořit vzdálený trezor",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Unlock vault",
 			"msg-verified-password": "Successfully verified your password.",
 			"label-remote-vaults": "Your remote vaults",
-			"label-connected-vault": "Connected",
 			"label-vault-created-time": "Created {{time}}",
 			"tooltip-delete-remote-vault": "Delete",
 			"label-confirm-delete-remote-vault": "Confirm delete vault",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} are currently excluded from being synced.",
 			"label-setup-connection": "Setup connection",
 			"label-now-connected-to-vault": "You're now connected to \"{{name}}\".",
-			"button-start-syncing": "Start syncing"
+			"button-start-syncing": "Start syncing",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "File recovery",
