@@ -108,8 +108,8 @@
 			"option-font-size-action": "Szybka regulacja rozmiaru czcionki",
 			"option-font-size-action-description": "Dostosuj rozmiar czcionki za pomocą Ctrl + Scroll lub użyj gestu szczypania i powiększania na gładziku.",
 			"option-themes": "Motywy",
-			"option-theme": "Motyw",
-			"option-theme-description": "Motyw do załadowania. Motywy przechowywane są w ścieżce \"sejf/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Żaden",
 			"button-reload-themes": "Przeładuj motywy",
 			"msg-reloaded-themes": "Motywy CSS przeładowane.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Przeładuj snippety",
 			"button-open-snippets-folder": "Otwórz folder ze snippetami",
 			"msg-reloaded-snippets": "Snippety CSS przeładowane.",
-			"option-toggle-snippet-description": "Włącz snippet CSS ze ścieżki \"{{path}}\"."
+			"option-toggle-snippet-description": "Włącz snippet CSS ze ścieżki \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Klawisze skrótów",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "O programie",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Klucz licencyjny",
 			"license-key-placeholder": "Twój klucz licencyjny...",
 			"label-enter-commercial-license": "Podaj swój klucz dla licencji komercyjnej:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Twoja aplikacja jest aktualna!",
 			"label-read-changelog": "Przeczytaj historię zmian.",
 			"label-manual-install-required": "Musisz ręcznie zainstalować najnowszą wersję.",
-			"label-download-link": "Pobierz tutaj.",
+			"label-download": "Download",
 			"label-new-version-ready": "Nowa wersja jest gotowa do instalacji. ",
 			"label-relaunch-to-update": "Uruchom aplikację ponownie, aby zaktualizować.",
 			"label-disabled-updates": "Aktualizacje są zablokowane.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Użyj innego folderu config niż domyślny. Nazwa musi zaczynać się od kropki.",
 			"option-config-location-warning": "Lokalizacja folderu config musi być nazwą zaczynającą się od kropki.",
 			"label-license": "Licencja",
-			"label-your-commercial-license": "Twój komercyjny klucz licencyjny to ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Zarejestrowana na \"{{company}}\" dla {{seats}} użytkowników. Ważna do {{expiry}}.",
 			"label-validating-commercial-license": "Sprawdzanie...",
 			"label-invalid-commercial-license": "Licencja nieważna: ",
 			"button-activate-commercial-license": "Aktywuj licencję komercyjną",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " licencja osobista. ",
 			"label-thank-you-for-support": "Dziękujemy za wsparcie!",
 			"label-free-personal-license": "Licencja osobista: darmowa dla użytku osobistego."
@@ -206,14 +214,15 @@
 			"message-login-failed": "Logowanie nie powiodło się, sprawdź wprowadzony email i hasło.",
 			"label-no-account": "Nie masz konta? ",
 			"link-sign-up-now": "Zarejestruj się teraz",
-			"message-get-community-badges": "Aby uzyskać odznaki społeczności Obsidian, napisz na adres support@obsidian.md, jeśli nie otrzymałeś ich w 24 godziny po zakupie licencji.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Aby uzyskać licencję komercyjną, odwiedź {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "Lista wtyczek",
+			"option-search-plugin": "Szukaj wtyczek",
+			"option-search-plugin-description": "Filtruj wtyczki po nazwie lub opisie.",
+			"placeholder-search-plugin": "Szukaj wtyczek..."
 		},
 		"third-party-plugin": {
 			"name": "Wtyczki stworzone przez społeczność",
@@ -236,6 +245,7 @@
 			"button-install": "Instaluj",
 			"button-enable": "Włącz",
 			"button-disable": "Wyłącz",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Brak wyników wyszukiwania.",
 			"msg-failed-to-load-manifest": "Ładowanie manifestu wtyczki nie powiodło się.",
 			"label-version": "Wersja: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Liczba pobrań (rosnąco)",
 			"label-sort-release-date-new-to-old": "Data wydania (od najnowszych)",
 			"label-sort-release-date-old-to-new": "Data wydania (od najstarszych)",
-			"label-sort-alphabetical": "Nazwa wtyczki (od A do Z)",
-			"label-sort-alphabetical-reverse": "Nazwa wtyczki (od Z do A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Pokazuję {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Poprz.",
 			"label-next": "Nast.",
 			"label-all": "Wszystkie",
@@ -322,7 +334,7 @@
 			"label-replace-all": "Zamień wszystkie",
 			"key-enter": "Enter",
 			"key-shift-f3": "Shift + F3",
-			"key-enter-or-f3": "Enter or F3"
+			"key-enter-or-f3": "Enter lub F3"
 		},
 		"link-suggestion": {
 			"label-type-hash": "Użyj #",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian indeksuje Twój sejf...\nPowinno to nastąpić tylko raz.\nNiektóre funkcje mogą być niedostępne, dopóki proces nie zostanie ukończony.",
 		"msg-indexing-complete": "Indeksowanie zakończone",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Żaden plik nie jest otwarty",
 			"create-new-file": "Utwórz nowy plik",
 			"go-to-file": "Idź do pliku",
 			"see-recent-files": "Zobacz ostatnie pliki",
-			"close": "Zamknij"
+			"close": "Zamknij",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Edytuj (Ctrl/Cmd+Click aby edytować w nowym oknie)",
@@ -414,7 +430,7 @@
 			"paste": "Wklej",
 			"paste-as-plain-text": "Wklej jako zwykły tekst.",
 			"select-all": "Zaznacz wszystko",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "Edytuj nagłówek..."
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
@@ -475,13 +491,13 @@
 			"loading-workspace": "Ładuję obszar roboczy..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "Importuj",
+			"action-choose-file-to-insert": "Wybierz plik do wstawienia",
+			"action-insert-text-into-file": "Wstaw tekst do {{filename}}",
+			"action-insert-link-into-file": "Wstaw link do {{filename}}",
+			"msg-importing": "Importowanie...",
+			"msg-import-success": "Zaimportowano",
+			"msg-failed-to-import-file": "Nie udało się zaimportować {{filename}}"
 		}
 	},
 	"commands": {
@@ -528,7 +544,10 @@
 		"copy-path": "Skopiuj ścieżkę pliku",
 		"copy-url": "Skopiuj url Obsidian",
 		"export-pdf": "Eksportuj do PDF",
-		"reload": "Zrestartuj aplikację bez zapisywania"
+		"reload": "Zrestartuj aplikację bez zapisywania",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -551,11 +570,12 @@
 		"label-delete-file": "Usuń plik",
 		"button-cancel": "Anuluj",
 		"button-done": "Zakończ",
+		"button-continue": "Continue",
 		"preparing-pdf": "Przygotowywanie PDF...",
 		"label-rename-file": "Zmień nazwę pliku",
 		"label-new-name": "Nowa nazwa",
 		"msg-rename-success": "Zmiana nazwy zakończona sukcesem.",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "Edytuj nagłówek"
 	},
 	"plugins": {
 		"name": "Wtyczki",
@@ -659,7 +679,7 @@
 			"label-tag-option-description": "szukaj tagów",
 			"label-line-option-description": "szukaj w tej samej linii",
 			"label-section-option-description": "szukaj pod tym nagłówkiem",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "Znajdź \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Szybka zmiana pliku",
@@ -726,8 +746,8 @@
 			"button-new-group": "Nowa grupa",
 			"tooltip-click-to-change-drag-to-reorder": "Kliknij żeby zmienić kolor\nPrzeciągnij żeby zmienić kolejność",
 			"action-timelapse": "Uruchom animację timelapse grafu",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "Uruchom animację timelapse grafu",
+			"button-animate-timelapse": "Animuj"
 		},
 		"backlinks": {
 			"name": "Linki zwrotne",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filtruj...",
 			"label-dark-theme-only": "Tylko ciemne motywy",
 			"label-light-theme-only": "Tylko jasne motywy",
-			"label-preview": "Podgląd",
-			"label-stop-preview": "Anuluj podgląd",
 			"label-use": "Użyj",
-			"label-override": "Nadpisz",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Odwiedź na portalu GitHub",
-			"msg-fetching-css": "Pobieranie motywu...",
-			"theme-title": "\"{{name}}\" autorstwa {{author}}",
-			"msg-override-theme": "Nadpisz obecny motyw CSS",
-			"msg-existing-theme": "Już posiadasz plik \"obsidian.css\" z niestadardowym motywem CSS.",
-			"msg-confirm-override": "Czy na pewno chcesz go nadpisać? Spowoduje to utratę oryginalnej wersji pliku. Stwórz kopię zapasową, jeśli to konieczne.",
 			"msg-load-error": "Ładowanie motywów nie powiodło się, sprawdź połączenie z siecią.",
-			"msg-now-using-theme": "Włączyłeś {{title}} jako swój aktualny motyw CSS."
+			"msg-now-using-theme": "Włączyłeś {{title}} jako swój aktualny motyw CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Paleta poleceń",
@@ -882,7 +898,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Automatyczne tworzenie prefiksów Zettelkasten",
 			"desc": "Utwórz nową notatkę z 12-cyfrowym ID systemu Zettelkasten w formacie YYYYMMDDHHII (Przykład: 202001010000).",
-			"short-name": "ZK note",
+			"short-name": "notatka ZK",
 			"action-create-note": "Utwórz nową notatkę Zettelkasten",
 			"option-new-file-location": "Lokalizacja dla nowych plików",
 			"option-new-file-location-description": "Ścieżka dostępu do folderu, w którym tworzone będą nowe notatki Zettelkasten.",
@@ -896,7 +912,7 @@
 		"random-note": {
 			"name": "Losowa notatka",
 			"desc": "Otwiera losową notatkę. Przydatne przy powtarzaniu i odkrywaniu.",
-			"short-name": "Random",
+			"short-name": "Losuj",
 			"action-open": "Otwórz losową notatkę"
 		},
 		"outline": {
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Przezroczyste okno",
 			"desc": "Włącz przezroczystość aby wzmocnić poczucie głębi. Najlepiej używać w trybie ciemnym. Nie obsługiwane przez system Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Publikuj",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Ten plik został usunięty",
 			"label-no-earlier-version": "Nie było wcześniejszych wersji tego pliku.",
 			"label-empty-file": "Pusty",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Usunięte pliki",
 			"label-click-to-see-history": "Kliknij na usunięty plik, aby zobaczyć jego historię.",
 			"label-create-remote-vault": "Utwórz zdalny sejf",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Odblokuj sejf",
 			"msg-verified-password": "Pomyślnie zweryfikowano Twoje hasło.",
 			"label-remote-vaults": "Twoje zdalne sejfy",
-			"label-connected-vault": "Połączono",
 			"label-vault-created-time": "Stworzono {{time}}",
 			"tooltip-delete-remote-vault": "Usuń",
 			"label-confirm-delete-remote-vault": "Potwierdź usunięcie sejfu",
@@ -1205,8 +1225,8 @@
 			"option-sync-appearance-desc": "Synchronizuj ustawienia wyglądu, takie jak tryb ciemny, aktywny motyw i włączone snippety.",
 			"option-sync-appearance-data": "Motywy i snippety",
 			"option-sync-appearance-data-desc": "Synchronizuj pobrane motywy i fragmenty. To, czy są włączone, zależy od poprzedniego ustawienia.",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "Skróty klawiszowe",
+			"option-sync-hotkey-desc": "Synchronizuj skróty klawiszowe.",
 			"option-sync-core-plugin": "Aktywna lista wbudowanych wtyczek",
 			"option-sync-core-plugin-desc": "Synchronizuj które wbudowane wtyczki są włączone.",
 			"option-sync-core-plugin-data": "Ustawienia wbudowanych wtyczek",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} są obecnie wykluczone z synchronizacji.",
 			"label-setup-connection": "Ustaw połączenie",
 			"label-now-connected-to-vault": "Jesteś teraz połączony z \"{{name}}\".",
-			"button-start-syncing": "Zacznij synchronizację"
+			"button-start-syncing": "Zacznij synchronizację",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Odzyskiwanie plików (recovery)",
@@ -1275,7 +1298,7 @@
 			"instruction-append": "aby przesunąć na dół",
 			"instruction-prepend": "aby przesunąc na górę",
 			"msg-fail-to-fetch-template": "Nie udało się pobrać pliku szablonu: \"{{template}}\" nie znaleziony.",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "Nie udało się znaleźć nagłówka"
 		}
 	},
 	"nouns": {
