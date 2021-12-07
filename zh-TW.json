@@ -108,8 +108,8 @@
 			"option-font-size-action": "快速字型大小調整",
 			"option-font-size-action-description": "使用〔Ctrl+捲動〕以調整字型大小，或使用觸控板的向外放大手勢。",
 			"option-themes": "佈景主題",
-			"option-theme": "佈景主題",
-			"option-theme-description": "要使用那個社群主題，佈景主題存放於 \"儲存庫/.obsidian/themes/\"。",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "無",
 			"button-reload-themes": "重新載入佈景主題",
 			"msg-reloaded-themes": "自訂 CSS 佈景主題已重新載入。",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "重新載入 CSS 片段",
 			"button-open-snippets-folder": "開啟 CSS 片段資料夾",
 			"msg-reloaded-snippets": "重新載入 CSS 片段。",
-			"option-toggle-snippet-description": "在 \"{{path}}\" 套用 CSS 片段。"
+			"option-toggle-snippet-description": "在 \"{{path}}\" 套用 CSS 片段。",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "快捷鍵",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "關於",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "註冊碼",
 			"license-key-placeholder": "您的註冊碼...",
 			"label-enter-commercial-license": "請輸入您的商業註冊碼：",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "您使用的是最新版本!",
 			"label-read-changelog": "閱讀更新日誌",
 			"label-manual-install-required": "您必須手動安裝最新版本。",
-			"label-download-link": "由此下載。",
+			"label-download": "Download",
 			"label-new-version-ready": "準備安裝新版本。 ",
 			"label-relaunch-to-update": "重新啟動應用以進行更新。",
 			"label-disabled-updates": "更新已禁用。",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "用另一個不同的資料夾以取代預設的，資料夾必須以 . 開頭。",
 			"option-config-location-warning": "設定資料夾必須是合法且以 . 開頭。",
 			"label-license": "註冊碼",
-			"label-your-commercial-license": "您的商業註冊碼是 ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "註冊給用戶： \"{{company}}\" - {{seats}} 。有效期至 {{expiry}}.",
 			"label-validating-commercial-license": "正在驗證...",
 			"label-invalid-commercial-license": "無效的註冊碼: ",
 			"button-activate-commercial-license": "啟用商業註冊碼",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " 個人註冊碼。 ",
 			"label-thank-you-for-support": "感謝您的支持！",
 			"label-free-personal-license": "個人註冊碼：供個人用戶免費使用。"
@@ -206,14 +214,15 @@
 			"message-login-failed": "登入失敗，請檢查您的電子信箱與密碼。",
 			"label-no-account": "沒有帳戶？",
 			"link-sign-up-now": "現在註冊",
-			"message-get-community-badges": "若在24小時後未取得註冊後的社群身分時，請寄信至 support@obsidian.md。",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "欲取得商用授權請瀏覽 {{pricingPageLink}}。"
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "外掛清單",
+			"option-search-plugin": "搜尋核心外掛",
+			"option-search-plugin-description": "以名稱或描述過濾外掛。",
+			"placeholder-search-plugin": "搜尋外掛..."
 		},
 		"third-party-plugin": {
 			"name": "第三方外掛",
@@ -236,6 +245,7 @@
 			"button-install": "安裝",
 			"button-enable": "啟用",
 			"button-disable": "失效",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "無符合結果。",
 			"msg-failed-to-load-manifest": "無法載入外掛的設定描述檔。",
 			"label-version": "版本: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "下載次數 (低到高)",
 			"label-sort-release-date-new-to-old": "初次釋出時間 (新到舊)",
 			"label-sort-release-date-old-to-new": "初次釋出時間 (舊到新)",
-			"label-sort-alphabetical": "外掛名稱 (A到Z)",
-			"label-sort-alphabetical-reverse": "外掛名稱 (Z到A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "顯示 {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "前一個",
 			"label-next": "後一個",
 			"label-all": "選擇全部",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian正在索引你的儲存庫...\n這個動作應該只會發生一次，\n在索引完成前，可能會有部份功能無法使用。",
 		"msg-indexing-complete": "索引完成。",
 		"label-enter-to-create": "進入以建立",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "未開啟檔案",
 			"create-new-file": "建立新檔案",
 			"go-to-file": "開啟檔案",
 			"see-recent-files": "查看近期檔案",
-			"close": "關閉面板"
+			"close": "關閉面板",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "編輯 (按住Ctrl/Cmd 開啟新面板)",
@@ -414,7 +430,7 @@
 			"paste": "貼上",
 			"paste-as-plain-text": "以純文字貼上",
 			"select-all": "全選",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "標題重新命名..."
 		},
 		"tooltip": {
 			"click-to-expand": "點擊以展開",
@@ -475,13 +491,13 @@
 			"loading-workspace": "載入工作空間..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "匯入至儲存庫",
+			"action-choose-file-to-insert": "選擇檔案以插入",
+			"action-insert-text-into-file": "將文字插入 {{filename}}",
+			"action-insert-link-into-file": "將連結插入 {{filename}}",
+			"msg-importing": "匯入中...",
+			"msg-import-success": "匯入成功",
+			"msg-failed-to-import-file": "匯入 {{filename}} 失敗"
 		}
 	},
 	"commands": {
@@ -528,7 +544,10 @@
 		"copy-path": "複製檔案路徑",
 		"copy-url": "複製 obsidian 網址",
 		"export-pdf": "匯出 PDF",
-		"reload": "放棄儲存並重新載入程式"
+		"reload": "放棄儲存並重新載入程式",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -551,11 +570,12 @@
 		"label-delete-file": "刪除檔案",
 		"button-cancel": "取消",
 		"button-done": "完成",
+		"button-continue": "Continue",
 		"preparing-pdf": "PDF 準備中...",
 		"label-rename-file": "重新命名",
 		"label-new-name": "新名稱",
 		"msg-rename-success": "檔案重新命名成功。",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "標題重新命名"
 	},
 	"plugins": {
 		"name": "外掛",
@@ -659,7 +679,7 @@
 			"label-tag-option-description": "搜尋標籤",
 			"label-line-option-description": "搜尋同行的關鍵字",
 			"label-section-option-description": "搜尋同一標題下的關鍵字",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "搜尋 \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "快速切換",
@@ -726,8 +746,8 @@
 			"button-new-group": "新群組",
 			"tooltip-click-to-change-drag-to-reorder": "點擊以變更顏色\n拖拉以重排群組順序",
 			"action-timelapse": "開始關聯圖動畫展示",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "開始時間推移動畫",
+			"button-animate-timelapse": "動畫"
 		},
 		"backlinks": {
 			"name": "反向連結",
@@ -799,18 +819,14 @@
 			"prompt-filter": "搜尋...",
 			"label-dark-theme-only": "只有暗黑主題",
 			"label-light-theme-only": "只有明亮主題",
-			"label-preview": "預覽",
-			"label-stop-preview": "停止預覽",
 			"label-use": "使用",
-			"label-override": "覆蓋",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "訪問 GitHub",
-			"msg-fetching-css": "正在獲取...",
-			"theme-title": "\"{{name}}\" 作者：{{author}}",
-			"msg-override-theme": "覆蓋當前主題檔案",
-			"msg-existing-theme": "您已經有了 \"Obsidian.css\" 自訂主題檔案。",
-			"msg-confirm-override": "您確定要覆蓋它嗎? 刪除這個主題檔案之前，請做好備份。",
 			"msg-load-error": "無法載入社群主題，請檢查您的網路連線。",
-			"msg-now-using-theme": "你的CSS佈景主題已變更為 {{title}}。"
+			"msg-now-using-theme": "你的CSS佈景主題已變更為 {{title}}。",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "命令面板",
@@ -855,25 +871,25 @@
 			"label-total-replacements": "全部取代"
 		},
 		"daily-notes": {
-			"name": "日記",
-			"desc": "開啟今天的日記（如果不存在，則建立一個）。",
+			"name": "每日筆記",
+			"desc": "開啟今天的每日筆記（如果不存在，則建立一個）。",
 			"short-name": "今天",
-			"action-open": "開啟今天的日記",
-			"action-open-previous": "開啟前一日記",
-			"action-open-next": "開啟後一日記",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
-			"msg-fail-format": "未成功建立日記。 \"{{format}}\" 不是有效的格式。",
-			"msg-fail-folder": "未成功建立日記。 未發現 \"{{folderOption}}\" 資料夾。",
-			"msg-fail-template-file": "未成功建立日記。未找到 \"{{template}}\" 模板檔案。",
-			"msg-no-previous": "在這個之前沒有日記。",
-			"msg-no-next": "在這個之後沒有日記。",
+			"action-open": "開啟今天的每日筆記",
+			"action-open-previous": "開啟前一每日筆記",
+			"action-open-next": "開啟後一每日筆記",
+			"action-insert-text": "插入文字到每日筆記",
+			"action-insert-link": "插入連結到每日筆記",
+			"msg-fail-format": "未成功建立每日筆記。 \"{{format}}\" 不是有效的格式。",
+			"msg-fail-folder": "未成功建立每日筆記。 未發現 \"{{folderOption}}\" 資料夾。",
+			"msg-fail-template-file": "未成功建立每日筆記。未找到 \"{{template}}\" 模板檔案。",
+			"msg-no-previous": "在這個之前沒有每日筆記。",
+			"msg-no-next": "在這個之後沒有每日筆記。",
 			"option-date-format": "日期格式",
 			"label-refer-to-syntax": "有關更多語法，請參閱: ",
 			"label-syntax-link": "格式參考",
 			"label-syntax-live-preview": "這是參考樣式: ",
 			"option-new-file-location": "新檔案儲存目錄",
-			"option-new-file-location-description": "儲存日記的資料夾路徑。",
+			"option-new-file-location-description": "儲存每日筆記的資料夾路徑。",
 			"option-template": "模板檔案位置",
 			"option-template-description": "模板檔案的儲存路徑。",
 			"option-open-on-start": "啟動時開啟每日筆記",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "半透明視窗",
 			"desc": "啟用半透明特效以加強深度感，最適合使用於暗黑主題。未支援 Linux。"
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "發佈",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "檔案已被刪除",
 			"label-no-earlier-version": "本檔無更舊的版本。",
 			"label-empty-file": "空",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "已刪除檔案",
 			"label-click-to-see-history": "點擊已刪除檔案以檢視其歷史。",
 			"label-create-remote-vault": "建立遠端儲存庫",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "儲存庫解鎖",
 			"msg-verified-password": "密碼驗證成功。",
 			"label-remote-vaults": "你的遠端儲存庫",
-			"label-connected-vault": "已連接",
 			"label-vault-created-time": "建檔時間: {{time}}",
 			"tooltip-delete-remote-vault": "刪除",
 			"label-confirm-delete-remote-vault": "確認刪除儲存庫",
@@ -1197,16 +1217,16 @@
 			"option-sync-unsupported": "同步其餘類型",
 			"option-sync-unsupported-desc": "同步未支援的檔案類型。",
 			"option-vault-config-sync": "同步儲存庫設定",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "設定版本歷史",
+			"option-view-config-files-desc": "檢視與回復設定檔的版本歷史。",
 			"option-sync-app": "主要設定",
 			"option-sync-app-desc": "啟用同步編輯器設定、檔案與連結設定、自訂快捷鍵等。",
 			"option-sync-appearance": "外觀設定",
 			"option-sync-appearance-desc": "同步外觀設定，例如暗黑模式、樣式主題與啟用程式碼片段。",
 			"option-sync-appearance-data": "樣式主題與啟用程式碼片段",
 			"option-sync-appearance-data-desc": "同步已下載的樣式主題與啟用程式碼片段，與先前之啟用狀態。",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "熱鍵",
+			"option-sync-hotkey-desc": "同步自訂熱鍵。",
 			"option-sync-core-plugin": "作用中的核心外掛清單",
 			"option-sync-core-plugin-desc": "同步核心外掛的啟用狀態。",
 			"option-sync-core-plugin-data": "核心外掛設定",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} 目前不同步。",
 			"label-setup-connection": "設定連線",
 			"label-now-connected-to-vault": "你現在已連接到 \"{{name}}\".",
-			"button-start-syncing": "開始同步"
+			"button-start-syncing": "開始同步",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "檔案回復",
@@ -1271,11 +1294,11 @@
 			"button-merge": "合併",
 			"button-merge-do-not-ask-again": "全併且不再詢問",
 			"command-split-file": "擷取目前選取...",
-			"command-extract-heading": "Extract this heading...",
+			"command-extract-heading": "擷取目前標題...",
 			"instruction-append": "移至底端",
 			"instruction-prepend": "移至頂端",
 			"msg-fail-to-fetch-template": "無法擷取模板檔案：找不到 \"{{template}}\"。",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "無法找到標題"
 		}
 	},
 	"nouns": {
