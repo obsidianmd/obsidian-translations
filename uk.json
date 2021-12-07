@@ -108,8 +108,8 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Теми",
-			"option-theme": "Тема",
-			"option-theme-description": "Вибір теми спільноти. Теми зберігаються в папці \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Стандартний",
 			"button-reload-themes": "Оновити теми",
 			"msg-reloaded-themes": "Оновлено Список CSS-тем.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Оновити список фрагментів",
 			"button-open-snippets-folder": "Відкрити папку з фрагментами",
 			"msg-reloaded-snippets": "Оновлено список CSS фрагментів.",
-			"option-toggle-snippet-description": "Застосувати CSS фрагмент до \"{{path}}\"."
+			"option-toggle-snippet-description": "Застосувати CSS фрагмент до \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Сполучення клавіш",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "Про програму",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Ліцензійний ключ",
 			"license-key-placeholder": "Ваш ліцензійний ключ...",
 			"label-enter-commercial-license": "Будь ласка, введіть ліцензійний ключ для комерційного використання:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Встановлена актуальна версія!",
 			"label-read-changelog": "Список змін",
 			"label-manual-install-required": "Вам потрібно вручну встановити актуальну версію.",
-			"label-download-link": "Завантажити тут.",
+			"label-download": "Download",
 			"label-new-version-ready": "Нова версія доступна для встановлення. ",
 			"label-relaunch-to-update": "Перезапустити для оновлення.",
 			"label-disabled-updates": "Оновлення вимкнено.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Ліцензія",
-			"label-your-commercial-license": "Ваша комерційна ліцензія ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Зареєстрована на \"{{company}}\" для {{seats}} користувачів. Дійсна до {{expiry}}.",
 			"label-validating-commercial-license": "Перевірка...",
 			"label-invalid-commercial-license": "Ліцензія недійсна: ",
 			"button-activate-commercial-license": "Активувати комерційну ліцензію",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " персональна ліцензія. ",
 			"label-thank-you-for-support": "Дякую за підтримку!",
 			"label-free-personal-license": "Персональна ліцензія (безкоштовна для некомерційного використання)."
@@ -206,7 +214,8 @@
 			"message-login-failed": "Неправильна адреса електронної пошти або пароль.",
 			"label-no-account": "Немає облікового запису? ",
 			"link-sign-up-now": "Зареєструватися",
-			"message-get-community-badges": "Напишіть на support@obsidian.md, якщо ви не отримали значки спільноти через добу після отримання ліцензії.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Для отримання комерційної ліцензії перейдіть за посиланням {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "Встановити",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Нічого не знайдено.",
 			"msg-failed-to-load-manifest": "Не вдалося завантажити опис плагіна.",
 			"label-version": "Версія: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "За кількістю завантажень (за зростанням)",
 			"label-sort-release-date-new-to-old": "Хронологічно (від нових до старих)",
 			"label-sort-release-date-old-to-new": "Хронологічно (від старих до нових)",
-			"label-sort-alphabetical": "За найменуванням (від A до Z)",
-			"label-sort-alphabetical-reverse": "За найменуванням (Z to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Відображається {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Назад",
 			"label-next": "Далі",
 			"label-all": "Усе",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indexing complete.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Жоден файл не відкритий",
 			"create-new-file": "Створити новий файл",
 			"go-to-file": "Перейти до файлу",
 			"see-recent-files": "Переглянути недавні файли",
-			"close": "Закрити"
+			"close": "Закрити",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Редагувати (Ctrl/Cmd+Click, щоб редагувати в новій області)",
@@ -528,7 +544,10 @@
 		"copy-path": "Скопіювати шлях до файлу",
 		"copy-url": "Скопіювати Obsidian URL",
 		"export-pdf": "Експортувати в PDF",
-		"reload": "Перезавантажити додаток без збереження"
+		"reload": "Перезавантажити додаток без збереження",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Це вплине на {{links}} у {{files}}.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "Видалити файл",
 		"button-cancel": "Скасування",
 		"button-done": "Готово",
+		"button-continue": "Continue",
 		"preparing-pdf": "Підготовка PDF...",
 		"label-rename-file": "Перейменувати файл",
 		"label-new-name": "Нове ім'я",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Фільтр...",
 			"label-dark-theme-only": "Тільки темні",
 			"label-light-theme-only": "Тільки світлі",
-			"label-preview": "Попередній перегляд",
-			"label-stop-preview": "Відмінити перегляд",
 			"label-use": "Використати",
-			"label-override": "Перезаписати",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Перейти на GitHub",
-			"msg-fetching-css": "Завантажуються CSS...",
-			"theme-title": "\"{{name}}\" від {{author}}",
-			"msg-override-theme": "Перезаписати поточний CSS",
-			"msg-existing-theme": "У вас вже є користувальницький CSS \"obsidian.css\".",
-			"msg-confirm-override": "Ви впевнені, що хочете перезаписати його? Ваш оригінальний CSS-файл буде загублений. Будь ласка, при необхідності зробіть бекап.",
 			"msg-load-error": "Не вдалося завантажити теми спільноти. Будь ласка, перевірте з'єднання з Інтернетом.",
-			"msg-now-using-theme": "Застосована CSS-тема {{title}}."
+			"msg-now-using-theme": "Застосована CSS-тема {{title}}.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Палітра команд",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Напівпрозоре вікно",
 			"desc": "Додає інтерфейсу відчуття глибини, особливо в темному режимі. Не працює під Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Публікація",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Цей файл був видалений",
 			"label-no-earlier-version": "Більш ранні версії даного файлу відсутні.",
 			"label-empty-file": "Порожньо",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Видалені файли",
 			"label-click-to-see-history": "Клацніть на віддаленому файлі, щоб переглянути його історію.",
 			"label-create-remote-vault": "Створення сховища",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Відкрити",
 			"msg-verified-password": "Пароль шифрування підтверджено.",
 			"label-remote-vaults": "Сховища в Obsidian Sync",
-			"label-connected-vault": "Підключено",
 			"label-vault-created-time": "Створено {{time}}",
 			"tooltip-delete-remote-vault": "Видалити",
 			"label-confirm-delete-remote-vault": "Підтвердьте видалення сховища",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} не будуть синхронізовані.",
 			"label-setup-connection": "Налаштування з'єднання",
 			"label-now-connected-to-vault": "Встановлено з'єднання зі сховищем \"{{name}}\".",
-			"button-start-syncing": "Почати синхронізацію"
+			"button-start-syncing": "Почати синхронізацію",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "File recovery",
