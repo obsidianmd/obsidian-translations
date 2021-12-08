@@ -17,7 +17,7 @@
 			"option-strict-line-break": "Strikte Zeilenbegrenzung",
 			"option-strict-line-break-description": "Ignoriert einzelne Zeilenumbrüche im Vorschau-Modus gemäß der Markdown-Spezifikationen. Schalte dies aus, um einzelne Zeilenumbrüche im Vorschau-Modus anzuzeigen.",
 			"option-show-frontmatter": "Frontmatter anzeigen",
-			"option-show-frontmatter-description": "Zeigt den Frontmatter im Vorschaumodus als Code-Block. Schalte dies aus, um den Frontmatter Bereich zu deaktivieren.",
+			"option-show-frontmatter-description": "Zeigt den Frontmatter im Vorschaumodus als Code-Block. Schalte dies aus, um den Frontmatter Bereich zu auszuschalten.",
 			"option-auto-pair-brackets": "Automatische Klammerpaare",
 			"option-auto-pair-brackets-description": "Setzt automatisch Klammern- und Anführungszeichen-Paare.",
 			"option-auto-pair-markdown": "Automatische Markdown-Vervollständigung",
@@ -53,8 +53,8 @@
 			"placeholder-enter-command": "Befehl eingeben...",
 			"button-confirm-enable-vim": "Aktiviere Vim",
 			"msg-vim-mode-enabled": "Der Befehl ist korrekt. Vim-Modus ist jetzt aktiviert.",
-			"msg-vim-mode-not-enabled": "Der Befehl ist falsch. Vim-Modus bleibt zur Sicherheit Deiner Dateien deaktiviert.",
-			"msg-vim-mode-please-enter-command": "Bitte gib den Befehl ein, um den Vim-Modus zu aktivieren"
+			"msg-vim-mode-not-enabled": "Der Befehl ist falsch. Vim-Modus bleibt zur Sicherheit Deiner Dateien ausgeschaltet.",
+			"msg-vim-mode-please-enter-command": "Bitte gib den Befehl ein, um den Vim-Modus zu einzuschalten"
 		},
 		"file": {
 			"name": "Dateien & Links",
@@ -149,7 +149,7 @@
 			"label-download-link": "Hier herunterladen.",
 			"label-new-version-ready": "Eine neue Version ist bereit zur Installation. ",
 			"label-relaunch-to-update": "Anwendung neu starten, um zu aktualisieren.",
-			"label-disabled-updates": "Aktualisierungen sind deaktiviert.",
+			"label-disabled-updates": "Aktualisierungen sind ausgeschaltet.",
 			"label-checking-for-updates": "Suche nach Aktualisierungen...",
 			"button-relaunch": "Neu starten",
 			"button-check-for-updates": "Nach Aktualisierungen suchen",
@@ -204,7 +204,7 @@
 			"message-invalid-email": "Deine E-Mail ist ungültig.",
 			"message-empty-password": "Das Feld Passwort darf nicht leer sein.",
 			"message-login-failed": "Anmelden fehlgeschlagen, bitte überprüfe Deine E-Mail und Dein Passwort.",
-			"label-no-account": "Du hast noch keinen Benutzerkonto? ",
+			"label-no-account": "Du hast noch kein Benutzerkonto? ",
 			"link-sign-up-now": "Jetzt registrieren",
 			"message-get-community-badges": "Falls Du Deine Community Badges nicht innerhalb von 24 Studen nach Erwerb Deiner Lizenz erhalten hast, bitte support@obsidian.md kontaktieren.",
 			"message-obtain-commercial-license": "Um eine kommerzielle Lizenz zu erwerben, besuche {{pricingPageLink}}."
@@ -218,8 +218,8 @@
 		"third-party-plugin": {
 			"name": "Community-Erweiterungen",
 			"option-safe-mode": "Sicherer Modus",
-			"option-safe-mode-description-on": "Sicherer Modus ist AN. Alle Community-Erweiterungen sind deaktiviert.",
-			"option-safe-mode-description-off": "Sicherer Modus ist AUS. Community-Erweiterungen können einzeln aktiviert werden.",
+			"option-safe-mode-description-on": "Sicherer Modus ist AN. Alle Community-Erweiterungen sind ausgeschaltet.",
+			"option-safe-mode-description-off": "Sicherer Modus ist AUS. Community-Erweiterungen können einzeln eingeschaltet werden.",
 			"option-browse-community-plugins": "Durchsuche Community-Erweiterungen",
 			"option-browse-community-plugins-description": "Durchsuche und installiere Erweiterungen, erstellt vom unserer großartigen Community.",
 			"button-browse": "Durchsuchen",
@@ -235,14 +235,14 @@
 			"tooltip-downloaded-times_plural": "{{count}} mal heruntergeladen",
 			"button-install": "Installieren",
 			"button-enable": "Einschalten",
-			"button-disable": "Abschalten",
+			"button-disable": "Ausschalten",
 			"label-no-results-found": "Keine Ergebnisse gefunden.",
-			"msg-failed-to-load-manifest": "Laden des Erweiterungsdefinition fehlgeschlagen.",
+			"msg-failed-to-load-manifest": "Laden der Erweiterungsdefinition fehlgeschlagen.",
 			"label-version": "Version: {{version}}",
 			"label-currently-installed-version": " (aktuell installiert: {{version}})",
 			"label-by-author": "Von ",
 			"label-repository": "Quelle (Repository): ",
-			"label-unsupported": "Dieses Plugin wird auf deinem Gerät nicht unterstützt.",
+			"label-unsupported": "Diese Erweiterung wird auf deinem Gerät nicht unterstützt.",
 			"button-update": "Aktualisieren",
 			"label-no-readme": "Diese Erweiterung enthält keine README Datei.",
 			"msg-installing-plugin": "Installiere Erweiterung \"{{name}}\"...",
@@ -264,13 +264,13 @@
 			"msg-updates-found": "{{count}} Erweiterung kann aktualisiert werden.",
 			"msg-updates-found_plural": "{{count}} Erweiterungen können aktualisiert werden.",
 			"msg-update-plugin": "Aktualisiere auf die Version {{version}}",
-			"option-search-installed-plugin": "Installierte Erwieterungen durchsuchen",
+			"option-search-installed-plugin": "Installierte Erweiterungen durchsuchen",
 			"option-search-installed-plugin-description": "Installierte Erweiterungen nach Name oder Beschreibung filtern.",
 			"placeholder-search-installed-plugin": "Installierte Erweiterungen durchsuchen...",
-			"label-sort-downloads-high-to-low": "höchste Anzahl heruntergeladen",
-			"label-sort-downloads-low-to-high": "kleinste Anzahl heruntergeladen",
-			"label-sort-release-date-new-to-old": "Neueste zuerst",
-			"label-sort-release-date-old-to-new": "Älteste zuerst",
+			"label-sort-downloads-high-to-low": "Anzahl Downloads (meiste zuerst)",
+ 			"label-sort-downloads-low-to-high": "Anzahl Downloads (wenigste zuerst)",
+ 			"label-sort-release-date-new-to-old": "Zuerst veröffentlicht (neueste zuerst)",
+ 			"label-sort-release-date-old-to-new": "Zuerst veröffentlicht (älteste zuerst)",
 			"label-sort-alphabetical": "Name der Erweiterung (A bis Z)",
 			"label-sort-alphabetical-reverse": "Name der Erweiterung (Z bis A)",
 			"label-search-summary": "Zeige {{pluginCount}}:"
@@ -293,8 +293,8 @@
 			"option-markdown-link": "Markdown-Link einfügen",
 			"option-bullet-list": "Liste (ein/aus)",
 			"option-numbered-list": "Aufzählun (ein/aus)",
-			"option-indent-list": "Ebene höher",
-			"option-unindent-list": "Ebene tiefer",
+			"option-indent-list": "Listenelement eine Ebene höher",
+			"option-unindent-list": "Listenelement eine Ebene tiefer",
 			"option-undo": "Rückgängig",
 			"option-redo": "Wiederholen",
 			"option-move-caret-up": "Cursor nach oben",
@@ -308,8 +308,8 @@
 			"option-added-options": "Aktive Befehle in der Werkzeugleiste",
 			"option-more-toolbar-options": "Weirere Befehle in der Werkzeugleiste",
 			"option-attach": "Anhang hinzufügen",
-			"option-add-command": "Befehl hinzufügen",
-			"option-add-command-description": "Wähle einen Befehl aus, um ihn der Werkzeugleiste hinzuzufügen."
+			"option-add-command": "Globalen Befehl hinzufügen",
+			"option-add-command-description": "Wähle einen globalen Befehl aus, um ihn der Werkzeugleiste hinzuzufügen."
 		}
 	},
 	"editor": {
@@ -468,7 +468,7 @@
 			"button-reload-app": "App neu laden",
 			"button-open-another-vault": "Anderer Vault öffnen",
 			"loading-components": "Komponenten laden...",
-			"loading-plugins": "Plugins laden...",
+			"loading-plugins": "Erweiterungen laden...",
 			"loading-vault": "Vault laden...",
 			"msg-failed-to-load-vault": "Laden des Vaults fehlgeschlagen: ",
 			"loading-cache": "Cache laden...",
@@ -776,7 +776,7 @@
 			"label-source-editor": "Editor",
 			"label-source-preview": "Vorschau",
 			"label-source-search": "Suche, Rückverweise und ausgehende Links",
-			"label-require-mod": "Benötigt {{key}}, um Seitenvorschau beim Schweben mit dem Mauszeiger zu aktivieren"
+			"label-require-mod": "Benötigt {{key}}, um Seitenvorschau beim Schweben mit dem Mauszeiger einzuschalten"
 		},
 		"starred": {
 			"name": "Mit Stern",
@@ -957,8 +957,8 @@
 			"prompt-type-template": "Vorlagenamen eingeben..."
 		},
 		"translucency": {
-			"name": "Durchscheinender Fensterbereich",
-			"desc": "Aktiviert den Durchschein-Effekt, um ein Gefühl von Tiefe zu erzeugen. Nutze es am besten mit dem Dunklen Modus. Wird von Linux nicht unterstützt."
+			"name": "Transparenter Fensterbereich",
+			"desc": "Aktiviert die Transparenz, um einen dreidimensionalen Effekt zu erzeugen. Empfelung: Nutze es am besten mit dem Dunklen Modus. Wird von Linux nicht unterstützt."
 		},
 		"publish": {
 			"name": "Veröffentlichen",
