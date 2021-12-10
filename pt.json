@@ -108,8 +108,8 @@
 			"option-font-size-action": "Ajuste rápido do tamanho da fonte",
 			"option-font-size-action-description": "Ajuste o tamanho da fonte usando Ctrl + Scroll, ou usando o gesto 'apertar e fazer zoom' do touchpad.",
 			"option-themes": "Temas",
-			"option-theme": "Temas",
-			"option-theme-description": "Qual tema da comunidade usar. Os temas são guardados em \"vault/.obsidian/temas/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Nenhum",
 			"button-reload-themes": "Recarregar temas",
 			"msg-reloaded-themes": "Recarregar temas com CSS customizado.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Recarregar fragmentos",
 			"button-open-snippets-folder": "Abrir pasta de fragmentos",
 			"msg-reloaded-snippets": "Fragmentos CSS recarregados.",
-			"option-toggle-snippet-description": "Aplicar fragmento CSS em \"{{path}}\"."
+			"option-toggle-snippet-description": "Aplicar fragmento CSS em \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Atalhos",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "Sobre",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Chave de licença",
 			"license-key-placeholder": "A sua chave de licença...",
 			"label-enter-commercial-license": "Insira sua chave de licença comercial:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "A sua app está atualizada!",
 			"label-read-changelog": "Leia o registro de mudanças.",
 			"label-manual-install-required": "Deve instalar a última versão manualmente.",
-			"label-download-link": "Descarregue aqui.",
+			"label-download": "Download",
 			"label-new-version-ready": "Uma nova versão está pronta para ser instalada. ",
 			"label-relaunch-to-update": "Reinicie a app para atualizar.",
 			"label-disabled-updates": "Atualizações estão desativadas.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Usa uma pasta de configuração diferente da padrão.Tem que começar com um ponto final.",
 			"option-config-location-warning": "A localização de configuração tem de ter um nome de pasta válido que comece com um ponto final.",
 			"label-license": "Licença",
-			"label-your-commercial-license": "Sua chave de licença comercial é ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Registado para \"{{company}}\" para {{seats}} utilizadores. Válido até {{expiry}}.",
 			"label-validating-commercial-license": "Validando...",
 			"label-invalid-commercial-license": "Licença inválida: ",
 			"button-activate-commercial-license": "Ativar licença comercial",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " licença pessoal. ",
 			"label-thank-you-for-support": " Obrigado pelo seu apoio!",
 			"label-free-personal-license": "Licença pessoal: grátis para uso pessoal"
@@ -206,7 +214,8 @@
 			"message-login-failed": "Login falhou. Verifique se o seu e-mail e senha estão corretos.",
 			"label-no-account": "Não tem uma conta? ",
 			"link-sign-up-now": "Crie uma conta agora",
-			"message-get-community-badges": "Para insígnias da comunidade, envie um email para support@obsidian.md caso não as tenha recebido até 24 horas após obtenção da sua licença.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Para obter licença comercial, visite {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "Instalar",
 			"button-enable": "Ativar",
 			"button-disable": "Desativar",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Nenhum resultado encontrado.",
 			"msg-failed-to-load-manifest": "Falha ao carregar a descrição do plugin.",
 			"label-version": "Versão: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Número de transferências (ordem crescente)",
 			"label-sort-release-date-new-to-old": "Data da primeira publicação (recentes-antigos)",
 			"label-sort-release-date-old-to-new": "Data da primeira publicação (antigos-recentes)",
-			"label-sort-alphabetical": "Ordenar por nome (A-Z)",
-			"label-sort-alphabetical-reverse": "Ordenar por nome (Z-A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Mostrando {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Anterior",
 			"label-next": "Próximo",
 			"label-all": "Tudo",
@@ -386,12 +398,16 @@
 		"msg-indexing": "O Obsidian está a indexar o seu vault...\nIsto só acontecerá uma vez.\nAlgumas funcionalidades poderão não estar disponíveis até estar completo.",
 		"msg-indexing-complete": "Indexação completada.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Nenhum ficheiro está aberto",
 			"create-new-file": "Criar novo ficheiro",
 			"go-to-file": "Ir para o ficheiro",
 			"see-recent-files": "Ver ficheiros recentes",
-			"close": "Fechar"
+			"close": "Fechar",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Editar (Ctrl/Cmd+Click para editar num novo painel)",
@@ -528,7 +544,10 @@
 		"copy-path": "Copiar caminho do ficheiro",
 		"copy-url": "Copiar endereço do Obsidian",
 		"export-pdf": "Exportar para PDF",
-		"reload": "Recarregar app sem guardar"
+		"reload": "Recarregar app sem guardar",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Irá afetar os links {{links}} nos {{files}}.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "Eliminar ficheiro",
 		"button-cancel": "Cancelar",
 		"button-done": "Feito",
+		"button-continue": "Continue",
 		"preparing-pdf": "A preparar PDF...",
 		"label-rename-file": "Renomear ficheiro",
 		"label-new-name": "Novo nome",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filtrar...",
 			"label-dark-theme-only": "Apenas temas escuros",
 			"label-light-theme-only": "Apenas temas claros",
-			"label-preview": "Pré-visualizar",
-			"label-stop-preview": "Parar pré-visualização",
 			"label-use": "Usar",
-			"label-override": "Substituir",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Visitar no GitHub",
-			"msg-fetching-css": "Buscando CSS...",
-			"theme-title": "\"{{name}}\" por {{author}}",
-			"msg-override-theme": "Substituir CSS atual",
-			"msg-existing-theme": "O ficheiro de CSS customizado \"obsidian.css\" já existe.",
-			"msg-confirm-override": "Tem a certeza que quer substituir o ficheiro? Vai perder o ficheiro de CSS original. Por favor, faça um backup se necessário.",
 			"msg-load-error": "Não foi possível abrir os temas da comunidade, verifique a sua conexão por favor.",
-			"msg-now-using-theme": "Está agora a usar {{title}} como o seu tema de CSS."
+			"msg-now-using-theme": "Está agora a usar {{title}} como o seu tema de CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Paleta de comando",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Janela translúcida",
 			"desc": "Ativa o efeito de transparência para realçar a perceção de profundidade. Otimizado para modo escuro. Não é suportado no Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Publicar",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Este ficheiro foi apagado",
 			"label-no-earlier-version": "Não existem versões anteriores deste ficheiro.",
 			"label-empty-file": "Vazio",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Ficheiros apagados",
 			"label-click-to-see-history": "Clique num ficheiro apagado para ver o seu histórico.",
 			"label-create-remote-vault": "Criar vault remoto",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Desbloquear vault",
 			"msg-verified-password": "Chave verificada com sucesso.",
 			"label-remote-vaults": "Os seus vaults remotos",
-			"label-connected-vault": "Conectado",
 			"label-vault-created-time": "Criado em {{time}}",
 			"tooltip-delete-remote-vault": "Eliminar",
 			"label-confirm-delete-remote-vault": "Confirmar eliminação do vault",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} estão excluídas da sincronização.",
 			"label-setup-connection": "Configurar conexão",
 			"label-now-connected-to-vault": "Conexão estabelecida para \"{{name}}\".",
-			"button-start-syncing": "Começar sincronização"
+			"button-start-syncing": "Começar sincronização",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Recuperação de ficheiros",

@@ -108,8 +108,8 @@
 			"option-font-size-action": "Regolazione rapida carattere",
 			"option-font-size-action-description": "Regola la dimensione del carattere usando Ctrl + Scorr, o usando la modalità zoom indietro/avanti con le dita.",
 			"option-themes": "Temi",
-			"option-theme": "Tema",
-			"option-theme-description": "Tema della comunità da utilizzare. I temi sono archiviati in \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Nessuno",
 			"button-reload-themes": "Ricarica temi",
 			"msg-reloaded-themes": "Temi CSS personalizzati ricaricati.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Ricarica snippet",
 			"button-open-snippets-folder": "Apri cartella snippet",
 			"msg-reloaded-snippets": "Snippet CSS ricaricati.",
-			"option-toggle-snippet-description": "Applica snippet CSS a \"{{path}}\"."
+			"option-toggle-snippet-description": "Applica snippet CSS a \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Tasti di scelta rapida",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "Informazioni",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Chiave di licenza",
 			"license-key-placeholder": "La tua chiave di licenza...",
 			"label-enter-commercial-license": "Inserire la chiave di licenza commerciale:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "La tua app è aggiornata!",
 			"label-read-changelog": "Registro delle modifiche.",
 			"label-manual-install-required": "Devi installare l'ultima versione manualmente.",
-			"label-download-link": "Scarica qui.",
+			"label-download": "Download",
 			"label-new-version-ready": "Una nuova versione è pronta per l'installazione. ",
 			"label-relaunch-to-update": "Riavvia l'app per aggiornare.",
 			"label-disabled-updates": "Gli aggiornamenti sono disattivati.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Utilizza una cartella di configurazione diversa da quella predefinita. Deve iniziare con un punto.",
 			"option-config-location-warning": "Inserire un nome valido per la cartella di configurazione. Il nome deve iniziare con un punto.",
 			"label-license": "Licenza",
-			"label-your-commercial-license": "La tua chiave di licenza commerciale è ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Registrata a nome di \"{{company}}\" per {{seats}} utenti. Valida fino al {{expiry}}.",
 			"label-validating-commercial-license": "Validazione in corso...",
 			"label-invalid-commercial-license": "Licenza non valida: ",
 			"button-activate-commercial-license": "Attiva la licenza commerciale",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " licenza personale. ",
 			"label-thank-you-for-support": "Grazie per il tuo supporto!",
 			"label-free-personal-license": "Licenza personale: gratuita per uso personale."
@@ -206,14 +214,15 @@
 			"message-login-failed": "Accesso non riuscito, verifica i dati e riprova.",
 			"label-no-account": "Non hai un account? ",
 			"link-sign-up-now": "Iscriviti ora",
-			"message-get-community-badges": "Per i badge della comunità, invia un'email a support@obsidian.md se non li ricevi entro 24 ore dall'ottenimento della licenza.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Per ottenere una licenza commerciale, visitare {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "Lista plugin",
+			"option-search-plugin": "Cerca plugin principali",
+			"option-search-plugin-description": "Filtra i plugin per nome o descrizione.",
+			"placeholder-search-plugin": "Cerca plugin..."
 		},
 		"third-party-plugin": {
 			"name": "Plugin di terze parti",
@@ -228,7 +237,7 @@
 			"button-keep-safe-mode": "Mantieni attiva la modalità sicura",
 			"button-disable-safe-mode": "Disattiva la modalità sicura",
 			"label-select-a-plugin": "Selezionare un plugin per installarlo o per maggiori informazioni.",
-			"placeholder-community-plugins": "Cerca plugin...",
+			"placeholder-community-plugins": "Cerca plugin della comunità...",
 			"msg-failed-load-plugins": "Impossibile caricare i plugin della comunità.",
 			"label-installed": "Installato",
 			"tooltip-downloaded-times": "Scaricato {{count}} volta",
@@ -236,6 +245,7 @@
 			"button-install": "Installa",
 			"button-enable": "Abilita",
 			"button-disable": "Disabilita",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "nessun risultato trovato.",
 			"msg-failed-to-load-manifest": "Impossibile caricare il manifesto del plug-in.",
 			"label-version": "Versione: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Conteggio download (crescente)",
 			"label-sort-release-date-new-to-old": "Data di rilascio (più recente)",
 			"label-sort-release-date-old-to-new": "Data di rilascio (meno recente)",
-			"label-sort-alphabetical": "Nome plugin (dalla A alla Z)",
-			"label-sort-alphabetical-reverse": "Nome plugin (dalla Z alla A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Visualizzazione di {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Precedente",
 			"label-next": "Successivo",
 			"label-all": "Tutto",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian sta indicizzando il vault...\nDovrebbe accadere solo una volta.\nAlcune funzioni potrebbero non essere disponibili finché l'operazione non sarà completata.",
 		"msg-indexing-complete": "Indicizzazione completa.",
 		"label-enter-to-create": "Invio per creare",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Nessun file aperto",
 			"create-new-file": "Crea nuovo file",
 			"go-to-file": "Vai al file",
 			"see-recent-files": "Vedi file recenti",
-			"close": "Chiudi"
+			"close": "Chiudi",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Modifica (Ctrl/Cmd+Clic modifica in nuovo pannello)",
@@ -414,7 +430,7 @@
 			"paste": "Incolla",
 			"paste-as-plain-text": "Incolla come testo normale",
 			"select-all": "Seleziona tutto",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "Rinomina questa intestazione..."
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -475,13 +491,13 @@
 			"loading-workspace": "Caricamento area di lavoro..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "Importa nel vault",
+			"action-choose-file-to-insert": "Scegli un file da inserire",
+			"action-insert-text-into-file": "Inserisci testo in {{filename}}",
+			"action-insert-link-into-file": "Inserisci collegamento in {{filename}}",
+			"msg-importing": "Importazione in corso...",
+			"msg-import-success": "Importazione completata",
+			"msg-failed-to-import-file": "Impossibile importare il file {{filename}}"
 		}
 	},
 	"commands": {
@@ -528,7 +544,10 @@
 		"copy-path": "Copia percorso del file",
 		"copy-url": "Copia URL obsidian",
 		"export-pdf": "Esporta in PDF",
-		"reload": "Ricarica l'app senza salvare"
+		"reload": "Ricarica l'app senza salvare",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Questa operazione influirà su {{links}} in {{files}}.",
@@ -551,11 +570,12 @@
 		"label-delete-file": "Eliminazione file",
 		"button-cancel": "Annulla",
 		"button-done": "Fatto",
+		"button-continue": "Continue",
 		"preparing-pdf": "Preparazione del PDF...",
 		"label-rename-file": "Rinomina file",
 		"label-new-name": "Nuovo nome",
 		"msg-rename-success": "File rinominato con successo.",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "Rinomina intestazione"
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -659,7 +679,7 @@
 			"label-tag-option-description": "ricerca tag",
 			"label-line-option-description": "ricerca parole nella stessa riga",
 			"label-section-option-description": "ricerca parole nella stessa intestazione",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "Ricerca per \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Selezione rapida",
@@ -726,8 +746,8 @@
 			"button-new-group": "Nuovo gruppo",
 			"tooltip-click-to-change-drag-to-reorder": "Fare clic per cambiare colore\nTrascinare per riordinare",
 			"action-timelapse": "Avvia animazione timelapse",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "Avvia animazione timelapse",
+			"button-animate-timelapse": "Animazione"
 		},
 		"backlinks": {
 			"name": "Riferimenti",
@@ -739,7 +759,7 @@
 			"label-linked-mentions": "Menzioni collegate",
 			"label-no-backlinks": "Nessun riferimento.",
 			"label-unlinked-mentions": "Menzioni scollegate",
-			"label-show-search": "Show search filter",
+			"label-show-search": "Mostra filtro di ricerca",
 			"label-link-button-text": "Collegamento",
 			"tab-title": "Riferimenti a {{displayText}}",
 			"label-no-unlinked-mentions": "Nessuna menzione scollegata.",
@@ -749,7 +769,7 @@
 			"name": "Collegamenti in uscita",
 			"desc": "Mostra collegamenti in uscita e rileva menzioni scollegate di altre note nella nota corrente.",
 			"action-open": "Apri collegamenti in uscita",
-			"action-show": "Show outgoing links pane",
+			"action-show": "Mostra pannello Collegamenti in uscita",
 			"action-open-for-current": "Apri collegamenti in uscita per il file corrente",
 			"tab-title": "Collegamenti in uscita da {{displayText}}",
 			"label-links": "Collegamenti",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filtra...",
 			"label-dark-theme-only": "Solo temi scuri",
 			"label-light-theme-only": "Solo temi chiari",
-			"label-preview": "Anteprima",
-			"label-stop-preview": "Ferma anteprima",
 			"label-use": "Applica",
-			"label-override": "Sovrascrivi",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Vedi su GitHub",
-			"msg-fetching-css": "Recupero CSS in corso...",
-			"theme-title": "\"{{name}}\" di {{author}}",
-			"msg-override-theme": "Sovrascrivi CSS corrente",
-			"msg-existing-theme": "Un CSS personalizzato \"obsidian.css\" è già presente.",
-			"msg-confirm-override": "Sovrascrivere il file? Il file CSS originale verrà perduto. Eseguire il backup se necessario.",
 			"msg-load-error": "Impossibile caricare i temi della comunità, controllare la connessione di rete.",
-			"msg-now-using-theme": "{{title}} impostato come tema CSS."
+			"msg-now-using-theme": "{{title}} impostato come tema CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Riquadro comandi",
@@ -861,8 +877,8 @@
 			"action-open": "Apri nota del giorno",
 			"action-open-previous": "Apri nota del giorno precedente",
 			"action-open-next": "Apri nota del giorno successiva",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "Inserisci testo nella nota del giorno",
+			"action-insert-link": "Inserisci collegamento nella nota del giorno",
 			"msg-fail-format": "Impossibile creare la nota del giorno. \"{{format}}\" non è un formato valido.",
 			"msg-fail-folder": "Impossibile creare la nota del giorno. Cartella \"{{folderOption}}\" non trovata.",
 			"msg-fail-template-file": "Impossibile creare la nota del giorno. Modello \"{{template}}\" non trovato.",
@@ -938,8 +954,8 @@
 			"name": "Modelli",
 			"desc": "Inserisci modello da una cartella di file modello.",
 			"action-insert": "Inserisci modello",
-			"action-insert-current-date": "Insert current date",
-			"action-insert-current-time": "Insert current time",
+			"action-insert-current-date": "Inserisci data corrente",
+			"action-insert-current-time": "Inserisci ora corrente",
 			"option-template-folder-location": "Posizione cartella dei modelli",
 			"option-template-folder-location-description": "I file in questa cartella saranno disponibili come modelli.",
 			"option-template-date-format": "Formato data",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Finestra Traslucida",
 			"desc": "Attiva l'effetto di traslucenza per aumentare il senso di profondità. Rende meglio in modalità scura. Non supportato su Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Publish",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Questo file è stato eliminato",
 			"label-no-earlier-version": "Non sono presenti versioni precedenti del file.",
 			"label-empty-file": "Vuoto",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "File eliminati",
 			"label-click-to-see-history": "Fare clic su un file eliminato per vedere la sua cronologia.",
 			"label-create-remote-vault": "Crea vault remoto",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Sblocca vault",
 			"msg-verified-password": "Password verificata con successo.",
 			"label-remote-vaults": "Vault remoti",
-			"label-connected-vault": "Connesso",
 			"label-vault-created-time": "Creato il {{time}}",
 			"tooltip-delete-remote-vault": "Elimina",
 			"label-confirm-delete-remote-vault": "Conferma eliminazione vault",
@@ -1197,16 +1217,16 @@
 			"option-sync-unsupported": "Sincronizza tutti gli altri tipi",
 			"option-sync-unsupported-desc": "Sincronizza tipi di file non supportati.",
 			"option-vault-config-sync": "Configurazione sincronizzazione del Vault",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "Impostazioni cronologia delle versioni",
+			"option-view-config-files-desc": "Visualizza e ripristina la cronologia delle versioni dei file d'impostazione.",
 			"option-sync-app": "Impostazioni principali",
 			"option-sync-app-desc": "Sincronizza le impostazioni di editor, file e collegamenti, tasti di scelta rapida, etc.",
 			"option-sync-appearance": "Impostazioni aspetto",
 			"option-sync-appearance-desc": "Sincronizza le impostazioni relative all'aspetto come tema Scuro, tema attivo e snippet attivi.",
 			"option-sync-appearance-data": "Temi e snippet",
 			"option-sync-appearance-data-desc": "Sincronizzazione temi e snippet. La loro abilitazione dipende dall'impostazione precedente.",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "Tasti di scelta rapida",
+			"option-sync-hotkey-desc": "Sincronizza tasti di scelta rapida personalizzati.",
 			"option-sync-core-plugin": "Lista plugin principali attivi",
 			"option-sync-core-plugin-desc": "Sincronizza i plugin principali che sono stati attivati.",
 			"option-sync-core-plugin-data": "Impostazioni plugin principali",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} sono escluse dalla sincronizzazione.",
 			"label-setup-connection": "Configura connessione",
 			"label-now-connected-to-vault": "Sei connesso a \"{{name}}\".",
-			"button-start-syncing": "Avvia sincronizzazione"
+			"button-start-syncing": "Avvia sincronizzazione",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Recupero file",
@@ -1275,7 +1298,7 @@
 			"instruction-append": "per spostare in basso",
 			"instruction-prepend": "per spostare in alto",
 			"msg-fail-to-fetch-template": "Impossibile caricare il modello: \"{{template}}\" non trovato.",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "Impossibile trovare l'intestazione"
 		}
 	},
 	"nouns": {

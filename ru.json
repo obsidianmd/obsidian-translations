@@ -108,8 +108,8 @@
 			"option-font-size-action": "Быстрое изменение размера шрифта",
 			"option-font-size-action-description": "Позволяет изменить размер шрифта используя Ctrl + колесо прокрутки мыши или жест масштабирования на тачпаде.",
 			"option-themes": "Темы",
-			"option-theme": "Тема",
-			"option-theme-description": "Выбор темы сообщества. Темы сохраняются в папке \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Стандартная",
 			"button-reload-themes": "Обновить темы",
 			"msg-reloaded-themes": "Обновлен список CSS-тем.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Обновить список фрагментов",
 			"button-open-snippets-folder": "Открыть папку с фрагментами",
 			"msg-reloaded-snippets": "Обновлен список CSS фрагментов.",
-			"option-toggle-snippet-description": "Применить CSS фрагмент к \"{{path}}\"."
+			"option-toggle-snippet-description": "Применить CSS фрагмент к \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Сочетания клавиш",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "О программе",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Лицензионный ключ",
 			"license-key-placeholder": "Ваш лицензионный ключ...",
 			"label-enter-commercial-license": "Пожалуйста, введите лицензионный ключ для коммерческого использования:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Установлена актуальная версия!",
 			"label-read-changelog": "Список изменений",
 			"label-manual-install-required": "Вам нужно вручную установить акутальную версию.",
-			"label-download-link": "Скачайте здесь.",
+			"label-download": "Download",
 			"label-new-version-ready": "Новая версия доступна для установки.",
 			"label-relaunch-to-update": "Перезапустить для обновления.",
 			"label-disabled-updates": "Обновления отключены.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Использовать папку конфигурации, отличную от папки конфигурации по умолчанию. Название папки должно начинаться с точки.",
 			"option-config-location-warning": "Имя папки конфигурации должно быть свободно и начинаться с точки.",
 			"label-license": "Лицензия",
-			"label-your-commercial-license": "Ваша коммерческая лицензия ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Зарегистрирована на \"{{company}}\" для {{seats}} пользователей. Действительна до {{expiry}}.",
 			"label-validating-commercial-license": "Проверка...",
 			"label-invalid-commercial-license": "Лицензия недействительна: ",
 			"button-activate-commercial-license": "Активировать коммерческую лицензию",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " персональная лицензия. ",
 			"label-thank-you-for-support": "Спасибо за поддержку!",
 			"label-free-personal-license": "Персональная лицензия (бесплатна для некоммерческого использования)."
@@ -206,14 +214,15 @@
 			"message-login-failed": "Неправильный адрес электронной почты или пароль.",
 			"label-no-account": "Нет аккаунта? ",
 			"link-sign-up-now": "Зарегистрироваться",
-			"message-get-community-badges": "Напишите на support@obsidian.md, если вы не получили значки сообщества через сутки после получения лицензии.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Для получения коммерческой лицензии перейдите по ссылке: {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "Управление плагинами",
+			"option-search-plugin": "Поиск предустановленных плагинов",
+			"option-search-plugin-description": "Поиск предустановленных плагинов по наименованию или описанию.",
+			"placeholder-search-plugin": "Поиск предустановленных плагинов..."
 		},
 		"third-party-plugin": {
 			"name": "Сторонние плагины",
@@ -236,6 +245,7 @@
 			"button-install": "Установить",
 			"button-enable": "Включить",
 			"button-disable": "Отключить",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Ничего не найдено.",
 			"msg-failed-to-load-manifest": "Не удалось загрузить описание плагина.",
 			"label-version": "Версия: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "По количеству скачиваний (по возрастанию)",
 			"label-sort-release-date-new-to-old": "Хронологически (от новых к старым)",
 			"label-sort-release-date-old-to-new": "Хронологически (от старых к новым)",
-			"label-sort-alphabetical": "По наименованию (от A до Z)",
-			"label-sort-alphabetical-reverse": "По наименованию (от Z до A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Отображается {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -308,12 +318,14 @@
 			"option-added-options": "Добавленные опции",
 			"option-more-toolbar-options": "Другие настройки",
 			"option-attach": "Вложение",
-			"option-add-command": "Add global command",
-			"option-add-command-description": "Select any global command to add to the toolbar."
+			"option-add-command": "Добавить глобальную команду",
+			"option-add-command-description": "Выберите любую глобальную команду для добавления в инструментарий."
 		}
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Назад",
 			"label-next": "Далее",
 			"label-all": "Все",
@@ -356,9 +368,9 @@
 			"button-export-to-pdf": "Экспорт в PDF"
 		},
 		"link-popover": {
-			"tooltip-follow-link": "Follow link",
-			"tooltip-open-link": "Open link",
-			"tooltip-search-tag": "Search tag"
+			"tooltip-follow-link": "Перейти по ссылке",
+			"tooltip-open-link": "Открыть ссылку",
+			"tooltip-search-tag": "Искать тег"
 		}
 	},
 	"interface": {
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian индексирует хранилище...\nЭто должно произойти лишь единожды.\nНекоторый функционал может быть недоступен пока процесс не закончен.",
 		"msg-indexing-complete": "Индексация завершена.",
 		"label-enter-to-create": "Enter чтобы создать новый файл",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Ни один файл не открыт",
 			"create-new-file": "Создать новый файл",
 			"go-to-file": "Перейти к файлу",
 			"see-recent-files": "Просмотреть недавние файлы",
-			"close": "Закрыть"
+			"close": "Закрыть",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Редактировать (Ctrl/Cmd+Click, чтобы редактировать в новой области)",
@@ -414,7 +430,7 @@
 			"paste": "Вставить",
 			"paste-as-plain-text": "Вставить как обычный текст",
 			"select-all": "Выделить все",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "Переименовать заголовок..."
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -423,7 +439,7 @@
 			"not-created-yet": "Еще не создан, выбрать чтобы создать"
 		},
 		"start-screen": {
-			"label-version": "Version",
+			"label-version": "Версия",
 			"option-open-folder-as-vault": "Открыть папку как хранилище",
 			"option-open-folder-as-vault-description": "Выберите папку, содержащую Markdown-файлы.",
 			"option-create-vault": "Создать новое хранилище",
@@ -475,13 +491,13 @@
 			"loading-workspace": "Рабочее пространство загружается..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "Импортировать в хранилище",
+			"action-choose-file-to-insert": "Выберите файл для вставки",
+			"action-insert-text-into-file": "Вставить текст в {{filename}}",
+			"action-insert-link-into-file": "Вставить ссылку в {{filename}}",
+			"msg-importing": "Импортирование...",
+			"msg-import-success": "Импорт успешно завершен",
+			"msg-failed-to-import-file": "Не удалось импортировать файл {{filename}}"
 		}
 	},
 	"commands": {
@@ -528,7 +544,10 @@
 		"copy-path": "Скопировать путь к файлу",
 		"copy-url": "Скопировать Obsidian URL",
 		"export-pdf": "Экспортировать в PDF",
-		"reload": "Перезагрузить приложение без сохранения"
+		"reload": "Перезагрузить приложение без сохранения",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
@@ -551,11 +570,12 @@
 		"label-delete-file": "Удалить файл",
 		"button-cancel": "Отмена",
 		"button-done": "Готово",
+		"button-continue": "Continue",
 		"preparing-pdf": "Подготовка PDF...",
 		"label-rename-file": "Переименовать файл",
 		"label-new-name": "Новое имя",
 		"msg-rename-success": "Файл успешно переименован.",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "Переименовать заголовок"
 	},
 	"plugins": {
 		"name": "Плагины",
@@ -659,7 +679,7 @@
 			"label-tag-option-description": "совпадение в тегах",
 			"label-line-option-description": "ключевые слова на одной строке",
 			"label-section-option-description": "ключевые слова под одним заголовком",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "Искать \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Быстрый переход",
@@ -726,8 +746,8 @@
 			"button-new-group": "Новая группа",
 			"tooltip-click-to-change-drag-to-reorder": "Смена цвета\nУпорядочивание перетаскиванием",
 			"action-timelapse": "Запустить анимацию графа во времени",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "Запустить анимацию графа",
+			"button-animate-timelapse": "Запустить анимацию"
 		},
 		"backlinks": {
 			"name": "Обратные ссылки",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Фильтр...",
 			"label-dark-theme-only": "Только темные",
 			"label-light-theme-only": "Только светлые",
-			"label-preview": "Предпросмотр",
-			"label-stop-preview": "Отменить",
 			"label-use": "Использовать",
-			"label-override": "Перезаписать",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Перейти на GitHub",
-			"msg-fetching-css": "Загружаются CSS...",
-			"theme-title": "\"{{name}}\" от {{author}}",
-			"msg-override-theme": "Перезаписать текущий CSS",
-			"msg-existing-theme": "У вас уже есть пользовательский CSS \"obsidian.css\".",
-			"msg-confirm-override": "Вы уверены, что хотите перезаписать его? Ваш оригинальный CSS-файл будет утерян. Пожалуйста, при необходимости сделайте бекап.",
 			"msg-load-error": "Не удалось загрузить темы сообщества. Пожалуйста, проверьте соединение с интернетом.",
-			"msg-now-using-theme": "Применена CSS-тема {{title}}."
+			"msg-now-using-theme": "Применена CSS-тема {{title}}.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Палитра команд",
@@ -861,8 +877,8 @@
 			"action-open": "Сегодняшняя заметка",
 			"action-open-previous": "Открыть предыдущую ежедневную заметку",
 			"action-open-next": "Открыть следующую ежедневную заметку",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "Вставить текст в ежедневную заметку",
+			"action-insert-link": "Вставить ссылку в ежедневную заметку",
 			"msg-fail-format": "Не удалось создать ежедневную заметку. Неверный формат \"{{format}}\".",
 			"msg-fail-folder": "Не удалось создать ежедневную заметку. Папка \"{{folderOption}}\" не найдена.",
 			"msg-fail-template-file": "Не удалось создать ежедневную заметку. Файл шаблона \"{{template}}\" не найден.",
@@ -931,7 +947,7 @@
 			"name": "Открыть в приложении по умолчанию",
 			"desc": "Добавляет возможность открывать текущий файл в приложении по умолчанию.",
 			"action-open-file": "Открыть в приложении по умолчанию",
-			"action-open-file-mobile": "Share",
+			"action-open-file-mobile": "Поделиться",
 			"action-show-in-folder": "Показать содержащую папку"
 		},
 		"templates": {
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Полупрозрачное окно",
 			"desc": "Добавляет интерфейсу ощущения глубины, особенно в темном режиме. Не работает под Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Публикация",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Этот файл был удален",
 			"label-no-earlier-version": "Более ранние версии данного файла отсутствуют.",
 			"label-empty-file": "Пусто",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Удаленные файлы",
 			"label-click-to-see-history": "Кликните на удаленном файле, чтобы просмотреть его историю.",
 			"label-create-remote-vault": "Создание хранилища",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Открыть",
 			"msg-verified-password": "Пароль шифрования подтвержден.",
 			"label-remote-vaults": "Хранилища в Obsidian Sync",
-			"label-connected-vault": "Подключено",
 			"label-vault-created-time": "Создано {{time}}",
 			"tooltip-delete-remote-vault": "Удалить",
 			"label-confirm-delete-remote-vault": "Подтвердите удаление хранилища",
@@ -1197,16 +1217,16 @@
 			"option-sync-unsupported": "Синхронизировать все остальные типы файлов",
 			"option-sync-unsupported-desc": "Синхронизировать неподдерживаемые типы файлов.",
 			"option-vault-config-sync": "Настройка синхронизации хранилища",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "История файлов настроек",
+			"option-view-config-files-desc": "Просмотр и восстановление файлов настроек.",
 			"option-sync-app": "Основные настройки",
 			"option-sync-app-desc": "Включить синхронизацию настроек из разделов Редактор, Файлы и ссылки, Сочетания клавиш и т.д",
 			"option-sync-appearance": "Настройки оформления",
 			"option-sync-appearance-desc": "Синхронизировать настройки оформления, такие как ночной режим, активная тема и включенные CSS-фрагменты.",
 			"option-sync-appearance-data": "Темы и CSS-фрагменты",
 			"option-sync-appearance-data-desc": "Синхронизировать загруженные темы и CSS-фрагменты. Какие из них будут включены, зависит от предыдущих настроек.",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-hotkey": "Сочетания клавиш",
+			"option-sync-hotkey-desc": "Синхронизировать пользовательские сочетания клавиш.",
 			"option-sync-core-plugin": "Список предустановленных плагинов, активных на данный момент",
 			"option-sync-core-plugin-desc": "Синхронизировать предустановленные плагины, которые активны.",
 			"option-sync-core-plugin-data": "Настройки предустановленных плагинов",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} не будут синхронизированы.",
 			"label-setup-connection": "Настройки соединения",
 			"label-now-connected-to-vault": "Установлено соединение с хранилищем \"{{name}}\".",
-			"button-start-syncing": "Начать синхронизацию"
+			"button-start-syncing": "Начать синхронизацию",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Восстановление файлов",
@@ -1275,7 +1298,7 @@
 			"instruction-append": "поместить в конец",
 			"instruction-prepend": "поместить в начало",
 			"msg-fail-to-fetch-template": "Не удалось вызвать шаблон: \"{{template}}\" не найден.",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "Не удалось найти заголовок"
 		}
 	},
 	"nouns": {
