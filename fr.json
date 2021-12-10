@@ -108,8 +108,8 @@
 			"option-font-size-action": "Réglage rapide de la taille de police ",
 			"option-font-size-action-description": "Ajuster la taille de la police à l'aide de Ctrl + Molette ou à l'aide du geste de zoom par pincement du trackpad.",
 			"option-themes": "Thèmes",
-			"option-theme": "Thème",
-			"option-theme-description": "Quel thème de la communauté utiliser. Les thèmes sont stockés dans \"coffre/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Aucun",
 			"button-reload-themes": "Recharger les thèmes",
 			"msg-reloaded-themes": "Thèmes CSS personnalisés rechargés.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Recharger les extraits",
 			"button-open-snippets-folder": "Ouvrir le dossier des extraits de code",
 			"msg-reloaded-snippets": "Extraits CSS rechargés.",
-			"option-toggle-snippet-description": "Appliquer l'extrait de code CSS à partir du fichier \"{{path}}\"."
+			"option-toggle-snippet-description": "Appliquer l'extrait de code CSS à partir du fichier \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Raccourcis clavier",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "À propos",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Clé de licence",
 			"license-key-placeholder": "Votre clé de licence...",
 			"label-enter-commercial-license": "Merci d'entrer votre clé de licence commerciale :",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Votre app est à jour !",
 			"label-read-changelog": "Lire le journal des modifications.",
 			"label-manual-install-required": "L'installation manuelle de la dernière version est requise.",
-			"label-download-link": "Télécharger ici.",
+			"label-download": "Download",
 			"label-new-version-ready": "Une nouvelle version est prête à être installée. ",
 			"label-relaunch-to-update": "Relancer l'app pour faire la mise à jour.",
 			"label-disabled-updates": "Les mises à jour sont désactivées.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Utiliser un dossier de configuration différent de celui par défaut. Il doit commencer par un point.",
 			"option-config-location-warning": "L'emplacement de configuration doit être un nom de dossier valide commençant par un point.",
 			"label-license": "Licence",
-			"label-your-commercial-license": "Votre clé de licence commerciale est ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Enregistré à \"{{company}}\" pour {{seats}} utilisateurs. Valable jusqu'au {{expiry}}.",
 			"label-validating-commercial-license": "Validation en cours...",
 			"label-invalid-commercial-license": "Licence invalide : ",
 			"button-activate-commercial-license": "Activer une licence commerciale",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " Licence personnelle. ",
 			"label-thank-you-for-support": "Merci de votre soutien !",
 			"label-free-personal-license": "Licence personnelle : gratuit pour usage personnel."
@@ -206,7 +214,8 @@
 			"message-login-failed": "Échec de connexion, merci de vérifier à nouveau l'adresse électronique et le mot de passe.",
 			"label-no-account": "Vous n'avez pas de compte ? ",
 			"link-sign-up-now": "S'inscrire maintenant",
-			"message-get-community-badges": "Pour les badges communautaires, merci d'envoyer un e-mail à support@obsidian.md si vous ne les avez pas reçus 24 heures après l'obtention de votre licence.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Pour obtenir une licence commerciale, visiter {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "Installer",
 			"button-enable": "Activer",
 			"button-disable": "Désactiver",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Aucun resultat trouvé.",
 			"msg-failed-to-load-manifest": "Échec du chargement du manifeste du plugin.",
 			"label-version": "Version : {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Nombre de téléchargements (haut vers bas)",
 			"label-sort-release-date-new-to-old": "Date de parution (nouveau vers ancien)",
 			"label-sort-release-date-old-to-new": "Date de parution (ancien vers nouveau)",
-			"label-sort-alphabetical": "Nom du plugin (A to Z)",
-			"label-sort-alphabetical-reverse": "Nom du plugin (Z to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Affichage de {{pluginCount}} : "
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Précédent",
 			"label-next": "Suivant",
 			"label-all": "Tout",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian indexe votre coffre...\nCela ne devrait se produire qu'une seule fois.\nCertaines fonctionnalités peuvent ne pas être disponibles tant que le processus n'est pas terminé.",
 		"msg-indexing-complete": "Indexation terminée.",
 		"label-enter-to-create": "Enter pour créer",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
 			"create-new-file": "Créer un nouveau fichier",
 			"go-to-file": "Aller au fichier",
 			"see-recent-files": "Voir les fichiers récents",
-			"close": "Fermer"
+			"close": "Fermer",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Éditer (Ctrl/Cmd + Clic pour éditer dans un nouveau volet)",
@@ -528,7 +544,10 @@
 		"copy-path": "Copier le chemin du fichier",
 		"copy-url": "Copier l'url Obsidian",
 		"export-pdf": "Exporter en PDF",
-		"reload": "Recharger l'app sans enregistrer"
+		"reload": "Recharger l'app sans enregistrer",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela affectera {{links}} dans {{files}}.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "Supprimer le fichier",
 		"button-cancel": "Annuler",
 		"button-done": "Valider",
+		"button-continue": "Continue",
 		"preparing-pdf": "Préparation du PDF...",
 		"label-rename-file": "Renommer le fichier",
 		"label-new-name": "Nouveau nom",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filtrer...",
 			"label-dark-theme-only": "Thèmes sombres uniquement",
 			"label-light-theme-only": "Thèmes clairs uniquement",
-			"label-preview": "Aperçu",
-			"label-stop-preview": "Arrêter l'aperçu",
 			"label-use": "Utiliser",
-			"label-override": "Passer outre",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Ouvrir sur GitHub",
-			"msg-fetching-css": "Récupération du CSS...",
-			"theme-title": "\"{{name}}\" par {{author}}",
-			"msg-override-theme": "Remplacer le CSS actuel",
-			"msg-existing-theme": "Il existe déjà un fichier CSS \"obsidian.css\" personnalisé.",
-			"msg-confirm-override": "Confirmer le remplacement ? Le fichier CSS d'origine sera perdu. Merci d'en faire une sauvegarde si nécessaire.",
 			"msg-load-error": "Impossible de charger les thèmes de la communauté, merci vérifier la connexion internet.",
-			"msg-now-using-theme": "Vous utilisez maintenant {{title}} en thème CSS."
+			"msg-now-using-theme": "Vous utilisez maintenant {{title}} en thème CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Palette de commandes",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Transparence de la fenêtre",
 			"desc": "Activer l'effet de transparence pour améliorer la sensation de profondeur. À utiliser de préférence avec le mode sombre. Non pris en charge sous Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Publish",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Ce fichier a été supprimé",
 			"label-no-earlier-version": "Il n'y avait pas de versions antérieures de ce fichier.",
 			"label-empty-file": "Vide",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Fichiers supprimés",
 			"label-click-to-see-history": "Cliquez sur un fichier supprimé pour voir son historique.",
 			"label-create-remote-vault": "Créer un coffre distant",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Déverrouiller le coffre",
 			"msg-verified-password": "Votre mot de passe a été vérifié avec succès.",
 			"label-remote-vaults": "Vos coffres distants",
-			"label-connected-vault": "Connecté",
 			"label-vault-created-time": "Créé {{time}}",
 			"tooltip-delete-remote-vault": "Supprimer",
 			"label-confirm-delete-remote-vault": "Confirmer la suppression du coffre",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} sont actuellement exclus de la synchronisation.",
 			"label-setup-connection": "Paramétrer la connexion",
 			"label-now-connected-to-vault": "Vous êtes maintenant connecté à \"{{name}}\".",
-			"button-start-syncing": "Démarrer la synchronisation"
+			"button-start-syncing": "Démarrer la synchronisation",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Récupération de fichier",

@@ -108,8 +108,8 @@
 			"option-font-size-action": "Hurtig justering af font størrelse",
 			"option-font-size-action-description": "Juster font størrelsen med Ctrl + Scroll, eller ved knibe-sammen bevægelse på trackpad.",
 			"option-themes": "Temaer",
-			"option-theme": "Tema",
-			"option-theme-description": "Vælg et tema du vil anvende. Temaer bliver gemt i \"{{path}}\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Ingen",
 			"button-reload-themes": "Genindlæs temaer",
 			"msg-reloaded-themes": "Genindlæs brugerdefinerede CSS temaer.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Genindlæs kodestykker",
 			"button-open-snippets-folder": "Åben kodestykke mappe",
 			"msg-reloaded-snippets": "Genindlæste CSS kodestykker.",
-			"option-toggle-snippet-description": "Anvend CSS kodestykkerne fra mappen \"{{path}}\"."
+			"option-toggle-snippet-description": "Anvend CSS kodestykkerne fra mappen \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Genvejstaster",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "Om",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Licensnøgle",
 			"license-key-placeholder": "Din licensnøgle...",
 			"label-enter-commercial-license": "Angiv venligst din komercielle licensnøgle:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Obsidian er opdateret!",
 			"label-read-changelog": "Læs ændringsloggen.",
 			"label-manual-install-required": "Du skal installere den nyeste version manuelt.",
-			"label-download-link": "Hent her.",
+			"label-download": "Download",
 			"label-new-version-ready": "En ny version er klar til at blive installeret. ",
 			"label-relaunch-to-update": "Genstart Obsidian for at opdatere den.",
 			"label-disabled-updates": "Opdateringer er deaktiveret.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Benyt en anden konfigurationsmappe end standard mappen. Mappenavnet skal bengynde med et punktum.",
 			"option-config-location-warning": "Konfigurationsmappen skal være et gyldigt mappenavn, som begynder med et punktum.",
 			"label-license": "Licens",
-			"label-your-commercial-license": "Den kommercielle licensnøgle er ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Registreret til \"{{company}}\" til {{seats}} brugere. Gyldig indtil {{expiry}}.",
 			"label-validating-commercial-license": "Validerer...",
 			"label-invalid-commercial-license": "Licensen er ugyldig: ",
 			"button-activate-commercial-license": "Aktiver kommerciel licens",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " personlig licens. ",
 			"label-thank-you-for-support": "Tak for din støtte!",
 			"label-free-personal-license": "Personlig licens: gratis til personlig brug."
@@ -206,7 +214,8 @@
 			"message-login-failed": "Log på fejlede. Vær venlig at tjekke email og kodeord.",
 			"label-no-account": "Har du ikke en konto? ",
 			"link-sign-up-now": "Opret dig nu",
-			"message-get-community-badges": "For fællesskabs badges, skriv venligst email til support@obsidian.md, hvis du ikke har modtaget dem senest 24 timer efter, at du har anskaffet licensen.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "For at hente en kommerciel licens skal du besøge {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "Installer",
 			"button-enable": "Aktiver",
 			"button-disable": "Deaktiver",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Der blev ikke fundet nogen resultater.",
 			"msg-failed-to-load-manifest": "Kunne ikke læse plug-in manifestet.",
 			"label-version": "Version: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Antal downloads (lav til høj)",
 			"label-sort-release-date-new-to-old": "Første gang udgivet (nye til ældre)",
 			"label-sort-release-date-old-to-new": "Første gang udgivet (ældre til nye)",
-			"label-sort-alphabetical": "Plug-in navn (A to Å)",
-			"label-sort-alphabetical-reverse": "Plug-in navn (Å to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Fundet {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Forrige",
 			"label-next": "Næste",
 			"label-all": "Alt",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian indekserer din boks...\nDet bør kun ske én gang.\nNogle funktioner er muligvis ikke tilgængelige indtil indekseringen er færdig.",
 		"msg-indexing-complete": "Indeksering færdig.",
 		"label-enter-to-create": "Tryk Enter for at oprette",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "Ingen fil er åben",
 			"create-new-file": "Opret ny fil",
 			"go-to-file": "Gå til fil",
 			"see-recent-files": "Se seneste filer",
-			"close": "Luk"
+			"close": "Luk",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Rediger (Ctrl/Cmd+Klik for at redigere i nyt panel)",
@@ -528,7 +544,10 @@
 		"copy-path": "Kopier fil sti",
 		"copy-url": "Kopier obsidian url",
 		"export-pdf": "Eksporter til PDF",
-		"reload": "Genindlæs Obsidan uden at gemme"
+		"reload": "Genindlæs Obsidan uden at gemme",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "Slet fil",
 		"button-cancel": "Annuller",
 		"button-done": "Færdig",
+		"button-continue": "Continue",
 		"preparing-pdf": "Klargører PDF...",
 		"label-rename-file": "Omdøb fil",
 		"label-new-name": "Nyt navn",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filter...",
 			"label-dark-theme-only": "Kun mørke temaer",
 			"label-light-theme-only": "Kun lyse temaer",
-			"label-preview": "Forhåndsvis",
-			"label-stop-preview": "Stop forhåndsvisning",
 			"label-use": "Benyt",
-			"label-override": "Tilsidesæt",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Besøg på GitHub",
-			"msg-fetching-css": "Henter CSS...",
-			"theme-title": "\"{{name}}\" af {{author}}",
-			"msg-override-theme": "Tilsidesæt nuværende CSS",
-			"msg-existing-theme": "Du har allerede den brugerdeinerede CSS fil \"{{file}}\".",
-			"msg-confirm-override": "Er du sikker på at du vil tilsidesætte den? Du mister din originale CSS fil. Tag en backup, hvis det er nødvendigt, at beholde den.",
 			"msg-load-error": "Kunne ikke hente fællesskabstemaer. Tjek din internetforbindelse.",
-			"msg-now-using-theme": "Du benytter nu {{title}} som dit CSS tema."
+			"msg-now-using-theme": "Du benytter nu {{title}} som dit CSS tema.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Kommandopalette",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Gennemskinnelig vindue",
 			"desc": "Slå gennemskindelig effekt til for at øge dybdefølelsen. Bedst når mørk tilstand benyttes. Ikke understøttet på Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Udgiv",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "Denne fil var slettet",
 			"label-no-earlier-version": "Der blev ikke fundet tidligere versioner af denne fil.",
 			"label-empty-file": "Tom",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Slettede filer",
 			"label-click-to-see-history": "Klik på en slettet fil for at se dens historik.",
 			"label-create-remote-vault": "Opret ekstern boks",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Lås boks op",
 			"msg-verified-password": "Dit kodeord er verificeret.",
 			"label-remote-vaults": "Dine eksterne bokse",
-			"label-connected-vault": "Forbundet",
 			"label-vault-created-time": "Oprettet {{time}}",
 			"tooltip-delete-remote-vault": "Slet",
 			"label-confirm-delete-remote-vault": "Bekræft sletning af boks",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} er i øjeblikket udelukket fra at blive synkroniseret.",
 			"label-setup-connection": "Opsæt forbindelse",
 			"label-now-connected-to-vault": "Du er nu forbundet til \"{{name}}\".",
-			"button-start-syncing": "Start synkronisering"
+			"button-start-syncing": "Start synkronisering",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Filgenoprettelse",
