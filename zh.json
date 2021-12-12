@@ -108,8 +108,8 @@
 			"option-font-size-action": "快速调整字体大小",
 			"option-font-size-action-description": "开启后可通过 Ctrl 与鼠标滚轮（或使用触摸板手势）快速调整字体大小。",
 			"option-themes": "主题",
-			"option-theme": "更换主题",
-			"option-theme-description": "请选择需要使用的主题。主题文件的存放路径为：\"vault/.obsidian/themes/\"。",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "无",
 			"button-reload-themes": "重新加载主题",
 			"msg-reloaded-themes": "重新加载自定义主题",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "重新加载代码段",
 			"button-open-snippets-folder": "打开代码段文件夹",
 			"msg-reloaded-snippets": "重新加载 CSS 代码片段",
-			"option-toggle-snippet-description": "应用当前代码段。该代码段的存放路径为：\"{{path}}\"。"
+			"option-toggle-snippet-description": "应用当前代码段。该代码段的存放路径为：\"{{path}}\"。",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "快捷键",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "关于",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "许可证密钥",
 			"license-key-placeholder": "你的许可证密钥……",
 			"label-enter-commercial-license": "请输入你的商业许可密钥:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "你使用的是最新版本!",
 			"label-read-changelog": "阅读更新日志",
 			"label-manual-install-required": "你必须手动安装最新版本。",
-			"label-download-link": "从此下载。",
+			"label-download": "Download",
 			"label-new-version-ready": "准备安装新版本。 ",
 			"label-relaunch-to-update": "重新启动应用以进行更新。",
 			"label-disabled-updates": "更新已禁用。",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "选用另一个配置文件夹而非默认配置文件夹。配置文件夹名称一定要以句点\".\"开头。",
 			"option-config-location-warning": "配置文件夹路径必须是合法的，并且以句点\".\"开头。",
 			"label-license": "许可证",
-			"label-your-commercial-license": "你的商业许可证密钥是 ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "注册给用户： \"{{company}}\" - {{seats}} 。有效期至 {{expiry}}。",
 			"label-validating-commercial-license": "正在验证……",
 			"label-invalid-commercial-license": "无效的许可证: ",
 			"button-activate-commercial-license": "激活商业许可证",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " 个人许可证。 ",
 			"label-thank-you-for-support": "感谢你的支持！",
 			"label-free-personal-license": "个人许可证：供个人用户免费使用。"
@@ -206,7 +214,8 @@
 			"message-login-failed": "登录失败，请检查你的邮箱和密码。",
 			"label-no-account": "没有帐户？ ",
 			"link-sign-up-now": "现在注册",
-			"message-get-community-badges": "如果你在激活许可证后的 24 小时内未收到社区徽章，请通过邮件联系 support@obsidian.md 。",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "如需获得商用许可证，请访问 {{pricingPageLink}}。"
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "安装",
 			"button-enable": "启用",
 			"button-disable": "禁用",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "未找到相关插件",
 			"msg-failed-to-load-manifest": "无法加载插件列表",
 			"label-version": "版本: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "下载量（从低到高）",
 			"label-sort-release-date-new-to-old": "发布时间（从新到旧）",
 			"label-sort-release-date-old-to-new": "发布时间（从旧到新）",
-			"label-sort-alphabetical": "插件名称（A-Z）",
-			"label-sort-alphabetical-reverse": "插件名称（Z-A）",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "当前显示了 {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "前一个",
 			"label-next": "后一个",
 			"label-all": "选择全部",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian 正在为当前库创建索引……\n索引只会进行一次。\n索引完成前一些功能可能无法使用。",
 		"msg-indexing-complete": "索引完成。",
 		"label-enter-to-create": "按下回车以创建",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "未打开文件",
 			"create-new-file": "创建新文件",
 			"go-to-file": "打开文件",
 			"see-recent-files": "查看近期文件",
-			"close": "关闭面板"
+			"close": "关闭面板",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "编辑（按住 Ctrl/Cmd 打开新面板）",
@@ -528,7 +544,10 @@
 		"copy-path": "复制当前文件的路径",
 		"copy-url": "复制 Obsidian 链接",
 		"export-pdf": "导出为 PDF",
-		"reload": "重新加载 Obsidian（不保存当前编辑内容）"
+		"reload": "重新加载 Obsidian（不保存当前编辑内容）",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -551,6 +570,7 @@
 		"label-delete-file": "删除文件",
 		"button-cancel": "取消",
 		"button-done": "完成",
+		"button-continue": "Continue",
 		"preparing-pdf": "正在生成 PDF……",
 		"label-rename-file": "重命名文件",
 		"label-new-name": "新文件名",
@@ -799,18 +819,14 @@
 			"prompt-filter": "搜索……",
 			"label-dark-theme-only": "只有黑暗配色的主题",
 			"label-light-theme-only": "只有明亮配色的主题",
-			"label-preview": "预览",
-			"label-stop-preview": "停止预览",
 			"label-use": "使用",
-			"label-override": "覆盖",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "访问 GitHub",
-			"msg-fetching-css": "正在获取……",
-			"theme-title": "\"{{name}}\" 作者：{{author}}",
-			"msg-override-theme": "覆盖当前主题文件",
-			"msg-existing-theme": "你已经有了 \"obsidian.css\" 自定义主题文件。",
-			"msg-confirm-override": "你确定要覆盖它吗? 删除这个主题文件之前，请做好备份。",
 			"msg-load-error": "无法加载社区主题，请检查你的网络。",
-			"msg-now-using-theme": "你正在使用 {{title}} 主题。"
+			"msg-now-using-theme": "你正在使用 {{title}} 主题。",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "命令面板",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "半透明效果",
 			"desc": "开启半透明效果以增强沉浸感（黑暗模式下开启效果更佳）。Linux 不支持此效果。"
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "发布",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "此文件已被删除",
 			"label-no-earlier-version": "此文件没有更早的版本",
 			"label-empty-file": "无内容",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "已删除文件",
 			"label-click-to-see-history": "点击文件查看其历史",
 			"label-create-remote-vault": "创建远程库",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "解锁",
 			"msg-verified-password": "密码验证成功。",
 			"label-remote-vaults": "你的远程库",
-			"label-connected-vault": "已连接",
 			"label-vault-created-time": "创建于 {{time}}",
 			"tooltip-delete-remote-vault": "删除",
 			"label-confirm-delete-remote-vault": "确认删除该远程库",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} 目前不会被同步。",
 			"label-setup-connection": "设置连接",
 			"label-now-connected-to-vault": "你现在已连接到 \"{{name}}\"。",
-			"button-start-syncing": "开始同步"
+			"button-start-syncing": "开始同步",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "文件恢复",
