@@ -688,7 +688,7 @@
 			"instruction-navigate": "navigeren",
 			"instruction-open": "openen",
 			"instruction-open-in-new-pane": "in nieuw venster openen",
-			"instruction-create": "creëren",
+			"instruction-create": "aanmaken",
 			"instruction-dismiss": "afwijzen",
 			"label-no-note-create-new": "Geen notities gevonden. Druk op Enter om een nieuwe te maken.",
 			"prompt-type-file-name": "Type de bestandsnaam om ernaar te wisselen of te creëren...",
@@ -831,8 +831,8 @@
 			"name": "Opdrachtenpaneel",
 			"desc": "Typ een opdracht om het te gebruiken. De gebruikersinterface gebruiken of de sneltoets onthouden is niet nodig.",
 			"action-open": "Open opdrachtenpaneel",
-			"instruction-navigate": "navigeer",
-			"instruction-use": "gebruik",
+			"instruction-navigate": "navigeren",
+			"instruction-use": "gebruiken",
 			"instruction-dismiss": "afwijzen",
 			"label-no-commands": "Geen opdrachten gevonden.",
 			"prompt-type-command": "Typ een opdracht...",
@@ -915,13 +915,13 @@
 			"action-open": "Open een willekeurige notitie"
 		},
 		"outline": {
-			"name": "Outline",
-			"desc": "Displays the outline of the current file or linked pane.",
-			"action-open": "Open outline",
-			"action-show": "Show outline pane",
-			"action-open-for-current": "Open outline of the current file",
-			"tab-title": "Outline of {{displayText}}",
-			"label-no-headings": "No headings found."
+			"name": "Overzicht",
+			"desc": "Toont een overzicht van het huidige bestand of een gelinkt venster.",
+			"action-open": "Open overzicht",
+			"action-show": "Toon overzichtsvenster",
+			"action-open-for-current": "Open het overzicht van het huidige bestand",
+			"tab-title": "Overzicht van {{displayText}}",
+			"label-no-headings": "Geen koppen gevonden."
 		},
 		"word-count": {
 			"name": "Woordenaantal",
@@ -933,51 +933,51 @@
 			"action-start": "Start presentatie"
 		},
 		"audio-recorder": {
-			"name": "Audio recorder",
-			"desc": "Record audio and save as attachment.",
-			"action-start": "Start recording audio",
-			"action-stop": "Stop recording audio",
-			"action-toggle": "Start/stop recording",
-			"msg-access-denied": "Microphone access was denied, please enable it from the preference pane.",
-			"msg-pending-grant": "Please grant microphone permission to start recording.",
-			"msg-no-microphone": "No microphone is connected."
+			"name": "Geluidsrecorder",
+			"desc": "Neem geluid op en sla het op als bijlage.",
+			"action-start": "Start geluidsopname",
+			"action-stop": "Stop geluidsopname",
+			"action-toggle": "Start/stop opname",
+			"msg-access-denied": "Toegang tot de microfoon was ontzegd, schakel dit in vanuit het instellingenvenster.",
+			"msg-pending-grant": "Geef toestemming om de microfoon te bruiken om een opname te starten.",
+			"msg-no-microphone": "Er is geen microfoon aangesloten."
 		},
 		"open-with-default-app": {
-			"name": "Open in default app",
-			"desc": "Add button to open current file in the default app.",
-			"action-open-file": "Open in default app",
-			"action-open-file-mobile": "Share",
-			"action-show-in-folder": "Show in folder"
+			"name": "Open in standaardapplicatie",
+			"desc": "Voeg knop toe om het huidge bestand in de standaardapplicatie te openen.",
+			"action-open-file": "Open in standaardapplicatie",
+			"action-open-file-mobile": "Delen",
+			"action-show-in-folder": "Toon in map"
 		},
 		"templates": {
-			"name": "Templates",
-			"desc": "Insert template content from a folder of template files.",
-			"action-insert": "Insert template",
-			"action-insert-current-date": "Insert current date",
-			"action-insert-current-time": "Insert current time",
-			"option-template-folder-location": "Template folder location",
-			"option-template-folder-location-description": "Files in this folder will be available as templates.",
-			"option-template-date-format": "Date format",
-			"option-template-date-format-description": "{{date}} in the template file will be replaced with this value.",
-			"option-template-date-format-description2": "You can also use {{date:YYYY-MM-DD}} to override the format once.",
-			"option-template-time-format": "Time format",
-			"option-template-time-format-description": "{{time}} in the template file will be replaced with this value.",
-			"option-template-time-format-description2": "You can also use {{time:HH:mm}} to override the format once.",
-			"instruction-navigate": "to navigate",
-			"instruction-insert": "to insert template",
-			"instruction-dismiss": "to dismiss",
-			"msg-no-templates-found": "No templates found",
-			"msg-fail-invalid-folder": "Failed to list templates. Template folder is invalid.",
-			"msg-fail-folder-not-found": "Failed to list templates. Folder \"{{folderOption}}\" not found.",
-			"prompt-type-template": "Type name of a template..."
+			"name": "Sjablonen",
+			"desc": "Voeg sjablooninhoud in vanuit een map met sjabloonbestanden.",
+			"action-insert": "Sjabloon invoegen",
+			"action-insert-current-date": "Voeg huidige datum in",
+			"action-insert-current-time": "Voeg huidige tijd in",
+			"option-template-folder-location": "Sjabloonmaplocatie",
+			"option-template-folder-location-description": "Bestanden in deze map zijn beschikbaar als sjablonen.",
+			"option-template-date-format": "Datumindeling",
+			"option-template-date-format-description": "{{date}} in het sjabloon wordt door deze waarde vervangen.",
+			"option-template-date-format-description2": "Je kunt ook {{date:YYYY-MM-DD}} gebruiken om de indeling eenmalig te overschrijven.",
+			"option-template-time-format": "Tijdsindeling",
+			"option-template-time-format-description": "{{time}} in het sjabloon wordt door deze waarde vervangen.",
+			"option-template-time-format-description2": "Je kunt ook {{time:HH:mm}} gebruiken om de indeling eenmalig te overschrijven.",
+			"instruction-navigate": "navigeren",
+			"instruction-insert": "sjabloon invoegen",
+			"instruction-dismiss": "afwijzen",
+			"msg-no-templates-found": "Geen sjablonen gevonden",
+			"msg-fail-invalid-folder": "Sjablonen ophalen mislukt. Sjabloon map is ongeldig.",
+			"msg-fail-folder-not-found": "Sjablonen ophalen mislukt. Map \"{{folderOption}}\" werd niet gevonden.",
+			"prompt-type-template": "Typ de naam van een sjabloon..."
 		},
 		"translucency": {
-			"name": "Translucent window",
-			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
+			"name": "Doorzichtig venster",
+			"desc": "Schakel een doorzichtig effect in om het gevoel van diepte te verbeteren. Werkt het best in de donkere modus. Niet ondersteund op Linux."
 		},
 		"slash-command": {
-			"name": "Slash commands",
-			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+			"name": "Slash-opdrachten",
+			"desc": "Schakel de mogelijkheid in om slash-opdrachten te gebruiken in de editor door de voorwaardse slash te typen."
 		},
 		"publish": {
 			"name": "Publish",
