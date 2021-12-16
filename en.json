@@ -108,8 +108,8 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Themes",
-			"option-theme": "Theme",
-			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "None",
 			"button-reload-themes": "Reload themes",
 			"msg-reloaded-themes": "Reloaded custom CSS themes.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Reload snippets",
 			"button-open-snippets-folder": "Open snippets folder",
 			"msg-reloaded-snippets": "Reloaded CSS snippets.",
-			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Hotkeys",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "About",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "License key",
 			"license-key-placeholder": "Your license key...",
 			"label-enter-commercial-license": "Please enter your commercial license key:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Your app is up to date!",
 			"label-read-changelog": "Read the changelog.",
 			"label-manual-install-required": "You must manually install the latest version.",
-			"label-download-link": "Download here.",
+			"label-download": "Download",
 			"label-new-version-ready": "A new version is ready to be installed. ",
 			"label-relaunch-to-update": "Relaunch the app to update.",
 			"label-disabled-updates": "Updates are disabled.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "License",
-			"label-your-commercial-license": "Your commercial license key is ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Registered to \"{{company}}\" for {{seats}} users. Valid until {{expiry}}.",
 			"label-validating-commercial-license": "Validating...",
 			"label-invalid-commercial-license": "License invalid: ",
 			"button-activate-commercial-license": "Activate commercial license",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " personal license. ",
 			"label-thank-you-for-support": "Thank you for your support!",
 			"label-free-personal-license": "Personal license: free for personal use."
@@ -206,7 +214,8 @@
 			"message-login-failed": "Login failed, please double check your email and password.",
 			"label-no-account": "Don't have an account? ",
 			"link-sign-up-now": "Sign up now",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +245,7 @@
 			"button-install": "Install",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "No results found.",
 			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
 			"label-version": "Version: {{version}}",
@@ -271,8 +281,8 @@
 			"label-sort-downloads-low-to-high": "Download count (low to high)",
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
-			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Showing {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +324,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Prev",
 			"label-next": "Next",
 			"label-all": "All",
@@ -386,12 +398,16 @@
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indexing complete.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
 		"empty-state": {
 			"no-file-open": "No file is open",
 			"create-new-file": "Create new file",
 			"go-to-file": "Go to file",
 			"see-recent-files": "See recent files",
-			"close": "Close"
+			"close": "Close",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Edit (Ctrl/Cmd+Click to edit in new pane)",
@@ -528,7 +544,10 @@
 		"copy-path": "Copy file path",
 		"copy-url": "Copy obsidian url",
 		"export-pdf": "Export to PDF",
-		"reload": "Reload app without saving"
+		"reload": "Reload app without saving",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -551,6 +570,7 @@
 		"label-delete-file": "Delete file",
 		"button-cancel": "Cancel",
 		"button-done": "Done",
+		"button-continue": "Continue",
 		"preparing-pdf": "Preparing PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
@@ -799,18 +819,14 @@
 			"prompt-filter": "Filter...",
 			"label-dark-theme-only": "Dark themes only",
 			"label-light-theme-only": "Light themes only",
-			"label-preview": "Preview",
-			"label-stop-preview": "Stop preview",
 			"label-use": "Use",
-			"label-override": "Override",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Visit on GitHub",
-			"msg-fetching-css": "Fetching CSS...",
-			"theme-title": "\"{{name}}\" by {{author}}",
-			"msg-override-theme": "Override current CSS",
-			"msg-existing-theme": "You already have the \"obsidian.css\" custom CSS file.",
-			"msg-confirm-override": "Are you sure you want to override it? You will lose your original CSS file. Please make a back up if necessary.",
 			"msg-load-error": "Could not load community themes, please check your network.",
-			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Command palette",
@@ -959,6 +975,10 @@
 		"translucency": {
 			"name": "Translucent window",
 			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
 		},
 		"publish": {
 			"name": "Publish",
@@ -1116,6 +1136,7 @@
 			"label-file-deleted": "This file was deleted",
 			"label-no-earlier-version": "There was no earlier versions of this file.",
 			"label-empty-file": "Empty",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Deleted files",
 			"label-click-to-see-history": "Click on a deleted file to see its history.",
 			"label-create-remote-vault": "Create remote vault",
@@ -1138,7 +1159,6 @@
 			"button-unlock-vault": "Unlock vault",
 			"msg-verified-password": "Successfully verified your password.",
 			"label-remote-vaults": "Your remote vaults",
-			"label-connected-vault": "Connected",
 			"label-vault-created-time": "Created {{time}}",
 			"tooltip-delete-remote-vault": "Delete",
 			"label-confirm-delete-remote-vault": "Confirm delete vault",
@@ -1223,7 +1243,10 @@
 			"label-number-of-folders-excluded": "{{folders}} are currently excluded from being synced.",
 			"label-setup-connection": "Setup connection",
 			"label-now-connected-to-vault": "You're now connected to \"{{name}}\".",
-			"button-start-syncing": "Start syncing"
+			"button-start-syncing": "Start syncing",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "File recovery",

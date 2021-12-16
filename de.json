@@ -108,8 +108,8 @@
 			"option-font-size-action": "Schnellanpassung der Schriftgröße",
 			"option-font-size-action-description": "Die Schriftgröße kann durch Strg + Scrollen oder durch eine Pinch-To-Zoom Geste auf dem Trackpad angepasst werden.",
 			"option-themes": "Farbschemen",
-			"option-theme": "Farbschema",
-			"option-theme-description": "Welches Community-Farbschema wird angewendet? Farbschemen sind in \"vault/.obsidian/themes/\" gespeichert.",
+			"option-manage-themes-description": "Verwalte installierte Farbschemen und durchsuche die Community-Farbschemen.",
+			"option-theme-button-manage": "Verwalten",
 			"option-choice-none": "Keines",
 			"button-reload-themes": "Farbschemen neu laden",
 			"msg-reloaded-themes": "Eigene CSS-Schemen neu geladen.",
@@ -120,7 +120,13 @@
 			"button-reload-snippets": "Bausteine neu laden",
 			"button-open-snippets-folder": "Baustein-Ordner öffnen",
 			"msg-reloaded-snippets": "CSS-Bausteine neu geladen.",
-			"option-toggle-snippet-description": "Wende CSS-Baustein unter \"{{path}}\" an."
+			"option-toggle-snippet-description": "Wende CSS-Baustein unter \"{{path}}\" an.",
+			"label-installed-themes": "Installierte Farbschemen",
+			"label-screenshot-unavailable": "Bildschirmaufnahme nicht verfügbar",
+			"label-default-theme": "Standard",
+			"tooltip-click-to-enlarge": "Klicke zum Vergrößern",
+			"button-update": "Aktualisieren",
+			"label-currently-selected": "Ausgewählt"
 		},
 		"hotkeys": {
 			"name": "Tastenkürzel",
@@ -135,6 +141,7 @@
 		},
 		"about": {
 			"name": "Über",
+			"label-commercial-license": "Kommerzielle Lizenz",
 			"label-license-key": "Lizenzschlüssel",
 			"license-key-placeholder": "Dein Lizenzschlüssel...",
 			"label-enter-commercial-license": "Bitte den kommerziellen Lizenzschlüssel eingeben:",
@@ -146,7 +153,7 @@
 			"label-up-to-date": "Deine Anwendung ist auf dem neuesten Stand!",
 			"label-read-changelog": "Liste der Änderungen lesen.",
 			"label-manual-install-required": "Du musst die aktuellste Version manuell installieren.",
-			"label-download-link": "Hier herunterladen.",
+			"label-download": "Download",
 			"label-new-version-ready": "Eine neue Version ist bereit zur Installation. ",
 			"label-relaunch-to-update": "Anwendung neu starten, um zu aktualisieren.",
 			"label-disabled-updates": "Aktualisierungen sind ausgeschaltet.",
@@ -170,11 +177,12 @@
 			"option-config-location-description": "Nutzt einen anderen als den Standardordner für Konfigurationsdateien. Muss mit einem Punkt beginnen.",
 			"option-config-location-warning": "Kofnigurationsordner muss ein gültiger Ordnername sein, der mit einem Punkt beginnt.",
 			"label-license": "Lizenz",
-			"label-your-commercial-license": "Dein kommerzieller Lizenzschlüssel ist ",
+			"label-your-commercial-license-key": "Dein kommerzieller Lizenzschlüssel ist \"{{key}}\".",
 			"label-commercial-license-info": "Registriert bei \"{{company}}\" für {{seats}} Benutzer. Gültig bis {{expiry}}.",
 			"label-validating-commercial-license": "Bestätigen...",
 			"label-invalid-commercial-license": "Lizenz ungültig: ",
 			"button-activate-commercial-license": "Kommerzielle Lizenz aktivieren",
+			"button-remove-commercial-license": "Entfernen",
 			"label-personal-license": "Private Lizenz. ",
 			"label-thank-you-for-support": "Vielen Dank für Deine Unterstützung!",
 			"label-free-personal-license": "Private Lizenz: Kostenlos für die private Nutzung."
@@ -236,6 +244,7 @@
 			"button-install": "Installieren",
 			"button-enable": "Einschalten",
 			"button-disable": "Ausschalten",
+			"button-copy-share-link": "Öffentlichen Link kopieren",
 			"label-no-results-found": "Keine Ergebnisse gefunden.",
 			"msg-failed-to-load-manifest": "Laden der Erweiterungsdefinition fehlgeschlagen.",
 			"label-version": "Version: {{version}}",
@@ -314,6 +323,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Finden",
+			"placeholder-replace": "Ersetzen",
 			"label-previous": "Vorherige",
 			"label-next": "Nächste",
 			"label-all": "Alle",
@@ -386,12 +397,16 @@
 		"msg-indexing": "Obisidan indiziert Deinen Vault...\nDies sollte nur einmal geschehen.\nManche Funktionen könnten erst nach der Indizierung verfügbar sein.",
 		"msg-indexing-complete": "Indizierung abgeschlossen.",
 		"label-enter-to-create": "Enter zum Erstellen",
+		"label-update-available": "Aktualisierung verfügbar",
+		"label-debug-info": "Debug Informationen",
 		"empty-state": {
 			"no-file-open": "Keine Datei geöffnet",
 			"create-new-file": "Neue Datei erzeugen",
 			"go-to-file": "Gehe zu Datei",
 			"see-recent-files": "Zuletzt verwendete Dateien",
-			"close": "Schließen"
+			"close": "Schließen",
+			"unknown-pane-title": "Erweiterung ist nicht mehr aktiv",
+			"unknown-pane-desc": "Die Erweiterung, die diesen Fensterbereich ({{type}}) hinzufügte, ist nicht mehr vorhanden"
 		},
 		"menu": {
 			"edit-view": "Bearbeiten (Strg/Cmd + Klick zum Bearbeiten in neuem Fensterbereich)",
@@ -528,7 +543,10 @@
 		"copy-path": "Dateipfad kopieren",
 		"copy-url": "Obsidian URL kopieren",
 		"export-pdf": "Nach PDF exportieren",
-		"reload": "Anwendung neu laden ohne zu speichern"
+		"reload": "Anwendung neu laden ohne zu speichern",
+		"undo-close-pane": "Fensterbereich wieder öffnen",
+		"context-menu": "Zeige Kontextmenü unter dem Cursor",
+		"show-debug-info": "Zeige Debug Informationen"
 	},
 	"dialogue": {
 		"label-link-affected": "Das betrifft {{links}} in {{files}}.",
@@ -551,6 +569,7 @@
 		"label-delete-file": "Datei löschen",
 		"button-cancel": "Abbrechen",
 		"button-done": "Fertig",
+		"button-continue": "Fortsetzen",
 		"preparing-pdf": "PDF wird vorbereitet...",
 		"label-rename-file": "Datei umbenennen",
 		"label-new-name": "Neuer Name",
@@ -799,18 +818,14 @@
 			"prompt-filter": "Filter...",
 			"label-dark-theme-only": "Nur dunkle Farbschemen",
 			"label-light-theme-only": "Nur helle Farbschemen",
-			"label-preview": "Vorschau",
-			"label-stop-preview": "Vorschau beenden",
 			"label-use": "Aktivieren",
-			"label-override": "Überschreiben",
+			"label-update": "Aktualisieren",
+			"tooltip-remove-theme": "Farbschema entfernen",
 			"label-visit-on-github": "Auf GitHub besuchen",
-			"msg-fetching-css": "Lade CSS...",
-			"theme-title": "\"{{name}}\" von {{author}}",
-			"msg-override-theme": "Aktuelle CSS Datei überschreiben",
-			"msg-existing-theme": "Du hast bereits eine benutzerdefinierte CSS Datei \"obsidian.css\".",
-			"msg-confirm-override": "Bist Du Dir sicher, dass Du die Datei überschreiben willst? Du wirst die überschriebene CSS Datei dauerhaft verlieren. Bitte erstelle eine Sicherungsdatei falls notwendig.",
 			"msg-load-error": "Die Community Farbschemen konnten nicht geladen werden. Bitte überprüfe Deine Netzwerkverbindung.",
-			"msg-now-using-theme": "Du nutzt jetzt {{title}} als Dein CSS-Thema."
+			"msg-now-using-theme": "Du nutzt jetzt {{title}} als Dein CSS-Thema.",
+			"msg-deleted-theme": "Das Farbschema {{title}} wurde gelöscht.",
+			"msg-updated-theme": "Das Farbschema {{title}} wurde aktualisiert."
 		},
 		"command-palette": {
 			"name": "Befehlspalette",
@@ -882,7 +897,7 @@
 		"zettelkasten-prefixer": {
 			"name": "Zettelkasten Prefixer",
 			"desc": "Erstelle eine neue Notiz mit dem 12-stelligen Zettelkasten ID format YYYYMMDDHHII (Beispiel 202001010000).",
-			"short-name": "ZK note",
+			"short-name": "ZK Notiz",
 			"action-create-note": "Neue Zettelkasten Notiz erstellen",
 			"option-new-file-location": "Neuer Dateispeicherort",
 			"option-new-file-location-description": "Der Ordnerpfad zur Erstellung einer neuen Zettelkastennotiz.",
@@ -959,6 +974,10 @@
 		"translucency": {
 			"name": "Transparenter Fensterbereich",
 			"desc": "Aktiviert die Transparenz, um einen dreidimensionalen Effekt zu erzeugen. Empfelung: Nutze es am besten mit dem Dunklen Modus. Wird von Linux nicht unterstützt."
+		},
+		"slash-command": {
+			"name": "Slash-Befehle",
+			"desc": "Aktiviert die Möglichkeit, Slash-Befehle im Editor zu verwenden, wenn du den Schrägstrich eingibst."
 		},
 		"publish": {
 			"name": "Veröffentlichen",
@@ -1116,6 +1135,7 @@
 			"label-file-deleted": "Diese Datei wurde gelöscht",
 			"label-no-earlier-version": "Es gibt keine frühere Versionen dieser Datei.",
 			"label-empty-file": "Leer",
+			"label-setting-files": "Einstellungsdateien",
 			"label-deleted-files": "Gelöschte Dateien",
 			"label-click-to-see-history": "Klicke auf eine gelöschte Datei, um ihren Verlauf zu sehen.",
 			"label-create-remote-vault": "Remote-Vault erstellen",
@@ -1138,7 +1158,6 @@
 			"button-unlock-vault": "Vault freischalten",
 			"msg-verified-password": "Dein Passwort wurde erfolgreich verifiziert.",
 			"label-remote-vaults": "Deine Remote-Vaults",
-			"label-connected-vault": "Verbunden",
 			"label-vault-created-time": "Erstellt {{time}}",
 			"tooltip-delete-remote-vault": "Löschen",
 			"label-confirm-delete-remote-vault": "Löschen des Vaults bestätigen",
@@ -1181,7 +1200,7 @@
 			"button-purge-remote": "Bereinigen",
 			"tooltip-purge-remote": "Gelöschte Anhänge werden permanent vom Remote-Vault entfernt, um Speicherplatz zu sparen.",
 			"msg-purge-complete": "Bereinigung erfolgreich.",
-			"option-selective-sync": "Selektive Sync",
+			"option-selective-sync": "Selektive Synchronisation",
 			"option-excluded-folders": "Ausgeschlossene Ordner",
 			"option-excluded-folder-desc": "Vermeidet, dass bestimmte Ordner synchronisiert werden.",
 			"option-currently-excluded-folders": "Diese Ordner sind momentan ausgeschlossen:",
@@ -1223,7 +1242,10 @@
 			"label-number-of-folders-excluded": "{{folders}} sind momentan von der Synchronisation ausgeschlossen.",
 			"label-setup-connection": "Verbindung aufsetzen",
 			"label-now-connected-to-vault": "Du bist jetzt mit \"{{name}}\" verbunden.",
-			"button-start-syncing": "Synchronisation starten"
+			"button-start-syncing": "Synchronisation starten",
+			"label-confirm-merge-vault": "Vault-Kombination bestätigen",
+			"msg-vault-has-notes": "Dein lokaler Vault enthält bereits einige Notizen.",
+			"msg-merge-warning": "Wenn Du mit dem Remote-Vault \"{{name}}\" verbindest, werden Notizen in Deinem lokalen Vault mit den Notizen aus Deinem Remote-Vault kombiniert."
 		},
 		"file-recovery": {
 			"name": "Datenwiederherstellung",
