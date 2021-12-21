@@ -6,10 +6,17 @@
 		"plugin-options": "プラグインオプション",
 		"folder-path-example-placeholder": "例: フォルダ1/フォルダ2",
 		"file-path-example-placeholder": "例: フォルダ/ノート",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "エディタ",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "スペルチェック",
 			"option-spellcheck-description": "スペルチェッカーをオンにします。現在はアメリカ英語でのみ機能します。",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "スペルチェック辞書",
 			"spellcheck-dict-empty": "スペルチェック辞書が指定されていません。",
 			"option-readable-line-length": "読みやすい行の長さ",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "見出しの下の全テキストをフォールドします。",
 			"option-fold-indent": "インデントのフォールド",
 			"option-fold-indent-description": "リストのような同レベルのインデントの一部をフォールドできるようにします。",
-			"option-default-new-pane-mode": "新規ペインのデフォルトモード",
-			"option-default-new-pane-mode-description": "新規ペインを開く時のデフォルトモードを選択します。",
-			"option-default-new-pane-mode-source": "エディタ",
-			"option-default-new-pane-mode-preview": "プレビュー",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "行番号の表示",
 			"option-show-line-number-description": "ガターに行番号を表示します。",
 			"option-use-tabs": "タブの使用",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "タブを表すスペースの個数を決定します。",
 			"option-line-wrap": "行の折り返し",
 			"option-line-wrap-description": "長い行を折り返してウィンドウに収め、左右にスクロールしなくてすむようにします。",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "HTMLの自動変換",
 			"option-auto-convert-html-description": "ウェブページからのペーストとドラッグ&ドロップの際にHTMLをマークダウンへと自動的に変換します。変換せずにペーストするにはCtrl/Cmd+Shift+Vを使用してください。",
 			"option-vim-key-bindings": "Vimのキー設定",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Vimモードを有効化",
 			"msg-vim-mode-enabled": "正しいコマンドです。Vimモードが有効化されました。",
 			"msg-vim-mode-not-enabled": "コマンドが間違っています。保護のためVimモードは無効化されたままです。",
-			"msg-vim-mode-please-enter-command": "Vimモードを有効化するコマンドを入力してください"
+			"msg-vim-mode-please-enter-command": "Vimモードを有効化するコマンドを入力してください。",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "ファイルとリンク",
@@ -108,19 +129,25 @@
 			"option-font-size-action": "フォントサイズのクイック調整",
 			"option-font-size-action-description": "Ctrl+Scroll、もしくはトラックパッド上でピンチ＆ズームのジェスチャによってフォントサイズを調整できます。",
 			"option-themes": "テーマ",
-			"option-theme": "テーマ",
-			"option-theme-description": "使用するコミュニティテーマ。テーマは \"vault/.obsidian/themes/\" に保存されます。",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "なし",
 			"button-reload-themes": "テーマをリロード",
-			"msg-reloaded-themes": "カスタムCSSテーマをリロード。",
+			"msg-reloaded-themes": "カスタムCSSテーマをリロードしました。",
 			"button-open-themes-folder": "テーマフォルダを開く",
 			"option-css-snippets": "CSSスニペット",
 			"label-no-css-snippets-found": "スニペットフォルダにCSSスニペットが見つかりません。",
 			"no-snippet-description": "CSSスニペットは \"{{path}}\" に保存されています。",
 			"button-reload-snippets": "スニペットをリロード",
 			"button-open-snippets-folder": "スニペットフォルダを開く",
-			"msg-reloaded-snippets": "CSSスニペットをリロード。",
-			"option-toggle-snippet-description": "\"{{path}}\" のCSSスニペットを適用します。"
+			"msg-reloaded-snippets": "CSSスニペットをリロードしました。",
+			"option-toggle-snippet-description": "\"{{path}}\" のCSSスニペットを適用します。",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "ホットキー",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "Obsidianについて",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "ライセンスキー",
 			"license-key-placeholder": "ここにライセンスキーを入力",
 			"label-enter-commercial-license": "商用ライセンスキーを入力してください:",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "アプリは最新版です！",
 			"label-read-changelog": "変更履歴を閲覧する。",
 			"label-manual-install-required": "手動で最新版をインストールする必要があります。",
-			"label-download-link": "ここにダウンロードします。",
+			"label-download": "Download",
 			"label-new-version-ready": "最新バージョンがインストールできます。",
 			"label-relaunch-to-update": "更新のために再起動してください。",
 			"label-disabled-updates": "更新は無効になっています。",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "デフォルトの設定フォルダではなく別の設定フォルダを使用します。フォルダ名はドットで始まる必要があります。",
 			"option-config-location-warning": "設定フォルダはドットから始まる有効な名前である必要があります。",
 			"label-license": "ライセンス",
-			"label-your-commercial-license": "あなたの商用ライセンスキーは以下です: ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "\"{{company}}\" によって{{seats}}人が登録されています。{{expiry}}まで有効です。",
 			"label-validating-commercial-license": "検証しています…",
 			"label-invalid-commercial-license": "このライセンスは無効です: ",
 			"button-activate-commercial-license": "商用ライセンスを認証",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": "個人用ライセンスを使用中です。",
 			"label-thank-you-for-support": "ご支援ありがとうございます！",
 			"label-free-personal-license": "個人用ライセンス: 個人使用は無料です。"
@@ -206,14 +235,15 @@
 			"message-login-failed": "ログインに失敗しました、メールアドレスとパスワードを確認してください。",
 			"label-no-account": "アカウントを未取得ですか？",
 			"link-sign-up-now": "登録してください",
-			"message-get-community-badges": "ライセンスの取得後、24時間以内にコミュニティバッジを受け取れていない場合にはsupport@obsidian.mdまでご連絡ください。",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "商用ライセンスを取得するには、{{pricingPageLink}}を参照してください。"
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "プラグインリスト",
+			"option-search-plugin": "コアプラグインを検索",
+			"option-search-plugin-description": "プラグイン名または説明文でプラグインを検索します。",
+			"placeholder-search-plugin": "プラグインを検索…"
 		},
 		"third-party-plugin": {
 			"name": "コミュニティプラグイン",
@@ -236,6 +266,7 @@
 			"button-install": "インストール",
 			"button-enable": "有効化",
 			"button-disable": "無効化",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "結果が見つかりません。",
 			"msg-failed-to-load-manifest": "プラグインマニフェストの読み込みに失敗しました。",
 			"label-version": "バージョン: {{version}}",
@@ -245,8 +276,8 @@
 			"label-unsupported": "このプラグインはお使いのデバイスをサポートしていません。",
 			"button-update": "アップデート",
 			"label-no-readme": "このプラグインにはREADMEファイルがありません。",
-			"msg-installing-plugin": "プラグイン \"{{name}}\" をインストール中…",
-			"msg-failed-to-install-plugin": "プラグイン \"{{name}}\" のインストールに失敗。",
+			"msg-installing-plugin": "プラグイン \"{{name}}\" をインストールしています…",
+			"msg-failed-to-install-plugin": "プラグイン \"{{name}}\" のインストールに失敗しました。",
 			"msg-successfully-installed-plugin": "プラグイン \"{{name}}\" を正常にインストールしました。",
 			"label-installed-plugins": "インストールされたプラグイン",
 			"button-reload-plugins": "プラグインの再読み込み",
@@ -263,7 +294,7 @@
 			"msg-no-updates-found": "アップデートできるものは見つかりませんでした。",
 			"msg-updates-found": "{{count}}個のプラグインにアップデートが見つかりました。",
 			"msg-updates-found_plural": "{{count}}個のプラグインにアップデートが見つかりました。",
-			"msg-update-plugin": "version {{version}} にアップデートする",
+			"msg-update-plugin": "version {{version}} にアップデートします。",
 			"option-search-installed-plugin": "インストール済みのプラグインを検索",
 			"option-search-installed-plugin-description": "インストール済みのプラグインを名前や説明でフィルターします。",
 			"placeholder-search-installed-plugin": "プラグインを検索…",
@@ -271,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "ダウンロード数 (少ない順)",
 			"label-sort-release-date-new-to-old": "初めてのリリース時期 (新しい順)",
 			"label-sort-release-date-old-to-new": "初めてのリリース時期 (古い順)",
-			"label-sort-alphabetical": "プラグイン名 (アルファベット順)",
-			"label-sort-alphabetical-reverse": "プラグイン名 (アルファベット逆順)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "{{pluginCount}}を表示中:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "前へ",
 			"label-next": "次へ",
 			"label-all": "全体を検索",
@@ -373,7 +406,7 @@
 		"help": "ヘルプ",
 		"settings": "設定",
 		"drag-to-rearrange": "ドラッグして順番を変更",
-		"msg-switched-to-preview": "デフォルトの閲覧モードをプレビューに変更しました。",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "デフォルトの閲覧モードをエディタに変更しました。",
 		"msg-upgrade-installer": "この機能を使用するには、Obsidianのウェブサイトから入手できる最新のインストーラを使用して再インストールしてください。",
 		"tooltip-restore-default-settings": "デフォルト設定に戻す",
@@ -386,16 +419,25 @@
 		"msg-indexing": "Obsidianが保管庫のインデックスを作成しています…\nこれは一度だけ実行されます。\nいくつかの機能はこれが完了するまで利用できない可能性があります。",
 		"msg-indexing-complete": "インデックス作成が完了しました。",
 		"label-enter-to-create": "Enterキーで作成",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
 			"create-new-file": "新規ファイルを作成",
 			"go-to-file": "ファイルに移動する",
 			"see-recent-files": "最近のファイルを見る",
-			"close": "閉じる"
+			"close": "閉じる",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "編集(Ctrl/Cmd+クリックで新規ペインで編集)",
-			"preview-view": "プレビュー(Ctrl/Cmd+クリックで新規ペインで開く)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "検索…",
 			"replace": "置換…",
 			"edit": "編集",
@@ -414,7 +456,7 @@
 			"paste": "ペースト",
 			"paste-as-plain-text": "プレーンテキストとしてペースト",
 			"select-all": "すべてを選択",
-			"rename-heading": "Rename this heading..."
+			"rename-heading": "この見出しをリネーム…"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
@@ -475,13 +517,13 @@
 			"loading-workspace": "ワークスペースをロードしています…"
 		},
 		"mobile": {
-			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
-			"action-insert-text-into-file": "Insert text into {{filename}}",
-			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"action-import": "保管庫へインポート",
+			"action-choose-file-to-insert": "挿入するファイルを選択",
+			"action-insert-text-into-file": "{{filename}}にテキストを挿入",
+			"action-insert-link-into-file": "{{filename}}にリンクを挿入",
+			"msg-importing": "インポートしています…",
+			"msg-import-success": "インポートが成功しました。",
+			"msg-failed-to-import-file": "ファイル{{filename}}のインポートに失敗しました。"
 		}
 	},
 	"commands": {
@@ -493,8 +535,8 @@
 		"navigate-pane-left": "左のペインにフォーカス",
 		"navigate-pane-right": "右のペインにフォーカス",
 		"toggle-pin": "ピンをトグル",
-		"split-vertically": "縦方向にペインを分割",
-		"split-horizontally": "横方向にペインを分割",
+		"split-vertically": "ペインを縦に分割",
+		"split-horizontally": "ペインを横に分割",
 		"navigate-back": "戻る",
 		"navigate-forward": "進む",
 		"use-dark-mode": "ダークモードを使用",
@@ -503,7 +545,8 @@
 		"search-replace-current-file": "現在のファイルを検索し置換",
 		"open-settings": "設定を開く",
 		"open-help": "ヘルプを開く",
-		"toggle-preview": "編集とプレビューモードを切り替える",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "現在のファイルを削除",
 		"close-active-pane": "現在のペインを閉じる",
 		"close-other-panes": "他のすべてのペインを閉じる",
@@ -528,7 +571,11 @@
 		"copy-path": "ファイルパスをコピーする",
 		"copy-url": "Obsidian URIをコピー",
 		"export-pdf": "PDFにエクスポート",
-		"reload": "保存せずにアプリをリロード"
+		"reload": "保存せずにアプリをリロード",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "編集とプレビューモードを切り替える"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}の{{links}}に影響があります。",
@@ -551,11 +598,12 @@
 		"label-delete-file": "ファイルの削除",
 		"button-cancel": "キャンセル",
 		"button-done": "完了",
+		"button-continue": "Continue",
 		"preparing-pdf": "PDFを準備…",
 		"label-rename-file": "ファイル名を変更",
 		"label-new-name": "新規名称",
 		"msg-rename-success": "ファイル名の変更に成功しました。",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "見出しのリネーム"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -659,7 +707,7 @@
 			"label-tag-option-description": "タグを検索",
 			"label-line-option-description": "同一の行でキーワードを検索",
 			"label-section-option-description": "同一の見出しでキーワードを検索",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "\"{{keyword}}\"を検索"
 		},
 		"quick-switcher": {
 			"name": "クイックスイッチャー",
@@ -726,8 +774,8 @@
 			"button-new-group": "新規グループ",
 			"tooltip-click-to-change-drag-to-reorder": "クリックで色を変更\nドラッグでグループを並び替え",
 			"action-timelapse": "グラフのタイムラプスアニメーションを開始",
-			"tooltip-start-timelapse-animation": "Start timelapse animation",
-			"button-animate-timelapse": "Animate"
+			"tooltip-start-timelapse-animation": "タイムラプスアニメーションの開始",
+			"button-animate-timelapse": "アニメーション開始"
 		},
 		"backlinks": {
 			"name": "バックリンク",
@@ -743,7 +791,9 @@
 			"label-link-button-text": "リンク",
 			"tab-title": "{{displayText}}へのバックリンク",
 			"label-no-unlinked-mentions": "リンクされていないメンションは見つかりません。",
-			"ellipsis": "…"
+			"ellipsis": "…",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "アウトゴーイングリンク",
@@ -795,22 +845,18 @@
 			"name": "カスタムCSS",
 			"desc": "保管庫にある\"obsidian.css\"を読み込み、適用します。",
 			"setting-community-themes": "コミュニティテーマ",
-			"msg-fetching-themes": "コミュニティテーマのデータを取得中…",
+			"msg-fetching-themes": "コミュニティテーマのデータを取得しています…",
 			"prompt-filter": "フィルタ…",
 			"label-dark-theme-only": "ダークテーマのみ",
 			"label-light-theme-only": "ライトテーマのみ",
-			"label-preview": "プレビュー",
-			"label-stop-preview": "プレビュー停止",
 			"label-use": "使用",
-			"label-override": "上書き",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "GitHubで見る",
-			"msg-fetching-css": "CSSを取得中…",
-			"theme-title": "\"{{name}}\" by {{author}}",
-			"msg-override-theme": "現在のCSSを上書きします",
-			"msg-existing-theme": "すでにカスタムCSSファイル \"obsidian.css\" を利用しています。",
-			"msg-confirm-override": "上書きしますが良いですか？現在利用しているCSSファイルは失われます。必要ならバックアップしてください。",
-			"msg-load-error": "コミュニティテーマを読み込めませんでした。ネットワークの状態をご確認ください。",
-			"msg-now-using-theme": "{{title}}を新規CSSテーマにしました。"
+			"msg-load-error": "コミュニティテーマを読み込めませんでした。ネットワークの状態を確認してください。",
+			"msg-now-using-theme": "{{title}}を新規CSSテーマにしました。",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "コマンドパレット",
@@ -861,8 +907,8 @@
 			"action-open": "今日のデイリーノートを開く",
 			"action-open-previous": "前日のデイリーノートを開く",
 			"action-open-next": "翌日のデイリーノートを開く",
-			"action-insert-text": "Insert text into daily note",
-			"action-insert-link": "Insert link into daily note",
+			"action-insert-text": "デイリーノートにテキストを挿入",
+			"action-insert-link": "デイリーノートにリンクを挿入",
 			"msg-fail-format": "デイリーノートが作成できませんでした。\"{{format}}\" が有効な形式ではありません。",
 			"msg-fail-folder": "デイリーノートが作成できませんでした。\"{{folderOption}}\" フォルダが見つかりません。",
 			"msg-fail-template-file": "デイリーノートが作成できませんでした。テンプレートファイル \"{{template}}\" が見つかりません。",
@@ -960,6 +1006,17 @@
 			"name": "半透明ウィンドウ",
 			"desc": "半透明効果をオンにし、奥行き感を高めます。ダークモードでの使用に最適です。Linuxではサポートされていません。"
 		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
+		},
 		"publish": {
 			"name": "パブリッシュ",
 			"desc": "Obsidian Publishを用いてインターネット上にノートを公開します。",
@@ -983,7 +1040,7 @@
 			"button-create": "作成",
 			"msg-invalid-site-id": "サイトIDには、小文字、数字、ダッシュのみを含めることができます。",
 			"msg-site-id-in-use": "このサイトIDは使用中です。別のサイトIDを試してください。",
-			"msg-create-site-issue": "それはあなたのサイトを作成するときの問題でした。",
+			"msg-create-site-issue": "サイト作成時に問題が発生しています。",
 			"label-site-options": "サイトオプション",
 			"option-site-metadata": "メタデータ",
 			"option-site-components": "コンポーネント",
@@ -1112,10 +1169,11 @@
 			"label-copy-to-clipboard": "クリップボードにコピー",
 			"label-restore-this-version": "このバージョンを復元",
 			"msg-already-latest-version": "このバージョンはすでに最新です。",
-			"msg-restored-version": "{{time}}から正常にバージョンを復元しました",
+			"msg-restored-version": "{{time}}から正常にバージョンを復元しました。",
 			"label-file-deleted": "このファイルは削除されました",
 			"label-no-earlier-version": "このファイルには以前のバージョンが存在しません。",
 			"label-empty-file": "ファイルがありません",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "削除されたファイル",
 			"label-click-to-see-history": "削除されたファイルのバージョン履歴を閲覧するにはファイルをクリックしてください。",
 			"label-create-remote-vault": "リモート保管庫の作成",
@@ -1138,7 +1196,6 @@
 			"button-unlock-vault": "保管庫をアンロック",
 			"msg-verified-password": "パスワードの確認に成功しました。",
 			"label-remote-vaults": "リモート保管庫",
-			"label-connected-vault": "接続済み",
 			"label-vault-created-time": "作成日時 {{time}}",
 			"tooltip-delete-remote-vault": "削除",
 			"label-confirm-delete-remote-vault": "削除された保管庫の確認",
@@ -1174,9 +1231,13 @@
 			"option-sync-log": "同期アクティビティ",
 			"option-sync-log-desc": "デバッグのために最近の同期アクティビティを閲覧します。",
 			"button-view": "閲覧",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "保管庫の許容サイズ",
 			"option-over-size-desc": "保管庫は{{limit}}中の{{size}}です。",
-			"msg-largest-files": "最大ファイルの閲覧",
+			"msg-largest-files": "最大サイズのファイルを確認してください。",
 			"msg-largest-files-desc": "これらは最もスペースを取っているリモートファイルです。添付ファイルを削除した後、リモート保管庫のスペース開放のためにパージボタンを使用してください。",
 			"button-purge-remote": "パージ",
 			"tooltip-purge-remote": "スペース確保のためにリモート保管庫から削除された添付ファイルを永続的にパージします。",
@@ -1197,16 +1258,16 @@
 			"option-sync-unsupported": "他のすべてのタイプのファイルを同期",
 			"option-sync-unsupported-desc": "サポートされていないファイルタイプを同期します。",
 			"option-vault-config-sync": "保管庫の設定を同期",
-			"option-view-config-files": "Settings version history",
-			"option-view-config-files-desc": "View and restore version history of setting files.",
+			"option-view-config-files": "設定のバージョン履歴",
+			"option-view-config-files-desc": "設定ファイルのバージョンの閲覧と復元を行います。",
 			"option-sync-app": "メイン設定",
 			"option-sync-app-desc": "エディタ設定、ファイルとリンクの設定、カスタムホットキー等の同期を有効化します。",
 			"option-sync-appearance": "外観設定",
 			"option-sync-appearance-desc": "ダークモード、アクティブテーマ、有効化されているスニペットなどの外観の設定を同期するかどうかを決めます。",
 			"option-sync-appearance-data": "テーマとスニペット",
-			"option-sync-appearance-data-desc": "ダウンロードされたテーマとスニペットを同期するかどうかを決めす。有効化されているかどうかは外観の同期設定に依存します。",
-			"option-sync-hotkey": "Hotkeys",
-			"option-sync-hotkey-desc": "Sync custom hotkeys.",
+			"option-sync-appearance-data-desc": "ダウンロードされたテーマとスニペットを同期するかどうかを決めます。有効化されているかどうかは外観の同期設定に依存します。",
+			"option-sync-hotkey": "ホットキー",
+			"option-sync-hotkey-desc": "カスタムホットキーを同期するかどうかを決めます。",
 			"option-sync-core-plugin": "アクティブなコアプラグインのリスト",
 			"option-sync-core-plugin-desc": "有効化されているコアプラグインを同期するかどうかを決めます。",
 			"option-sync-core-plugin-data": "コアプラグイン設定",
@@ -1223,7 +1284,10 @@
 			"label-number-of-folders-excluded": "現在、{{folders}}が同期から除外されています。",
 			"label-setup-connection": "接続のセットアップ",
 			"label-now-connected-to-vault": "現在、\"{{name}}\" に接続されています。",
-			"button-start-syncing": "同期を開始"
+			"button-start-syncing": "同期を開始",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "ファイルリカバリー",
@@ -1275,7 +1339,7 @@
 			"instruction-append": "ノート下部に移動",
 			"instruction-prepend": "ノート上部に移動",
 			"msg-fail-to-fetch-template": "テンプレートファイルの取得に失敗しました: \"{{template}}\" が見つかりません。",
-			"msg-fail-to-find-heading": "Failed to find heading"
+			"msg-fail-to-find-heading": "見出しの発見に失敗しました。"
 		}
 	},
 	"nouns": {

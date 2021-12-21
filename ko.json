@@ -6,10 +6,17 @@
 		"plugin-options": "플러그인 설정",
 		"folder-path-example-placeholder": "예시: 폴더 1/폴더 2",
 		"file-path-example-placeholder": "예시: 폴더/파일",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "에디터",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "맞춤법 검사",
 			"option-spellcheck-description": "맞춤법 검사기를 킵니다. 현재 영어만 지원합니다.",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "맞춤법 사전",
 			"spellcheck-dict-empty": "맞춤법 사전이 비어있습니다.",
 			"option-readable-line-length": "글줄 길이 제한",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "제목, 헤더, 혹은 리스트 등을 접을수 있게 해줍니다.",
 			"option-fold-indent": "들여쓰기 접기",
 			"option-fold-indent-description": "목록과 같이 들여쓰기가 같은 내용을 접게 해줍니다.",
-			"option-default-new-pane-mode": "기본 새 패널 모드",
-			"option-default-new-pane-mode-description": "새로운 패널이 열리는 기본 방식.",
-			"option-default-new-pane-mode-source": "편집기",
-			"option-default-new-pane-mode-preview": "미리보기",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "줄 번호",
 			"option-show-line-number-description": "줄 번호를 보여줍니다.",
 			"option-use-tabs": "탭 키 쓰기",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "탭 한개당 스페이스의 갯수",
 			"option-line-wrap": "줄 바꿈",
 			"option-line-wrap-description": "긴 줄들을 좌우 스크롤 할 필요 없이 창에 들어가도록 자동으로 줄을 바꿔줍니다",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "HTML 자동변환",
 			"option-auto-convert-html-description": "글을 끌어서 붙여넣을 때 HTML을 자동으로 마크다운 형식으로 변환합니다. 변환을 하지 않기 위해서는 Ctrl/Cmd+Shift+V로 붙여넣기를 해주세요.",
 			"option-vim-key-bindings": "Vim 키 바인딩",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Vim을 활성화합니다.",
 			"msg-vim-mode-enabled": "명령어가 맞았습니다. Vim을 활성화합니다.",
 			"msg-vim-mode-not-enabled": "명령어가 틀렸습니다. Vim을 비활성화 상태로 놔둡니다.",
-			"msg-vim-mode-please-enter-command": "Vim 모드를 활성화 하기 위해 명령어를 쳐주세요."
+			"msg-vim-mode-please-enter-command": "Vim 모드를 활성화 하기 위해 명령어를 쳐주세요.",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "파일 & 링크",
@@ -108,8 +129,8 @@
 			"option-font-size-action": "폰트 크기 빠른 조정",
 			"option-font-size-action-description": "Ctrl + 스크롤 혹은 트랙패드 핀치-줌 제스쳐를 통한 폰트 크기 조정.",
 			"option-themes": "테마",
-			"option-theme": "테마",
-			"option-theme-description": "사용할 커뮤니티 테마를 골라주세요. 테마들은 \"vault/.obsidian/themes/\"에 저장되어 있습니다.",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "없음",
 			"button-reload-themes": "테마 새로고침",
 			"msg-reloaded-themes": "CSS 테마 새로고침 완료.",
@@ -120,7 +141,13 @@
 			"button-reload-snippets": "스니펫 새로고침",
 			"button-open-snippets-folder": "스니펫 폴더열기",
 			"msg-reloaded-snippets": "CSS 스니펫 새로고침 완료.",
-			"option-toggle-snippet-description": "\"{{path}}\"에 CSS 스니펫 적용하기."
+			"option-toggle-snippet-description": "\"{{path}}\"에 CSS 스니펫 적용하기.",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "단축키",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "앱 정보",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "제품 키",
 			"license-key-placeholder": "제품 키를 입력해주세요.",
 			"label-enter-commercial-license": "상업용 제품 키를 입력해주세요: ",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "가장 최신 버전입니다!",
 			"label-read-changelog": "변경기록 읽기.",
 			"label-manual-install-required": "최신 버전을 웹사이트에서 다운받아서 설치해주세요",
-			"label-download-link": "다운로드",
+			"label-download": "Download",
 			"label-new-version-ready": "새로운 버전이 설치할 준비가 되엇습니다. ",
 			"label-relaunch-to-update": "업데이트를 위해서 앱을 재시작해주세요",
 			"label-disabled-updates": "업데이트가 해제되어있습니다.",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "기본 Config 이외에 다른 폴더 사용하기. 폴더 이름이 . 으로 시작해야 합니다",
 			"option-config-location-warning": "Config 폴더는 . 으로 시작하는 유효한 폴더여야합니다.",
 			"label-license": "제품 키",
-			"label-your-commercial-license": "사용중인 상업용 제품 키: ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "회사: \"{{company}}\" , 사용자 수: {{seats}}, 유효기간: {{expiry}}.",
 			"label-validating-commercial-license": "확인 중...",
 			"label-invalid-commercial-license": "제품 키 불량: ",
 			"button-activate-commercial-license": "상업용 제품 키 등록하기",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " 개인 제품 키. ",
 			"label-thank-you-for-support": "후원해주셔서 감사합니다!",
 			"label-free-personal-license": "개인 제품 키: 개인 사용은 무료입니다."
@@ -206,7 +235,8 @@
 			"message-login-failed": "로그인에 실패했습니다, 이메일과 비밀번호를 다시 확인해주세요.",
 			"label-no-account": "계정이 없으신가요? ",
 			"link-sign-up-now": "회원가입",
-			"message-get-community-badges": "제품 키를 등록하고 24시간 이후에도 커뮤니티 뱃지를 받지 못하셨다면 support@obsidian.md로 문의해주세요",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "상업용 제품 키를 구하시고 싶으시면 {{pricingPageLink}}를 방문해주세요."
 		},
 		"core-plugin": {
@@ -236,6 +266,7 @@
 			"button-install": "설치",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "검색 결과 없음.",
 			"msg-failed-to-load-manifest": "플러그인 매니페스트를 로딩하는데 실패했습니다.",
 			"label-version": "버젼: {{version}}",
@@ -271,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "다운로드 수(낮은 수부터)",
 			"label-sort-release-date-new-to-old": "첫 출시 순(최신부터)",
 			"label-sort-release-date-old-to-new": "첫 출시 순(옛날부터)",
-			"label-sort-alphabetical": "플러그인 이름(이름 순서)",
-			"label-sort-alphabetical-reverse": "플러그인 이름(이름 역순)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "{{pluginCount}}개의 결과:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "이전",
 			"label-next": "다음",
 			"label-all": "모두 선택",
@@ -373,7 +406,7 @@
 		"help": "도움말",
 		"settings": "설정",
 		"drag-to-rearrange": "끌어서 재배치",
-		"msg-switched-to-preview": "기본 뷰어 모드를 프리뷰 모드로 바꿨습니다.",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "기본 뷰어 모드를 에디터 모드로 바꿨습니다.",
 		"msg-upgrade-installer": "이 기능을 사용하기 위해서는 웹사이트에서 인스톨러를 새로 다운받아서 설치해주세요.",
 		"tooltip-restore-default-settings": "기본값으로 되돌리기",
@@ -386,16 +419,25 @@
 		"msg-indexing": "Obsidian이 Vault를 인덱싱하는 중입니다...\n초기에 일회성으로 해당 작업이 필요합니다.\n해당 작업이 완료되기 이전까지 몇가지 기능을 사용할 수 없을 수 있습니다.",
 		"msg-indexing-complete": "인덱싱이 완료되었습니다.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "열려있는 파일이 없습니다.",
 			"create-new-file": "새 파일 만들기",
 			"go-to-file": "파일 열기",
 			"see-recent-files": "최근 파일 보기",
-			"close": "닫기"
+			"close": "닫기",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "편집 (Ctrl/Cmd+클릭 으로 새로운 패널에서 편집)",
-			"preview-view": "프리뷰 (Ctrl/Cmd+클릭으로 새로운 패널에서 열기)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "검색...",
 			"replace": "바꾸기...",
 			"edit": "편집",
@@ -503,7 +545,8 @@
 		"search-replace-current-file": "현재 파일에서 검색 & 바꾸기",
 		"open-settings": "설정 열기",
 		"open-help": "도움말 열기",
-		"toggle-preview": "편집/프리뷰 모드로 변환",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "현재 파일 삭제",
 		"close-active-pane": "활성화된 패널 닫기",
 		"close-other-panes": "나머지 패널들 닫기",
@@ -528,7 +571,11 @@
 		"copy-path": "파일 경로 복사",
 		"copy-url": "Obsidian url 복사하기",
 		"export-pdf": "PDF 생성하기",
-		"reload": "저장하지 않고 새로고침"
+		"reload": "저장하지 않고 새로고침",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "편집/프리뷰 모드로 변환"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -551,6 +598,7 @@
 		"label-delete-file": "파일 삭제",
 		"button-cancel": "취소",
 		"button-done": "완료",
+		"button-continue": "Continue",
 		"preparing-pdf": "PDF를 준비중입니다...",
 		"label-rename-file": "파일 이름 변경",
 		"label-new-name": "새 이름",
@@ -743,7 +791,9 @@
 			"label-link-button-text": "링크 걸기",
 			"tab-title": "{{displayText}}의 백링크",
 			"label-no-unlinked-mentions": "링크가 없는 언급이 없습니다",
-			"ellipsis": "..."
+			"ellipsis": "...",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "Outgoing Links",
@@ -799,18 +849,14 @@
 			"prompt-filter": "필터...",
 			"label-dark-theme-only": "다크 테마만",
 			"label-light-theme-only": "라이트 테마만",
-			"label-preview": "프리뷰",
-			"label-stop-preview": "프리뷰 그만두기",
 			"label-use": "사용하기",
-			"label-override": "덮어쓰기",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "GitHub에서 보기",
-			"msg-fetching-css": "CSS를 가져오는 중입니다...",
-			"theme-title": "{{author}}의 \"{{name}}\"",
-			"msg-override-theme": "현재 CSS 덮어쓰기",
-			"msg-existing-theme": "이미 \"obsidian.css\" 파일이 있습니다.",
-			"msg-confirm-override": "정말 덮어쓰시겠습니까? 기존에 있던 CSS파일을 잃습니다. 필요하시다면 꼭 백업해주세요.",
 			"msg-load-error": "커뮤니티 테마를 가져올수 없습니다, 네트워크 상태를 확인해주세요.",
-			"msg-now-using-theme": "{{title}}을 CSS 테마로 사용합니다."
+			"msg-now-using-theme": "{{title}}을 CSS 테마로 사용합니다.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "명령어 팔레트",
@@ -959,6 +1005,17 @@
 		"translucency": {
 			"name": "반투명 창",
 			"desc": "반투명한 효과를 켜서 깊이감을 향상시킵니다. 다크 모드에서 가장 좋은 효과를 볼 수 있습니다. 현재 리눅스에서는 지원하지 않습니다."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
 		},
 		"publish": {
 			"name": "출판",
@@ -1116,6 +1173,7 @@
 			"label-file-deleted": "파일이 삭제되었습니다.",
 			"label-no-earlier-version": "이 파일의 이전 버전이 없습니다.",
 			"label-empty-file": "없음",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "삭제된 파일",
 			"label-click-to-see-history": "파일의 역사를 볼려면 삭제된 파일을 클릭하세요",
 			"label-create-remote-vault": "리모트 보관함 만들기",
@@ -1138,7 +1196,6 @@
 			"button-unlock-vault": "보관함 열기",
 			"msg-verified-password": "비밀번호 확인에 성공했습니다.",
 			"label-remote-vaults": "원격 보관함들",
-			"label-connected-vault": "연결됨",
 			"label-vault-created-time": "생성시간: {{time}}",
 			"tooltip-delete-remote-vault": "삭제",
 			"label-confirm-delete-remote-vault": "보관함 삭제 확인",
@@ -1174,6 +1231,10 @@
 			"option-sync-log": "동기화 기록",
 			"option-sync-log-desc": "디버깅을 위해 최근 동기화 기록을 확인합니다.",
 			"button-view": "보기",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "보관함 크기 제한",
 			"option-over-size-desc": "보관함이 {{limit}}의 제한 중 {{size}}을 사용중입니다.",
 			"msg-largest-files": "가장 큰 파일 보기",
@@ -1223,7 +1284,10 @@
 			"label-number-of-folders-excluded": "{{folders}}는 동기화로부터 제외됩니다.",
 			"label-setup-connection": "연결 구축",
 			"label-now-connected-to-vault": "\"{{name}}\"에 연결되었습니다.",
-			"button-start-syncing": "동기화 시작"
+			"button-start-syncing": "동기화 시작",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "파일 복구",
