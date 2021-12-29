@@ -6,10 +6,17 @@
 		"plugin-options": "Pluginopties",
 		"folder-path-example-placeholder": "Voorbeeld: map 1/map 2",
 		"file-path-example-placeholder": "Voorbeeld: map/notitie",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "Editor",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "Spellingscontrole",
 			"option-spellcheck-description": "Activeert spellingscontrole. Dit werkt momenteel alleen voor Amerikaans Engels.",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "Woordenboek spellingscontrole",
 			"spellcheck-dict-empty": "Het woordenboek voor spellingscontrole is momenteel leeg.",
 			"option-readable-line-length": "Leesbare regellengte",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "Alles onder een kop kan opgevouwen worden.",
 			"option-fold-indent": "Opvouwen van inspringing",
 			"option-fold-indent-description": "Laat je een deel van hetzelfde ingesprongen stuk opvouwen, zoals een lijst.",
-			"option-default-new-pane-mode": "Standaard nieuw-paneel-modus",
-			"option-default-new-pane-mode-description": "De standaard modus waarin een nieuw paneel wordt geopend.",
-			"option-default-new-pane-mode-source": "Tekstbewerker",
-			"option-default-new-pane-mode-preview": "Voorbeeld",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "Toon regelnummer",
 			"option-show-line-number-description": "Toon regelnummer in de kantlijn.",
 			"option-use-tabs": "Gebruik inspringen",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "Het aantal spaties dat een tab breed is.",
 			"option-line-wrap": "Regelterugloop",
 			"option-line-wrap-description": "Laat lange regels teruglopen zodat ze in het venster passen, zonder van links naar rechts te hoeven scrollen.",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "Automatisch HTML omzetten",
 			"option-auto-convert-html-description": "Zet automatisch HTML naar Markdown om wanneer inhoud van een website via drag-and-drop ingevoegd wordt. Gebruik Ctrl/Cmd+Shift+V om te plakken zonder het om te zetten.",
 			"option-vim-key-bindings": "Vim-sneltoetsen",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Laat me Vim aanzetten",
 			"msg-vim-mode-enabled": "Opdracht is correct. Vim-modus is nu aan.",
 			"msg-vim-mode-not-enabled": "Opdracht is incorrect. Vim-mode blijft uit om jou te beschermen.",
-			"msg-vim-mode-please-enter-command": "Voer de opdracht in om Vim-modus aan te zetten"
+			"msg-vim-mode-please-enter-command": "Voer de opdracht in om Vim-modus aan te zetten",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "Bestanden & Links",
@@ -108,8 +129,8 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Thema's",
-			"option-theme": "Thema",
-			"option-theme-description": "Welk communitythema te gebruiken. Thema's worden bewaard in \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Geen",
 			"button-reload-themes": "Laad thema's opnieuw",
 			"msg-reloaded-themes": "Aangepaste CSS-thema's opnieuw geladen.",
@@ -120,7 +141,13 @@
 			"button-reload-snippets": "Herlaad fragmenten",
 			"button-open-snippets-folder": "Open de map met fragmenten",
 			"msg-reloaded-snippets": "Herladen CSS-fragmenten.",
-			"option-toggle-snippet-description": "Pas het CSS-fragment toe op \"{{path}}\"."
+			"option-toggle-snippet-description": "Pas het CSS-fragment toe op \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Sneltoetsen",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "Over",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Licentiesleutel",
 			"license-key-placeholder": "Uw licentiesleutel...",
 			"label-enter-commercial-license": "Voer uw commerciële licentiesleutel in:",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "Je applicatie is bijgewerkt!",
 			"label-read-changelog": "Lees het wijzigingslogboek.",
 			"label-manual-install-required": "U moet de nieuwste versie handmatig installeren.",
-			"label-download-link": "Download hier.",
+			"label-download": "Download",
 			"label-new-version-ready": "Een nieuwe versie is klaar om te worden geïnstalleerd. ",
 			"label-relaunch-to-update": "Herstart de applicatie om bij te werken.",
 			"label-disabled-updates": "Updates zijn uitgeschakeld.",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Licentie",
-			"label-your-commercial-license": "Uw commerciële licentiesleutel is ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Geregistreerd aan \"{{company}}\" voor {{seats}} gebruikers. Geldig tot {{expiry}}.",
 			"label-validating-commercial-license": "Valideren...",
 			"label-invalid-commercial-license": "Licentie ongeldig: ",
 			"button-activate-commercial-license": "Activeer commerciële licentie",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " persoonlijke licentie. ",
 			"label-thank-you-for-support": "Bedankt voor je ondersteuning!",
 			"label-free-personal-license": "Persoonlijke licentie: vrij te gebruiken voor eigen gebruik."
@@ -206,7 +235,8 @@
 			"message-login-failed": "Inloggen mislukt, controleer uw e-mail en wachtwoord nogmaals.",
 			"label-no-account": "Heeft u geen account? ",
 			"link-sign-up-now": "Schrijf je nu in",
-			"message-get-community-badges": "Stuur voor community-badges een e-mail naar support@obsidian.md als je ze 24 uur na het verkrijgen van je licentie nog niet hebt ontvangen.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Voor een commerciële licentie gaat u naar {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +266,7 @@
 			"button-install": "Installeren",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Geen resultaten gevonden.",
 			"msg-failed-to-load-manifest": "Kan het plug-in-overzicht niet laden.",
 			"label-version": "Versie: {{version}}",
@@ -271,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "Download count (low to high)",
 			"label-sort-release-date-new-to-old": "First released time (new to old)",
 			"label-sort-release-date-old-to-new": "First released time (old to new)",
-			"label-sort-alphabetical": "Plugin name (A to Z)",
-			"label-sort-alphabetical-reverse": "Plugin name (Z to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Showing {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Vorige",
 			"label-next": "Volgende",
 			"label-all": "Alles",
@@ -373,7 +406,7 @@
 		"help": "Help",
 		"settings": "Instellingen",
 		"drag-to-rearrange": "Sleep om te herschikken",
-		"msg-switched-to-preview": "Standaard weergavemodus omgeschakeld naar voorbeschouwing.",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "Standaard weergavemodus omgeschakeld naar editor.",
 		"msg-upgrade-installer": "Om deze functie te gebruiken, moet u deze opnieuw installeren met het nieuwste installatieprogramma dat beschikbaar is op onze website.",
 		"tooltip-restore-default-settings": "Standaard instellingen terugzetten",
@@ -386,16 +419,25 @@
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indexing complete.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "Er is geen bestand geopend",
 			"create-new-file": "Maak een nieuw bestand",
 			"go-to-file": "Ga naar Bestand",
 			"see-recent-files": "Zie recente bestanden",
-			"close": "Sluiten"
+			"close": "Sluiten",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Bewerk (Ctrl/Cmd+Klik om te bewerken in een nieuw venster)",
-			"preview-view": "Voorbeschouwen (Ctrl/Cmd+Klik om een nieuw venster te openen)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "Vinden...",
 			"replace": "Vervangen...",
 			"edit": "Bewerken",
@@ -503,7 +545,8 @@
 		"search-replace-current-file": "Search & replace in current file",
 		"open-settings": "Open settings",
 		"open-help": "Open help",
-		"toggle-preview": "Toggle edit/preview mode",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "Delete current file",
 		"close-active-pane": "Close active pane",
 		"close-other-panes": "Close all other panes",
@@ -528,7 +571,11 @@
 		"copy-path": "Copy file path",
 		"copy-url": "Copy obsidian url",
 		"export-pdf": "Export to PDF",
-		"reload": "Reload app without saving"
+		"reload": "Reload app without saving",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "Toggle edit/preview mode"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -551,6 +598,7 @@
 		"label-delete-file": "Delete file",
 		"button-cancel": "Cancel",
 		"button-done": "Done",
+		"button-continue": "Continue",
 		"preparing-pdf": "Preparing PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "New name",
@@ -743,7 +791,9 @@
 			"label-link-button-text": "Link",
 			"tab-title": "Backlinks for {{displayText}}",
 			"label-no-unlinked-mentions": "No unlinked mentions found.",
-			"ellipsis": "..."
+			"ellipsis": "...",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "Outgoing Links",
@@ -799,18 +849,14 @@
 			"prompt-filter": "Filter...",
 			"label-dark-theme-only": "Dark themes only",
 			"label-light-theme-only": "Light themes only",
-			"label-preview": "Preview",
-			"label-stop-preview": "Stop preview",
 			"label-use": "Use",
-			"label-override": "Override",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Visit on GitHub",
-			"msg-fetching-css": "Fetching CSS...",
-			"theme-title": "\"{{name}}\" by {{author}}",
-			"msg-override-theme": "Override current CSS",
-			"msg-existing-theme": "You already have the \"obsidian.css\" custom CSS file.",
-			"msg-confirm-override": "Are you sure you want to override it? You will lose your original CSS file. Please make a back up if necessary.",
 			"msg-load-error": "Could not load community themes, please check your network.",
-			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Command palette",
@@ -959,6 +1005,17 @@
 		"translucency": {
 			"name": "Translucent window",
 			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
 		},
 		"publish": {
 			"name": "Publish",
@@ -1116,6 +1173,7 @@
 			"label-file-deleted": "This file was deleted",
 			"label-no-earlier-version": "There was no earlier versions of this file.",
 			"label-empty-file": "Empty",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Deleted files",
 			"label-click-to-see-history": "Click on a deleted file to see its history.",
 			"label-create-remote-vault": "Create remote vault",
@@ -1138,7 +1196,6 @@
 			"button-unlock-vault": "Unlock vault",
 			"msg-verified-password": "Successfully verified your password.",
 			"label-remote-vaults": "Your remote vaults",
-			"label-connected-vault": "Connected",
 			"label-vault-created-time": "Created {{time}}",
 			"tooltip-delete-remote-vault": "Delete",
 			"label-confirm-delete-remote-vault": "Confirm delete vault",
@@ -1174,6 +1231,10 @@
 			"option-sync-log": "Sync activity",
 			"option-sync-log-desc": "View recent sync activities for debugging.",
 			"button-view": "View",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "Vault size over limit",
 			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
 			"msg-largest-files": "View largest files",
@@ -1223,7 +1284,10 @@
 			"label-number-of-folders-excluded": "{{folders}} are currently excluded from being synced.",
 			"label-setup-connection": "Setup connection",
 			"label-now-connected-to-vault": "You're now connected to \"{{name}}\".",
-			"button-start-syncing": "Start syncing"
+			"button-start-syncing": "Start syncing",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "File recovery",

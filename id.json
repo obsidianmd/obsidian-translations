@@ -6,10 +6,17 @@
 		"plugin-options": "Pengaturan plugin",
 		"folder-path-example-placeholder": "Contoh: folder 1/folder 2",
 		"file-path-example-placeholder": "Contoh: folder/file",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "Editor",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "Pemeriksa ejaan",
 			"option-spellcheck-description": "Aktifkan pemeriksa ejaan. Sementara hanya berfungsi untuk bahasa Inggris Amerika.",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "Kamus pemeriksa ejaan",
 			"spellcheck-dict-empty": "Kamus pemeriksa ejaan tidak tersedia.",
 			"option-readable-line-length": "Panjang baris yang dapat dibaca",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "Memungkinkan Anda untuk melipat konten di bawah judul.",
 			"option-fold-indent": "Lipat inden",
 			"option-fold-indent-description": "Memungkinkan Anda untuk melipat bagian indentasi yang sederet, seperti deret daftar.",
-			"option-default-new-pane-mode": "Mode  default panel baru",
-			"option-default-new-pane-mode-description": "Mode default ketika panel baru dibuka.",
-			"option-default-new-pane-mode-source": "Editor",
-			"option-default-new-pane-mode-preview": "Pratinjau",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "Tampilkan nomor baris",
 			"option-show-line-number-description": "Tampilkan nomor baris di tepian.",
 			"option-use-tabs": "Gunakan tab",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "Jumlah spasi yang setara dengan tab.",
 			"option-line-wrap": "Pembungkusan teks",
 			"option-line-wrap-description": "Bungkus panjang baris teks agar sesuai dengan ukuran jendela, tanpa harus menggulir dari kiri ke kanan.",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "Auto convert HTML",
 			"option-auto-convert-html-description": "Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.",
 			"option-vim-key-bindings": "Vim key bindings",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Izinkan saya aktifkan Vim",
 			"msg-vim-mode-enabled": "Perintah benar. Mode Vim sekarang aktif.",
 			"msg-vim-mode-not-enabled": "Perintah salah. Mode Vim masih nonaktif untuk melindungi Anda.",
-			"msg-vim-mode-please-enter-command": "Masukkan perintah untuk aktifkan mode Vim"
+			"msg-vim-mode-please-enter-command": "Masukkan perintah untuk aktifkan mode Vim",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "File & Link",
@@ -108,8 +129,8 @@
 			"option-font-size-action": "Pengaturan cepat ukuran font",
 			"option-font-size-action-description": "Atur ukuran font menggunakan Ctrl + scroll, atau menggunakan gestur jepit perbesar trackpad.",
 			"option-themes": "Tema",
-			"option-theme": "Tema",
-			"option-theme-description": "Tema komunitas mana yang digunakan. Tema tersimpan di \"vault/.obsidian/tema/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Tidak ada",
 			"button-reload-themes": "Muat ulang tema",
 			"msg-reloaded-themes": "Tema CSS kustom termuat ulang.",
@@ -120,7 +141,13 @@
 			"button-reload-snippets": "Mualt ulang cuplikan",
 			"button-open-snippets-folder": "Buka folder cuplikan",
 			"msg-reloaded-snippets": "Cuplikan CSS termuat ulang.",
-			"option-toggle-snippet-description": "Terapkan cuplikan CSS di \"{{path}}\"."
+			"option-toggle-snippet-description": "Terapkan cuplikan CSS di \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Pintasan",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "Tentang",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Kunci lisensi",
 			"license-key-placeholder": "Kunci lisensi Anda...",
 			"label-enter-commercial-license": "Masukkan kunci lisensi komersial Anda:",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "Aplikasi Anda sudah terbaru!",
 			"label-read-changelog": "Baca log perubahan.",
 			"label-manual-install-required": "Anda harus menginstal versi terbaru secara manual.",
-			"label-download-link": "Unduh di sini.",
+			"label-download": "Download",
 			"label-new-version-ready": "Versi terbaru siap untuk diinstal. ",
 			"label-relaunch-to-update": "Mulai ulang aplikasi untuk memperbarui.",
 			"label-disabled-updates": "Pembaruan dinonaktifkan.",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "Gunakan folder konfigurasi yang berbeda dari yang default. Harus dimulai dengan titik.",
 			"option-config-location-warning": "Lokasi konfigurasi harus bernama folder yang valid yang mana dimulai dengan titik.",
 			"label-license": "Lisensi",
-			"label-your-commercial-license": "Lisensi komersial Anda adalah ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Terdaftar atas \"{{company}}\" untuk {{seats}} pengguna. Valid hingga {{expiry}}.",
 			"label-validating-commercial-license": "Memvalidasi...",
 			"label-invalid-commercial-license": "Lisensi tidak valid: ",
 			"button-activate-commercial-license": "Aktifkan lisensi komersial",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " lisensi personal. ",
 			"label-thank-you-for-support": "Terima kasih atas dukungan Anda!",
 			"label-free-personal-license": "Lisensi personal: gratis untuk penggunaan personal."
@@ -206,7 +235,8 @@
 			"message-login-failed": "Gagal masuk, periksa kembali email dan kata sandi Anda.",
 			"label-no-account": "Belum memiliki akun? ",
 			"link-sign-up-now": "Daftar sekarang",
-			"message-get-community-badges": "Untuk lencana komunitas, kirim email support@obsidian.md jika Anda belum menerimanya dalam waktu 24 jam setelah mendapatkan lisensi Anda.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Untuk mendapatkan lisensi komersial, kunjungi {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +266,7 @@
 			"button-install": "Instal",
 			"button-enable": "Aktifkan",
 			"button-disable": "Matikan",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Tidak ada hasil.",
 			"msg-failed-to-load-manifest": "Gagal memuat manifes plugin.",
 			"label-version": "Versi: {{version}}",
@@ -271,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "Jumlah unduh (rendah ke tinggi)",
 			"label-sort-release-date-new-to-old": "Waktu awal rilis (baru ke lama)",
 			"label-sort-release-date-old-to-new": "Waktu awal rilis (lama ke baru)",
-			"label-sort-alphabetical": "Nama plugin (A ke Z)",
-			"label-sort-alphabetical-reverse": "Nama plugin (Z ke A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Menampilkan {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Sebelumnya",
 			"label-next": "Berikutnya",
 			"label-all": "Semua",
@@ -373,7 +406,7 @@
 		"help": "Bantuan",
 		"settings": "Pengaturan",
 		"drag-to-rearrange": "Seret untuk menata",
-		"msg-switched-to-preview": "Mengganti mode tampilan default ke pratinjau.",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "Mengganti mode tampilan default ke editor.",
 		"msg-upgrade-installer": "Untuk menggunakan fitur ini, instal ulang dengan penginstal terbaru yang tersedia di situs web kami.",
 		"tooltip-restore-default-settings": "Pulihkan pengaturan default",
@@ -386,16 +419,25 @@
 		"msg-indexing": "Obsidian sedang mengindeks vault Anda...\nIni hanya dilakukan sekali.\nBeberapa fungsi mungkin tidak tersedia hingga ini selesai.",
 		"msg-indexing-complete": "Mengindeks selesai.",
 		"label-enter-to-create": "Enter untuk buat",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "Tidak ada file terbuka",
 			"create-new-file": "Buat file baru",
 			"go-to-file": "Buka file",
 			"see-recent-files": "Lihat file terakhir",
-			"close": "Tutup"
+			"close": "Tutup",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Edit (Ctrl/Cmd+Click untuk edit di panel baru)",
-			"preview-view": "Pratinjau (Ctrl/Cmd+Click untuk buka di panel baru)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "Cari...",
 			"replace": "Ganti...",
 			"edit": "Edit",
@@ -503,7 +545,8 @@
 		"search-replace-current-file": "Cari dan ganti dalam file",
 		"open-settings": "Buka pengaturan",
 		"open-help": "Buka bantuan",
-		"toggle-preview": "Ubah mode edit/pratinjau",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "Hapus file",
 		"close-active-pane": "Tutup panel aktif",
 		"close-other-panes": "Tutup semua panel lain",
@@ -528,7 +571,11 @@
 		"copy-path": "Salin jalur file",
 		"copy-url": "Salin url Obsidian",
 		"export-pdf": "Ekspor ke PDF",
-		"reload": "Muat ulang aplikasi tanpa menyimpan"
+		"reload": "Muat ulang aplikasi tanpa menyimpan",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "Ubah mode edit/pratinjau"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -551,6 +598,7 @@
 		"label-delete-file": "Hapus file",
 		"button-cancel": "Batal",
 		"button-done": "Selesai",
+		"button-continue": "Continue",
 		"preparing-pdf": "Menyiapkan PDF...",
 		"label-rename-file": "Ubah nama file",
 		"label-new-name": "Nama baru",
@@ -743,7 +791,9 @@
 			"label-link-button-text": "Hubungkan",
 			"tab-title": "Backlink pada {{displayText}}",
 			"label-no-unlinked-mentions": "Tidak ditemukan sebutan yang belum terhubung.",
-			"ellipsis": "..."
+			"ellipsis": "...",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "Link Keluar",
@@ -799,18 +849,14 @@
 			"prompt-filter": "Filter...",
 			"label-dark-theme-only": "Tema gelap saja",
 			"label-light-theme-only": "Tema terang saja",
-			"label-preview": "Pratinjau",
-			"label-stop-preview": "Hentikan pratinjau",
 			"label-use": "Gunakan",
-			"label-override": "Tumpuk",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Kunjungi ke GitHub",
-			"msg-fetching-css": "Mengambil CSS...",
-			"theme-title": "\"{{name}}\" oleh {{author}}",
-			"msg-override-theme": "Menimpa CSS saat ini",
-			"msg-existing-theme": "Anda sudah memiliki file CSS kustom \"obsidian.css\".",
-			"msg-confirm-override": "Anda yakin ingin menimpanya? Anda akan kehilangan file CSS asli Anda. Buat cadangan apabila perlu.",
 			"msg-load-error": "Tidak dapat memuat tema komunitas, periksa koneksi internet Anda.",
-			"msg-now-using-theme": "Anda sekarang menggunakan {{title}} sebagai tema CSS."
+			"msg-now-using-theme": "Anda sekarang menggunakan {{title}} sebagai tema CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Palet perintah",
@@ -959,6 +1005,17 @@
 		"translucency": {
 			"name": "Jendela transparan",
 			"desc": "Aktifkan efek transparan untuk memberi kesan lebih dalam. Paling baik digunakan dengan mode gelap. Tidak didukung di Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
 		},
 		"publish": {
 			"name": "Publikasi",
@@ -1116,6 +1173,7 @@
 			"label-file-deleted": "File ini telah dihapus",
 			"label-no-earlier-version": "Tidak ada versi yang lebih baru dari file ini.",
 			"label-empty-file": "Kosong",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "File yang dihapus",
 			"label-click-to-see-history": "Klik pada sebuah file yang telah terhapus untuk melihat riwayatnya.",
 			"label-create-remote-vault": "Buat remote vault",
@@ -1138,7 +1196,6 @@
 			"button-unlock-vault": "Buka vault",
 			"msg-verified-password": "Kata sandi Anda berhasil diverifikasi.",
 			"label-remote-vaults": "Vault jauh Anda",
-			"label-connected-vault": "Terhubung",
 			"label-vault-created-time": "Dibuat {{time}}",
 			"tooltip-delete-remote-vault": "Hapus",
 			"label-confirm-delete-remote-vault": "Konfirmasi hapus vault",
@@ -1174,6 +1231,10 @@
 			"option-sync-log": "Aktivitas sinkronisasi",
 			"option-sync-log-desc": "Tampilkan aktivitas sinkronisasi terakhir untuk penelusuran kesalahan.",
 			"button-view": "Tampilkan",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "Ukuran vault melebihi batas",
 			"option-over-size-desc": "Vault Anda {{size}} melebihi {{limit}}.",
 			"msg-largest-files": "Tampilkan file-file terbersar",
@@ -1223,7 +1284,10 @@
 			"label-number-of-folders-excluded": "{{folders}} sekrang dikecualikan dari sinkronisasi.",
 			"label-setup-connection": "Setelan koneksi",
 			"label-now-connected-to-vault": "Anda sekarang terhubung ke \"{{name}}\".",
-			"button-start-syncing": "Mulai sinkronisasi"
+			"button-start-syncing": "Mulai sinkronisasi",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Pemulihan file",

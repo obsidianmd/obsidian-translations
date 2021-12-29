@@ -6,10 +6,17 @@
 		"plugin-options": "Preferenca për shtojcat",
 		"folder-path-example-placeholder": "Shembull: dosja 1/dosja 2",
 		"file-path-example-placeholder": "Shembull: dosja/faqja-me-shënime",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "Përpunimi i tekstit",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "Kontrolli i shqiptimit",
 			"option-spellcheck-description": "Aktivizon kontrollin e shqiptimit. Për momentin funksionon vetëm për Anglishten (US).",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "Fjalor për kontrollin e shqiptimit",
 			"spellcheck-dict-empty": "Fjalori i shqiptimeve është bosh.",
 			"option-readable-line-length": "Gjatësia e lexueshme e rreshtit",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "Ju lejon të përmbyllni elementet nën një titull apo nëntitull.",
 			"option-fold-indent": "Përmbyllje (folding) sipas dhëmbëzimit (indentation)",
 			"option-fold-indent-description": "Ju lejon të përmbyllni elemente që kanë të njëjtin nivel dhëmbëzimi.",
-			"option-default-new-pane-mode": "Panel i ri \"default\"",
-			"option-default-new-pane-mode-description": "Mënyra standarde e hapjes së një paneli të ri.",
-			"option-default-new-pane-mode-source": "Për përpunim",
-			"option-default-new-pane-mode-preview": "I afishuar",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "Shfaqje e numrave të rreshtave",
 			"option-show-line-number-description": "Shfaq numrat e rreshtave në anë të faqes.",
 			"option-use-tabs": "Dhëmbëzim (indentim) me \"tabs\"",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "Numri i hapësirave të cilat përbëjnë një \"tab\".",
 			"option-line-wrap": "Thyerje e rreshtit",
 			"option-line-wrap-description": "Thyen rreshtat e gjatë që të arrijnë të shfaqën në dritare, pa qenë nevoja për \"Scrolling\" nga e majta në të djathtë.",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "Konvertim automatik i HTML",
 			"option-auto-convert-html-description": "Konverton automatikisht HTML në Markdown në çastin e kopjimit apo \"drag-and-drop\" nga faqe Web-i. Përdorni Ctrl/Cmd+Shift+V për të kopjuar pa këtë konvertim.",
 			"option-vim-key-bindings": "Lidhjet e tastierës për Vim",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Aktivizo Vim",
 			"msg-vim-mode-enabled": "Komanda është e saktë. \"Vim mode\" është tani aktiv.",
 			"msg-vim-mode-not-enabled": "Komanda është e pasaktë. \"Vim mode\" mbetet jo-aktiv për të mirën tuaj.",
-			"msg-vim-mode-please-enter-command": "Ju lutemi të shtypni komandën e kërkuar për të aktivizuar \"Vim mode\""
+			"msg-vim-mode-please-enter-command": "Ju lutemi të shtypni komandën e kërkuar për të aktivizuar \"Vim mode\"",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "Shënimet dhe linqet",
@@ -108,8 +129,8 @@
 			"option-font-size-action": "Përshtatje e shpejtë e përmasës së gërmave",
 			"option-font-size-action-description": "Përshtat përmasën e gërmave duke përdorur Ctrl + Scroll, ose duke përdorur gjestet `trackpad pinch-zoom`.",
 			"option-themes": "Motifet",
-			"option-theme": "Motif",
-			"option-theme-description": "Përcakton cilat motife të komunitetit përdoren. Motifet ruhen në \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Asnjë",
 			"button-reload-themes": "Ringarko motifet",
 			"msg-reloaded-themes": "Motifet CSS u ringarkuan.",
@@ -120,7 +141,13 @@
 			"button-reload-snippets": "Ringarko copëzat",
 			"button-open-snippets-folder": "Hap dosjen e copëzave",
 			"msg-reloaded-snippets": "Ringarko copëzat CSS.",
-			"option-toggle-snippet-description": "Apliko copëzat CSS nga \"{{path}}\"."
+			"option-toggle-snippet-description": "Apliko copëzat CSS nga \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Shkurtime komandash",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "Rreth produktit",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Çelësi i licensës",
 			"license-key-placeholder": "Çelësi juaj i licensës...",
 			"label-enter-commercial-license": "Shkruani çelësin tuaj të licensës komerciale",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "Aplikacioni juaj është i përditësuar!",
 			"label-read-changelog": "Lexo proçesverbalin e ndryshimeve.",
 			"label-manual-install-required": "Ju duhet të instaloni manualisht versionin më të fundit.",
-			"label-download-link": "Shkarko ketu.",
+			"label-download": "Download",
 			"label-new-version-ready": "Një version i ri është gati për t'u instaluar. ",
 			"label-relaunch-to-update": "Rihap aplikacionin për të kryer përditësimin.",
 			"label-disabled-updates": "Përditësimet janë të çaktivizuara.",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "Përdor një dosje tjetër konfigurimesh nga ai i parashikuar. Emri i dosjes duhet të fillojë me një pikë.",
 			"option-config-location-warning": "Vendndodhja e dosjes duhet të përkojë me një dosje aktuale në sistemin tuaj, emri i të cilës fillon me një pikë.",
 			"label-license": "Licensa",
-			"label-your-commercial-license": "Çelësi juaj për licensën komerciale është ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Regjistruar nën \"{{company}}\" për {{seats}} përdorues. E vlefshme deri më {{expiry}}.",
 			"label-validating-commercial-license": "Duke verifikuar...",
 			"label-invalid-commercial-license": "Licensa nuk është e vlefshme: ",
 			"button-activate-commercial-license": "Aktivizo licensën komerciale",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " licensë personale. ",
 			"label-thank-you-for-support": "Ju falenderojmë për mbështetjen!",
 			"label-free-personal-license": "Licensa personale: falas për përdorim personal."
@@ -206,8 +235,15 @@
 			"message-login-failed": "Hyrja dështoi, ju lutem kontrolloni përsëri email-in dhe fjalëkalimin",
 			"label-no-account": "Nuk keni një llogari? ",
 			"link-sign-up-now": "Regjistrohu tani",
-			"message-get-community-badges": "Për stemat e komunitetit, dërgoni një email në support@obsidian.md nëse nuk i keni marrë akoma pas 24 orësh nga marrja e licensës.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Për të marrë një licensë komerciale, vizitoni {{pricingPageLink}}."
+		},
+		"core-plugin": {
+			"plugin-list": "Plugin list",
+			"option-search-plugin": "Search core plugins",
+			"option-search-plugin-description": "Filter plugins by name or description.",
+			"placeholder-search-plugin": "Search plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Shtojca të treta",
@@ -230,6 +266,7 @@
 			"button-install": "Instalo",
 			"button-enable": "Aktivizo",
 			"button-disable": "Çaktivizo",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Nuk ka rezultate.",
 			"msg-failed-to-load-manifest": "Manifesti i shtojcës nuk mund të ngarkohet.",
 			"label-version": "Versioni: {{version}}",
@@ -265,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "Numri i shkarkimeve (nga më i ulëti te më i larti)",
 			"label-sort-release-date-new-to-old": "Data e parë e publikimit (nga më e reja te më e vjetra)",
 			"label-sort-release-date-old-to-new": "Data e parë e publikimit (nga më e vjetra te më e reja)",
-			"label-sort-alphabetical": "Emri i shtojcës (Nga A te Z)",
-			"label-sort-alphabetical-reverse": "Emri i shtojcës (Nga Z te A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Të shfaqura {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -308,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Para",
 			"label-next": "Pas",
 			"label-all": "Të gjitha",
@@ -367,7 +406,7 @@
 		"help": "Ndihmë",
 		"settings": "Konfigurime",
 		"drag-to-rearrange": "Tërhiq për të riorganizuar",
-		"msg-switched-to-preview": "Pamja standarde u ndryshua nga përpunim teksti në afishim.",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "Pamja standarde u ndryshua në pamjen e përpunimit të tekstit.",
 		"msg-upgrade-installer": "Për t'a përdorur këtë funksionalitet, ju lutemi të ri-instaloni programin me instaluesin më të fundit të disponueshëm në faqen tonë.",
 		"tooltip-restore-default-settings": "Rikthe konfigurimet standarde",
@@ -380,16 +419,25 @@
 		"msg-indexing": "Obsidian po indekson kasafortën tuaj...\nKy proces ndodh normalisht vetëm një herë.\nDisa funksionalitete mund të mos jenë te disponueshme për sa kohë ky proces nuk ka përfunduar.",
 		"msg-indexing-complete": "Indeksimi u krye.",
 		"label-enter-to-create": "Shtyp Enter për të krijuar një dokument shënimesh",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "Nuk ka shënime të hapur",
 			"create-new-file": "Krijo një dokument të ri shënimesh",
 			"go-to-file": "Shko te dokumenti",
 			"see-recent-files": "Shiko dokumentat e përdorur së fundmi",
-			"close": "Mbyll"
+			"close": "Mbyll",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Përpuno (Ctrl/Cmd+Click për të përpunuar në një panel të ri)",
-			"preview-view": "Afisho (Ctrl/Cmd+Click për të afishuar shënimet në një panel të ri)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "Gjej...",
 			"replace": "Zëvendëso...",
 			"edit": "Përpuno",
@@ -407,7 +455,8 @@
 			"cut": "Prit (Cut)",
 			"paste": "Ngjit (Paste)",
 			"paste-as-plain-text": "Ngjit si tekst i thjeshtë (plain text)",
-			"select-all": "Përzgjidh të gjitha"
+			"select-all": "Përzgjidh të gjitha",
+			"rename-heading": "Rename this heading..."
 		},
 		"tooltip": {
 			"click-to-expand": "Kliko për të shpalosur",
@@ -466,7 +515,17 @@
 			"msg-failed-to-load-vault": "Ngarkimi i kasafortës dështoi: ",
 			"loading-cache": "Duke ngarkuar cache-n...",
 			"loading-workspace": "Duke ngarkuar hapësirën e punës (workspace)..."
-		}	},
+		},
+		"mobile": {
+			"action-import": "Import into vault",
+			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-insert-text-into-file": "Insert text into {{filename}}",
+			"action-insert-link-into-file": "Insert link into {{filename}}",
+			"msg-importing": "Importing...",
+			"msg-import-success": "Import success",
+			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+		}
+	},
 	"commands": {
 		"save-file": "Ruaj dokumentin aktual",
 		"follow-cursor-link": "Ndiq lidhjen nën kursor",
@@ -486,7 +545,8 @@
 		"search-replace-current-file": "Kërko & zëvendëso në dokumentin aktiv",
 		"open-settings": "Hap konfigurimet",
 		"open-help": "Ndihmë për konfigurimet",
-		"toggle-preview": "Ndërro mes pamjeve të përpunimit dhe afishimit",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "Fshi dokumentin aktiv",
 		"close-active-pane": "Mbyll panelin aktiv",
 		"close-other-panes": "Mbyll të gjitha panelet e tjera",
@@ -511,7 +571,11 @@
 		"copy-path": "Kopjo vendndodhjen e dokumentit",
 		"copy-url": "Kopjo adresën (url) Obsidian",
 		"export-pdf": "Eksporto në PDF",
-		"reload": "Rihap aplikacionin pa ruajtur ndryshimet"
+		"reload": "Rihap aplikacionin pa ruajtur ndryshimet",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "Ndërro mes pamjeve të përpunimit dhe afishimit"
 	},
 	"dialogue": {
 		"label-link-affected": "Kjo ndikon në {{links}} në {{files}}.",
@@ -534,10 +598,12 @@
 		"label-delete-file": "Fshi dokumentin",
 		"button-cancel": "Anullo",
 		"button-done": "Kryer",
+		"button-continue": "Continue",
 		"preparing-pdf": "Duke përgatitur PDF...",
 		"label-rename-file": "Riemërto dokumentin",
 		"label-new-name": "Emri i ri",
-		"msg-rename-success": "Riemërtimi u krye me sukses."
+		"msg-rename-success": "Riemërtimi u krye me sukses.",
+		"label-rename-heading": "Rename heading"
 	},
 	"plugins": {
 		"name": "Shtojcat",
@@ -640,7 +706,8 @@
 			"label-file-name-option-description": "përputh me emrin e një dokumenti",
 			"label-tag-option-description": "kërko sipas etiketimeve",
 			"label-line-option-description": "kërko fjalë kyç në të njejtin rresht",
-			"label-section-option-description": "kërko fjalë kyç nën të njëjtin titull"
+			"label-section-option-description": "kërko fjalë kyç nën të njëjtin titull",
+			"menu-opt-search-for": "Search for \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Ndërruesi i shpejtë",
@@ -706,7 +773,9 @@
 			"tooltip-delete-graph": "Fshi grupimin",
 			"button-new-group": "Krijo një grupim të ri",
 			"tooltip-click-to-change-drag-to-reorder": "Kliko për të ndryshuar ngjyrën\nTërhiq për të riorganizuar grupimet",
-			"action-timelapse": "Nis animimin `timelapse` të grafikut"
+			"action-timelapse": "Nis animimin `timelapse` të grafikut",
+			"tooltip-start-timelapse-animation": "Start timelapse animation",
+			"button-animate-timelapse": "Animate"
 		},
 		"backlinks": {
 			"name": "Lidhjet kthyese",
@@ -722,7 +791,9 @@
 			"label-link-button-text": "Lidhje",
 			"tab-title": "Lidhje kthyese për {{displayText}}",
 			"label-no-unlinked-mentions": "Nuk ka përmendje të pa referuara.",
-			"ellipsis": "..."
+			"ellipsis": "...",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "Lidhje për jashtë",
@@ -778,18 +849,14 @@
 			"prompt-filter": "Filtro...",
 			"label-dark-theme-only": "Vetëm motife të errëta",
 			"label-light-theme-only": "Vetëm motife të ndritshme",
-			"label-preview": "Afisho",
-			"label-stop-preview": "Ndalo afishimin",
 			"label-use": "Përdor",
-			"label-override": "Mbivendos",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Shiko në GitHub",
-			"msg-fetching-css": "Duke marrë CSS...",
-			"theme-title": "\"{{name}}\" nga {{author}}",
-			"msg-override-theme": "Mbivendos CSS aktuale",
-			"msg-existing-theme": "Ju keni aktualisht një dokument \"obsidian.css\" të modifikuar",
-			"msg-confirm-override": "A jeni të sigurt që doni t'a mbivendosni? Ju mund të humnbni dokumentin origjinal të CSS. Bëni një `backup` nëse duhet.",
 			"msg-load-error": "Motifet e komunitetit nuk mund të merreshin, ju lutemi kontrolloni lidhjen me internetin",
-			"msg-now-using-theme": "Tani ju po përdorni {{title}} si motif CSS."
+			"msg-now-using-theme": "Tani ju po përdorni {{title}} si motif CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Paleta e komandave",
@@ -840,6 +907,8 @@
 			"action-open": "Hap shënimet e sotme",
 			"action-open-previous": "Hap shënimet e djeshme",
 			"action-open-next": "Hap shënimet e nesërme",
+			"action-insert-text": "Insert text into daily note",
+			"action-insert-link": "Insert link into daily note",
 			"msg-fail-format": "Shënimet e sotme nuk u krijuan dot. \"{{format}}\" nuk është format i vlefshëm.",
 			"msg-fail-folder": "Shënimet e sotme nuk u krijuan dot. Dosja \"{{folderOption}}\" nuk u gjend.",
 			"msg-fail-template-file": "Shënimet e sotme nuk u krijuan dot. Dokumenti shabllon(template) \"{{template}}\" nuk u gjend.",
@@ -936,6 +1005,17 @@
 		"translucency": {
 			"name": "Dritare e tejdukshme",
 			"desc": "Aktivizon tejdukshmërinë për të ofruar. Më e përshtatshme për t'u përdorur me motifin e errët. Nuk ofrohet në Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
 		},
 		"publish": {
 			"name": "Publiko",
@@ -1093,6 +1173,7 @@
 			"label-file-deleted": "Ky dokument është fshirë",
 			"label-no-earlier-version": "Nuk ka version më të hershëm të ketij dokumenti.",
 			"label-empty-file": "Bosh",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Dokumente të fshirë",
 			"label-click-to-see-history": "Kliko në një dokument të fshirë për t'i shikuar historikun.",
 			"label-create-remote-vault": "Krijo një kasafortë të largët (remote)",
@@ -1115,7 +1196,6 @@
 			"button-unlock-vault": "Çkyç kasafortën",
 			"msg-verified-password": "Fjalëkalimi juaj u verifikua me sukses.",
 			"label-remote-vaults": "Kasafortat e largëta",
-			"label-connected-vault": "E lidhur",
 			"label-vault-created-time": "Krijuar më {{time}}",
 			"tooltip-delete-remote-vault": "Fshi",
 			"label-confirm-delete-remote-vault": "Konfirmo fshirjen e kasafortës",
@@ -1151,6 +1231,10 @@
 			"option-sync-log": "Aktiviteti i sinkronizimeve",
 			"option-sync-log-desc": "Shiko sinkronizimet e kohëve të fundit për të kryer rregullime.",
 			"button-view": "Shiko",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "Përmasa e kasafortës mbi limit",
 			"option-over-size-desc": "Kasaforta juaj është {{size}} mbi limitin {{limit}}.",
 			"msg-largest-files": "Shfaq dokumentet më të mëdha",
@@ -1174,12 +1258,16 @@
 			"option-sync-unsupported": "Sinkronizo gjithë tipet e tjera",
 			"option-sync-unsupported-desc": "Sinkronizon tipe materialesh që nuk suportohen.",
 			"option-vault-config-sync": "Sinkronizimi i konfigurimeve të kasafortës",
+			"option-view-config-files": "Settings version history",
+			"option-view-config-files-desc": "View and restore version history of setting files.",
 			"option-sync-app": "Konfigurimet kryesore",
 			"option-sync-app-desc": "Aktivizo për të sinkronizuar konfigurimet e përpunimit të tekstit, dokumenteve & lidhjeve, komandave të konfiguara, etc.",
 			"option-sync-appearance": "Konfigurimet e pamjes",
 			"option-sync-appearance-desc": "Sinkronizo konfigurimet e pamjes si motifi i errët, motifet aktuale dhe copëzat aktive të stilizimit.",
 			"option-sync-appearance-data": "Motife dhe copëza stilizimi",
 			"option-sync-appearance-data-desc": "Sinkronizon motifet e shkarkuara dhe copëzat e stilizimit. Janë ose jo aktive varet nga opsioni i mëparshëm.",
+			"option-sync-hotkey": "Hotkeys",
+			"option-sync-hotkey-desc": "Sync custom hotkeys.",
 			"option-sync-core-plugin": "Lista e shtojcave aktive bazë",
 			"option-sync-core-plugin-desc": "Sinkronizo cilat shtojca bazë janë aktive",
 			"option-sync-core-plugin-data": "Konfigurimet e shtojcave aktive",
@@ -1196,7 +1284,10 @@
 			"label-number-of-folders-excluded": "{{folders}} aktualisht anashkalohen në sinkronizim.",
 			"label-setup-connection": "Konfiguro lidhjen",
 			"label-now-connected-to-vault": "Ju tani jeni të lidhur me \"{{name}}\".",
-			"button-start-syncing": "Nis sinkronizimin"
+			"button-start-syncing": "Nis sinkronizimin",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Rekuperimi i dokumenteve",
@@ -1247,7 +1338,8 @@
 			"command-extract-heading": "Ekstrakto këtë titull...",
 			"instruction-append": "për t'a vendosur në fund",
 			"instruction-prepend": "për t'a vendosur në krye",
-			"msg-fail-to-fetch-template": "Dokumenti shabllon nuk u mor dot: \"{{template}}\" nuk gjendet."
+			"msg-fail-to-fetch-template": "Dokumenti shabllon nuk u mor dot: \"{{template}}\" nuk gjendet.",
+			"msg-fail-to-find-heading": "Failed to find heading"
 		}
 	},
 	"nouns": {

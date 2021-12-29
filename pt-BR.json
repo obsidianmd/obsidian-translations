@@ -6,10 +6,17 @@
 		"plugin-options": "Configurações de plugin",
 		"folder-path-example-placeholder": "Exemplo: pasta 1/pasta 2",
 		"file-path-example-placeholder": "Exemplo: pasta/nota",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "Editor",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "Verificação ortográfica",
 			"option-spellcheck-description": "Ativa a verificação ortográfica. Atualmente só funciona para o Inglês (EUA).",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "Dicionário de verificação ortográfica",
 			"spellcheck-dict-empty": "O dicionário de verificação ortográfica está vazio.",
 			"option-readable-line-length": "Margens de tamanho confortável",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "Permite que você esconda todo o conteúdo de uma seção.",
 			"option-fold-indent": "Esconder indentação",
 			"option-fold-indent-description": "Permite que você esconda uma parte sob a mesma indentação, como listas.",
-			"option-default-new-pane-mode": "Default new pane mode",
-			"option-default-new-pane-mode-description": "The default mode a new pane gets opened in.",
-			"option-default-new-pane-mode-source": "Editor",
-			"option-default-new-pane-mode-preview": "Prévia",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "Mostrar o número da linha",
 			"option-show-line-number-description": "Mostra os números das linhas.",
 			"option-use-tabs": "Usar tabulações",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "O número de espaços ao qual uma tabulação é equivalente.",
 			"option-line-wrap": "Quebra automática de linha",
 			"option-line-wrap-description": "Divide linhas longas a fim de caber na tela, sem ser necessário rolar horizontalmente.",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "Conversor automático de HTML",
 			"option-auto-convert-html-description": "Automaticamente converte HTML para Markdown quando colado ou arrastado de páginas web. Use Ctrl/Cmd+Shift+V para colar sem conversão.",
 			"option-vim-key-bindings": "Atalhos de teclado Vim",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Ativar modo Vim",
 			"msg-vim-mode-enabled": "Modo Vim ativado.",
 			"msg-vim-mode-not-enabled": "Comando errado. Modo Vim desativado para sua proteção.",
-			"msg-vim-mode-please-enter-command": "Use o comando para entrar no modo Vim."
+			"msg-vim-mode-please-enter-command": "Use o comando para entrar no modo Vim.",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "Arquivos & Links",
@@ -108,8 +129,8 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Temas",
-			"option-theme": "Tema",
-			"option-theme-description": "Qual tema comunitário usar. Temas são guardados em \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "Nenhum",
 			"button-reload-themes": "Recarregar temas",
 			"msg-reloaded-themes": "Temas CSS personalizados recarregados.",
@@ -120,7 +141,13 @@
 			"button-reload-snippets": "Recarregar fragmentos",
 			"button-open-snippets-folder": "Abrir pasta de fragmentos",
 			"msg-reloaded-snippets": "Fragmentos CSS recarregados.",
-			"option-toggle-snippet-description": "Aplica fragmento CSS em \"{{path}}\"."
+			"option-toggle-snippet-description": "Aplica fragmento CSS em \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Atalhos",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "Sobre",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Chave de licença",
 			"license-key-placeholder": "Sua chave de licença...",
 			"label-enter-commercial-license": "Insira sua chave de licença comercial:",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "Seu programa está atualizado!",
 			"label-read-changelog": "Leia o que mudou.",
 			"label-manual-install-required": "Você deve instalar a última versão manualmente.",
-			"label-download-link": "Baixe aqui.",
+			"label-download": "Download",
 			"label-new-version-ready": "Uma nova versão está pronta para ser instalada. ",
 			"label-relaunch-to-update": "Reiniciar o programa para atualizar.",
 			"label-disabled-updates": "Atualizações estão desativadas.",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Licença",
-			"label-your-commercial-license": "Sua chave de licença comercial é ",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "Registrado para \"{{company}}\" para {{seats}} usuários. Válido até {{expiry}}.",
 			"label-validating-commercial-license": "Validando...",
 			"label-invalid-commercial-license": "Licença inválida: ",
 			"button-activate-commercial-license": "Ativar licença comercial",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " licença pessoal. ",
 			"label-thank-you-for-support": "Obrigado pelo seu apoio!",
 			"label-free-personal-license": "Licença pessoal: grátis para uso pessoal."
@@ -206,7 +235,8 @@
 			"message-login-failed": "Login falhou, Verifique se seu e-mail e senha estão corretos.",
 			"label-no-account": "Não tem uma conta? ",
 			"link-sign-up-now": "Crie uma conta agora",
-			"message-get-community-badges": "Para insígnias de comunidade, mande um e-mail para support@obsidian.md caso você não tenhas as recebido em até 24 horas após obter sua licença.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "Para obter uma licença comercial, visite {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +266,7 @@
 			"button-install": "Instalar",
 			"button-enable": "Ativar",
 			"button-disable": "Desativar",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Nenhum resultado encontrado.",
 			"msg-failed-to-load-manifest": "Falha ao carregar a descrição do plugin.",
 			"label-version": "Versão: {{version}}",
@@ -271,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "Número de downloads (menor para o maior)",
 			"label-sort-release-date-new-to-old": "Data de lançamento (novo para antigo)",
 			"label-sort-release-date-old-to-new": "Data de lançamento (antigo para novo)",
-			"label-sort-alphabetical": "Nome do plugin (A-Z)",
-			"label-sort-alphabetical-reverse": "Nome do plugin (Z-A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Mostrando {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Anterior",
 			"label-next": "Próximo",
 			"label-all": "Tudo",
@@ -373,7 +406,7 @@
 		"help": "Ajuda",
 		"settings": "Configurações",
 		"drag-to-rearrange": "Arraste para reorganizar",
-		"msg-switched-to-preview": "Modo de visualização padrão alterado para visualização.",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "Modo de visualização padrão alterado para edição.",
 		"msg-upgrade-installer": "Para usar este recurso, instale novamente com o instalador mais recente disponível em nosso site.",
 		"tooltip-restore-default-settings": "Restaurar configurações padrão",
@@ -386,16 +419,25 @@
 		"msg-indexing": "Obsidian está indexando seu cofre...\nIsso só acontecerá uma vez.\nAlgumas funcionalidades não estarão disponíveis até isto que esteja completo.",
 		"msg-indexing-complete": "Indexação completa.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "Nenhum arquivo está aberto",
 			"create-new-file": "Criar novo arquivo",
 			"go-to-file": "Ir para o arquivo",
 			"see-recent-files": "Ver arquivos recentes",
-			"close": "Fechar"
+			"close": "Fechar",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Editar (Ctrl/Cmd+Click para editar em um novo painel)",
-			"preview-view": "Visualização (Ctrl/Cmd+Click para abrir em um novo painel)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "Encontrar...",
 			"replace": "Substituir...",
 			"edit": "Editar",
@@ -503,7 +545,8 @@
 		"search-replace-current-file": "Localizar e substituir no arquivo atual",
 		"open-settings": "Abrir configurações",
 		"open-help": "Abrir ajuda",
-		"toggle-preview": "Alternar modo de visualização",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "Excluir o arquivo atual",
 		"close-active-pane": "Fechar painel ativo",
 		"close-other-panes": "Fechar os demais paineis",
@@ -528,7 +571,11 @@
 		"copy-path": "Copiar caminho do arquivo",
 		"copy-url": "Copiar url do Obsidian",
 		"export-pdf": "Exportar para PDF",
-		"reload": "Reload app without saving"
+		"reload": "Reload app without saving",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "Alternar modo de visualização"
 	},
 	"dialogue": {
 		"label-link-affected": "Isto irá afetar {{links}} em {{files}}.",
@@ -551,6 +598,7 @@
 		"label-delete-file": "Excluir arquivo",
 		"button-cancel": "Cancelar",
 		"button-done": "Pronto",
+		"button-continue": "Continue",
 		"preparing-pdf": "Preparando o PDF...",
 		"label-rename-file": "Rename file",
 		"label-new-name": "Novo nome",
@@ -743,7 +791,9 @@
 			"label-link-button-text": "Link",
 			"tab-title": "Links inversos para {{displayText}}",
 			"label-no-unlinked-mentions": "Nenhuma menção não-vinculada encontrada.",
-			"ellipsis": "..."
+			"ellipsis": "...",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "Outgoing Links",
@@ -799,18 +849,14 @@
 			"prompt-filter": "Filtrar...",
 			"label-dark-theme-only": "Apenas temas escuros",
 			"label-light-theme-only": "Apenas temas claros",
-			"label-preview": "Visualizar",
-			"label-stop-preview": "Parar visualização",
 			"label-use": "Usar",
-			"label-override": "Sobrescrever",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "Visitar no GitHub",
-			"msg-fetching-css": "Buscando CSS...",
-			"theme-title": "\"{{name}}\" por {{author}}",
-			"msg-override-theme": "Sobrescrever CSS atual",
-			"msg-existing-theme": "Você já tem o arquivo CSS personalizado \"obsidian.css\".",
-			"msg-confirm-override": "Você tem certeza que deseja sobrescrever o arquivo? Você vai perder o seu arquivo CSS original. Faça um backup caso necessário.",
 			"msg-load-error": "Não foi possível carregar os temas da comunidade, verifique sua conexão à internet.",
-			"msg-now-using-theme": "Agora você está usando {{title}} como seu tema CSS."
+			"msg-now-using-theme": "Agora você está usando {{title}} como seu tema CSS.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Paleta de comandos",
@@ -959,6 +1005,17 @@
 		"translucency": {
 			"name": "Janela translúcida",
 			"desc": "Ativa o efeito translúcido para realçar a percepção de profundidade. Aprimorado para o modo escuro. Não suportado no Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
 		},
 		"publish": {
 			"name": "Publicar",
@@ -1116,6 +1173,7 @@
 			"label-file-deleted": "Este arquivo foi excluído",
 			"label-no-earlier-version": "Não há versões anteriores deste arquivo",
 			"label-empty-file": "Vazio",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Arquivos excluído",
 			"label-click-to-see-history": "Clique em um arquivo excluído para ver o seu histórico.",
 			"label-create-remote-vault": "Criar um cofre remoto",
@@ -1138,7 +1196,6 @@
 			"button-unlock-vault": "Desbloquear cofre",
 			"msg-verified-password": "Sua senha foi verificada com sucesso.",
 			"label-remote-vaults": "Seus cofres remotos",
-			"label-connected-vault": "Conectado",
 			"label-vault-created-time": "Criado em {{time}}",
 			"tooltip-delete-remote-vault": "Deletar",
 			"label-confirm-delete-remote-vault": "Confirme a exclusão do cofre",
@@ -1174,6 +1231,10 @@
 			"option-sync-log": "Atividade da sincronização",
 			"option-sync-log-desc": "Ver as recentes atividades de sincronização para depuração.",
 			"button-view": "Ver",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "Tamanho do cofre acima do limite",
 			"option-over-size-desc": "Seu cofre está em {{size}} de {{limit}}.",
 			"msg-largest-files": "Ver os maiores arquivos",
@@ -1223,7 +1284,10 @@
 			"label-number-of-folders-excluded": "{{folders}} estão atualmente excluídos da sincronização.",
 			"label-setup-connection": "Configurar conexão",
 			"label-now-connected-to-vault": "Agora você está conectado em \"{{name}}\".",
-			"button-start-syncing": "Começar a sincronizar"
+			"button-start-syncing": "Começar a sincronizar",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "Recuperação de arquivos",

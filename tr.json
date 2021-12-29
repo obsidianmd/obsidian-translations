@@ -6,10 +6,17 @@
 		"plugin-options": "Eklenti seçenekleri",
 		"folder-path-example-placeholder": "Örnek: klasör 1/klasör 2",
 		"file-path-example-placeholder": "Örnek: klasör/not",
+		"msg-restart-required": "Changing this option requires a restart to take effect.",
 		"editor": {
 			"name": "Editör",
+			"section-general": "General",
+			"section-behavior": "Behavior",
+			"section-display": "Display",
 			"option-spellcheck": "İmla denetimi",
 			"option-spellcheck-description": "İmla denetimini açar. Şimdilik yalnızca İngilizce(ABD) için çalışıyor.",
+			"spellcheck-languages": "Spellcheck languages",
+			"spellcheck-languages-description": "Choose the languages for the spellchecker to use.",
+			"spellcheck-languages-mac-description": "The native spellchecker will automatically detect the language being used for you on macOS.",
 			"spellcheck-dict": "İmla denetimi sözlüğü",
 			"spellcheck-dict-empty": "İmla denetimi sözlüğü boş.",
 			"option-readable-line-length": "Okunabilir satır uzunluğu",
@@ -28,10 +35,16 @@
 			"option-fold-heading-description": "Başlıklar altındaki herşeyi katlayabilmeni sağlar.",
 			"option-fold-indent": "İçerlemeleri katla",
 			"option-fold-indent-description": "Liste vb. çoklu içerliklerin yalnızca bir kısmını katlayabilmeni sağlar.",
-			"option-default-new-pane-mode": "Default new pane mode",
-			"option-default-new-pane-mode-description": "The default mode a new pane gets opened in.",
-			"option-default-new-pane-mode-source": "Editör",
-			"option-default-new-pane-mode-preview": "Ön izleme",
+			"option-default-new-pane-view": "Default new pane view",
+			"option-default-new-pane-view-description": "The default view a new pane gets opened in.",
+			"option-default-new-pane-view-editing": "Editing view",
+			"option-default-new-pane-view-reading": "Reading view",
+			"option-default-editing-mode": "Default editing mode",
+			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
+			"option-default-editing-mode-source": "Source mode",
+			"option-default-editing-mode-live-preview": "Live Preview",
+			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "Satır numaralarını göster",
 			"option-show-line-number-description": "Satır numaralarını en altta göster.",
 			"option-use-tabs": "Boşluklar için tab kullan",
@@ -40,6 +53,8 @@
 			"option-tab-size-description": "Number of spaces a tab is equivalent to.",
 			"option-line-wrap": "Line wrap",
 			"option-line-wrap-description": "Wrap long lines to fit within the window, without having to scroll from left to right.",
+			"option-rtl": "Right-to-left (RTL)",
+			"option-rtl-description": "Sets the text direction of notes to display in right-to-left.",
 			"option-auto-convert-html": "HTML'e otomatik olarak çevir",
 			"option-auto-convert-html-description": "İnternet sitelerinden yapıştırırken ya da sürekle bırak yapılırken otomatik olarak HTML'den Markdown'a dönüştür. Dönüştürmeden kullanmak için Ctrl/Cmd+Shift+V'ı kullan.",
 			"option-vim-key-bindings": "Vim tuş ayarları",
@@ -54,7 +69,13 @@
 			"button-confirm-enable-vim": "Vim'i açmama izin ver",
 			"msg-vim-mode-enabled": "Komut doğru. Vim modu açıldı.",
 			"msg-vim-mode-not-enabled": "Komut yanlış. Sizi korumak için Vim modu kapatıldı.",
-			"msg-vim-mode-please-enter-command": "Lütfen Vim modunu açmak için komutu giriniz."
+			"msg-vim-mode-please-enter-command": "Lütfen Vim modunu açmak için komutu giriniz.",
+			"button-turn-on-live-preview": "Turn on Live Preview",
+			"label-live-preview-update": "Live Preview update",
+			"label-live-preview-update-1": "With this update, Obsidian now offers the new Live Preview mode.",
+			"label-live-preview-update-2": "Live Preview lets you preview your notes in the same view that you're writing them in, so you don't need to keep switching between Edit and Preview.",
+			"label-live-preview-update-3": "You can see Live Preview in action below:",
+			"label-live-preview-update-4": "After turning it on, you can turn it off anytime if you decide you don't like it."
 		},
 		"file": {
 			"name": "Dosyalar & Linkler",
@@ -108,8 +129,8 @@
 			"option-font-size-action": "Quick font size adjustment",
 			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
 			"option-themes": "Temalar",
-			"option-theme": "Tema",
-			"option-theme-description": "Which community theme to use. Themes are stored in \"vault/.obsidian/themes/\".",
+			"option-manage-themes-description": "Manage installed themes and browse community themes.",
+			"option-theme-button-manage": "Manage",
 			"option-choice-none": "None",
 			"button-reload-themes": "Temaları yeniden yükle",
 			"msg-reloaded-themes": "Reloaded custom CSS themes.",
@@ -120,7 +141,13 @@
 			"button-reload-snippets": "Reload snippets",
 			"button-open-snippets-folder": "Open snippets folder",
 			"msg-reloaded-snippets": "Reloaded CSS snippets.",
-			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\"."
+			"option-toggle-snippet-description": "Apply CSS snippet at \"{{path}}\".",
+			"label-installed-themes": "Installed themes",
+			"label-screenshot-unavailable": "Screenshot unavailable",
+			"label-default-theme": "Default",
+			"tooltip-click-to-enlarge": "Click to enlarge",
+			"button-update": "Update",
+			"label-currently-selected": "Selected"
 		},
 		"hotkeys": {
 			"name": "Kısayollar",
@@ -135,6 +162,7 @@
 		},
 		"about": {
 			"name": "Hakkında",
+			"label-commercial-license": "Commercial license",
 			"label-license-key": "Lisans anahtarı",
 			"license-key-placeholder": "Lisans anahtarın...",
 			"label-enter-commercial-license": "Ticari lisans anahatarınızı girin:",
@@ -146,7 +174,7 @@
 			"label-up-to-date": "Programınız güncel!",
 			"label-read-changelog": "Değişiklik raporunu oku.",
 			"label-manual-install-required": "Son versiyonu manuel olarak yüklemelisin.",
-			"label-download-link": "Buradan indir.",
+			"label-download": "Download",
 			"label-new-version-ready": "Yeni versiyon yüklemeye hazır.",
 			"label-relaunch-to-update": "Güncellemek için programı yeniden başlat.",
 			"label-disabled-updates": "Güncellemeler kapalı.",
@@ -170,11 +198,12 @@
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Lisans",
-			"label-your-commercial-license": "Ticari lisansınız:",
+			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
 			"label-commercial-license-info": "{{seats}} kullanıcı için \"{{company}}\"'e kayıtlı.{{expiry}}'e kadar geçerli.",
 			"label-validating-commercial-license": "Doğrulanıyor...",
 			"label-invalid-commercial-license": "Lisans hatalı: ",
 			"button-activate-commercial-license": "Ticari lisansı aktive et",
+			"button-remove-commercial-license": "Remove",
 			"label-personal-license": " kişisel lisans. ",
 			"label-thank-you-for-support": "Desteğiniz için teşekkürler!",
 			"label-free-personal-license": "Kişisel lisans: kişisel kullanım için ücretsiz."
@@ -206,7 +235,8 @@
 			"message-login-failed": "Giriş başarısız, lütfen email ve şifrenizi kontrol edin.",
 			"label-no-account": "Hesabınız yok mu? ",
 			"link-sign-up-now": "Hemen kaydolun",
-			"message-get-community-badges": "For community badges, please email support@obsidian.md if you haven't received them 24 hours after obtaining your license.",
+			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
+			"message-get-community-badges-link-text": "this guide",
 			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		},
 		"core-plugin": {
@@ -236,6 +266,7 @@
 			"button-install": "İndir",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
+			"button-copy-share-link": "Copy share link",
 			"label-no-results-found": "Sonuç Bulunamadı.",
 			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
 			"label-version": "Versiyon: {{version}}",
@@ -271,8 +302,8 @@
 			"label-sort-downloads-low-to-high": "Download count (low to high)",
 			"label-sort-release-date-new-to-old": "Yayınlanma zamanı (yeniden eskiye)",
 			"label-sort-release-date-old-to-new": "Yayınlanma zamanı (eskiden yeniye)",
-			"label-sort-alphabetical": "Eklenti Adı (A to Z)",
-			"label-sort-alphabetical-reverse": "Eklenti Adı (Z to A)",
+			"label-sort-name-alphabetical": "Name (A to Z)",
+			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
 			"label-search-summary": "Showing {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
@@ -314,6 +345,8 @@
 	},
 	"editor": {
 		"search": {
+			"placeholder-find": "Find",
+			"placeholder-replace": "Replace",
 			"label-previous": "Önceki",
 			"label-next": "Sonraki",
 			"label-all": "Hepsi",
@@ -373,7 +406,7 @@
 		"help": "Yardım",
 		"settings": "Ayarlar",
 		"drag-to-rearrange": "Düzenlemek için sürükle",
-		"msg-switched-to-preview": "Varsayılan gösterim şekli önizleme yapıldı.",
+		"msg-switched-to-read": "Switched default view mode to reading view.",
 		"msg-switched-to-edit": "Varsayılan gösterim şekli editör yapıldı.",
 		"msg-upgrade-installer": "Bu özelliği kullanabilmek için lütfen web sitemizden yeni yükleyiciyi indirin.",
 		"tooltip-restore-default-settings": "Restore default settings",
@@ -386,16 +419,25 @@
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indeksleme işlemi tamamlandı.",
 		"label-enter-to-create": "Enter to create",
+		"label-update-available": "Update Available",
+		"label-debug-info": "Debug info",
+		"button-learn-more": "Learn more",
+		"button-not-now": "Not now",
 		"empty-state": {
 			"no-file-open": "Açık dosya yok",
 			"create-new-file": "Yeni dosya yarat",
 			"go-to-file": "Dosyaya git",
 			"see-recent-files": "Yakın geçmişteki dosyalara git",
-			"close": "Kapat"
+			"close": "Kapat",
+			"unknown-pane-title": "Plugin no longer active",
+			"unknown-pane-desc": "The plugin that created this pane ({{type}}) has gone away"
 		},
 		"menu": {
 			"edit-view": "Değiştir (Yeni pencerede değiştirmek için Ctrl/Cmd+Tık)",
-			"preview-view": "Önizleme (Yeni pencerede açmak için Ctrl/Cmd+Tık)",
+			"read-view": "Current view: reading",
+			"switch-to-edit-view": "Click to edit",
+			"switch-to-read-view": "Click to read",
+			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "Bul...",
 			"replace": "Değiştir...",
 			"edit": "Değiştir",
@@ -503,7 +545,8 @@
 		"search-replace-current-file": "Dosyada ara ve değiştir",
 		"open-settings": "Ayarları aç",
 		"open-help": "Yardımı aç",
-		"toggle-preview": "Değiştirme/Önizleme moduna geç",
+		"toggle-edit": "Toggle editing/reading view",
+		"toggle-source-mode": "Toggle Live Preview/Source mode",
 		"delete-current-file": "Dosyayı sil",
 		"close-active-pane": "Aktif pencereyi kapat",
 		"close-other-panes": "Diğer bütün pencereleri kapat",
@@ -528,7 +571,11 @@
 		"copy-path": "Dosya yolunu kopyala",
 		"copy-url": "Obsidian URL'sini kopyala",
 		"export-pdf": "PDF olarak dışa aktar",
-		"reload": "Reload app without saving"
+		"reload": "Reload app without saving",
+		"undo-close-pane": "Undo close pane",
+		"context-menu": "Show context menu under cursor",
+		"show-debug-info": "Show debug info",
+		"toggle-preview": "Değiştirme/Önizleme moduna geç"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu işlem {{files}} dosyada {{links}} bağı etkileyecek.",
@@ -551,6 +598,7 @@
 		"label-delete-file": "Dosyayı sil",
 		"button-cancel": "İptal",
 		"button-done": "Done",
+		"button-continue": "Continue",
 		"preparing-pdf": "PDF hazırlanıyor...",
 		"label-rename-file": "Yeniden adlandır",
 		"label-new-name": "Yeni Ad",
@@ -743,7 +791,9 @@
 			"label-link-button-text": "Bağlantı",
 			"tab-title": "{{displayText}} için geri bağlantılar",
 			"label-no-unlinked-mentions": "Bağlantılı olmayan bahsetmeler bulunmadı.",
-			"ellipsis": "..."
+			"ellipsis": "...",
+			"option-backlink-in-document": "Backlink in document",
+			"option-backlink-in-document-desc": "Show backlinks in document by default when opening new panes."
 		},
 		"outgoing-links": {
 			"name": "Outgoing Links",
@@ -799,18 +849,14 @@
 			"prompt-filter": "Filtrele...",
 			"label-dark-theme-only": "Sadece karanlık temalar",
 			"label-light-theme-only": "Sadece aydınlık temalar",
-			"label-preview": "Ön izleme",
-			"label-stop-preview": "Ön izlemeyi durdur",
 			"label-use": "Kullan",
-			"label-override": "Override",
+			"label-update": "Update",
+			"tooltip-remove-theme": "Remove theme",
 			"label-visit-on-github": "GitHub'ı ziyaret et",
-			"msg-fetching-css": "CSS getiriliyor...",
-			"theme-title": "\"{{name}}\" by {{author}}",
-			"msg-override-theme": "Override current CSS",
-			"msg-existing-theme": "You already have the \"obsidian.css\" custom CSS file.",
-			"msg-confirm-override": "Are you sure you want to override it? You will lose your original CSS file. Please make a back up if necessary.",
 			"msg-load-error": "Could not load community themes, please check your network.",
-			"msg-now-using-theme": "You're now using {{title}} as your CSS theme."
+			"msg-now-using-theme": "You're now using {{title}} as your CSS theme.",
+			"msg-deleted-theme": "The theme {{title}} has been deleted.",
+			"msg-updated-theme": "The theme {{title}} has been updated."
 		},
 		"command-palette": {
 			"name": "Command palette",
@@ -959,6 +1005,17 @@
 		"translucency": {
 			"name": "Translucent window",
 			"desc": "Turn on translucency effect to enhance a sense of depth. Best used with dark mode. Not supported on Linux."
+		},
+		"slash-command": {
+			"name": "Slash commands",
+			"desc": "Enable the ability to trigger slash commands in the editor by typing the forward slash."
+		},
+		"editor-status": {
+			"name": "Editor status",
+			"desc": "Adds a status bar item to show and change the current editor mode.",
+			"read": "Reading",
+			"edit-source": "Source mode",
+			"edit-live-preview": "Live Preview"
 		},
 		"publish": {
 			"name": "Yayınla",
@@ -1116,6 +1173,7 @@
 			"label-file-deleted": "This file was deleted",
 			"label-no-earlier-version": "There was no earlier versions of this file.",
 			"label-empty-file": "Empty",
+			"label-setting-files": "Setting files",
 			"label-deleted-files": "Deleted files",
 			"label-click-to-see-history": "Click on a deleted file to see its history.",
 			"label-create-remote-vault": "Create remote vault",
@@ -1138,7 +1196,6 @@
 			"button-unlock-vault": "Unlock vault",
 			"msg-verified-password": "Successfully verified your password.",
 			"label-remote-vaults": "Your remote vaults",
-			"label-connected-vault": "Connected",
 			"label-vault-created-time": "Created {{time}}",
 			"tooltip-delete-remote-vault": "Delete",
 			"label-confirm-delete-remote-vault": "Confirm delete vault",
@@ -1174,6 +1231,10 @@
 			"option-sync-log": "Sync activity",
 			"option-sync-log-desc": "View recent sync activities for debugging.",
 			"button-view": "View",
+			"button-bulk-restore": "Bulk restore",
+			"button-restore-selected-files": "Restore selected files",
+			"msg-restoring": "Restoring...",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "Vault size over limit",
 			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
 			"msg-largest-files": "View largest files",
@@ -1223,7 +1284,10 @@
 			"label-number-of-folders-excluded": "{{folders}} are currently excluded from being synced.",
 			"label-setup-connection": "Setup connection",
 			"label-now-connected-to-vault": "You're now connected to \"{{name}}\".",
-			"button-start-syncing": "Start syncing"
+			"button-start-syncing": "Start syncing",
+			"label-confirm-merge-vault": "Confirm Merge Vault",
+			"msg-vault-has-notes": "Your local vault already contains some notes.",
+			"msg-merge-warning": "If you connect to the remote vault \"{{name}}\", notes in your local vault will be merged with notes from your remote vault."
 		},
 		"file-recovery": {
 			"name": "File recovery",
