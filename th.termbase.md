@@ -50,6 +50,8 @@ preview | พรีวิว
 quick switcher | quick switcher
 redo | redo
 regex | regex
+remote | บนคลาวด์
+remote vault | ห้องนิรภัยบนคลาวด์
 screenshot | ภาพหน้าจอ
 sidebar | ไซด์บาร์
 site | เว็บไซต์
