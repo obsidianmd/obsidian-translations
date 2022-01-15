@@ -110,7 +110,7 @@
 		"option-attachment-folder-path": "Đường dẫn thư mục đính kèm",
 		"option-attachment-folder-path-description": "Các tệp đính kèm mới được tạo sẽ xuất hiện ở đây. Chúng bao gồm các hình ảnh được tạo bằng cách kéo và thả hoặc dán, và các bản ghi âm.",
 		"option-attachment-subfolder-path": "Tên thư mục con",
-		"option-attachment-subfolder-path-description": "Nếu tệp của bạn dưới \"vault/thư mục\", và bạn đặt tên thư mục con thành \"các tệp đính kèm\", tệp đính kèm sẽ được lưu vào \"vault/folder/các tệp đính kèm\".",
+		"option-attachment-subfolder-path-description": "Nếu tệp của bạn dưới \"vault/folder\", và bạn đặt tên thư mục con thành \"attachments\", tệp đính kèm sẽ được lưu vào \"vault/folder/attachments\".",
 		"option-attachment-subfolder-path-placeholder": "các tệp đính kèm"
 		},
 		"appearance": {
@@ -137,11 +137,11 @@
 			"button-open-themes-folder": "Mở thư mục chủ đề",
 			"option-css-snippets": "Đoạn mã CSS",
 			"label-no-css-snippets-found": "Không tìm thấy đoạn mã CSS nào trong thư mục đoạn mã.",
-			"no-snippet-description": "Các đoạn mã CSS được lưu trữ trong \"{{đường dẫn}}\".",
+			"no-snippet-description": "Các đoạn mã CSS được lưu trữ trong \"{{path}}\".",
 			"button-reload-snippets": "Tải lại đoạn mã",
 			"button-open-snippets-folder": "Mở thư mục đoạn mã",
 			"msg-reloaded-snippets": "Các đoạn CSS đã tải lại.",
-			"option-toggle-snippet-description": "Áp dụng đoạn mã CSS tại \"{{đường dẫn}}\".",
+			"option-toggle-snippet-description": "Áp dụng đoạn mã CSS tại \"{{path}}\".",
 			"label-installed-themes": "Các chủ đề đã cài đặt",
 			"label-screenshot-unavailable": "Ảnh chụp màn hình không khả dụng",
 			"label-default-theme": "Mặc định",
@@ -150,15 +150,15 @@
 			"label-currently-selected": "Đã chọn"
 		},
 		"hotkeys": {
-			"name": "Hotkeys",
-			"prompt-filter": "Filter...",
-			"tooltip-delete-hotkey": "Delete hotkey",
-			"label-waiting-for-hotkey-press": "Press hotkey...",
-			"tooltip-restore-default": "Restore default",
-			"tooltip-customize-command": "Customize this command",
-			"tooltip-hotkey-single-conflict": "This hotkey conflicts with \"{{command}}\"",
-			"tooltip-hotkey-multiple-conflicts": "This hotkey conflicts with {{count}} other commands",
-			"label-blank-hotkey": "Blank"
+			"name": "Các phím tắt",
+			"prompt-filter": "Lọc...",
+			"tooltip-delete-hotkey": "Xóa phím tắt",
+			"label-waiting-for-hotkey-press": "Nhấn phím tắt...",
+			"tooltip-restore-default": "Phục hồi mặc định",
+			"tooltip-customize-command": "Tùy chỉnh lệnh này",
+			"tooltip-hotkey-single-conflict": "Phím tắt này xung đột với \"{{command}}\"",
+			"tooltip-hotkey-multiple-conflicts": "Phím tắt này xung đột với {{count}} lệnh khác",
+			"label-blank-hotkey": "Trống"
 		},
 		"about": {
 			"name": "About",
