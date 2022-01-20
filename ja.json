@@ -6,7 +6,7 @@
 		"plugin-options": "プラグインオプション",
 		"folder-path-example-placeholder": "例: フォルダ1/フォルダ2",
 		"file-path-example-placeholder": "例: フォルダ/ノート",
-		"msg-restart-required": "このオプションを変更する際には、変更が適用されるために再起動する必要があります。",
+		"msg-restart-required": "このオプションを変更した後、変更した設定を適用するには再起動する必要があります。",
 		"editor": {
 			"name": "エディタ",
 			"section-general": "一般",
@@ -44,7 +44,7 @@
 			"option-default-editing-mode-source": "ソースモード",
 			"option-default-editing-mode-live-preview": "ライブプレビュー",
 			"option-legacy-editor": "レガシーエディタの使用",
-			"option-legacy-editor-description": "レガシーエディタはライブプレビューをサポートしていませんが、いくつかの古いプラグイン、テーマとスニペットについてはより良い互換性があります。ライブプレビューを有効化するには、このオプションを無効化してください。",
+			"option-legacy-editor-description": "レガシーエディタはライブプレビューをサポートしていませんが、いくつかの古いプラグインや、テーマとスニペットについては高い互換性があります。ライブプレビューを有効化するには、このオプションを無効化してください。",
 			"option-show-line-number": "行番号の表示",
 			"option-show-line-number-description": "ガターに行番号を表示します。",
 			"option-use-tabs": "タブの使用",
@@ -129,7 +129,7 @@
 			"option-font-size-action": "フォントサイズのクイック調整",
 			"option-font-size-action-description": "Ctrl+Scroll、もしくはトラックパッド上でピンチ＆ズームのジェスチャによってフォントサイズを調整できます。",
 			"option-themes": "テーマ",
-			"option-manage-themes-description": "コミュニティテーマをブラウズし、インストールされたテーマを管理します。",
+			"option-manage-themes-description": "コミュニティテーマを閲覧とインストールされたテーマの管理を行います。",
 			"option-theme-button-manage": "管理",
 			"option-choice-none": "なし",
 			"button-reload-themes": "テーマをリロード",
@@ -421,7 +421,7 @@
 		"label-enter-to-create": "Enterキーで作成",
 		"label-update-available": "アップデートが利用可能",
 		"label-debug-info": "デバッグ情報",
-		"button-learn-more": "詳細について知る",
+		"button-learn-more": "詳細について確認する",
 		"button-not-now": "今は行わない",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
@@ -1008,7 +1008,7 @@
 		},
 		"slash-command": {
 			"name": "スラッシュコマンド",
-			"desc": "スラッシュを入力することでエディタ内でスラッシュコマンドが起動できるように有効化します。"
+			"desc": "編集中にスラッシュを入力することで、エディタ内でスラッシュコマンドを起動できるようになります。"
 		},
 		"editor-status": {
 			"name": "エディタステータス",
@@ -1233,7 +1233,7 @@
 			"button-view": "閲覧",
 			"button-bulk-restore": "一括復元",
 			"button-restore-selected-files": "選択したファイルを復元する",
-			"msg-restoring": "復元しています...",
+			"msg-restoring": "復元しています…",
 			"msg-restoring-complete": "`復元が完了しました: {{succeeded}} が成功し、 {{failed}} が失敗しました。`",
 			"option-over-size": "保管庫の許容サイズ",
 			"option-over-size-desc": "保管庫は{{limit}}中の{{size}}です。",
@@ -1285,7 +1285,7 @@
 			"label-setup-connection": "接続のセットアップ",
 			"label-now-connected-to-vault": "現在、\"{{name}}\" に接続されています。",
 			"button-start-syncing": "同期を開始",
-			"label-confirm-merge-vault": "保管庫の統合を確認しました。",
+			"label-confirm-merge-vault": "保管庫の統合を確認",
 			"msg-vault-has-notes": "ローカル保管庫にはすでにいくつかのノートが存在しています。",
 			"msg-merge-warning": "リモート保管庫 \"{{name}}\" に接続している場合には、ローカル保管庫内のノートはリモート保管庫からのノートと統合されます。"
 		},
