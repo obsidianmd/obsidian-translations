@@ -240,10 +240,10 @@
 			"message-obtain-commercial-license": "To obtain a commercial license, visit {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
+			"plugin-list": "Eklenti listesi",
 			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"option-search-plugin-description": "Eklentileri adına veya açıklamasına göre ara.",
+			"placeholder-search-plugin": "Eklentileri ara..."
 		},
 		"third-party-plugin": {
 			"name": "Topluluk Eklentisi",
@@ -266,14 +266,14 @@
 			"button-install": "İndir",
 			"button-enable": "Enable",
 			"button-disable": "Disable",
-			"button-copy-share-link": "Copy share link",
+			"button-copy-share-link": "Paylaşma linkini kopyala",
 			"label-no-results-found": "Sonuç Bulunamadı.",
 			"msg-failed-to-load-manifest": "Failed to load plugin manifest.",
 			"label-version": "Versiyon: {{version}}",
 			"label-currently-installed-version": " (şuanki sürüm: {{version}})",
 			"label-by-author": "By ",
 			"label-repository": "Repository: ",
-			"label-unsupported": "This plugin does not support your device.",
+			"label-unsupported": "Bu eklenti cihazınız tarafından desteklenmiyor.",
 			"button-update": "Güncelle",
 			"label-no-readme": "Bu eklenti bir README dosyası sağlamadı.",
 			"msg-installing-plugin": "\"{{name}}\" eklentisi indiriliyor...",
@@ -296,15 +296,15 @@
 			"msg-updates-found_plural": "Güncellenecek {{count}} eklenti bulundu.",
 			"msg-update-plugin": "Güncelle {{version}}",
 			"option-search-installed-plugin": "Search installed plugins",
-			"option-search-installed-plugin-description": "Filter installed plugins by name or description.",
-			"placeholder-search-installed-plugin": "Search installed plugins...",
-			"label-sort-downloads-high-to-low": "Download count (high to low)",
-			"label-sort-downloads-low-to-high": "Download count (low to high)",
+			"option-search-installed-plugin-description": "Yüklü eklentileri adına veya açıklamasına göre filtrele.",
+			"placeholder-search-installed-plugin": "Yüklü eklentilerde ara...",
+			"label-sort-downloads-high-to-low": "İndirme sayısı (çoktan aza)",
+			"label-sort-downloads-low-to-high": "İndirme sayısı (azdan çoğa)",
 			"label-sort-release-date-new-to-old": "Yayınlanma zamanı (yeniden eskiye)",
 			"label-sort-release-date-old-to-new": "Yayınlanma zamanı (eskiden yeniye)",
 			"label-sort-name-alphabetical": "Name (A to Z)",
 			"label-sort-name-alphabetical-reverse": "Name (Z to A)",
-			"label-search-summary": "Showing {{pluginCount}}:"
+			"label-search-summary": "Gösteriliyor {{pluginCount}}:"
 		},
 		"mobile-toolbar": {
 			"name": "Mobile toolbar",
@@ -345,8 +345,8 @@
 	},
 	"editor": {
 		"search": {
-			"placeholder-find": "Find",
-			"placeholder-replace": "Replace",
+			"placeholder-find": "Ara",
+			"placeholder-replace": "Değiştir",
 			"label-previous": "Önceki",
 			"label-next": "Sonraki",
 			"label-all": "Hepsi",
@@ -364,7 +364,7 @@
 			"label-link-block": "to link blocks",
 			"label-type-pipe": "Görünecek yazıyı değiştirmek için",
 			"label-change-display-text": "| yazın",
-			"label-no-match-found": "No match found"
+			"label-no-match-found": "Eşleşme Bulunamadı"
 		},
 		"spellcheck": {
 			"no-suggestion": "Tavsiye bulunamadı...",
@@ -419,7 +419,7 @@
 		"msg-indexing": "Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.",
 		"msg-indexing-complete": "Indeksleme işlemi tamamlandı.",
 		"label-enter-to-create": "Enter to create",
-		"label-update-available": "Update Available",
+		"label-update-available": "Güncelleme mevcut",
 		"label-debug-info": "Debug info",
 		"button-learn-more": "Learn more",
 		"button-not-now": "Not now",
@@ -517,13 +517,13 @@
 			"loading-workspace": "Loading workspace..."
 		},
 		"mobile": {
-			"action-import": "Import into vault",
+			"action-import": "Kasaya aktar",
 			"action-choose-file-to-insert": "Choose a file to insert",
 			"action-insert-text-into-file": "Insert text into {{filename}}",
 			"action-insert-link-into-file": "Insert link into {{filename}}",
 			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"msg-import-success": "Aktarma başarılı",
+			"msg-failed-to-import-file": "{{filename}} aktarma başarısız"
 		}
 	},
 	"commands": {
@@ -603,7 +603,7 @@
 		"label-rename-file": "Yeniden adlandır",
 		"label-new-name": "Yeni Ad",
 		"msg-rename-success": "Yeniden adlandırıldı.",
-		"label-rename-heading": "Rename heading"
+		"label-rename-heading": "Başlığı yeniden adlandır"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -723,10 +723,10 @@
 			"prompt-type-file-name": "Geçmek ya da yaratmak için dosya adını yazın...",
 			"label-enter-to-create": "Yaratmak için Enter",
 			"tooltip-not-created-yet": "Not created yet, select to create",
-			"option-show-existing-only": "Show existing only",
+			"option-show-existing-only": "Sadece olanları göster",
 			"option-show-existing-only-description": "Whether to show links to files that are not yet created.",
-			"option-show-attachments": "Show attachments",
-			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
+			"option-show-attachments": "Ekleri göster",
+			"option-show-attachments-desc": "Görseller, videolar ve pdf'ler gibi ekleri göster.",
 			"option-show-all-file-types": "Show all file types",
 			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
@@ -959,9 +959,9 @@
 			"desc": "Durum barında kelime sayısını göster."
 		},
 		"slides": {
-			"name": "Slides",
+			"name": "Sunumlar",
 			"desc": "Present from Markdown. Use \"---\" to separate slides.",
-			"action-start": "Start presentation"
+			"action-start": "Sunumu başlat"
 		},
 		"audio-recorder": {
 			"name": "Audio recorder",
@@ -976,8 +976,8 @@
 		"open-with-default-app": {
 			"name": "Varsayılan uygulamada aç",
 			"desc": "Add button to open current file in the default app.",
-			"action-open-file": "Open in default app",
-			"action-open-file-mobile": "Share",
+			"action-open-file": "Varsayılan uygulamada aç",
+			"action-open-file-mobile": "Paylaş",
 			"action-show-in-folder": "Klasörde göster"
 		},
 		"templates": {
@@ -1019,34 +1019,34 @@
 		},
 		"publish": {
 			"name": "Yayınla",
-			"desc": "Publish your notes through Obsidian Publish.",
-			"action-publish-changes": "Publish changes",
-			"label-no-internet-access": "You need access to the internet to publish changes.",
+			"desc": "Notlarını Obsidian Publish aracılığıyla yayınla.",
+			"action-publish-changes": "Değişiklikleri yayınla",
+			"label-no-internet-access": "Değişiklikleri yayınlamak için internet bağlantısı gerekli.",
 			"label-publish-service-description": "Obsidian Publish is an add-on paid service that lets you publish your notes online directly from Obsidian.",
-			"label-please-login": "To start publishing, please log in or create a new Obsidian account.",
-			"label-no-publish-subscription": "You do not have an Obsidian Publish subscription yet.",
+			"label-please-login": "Yayınlamaya başlamak için, lütfen yeni bir Obsidian hesabı aç, ya da varsa üyeliğine giriş yap.",
+			"label-no-publish-subscription": "Henüz bir Obsidian Publish üyeliğin yok.",
 			"button-purchase": "Satın al",
 			"label-manage-sites": "Siteleri yönet",
-			"label-no-sites": "You don't have any sites.",
+			"label-no-sites": "Hiçbir siten yok.",
 			"button-choose": "Seç",
-			"tooltip-edit-site-id": "Edit site ID",
-			"tooltip-delete-site": "Delete site",
-			"label-delete-site-confirmation": "Are you sure you want to delete this site?",
-			"label-delete-site-details": "This will immediately and permanently delete your site.",
-			"label-confirm-delete-site": "Confirm delete site \"{{site}}\"",
+			"tooltip-edit-site-id": "Site ID düzenle",
+			"tooltip-delete-site": "Siteyi sil",
+			"label-delete-site-confirmation": "Bu siteyi silmek istediğine emin misin?",
+			"label-delete-site-details": "Bu siteni tamamen ve kalıcı olarak silecek.",
+			"label-confirm-delete-site": "Silmek istediğini onayla \"{{site}}\"",
 			"option-site-id": "Site ID",
-			"option-site-id-description": "Your site will be at https://publish.obsidian.md/{site id}. You can change this later. Only lower case letters, numbers, and dashes are allowed.",
-			"option-site-id-placeholder": "Pick a site ID",
+			"option-site-id-description": "Siten burada olacak, https://publish.obsidian.md/{site id}. You can change this later. Only lower case letters, numbers, and dashes are allowed.",
+			"option-site-id-placeholder": "Siten için ID seç",
 			"button-create": "Oluştur",
 			"msg-invalid-site-id": "Site ID can only contain lowercase letters, numbers, and dashes.",
 			"msg-site-id-in-use": "This site ID is in use, please try another one.",
 			"msg-create-site-issue": "That was an issue when creating your site.",
-			"label-site-options": "Site options",
+			"label-site-options": "Ayarlar",
 			"option-site-metadata": "Metadata",
 			"option-site-components": "Components",
 			"option-site-appearance": "Appearance",
 			"option-site-reading-experience": "Reading experience",
-			"option-site-misc": "Other site settings",
+			"option-site-misc": "Diğer Ayarlar",
 			"option-site-name": "Site name",
 			"option-site-name-description": "Name of your published site. It will show up in the page title of your site.",
 			"option-site-name-placeholder": "Name of your site",
@@ -1054,7 +1054,7 @@
 			"option-home-page-file-description": "The first page the user sees when landing on your published site",
 			"option-home-page-file-placeholder": "Pick a published file",
 			"option-logo": "Logo",
-			"option-logo-description": "Pick an image file as your site logo.",
+			"option-logo-description": "Site logon için görsel seç.",
 			"option-logo-placeholder": "Any any uploaded image in your vault...",
 			"option-theme": "Tema",
 			"option-theme-description": "Choose default color scheme for your site.",
@@ -1164,21 +1164,21 @@
 		"sync": {
 			"name": "Sync",
 			"desc": "Synchronize your files through Obsidian Sync.",
-			"action-view-version-history": "View version history",
-			"label-load-more": "Load more",
-			"label-copy-to-clipboard": "Copy to clipboard",
+			"action-view-version-history": "Sürüm geçmişini göster",
+			"label-load-more": "Daha fazlasını yükle",
+			"label-copy-to-clipboard": "Panoya kopyala",
 			"label-restore-this-version": "Restore this version",
 			"msg-already-latest-version": "This version is already the latest version.",
 			"msg-restored-version": "Successfully restored version from {{time}}",
-			"label-file-deleted": "This file was deleted",
-			"label-no-earlier-version": "There was no earlier versions of this file.",
-			"label-empty-file": "Empty",
-			"label-setting-files": "Setting files",
-			"label-deleted-files": "Deleted files",
+			"label-file-deleted": "Bu dosya silindi",
+			"label-no-earlier-version": "Bu dosyanın daha eski bir sürümü yok.",
+			"label-empty-file": "Boş",
+			"label-setting-files": "Ayarlanmış dosyalar",
+			"label-deleted-files": "Silinmiş dosyalar",
 			"label-click-to-see-history": "Click on a deleted file to see its history.",
 			"label-create-remote-vault": "Create remote vault",
-			"msg-please-enter-password": "Please enter a password.",
-			"msg-vault-name-cannot-be-empty": "Vault name cannot be empty.",
+			"msg-please-enter-password": "Bir şifre gir.",
+			"msg-vault-name-cannot-be-empty": "Kasa adı boş olamaz.",
 			"msg-successfully-created-vault": "Successfully create remote vault \"{{name}}\".",
 			"label-remote-vault-explanation": "Remote vaults securely synchronize your vault between devices.",
 			"option-vault-name": "Vault name",
@@ -1357,7 +1357,7 @@
 		"backlink-with-count_plural": "{{count}} geri bağlantı",
 		"site-with-count": "{{count}} site",
 		"site-with-count_plural": "{{count}} sites",
-		"plugin-with-count": "{{count}} plugin",
-		"plugin-with-count_plural": "{{count}} plugins"
+		"plugin-with-count": "{{count}} eklenti",
+		"plugin-with-count_plural": "{{count}} eklentiler"
 	}
 }
