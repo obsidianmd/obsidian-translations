@@ -41,6 +41,7 @@ If you encounter something like
 ```json
 "label-welcome": "Welcome, {{name}}!"
 ```
+
 leave the `{{name}}` part alone and do not translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
 
 ## Existing languages
@@ -60,7 +61,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
 | `es` | Spanish | Español | ✅ |
-| `fa` | Persian | فارسی | 🚧 |
+| `fa` | Persian | فارسی | ✅ |
 | `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
@@ -80,6 +81,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `tam` | Tamil | தமிழ் | 🚧 |
+| `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `uk` | Ukrainian | Українська | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
@@ -87,4 +89,3 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
 > Note: the Chinese translation is maintained by the Chinese Obsidian QQ group. If you want to discuss it, please join the QQ group: 774176839.
-

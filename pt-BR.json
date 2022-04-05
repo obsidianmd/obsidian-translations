@@ -43,7 +43,7 @@
 			"option-default-editing-mode-description": "The default editing mode a new pane will start with.",
 			"option-default-editing-mode-source": "Source mode",
 			"option-default-editing-mode-live-preview": "Live Preview",
-			"option-legacy-editor": "Use legacy editor",
+			"option-legacy-editor": "Usar o editor legado",
 			"option-legacy-editor-description": "The legacy editor does not support Live Preview, but has better compatibility with some older plugins, themes, and snippets. To enable Live Preview, disable this option.",
 			"option-show-line-number": "Mostrar o número da linha",
 			"option-show-line-number-description": "Mostra os números das linhas.",
@@ -125,12 +125,12 @@
 			"option-community-themes-description": "Visualize e use os incríveis temas criados pela comunidade.",
 			"button-browse-community-themes": "Procurar",
 			"option-font-size": "Tamanho da fonte",
-			"option-font-size-description": "Font size in pixels that affects editor and preview.",
-			"option-font-size-action": "Quick font size adjustment",
-			"option-font-size-action-description": "Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.",
+			"option-font-size-description": "Tamanho da fonte em pixels que afeta o editor e a pré-visualização",
+			"option-font-size-action": "Ajuste rápido do tamanho da fonte",
+			"option-font-size-action-description": "Ajuste o tamanho da fonte utilizando o Ctrl + Scroll, ou usando o movimento de pinça no trackpad",
 			"option-themes": "Temas",
-			"option-manage-themes-description": "Manage installed themes and browse community themes.",
-			"option-theme-button-manage": "Manage",
+			"option-manage-themes-description": "Gerencie os temas instalados e navegue por temas da comunidade",
+			"option-theme-button-manage": "Gerir",
 			"option-choice-none": "Nenhum",
 			"button-reload-themes": "Recarregar temas",
 			"msg-reloaded-themes": "Temas CSS personalizados recarregados.",
@@ -142,12 +142,12 @@
 			"button-open-snippets-folder": "Abrir pasta de fragmentos",
 			"msg-reloaded-snippets": "Fragmentos CSS recarregados.",
 			"option-toggle-snippet-description": "Aplica fragmento CSS em \"{{path}}\".",
-			"label-installed-themes": "Installed themes",
-			"label-screenshot-unavailable": "Screenshot unavailable",
-			"label-default-theme": "Default",
-			"tooltip-click-to-enlarge": "Click to enlarge",
-			"button-update": "Update",
-			"label-currently-selected": "Selected"
+			"label-installed-themes": "Temas instalados",
+			"label-screenshot-unavailable": "Captura de tela indisponível",
+			"label-default-theme": "Padrão",
+			"tooltip-click-to-enlarge": "Clique para ampliar",
+			"button-update": "Atualizar",
+			"label-currently-selected": "Selecionado"
 		},
 		"hotkeys": {
 			"name": "Atalhos",
@@ -191,19 +191,19 @@
 			"option-insider-build": "Receber compilações internas",
 			"option-insider-build-description": "Atualiza automaticamente para compilações internas para experimentar novos recursos. Observe que essas compilações podem ser instáveis..",
 			"option-advanced": "Advanced",
-			"option-hw-acceleration": "Hardware Acceleration",
-			"option-hw-acceleration-description": "Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.",
-			"option-hw-acceleration-warning": "If you turn this off, app performance will be severely degraded.",
+			"option-hw-acceleration": "Aceleração de Hardware",
+			"option-hw-acceleration-description": "Ativa a Aceleração de Hardware, que usa sua GPU para deixar o Obisidan mais fluido.",
+			"option-hw-acceleration-warning": "Se você desativar isso, a performance da aplicação vai ser severamente degradada",
 			"option-config-location": "Override config folder",
 			"option-config-location-description": "Use a different config folder than the default one. Must start with a dot.",
 			"option-config-location-warning": "Config location must be a valid folder name that starts with a dot.",
 			"label-license": "Licença",
-			"label-your-commercial-license-key": "Your commercial license key is \"{{key}}\".",
+			"label-your-commercial-license-key": "Sua licença comercial é \"{{key}}\".",
 			"label-commercial-license-info": "Registrado para \"{{company}}\" para {{seats}} usuários. Válido até {{expiry}}.",
 			"label-validating-commercial-license": "Validando...",
 			"label-invalid-commercial-license": "Licença inválida: ",
 			"button-activate-commercial-license": "Ativar licença comercial",
-			"button-remove-commercial-license": "Remove",
+			"button-remove-commercial-license": "Remover",
 			"label-personal-license": " licença pessoal. ",
 			"label-thank-you-for-support": "Obrigado pelo seu apoio!",
 			"label-free-personal-license": "Licença pessoal: grátis para uso pessoal."
@@ -235,15 +235,15 @@
 			"message-login-failed": "Login falhou, Verifique se seu e-mail e senha estão corretos.",
 			"label-no-account": "Não tem uma conta? ",
 			"link-sign-up-now": "Crie uma conta agora",
-			"message-get-community-badges-instructions": "For Discord and forum badges, please refer to {{link}}.",
-			"message-get-community-badges-link-text": "this guide",
+			"message-get-community-badges-instructions": "Para as insígnias do Discord e forum, por favor siga para {{link}}.",
+			"message-get-community-badges-link-text": "esse guia",
 			"message-obtain-commercial-license": "Para obter uma licença comercial, visite {{pricingPageLink}}."
 		},
 		"core-plugin": {
-			"plugin-list": "Plugin list",
-			"option-search-plugin": "Search core plugins",
-			"option-search-plugin-description": "Filter plugins by name or description.",
-			"placeholder-search-plugin": "Search plugins..."
+			"plugin-list": "Lista de plugins",
+			"option-search-plugin": "Procure plugins principais",
+			"option-search-plugin-description": "Filtre os plugins por nome ou descrição.",
+			"placeholder-search-plugin": "Procurar plugins..."
 		},
 		"third-party-plugin": {
 			"name": "Plugins não oficiais",
@@ -435,8 +435,8 @@
 		"menu": {
 			"edit-view": "Editar (Ctrl/Cmd+Click para editar em um novo painel)",
 			"read-view": "Current view: reading",
-			"switch-to-edit-view": "Click to edit",
-			"switch-to-read-view": "Click to read",
+			"switch-to-edit-view": "Clique para editar",
+			"switch-to-read-view": "Clique para visualizar",
 			"mod-click-open-new-pane": "{{key}}+Click to open in new pane",
 			"find": "Encontrar...",
 			"replace": "Substituir...",
@@ -518,12 +518,12 @@
 		},
 		"mobile": {
 			"action-import": "Import into vault",
-			"action-choose-file-to-insert": "Choose a file to insert",
+			"action-choose-file-to-insert": "Escolha um arquivo para inserir",
 			"action-insert-text-into-file": "Insert text into {{filename}}",
 			"action-insert-link-into-file": "Insert link into {{filename}}",
-			"msg-importing": "Importing...",
-			"msg-import-success": "Import success",
-			"msg-failed-to-import-file": "Failed to import file {{filename}}"
+			"msg-importing": "Importando...",
+			"msg-import-success": "Importado com sucesso",
+			"msg-failed-to-import-file": "Falha ao importar o arquivo {{filename}}"
 		}
 	},
 	"commands": {
@@ -707,7 +707,7 @@
 			"label-tag-option-description": "burcar tags",
 			"label-line-option-description": "pesquisar palavras-chave mesma linha",
 			"label-section-option-description": "pesquisar palavras-chave sob o mesmo título",
-			"menu-opt-search-for": "Search for \"{{keyword}}\""
+			"menu-opt-search-for": "Buscar por \"{{keyword}}\""
 		},
 		"quick-switcher": {
 			"name": "Navegação rápida",
@@ -722,12 +722,12 @@
 			"label-no-note-create-new": "Nenhuma nota encontrada. Pressione Enter para criar uma nova",
 			"prompt-type-file-name": "Digite o nome de um arquivo para alternar ou criar...",
 			"label-enter-to-create": "Enter para criar",
-			"tooltip-not-created-yet": "Not created yet, select to create",
+			"tooltip-not-created-yet": "Ainda não criado, selecione para criar",
 			"option-show-existing-only": "Show existing only",
 			"option-show-existing-only-description": "Whether to show links to files that are not yet created.",
-			"option-show-attachments": "Show attachments",
-			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
-			"option-show-all-file-types": "Show all file types",
+			"option-show-attachments": "Mostrar anexos",
+			"option-show-attachments-desc": "Mostra arquivos de anexo como imagens, vídeos e PDFs.",
+			"option-show-all-file-types": "Mostrar todos os tipos de arquivos",
 			"option-show-all-file-types-desc": "Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type."
 		},
 		"graph-view": {
@@ -850,13 +850,13 @@
 			"label-dark-theme-only": "Apenas temas escuros",
 			"label-light-theme-only": "Apenas temas claros",
 			"label-use": "Usar",
-			"label-update": "Update",
-			"tooltip-remove-theme": "Remove theme",
+			"label-update": "Atualizar",
+			"tooltip-remove-theme": "Remover tema",
 			"label-visit-on-github": "Visitar no GitHub",
 			"msg-load-error": "Não foi possível carregar os temas da comunidade, verifique sua conexão à internet.",
 			"msg-now-using-theme": "Agora você está usando {{title}} como seu tema CSS.",
-			"msg-deleted-theme": "The theme {{title}} has been deleted.",
-			"msg-updated-theme": "The theme {{title}} has been updated."
+			"msg-deleted-theme": "O tema {{title}} foi excluído.",
+			"msg-updated-theme": "O tema {{title}} foi atualizado."
 		},
 		"command-palette": {
 			"name": "Paleta de comandos",
