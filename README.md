@@ -70,7 +70,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ko` | Korean | 한국어 | ✅ |
 | `ml` | Malayalam | മലയാളം | 🚧 |
 | `ms` | Malay | Bahasa Melayu | 🚧 |
-| `nl` | Dutch | Nederlands | 🚧 |
+| `nl` | Dutch | Nederlands | ✅ |
 | `no` | Norwegian | Norsk | ✅ |
 | `pl` | Polish | język polski | ✅ |
 | `pt` | Portuguese | Português | ✅ |
