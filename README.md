@@ -56,6 +56,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
 | `bg` | Bulgarian | български език | 🚧 |
+| `bn` | Bengali | বাংলা | 🚧 |
 | `ca` | Catalan | català | 🚧 |
 | `cz` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
