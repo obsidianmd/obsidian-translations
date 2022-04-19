@@ -56,6 +56,8 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
 | `bg` | Bulgarian | български език | 🚧 |
+| `bn` | Bengali | বাংলা | 🚧 |
+| `ca` | Catalan | català | 🚧 |
 | `cz` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
@@ -72,6 +74,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ms` | Malay | Bahasa Melayu | 🚧 |
 | `nl` | Dutch | Nederlands | 🚧 |
 | `no` | Norwegian | Norsk | ✅ |
+| `oc` | Occitan | Occitan | 🚧 |
 | `pl` | Polish | język polski | ✅ |
 | `pt` | Portuguese | Português | ✅ |
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
