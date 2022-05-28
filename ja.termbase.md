@@ -59,6 +59,9 @@ document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
 E-mail address | Eメールアドレス
 edit mode | 編集モード
+editing mode | 編集モード
+editing view | 編集ビュー
+editor | エディタ
 encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
 expand | 展開
@@ -121,8 +124,10 @@ provider | プロバイダー
 publish change | 変更の公開
 quick switcher | クイックスイッチャー
 Reading experience | リーディングエクスペリエンス
+reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+Right-to-left | 右横書き
 search | 検索
 second brain | 第二の脳
 Security | セキュリティ
