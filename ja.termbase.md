@@ -41,6 +41,7 @@ bold | ボールド
 build | ビルド
 building block | 機能要素
 cache | キャッシュ
+callout | コールアウト
 catalyst | カタリスト
 Catalyst license | カタリストライセンス
 collapse | 折りたたむ
@@ -128,6 +129,7 @@ reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
 Right-to-left | 右横書き
+sandbox vault | サンドボックス保管庫
 search | 検索
 second brain | 第二の脳
 Security | セキュリティ
