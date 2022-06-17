@@ -123,6 +123,7 @@ preview | プレビュー
 preview mode | プレビューモード
 provider | プロバイダー
 publish change | 変更の公開
+publish filters | 公開フィルター
 quick switcher | クイックスイッチャー
 Reading experience | リーディングエクスペリエンス
 reading view | リーディングビュー
@@ -138,11 +139,13 @@ sidebar | サイドバー
 site | サイト
 snippet | スニペット
 starred pane | スターペイン
+stricted mode | 制限モード
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
+unfold | フォールドの解除
 unlinked mentions | リンクされていないメンション
 unordered list | 順序なしリスト
 untitled | 無題の~ (無題のファイル・無題のフォルダ)
@@ -150,6 +153,7 @@ vault | 保管庫
 version history | バージョン履歴
 video file | 動画ファイル
 VIP | VIP
+what-you-see-is-what-you-get | WYSIWYG(見たままが得られる)
 wikilink | ウィキリンク
 
 ### 同一表現の使いまわし
@@ -186,6 +190,7 @@ Starred notes | スター
 Sync | 同期
 Tag pane | タグペイン
 Templates | テンプレート
+Unique note creator | ユニークノートクリエイター
 Word count | ワードカウント
 Workspaces | ワークスペース
 Zettelkasten prefixer | Zettelkastenプレフィクサー
