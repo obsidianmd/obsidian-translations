@@ -67,6 +67,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `fa` | Persian | فارسی | ✅ |
 | `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
+| `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
