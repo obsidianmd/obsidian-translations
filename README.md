@@ -58,7 +58,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `bg` | Bulgarian | български език | 🚧 |
 | `bn` | Bengali | বাংলা | 🚧 |
 | `ca` | Catalan | català | 🚧 |
-| `cz` | Czech | čeština | ✅ |
+| `cs` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
@@ -83,7 +83,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
-| `tam` | Tamil | தமிழ் | 🚧 |
+| `ta` | Tamil | தமிழ் | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `uk` | Ukrainian | Українська | 🚧 |
