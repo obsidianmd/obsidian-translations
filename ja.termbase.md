@@ -41,6 +41,7 @@ bold | ボールド
 build | ビルド
 building block | 機能要素
 cache | キャッシュ
+callout | コールアウト
 catalyst | カタリスト
 Catalyst license | カタリストライセンス
 collapse | 折りたたむ
@@ -59,6 +60,9 @@ document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
 E-mail address | Eメールアドレス
 edit mode | 編集モード
+editing mode | 編集モード
+editing view | 編集ビュー
+editor | エディタ
 encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
 expand | 展開
@@ -92,6 +96,7 @@ link | リンク
 linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
+match-case | 大文字/小文字を区別
 merge | 統合
 Metadata | メタデータ
 none | なし
@@ -118,10 +123,14 @@ preview | プレビュー
 preview mode | プレビューモード
 provider | プロバイダー
 publish change | 変更の公開
+publish filters | 公開フィルター
 quick switcher | クイックスイッチャー
 Reading experience | リーディングエクスペリエンス
+reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+Right-to-left | 右横書き
+sandbox vault | サンドボックス保管庫
 search | 検索
 second brain | 第二の脳
 Security | セキュリティ
@@ -130,18 +139,21 @@ sidebar | サイドバー
 site | サイト
 snippet | スニペット
 starred pane | スターペイン
+stricted mode | 制限モード
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
+unfold | フォールドの解除
 unlinked mentions | リンクされていないメンション
-untitled | 無題の~ (無題のファイル・無題のフォルダ)
 unordered list | 順序なしリスト
+untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
 version history | バージョン履歴
 video file | 動画ファイル
 VIP | VIP
+what-you-see-is-what-you-get | WYSIWYG(見たままが得られる)
 wikilink | ウィキリンク
 
 ### 同一表現の使いまわし
@@ -178,6 +190,7 @@ Starred notes | スター
 Sync | 同期
 Tag pane | タグペイン
 Templates | テンプレート
+Unique note creator | ユニークノートクリエイター
 Word count | ワードカウント
 Workspaces | ワークスペース
 Zettelkasten prefixer | Zettelkastenプレフィクサー
@@ -190,7 +203,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
 ヘルプドキュメントとUIの翻訳の際に採用しているルールの一覧を載せています(このドキュメント自体にも同一のルールを適用しています)。ここに記載されていない細かいルールなどについて困った場合には[JTF(日本翻訳連盟)](https://www.jtf.jp/tips/styleguide)の翻訳スタイルガイドなどを参考にしてみてください。
 
 - スタイル全体
-    - コマンド名: コマンドパレットでの検索で引っかかりやすいように単語(特に目的語)を組み合わせて表現に一貫性を持たせる(例: 新規ノートの作成、縦方向にペインを分割)。
+    - コマンド名: コマンドパレットでの検索で引っかかりやすいように単語(特に目的語)を組み合わせて表現に一貫性を持たせる(例: 新規ノートの作成、ペインを縦に分割)。
     - 日本語表現: 日本語の分かりやすさと読みやすさを心がける。
 - 漢字とひらがなについて
     - 常用外漢字を使用しない。
