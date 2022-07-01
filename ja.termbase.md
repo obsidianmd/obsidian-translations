@@ -135,6 +135,7 @@ search | 検索
 second brain | 第二の脳
 Security | セキュリティ
 selective sync | 選択的同期
+setup | 設定
 sidebar | サイドバー
 site | サイト
 snippet | スニペット
