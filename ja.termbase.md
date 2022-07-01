@@ -107,8 +107,8 @@ Obsidian Publish | Obsidian Publish (サービス名のためそのまま)
 Obsidian Sync | Obsidian Sync (サービス名のためそのまま)
 Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
-OFF | オフ
-ON | オン
+OFF | 無効, 無効化
+ON | 有効, 有効化
 ordered list | 順序付きリスト
 outgoing link | アウトゴーイングリンク
 page preview | ページプレビュー
