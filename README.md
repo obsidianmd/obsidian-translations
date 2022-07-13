@@ -51,6 +51,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | Language code | Language name | Native name | Status |
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
+| `af` | Afrikaans | Afrikaans | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
@@ -58,7 +59,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `bg` | Bulgarian | български език | 🚧 |
 | `bn` | Bengali | বাংলা | 🚧 |
 | `ca` | Catalan | català | 🚧 |
-| `cz` | Czech | čeština | ✅ |
+| `cs` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
@@ -66,6 +67,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `fa` | Persian | فارسی | ✅ |
 | `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
+| `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
@@ -83,7 +85,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
-| `tam` | Tamil | தமிழ் | 🚧 |
+| `ta` | Tamil | தமிழ் | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `uk` | Ukrainian | Українська | 🚧 |
