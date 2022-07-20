@@ -237,7 +237,7 @@
 			"name": "Konto",
 			"option-your-account": "Twoje konto",
 			"option-your-account-desc": "Jesteś zalogowany jako {{name}} ({{email}}).",
-			"option-your-account-desc-no-login": "Nie jesteś zalogowany. Konto jest wymagane dla wydań: Obsidian Sync, Obsidian Publish i Catalyst insider.", 
+			"option-your-account-desc-no-login": "Nie jesteś zalogowany. Konto jest wymagane dla wydań: Obsidian Sync, Obsidian Publish i Catalyst insider.",
 			"button-manage-settings": "Zarządzaj ustawieniami",
 			"label-insider": "insider",
 			"label-supporter": "supporter",
@@ -271,7 +271,7 @@
 			"name": "Wtyczki stworzone przez społeczność",
 			"option-restricted-mode": "Tryb zastrzeżony",
 			"option-restricted-mode-description": "Tryb Zastrzeżony jest wyłączony. Włącz aby zdezaktywować wtyczki stworzone przez społeczność.",
-			"button-turn-off": "Wyłącz",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Wtyczki stworzone przez społeczność",
 			"option-browse-community-plugins-description": "Przeglądaj i instaluj wtyczki stworzone przez społeczność użytkowników Obsidian.",
 			"button-browse": "Przeglądaj",
@@ -287,7 +287,7 @@
 			"label-peer-audit-desc": "Mamy dużą społeczność programistów, którzy nawzajem sprawdzają swoją pracę.",
 			"label-report-mechanism": "Mechanizm raportowania",
 			"label-report-mechanism-desc": "Śledzimy i usuwamy niewłaściwie działające wtyczki, zgłoszone przez użytkowników",
-			"label-exit-restricted-mode-disable-confirmation": "Czy chciałbyś opuścić Tryb Zastrzeżony, aby aktywować wtyczki stworzone przez społeczność? Zanim to zrobisz, zalecamy zrobienie kopii zapasowej danych" ,
+			"label-exit-restricted-mode-disable-confirmation": "Czy chciałbyś opuścić Tryb Zastrzeżony, aby aktywować wtyczki stworzone przez społeczność? Zanim to zrobisz, zalecamy zrobienie kopii zapasowej danych",
 			"label-learn-more": "Naucz się więcej o bezpieczeństwie wtyczek",
 			"button-turn-on-community-plugins": "Włącz wtyczki stworzone przez społeczność",
 			"label-trust-author": "Czy ufasz twórcy tego sejfu?",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Brak sugestii...",
 			"add-to-dictionary": "Dodaj do słownika"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Eksportuj do PDF",
 			"caption": "Eksportuj \"{{filename}}\" do PDF z poniższymi ustawieniami.",
@@ -486,6 +490,7 @@
 			"more-options": "Więcej opcji",
 			"close": "Zamknij",
 			"pin": "Przypnij / odepnij",
+			"unpin": "Unpin",
 			"unlink-pane": "Usuń powiązanie z oknem",
 			"link-pane": "Powiąż z oknem...",
 			"delete-file": "Usuń plik",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Wklej jako zwykły tekst.",
 			"select-all": "Zaznacz wszystko",
 			"rename-heading": "Edytuj nagłówek...",
-			"rename-blockid": "Zmień nazwę ID tego bloku..."
+			"rename-blockid": "Zmień nazwę ID tego bloku...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Kliknij aby rozwinąć",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Wybierz nazwę dla Twojego sejfu.",
 			"option-new-vault-location": "Lokalizacja",
 			"option-new-vault-location-description": "Określ lokalizację nowego sejfu.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Otwórz sejf w systemowym eksploratorze plików",
 			"option-rename-vault": "Zmień nazwę sejfu...",
 			"msg-error-rename-exists": "Już istnieje inny sejf o tej samej nazwie.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Ładuję Obsidian...",
 			"obsidian-load-error": "Wystąpił błąd podczas ładowania Obsidian.",
 			"button-reload-app": "Odśwież aplikację",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Otwórz inny sejf",
 			"loading-components": "Ładuję komponenty...",
 			"loading-plugins": "Ładuję wtyczki...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Cofnij zamknięcie panelu",
 		"context-menu": "Pokaż menu kontekstowe pod kursorem",
 		"show-debug-info": "Show debug info",
-		"toggle-preview": "Przełącz między trybem edycji i podglądu"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Przełącz między trybem edycji i podglądu",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Zmianie ulegnie {{links}} w {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Wtyczki",

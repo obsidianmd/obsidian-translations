@@ -271,7 +271,7 @@
 			"name": "Сторонние плагины",
 			"option-restricted-mode": "Безопасный режим",
 			"option-restricted-mode-description": "Безопасный режим выключен. Включите, чтобы отключить плагины сообщества.",
-			"button-turn-off": "Выключить",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Плагины сообщества",
 			"option-browse-community-plugins-description": "Обзор и установка сторонних плагинов, созданных нашим потрясающим сообществом.",
 			"button-browse": "Обзор",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Нет предложений...",
 			"add-to-dictionary": "Добавить в словарь"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Экспорт в PDF",
 			"caption": "Экспорт \"{{filename}}\" в PDF со следующими параметрами",
@@ -486,6 +490,7 @@
 			"more-options": "Еще",
 			"close": "Закрыть",
 			"pin": "Закрепить",
+			"unpin": "Unpin",
 			"unlink-pane": "Отвязать",
 			"link-pane": "Связать с областью...",
 			"delete-file": "Удалить файл",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Вставить как обычный текст",
 			"select-all": "Выделить все",
 			"rename-heading": "Переименовать заголовок...",
-			"rename-blockid": "Переименовать ID блока..."
+			"rename-blockid": "Переименовать ID блока...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Развернуть",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Укажите имя нового хранилища.",
 			"option-new-vault-location": "Расположение",
 			"option-new-vault-location-description": "Укажите расположение нового хранилища.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Показать содержащую папку",
 			"option-rename-vault": "Переименовать хранилище...",
 			"msg-error-rename-exists": "Хранилище с таким именем уже существует.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Obsidian загружается...",
 			"obsidian-load-error": "При загрузке Obsidian произошла ошибка.",
 			"button-reload-app": "Перезапустить",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Открыть хранилище",
 			"loading-components": "Компоненты загружаются...",
 			"loading-plugins": "Плагины загружаются...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Отменить закрытие области",
 		"context-menu": "Показать контекстное меню под курсором",
 		"show-debug-info": "Показать отладочную информацию",
-		"toggle-preview": "Переключиться между режимами редактирования и просмотра"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Переключиться между режимами редактирования и просмотра",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Это повлияет на {{links}} в {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Зачеркивание",
 		"toggle-comments": "Комметарий",
 		"fold-all": "Свернуть все",
-		"unfold-all": "Развернуть все"
+		"unfold-all": "Развернуть все",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Плагины",

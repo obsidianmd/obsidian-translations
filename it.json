@@ -271,7 +271,7 @@
 			"name": "Plugin di terze parti",
 			"option-restricted-mode": "Modalità limitata",
 			"option-restricted-mode-description": "La modalità limitata non è attiva. Attivala per disabilitare i plugin della comunità.",
-			"button-turn-off": "Disattiva",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Plugin della comunità",
 			"option-browse-community-plugins-description": "Sfoglia e installa plugin di terze parti creati dalla nostra straordinaria comunità.",
 			"button-browse": "Sfoglia",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Nessun suggerimento...",
 			"add-to-dictionary": "Aggiungi al dizionario"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Esporta in PDF",
 			"caption": "Esporta \"{{filename}}\" in PDF con le seguenti impostazioni.",
@@ -486,6 +490,7 @@
 			"more-options": "Altre opzioni",
 			"close": "Chiudi",
 			"pin": "Blocca",
+			"unpin": "Unpin",
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con pannello...",
 			"delete-file": "Elimina file",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Incolla come testo normale",
 			"select-all": "Seleziona tutto",
 			"rename-heading": "Rinomina questa intestazione...",
-			"rename-blockid": "Rinomina ID del blocco..."
+			"rename-blockid": "Rinomina ID del blocco...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Scegliere un nome per il vault.",
 			"option-new-vault-location": "Posizione",
 			"option-new-vault-location-description": "Scegliere una posizione per il nuovo vault.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Mostra vault in Esplora sistema",
 			"option-rename-vault": "Rinomina vault...",
 			"msg-error-rename-exists": "Vault già esistente con questo nome.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Caricamento di Obsidian in corso...",
 			"obsidian-load-error": "Si è verificato un errore durante il caricamento di Obsidian.",
 			"button-reload-app": "Ricarica app",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Apri un altro vault",
 			"loading-components": "Caricamento dei componenti...",
 			"loading-plugins": "Caricamento dei plugin...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Annulla chiusura pannello",
 		"context-menu": "Mostra menu contestuale sotto il cursore",
 		"show-debug-info": "Mostra informazioni di debug",
-		"toggle-preview": "Passa a modalità Modifica/Anteprima"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Passa a modalità Modifica/Anteprima",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Questa operazione influirà su {{links}} in {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Barrato",
 		"toggle-comments": "Commenti",
 		"fold-all": "Comprimi tutto",
-		"unfold-all": "Espandi tutto"
+		"unfold-all": "Espandi tutto",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Plugin",

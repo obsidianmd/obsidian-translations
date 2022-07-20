@@ -271,7 +271,7 @@
 			"name": "Third-party plugin",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Community plugins",
 			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
 			"button-browse": "Browse",
@@ -408,6 +408,10 @@
 			"no-suggestion": "لا اقتراحات...",
 			"add-to-dictionary": "إضافة للقاموس"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Export to PDF",
 			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
@@ -486,6 +490,7 @@
 			"more-options": "خيارات أكثر",
 			"close": "أغلق",
 			"pin": "ثبت",
+			"unpin": "Unpin",
 			"unlink-pane": "الغ الرابط مع اللوحة",
 			"link-pane": "أضف رابط إلى اللوحة...",
 			"delete-file": "احذف الملف",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Paste as plain text",
 			"select-all": "Select all",
 			"rename-heading": "Rename this heading...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "إضغط للتوسيع",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Pick a name for your awesome vault.",
 			"option-new-vault-location": "الموقع",
 			"option-new-vault-location-description": "Pick a place to put your new vault.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Loading Obsidian...",
 			"obsidian-load-error": "An error occurred while loading Obsidian.",
 			"button-reload-app": "Reload app",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Open another vault",
 			"loading-components": "Loading components...",
 			"loading-plugins": "Loading plugins...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Undo close pane",
 		"context-menu": "Show context menu under cursor",
 		"show-debug-info": "Show debug info",
-		"toggle-preview": "Toggle edit/preview mode"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Toggle edit/preview mode",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "الإضافات",

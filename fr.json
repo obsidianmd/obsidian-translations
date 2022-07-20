@@ -1,4 +1,4 @@
- {
+{
 	"setting": {
 		"options": "Options",
 		"plugin": "Module",
@@ -269,9 +269,9 @@
 		},
 		"third-party-plugin": {
 			"name": "Modules complémentaires",
-			"option-safe-mode": "Mode sans échec",
-			"option-safe-mode-description-on": "Le mode sans échec est activé. Tous les modules complémentaires sont désactivés.",
-			"option-safe-mode-description-off": "Le mode sans échec est désactivé. Les modules complémentaires peuvent désormais être activés.",
+			"option-restricted-mode": "Restricted mode",
+			"option-restricted-mode-description": "Restricted mode is off. Turn on to disable community plugins.",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Modules complémentaires",
 			"option-browse-community-plugins-description": "Parcourir et installer des modules complémentaires créés par notre formidable communauté…",
 			"button-browse": "Parcourir",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Aucune suggestion…",
 			"add-to-dictionary": "Ajouter au dictionnaire"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Exporter au format PDF",
 			"caption": "Exporter \"{{filename}}\" au format PDF avec les réglages ci-dessous.",
@@ -486,6 +490,7 @@
 			"more-options": "Plus d'options",
 			"close": "Fermer",
 			"pin": "Épingler",
+			"unpin": "Unpin",
 			"unlink-pane": "Dissocier le volet",
 			"link-pane": "Associer au volet…",
 			"delete-file": "Supprimer le fichier",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Coller en texte brut",
 			"select-all": "Tout sélectionner",
 			"rename-heading": "Renommer cet en-tête…",
-			"rename-blockid": "Renommer cet ID de bloc…"
+			"rename-blockid": "Renommer cet ID de bloc…",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Choisir un nom pour votre superbe coffre.",
 			"option-new-vault-location": "Emplacement",
 			"option-new-vault-location-description": "Choisir un emplacement où mettre votre nouveau coffre.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Révéler le coffre-fort dans l'explorateur système",
 			"option-rename-vault": "Renommer le coffre-fort...",
 			"msg-error-rename-exists": "Il y a déjà un coffre-fort avec ce nom.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Chargement d'Obsidian",
 			"obsidian-load-error": "Une erreur s'est produite lors du chargement d'Obsidian.",
 			"button-reload-app": "Recharger l'application",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Ouvrir un autre coffre",
 			"loading-components": "Chargement des composants…",
 			"loading-plugins": "Chargement des modules…",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Annuler la fermeture du volet",
 		"context-menu": "Afficher le menu contextuel sous le curseur",
 		"show-debug-info": "Afficher les informations de débogages.",
-		"toggle-preview": "Basculer entre édition et aperçu"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Basculer entre édition et aperçu",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela met à jour {{links}} dans {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Barré",
 		"toggle-comments": "Commentaires",
 		"fold-all": "Tout plier",
-		"unfold-all": "tour déplier"
+		"unfold-all": "tour déplier",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Extensions",
@@ -1032,19 +1045,19 @@
 			"option-open-on-start": "Ouverture de la note quotidienne au démarrage",
 			"option-open-on-start-description": "Ouvre la note quotidienne automatiquement à chaque ouverture de ce coffre."
 		},
-		"zettelkasten-prefixer": {
-			"name": "Préfixeur Zettelkasten",
-			"desc": "Crée une nouvelle note avec le format d'identification Zettelkasten à 12 chiffres AAAAMMJJHHII (Exemple 202001010000).",
-			"short-name": "Note ZK",
-			"action-create-note": "Crée une nouvelle note Zettelkasten",
-			"option-new-file-location": "Nouvel emplacement de fichier",
-			"option-new-file-location-description": "Le chemin du dossier où créer la nouvelle note Zettelkasten.",
-			"msg-folder-not-found": "Échec de la création de la note Zettelkasten. Dossier \"{{folderOption}}\" non trouvé.",
-			"option-template-file": "Emplacement du fichier de modèle",
-			"option-template-file-description": "Le chemin du fichier à utiliser comme modèle.",
-			"option-template-file-placeholder": "Exemple : dossier1/note",
-			"option-id-format": "Format Zettel ID",
-			"msg-template-file-not-found": "Échec de la création de la note Zettelkasten. Fichier de modèle \"{{template}}\" non trouvé."
+		"unique-note-creator": {
+			"name": "Unique note creator",
+			"desc": "Create notes with unique timestamp prefixes, for workflows like zettelkasten or slip box.",
+			"short-name": "Unique",
+			"action-create-note": "Create new unique note",
+			"option-new-file-location": "New file location",
+			"option-new-file-location-description": "The folder path to create the new unique note.",
+			"msg-folder-not-found": "Failed to create unique note. Folder \"{{folderOption}}\" not found.",
+			"option-template-file": "Template file location",
+			"option-template-file-description": "The file path to use as template.",
+			"option-template-file-placeholder": "Example: folder1/note",
+			"option-id-format": "Unique prefix format",
+			"msg-template-file-not-found": "Failed to create unique note. Template file \"{{template}}\" not found."
 		},
 		"random-note": {
 			"name": "Note aléatoire",

@@ -271,7 +271,7 @@
 			"name": "Tredjeparts plugins",
 			"option-restricted-mode": "Begrænset tilstand",
 			"option-restricted-mode-description": "Begrænset tilstand er slået fra. Slå den til for at deaktivere fællesskabs plugins.",
-			"button-turn-off": "Slå fra",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Fællesskabs plugins",
 			"option-browse-community-plugins-description": "Gennemse og installer tredjeparts plugins skabt af Obsidians fantastiske fællesskab.",
 			"button-browse": "Gennemse",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Ingen forslag...",
 			"add-to-dictionary": "Tilføj til ordbog"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Eksporter til PDF",
 			"caption": "Eksporter \"{{filename}}\" til PDF med nedenstående indstillinger.",
@@ -486,6 +490,7 @@
 			"more-options": "Flere muligheder",
 			"close": "Luk",
 			"pin": "Fastgør",
+			"unpin": "Unpin",
 			"unlink-pane": "Fjern link til panel",
 			"link-pane": "Link til panel...",
 			"delete-file": "Slet fil",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Indsæt som almindelig tekst",
 			"select-all": "Vælg alt",
 			"rename-heading": "Omdøb denne overskrift...",
-			"rename-blockid": "Omdøb dette blok ID..."
+			"rename-blockid": "Omdøb dette blok ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik for at udvide",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Angiv et navn til din fantastiske boks.",
 			"option-new-vault-location": "Placering",
 			"option-new-vault-location-description": "Angiv en placering til din nye boks.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Vis boks i system stifinderen",
 			"option-rename-vault": "Omdøb boks...",
 			"msg-error-rename-exists": "Der er allerede en boks med dette navn.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Starter Obsidian...",
 			"obsidian-load-error": "En fejl opstod under opstart af Obsidian.",
 			"button-reload-app": "Genstart Obsidian",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Åben en anden boks",
 			"loading-components": "Starter komponenter...",
 			"loading-plugins": "Starter plugins...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Fortryd panellukning",
 		"context-menu": "Vis kontekstmenu under musemarkør",
 		"show-debug-info": "Vis debug information",
-		"toggle-preview": "Skift mellem redigering- og forhåndsvisningstilstand"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Skift mellem redigering- og forhåndsvisningstilstand",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Dette vil påvirke {{links}} i {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Gennemstreget",
 		"toggle-comments": "Kommentarer",
 		"fold-all": "Fold alle",
-		"unfold-all": "Sammenfold alle"
+		"unfold-all": "Sammenfold alle",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Plugins",

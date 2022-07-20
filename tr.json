@@ -271,7 +271,7 @@
 			"name": "Topluluk Eklentisi",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Topluluk Eklentileri",
 			"option-browse-community-plugins-description": "Topluluğumuzun yaptığı eklentilere göz at ve Yükle.",
 			"button-browse": "Ara",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Öneri bulunamadı...",
 			"add-to-dictionary": "Sözlüğe ekle"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "PDF Olarak Dışa Aktar",
 			"caption": "\"{{filename}}\" dosyasını aşağıdaki ayarlarla PDF olarak dışa aktar.",
@@ -486,6 +490,7 @@
 			"more-options": "Daha fazla seçenek",
 			"close": "Kapat",
 			"pin": "İğnele",
+			"unpin": "Unpin",
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereyi bağla...",
 			"delete-file": "Dosyayı sil",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Düz metin olarak yapıştır",
 			"select-all": "Tümünü seç",
 			"rename-heading": "Başlığı yeniden adlandır...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Genişlet",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Yeni kasan için bir isim seç.",
 			"option-new-vault-location": "Gözat",
 			"option-new-vault-location-description": "Yeni kasa için bir klasör seçin",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Obsidian yükleniyor...",
 			"obsidian-load-error": "Yüklenirken bir hata meydana geldi.",
 			"button-reload-app": "Uygulamayı yeniden başlat",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Başka bir kasa aç",
 			"loading-components": "Parçalar yükleniyor...",
 			"loading-plugins": "Eklentiler yükleniyor...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Pencere kapamayı geri al",
 		"context-menu": "Bağlam menüsünü işaretçinin altında göster",
 		"show-debug-info": "Ayıklama bilgilerini göster",
-		"toggle-preview": "Düzenleme/Önizleme moduna geç"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Düzenleme/Önizleme moduna geç",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu eylem {{files}} dosyada {{links}} bağlantısını etkileyecek.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Üstü Çizili",
 		"toggle-comments": "Yorum",
 		"fold-all": "Tümünü Katla",
-		"unfold-all": "Tümünü Aç"
+		"unfold-all": "Tümünü Aç",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Eklentiler",

@@ -271,7 +271,7 @@
 			"name": "서드파티 플러그인",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "커뮤니티 플러그인",
 			"option-browse-community-plugins-description": "커뮤니티에서 만든 서드 파티 플러그인들을 검색하고 설치할 수 있습니다.",
 			"button-browse": "검색",
@@ -408,6 +408,10 @@
 			"no-suggestion": "제안 단어가 없습니다...",
 			"add-to-dictionary": "사전에 추가"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "PDF로 변환하기",
 			"caption": "\"{{filename}}\"을 아래 설정에 따라 PDF로 변환하기",
@@ -486,6 +490,7 @@
 			"more-options": "더보기",
 			"close": "닫기",
 			"pin": "고정",
+			"unpin": "Unpin",
 			"unlink-pane": "패널 링크 끊기",
 			"link-pane": "패널에 링크하기...",
 			"delete-file": "파일 삭제",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Paste as plain text",
 			"select-all": "Select all",
 			"rename-heading": "Rename this heading...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "클릭해서 펼치기",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "보관함을 위한 멋진 이름을 지어주세요",
 			"option-new-vault-location": "위치",
 			"option-new-vault-location-description": "보관함을 놔둘 위치를 골라주세요.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "옵시디안 로딩 중...",
 			"obsidian-load-error": "옵시디안을 불러오던 중 오류가 발생하였습니다.",
 			"button-reload-app": "앱 새로고침",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "다른 볼트 열기기",
 			"loading-components": "다른 컴포넌트 로딩 중...",
 			"loading-plugins": "플러그인 로딩 중...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Undo close pane",
 		"context-menu": "Show context menu under cursor",
 		"show-debug-info": "Show debug info",
-		"toggle-preview": "편집/프리뷰 모드로 변환"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "편집/프리뷰 모드로 변환",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}개의 파일에 있는 {{links}}개의 링크를 변경합니다.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "플러그인",
