@@ -271,7 +271,7 @@
 			"name": "Externe plug-in",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Community-plug-ins",
 			"option-browse-community-plugins-description": "Blader door en installeer plug-ins van derden die zijn gemaakt door onze geweldige community.",
 			"button-browse": "Doorbladeren",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Geen suggesties...",
 			"add-to-dictionary": "Toevoegen aan woordenboek"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Exporteer naar PDF",
 			"caption": "Exporteer \"{{filename}}\" naar PDF met de instelling hierbeneden.",
@@ -486,6 +490,7 @@
 			"more-options": "Meer opties",
 			"close": "Sluiten",
 			"pin": "Vastzetten",
+			"unpin": "Unpin",
 			"unlink-pane": "Ontkoppelen venster",
 			"link-pane": "Koppelen met venster...",
 			"delete-file": "Wissen bestand",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Plak als platte tekst",
 			"select-all": "Selecteer alles",
 			"rename-heading": "Kop hernoemen...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik om uit te breiden",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Kies een naam voor je geweldige kluis.",
 			"option-new-vault-location": "Locatie",
 			"option-new-vault-location-description": "Selecteer een plek voor je nieuwe kluis.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Obsidian laden...",
 			"obsidian-load-error": "Er is een error opgetreden tijdens het laden van Obsidian.",
 			"button-reload-app": "App herladen",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Een andere kluis openen",
 			"loading-components": "Onderdelen laden...",
 			"loading-plugins": "Plug-ins laden...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Venster sluiten ongedaan maken",
 		"context-menu": "Contextmenu laten zien onder de cursor",
 		"show-debug-info": "Info voor debuggen laten zien",
-		"toggle-preview": "Wissel bewerk- en voorbeeldmodus"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Wissel bewerk- en voorbeeldmodus",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Dit heeft betrekking op {{links}} in {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Plug-ins",

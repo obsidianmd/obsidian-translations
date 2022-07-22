@@ -271,7 +271,7 @@
 			"name": "第三方插件",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "社区插件",
 			"option-browse-community-plugins-description": "浏览、安装社区成员制作的第三方插件。",
 			"button-browse": "浏览",
@@ -408,6 +408,10 @@
 			"no-suggestion": "没有建议……",
 			"add-to-dictionary": "添加到词典"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "导出为 PDF",
 			"caption": "使用以下设置将 \"{{filename}}\" 导出为 PDF。",
@@ -486,6 +490,7 @@
 			"more-options": "更多选项",
 			"close": "关闭",
 			"pin": "锁定",
+			"unpin": "Unpin",
 			"unlink-pane": "解除关联",
 			"link-pane": "与其他面板关联",
 			"delete-file": "删除文件",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "以纯文本形式粘贴",
 			"select-all": "全选",
 			"rename-heading": "重命名当前小标题……",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "点击以展开",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "给新库起名称",
 			"option-new-vault-location": "库的位置",
 			"option-new-vault-location-description": "给新库指定一个位置。",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "在系统资源管理器中显示库文件夹",
 			"option-rename-vault": "重命名库...",
 			"msg-error-rename-exists": "该名称已被使用。",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "正在加载 Obsidian……",
 			"obsidian-load-error": "加载 Obsidian 时发生错误。",
 			"button-reload-app": "重新加载",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "打开另一个库",
 			"loading-components": "加载组件中……",
 			"loading-plugins": "加载插件中……",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "重新打开上一个关闭的面板",
 		"context-menu": "在光标处显示上下文菜单",
 		"show-debug-info": "显示调试信息",
-		"toggle-preview": "切换编辑/预览模式"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "切换编辑/预览模式",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "这将影响 {{files}} 中的 {{links}}。",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "插件",

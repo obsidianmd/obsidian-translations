@@ -271,7 +271,7 @@
 			"name": "Plugins não oficiais",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Plugins da comunidade",
 			"option-browse-community-plugins-description": "Procure e instale plugins não oficiais criados pela nossa incrível comunidade.",
 			"button-browse": "Procurar",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Sem sugestões...",
 			"add-to-dictionary": "Adicionar ao dicionário"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Exportar para PDF",
 			"caption": "Exportar \"{{filename}}\" para PDF com a definição abaixo.",
@@ -486,6 +490,7 @@
 			"more-options": "Mais opções",
 			"close": "Fechar",
 			"pin": "Fixar",
+			"unpin": "Unpin",
 			"unlink-pane": "Remover link do painel",
 			"link-pane": "Linkar painel...",
 			"delete-file": "Eliminar ficheiro",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Paste as plain text",
 			"select-all": "Select all",
 			"rename-heading": "Rename this heading...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Clique para expandir",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Selecione um nome para o seu vault incrível.",
 			"option-new-vault-location": "Localização",
 			"option-new-vault-location-description": "Selecione um lugar para o seu novo vault.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "A carregar o Obsidian...",
 			"obsidian-load-error": "Ocorreu um erro a carrevar o Obsidian.",
 			"button-reload-app": "Recarregar app",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Abrir outro vault",
 			"loading-components": "A carregar componentes...",
 			"loading-plugins": "A carregar plugins...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Undo close pane",
 		"context-menu": "Show context menu under cursor",
 		"show-debug-info": "Show debug info",
-		"toggle-preview": "Ativar modo de edição/visualização"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Ativar modo de edição/visualização",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Irá afetar os links {{links}} nos {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Plugins",

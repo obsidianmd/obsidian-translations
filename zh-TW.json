@@ -271,7 +271,7 @@
 			"name": "第三方外掛程式",
 			"option-restricted-mode": "受限模式",
 			"option-restricted-mode-description": "受限模式已關閉，請開啟以停用社群外掛程式。",
-			"button-turn-off": "關閉",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "社群外掛程式",
 			"option-browse-community-plugins-description": "瀏覽並安裝我們令人嘆服的社群所製作的第三方外掛程式。",
 			"button-browse": "瀏覽",
@@ -408,6 +408,10 @@
 			"no-suggestion": "沒有建議…",
 			"add-to-dictionary": "加入詞典"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "匯出 PDF",
 			"caption": "以下列設定匯出「{{filename}}」為 PDF。",
@@ -486,6 +490,7 @@
 			"more-options": "更多選項",
 			"close": "關閉",
 			"pin": "釘選",
+			"unpin": "Unpin",
 			"unlink-pane": "取消窗格連結",
 			"link-pane": "連結窗格…",
 			"delete-file": "刪除檔案",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "以純文字貼上",
 			"select-all": "全選",
 			"rename-heading": "重新命名標題……",
-			"rename-blockid": "重新命名此區塊 ID……"
+			"rename-blockid": "重新命名此區塊 ID……",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "點選展開",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "選擇適當的儲存庫名稱。",
 			"option-new-vault-location": "位置",
 			"option-new-vault-location-description": "選擇置放儲存庫的位置。",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "在系統檔案總管中開啟儲存庫",
 			"option-rename-vault": "重新命名儲存庫……",
 			"msg-error-rename-exists": "已存在相同名稱的儲存庫。",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "正在載入 Obsidian……",
 			"obsidian-load-error": "載入 Obsidian 時發生錯誤。",
 			"button-reload-app": "重新載入應用程式",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "開啟另一個儲存庫",
 			"loading-components": "正在載入元件……",
 			"loading-plugins": "正在載入外掛程式……",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "復原關閉窗格",
 		"context-menu": "顯示游標下的特色選單",
 		"show-debug-info": "顯示除錯資訊",
-		"toggle-preview": "切換編輯/預覽模式"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "切換編輯/預覽模式",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "刪除線",
 		"toggle-comments": "註解",
 		"fold-all": "全部收合",
-		"unfold-all": "全部展開"
+		"unfold-all": "全部展開",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "外掛程式",

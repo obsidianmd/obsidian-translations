@@ -271,7 +271,7 @@
 			"name": "ปลั๊กอินโดยชุมชน",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "ปลั๊กอินโดยชุมชน",
 			"option-browse-community-plugins-description": "เลือกดูและติดตั้งปลั๊กอินที่สร้างโดยชุมชนที่สุดยอดของเรา",
 			"button-browse": "เลือกดู",
@@ -408,6 +408,10 @@
 			"no-suggestion": "ไม่มีคำแนะนำการสะกดคำ...",
 			"add-to-dictionary": "เพิ่มเข้าพจนานุกรม"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "ส่งออกเป็น PDF",
 			"caption": "ส่งออกไฟล์ \"{{filename}}\" เป็น PDF ด้วยการตั้งค่าต่อไปนี้",
@@ -486,6 +490,7 @@
 			"more-options": "ตัวเลือกเพิ่มเติม",
 			"close": "ปิด",
 			"pin": "ปักหมุด",
+			"unpin": "Unpin",
 			"unlink-pane": "ยกเลิกการลิงค์หน้าต่าง",
 			"link-pane": "ลิงค์หน้าต่างกับ...",
 			"delete-file": "ลบไฟล์",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "แปะเป็นข้อความเปล่าๆ",
 			"select-all": "เลือกทั้งหมด",
 			"rename-heading": "เปลี่ยนชื่อหัวข้อนี้...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "คลิกเพื่อขยาย",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "ตั้งชื่อสำหรับห้องนิรภัยสุดเจ๋งของคุณ",
 			"option-new-vault-location": "ตำแหน่ง",
 			"option-new-vault-location-description": "เลือกตำแหน่งที่จะบันทึกห้องนิรภัยของคุณ",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "กำลังโหลด Obsidian...",
 			"obsidian-load-error": "พบปัญญาขณะโหลดโปรแกรม Obsidian",
 			"button-reload-app": "รีโหลดโปรแกรม",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "เปิดห้องนิรภัยอื่น",
 			"loading-components": "กำลังโหลดส่วนประกอบ...",
 			"loading-plugins": "กำลังโหลดปลั๊กอิน...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Undo การปิดหน้าต่าง",
 		"context-menu": "แสดงเมนูที่เกี่ยวข้องที่ตำแหน่งเคอร์เซอร์",
 		"show-debug-info": "แสดงผลข้อมูลการดีบั๊ก",
-		"toggle-preview": "สลับโหมดปรับแก้/โหมด"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "สลับโหมดปรับแก้/โหมด",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "การกระทำนี้จะมีผลต่อ {{links}} ลิงค์ ใน {{files}} ไฟล์.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "ปลั๊กอิน",

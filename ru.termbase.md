@@ -15,6 +15,7 @@ attachment|вложение
 backlinks|входящие связи
 backlinks|обратные ссылки
 block|блок
+callout|выносной блок
 catalyst|catalyst
 checklist|флажок
 collapse|свернуть
@@ -34,8 +35,10 @@ ID|ID
 indent|отступ
 link|ссылка
 list|список
+live preview|динамический просмотр
 markdown link|markdown-линк
 markdown|markdown
+note-composer|компоновщик заметок
 obsidian|obsidian
 palette|палитра
 pane|область

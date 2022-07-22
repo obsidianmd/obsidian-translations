@@ -116,7 +116,7 @@
 			"option-attachment-subfolder-path": "Altklasör adı",
 			"option-attachment-subfolder-path-description": "Eğer dosyalarınız \"kasa/klasör\" klasöründeyse ve altklasör adını \"eklentiler\" seçerseniz, eklentileriniz \"kasa/klasör/eklentiler\" klasörüne kaydedilecek.",
 			"option-attachment-subfolder-path-placeholder": "Eklentiler",
-			"option-excluded-files": "Excluded files",
+			"option-excluded-files": "Hariç tutulan dosyalar",
 			"option-excluded-files-desc": "Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.",
 			"label-no-excluded-filters-applied": "No excluded filter is applied right now. Add one below.",
 			"label-excluded-filters-applied": "Files matching the following filters are currently excluded:",
@@ -129,7 +129,7 @@
 			"option-base-theme-description": "Obsidian'ın varsayılan renk modunu seçin.",
 			"dark-theme": "Koyu",
 			"light-theme": "Açık",
-			"system-theme": "Adapt to system",
+			"system-theme": "Sistem ayarını kullan",
 			"option-font": "Font",
 			"option-interface-font": "Interface font",
 			"option-interface-font-description": "Set base font for all of Obsidian.",
@@ -172,8 +172,8 @@
 			"tooltip-click-to-enlarge": "Büyütmek için tıklayın",
 			"button-update": "Güncelle",
 			"label-currently-selected": "Seçili",
-			"msg-updates-found": "Found {{count}} theme to update.",
-			"msg-updates-found_plural": "Found {{count}} themes to update."
+			"msg-updates-found": "{{count}} tema için güncelleme bulundu.",
+			"msg-updates-found_plural": "{{count}} tema için güncelleme bulundu."
 		},
 		"hotkeys": {
 			"name": "Kısayollar",
@@ -271,7 +271,7 @@
 			"name": "Topluluk Eklentisi",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Topluluk Eklentileri",
 			"option-browse-community-plugins-description": "Topluluğumuzun yaptığı eklentilere göz at ve Yükle.",
 			"button-browse": "Ara",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Öneri bulunamadı...",
 			"add-to-dictionary": "Sözlüğe ekle"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "PDF Olarak Dışa Aktar",
 			"caption": "\"{{filename}}\" dosyasını aşağıdaki ayarlarla PDF olarak dışa aktar.",
@@ -462,8 +466,8 @@
 		"label-debug-info": "Ayıklama bilgileri",
 		"button-learn-more": "Daha fazlasını öğrenin",
 		"button-not-now": "Daha sonra",
-		"button-add": "Add",
-		"button-manage": "Manage",
+		"button-add": "Ekle",
+		"button-manage": "Yönet",
 		"empty-state": {
 			"no-file-open": "Açık dosya yok",
 			"create-new-file": "Yeni dosya oluştur",
@@ -486,6 +490,7 @@
 			"more-options": "Daha fazla seçenek",
 			"close": "Kapat",
 			"pin": "İğnele",
+			"unpin": "Unpin",
 			"unlink-pane": "Pencere bağını kopart",
 			"link-pane": "Pencereyi bağla...",
 			"delete-file": "Dosyayı sil",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Düz metin olarak yapıştır",
 			"select-all": "Tümünü seç",
 			"rename-heading": "Başlığı yeniden adlandır...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Genişlet",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Yeni kasan için bir isim seç.",
 			"option-new-vault-location": "Gözat",
 			"option-new-vault-location-description": "Yeni kasa için bir klasör seçin",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Obsidian yükleniyor...",
 			"obsidian-load-error": "Yüklenirken bir hata meydana geldi.",
 			"button-reload-app": "Uygulamayı yeniden başlat",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Başka bir kasa aç",
 			"loading-components": "Parçalar yükleniyor...",
 			"loading-plugins": "Eklentiler yükleniyor...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Pencere kapamayı geri al",
 		"context-menu": "Bağlam menüsünü işaretçinin altında göster",
 		"show-debug-info": "Ayıklama bilgilerini göster",
-		"toggle-preview": "Düzenleme/Önizleme moduna geç"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Düzenleme/Önizleme moduna geç",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Bu eylem {{files}} dosyada {{links}} bağlantısını etkileyecek.",
@@ -690,25 +702,26 @@
 		"label-rename-blockid": "Rename block ID"
 	},
 	"menu-items": {
-		"new-file": "Create Note",
-		"new-file-in-new-pane": "Create Note in Split",
-		"open-switcher": "Open Quickly...",
-		"open-vault": "Open Vault...",
+		"new-file": "Yeni Not Oluştur",
+		"new-file-in-new-pane": "Bölmede Yeni Not Oluştur",
+		"open-switcher": "Hızlı Aç...",
+		"open-vault": "Kasa Aç...",
 		"insert-callout": "Callout",
 		"insert-markdown-link": "Markdown Link",
 		"insert-wikilink": "Link",
-		"insert-quote": "Quote",
-		"toggle-bullet-list": "Bullet List",
-		"toggle-numbered-list": "Numbered List",
-		"toggle-bold": "Bold",
-		"toggle-code": "Code",
-		"toggle-comment": "Comment",
-		"toggle-italics": "Italics",
-		"toggle-highlight": "Highlight",
-		"toggle-strikethrough": "Strikethrough",
-		"toggle-comments": "Comment",
-		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"insert-quote": "Alıntı",
+		"toggle-bullet-list": "Madde İşaretli Liste",
+		"toggle-numbered-list": "Numaralı Liste",
+		"toggle-bold": "Kalın",
+		"toggle-code": "Kod",
+		"toggle-comment": "Yorum",
+		"toggle-italics": "İtalik",
+		"toggle-highlight": "Vurgula",
+		"toggle-strikethrough": "Üstü Çizili",
+		"toggle-comments": "Yorum",
+		"fold-all": "Tümünü Katla",
+		"unfold-all": "Tümünü Aç",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Eklentiler",

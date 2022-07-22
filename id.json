@@ -271,7 +271,7 @@
 			"name": "Plugin komunitas",
 			"option-restricted-mode": "Restricted mode",
 			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
-			"button-turn-off": "Turn off",
+			"button-turn-on": "Turn on",
 			"option-browse-community-plugins": "Plugin komunitas",
 			"option-browse-community-plugins-description": "Telusuri dan pasang plugin yang dibuat oleh komunitas kami yang menakjubkan.",
 			"button-browse": "Telusuri",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Tidak ada saran...",
 			"add-to-dictionary": "Masukkan ke kamus"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Ekspor ke PDF",
 			"caption": "Ekspor \"{{filename}}\" ke PDF dengan dengan pengaturan di bawah.",
@@ -486,6 +490,7 @@
 			"more-options": "Opsi lain",
 			"close": "Tutup",
 			"pin": "Semat",
+			"unpin": "Unpin",
 			"unlink-pane": "Lepaskan penautan panel",
 			"link-pane": "Tautkan dengan panel...",
 			"delete-file": "Hapus berkas",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Tempel sebagai teks biasa",
 			"select-all": "Pilih semua",
 			"rename-heading": "Ubah nama judul ini...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Klik untuk luaskan",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Beri nama untuk vault Anda yang mengagumkan.",
 			"option-new-vault-location": "Lokasi",
 			"option-new-vault-location-description": "Pilih lokasi untuk menaruh vault baru Anda.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Ungkap vault di penjelajah sistem",
 			"option-rename-vault": "Ubah nama vault...",
 			"msg-error-rename-exists": "Vault dengan nama ini telah tersedia.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Memuat Obsidian...",
 			"obsidian-load-error": "Terjadi kesalahan ketika memuat Obsidian.",
 			"button-reload-app": "Muat ulang apl",
+			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Buka vault lain",
 			"loading-components": "Memuat komponen...",
 			"loading-plugins": "Memuat plugin...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Batalkan tutup panel",
 		"context-menu": "Tampilkan menu konteks di bawah kursor",
 		"show-debug-info": "Tampilkan informasi debug",
-		"toggle-preview": "Ubah mode pengubah/pratinjau"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Ubah mode pengubah/pratinjau",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Ini akan mempengaruhi {{links}} di {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All"
+		"unfold-all": "Unfold All",
+		"show-debug-info": "Show Debug Info"
 	},
 	"plugins": {
 		"name": "Plugin",

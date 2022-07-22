@@ -271,7 +271,7 @@
 			"name": "Сторонні плагіни",
 			"option-restricted-mode": "Обмежений режим",
 			"option-restricted-mode-description": "Обмежений режим ВИМКНЕНО. Увімкніть, щоб вимкнути усі сторонні плагіни.",
-			"button-turn-off": "Вимкнути",
+			"button-turn-on": "Увімкнути",
 			"option-browse-community-plugins": "Плагіни спільноти",
 			"option-browse-community-plugins-description": "Огляд і встановлення сторонніх плагінів, створених нашим приголомшливою спільнотою.",
 			"button-browse": "Огляд",
@@ -408,6 +408,10 @@
 			"no-suggestion": "Немає пропозицій...",
 			"add-to-dictionary": "Додати до словника"
 		},
+		"heading-suggestion": {
+			"label-no-heading": "No heading",
+			"label-heading-level": "Heading {{level}}"
+		},
 		"print-modal": {
 			"title": "Експортувати у PDF",
 			"caption": "Експортувати \"{{filename}}\" у PDF з налаштуваннями нижче.",
@@ -486,6 +490,7 @@
 			"more-options": "Більше",
 			"close": "Закрити",
 			"pin": "Закріпити",
+			"unpin": "Unpin",
 			"unlink-pane": "Відв'язати область",
 			"link-pane": "Зв'язати з областю...",
 			"delete-file": "Видалити файл",
@@ -500,7 +505,9 @@
 			"paste-as-plain-text": "Вставити як простий текст",
 			"select-all": "Вибрати все",
 			"rename-heading": "Перейменувати цей заголовок...",
-			"rename-blockid": "Rename this block ID..."
+			"rename-blockid": "Rename this block ID...",
+			"open-in-new-window": "Open in new window",
+			"move-to-new-window": "Move to new window"
 		},
 		"tooltip": {
 			"click-to-expand": "Натисніть, щоб розгорнути",
@@ -520,6 +527,7 @@
 			"option-new-vault-name-description": "Виберіть назву для свого чудового сховища.",
 			"option-new-vault-location": "Розташування",
 			"option-new-vault-location-description": "Виберіть місце для розміщення нового сховища.",
+			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Відкрити у системному провіднику",
 			"option-rename-vault": "Перейменувати сховище...",
 			"msg-error-rename-exists": "Сховище з такою назвою вже існує.",
@@ -577,6 +585,7 @@
 			"loading-obsidian": "Завантаження Obsidian...",
 			"obsidian-load-error": "Під час завантаження Obsidian сталася помилка.",
 			"button-reload-app": "Перезавантажити застосунок",
+			"button-reload-app-in-safe-mode": "Перезапустити застосунок у безпечному режимі",
 			"button-open-another-vault": "Відкрити інше сховище",
 			"loading-components": "Завантаження компонентів...",
 			"loading-plugins": "Завантаження плагінів...",
@@ -658,7 +667,10 @@
 		"undo-close-pane": "Скасувати закриття області",
 		"context-menu": "Показати контекстне меню під курсором",
 		"show-debug-info": "Показати відлагоджувальну інформацію",
-		"toggle-preview": "Перемикнути між режимами редагування і читання"
+		"always-on-top": "Toggle window always on top",
+		"toggle-preview": "Перемикнути між режимами редагування і читання",
+		"move-to-new-window": "Move current pane to new window",
+		"open-in-new-window": "Open current pane in new window"
 	},
 	"dialogue": {
 		"label-link-affected": "Це вплине на {{links}} у {{files}}.",
@@ -708,7 +720,8 @@
 		"toggle-strikethrough": "Закреслення",
 		"toggle-comments": "Коментар",
 		"fold-all": "Згорнути все",
-		"unfold-all": "Розгорнути все"
+		"unfold-all": "Розгорнути все",
+		"show-debug-info": "Показати інформацію відлагодження"
 	},
 	"plugins": {
 		"name": "Плагіни",
