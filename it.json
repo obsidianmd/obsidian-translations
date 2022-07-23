@@ -36,11 +36,11 @@
 			"option-fold-indent": "Comprimi indentazioni",
 			"option-fold-indent-description": "Permette di comprimere una parte del contenuto con lo stesso livello d'indentazione, come le liste.",
 			"option-default-new-pane-view": "Vista nuovo pannello predefinita",
-			"option-default-new-pane-view-description": "La vista predefinita con cui viene aperto un nuovo pannello.",
+			"option-default-new-pane-view-description": "La vista predefinita con cui aprire un nuovo pannello.",
 			"option-default-new-pane-view-editing": "Vista Modifica",
 			"option-default-new-pane-view-reading": "Vista Anteprima",
 			"option-default-editing-mode": "Modalità Modifica predefinita",
-			"option-default-editing-mode-description": "La modalità predefinita di modifica con cui viene aperto un nuovo pannello.",
+			"option-default-editing-mode-description": "La modalità di modifica predefinita con cui aprire un nuovo pannello.",
 			"option-default-editing-mode-source": "Codice sorgente",
 			"option-default-editing-mode-live-preview": "Anteprima dinamica",
 			"option-show-line-number": "Mostra numero delle righe",
@@ -84,7 +84,7 @@
 		"file": {
 			"name": "File e link",
 			"option-confirm-file-deletion": "Conferma eliminazione dei file",
-			"option-confirm-file-deletion-description": "Indica se desideri che ti venga chiesto di confermare l'eliminazione dei file.",
+			"option-confirm-file-deletion-description": "Mostra una finestra di conferma durante l'eliminazione dei file.",
 			"option-delete-destination": "File eliminati",
 			"option-delete-destination-description": "Indica cosa fare con i file dopo averli eliminati.",
 			"option-choice-system-trash": "Sposta nel cestino di sistema",
@@ -153,7 +153,7 @@
 			"option-font-size-action": "Regolazione rapida carattere",
 			"option-font-size-action-description": "Regola la dimensione del carattere usando Ctrl + Scorr, o usando la modalità zoom indietro/avanti con le dita.",
 			"option-themes": "Temi",
-			"option-manage-themes-description": "Gestisci temi installati e sfoglia temi della comunità.",
+			"option-manage-themes-description": "Gestisci i temi installati e sfoglia i temi della comunità.",
 			"option-theme-button-manage": "Gestisci",
 			"option-choice-none": "Nessuno",
 			"button-reload-themes": "Ricarica temi",
@@ -244,7 +244,7 @@
 			"label-vip": "VIP",
 			"button-upgrade-catalyst": "Passa a un piano superiore",
 			"option-commercial-license": "Licenza commerciale",
-			"option-commercial-license-desc": "Se utilizzi Obsidian per scopi commerciali, potrebbe essere necessario ottenere una licenza commerciale.",
+			"option-commercial-license-desc": "Se utilizzi Obsidian per scopi commerciali, potrebbe essere necessaria una licenza commerciale.",
 			"button-purchase": "Acquista",
 			"button-log-out": "Disconnetti",
 			"label-log-in": "Accesso",
@@ -409,8 +409,8 @@
 			"add-to-dictionary": "Aggiungi al dizionario"
 		},
 		"heading-suggestion": {
-			"label-no-heading": "No heading",
-			"label-heading-level": "Heading {{level}}"
+			"label-no-heading": "Nessun titolo",
+			"label-heading-level": "Titolo {{level}}"
 		},
 		"print-modal": {
 			"title": "Esporta in PDF",
@@ -490,7 +490,7 @@
 			"more-options": "Altre opzioni",
 			"close": "Chiudi",
 			"pin": "Blocca",
-			"unpin": "Unpin",
+			"unpin": "Sblocca",
 			"unlink-pane": "Scollega pannello",
 			"link-pane": "Collega con pannello...",
 			"delete-file": "Elimina file",
@@ -506,8 +506,8 @@
 			"select-all": "Seleziona tutto",
 			"rename-heading": "Rinomina questa intestazione...",
 			"rename-blockid": "Rinomina ID del blocco...",
-			"open-in-new-window": "Open in new window",
-			"move-to-new-window": "Move to new window"
+			"open-in-new-window": "Apri in nuova finestra",
+			"move-to-new-window": "Sposta in nuova finestra"
 		},
 		"tooltip": {
 			"click-to-expand": "Clicca per espandere",
@@ -518,17 +518,17 @@
 		"start-screen": {
 			"label-version": "Versione",
 			"option-open-folder-as-vault": "Apri cartella come vault",
-			"option-open-folder-as-vault-description": "Scegliere una cartella di file Markdown esistente.",
+			"option-open-folder-as-vault-description": "Scegliere una cartella di file Markdown già esistente.",
 			"option-create-vault": "Crea nuovo vault",
 			"option-create-vault-description": "Crea un nuovo vault Obsidian in una cartella.",
 			"option-connect-obsidian-sync": "Connessione a Obsidian Sync",
-			"option-connect-obsidian-sync-description": "Configura vault sincronizzato con un vault remoto esistente.",
+			"option-connect-obsidian-sync-description": "Configura vault sincronizzato con un vault remoto già esistente.",
 			"option-new-vault-name": "Nome vault",
 			"option-new-vault-name-description": "Scegliere un nome per il vault.",
 			"option-new-vault-location": "Posizione",
 			"option-new-vault-location-description": "Scegliere una posizione per il nuovo vault.",
-			"label-new-vault-location-preview": "Your new vault will be placed in: ",
-			"option-reveal-vault-in-explorer": "Mostra vault in Esplora sistema",
+			"label-new-vault-location-preview": "Il nuovo vault verrà creato in: ",
+			"option-reveal-vault-in-explorer": "Mostra vault in Esplora file",
 			"option-rename-vault": "Rinomina vault...",
 			"msg-error-rename-exists": "Vault già esistente con questo nome.",
 			"msg-error-nested": "Impossibile spostare il vault in una sua sottocartella.",
@@ -585,7 +585,7 @@
 			"loading-obsidian": "Caricamento di Obsidian in corso...",
 			"obsidian-load-error": "Si è verificato un errore durante il caricamento di Obsidian.",
 			"button-reload-app": "Ricarica app",
-			"button-reload-app-in-safe-mode": "Reload app in safe mode",
+			"button-reload-app-in-safe-mode": "Ricarica app in modalità provvisoria",
 			"button-open-another-vault": "Apri un altro vault",
 			"loading-components": "Caricamento dei componenti...",
 			"loading-plugins": "Caricamento dei plugin...",
@@ -636,7 +636,7 @@
 		"open-settings": "Apri impostazioni",
 		"open-help": "Apri aiuto",
 		"toggle-edit": "Passa a vista Modifica/Lettura",
-		"toggle-source-mode": "Passa a modalità Anteprima dinamica/Codice sorgente",
+		"toggle-source-mode": "Passa a modalità Anteprima/Codice sorgente",
 		"delete-current-file": "Elimina file corrente",
 		"close-active-pane": "Chiudi pannello attivo",
 		"close-other-panes": "Chiudi tutti gli altri pannelli",
@@ -667,10 +667,10 @@
 		"undo-close-pane": "Annulla chiusura pannello",
 		"context-menu": "Mostra menu contestuale sotto il cursore",
 		"show-debug-info": "Mostra informazioni di debug",
-		"always-on-top": "Toggle window always on top",
+		"always-on-top": "Attiva/disattiva finestra sempre in primo piano",
 		"toggle-preview": "Passa a modalità Modifica/Anteprima",
-		"move-to-new-window": "Move current pane to new window",
-		"open-in-new-window": "Open current pane in new window"
+		"move-to-new-window": "Sposta pannello in nuova finestra",
+		"open-in-new-window": "Apri pannello in una nuova finestra"
 	},
 	"dialogue": {
 		"label-link-affected": "Questa operazione influirà su {{links}} in {{files}}.",
@@ -699,7 +699,7 @@
 		"label-new-name": "Nuovo nome",
 		"msg-rename-success": "File rinominato con successo.",
 		"label-rename-heading": "Rinomina intestazione",
-		"label-rename-blockid": "Rename block ID"
+		"label-rename-blockid": "Rinomina ID del blocco"
 	},
 	"menu-items": {
 		"new-file": "Crea nota",
@@ -721,7 +721,7 @@
 		"toggle-comments": "Commenti",
 		"fold-all": "Comprimi tutto",
 		"unfold-all": "Espandi tutto",
-		"show-debug-info": "Show Debug Info"
+		"show-debug-info": "Mostra informazioni di debug"
 	},
 	"plugins": {
 		"name": "Plugin",
@@ -1047,7 +1047,7 @@
 		},
 		"unique-note-creator": {
 			"name": "Note univoche",
-			"desc": "Crea note con prefissi timestamp univoci, per flussi di lavoro come Zettelkasten.",
+			"desc": "Crea note con prefissi timestamp univoci, per flussi di lavoro tipo Zettelkasten.",
 			"short-name": "Univoche",
 			"action-create-note": "Nuova nota univoca",
 			"option-new-file-location": "Posizione dei nuovi file",
@@ -1341,7 +1341,7 @@
 			"label-empty-file": "Vuoto",
 			"label-setting-files": "Impostazione file",
 			"label-deleted-files": "File eliminati",
-			"label-version-history": "Version history",
+			"label-version-history": "Cronologia versioni",
 			"label-click-to-see-history": "Fare clic su un file eliminato per vedere la sua cronologia.",
 			"label-create-remote-vault": "Crea vault remoto",
 			"msg-please-enter-password": "Immettere una password.",
