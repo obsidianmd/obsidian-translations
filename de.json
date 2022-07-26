@@ -198,7 +198,7 @@
 			"label-install-version": "(Installer-Version: {{version}})",
 			"label-up-to-date": "Deine Anwendung ist auf dem neuesten Stand!",
 			"label-read-changelog": "Liste der Änderungen lesen.",
-			"label-manual-install-required": "Du musst die aktuellste Version manuell installieren.",
+			"label-manual-update-required": "To support the latest features and to receive the latest security patches, Obsidian needs a major installer update. You need to manually download and reinstall Obsidian.",
 			"label-download": "Download",
 			"label-new-version-ready": "Eine neue Version ist bereit zur Installation. ",
 			"label-relaunch-to-update": "Anwendung neu starten, um zu aktualisieren.",
@@ -271,7 +271,7 @@
 			"name": "Externe Erweiterungen",
 			"option-restricted-mode": "Eingeschränkter Modus",
 			"option-restricted-mode-description": "Eingeschränkter Modus ist abgeschaltet. Schalte ihn ein, um Community-Plugins zu deaktivieren.",
-			"button-turn-on": "Turn on",
+			"button-turn-on": "Einschalten",
 			"option-browse-community-plugins": "Community-Erweiterungen",
 			"option-browse-community-plugins-description": "Durchsuche und installiere von unserer großartigen Community erstellte Erweiterungen.",
 			"button-browse": "Durchsuchen",
@@ -409,8 +409,8 @@
 			"add-to-dictionary": "In das Wörterbuch/Dictionary aufnehmen"
 		},
 		"heading-suggestion": {
-			"label-no-heading": "No heading",
-			"label-heading-level": "Heading {{level}}"
+			"label-no-heading": "Keine Überschrift",
+			"label-heading-level": "Überschrift {{level}}"
 		},
 		"print-modal": {
 			"title": "Nach PDF exportieren",
@@ -506,8 +506,8 @@
 			"select-all": "Alles auswählen",
 			"rename-heading": "Diese Überschrift umbenennen...",
 			"rename-blockid": "Diesen Block-ID umbenennen...",
-			"open-in-new-window": "Open in new window",
-			"move-to-new-window": "Move to new window"
+			"open-in-new-window": "In neuem Fenster öffnen",
+			"move-to-new-window": "In ein neues Fenster verschieben"
 		},
 		"tooltip": {
 			"click-to-expand": "Klick zum Aufklappen",
@@ -527,7 +527,7 @@
 			"option-new-vault-name-description": "Wähle einen Namen für Deinen wunderbaren Vault.",
 			"option-new-vault-location": "Speicherort",
 			"option-new-vault-location-description": "Wähle einen Speicherort für Deinen neuen Vault.",
-			"label-new-vault-location-preview": "Your new vault will be placed in: ",
+			"label-new-vault-location-preview": "Dein neuer Vault wird hier gespeichert: ",
 			"option-reveal-vault-in-explorer": "Zeige Vault im System Explorer",
 			"option-rename-vault": "Vault umbenennen...",
 			"msg-error-rename-exists": "Es existiert bereits ein Vault mit diesem Namen.",
@@ -585,7 +585,7 @@
 			"loading-obsidian": "Obsidian laden...",
 			"obsidian-load-error": "Beim Laden von Obsidian ist ein Fehler aufgetreten.",
 			"button-reload-app": "App neu laden",
-			"button-reload-app-in-safe-mode": "Reload app in safe mode",
+			"button-reload-app-in-safe-mode": "App im abgesicherten Modus neu laden",
 			"button-open-another-vault": "Anderer Vault öffnen",
 			"loading-components": "Komponenten laden...",
 			"loading-plugins": "Erweiterungen laden...",
@@ -667,10 +667,10 @@
 		"undo-close-pane": "Fensterbereich wieder öffnen",
 		"context-menu": "Zeige Kontextmenü unter dem Cursor",
 		"show-debug-info": "Zeige Debug Informationen",
-		"always-on-top": "Toggle window always on top",
+		"always-on-top": "Fenster immer im Vordergrund halten",
 		"toggle-preview": "Editor/Vorschau Modus wechseln",
-		"move-to-new-window": "Move current pane to new window",
-		"open-in-new-window": "Open current pane in new window"
+		"move-to-new-window": "Aktiven Fensterbereich in neues Fenster verschieben",
+		"open-in-new-window": "Aktiven Fensterbereich in neuem Fenster öffnen"
 	},
 	"dialogue": {
 		"label-link-affected": "Das betrifft {{links}} in {{files}}.",
@@ -721,7 +721,7 @@
 		"toggle-comments": "Kommentar",
 		"fold-all": "Alle einklappen",
 		"unfold-all": "Alle ausklappen",
-		"show-debug-info": "Show Debug Info"
+		"show-debug-info": "Debug-Informationen anzeigen"
 	},
 	"plugins": {
 		"name": "Erweiterungen",
@@ -1330,7 +1330,7 @@
 		"sync": {
 			"name": "Sync",
 			"desc": "Synchronisiere Deine Dateien mit Obsidian Sync.",
-			"action-view-version-history": "Zeige Versions-Verlauf",
+			"action-view-version-history": "Zeige Versionsverlauf",
 			"label-load-more": "Mehr laden",
 			"label-copy-to-clipboard": "In Zwischenablage kopieren",
 			"label-restore-this-version": "Diese Version wiederherstellen",
@@ -1341,7 +1341,7 @@
 			"label-empty-file": "Leer",
 			"label-setting-files": "Einstellungsdateien",
 			"label-deleted-files": "Gelöschte Dateien",
-			"label-version-history": "Version history",
+			"label-version-history": "Versionsverlauf",
 			"label-click-to-see-history": "Klicke auf eine gelöschte Datei, um ihren Verlauf zu sehen.",
 			"label-create-remote-vault": "Remote-Vault erstellen",
 			"msg-please-enter-password": "Bitte gib ein Passwort ein.",
