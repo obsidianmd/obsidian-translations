@@ -198,7 +198,7 @@
 			"label-install-version": "(インストーラーのバージョン: {{version}})",
 			"label-up-to-date": "アプリは最新版です！",
 			"label-read-changelog": "変更履歴を閲覧する。",
-			"label-manual-update-required": "To support the latest features and to receive the latest security patches, Obsidian needs a major installer update. You need to manually download and reinstall Obsidian.",
+			"label-manual-update-required": "最新機能のサポートと最新のセキュリティパッチを受け取るためには Obsidian インストーラーのメジャーアップデートが必要となります。新しい Obsidian を手動ダウンロードした上で再インストールしてください。",
 			"label-download": "ダウンロード",
 			"label-new-version-ready": "最新バージョンがインストールできます。",
 			"label-relaunch-to-update": "更新のために再起動してください。",
@@ -271,7 +271,7 @@
 			"name": "コミュニティプラグイン",
 			"option-restricted-mode": "制限モード",
 			"option-restricted-mode-description": "制限モードが無効になっています。コミュニティプラグインを無効化するにはこの設定を有効にしてください。",
-			"button-turn-on": "Turn on",
+			"button-turn-on": "有効化",
 			"option-browse-community-plugins": "コミュニティプラグイン",
 			"option-browse-community-plugins-description": "最高のコミュニティによって開発されたサードパーティプラグインを閲覧してインストールします。",
 			"button-browse": "閲覧",
@@ -409,8 +409,8 @@
 			"add-to-dictionary": "辞書に追加"
 		},
 		"heading-suggestion": {
-			"label-no-heading": "No heading",
-			"label-heading-level": "Heading {{level}}"
+			"label-no-heading": "見出しが見つかりません",
+			"label-heading-level": "見出しレベル {{level}}"
 		},
 		"print-modal": {
 			"title": "PDFにエクスポート",
@@ -490,7 +490,7 @@
 			"more-options": "オプション",
 			"close": "閉じる",
 			"pin": "ピン",
-			"unpin": "Unpin",
+			"unpin": "ピンの解除",
 			"unlink-pane": "ペインのリンクを解除",
 			"link-pane": "ペインをリンク…",
 			"delete-file": "ファイルを削除",
@@ -506,8 +506,8 @@
 			"select-all": "すべてを選択",
 			"rename-heading": "この見出しをリネーム…",
 			"rename-blockid": "このブロックIDをリネーム…",
-			"open-in-new-window": "Open in new window",
-			"move-to-new-window": "Move to new window"
+			"open-in-new-window": "新規ウィンドウで開く",
+			"move-to-new-window": "新規ウィンドウに移動"
 		},
 		"tooltip": {
 			"click-to-expand": "クリックして展開",
@@ -527,7 +527,7 @@
 			"option-new-vault-name-description": "保管庫に名前を付けてください。",
 			"option-new-vault-location": "ロケーション",
 			"option-new-vault-location-description": "新規保管庫の作成場所を指定してください。",
-			"label-new-vault-location-preview": "Your new vault will be placed in: ",
+			"label-new-vault-location-preview": "新規保管庫は以下の場所に配置されます: ",
 			"option-reveal-vault-in-explorer": "システムのエクスプローラで表示",
 			"option-rename-vault": "保管庫の名前を変更…",
 			"msg-error-rename-exists": "同じ名前の保管庫がすでに存在しています。",
@@ -585,7 +585,7 @@
 			"loading-obsidian": "Obsidianをロードしています…",
 			"obsidian-load-error": "Obsidianのロード中にエラーが発生しました。",
 			"button-reload-app": "アプリをリロード",
-			"button-reload-app-in-safe-mode": "Reload app in safe mode",
+			"button-reload-app-in-safe-mode": "セーフモードでアプリをリロード",
 			"button-open-another-vault": "他の保管庫を開く",
 			"loading-components": "コンポーネントをロードしています…",
 			"loading-plugins": "プラグインをロードしています…",
@@ -667,10 +667,10 @@
 		"undo-close-pane": "閉じたペインを開きなおす",
 		"context-menu": "コンテキストメニューをカーソルの下に表示",
 		"show-debug-info": "デバッグ情報を表示",
-		"always-on-top": "Toggle window always on top",
+		"always-on-top": "ウィンドウの常時トップ表示をトグル",
 		"toggle-preview": "編集モードとプレビューモードを切り替える",
-		"move-to-new-window": "Move current pane to new window",
-		"open-in-new-window": "Open current pane in new window"
+		"move-to-new-window": "現在のペインを新規ウィンドウに移動",
+		"open-in-new-window": "現在のペインを新規ウィンドウで開く"
 	},
 	"dialogue": {
 		"label-link-affected": "{{files}}の{{links}}に影響があります。",
@@ -721,7 +721,7 @@
 		"toggle-comments": "コメント",
 		"fold-all": "すべてフォールド",
 		"unfold-all": "すべてのフォールドを解除",
-		"show-debug-info": "Show Debug Info"
+		"show-debug-info": "デバッグ情報を表示"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -737,7 +737,7 @@
 			"action-change-sort": "ソート順の変更",
 			"action-reveal-file": "ファイルエクスプローラでファイルを表示",
 			"action-reveal-active-file": "ファイルエクスプローラでアクティブなファイルを表示",
-			"command-move-file": "ファイルを別のフォルダへ移動",
+			"command-move-file": "ファイルを別のフォルダに移動",
 			"action-move-file": "ファイルを移動",
 			"action-move-folder": "フォルダを移動",
 			"action-move-items": "{{count}}個のアイテムを移動…",
@@ -1341,7 +1341,7 @@
 			"label-empty-file": "ファイルがありません",
 			"label-setting-files": "設定ファイル",
 			"label-deleted-files": "削除されたファイル",
-			"label-version-history": "Version history",
+			"label-version-history": "バージョン履歴",
 			"label-click-to-see-history": "削除されたファイルのバージョン履歴を閲覧するにはファイルをクリックしてください。",
 			"label-create-remote-vault": "リモート保管庫の作成",
 			"msg-please-enter-password": "パスワードを入力してください。",

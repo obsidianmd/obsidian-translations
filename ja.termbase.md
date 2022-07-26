@@ -130,6 +130,7 @@ reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
 Right-to-left | 右横書き
+safe mode | セーフモード
 sandbox vault | サンドボックス保管庫
 search | 検索
 second brain | 第二の脳
@@ -149,6 +150,7 @@ toggle | トグル、切り替える(コマンド名においてはトグルを�
 unfold | フォールドの解除
 unlinked mentions | リンクされていないメンション
 unordered list | 順序なしリスト
+unpin | ピンの解除
 untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
 version history | バージョン履歴
