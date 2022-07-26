@@ -121,7 +121,7 @@
 			"label-no-excluded-filters-applied": "目前未套用任何篩選器。請在下方新增。",
 			"label-excluded-filters-applied": "目前符合以下篩選器的檔案將被排除：",
 			"label-excluded-filter": "篩選器",
-			"placeholder-excluded-filter": "輸入路徑或 \"/regex/\"……"
+			"placeholder-excluded-filter": "輸入路徑或 “/regex/”……"
 		},
 		"appearance": {
 			"name": "外觀",
@@ -198,7 +198,7 @@
 			"label-install-version": "（安裝程式版本：{{version}}）",
 			"label-up-to-date": "您使用的是最新版本！",
 			"label-read-changelog": "閱讀更新日誌",
-			"label-manual-update-required": "To support the latest features and to receive the latest security patches, Obsidian needs a major installer update. You need to manually download and reinstall Obsidian.",
+			"label-manual-update-required": "Obsidian 需要一次較大的安裝程式更新，方能支援最新功能，以及接收最新的安全性修正。您需要自行下載並重新安裝 Obsidian。",
 			"label-download": "下載",
 			"label-new-version-ready": "準備安裝新版本。 ",
 			"label-relaunch-to-update": "重新啟動應用程式以進行更新。",
@@ -271,7 +271,7 @@
 			"name": "第三方外掛程式",
 			"option-restricted-mode": "受限模式",
 			"option-restricted-mode-description": "受限模式已關閉，請開啟以停用社群外掛程式。",
-			"button-turn-on": "Turn on",
+			"button-turn-on": "開啟",
 			"option-browse-community-plugins": "社群外掛程式",
 			"option-browse-community-plugins-description": "瀏覽並安裝我們令人嘆服的社群所製作的第三方外掛程式。",
 			"button-browse": "瀏覽",
@@ -283,7 +283,7 @@
 			"label-code-review-desc": "外掛程式在上架前須先讓我們的團隊進行初始程式碼檢閱。",
 			"label-open-source": "開放原始碼",
 			"label-open-source-desc": "大部分的外掛程式有在 GitHub 上開源，所以您可以自行檢查程式碼。",
-			"label-peer-audit": "同儕稽核",
+			"label-peer-audit": "同行稽核",
 			"label-peer-audit-desc": "我們有龐大的開發者社群，他們互相監督。",
 			"label-report-mechanism": "回報機制",
 			"label-report-mechanism-desc": "使用者回報後，我們會對有問題的外掛程式進行後續追蹤和移除。",
@@ -405,12 +405,12 @@
 			"label-no-match-found": "未找到符合結果"
 		},
 		"spellcheck": {
-			"no-suggestion": "沒有建議…",
+			"no-suggestion": "沒有建議……",
 			"add-to-dictionary": "加入詞典"
 		},
 		"heading-suggestion": {
-			"label-no-heading": "No heading",
-			"label-heading-level": "Heading {{level}}"
+			"label-no-heading": "沒有標題",
+			"label-heading-level": "標題 {{level}}"
 		},
 		"print-modal": {
 			"title": "匯出 PDF",
@@ -490,7 +490,7 @@
 			"more-options": "更多選項",
 			"close": "關閉",
 			"pin": "釘選",
-			"unpin": "Unpin",
+			"unpin": "取消釘選",
 			"unlink-pane": "取消窗格連結",
 			"link-pane": "連結窗格…",
 			"delete-file": "刪除檔案",
@@ -506,8 +506,8 @@
 			"select-all": "全選",
 			"rename-heading": "重新命名標題……",
 			"rename-blockid": "重新命名此區塊 ID……",
-			"open-in-new-window": "Open in new window",
-			"move-to-new-window": "Move to new window"
+			"open-in-new-window": "在新視窗開啟",
+			"move-to-new-window": "移至新視窗"
 		},
 		"tooltip": {
 			"click-to-expand": "點選展開",
@@ -527,7 +527,7 @@
 			"option-new-vault-name-description": "選擇適當的儲存庫名稱。",
 			"option-new-vault-location": "位置",
 			"option-new-vault-location-description": "選擇置放儲存庫的位置。",
-			"label-new-vault-location-preview": "Your new vault will be placed in: ",
+			"label-new-vault-location-preview": "您的新儲存庫會放在：",
 			"option-reveal-vault-in-explorer": "在系統檔案總管中開啟儲存庫",
 			"option-rename-vault": "重新命名儲存庫……",
 			"msg-error-rename-exists": "已存在相同名稱的儲存庫。",
@@ -585,7 +585,7 @@
 			"loading-obsidian": "正在載入 Obsidian……",
 			"obsidian-load-error": "載入 Obsidian 時發生錯誤。",
 			"button-reload-app": "重新載入應用程式",
-			"button-reload-app-in-safe-mode": "Reload app in safe mode",
+			"button-reload-app-in-safe-mode": "重新載入應用程式進安全模式",
 			"button-open-another-vault": "開啟另一個儲存庫",
 			"loading-components": "正在載入元件……",
 			"loading-plugins": "正在載入外掛程式……",
@@ -608,7 +608,7 @@
 			"label-official-help-site-desc": "閱讀 Obsidian 的官方說明文件，提供多語言版本。",
 			"action-visit": "前往",
 			"label-discord-chat": "Discord 聊天室",
-			"label-discord-chat-desc": "Discord 是與來自世界各地的 Obsidian 老手聊天的好地方。",
+			"label-discord-chat-desc": "Discord 是與世界各地的 Obsidian 老手聊天的好地方。",
 			"action-join": "加入",
 			"label-forum": "官方論壇",
 			"label-forum-desc": "互相協助、發表功能請求、回報問題，或是深入探討知識管理。",
@@ -667,10 +667,10 @@
 		"undo-close-pane": "復原關閉窗格",
 		"context-menu": "顯示游標下的特色選單",
 		"show-debug-info": "顯示除錯資訊",
-		"always-on-top": "Toggle window always on top",
+		"always-on-top": "視窗永遠置頂開關",
 		"toggle-preview": "切換編輯/預覽模式",
-		"move-to-new-window": "Move current pane to new window",
-		"open-in-new-window": "Open current pane in new window"
+		"move-to-new-window": "移動目前窗格至新視窗",
+		"open-in-new-window": "在新視窗開啟目前窗格"
 	},
 	"dialogue": {
 		"label-link-affected": "這將影響 {{files}} 中的 {{links}}。",
@@ -682,7 +682,7 @@
 		"button-do-not-update": "不更新",
 		"label-confirm-deletion": "您確定要刪除「{{filename}}」嗎？",
 		"label-move-to-system-trash": "會將其移動至資源回收筒。",
-		"label-move-to-vault-trash": "會將其移動至 Obsidian 回收筒（即儲存庫目錄中隱藏的「.trash」資料夾）裡。",
+		"label-move-to-vault-trash": "會將其移動至 Obsidian 回收筒（即儲存庫目錄中隱藏的 “.trash” 資料夾）裡。",
 		"label-permanent-delete": "會將其永久刪除。",
 		"label-non-empty-folder": "這不是空資料夾。",
 		"label-delete-folder-warning": "如果繼續，此資料夾內的所有檔案將被刪除。",
@@ -704,8 +704,8 @@
 	"menu-items": {
 		"new-file": "建立筆記",
 		"new-file-in-new-pane": "在分割窗格中建立筆記",
-		"open-switcher": "快速開啟……",
-		"open-vault": "開啟儲存庫……",
+		"open-switcher": "快速開啟…",
+		"open-vault": "開啟儲存庫…",
 		"insert-callout": "註標",
 		"insert-markdown-link": "Markdown 連結",
 		"insert-wikilink": "連結",
@@ -721,7 +721,7 @@
 		"toggle-comments": "註解",
 		"fold-all": "全部收合",
 		"unfold-all": "全部展開",
-		"show-debug-info": "Show Debug Info"
+		"show-debug-info": "顯示除錯資訊"
 	},
 	"plugins": {
 		"name": "外掛程式",
@@ -1052,12 +1052,12 @@
 			"action-create-note": "建立新唯一筆記",
 			"option-new-file-location": "新檔案位置",
 			"option-new-file-location-description": "建立新唯一筆記的資料夾路徑。",
-			"msg-folder-not-found": "無法建立唯一筆記。找不到資料夾 \"{{folderOption}}\"。",
+			"msg-folder-not-found": "無法建立唯一筆記。找不到資料夾 “{{folderOption}}”。",
 			"option-template-file": "範本檔位置",
 			"option-template-file-description": "作為範本的檔案路徑。",
 			"option-template-file-placeholder": "例如：資料夾1/筆記",
 			"option-id-format": "唯一前綴格式",
-			"msg-template-file-not-found": "無法建立唯一筆記。找不到範本檔 \"{{template}}\"。"
+			"msg-template-file-not-found": "無法建立唯一筆記。找不到模板檔案 “{{template}}”。"
 		},
 		"random-note": {
 			"name": "漫遊筆記",
@@ -1119,7 +1119,7 @@
 			"instruction-dismiss": "取消動作",
 			"msg-no-templates-found": "無符合模板",
 			"msg-fail-invalid-folder": "無法列出模板清單。模板資料夾設定錯誤。",
-			"msg-fail-folder-not-found": "無法列出模板清單。無此資料夾：\"{{folderOption}}\"。",
+			"msg-fail-folder-not-found": "無法列出模板清單。無此資料夾：「{{folderOption}}」。",
 			"prompt-type-template": "輸入模板檔名……"
 		},
 		"translucency": {
@@ -1274,7 +1274,7 @@
 			"button-add-more-sites": "購買更多網站",
 			"label-no-sites-bought": "您尚未購買任何網站。",
 			"button-get-site": "取得網站",
-			"label-manage-sharing": "管理 \"{{name}}\" 共享",
+			"label-manage-sharing": "管理「{{name}}」共享",
 			"label-sharing-with-users": "此網站目前與以下使用者共享。",
 			"label-not-sharing": "此網站目前未與任何人共享。",
 			"label-invite-pending": "待確認",
@@ -1317,7 +1317,7 @@
 			"action-load-layout": "載入工作區配置",
 			"action-manage-layouts": "管理工作區配置",
 			"action-save-and-load-layout": "儲存並載入其他配置",
-			"placeholder-save-current-layout-as": "另存目前的工作區配置為……",
+			"placeholder-save-current-layout-as": "另存目前的工作區配置為…",
 			"button-save": "儲存",
 			"button-load": "載入",
 			"tooltip-delete-layout": "刪除配置",
@@ -1341,7 +1341,7 @@
 			"label-empty-file": "空",
 			"label-setting-files": "設定檔案",
 			"label-deleted-files": "已刪除檔案",
-			"label-version-history": "Version history",
+			"label-version-history": "版本歷史",
 			"label-click-to-see-history": "點選已刪除檔案以檢視其歷史。",
 			"label-create-remote-vault": "建立遠端儲存庫",
 			"msg-please-enter-password": "請輸入密碼。",
@@ -1385,7 +1385,7 @@
 			"option-remote-vault": "遠端儲存庫",
 			"button-choose-remote-vault": "挑選",
 			"button-manage-remote-vault": "管理",
-			"option-remote-vault-desc-connected": "目前已連接至 \"{{name}}\" 遠端儲存庫。",
+			"option-remote-vault-desc-connected": "目前已連接至 “{{name}}” 遠端儲存庫。",
 			"option-remote-vault-desc-not-connected": "目前尚未連接至任何遠端儲存庫。",
 			"option-sync-status": "同步狀態",
 			"option-sync-status-desc-paused": "Obsidian Sync 目前已暫停。",
@@ -1460,7 +1460,7 @@
 			"button-start-syncing": "開始同步",
 			"label-confirm-merge-vault": "確認合併儲存庫",
 			"msg-vault-has-notes": "您的本機儲存庫已經有一些筆記。",
-			"msg-vault-merge-warning": "如果您連接至遠端資料庫｢{{name}}｣，您本機儲存庫中的筆記將與遠端儲存庫中的筆記合併。若發生衝突，將留存該筆記的最新版本。",
+			"msg-vault-merge-warning": "如果您連接至遠端資料庫「{{name}}」，您本機儲存庫中的筆記將與遠端儲存庫中的筆記合併。若發生衝突，將留存該筆記的最新版本。",
 			"tooltip-update-setting-on-all-devices": "請更新此選項，並在您想要套用的裝置上重新啟動應用程式。",
 			"label-sharing-with-users": "此遠端儲存庫目前與以下使用者共享。",
 			"label-not-sharing": "此遠端儲存庫目前未與任何人共享。",
