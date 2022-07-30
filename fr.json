@@ -490,7 +490,7 @@
 			"more-options": "Plus d'options",
 			"close": "Fermer",
 			"pin": "Épingler",
-			"unpin": "Unpin",
+			"unpin": "Désépingler",
 			"unlink-pane": "Dissocier le volet",
 			"link-pane": "Associer au volet…",
 			"delete-file": "Supprimer le fichier",
@@ -506,8 +506,8 @@
 			"select-all": "Tout sélectionner",
 			"rename-heading": "Renommer cet en-tête…",
 			"rename-blockid": "Renommer cet ID de bloc…",
-			"open-in-new-window": "Open in new window",
-			"move-to-new-window": "Move to new window"
+			"open-in-new-window": "Ouvrir dans une nouvelle fenêtre",
+			"move-to-new-window": "Déplacer dans une nouvelle fenêtre"
 		},
 		"tooltip": {
 			"click-to-expand": "Cliquer pour afficher",
@@ -569,8 +569,8 @@
 			"insert-link-here": "Insérer le lien ici",
 			"insert-links-here": "Insérer des liens ici",
 			"move-into-folder": "Déplacer dans \"{{folder}}\"",
-			"star-this-file": "Épingler ce fichier",
-			"star-these-files": "Épingler ces fichiers",
+			"star-this-file": "Ajouter ce fichier aux favoris",
+			"star-these-files": "Ajouter ces fichiers aux favoris",
 			"open-in-this-pane": "Ouvrir dans ce volet"
 		},
 		"window": {
@@ -667,10 +667,10 @@
 		"undo-close-pane": "Annuler la fermeture du volet",
 		"context-menu": "Afficher le menu contextuel sous le curseur",
 		"show-debug-info": "Afficher les informations de débogages.",
-		"always-on-top": "Toggle window always on top",
+		"always-on-top": "Rendre la fenêtre toujours visible",
 		"toggle-preview": "Basculer entre édition et aperçu",
-		"move-to-new-window": "Move current pane to new window",
-		"open-in-new-window": "Open current pane in new window"
+		"move-to-new-window": "Déplacer le volet actuel vers une nouvelle fenêtre",
+		"open-in-new-window": "Ouvrir le volet actuel dans une nouvelle fenêtre"
 	},
 	"dialogue": {
 		"label-link-affected": "Cela met à jour {{links}} dans {{files}}.",
@@ -949,16 +949,16 @@
 			"label-require-mod": "Exiger l'appui de {{key}} pour déclencher l'aperçu de page au survol"
 		},
 		"starred": {
-			"name": "Épingles",
-			"desc": "Épingle les fichiers et les recherches fréquemment utilisés.",
-			"action-show": "Afficher le volet des fichiers épinglés",
-			"action-toggle": "(Dés)épingle du fichier courant",
+			"name": "Favoris",
+			"desc": "Ajouter aux favoris les fichiers et les recherches fréquemment utilisés.",
+			"action-show": "Afficher le volet des fichiers favoris",
+			"action-toggle": "(Dés)épingle le fichier courant des favoris",
 			"action-toggle-search": "(Dés)épingle la recherche courante des favoris",
-			"action-star": "Épingler",
-			"action-unstar": "Désépingler",
-			"menu-opt-remove": "Retirer",
-			"msg-successfully-starred": "Fichier \"{{title}}\" épinglé.",
-			"msg-removed-starred": "Fichier \"{{title}}\" n'est plus épinglé.",
+			"action-star": "Ajouter aux favoris",
+			"action-unstar": "Supprimer des favoris",
+			"menu-opt-remove": "Supprimer",
+			"msg-successfully-starred": "Fichier \"{{title}}\" ajouté aux favoris.",
+			"msg-removed-starred": "Fichier \"{{title}}\" supprimé des favoris.",
 			"msg-cannot-find-path": "Impossible de trouver le fichier \"{{path}}\"."
 		},
 		"custom-css": {
