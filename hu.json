@@ -198,7 +198,7 @@
 			"label-install-version": "(Installer version: {{version}})",
 			"label-up-to-date": "Your app is up to date!",
 			"label-read-changelog": "Read the changelog.",
-			"label-manual-update-required": "To support the latest features and to receive the latest security patches, Obsidian needs a major installer update. You need to manually download and reinstall Obsidian.",
+			"label-manual-install-required": "You must manually install the latest version.",
 			"label-download": "Download",
 			"label-new-version-ready": "A new version is ready to be installed. ",
 			"label-relaunch-to-update": "Relaunch the app to update.",
@@ -270,8 +270,8 @@
 		"third-party-plugin": {
 			"name": "Third-party plugin",
 			"option-restricted-mode": "Restricted mode",
-			"option-restricted-mode-description": "Restricted mode is off. Turn on to disable community plugins.",
-			"button-turn-on": "Turn on",
+			"option-restricted-mode-description": "Restricted Mode is off. Turn on to disable community plugins.",
+			"button-turn-off": "Turn off",
 			"option-browse-community-plugins": "Community plugins",
 			"option-browse-community-plugins-description": "Browse and install third-party plugins made by our amazing community.",
 			"button-browse": "Browse",
@@ -408,10 +408,6 @@
 			"no-suggestion": "No suggestions...",
 			"add-to-dictionary": "Add to dictionary"
 		},
-		"heading-suggestion": {
-			"label-no-heading": "No heading",
-			"label-heading-level": "Heading {{level}}"
-		},
 		"print-modal": {
 			"title": "Export to PDF",
 			"caption": "Export \"{{filename}}\" to PDF with the setting below.",
@@ -490,7 +486,6 @@
 			"more-options": "More options",
 			"close": "Close",
 			"pin": "Pin",
-			"unpin": "Unpin",
 			"unlink-pane": "Unlink pane",
 			"link-pane": "Link with pane...",
 			"delete-file": "Delete file",
@@ -505,9 +500,7 @@
 			"paste-as-plain-text": "Paste as plain text",
 			"select-all": "Select all",
 			"rename-heading": "Rename this heading...",
-			"rename-blockid": "Rename this block ID...",
-			"open-in-new-window": "Open in new window",
-			"move-to-new-window": "Move to new window"
+			"rename-blockid": "Rename this block ID..."
 		},
 		"tooltip": {
 			"click-to-expand": "Click to expand",
@@ -527,7 +520,6 @@
 			"option-new-vault-name-description": "Pick a name for your awesome vault.",
 			"option-new-vault-location": "Location",
 			"option-new-vault-location-description": "Pick a place to put your new vault.",
-			"label-new-vault-location-preview": "Your new vault will be placed in: ",
 			"option-reveal-vault-in-explorer": "Reveal vault in system explorer",
 			"option-rename-vault": "Rename vault...",
 			"msg-error-rename-exists": "There is already a vault with this name.",
@@ -585,7 +577,6 @@
 			"loading-obsidian": "Loading Obsidian...",
 			"obsidian-load-error": "An error occurred while loading Obsidian.",
 			"button-reload-app": "Reload app",
-			"button-reload-app-in-safe-mode": "Reload app in safe mode",
 			"button-open-another-vault": "Open another vault",
 			"loading-components": "Loading components...",
 			"loading-plugins": "Loading plugins...",
@@ -667,10 +658,7 @@
 		"undo-close-pane": "Undo close pane",
 		"context-menu": "Show context menu under cursor",
 		"show-debug-info": "Show debug info",
-		"always-on-top": "Toggle window always on top",
-		"toggle-preview": "Toggle edit/preview mode",
-		"move-to-new-window": "Move current pane to new window",
-		"open-in-new-window": "Open current pane in new window"
+		"toggle-preview": "Toggle edit/preview mode"
 	},
 	"dialogue": {
 		"label-link-affected": "This will affect {{links}} in {{files}}.",
@@ -720,8 +708,7 @@
 		"toggle-strikethrough": "Strikethrough",
 		"toggle-comments": "Comment",
 		"fold-all": "Fold All",
-		"unfold-all": "Unfold All",
-		"show-debug-info": "Show Debug Info"
+		"unfold-all": "Unfold All"
 	},
 	"plugins": {
 		"name": "Plugins",
@@ -844,7 +831,7 @@
 			"label-enter-to-create": "Enter to create",
 			"tooltip-not-created-yet": "Not created yet, select to create",
 			"option-show-existing-only": "Show existing only",
-			"option-show-existing-only-description": "Only show results from existing files. Links to files that are not yet created will be hidden.",
+			"option-show-existing-only-description": "Whether to show links to files that are not yet created.",
 			"option-show-attachments": "Show attachments",
 			"option-show-attachments-desc": "Show attachment files like images, videos, and PDFs.",
 			"option-show-all-file-types": "Show all file types",
@@ -1140,7 +1127,7 @@
 		"publish": {
 			"name": "Publish",
 			"desc": "Publish your notes through Obsidian Publish.",
-			"action-publish-changes": "Publish changes",
+			"action-publish-changes": "Publish changes...",
 			"label-no-internet-access": "You need access to the internet to publish changes.",
 			"label-publish-service-description": "Obsidian Publish is an add-on paid service that lets you publish your notes online directly from Obsidian.",
 			"label-please-login": "To start publishing, please log in or create a new Obsidian account.",
@@ -1175,7 +1162,7 @@
 			"option-home-page-file-placeholder": "Pick a published file",
 			"option-logo": "Logo",
 			"option-logo-description": "Pick an image file as your site logo.",
-			"option-logo-placeholder": "Any any uploaded image in your vault...",
+			"option-logo-placeholder": "Any uploaded image in your vault...",
 			"option-site-collaboration": "Site collaboration",
 			"option-site-collaboration-desc": "Manage collaborators for this site.",
 			"button-manage-collaborators": "Manage",
@@ -1341,7 +1328,6 @@
 			"label-empty-file": "Empty",
 			"label-setting-files": "Setting files",
 			"label-deleted-files": "Deleted files",
-			"label-version-history": "Version history",
 			"label-click-to-see-history": "Click on a deleted file to see its history.",
 			"label-create-remote-vault": "Create remote vault",
 			"msg-please-enter-password": "Please enter a password.",
@@ -1402,7 +1388,7 @@
 			"button-bulk-restore": "Bulk restore",
 			"button-restore-selected-files": "Restore selected files",
 			"msg-restoring": "Restoring...",
-			"msg-restoring-complete": "Restore complete: {{succeeded}} succeeded and {{failed}} failed.",
+			"msg-restoring-complete": "`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`",
 			"option-over-size": "Vault size over limit",
 			"option-over-size-desc": "Your vault is at {{size}} out of {{limit}}.",
 			"msg-largest-files": "View largest files",

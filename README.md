@@ -51,12 +51,15 @@ Here is a table of language code to language name, in alphabetical order. These 
 | Language code | Language name | Native name | Status |
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
+| `af` | Afrikaans | Afrikaans | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
 | `bg` | Bulgarian | български език | 🚧 |
-| `cz` | Czech | čeština | ✅ |
+| `bn` | Bengali | বাংলা | 🚧 |
+| `ca` | Catalan | català | 🚧 |
+| `cs` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
@@ -64,6 +67,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `fa` | Persian | فارسی | ✅ |
 | `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
+| `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
@@ -72,6 +76,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ms` | Malay | Bahasa Melayu | 🚧 |
 | `nl` | Dutch | Nederlands | ✅ |
 | `no` | Norwegian | Norsk | ✅ |
+| `oc` | Occitan | Occitan | 🚧 |
 | `pl` | Polish | język polski | ✅ |
 | `pt` | Portuguese | Português | ✅ |
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
@@ -80,7 +85,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
-| `tam` | Tamil | தமிழ் | 🚧 |
+| `ta` | Tamil | தமிழ் | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `uk` | Ukrainian | Українська | 🚧 |
