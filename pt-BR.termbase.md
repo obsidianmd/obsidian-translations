@@ -28,6 +28,7 @@ delete | Excluir
 expand | Expandir
 fixer | Conversor
 fold | Esconder
+folder | Pasta
 frontmatter | Pré-texto
 graph | Gráfico
 heading | Seção
@@ -45,6 +46,7 @@ pane | Painel
 plugin | Plugin
 preview | Visualizar/visualização
 page preview | Espiar
+quick action | Ação rápida
 quick switcher | Navegação rápida
 regex | Regex
 screenshot | Captura de tela
@@ -52,9 +54,12 @@ search | Localizar
 sidebar | Barra lateral
 site | Site
 snippet | --> Extrato **ou** Fragmento (Ambos fazem sentido)
+spellcheck | Verificação ortográfica
 starred | Favoritos/Favoritado
 supporter | Apoiador
 tag | etiqueta
+toggle | Alternar
+toolbar | Barra de ferramentas
 unlink | remover link
 vault | Cofre
 VIP | VIP
