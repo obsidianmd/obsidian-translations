@@ -472,8 +472,8 @@
 		"msg-switched-to-edit": "デフォルトの閲覧モードをエディタに変更しました。",
 		"msg-upgrade-installer": "この機能を使用するには、Obsidianのウェブサイトから入手できる最新のインストーラを使用して再インストールしてください。",
 		"tooltip-restore-default-settings": "デフォルト設定に戻す",
-		"label-copy": "Copy to clipboard",
-		"copied_generic": "Copied to your clipboard",
+		"label-copy": "クリップボードにコピー",
+		"copied_generic": "クリップボードにコピーしました",
 		"copied": "{{item}} をクリップボードにコピーしました",
 		"url": "URL",
 		"msg-open-file-through-uri": "ファイル \"{{path}}\" を開きました。",
@@ -489,7 +489,7 @@
 		"button-not-now": "今は行わない",
 		"button-add": "追加",
 		"button-manage": "管理",
-		"label-new-tab": "New tab",
+		"label-new-tab": "新規タブ",
 		"msg-tab-busy": "This tab is currently busy, please try again later",
 		"empty-state": {
 			"no-file-open": "ファイルが開かれていません",
@@ -523,10 +523,10 @@
 			"delete-file": "ファイルを削除",
 			"create-file": "このファイルを作成する",
 			"open-link": "リンクを開く",
-			"open-in-new-tab": "Open in new tab",
+			"open-in-new-tab": "新規タブで開く",
 			"open-to-the-right": "Open to the right",
 			"copy-url": "URLをコピー",
-			"close-current-tab": "Close current tab",
+			"close-current-tab": "現在のタブを閉じる",
 			"copy": "コピー",
 			"cut": "カット",
 			"paste": "ペースト",
@@ -602,8 +602,8 @@
 			"move-into-folder": "\"{{folder}}\" に移動させる",
 			"star-this-file": "このファイルにスターを付ける",
 			"star-these-files": "これらのファイルにスターを付ける",
-			"open-in-this-tab": "Open in this tab",
-			"open-as-tab": "Open as new tab"
+			"open-in-this-tab": "このタブで開く",
+			"open-as-tab": "新規タブで開く"
 		},
 		"window": {
 			"maximize": "最大化",
@@ -660,14 +660,14 @@
 		"navigate-tab-left": "Focus on tab group to the left",
 		"navigate-tab-right": "Focus on tab group to the right",
 		"toggle-pin": "ピンをトグル",
-		"split-right": "Split right",
-		"split-down": "Split down",
+		"split-right": "左右分割",
+		"split-down": "上下分割",
 		"toggle-stacked-tabs": "Toggle stacked tabs",
 		"navigate-back": "戻る",
 		"navigate-forward": "進む",
 		"use-dark-mode": "ダークモードを使用",
 		"use-light-mode": "ライトモードを使用",
-		"change-theme": "Change theme",
+		"change-theme": "テーマの変更",
 		"search-current-file": "現在のファイルを検索",
 		"search-replace-current-file": "現在のファイルを検索し置換",
 		"open-settings": "設定を開く",
@@ -675,9 +675,9 @@
 		"toggle-edit": "編集ビュー/リーディングビューを切り替える",
 		"toggle-source-mode": "ライブプレビュー/ソースモードを切り替える",
 		"delete-current-file": "現在のファイルを削除",
-		"new-tab": "New tab",
-		"close-active-tab": "Close current tab",
-		"close-other-tabs": "Close all other tabs",
+		"new-tab": "新規タブ",
+		"close-active-tab": "現在のタブを閉じる",
+		"close-other-tabs": "他のタブをすべて閉じる",
 		"toggle-left-sidebar": "左のサイドバーを開閉",
 		"toggle-right-sidebar": "右のサイドバーを開閉",
 		"toggle-default-new-tab-mode": "Toggle default mode for new tabs",
@@ -750,7 +750,7 @@
 	},
 	"menu-items": {
 		"new-file": "ノートを作成",
-		"new-file-in-new-tab": "Create Note in New Tab",
+		"new-file-in-new-tab": "新規タブでノートを作成",
 		"open-switcher": "クイックスイッチャーを開く…",
 		"open-vault": "保管庫を開く…",
 		"find": "Find",
@@ -764,7 +764,7 @@
 		"export-pdf": "Export PDF",
 		"toggle-bullet-list": "バレットリスト",
 		"toggle-numbered-list": "順序付きリスト",
-		"toggle-checklist": "Task List",
+		"toggle-checklist": "タスクリスト",
 		"toggle-bold": "ボールド",
 		"toggle-code": "コード",
 		"toggle-comment": "コメント",
@@ -783,12 +783,12 @@
 		"navigate-forward": "Navigate Forward",
 		"toggle-left-sidebar": "Toggle Left Sidebar",
 		"toggle-right-sidebar": "Toggle Right Sidebar",
-		"split-right": "Split Right",
-		"split-down": "Split Down",
-		"release-notes": "Release Notes"
+		"split-right": "左右分割",
+		"split-down": "上下分割",
+		"release-notes": "リリースノート"
 	},
 	"plugins": {
-		"name": "Plugins",
+		"name": "プラグイン",
 		"file-explorer": {
 			"name": "ファイルエクスプローラ",
 			"desc": "保管庫内のすべてのファイルを閲覧できます。",
@@ -796,8 +796,8 @@
 			"action-show": "ファイルエクスプローラを表示",
 			"action-create-note": "新規ノートの作成",
 			"action-create-note-to-the-right": "Create note to the right",
-			"action-collapse-all": "Collapse all",
-			"action-expand-all": "Expand all",
+			"action-collapse-all": "すべて折りたたむ",
+			"action-expand-all": "すべて展開",
 			"action-new-note": "新規ノート",
 			"action-new-folder": "新規フォルダ",
 			"action-change-sort": "ソート順の変更",
@@ -1006,8 +1006,8 @@
 			"label-sort-by-frequency-high-to-low": "頻度 (多い順)",
 			"label-sort-by-frequency-low-to-high": "頻度 (少ない順)",
 			"action-show-nested-tags": "ネストされたタグを表示",
-			"action-collapse-all": "Collapse all",
-			"action-expand-all": "Expand all"
+			"action-collapse-all": "すべて折りたたむ",
+			"action-expand-all": "すべて展開"
 		},
 		"page-preview": {
 			"name": "ページプレビュー",
@@ -1147,7 +1147,7 @@
 		"random-note": {
 			"name": "ランダムノート",
 			"desc": "ランダムにノートを1つ開きます。振返りと発見に役立ちます。",
-			"short-name": "Random",
+			"short-name": "ランダム",
 			"action-open": "ランダムノートを開く"
 		},
 		"outline": {
@@ -1633,7 +1633,7 @@
 		"site-with-count_plural": "{{count}} サイト",
 		"plugin-with-count": "{{count}} プラグイン",
 		"plugin-with-count_plural": "{{count}} プラグイン",
-		"theme-with-count": "{{count}} theme",
-		"theme-with-count_plural": "{{count}} themes"
+		"theme-with-count": "{{count}} テーマ",
+		"theme-with-count_plural": "{{count}} テーマ"
 	}
 }
