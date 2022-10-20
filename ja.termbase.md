@@ -30,6 +30,7 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 |Original term|Japanese translation|
 |-|-|
+advanced(設定画面内) | 高度な設定
 alias | エイリアス
 appearance | 外観
 arrows | 矢印
@@ -148,6 +149,7 @@ Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unfold | フォールドの解除
+unlink, unstack | リンクの解除、スタックの解除
 unlinked mentions | リンクされていないメンション
 unordered list | 順序なしリスト
 unpin | ピンの解除
@@ -280,7 +282,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - ｢~できません。｣、｢~してください。｣、｢~に成功しました。｣などの表現に統一する。
         - `…` 以外の文は句点で終わるようにする。
         - 進行中のタスクの表現は｢~中｣ではなく、｢~しています｣で終わるようにする。
-    - `tootip-`: ボタンにホバーすると表示される。
+    - `tootip-`: ボタンにホバーすると表示されるツールチップ。
         - 単語表現や幅を意識した短い表現にする。
     - `option- -placeholder`: 入力欄に表示されるプレースホルダー。
         - UIのボックス幅に入り切る短い表現にする。
