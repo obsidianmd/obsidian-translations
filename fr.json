@@ -37,10 +37,10 @@
 			"option-fold-heading-description": "Permet de plier toute la section sous une en-tête.",
 			"option-fold-indent": "Pliage de l'indentation",
 			"option-fold-indent-description": "Permet de plier des portions d'indentation identique, tels que les listes.",
-			"option-default-new-tab-view": "Default view for new tabs",
-			"option-default-new-tab-view-description": "The default view that a new markdown tab gets opened in.",
-			"option-default-new-tab-view-editing": "Editing view",
-			"option-default-new-tab-view-reading": "Reading view",
+			"option-default-new-tab-view": "Mode par défaut pour les nouveaux onglets",
+			"option-default-new-tab-view-description": "Le mode par défaut dans lequel un nouvel onglet markdown est ouvert.",
+			"option-default-new-tab-view-editing": "Mode édition",
+			"option-default-new-tab-view-reading": "Mode Lecture",
 			"option-default-editing-mode": "Mode d'édition par défaut",
 			"option-default-editing-mode-description": "Le mode d'édition par défaut dans un nouveau volet.",
 			"option-default-editing-mode-source": "Mode source",
@@ -159,8 +159,8 @@
 			"option-manage-themes-description": "Gérer les thèmes installés et parcourir les thèmes de la communautés",
 			"option-theme-button-manage": "Gérer",
 			"option-choice-none": "Aucun",
-			"option-native-menus": "Native menus",
-			"option-native-menus-desc": "Menus throughout the app will match the operating system. They will not be affected by your theme.",
+			"option-native-menus": "Menus natifs",
+			"option-native-menus-desc": "Les menus de l'application correspondent au système d'exploitation. Ils ne seront pas affectés par votre thème.",
 			"button-reload-themes": "Recharger les thèmes",
 			"msg-reloaded-themes": "Thèmes CSS personnalisés rechargés.",
 			"button-open-themes-folder": "Ouvrir le dossier des thèmes",
@@ -177,21 +177,21 @@
 			"tooltip-click-to-enlarge": "Cliquer pour agrandir",
 			"button-update": "Mettre à jour",
 			"label-currently-selected": "Selectionné",
-			"option-frame-style": "Window frame style",
-			"option-frame-description": "Determines the styling of the title bar of Obsidian windows. Requires a full restart to take effect.",
-			"option-frame-hidden": "Hidden (default)",
-			"option-frame-obsidian": "Obsidian frame",
-			"option-frame-native": "Native frame",
-			"option-show-view-header": "Show tab title bar",
-			"option-show-view-header-desc": "Display the header at the top of every tab.",
+			"option-frame-style": "Style du cadre des fenêtres",
+			"option-frame-description": "Détermine le style de la barre de titre des fenêtres Obsidian. Nécessite un redémarrage complet pour prendre effet.",
+			"option-frame-hidden": "Caché (défaut)",
+			"option-frame-obsidian": "Cadre Obsidian",
+			"option-frame-native": "Cadre natif",
+			"option-show-view-header": "Afficher la barre de titre des onglets",
+			"option-show-view-header-desc": "Affichez l'en-tête en haut de chaque onglet.",
 			"msg-updates-found": "Trouvé {{count}} thème à mettre à jour.",
 			"msg-updates-found_plural": "Trouvé {{count}} thèmes à mettre à jour.",
-			"button-check-for-updates": "Check for updates",
-			"button-view-updates": "View updates",
-			"button-update-all-themes": "Update all",
-			"label-current-themes": "Current community themes",
-			"label-currently-installed": "You currently have {{count}} theme installed.",
-			"label-currently-installed_plural": "You currently have {{count}} themes installed."
+			"button-check-for-updates": "Vérifier les mises-à-jour",
+			"button-view-updates": "Afficher les mises-à-jour",
+			"button-update-all-themes": "Tout mettre à jour",
+			"label-current-themes": "Thème communautaire actuel",
+			"label-currently-installed": "Vous avez actuellement {{count}} thème installé.",
+			"label-currently-installed_plural": "Vous avez actuellement {{count}} thèmes installés."
 		},
 		"hotkeys": {
 			"name": "Raccourcis clavier",
@@ -202,7 +202,7 @@
 			"tooltip-customize-command": "Personnaliser la commande",
 			"tooltip-hotkey-single-conflict": "Ce raccourci clavier est en conflit avec \"{{command}}\"",
 			"tooltip-hotkey-multiple-conflicts": "Ce raccourci clavier est en conflit avec {{count}} autres commandes",
-			"label-blank-hotkey": "Non défini"
+			"label-blank-hotkey": "Indéfini"
 		},
 		"about": {
 			"name": "À propos",
@@ -354,7 +354,7 @@
 			"option-search-installed-plugin": "Rechercher dans les modules installés",
 			"option-search-installed-plugin-description": "Filtrer les modules installés par nom ou par description",
 			"placeholder-search-installed-plugin": "Rechercher les modules installés…",
-			"show-installed-only": "Show installed only",
+			"show-installed-only": "Afficher uniquement les modules installés",
 			"label-sort-downloads-high-to-low": "Nombre de téléchargements (décroissant)",
 			"label-sort-downloads-low-to-high": "Nombre de téléchargements (croissant)",
 			"label-sort-release-date-new-to-old": "Date de sortie (plus récent au plus ancien)",
@@ -425,11 +425,11 @@
 			"add-to-dictionary": "Ajouter au dictionnaire"
 		},
 		"menu": {
-			"edit-link": "Edit link"
+			"edit-link": "Éditer le lien"
 		},
 		"heading-suggestion": {
-			"label-no-heading": "No heading",
-			"label-heading-level": "Heading {{level}}"
+			"label-no-heading": "Aucun en-tête",
+			"label-heading-level": "Entête {{level}}"
 		},
 		"print-modal": {
 			"title": "Exporter au format PDF",
@@ -473,7 +473,7 @@
 		"msg-upgrade-installer": "Pour utiliser cette fonctionnalité, merci de réinstaller Obsidian avec le dernier programme d'installation disponible sur notre site web.",
 		"tooltip-restore-default-settings": "Restaurer les paramètres par défaut",
 		"label-copy": "Copier dans le presse-papier",
-		"copied_generic": "Copied to your clipboard",
+		"copied_generic": "Copié dans votre presse-papier",
 		"copied": "{{item}} copié dans le presse-papier",
 		"url": "URL",
 		"msg-open-file-through-uri": "Fichier ouvert \"{{path}}\"",
@@ -489,8 +489,8 @@
 		"button-not-now": "Pas maintenant",
 		"button-add": "Ajouter",
 		"button-manage": "Gérer",
-		"label-new-tab": "New tab",
-		"msg-tab-busy": "This tab is currently busy, please try again later",
+		"label-new-tab": "Nouvel onglet",
+		"msg-tab-busy": "Cet onglet est actuellement occupé, veuillez réessayer plus tard.",
 		"empty-state": {
 			"no-file-open": "Aucun fichier n'est ouvert",
 			"create-new-file": "Créer un nouveau fichier",
@@ -502,7 +502,7 @@
 		},
 		"menu": {
 			"edit-view": "Éditer (Ctrl/Cmd + Clic pour éditer dans un nouveau volet)",
-			"read-view": "Vue actuelle: Aperçu",
+			"read-view": "Mode actuel : Aperçu",
 			"switch-to-edit-view": "Cliquer pour modifier",
 			"switch-to-read-view": "Cliquer pour lire",
 			"mod-click-open-new-tab": "{{key}}+Click to open in new tab",
@@ -512,8 +512,8 @@
 			"preview": "Aperçu",
 			"more-options": "Plus d'options",
 			"close": "Fermer",
-			"close-others": "Close others",
-			"close-right": "Close tabs to the right",
+			"close-others": "Fermer les autres",
+			"close-right": "Fermer les onglets vers la droite",
 			"pin": "Épingler",
 			"unpin": "Désépingler",
 			"unlink-tab": "Unlink tab",
