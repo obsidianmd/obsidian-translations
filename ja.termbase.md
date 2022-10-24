@@ -30,7 +30,7 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 |Original term|Japanese translation|
 |-|-|
-advanced(設定画面内) | 高度な設定
+advanced (設定画面内) | 高度な設定
 alias | エイリアス
 appearance | 外観
 arrows | 矢印
@@ -168,6 +168,7 @@ wikilink | ウィキリンク
 don't ask again | 次からは確認しない
 Enter to create | Enterキーで作成
 Not created yet, select to created | まだ作成されていません、作成するには選択してください
+Show in ~ | ~で表示
 something went wrong | エラーが発生しました
 Template file location | テンプレートファイルの場所
 
