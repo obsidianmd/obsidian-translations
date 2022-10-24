@@ -17,6 +17,7 @@ auto-complete list | Lista de autocompletamento
 backlinks | Link inverso
 build | Compilação
 cache | cache
+callout | Frase de destaque
 catalyst | Catalyst
 checklist | Caixa de marcação
 clipboard | Área de transferência
