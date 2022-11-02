@@ -11,6 +11,7 @@ Please keep the term list **alphabetically sorted**.
 |Original Term|pt-BR translation|
 |-|-|
 alias | Apelido
+app | Aplicativo
 arrows | Setas
 auto-complete | Autocompletar/Autocompletamento
 auto-complete list | Lista de autocompletamento
@@ -47,8 +48,10 @@ plugin | Plugin
 preview | Visualizar/visualização
 page preview | Espiar
 quick action | Ação rápida
+quick start | Início rápido
 quick switcher | Navegação rápida
 regex | Regex
+sandbox | Sandbox
 screenshot | Captura de tela
 search | Localizar
 sidebar | Barra lateral
