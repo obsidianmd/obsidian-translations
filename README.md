@@ -52,46 +52,46 @@ Here is a table of language code to language name, in alphabetical order. These 
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `af` | Afrikaans | Afrikaans | 🚧 |
-| `sq` | Albanian | Shqip | ✅ |
 | `am` | Amharic |  አማርኛ | 🚧 |
+| `sq` | Albanian | Shqip | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
-| `bn` | Bengali | বাংলা | 🚧 |
 | `bg` | Bulgarian | български език | 🚧 |
+| `bn` | Bengali | বাংলা | 🚧 |
 | `ca` | Catalan | català | 🚧 |
-| `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
-| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 | `cs` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
-| `nl` | Dutch | Nederlands | ✅ |
-| `fr` | French | français | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
+| `es` | Spanish | Español | ✅ |
+| `fa` | Persian | فارسی | ✅ |
+| `fr` | French | français | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
 | `ko` | Korean | 한국어 | ✅ |
-| `ms` | Malay | Bahasa Melayu | 🚧 |
 | `ml` | Malayalam | മലയാളം | 🚧 |
+| `ms` | Malay | Bahasa Melayu | 🚧 |
+| `nl` | Dutch | Nederlands | ✅ |
 | `no` | Norwegian | Norsk | ✅ |
 | `oc` | Occitan | Occitan | 🚧 |
-| `fa` | Persian | فارسی | ✅ |
 | `pl` | Polish | język polski | ✅ |
 | `pt` | Portuguese | Português | ✅ |
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | Русский | ✅ |
 | `sr` | Serbian | српски језик | 🚧 |
-| `sk` | Slovak | Slovenčina | 🚧 |
-| `es` | Spanish | Español | ✅ |
 | `se` | Swedish | Svenska | 🚧 |
+| `sk` | Slovak | Slovenčina | 🚧 |
 | `ta` | Tamil | தமிழ் | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | 🚧 |
 | `uk` | Ukrainian | Українська | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
+| `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
+| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
 > Note: the Chinese translation is maintained by the Chinese Obsidian QQ group. If you want to discuss it, please join the QQ group: 774176839.
