@@ -30,6 +30,7 @@ expand | Expandir
 fixer | Conversor
 fold | Esconder
 folder | Pasta
+frame | Quadro
 frontmatter | Pré-texto
 graph | Gráfico
 heading | Seção
