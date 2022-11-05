@@ -11,6 +11,7 @@ Please keep the term list **alphabetically sorted**.
 |Original Term|pt-BR translation|
 |-|-|
 alias | Apelido
+app | Aplicativo
 arrows | Setas
 auto-complete | Autocompletar/Autocompletamento
 auto-complete list | Lista de autocompletamento
@@ -28,6 +29,7 @@ delete | Excluir
 expand | Expandir
 fixer | Conversor
 fold | Esconder
+folder | Pasta
 frontmatter | Pré-texto
 graph | Gráfico
 heading | Seção
@@ -45,16 +47,22 @@ pane | Painel
 plugin | Plugin
 preview | Visualizar/visualização
 page preview | Espiar
+quick action | Ação rápida
+quick start | Início rápido
 quick switcher | Navegação rápida
 regex | Regex
+sandbox | Sandbox
 screenshot | Captura de tela
 search | Localizar
 sidebar | Barra lateral
 site | Site
 snippet | --> Extrato **ou** Fragmento (Ambos fazem sentido)
+spellcheck | Verificação ortográfica
 starred | Favoritos/Favoritado
 supporter | Apoiador
 tag | etiqueta
+toggle | Alternar
+toolbar | Barra de ferramentas
 unlink | remover link
 vault | Cofre
 VIP | VIP
