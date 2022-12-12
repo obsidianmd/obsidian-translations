@@ -8,7 +8,7 @@ If the language you want to translate doesn't exist as a JSON file yet, submit a
 
 ## Staying up-to-date
 
-Merge conflicts are nasty. They happen when you're translating an outdated version of the template, part of which might have been translated by someone else. To prevent this, try to fork our respository right before you translate.
+Merge conflicts are nasty. They happen when you're translating an outdated version of the template, part of which might have been translated by someone else. To prevent this, try to fork our repository right before you translate.
 
 If you want to do multiple translation pull requests, before doing work each time, use the "Compare" UI on your own fork to pull in all the newest changes from `obsidianmd:master` first by creating a pull request on your own repository and merge it in yourself, so that your own copy is up-to-update.
 
@@ -20,7 +20,7 @@ Note that you don't have to clone your fork to make the edits; you can do everyt
 
 ## Translating
 
-The translation JSON file consists of key value pairs. The key should give you a good idea of where the text is in the app.
+The translation JSON file consists of key-value pairs. The key should give you a good idea of where the text is in the app.
 
 To translate, simply edit the value. For example, let's say you see
 
