@@ -18,6 +18,7 @@ auto-complete list | Lista de autocompletamento
 backlinks | Link inverso
 build | Compilação
 cache | cache
+callout | Frase de destaque
 catalyst | Catalyst
 checklist | Caixa de marcação
 clipboard | Área de transferência
@@ -30,6 +31,7 @@ expand | Expandir
 fixer | Conversor
 fold | Esconder
 folder | Pasta
+frame | Quadro
 frontmatter | Pré-texto
 graph | Gráfico
 heading | Seção
@@ -38,10 +40,14 @@ ID | Identificação
 indent | Indentar/indentação
 link | Inserir/Criar link/link
 linked |
+live preview | Visualização ao vivo
+match | Corresponder
+merge | Mesclar
 node | nódulo
 note | nota
 Obsidian | Obsidian (Always capitalized)
 Obsidian Publish | Obsidian Publish  
+Outgoing Links | Links de saída
 palette | Paleta
 pane | Painel
 plugin | Plugin
@@ -57,13 +63,17 @@ search | Localizar
 sidebar | Barra lateral
 site | Site
 snippet | --> Extrato **ou** Fragmento (Ambos fazem sentido)
+source mode | Modo de origem
 spellcheck | Verificação ortográfica
 starred | Favoritos/Favoritado
 supporter | Apoiador
 tag | etiqueta
+template | Modelo
+timelapse | timelapse
 toggle | Alternar
 toolbar | Barra de ferramentas
 unlink | remover link
+Unlinked mentions | menções desvinculadas
 vault | Cofre
 VIP | VIP
 wikilink | wikilink
