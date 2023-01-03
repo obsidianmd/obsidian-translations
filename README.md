@@ -52,7 +52,6 @@ Here is a table of language code to language name, in alphabetical order. These 
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `af` | Afrikaans | Afrikaans | 🚧 |
-| `sq` | Albanian | Shqip | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
@@ -67,6 +66,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `fa` | Persian | فارسی | ✅ |
 | `fi-fi` | Finnish | suomi | 🚧 |
 | `fr` | French | français | ✅ |
+| `gl` | Galician  | Galego | 🚧 |
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
@@ -86,6 +86,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
+| `sq` | Albanian | Shqip | ✅ |
 | `ta` | Tamil | தமிழ் | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | ✅ |
