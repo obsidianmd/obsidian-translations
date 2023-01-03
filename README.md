@@ -62,11 +62,13 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
+| `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
 | `fa` | Persian | فارسی | ✅ |
 | `fi-fi` | Finnish | suomi | 🚧 |
 | `fr` | French | français | ✅ |
 | `gl` | Galician  | Galego | 🚧 |
+| `he` | Hebrew  | עברית 🇮🇱 | 🚧 |
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
@@ -89,6 +91,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `ta` | Tamil | தமிழ் | 🚧 |
+| `te` | Telugu | తెలుగు | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | ✅ |
 | `uk` | Ukrainian | Українська | 🚧 |
