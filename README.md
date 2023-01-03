@@ -94,4 +94,4 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
-> Note: the Chinese translation is maintained by the Chinese Obsidian QQ group. If you want to discuss it, please join the QQ group: 774176839.
+> Note: the Chinese translation is maintained by Obsidian.zh. If you want to discuss it, please come here: https://github.com/obsidianzh/obsidian-translations.
