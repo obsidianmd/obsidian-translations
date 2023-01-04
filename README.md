@@ -52,6 +52,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | --- | --- | --- | :---: |
 | `en` (default) | English | English | ✅ |
 | `af` | Afrikaans | Afrikaans | 🚧 |
+| `am` | Amharic |  አማርኛ | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
