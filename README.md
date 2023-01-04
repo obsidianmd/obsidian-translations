@@ -53,7 +53,6 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `en` (default) | English | English | ✅ |
 | `af` | Afrikaans | Afrikaans | 🚧 |
 | `am` | Amharic |  አማርኛ | ✅ |
-| `sq` | Albanian | Shqip | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
 | `be` | Belarusian | беларуская мова | 🚧 |
@@ -64,16 +63,20 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `el` | Greek | Ελληνικά | 🚧 |
+| `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
 | `fa` | Persian | فارسی | ✅ |
 | `fi-fi` | Finnish | suomi | 🚧 |
 | `fr` | French | français | ✅ |
+| `gl` | Galician  | Galego | 🚧 |
+| `he` | Hebrew  | עברית 🇮🇱 | 🚧 |
 | `hi` | Hindi | हिन्दी | 🚧 |
 | `hu` | Hungarian | Magyar nyelv | 🚧 |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
 | `ko` | Korean | 한국어 | ✅ |
+| `lv` | Latvian | Latviešu valoda | 🚧 |
 | `ml` | Malayalam | മലയാളം | 🚧 |
 | `ms` | Malay | Bahasa Melayu | 🚧 |
 | `nl` | Dutch | Nederlands | ✅ |
@@ -87,7 +90,9 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
+| `sq` | Albanian | Shqip | ✅ |
 | `ta` | Tamil | தமிழ் | 🚧 |
+| `te` | Telugu | తెలుగు | 🚧 |
 | `th` | Thai | ไทย | ✅ |
 | `tr` | Turkish | Türkçe | ✅ |
 | `uk` | Ukrainian | Українська | 🚧 |
@@ -95,4 +100,4 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
-> Note: the Chinese translation is maintained by the Chinese Obsidian QQ group. If you want to discuss it, please join the QQ group: 774176839.
+> Note: the Chinese translation is maintained by Obsidian.zh. If you want to discuss it, please come here: https://github.com/obsidianzh/obsidian-translations.
