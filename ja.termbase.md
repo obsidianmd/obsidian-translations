@@ -59,6 +59,7 @@ Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
+donate | 寄付
 E-mail address | Eメールアドレス
 edit mode | 編集モード
 editing mode | 編集モード
@@ -130,6 +131,7 @@ Reading experience | リーディングエクスペリエンス
 reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+Ribbon menu | リボンメニュー
 Right-to-left | 右横書き
 safe mode | セーフモード
 sandbox vault | サンドボックス保管庫
