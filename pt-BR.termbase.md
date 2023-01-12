@@ -19,6 +19,7 @@ backlinks | Link inverso
 build | Compilação
 cache | cache
 callout | Frase de destaque
+canva | Tela (quando não se refere ao nome do plugin)
 catalyst | Catalyst
 checklist | Caixa de marcação
 clipboard | Área de transferência
@@ -57,6 +58,7 @@ quick action | Ação rápida
 quick start | Início rápido
 quick switcher | Navegação rápida
 regex | Regex
+ribbon | Menu
 sandbox | Sandbox
 screenshot | Captura de tela
 search | Localizar
@@ -79,3 +81,4 @@ VIP | VIP
 wikilink | wikilink
 workspace | Área de trabalho
 wrap | Quebra automática de linha
+zoom | Ampliar
