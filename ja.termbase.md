@@ -30,6 +30,7 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 |Original term|Japanese translation|
 |-|-|
+advanced (設定画面内) | 高度な設定
 alias | エイリアス
 appearance | 外観
 arrows | 矢印
@@ -58,6 +59,7 @@ Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
+donate | 寄付
 E-mail address | Eメールアドレス
 edit mode | 編集モード
 editing mode | 編集モード
@@ -129,6 +131,7 @@ Reading experience | リーディングエクスペリエンス
 reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+Ribbon menu | リボンメニュー
 Right-to-left | 右横書き
 safe mode | セーフモード
 sandbox vault | サンドボックス保管庫
@@ -148,6 +151,7 @@ Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
 unfold | フォールドの解除
+unlink, unstack | リンクの解除、スタックの解除
 unlinked mentions | リンクされていないメンション
 unordered list | 順序なしリスト
 unpin | ピンの解除
@@ -166,6 +170,7 @@ wikilink | ウィキリンク
 don't ask again | 次からは確認しない
 Enter to create | Enterキーで作成
 Not created yet, select to created | まだ作成されていません、作成するには選択してください
+Show in ~ | ~で表示
 something went wrong | エラーが発生しました
 Template file location | テンプレートファイルの場所
 
@@ -280,7 +285,7 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - ｢~できません。｣、｢~してください。｣、｢~に成功しました。｣などの表現に統一する。
         - `…` 以外の文は句点で終わるようにする。
         - 進行中のタスクの表現は｢~中｣ではなく、｢~しています｣で終わるようにする。
-    - `tootip-`: ボタンにホバーすると表示される。
+    - `tootip-`: ボタンにホバーすると表示されるツールチップ。
         - 単語表現や幅を意識した短い表現にする。
     - `option- -placeholder`: 入力欄に表示されるプレースホルダー。
         - UIのボックス幅に入り切る短い表現にする。
