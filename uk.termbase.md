@@ -9,8 +9,8 @@ Please keep the term list **alphabetically sorted**.
 | Original Term | uk translation |
 |-|-|
 |account|обліковий запис|
-|backlink|зворотне посилання|
-|command palette|палітра команд|
+|backlink|зворотнє посилання|
+|command palette|меню команд|
 |daily notes|щоденні нотатки|
 |folder|папка|
 |frontmatter|frontmatter|
@@ -19,5 +19,6 @@ Please keep the term list **alphabetically sorted**.
 |outgoing link|вихідне посилання|
 |pane|область|
 |quick switcher|швидкий перехід|
-|snippet|CSS фрагмент|
-|zettelkasten|zettelkasten|
+|snippet|сніпет|
+|zettelkasten|цетелькастен|
+|attachment|вкладення|
