@@ -16,6 +16,7 @@ backlinks|входящие связи
 backlinks|обратные ссылки
 block|блок
 callout|выносной блок
+canvas|холст
 catalyst|catalyst
 checklist|флажок
 collapse|свернуть
@@ -47,6 +48,7 @@ preview|предпросмотр
 quick switcher|быстрый переход
 regex|регулярное выражение
 repository|репозиторий
+ribbon menu|ленточное меню
 screenshot|скриншот
 sidebar|панель
 site|сайт
