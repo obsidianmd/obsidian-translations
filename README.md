@@ -2,9 +2,15 @@
 
 Help translate Obsidian into your language.
 
-## Request a language
+## Add a new language
 
-If the language you want to translate doesn't exist as a JSON file yet, submit an issue so that we can create a template for you to get started.
+To add a new language, follow these steps:
+
+1. Copy all of the content of the raw `en.json`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/en.json
+2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master
+3. Translate some strings to your language
+4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes
+5. Name the new file "[language code].json" and submit
 
 ## Staying up-to-date
 
