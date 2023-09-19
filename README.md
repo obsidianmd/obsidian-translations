@@ -2,9 +2,15 @@
 
 Help translate Obsidian into your language.
 
-## Request a language
+## Add a new language
 
-If the language you want to translate doesn't exist as a JSON file yet, submit an issue so that we can create a template for you to get started.
+To add a new language, follow these steps:
+
+1. Copy all of the content of the raw `en.json`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/en.json
+2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master
+3. Translate some strings to your language
+4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes
+5. Name the new file "[language code].json" and submit
 
 ## Staying up-to-date
 
@@ -43,6 +49,23 @@ If you encounter something like
 ```
 
 leave the `{{name}}` part alone and do not translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
+
+### Translating an update
+
+From time to time, we'll add new strings to all the language files. The new strings will be in English and ready to be translated to your language of choice.
+
+Update commits usually have message in the format of "Update strings for 1.x.x" where "1.x.x" is the new version number. This is an example commit: [Update strings for 1.2.7](https://github.com/obsidianmd/obsidian-translations/commit/8bff16a8b866604876d417bf7f322484b6090431).
+
+By examining what happened to your language file, you can find the new strings to translate.
+
+### Translate a missing phrase on the UI
+
+If you spot a missing phrase while using Obsidian, here's what to do:
+
+1. Figure out where the language file lives by looking up the language table in the README under the ["Existing languages" section](https://github.com/obsidianmd/obsidian-translations#existing-languages).
+2. Edit the language file, look for the exact English phrase.
+3. Replace it with the appropriate translated phrase.
+4. Submit your changs as a pull request.
 
 ## Existing languages
 
@@ -97,7 +120,9 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `tr` | Turkish | Türkçe | ✅ |
 | `uk` | Ukrainian | Українська | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
+| `vi` | Vietnamese | Tiếng Việt | ✅ |
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
 > Note: the Chinese translation is maintained by Obsidian.zh. If you want to discuss it, please come here: https://github.com/obsidianzh/obsidian-translations.
+
