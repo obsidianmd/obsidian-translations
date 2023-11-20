@@ -51,6 +51,7 @@ cache | キャッシュ
 callout | コールアウト
 catalyst | カタリスト
 Catalyst license | カタリストライセンス
+code block | コードブロック
 collapse | 折りたたむ
 Commercial license | 商用ライセンス
 Community plugin | コミュニティプラグイン
@@ -105,6 +106,7 @@ linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
 match-case | 大文字/小文字を区別
+math block | 数学ブロック
 merge | 統合
 Metadata | メタデータ
 none | なし
