@@ -78,7 +78,7 @@ expand | 展開
 external link | 外部リンク
 extract | 抽出
 feature | 機能
-first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
+first-class citizens | 第一級市民
 fixer | フィクサー
 fold | フォールド
 Folder | フォルダ
@@ -139,6 +139,8 @@ Reading experience | リーディングエクスペリエンス
 reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+remove | 削除 ("除去"は使わない)
+rename | リネーム
 Ribbon menu | リボンメニュー
 Right-to-left | 右横書き
 safe mode | セーフモード
@@ -147,6 +149,7 @@ search | 検索
 second brain | 第二の脳
 Security | セキュリティ
 selective sync | 選択的同期
+set sth | sthを設定
 setup | 設定
 sidebar | サイドバー
 site | サイト
