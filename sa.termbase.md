@@ -16,21 +16,34 @@ Please keep the term list **alphabetically sorted**.
 | acceleration | त्वरण |
 | bold | स्थूलाकृतिः |
 | bullet point | गोलीबिन्दुः |
+| canvas | स्थूलपटम् |
+| checkbox | चयनिका |
 | code / sourcecode | विधिलेखः |
+| collapse | सन्निपात |
 | custom(as in "custom themes") | स्वानुकूलत |
 | default | पूर्वनिर्धारित |
 | document | लेखः / प्रलेखः |
+| email | वैद्युतकपत्रम् |
+| file explorer | सञ्चिका अन्वेषकः |
 | Graph View | आलेखदृश्यम् |
 | highlight | उद्वर्णः |
 | italic | प्रवणाकृतिः |
+| landscape | भूप्रदेश |
 | logo | बोधचिह्नः |
 | legacy | प्राचीन |
+| margin | सीमन् |
+| license | अनुज्ञापत्र |
 | none | न कश्चित् |
 | pane | फलकः |
+| password | गुप्तपदम् |
 | plaintext | सामान्याक्षर |
 | preview | पूर्वावलोकनम् |
 | properties | गुणाः |
+| purchase | क्रयणम् |
 | ribbon | सुचीर |
 | syntax | वाक्यविन्यासः |
+| third-party | तृतीय-पक्षः |
 | theme | विषयवस्तु |
+| type(as in "type this sentence") | टङ्कयतु |
 | vault | तिजोरी |
+| visit | उपयाति |
