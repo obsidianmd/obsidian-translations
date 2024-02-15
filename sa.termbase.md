@@ -35,15 +35,20 @@ Please keep the term list **alphabetically sorted**.
 | license | अनुज्ञापत्र |
 | none | न कश्चित् |
 | pane | फलकः |
+| paragraph | अनुच्छेद |
 | password | गुप्तपदम् |
 | plaintext | सामान्याक्षर |
 | preview | पूर्वावलोकनम् |
 | properties | गुणाः |
 | purchase | क्रयणम् |
+| quote | उद्धरण |
 | ribbon | सुचीर |
+| sidebar | पार्श्वपट्टिका |
+| statusbar | स्थितिपट्टिका |
 | syntax | वाक्यविन्यासः |
 | third-party | तृतीय-पक्षः |
 | theme | विषयवस्तु |
+| timelapse | कालान्तर |
 | type(as in "type this sentence") | टङ्कयतु |
 | vault | तिजोरी |
 | visit | उपयाति |
