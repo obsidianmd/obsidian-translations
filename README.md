@@ -116,7 +116,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | 🚧 |
 | `ru` | Russian | Русский | ✅ |
-| `sa` | Sanskrit | संस्कृतम् | 🚧 |
+| `sa` | Sanskrit | संस्कृतम् | ✅ |
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
