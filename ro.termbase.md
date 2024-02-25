@@ -17,7 +17,6 @@ attachment | atașament
 audit, peer | evaluare colectivă
 behavior | comportament
 bin | coș
-bin, trash | 
 blank | gol
 block | bloc
 blockquote | bloc de citat
@@ -84,7 +83,7 @@ ribbon | panglică
 root | rădăcină
 scheme, color | schemă de culoare
 signup, to | [(a) se] înregistra
-size | dimensiune, mărime
+size, tab | dimensiune a caracterului de tabulație
 source | sursă
 source, open | sursă liberă
 spellcheck | verificator ortografic
@@ -104,4 +103,3 @@ version, insider | versiune de inițiat
 view, editing | mod de editare
 view, reading | mod de citire
 view, to | (a) vizualiza
-visible | vizibil
