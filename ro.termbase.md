@@ -37,6 +37,7 @@ editor | editor
 file | fișier
 fold, to | (a) plia
 folder | director
+follow, to | (a) urmări
 footer | subsol
 header | antet
 heading | titlu
@@ -49,6 +50,7 @@ insider | inițiat
 installer | pachet de instalare
 italic | cursiv
 item, list | element de listă
+landscape (i.e. page orientation) | vedere
 link | legătură
 link, internal | legătură internă
 list, bullet | listă cu marcator punctat
@@ -61,7 +63,9 @@ mode, restricted | mod restricționat
 mode, source | mod sursă
 mode, Vim | mod Vim
 monospaced | monospațiat
+next (e.g. in search) | înainte
 note | însemnare
+open, to | (a) deschide
 option | opțiune
 overwrite, to | (a) suprascrie
 pane | panou
@@ -72,6 +76,7 @@ plugin, core | modul integrat
 point | punct
 point, bullet | punct de marcator
 preview, live | previzualizare în direct
+previous (e.g. in search) | înapoi
 property | proprietate
 quote (i.e. a quotation) | citat
 quote (i.e. the character) | ghilimea
@@ -83,6 +88,8 @@ ribbon | panglică
 root | rădăcină
 scheme, color | schemă de culoare
 signup, to | [(a) se] înregistra
+size | dimensiune
+size, page | dimensiune a paginii
 size, tab | dimensiune a caracterului de tabulație
 source | sursă
 source, open | sursă liberă
