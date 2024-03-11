@@ -1,8 +1,8 @@
-Thank you for your interest in translating Obsidian. Please add any controversial terms to this file to aid future decisions during Documentation or UI translation, to create a consistent experience.
+Thank you for your interest in translating Obsidian in the Romanian language. Please add any controversial terms to this file to aid future decisions during Documentation or UI translation, to create a consistent experience.
 
 Currently, Obsidian is in development and as new features are added, so is more text. If you find a term that is not translated yet, feel free to name it.
 
-When in doubt, feel free to ask our amazing community their opinion on the [Forum](https://forum.obsidian.md/) or [Discord](https://discord.gg/veuWUTm).
+When in doubt, feel free to ask our amazing community their opinion on [Discord](https://discord.gg/veuWUTm). Note that we do not have a dedicated `#romanian` channel yet. In the meantime, feel free to give a shoutout to `@smilorent` on `#translations`.
 
 Please keep the term list **alphabetically sorted**.
 
@@ -23,6 +23,7 @@ blockquote | bloc de citat
 bold | îngroșat
 caret | cursor
 changelog | istoric al modificărilor
+collapse, to | (a) restrânge
 configure, to | (a) configura
 copy, to | (a) copia
 custom | personalizat
@@ -34,6 +35,7 @@ drag, to | (a) trage
 drop, to | (a) plasa
 editable | editabil
 editor | editor
+expand, to | (a) extinde
 file | fișier
 fold, to | (a) plia
 folder | director
@@ -89,8 +91,6 @@ root | rădăcină
 scheme, color | schemă de culoare
 signup, to | [(a) se] înregistra
 size | dimensiune
-size, page | dimensiune a paginii
-size, tab | dimensiune a caracterului de tabulație
 source | sursă
 source, open | sursă liberă
 spellcheck | verificator ortografic
