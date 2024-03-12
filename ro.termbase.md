@@ -11,6 +11,7 @@ Please keep the term list **alphabetically sorted**.
 Term | Translation
 -- | --
 access, quick | acces rapid
+alias | pseudonim
 appearance | personalizare
 assign, to | (a) atribui
 attachment | atașament
