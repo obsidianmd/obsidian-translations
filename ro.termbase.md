@@ -22,6 +22,7 @@ block | bloc
 blockquote | bloc de citat
 body | corp
 bold | îngroșat
+browser | navigator
 callout | explicație
 caret | cursor
 changelog | istoric al modificărilor
@@ -115,3 +116,4 @@ version, insider | versiune de inițiat
 view, editing | mod de editare
 view, reading | mod de citire
 view, to | (a) vizualiza
+view, linked | vizualizare legată
