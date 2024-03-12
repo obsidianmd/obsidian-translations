@@ -20,10 +20,13 @@ bin | coș
 blank | gol
 block | bloc
 blockquote | bloc de citat
+body | corp
 bold | îngroșat
+callout | explicație
 caret | cursor
 changelog | istoric al modificărilor
 collapse, to | (a) restrânge
+comment | comentariu
 configure, to | (a) configura
 copy, to | (a) copia
 custom | personalizat
@@ -57,6 +60,7 @@ link | legătură
 link, internal | legătură internă
 list, bullet | listă cu marcator punctat
 list, numbered | listă cu marcator numeric
+list, task | listă de verificare
 login, to | [(a) se] autentifica
 logout, to | [(a) se] deconecta
 mobile | mobil
@@ -88,6 +92,7 @@ restore, to | (a) restaura
 review, code | revizuire a codului
 ribbon | panglică
 root | rădăcină
+rule, horizontal | normă orizontală
 scheme, color | schemă de culoare
 signup, to | [(a) se] înregistra
 size | dimensiune
