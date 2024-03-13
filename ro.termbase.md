@@ -89,6 +89,7 @@ property | proprietate
 quote (i.e. a quotation) | citat
 quote (i.e. the character) | ghilimea
 regex (i.e. regular expression) | expresie regulată
+remote | la distanță
 restart | repornire
 restore, to | (a) restaura
 review, code | revizuire a codului
@@ -96,6 +97,7 @@ ribbon | panglică
 root | rădăcină
 rule, horizontal | normă orizontală
 scheme, color | schemă de culoare
+setup | configurare
 signup, to | [(a) se] înregistra
 size | dimensiune
 source | sursă
@@ -115,6 +117,6 @@ update, to | (a) actualiza
 vault | seif
 version, insider | versiune de inițiat
 view, editing | mod de editare
+view, linked | vizualizare legată
 view, reading | mod de citire
 view, to | (a) vizualiza
-view, linked | vizualizare legată
