@@ -104,6 +104,7 @@ size | dimensiune
 source | sursă
 source, open | sursă liberă
 spellcheck | verificator ortografic
+star, to | (a) marca
 strikethrough, to | (a) tăia
 subfolder | subdirector
 switch, to | (a) comuta
