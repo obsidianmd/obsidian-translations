@@ -98,6 +98,7 @@ root | rădăcină
 rule, horizontal | normă orizontală
 scheme, color | schemă de culoare
 setup | configurare
+share, to | (a) împărtăși
 signup, to | [(a) se] înregistra
 size | dimensiune
 source | sursă
