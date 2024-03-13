@@ -68,6 +68,7 @@ logout, to | [(a) se] deconecta
 mobile | mobil
 mode, live preview | mod de previzualizare în direct
 mode, restricted | mod restricționat
+mode, safe | mod de siguranță
 mode, source | mod sursă
 mode, Vim | mod Vim
 monospaced | monospațiat
@@ -122,3 +123,4 @@ view, editing | mod de editare
 view, linked | vizualizare legată
 view, reading | mod de citire
 view, to | (a) vizualiza
+workspace | spațiu de lucru
