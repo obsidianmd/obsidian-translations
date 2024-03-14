@@ -65,7 +65,13 @@ If you spot a missing phrase while using Obsidian, here's what to do:
 1. Figure out where the language file lives by looking up the language table in the README under the ["Existing languages" section](https://github.com/obsidianmd/obsidian-translations#existing-languages).
 2. Edit the language file, look for the exact English phrase.
 3. Replace it with the appropriate translated phrase.
-4. Submit your changs as a pull request.
+4. Submit your changes as a pull request.
+
+### Testing translation
+
+Once you have the JSON file, you can test it by opening up developer console and enter `selectLanguageFileLocation()`. The app will prompt you for a JSON file location. After that, the app will reboot itself with the selected translation JSON file applied.
+
+To revert to using the default language pack, open developer console and enter `localStorage.removeItem('language')`.
 
 ## Existing languages
 
@@ -110,6 +116,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
 | `ro` | Romanian | Română | 🚧 |
 | `ru` | Russian | Русский | ✅ |
+| `sa` | Sanskrit | संस्कृतम् | 🚧 |
 | `sr` | Serbian | српски језик | 🚧 |
 | `se` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
