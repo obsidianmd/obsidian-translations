@@ -1,8 +1,8 @@
-Thank you for your interest in translating Obsidian. Please add any controversial terms to this file to aid future decisions during Documentation or UI translation, to create a consistent experience.
+Thank you for your interest in translating Obsidian in the Romanian language. Please add any controversial terms to this file to aid future decisions during Documentation or UI translation, to create a consistent experience.
 
 Currently, Obsidian is in development and as new features are added, so is more text. If you find a term that is not translated yet, feel free to name it.
 
-When in doubt, feel free to ask our amazing community their opinion on the [Forum](https://forum.obsidian.md/) or [Discord](https://discord.gg/veuWUTm).
+When in doubt, feel free to ask our amazing community their opinion on [Discord](https://discord.gg/veuWUTm). Note that we do not have a dedicated `#romanian` channel yet. In the meantime, feel free to give a shoutout to `@smilorent` on `#translations`.
 
 Please keep the term list **alphabetically sorted**.
 
@@ -11,6 +11,7 @@ Please keep the term list **alphabetically sorted**.
 Term | Translation
 -- | --
 access, quick | acces rapid
+alias | pseudonim
 appearance | personalizare
 assign, to | (a) atribui
 attachment | atașament
@@ -20,9 +21,14 @@ bin | coș
 blank | gol
 block | bloc
 blockquote | bloc de citat
+body | corp
 bold | îngroșat
+browser | navigator
+callout | explicație
 caret | cursor
 changelog | istoric al modificărilor
+collapse, to | (a) restrânge
+comment | comentariu
 configure, to | (a) configura
 copy, to | (a) copia
 custom | personalizat
@@ -34,6 +40,7 @@ drag, to | (a) trage
 drop, to | (a) plasa
 editable | editabil
 editor | editor
+expand, to | (a) extinde
 file | fișier
 fold, to | (a) plia
 folder | director
@@ -55,11 +62,13 @@ link | legătură
 link, internal | legătură internă
 list, bullet | listă cu marcator punctat
 list, numbered | listă cu marcator numeric
+list, task | listă de verificare
 login, to | [(a) se] autentifica
 logout, to | [(a) se] deconecta
 mobile | mobil
 mode, live preview | mod de previzualizare în direct
 mode, restricted | mod restricționat
+mode, safe | mod de siguranță
 mode, source | mod sursă
 mode, Vim | mod Vim
 monospaced | monospațiat
@@ -81,19 +90,22 @@ property | proprietate
 quote (i.e. a quotation) | citat
 quote (i.e. the character) | ghilimea
 regex (i.e. regular expression) | expresie regulată
+remote | la distanță
 restart | repornire
 restore, to | (a) restaura
 review, code | revizuire a codului
 ribbon | panglică
 root | rădăcină
+rule, horizontal | normă orizontală
 scheme, color | schemă de culoare
+setup | configurare
+share, to | (a) împărtăși
 signup, to | [(a) se] înregistra
 size | dimensiune
-size, page | dimensiune a paginii
-size, tab | dimensiune a caracterului de tabulație
 source | sursă
 source, open | sursă liberă
 spellcheck | verificator ortografic
+star, to | (a) marca
 strikethrough, to | (a) tăia
 subfolder | subdirector
 switch, to | (a) comuta
@@ -108,5 +120,7 @@ update, to | (a) actualiza
 vault | seif
 version, insider | versiune de inițiat
 view, editing | mod de editare
+view, linked | vizualizare legată
 view, reading | mod de citire
 view, to | (a) vizualiza
+workspace | spațiu de lucru
