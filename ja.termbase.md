@@ -6,11 +6,17 @@ Obsidianの翻訳作業に興味を持っていただきありがとうござい
 
 ただし、現在翻訳されている用語とこれから翻訳される用語の一貫性を保つためにも、翻訳する際にはこのファイルにリストアップされている用語をなるべく参照するようにしてください。どのように翻訳するべきか分からない場合や議論となるような用語、気になる用語がある際には語彙対応表セクションの最後に追加してください。
 
-すでに翻訳されている用語がふさわしくないと感じる場合や、その用語について議論をしたい場合はGithub上でissueを作成するか、[Discord](https://discord.gg/veuWUTm)の日本語チャンネルや[フォーラム](https://forum.obsidian.md/)などでトピックを作成できます。他のコントリビューターが確認しやすいようになるべくGithub上にissueを作成するようにしてください。
+すでに翻訳されている用語がふさわしくないと感じる場合や、その用語について議論をしたい場合はGitHub上でissueを作成するか、[Discord](https://discord.gg/veuWUTm)の日本語チャンネルや[フォーラム](https://forum.obsidian.md/)などでトピックを作成できます。他のコントリビューターが確認しやすいようになるべくGitHub上にissueを作成するようにしてください。
 
 用語のリストは**アルファベット順**に並ぶようにお願いします。
 
 ---
+
+## 翻訳の検証方法
+
+翻訳用のJSONファイルを検証するには、デベロッパーコンソールを開いて `selectLanguageFileLocation()` を実行し、JSONファイルのロケーションを指定してください。これによってアプリが再起動し、選択した翻訳用のJSONファイルが適用されます。
+
+デフォルトの言語パックの使用に戻すには、デベロッパーコンソールから `localStorage.removeItem('language')` を実行し、Force Reloadでリロードしてください。
 
 ## 翻訳作業の指標
 
@@ -45,6 +51,7 @@ cache | キャッシュ
 callout | コールアウト
 catalyst | カタリスト
 Catalyst license | カタリストライセンス
+code block | コードブロック
 collapse | 折りたたむ
 Commercial license | 商用ライセンス
 Community plugin | コミュニティプラグイン
@@ -71,7 +78,7 @@ expand | 展開
 external link | 外部リンク
 extract | 抽出
 feature | 機能
-first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
+first-class citizens | 第一級市民
 fixer | フィクサー
 fold | フォールド
 Folder | フォルダ
@@ -99,6 +106,7 @@ linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
 match-case | 大文字/小文字を区別
+math block | 数学ブロック
 merge | 統合
 Metadata | メタデータ
 none | なし
@@ -131,6 +139,8 @@ Reading experience | リーディングエクスペリエンス
 reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+remove | 削除 ("除去"は使わない)
+rename | リネーム
 Ribbon menu | リボンメニュー
 Right-to-left | 右横書き
 safe mode | セーフモード
@@ -139,6 +149,7 @@ search | 検索
 second brain | 第二の脳
 Security | セキュリティ
 selective sync | 選択的同期
+set sth | sthを設定
 setup | 設定
 sidebar | サイドバー
 site | サイト
@@ -225,8 +236,8 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
     - 日付や日数などの数字には算用数字を使用する。
     - 半角数字の前後にスペースは入れない(例: 半角スペース4文字分)。
     - 半角文字と全角文字の間にスペースは入れない(例: カスタムURIプロトコル)。
-    - かぎ括弧`｢｣`、丸括弧`()`、大括弧`[]`には半角文字を使用する。
-    - 中黒には全角文字`・`を使用する。
+    - かぎ括弧 `｢｣`、丸括弧 `()`、大括弧 `[]` には半角文字を使用する。
+    - 中黒には全角文字 `・` を使用する。
 - 約物について
     - 原文: `...` → 日本語: `…` に統一する(例: フォルダを入力…)。
 - インデントについて
