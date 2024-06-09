@@ -88,7 +88,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `bg` | Bulgarian | български език | 🚧 |
 | `bn` | Bengali | বাংলা | 🚧 |
 | `ca` | Catalan | català | 🚧 |
-| `cs` | Czech | čeština | ✅ |
+| `cs` | Czech | čeština | 🚧 |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `dv` | Dhivehi | ދިވެހި | 🚧 |
