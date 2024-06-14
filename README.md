@@ -95,7 +95,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `el` | Greek | Ελληνικά | 🚧 |
 | `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
-| `fa` | Persian | فارسی | ✅ |
+| `fa` | Persian | فارسی | 🚧 |
 | `fi-fi` | Finnish | suomi | 🚧 |
 | `fr` | French | français | ✅ |
 | `gl` | Galician  | Galego | 🚧 |
