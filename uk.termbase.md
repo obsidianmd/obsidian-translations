@@ -13,12 +13,14 @@ Please keep the term list **alphabetically sorted**.
 |backlink|зворотнє посилання|
 |command palette|меню команд|
 |daily notes|щоденні нотатки|
-|folder|папка|
+|folder|тека|
 |frontmatter|frontmatter|
 |live preview|динамічне відображення|
 |markdown|markdown|
 |outgoing link|вихідне посилання|
-|pane|область|
+|pane|панель|
+|plugin|додаток|
 |quick switcher|швидкий перехід|
 |snippet|сніпет|
+|tag|мітка|
 |zettelkasten|цетелькастен|
