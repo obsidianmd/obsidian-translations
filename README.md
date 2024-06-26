@@ -125,6 +125,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ta` | Tamil | தமிழ் | 🚧 |
 | `te` | Telugu | తెలుగు | 🚧 |
 | `th` | Thai | ไทย | ✅ |
+| `tl` | Filipino (Tagalog) | Tagalog | 🚧 |
 | `tr` | Turkish | Türkçe | ✅ |
 | `uk` | Ukrainian | Українська | 🚧 |
 | `ur` | Urdu | اردو | 🚧 |
