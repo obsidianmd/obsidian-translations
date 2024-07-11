@@ -94,6 +94,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `de` | German | Deutsch | ✅ |
 | `dv` | Dhivehi | ދިވެހި | 🚧 |
 | `el` | Greek | Ελληνικά | 🚧 |
+| `en-GB` | English (GB) | English (GB) | ✅ |
 | `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
 | `fa` | Persian | فارسی | 🚧 |
@@ -110,6 +111,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `lv` | Latvian | Latviešu valoda | 🚧 |
 | `ml` | Malayalam | മലയാളം | 🚧 |
 | `ms` | Malay | Bahasa Melayu | 🚧 |
+| `ne` | Nepali | नेपाली | ✅ |
 | `nl` | Dutch | Nederlands | ✅ |
 | `no` | Norwegian | Norsk | ✅ |
 | `oc` | Occitan | Occitan | 🚧 |
