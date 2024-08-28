@@ -2,15 +2,21 @@
 
 Obsidianの翻訳作業に興味を持っていただきありがとうございます。ヘルプドキュメントとユーザーインターフェースの両方で基本的な用語の整合性を保ちつつ、非同期的な共同作業を進めるために `ja.termbase.md` を用意しました。日本語翻訳での表記ルールや語彙の対応についてはこのファイルを参照してください。また、フォーラムやDiscord上での英語による議論についていきたい人のためにも翻訳前のオリジナルの用語を周知すべくリストアップしています。
 
-現在、Obsidianは開発中であり、新しい機能が追加されるにつれて翻訳すべきテキストも増えます。まだ翻訳されていない用語やテキストを見つけた場合には、是非翻訳してみてください。タイポや誤訳等のミスを発見した場合にもプルリクエストを作成して提出してみてください。
+現在、Obsidianは開発中であり、新しい機能が追加されるにつれて翻訳すべきテキストも増えます。まだ翻訳されていない用語やテキストを見つけた場合には、是非翻訳してみてください。タイポや誤訳等のミスを発見した場合にもプルリクエストを作成してみてください。
 
 ただし、現在翻訳されている用語とこれから翻訳される用語の一貫性を保つためにも、翻訳する際にはこのファイルにリストアップされている用語をなるべく参照するようにしてください。どのように翻訳するべきか分からない場合や議論となるような用語、気になる用語がある際には語彙対応表セクションの最後に追加してください。
 
-すでに翻訳されている用語がふさわしくないと感じる場合や、その用語について議論をしたい場合はGithub上でissueを作成するか、[Discord](https://discord.gg/veuWUTm)の日本語チャンネルや[フォーラム](https://forum.obsidian.md/)などでトピックを作成してみてください。
+すでに翻訳されている用語がふさわしくないと感じる場合や、その用語について議論をしたい場合はGitHub上でissueを作成するか、[Discord](https://discord.gg/veuWUTm)の日本語チャンネルや[フォーラム](https://forum.obsidian.md/)などでトピックを作成できます。他のコントリビューターが確認しやすいようになるべくGitHub上にissueを作成するようにしてください。
 
 用語のリストは**アルファベット順**に並ぶようにお願いします。
 
 ---
+
+## 翻訳の検証方法
+
+翻訳用のJSONファイルを検証するには、デベロッパーコンソールを開いて `selectLanguageFileLocation()` を実行し、JSONファイルのロケーションを指定してください。これによってアプリが再起動し、選択した翻訳用のJSONファイルが適用されます。
+
+デフォルトの言語パックの使用に戻すには、デベロッパーコンソールから `localStorage.removeItem('language')` を実行し、Force Reloadでリロードしてください。
 
 ## 翻訳作業の指標
 
@@ -30,6 +36,7 @@ Obsidian MobileはObsidian Desktopとほぼ同じUIであり、`ja.json` がそ�
 
 |Original term|Japanese translation|
 |-|-|
+advanced (設定画面内) | 高度な設定
 alias | エイリアス
 appearance | 外観
 arrows | 矢印
@@ -41,8 +48,10 @@ bold | ボールド
 build | ビルド
 building block | 機能要素
 cache | キャッシュ
+callout | コールアウト
 catalyst | カタリスト
 Catalyst license | カタリストライセンス
+code block | コードブロック
 collapse | 折りたたむ
 Commercial license | 商用ライセンス
 Community plugin | コミュニティプラグイン
@@ -57,15 +66,19 @@ Default | デフォルト
 delete | 削除
 document(s) | ドキュメント
 documentation | ドキュメント または ドキュメンテーション(資料作成という意味合いの場合のみ)
+donate | 寄付
 E-mail address | Eメールアドレス
 edit mode | 編集モード
+editing mode | 編集モード
+editing view | 編集ビュー
+editor | エディタ
 encryption password | 暗号化パスワード
 end-to-end encryption | エンドツーエンド暗号化
 expand | 展開
 external link | 外部リンク
 extract | 抽出
 feature | 機能
-first-class citizens | 第一級市民 (第一級クラスオブジェクトではなく比喩の方をそのまま採用)
+first-class citizens | 第一級市民
 fixer | フィクサー
 fold | フォールド
 Folder | フォルダ
@@ -93,6 +106,7 @@ linked mention | リンクされたメンション
 local vault | ローカル保管庫
 markdown | マークダウン
 match-case | 大文字/小文字を区別
+math block | 数学ブロック
 merge | 統合
 Metadata | メタデータ
 none | なし
@@ -103,8 +117,8 @@ Obsidian Publish | Obsidian Publish (サービス名のためそのまま)
 Obsidian Sync | Obsidian Sync (サービス名のためそのまま)
 Obsidian Unlimited | Obsidian Unlimited (PublishやSync同様そのまま)
 obsidian URI | Obsidian URI (大文字から始める)
-OFF | オフ
-ON | オン
+OFF | 無効, 無効化
+ON | 有効, 有効化
 ordered list | 順序付きリスト
 outgoing link | アウトゴーイングリンク
 page preview | ページプレビュー
@@ -119,30 +133,45 @@ preview | プレビュー
 preview mode | プレビューモード
 provider | プロバイダー
 publish change | 変更の公開
+publish filters | 公開フィルター
 quick switcher | クイックスイッチャー
 Reading experience | リーディングエクスペリエンス
+reading view | リーディングビュー
 regex | Regex
 remote vault | リモート保管庫
+remove | 削除 ("除去"は使わない)
+rename | リネーム
+Ribbon menu | リボンメニュー
+Right-to-left | 右横書き
+safe mode | セーフモード
+sandbox vault | サンドボックス保管庫
 search | 検索
 second brain | 第二の脳
 Security | セキュリティ
 selective sync | 選択的同期
+set sth | sthを設定
+setup | 設定
 sidebar | サイドバー
 site | サイト
 snippet | スニペット
 starred pane | スターペイン
+stricted mode | 制限モード
 supporter | サポーター
 tag | タグ
 Third-party plugin | サードパーティプラグイン
 today's note | 今日のデイリーノート
 toggle | トグル、切り替える(コマンド名においてはトグルを優先的に使う)
+unfold | フォールドの解除
+unlink, unstack | リンクの解除、スタックの解除
 unlinked mentions | リンクされていないメンション
 unordered list | 順序なしリスト
+unpin | ピンの解除
 untitled | 無題の~ (無題のファイル・無題のフォルダ)
 vault | 保管庫
 version history | バージョン履歴
 video file | 動画ファイル
 VIP | VIP
+what-you-see-is-what-you-get | WYSIWYG(見たままが得られる)
 wikilink | ウィキリンク
 
 ### 同一表現の使いまわし
@@ -152,6 +181,7 @@ wikilink | ウィキリンク
 don't ask again | 次からは確認しない
 Enter to create | Enterキーで作成
 Not created yet, select to created | まだ作成されていません、作成するには選択してください
+Show in ~ | ~で表示
 something went wrong | エラーが発生しました
 Template file location | テンプレートファイルの場所
 
@@ -179,6 +209,7 @@ Starred notes | スター
 Sync | 同期
 Tag pane | タグペイン
 Templates | テンプレート
+Unique note creator | ユニークノートクリエイター
 Word count | ワードカウント
 Workspaces | ワークスペース
 Zettelkasten prefixer | Zettelkastenプレフィクサー
@@ -205,15 +236,15 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
     - 日付や日数などの数字には算用数字を使用する。
     - 半角数字の前後にスペースは入れない(例: 半角スペース4文字分)。
     - 半角文字と全角文字の間にスペースは入れない(例: カスタムURIプロトコル)。
-    - かぎ括弧`｢｣`、丸括弧`()`、大括弧`[]`には半角文字を使用する。
-    - 中黒には全角文字`・`を使用する。
+    - かぎ括弧 `｢｣`、丸括弧 `()`、大括弧 `[]` には半角文字を使用する。
+    - 中黒には全角文字 `・` を使用する。
 - 約物について
     - 原文: `...` → 日本語: `…` に統一する(例: フォルダを入力…)。
 - インデントについて
     - 半角スペース4文字分をインデントとする。
 - 記号によって囲まれた単語について
     - 丸括弧 `( )` について
-        - (括弧)の前後にスペースは入れない。
+        - 文中にある(括弧)の前後にスペースは入れない。
         - 文末に来る場合には括弧の外に句点を付ける(このようにする)。
     - 二重引用符 `" "` について
         - オプションやメニューの項目や設定は必ず｢｣で囲む(文字列が英語でも囲む)。
@@ -265,11 +296,14 @@ Zettelkasten prefixer | Zettelkastenプレフィクサー
         - ｢~できません。｣、｢~してください。｣、｢~に成功しました。｣などの表現に統一する。
         - `…` 以外の文は句点で終わるようにする。
         - 進行中のタスクの表現は｢~中｣ではなく、｢~しています｣で終わるようにする。
-    - `tootip-`: ボタンにホバーすると表示される。
+    - `tootip-`: ボタンにホバーすると表示されるツールチップ。
         - 単語表現や幅を意識した短い表現にする。
     - `option- -placeholder`: 入力欄に表示されるプレースホルダー。
         - UIのボックス幅に入り切る短い表現にする。
     - `-desc`, `desc-`: オプション等の説明文。
         - ｢~ます。｣などの文末表現にする。
+- `{{ }}` による置換文字について
+    - 「リモート保管庫 \"{{name}}\" を作成しました。」や「ファイル \"{{filepath}}\" の保存に失敗しました」や「\"{{company}}\" によって{{seats}}人が登録されています。{{expiry}}まで有効です。」のように二重引用符がある場合のみ前後にスペースを入れる。
+    - 「保管庫は{{limit}}中の{{size}}です。」のように通常は前後にスペースを入れないようにする。
 
 
