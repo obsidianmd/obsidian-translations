@@ -7,26 +7,39 @@ You can also use [Forum](https://forum.obsidian.md/) or [Discord](https://discor
 
 Personally I use [deepl.com](https://www.deepl.com/translator) with manual edits. If you use deepl, you will achive more similar results. [Here](https://github.com/jangaza/obsidian-translations/blob/dev/guide/Translation-Guide.md) is also my small guide.
 
-Please keep the term list **alphabetically sorted**.
+Please keep the term list **alphabetically sorted**. If you are unsure about other terms, search in en.json/cs.json (try to keep terms similar in same category).
 
 | Original Term | cz translation | example |
 |-|-|-|
+|canvas|canvas|
+|caret|caret|?|
+|configure|nastavit|
 |core|základní|základní pluginy jsou zapnuté|
+|currently|v současnosti|
 |custom|vlastní|vlastní klávesové zkratky|
 |debug|debug|
+|distribute|rozdělit|
+|embed|embed|?|
 |enabled|zapnuté|základní pluginy jsou zapnuté|
 |end-to-end|end-to-end|end-to-end šifrování|
 |excluded folders|vyloučené složky|
+|find|najít|
 |hotkeys|klávesové zkratky|vlastní klávesové zkratky|
+|insider|insider|
+|justify|vyrovnat|vyrovnat vodorovně|
 |leave|opustit|
 |local|lokální|
 |merge|sloučit|sloučení trezoru|
+|pan|posunout|?|
 |plugin|plugin|základní pluginy jsou zapnuté|
 |remote|vzdálený|
+|replace|nahradit|
+|scroll|scroll|
+|search|hledat|
 |start|zahájit|
 |stop|ukončit|
+|toolbar|nástrojový-panel|
 |upgrade|upgrade|
 |vault|trezor|
-|currently|v současnosti|
-
-
+|viewport|viditelný prostor|
+|zoom|přiblížit|
