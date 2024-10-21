@@ -48,7 +48,7 @@ preview|предпросмотр
 quick switcher|быстрый переход
 regex|регулярное выражение
 repository|репозиторий
-ribbon menu|ленточное меню
+ribbon menu|вертикальная панель
 screenshot|скриншот
 sidebar|панель
 site|сайт
