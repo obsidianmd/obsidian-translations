@@ -122,7 +122,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ru` | Russian | Русский | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | 🚧 |
 | `sr` | Serbian | српски језик | 🚧 |
-| `se` | Swedish | Svenska | 🚧 |
+| `sv` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `ta` | Tamil | தமிழ் | 🚧 |
