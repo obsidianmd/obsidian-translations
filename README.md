@@ -9,8 +9,9 @@ To add a new language, follow these steps:
 1. Copy all of the content of the raw `en.json`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/en.json
 2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master
 3. Translate some strings to your language
-4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes
-5. Name the new file "[language code].json" and submit
+4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes and name the new file `[language code].json`.
+6. In the description of the pull request, or in a comment, please include the [endonym](<https://en.wikipedia.org/wiki/Endonym_and_exonym#:~:text=An%20endonym%20(also%20known%20as,their%20homeland%2C%20or%20their%20language.>) of the language, this is how the language will be displayed in the app.
+7. Submit your pull request.
 
 ## Staying up-to-date
 
@@ -93,6 +94,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `de` | German | Deutsch | ✅ |
 | `dv` | Dhivehi | ދިވެހި | 🚧 |
 | `el` | Greek | Ελληνικά | 🚧 |
+| `en-GB` | English (GB) | English (GB) | ✅ |
 | `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
 | `fa` | Persian | فارسی | 🚧 |
@@ -106,9 +108,10 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
 | `ko` | Korean | 한국어 | ✅ |
-| `lv` | Latvian | Latviešu valoda | 🚧 |
+| `lv` | Latvian | Latviešu valoda | ✅ |
 | `ml` | Malayalam | മലയാളം | 🚧 |
 | `ms` | Malay | Bahasa Melayu | 🚧 |
+| `ne` | Nepali | नेपाली | ✅ |
 | `nl` | Dutch | Nederlands | ✅ |
 | `no` | Norwegian | Norsk | ✅ |
 | `oc` | Occitan | Occitan | 🚧 |
@@ -119,7 +122,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ru` | Russian | Русский | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | 🚧 |
 | `sr` | Serbian | српски језик | 🚧 |
-| `se` | Swedish | Svenska | 🚧 |
+| `sv` | Swedish | Svenska | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `ta` | Tamil | தமிழ் | 🚧 |
@@ -127,7 +130,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `th` | Thai | ไทย | ✅ |
 | `tl` | Filipino (Tagalog) | Tagalog | 🚧 |
 | `tr` | Turkish | Türkçe | ✅ |
-| `uk` | Ukrainian | Українська | 🚧 |
+| `uk` | Ukrainian | Українська | ✅ |
 | `ur` | Urdu | اردو | 🚧 |
 | `vi` | Vietnamese | Tiếng Việt | ✅ |
 | `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
