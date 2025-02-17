@@ -108,7 +108,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
 | `ko` | Korean | 한국어 | ✅ |
-| `lv` | Latvian | Latviešu valoda | ✅ |
+| `lv` | Latvian | Latviešu | ✅ |
 | `ml` | Malayalam | മലയാളം | 🚧 |
 | `ms` | Malay | Bahasa Melayu | 🚧 |
 | `ne` | Nepali | नेपाली | ✅ |
