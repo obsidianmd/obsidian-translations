@@ -32,6 +32,7 @@ expand | Expandir
 fixer | Conversor
 fold | Esconder
 folder | Pasta
+footnote | Nota de rodapé
 frame | Quadro
 frontmatter | Pré-texto
 graph | Gráfico
@@ -78,6 +79,7 @@ unlink | remover link
 Unlinked mentions | menções desvinculadas
 vault | Cofre
 VIP | VIP
+web-viewer | Visualizador web
 wikilink | wikilink
 workspace | Área de trabalho
 wrap | Quebra automática de linha
