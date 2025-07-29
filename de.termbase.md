@@ -19,7 +19,7 @@ backlink|Rückverweis
 block|Block
 bold|fett
 browse|durchsuchen
-canvas|Canvas
+canvas|Canvas, der
 catalyst|Catalyst
 checklist|Checkliste
 clipboard|Zwischenablage
@@ -32,6 +32,7 @@ core plugin|integrierte Erweiterung
 custom|benutzerspezifisch
 debug|debuggen
 drag and drop|Ziehen und Loslassen
+early access version|Insider-Build
 editing view|Bearbeitungsmodus
 embed|einbetten
 enabled|aktiviert
