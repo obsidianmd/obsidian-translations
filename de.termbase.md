@@ -47,7 +47,7 @@ heading|Überschrift
 hotkey|Tastenkürzel
 indent|einrücken
 italics|kursiv
-line breack|Zeilenumbruch
+line break|Zeilenumbruch
 link|Link
 live preview|Live-Vorschau
 local|lokal
