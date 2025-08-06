@@ -23,7 +23,7 @@ canvas|Canvas, der
 catalyst|Catalyst
 checklist|Checkliste
 clipboard|Zwischenablage
-code block|Code-Block
+code block|Quelltext-Block
 command palette|Befehlspalette
 configure|konfigurieren
 community|Community
@@ -31,7 +31,7 @@ community plugin|externe Erweiterung
 core plugin|integrierte Erweiterung
 custom|benutzerspezifisch
 debug|debuggen
-drag and drop|Ziehen und Loslassen
+drag and drop|Ziehen und Ablegen
 early access version|Insider-Build
 editing view|Bearbeitungsmodus
 embed|einbetten
@@ -47,6 +47,7 @@ heading|Überschrift
 hotkey|Tastenkürzel
 indent|einrücken
 italics|kursiv
+line break|Zeilenumbruch
 link|Link
 live preview|Live-Vorschau
 local|lokal
