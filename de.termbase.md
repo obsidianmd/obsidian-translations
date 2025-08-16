@@ -63,8 +63,8 @@ regex|Regex
 remote|Remote
 replace|ersetzen
 repository|Repository
-ribbon|Seitenleistenmenü -> Werkzeugleiste #TODO
-screenshot|Bildschirminhalt
+ribbon|Seitenleistenmenü -> neu: Werkzeugleiste
+screenshot|Screenshot (Abbildung), Bildschirminhalt (Aufnahme)
 scroll|scrollen
 search|Suche
 sidebar|Seitenleiste
@@ -72,7 +72,7 @@ source mode|Quellcode-Ansicht
 spell checker|Rechtschreibprüfung
 support (noun)|Support
 tag|Tag
-theme|Farbschema -> Design, Theme #TODO
+theme|Farbschema -> neu: Thema, Design
 toggle|umschalten
 view|Ansicht
 vault|Vault
