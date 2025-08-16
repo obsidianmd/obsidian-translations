@@ -13,7 +13,7 @@ Please keep the term list in **alphabetical order**.
 account|Konto
 alias|Alias
 app|App
-appearance|Aussehen
+appearance|Darstellung, Erscheinungsbild
 attachment|Anhang
 backlink|Rückverweis
 block|Block
