@@ -1418,7 +1418,7 @@
 			"msg-deleted-theme": "Das Thema {{title}} wurde gelöscht.",
 			"msg-updated-theme": "Das Thema {{title}} wurde aktualisiert.",
 			"label-installed": "Installiert",
-			"label-legacy": "Legacy",
+			"label-legacy": "Alte Version",
 			"button-update-all-themes": "Alle aktualisieren",
 			"msg-failed-load-themes": "Laden der Community-Themen fehlgeschlagen.",
 			"msg-no-updates-found": "Keine Themen-Aktualisierungen gefunden.",
@@ -2406,14 +2406,14 @@
 		}
 	},
 	"formulas": {
-		"msg-error-parse-formula": "Failed to parse formula \"{{ formula }}\"",
-		"msg-error-invalid-function": "Cannot find function \"{{ function }}\"",
-		"msg-error-invalid-instance-function": "Cannot find function \"{{ function }}\" on type {{ type }}",
-		"msg-error-not-enough-arguments": "Cannot call function \"{{ function }}\", not enough arguments.",
-		"msg-error-too-many-arguments": "Cannot call function \"{{ function }}\", too many arguments.",
-		"msg-error-type-error": "Type error in \"{{ function }}\", parameter \"{{ parameter }}\". Expected {{ expected }}, given {{ given }}.",
-		"msg-error-invalid-array-access": "Cannot access index {{ index }} of non-array value",
-		"msg-error-invalid-object-access": "Cannot find {{ index }} on type {{ type }}"
+		"msg-error-parse-formula": "Formel \"{{ formula }}\" konnte nicht aufgelöst werden",
+		"msg-error-invalid-function": "Funktion \"{{ function }}\" wurde nicht gefunden",
+		"msg-error-invalid-instance-function": "Funktion \"{{ function }}\" wurde nicht gefunden für Typ {{ type }}",
+		"msg-error-not-enough-arguments": "Funktion \"{{ function }}\" konnte aufgrund fehlender Argumente nicht ausgeführt werden.",
+		"msg-error-too-many-arguments": "Funktion \"{{ function }}\" konnte nicht ausgeführt werden, zu viele Argumente.",
+		"msg-error-type-error": "Typfehler in \"{{ function }}\", Parameter \"{{ parameter }}\". Erwartet {{ expected }}, eingegeben {{ given }}.",
+		"msg-error-invalid-array-access": "Auf Index {{ index }} konnte nicht zugegriffen werden, kein Wert vom Typ Array",
+		"msg-error-invalid-object-access": "{{ index }} für Typ {{ type }} konnte nicht gefunden werden"
 	},
 	"pdf": {
 		"action-highlight-all": "Alles markieren",
