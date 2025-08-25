@@ -57,6 +57,7 @@ Obsidian|Obsidian
 orphan|verwaist
 plugin|Erweiterung
 preview|Vorschau
+property|Eigenschaft
 quick switcher|Schnellauswahl
 reading view|Lesemodus
 regex|Regex
@@ -74,7 +75,7 @@ support (noun)|Support
 tag|Tag
 theme|Farbschema -> neu: Thema, Design
 toggle|umschalten
-view|Ansicht
+view|Ansicht, Sicht (Bases)
 vault|Vault
 workspace|Workspace
 wrap|umschließen
