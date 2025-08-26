@@ -13,17 +13,17 @@ Please keep the term list in **alphabetical order**.
 account|Konto
 alias|Alias
 app|App
-appearance|Aussehen
+appearance|Darstellung, Erscheinungsbild
 attachment|Anhang
 backlink|Rückverweis
 block|Block
 bold|fett
 browse|durchsuchen
-canvas|Canvas
+canvas|Canvas, der
 catalyst|Catalyst
 checklist|Checkliste
 clipboard|Zwischenablage
-code block|Code-Block
+code block|Quelltext-Block
 command palette|Befehlspalette
 configure|konfigurieren
 community|Community
@@ -31,7 +31,8 @@ community plugin|externe Erweiterung
 core plugin|integrierte Erweiterung
 custom|benutzerspezifisch
 debug|debuggen
-drag and drop|Ziehen und Loslassen
+drag and drop|Ziehen und Ablegen
+early access version|Insider-Build
 editing view|Bearbeitungsmodus
 embed|einbetten
 enabled|aktiviert
@@ -46,6 +47,7 @@ heading|Überschrift
 hotkey|Tastenkürzel
 indent|einrücken
 italics|kursiv
+line break|Zeilenumbruch
 link|Link
 live preview|Live-Vorschau
 local|lokal
@@ -61,8 +63,8 @@ regex|Regex
 remote|Remote
 replace|ersetzen
 repository|Repository
-ribbon|Seitenleistenmenü -> Werkzeugleiste #TODO
-screenshot|Bildschirminhalt
+ribbon|Seitenleistenmenü -> neu: Werkzeugleiste
+screenshot|Screenshot (Abbildung), Bildschirminhalt (Aufnahme)
 scroll|scrollen
 search|Suche
 sidebar|Seitenleiste
@@ -70,7 +72,7 @@ source mode|Quellcode-Ansicht
 spell checker|Rechtschreibprüfung
 support (noun)|Support
 tag|Tag
-theme|Farbschema -> Design, Theme #TODO
+theme|Farbschema -> neu: Thema, Design
 toggle|umschalten
 view|Ansicht
 vault|Vault
