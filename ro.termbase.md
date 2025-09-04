@@ -35,11 +35,13 @@ custom | personalizat
 cut, to | (a) decupa
 default | implicit
 device | dispozitiv
+diagnose, to | (a) depana
 display | afișaj
 drag, to | (a) trage
 drop, to | (a) plasa
 editable | editabil
 editor | editor
+encryption | criptare
 expand, to | (a) extinde
 file | fișier
 fold, to | (a) plia
@@ -113,6 +115,7 @@ tab (i.e. the character) | caracter de tabulație
 tab (i.e. the GUI object) | filă
 theme | temă
 theme, community | temă comunitară
+third-party | terță parte
 toolbar | bară de instrumente
 trash | gunoi
 unindent, to | (a) anula indentarea
