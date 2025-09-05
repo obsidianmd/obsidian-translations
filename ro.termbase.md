@@ -27,6 +27,7 @@ browser | navigator
 callout | explicație
 caret | cursor
 changelog | istoric al modificărilor
+checkbox | casetă de selectare
 collapse, to | (a) restrânge
 comment | comentariu
 configure, to | (a) configura
