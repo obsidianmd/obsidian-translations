@@ -121,8 +121,8 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ro` | Romanian | Română | 🚧 |
 | `ru` | Russian | Русский | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | 🚧 |
-| `sk` | Slovak | Slovenčina | 🚧 |
 | `si` | Sinhalese | සිංහල | 🚧 |
+| `sk` | Slovak | Slovenčina | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
 | `sr` | Serbian | српски језик | 🚧 |
 | `sv` | Swedish | Svenska | 🚧 |
