@@ -121,10 +121,11 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ro` | Romanian | Română | 🚧 |
 | `ru` | Russian | Русский | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | 🚧 |
-| `sr` | Serbian | српски језик | 🚧 |
-| `sv` | Swedish | Svenska | 🚧 |
+| `si` | Sinhalese | සිංහල | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
+| `sr` | Serbian | српски језик | 🚧 |
+| `sv` | Swedish | Svenska | 🚧 |
 | `ta` | Tamil | தமிழ் | 🚧 |
 | `te` | Telugu | తెలుగు | 🚧 |
 | `th` | Thai | ไทย | ✅ |
