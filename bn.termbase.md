@@ -1,6 +1,6 @@
 Thank you for your interest in translating Obsidian. Please add any often used or controversial terms to this file to aid future decisions during documentation or UI translation, thus creating a consistent experience.
 
-Obsidian is constantly under development and as new features are added, so is more text. If you find any term that is not translated yet, feel free to name it. In the language package file (bn.json), we have different text strings for singular and plural nouns. If you have to translate a word, keep that in mind since it can create some inconsistencies.
+Obsidian is constantly under development and as new features are added, so is more text. If you find any term that is not translated yet, feel free to name it. In the language package file (bn.json), we have different text strings. If you have to translate a word, keep that in mind since it can create some inconsistencies.
 
 In doubt, have a look into the translated glossary and feel free to ask Feel free to chat about any improvements, just open new issue or submit pull requests and ping @arg387 plus other active contributors to this language. Thank you.
 
