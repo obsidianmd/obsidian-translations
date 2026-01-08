@@ -6,10 +6,10 @@ Help translate Obsidian into your language.
 
 To add a new language, follow these steps:
 
-1. Copy all of the content of the raw `en.json`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/en.json
-2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master
+1. Copy all of the content of `en.txt`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/translations/en.txt
+2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master/translations
 3. Translate some strings to your language
-4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes and name the new file `[language code].json`.
+4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes and name the new file `[language code].txt`.
 6. In the description of the pull request, or in a comment, please include the [endonym](<https://en.wikipedia.org/wiki/Endonym_and_exonym#:~:text=An%20endonym%20(also%20known%20as,their%20homeland%2C%20or%20their%20language.>) of the language, this is how the language will be displayed in the app.
 7. Submit your pull request.
 
@@ -27,29 +27,33 @@ Note that you don't have to clone your fork to make the edits; you can do everyt
 
 ## Translating
 
-The translation JSON file consists of key-value pairs. The key should give you a good idea of where the text is in the app.
+The translation file consists of blocks. Each block header is the key that should give you a good idea of where the text is in the app.
 
-To translate, simply edit the value. For example, let's say you see
+To translate, simply write after `translation=`. For example, let's say you see
 
-```json
-"plugin": "Plugin"
+```
+[setting.label-example]
+original=The original english text.
+translation=
 ```
 
 Simply change it to:
 
-```json
-"plugin": "pLU9IN"
 ```
-
-where "pLU9IN" is the phrase "plugin" in the target language. I'm using leetspeak as an example here.
+[setting.label-example]
+original=The original english text.
+translation=Le texte original en anglais.
+```
 
 If you encounter something like
 
-```json
-"label-welcome": "Welcome, {{name}}!"
+```
+[setting.label-welcome]
+original=Welcome, {{name}}!
+translation=Bienvenue, {{name}} !
 ```
 
-leave the `{{name}}` part alone and do not translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
+leave the `{{name}}` part alone and DO NOT translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
 
 ### Translating an update
 
