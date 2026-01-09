@@ -95,6 +95,7 @@ Please keep the term list in alphabetical order.
 | restore                        | পুনরুদ্ধার                  |
 | Restricted/safe mode           | নিয়ন্ত্রিত মোডে            |
 | ribbon                         | রিবন                        |
+| row                            | সারি                        |
 | save                           | সংরক্ষণ                     |
 | search                         | অনুসন্ধান                   |
 | Settings                       | সেটিংস                      |
