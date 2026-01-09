@@ -7,8 +7,7 @@ In doubt, have a look into the translated glossary and feel free to ask Feel fre
 Please keep the term list in alphabetical order.
 
 
-
-|  Original Term                          | Bangla translation              |
+| Original Term                  | Bangla translation          |
 | ------------------------------ | --------------------------- |
 | Active                         | সক্রিয়                     |
 | alias                          | ছদ্মনাম                     |
@@ -23,6 +22,7 @@ Please keep the term list in alphabetical order.
 | bullet list                    | বুলেট তালিকা                |
 | caret                          | ক্যারেট                     |
 | collapse                       | বন্ধ                        |
+| Column                         | শ্রেণী                      |
 | Community                      | কমিউনিটি                    |
 | Configure                      | সাজান                       |
 | Copy Share Link                | শেয়ার লিঙ্ককে কপি করুন      |
@@ -30,6 +30,7 @@ Please keep the term list in alphabetical order.
 | Custom                         | কাস্টম                      |
 | delete                         | মোছা                        |
 | drag and drop                  | টেনে এনে ফেলা               |
+| duplicate                      | প্রতিলিপি                   |
 | edit                           | সম্পাদন                     |
 | editing view                   | সম্পাদনা রূপ                |
 | edition                        | সংস্করণ                     |
@@ -112,14 +113,8 @@ Please keep the term list in alphabetical order.
 | unlinked mention               | আনলিঙ্কড উল্লেখ             |
 | up to date                     | আপ টু ডেট                   |
 | Update                         | আপডেট                       |
-| updated                        | আপডেট                       |
 | Validating                     | যাচাই করা হচ্ছে             |
 | Version                        | সংস্করণ                     |
 | Vertical                       | উল্লম্ব                     |
 | visible                        | দেখাও                       |
 | writer                         | লেখক                        |
-
-
-
-
-
