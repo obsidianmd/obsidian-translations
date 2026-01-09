@@ -81,11 +81,20 @@
 			"name": "ফাইল এবং লিঙ্কস",
 			"option-confirm-file-deletion": "ফাইল মুছে ফেলা নিশ্চিত করুন",
 			"option-confirm-file-deletion-description": "এই বিকল্পটি নিশ্চিত করে যদি আপনি ফাইল মুছে ফেলার বিষয়ে কোনো সাবধানতা বার্তা পেতে চান কি না।",
+			"option-trash": "Trash",
 			"option-delete-destination": "যেসব ফাইল মোছা হয়ে গেছে",
 			"option-delete-destination-description": "ফাইল মোছা হয়ে গেলে তার কি হবে?",
 			"option-choice-system-trash": "সিস্টেম ট্র্যাশে সরানো হবে",
 			"option-choice-vault-trash": "অবসিডিয়ান ট্র্যাশে সরানো হবে (.trash folder)",
 			"option-choice-permanent-delete": "সম্পূর্ণভাবে মোছা হবে",
+			"option-default-open-action": "Default file to open",
+			"option-default-open-action-description": "Choose which file to open when the app starts.",
+			"option-choice-last-opened": "Last opened",
+			"option-choice-new-note": "New note",
+			"option-choice-specific-file": "Specific file",
+			"option-choice-daily-note": "Daily note",
+			"option-default-open-file-path": "File to open",
+			"option-default-open-file-path-description": "Select a specific file to open by default.",
 			"option-always-update-links": "অভ্যন্তরীণ লিঙ্ক সবসময় আপডেট করুন",
 			"option-always-update-links-description": "এটা নিশ্চিত করে ফাইল বা প্রম্পটের নাম পরিবর্তনের পরে লিঙ্কগুলি স্বয়ংক্রিয়ভাবে আপডেট করা হবে কি না।",
 			"option-new-note-location": "নতুন নোটের ডিফল্ট অবস্থান",
@@ -99,6 +108,7 @@
 			"option-use-wiki-links-description": "মার্কডাউন লিঙ্ক এবং ছবির পরিবর্তে [[link]] এবং ![[images]] এর জন্য উইকিলিঙ্কগুলি স্বয়ংক্রিয়ভাবে তৈরি করে। মার্কডাউন লিঙ্ক তৈরি করতে চাইলে এটি বন্ধ করুন।",
 			"option-show-unsupported-files": "সমস্ত ফাইল এক্সটেনশন সনাক্ত করুন",
 			"option-show-unsupported-files-description": "যেকোনো এক্সটেনশন সহ ফাইল দেখান, এমনকি যদি অবসিডিয়ান নেটিভভাবে খুলতে না পারে, যাতে আপনি তাদের সাথে লিঙ্ক করতে পারেন এবং ফাইল এক্সপ্লোরার এবং কুইক সুইচারে দেখতে পারেন।",
+			"option-links": "Links",
 			"option-link-autocompleted-format": "নতুন লিঙ্কের বিন্যাস",
 			"option-link-autocompleted-format-description": "অভ্যন্তরীণ লিঙ্কগুলি স্বয়ংক্রিয়ভাবে তৈরি করার সময় কোন লিঙ্কগুলি ভিতরে বসাতে হবে।",
 			"option-choice-shortest-linktext": "সম্ভব হলে সবচেয়ে ছোট পথ",
@@ -229,6 +239,30 @@
 			"tooltip-hotkey-multiple-conflicts": "{{count}}টি অন্য কমান্ডে এই হটকি ব্যাবহার করা হচ্ছে।",
 			"label-blank-hotkey": "ফাঁকা"
 		},
+		"keychain": {
+			"name": "Keychain",
+			"secrets": "Secrets",
+			"action-add-secret": "Add secret",
+			"action-edit-secret": "Edit secret",
+			"action-show-secret-value": "Show secret",
+			"action-hide-secret-value": "Hide secret",
+			"label-secret-id": "ID",
+			"label-secret-value": "Secret",
+			"placeholder-secret-id": "secret-name",
+			"placeholder-secret-value": "sk-...",
+			"option-secret-id-description": "Lowercase letters, numbers and dashes only.",
+			"option-secret-value-description": "Enter your secret.",
+			"msg-error-update-secret": "Failed to update secret.",
+			"msg-error-add-secret": "Failed to add secret.",
+			"msg-error-secret-id-exists": "A secret with this ID already exists.",
+			"msg-error-secret-value-empty": "Secret value cannot be empty.",
+			"msg-error-secret-id-invalid": "Secret ID is invalid. Use only lowercase letters, numbers and dashes. 64 characters max.",
+			"keychain-empty-state": "No secrets have been added. Secrets are used to store information like API keys and passwords that plugins can use.",
+			"label-select-secret": "Select secret",
+			"placeholder-search-secret": "Find secret...",
+			"button-add-secret": "Add secret...",
+			"button-link": "Link..."
+		},
 		"about": {
 			"name": "সাধারণ তথ্য",
 			"label-commercial-license": "বাণিজ্যিক লাইসেন্স",
@@ -237,7 +271,7 @@
 			"label-activate-license": "লাইসেন্স সক্রিয় করুন",
 			"button-activate": "আক্টিভেট",
 			"label-unknown-version": "অজানা",
-			"label-current-version": "বর্তমান সংস্করণ: ",
+			"label-version": "Version {{version}}",
 			"label-install-version": "(ইনস্টলার সংস্করণ: {{version}})",
 			"label-up-to-date": "আপনার অ্যাপটি আপ টু ডেট আছে",
 			"label-read-changelog": "চেঞ্জলগ পড়ুন",
@@ -321,6 +355,8 @@
 			"option-restricted-mode": "নিয়ন্ত্রিত মোড",
 			"option-restricted-mode-description": "নিয়ন্ত্রিত মোড বন্ধ আছে। এটি পুনরায় চালু করলে কমিউনিটি প্লাগইনগুলো বন্ধ হয়ে যাবে।",
 			"button-turn-on": "চালু করুন",
+			"option-automatic-update-check": "Automatically check for plugin updates",
+			"option-automatic-update-check-desc": "Periodically check for plugin updates.",
 			"option-browse-community-plugins": "কমিউনিটি প্লাগইনস",
 			"option-browse-community-plugins-description": "আমাদের কমিউনিটির তৈরি বিচিত্র প্লাগইন ব্রাউজ এবং ইনস্টল করুন।",
 			"button-browse": "ব্রাউজ",
@@ -380,6 +416,7 @@
 			"button-check-for-updates": "আপডেট খুজুন",
 			"button-update-all-plugins": "সব আপডেট করুন",
 			"label-current-plugins": "প্লাগইন",
+			"msg-checking-for-updates": "Checking for updates...",
 			"label-currently-installed": "এখন {{count}}টি প্লাগইন ইনস্টলড আছে।",
 			"label-currently-installed_plural": "এখন {{count}}টি প্লাগইন ইনস্টলড আছে।",
 			"msg-no-updates-found": "কোনো প্লাগইন আপডেট পাওয়া যায়নি।",
@@ -438,9 +475,7 @@
 			"option-configure-toolbar": "টুলবার ঠিক করুন",
 			"option-added-options": "যোগ করা বিকল্পগুলি",
 			"option-more-toolbar-options": "আরও টুলবার বিকল্প",
-			"option-attach": "আটাচমেন্ট যোগ করুন",
-			"option-add-command": "সার্বজনীন কম্যান্ড যোগ করুন",
-			"option-add-command-description": "টুলবারে যোগ করার জন্য যেকোনো সার্বজনীন কমান্ড নির্বাচন করুন।"
+			"option-attach": "আটাচমেন্ট যোগ করুন"
 		}
 	},
 	"editor": {
@@ -542,6 +577,7 @@
 		"msg-codeblock-render-error": "কোড ব্লক রেন্ডার করার সময় একটি ত্রুটির সম্মুখীন হতে হয়েছে।",
 		"msg-open-file-through-uri": "\"{{path}}\"-এ ফাইলটি খোলা সম্ভব হয়েছে ",
 		"msg-file-not-found-through-uri": "\"{{name}}\" ফাইলটি খুঁজে পাওয়া যায়নি।",
+		"msg-invalid-uri-action": "Unrecognized URI action: {{action}}",
 		"delete-action-short-name": "মোছা",
 		"msg-indexing": "অবসিডিয়ান আপনার ভল্টকে ইনডেক্সিং করছে...\n এটি কেবল একবারই হওয়া উচিত।\n এটি সম্পূর্ণ না হওয়া পর্যন্ত কিছু কার্যকারিতা উপলব্ধ নাও হতে পারে।",
 		"msg-indexing-desc": "এটি সম্পূর্ণ না হওয়া পর্যন্ত কিছু কার্যকারিতা উপলব্ধ নাও হতে পারে।",
@@ -587,6 +623,7 @@
 			"toggle-quote": "উদ্ধৃতি"
 		},
 		"empty-state": {
+			"empty": "Empty",
 			"no-file-open": "কোনো ফাইল খোলা নেই",
 			"create-new-file": "নতুন ফাইল তৈরি করুন",
 			"go-to-file": "ফাইলে যান",
@@ -599,7 +636,9 @@
 		"release-notes": {
 			"tab-title": "রিলিজ নোট {{version}}",
 			"msg-missing-release-notes": "{{version}} এর জন্য কোনও রিলিজ নোট উপলব্ধ নেই।",
-			"msg-failed-to-load": "{{version}} এর জন্য রিলিজ নোট লোড করা যায়নি।"
+			"msg-failed-to-load": "{{version}} এর জন্য রিলিজ নোট লোড করা যায়নি।",
+			"msg-release-date": "Released on {{date}}",
+			"label-release": "What's new in {{version}}"
 		},
 		"menu": {
 			"edit-view": "সম্পাদনা করুন (নতুন প্যানে সম্পাদনা করতে Ctrl/Cmd+Click ব্যাবহার করুন)",
@@ -609,11 +648,13 @@
 			"right-sidebar": "ডান সাইডবার",
 			"switch-to-edit-view": "সম্পাদনার জন্য চাপ দিন",
 			"switch-to-read-view": "পড়ার জন্য চাপ দিন",
-			"mod-click-open-new-tab": "নতুন ট্যাবে খুলতে {{key}}+Click ব্যাবহার করুন ",
+			"mod-click-open-new-tab": "নতুন ট্যাবে খুলতে {{key}}+Click",
+			"msg-markdown-copy-instructions": "Press {{key}}+C to copy source",
 			"find": "খুঁজুন...",
 			"replace": "প্রতিস্থাপন করুন...",
 			"edit": "সম্পাদনা",
 			"remove": "মুছুন",
+			"remove-from-list": "Remove from list",
 			"rename": "নাম পরিবর্তন করুন",
 			"preview": "প্রিভিউ",
 			"more-options": "আরও অপশন",
@@ -639,6 +680,10 @@
 			"copy": "কপি করুন",
 			"cut": "কাট করুন",
 			"paste": "পেস্ট করুন",
+			"copy-path": "Copy path",
+			"copy-obsidian-url": "as Obsidian URL",
+			"copy-full-path": "from system root",
+			"copy-vault-path": "from vault folder",
 			"paste-as-plain-text": "সাধারণ টেক্সট হিসেবে পেস্ট করুন",
 			"lookup-selection": "“{{selection}}” অনুসন্ধান করুন",
 			"select-all": "সব নির্বাচন করুন",
@@ -856,8 +901,12 @@
 				"label-feedback-desc": "আপনি কি অবসিডিয়ান উপভোগ করছেন?দয়া করে রেটিং দিয়ে আমাদের সহায়তা করুন।",
 				"action-rate": "অ্যাপটি রেট করুন",
 				"action-dismiss": "বন্ধ করুন"
-    }
     },
+			"icloud-startup": {
+				"msg-reload-needed": "Configuration files updated from iCloud, reload required",
+				"action-reload": "Reload"
+			}
+		},
 		"help-screen": {
 			"label-official-help-site": "আধিকারিক সহায়তা সাইট",
 			"label-official-help-site-desc": "এখানে অবসিডিয়ানের নিজস্ব, একাধিক ভাষায় উপলব্ধ সহায়তা ডকুমেন্টেশন পড়ুন।",
