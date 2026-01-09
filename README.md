@@ -85,9 +85,9 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `am` | Amharic |  አማርኛ | ✅ |
 | `ar` | Arabic | العربية | 🚧 |
 | `eu` | Basque | Euskara | 🚧 |
-| `be` | Belarusian | беларуская мова | ✅ |
+| `be` | Belarusian | Беларуская мова | ✅ |
 | `bg` | Bulgarian | български език | 🚧 |
-| `bn` | Bengali | বাংলা | 🚧 |
+| `bn` | Bengali | বাংলা | ✅ |
 | `ca` | Catalan | català | 🚧 |
 | `cs` | Czech | čeština | 🚧 |
 | `da` | Danish | Dansk | ✅ |
@@ -97,7 +97,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `en-GB` | English (GB) | English (GB) | ✅ |
 | `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
-| `fa` | Persian | فارسی | 🚧 |
+| `fa` | Persian | فارسی | ✅ |
 | `fi-fi` | Finnish | suomi | 🚧 |
 | `fr` | French | français | ✅ |
 | `gl` | Galician  | Galego | 🚧 |
@@ -108,7 +108,7 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
 | `ko` | Korean | 한국어 | ✅ |
-| `lv` | Latvian | Latviešu valoda | ✅ |
+| `lv` | Latvian | Latviešu | ✅ |
 | `ml` | Malayalam | മലയാളം | 🚧 |
 | `ms` | Malay | Bahasa Melayu | 🚧 |
 | `ne` | Nepali | नेपाली | ✅ |
@@ -121,10 +121,11 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `ro` | Romanian | Română | 🚧 |
 | `ru` | Russian | Русский | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | 🚧 |
-| `sr` | Serbian | српски језик | 🚧 |
-| `sv` | Swedish | Svenska | 🚧 |
+| `si` | Sinhalese | සිංහල | 🚧 |
 | `sk` | Slovak | Slovenčina | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
+| `sr` | Serbian | српски језик | 🚧 |
+| `sv` | Swedish | Svenska | 🚧 |
 | `ta` | Tamil | தமிழ் | 🚧 |
 | `te` | Telugu | తెలుగు | 🚧 |
 | `th` | Thai | ไทย | ✅ |
