@@ -2863,7 +2863,7 @@ original=Because Obsidian stores your notes on your devices, you'll need to set 
 translation=কারণ অবসিডিয়ান আপনার নোট আপনার ডিভাইসেই সংরক্ষণ করে, অন্য ফোন বা কম্পিউটারে নোট খুলতে চাইলে সিঙ্ক সেটআপ করা প্রয়োজন।\nআপনি এখনই সিঙ্ক সেটআপ করতে পারেন, অথবা পরে করতে পারেন ও এখনই লেখা শুরু করতে পারেন।
 
 [interface.start-screen.mobile.option-setup-sync]
-original=Setup Sync
+original=Set up sync
 translation=সিঙ্ক সেটআপ করুন
 
 [interface.start-screen.mobile.option-skip]
@@ -2969,6 +2969,30 @@ translation=ভল্টের নাম
 [interface.start-screen.mobile.label-vault-location]
 original=Vault location
 translation=ভল্টের অবস্থান
+
+[interface.start-screen.mobile.label-device-storage]
+original=Device storage
+translation=
+
+[interface.start-screen.mobile.label-device-storage-desc]
+original=Allows Obsidian data to be accessed by other apps.
+translation=
+
+[interface.start-screen.mobile.label-requires-additional-permissions]
+original=Requires additional permissions.
+translation=
+
+[interface.start-screen.mobile.label-app-storage]
+original=App storage
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc1]
+original=Your data will not be accessible to other apps.
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc2]
+original=Android will delete your data if you uninstall Obsidian.
+translation=
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
@@ -3088,7 +3112,7 @@ translation=অবসিডিয়ান সিঙ্ক
 
 [interface.start-screen.mobile.label-icloud]
 original=iCloud
-translation=iCloud
+translation=
 
 [interface.start-screen.mobile.label-other]
 original=Other
@@ -3145,10 +3169,6 @@ translation=অবসিডিয়ান সিঙ্কে সংযুক্ত
 [interface.start-screen.mobile.email-verification-desc]
 original=You should receive an email shortly to **{{email}}** with instructions to connect to Obsidian Sync.
 translation=শিগগিরই আপনি **{{email}}** -এ একটি ইমেল পাবেন যেখানে অবসিডিয়ান সিঙ্কে সংযুক্ত হওয়ার নির্দেশনা থাকবে।
-
-[interface.start-screen.mobile.icloud-missing]
-original=iCloud
-translation=iCloud
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
@@ -3695,11 +3715,15 @@ original=Rename file
 translation=ফাইলের শিরোনাম সম্পাদনা করুন
 
 [commands.copy-path]
-original=Copy file path
+original=Copy current file path from vault folder
 translation=ফাইলের পথ কপি করুন
 
+[commands.copy-full-path]
+original=Copy current file path from system root
+translation=
+
 [commands.copy-url]
-original=Copy Obsidian URL
+original=Copy Obsidian URL for current file
 translation=অবসিডিয়ান URL কপি করুন
 
 [commands.export-pdf]
@@ -5430,6 +5454,14 @@ translation=বুকমার্ক গ্রুপ
 original=Bookmarks
 translation=বুকমার্কসমূহ
 
+[plugins.custom-css.name]
+original=Custom CSS
+translation=
+
+[plugins.custom-css.desc]
+original=Read and apply “obsidian.css” in the vault folder.
+translation=
+
 [plugins.custom-css.setting-community-themes]
 original=Community themes
 translation=কমিউনিটি থিম
@@ -5768,6 +5800,10 @@ translation=
 
 [plugins.daily-notes.msg-invalid-date-format]
 original=Invalid date format
+translation=
+
+[plugins.daily-notes.msg-missing-folder]
+original=Daily note folder not found.
 translation=
 
 [plugins.daily-notes.label-refer-to-syntax]
@@ -8910,14 +8946,6 @@ translation=প্রপার্টি দেখান
 original=Edit property
 translation=প্রপার্টি সম্পাদনা করুন
 
-[plugins.bases.placeholder-formula]
-original=x + y
-translation=x + y
-
-[plugins.bases.placeholder-summary-formula]
-original=values.reduce( ... )
-translation=values.reduce( ... )
-
 [plugins.bases.title-edit-property]
 original=Edit {{name}}
 translation={{name}} সম্পাদনা করুন
@@ -9096,11 +9124,11 @@ translation=ফলাফলের সংখ্যা সীমা
 
 [plugins.bases.label-sort-a-z]
 original=A → Z
-translation=A → Z
+translation=
 
 [plugins.bases.label-sort-z-a]
 original=Z → A
-translation=Z → A
+translation=
 
 [plugins.bases.label-sort-old-new]
 original=Old to new
@@ -9112,11 +9140,11 @@ translation=নতুন থেকে পুরনো
 
 [plugins.bases.label-sort01]
 original=0 → 1
-translation=0 → 1
+translation=
 
 [plugins.bases.label-sort10]
 original=1 → 0
-translation=1 → 0
+translation=
 
 [plugins.bases.msg-invalid-view-name]
 original=View name cannot contain: 
@@ -9941,4 +9969,3 @@ translation={{count}}টা থিম
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}}টা থিম
-

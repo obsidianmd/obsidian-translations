@@ -2863,7 +2863,7 @@ original=Because Obsidian stores your notes on your devices, you'll need to set 
 translation=Mivel az Obsidian az eszközein tárolja a jegyzeteit, szinkronizáció beállítása szükséges ahhoz, hogy másik telefonon vagy számítógépen is elérhesse őket.\nA szinkronizációt beállíthatja most, vagy merüljön el az írásban, és állítsa be azt később.
 
 [interface.start-screen.mobile.option-setup-sync]
-original=Setup Sync
+original=Set up sync
 translation=Sync beállítása
 
 [interface.start-screen.mobile.option-skip]
@@ -2969,6 +2969,30 @@ translation=Széf neve
 [interface.start-screen.mobile.label-vault-location]
 original=Vault location
 translation=Széf helye
+
+[interface.start-screen.mobile.label-device-storage]
+original=Device storage
+translation=
+
+[interface.start-screen.mobile.label-device-storage-desc]
+original=Allows Obsidian data to be accessed by other apps.
+translation=
+
+[interface.start-screen.mobile.label-requires-additional-permissions]
+original=Requires additional permissions.
+translation=
+
+[interface.start-screen.mobile.label-app-storage]
+original=App storage
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc1]
+original=Your data will not be accessible to other apps.
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc2]
+original=Android will delete your data if you uninstall Obsidian.
+translation=
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
@@ -3145,10 +3169,6 @@ translation=Csatlakozás az Obsidian Sync-hez
 [interface.start-screen.mobile.email-verification-desc]
 original=You should receive an email shortly to **{{email}}** with instructions to connect to Obsidian Sync.
 translation=Hamarosan egy levelet fog kapni az **{{email}}** e-mail címére, melyben instrukciókat talál majd arról, hogyan csatlakozhat az Obsidian Sync-hez.
-
-[interface.start-screen.mobile.icloud-missing]
-original=iCloud
-translation=
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
@@ -3695,11 +3715,15 @@ original=Rename file
 translation=Fájlnév szerkesztése
 
 [commands.copy-path]
-original=Copy file path
+original=Copy current file path from vault folder
 translation=Fájl elérési útvonalának másolása
 
+[commands.copy-full-path]
+original=Copy current file path from system root
+translation=
+
 [commands.copy-url]
-original=Copy Obsidian URL
+original=Copy Obsidian URL for current file
 translation=Obsidian URL másolása
 
 [commands.export-pdf]
@@ -5430,6 +5454,14 @@ translation=Könyvjelző-csoport
 original=Bookmarks
 translation=Könyvjelzők
 
+[plugins.custom-css.name]
+original=Custom CSS
+translation=
+
+[plugins.custom-css.desc]
+original=Read and apply “obsidian.css” in the vault folder.
+translation=
+
 [plugins.custom-css.setting-community-themes]
 original=Community themes
 translation=Közösségi témák
@@ -5768,6 +5800,10 @@ translation=
 
 [plugins.daily-notes.msg-invalid-date-format]
 original=Invalid date format
+translation=
+
+[plugins.daily-notes.msg-missing-folder]
+original=Daily note folder not found.
 translation=
 
 [plugins.daily-notes.label-refer-to-syntax]
@@ -8910,14 +8946,6 @@ translation=Tulajdonság megjelenítése
 original=Edit property
 translation=Tulajdonság szerkesztése
 
-[plugins.bases.placeholder-formula]
-original=x + y
-translation=
-
-[plugins.bases.placeholder-summary-formula]
-original=values.reduce( ... )
-translation=
-
 [plugins.bases.title-edit-property]
 original=Edit {{name}}
 translation={{name}} szerkesztése
@@ -9941,4 +9969,3 @@ translation={{count}} téma
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} téma
-

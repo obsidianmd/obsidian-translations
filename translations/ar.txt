@@ -2863,7 +2863,7 @@ original=Because Obsidian stores your notes on your devices, you'll need to set 
 translation=نظرًا لأن Obsidian يخزن ملاحظاتك على أجهزتك، فستحتاج إلى إعداد المزامنة إذا كنت تريد الوصول إلى ملاحظاتك على هاتف أو كمبيوتر آخر.\nيمكنك إعداد المزامنة الآن، أو البدء في الكتابة وإعدادها لاحقًا.
 
 [interface.start-screen.mobile.option-setup-sync]
-original=Setup Sync
+original=Set up sync
 translation=إعداد المزامنة
 
 [interface.start-screen.mobile.option-skip]
@@ -2969,6 +2969,30 @@ translation=اسم الخزنة
 [interface.start-screen.mobile.label-vault-location]
 original=Vault location
 translation=موقع الخزنة
+
+[interface.start-screen.mobile.label-device-storage]
+original=Device storage
+translation=
+
+[interface.start-screen.mobile.label-device-storage-desc]
+original=Allows Obsidian data to be accessed by other apps.
+translation=
+
+[interface.start-screen.mobile.label-requires-additional-permissions]
+original=Requires additional permissions.
+translation=
+
+[interface.start-screen.mobile.label-app-storage]
+original=App storage
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc1]
+original=Your data will not be accessible to other apps.
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc2]
+original=Android will delete your data if you uninstall Obsidian.
+translation=
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
@@ -3145,10 +3169,6 @@ translation=الاتصال بـ Obsidian Sync
 [interface.start-screen.mobile.email-verification-desc]
 original=You should receive an email shortly to **{{email}}** with instructions to connect to Obsidian Sync.
 translation=يجب أن تتلقى بريدًا إلكترونيًا قريبًا على **{{email}}** يحتوي على تعليمات للاتصال بـ Obsidian Sync.
-
-[interface.start-screen.mobile.icloud-missing]
-original=iCloud
-translation=
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
@@ -3695,11 +3715,15 @@ original=Rename file
 translation=تعديل عنوان الملف
 
 [commands.copy-path]
-original=Copy file path
+original=Copy current file path from vault folder
 translation=نسخ مسار الملف
 
+[commands.copy-full-path]
+original=Copy current file path from system root
+translation=
+
 [commands.copy-url]
-original=Copy Obsidian URL
+original=Copy Obsidian URL for current file
 translation=نسخ عنوان obsidian
 
 [commands.export-pdf]
@@ -5430,6 +5454,14 @@ translation=مجموعات إشارات المرجعية
 original=Bookmarks
 translation=الإشارات المرجعية
 
+[plugins.custom-css.name]
+original=Custom CSS
+translation=
+
+[plugins.custom-css.desc]
+original=Read and apply “obsidian.css” in the vault folder.
+translation=
+
 [plugins.custom-css.setting-community-themes]
 original=Community themes
 translation=سمات المجتمع
@@ -5768,6 +5800,10 @@ translation=
 
 [plugins.daily-notes.msg-invalid-date-format]
 original=Invalid date format
+translation=
+
+[plugins.daily-notes.msg-missing-folder]
+original=Daily note folder not found.
 translation=
 
 [plugins.daily-notes.label-refer-to-syntax]
@@ -8910,14 +8946,6 @@ translation=إظهار الخاصية
 original=Edit property
 translation=تحرير الخاصية
 
-[plugins.bases.placeholder-formula]
-original=x + y
-translation=
-
-[plugins.bases.placeholder-summary-formula]
-original=values.reduce( ... )
-translation=
-
 [plugins.bases.title-edit-property]
 original=Edit {{name}}
 translation=تعديل {{name}}
@@ -9941,4 +9969,3 @@ translation={{count}} سمة
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} سمات
-

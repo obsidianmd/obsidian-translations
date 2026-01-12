@@ -2863,7 +2863,7 @@ original=Because Obsidian stores your notes on your devices, you'll need to set 
 translation=Поскольку Obsidian хранит ваши заметки на ваших устройствах, вам необходимо настроить синхронизацию, если вы хотите получить доступ к своим заметкам на другом телефоне или компьютере.\nВы можете настроить синхронизацию сейчас или просто начать запись и настроить ее позже.Вы можете настроить синхронизацию сейчас или просто начать запись и настроить её позже.
 
 [interface.start-screen.mobile.option-setup-sync]
-original=Setup Sync
+original=Set up sync
 translation=Настроить синхронизацию
 
 [interface.start-screen.mobile.option-skip]
@@ -2969,6 +2969,30 @@ translation=Имя хранилища
 [interface.start-screen.mobile.label-vault-location]
 original=Vault location
 translation=Местоположение хранилища
+
+[interface.start-screen.mobile.label-device-storage]
+original=Device storage
+translation=
+
+[interface.start-screen.mobile.label-device-storage-desc]
+original=Allows Obsidian data to be accessed by other apps.
+translation=
+
+[interface.start-screen.mobile.label-requires-additional-permissions]
+original=Requires additional permissions.
+translation=
+
+[interface.start-screen.mobile.label-app-storage]
+original=App storage
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc1]
+original=Your data will not be accessible to other apps.
+translation=
+
+[interface.start-screen.mobile.label-app-storage-desc2]
+original=Android will delete your data if you uninstall Obsidian.
+translation=
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
@@ -3145,10 +3169,6 @@ translation=Подключить к Obsidian Sync
 [interface.start-screen.mobile.email-verification-desc]
 original=You should receive an email shortly to **{{email}}** with instructions to connect to Obsidian Sync.
 translation=Вскоре вы должны получить электронное письмо по адресу **{{email}}** с инструкциями по подключению к Obsidian Sync.
-
-[interface.start-screen.mobile.icloud-missing]
-original=iCloud
-translation=
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
@@ -3695,11 +3715,15 @@ original=Rename file
 translation=Редактировать заголовок файла
 
 [commands.copy-path]
-original=Copy file path
+original=Copy current file path from vault folder
 translation=Скопировать путь к файлу
 
+[commands.copy-full-path]
+original=Copy current file path from system root
+translation=
+
 [commands.copy-url]
-original=Copy Obsidian URL
+original=Copy Obsidian URL for current file
 translation=Скопировать Obsidian URL
 
 [commands.export-pdf]
@@ -5430,6 +5454,14 @@ translation=Группа закладок
 original=Bookmarks
 translation=Закладки
 
+[plugins.custom-css.name]
+original=Custom CSS
+translation=
+
+[plugins.custom-css.desc]
+original=Read and apply “obsidian.css” in the vault folder.
+translation=
+
 [plugins.custom-css.setting-community-themes]
 original=Community themes
 translation=Темы сообщества
@@ -5768,6 +5800,10 @@ translation=
 
 [plugins.daily-notes.msg-invalid-date-format]
 original=Invalid date format
+translation=
+
+[plugins.daily-notes.msg-missing-folder]
+original=Daily note folder not found.
 translation=
 
 [plugins.daily-notes.label-refer-to-syntax]
@@ -8910,14 +8946,6 @@ translation=Показать свойство
 original=Edit property
 translation=Редактировать свойство
 
-[plugins.bases.placeholder-formula]
-original=x + y
-translation=Введите формулу в формате x + y
-
-[plugins.bases.placeholder-summary-formula]
-original=values.reduce( ... )
-translation=
-
 [plugins.bases.title-edit-property]
 original=Edit {{name}}
 translation=Редактирование {{name}}
@@ -9941,4 +9969,3 @@ translation=тем: {{count}}
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation=тем: {{count}}
-
