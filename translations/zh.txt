@@ -76,11 +76,11 @@ translation=在笔记页面内显示笔记标题。
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
-translation=缩减栏宽
+translation=限制行宽
 
 [setting.editor.option-readable-line-description]
 original=Limit maximum line length. Less content fits onscreen, but long blocks of text are more readable.
-translation=开启后将限制每行字数，使屏幕显示的内容减少，但使较长的段落更具可读性。
+translation=开启后将限制每行显示的字数，使屏幕显示的内容减少，但使较长的段落更具可读性。
 
 [setting.editor.option-strict-line-break]
 original=Strict line breaks
@@ -88,7 +88,7 @@ translation=严格换行
 
 [setting.editor.option-strict-line-break-description]
 original=Markdown specs ignore single line breaks in reading view. Turn this off to make single line breaks visible.
-translation=开启后，根据 Markdown 标准，单个换行符在预览模式下不再生效。
+translation=开启后，根据 Markdown 标准，单个换行符在预览模式下不再生效（无法实际换行）。
 
 [setting.editor.option-properties-in-document]
 original=Properties in document
@@ -96,7 +96,7 @@ translation=笔记属性
 
 [setting.editor.option-properties-in-document-description]
 original=Choose how properties are displayed at the top of notes. Select “source” to show properties as raw YAML.
-translation=选择笔记属性在编辑器中的显示方式。选择 “源码” 可以以 YAML 格式显示笔记属性。
+translation=选择笔记属性在编辑器中的显示方式。选择 “源码” 时，将以 YAML 格式显示笔记属性。
 
 [setting.editor.option-properties-hidden]
 original=Hidden
