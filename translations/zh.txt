@@ -500,7 +500,7 @@ translation=条件不可为空
 
 [setting.file.placeholder-excluded-filter]
 original=Enter path or “/regex/”...
-translation=请输入文件路径或如 "/regex/" 这样的正则表达式
+translation=请输入文件路径或正则表达式（例如：“/regex/”）
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -2148,11 +2148,11 @@ translation=渲染代码块时遇到错误。
 
 [interface.msg-open-file-through-uri]
 original=Opened file “{{path}}”
-translation=打开文件 "{{path}}"
+translation=打开文件 “{{path}}”
 
 [interface.msg-file-not-found-through-uri]
 original=File “{{name}}” not found.
-translation=文件 "{{name}}" 未找到。
+translation=未找到文件 “{{name}}”。
 
 [interface.msg-invalid-uri-action]
 original=Unrecognized URI action: {{action}}
@@ -4772,7 +4772,7 @@ translation=选择
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
-translation=未发现该笔记。按下回车键以创建该笔记。
+translation=未找到该笔记。按下回车键以创建该笔记。
 
 [plugins.quick-switcher.prompt-type-file-name]
 original=Find or create a note...
@@ -5120,7 +5120,7 @@ translation=显示标签列表
 
 [plugins.tag-pane.label-no-tags]
 original=No tags found.
-translation=未发现标签。
+translation=未找到标签。
 
 [plugins.tag-pane.label-sort-by-name-a-to-z]
 original=Tag name (A to Z)
@@ -5556,11 +5556,11 @@ translation=找到 {{count}} 可更新的主题
 
 [plugins.custom-css.msg-failed-to-install-theme]
 original=Failed to install theme “{{name}}”.
-translation=无法安装 "{{name}}" 主题
+translation=无法安装 "{{name}}" 主题。
 
 [plugins.custom-css.msg-successfully-installed-theme]
 original=Successfully installed theme “{{name}}”.
-translation=成功安装 "{{name}}" 主题
+translation=成功安装 "{{name}}" 主题。
 
 [plugins.custom-css.msg-installing-theme]
 original=Installing theme “{{name}}”...
@@ -5600,7 +5600,7 @@ translation=退出
 
 [plugins.command-palette.label-no-commands]
 original=No commands found.
-translation=未发现命令。
+translation=未找到命令
 
 [plugins.command-palette.prompt-type-command]
 original=Select a command to add...
@@ -5764,15 +5764,15 @@ translation=在日记中插入链接
 
 [plugins.daily-notes.msg-fail-format]
 original=Failed to create daily note. “{{format}}” is not a valid format.
-translation=创建日记未成功。 "{{format}}" 不是有效的格式。
+translation=创建日记失败。 "{{format}}" 不是有效的格式。
 
 [plugins.daily-notes.msg-fail-folder]
 original=Failed to create daily note. Folder “{{folderOption}}” not found.
-translation=创建日记未成功。 未找到 "{{folderOption}}" 文件夹。
+translation=创建日记失败。 未找到 "{{folderOption}}" 文件夹。
 
 [plugins.daily-notes.msg-fail-template-file]
 original=Failed to create daily note. Template file “{{template}}” not found.
-translation=创建日记未成功。未找到 "{{template}}" 模板文件。
+translation=创建日记失败。未找到 "{{template}}" 模板文件。
 
 [plugins.daily-notes.msg-no-previous]
 original=There's no daily note before this one.
@@ -5932,7 +5932,7 @@ translation={{displayText}} 的大纲
 
 [plugins.outline.label-no-headings]
 original=No headings found.
-translation=未发现小标题行。
+translation=未找到小标题行。
 
 [plugins.outline.label-follow-cursor]
 original=Auto-scroll to current section
@@ -6080,7 +6080,7 @@ translation=退出
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
-translation=未发现模板
+translation=未找到模板
 
 [plugins.templates.msg-fail-invalid-folder]
 original=Failed to list templates. Template folder is invalid.
@@ -7888,7 +7888,7 @@ translation=快照已删除。
 
 [plugins.file-recovery.label-no-history-found]
 original=Snapshots found.
-translation=未发现快照。
+translation=未找到快照。
 
 [plugins.file-recovery.placeholder-choose-file]
 original=Choose a file...
@@ -7952,7 +7952,7 @@ translation=将该笔记合并到…
 
 [plugins.note-composer.label-no-files]
 original=No files found.
-translation=未发现相应笔记。
+translation=未找到相应文件。
 
 [plugins.note-composer.instruction-navigate]
 original=to navigate
@@ -8008,7 +8008,7 @@ translation=移动到所选笔记开头
 
 [plugins.note-composer.msg-fail-to-fetch-template]
 original=Failed to fetch template file: “{{template}}” not found.
-translation=调用模板失败：模板文件 "{{template}}" 未找到。
+translation=调用模板失败：未找到模板文件 “{{template}}”。
 
 [plugins.note-composer.msg-fail-to-find-heading]
 original=Failed to find heading
