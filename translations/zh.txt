@@ -328,7 +328,7 @@ translation=移至系统回收站
 
 [setting.file.option-choice-vault-trash]
 original=Move to Obsidian trash (.trash folder)
-translation=移至软件回收站（.trash 文件夹）
+translation=移至 Obsidain 回收站（.trash 文件夹）
 
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
@@ -1488,7 +1488,7 @@ translation=捐赠
 
 [setting.third-party-plugin.label-no-results-found]
 original=No results found.
-translation=未找到相关结果
+translation=未找到相关结果。
 
 [setting.third-party-plugin.label-no-recent-files-found]
 original=No recent files found. Type to search...
@@ -3376,11 +3376,11 @@ translation=忽略
 
 [interface.mobile.icloud-startup.msg-reload-needed]
 original=Configuration files updated from iCloud, reload required
-translation=
+translation=配置文件已从 iCloud 更新，需重新加载
 
 [interface.mobile.icloud-startup.action-reload]
 original=Reload
-translation=
+translation=重新加载
 
 [interface.help-screen.label-official-help-site]
 original=Official help site
@@ -3480,7 +3480,7 @@ translation=堆叠/取消堆叠标签页
 
 [commands.toggle-readable-line-length]
 original=Toggle readable line length
-translation=
+translation=切换限制行宽
 
 [commands.navigate-back]
 original=Navigate back
@@ -3492,7 +3492,7 @@ translation=前进
 
 [commands.toggle-light-dark-mode]
 original=Toggle light/dark mode
-translation=切换浅色/深色模式的主题
+translation=切换浅色/深色模式
 
 [commands.change-theme]
 original=Change theme
@@ -3552,7 +3552,7 @@ translation=新标签页
 
 [commands.new-window]
 original=New window
-translation=
+translation=新窗口
 
 [commands.show-trash]
 original=Show trash
@@ -3720,7 +3720,7 @@ translation=复制当前文件的路径
 
 [commands.copy-full-path]
 original=Copy current file path from system root
-translation=
+translation=复制当前文件绝对路径
 
 [commands.copy-url]
 original=Copy Obsidian URL for current file
@@ -3840,7 +3840,7 @@ translation=它将被移动到系统回收站里。
 
 [dialogue.label-move-to-vault-trash]
 original=It will be moved to your Obsidian trash, which is located in the “.trash” hidden folder in your vault.
-translation=它将被移动到软件回收站（即仓库目录中隐藏的 ".trash" 文件夹）里。
+translation=它将被移动到 Obsidian 回收站（即仓库目录中隐藏的 ".trash" 文件夹）里。
 
 [dialogue.label-permanent-delete]
 original=The file will be permanent deleted.
@@ -3916,11 +3916,11 @@ translation=已还原对 {{count}} 个文件的更改。
 
 [dialogue.msg-offline]
 original=No internet connection
-translation=
+translation=网络未连接
 
 [dialogue.msg-loading]
 original=Loading...
-translation=
+translation=加载中…
 
 [dialogue.button-manage]
 original=Manage
@@ -3956,7 +3956,7 @@ translation=暂停
 
 [dialogue.button-change]
 original=Change
-translation=
+translation=更改
 
 [dialogue.button-continue]
 original=Continue
@@ -3996,11 +3996,11 @@ translation=新文件名
 
 [dialogue.label-error]
 original=Error
-translation=
+translation=错误
 
 [dialogue.label-selected]
 original=Selected
-translation=
+translation=已选择
 
 [dialogue.msg-rename-success]
 original=Successfully renamed file.
@@ -4204,7 +4204,7 @@ translation=打开沙盒仓库
 
 [menu-items.move-to-new-window]
 original=Move To New Window
-translation=
+translation=移至新窗口
 
 [menu-items.navigate-back]
 original=Navigate Back
@@ -5200,19 +5200,19 @@ translation=显示当前笔记的属性列表
 
 [plugins.properties.opt-delete-properties]
 original=Delete property
-translation=
+translation=删除属性
 
 [plugins.properties.opt-delete-properties_plural]
 original=Delete properties
-translation=
+translation=删除属性
 
 [plugins.properties.opt-automatic]
 original=Automatic
-translation=
+translation=自动
 
 [plugins.properties.opt-automatic-with-type]
 original=Automatic ({{type}})
-translation=
+translation=自动 ({{type}})
 
 [plugins.properties.label-no-properties]
 original=No properties found.
@@ -5456,11 +5456,11 @@ translation=书签
 
 [plugins.custom-css.name]
 original=Custom CSS
-translation=
+translation=自定义 CSS
 
 [plugins.custom-css.desc]
 original=Read and apply “obsidian.css” in the vault folder.
-translation=
+translation=读取并应用仓库文件夹中的 “obsidian.css”。
 
 [plugins.custom-css.setting-community-themes]
 original=Community themes
@@ -5736,7 +5736,7 @@ translation=日记
 
 [plugins.daily-notes.desc]
 original=Create or open today's daily note.
-translation=打开今天的日记。如果该日记不存在，则创建该日记。
+translation=打开（或创建）今天的日记。
 
 [plugins.daily-notes.short-name]
 original=Today
@@ -5788,23 +5788,23 @@ translation=日期格式
 
 [plugins.daily-notes.option-date-format-desc]
 original=Choose how daily note are named in your vault.
-translation=
+translation=选择日记的命名方式。
 
 [plugins.daily-notes.option-custom-date-format]
 original=Custom format
-translation=
+translation=自定义格式
 
 [plugins.daily-notes.option-custom]
 original=Custom
-translation=
+translation=自定义
 
 [plugins.daily-notes.msg-invalid-date-format]
 original=Invalid date format
-translation=
+translation=无效的日期格式
 
 [plugins.daily-notes.msg-missing-folder]
 original=Daily note folder not found.
-translation=
+translation=未找到日记文件夹。
 
 [plugins.daily-notes.label-refer-to-syntax]
 original=For more syntax, refer to 
@@ -5820,11 +5820,11 @@ translation=这是当前所用格式的样例:
 
 [plugins.daily-notes.option-new-file-location]
 original=New file location
-translation=新建日记的存放位置
+translation=新笔记的存放位置
 
 [plugins.daily-notes.option-new-file-location-description]
 original=New daily notes will be placed here.
-translation=指定新建日记的存放路径。
+translation=指定新笔记的存放路径。
 
 [plugins.daily-notes.option-template]
 original=Template file location
@@ -6432,11 +6432,11 @@ translation=开启后将隐藏页内的标题。这个设置对于将一级小�
 
 [plugins.publish.option-readable-line-length]
 original=Readable line length
-translation=缩减栏宽
+translation=限制行宽
 
 [plugins.publish.option-readable-line-length-description]
 original=Limit maximum line length. Fits less content on the screen, but makes long paragraphs more readable.
-translation=开启后将限制每行字数，使屏幕显示的内容减少，但使较长的段落更具可读性。
+translation=开启后将限制每行显示的字数，使屏幕显示的内容减少，但使较长的段落更具可读性。
 
 [plugins.publish.option-site-password]
 original=Passwords
@@ -7808,23 +7808,23 @@ translation=仓库迁移正在进行中。
 
 [plugins.sync.msg-vault-migration-completed]
 original=Vault migration complete.
-translation=
+translation=仓库迁移完成。
 
 [plugins.sync.label-resolve-conflicts]
 original=Conflict resolution
-translation=
+translation=冲突解决方式
 
 [plugins.sync.label-resolve-conflicts-desc]
 original=Choose how conflicts are resolved when a note is independently modified on multiple devices.
-translation=
+translation=选择当一则笔记在多个设备上被修改时，如何解决冲突。
 
 [plugins.sync.option-automatic-merge]
 original=Automatically merge
-translation=
+translation=自动合并
 
 [plugins.sync.option-conflict-file]
 original=Create conflict file
-translation=
+translation=创建冲突文件
 
 [plugins.file-recovery.name]
 original=File recovery
@@ -8436,7 +8436,7 @@ translation=未找到图片。
 
 [plugins.canvas.label-no-media]
 original=No media found.
-translation=未找到媒体文件
+translation=未找到媒体文件。
 
 [plugins.canvas.label-export-png-desc]
 original=Export “{{title}}” as a PNG file with the settings below.
@@ -8588,7 +8588,7 @@ translation=新建白板
 
 [plugins.canvas.action-duplicate]
 original=Duplicate
-translation=
+translation=创建副本
 
 [plugins.canvas.action-remove]
 original=Remove
@@ -8684,7 +8684,7 @@ translation=显示完整文件
 
 [plugins.canvas.label-show-default-view]
 original=Show default view
-translation=
+translation=显示默认视图
 
 [plugins.canvas.label-readonly]
 original=Read-only
@@ -8824,7 +8824,7 @@ translation=添加属性
 
 [plugins.bases.action-add-summary]
 original=Add "{{name}}" summary
-translation=
+translation=添加 "{{name}}" 汇总
 
 [plugins.bases.action-add-formula]
 original=Add formula
@@ -8840,11 +8840,11 @@ translation=切换可见性
 
 [plugins.bases.action-delete-formula]
 original=Delete formula
-translation=
+translation=删除公式
 
 [plugins.bases.action-set-default-view]
 original=Default view
-translation=
+translation=默认视图
 
 [plugins.bases.action-duplicate-view]
 original=Duplicate view
@@ -8856,7 +8856,7 @@ translation=删除视图
 
 [plugins.bases.action-delete-summary]
 original=Delete summary
-translation=
+translation=删除汇总
 
 [plugins.bases.action-export-c-s-v]
 original=Export CSV...
@@ -8908,11 +8908,11 @@ translation=显示全部 ({{count}})
 
 [plugins.bases.button-add-summary]
 original=Add summary
-translation=
+translation=添加汇总
 
 [plugins.bases.button-hide-summary]
 original=Hide summary
-translation=
+translation=隐藏汇总
 
 [plugins.bases.label-all-views]
 original=All views
@@ -8984,7 +8984,7 @@ translation=显示名称
 
 [plugins.bases.label-summary-name]
 original=Summary name
-translation=
+translation=汇总名称
 
 [plugins.bases.label-formula]
 original=Formula
@@ -8992,7 +8992,7 @@ translation=公式
 
 [plugins.bases.label-views]
 original=Views
-translation=
+translation=视图
 
 [plugins.bases.label-sort]
 original=Sort
@@ -9092,7 +9092,7 @@ translation=文件大小
 
 [plugins.bases.label-file-prop-backlinks]
 original=file backlinks
-translation=
+translation=文件反向链接
 
 [plugins.bases.label-file-prop-links]
 original=file links
@@ -9112,11 +9112,11 @@ translation=添加排序
 
 [plugins.bases.label-group-by]
 original=Group by
-translation=
+translation=分组依据
 
 [plugins.bases.label-sort-by]
 original=Sort by
-translation=
+translation=排序依据
 
 [plugins.bases.label-limit]
 original=Limit number of results
@@ -9152,11 +9152,11 @@ translation=视图名称中包含无效字符:
 
 [plugins.bases.msg-duplicate-view-name]
 original=View name already exists.
-translation=
+translation=视图名称已存在。
 
 [plugins.bases.msg-empty-view-name]
 original=View name cannot be empty.
-translation=
+translation=视图名称不能为空。
 
 [plugins.bases.msg-filter-simple-unavailable]
 original=This filter cannot be represented by the simple filter builder.
@@ -9288,35 +9288,35 @@ translation=移除筛选器
 
 [plugins.bases.label-group-key-none]
 original=None
-translation=
+translation=无
 
 [plugins.bases.list.name]
 original=List
-translation=
+translation=列表
 
 [plugins.bases.list.label-markers]
 original=Markers
-translation=
+translation=项目符号
 
 [plugins.bases.list.label-indent-properties]
 original=Indent properties
-translation=
+translation=属性缩进显示
 
 [plugins.bases.list.label-property-separator]
 original=Property separator
-translation=
+translation=属性分隔符
 
 [plugins.bases.list.option-bullet]
 original=Bullet
-translation=
+translation=无序列表
 
 [plugins.bases.list.option-number]
 original=Number
-translation=
+translation=有序列表
 
 [plugins.bases.list.option-none]
 original=None
-translation=
+translation=无符号
 
 [plugins.bases.cards.name]
 original=Cards
@@ -9376,23 +9376,23 @@ translation=排序 Z → A
 
 [plugins.bases.table.label-row-height]
 original=Row height
-translation=
+translation=行高
 
 [plugins.bases.table.option-short]
 original=Short
-translation=
+translation=低
 
 [plugins.bases.table.option-medium]
 original=Medium
-translation=
+translation=中
 
 [plugins.bases.table.option-tall]
 original=Tall
-translation=
+translation=高
 
 [plugins.bases.table.option-extra-tall]
 original=Extra tall
-translation=
+translation=超高
 
 [plugins.bases.table.action-select-summary]
 original=Summarize...
@@ -9624,7 +9624,7 @@ translation=文件
 
 [properties.types.option-property-name]
 original=Property
-translation=
+translation=属性
 
 [properties.types.option-date]
 original=Date
@@ -9660,7 +9660,7 @@ translation=属性类型
 
 [properties.option-sort]
 original=Sort
-translation=
+translation=排序
 
 [properties.msg-empty-property-name]
 original=Property name cannot be empty.
