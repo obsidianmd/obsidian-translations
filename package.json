@@ -1,17 +1,11 @@
 {
   "name": "obsidian-community-releases",
   "scripts": {
-    "lint": "eslint . --ext .json",
-    "json-to-txt": "ts-node scripts/json-to-txt.ts",
-    "txt-to-json": "ts-node scripts/txt-to-json.ts",
-    "llm-translate": "ts-node scripts/llm-translate.ts",
-    "verify-translations": "ts-node scripts/verify-and-fix-translations.ts"
+    "lint": "eslint . --ext .json"
   },
   "devDependencies": {
     "eslint": "7.20.0",
-    "eslint-plugin-json": "2.1.2"
-  },
-  "dependencies": {
-    "ts-node": "^10.9.2"
+    "eslint-plugin-json": "2.1.2",
+    "ts-node": "10.9.2"
   }
 }
