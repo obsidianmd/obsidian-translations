@@ -5,24 +5,21 @@ import { ALL_LANGUAGE_CODES } from './languages';
 async function main(): Promise<void> {
   const data = parseTxtFile(fs.readFileSync('terms.txt', 'utf-8'));
 
-  const langs: any = {description: {}};
+  let english = data.description;
+
+  const results: any = {description: english};
 
   for (let lang of ALL_LANGUAGE_CODES) {
-    langs[lang] = {};
-  }
-
-  for (let key in data) {
-    if (!Object.hasOwn(data, key) || key.startsWith('==')) continue;
-    let value = data[key];
-    let desc = value.description;
-    langs['description'][key] = desc || '';
-
-    for (let lang of ALL_LANGUAGE_CODES) {
-      langs[lang][key] = value[lang] || '';
+    let items = results[lang] = {};
+    let prev = data[lang];
+    for (let key in english) {
+      if (!Object.hasOwn(english, key)) continue;
+      items[key] = prev[key] || '';
     }
+
   }
 
-  const output = dataToTxtFormat(langs);
+  const output = dataToTxtFormat(results);
   fs.writeFileSync('terms.txt', output, 'utf-8');
 }
 
