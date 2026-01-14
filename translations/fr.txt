@@ -312,7 +312,7 @@ translation=Pour recevoir une invite de confirmation à la suppression du fichie
 
 [setting.file.option-trash]
 original=Trash
-translation=
+translation=Corbeille
 
 [setting.file.option-delete-destination]
 original=Deleted files
@@ -336,35 +336,35 @@ translation=Supprimer définitivement
 
 [setting.file.option-default-open-action]
 original=Default file to open
-translation=
+translation=Fichier ouvert par défaut
 
 [setting.file.option-default-open-action-description]
 original=Choose which file to open when the app starts.
-translation=
+translation=Choisissez quel fichier ouvrir au démarrage de l'application.
 
 [setting.file.option-choice-last-opened]
 original=Last opened
-translation=
+translation=Dernier ouvert
 
 [setting.file.option-choice-new-note]
 original=New note
-translation=
+translation=Nouvelle note
 
 [setting.file.option-choice-specific-file]
 original=Specific file
-translation=
+translation=Fichier spécifique
 
 [setting.file.option-choice-daily-note]
 original=Daily note
-translation=
+translation=Note quotidienne
 
 [setting.file.option-default-open-file-path]
 original=File to open
-translation=
+translation=Fichier à ouvrir
 
 [setting.file.option-default-open-file-path-description]
 original=Select a specific file to open by default.
-translation=
+translation=Sélectionnez un fichier spécifique à ouvrir par défaut.
 
 [setting.file.option-always-update-links]
 original=Automatically update internal links
@@ -420,7 +420,7 @@ translation=Afficher les fichiers et leurs extensions, même si Obsidian ne peut
 
 [setting.file.option-links]
 original=Links
-translation=
+translation=Liens
 
 [setting.file.option-link-autocompleted-format]
 original=New link format
@@ -451,8 +451,8 @@ original=Where newly added attachments are placed.
 translation=Emplacement des pièces jointes nouvellement ajoutées.
 
 [setting.file.option-new-attachment-location-default]
-original=attachments
-translation=
+original=Attachments
+translation=Pièces jointes
 
 [setting.file.option-choice-subdirectory]
 original=In subfolder under current folder
@@ -504,11 +504,11 @@ translation=Entrer un chemin ou un "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
-translation=
+translation=Autoriser les rappels URI
 
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
-translation=
+translation=Activer l'utilisation de x-callback-url via x-success ou x-error lors du traitement des URI Obsidian.
 
 [setting.appearance.name]
 original=Appearance
@@ -732,7 +732,7 @@ translation=Mettre à jour
 
 [setting.appearance.label-currently-active]
 original=Active
-translation=
+translation=Actif
 
 [setting.appearance.option-frame-style]
 original=Window frame style
@@ -924,7 +924,7 @@ translation=Indéfini
 
 [setting.keychain.name]
 original=Keychain
-translation=
+translation=Trousseau
 
 [setting.keychain.secrets]
 original=Secrets
@@ -932,19 +932,19 @@ translation=
 
 [setting.keychain.action-add-secret]
 original=Add secret
-translation=
+translation=Ajouter un secret
 
 [setting.keychain.action-edit-secret]
 original=Edit secret
-translation=
+translation=Modifier le secret
 
 [setting.keychain.action-show-secret-value]
 original=Show secret
-translation=
+translation=Afficher le secret
 
 [setting.keychain.action-hide-secret-value]
 original=Hide secret
-translation=
+translation=Masquer le secret
 
 [setting.keychain.label-secret-id]
 original=ID
@@ -956,59 +956,55 @@ translation=
 
 [setting.keychain.placeholder-secret-id]
 original=secret-name
-translation=
-
-[setting.keychain.placeholder-secret-value]
-original=sk-...
-translation=
+translation=nom-du-secret
 
 [setting.keychain.option-secret-id-description]
 original=Lowercase letters, numbers and dashes only.
-translation=
+translation=Lettres minuscules, chiffres et tirets uniquement.
 
 [setting.keychain.option-secret-value-description]
 original=Enter your secret.
-translation=
+translation=Saisissez votre secret.
 
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
-translation=
+translation=Échec de la mise à jour du secret.
 
 [setting.keychain.msg-error-add-secret]
 original=Failed to add secret.
-translation=
+translation=Échec de l'ajout du secret.
 
 [setting.keychain.msg-error-secret-id-exists]
 original=A secret with this ID already exists.
-translation=
+translation=Un secret avec cet ID existe déjà.
 
 [setting.keychain.msg-error-secret-value-empty]
 original=Secret value cannot be empty.
-translation=
+translation=La valeur du secret ne peut pas être vide.
 
 [setting.keychain.msg-error-secret-id-invalid]
 original=Secret ID is invalid. Use only lowercase letters, numbers and dashes. 64 characters max.
-translation=
+translation=L'ID du secret est invalide. Utilisez uniquement des lettres minuscules, chiffres et tirets. 64 caractères maximum.
 
 [setting.keychain.keychain-empty-state]
 original=No secrets have been added. Secrets are used to store information like API keys and passwords that plugins can use.
-translation=
+translation=Aucun secret n'a été ajouté. Les secrets servent à stocker des informations comme des clés API et des mots de passe utilisables par les modules.
 
 [setting.keychain.label-select-secret]
 original=Select secret
-translation=
+translation=Sélectionner un secret
 
 [setting.keychain.placeholder-search-secret]
 original=Find secret...
-translation=
+translation=Rechercher un secret...
 
 [setting.keychain.button-add-secret]
 original=Add secret...
-translation=
+translation=Ajouter un secret...
 
 [setting.keychain.button-link]
 original=Link...
-translation=
+translation=Lier...
 
 [setting.about.name]
 original=General
@@ -1210,18 +1206,6 @@ translation=Vous êtes actuellement connecté avec {{name}} ({{email}}).
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
 translation=Vous n'êtes pas connecté pour le moment. Un compte n'est nécessaire que pour Obsidian Sync, Obsidian Publish et préversions Catalyst.
 
-[setting.account.label-insider]
-original=Insider
-translation=insider
-
-[setting.account.label-supporter]
-original=Supporter
-translation=supporter
-
-[setting.account.label-vip]
-original=VIP
-translation=
-
 [setting.account.button-upgrade-catalyst]
 original=Upgrade
 translation=Mise à niveau
@@ -1232,7 +1216,7 @@ translation=Licence commerciale
 
 [setting.account.option-commercial-license-desc]
 original=Help keep Obsidian 100% user-supported.
-translation=
+translation=Aidez Obsidian à rester 100 % financé par ses utilisateurs.
 
 [setting.account.button-purchase]
 original=Purchase
@@ -1352,11 +1336,11 @@ translation=Activer
 
 [setting.third-party-plugin.option-automatic-update-check]
 original=Automatically check for plugin updates
-translation=
+translation=Vérifier automatiquement les mises à jour des modules
 
 [setting.third-party-plugin.option-automatic-update-check-desc]
 original=Periodically check for plugin updates.
-translation=
+translation=Vérifier périodiquement les mises à jour des modules.
 
 [setting.third-party-plugin.option-browse-community-plugins]
 original=Community plugins
@@ -1548,11 +1532,11 @@ translation=Le module "{{name}}" a été installé avec succès.
 
 [setting.third-party-plugin.msg-failed-to-uninstall-plugin]
 original=Failed to uninstall plugin “{{id}}”.
-translation=
+translation=Échec de la désinstallation du module « {{id}} ».
 
 [setting.third-party-plugin.msg-failed-to-disable-plugin]
 original=Failed to disable plugin “{{id}}”.
-translation=
+translation=Échec de la désactivation du module « {{id}} ».
 
 [setting.third-party-plugin.label-installed-plugins]
 original=Installed plugins
@@ -1596,7 +1580,7 @@ translation=Modules actuels
 
 [setting.third-party-plugin.msg-checking-for-updates]
 original=Checking for updates...
-translation=
+translation=Recherche de mises à jour...
 
 [setting.third-party-plugin.label-currently-installed]
 original=You currently have {{count}} plugin installed.
@@ -1950,18 +1934,6 @@ translation=Exporter "{{filename}}" au format PDF avec les réglages ci-dessous.
 original=Page size
 translation=Format de la page
 
-[editor.print-modal.setting-page-size-a3]
-original=A3
-translation=
-
-[editor.print-modal.setting-page-size-a4]
-original=A4
-translation=
-
-[editor.print-modal.setting-page-size-a5]
-original=A5
-translation=
-
 [editor.print-modal.setting-page-size-legal]
 original=Legal
 translation=Legal US
@@ -2137,10 +2109,6 @@ translation=
 [interface.prompt-filter]
 original=Filter...
 translation=Filtrer...
-
-[interface.url]
-original=URL
-translation=
 
 [interface.msg-codeblock-render-error]
 original=Encountered an error while rendering code block.

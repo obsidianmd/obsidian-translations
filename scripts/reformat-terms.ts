@@ -11,12 +11,11 @@ async function main(): Promise<void> {
 
   for (let lang of ALL_LANGUAGE_CODES) {
     let items = results[lang] = {};
-    let prev = data[lang];
+    let prev = data[lang] || {};
     for (let key in english) {
       if (!Object.hasOwn(english, key)) continue;
       items[key] = prev[key] || '';
     }
-
   }
 
   const output = dataToTxtFormat(results);
