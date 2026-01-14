@@ -84,52 +84,66 @@ Here is a table of language code to language name, in alphabetical order. These 
 
 | Language code | Language name | Native name | Status |
 | --- | --- | --- | :---: |
-| `en` (default) | English | English | ✅ |
+| `en` | English | English | ✅ |
 | `af` | Afrikaans | Afrikaans | 🚧 |
 | `am` | Amharic |  አማርኛ | ✅ |
-| `ar` | Arabic | العربية | 🚧 |
-| `eu` | Basque | Euskara | 🚧 |
+| `ar` | Arabic | العربية | ✅ |
+| `az` | Azerbaijani | ? | 🚧 |
 | `be` | Belarusian | Беларуская мова | ✅ |
 | `bg` | Bulgarian | български език | 🚧 |
 | `bn` | Bengali | বাংলা | ✅ |
-| `ca` | Catalan | català | 🚧 |
-| `cs` | Czech | čeština | 🚧 |
+| `ca` | Catalan | català | ✅ |
+| `cs` | Czech | čeština | ✅ |
 | `da` | Danish | Dansk | ✅ |
 | `de` | German | Deutsch | ✅ |
 | `dv` | Dhivehi | ދިވެހި | 🚧 |
-| `el` | Greek | Ελληνικά | 🚧 |
+| `el` | Greek | Ελληνικά | ✅ |
 | `en-GB` | English (GB) | English (GB) | ✅ |
 | `eo` | Esperanto | Esperanto | 🚧 |
 | `es` | Spanish | Español | ✅ |
+| `eu` | Basque | Euskara | 🚧 |
 | `fa` | Persian | فارسی | ✅ |
-| `fi-fi` | Finnish | suomi | 🚧 |
+| `fi` | Finnish | suomi | ✅ |
 | `fr` | French | français | ✅ |
+| `ga` | Irish | Gaeilge | ✅ |
 | `gl` | Galician  | Galego | 🚧 |
-| `he` | Hebrew  | עברית 🇮🇱 | 🚧 |
+| `he` | Hebrew  | עברית 🇮🇱 | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 |
-| `hu` | Hungarian | Magyar nyelv | 🚧 |
+| `hr` | Croatian | ? | 🚧 |
+| `hu` | Hungarian | Magyar | ✅ |
 | `id` | Indonesian | Bahasa Indonesia | ✅ |
 | `it` | Italian | Italiano | ✅ |
 | `ja` | Japanese | 日本語 | ✅ |
+| `ka` | Georgian | ქართული | ✅ |
+| `kh` | Khmer | ខេមរភាសា | ✅ |
+| `kn` | Kannada | ಕನ್ನಡ | 🚧 |
 | `ko` | Korean | 한국어 | ✅ |
+| `ky` | Kyrgyz | Кыргызча | 🚧 |
+| `la` | Latin | Latina | 🚧 |
+| `lt` | Lithuanian | ? | 🚧 |
 | `lv` | Latvian | Latviešu | ✅ |
 | `ml` | Malayalam | മലയാളം | 🚧 |
-| `ms` | Malay | Bahasa Melayu | 🚧 |
+| `ms` | Malay | Bahasa Melayu | ✅ |
+| `nan-TW` | Taiwanese (Min Nan) | ? | 🚧 |
 | `ne` | Nepali | नेपाली | ✅ |
 | `nl` | Dutch | Nederlands | ✅ |
+| `nn` | Norwegian Nynorsk | ? | 🚧 |
 | `no` | Norwegian | Norsk | ✅ |
 | `oc` | Occitan | Occitan | 🚧 |
+| `or` | Odia | ଓଡ଼ିଆ | 🚧 |
 | `pl` | Polish | język polski | ✅ |
 | `pt` | Portuguese | Português | ✅ |
 | `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
-| `ro` | Romanian | Română | 🚧 |
+| `ro` | Romanian | Română | ✅ |
 | `ru` | Russian | Русский | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | 🚧 |
 | `si` | Sinhalese | සිංහල | 🚧 |
-| `sk` | Slovak | Slovenčina | 🚧 |
+| `sk` | Slovak | Slovenčina | ✅ |
+| `sl` | Slovenian | ? | 🚧 |
 | `sq` | Albanian | Shqip | ✅ |
-| `sr` | Serbian | српски језик | 🚧 |
-| `sv` | Swedish | Svenska | 🚧 |
+| `sr` | Serbian | српски језик | ✅ |
+| `sv` | Swedish | Svenska | ✅ |
+| `sw` | Swahili | ? | 🚧 |
 | `ta` | Tamil | தமிழ் | 🚧 |
 | `te` | Telugu | తెలుగు | 🚧 |
 | `th` | Thai | ไทย | ✅ |
@@ -138,8 +152,9 @@ Here is a table of language code to language name, in alphabetical order. These 
 | `tt` | Tatar | Татарча | 🚧 |
 | `uk` | Ukrainian | Українська | ✅ |
 | `ur` | Urdu | اردو | 🚧 |
+| `uz` | Uzbek | oʻzbekcha | ✅ |
 | `vi` | Vietnamese | Tiếng Việt | ✅ |
-| `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
+| `zh` | Chinese (Simplified) | 简体中文 | ✅ |
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
 
 > Note: the Chinese translation is maintained by Obsidian.zh. If you want to discuss it, please come here: https://github.com/obsidianzh/obsidian-translations.

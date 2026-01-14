@@ -61,5 +61,5 @@ export function dataToTxtFormat(data: ParsedData): string {
     output += '\n';
   }
 
-  return output;
+  return output.slice(0, -1);
 }
