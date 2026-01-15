@@ -14,6 +14,7 @@ async function main(): Promise<void> {
     let prev = data[lang] || {};
     for (let key in english) {
       if (!Object.hasOwn(english, key)) continue;
+      if (english[key].includes('Leave the translation empty')) continue;
       items[key] = prev[key] || '';
     }
   }
