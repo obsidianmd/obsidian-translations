@@ -44,7 +44,7 @@ translation=التدقيق الإملائي
 
 [setting.editor.option-spellcheck-description]
 original=Turn on the spellchecker.
-translation=يقوم بتشغيل التدقيق الإملائي. يعمل حاليًا باللغة الإنجليزية فقط
+translation=فعّل التدقيق الإملائي. يعمل حاليًا باللغة الإنجليزية فقط
 
 [setting.editor.spellcheck-languages]
 original=Spellcheck languages
@@ -212,11 +212,11 @@ translation=استخدام حرف الجدولة
 
 [setting.editor.option-use-tabs-description]
 original=Use tabs to indent by pressing the “Tab” key. Turn this off to indent using 4 spaces.
-translation=استخدم حرف الجدولة للتباعد عند الضغط على مفتاح "Tab". أوقف هذا الخيار لاستخدام المسافات العادية
+translation=استخدم حرف الجدولة لإدراج مسافة بادئة عند الضغط على مفتاح "Tab". أوقف هذا الخيار لاستخدام المسافات العادية
 
 [setting.editor.option-tab-size]
 original=Indent visual width
-translation=اتساع حرف الجدولة
+translation=اتساع المسافة البادئة
 
 [setting.editor.option-tab-size-description]
 original=Number of spaces a tab character will render as.
@@ -240,7 +240,7 @@ translation=قم بتحويل HTML إلى Markdown تلقائيًا عند ال�
 
 [setting.editor.option-vim-key-bindings]
 original=Vim key bindings
-translation=اختصارات Vim
+translation=اختصارات مفاتيح Vim
 
 [setting.editor.option-vim-key-bindings-description]
 original=Use Vim key bindings when editing.
@@ -268,11 +268,11 @@ translation=تأكيد الدخول في وضع Vim
 
 [setting.editor.label-vim-warning]
 original=Vim mode is for efficient text editing but can be quite counter-intuitive. If you're not familiar with Vim, this option might make it look like Obsidian has stopped working.
-translation=يعد وضع Vim مناسبًا لتحرير النصوص بكفاءة ولكنه يمكن أن يكون مضللًا للغاية. إذا كنت لا تعرف Vim بشكل جيد، فقد يجعل هذا الخيار يبدو وكأن Obsidian قد توقف عن العمل.
+translation=يُستخدم وضع Vim لتحرير النصوص بكفاءة، ولكنه قد يكون غير بديهي. إذا لم تكن معتادًا على Vim، فقد يبدو لك أن Obsidian قد توقف عن العمل عند استخدام هذا الخيار.
 
 [setting.editor.label-vim-test]
 original=To verify that you know your way around Vim, please enter the command to quit Vim without saving below:
-translation=للتحقق من أنك على دراية بمحرر النصوص Vim، يرجى إدخال أمر إنهاء Vim بدون حفظ بالأسفل:
+translation=للتأكد من معرفتك بكيفية استخدام Vim، يرجى إدخال أمر "الخروج من Vim دون حفظ التغييرات" في الأسفل:
 
 [setting.editor.label-vim-your-answer]
 original=Your answer
@@ -284,11 +284,11 @@ translation=أدخل الأمر...
 
 [setting.editor.button-confirm-enable-vim]
 original=Let me enable Vim
-translation=دعني أمكن Vim
+translation=دعني أفعل Vim
 
 [setting.editor.msg-vim-mode-enabled]
 original=Command is correct. Vim mode now enabled.
-translation=الأمر صحيح. الآن تم تمكين وضع Vim.
+translation=الأمر صحيح. تم تفعيل وضع Vim الآن.
 
 [setting.editor.msg-vim-mode-not-enabled]
 original=Command is incorrect. Vim mode remains disabled to protect you.
@@ -320,11 +320,11 @@ translation=الملفات المحذوفة
 
 [setting.file.option-delete-destination-description]
 original=What happens to a file after you delete it.
-translation=ماذا تفعل بالملفات بعد حذفها.
+translation=ماذا يحدث للملف بعد حذفه.
 
 [setting.file.option-choice-system-trash]
 original=Move to system trash
-translation=نقل إلى سلة المحذوفات في النظام
+translation=نقل إلى سلة محذوفات النظام
 
 [setting.file.option-choice-vault-trash]
 original=Move to Obsidian trash (.trash folder)
@@ -528,7 +528,7 @@ translation=اللون المميز
 
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
-translation=اختر لون مميز لاستخدامه في كامل التطبيق.
+translation=اختر لون مميز لاستخدامه في جميع أنحاء التطبيق.
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -588,11 +588,11 @@ translation=تعيين الخط المستخدم في أماكن مثل كتل �
 
 [setting.appearance.label-single-font-currently-in-effect]
 original= Currently applied font: 
-translation=  الخط المطبق حاليًا: 
+translation= الخط المطبق حاليًا: 
 
 [setting.appearance.label-multiple-fonts-currently-in-effect]
 original= The following fonts are currently applied:
-translation=  الخطوط التالية تُطبق حاليًا:
+translation=  الخطوط التالية مطبقة حاليًا:
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -620,7 +620,7 @@ translation=اسم الخط
 
 [setting.appearance.option-community-themes]
 original=Community themes
-translation=فتح سمات المجتمع
+translation=سمات المجتمع
 
 [setting.appearance.option-community-themes-description]
 original=Preview and use amazing themes created by the community.
@@ -768,23 +768,23 @@ translation=اختر أيقونة مخصصة
 
 [setting.appearance.option-configure-ribbon]
 original=Ribbon menu configuration
-translation=قائمة الشريط
+translation=إعدادات قائمة الشريط
 
 [setting.appearance.option-configure-ribbon-desc]
 original=Configure what commands appear in the ribbon menu.
-translation=تهيئة الأوامر التي تظهر في قائمة الشريط في شريط التنقل.
+translation=تهيئة الأوامر التي تظهر في قائمة الشريط.
 
 [setting.appearance.option-mobile-quick-ribbon-item]
 original=Quick access ribbon item
-translation=الوصول السريع لعنصر الشريط
+translation=شريط الوصول السريع
 
 [setting.appearance.option-mobile-quick-ribbon-item-desc]
 original=Choose the behavior of tapping the ribbon button in the navigation menu. By default, this will open a menu showing all your ribbon items.
-translation=ستؤدي النقر على عنصر الشريط في قائمة التنقل إلى تنشيط عنصر الشريط. سيؤدي النقر مع الاستمرار إلى استمرار عرض القائمة.
+translation=اختر سلوك النقر على زر الشريط في قائمة التنقل. بشكل افتراضي، سيؤدي هذا إلى فتح قائمة تعرض جميع عناصر الشريط.
 
 [setting.appearance.option-mobile-quick-ribbon-default]
 original=Open ribbon menu
-translation=فتح قائمة الشريط
+translation=افتح قائمة الشريط
 
 [setting.appearance.button-configure]
 original=Configure
@@ -796,7 +796,7 @@ translation=إظهار الشريط
 
 [setting.appearance.option-show-ribbon-desc]
 original=Display vertical toolbar on the side of the window.
-translation=إظهار شريط أدوات عمودي إلى جانب النافذة.
+translation=عرض شريط أدوات عمودي إلى جانب النافذة.
 
 [setting.appearance.label-additional-ribbon-items]
 original=Other ribbon items
@@ -808,15 +808,15 @@ translation=تهيئة الشريط
 
 [setting.appearance.label-modal-configuration-desc]
 original=Choose what items you want to be active in the ribbon. Drag and drop to change the order.
-translation=اختر العناصر التي تريد أن تكون نشطة في الشريط. اسحب وأفلت لتغيير الترتيب.
+translation=اختر العناصر التي تريد تفعيلها في الشريط. اسحب وأفلت لتغيير الترتيب.
 
 [setting.appearance.option-show-view-header]
 original=Show tab title bar
-translation=عرض شريط عنوان التبويب
+translation=إظهار شريط العنوان لعلامة التبويب
 
 [setting.appearance.option-show-view-header-desc]
 original=Display the header at the top of every tab.
-translation=عرض العنوان بالأعلى في كل علامة تبويب.
+translation=عرض العنوان في أعلى كل علامة تبويب.
 
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
@@ -852,7 +852,7 @@ translation=لديك  {{count}} سمات مثبتة حاليًا.
 
 [setting.hotkeys.name]
 original=Hotkeys
-translation=اختصارات لوحة المفاتيح
+translation=مفاتيح الاختصار
 
 [setting.hotkeys.option-search]
 original=Search hotkeys
@@ -884,7 +884,7 @@ translation=حذف الاختصار
 
 [setting.hotkeys.label-waiting-for-hotkey-press]
 original=Press hotkey...
-translation=اضغط على اختصار لوحة المفاتيح...
+translation=اضغط على مفتاح الاختصار...
 
 [setting.hotkeys.label-show-all]
 original=All
@@ -1112,11 +1112,11 @@ translation=تغيير لغة العرض.
 
 [setting.about.option-insider-build]
 original=Receive early access versions
-translation=تلقي الإصدارات الداخلية
+translation=تلقي الإصدارات التجريبية
 
 [setting.about.option-insider-build-description]
 original=Auto-update to the latest early access version. These versions include new features but may be less stable.
-translation=تحديث تلقائي إلى الإصدارات الداخلية لتجربة الميزات الجديدة. يرجى الانتباه أن هذه النسخ تجريبية بشكل كبير وقد تكون أقل استقرارًا.
+translation=التحديث التلقائي إلى أحدث إصدار تجريبي. تتضمن هذه الإصدارات ميزات جديدة ولكنها قد تكون أقل استقرارًا.
 
 [setting.about.option-advanced]
 original=Advanced
@@ -1128,7 +1128,7 @@ translation=التسريع باستخدام عتاد الحاسوب
 
 [setting.about.option-hw-acceleration-description]
 original=Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.
-translation=يشغّل تسريع عتاد الحاسوب، والذي يستخدم وحدة المعالجة الرسومية الخاصة بك لجعل التطبيق أكثر سلاسة.
+translation=يقوم هذا الخيار بتفعيل تسريع عتاد الحاسوب، والذي يستخدم وحدة معالجة الرسومات الخاصة بك لجعل التطبيق أكثر سلاسة.
 
 [setting.about.option-hw-acceleration-warning]
 original=If you turn this off, app performance will be severely degraded.
@@ -1136,15 +1136,15 @@ translation=إذا قمت بإيقاف هذا الخيار، فسوف ينخفض
 
 [setting.about.option-config-location]
 original=Override config folder
-translation=استبدال مجلد التهيئة
+translation=استبدال مجلد الإعدادات
 
 [setting.about.option-config-location-description]
 original=Use a different config folder than the default one. Must start with a dot.
-translation=استخدم مجلد تهيئة مختلف عن المجلد الافتراضي. يجب أن يبدأ بنقطة.
+translation=استخدم مجلد إعدادات مختلف عن المجلد الافتراضي. يجب أن يبدأ اسم المجلد بنقطة.
 
 [setting.about.option-config-location-warning]
 original=Config location must be a valid folder name that starts with a dot.
-translation=يجب أن يكون موقع ملف التهيئة اسمًا صحيحًا لمجلد يبدأ بنقطة.
+translation=يجب أن يكون موقع مجلد الإعدادات اسمًا صالحًا يبدأ بنقطة.
 
 [setting.about.label-license]
 original=License
@@ -1348,7 +1348,7 @@ translation=إضافات المجتمع
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
 original=Browse and install community plugins made by our amazing community.
-translation=تصفّح وقم بتثبيت إضافات تابعة لجهات خارجية التي أنشأها مجتمعنا.
+translation=تصفّح وثبت إضافات خارجية التي أنشأها مجتمعنا.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
@@ -1360,7 +1360,7 @@ translation=الخروج من الوضع المقيد
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
-translation=إضافات المجتمع، كأي برنامج آخر تثبته، يمكن أن تتسبب في مشكلات الأمان وسلامة البيانات.
+translation=قد تتسبب إضافات المجتمع، مثل أي برنامج آخر تقوم بتثبيته، في مشاكل تتعلق بسلامة البيانات وأمانها.
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-2]
 original=Plugin security is important to us. Here's what we do:
@@ -1380,11 +1380,11 @@ translation=يتم خضوع الإضافات لمراجعة رمزية أولي�
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
-translation=المصدر مفتوح
+translation=مفتوح المصدر
 
 [setting.third-party-plugin.label-open-source-desc]
 original=Most plugins are open source on GitHub, so you can inspect the code yourself.
-translation=معظم الإضافات هي مصادر مفتوحة على GitHub، لذا يمكنك فحص الشيفرة المصدرية بنفسك.
+translation=معظم الإضافات مفتوحة المصدر على GitHub، لذا يمكنك فحص الشيفرة المصدرية بنفسك.
 
 [setting.third-party-plugin.label-peer-audit]
 original=Peer audit
