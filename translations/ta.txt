@@ -220,11 +220,11 @@ translation=உள்ளடக்கக் காட்சி அகலம்
 
 [setting.editor.option-tab-size-description]
 original=Number of spaces a tab character will render as.
-translation=ஒரு தாவல் (தாவல்) எத்தனை இடைவெளிகளாகத் தெரிய வேண்டும்.
+translation=ஒரு தாவல் எத்தனை இடைவெளிகளாகத் தெரிய வேண்டும்.
 
 [setting.editor.option-rtl]
-original=Right-to-left (RTL)
-translation=வலமிருந்து இடது (RTL)
+original=Right-to-left
+translation=வலமிருந்து இடது
 
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
@@ -587,7 +587,7 @@ original=Set font for places like code blocks and frontmatter.
 translation=குறிமுறைத் தொகுதிகள் மற்றும் Frontmatter போன்ற இடங்களுக்கான எழுத்துருவை அமை.
 
 [setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
+original= Currently applied font:
 translation=தற்போது பயன்படுத்தப்படும் எழுத்துரு:
 
 [setting.appearance.label-multiple-fonts-currently-in-effect]
@@ -636,7 +636,7 @@ translation=எழுத்துரு அளவு
 
 [setting.appearance.option-font-size-description]
 original=Font size in pixels that affects editing and reading views.
-translation=வாசிப்பு மற்றும் தொகுத்தலுக்கான எழுத்துரு அளவு (pixels).
+translation=வாசிப்பு மற்றும் தொகுத்தலுக்கான எழுத்துரு அளவு.
 
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
@@ -743,8 +743,8 @@ original=Determines the styling of the title bar of Obsidian windows. Requires a
 translation=Obsidian சாளரங்களின் தலைப்புப் பட்டையின் பாணியைத் தீர்மானிக்கிறது. இது நடைமுறைக்கு வர, செயலியை முழுமையாக மறுதொடக்கம் செய்ய வேண்டும்.
 
 [setting.appearance.option-frame-hidden]
-original=Hidden (default)
-translation=மறைக்கப்பட்டது (இயல்புநிலை)
+original=Hidden
+translation=மறைக்கப்பட்டது
 
 [setting.appearance.option-frame-obsidian]
 original=Obsidian frame
@@ -859,11 +859,11 @@ original=Search hotkeys
 translation=குறுக்குவழிகளைத் தேடு
 
 [setting.hotkeys.option-search-desc]
-original=Showing {{count}} hotkey. 
+original=Showing {{count}} hotkey.
 translation={{count}} குறுக்குவழியைக் காட்டுகிறது.
 
 [setting.hotkeys.option-search-desc_plural]
-original=Showing {{count}} hotkeys. 
+original=Showing {{count}} hotkeys.
 translation={{count}} குறுக்குவழிகள் காட்டப்படுகின்றன.
 
 [setting.hotkeys.option-search-conflict]
@@ -1055,7 +1055,7 @@ original=To support the latest features and to receive the latest security patch
 translation=புதிய அம்சங்கள் மற்றும் பாதுகாப்புத் திருத்தங்களைப் பெற, Obsidian-ஐ இணையதளத்திலிருந்து பதிவிறக்கி மீண்டும் நிறுவவும்.
 
 [setting.about.label-new-version-ready]
-original=A new version is ready to be installed. 
+original=A new version is ready to be installed.
 translation=புதிய பதிப்பு நிறுவத் தயாராக உள்ளது.
 
 [setting.about.label-disabled-updates]
@@ -1163,7 +1163,7 @@ original=Validating...
 translation=சரிபார்க்கிறது...
 
 [setting.about.label-invalid-commercial-license]
-original=License invalid: 
+original=License invalid:
 translation=உரிமம் செல்லாதது:
 
 [setting.about.button-remove-commercial-license]
@@ -1200,7 +1200,7 @@ translation=உங்கள் கணக்கு
 
 [setting.account.option-your-account-desc]
 original=You're currently signed in as {{name}} ({{email}}).
-translation=நீங்கள் தற்போது {{name}} ({{மின்னஞ்சல்}}) ஆக உள்நுழைந்துள்ளீர்கள்.
+translation=நீங்கள் தற்போது {{மின்னஞ்சல்}} ஆக உள்நுழைந்துள்ளீர்கள்.
 
 [setting.account.option-your-account-desc-no-login]
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
@@ -1283,7 +1283,7 @@ original=Failed to sign up
 translation=பதிவு செய்ய முடியவில்லை
 
 [setting.account.label-no-account]
-original=Don't have an account? 
+original=Don't have an account?
 translation=கணக்கு இல்லையா?
 
 [setting.account.link-sign-up-now]
@@ -1491,15 +1491,15 @@ original= (currently installed: {{version}})
 translation=(தற்போது நிறுவப்பட்டுள்ளது: {{version}})
 
 [setting.third-party-plugin.label-by-author]
-original=By 
+original=By
 translation=உருவாக்கியவர்
 
 [setting.third-party-plugin.label-repository]
-original=Repository: 
+original=Repository:
 translation=களஞ்சியம்:
 
 [setting.third-party-plugin.label-last-update]
-original=Last update: 
+original=Last update:
 translation=கடைசி புதுப்பிப்பு:
 
 [setting.third-party-plugin.tooltip-view-last-update]
@@ -2004,7 +2004,7 @@ translation=சுருக்கு
 
 [interface.msg-fail-to-save-file]
 original=Failed to save file “{{filepath}}”. {{message}}. Make a backup of the contents of this file now to avoid losing data.
-translation=“{{filepath}}” கோப்பைச் சேமிக்க முடியவில்லை. {{message}}. தரவு இழப்பைத் தவிர்க்க, இந்தக் கோப்பின் உள்ளடக்கத்தை உடனடியாக காப்புப்பிரதி (Backup) எடுக்கவும்.
+translation=“{{filepath}}” கோப்பைச் சேமிக்க முடியவில்லை. {{message}}. தரவு இழப்பைத் தவிர்க்க, இந்தக் கோப்பின் உள்ளடக்கத்தை உடனடியாக காப்புப்பிரதி எடுக்கவும்.
 
 [interface.msg-failed-to-load-plugin]
 original=Failed to load plugin “{{plugin}}”
@@ -2100,7 +2100,7 @@ translation=வடிகட்டு...
 
 [interface.msg-codeblock-render-error]
 original=Encountered an error while rendering code block.
-translation=நிரல் தொகுதியைத் (Code தொகுதி) திரையிடுவதில் பிழை ஏற்பட்டது.
+translation=நிரல் தொகுதியைத் திரையிடுவதில் பிழை ஏற்பட்டது.
 
 [interface.msg-open-file-through-uri]
 original=Opened file “{{path}}”
@@ -2619,7 +2619,7 @@ original=Pick a place to put your new vault.
 translation=உங்கள் புதிய பெட்டகம் அமைய வேண்டிய இடத்தைத் தேர்வு செய்யவும்.
 
 [interface.start-screen.label-new-vault-location-preview]
-original=Your new vault will be placed in: 
+original=Your new vault will be placed in:
 translation=உங்கள் புதிய பெட்டகம் இங்கு வைக்கப்படும்:
 
 [interface.start-screen.option-reveal-vault-in-explorer]
@@ -2800,7 +2800,7 @@ translation=பரிந்துரைக்கப்பட்டது
 
 [interface.start-screen.mobile.label-start-screen-desc]
 original=Obsidian stores notes on your device, so you can access them quickly and privately, even offline.\nYour data is stored in a secure local folder called a **vault**.
-translation=Obsidian குறிப்புகளை சாதனத்திலேயே சேமிக்கிறது. எனவே நீங்கள் அவற்றை விரைவாகவும் தனிப்பட்ட முறையிலும் அணுகலாம். உங்கள் தரவு **பெட்டகம் (பெட்டகம்)** எனப்படும் பாதுகாப்பான Local கோப்புறையில் இருக்கும்.
+translation=Obsidian குறிப்புகளை சாதனத்திலேயே சேமிக்கிறது. எனவே நீங்கள் அவற்றை விரைவாகவும் தனிப்பட்ட முறையிலும் அணுகலாம். உங்கள் தரவு **பெட்டகம்** எனப்படும் பாதுகாப்பான Local கோப்புறையில் இருக்கும்.
 
 [interface.start-screen.mobile.option-create]
 original=Create a vault
@@ -2816,7 +2816,7 @@ translation=உங்கள் குறிப்புகளைப் பிற
 
 [interface.start-screen.mobile.label-sync-intro-desc]
 original=Because Obsidian stores your notes on your devices, you'll need to set up sync if you want to access your notes on another phone or computer.\nYou can set up sync now, or just start writing and set it up later.
-translation=Obsidian உங்கள் குறிப்புகளைச் சாதனத்தில் சேமிக்கிறது. வேறு சாதனங்களில் பயன்படுத்த Sync (ஒத்திசைவு) செய்ய வேண்டும். இதை இப்போதோ அல்லது பின்னரோ செய்யலாம்.
+translation=Obsidian உங்கள் குறிப்புகளைச் சாதனத்தில் சேமிக்கிறது. வேறு சாதனங்களில் பயன்படுத்த ஒத்திசைவு செய்ய வேண்டும். இதை இப்போதோ அல்லது பின்னரோ செய்யலாம்.
 
 [interface.start-screen.mobile.option-setup-sync]
 original=Set up sync
@@ -2852,7 +2852,7 @@ translation=ஒத்திசைவு குறியாக்கம்
 
 [interface.start-screen.mobile.option-encryption-custom]
 original=End-to-end encryption
-translation=முனை-முதல்-முனை குறியாக்கம் (End-to-End குறியாக்கம்)
+translation=முனை-முதல்-முனை குறியாக்கம்
 
 [interface.start-screen.mobile.option-encryption-custom-desc]
 original=Offers the strongest security but requires you to safely store your encryption password
@@ -2860,7 +2860,7 @@ translation=அதிக பாதுகாப்பு. ஆனால் கு�
 
 [interface.start-screen.mobile.option-encryption-managed]
 original=Standard encryption
-translation=நிலையான குறியாக்கம் (Standard குறியாக்கம்)
+translation=நிலையான குறியாக்கம்
 
 [interface.start-screen.mobile.option-encryption-managed-desc]
 original=Uses a key managed by Obsidian to protect your data in transit and on our servers.
@@ -2956,7 +2956,7 @@ translation=உங்கள் புதிய பெட்டகம் {{vaultL
 
 [interface.start-screen.mobile.label-region-selection]
 original=Region
-translation=Region (பகுதி)
+translation=பகுதி
 
 [interface.start-screen.mobile.label-region-selection-help]
 original=Choose a server region near you to make syncing faster.
@@ -2964,7 +2964,7 @@ translation=ஒத்திசைவை விரைவுபடுத்த உ
 
 [interface.start-screen.mobile.label-encryption-key]
 original=Encryption key
-translation=குறியாக்கத் திறவுகோல் (குறியாக்கம் Key)
+translation=குறியாக்கத் திறவுகோல்
 
 [interface.start-screen.mobile.label-encryption-key-help]
 original=This password cannot be changed later. If you forget your password, any remote data on Sync servers will be inaccessible forever.
@@ -3016,7 +3016,7 @@ translation=ஒவ்வொரு சாதனத்திலும் OSலு�
 
 [interface.start-screen.mobile.label-sync-pro2]
 original=Secured with the strongest end-to-end encryption standard.
-translation=வலுவான முனை-முதல்-முனை குறியாக்கத்துடன் (End-to-End குறியாக்கம்) பாதுகாக்கப்படுகிறது.
+translation=வலுவான முனை-முதல்-முனை குறியாக்கத்துடன் பாதுகாக்கப்படுகிறது.
 
 [interface.start-screen.mobile.label-sync-pro3]
 original=Requires an Obsidian account.
@@ -3068,7 +3068,7 @@ translation=Other
 
 [interface.start-screen.mobile.label-other-sync]
 original=Third-party sync
-translation=சமூக ஒத்திசைவு (Third-party Sync)
+translation=சமூக ஒத்திசைவு
 
 [interface.start-screen.mobile.label-local-folder]
 original=On this device
@@ -3247,7 +3247,7 @@ original=Loading plugins...
 translation=செருகுநிரல்களை ஏற்றுகிறது...
 
 [interface.start-up.msg-plugin-hang]
-original=Plugin “{{plugin}}” is taking long to load. 
+original=Plugin “{{plugin}}” is taking long to load.
 translation=“{{செருகுநிரல்}}” செருகுநிரலை ஏற்ற நேரமாகிறது.
 
 [interface.start-up.loading-vault]
@@ -3255,7 +3255,7 @@ original=Loading vault...
 translation=பெட்டகம் ஏற்றப்படுகிறது...
 
 [interface.start-up.msg-failed-to-load-vault]
-original=Failed to load vault: 
+original=Failed to load vault:
 translation=பெட்டகத்தை ஏற்ற முடியவில்லை:
 
 [interface.start-up.loading-cache]
@@ -3308,7 +3308,7 @@ translation=வெளியேற மீண்டும் Back அழுத்�
 
 [interface.mobile.feedback.label-feedback]
 original=Feedback
-translation=கருத்து (Feedback)
+translation=கருத்து
 
 [interface.mobile.feedback.label-feedback-desc]
 original=Are you enjoying Obsidian? Help us by giving it a rating.
@@ -3364,7 +3364,7 @@ translation=ஒருவருக்கொருவர் உதவுங்க�
 
 [interface.help-screen.label-sandbox-vault]
 original=Sandbox vault
-translation=சோதனைப் பெட்டகம் (Sandbox பெட்டகம்)
+translation=Sandbox பெட்டகம்
 
 [interface.help-screen.label-sandbox-vault-desc]
 original=Play around and experiment with various features. Please note your changes will not be saved.
@@ -3459,12 +3459,12 @@ original=Add file property
 translation=பண்பைச் சேர்
 
 [commands.label-sort-property-a-to-z]
-original=Name (A to Z)
-translation=பெயர் (அ முதல் ஃ வரை)
+original=Name
+translation=பெயர் (A முதல் Z வரை)
 
 [commands.label-sort-property-z-to-a]
 original=Name (Z to A)
-translation=பெயர் (ஃ முதல் அ வரை)
+translation=பெயர் (Z முதல் A வரை)
 
 [commands.add-alias]
 original=Add alias
@@ -3864,7 +3864,7 @@ translation={{count}} கோப்புகளுக்கான மாற்ற
 
 [dialogue.msg-offline]
 original=No internet connection
-translation=இணைய இணைப்பு இல்லை (Offline)
+translation=இணைய இணைப்பு இல்லை
 
 [dialogue.msg-loading]
 original=Loading...
@@ -4311,28 +4311,28 @@ original=to dismiss
 translation=மூட
 
 [plugins.file-explorer.label-sort-a-to-z]
-original=File name (A to Z)
-translation=பெயர் (A to Z)
+original=File name
+translation=பெயர்
 
 [plugins.file-explorer.label-sort-z-to-a]
-original=File name (Z to A)
-translation=பெயர் (Z to A)
+original=File name
+translation=பெயர்
 
 [plugins.file-explorer.label-sort-new-to-old]
-original=Modified time (new to old)
-translation=திருத்திய நேரம் (New to Old)
+original=Modified time
+translation=திருத்திய நேரம்
 
 [plugins.file-explorer.label-sort-old-to-new]
-original=Modified time (old to new)
-translation=திருத்திய நேரம் (Old to New)
+original=Modified time
+translation=திருத்திய நேரம்
 
 [plugins.file-explorer.label-sort-created-old-to-new]
-original=Created time (old to new)
-translation=உருவாக்கிய நேரம் (Old to New)
+original=Created time
+translation=உருவாக்கிய நேரம்
 
 [plugins.file-explorer.label-sort-created-new-to-old]
-original=Created time (new to old)
-translation=உருவாக்கிய நேரம் (New to Old)
+original=Created time
+translation=உருவாக்கிய நேரம்
 
 [plugins.file-explorer.menu-opt-new-note]
 original=New note
@@ -4359,11 +4359,11 @@ original=Duplicate
 translation=நகலெடு
 
 [plugins.file-explorer.msg-invalid-characters]
-original=File name cannot contain any of these characters: 
+original=File name cannot contain any of these characters:
 translation=கோப்புப் பெயரில் பின்வரும் எழுத்துக்கள் இருக்கக்கூடாது:
 
 [plugins.file-explorer.msg-unsafe-characters]
-original=Links will not work with file names containing any of these characters: 
+original=Links will not work with file names containing any of these characters:
 translation=பின்வரும் எழுத்துக்கள் இருந்தால் இணைப்புகள் வேலை செய்யாது:
 
 [plugins.file-explorer.msg-file-already-exists]
@@ -4416,7 +4416,7 @@ translation=முடிவுகளைச் சுருக்கு
 
 [plugins.search.label-match-case]
 original=Match case
-translation=எழுத்து வடிவம் பொருத்து (Match Case)
+translation=எழுத்து வடிவம் பொருத்து
 
 [plugins.search.label-explain-search-term]
 original=Explain search terms
@@ -4443,32 +4443,32 @@ original=Search...
 translation=தேடு...
 
 [plugins.search.label-match-text]
-original=Matches text: 
+original=Matches text:
 translation=உரை பொருத்தம்:
 
 [plugins.search.label-match-regex]
-original=Matches regex: 
+original=Matches regex:
 translation=Regex பொருத்தம்:
 
 [plugins.search.label-match-exact-text]
-original=Contains exact text: 
+original=Contains exact text:
 translation=துல்லியமான உரை உள்ளது:
 
 [plugins.search.label-match-greater-than]
-original=Greater than: 
+original=Greater than:
 translation=இதைவிடப் பெரியது:
 
 [plugins.search.label-match-less-than]
-original=Less than: 
+original=Less than:
 translation=இதைவிடச் சிறியது:
 
 [plugins.search.label-match-true]
 original=Is true
-translation=உண்மை (True)
+translation=உண்மை
 
 [plugins.search.label-match-false]
 original=Is false
-translation=பொய் (False)
+translation=பொய்
 
 [plugins.search.label-match-empty]
 original=Is empty
@@ -4479,63 +4479,63 @@ original=Contains property:
 translation=பண்பு உள்ளது:
 
 [plugins.search.label-match-all]
-original=Match all of: 
+original=Match all of:
 translation=இவை அனைத்தையும் பொருத்து:
 
 [plugins.search.label-match-any]
-original=Match any of: 
+original=Match any of:
 translation=இவற்றில் ஏதேனும் ஒன்றைப் பொருத்து:
 
 [plugins.search.label-excluding]
-original=Excluding: 
+original=Excluding:
 translation=தவிர்த்து:
 
 [plugins.search.label-case-sensitive]
 original=Case sensitive
-translation=எழுத்து வடிவம் உணரும் (Case sensitive)
+translation=எழுத்து வடிவம் உணரும்
 
 [plugins.search.label-case-insensitive]
 original=Case insensitive
-translation=எழுத்து வடிவம் உணரா (Case insensitive)
+translation=எழுத்து வடிவம் உணரா
 
 [plugins.search.label-match-file-path]
-original=Match file path: 
+original=Match file path:
 translation=கோப்புப் பாதையைப் பொருத்து:
 
 [plugins.search.label-match-file-name]
-original=Match file name: 
+original=Match file name:
 translation=கோப்புப் பெயரைப் பொருத்து:
 
 [plugins.search.label-match-content]
-original=Match file content: 
+original=Match file content:
 translation=கோப்பு உள்ளடக்கத்தைப் பொருத்து:
 
 [plugins.search.label-match-task]
-original=Match task: 
+original=Match task:
 translation=பணியைப் பொருத்து:
 
 [plugins.search.label-match-task-todo]
-original=Match task (todo): 
+original=Match task (todo):
 translation=பணியைப் பொருத்து (விருப்பம்):
 
 [plugins.search.label-match-task-done]
-original=Match task (done): 
+original=Match task (done):
 translation=பணியைப் பொருத்து (முடிந்தது):
 
 [plugins.search.label-match-line]
-original=Match line: 
+original=Match line:
 translation=வரியைப் பொருத்து:
 
 [plugins.search.label-match-block]
-original=Match block: 
+original=Match block:
 translation=தொகுதியைப் பொருத்து:
 
 [plugins.search.label-match-section]
-original=Match section: 
+original=Match section:
 translation=பிரிவைப் பொருத்து:
 
 [plugins.search.label-match-tag]
-original=Match tag: 
+original=Match tag:
 translation=குறிச்சொல்லைப் பொருத்து:
 
 [plugins.search.label-no-matches]
@@ -4560,7 +4560,7 @@ translation=முடிவுகளை நகலெடு
 
 [plugins.search.msg-successfully-copied]
 original=Results copied to your clipboard.
-translation=முடிவுகள் இடைநிலைப் பலகைக்கு (ஒட்டுப்பலகை) நகலெடுக்கப்பட்டன.
+translation=முடிவுகள் இடைநிலைப் பலகைக்கு நகலெடுக்கப்பட்டன.
 
 [plugins.search.option-show-path]
 original=Show path
@@ -4604,7 +4604,7 @@ translation=எதுவுமில்லை
 
 [plugins.search.option-choice-list-style-dash]
 original=Dash (-)
-translation=கோடு (-)
+translation=கோடு
 
 [plugins.search.option-choice-list-style-asterisk]
 original=Asterisk (*)
@@ -4944,7 +4944,7 @@ translation=பின்னிணைப்புகள்
 
 [plugins.backlinks.desc]
 original=Show links from other files to the current file. Backlinks can be shown in a separate view or at the bottom of the note.
-translation=தற்போதைய கோப்பிற்கான இணைப்புகளைக் (Backlinks) காட்டும்.
+translation=தற்போதைய கோப்பிற்கான இணைப்புகளைக் காட்டும்.
 
 [plugins.backlinks.action-open]
 original=Open backlinks
@@ -5071,12 +5071,12 @@ original=No tags found.
 translation=குறிச்சொற்கள் எதுவும் இல்லை.
 
 [plugins.tag-pane.label-sort-by-name-a-to-z]
-original=Tag name (A to Z)
-translation=பெயர் (A முதல் Z வரை)
+original=Tag name
+translation=பெயர்
 
 [plugins.tag-pane.label-sort-by-name-z-to-a]
 original=Tag name (Z to A)
-translation=பெயர் (Z முதல் A வரை)
+translation=பெயர் (ஃ முதல் அ வரை)
 
 [plugins.tag-pane.label-sort-by-frequency-high-to-low]
 original=Frequency (high to low)
@@ -5171,7 +5171,7 @@ original=Invalid properties.
 translation=செல்லாத பண்புகள்.
 
 [plugins.properties.label-sort-by-name-a-to-z]
-original=Property name (A to Z)
+original=Property name
 translation=பண்பு பெயர் (A முதல் Z வரை)
 
 [plugins.properties.label-sort-by-name-z-to-a]
@@ -5628,7 +5628,7 @@ translation=எச்சரிக்கை: வடிவ மாற்றி ப�
 
 [plugins.markdown-format-importer.msg-override-files-warning]
 original=Your files will be overwritten. Back up all your files before attempting conversion.
-translation=உங்கள் கோப்புகள் மேலெழுதப்படும். மாற்றும் முன் காப்புநகல் (Back up) எடுக்கவும்.
+translation=உங்கள் கோப்புகள் மேலெழுதப்படும். மாற்றும் முன் காப்புநகல் எடுக்கவும்.
 
 [plugins.markdown-format-importer.label-start-conversion]
 original=Start conversion
@@ -5751,15 +5751,15 @@ original=Daily note folder not found.
 translation=தினசரி குறிப்பு கோப்புறை காணப்படவில்லை.
 
 [plugins.daily-notes.label-refer-to-syntax]
-original=For more syntax, refer to 
-translation=மேலும் தொடரியல் (Syntax) அறிய, பார்க்கவும்:
+original=For more syntax, refer to
+translation=மேலும் தொடரியல் அறிய, பார்க்கவும்:
 
 [plugins.daily-notes.label-syntax-link]
 original=format reference
 translation=வடிவக் குறிப்பு
 
 [plugins.daily-notes.label-syntax-live-preview]
-original=Your current syntax looks like this: 
+original=Your current syntax looks like this:
 translation=தற்போதைய வடிவம் இப்படி இருக்கும்:
 
 [plugins.daily-notes.option-new-file-location]
@@ -5784,7 +5784,7 @@ translation=தனித்துவமான குறிப்பு உரு
 
 [plugins.unique-note-creator.desc]
 original=Create notes with unique timestamp prefixes, for workflows like zettelkasten or slip box.
-translation=Zettelkasten போன்ற பணிகளுக்கு, தனித்துவமான முன்னொட்டுகளுடன் (Timestamp) குறிப்புகளை உருவாக்கவும்.
+translation=Zettelkasten போன்ற பணிகளுக்கு, தனித்துவமான முன்னொட்டுகளுடன் குறிப்புகளை உருவாக்கவும்.
 
 [plugins.unique-note-creator.short-name]
 original=Unique
@@ -5836,7 +5836,7 @@ translation=“{{format}}” வடிவத்தில் Unique குறி�
 
 [plugins.random-note.name]
 original=Random note
-translation=தோராய குறிப்பு (Random குறிப்பு)
+translation=தோராய குறிப்பு
 
 [plugins.random-note.desc]
 original=Open a random note to rediscover or review.
@@ -5844,7 +5844,7 @@ translation=ஒரு குறிப்பைத் தோராயமாகத
 
 [plugins.random-note.short-name]
 original=Random
-translation=தோராய குறிப்பு (Random)
+translation=தோராய குறிப்பு
 
 [plugins.random-note.action-open]
 original=Open random note
@@ -5856,7 +5856,7 @@ translation=பொருளடக்கம்
 
 [plugins.outline.desc]
 original=Show the table of contents for the current note.
-translation=தற்போதைய குறிப்பின் உள்ளடக்க அட்டவணையை (அட்டவணை of Contents) காட்டும்.
+translation=தற்போதைய குறிப்பின் உள்ளடக்க அட்டவணையை காட்டும்.
 
 [plugins.outline.action-open]
 original=Open outline
@@ -5880,7 +5880,7 @@ translation=தலைப்புகள் எதுவும் இல்லை
 
 [plugins.outline.label-follow-cursor]
 original=Auto-scroll to current section
-translation=தற்போதைய பிரிவுக்கு தானாகச் செல்லவும் (Auto-உருளல்)
+translation=தற்போதைய பிரிவுக்கு தானாகச் செல்லவும்
 
 [plugins.word-count.name]
 original=Word count
@@ -5888,7 +5888,7 @@ translation=வார்த்தை எண்ணிக்கை
 
 [plugins.word-count.desc]
 original=Show word count in the status bar.
-translation=வார்த்தை எண்ணிக்கையை நிலைப்பட்டியில் (Status bar) காட்டும்.
+translation=வார்த்தை எண்ணிக்கையை நிலைப்பட்டியில் காட்டும்.
 
 [plugins.slides.name]
 original=Slides
@@ -5908,7 +5908,7 @@ translation=ஒலிப்பதிவி
 
 [plugins.audio-recorder.desc]
 original=Record audio notes and save them as attachments.
-translation=ஒலியைப் பதிவு செய்து இணைப்புக்கோப்பாகச் (இணைப்புக்கோப்பு) சேமிக்கவும்.
+translation=ஒலியைப் பதிவு செய்து இணைப்புக்கோப்பாகச் சேமிக்கவும்.
 
 [plugins.audio-recorder.action-start]
 original=Start recording audio
@@ -5924,7 +5924,7 @@ translation=பதிவைத் தொடங்கு/நிறுத்து
 
 [plugins.audio-recorder.msg-access-denied]
 original=Microphone access was denied, please enable it from the preference pane.
-translation=நுண்ணொலிவாங்கி (Microphone) அனுமதி மறுக்கப்பட்டது. அமைப்புகளில் மாற்றவும்.
+translation=நுண்ணொலிவாங்கி அனுமதி மறுக்கப்பட்டது. அமைப்புகளில் மாற்றவும்.
 
 [plugins.audio-recorder.msg-pending-grant]
 original=Please grant microphone permission to start recording.
@@ -5964,7 +5964,7 @@ translation=வார்ப்புருக்கள்
 
 [plugins.templates.desc]
 original=Insert template content from a folder of template files.
-translation=வார்ப்புரு (வார்ப்புரு) கோப்புகளிலிருந்து உள்ளடக்கத்தைச் செருகு.
+translation=வார்ப்புரு கோப்புகளிலிருந்து உள்ளடக்கத்தைச் செருகு.
 
 [plugins.templates.action-insert]
 original=Insert template
@@ -5984,7 +5984,7 @@ translation=வார்ப்புரு கோப்புறை இருப
 
 [plugins.templates.option-template-folder-location-description]
 original=Files in this folder will be available as templates.
-translation=இந்தக் கோப்புறையில் உள்ள கோப்புகள் வார்ப்புருக்களாகக் (Templates) கிடைக்கும்.
+translation=இந்தக் கோப்புறையில் உள்ள கோப்புகள் வார்ப்புருக்களாகக் கிடைக்கும்.
 
 [plugins.templates.option-template-date-format]
 original=Date format
@@ -6036,7 +6036,7 @@ translation=வார்ப்புருக்களைப் பட்டி�
 
 [plugins.templates.msg-fail-invalid-template-properties]
 original=Unable to insert template, the properties in the template file could not be read.
-translation=வார்ப்புருவைச் செருக முடியவில்லை, வார்ப்புரு கோப்பில் உள்ள பண்புகளைப் (Properties) படிக்க முடியவில்லை.
+translation=வார்ப்புருவைச் செருக முடியவில்லை, வார்ப்புரு கோப்பில் உள்ள பண்புகளைப் படிக்க முடியவில்லை.
 
 [plugins.templates.msg-no-folder-set]
 original=Failed to list templates. No template folder configured.
@@ -6060,7 +6060,7 @@ translation=ஸ்லாஷ் கட்டளைகள்
 
 [plugins.slash-command.desc]
 original=Trigger commands in the editor by using the forward slash key.
-translation=தொகுப்பி-ல் Forward slash (/) விசையைப் பயன்படுத்தி கட்டளைகளை இயக்கலாம்.
+translation=தொகுப்பி-ல் Forward slash விசையைப் பயன்படுத்தி கட்டளைகளை இயக்கலாம்.
 
 [plugins.editor-status.name]
 original=Show editing mode in status bar
@@ -6088,7 +6088,7 @@ translation=வெளியீடு
 
 [plugins.publish.desc]
 original=Host your notes online as a website, wiki or documentation.
-translation=Obsidian வெளியீடு (Publish) மூலம் உங்கள் குறிப்புகளை இணையதளம், விக்கி அல்லது ஆவணமாக்கலாக ஆன்லைனில் வெளியிடவும்.
+translation=Obsidian வெளியீடு மூலம் உங்கள் குறிப்புகளை இணையதளம், விக்கி அல்லது ஆவணமாக்கலாக ஆன்லைனில் வெளியிடவும்.
 
 [plugins.publish.action-publish-changes]
 original=Publish changes...
@@ -6112,7 +6112,7 @@ translation=வெளியிடத் தொடங்க, உள்நுழ�
 
 [plugins.publish.label-no-publish-subscription]
 original=You do not have an Obsidian Publish subscription yet.
-translation=உங்களிடம் இன்னும் Obsidian வெளியீடு (Publish) சந்தா இல்லை.
+translation=உங்களிடம் இன்னும் Obsidian வெளியீடு சந்தா இல்லை.
 
 [plugins.publish.button-purchase]
 original=Purchase
@@ -6132,7 +6132,7 @@ translation=தேர்ந்தெடு
 
 [plugins.publish.tooltip-edit-site-id]
 original=Edit site ID
-translation=தள எண்ணை (Site ID) மாற்று
+translation=தள எண்ணை மாற்று
 
 [plugins.publish.tooltip-delete-site]
 original=Delete site
@@ -6152,11 +6152,11 @@ translation=தளத்தை நீக்குவதை உறுதிசெ
 
 [plugins.publish.option-site-id]
 original=Site ID
-translation=தள எண் (Site ID)
+translation=தள எண்
 
 [plugins.publish.option-site-id-description]
 original=Your site will be at https://publish.obsidian.md/{site id}. You can change this later. Only lower case letters, numbers, and dashes are allowed.
-translation=உங்கள் தளம் https://publish.obsidian.md/{site ID} இல் இருக்கும். சிறிய எழுத்துக்கள், எண்கள் மற்றும் நடுக்கோடுகள் (dashes) மட்டுமே அனுமதிக்கப்படும்.
+translation=உங்கள் தளம் https://publish.obsidian.md/{site ID} இல் இருக்கும். சிறிய எழுத்துக்கள், எண்கள் மற்றும் நடுக்கோடுகள் மட்டுமே அனுமதிக்கப்படும்.
 
 [plugins.publish.option-site-id-placeholder]
 original=Pick a site ID
@@ -6188,7 +6188,7 @@ translation=பொது
 
 [plugins.publish.option-site-components]
 original=Components
-translation=கூறுகள் (Components)
+translation=கூறுகள்
 
 [plugins.publish.option-site-appearance]
 original=Appearance
@@ -6208,7 +6208,7 @@ translation=தளத்தின் பெயர்
 
 [plugins.publish.option-site-name-description]
 original=Name of your published site. It will show up in the page title of your site.
-translation=இது உங்கள் தளத்தின் தலைப்பில் (Page Title) காண்பிக்கப்படும்.
+translation=இது உங்கள் தளத்தின் தலைப்பில் காண்பிக்கப்படும்.
 
 [plugins.publish.option-site-name-placeholder]
 original=Name of your site
@@ -6228,15 +6228,15 @@ translation=வெளியிடப்பட்ட கோப்பைத் த
 
 [plugins.publish.option-logo]
 original=Logo
-translation=சின்னம் (Logo)
+translation=சின்னம்
 
 [plugins.publish.option-logo-description]
 original=Pick an image file as your site logo.
-translation=தளத்தின் சின்னதாக (Logo) ஒரு படத்தைத் தேர்ந்தெடுக்கவும்.
+translation=தளத்தின் சின்னதாக ஒரு படத்தைத் தேர்ந்தெடுக்கவும்.
 
 [plugins.publish.option-logo-placeholder]
 original=Any uploaded image in your vault...
-translation=பெட்டகத்தில் (பெட்டகம்) உள்ள ஏதேனும் ஒரு படம்...
+translation=பெட்டகத்தில் உள்ள ஏதேனும் ஒரு படம்...
 
 [plugins.publish.option-site-collaboration]
 original=Site collaboration
@@ -6264,7 +6264,7 @@ translation=வழிசெலுத்தலில் இருந்து ப
 
 [plugins.publish.option-hide-items-in-navigation-desc]
 original=Right click and select “Hide” to prevent specific pages from appearing in the site navigation. The pages will still be accessible via links or accessing the URL directly.
-translation=பக்கங்களை மறைக்க, வலது கிளிக் செய்து “மறை” (Hide) என்பதைத் தேர்ந்தெடுக்கவும்.
+translation=பக்கங்களை மறைக்க, வலது கிளிக் செய்து “மறை” என்பதைத் தேர்ந்தெடுக்கவும்.
 
 [plugins.publish.option-show-hidden-items]
 original=Show hidden
@@ -6280,7 +6280,7 @@ translation=வழிசெலுத்தல்
 
 [plugins.publish.label-navigation-modal-desc]
 original=Drag and drop to customize the order in which navigation items appear on your Publish site.
-translation=வெளியீட்டுத் தளத்தில் வழிசெலுத்தல் உருப்படிகள் தோன்றும் வரிசையை மாற்ற இழுத்து இடவும் (இழு and விடு).
+translation=வெளியீட்டுத் தளத்தில் வழிசெலுத்தல் உருப்படிகள் தோன்றும் வரிசையை மாற்ற இழுத்து இடவும்.
 
 [plugins.publish.option-hide-in-navigation]
 original=Hide in navigation
@@ -6332,7 +6332,7 @@ translation=வரைபடக் காட்சியைத் காட்ட
 
 [plugins.publish.option-show-graph-description]
 original=Display a small local graph on each page.
-translation=ஒவ்வொரு பக்கத்திலும் சிறிய உள்ளூர் வரைபடத்தைக் (Local graph) காட்டு.
+translation=ஒவ்வொரு பக்கத்திலும் சிறிய உள்ளூர் வரைபடத்தைக் காட்டு.
 
 [plugins.publish.option-show-outline]
 original=Show table of contents
@@ -6340,7 +6340,7 @@ translation=பொருளடக்கத்தைக் காட்டு
 
 [plugins.publish.option-show-outline-description]
 original=Display the outline of headings on each page.
-translation=ஒவ்வொரு பக்கத்திலும் தலைப்புகளின் வரிசையைக் (பொருளடக்கம்) காட்டு.
+translation=ஒவ்வொரு பக்கத்திலும் தலைப்புகளின் வரிசையைக் காட்டு.
 
 [plugins.publish.option-show-backlinks]
 original=Show backlinks
@@ -6348,15 +6348,15 @@ translation=பின்னிணைப்புகளைக் காட்ட�
 
 [plugins.publish.option-show-backlinks-description]
 original=Show backlink section at the end of each page.
-translation=ஒவ்வொரு பக்கத்தின் முடிவிலும் பின்னிணைப்புகள் (Backlinks) பகுதியைக் காட்டு.
+translation=ஒவ்வொரு பக்கத்தின் முடிவிலும் பின்னிணைப்புகள் பகுதியைக் காட்டு.
 
 [plugins.publish.option-sliding-window-mode]
 original=Stack pages
-translation=பக்கங்களை அடுக்கு (Sliding Windows)
+translation=பக்கங்களை அடுக்கு
 
 [plugins.publish.option-sliding-window-mode-description]
 original=Links will open next to the current page in the same window. Scroll horizontally to see stacked pages.
-translation=இணைப்புகளை கிளிக் செய்யும் போது பக்கங்களை ஒன்றன் பின் ஒன்றாக (கிடைமட்டமாக) திறக்கும்.
+translation=இணைப்புகளை கிளிக் செய்யும் போது பக்கங்களை ஒன்றன் பின் ஒன்றாக திறக்கும்.
 
 [plugins.publish.option-hover-preview-file]
 original=Show hover preview
@@ -6364,7 +6364,7 @@ translation=மிதவைத் தோற்றத்தைக் காட்
 
 [plugins.publish.option-hover-preview-file-description]
 original=Display page preview when hovering links.
-translation=இணைப்புகளின் மீது சுட்டியை வைக்கும்போது (மேல் நகர்வு) பக்க முன்னோட்டத்தைக் காட்டு.
+translation=இணைப்புகளின் மீது சுட்டியை வைக்கும்போது பக்க முன்னோட்டத்தைக் காட்டு.
 
 [plugins.publish.option-hide-title]
 original=Hide page title
@@ -6396,7 +6396,7 @@ translation=Google Analytics கண்காணிப்புக் குற�
 
 [plugins.publish.option-google-analytics-description]
 original=Configure Google Analytics for your site. Only available for visitors from your custom domain URL. Please check with your local laws and regulations first.
-translation=உங்கள் தளத்திற்கு Google Analytics-ஐ உள்ளமைக்கவும். தனிப்பயன் டொமைன் (Custom Domain) இருந்தால் மட்டுமே இது வேலை செய்யும்.
+translation=உங்கள் தளத்திற்கு Google Analytics-ஐ உள்ளமைக்கவும். தனிப்பயன் டொமைன் இருந்தால் மட்டுமே இது வேலை செய்யும்.
 
 [plugins.publish.button-manage-passwords]
 original=Manage
@@ -6451,8 +6451,8 @@ original=Changed
 translation=மாற்றங்கள்
 
 [plugins.publish.label-unchanged-files-already-published]
-original=Unchanged (select to unpublish)
-translation=மாறாதவை (வெளியிடுவதை நிறுத்த தேர்ந்தெடுக்கவும்)
+original=Unchanged
+translation=மாறாதவை
 
 [plugins.publish.label-file-selected]
 original= selected
@@ -6464,7 +6464,7 @@ translation=அனைத்தையும் தேர்ந்தெடு
 
 [plugins.publish.label-custom-navigation-title]
 original=Navigation items
-translation=வழிசெலுத்தல் உருப்படிகள் (Navigation Items)
+translation=வழிசெலுத்தல் உருப்படிகள்
 
 [plugins.publish.button-deselect-all-files]
 original=Deselect all
@@ -6532,10 +6532,10 @@ translation=மாற்று
 
 [plugins.publish.label-clear-cache]
 original=It takes up to a few minutes for the changes to show up on your site. If you do not see your latest changes, try clearing the cache in your browser.
-translation=மாற்றங்கள் தளத்தில் தெரிய சில நிமிடங்கள் ஆகலாம். தெரியவில்லை என்றால், உலாவியின் (browser) தேக்ககத்தை (cache) அழிக்கவும்.
+translation=மாற்றங்கள் தளத்தில் தெரிய சில நிமிடங்கள் ஆகலாம். தெரியவில்லை என்றால், உலாவியின் தேக்ககத்தை அழிக்கவும்.
 
 [plugins.publish.label-visit-site]
-original=You can visit your site here: 
+original=You can visit your site here:
 translation=உங்கள் தளத்தை இங்கே பார்வையிடலாம்:
 
 [plugins.publish.msg-something-went-wrong]
@@ -6579,8 +6579,8 @@ original=Your password
 translation=உங்கள் கடவுச்சொல்
 
 [plugins.publish.option-nickname-name]
-original=Nickname (optional)
-translation=புனைபெயர் (விருப்பத்தேர்வு)
+original=Nickname
+translation=புனைபெயர்
 
 [plugins.publish.option-nickname-desc]
 original=Set a nickname to remind yourself what or who the password is for.
@@ -6612,11 +6612,11 @@ translation=https://publish.obsidian.md/{site ID}-க்கு பதிலா�
 
 [plugins.publish.option-noindex]
 original=Disallow search engine indexing
-translation=தேடுபொறி அட்டவணைப்படுத்தலைத் தடு (No-Index)
+translation=தேடுபொறி அட்டவணைப்படுத்தலைத் தடு
 
 [plugins.publish.option-noindex-desc]
 original=Prevent search engines from indexing your site.
-translation=தேடுபொறிகள் (தேடு Engines) உங்கள் தளத்தைக் காட்டுவதைத் தடுக்கவும்.
+translation=தேடுபொறிகள் உங்கள் தளத்தைக் காட்டுவதைத் தடுக்கவும்.
 
 [plugins.publish.button-configure]
 original=Configure
@@ -6704,7 +6704,7 @@ translation=அழைக்க சரியான மின்னஞ்சலை
 
 [plugins.publish.msg-enable-publish-plugin]
 original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=தளங்களைப் பார்க்க அமைப்புகள் -> Core plugins சென்று வெளியீடு (Publish) செருகுநிரலை இயக்கவும்.
+translation=தளங்களைப் பார்க்க அமைப்புகள் -> Core plugins சென்று வெளியீடு செருகுநிரலை இயக்கவும்.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -6736,7 +6736,7 @@ translation=விலகு
 
 [plugins.publish.label-compare-with-live]
 original=Compare with live version
-translation=நேரலை (Live) பதிப்புடன் ஒப்பிடு
+translation=நேரலை பதிப்புடன் ஒப்பிடு
 
 [plugins.publish.button-use-live-version]
 original=Use live version
@@ -6748,11 +6748,11 @@ translation=உள்ளூர் பதிப்பை மேலெழுது
 
 [plugins.publish.label-confirm-override-1]
 original=Are you sure you want to override the local version?
-translation=நிச்சயமாக உள்ளூர் பதிப்பை (Local version) மேலெழுத (மேலெழுது) விரும்புகிறீர்களா?
+translation=நிச்சயமாக உள்ளூர் பதிப்பை மேலெழுத விரும்புகிறீர்களா?
 
 [plugins.publish.label-confirm-override-2]
 original=The live version will be used and your local version will be discarded. Please make backups if necessary.
-translation=நேரலை பதிப்பு பயன்படுத்தப்படும், உங்கள் உள்ளூர் பதிப்பு நிராகரிக்கப்படும். தேவைப்பட்டால் காப்புநகல் (Backup) எடுக்கவும்.
+translation=நேரலை பதிப்பு பயன்படுத்தப்படும், உங்கள் உள்ளூர் பதிப்பு நிராகரிக்கப்படும். தேவைப்பட்டால் காப்புநகல் எடுக்கவும்.
 
 [plugins.publish.button-proceed]
 original=Proceed
@@ -6824,15 +6824,15 @@ translation=ஆதரவுக் குழுவைத் தொடர்பு
 
 [plugins.publish.label-navigation-preview]
 original=Navigation preview
-translation=வழிசெலுத்தல் முன்னோட்டம் (Navigation Preview)
+translation=வழிசெலுத்தல் முன்னோட்டம்
 
 [plugins.workspaces.name]
 original=Workspaces
-translation=பணியிடங்கள் (Workspaces)
+translation=பணியிடங்கள்
 
 [plugins.workspaces.desc]
 original=Save and load workspace layouts.
-translation=பணியிட தளவமைப்புகளைச் (பணியிடம் Layouts) சேமிக்கவும் மற்றும் ஏற்றவும்.
+translation=பணியிட தளவமைப்புகளைச் சேமிக்கவும் மற்றும் ஏற்றவும்.
 
 [plugins.workspaces.action-load-layout]
 original=Load workspace layout
@@ -6888,7 +6888,7 @@ translation=தளவமைப்பு பெயரை தட்டச்சு
 
 [plugins.sync.name]
 original=Sync
-translation=ஒத்திசைவு (Sync)
+translation=ஒத்திசைவு
 
 [plugins.sync.desc]
 original=Synchronize your files through Obsidian Sync.
@@ -6896,11 +6896,11 @@ translation=Obsidian Sync மூலம் உங்கள் கோப்பு�
 
 [plugins.sync.action-view-version-history]
 original=Open version history for the current file
-translation=தற்போதைய கோப்பின் பதிப்பு வரலாற்றைப் (Version History) பார்
+translation=தற்போதைய கோப்பின் பதிப்பு வரலாற்றைப் பார்
 
 [plugins.sync.action-setup-sync]
 original=Set up Sync
-translation=ஒத்திசைவை அமை (Set up Sync)
+translation=ஒத்திசைவை அமை
 
 [plugins.sync.menu-opt-view-version-history]
 original=Open version history
@@ -6912,7 +6912,7 @@ translation=ஒத்திசைவு வரலாற்றைக் காட
 
 [plugins.sync.action-activity-log]
 original=Open activity log
-translation=செயல்பாட்டுப் பதிவேட்டைத் திற (Activity Log)
+translation=செயல்பாட்டுப் பதிவேட்டைத் திற
 
 [plugins.sync.label-load-more]
 original=Load more
@@ -6924,11 +6924,11 @@ translation=மாற்றங்களைக் காட்டு
 
 [plugins.sync.label-copy-to-clipboard]
 original=Copy to clipboard
-translation=இடைநிலைப் பலகையில் நகலெடு (நகலெடு to ஒட்டுப்பலகை)
+translation=இடைநிலைப் பலகையில் நகலெடு
 
 [plugins.sync.label-restore-this-version]
 original=Restore
-translation=இந்தப் பதிப்பை மீட்டமை (மீட்டமை)
+translation=இந்தப் பதிப்பை மீட்டமை
 
 [plugins.sync.msg-already-latest-version]
 original=This version is already the latest version.
@@ -6964,7 +6964,7 @@ translation=“{{from}}”-லிருந்து “{{to}}”-க்கு �
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 திருத்தம் (Revision)
+translation=1 திருத்தம்
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
@@ -7004,7 +7004,7 @@ translation=வரலாற்றைக் காண கோப்பின் �
 
 [plugins.sync.label-create-remote-vault]
 original=Create remote vault
-translation=தொலைநிலை பெட்டகத்தை (தொலை பெட்டகம்) உருவாக்கு
+translation=தொலைநிலை பெட்டகத்தை உருவாக்கு
 
 [plugins.sync.msg-please-enter-password]
 original=Please enter a password.
@@ -7032,15 +7032,15 @@ translation=இந்த பெட்டகம் எதற்கானது �
 
 [plugins.sync.option-vault-region]
 original=Region
-translation=பகுதி (Region)
+translation=பகுதி
 
 [plugins.sync.opt-vault-region-automatic]
 original=Automatic
-translation=தானியங்கி (Automatic)
+translation=தானியங்கி
 
 [plugins.sync.option-vault-region-desc]
 original=Select the server region closest to you to store the remote vault. This cannot be changed in the future.
-translation=தொலைநிலை பெட்டகத்தைச் சேமிக்க உங்களுக்கு அருகிலுள்ள பகுதியைத் (Region) தேர்ந்தெடுக்கவும். இதை பின்னர் மாற்ற முடியாது.
+translation=தொலைநிலை பெட்டகத்தைச் சேமிக்க உங்களுக்கு அருகிலுள்ள பகுதியைத் தேர்ந்தெடுக்கவும். இதை பின்னர் மாற்ற முடியாது.
 
 [plugins.sync.option-vault-name-placeholder]
 original=My awesome vault
@@ -7048,7 +7048,7 @@ translation=எனது சிறந்த பெட்டகம்
 
 [plugins.sync.option-encryption]
 original=Encryption
-translation=குறியாக்கம் (குறியாக்கம்)
+translation=குறியாக்கம்
 
 [plugins.sync.option-encryption-desc]
 original=End-to-end encryption offers the strongest security but requires you to safely store your encryption password. Standard encryption uses a key managed by Obsidian to protect your data in transit and on our servers.
@@ -7080,11 +7080,11 @@ translation=கடவுச்சொல்லை மறந்துவிட்�
 
 [plugins.sync.option-encryption-password-desc-2]
 original=This does not affect your local data.
-translation=இது உங்கள் உள்ளூர் தரவைப் (Local data) பாதிக்காது.
+translation=இது உங்கள் உள்ளூர் தரவைப் பாதிக்காது.
 
 [plugins.sync.label-encryption-password-explanation]
 original=The remote vault “{{name}}” is currently encrypted. Enter your password to unlock.
-translation=தொலைநிலை பெட்டகம் “{{name}}” பாதுகாக்கப்பட்டுள்ளது (Encrypted). திறக்க கடவுச்சொல்லை உள்ளிடவும்.
+translation=தொலைநிலை பெட்டகம் “{{name}}” பாதுகாக்கப்பட்டுள்ளது. திறக்க கடவுச்சொல்லை உள்ளிடவும்.
 
 [plugins.sync.option-encryption-password-placeholder]
 original=Your password
@@ -7136,7 +7136,7 @@ translation=தொலைநிலை பெட்டகம் "{{name}}"-ஐ ந
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
-translation=Server-ல் உள்ள தரவு மற்றும் பதிப்பு வரலாறு அனைத்தும் நீக்கப்படும். உள்ளூர் கோப்புகள் (Local files) அப்படியே இருக்கும்.
+translation=Server-ல் உள்ள தரவு மற்றும் பதிப்பு வரலாறு அனைத்தும் நீக்கப்படும். உள்ளூர் கோப்புகள் அப்படியே இருக்கும்.
 
 [plugins.sync.label-confirm-delete-remote-vault-warning]
 original=This action is permanent and irreversible.
@@ -7184,7 +7184,7 @@ translation=புதிய பெட்டகத்தை உருவாக்
 
 [plugins.sync.label-sync-log]
 original=Sync log
-translation=ஒத்திசைவுப் பதிவேடு (Sync log)
+translation=ஒத்திசைவுப் பதிவேடு
 
 [plugins.sync.option-event-type-all]
 original=All
@@ -7200,7 +7200,7 @@ translation=தவிர்க்கப்பட்டவை
 
 [plugins.sync.option-event-type-merge-conflicts]
 original=Merge conflicts
-translation=மோதல்களை ஒன்றிணைக்கவும் (இணை Conflicts)
+translation=மோதல்களை ஒன்றிணைக்கவும்
 
 [plugins.sync.button-copy-sync-log]
 original=Copy sync log
@@ -7228,7 +7228,7 @@ translation=எச்சரிக்கை: உங்கள் பெட்ட�
 
 [plugins.sync.label-icloud-drive-warning]
 original=If you are using iCloud Drive, your Documents and Desktop folders might be synced by iCloud. This could cause conflicts with Obsidian Sync.
-translation=iCloud Drive பயன்படுத்தினால் மோதல்கள் (Conflicts) ஏற்படலாம்.
+translation=iCloud Drive பயன்படுத்தினால் மோதல்கள் ஏற்படலாம்.
 
 [plugins.sync.option-remote-vault]
 original=Remote vault
@@ -7284,7 +7284,7 @@ translation=நீக்கப்பட்ட கோப்புகள்
 
 [plugins.sync.option-view-deleted-files-desc]
 original=View and restore deleted files.
-translation=நீக்கப்பட்ட கோப்புகளைப் பார்த்து மீட்டெடுக்கவும் (மீட்டமை).
+translation=நீக்கப்பட்ட கோப்புகளைப் பார்த்து மீட்டெடுக்கவும்.
 
 [plugins.sync.option-sync-log]
 original=Activity log
@@ -7292,7 +7292,7 @@ translation=செயல்பாட்டுப் பதிவேடு
 
 [plugins.sync.option-sync-log-desc]
 original=View recent sync activities for debugging.
-translation=பிழைத்திருத்தத்திற்காக (Debugging) சமீபத்திய ஒத்திசைவு செயல்பாடுகளைப் பார்க்கவும்.
+translation=பிழைத்திருத்தத்திற்காக சமீபத்திய ஒத்திசைவு செயல்பாடுகளைப் பார்க்கவும்.
 
 [plugins.sync.button-view]
 original=View
@@ -7304,7 +7304,7 @@ translation=மொத்தமாக மீட்டமை
 
 [plugins.sync.button-restore-files_zero]
 original=Restore files
-translation=கோப்புகளை மீட்டமை (மீட்டமை)
+translation=கோப்புகளை மீட்டமை
 
 [plugins.sync.button-restore-files]
 original=Restore {{count}} file
@@ -7352,7 +7352,7 @@ translation=மிகப்பெரிய கோப்புகளைப் ப
 
 [plugins.sync.msg-largest-files-desc]
 original=These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.
-translation=அதிக இடமெடுக்கும் கோப்புகள் இவை. இடத்தை காலி செய்ய 'சுத்தம் செய்' (Purge) என்பதைப் பயன்படுத்தவும்.
+translation=அதிக இடமெடுக்கும் கோப்புகள் இவை. இடத்தை காலி செய்ய 'சுத்தம் செய்' என்பதைப் பயன்படுத்தவும்.
 
 [plugins.sync.button-upgrade-storage]
 original=Upgrade storage
@@ -7360,7 +7360,7 @@ translation=சேமிப்பகத்தை மேம்படுத்த�
 
 [plugins.sync.button-purge-remote]
 original=Purge
-translation=சுத்தம் செய் (Purge)
+translation=சுத்தம் செய்
 
 [plugins.sync.button-hide-my-changes]
 original=Hide my changes
@@ -7368,7 +7368,7 @@ translation=எனது மாற்றங்களை மறை
 
 [plugins.sync.tooltip-purge-remote]
 original=Permanently purge deleted attachments from remote vault to save space.
-translation=தேவையற்ற கோப்புகளை (Deleted) நிரந்தரமாக நீக்கி, தொலைநிலை பெட்டகத்தின் இடத்தை மிச்சப்படுத்து.
+translation=தேவையற்ற கோப்புகளை நிரந்தரமாக நீக்கி, தொலைநிலை பெட்டகத்தின் இடத்தை மிச்சப்படுத்து.
 
 [plugins.sync.msg-purge-complete]
 original=Purge complete.
@@ -7380,11 +7380,11 @@ translation=சாதனம் தூங்குவதைத் தடு
 
 [plugins.sync.option-prevent-sleep-desc]
 original=Prevents the device from going to sleep when there are still files to be synced.
-translation=ஒத்திசைவு செய்யும்போது சாதனம் தூக்க நிலைக்குச் (Sleep) செல்வதைத் தடுக்கும்.
+translation=ஒத்திசைவு செய்யும்போது சாதனம் தூக்க நிலைக்குச் செல்வதைத் தடுக்கும்.
 
 [plugins.sync.option-selective-sync]
 original=Selective sync
-translation=தேர்ந்தெடுத்த ஒத்திசைவு (Selective Sync)
+translation=தேர்ந்தெடுத்த ஒத்திசைவு
 
 [plugins.sync.option-excluded-folders]
 original=Excluded folders
@@ -7408,7 +7408,7 @@ translation=படங்களை ஒத்திசைக்க
 
 [plugins.sync.option-sync-image-desc]
 original=Sync image files with these extensions: {{extensions}}.
-translation=படங்களை (Extensions: {{extensions}}) ஒத்திசைக்க.
+translation=படங்களை {{extensions}} ஒத்திசைக்க.
 
 [plugins.sync.option-sync-audio]
 original=Sync audio
@@ -7416,7 +7416,7 @@ translation=ஆடியோவை ஒத்திசைக்க
 
 [plugins.sync.option-sync-audio-desc]
 original=Sync audio files with these extensions: {{extensions}}.
-translation=ஆடியோ கோப்புகளை (Extensions: {{extensions}}) ஒத்திசைக்க.
+translation=ஆடியோ கோப்புகளை {{extensions}} ஒத்திசைக்க.
 
 [plugins.sync.option-sync-video]
 original=Sync videos
@@ -7424,7 +7424,7 @@ translation=வீடியோக்களை ஒத்திசைக்க
 
 [plugins.sync.option-sync-video-desc]
 original=Sync video files with these extensions: {{extensions}}.
-translation=வீடியோ கோப்புகளை (Extensions: {{extensions}}) ஒத்திசைக்க.
+translation=வீடியோ கோப்புகளை {{extensions}} ஒத்திசைக்க.
 
 [plugins.sync.option-sync-pdf]
 original=Sync PDFs
@@ -7444,7 +7444,7 @@ translation=ஆதரிக்கப்படாத கோப்பு வகை
 
 [plugins.sync.option-vault-config-sync]
 original=Vault configuration sync
-translation=பெட்டக கட்டமைப்பு ஒத்திசைவு (பெட்டகம் Configuration)
+translation=பெட்டக கட்டமைப்பு ஒத்திசைவு
 
 [plugins.sync.option-view-config-files]
 original=Settings version history
@@ -7472,7 +7472,7 @@ translation=Dark mode, கருப்பொருள் போன்ற தோ�
 
 [plugins.sync.option-sync-appearance-data]
 original=Themes and snippets
-translation=தீம்கள் மற்றும் துணுக்குகள் (Snippets)
+translation=தீம்கள் மற்றும் துணுக்குகள்
 
 [plugins.sync.option-sync-appearance-data-desc]
 original=Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.
@@ -7492,7 +7492,7 @@ translation=செயலில் உள்ள அடிப்படைச் �
 
 [plugins.sync.option-sync-core-plugin-desc]
 original=Sync which core plugins are enabled.
-translation=எந்த அடிப்படைச் செருகுநிரல்கள் (Core Plugins) இயக்கப்பட்டுள்ளன என்பதை ஒத்திசைக்க.
+translation=எந்த அடிப்படைச் செருகுநிரல்கள் இயக்கப்பட்டுள்ளன என்பதை ஒத்திசைக்க.
 
 [plugins.sync.option-sync-core-plugin-data]
 original=Core plugin settings
@@ -7500,7 +7500,7 @@ translation=அடிப்படைச் செருகுநிரல் அ
 
 [plugins.sync.option-sync-core-plugin-data-desc]
 original=Sync core plugin settings.
-translation=அடிப்படைச் செருகுநிரல் (Core செருகுநிரல்) அமைப்புகளை ஒத்திசைக்க.
+translation=அடிப்படைச் செருகுநிரல் அமைப்புகளை ஒத்திசைக்க.
 
 [plugins.sync.option-sync-community-plugin]
 original=Active community plugin list
@@ -7508,7 +7508,7 @@ translation=செயலில் உள்ள சமூகச் செரு�
 
 [plugins.sync.option-sync-community-plugin-desc]
 original=Sync which community plugins are enabled.
-translation=எந்த சமூகச் செருகுநிரல்கள் (Community Plugins) இயக்கப்பட்டுள்ளன என்பதை ஒத்திசைக்க.
+translation=எந்த சமூகச் செருகுநிரல்கள் இயக்கப்பட்டுள்ளன என்பதை ஒத்திசைக்க.
 
 [plugins.sync.option-sync-community-plugin-data]
 original=Installed community plugins
@@ -7516,7 +7516,7 @@ translation=நிறுவப்பட்ட சமூகச் செருக
 
 [plugins.sync.option-sync-community-plugin-data-desc]
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
-translation=சமூகச் செருகுநிரல்கள் (Community Plugins) மற்றும் அதன் அமைப்புகளை ஒத்திசைக்க.
+translation=நிறுவப்பட்ட சமூகச் செருகுநிரல்கள் (.js, .css, manifest.json) மற்றும் அவற்றின் அமைப்புகளை Sync செய்.
 
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
@@ -7580,7 +7580,7 @@ translation={{folders}} தற்போது ஒத்திசைவிலி�
 
 [plugins.sync.label-add-excluded-folder]
 original=Exclude a folder
-translation=ஒரு கோப்புறையை விலக்கு (Exclude)
+translation=ஒரு கோப்புறையை விலக்கு
 
 [plugins.sync.label-add-excluded-folder-desc]
 original=You can exclude both existing folders and folders that have not been created yet.
@@ -7592,7 +7592,7 @@ translation=விலக்கப்பட்ட பட்டியலிலி�
 
 [plugins.sync.label-setup-connection]
 original=Setup connection
-translation=இணைப்பை அமை (Setup connection)
+translation=இணைப்பை அமை
 
 [plugins.sync.label-connecting-to-vault]
 original=Connecting...
@@ -7620,11 +7620,11 @@ translation=பெட்டகத்தை ஒன்றிணைப்பதை 
 
 [plugins.sync.msg-vault-has-notes]
 original=Your local vault already contains some notes.
-translation=உங்கள் உள்ளூர் பெட்டகம் (Local பெட்டகம்) ஏற்கனவே சில குறிப்புகளைக் கொண்டுள்ளது.
+translation=உங்கள் உள்ளூர் பெட்டகம் ஏற்கனவே சில குறிப்புகளைக் கொண்டுள்ளது.
 
 [plugins.sync.msg-vault-merge-warning]
 original=If you connect to the remote vault “{{name}}”, notes in your local vault will be merged with notes from your remote vault. In case of conflicts, the most recent version of the note will be preserved.
-translation=தொலைநிலை பெட்டகம் “{{name}}”-உடன் இணைத்தால், குறிப்புகள் ஒன்றிணைக்கப்படும் (இணை). முரண்பாடுகள் வந்தால் சமீபத்திய பதிப்பு (Recent version) பாதுகாக்கப்படும்.
+translation=தொலைநிலை பெட்டகம் “{{name}}”-உடன் இணைத்தால், குறிப்புகள் ஒன்றிணைக்கப்படும். முரண்பாடுகள் வந்தால் சமீபத்திய பதிப்பு பாதுகாக்கப்படும்.
 
 [plugins.sync.tooltip-update-setting-on-all-devices]
 original=Please update this option and restart app on all the devices where you want it to take effect.
@@ -7680,7 +7680,7 @@ translation=Obsidian Sync-ல் ஏதேனும் சிக்கல்க�
 
 [plugins.sync.button-copy-debug]
 original=Copy debug info
-translation=பிழைத்திருத்தத் தகவலை நகலெடு (நகலெடு வழுநீக்கல் info)
+translation=பிழைத்திருத்தத் தகவலை நகலெடு
 
 [plugins.sync.button-email-support]
 original=Email support
@@ -7696,7 +7696,7 @@ translation=அதிகபட்ச தொலைநிலை பெட்டக
 
 [plugins.sync.label-upgrade-vault]
 original=Upgrade vault
-translation=பெட்டகத்தை மேம்படுத்து (மேம்படுத்து பெட்டகம்)
+translation=பெட்டகத்தை மேம்படுத்து
 
 [plugins.sync.label-upgrade-vault-encryption]
 original=Upgrade vault encryption
@@ -7716,7 +7716,7 @@ translation=தொலைநிலை பெட்டகக் கட்டமை
 
 [plugins.sync.button-migrate]
 original=Migrate
-translation=இடம் மாற்று (Migrate)
+translation=இடம் மாற்று
 
 [plugins.sync.msg-recreate-remote-vault]
 original=This will delete your remote vault and recreate it with the latest encryption. Local files will not be affected, however your version history will be lost.
@@ -7732,7 +7732,7 @@ translation=குறியாக்கத்தை மேம்படுத்�
 
 [plugins.sync.msg-migrate-pre-confirmation-part2]
 original=Important: we strongly recommend creating a backup of your vault before proceeding to prevent any potential data loss.
-translation=முக்கியம்: தரவு இழப்பைத் தடுக்க, தொடரும் முன் உங்கள் பெட்டகத்தை காப்புநகல் (Backup) எடுக்கவும்.
+translation=முக்கியம்: தரவு இழப்பைத் தடுக்க, தொடரும் முன் உங்கள் பெட்டகத்தை காப்புநகல் எடுக்கவும்.
 
 [plugins.sync.msg-migrate-pre-confirmation-part3]
 original=After completing the upgrade, you will need to reconnect all your devices to the updated remote vault.
@@ -7756,7 +7756,7 @@ translation=பெட்டக இடப்பெயர்வு முடிந
 
 [plugins.sync.label-resolve-conflicts]
 original=Conflict resolution
-translation=முரண்பாடு தீர்வு (Conflict Resolution)
+translation=முரண்பாடு தீர்வு
 
 [plugins.sync.label-resolve-conflicts-desc]
 original=Choose how conflicts are resolved when a note is independently modified on multiple devices.
@@ -7764,7 +7764,7 @@ translation=ஒரே குறிப்பு பல சாதனங்கள�
 
 [plugins.sync.option-automatic-merge]
 original=Automatically merge
-translation=தானாக ஒன்றிணை (Automatic இணை)
+translation=தானாக ஒன்றிணை 
 
 [plugins.sync.option-conflict-file]
 original=Create conflict file
@@ -7772,11 +7772,11 @@ translation=முரண்பாட்டுக் கோப்பை உரு
 
 [plugins.file-recovery.name]
 original=File recovery
-translation=கோப்பு மீட்பு (கோப்பு Recovery)
+translation=கோப்பு மீட்பு
 
 [plugins.file-recovery.desc]
 original=Restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.
-translation=தற்செயலான தரவு இழப்பைத் தவிர்க்க சமீபத்திய நிழற்படிகளை (Snapshots) மீட்டெடுக்கவும். Markdown கோப்புகளுக்கு மட்டுமே நிழற்படிகள் சேமிக்கப்படும்.
+translation=தற்செயலான தரவு இழப்பைத் தவிர்க்க சமீபத்திய நிழற்படிகளை மீட்டெடுக்கவும். Markdown கோப்புகளுக்கு மட்டுமே நிழற்படிகள் சேமிக்கப்படும்.
 
 [plugins.file-recovery.action-open]
 original=Open local history
@@ -7784,15 +7784,15 @@ translation=கோப்பு மீட்பைத் திற
 
 [plugins.file-recovery.option-interval]
 original=Snapshot interval
-translation=நிழற்படி இடைவெளி (ஸ்னாப்ஷாட் Interval)
+translation=நிழற்படி இடைவெளி
 
 [plugins.file-recovery.option-interval-description]
 original=Minimal interval in minutes between two snapshots.
-translation=இரண்டு நிழற்படிகளுக்கு இடையிலான குறைந்தபட்ச இடைவெளி (நிமிடங்களில்).
+translation=இரண்டு நிழற்படிகளுக்கு இடையிலான குறைந்தபட்ச இடைவெளி.
 
 [plugins.file-recovery.option-keep]
 original=History length
-translation=வரலாற்று நீளம் (History Length)
+translation=வரலாற்று நீளம்
 
 [plugins.file-recovery.option-keep-description]
 original=Number of days the snapshots are kept for.
@@ -7800,7 +7800,7 @@ translation=நிழற்படிகள் எத்தனை நாட்க
 
 [plugins.file-recovery.option-open-history]
 original=Snapshots
-translation=நிழற்படிகள் (Snapshots)
+translation=நிழற்படிகள்
 
 [plugins.file-recovery.option-open-history-description]
 original=View and restore saved snapshots.
@@ -7824,7 +7824,7 @@ translation=அழி
 
 [plugins.file-recovery.label-clear-warning]
 original=Are you sure you want to delete all snapshots? Files inside your vault will not be affected.
-translation=நிச்சயமாக அனைத்து நிழற்படிகளையும் (Snapshots) நீக்க விரும்புகிறீர்களா? உங்கள் பெட்டகத்தில் உள்ள கோப்புகள் பாதிக்கப்படாது.
+translation=நிச்சயமாக அனைத்து நிழற்படிகளையும் நீக்க விரும்புகிறீர்களா? உங்கள் பெட்டகத்தில் உள்ள கோப்புகள் பாதிக்கப்படாது.
 
 [plugins.file-recovery.msg-clear-complete]
 original=Local history cleared.
@@ -7844,11 +7844,11 @@ translation=நிழற்படிகளைப் பார்க்க இட
 
 [plugins.note-composer.name]
 original=Note composer
-translation=குறிப்பு அமைப்பாளர் (குறிப்பு Composer)
+translation=குறிப்பு அமைப்பாளர்
 
 [plugins.note-composer.desc]
 original=Merge two notes or split one into two.
-translation=இரண்டு குறிப்புகளை ஒன்றிணைக்க (இணை) அல்லது ஒரு குறிப்பை இரண்டாகப் பிரிக்க (Split) உதவும்.
+translation=இரண்டு குறிப்புகளை ஒன்றிணைக்க அல்லது ஒரு குறிப்பை இரண்டாகப் பிரிக்க உதவும்.
 
 [plugins.note-composer.option-confirm-file-merge]
 original=Confirm file merge
@@ -7872,7 +7872,7 @@ translation=புதிய கோப்பிற்கான இணைப்ப
 
 [plugins.note-composer.option-choice-split-replacement-text-embed]
 original=Embed new file
-translation=புதிய கோப்பை உட்பொதி (உட்பொதி)
+translation=புதிய கோப்பை உட்பொதி
 
 [plugins.note-composer.option-choice-split-replacement-text-none]
 original=None
@@ -7932,7 +7932,7 @@ translation=நிச்சயமாக “{{கோப்பு}}”-ஐ “{{de
 
 [plugins.note-composer.button-merge]
 original=Merge
-translation=ஒன்றிணை (இணை)
+translation=ஒன்றிணை
 
 [plugins.note-composer.command-split-file]
 original=Extract current selection...
@@ -7960,11 +7960,11 @@ translation=தலைப்பைக் கண்டுபிடிக்க ம
 
 [plugins.web-viewer.name]
 original=Web viewer
-translation=இணையப் பார்வையாளர் (இணையப் பார்வையாளர்)
+translation=இணையப் பார்வையாளர்
 
 [plugins.web-viewer.history-name]
 original=Web history
-translation=இணைய வரலாறு (Web History)
+translation=இணைய வரலாறு
 
 [plugins.web-viewer.desc]
 original=Open external links to web pages inside Obsidian.
@@ -7980,7 +7980,7 @@ translation=வரலாற்றைக் காட்டு
 
 [plugins.web-viewer.action-toggle-reader-mode]
 original=Toggle reader mode
-translation=வாசிப்பு முறையை மாற்று (Toggle Reader Mode)
+translation=வாசிப்பு முறையை மாற்று
 
 [plugins.web-viewer.action-copy-u-r-l]
 original=Copy URL
@@ -8000,7 +8000,7 @@ translation=இணைப்பைத் திற
 
 [plugins.web-viewer.action-open-link-new-tab]
 original=Open link in new tab
-translation=இணைப்பை புதிய தாவலில் திற (Open இணைப்பு in New தாவல்)
+translation=இணைப்பை புதிய தாவலில் திற 
 
 [plugins.web-viewer.action-open-link-new-split]
 original=Open link to the right
@@ -8008,7 +8008,7 @@ translation=இணைப்பை வலதுபுறம் திற
 
 [plugins.web-viewer.action-open-link-new-window]
 original=Open link in new window
-translation=இணைப்பை புதிய சாளரத்தில் திற (Open இணைப்பு in New Window)
+translation=இணைப்பை புதிய சாளரத்தில் திற 
 
 [plugins.web-viewer.action-open-link-default-browser]
 original=Open link in default browser
@@ -8020,11 +8020,11 @@ translation=இணைப்பை இணையப் பார்வையாள
 
 [plugins.web-viewer.action-copy-link-address]
 original=Copy link address
-translation=இணைப்பு முகவரியை நகலெடு (நகலெடு இணைப்பு Address)
+translation=இணைப்பு முகவரியை நகலெடு
 
 [plugins.web-viewer.action-bookmark-link]
 original=Bookmark link
-translation=இணைப்பை புத்தகக்குறியிடு (புத்தகக்குறி)
+translation=இணைப்பை புத்தகக்குறியிடு
 
 [plugins.web-viewer.action-search-for-query]
 original=Search for “{{query}}”
@@ -8040,7 +8040,7 @@ translation=நகலெடு
 
 [plugins.web-viewer.action-cut]
 original=Cut
-translation=வெட்டு (வெட்டு)
+translation=வெட்டு
 
 [plugins.web-viewer.action-paste]
 original=Paste
@@ -8072,19 +8072,19 @@ translation=படத்தின் இணைப்பை நகலெடு
 
 [plugins.web-viewer.action-backward]
 original=Backward
-translation=பின்னால் (Back)
+translation=பின்னால்
 
 [plugins.web-viewer.action-forward]
 original=Forward
-translation=முன்னால் (Forward)
+translation=முன்னால்
 
 [plugins.web-viewer.action-reload]
 original=Reload
-translation=மீளேற்று (Reload)
+translation=மீளேற்று
 
 [plugins.web-viewer.action-bookmark-page]
 original=Bookmark page
-translation=பக்கத்தை புத்தகக்குறியிடு (புத்தகக்குறி)
+translation=பக்கத்தை புத்தகக்குறியிடு
 
 [plugins.web-viewer.action-open-default-browser]
 original=Open in default browser
@@ -8092,7 +8092,7 @@ translation=இயல்புநிலை உலாவியில் திற
 
 [plugins.web-viewer.action-focus-address-bar]
 original=Focus address bar
-translation=முகவரிப் பட்டியில் கவனம் செலுத்து (Focus Address Bar)
+translation=முகவரிப் பட்டியில் கவனம் செலுத்து
 
 [plugins.web-viewer.action-search-the-web]
 original=Search the web
@@ -8104,7 +8104,7 @@ translation=தரவை அழி
 
 [plugins.web-viewer.action-clear-data-cookies]
 original=Cookies
-translation=குக்கீகள் (Cookies)
+translation=குக்கீகள்
 
 [plugins.web-viewer.action-clear-data-cookies-desc]
 original=May sign you out of websites.
@@ -8112,7 +8112,7 @@ translation=இணையதளங்களலிருந்து நீங்�
 
 [plugins.web-viewer.action-clear-data-cache]
 original=Cached data
-translation=தேக்ககத் தரவு (Cached Data)
+translation=தேக்ககத் தரவு
 
 [plugins.web-viewer.action-clear-data-history]
 original=History
@@ -8160,7 +8160,7 @@ translation=கணினியின் இயல்புநிலைக்க�
 
 [plugins.web-viewer.option-homepage]
 original=Homepage
-translation=முகப்புத்தளம் (Homepage)
+translation=முகப்புத்தளம்
 
 [plugins.web-viewer.option-homepage-desc]
 original=What page to view when a web viewer is opened
@@ -8176,7 +8176,7 @@ translation=Markdown-ஆக சேமிக்கப்படும் இணை
 
 [plugins.web-viewer.option-search-engine]
 original=Search engine
-translation=தேடுபொறி (தேடு Engine)
+translation=தேடுபொறி
 
 [plugins.web-viewer.option-search-engine-desc]
 original=Search engine used when searching from the address bar.
@@ -8188,19 +8188,19 @@ translation=தனிப்பயன் தேடுபொறி
 
 [plugins.web-viewer.option-search-engine-custom-desc]
 original=Use %s in place of the query.
-translation=கேள்விக்கு (Query) பதிலாக %s -ஐப் பயன்படுத்தவும்.
+translation=கேள்விக்கு பதிலாக %s -ஐப் பயன்படுத்தவும்.
 
 [plugins.web-viewer.option-search-engine-custom-drop-down]
 original=Custom
-translation=தனிப்பயன் (Custom)
+translation=தனிப்பயன்
 
 [plugins.web-viewer.option-enable-adblock]
 original=Enable ad blocker
-translation=விளம்பரத் தடுப்பானை இயக்கு (Ad Blocker)
+translation=விளம்பரத் தடுப்பானை இயக்கு
 
 [plugins.web-viewer.option-enable-adblock-desc]
 original=If enabled, the filter lists below will be applied to all web viewer tabs.
-translation=இயக்கப்பட்டால், கீழே உள்ள வடிகட்டி பட்டியல்கள் (வடிகட்டி Lists) அனைத்து தாவல்களுக்கும் பொருந்தும்.
+translation=இயக்கப்பட்டால், கீழே உள்ள வடிகட்டி பட்டியல்கள் அனைத்து தாவல்களுக்கும் பொருந்தும்.
 
 [plugins.web-viewer.option-adblock-lists]
 original=Ad blocking rules
@@ -8216,7 +8216,7 @@ translation=விளம்பரத் தடுப்பு புதுப்
 
 [plugins.web-viewer.option-adblock-frequency-desc]
 original=Days between updating filter lists. 0 indicates disabled. Shared by all vaults.
-translation=வடிகட்டி பட்டியல்களைப் புதுப்பிப்பதற்கான இடைவெளி (நாட்களில்). 0 என்றால் முடக்கம்.
+translation=பட்டியல் புதுப்பிப்புகளுக்கிடையிலான நாட்கள். 0 என்றால் புதுப்பிப்பு முடக்கப்படும். எல்லா பெட்டகங்களுக்கும் பொதுவானது.
 
 [plugins.web-viewer.title-clear-data-modal]
 original=Clear web viewer data
@@ -8244,11 +8244,11 @@ translation=பெட்டகத்திலிருந்து குறி�
 
 [plugins.canvas.action-add-media]
 original=Add media from vault
-translation=பெட்டகத்திலிருந்து ஊடகத்தைச் (Media) சேர்
+translation=பெட்டகத்திலிருந்து ஊடகத்தைச் சேர்
 
 [plugins.canvas.action-add-card]
 original=Add card
-translation=அட்டையைச் சேர் (Add Card)
+translation=அட்டையைச் சேர்
 
 [plugins.canvas.action-add-website]
 original=Add web page
@@ -8296,7 +8296,7 @@ translation=நிறத்தை அமை
 
 [plugins.canvas.action-align]
 original=Align
-translation=சீரமை (Align)
+translation=சீரமை
 
 [plugins.canvas.action-align-left]
 original=Align left
@@ -8324,19 +8324,19 @@ translation=கீழே சீரமை
 
 [plugins.canvas.action-distribute-horizontal-spacing]
 original=Distribute horizontal spacing
-translation=கிடைமட்ட இடைவெளியைப் பகிர் (Distribute Horizontal Spacing)
+translation=கிடைமட்ட இடைவெளியைப் பகிர்
 
 [plugins.canvas.action-distribute-vertical-spacing]
 original=Distribute vertical spacing
-translation=செங்குத்து இடைவெளியைப் பகிர் (Distribute Vertical Spacing)
+translation=செங்குத்து இடைவெளியைப் பகிர்
 
 [plugins.canvas.action-justify-horizontally]
 original=Justify horizontally
-translation=கிடைமட்டமாக சமன்படுத்து (சமன்படுத்து Horizontally)
+translation=கிடைமட்டமாக சமன்படுத்து
 
 [plugins.canvas.action-justify-vertically]
 original=Justify vertically
-translation=செங்குத்தாக சமன்படுத்து (சமன்படுத்து Vertically)
+translation=செங்குத்தாக சமன்படுத்து
 
 [plugins.canvas.action-arrange-horizontally]
 original=Arrange in a row
@@ -8348,7 +8348,7 @@ translation=ஒரு செங்குத்து வரிசையில்
 
 [plugins.canvas.action-arrange-grid]
 original=Arrange in a grid
-translation=ஒரு கட்டகத்தில் (Grid) ஏற்பாடு செய்
+translation=ஒரு கட்டகத்தில் ஏற்பாடு செய்
 
 [plugins.canvas.action-export-png]
 original=Export as image
@@ -8392,15 +8392,15 @@ translation=மதிப்பிடப்பட்ட படத்தின் 
 
 [plugins.canvas.label-distribute]
 original=Distribute
-translation=விநியோகி (Distribute)
+translation=விநியோகி
 
 [plugins.canvas.label-justify]
 original=Justify
-translation=சமன்படுத்து (சமன்படுத்து)
+translation=சமன்படுத்து
 
 [plugins.canvas.label-arrange]
 original=Arrange
-translation=ஏற்பாடு செய் (Arrange)
+translation=ஏற்பாடு செய்
 
 [plugins.canvas.label-always]
 original=Always
@@ -8408,7 +8408,7 @@ translation=எப்போதும்
 
 [plugins.canvas.label-hover]
 original=On hover
-translation=சுட்டியை வைக்கும்போது (On மேல் நகர்வு)
+translation=சுட்டியை வைக்கும்போது 
 
 [plugins.canvas.label-never]
 original=Never
@@ -8420,7 +8420,7 @@ translation=பகுதி காணப்படவில்லை
 
 [plugins.canvas.option-wheel-behavior]
 original=Default mouse wheel behavior
-translation=இயல்புநிலை சுட்டி சக்கர நடத்தை (Mouse Wheel Behavior)
+translation=இயல்புநிலை சுட்டி சக்கர நடத்தை
 
 [plugins.canvas.option-mod-drag-behavior]
 original=Default {{key}} behavior
@@ -8452,15 +8452,15 @@ translation=அட்டை பெயர்களைக் காட்டு
 
 [plugins.canvas.option-snap-to-grid]
 original=Snap to grid
-translation=கட்டகத்துடன் பொருத்து (Snap to Grid)
+translation=கட்டகத்துடன் பொருத்து
 
 [plugins.canvas.option-snap-to-grid-desc]
 original=Snap cards to the background grid when moving and resizing.
-translation=நகர்த்தும்போதும் அளவை மாற்றும்போதும் அட்டைகளை கட்டகத்துடன் (Grid) பொருத்தவும்.
+translation=நகர்த்தும்போதும் அளவை மாற்றும்போதும் அட்டைகளை கட்டகத்துடன் பொருத்தவும்.
 
 [plugins.canvas.option-snap-to-objects]
 original=Snap to objects
-translation=பொருட்களுடன் பொருத்து (Snap to Objects)
+translation=பொருட்களுடன் பொருத்து
 
 [plugins.canvas.option-snap-to-objects-desc]
 original=Snap cards to nearby objects when moving and resizing.
@@ -8484,7 +8484,7 @@ translation=இது இடது கீழ்ப்பகுதியில்
 
 [plugins.canvas.option-export-png-privacy-mode]
 original=Privacy mode
-translation=தனியுரிமை முறை (Privacy Mode)
+translation=தனியுரிமை முறை
 
 [plugins.canvas.option-export-png-privacy-mode-desc]
 original=This will obscure any text on your canvas.
@@ -8492,19 +8492,19 @@ translation=இது உங்கள் கேன்வாஸில் உள�
 
 [plugins.canvas.option-export-png-zoom]
 original=Zoom
-translation=பெரிதாக்கு (அளவு மாற்றம்)
+translation=பெரிதாக்கு
 
 [plugins.canvas.option-export-png-zoom-desc]
 original=A higher zoom will generate a higher resolution image.
-translation=அதிக ஜூம், அதிகத் தெளிவுத்திறன் (Resolution) கொண்ட படத்தை உருவாக்கும்.
+translation=அதிக ஜூம், அதிகத் தெளிவுத்திறன் கொண்ட படத்தை உருவாக்கும்.
 
 [plugins.canvas.option-export-png-frame]
 original=Viewport
-translation=பார்வைப் பகுதி (Viewport)
+translation=பார்வைப் பகுதி
 
 [plugins.canvas.option-export-png-frame-desc]
 original=Choose to render the entire canvas or just the current visible viewport.
-translation=முழு கேன்வாஸ் அல்லது தற்போதைய பார்வைப் பகுதியை (Viewport) மட்டும் ஏற்றுமதி செய்யத் தேர்ந்தெடுக்கவும்.
+translation=முழு கேன்வாஸ் அல்லது தற்போதைய பார்வைப் பகுதியை மட்டும் ஏற்றுமதி செய்யத் தேர்ந்தெடுக்கவும்.
 
 [plugins.canvas.option-export-png-frame-full]
 original=Full canvas
@@ -8520,11 +8520,11 @@ translation=Cover
 
 [plugins.canvas.option-background-ratio]
 original=Keep aspect ratio
-translation=விகிதத்தைப் பராமரி (Keep Aspect Ratio)
+translation=விகிதத்தைப் பராமரி
 
 [plugins.canvas.option-background-repeat]
 original=Repeat
-translation=மீண்டும் செய் (Repeat)
+translation=மீண்டும் செய்
 
 [plugins.canvas.action-new-canvas]
 original=New canvas
@@ -8532,7 +8532,7 @@ translation=புதிய கேன்வாஸ்
 
 [plugins.canvas.action-duplicate]
 original=Duplicate
-translation=நகலெடு (நகலெடு)
+translation=நகலெடு
 
 [plugins.canvas.action-remove]
 original=Remove
@@ -8560,7 +8560,7 @@ translation=URL-ஐ மாற்று...
 
 [plugins.canvas.action-zoom-to-fit]
 original=Zoom to fit
-translation=பொருந்தும் வகையில் பெரிதாக்கு (அளவு மாற்றம் to Fit)
+translation=பொருந்தும் வகையில் பெரிதாக்கு
 
 [plugins.canvas.action-zoom-to-selection]
 original=Zoom to selection
@@ -8584,11 +8584,11 @@ translation=கோப்பாக மாற்று...
 
 [plugins.canvas.instruction-narrow-heading]
 original=to embed heading
-translation=தலைப்பை உட்பொதிக்க (உட்பொதி தலைப்பு)
+translation=தலைப்பை உட்பொதிக்க
 
 [plugins.canvas.instruction-narrow-block]
 original=to embed block
-translation=தொகுதியை உட்பொதிக்க (உட்பொதி தொகுதி)
+translation=தொகுதியை உட்பொதிக்க
 
 [plugins.canvas.instruction-jump-to-group]
 original=to navigate to group
@@ -8632,7 +8632,7 @@ translation=இயல்புநிலை பார்வையைக் கா
 
 [plugins.canvas.label-readonly]
 original=Read-only
-translation=வாசிக்க மட்டும் (Read-only)
+translation=வாசிக்க மட்டும்
 
 [plugins.canvas.label-disable-readonly]
 original=Disable read-only
@@ -8640,7 +8640,7 @@ translation=வாசிப்பு மட்டும் என்பதை �
 
 [plugins.canvas.label-pan]
 original=Pan
-translation=பான் (Pan)
+translation=பான்
 
 [plugins.canvas.label-pan-horizontal]
 original=Pan horizontally
@@ -8648,7 +8648,7 @@ translation=கிடைமட்டமாக பான் செய்
 
 [plugins.canvas.label-zoom]
 original=Zoom
-translation=பெரிதாக்கு (அளவு மாற்றம்)
+translation=பெரிதாக்கு
 
 [plugins.canvas.label-select-all]
 original=Select all
@@ -8660,7 +8660,7 @@ translation=தேர்வில் சேர் / தேர்விலிர�
 
 [plugins.canvas.label-clone-card]
 original=Clone card
-translation=அட்டையை நகலெடு (Clone)
+translation=அட்டையை நகலெடு
 
 [plugins.canvas.label-constrain-movement-axis]
 original=Constrain card movement to axis
@@ -8668,7 +8668,7 @@ translation=அட்டை நகர்வை அச்சுக்கு க�
 
 [plugins.canvas.label-disable-drag-snapping]
 original=Disable snapping while dragging
-translation=இழுக்கும்போது பொருத்துவதை (Snapping) முடக்கு
+translation=இழுக்கும்போது பொருத்துவதை முடக்கு
 
 [plugins.canvas.label-remove-card]
 original=Remove card
@@ -8724,7 +8724,7 @@ translation=படம்
 
 [plugins.canvas.label-style]
 original=Style
-translation=பாணி (Style)
+translation=பாணி
 
 [plugins.canvas.msg-no-groups-found]
 original=No groups found
@@ -8752,11 +8752,11 @@ translation={{count}} உட்பொதிக்கப்பட்ட அட்
 
 [plugins.bases.name]
 original=Bases
-translation=தரவுத் தளங்கள் (Bases)
+translation=தரவுத் தளங்கள்
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=பண்புகளைப் (Properties) பயன்படுத்தி கோப்புகளைத் தொகுக்க, வரிசைப்படுத்த மற்றும் வடிகட்ட தனிப்பயன் பார்வைகளை (Custom Views) உருவாக்கவும்.
+translation=பண்புகளைப் பயன்படுத்தி கோப்புகளைத் தொகுக்க, வரிசைப்படுத்த மற்றும் வடிகட்ட தனிப்பயன் பார்வைகளை உருவாக்கவும்.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -8764,7 +8764,7 @@ translation=புதிய தரவுத் தளம்
 
 [plugins.bases.action-add-property]
 original=Add "{{name}}" property
-translation=“{{name}}” பண்பைச் (பண்பு) சேர்
+translation=“{{name}}” பண்பைச் சேர்
 
 [plugins.bases.action-add-summary]
 original=Add "{{name}}" summary
@@ -8772,7 +8772,7 @@ translation=“{{name}}” சுருக்கத்தைச் சேர்
 
 [plugins.bases.action-add-formula]
 original=Add formula
-translation=சூத்திரத்தைச் (Formula) சேர்
+translation=சூத்திரத்தைச் சேர்
 
 [plugins.bases.action-hide-all]
 original=Hide all
@@ -8792,7 +8792,7 @@ translation=இயல்புநிலை பார்வை
 
 [plugins.bases.action-duplicate-view]
 original=Duplicate view
-translation=பார்வையை நகலெடு (நகலெடு View)
+translation=பார்வையை நகலெடு
 
 [plugins.bases.action-delete-view]
 original=Delete view
@@ -8808,7 +8808,7 @@ translation=CSV ஆக ஏற்றுமதி செய்...
 
 [plugins.bases.command-create-new]
 original=Create new base
-translation=புதிய தரவுத் தளத்தை (தரவுத் தளம்) உருவாக்கு
+translation=புதிய தரவுத் தளத்தை உருவாக்கு
 
 [plugins.bases.command-insert-new]
 original=Insert new base
@@ -8836,7 +8836,7 @@ translation=பார்வையைச் சேர்
 
 [plugins.bases.button-add-filter]
 original=Add filter
-translation=வடிகட்டியைச் சேர் (வடிகட்டி)
+translation=வடிகட்டியைச் சேர்
 
 [plugins.bases.button-add-filter-group]
 original=Add filter group
@@ -8872,7 +8872,7 @@ translation=கண்டுபிடி அல்லது உருவாக்
 
 [plugins.bases.label-computed-properties]
 original=Computed properties
-translation=கணக்கிடப்பட்ட பண்புகள் (Computed Properties)
+translation=கணக்கிடப்பட்ட பண்புகள்
 
 [plugins.bases.label-property-type]
 original=Property type
@@ -8896,15 +8896,15 @@ translation={{name}}-ஐத் திருத்து
 
 [plugins.bases.label-configure-view]
 original=Configure view
-translation=பார்வையை உள்ளமை (Configure)
+translation=பார்வையை உள்ளமை
 
 [plugins.bases.label-view-layout]
 original=Layout
-translation=தளவமைப்பு (Layout)
+translation=தளவமைப்பு
 
 [plugins.bases.label-global-filters]
 original=Global filters
-translation=பொதுவான வடிகட்டிகள் (Global Filters)
+translation=பொதுவான வடிகட்டிகள்
 
 [plugins.bases.label-view-filters]
 original=View filters
@@ -8920,7 +8920,7 @@ translation=பார்வை
 
 [plugins.bases.label-view-type-table]
 original=Table
-translation=அட்டவணை (அட்டவணை)
+translation=அட்டவணை
 
 [plugins.bases.label-display-name]
 original=Display name
@@ -8940,11 +8940,11 @@ translation=பார்வைகள்
 
 [plugins.bases.label-sort]
 original=Sort
-translation=வரிசைப்படுத்து (வரிசைப்படுத்து)
+translation=வரிசைப்படுத்து
 
 [plugins.bases.label-filter]
 original=Filter
-translation=வடிகட்டி (வடிகட்டி)
+translation=வடிகட்டி
 
 [plugins.bases.label-properties]
 original=Properties
@@ -8976,19 +8976,19 @@ translation=பின்வருவன எதுவும் உண்மைய
 
 [plugins.bases.label-where]
 original=where
-translation=where (எங்கே)
+translation=எங்கே
 
 [plugins.bases.label-or]
 original=or
-translation=or (அல்லது)
+translation=அல்லது
 
 [plugins.bases.label-and]
 original=and
-translation=and (மற்றும்)
+translation=மற்றும்
 
 [plugins.bases.label-property-key]
 original=Property
-translation=பண்பு (பண்பு)
+translation=பண்பு
 
 [plugins.bases.label-untitled-property]
 original=Untitled
@@ -9020,7 +9020,7 @@ translation=கோப்புறை
 
 [plugins.bases.label-file-prop-ext]
 original=file extension
-translation=கோப்பு நீட்டிப்பு (Extension)
+translation=கோப்பு நீட்டிப்பு
 
 [plugins.bases.label-file-prop-ctime]
 original=created time
@@ -9036,7 +9036,7 @@ translation=கோப்பு அளவு
 
 [plugins.bases.label-file-prop-backlinks]
 original=file backlinks
-translation=பின்னிணைப்புகள் (Backlinks)
+translation=பின்னிணைப்புகள்
 
 [plugins.bases.label-file-prop-links]
 original=file links
@@ -9044,7 +9044,7 @@ translation=இணைப்புகள்
 
 [plugins.bases.label-file-prop-embeds]
 original=file embeds
-translation=உட்பொதிப்புகள் (Embeds)
+translation=உட்பொதிப்புகள்
 
 [plugins.bases.label-file-prop-tags]
 original=file tags
@@ -9056,11 +9056,11 @@ translation=வரிசையைச் சேர்
 
 [plugins.bases.label-group-by]
 original=Group by
-translation=இதன்படி குழுவாக்கு (Group by)
+translation=இதன்படி குழுவாக்கு
 
 [plugins.bases.label-sort-by]
 original=Sort by
-translation=இதன்படி வரிசைப்படுத்து (வரிசைப்படுத்து by)
+translation=இதன்படி வரிசைப்படுத்து
 
 [plugins.bases.label-limit]
 original=Limit number of results
@@ -9091,7 +9091,7 @@ original=1 → 0
 translation=1 → 0
 
 [plugins.bases.msg-invalid-view-name]
-original=View name cannot contain: 
+original=View name cannot contain:
 translation=பார்வைப் பெயரில் இவை இருக்கக்கூடாது:
 
 [plugins.bases.msg-duplicate-view-name]
@@ -9104,7 +9104,7 @@ translation=பார்வைப் பெயர் காலியாக இ�
 
 [plugins.bases.msg-filter-simple-unavailable]
 original=This filter cannot be represented by the simple filter builder.
-translation=இந்த வடிகட்டியை எளிய வடிகட்டி அமைப்பால் (Simple வடிகட்டி builder) உருவாக்க முடியாது.
+translation=இந்த வடிகட்டியை எளிய வடிகட்டி அமைப்பால்  உருவாக்க முடியாது.
 
 [plugins.bases.msg-filter-cannot-parse]
 original=Filter cannot be parsed. Basic filter builder cannot be used.
@@ -9136,11 +9136,11 @@ translation=தெரியாத பார்வை வகை: {{ viewtype }}
 
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
-translation=பார்வைகள் (Views) ஒரு வரிசையாக (Array) இருக்க வேண்டும்
+translation=பார்வைகள் ஒரு வரிசையாக இருக்க வேண்டும்
 
 [plugins.bases.msg-error-display-values]
 original=Display values must be strings. Value for property {{ key }} is not.
-translation=காட்சி மதிப்புகள் சரங்களாக (String) இருக்க வேண்டும். பண்பு {{ key }}-இன் மதிப்பு அவ்வாறு இல்லை.
+translation=காட்சி மதிப்புகள் சரங்களாக இருக்க வேண்டும். பண்பு {{ key }}-இன் மதிப்பு அவ்வாறு இல்லை.
 
 [plugins.bases.msg-error-must-be-a-type]
 original="{{ key }}" must be a {{ type }}
@@ -9152,7 +9152,7 @@ translation=“filters” ஒரு String அல்லது Object-ஆக இ�
 
 [plugins.bases.msg-error-filter-must-be-array]
 original="{{ conjunction }}" filter must be an array
-translation=“{{ conjunction }}” வடிகட்டி ஒரு வரிசையாக (Array) இருக்க வேண்டும்
+translation=“{{ conjunction }}” வடிகட்டி ஒரு வரிசையாக இருக்க வேண்டும்
 
 [plugins.bases.msg-error-filter-allowed-keys]
 original="filters" may only have one of an "and", "or", or "not" keys.
@@ -9164,7 +9164,7 @@ translation=வடிகட்டியை மதிப்பிட முடி
 
 [plugins.bases.msg-error-formula-values]
 original=Formula values must be strings. Value for property {{ key }} is not.
-translation=சூத்திர மதிப்புகள் சரங்களாக (String) இருக்க வேண்டும். பண்பு {{ key }}-இன் மதிப்பு அவ்வாறு இல்லை.
+translation=சூத்திர மதிப்புகள் சரங்களாக இருக்க வேண்டும். பண்பு {{ key }}-இன் மதிப்பு அவ்வாறு இல்லை.
 
 [plugins.bases.msg-error-computed-failed-to-compute]
 original=Failed to compute value of property "{{ key }}": {{ message }}
@@ -9200,7 +9200,7 @@ translation=பார்வை “{{ viewName }}”-இல் உள்ள வ�
 
 [plugins.bases.msg-error-infinite-loop]
 original=Infinite loop detected in formula
-translation=சூத்திரத்தில் முடிவிலா சுழற்சி (Infinite Loop) கண்டறியப்பட்டது.
+translation=சூத்திரத்தில் முடிவிலா சுழற்சி கண்டறியப்பட்டது.
 
 [plugins.bases.msg-error-invalid-property]
 original=Invalid property
@@ -9212,7 +9212,7 @@ translation=உங்கள் நிபந்தனைகளுடன் பொ
 
 [plugins.bases.placeholder-filter-advanced-mode]
 original=Advanced filter
-translation=மேம்பட்ட வடிகட்டி (Advanced வடிகட்டி)
+translation=மேம்பட்ட வடிகட்டி 
 
 [plugins.bases.placeholder-limit]
 original=e.g. 10
@@ -9236,15 +9236,15 @@ translation=எதுவுமில்லை
 
 [plugins.bases.list.name]
 original=List
-translation=பட்டியல் (பட்டியல்)
+translation=பட்டியல்
 
 [plugins.bases.list.label-markers]
 original=Markers
-translation=குறிகள் (Markers)
+translation=குறிகள்
 
 [plugins.bases.list.label-indent-properties]
 original=Indent properties
-translation=பண்புகளை உள்தள்ளு (உள்தள்ளு)
+translation=பண்புகளை உள்தள்ளு
 
 [plugins.bases.list.label-property-separator]
 original=Property separator
@@ -9252,7 +9252,7 @@ translation=பண்பு பிரிப்பான்
 
 [plugins.bases.list.option-bullet]
 original=Bullet
-translation=புள்ளி (Bullet)
+translation=புள்ளி
 
 [plugins.bases.list.option-number]
 original=Number
@@ -9264,7 +9264,7 @@ translation=எதுவுமில்லை
 
 [plugins.bases.cards.name]
 original=Cards
-translation=அட்டைகள் (Cards)
+translation=அட்டைகள்
 
 [plugins.bases.cards.label-card-size]
 original=Card size
@@ -9276,27 +9276,27 @@ translation=படப் பண்பு
 
 [plugins.bases.cards.label-image-fit]
 original=Image fit
-translation=படப் பொருத்தம் (படம் Fit)
+translation=படப் பொருத்தம்
 
 [plugins.bases.cards.option-image-fit-cover]
 original=Cover
-translation=Cover (மூடு)
+translation=மூடு
 
 [plugins.bases.cards.option-image-fit-contain]
 original=Contain
-translation=Contain (அடக்கு)
+translation=அடக்கு
 
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
-translation=பட விகிதம் (Aspect Ratio)
+translation=பட விகிதம்
 
 [plugins.bases.table.name]
 original=Table
-translation=அட்டவணை (அட்டவணை)
+translation=அட்டவணை
 
 [plugins.bases.table.action-hide-column]
 original=Hide column
-translation=நிரலை மறை (Hide Column)
+translation=நிரலை மறை
 
 [plugins.bases.table.action-edit-property]
 original=Edit property...
@@ -9495,12 +9495,12 @@ original=Single page
 translation=ஒற்றைப் பக்கம்
 
 [pdf.label-spread-odd]
-original=Two-page (odd)
-translation=இரட்டைப் பக்கம் (ஒற்றைப்படை)
+original=Two-page
+translation=இரட்டைப் பக்கம்
 
 [pdf.label-spread-even]
-original=Two-page (even)
-translation=இரட்டைப் பக்கம் (இரட்டைப்படை)
+original=Two-page
+translation=இரட்டைப் பக்கம்
 
 [pdf.tooltip-sidebar-options]
 original=Sidebar options
@@ -9743,11 +9743,11 @@ original=Clear cells
 translation=கலங்களை அழி
 
 [table.action-sort-a-z]
-original=Sort by column (A to Z)
+original=Sort by column
 translation=நிரலை A → Z வரிசைப்படுத்து
 
 [table.action-sort-z-a]
-original=Sort by column (Z to A)
+original=Sort by column
 translation=நிரலை Z → A வரிசைப்படுத்து
 
 [table.label-command]
@@ -9780,11 +9780,11 @@ translation=கேள்வி
 
 [callout.type.warning]
 original=Warning
-translation=எச்சரிக்கை (Warning)
+translation=எச்சரிக்கை
 
 [callout.type.quote]
 original=Quote
-translation=மேற்கோள் (மேற்கோள்)
+translation=மேற்கோள்
 
 [callout.type.example]
 original=Example
