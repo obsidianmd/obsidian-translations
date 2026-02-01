@@ -372,7 +372,7 @@ translation=Zawsze aktualizuj łącza wewnętrzne
 
 [setting.file.option-always-update-links-description]
 original=Turn off to be prompted to update links after renaming a file.
-translation=Czy automatycznie aktualizować łącza po zmianie nazwy pliku, czy pytać o potwierdzenie?
+translation=Wyłącz, aby po zmianie nazwy pliku pojawiło się pytanie o aktualizację łączy.
 
 [setting.file.option-new-note-location]
 original=Default location for new notes
@@ -436,11 +436,11 @@ translation=Najkrótsza możliwa ścieżka
 
 [setting.file.option-choice-relative-path]
 original=Path from current file
-translation=Względna ścieżka (relatywna)
+translation=Ścieżka z aktywnego pliku
 
 [setting.file.option-choice-absolute-path]
 original=Path from vault folder
-translation=Bezwzględna ścieżka (absolutna)
+translation=Ścieżka z folderu sejfu
 
 [setting.file.option-new-attachment-location]
 original=Default location for new attachments
@@ -464,7 +464,7 @@ translation=Ścieżka folderu załączników
 
 [setting.file.option-attachment-folder-path-description]
 original=Place newly created attachment files, such as images created via drag-and-drop or audio recordings, in this folder.
-translation=Tutaj pojawią się nowo dodane załączniki. Dotyczy przeciągniętych lub wklejonych obrazów oraz nagrań audio.
+translation=Tutaj pojawią się nowo dodane załączniki, takie jak przeciągnięte lub wklejone obrazy oraz nagrania audio.
 
 [setting.file.option-attachment-subfolder-path]
 original=Subfolder name
@@ -480,7 +480,7 @@ translation=Pominięte pliki
 
 [setting.file.option-excluded-files-desc]
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
-translation=Pominięte pliki będą ukryte w wyszukiwarce, podglądzie graficznym i niepowiązanych wzmiankach oraz mniej widoczne w oknie szybkiego wyboru i podpowiedziach łączy.
+translation=Pominięte pliki będą ukryte w wyszukiwarce, podglądzie grafu i niepowiązanych wzmiankach oraz mniej widoczne w oknie szybkiego wyboru i podpowiedziach łączy.
 
 [setting.file.label-no-excluded-filters-applied]
 original=No excluded filter is applied right now. Add one below.
@@ -612,7 +612,7 @@ translation=Nie znaleziono tej czcionki w systemie.
 
 [setting.appearance.msg-font-found]
 original=This font is detected on your system.
-translation=Znaleziono tą czcionkę w systemie.
+translation=Znaleziono tę czcionkę w systemie.
 
 [setting.appearance.label-font-name]
 original=Font name
@@ -620,7 +620,7 @@ translation=Nazwa czcionki
 
 [setting.appearance.option-community-themes]
 original=Community themes
-translation=Motywy stworzone przez społeczność
+translation=Motywy społeczności
 
 [setting.appearance.option-community-themes-description]
 original=Preview and use amazing themes created by the community.
@@ -916,7 +916,7 @@ translation=Ten skrót klawiszowy koliduje z "{{command}}"
 
 [setting.hotkeys.tooltip-hotkey-multiple-conflicts]
 original=This hotkey conflicts with {{count}} other commands
-translation=Ten skrót klawiszowy koliduje z {{count}} innymi skrótami klawiszowymi
+translation=Ten skrót klawiszowy koliduje z innymi skrótami klawiszowymi: {{count}}
 
 [setting.hotkeys.label-blank-hotkey]
 original=Blank
@@ -1044,7 +1044,7 @@ translation=(Wersja instalatora: {{version}})
 
 [setting.about.label-up-to-date]
 original=Obsidian is up to date!
-translation=Twoja aplikacja jest aktualna!
+translation=Obsidian jest aktualny!
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1052,7 +1052,7 @@ translation=Przeczytaj historię zmian.
 
 [setting.about.label-manual-update-required]
 original=To support the latest features and to receive the latest security patches, Obsidian needs a major installer update. You need to manually download and reinstall Obsidian.
-translation=Aby obsługiwać najnowsze funkcje i otrzymywać najnowsze poprawki bezpieczeństwa, Obsidian wymaga istotnej aktualizacji instalatora. Musisz ręcznie pobrać i ponownie zainstalować Obsidian.
+translation=Obsidian wymaga istotnej aktualizacji instalatora, aby obsługiwać najnowsze funkcje i otrzymywać najnowsze poprawki bezpieczeństwa. Musisz ręcznie pobrać i ponownie zainstalować Obsidian.
 
 [setting.about.label-new-version-ready]
 original=A new version is ready to be installed. 
@@ -1328,11 +1328,11 @@ translation=Tryb ograniczony
 
 [setting.third-party-plugin.option-restricted-mode-description]
 original=Restricted mode is off. Turn on to disable community plugins.
-translation=Tryb ograniczony jest wyłączony. Włącz, aby dezaktywować wtyczki stworzone przez społeczność.
+translation=Tryb ograniczony jest wyłączony. Włącz, aby dezaktywować wtyczki społeczności.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
-translation=Włącz
+translation=Włącz i odśwież
 
 [setting.third-party-plugin.option-automatic-update-check]
 original=Automatically check for plugin updates
@@ -1340,7 +1340,7 @@ translation=Automatycznie sprawdzaj aktualizacje wtyczek
 
 [setting.third-party-plugin.option-automatic-update-check-desc]
 original=Periodically check for plugin updates.
-translation=Okresowo sprawdzaj aktualizacje wtyczek.
+translation=Co jakiś czas sprawdza, czy są dostępne aktualizacje wtyczek.
 
 [setting.third-party-plugin.option-browse-community-plugins]
 original=Community plugins
@@ -1844,7 +1844,7 @@ translation=Zamień wszystkie
 
 [editor.link-suggestion.label-type-hash]
 original=Type #
-translation=Użyj #
+translation=Wpisz #
 
 [editor.link-suggestion.label-link-heading]
 original=to link heading
@@ -1852,7 +1852,7 @@ translation=aby utworzyć łącze do nagłówka
 
 [editor.link-suggestion.label-type-block]
 original=Type ^
-translation=Użyj ^
+translation=Wpisz ^
 
 [editor.link-suggestion.label-link-block]
 original=to link blocks
@@ -1860,7 +1860,7 @@ translation=aby utworzyć łącze do bloku
 
 [editor.link-suggestion.label-type-pipe]
 original=Type |
-translation=Użyj |
+translation=Wpisz |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -1868,7 +1868,7 @@ translation=aby zmienić wyświetlany tekst
 
 [editor.link-suggestion.label-no-alias]
 original=Display text
-translation=Wyświetl tekst
+translation=Wyświetlany tekst
 
 [editor.link-suggestion.label-no-heading]
 original=Heading
@@ -2104,7 +2104,7 @@ translation=Wystąpił błąd podczas renderowania bloku kodu.
 
 [interface.msg-open-file-through-uri]
 original=Opened file “{{path}}”
-translation=Otwarty plik {{path}}”
+translation=Otwarto plik {{path}}”
 
 [interface.msg-file-not-found-through-uri]
 original=File “{{name}}” not found.
@@ -2128,7 +2128,7 @@ translation=Niektóre funkcje mogą być niedostępne do czasu zakończenia tego
 
 [interface.msg-indexing-complete]
 original=Indexing complete.
-translation=Indeksowanie zakończone
+translation=Zakończono indeksowanie.
 
 [interface.msg-sandbox-vault]
 original=This is a sandbox vault.\nChanges you make in this vault will be lost.
@@ -2204,7 +2204,7 @@ translation=Łącze zewnętrzne
 
 [interface.formatting.insert-callout]
 original=Callout
-translation=Cytat blokowy
+translation=Objaśnienie
 
 [interface.formatting.insert-horizontal-rule]
 original=Horizontal rule
@@ -2292,7 +2292,7 @@ translation=Żaden plik nie jest otwarty
 
 [interface.empty-state.create-new-file]
 original=Create new note
-translation=Utwórz nowy plik
+translation=Stwórz nowy plik
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -2464,7 +2464,7 @@ translation=Usuń plik
 
 [interface.menu.create-file]
 original=Create this file
-translation=Utwórz ten plik
+translation=Stwórz ten plik
 
 [interface.menu.open-link]
 original=Open link
@@ -2804,7 +2804,7 @@ translation=Obsidian przechowuje notatki na twoim urządzeniu, dzięki czemu mo�
 
 [interface.start-screen.mobile.option-create]
 original=Create a vault
-translation=Utwórz sejf
+translation=Stwórz sejf
 
 [interface.start-screen.mobile.option-use-existing]
 original=Use my existing vault
@@ -2836,7 +2836,7 @@ translation=Wybierz nazwę dla swojego sejfu.
 
 [interface.start-screen.mobile.button-create]
 original=Create vault
-translation=Utwórz sejf
+translation=Stwórz sejf
 
 [interface.start-screen.mobile.label-sync-setup]
 original=Sync setup
@@ -2892,7 +2892,7 @@ translation=Zaloguj się
 
 [interface.start-screen.mobile.button-resend-email]
 original=Re-send email
-translation=Ponownie wyślij wiadomość e-mail
+translation=Ponownie wyślij wiadomość email
 
 [interface.start-screen.mobile.label-remote-vault-options]
 original=You have existing Sync vaults
@@ -3000,7 +3000,7 @@ translation=Reset hasła
 
 [interface.start-screen.mobile.msg-password-reset]
 original=We have sent an email to {{email}} to reset your password.
-translation=Wysłaliśmy wiadomość e-mail na adres {{email}} w celu zresetowania hasła.
+translation=Wysłaliśmy wiadomość email na adres {{email}} w celu zresetowania hasła.
 
 [interface.start-screen.mobile.label-sync-method-selection]
 original=Choose how to sync your notes
@@ -3096,15 +3096,15 @@ translation=Inne metody synchronizacji
 
 [interface.start-screen.mobile.label-sync-other-desc]
 original=Obsidian officially supports two syncing methods: **Obsidian Sync** and **iCloud**.\nHowever, because Obsidian gives you control over your data there are other sync options you can use.\nThese options include third-party plugins and other tools which may require more advanced set up.\nTo use an alternate syncing method, **create a vault** and follow the instructions provided by the plugin or third-party sync provider.
-translation=Obsidian oficjalnie obsługuje dwie metody synchronizacji: **Obsidian Sync** i **iCloud**.\nJednak ze względu na to, że Obsidian daje ci kontrolę nad twoimi danymi, istnieją inne opcje synchronizacji, z których możesz skorzystać.\nOpcje te to między innymi wtyczki zewnętrzne i inne narzędzia, które mogą wymagać bardziej zaawansowanej konfiguracji.\nAby skorzystać z alternatywnej metody synchronizacji, **utwórz sejf** i postępuj zgodnie z instrukcjami dostarczonymi przez wtyczkę lub zewnętrznego dostawcę.
+translation=Obsidian oficjalnie obsługuje dwie metody synchronizacji: **Obsidian Sync** i **iCloud**.\nJednak ze względu na to, że Obsidian daje ci kontrolę nad twoimi danymi, istnieją też inne opcje synchronizacji, z których możesz skorzystać.\nOpcje te to między innymi wtyczki zewnętrzne i inne narzędzia, które mogą wymagać bardziej zaawansowanej konfiguracji.\nAby skorzystać z alternatywnej metody synchronizacji, **stwórz sejf** i postępuj zgodnie z instrukcjami dostarczonymi przez wtyczkę lub zewnętrznego dostawcę.
 
 [interface.start-screen.mobile.label-email-entry]
 original=Enter your email
-translation=Wprowadź swój adres e-mail
+translation=Wprowadź swój adres email
 
 [interface.start-screen.mobile.label-email-entry-desc]
 original=Your email is required to create an Obsidian account.
-translation=Twój adres e-mail jest wymagany do utworzenia konta Obsidian.
+translation=Twój adres email jest wymagany do utworzenia konta Obsidian.
 
 [interface.start-screen.mobile.label-signup]
 original=Enter your name and password
@@ -3116,7 +3116,7 @@ translation=Połącz z Obsidian Sync
 
 [interface.start-screen.mobile.email-verification-desc]
 original=You should receive an email shortly to **{{email}}** with instructions to connect to Obsidian Sync.
-translation=Wkrótce otrzymasz wiadomość e-mail na adres **{{email}}** z instrukcjami dotyczącymi połączenia z Obsidian Sync.
+translation=Wkrótce otrzymasz wiadomość email na adres **{{email}}** z instrukcjami dotyczącymi połączenia z Obsidian Sync.
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
@@ -3152,11 +3152,11 @@ translation=Nazwa sejfu jest wymagana
 
 [interface.start-screen.mobile.msg-new-email-success]
 original=New confirmation email sent.
-translation=Wysłano nową wiadomość e-mail z potwierdzeniem.
+translation=Wysłano nową wiadomość email z potwierdzeniem.
 
 [interface.start-screen.mobile.msg-new-email-failure]
 original=Failed to resend email.
-translation=Nie udało się ponownie wysłać wiadomości e-mail.
+translation=Nie udało się ponownie wysłać wiadomości email.
 
 [interface.start-screen.mobile.msg-invalid-vault]
 original=Vault location must be a folder.
@@ -3168,7 +3168,7 @@ translation=Witaj
 
 [interface.starter-content.welcome-file-content]
 original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=To jest twój nowy *sejf*.\n\nZapisz coś, [[utwórz łącze]] lub wypróbuj [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nKiedy będziesz gotowy, usuń tę notatkę i dostosuj sejf do własnych potrzeb.
+translation=To jest twój nowy *sejf*.\n\nZapisz coś, [[stwórz łącze]] lub wypróbuj [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nKiedy będziesz gotowy, usuń tę notatkę i dostosuj sejf do własnych potrzeb.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3636,7 +3636,7 @@ translation=Lista punktowana lub lista zadań
 
 [commands.insert-callout]
 original=Insert callout
-translation=Cytat blokowy
+translation=Objaśnienie
 
 [commands.insert-code-block]
 original=Insert code block
@@ -4024,7 +4024,7 @@ translation=Zamień
 
 [menu-items.insert-callout]
 original=Callout
-translation=Cytat blokowy
+translation=Objaśnienie
 
 [menu-items.insert-markdown-link]
 original=Markdown Link
@@ -4256,7 +4256,7 @@ translation=Pokaż aktywny plik w przeglądarce plików
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
-translation=Utwórz kopię aktywnego pliku
+translation=Stwórz kopię aktywnego pliku
 
 [plugins.file-explorer.command-make-a-copy-mac]
 original=Duplicate current file
@@ -4328,11 +4328,11 @@ translation=wg daty edycji (od najstarszych)
 
 [plugins.file-explorer.label-sort-created-old-to-new]
 original=Created time (old to new)
-translation=wg daty utworzenia (od najnowszych)
+translation=wg daty utworzenia (od najstarszych)
 
 [plugins.file-explorer.label-sort-created-new-to-old]
 original=Created time (new to old)
-translation=wg daty utworzenia (od najstarszych)
+translation=wg daty utworzenia (od najnowszych)
 
 [plugins.file-explorer.menu-opt-new-note]
 original=New note
@@ -4544,7 +4544,7 @@ translation=Brak wyników.
 
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
-translation=... i {{count}} dodatkowe wystąpienie.
+translation=... i dodatkowe wystąpienia: {{count}}.
 
 [plugins.search.matches-with-count_plural]
 original=... and {{count}} more matches.
@@ -4584,7 +4584,7 @@ translation=Brak
 
 [plugins.search.option-choice-link-style-wikilink]
 original=Wikilink
-translation=Odnośnik wiki
+translation=Wikilink
 
 [plugins.search.option-choice-link-style-markdown-link]
 original=Markdown link
@@ -4936,7 +4936,7 @@ translation=Uruchom animację powstawania grafu
 
 [plugins.graph-view.button-animate-timelapse]
 original=Animate
-translation=Pokaż animację
+translation=Wyświetl animację
 
 [plugins.backlinks.name]
 original=Backlinks
@@ -5404,7 +5404,7 @@ translation=Własny CSS
 
 [plugins.custom-css.desc]
 original=Read and apply “obsidian.css” in the vault folder.
-translation=Odczytuj i stosuj „obsidian.css” w folderze skarbca.
+translation=Odczytuj i stosuj „obsidian.css” w folderze sejfu.
 
 [plugins.custom-css.setting-community-themes]
 original=Community themes
@@ -5624,7 +5624,7 @@ translation=Przenieś metadane, takie jak tagi, aliasy i cssclasses do formatu w
 
 [plugins.markdown-format-importer.msg-all-files-warning]
 original=Warning: the converter will convert all the files in your vault, not just the current file.
-translation=Uwaga: konwerter zamieni wszystkie pliki w sejfie, a nie tylko aktywny plik.
+translation=Uwaga: konwerter zastąpi wszystkie pliki w sejfie, a nie tylko aktywny plik.
 
 [plugins.markdown-format-importer.msg-override-files-warning]
 original=Your files will be overwritten. Back up all your files before attempting conversion.
@@ -5748,7 +5748,7 @@ translation=Nieprawidłowy format daty
 
 [plugins.daily-notes.msg-missing-folder]
 original=Daily note folder not found.
-translation=Nie znaleziono folderu codziennej notatki.
+translation=Nie znaleziono folderu dziennika.
 
 [plugins.daily-notes.label-refer-to-syntax]
 original=For more syntax, refer to 
@@ -5768,7 +5768,7 @@ translation=Lokalizacja nowych plików
 
 [plugins.daily-notes.option-new-file-location-description]
 original=New daily notes will be placed here.
-translation=Ścieżka do folderu, w którym tworzone będą nowe dzienniki.
+translation=Ścieżka do folderu, w którym tworzone będą nowe notatki dziennika.
 
 [plugins.daily-notes.option-template]
 original=Template file location
@@ -5856,7 +5856,7 @@ translation=Konspekt
 
 [plugins.outline.desc]
 original=Show the table of contents for the current note.
-translation=Pokaż spis treści bieżącej notatki.
+translation=Pokaż spis treści aktywnej notatki.
 
 [plugins.outline.action-open]
 original=Open outline
@@ -6088,7 +6088,7 @@ translation=Publikowanie
 
 [plugins.publish.desc]
 original=Host your notes online as a website, wiki or documentation.
-translation=Opublikuj swoje notatki w Internecie jako stronę internetową, wiki lub dokumentację.
+translation=Opublikuj swoje notatki jako stronę internetową, wiki lub dokumentację.
 
 [plugins.publish.action-publish-changes]
 original=Publish changes...
@@ -6100,15 +6100,15 @@ translation=Opublikuj aktywny plik
 
 [plugins.publish.label-no-internet-access]
 original=You need access to the internet to publish changes.
-translation=Do publikowania zmian potrzebny jest dostęp do Internetu.
+translation=Do publikowania zmian potrzebny jest dostęp do internetu.
 
 [plugins.publish.label-publish-service-description]
 original=Obsidian Publish is an add-on paid service that lets you publish your notes online directly from Obsidian.
-translation=Obsidian Publish to płatny dodatek, który umożliwia publikowanie notatek w Internecie bezpośrednio z aplikacji Obsidian.
+translation=Obsidian Publish to płatny dodatek, który umożliwia publikowanie notatek w internecie bezpośrednio z Obsidian.
 
 [plugins.publish.label-please-login]
 original=To start publishing, please log in or create a new Obsidian account.
-translation=Aby rozpocząć publikowanie, zaloguj się lub utwórz nowe konto Obsidian.
+translation=Aby rozpocząć publikowanie, zaloguj się lub stwórz nowe konto Obsidian.
 
 [plugins.publish.label-no-publish-subscription]
 original=You do not have an Obsidian Publish subscription yet.
@@ -6316,7 +6316,7 @@ translation=Pokaż menu
 
 [plugins.publish.option-show-navigation-description]
 original=Display a list of all published pages on the left side of your published site.
-translation=Wyświetlaj listę wszystkich opublikowanych stron po lewej stronie.
+translation=Wyświetl listę wszystkich opublikowanych stron po lewej stronie.
 
 [plugins.publish.option-show-search]
 original=Show search bar
@@ -6324,7 +6324,7 @@ translation=Pokaż pasek wyszukiwania
 
 [plugins.publish.option-show-search-description]
 original=Display a search bar that lets the visitors search pages, aliases, and headings on your site.
-translation=Wyświetlaj pasek wyszukiwania w górnej części nawigacji, który umożliwia odwiedzającym przeszukiwanie stron i nagłówków.
+translation=Wyświetl pasek wyszukiwania w górnej części nawigacji, który umożliwia odwiedzającym przeszukiwanie stron i nagłówków.
 
 [plugins.publish.option-show-graph]
 original=Show graph view
@@ -6332,7 +6332,7 @@ translation=Pokaż graf
 
 [plugins.publish.option-show-graph-description]
 original=Display a small local graph on each page.
-translation=Wyświetlaj mały lokalny graf na każdej stronie.
+translation=Wyświetl mały lokalny graf na każdej stronie.
 
 [plugins.publish.option-show-outline]
 original=Show table of contents
@@ -6340,7 +6340,7 @@ translation=Pokaż spis treści
 
 [plugins.publish.option-show-outline-description]
 original=Display the outline of headings on each page.
-translation=Wyświetlaj spis treści zawierający wszystkie nagłówki na każdej stronie.
+translation=Wyświetl spis treści zawierający wszystkie nagłówki na każdej stronie.
 
 [plugins.publish.option-show-backlinks]
 original=Show backlinks
@@ -6348,15 +6348,15 @@ translation=Pokaż linki zwrotne
 
 [plugins.publish.option-show-backlinks-description]
 original=Show backlink section at the end of each page.
-translation=Pokaż sekcję linków zwrotnych na końcu każdej strony.
+translation=Wyświetl sekcję linków zwrotnych na końcu każdej strony.
 
 [plugins.publish.option-sliding-window-mode]
 original=Stack pages
-translation=Aktywuj panele
+translation=Grupuj strony
 
 [plugins.publish.option-sliding-window-mode-description]
 original=Links will open next to the current page in the same window. Scroll horizontally to see stacked pages.
-translation=Otwiera strony w nowych panelach po prawej stronie. Umożliwia przewijanie paneli w poziomie.
+translation=Linki otworzą się obok aktywnej strony w tym samym oknie. Przewiń w poziomie, aby wyświetlić pogrupowane strony.
 
 [plugins.publish.option-hover-preview-file]
 original=Show hover preview
@@ -6364,7 +6364,7 @@ translation=Pokaż podgląd po najechaniu kursorem
 
 [plugins.publish.option-hover-preview-file-description]
 original=Display page preview when hovering links.
-translation=Wyświetlaj podgląd strony po najechaniu kursorem na łącza.
+translation=Wyświetl podgląd strony po najechaniu kursorem na łącza.
 
 [plugins.publish.option-hide-title]
 original=Hide page title
@@ -6452,7 +6452,7 @@ translation=Zmiany
 
 [plugins.publish.label-unchanged-files-already-published]
 original=Unchanged (select to unpublish)
-translation=Bez zmian (wybierz, aby usunąć)
+translation=Bez zmian (zaznacz do usunięcia)
 
 [plugins.publish.label-file-selected]
 original= selected
@@ -6520,7 +6520,7 @@ translation=Usunięto
 
 [plugins.publish.label-status-failed]
 original=Failed
-translation=Publikowanie nie powiodło się
+translation=Nie powiodło się
 
 [plugins.publish.label-status-cancelled]
 original=Cancelled
@@ -6540,7 +6540,7 @@ translation=Możesz odwiedzić swoją stronę tutaj:
 
 [plugins.publish.msg-something-went-wrong]
 original=Something went wrong.
-translation=Coś poszło nie tak. Sprawdź szczegóły w konsoli deweloperskiej.
+translation=Coś poszło nie tak.
 
 [plugins.publish.msg-network-error]
 original=A network error occurred.
@@ -6596,7 +6596,7 @@ translation=Hasło bez nazwy
 
 [plugins.publish.label-password-created-time]
 original=Created {{time}}
-translation=Utworzono {{time}}
+translation=Stworzono {{time}}
 
 [plugins.publish.msg-added-new-password]
 original=Added new password.
@@ -6964,11 +6964,11 @@ translation=Przeniesiono z “{{from}}” do “{{to}}”
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 zmiana
+translation=zmiany: {{count}}
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
-translation=zmiany: {{revisions}}
+translation=zmiany: {{count}}
 
 [plugins.sync.label-via-device]
 original=via {{device}}
@@ -7104,7 +7104,7 @@ translation=Zdalne sejfy
 
 [plugins.sync.label-vault-created-time]
 original=Created {{time}}
-translation=Utworzono {{time}}
+translation=Stworzono {{time}}
 
 [plugins.sync.tooltip-delete-remote-vault]
 original=Delete
@@ -7132,7 +7132,7 @@ translation=Potwierdź usunięcie sejfu
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=Czy na pewno chcesz usunąć ten zdalny sejf?
+translation=Czy na pewno chcesz usunąć zdalny sejf o nazwie "{{name}}"?
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7260,7 +7260,7 @@ translation=Obsidian Sync jest teraz wstrzymany.
 
 [plugins.sync.option-sync-status-desc-running]
 original=Obsidian Sync is currently running.
-translation=Obsidian Sync jest teraz uruchomiony.
+translation=Obsidian Sync jest teraz aktywny.
 
 [plugins.sync.option-device-name]
 original=Device name
@@ -7448,7 +7448,7 @@ translation=Synchronizacja ustawień sejfu
 
 [plugins.sync.option-view-config-files]
 original=Settings version history
-translation=Historia wersji ustawień
+translation=Historia wersji plików konfiguracyjnych
 
 [plugins.sync.option-view-config-files-desc]
 original=View and restore version history of setting files.
@@ -7504,19 +7504,19 @@ translation=Synchronizuj ustawienia wbudowanych wtyczek.
 
 [plugins.sync.option-sync-community-plugin]
 original=Active community plugin list
-translation=Lista aktywnych wtyczek stworzonych przez społeczność
+translation=Lista aktywnych wtyczek społeczności
 
 [plugins.sync.option-sync-community-plugin-desc]
 original=Sync which community plugins are enabled.
-translation=Synchronizuj, które wtyczki stworzone przez społeczność są włączone.
+translation=Synchronizuj, które wtyczki społeczności są włączone.
 
 [plugins.sync.option-sync-community-plugin-data]
 original=Installed community plugins
-translation=Zainstalowane wtyczki stworzone przez społeczność.
+translation=Zainstalowane wtyczki społeczności.
 
 [plugins.sync.option-sync-community-plugin-data-desc]
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
-translation=Synchronizuj zainstalowane wtyczki stworzone przez społeczność (pliki .js, .css, i manifest.json) i ich ustawienia.
+translation=Synchronizuj zainstalowane wtyczki społeczności (pliki .js, .css, i manifest.json) i ich ustawienia.
 
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
@@ -7768,7 +7768,7 @@ translation=Scal automatycznie
 
 [plugins.sync.option-conflict-file]
 original=Create conflict file
-translation=Utwórz plik konfliktu
+translation=Stwórz plik konfliktu
 
 [plugins.file-recovery.name]
 original=File recovery
@@ -8436,7 +8436,7 @@ translation=Domyślna lokacja nowych tablic
 
 [plugins.canvas.option-new-canvas-location-description]
 original=Where newly created canvas files are placed.
-translation=Gdzie umieszczane są nowo utworzone tablice.
+translation=Gdzie umieszczane są nowo stworzone tablice.
 
 [plugins.canvas.option-new-canvas-folder-path]
 original=Folder to create new canvas files in
@@ -8648,7 +8648,7 @@ translation=Przesuń w poziomie
 
 [plugins.canvas.label-zoom]
 original=Zoom
-translation=Powiększenie
+translation=Przybliżenie
 
 [plugins.canvas.label-select-all]
 original=Select all
@@ -8756,7 +8756,7 @@ translation=Bazy danych
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Twórz bazy danych, korzystając z atrybutów notatek.
+translation=Twórz niestandardowe podglądy, które umożliwiają edycję, sortowanie i filtrowanie plików na podstawie ich atrybutów.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -9000,7 +9000,7 @@ translation=plik
 
 [plugins.bases.label-file-prop-name]
 original=file name
-translation=nazwa
+translation=nazwa pliku
 
 [plugins.bases.label-file-prop-base-name]
 original=file base name
@@ -9012,7 +9012,7 @@ translation=pełna nazwa pliku
 
 [plugins.bases.label-file-prop-path]
 original=file path
-translation=ścieżka
+translation=ścieżka pliku
 
 [plugins.bases.label-file-prop-folder]
 original=folder
@@ -9020,11 +9020,11 @@ translation=folder
 
 [plugins.bases.label-file-prop-ext]
 original=file extension
-translation=rozszerzenie
+translation=rozszerzenie pliku
 
 [plugins.bases.label-file-prop-ctime]
 original=created time
-translation=czas utworzenia
+translation=czas stworzenia
 
 [plugins.bases.label-file-prop-mtime]
 original=modified time
@@ -9244,7 +9244,7 @@ translation=Znaczniki
 
 [plugins.bases.list.label-indent-properties]
 original=Indent properties
-translation=Wcięcie właściwości
+translation=Wcięcia atrybutów
 
 [plugins.bases.list.label-property-separator]
 original=Property separator
@@ -9756,7 +9756,7 @@ translation=Tabela: {{command}}
 
 [callout.option-type]
 original=Callout type
-translation=Rodzaj cytatu blokowego
+translation=Rodzaj objaśnienia
 
 [callout.type.info]
 original=Info
@@ -9800,7 +9800,7 @@ translation=Inne...
 
 [callout.option-other-placeholder]
 original=Callout type...
-translation=Rodzaj cytatu blokowego...
+translation=Rodzaj objaśnienia...
 
 [nouns.count]
 original={{count}}
