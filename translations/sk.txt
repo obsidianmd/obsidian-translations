@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Slovník kontroly pravopisu je prázdny.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Zobraziť riadkový nadpis
+original=Inline title
+translation=Riadkový nadpis
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Zobrazí názov súboru ako upraviteľný nadpis zarovno s obsahom súboru.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Režim živého náhľadu
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Zobraziť čísla riadkov
+original=Line numbers
+translation=Čísla riadkov
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Zobrazí čísla riadkov za ľavým okrajom.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Zobraziť vodiace čiary odsadenia
+original=Indentation guides
+translation=Vodiace čiary odsadenia
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Súbory a odkazy
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Potvrdiť odstránenie súboru
+original=Confirm before deleting files
+translation=Potvrdiť pred odstránením súborov
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Chcete zobrazovať upozornenie pred odstránením súboru?
+original=Avoid accidentally deleting files.
+translation=Zabráni náhodnému odstráneniu súborov.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Presunúť do koša aplikácie Obsidian (.trash priečinok)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Permanentné odstránenie
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Odstrániť prílohy pri odstraňovaní súborov
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Automaticky odstráni prílohy prepojené s odstráneným súborom, ak sa nepoužívajú inde.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Vždy
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Pýtať sa zakaždým
+
+[setting.file.option-choice-never]
+original=Never
+translation=Nikdy
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Zobraziť nadpis karty
 original=Display the header at the top of every tab.
 translation=Zobrazovať nadpis na vrchu každej karty.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Plávajúca navigácia
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Navigačné tlačidlá plávajú nad obsahom namiesto toho, aby boli ukotvené.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Výsuvné bočné panely
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Bočné panely sa vysúvajú k okraju obsahu namiesto toho, aby plávali nad ním.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Celá obrazovka
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Počas čítania automaticky skrýva prvky rozhrania.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Nájdená {{count}} téma na aktualizáciu.
@@ -966,6 +1010,10 @@ translation=Iba malé písmená, čísla a pomlčky.
 original=Enter your secret.
 translation=Zadajte svoje tajomstvo.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Nikdy nepoužité
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Nepodarilo sa aktualizovať tajomstvo.
@@ -1006,6 +1054,30 @@ translation=Pridať tajomstvo...
 original=Link...
 translation=Prepojiť...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Tajomstvá sa ukladajú bez šifrovania, pretože v tomto systéme nie je k dispozícii úložisko tajomstiev.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Tajomstvá nie sú šifrované
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Už nezobrazovať
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Šifrovanie nie je dostupné
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Šifrovanie poskytuje úložisko tajomstiev vášho operačného systému. Bez úložiska tajomstiev sa vaše tajomstvá budú ukladať bez šifrovania.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=V systéme Linux medzi podporované úložiská tajomstiev patria:
+
 [setting.about.name]
 original=General
 translation=Všeobecné
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Verzia {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Verzia inštalátoru: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Vaša aplikácia je aktuálna!
+original=Installer version: {{version}}
+translation=Verzia inštalátoru: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnostikujte problémy s aplikáciou tak, že zistíte čo spôsob
 [setting.about.button-check-startup]
 original=Check now
 translation=Skontrolovať
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Rozhranie príkazového riadku
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Povolí interakcie s Obsidian z príkazového riadku.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Nastaviť CLI na použitie v termináli
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Zaregistruje „obsidian“ do PATH, aby bolo možné pristupovať k príkazu „obsidian“ odkiaľkoľvek z terminálu.
+
+[setting.about.button-register]
+original=Register
+translation=Zaregistrovať
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Žiadny súbor
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" bol upravený externe, automatické zlúčenie zmien.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Otvoriť iný trezor
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Prepnúť naskladané karty
 original=Toggle readable line length
 translation=Prepnúť čitateľnú dĺžku riadkov
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Prepnúť čísla riadkov
+
 [commands.navigate-back]
 original=Navigate back
 translation=Navigovať späť
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Prepnúť svetlý/tmavý režim
 
 [commands.change-theme]
-original=Change theme
-translation=Zmeniť tému
+original=Change theme...
+translation=Zmeniť tému...
+
+[commands.change-vault]
+original=Change vault...
+translation=Zmeniť trezor...
+
+[commands.open-vault]
+original=Open vault...
+translation=Otvoriť trezor...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Spravovať trezory
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Odstrániť priečinok
 original=Delete
 translation=Odstrániť
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Odstrániť a už sa nepýtať
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Už sa nepýtať
@@ -3982,6 +4078,26 @@ translation=Premenovať nadpis
 original=Rename block ID
 translation=Zmeniť ID bloku
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Odstrániť prílohy súboru?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Táto príloha sa už nepoužíva v žiadnych poznámkach. Chcete ju odstrániť?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Týchto {{count}} príloh sa už nepoužíva v žiadnych poznámkach. Chcete ich odstrániť?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Strom súborov
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galéria
+
 [menu-items.new-file]
 original=New Note
 translation=Vytvoriť poznámku
@@ -4069,6 +4185,14 @@ translation=Tabuľka
 [menu-items.insert-footnote]
 original=Footnote
 translation=Poznámka pod čiarou
+
+[menu-items.inline-title]
+original=Inline title
+translation=Vložený názov
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Čísla riadkov
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Unikátny
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Vytvoriť novú unikátnu poznámku
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Nová jedinečná poznámka
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Zoradiť
 original=Filter
 translation=Filter
 
+[plugins.bases.label-search]
+original=Search
+translation=Hľadať
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Vlastnosti
@@ -8953,6 +9085,10 @@ translation=Vlastnosti
 [plugins.bases.label-new-item]
 original=New
 translation=Nový
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Zobrazené: {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Zhrnúť...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Zoskupiť podľa tejto vlastnosti
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Vymazať hodnoty
 
 [plugins.bases.table.label-summary]
 original=Summary

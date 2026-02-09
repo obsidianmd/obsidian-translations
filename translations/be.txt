@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Слоўнік пусты.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Паказаць назву ў пачатку
+original=Inline title
+translation=Убудаваная назва
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Адлюстроўвае імя файла ў выглядзе загалоўка, які можна рэдагаваць, у адным радку са змесцівам файла.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Дынамічны прагляд
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Адлюстроўваць нумары радкоў
+original=Line numbers
+translation=Нумары радкоў
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Дадае нумарацыю радкоў на палях.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Адлюстроўваць лініі водступу
+original=Indentation guides
+translation=Лініі водступу
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Файлы і спасылкі
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Пацвердзіце выдаленне файла
+original=Confirm before deleting files
+translation=Пацвярджаць перад выдаленнем файлаў
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Адлюстроўвае акно з пацвярджэннем выдалення файла.
+original=Avoid accidentally deleting files.
+translation=Дапамагае пазбегнуць выпадковага выдалення файлаў.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Перамяшчаць у сметніцу Obsidian (папка .tra
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Выдаліць беззваротна
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Выдаляць укладанні пры выдаленні файлаў
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Аўтаматычна выдаляць укладанні, звязаныя з выдаленым файлам, калі яны больш нідзе не выкарыстоўваюцца.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Заўсёды
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Пытаць кожны раз
+
+[setting.file.option-choice-never]
+original=Never
+translation=Ніколі
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Паказваць загаловак укладкі
 original=Display the header at the top of every tab.
 translation=Паказваць загаловак у верхняй частцы кожнай укладкі.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Плаўная навігацыя
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Кнопкі навігацыі плаваюць над зместам замест таго, каб быць замацаванымі.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Высоўныя бакавыя панэлі
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Бакавыя панэлі з’язджаюць у бок зместу замест таго, каб плаваць над ім.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Поўны экран
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Аўтаматычна хаваць элементы інтэрфейсу падчас чытання.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Вы можаце абнавіць {{count}} тэму.
@@ -966,6 +1010,10 @@ translation=Толькі малыя літары, лічбы і злучкі.
 original=Enter your secret.
 translation=Увядзіце ваш сакрэт.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Ніколі не выкарыстоўвалася
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Не ўдалося абнавіць сакрэт.
@@ -1006,6 +1054,30 @@ translation=Дадаць сакрэт...
 original=Link...
 translation=Звязаць...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Сакрэты захоўваюцца без шыфравання, бо ў гэтай сістэме няма даступнага сховішча сакрэтаў.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Сакрэты не зашыфраваныя
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Больш не паказваць
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Шыфраванне недаступнае
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Шыфраванне забяспечваецца сховішчам сакрэтаў вашай аперацыйнай сістэмы. Без сховішча сакрэтаў вашы сакрэты будуць захоўвацца без шыфравання.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=У Linux падтрымліваюцца наступныя сховішчы сакрэтаў:
+
 [setting.about.name]
 original=General
 translation=Асноўныя
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Версія {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Версія інсталятара: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Устаноўлена актуальная версія!
+original=Installer version: {{version}}
+translation=Версія ўсталёўшчыка: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Дыягназаваць праблемы з вашай прагра
 [setting.about.button-check-startup]
 original=Check now
 translation=Праверыць зараз
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Інтэрфейс каманднага радка
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Дазволіць узаемадзеянне з Obsidian праз камандны радок.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Наладзіць CLI для працы ў тэрмінале
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Зарэгістраваць "obsidian" у PATH, каб мець доступ да каманды "obsidian" з любога месца ў тэрмінале.
+
+[setting.about.button-register]
+original=Register
+translation=Зарэгістраваць
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Няма файла
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" быў зменены звонку, аб'яднанне змяненняў адбываецца аўтаматычна.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Адкрыць іншае сховішча
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Згарнуць/разгарнуць укладкі
 original=Toggle readable line length
 translation=Пераключыць даўжыню радка для чытання
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Пераключыць нумары радкоў
+
 [commands.navigate-back]
 original=Navigate back
 translation=Перайсці назад
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Пераключыць светлы/цёмны рэжым
 
 [commands.change-theme]
-original=Change theme
-translation=Змяніць тэму
+original=Change theme...
+translation=Змяніць тэму...
+
+[commands.change-vault]
+original=Change vault...
+translation=Змяніць сховішча...
+
+[commands.open-vault]
+original=Open vault...
+translation=Адкрыць сховішча...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Кіраваць сховішчамі
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Выдаліць папку
 original=Delete
 translation=Выдаліць
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Выдаліць і больш не пытаць
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Не пытаць зноў
@@ -3982,6 +4078,26 @@ translation=Перайменаваць загаловак
 original=Rename block ID
 translation=Перайменаваць ID блока
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Выдаліць укладанні файла?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Гэта ўкладанне больш не выкарыстоўваецца ні ў адной нататцы. Хочаце выдаліць яго?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Гэтыя {{count}} укладанні больш не выкарыстоўваюцца ні ў адной нататцы. Хочаце выдаліць іх?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Дрэва файлаў
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Галерэя
+
 [menu-items.new-file]
 original=New Note
 translation=Стварыць нататку
@@ -4069,6 +4185,14 @@ translation=Табліца
 [menu-items.insert-footnote]
 original=Footnote
 translation=Зноска
+
+[menu-items.inline-title]
+original=Inline title
+translation=Убудаваны загаловак
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Нумары радкоў
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Унікальны
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Стварыць нататку з унікальным ідэнтыфікатарам
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Новая ўнікальная нататка
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Сартаванне
 original=Filter
 translation=Фільтр
 
+[plugins.bases.label-search]
+original=Search
+translation=Пошук
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Уласцівасці
@@ -8953,6 +9085,10 @@ translation=Уласцівасці
 [plugins.bases.label-new-item]
 original=New
 translation=Новы
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Паказваецца: {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Падсумаваць...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Групаваць па гэтай уласцівасці
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Ачысціць значэнні
 
 [plugins.bases.table.label-summary]
 original=Summary

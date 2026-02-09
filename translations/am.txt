@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=የፊደል ማረሚያ መዝገበ ቃላት ባዶ ነው።
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=የመስመር ላይ ርዕስ አሳይ
+original=Inline title
+translation=የመስመር ላይ ርዕስ
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=የፋይል ስሙን ከፋይል ይዘቶች ጋር በመስመር ውስጥ እንደ አርታኢ አርእስት ያሳያል።
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=የቀጥታ ቅድመ እይታ
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=የመስመር ቁጥር አሳይ
+original=Line numbers
+translation=የመስመር ቁጥሮች
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=በጋጣው ውስጥ የመስመር ቁጥር አሳይ.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=የመግቢያ መመሪያዎችን አሳይ
+original=Indentation guides
+translation=የመግቢያ መመሪያዎች
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=ፋይሎች እና አገናኞች
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=የፋይል ስረዛን ያረጋግጡ
+original=Confirm before deleting files
+translation=ፋይሎችን ከመሰረዝ በፊት አረጋግጥ
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=የፋይል መሰረዙን ለማረጋገጥ ጥያቄ ማግኘት ይፈልጉ እንደሆነ።
+original=Avoid accidentally deleting files.
+translation=ፋይሎችን በስህተት እንዳትሰርዝ ይከላከላል።
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=ወደ Obsidian መጣያ (. መጣያ አቃፊ) ውሰድ
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=ቋሚ መሰረዝ
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=ፋይሎችን ሲሰርዙ አባሪዎችን ሰርዝ
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=በሌላ ቦታ ጥቅም ላይ ካልዋሉ ከተሰረዘው ፋይል ጋር የተገናኙ አባሪዎችን በራስ-ሰር አስወግድ።
+
+[setting.file.option-choice-always]
+original=Always
+translation=ሁልጊዜ
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=ሁሉ ጊዜ ጠይቅ
+
+[setting.file.option-choice-never]
+original=Never
+translation=በፍጹም አይደለም
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=የትር ርዕስ አሞሌን አሳይ
 original=Display the header at the top of every tab.
 translation=በእያንዳንዱ ትር አናት ላይ ያለውን ራስጌ አሳይ።
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=ተንሳፋፊ አሰሳ
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=የአሰሳ አዝራሮች መታሰር ፋንታ በይዘቱ ላይ ተንሳፍፈው ይታያሉ።
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=ተንሸራታች የጎን አሞሌዎች
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=የጎን አሞሌዎች በላይ ተንሳፈፍ ፋንታ ወደ ይዘቱ ጎን ተንሸራትተው ይጓዛሉ።
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=ሙሉ ስክሪን
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=በንባብ ጊዜ የበይነገጽ ክፍሎችን በራስ-ሰር ደብቅ።
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=ለማዘመን የ{{count}} ያህል ጭብጥ ተገኝቷል።
@@ -966,6 +1010,10 @@ translation=በትንሽ ፊደሎች፣ ቁጥሮች እና ሰረዞች ብቻ
 original=Enter your secret.
 translation=ሚስጥርዎን ያስገቡ።
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=በፍጹም አልተደረሰበትም
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=ሚስጥሩን ማዘመን አልተሳካም።
@@ -1006,6 +1054,30 @@ translation=ሚስጥር ጨምር...
 original=Link...
 translation=አገናኝ...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=በዚህ ስርዓት ላይ የሚገኝ የሚስጥር ማከማቻ ስለሌለ ሚስጥሮች ያለ ምስጠራ ይከማቻሉ።
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=ሚስጥሮች አልተመሰጠሩም
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=እንደገና አታሳይ
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=ምስጠራ አይገኝም
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=ምስጠራ በየስርዓተ ክወናዎ የሚስጥር ማከማቻ ይቀርባል። የሚስጥር ማከማቻ ከሌለ ሚስጥሮችዎ ያለ ምስጠራ ይከማቻሉ።
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=በLinux ላይ የሚደገፉ የሚስጥር ማከማቻዎች የሚከተሉትን ያካትታሉ፦
+
 [setting.about.name]
 original=General
 translation=ስለ
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=ስሪት {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(የጫኚ ሥሪት፡ {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=መተግበሪያዎ የተዘመነ ነው!
+original=Installer version: {{version}}
+translation=የጫኚ ሥሪት፡ {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=መተግበሪያው ለምን በዝግታ እንደሚጫን በ�
 [setting.about.button-check-startup]
 original=Check now
 translation=አሁን ፈትሽ
+
+[setting.about.option-cli]
+original=Command line interface
+translation=የትዕዛዝ መስመር በይነገጽ
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=ከትዕዛዝ መስመር ጋር Obsidian ግንኙነቶችን ፍቀድ።
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=CLI በተርሚናል ውስጥ እንዲሰራ አዘጋጅ
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=ከተርሚናልዎ በማንኛውም ቦታ "obsidian" ትዕዛዝን ለመድረስ በPATH ውስጥ "obsidian" መዝግብ።
+
+[setting.about.button-register]
+original=Register
+translation=መዝግብ
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=ፋይል የለም
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" በውጫዊ ሁኔታ ተስተካክሏል ፣ ለውጦችን በራስ-ሰር በማዋሃድ።
-
-[interface.switch-vault]
-original=Open another vault
-translation=ሌላ ካዝና ክፈት
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=የተደረደሩ ትሮችን ቀያይር
 original=Toggle readable line length
 translation=የሚነበብ የመስመር ርዝመት ቀያይር
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=የመስመር ቁጥሮችን ቀያይር
+
 [commands.navigate-back]
 original=Navigate back
 translation=ወደ ኋላ ያስሱ
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=ብርሃን/ጨለማ ሁነታ ቀያይር
 
 [commands.change-theme]
-original=Change theme
-translation=ጭብጥ ቀይር
+original=Change theme...
+translation=ጭብጥ ቀይር...
+
+[commands.change-vault]
+original=Change vault...
+translation=ቮልት ቀይር...
+
+[commands.open-vault]
+original=Open vault...
+translation=ቮልት ክፈት...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=ቮልቶችን አስተዳድር
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=አቃፊ ሰርዝ
 original=Delete
 translation=ሰርዝ
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=ሰርዝ እና እንደገና አትጠይቅ
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=እንደገና አትጠይቅ
@@ -3982,6 +4078,26 @@ translation=ርዕስ እንደገና ይሰይሙ
 original=Rename block ID
 translation=የማገጃ መታወቂያ እንደገና ይሰይሙ
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=የፋይል አባሪዎችን ሰርዝ?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=ይህ አባሪ ከእንግዲህ በማንኛውም ማስታወሻ ውስጥ ጥቅም ላይ አይውልም። ሊሰርዙት ይፈልጋሉ?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=እነዚህ {{count}} አባሪዎች ከእንግዲህ በማንኛውም ማስታወሻ ውስጥ ጥቅም ላይ አይውሉም። ሊሰርዟቸው ይፈልጋሉ?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=የፋይል ዛፍ
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=ጋለሪ
+
 [menu-items.new-file]
 original=New Note
 translation=ማስታወሻ ፍጠር
@@ -4069,6 +4185,14 @@ translation=ሰንጠረዥ
 [menu-items.insert-footnote]
 original=Footnote
 translation=የግርጌ ማስታወሻ
+
+[menu-items.inline-title]
+original=Inline title
+translation=ውስጠ-መስመር ርዕስ
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=የመስመር ቁጥሮች
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=ልዩ
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=አዲስ ልዩ ማስታወሻ ይፍጠሩ
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=አዲስ ልዩ ማስታወሻ
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=መደርደር
 original=Filter
 translation=አጣራ
 
+[plugins.bases.label-search]
+original=Search
+translation=ፈልግ
+
 [plugins.bases.label-properties]
 original=Properties
 translation=ባህሪዎች
@@ -8953,6 +9085,10 @@ translation=ባህሪዎች
 [plugins.bases.label-new-item]
 original=New
 translation=አዲስ
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}} በማሳየት ላይ
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=አጠቃላይ ያድርጉ...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=በዚህ ባህሪ መሠረት መደብ
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=እሴቶችን አጽዳ
 
 [plugins.bases.table.label-summary]
 original=Summary

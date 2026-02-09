@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=বানান পরীক্ষক অভিধান খালি
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=ইনলাইন শিরোনাম দেখাও
+original=Inline title
+translation=ইনলাইন শিরোনাম
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=ফাইলের নামটি ফাইলের বিষয়বস্তুর সাথে সামঞ্জস্য রেখে সম্পাদনযোগ্য শিরোনাম হিসেবে প্রদর্শন করা হয়।
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=লাইভ প্রিভিউ
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=লাইনের সংখ্যা দেখাও
+original=Line numbers
+translation=লাইনের সংখ্যা
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=লেখাগুলোর পাশে লাইন নম্বর দেখাও।
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=ইন্ডেন্টেশন গাইড দেখাও
+original=Indentation guides
+translation=ইন্ডেন্টেশন গাইড
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=ফাইল এবং লিঙ্কস
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=ফাইল মুছে ফেলা নিশ্চিত করুন
+original=Confirm before deleting files
+translation=ফাইল মোছার আগে নিশ্চিত করুন
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=এই বিকল্পটি নিশ্চিত করে যদি আপনি ফাইল মুছে ফেলার বিষয়ে কোনো সাবধানতা বার্তা পেতে চান কি না।
+original=Avoid accidentally deleting files.
+translation=অনিচ্ছাকৃতভাবে ফাইল মুছে ফেলা এড়িয়ে চলুন।
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=অবসিডিয়ান ট্র্যাশে সরানো
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=সম্পূর্ণভাবে মোছা হবে
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=ফাইল মোছার সময় আটাচমেন্ট মুছুন
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=মোছা ফাইলের সাথে লিঙ্ক করা আটাচমেন্টগুলো যদি অন্য কোথাও ব্যবহার না হয়, তবে স্বয়ংক্রিয়ভাবে সরিয়ে দিন।
+
+[setting.file.option-choice-always]
+original=Always
+translation=সবসময়
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=প্রতিবার জিজ্ঞাসা করুন
+
+[setting.file.option-choice-never]
+original=Never
+translation=কখনোই না
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=ট্যাব শিরোনাম বার দেখান
 original=Display the header at the top of every tab.
 translation=প্রতিটি ট্যাবের উপরে শিরোনাম প্রদর্শন করুন।
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=ভাসমান নেভিগেশন
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=নেভিগেশন বাটনগুলো স্থিরভাবে যুক্ত না থেকে কনটেন্টের ওপর ভাসবে।
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=স্লাইডিং সাইডবার
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=সাইডবারগুলো ওপরের দিকে ভাসমান না থেকে কনটেন্টের পাশে স্লাইড করবে।
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=ফুল স্ক্রিন
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=পড়ার সময় স্বয়ংক্রিয়ভাবে ইন্টারফেস উপাদানগুলো লুকান।
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=আপডেট করার জন্য {{count}}টি থিম পাওয়া গেছে।
@@ -966,6 +1010,10 @@ translation=শুধুমাত্র ছোট হাতের অক্ষ�
 original=Enter your secret.
 translation=আপনার গোপন তথ্য লিখুন।
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=কখনো অ্যাক্সেস করা হয়নি
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=গোপন তথ্য আপডেট করতে ব্যর্থ হয়েছে।
@@ -1006,6 +1054,30 @@ translation=গোপন তথ্য যোগ করুন...
 original=Link...
 translation=লিঙ্ক করুন...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=এই সিস্টেমে কোনো সিক্রেট স্টোর উপলব্ধ নেই বলে সিক্রেটগুলো এনক্রিপশন ছাড়াই সংরক্ষণ করা হচ্ছে।
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=সিক্রেটগুলো এনক্রিপ্ট করা নেই
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=আর দেখাবেন না
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=এনক্রিপশন উপলব্ধ নয়
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=এনক্রিপশন আপনার অপারেটিং সিস্টেমের সিক্রেট স্টোর দ্বারা প্রদান করা হয়। সিক্রেট স্টোর না থাকলে আপনার সিক্রেটগুলো এনক্রিপশন ছাড়াই সংরক্ষণ করা হবে।
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Linux-এ, সমর্থিত সিক্রেট স্টোরগুলোর মধ্যে রয়েছে:
+
 [setting.about.name]
 original=General
 translation=সাধারণ তথ্য
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=সংস্করণ {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(ইনস্টলার সংস্করণ: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=আপনার অ্যাপটি আপ টু ডেট আছে
+original=Installer version: {{version}}
+translation=ইনস্টলার সংস্করণ: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=অ্যাপ ধীরে ধীরে লোড হলে তা
 [setting.about.button-check-startup]
 original=Check now
 translation=এখনই দেখুন
+
+[setting.about.option-cli]
+original=Command line interface
+translation=কমান্ড লাইন ইন্টারফেস
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=কমান্ড লাইন থেকে Obsidian-এর সাথে ইন্টারঅ্যাকশন করার অনুমতি দিন।
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=টার্মিনালে কাজ করার জন্য CLI সেট আপ করুন
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=PATH-এ "obsidian" রেজিস্টার করুন, যাতে টার্মিনাল থেকে যেকোনো জায়গা থেকে "obsidian" কমান্ড অ্যাক্সেস করা যায়।
+
+[setting.about.button-register]
+original=Register
+translation=রেজিস্টার
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=ফাইল নেই
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" -টি বাহ্যিকভাবে পরিবর্তন করা হয়েছে| পরিবর্তনগুলি স্বয়ংক্রিয়ভাবে একত্রিত করা হচ্ছে।
-
-[interface.switch-vault]
-original=Open another vault
-translation=আরেকটি ভল্ট খুলুন
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=স্ট্যাকড ট্যাব চালু/বন্ধ
 original=Toggle readable line length
 translation=পাঠযোগ্য লাইন দৈর্ঘ্য টগল করুন
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=লাইন নম্বর টগল করুন
+
 [commands.navigate-back]
 original=Navigate back
 translation=পিছনে
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=লাইট/ডার্ক মোড টগল করুন
 
 [commands.change-theme]
-original=Change theme
-translation=থিম পরিবর্তন করুন
+original=Change theme...
+translation=থিম পরিবর্তন করুন...
+
+[commands.change-vault]
+original=Change vault...
+translation=ভল্ট পরিবর্তন করুন...
+
+[commands.open-vault]
+original=Open vault...
+translation=ভল্ট খুলুন...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=ভল্ট পরিচালনা করুন
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=ফোল্ডার মুছুন
 original=Delete
 translation=মুছুন
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=মুছে ফেলুন কিন্তু পরবর্তীতে জিজ্ঞাসা করতে পারবেন না।
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=আবার জিজ্ঞাসা করবেন না।
@@ -3982,6 +4078,26 @@ translation=শিরোনামের নাম পরিবর্তন ক�
 original=Rename block ID
 translation=ব্লক আইডির নাম পরিবর্তন করুন
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=ফাইলের আটাচমেন্ট মুছবেন?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=এই আটাচমেন্টটি আর কোনো নোটে ব্যবহার হচ্ছে না। আপনি কি এটি মুছতে চান?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=এই {{count}}টি আটাচমেন্ট আর কোনো নোটে ব্যবহার হচ্ছে না। আপনি কি এগুলো মুছতে চান?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=ফাইল ট্রি
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=গ্যালারি
+
 [menu-items.new-file]
 original=New Note
 translation=নোট তৈরি করুন
@@ -4069,6 +4185,14 @@ translation=টেবিল
 [menu-items.insert-footnote]
 original=Footnote
 translation=পাদটীকা
+
+[menu-items.inline-title]
+original=Inline title
+translation=ইনলাইন শিরোনাম
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=লাইন নম্বর
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=একক
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=নতুন একক নোট তৈরি করুন
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=নতুন অনন্য নোট
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=সাজানো
 original=Filter
 translation=ফিল্টার
 
+[plugins.bases.label-search]
+original=Search
+translation=অনুসন্ধান
+
 [plugins.bases.label-properties]
 original=Properties
 translation=প্রপার্টি
@@ -8953,6 +9085,10 @@ translation=প্রপার্টি
 [plugins.bases.label-new-item]
 original=New
 translation=নতুন
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}} দেখানো হচ্ছে
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=সারসংক্ষেপ করুন...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=এই বৈশিষ্ট্য অনুযায়ী গ্রুপ করুন
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=মান পরিষ্কার করুন
 
 [plugins.bases.table.label-summary]
 original=Summary

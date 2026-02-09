@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=맞춤법 검사 사전이 지정되지 않았습니다.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=인라인 제목 표시
+original=Inline title
+translation=인라인 제목
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=파일 이름을 파일 내용과 함께 수정 가능한 인라인 제목으로 표시해줍니다.
+original=Display the filename as an editable title inline with the file contents.
+translation=파일 이름을 파일 내용과 함께 수정 가능한 인라인 제목으로 표시합니다.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=실시간 미리보기
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=행 번호 표시
+original=Line numbers
+translation=행 번호
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=여백에 행 번호를 표시합니다.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=들여쓰기 가이드 보기
+original=Indentation guides
+translation=들여쓰기 가이드
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=파일 및 링크
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=파일 삭제 확인 메세지
+original=Confirm before deleting files
+translation=파일 삭제 전 확인
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=파일을 삭제할 때 확인 메시지를 표시할지 여부.
+original=Avoid accidentally deleting files.
+translation=실수로 파일이 삭제되는 것을 방지합니다.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Obsidian 휴지통 (.trash 폴더) 으로 이동
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=영구적으로 삭제
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=파일 삭제 시 첨부 파일 삭제
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=삭제된 파일에 연결된 첨부 파일이 다른 곳에서 사용되지 않는 경우 자동으로 제거합니다.
+
+[setting.file.option-choice-always]
+original=Always
+translation=항상
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=매번 묻기
+
+[setting.file.option-choice-never]
+original=Never
+translation=안 함
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=탭 타이틀바 표시
 original=Display the header at the top of every tab.
 translation=모든 탭 상단에 헤더를 표시합니다.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=떠다니는 탐색
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=탐색 버튼이 고정되지 않고 콘텐츠 위에 떠서 표시됩니다.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=슬라이딩 사이드바
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=사이드바가 위에 떠서 표시되는 대신 콘텐츠 옆으로 슬라이드됩니다.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=전체 화면
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=읽는 동안 인터페이스 요소를 자동으로 숨깁니다.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation={{count}} 개의 테마를 업데이트할 수 있습니다.
@@ -966,6 +1010,10 @@ translation=소문자, 숫자, 하이픈만 사용할 수 있습니다.
 original=Enter your secret.
 translation=비밀 값을 입력하세요.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=접근한 적 없음
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=비밀을 업데이트하지 못했습니다.
@@ -1006,6 +1054,30 @@ translation=비밀 추가...
 original=Link...
 translation=연결...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=이 시스템에서 비밀 저장소를 사용할 수 없으므로 비밀 정보가 암호화되지 않은 상태로 저장됩니다.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=비밀 정보가 암호화되지 않음
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=다시 표시하지 않기
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=암호화를 사용할 수 없음
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=암호화는 운영 체제의 비밀 저장소에서 제공합니다. 비밀 저장소가 없으면 비밀 정보는 암호화되지 않은 상태로 저장됩니다.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Linux에서 지원되는 비밀 저장소는 다음과 같습니다:
+
 [setting.about.name]
 original=General
 translation=일반
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=버전 {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(인스톨러 버전: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=이미 최신 버전으로 업데이트 돼 있습니다!
+original=Installer version: {{version}}
+translation=설치 프로그램 버전: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=무엇이 앱 로드를 느리게 만드는지 확인함으로써 �
 [setting.about.button-check-startup]
 original=Check now
 translation=지금 확인하기
+
+[setting.about.option-cli]
+original=Command line interface
+translation=명령줄 인터페이스
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=명령줄에서 Obsidian과 상호작용할 수 있도록 합니다.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=터미널에서 동작하도록 CLI 설정
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=PATH에 "obsidian"을 등록하여 터미널 어디에서나 "obsidian" 명령에 접근할 수 있도록 합니다.
+
+[setting.about.button-register]
+original=Register
+translation=등록
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=파일 없음
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" 이(가) 외부에서 수정되었습니다. 변경 사항을 자동으로 병합합니다.
-
-[interface.switch-vault]
-original=Open another vault
-translation=다른 보관함 열기
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=스택 탭 활성화/비활성화
 original=Toggle readable line length
 translation=읽기 좋은 줄 길이 전환
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=줄 번호 전환
+
 [commands.navigate-back]
 original=Navigate back
 translation=뒤로가기
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=라이트/다크 모드 전환
 
 [commands.change-theme]
-original=Change theme
-translation=테마 변경
+original=Change theme...
+translation=테마 변경...
+
+[commands.change-vault]
+original=Change vault...
+translation=보관소 변경...
+
+[commands.open-vault]
+original=Open vault...
+translation=보관소 열기...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=보관소 관리
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=폴더 삭제
 original=Delete
 translation=삭제
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=삭제하고 다시 묻지 않기
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=다시 묻지 않기
@@ -3982,6 +4078,26 @@ translation=제목 이름 변경
 original=Rename block ID
 translation=블럭 ID 이름 변경
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=파일 첨부 파일을 삭제할까요?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=이 첨부 파일은 더 이상 어떤 노트에서도 사용되지 않습니다. 삭제하시겠습니까?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=이 {{count}}개의 첨부 파일은 더 이상 어떤 노트에서도 사용되지 않습니다. 삭제하시겠습니까?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=파일 트리
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=갤러리
+
 [menu-items.new-file]
 original=New Note
 translation=노트 생성
@@ -4069,6 +4185,14 @@ translation=표
 [menu-items.insert-footnote]
 original=Footnote
 translation=각주
+
+[menu-items.inline-title]
+original=Inline title
+translation=인라인 제목
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=줄 번호
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=고유
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=새 고유 노트 생성
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=새 고유 노트
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=정렬
 original=Filter
 translation=필터
 
+[plugins.bases.label-search]
+original=Search
+translation=검색
+
 [plugins.bases.label-properties]
 original=Properties
 translation=속성
@@ -8953,6 +9085,10 @@ translation=속성
 [plugins.bases.label-new-item]
 original=New
 translation=추가
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}}개 표시 중
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=요약...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=이 속성으로 그룹화
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=값 지우기
 
 [plugins.bases.table.label-summary]
 original=Summary

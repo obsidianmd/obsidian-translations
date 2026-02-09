@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=Речник за проверу правописа је празан.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Прикажи унутрашњи наслов
+original=Inline title
+translation=Унутрашњи наслов
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=Приказује име датотеке као уређиви наслов унутар садржаја датотеке.
+original=Display the filename as an editable title inline with the file contents.
+translation=Прикажи име датотеке као уређиви наслов унутар садржаја датотеке.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Режим уређивања
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Прикажи број линије
+original=Line numbers
+translation=Бројеви линија
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Прикажи бројеве линија у маргинама.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Прикажи водиче за увлачење
+original=Indentation guides
+translation=Водичи за увлачење
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Датотеке и линкови
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Потврдите брисање датотеке
+original=Confirm before deleting files
+translation=Потврди пре брисања датотека
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Да ли желите да добијете потврду пре брисања датотеке.
+original=Avoid accidentally deleting files.
+translation=Избегни случајно брисање датотека.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Премести у Obsidian отпад (.trash фасцикла)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Трајно брисање
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Обриши прилоге при брисању датотека
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Аутоматски уклони прилоге повезане са обрисаном датотеком ако се не користе нигде другде.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Увек
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Питај сваки пут
+
+[setting.file.option-choice-never]
+original=Never
+translation=Никада
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Прикажи заглавље таба
 original=Display the header at the top of every tab.
 translation=Прикажите заглавље на врху сваког таба.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Плутајућа навигација
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Дугмад за навигацију плутају преко садржаја уместо да буду усидрена.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Клизне бочне траке
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Бочне траке клизе уз ивицу садржаја уместо да плутају изнад њега.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Цео екран
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Аутоматски сакриј елементе интерфејса током читања.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Пронађено/a {{count}} тема за ажурирање.
@@ -966,6 +1010,10 @@ translation=Само мала слова, бројеви и цртице.
 original=Enter your secret.
 translation=Унесите вашу тајну.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Никада није приступано
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Није успело ажурирање тајне.
@@ -1006,6 +1054,30 @@ translation=Додај тајну...
 original=Link...
 translation=Повежи...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Тајне се чувају без шифровања јер на овом систему није доступно складиште тајни.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Тајне нису шифроване
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Не приказуј поново
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Шифровање није доступно
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Шифровање обезбеђује складиште тајни вашег оперативног система. Без складишта тајни, ваше тајне ће се чувати без шифровања.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=На Linux-у, подржана складишта тајни укључују:
+
 [setting.about.name]
 original=General
 translation=Опште
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Верзија {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Верзија инсталатора: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Ваша апликација је ажурна!
+original=Installer version: {{version}}
+translation=Верзија инсталатора: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Дијагностикујте проблеме са апликац�
 [setting.about.button-check-startup]
 original=Check now
 translation=Провери сада
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Интерфејс командне линије
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Омогући интеракције са Obsidian-ом из командне линије.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Подеси CLI да ради у терминалу
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Региструј „obsidian“ у PATH да би се омогућио приступ команди „obsidian“ са било ког места у терминалу.
+
+[setting.about.button-register]
+original=Register
+translation=Региструј
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Нема датотеке
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" је измењен споља, промене се аутоматски спајају.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Отвори други сеф
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Пребаци наслагане картице
 original=Toggle readable line length
 translation=Укључи/искључи читљиву дужину реда
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Укључи/искључи бројеве редова
+
 [commands.navigate-back]
 original=Navigate back
 translation=Иди назад
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Укључи/искључи светли/тамни режим
 
 [commands.change-theme]
-original=Change theme
-translation=Промени тему
+original=Change theme...
+translation=Промени тему...
+
+[commands.change-vault]
+original=Change vault...
+translation=Промени трезор...
+
+[commands.open-vault]
+original=Open vault...
+translation=Отвори трезор...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Управљај трезорима
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Обриши фасциклу
 original=Delete
 translation=Обриши
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Обриши и не питај поново
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Не питај поново
@@ -3982,6 +4078,26 @@ translation=Преименуј заглавље
 original=Rename block ID
 translation=Преименуј блок ID
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Обрисати прилоге датотеке?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Овај прилог се више не користи ни у једној белешци. Желите ли да га обришете?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Ових {{count}} прилога се више не користи ни у једној белешци. Желите ли да их обришете?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Стабло датотека
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Галерија
+
 [menu-items.new-file]
 original=New Note
 translation=Креирај белешку
@@ -4069,6 +4185,14 @@ translation=Табела
 [menu-items.insert-footnote]
 original=Footnote
 translation=Фуснота
+
+[menu-items.inline-title]
+original=Inline title
+translation=Наслов у реду
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Бројеви редова
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Јединствено
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Креирај нову јединствену белешку
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Нова јединствена белешка
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Сортирај
 original=Filter
 translation=Филтер
 
+[plugins.bases.label-search]
+original=Search
+translation=Претрага
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Својства
@@ -8953,6 +9085,10 @@ translation=Својства
 [plugins.bases.label-new-item]
 original=New
 translation=Ново
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Приказује се {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Сажми...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Групиши по овом својству
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Очисти вредности
 
 [plugins.bases.table.label-summary]
 original=Summary

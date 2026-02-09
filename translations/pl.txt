@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=Słownik sprawdzania pisowni jest pusty.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Pokaż tytuł w linii
+original=Inline title
+translation=Tytuł w linii
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=Wyświetla nazwę pliku jako edytowalny tytuł wraz z zawartością pliku.
+original=Display the filename as an editable title inline with the file contents.
+translation=Wyświetla nazwę pliku jako edytowalny tytuł w linii wraz z zawartością pliku.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Podgląd na żywo
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Pokaż numery wierszy
+original=Line numbers
+translation=Numery wierszy
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Wyświetla numery wierszy na marginesie.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Pokaż wskaźniki wcięć
+original=Indentation guides
+translation=Wskaźniki wcięć
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Pliki i łącza
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Potwierdź usunięcie pliku
+original=Confirm before deleting files
+translation=Potwierdzaj przed usunięciem plików
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Czy ma zostać wyświetlony komunikat z prośbą o potwierdzenie usunięcia pliku?
+original=Avoid accidentally deleting files.
+translation=Zapobiega przypadkowemu usunięciu plików.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Przenieś do kosza Obsidian (folder .trash)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Usuń trwale
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Usuń załączniki podczas usuwania plików
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Automatycznie usuwa załączniki powiązane z usuniętym plikiem, jeśli nie są używane gdzie indziej.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Zawsze
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Pytaj za każdym razem
+
+[setting.file.option-choice-never]
+original=Never
+translation=Nigdy
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Pokaż pasek tytułu
 original=Display the header at the top of every tab.
 translation=Wyświetla tytuł na górze każdej karty.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Pływająca nawigacja
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Przyciski nawigacji unoszą się nad treścią zamiast być do niej przypięte.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Wysuwane paski boczne
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Paski boczne wysuwają się z boku treści zamiast unosić się nad nią.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Pełny ekran
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Automatycznie ukrywa elementy interfejsu podczas czytania.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Motywy do aktualizacji: {{count}}
@@ -966,6 +1010,10 @@ translation=Tylko małe litery, cyfry i myślniki.
 original=Enter your secret.
 translation=Wpisz swój sekret.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Nigdy nie użyto
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Nie udało się zaktualizować sekretu.
@@ -1006,6 +1054,30 @@ translation=Dodaj sekret...
 original=Link...
 translation=Połącz...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Sekrety są przechowywane bez szyfrowania, ponieważ w tym systemie nie jest dostępny magazyn sekretów.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Sekrety nie są szyfrowane
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Nie pokazuj ponownie
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Szyfrowanie niedostępne
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Szyfrowanie zapewnia magazyn sekretów systemu operacyjnego. Bez magazynu sekretów twoje sekrety będą przechowywane bez szyfrowania.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=W systemie Linux obsługiwane magazyny sekretów obejmują:
+
 [setting.about.name]
 original=General
 translation=Ogólne
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Wersja {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Wersja instalatora: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Obsidian jest aktualny!
+original=Installer version: {{version}}
+translation=Wersja instalatora: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Sprawdź, co powoduje powolne ładowanie aplikacji
 [setting.about.button-check-startup]
 original=Check now
 translation=Sprawdź teraz
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Interfejs wiersza poleceń
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Zezwalaj na interakcje z Obsidian z poziomu wiersza poleceń.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Skonfiguruj CLI do działania w terminalu
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Zarejestruj „obsidian” w PATH, aby umożliwić dostęp do polecenia „obsidian” z dowolnego miejsca w terminalu.
+
+[setting.about.button-register]
+original=Register
+translation=Zarejestruj
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Brak pliku
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=“{{file}}” został zmodyfikowany w aplikacji zewnętrznej, zmiany zostały wprowadzone automatycznie.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Otwórz inny sejf
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Stos kart
 original=Toggle readable line length
 translation=Czytelna długość linii
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Przełącz numery linii
+
 [commands.navigate-back]
 original=Navigate back
 translation=Wstecz
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Tryb jasny lub ciemny
 
 [commands.change-theme]
-original=Change theme
-translation=Zmień motyw
+original=Change theme...
+translation=Zmień motyw...
+
+[commands.change-vault]
+original=Change vault...
+translation=Zmień skarbiec...
+
+[commands.open-vault]
+original=Open vault...
+translation=Otwórz skarbiec...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Zarządzaj skarbcami
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Usuń folder
 original=Delete
 translation=Usuń
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Usuń i nie pytaj ponownie
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Nie pytaj ponownie
@@ -3982,6 +4078,26 @@ translation=Edytuj nagłówek
 original=Rename block ID
 translation=Zmień ID sekcji
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Usunąć załączniki pliku?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Ten załącznik nie jest już używany w żadnych notatkach. Czy chcesz go usunąć?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Te {{count}} załączniki nie są już używane w żadnych notatkach. Czy chcesz je usunąć?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Drzewo plików
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galeria
+
 [menu-items.new-file]
 original=New Note
 translation=Nowa notatka
@@ -4069,6 +4185,14 @@ translation=Tabela
 [menu-items.insert-footnote]
 original=Footnote
 translation=Przypis
+
+[menu-items.inline-title]
+original=Inline title
+translation=Tytuł w linii
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Numery linii
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Niepowtarzalne
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Stwórz nową niepowtarzalną notatkę
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Nowa unikatowa notatka
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sortuj
 original=Filter
 translation=Filtruj
 
+[plugins.bases.label-search]
+original=Search
+translation=Szukaj
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Atrybuty
@@ -8953,6 +9085,10 @@ translation=Atrybuty
 [plugins.bases.label-new-item]
 original=New
 translation=Nowe
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Wyświetlanie: {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Podsumuj...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Grupuj według tego atrybutu
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Wyczyść wartości
 
 [plugins.bases.table.label-summary]
 original=Summary

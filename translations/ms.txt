@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=Kamus penyemak ejaan kini kosong.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Tunjukkan tajuk sebaris
+original=Inline title
+translation=Tajuk sebaris
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=Memaparkan nama fail sebagai tajuk boleh edit sebaris dengan kandungan fail.
+original=Display the filename as an editable title inline with the file contents.
+translation=Paparkan nama fail sebagai tajuk boleh edit sebaris dengan kandungan fail.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Pratonton langsung
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Tunjuk nombor baris
+original=Line numbers
+translation=Nombor baris
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Nombor setiap baris akan ditunjukkan di sisi tetingkap.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Tunjukkan panduan inden
+original=Indentation guides
+translation=Panduan inden
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Fail & Pautan
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Sahkan penghapusan fail
+original=Confirm before deleting files
+translation=Sahkan sebelum menghapus fail
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Pilih sama ada ingin diminta mengesahkan penghapusan fail.
+original=Avoid accidentally deleting files.
+translation=Elakkan penghapusan fail secara tidak sengaja.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Pindah ke tong sampah Obsidian (folder .trash)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Penghapusan kekal
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Hapus lampiran apabila menghapus fail
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Buang lampiran yang dipautkan kepada fail yang dihapus secara automatik jika ia tidak digunakan di tempat lain.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Sentiasa
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Tanya setiap kali
+
+[setting.file.option-choice-never]
+original=Never
+translation=Jangan sekali-kali
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Tunjukkan bar tajuk tab
 original=Display the header at the top of every tab.
 translation=Paparkan pengepala di bahagian atas setiap tab.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Navigasi terapung
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Butang navigasi terapung di atas kandungan dan bukannya ditambat.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Bar sisi gelongsor
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Bar sisi menggelongsor ke sisi kandungan dan bukannya terapung di atas.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Skrin penuh
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Sembunyikan elemen antara muka secara automatik semasa membaca.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Menemui {{count}} tema untuk dikemas kini.
@@ -966,6 +1010,10 @@ translation=Huruf kecil, nombor dan sengkang sahaja.
 original=Enter your secret.
 translation=Masukkan rahsia anda.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Tidak pernah diakses
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Gagal mengemas kini rahsia.
@@ -1006,6 +1054,30 @@ translation=Tambah rahsia...
 original=Link...
 translation=Pautkan...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Rahsia disimpan tanpa penyulitan kerana tiada stor rahsia tersedia pada sistem ini.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Rahsia tidak disulitkan
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Jangan tunjuk lagi
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Penyulitan tidak tersedia
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Penyulitan disediakan oleh stor rahsia sistem pengendalian anda. Tanpa stor rahsia, rahsia anda akan disimpan tanpa penyulitan.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Di Linux, stor rahsia yang disokong termasuk:
+
 [setting.about.name]
 original=General
 translation=Perisian
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Versi {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Versi pemasang: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Aplikasi anda sudah dikemas kini!
+original=Installer version: {{version}}
+translation=Versi pemasang: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnos isu apl anda dengan melihat apa yang menyebabkan apl dimuatk
 [setting.about.button-check-startup]
 original=Check now
 translation=Semak sekarang
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Antara muka baris arahan
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Benarkan interaksi dengan Obsidian dari baris arahan.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Sediakan CLI untuk berfungsi dalam terminal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Daftarkan "obsidian" dalam PATH untuk membolehkan akses kepada arahan "obsidian" di mana-mana dari terminal anda.
+
+[setting.about.button-register]
+original=Register
+translation=Daftar
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Tiada fail
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" telah diubah suai di luar, sedang menyepadukan perubahan secara automatik.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Buka peti nota lain
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Togol tab bertindan
 original=Toggle readable line length
 translation=Togol panjang baris yang mudah dibaca
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Togol nombor baris
+
 [commands.navigate-back]
 original=Navigate back
 translation=Ke belakang
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Togol mod cerah/gelap
 
 [commands.change-theme]
-original=Change theme
-translation=Tukar tema
+original=Change theme...
+translation=Tukar tema...
+
+[commands.change-vault]
+original=Change vault...
+translation=Tukar peti nota...
+
+[commands.open-vault]
+original=Open vault...
+translation=Buka peti nota...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Urus peti nota
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Hapuskan folder
 original=Delete
 translation=Hapus
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Hapus dan jangan tanya lagi.
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Jangan tanya lagi
@@ -3982,6 +4078,26 @@ translation=Namakan semula pengepala
 original=Rename block ID
 translation=Namakan semula ID blok
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Hapus lampiran fail?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Lampiran ini tidak lagi digunakan dalam mana-mana nota. Adakah anda mahu menghapuskannya?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation={{count}} lampiran ini tidak lagi digunakan dalam mana-mana nota. Adakah anda mahu menghapuskannya?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Pepohon fail
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galeri
+
 [menu-items.new-file]
 original=New Note
 translation=Nota Baharu
@@ -4069,6 +4185,14 @@ translation=Jadual
 [menu-items.insert-footnote]
 original=Footnote
 translation=Nota kaki
+
+[menu-items.inline-title]
+original=Inline title
+translation=Tajuk sebaris
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Nombor baris
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Unik
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Cipta nota unik baharu
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Nota unik baharu
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Isih
 original=Filter
 translation=Tapis
 
+[plugins.bases.label-search]
+original=Search
+translation=Carian
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Sifat
@@ -8953,6 +9085,10 @@ translation=Sifat
 [plugins.bases.label-new-item]
 original=New
 translation=Baharu
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Menunjukkan {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Ringkaskan...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Kumpulkan mengikut sifat ini
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Kosongkan nilai
 
 [plugins.bases.table.label-summary]
 original=Summary

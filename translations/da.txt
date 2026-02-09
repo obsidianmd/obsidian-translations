@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=Stavekontrolordbogen er tom.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Vis indlejret titel
+original=Inline title
+translation=Indlejret titel
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=Viser filnavn som en redigerbar titel indlejret i filindholdet.
+original=Display the filename as an editable title inline with the file contents.
+translation=Vis filnavn som en redigerbar titel indlejret i filindholdet.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Live forhåndsvisning
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Vis linjenummer
+original=Line numbers
+translation=Linjenummer
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Vis linjenummer i margen.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Vis indrykningshjælpelinjer
+original=Indentation guides
+translation=Indrykningshjælpelinjer
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Filer & Links
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Bekræft filsletning
+original=Confirm before deleting files
+translation=Bekræft før filer slettes
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Om du vil bedes om at bekræfte filsletning.
+original=Avoid accidentally deleting files.
+translation=Undgå at komme til at slette filer ved et uheld.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Flyt til Obsidians papirkurv (.trash-mappe)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Slet permanent
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Slet vedhæftninger, når filer slettes
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Fjern automatisk vedhæftninger, der er linket til den slettede fil, hvis de ikke bruges andre steder.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Altid
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Spørg hver gang
+
+[setting.file.option-choice-never]
+original=Never
+translation=Aldrig
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Vis fanens titellinje
 original=Display the header at the top of every tab.
 translation=Vis overskriften øverst på hver fane.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Flydende navigation
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Navigationsknapperne flyder over indholdet i stedet for at være forankret.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Skydesidepaneler
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Sidepaneler glider ud ved siden af indholdet i stedet for at flyde ovenpå.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Fuld skærm
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Skjul automatisk brugerfladeelementer under læsning.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Fandt {{count}} tema at opdatere.
@@ -966,6 +1010,10 @@ translation=Kun små bogstaver, tal og bindestreger.
 original=Enter your secret.
 translation=Indtast din hemmelighed.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Aldrig tilgået
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Kunne ikke opdatere hemmelighed.
@@ -1006,6 +1054,30 @@ translation=Tilføj hemmelighed...
 original=Link...
 translation=Link...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Hemmeligheder gemmes uden kryptering, fordi der ikke er nogen hemmelighedslager tilgængelig på dette system.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Hemmeligheder er ikke krypteret
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Vis ikke igen
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Kryptering ikke tilgængelig
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Kryptering leveres af dit operativsystems hemmelighedslager. Uden et hemmelighedslager gemmes dine hemmeligheder uden kryptering.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=På Linux omfatter understøttede hemmelighedslagre:
+
 [setting.about.name]
 original=General
 translation=Om
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Version {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Installationsversion: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Obsidian er opdateret!
+original=Installer version: {{version}}
+translation=Installationsversion: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnosticer problemer med Obsidian ved at vise årsager til at opst
 [setting.about.button-check-startup]
 original=Check now
 translation=Tjek nu
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Kommandolinjegrænseflade
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Tillad interaktioner med Obsidian fra kommandolinjen.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Konfigurer CLI til at virke i terminalen
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Registrer "obsidian" i PATH for at give adgang til kommandoen "obsidian" hvor som helst fra din terminal.
+
+[setting.about.button-register]
+original=Register
+translation=Registrer
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Ingen fil
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" er blevet ændret eksternt, og ændringerne flettes automatisk.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Åbn en anden boks
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Slå fanegrupper til/fra
 original=Toggle readable line length
 translation=Slå læsbar linjelængde til/fra
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Slå linjenumre til/fra
+
 [commands.navigate-back]
 original=Navigate back
 translation=Naviger tilbage
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Slå lys/mørk tilstand til/fra
 
 [commands.change-theme]
-original=Change theme
-translation=Skift tema
+original=Change theme...
+translation=Skift tema...
+
+[commands.change-vault]
+original=Change vault...
+translation=Skift boks...
+
+[commands.open-vault]
+original=Open vault...
+translation=Åbn boks...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Administrer bokse
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Slet mappe
 original=Delete
 translation=Slet
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Slet, og spørg ikke igen
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Spørg ikke igen
@@ -3982,6 +4078,26 @@ translation=Omdøb overskrift
 original=Rename block ID
 translation=Omdøb blok-ID
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Slet filvedhæftninger?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Denne vedhæftning bruges ikke længere i nogen noter. Vil du slette den?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Disse {{count}} vedhæftninger bruges ikke længere i nogen noter. Vil du slette dem?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Filtræ
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galleri
+
 [menu-items.new-file]
 original=New Note
 translation=Opret note
@@ -4069,6 +4185,14 @@ translation=Tabel
 [menu-items.insert-footnote]
 original=Footnote
 translation=Fodnote
+
+[menu-items.inline-title]
+original=Inline title
+translation=Indlejret titel
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Linjenumre
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Unik
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Opret ny unik note
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Ny unik note
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sorter
 original=Filter
 translation=Filter
 
+[plugins.bases.label-search]
+original=Search
+translation=Søg
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Egenskaber
@@ -8953,6 +9085,10 @@ translation=Egenskaber
 [plugins.bases.label-new-item]
 original=New
 translation=Ny
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Viser {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Sammenfat...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Gruppér efter denne egenskab
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Ryd værdier
 
 [plugins.bases.table.label-summary]
 original=Summary

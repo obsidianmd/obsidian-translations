@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=Het woordenboek voor spellingscontrole is momenteel leeg.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Toon titelregel
+original=Inline title
+translation=Titelregel
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=Toont de bestandsnaam als een bewerkbare regel in het document.
+original=Display the filename as an editable title inline with the file contents.
+translation=Toon de bestandsnaam als een bewerkbare titelregel in het document.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Live-voorbeeld
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Toon regelnummer
+original=Line numbers
+translation=Regelnummers
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Toon regelnummer in de kantlijn.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Toon inspringingshulplijnen
+original=Indentation guides
+translation=Inspringingshulplijnen
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Bestanden & Links
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Bestand verwijderen bevestigen
+original=Confirm before deleting files
+translation=Bevestigen voor het verwijderen van bestanden
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Wilt u gevraagd worden of het bestand moet worden verwijderd?
+original=Avoid accidentally deleting files.
+translation=Voorkom dat je per ongeluk bestanden verwijdert.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Verplaatsen naar de Obsidian-prullenbak (.trash map)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Permanent verwijderen
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Bijlagen verwijderen bij het verwijderen van bestanden
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Verwijder automatisch bijlagen die aan het verwijderde bestand zijn gekoppeld als ze elders niet worden gebruikt.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Altijd
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Elke keer vragen
+
+[setting.file.option-choice-never]
+original=Never
+translation=Nooit
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Toon titelbalk van tabblad
 original=Display the header at the top of every tab.
 translation=Toon de kop bovenaan elk tabblad.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Zwevende navigatie
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Navigatieknoppen zweven boven de inhoud in plaats van vast te staan.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Schuivende zijbalken
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Zijbalken schuiven naast de inhoud in plaats van erboven te zweven.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Volledig scherm
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Verberg interface-elementen automatisch tijdens het lezen.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation={{count}} thema gevonden om te updaten.
@@ -966,6 +1010,10 @@ translation=Alleen kleine letters, cijfers en streepjes.
 original=Enter your secret.
 translation=Voer uw geheim in.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Nooit geopend
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Bijwerken van geheim mislukt.
@@ -1006,6 +1054,30 @@ translation=Geheim toevoegen...
 original=Link...
 translation=Koppelen...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Geheimen worden zonder versleuteling opgeslagen omdat er op dit systeem geen geheimenopslag beschikbaar is.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Geheimen zijn niet versleuteld
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Niet meer weergeven
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Versleuteling niet beschikbaar
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Versleuteling wordt geleverd door de geheimenopslag van je besturingssysteem. Zonder geheimenopslag worden je geheimen zonder versleuteling opgeslagen.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Op Linux zijn ondersteunde geheimenopslagen onder andere:
+
 [setting.about.name]
 original=General
 translation=Over
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Versie {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Installatie-versie: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Je applicatie is bijgewerkt!
+original=Installer version: {{version}}
+translation=Installatieprogramma-versie: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnoseer problemen door te zien waardoor de app langzaam start.
 [setting.about.button-check-startup]
 original=Check now
 translation=Nu controleren
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Opdrachtregelinterface
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Sta interacties met Obsidian toe via de opdrachtregel.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=CLI instellen om in de terminal te werken
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Registreer "obsidian" in PATH om het commando "obsidian" overal vanuit je terminal te kunnen gebruiken.
+
+[setting.about.button-register]
+original=Register
+translation=Registreren
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Geen bestand
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" is ergens anders gewijzigd, automatisch veranderingen samenvoegen.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Open een andere kluis
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Gestapelde tabbladen aan-/uitzetten
 original=Toggle readable line length
 translation=Leesbare regelbreedte in-/uitschakelen
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Regelnummers in-/uitschakelen
+
 [commands.navigate-back]
 original=Navigate back
 translation=Navigeer terug
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Lichte/donkere modus in-/uitschakelen
 
 [commands.change-theme]
-original=Change theme
-translation=Thema veranderen
+original=Change theme...
+translation=Thema veranderen...
+
+[commands.change-vault]
+original=Change vault...
+translation=Kluis wijzigen...
+
+[commands.open-vault]
+original=Open vault...
+translation=Kluis openen...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Kluizen beheren
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Map verwijderen
 original=Delete
 translation=Verwijderen
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Verwijderen en niet opnieuw vragen
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Niet opnieuw vragen
@@ -3982,6 +4078,26 @@ translation=Kop hernoemen
 original=Rename block ID
 translation=Blok-id hernoemen
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Bestandsbijlagen verwijderen?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Deze bijlage wordt niet meer in notities gebruikt. Wil je deze verwijderen?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Deze {{count}} bijlagen worden niet meer in notities gebruikt. Wil je ze verwijderen?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Bestandsstructuur
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galerij
+
 [menu-items.new-file]
 original=New Note
 translation=Notitie aanmaken
@@ -4069,6 +4185,14 @@ translation=Tabel
 [menu-items.insert-footnote]
 original=Footnote
 translation=Voetnoot
+
+[menu-items.inline-title]
+original=Inline title
+translation=Inline titel
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Regelnummers
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Uniek
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Maak een nieuwe unieke notities aan
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Nieuwe unieke notitie
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sorteren
 original=Filter
 translation=Filter
 
+[plugins.bases.label-search]
+original=Search
+translation=Zoeken
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Eigenschappen
@@ -8953,6 +9085,10 @@ translation=Eigenschappen
 [plugins.bases.label-new-item]
 original=New
 translation=Nieuw
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}} weergegeven
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Samenvatten...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Groeperen op deze eigenschap
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Waarden wissen
 
 [plugins.bases.table.label-summary]
 original=Summary

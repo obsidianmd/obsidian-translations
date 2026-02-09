@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=Oikoluvun sanakirja on tyhjä.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Näytä otsikko sisällön yläpuolella
+original=Inline title
+translation=Sisäinen otsikko
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=Näyttää tiedostonimen muokattavana otsikkona tiedoston sisällön yläpuolella.
+original=Display the filename as an editable title inline with the file contents.
+translation=Näyttää tiedostonimen muokattavana otsikkona tiedoston sisällön yhteydessä.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Visuaalinen muokkaus
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Näytä rivinumerot
+original=Line numbers
+translation=Rivinumerot
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Näyttää rivinumerot marginaalissa.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Näytä sisennysopasteet
+original=Indentation guides
+translation=Sisennysopasteet
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Tiedostot ja linkit
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Vahvista tiedoston poistaminen
+original=Confirm before deleting files
+translation=Vahvista ennen tiedostojen poistamista
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Pyytää vahvistamaan, että haluat poistaa tiedoston.
+original=Avoid accidentally deleting files.
+translation=Vältä tiedostojen vahingossa poistamista.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Siirrä Obsidian-roskakoriin (.trash-kansio)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Poista pysyvästi
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Poista liitteet, kun tiedostoja poistetaan
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Poista automaattisesti poistettuun tiedostoon linkitetyt liitteet, jos niitä ei käytetä muualla.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Aina
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Kysy joka kerta
+
+[setting.file.option-choice-never]
+original=Never
+translation=Ei koskaan
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Näytä välilehden otsikkorivi
 original=Display the header at the top of every tab.
 translation=Näytä otsikko jokaisen välilehden yläosassa.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Kelluva navigointi
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Navigointipainikkeet kelluvat sisällön päällä sen sijaan, että ne olisivat kiinnitettyinä.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Liukuvat sivupalkit
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Sivupalkit liukuvat sisällön reunaan sen sijaan, että ne kelluisivat sen päällä.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Koko näyttö
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Piilota käyttöliittymän elementit automaattisesti lukemisen aikana.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation={{count}} teemalle on päivitys.
@@ -966,6 +1010,10 @@ translation=Vain pieniä kirjaimia (a–z), numeroita (0–9) ja yhdysviivoja (-
 original=Enter your secret.
 translation=Syötä sala-avain.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Ei käytetty koskaan
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Sala-avainta ei voitu muuttaa.
@@ -1006,6 +1054,30 @@ translation=Lisää sala-avain...
 original=Link...
 translation=Linkki...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Salaisuudet tallennetaan ilman salausta, koska tässä järjestelmässä ei ole käytettävissä salaisuussäilöä.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Salaisuuksia ei salata
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Älä näytä uudelleen
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Salaus ei ole käytettävissä
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Salaus tarjotaan käyttöjärjestelmäsi salaisuussäilön kautta. Ilman salaisuussäilöä salaisuutesi tallennetaan ilman salausta.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Linuxissa tuettuja salaisuussäilöjä ovat:
+
 [setting.about.name]
 original=General
 translation=Tietoja
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Versio {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Asennusohjelman versio: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Obsidian on ajan tasalla!
+original=Installer version: {{version}}
+translation=Asennusohjelman versio: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Tutkii mahdollisia ongelmia, jotka voivat hidastaa sovelluksen käyn
 [setting.about.button-check-startup]
 original=Check now
 translation=Tarkista nyt
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Komentorivin käyttöliittymä
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Salli Obsidianin käyttäminen komentoriviltä.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Määritä CLI toimimaan terminaalissa
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Rekisteröi "obsidian" PATHiin, jotta voit käyttää "obsidian"-komentoa missä tahansa terminaalista.
+
+[setting.about.button-register]
+original=Register
+translation=Rekisteröi
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Ei tiedostoa
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=Tiedostoa ”{{file}}” on muokattu muualta. Muutokset yhdistetään automaattisesti.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Avaa toinen holvi
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Pinoa välilehdet tai irrota pinosta
 original=Toggle readable line length
 translation=Luettava rivin pituus päälle/pois
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Vaihda rivinumerot
+
 [commands.navigate-back]
 original=Navigate back
 translation=Siirry taaksepäin
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Vaihda vaaleaan/tummaan tilaan
 
 [commands.change-theme]
-original=Change theme
-translation=Vaihda teemaa
+original=Change theme...
+translation=Vaihda teemaa...
+
+[commands.change-vault]
+original=Change vault...
+translation=Vaihda holvia...
+
+[commands.open-vault]
+original=Open vault...
+translation=Avaa holvi...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Hallitse holveja
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Poista kansio
 original=Delete
 translation=Poista
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Poista äläkä kysy uudelleen
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Älä kysy uudelleen
@@ -3982,6 +4078,26 @@ translation=Muuta otsikon nimeä
 original=Rename block ID
 translation=Muuta lohkon tunnusta
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Poistetaanko tiedoston liitteet?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Tätä liitettä ei enää käytetä missään muistiinpanoissa. Haluatko poistaa sen?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Näitä {{count}} liitettä ei enää käytetä missään muistiinpanoissa. Haluatko poistaa ne?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Tiedostopuu
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galleria
+
 [menu-items.new-file]
 original=New Note
 translation=Uusi muistiinpano
@@ -4069,6 +4185,14 @@ translation=Taulukko
 [menu-items.insert-footnote]
 original=Footnote
 translation=Alaviite
+
+[menu-items.inline-title]
+original=Inline title
+translation=Rivinsisäinen otsikko
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Rivinumerot
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Uniikki
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Luo uusi uniikki muistiinpano
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Uusi yksilöllinen muistiinpano
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Järjestä
 original=Filter
 translation=Suodata
 
+[plugins.bases.label-search]
+original=Search
+translation=Hae
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Määreet
@@ -8953,6 +9085,10 @@ translation=Määreet
 [plugins.bases.label-new-item]
 original=New
 translation=Uusi
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Näytetään {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Yhteenveto...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Ryhmitä määreen mukaan
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Tyhjennä arvot
 
 [plugins.bases.table.label-summary]
 original=Summary

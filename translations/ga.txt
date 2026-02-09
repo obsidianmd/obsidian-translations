@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Tá an foclóir seiceála litrithe folamh.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Taispeáin teideal inlíne
+original=Inline title
+translation=Teideal inlíne
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Taispeánann ainm an chomhaid mar theideal in-eagarthóireachta inlíne le hábhar an chomhaid.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Réamhamharc Beo
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Taispeáin uimhreacha líne
+original=Line numbers
+translation=Uimhreacha líne
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Taispeáin uimhreacha líne sa gutter.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Taispeáin treoracha ionghabhála
+original=Indentation guides
+translation=Treoracha ionghabhála
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Comhaid agus naisc
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Deimhnigh scriosadh comhad
+original=Confirm before deleting files
+translation=Deimhnigh roimh scriosadh comhad
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Pras roimh scriosadh comhad.
+original=Avoid accidentally deleting files.
+translation=Seachain comhaid a scriosadh trí thimpiste.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Bogadh chuig bruscar Obsidian (fillteán.trash)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Scrios go buan
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Scrios ceangaltáin nuair a scriostar comhaid
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Bain ceangaltáin atá nasctha leis an gcomhad scriosta go huathoibríoch mura n-úsáidtear in áit ar bith eile iad.
+
+[setting.file.option-choice-always]
+original=Always
+translation=I gcónaí
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Fiafraigh gach uair
+
+[setting.file.option-choice-never]
+original=Never
+translation=Riamh
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Taispeáin barra teidil cluaisín
 original=Display the header at the top of every tab.
 translation=Taispeáin an ceanntásc ag barr gach cluaisín.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Nascleanúint ar snámh
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Snámhann cnaipí nascleanúna os cionn an ábhair in ionad a bheith ancraithe.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Taobhbharraí sleamhnáin
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Sleamhnaíonn na taobhbharraí go taobh an ábhair in ionad snámh os a chionn.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Lánscáileán
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Folaigh eilimintí an chomhéadain go huathoibríoch agus tú ag léamh.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Aimsíodh téama {{count}} le nuashonrú.
@@ -966,6 +1010,10 @@ translation=Litreacha beaga, uimhreacha agus fleiscíní amháin.
 original=Enter your secret.
 translation=Cuir isteach do rún.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Níor rochtainíodh riamh é
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Theip ar an rún a nuashonrú.
@@ -1006,6 +1054,30 @@ translation=Cuir rún leis...
 original=Link...
 translation=Nasc...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Stóráiltear rúin gan criptú toisc nach bhfuil aon stór rúin ar fáil ar an gcóras seo.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Níl na rúin criptithe
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Ná taispeáin arís
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Níl criptú ar fáil
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Soláthraíonn stór rúin do chórais oibriúcháin an criptiú. Gan stór rúin, stórálfar do rúin gan criptú.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Ar Linux, áirítear na stórtha rúin tacaithe:
+
 [setting.about.name]
 original=General
 translation=Ginearálta
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Leagan {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Leagan suiteálaí: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Tá Obsidian cothrom le dáta!
+original=Installer version: {{version}}
+translation=Leagan suiteálaí: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Déan saincheisteanna a dhiagnóisiú le d'aip trí fheiceáil cad a
 [setting.about.button-check-startup]
 original=Check now
 translation=Seiceáil anois
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Comhéadan líne ordaithe
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Ceadaigh idirghníomhaíochtaí le Obsidian ón líne ordaithe.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Socraigh CLI le bheith ag obair sa teirminéal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Cláraigh "obsidian" i PATH chun rochtain ar an ordú "obsidian" a chumasú ó áit ar bith i do theirminéal.
+
+[setting.about.button-register]
+original=Register
+translation=Cláraigh
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Gan aon chomhad
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=Tá “{{file}}” modhnaithe go seachtrach, ag cumasc athruithe go huathoibríoch.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Oscail cruinneas eile
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Athraigh cluaisíní cruachta
 original=Toggle readable line length
 translation=Scoránaigh fad líne inléite
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Scoránaigh uimhreacha línte
+
 [commands.navigate-back]
 original=Navigate back
 translation=Nascleanúint ar ais
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Scoránaigh mód éadrom/dorcha
 
 [commands.change-theme]
-original=Change theme
-translation=Athraigh téama
+original=Change theme...
+translation=Athraigh téama...
+
+[commands.change-vault]
+original=Change vault...
+translation=Athraigh boghta...
+
+[commands.open-vault]
+original=Open vault...
+translation=Oscail boghta...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Bainistigh boghtaí
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Scrios fillteán
 original=Delete
 translation=Scrios
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Scrios agus ná iarr arís
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Ná iarr arís
@@ -3982,6 +4078,26 @@ translation=Athainmnigh ceannteideal
 original=Rename block ID
 translation=Athainmnigh ID bloc
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Scrios ceangaltáin chomhaid?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Ní úsáidtear an ceangaltán seo in aon nótaí a thuilleadh. Ar mhaith leat é a scrios?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Ní úsáidtear na {{count}} ceangaltán seo in aon nótaí a thuilleadh. Ar mhaith leat iad a scrios?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Crann comhad
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Gailearaí
+
 [menu-items.new-file]
 original=New Note
 translation=Nóta Nua
@@ -4069,6 +4185,14 @@ translation=Tábla
 [menu-items.insert-footnote]
 original=Footnote
 translation=Fónót
+
+[menu-items.inline-title]
+original=Inline title
+translation=Teideal inlíne
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Uimhreacha línte
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Uathúil
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Cruthaigh nóta uathúil nua
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Nóta uathúil nua
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sórtáil
 original=Filter
 translation=Scagaire
 
+[plugins.bases.label-search]
+original=Search
+translation=Cuardaigh
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Airíonna
@@ -8953,6 +9085,10 @@ translation=Airíonna
 [plugins.bases.label-new-item]
 original=New
 translation=Nua
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Á thaispeáint: {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Déan achoimre...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Grúpáil de réir an airí seo
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Glan luachanna
 
 [plugins.bases.table.label-summary]
 original=Summary

@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Từ điển kiểm tra chính tả trống.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Hiển thị tiêu đề nội tuyến
+original=Inline title
+translation=Tiêu đề nội tuyến
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Hiển thị tên tệp như tiêu đề có thể chỉnh sửa nội tuyến với nội dung tệp.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Xem trước trực tiếp
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Hiển thị số dòng
+original=Line numbers
+translation=Số dòng
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Hiển thị số dòng trong dòng gutter.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Hiển thị đường dẫn thụt đầu dòng
+original=Indentation guides
+translation=Đường dẫn thụt lề
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Tệp & Liên kết
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Xác nhận xóa tệp
+original=Confirm before deleting files
+translation=Xác nhận trước khi xóa tệp
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Cho phép bạn nhận được xác nhận xóa tệp.
+original=Avoid accidentally deleting files.
+translation=Tránh vô tình xóa tệp.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Di chuyển vào thùng rác Obsidian (.trash folder)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Xóa vĩnh viễn
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Xóa tệp đính kèm khi xóa tệp
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Tự động loại bỏ các tệp đính kèm được liên kết với tệp đã xóa nếu chúng không được dùng ở nơi khác.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Luôn luôn
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Hỏi mỗi lần
+
+[setting.file.option-choice-never]
+original=Never
+translation=Không bao giờ
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Hiển thị thanh tiêu đề tab
 original=Display the header at the top of every tab.
 translation=Hiển thị tiêu đề ở phía trên của mỗi tab.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Điều hướng nổi
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Các nút điều hướng nổi trên nội dung thay vì được neo cố định.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Thanh bên trượt
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Thanh bên trượt ra cạnh nội dung thay vì nổi phía trên.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Toàn màn hình
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Tự động ẩn các thành phần giao diện khi đọc.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Tìm thấy {{count}} chủ đề cần cập nhật.
@@ -966,6 +1010,10 @@ translation=Chỉ chữ thường, số và dấu gạch ngang.
 original=Enter your secret.
 translation=Nhập bí mật của bạn.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Chưa từng truy cập
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Không thể cập nhật bí mật.
@@ -1006,6 +1054,30 @@ translation=Thêm bí mật...
 original=Link...
 translation=Liên kết...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Các bí mật được lưu trữ không mã hóa vì không có kho bí mật khả dụng trên hệ thống này.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Các bí mật không được mã hóa
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Không hiển thị lại
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Không có mã hóa
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Mã hóa được cung cấp bởi kho bí mật của hệ điều hành. Nếu không có kho bí mật, các bí mật của bạn sẽ được lưu trữ không mã hóa.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Trên Linux, các kho bí mật được hỗ trợ bao gồm:
+
 [setting.about.name]
 original=General
 translation=Thông tin
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Phiên bản {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Phiên bản cài đặt: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Ứng dụng của bạn đã được cập nhật!
+original=Installer version: {{version}}
+translation=Phiên bản trình cài đặt: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Chẩn đoán sự cố với ứng dụng của bạn bằng cách 
 [setting.about.button-check-startup]
 original=Check now
 translation=Kiểm tra ngay
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Giao diện dòng lệnh
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Cho phép tương tác với Obsidian từ dòng lệnh.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Thiết lập CLI để hoạt động trong terminal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Đăng ký "obsidian" trong PATH để có thể truy cập lệnh "obsidian" ở bất kỳ đâu từ terminal của bạn.
+
+[setting.about.button-register]
+original=Register
+translation=Đăng ký
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Không có tệp
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" đã bị thay đổi bên ngoài, hợp nhất các thay đổi tự động.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Mở một khối lưu trữ khác
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Bật/tắt các tab xếp chồng
 original=Toggle readable line length
 translation=Bật/tắt độ dài dòng dễ đọc
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Bật/tắt số dòng
+
 [commands.navigate-back]
 original=Navigate back
 translation=Quay lại trang trước
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Bật/tắt chế độ sáng/tối
 
 [commands.change-theme]
-original=Change theme
-translation=Thay đổi chủ đề
+original=Change theme...
+translation=Thay đổi chủ đề...
+
+[commands.change-vault]
+original=Change vault...
+translation=Đổi kho...
+
+[commands.open-vault]
+original=Open vault...
+translation=Mở kho...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Quản lý kho
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Xóa thư mục
 original=Delete
 translation=Xóa
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Xóa và không hỏi lại
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Không hỏi lại
@@ -3982,6 +4078,26 @@ translation=Đổi tên tiêu đề
 original=Rename block ID
 translation=Đổi tên ID khối
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Xóa tệp đính kèm?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Tệp đính kèm này không còn được dùng trong bất kỳ ghi chú nào. Bạn có muốn xóa nó không?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation={{count}} tệp đính kèm này không còn được dùng trong bất kỳ ghi chú nào. Bạn có muốn xóa chúng không?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Cây tệp
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Bộ sưu tập
+
 [menu-items.new-file]
 original=New Note
 translation=Tạo Ghi Chú
@@ -4069,6 +4185,14 @@ translation=Bảng
 [menu-items.insert-footnote]
 original=Footnote
 translation=Chú thích
+
+[menu-items.inline-title]
+original=Inline title
+translation=Tiêu đề nội tuyến
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Số dòng
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Duy nhất
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Tạo ghi chú mới duy nhất
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Ghi chú mới không trùng
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sắp xếp
 original=Filter
 translation=Bộ lọc
 
+[plugins.bases.label-search]
+original=Search
+translation=Tìm kiếm
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Thuộc tính
@@ -8953,6 +9085,10 @@ translation=Thuộc tính
 [plugins.bases.label-new-item]
 original=New
 translation=Mới
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Đang hiển thị {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Tóm tắt...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Nhóm theo thuộc tính này
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Xóa giá trị
 
 [plugins.bases.table.label-summary]
 original=Summary

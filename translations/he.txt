@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=מילון בדיקת האיות ריק.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=הצג כותרת מוטבעת
+original=Inline title
+translation=כותרת מוטבעת
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=מציג את שם הקובץ ככותרת הניתנת לעריכה בשורה אחת עם תוכן הקובץ.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=תצוגה מקדימה חיה
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=הצג את מספר השורה
+original=Line numbers
+translation=מספרי שורות
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=הצג את מספר השורה.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=הצג מדריכי הזחה
+original=Indentation guides
+translation=מדריכי הזחה
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=קבצים וקישורים
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=אשר את מחיקת הקובץ
+original=Confirm before deleting files
+translation=אשר לפני מחיקת קבצים
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=האם ברצונך לקבל הנחיה לאשר את מחיקת הקובץ.
+original=Avoid accidentally deleting files.
+translation=הימנע ממחיקה בטעות של קבצים.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=העבר לאשפה של אובסידיאן
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=מחיקה לצמיתות
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=מחק קבצים מצורפים בעת מחיקת קבצים
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=הסר אוטומטית קבצים מצורפים המקושרים לקובץ שנמחק, אם אינם בשימוש במקום אחר.
+
+[setting.file.option-choice-always]
+original=Always
+translation=תמיד
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=שאל בכל פעם
+
+[setting.file.option-choice-never]
+original=Never
+translation=לעולם לא
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=הצג את שורת הכותרת של הכרטיסייה
 original=Display the header at the top of every tab.
 translation=הצג את הכותרת בראש כל כרטיסייה.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=ניווט צף
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=כפתורי הניווט צפים מעל התוכן במקום להיות מעוגנים.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=סרגלי צד נגללים
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=סרגלי הצד נגללים לצד התוכן במקום לצוף מעליו.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=מסך מלא
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=הסתר אוטומטית רכיבי ממשק בזמן קריאה.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=נמצא ערכת נושא {{count}} לעדכון.
@@ -966,6 +1010,10 @@ translation=רק אותיות קטנות, מספרים ומקפים.
 original=Enter your secret.
 translation=הזן את הסוד שלך.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=מעולם לא ניגשו
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=עדכון הסוד נכשל.
@@ -1006,6 +1054,30 @@ translation=הוסף סוד...
 original=Link...
 translation=קישור...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=הסודות מאוחסנים ללא הצפנה מכיוון שאין מאגר סודות זמין במערכת זו.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=הסודות אינם מוצפנים
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=אל תציג שוב
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=הצפנה לא זמינה
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=ההצפנה מסופקת על ידי מאגר הסודות של מערכת ההפעלה שלך. ללא מאגר סודות, הסודות שלך יאוחסנו ללא הצפנה.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=ב-Linux, מאגרי סודות נתמכים כוללים:
+
 [setting.about.name]
 original=General
 translation= אודות
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=גרסה {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(גרסת מתקין: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=האפליקציה שלך מעודכנת!
+original=Installer version: {{version}}
+translation=גרסת תוכנית התקנה: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=אבחן בעיות באפליקציה שלך על ידי בדיקה
 [setting.about.button-check-startup]
 original=Check now
 translation=בדוק עכשיו
+
+[setting.about.option-cli]
+original=Command line interface
+translation=ממשק שורת פקודה
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=אפשר אינטראקציות עם Obsidian משורת הפקודה.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=הגדר CLI לעבודה בטרמינל
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=רשום את "obsidian" ב-PATH כדי לאפשר גישה לפקודת "obsidian" מכל מקום בטרמינל שלך.
+
+[setting.about.button-register]
+original=Register
+translation=רשום
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=אין קובץ
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" השתנה באופן חיצוני, תוך מיזוג שינויים באופן אוטומטי.
-
-[interface.switch-vault]
-original=Open another vault
-translation=פתח כספת נוספת
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=החלף מצב של כרטיסיות מוערמות
 original=Toggle readable line length
 translation=החלף מצב אורך שורה קריא
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=הצג/הסתר מספרי שורות
+
 [commands.navigate-back]
 original=Navigate back
 translation=נווט אחורה
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=החלף מצב בהיר/כהה
 
 [commands.change-theme]
-original=Change theme
-translation=לשנות נושא
+original=Change theme...
+translation=שנה ערכת נושא...
+
+[commands.change-vault]
+original=Change vault...
+translation=שנה כספת...
+
+[commands.open-vault]
+original=Open vault...
+translation=פתח כספת...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=נהל כספות
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=מחק תיקייה
 original=Delete
 translation=למחוק
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=מחק ואל תשאל שוב
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=אל תשאל שוב
@@ -3982,6 +4078,26 @@ translation=שנה את שם הכותרת
 original=Rename block ID
 translation=שנה את שם מזהה הבלוק
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=למחוק קבצים מצורפים של הקובץ?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=קובץ מצורף זה אינו בשימוש עוד באף הערה. האם ברצונך למחוק אותו?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=קבצים מצורפים אלה ({{count}}) אינם בשימוש עוד באף הערה. האם ברצונך למחוק אותם?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=עץ קבצים
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=גלריה
+
 [menu-items.new-file]
 original=New Note
 translation=צור פתק
@@ -4069,6 +4185,14 @@ translation=טבלה
 [menu-items.insert-footnote]
 original=Footnote
 translation=הערת שוליים
+
+[menu-items.inline-title]
+original=Inline title
+translation=כותרת בשורה
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=מספרי שורות
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=ייחודי
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=צור הערה ייחודית חדשה
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=הערה ייחודית חדשה
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=מיון
 original=Filter
 translation=מסנן
 
+[plugins.bases.label-search]
+original=Search
+translation=חיפוש
+
 [plugins.bases.label-properties]
 original=Properties
 translation=מאפיינים
@@ -8953,6 +9085,10 @@ translation=מאפיינים
 [plugins.bases.label-new-item]
 original=New
 translation=חדש
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=מוצגים {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=סכם...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=קבץ לפי מאפיין זה
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=נקה ערכים
 
 [plugins.bases.table.label-summary]
 original=Summary

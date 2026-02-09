@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Fjalori i shqiptimeve është bosh.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Shfaq titullin brenda rreshtit
+original=Inline title
+translation=Titulli brenda rreshtit
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Shfaq emrin e skedarit si titull të redaktueshëm brenda rreshtit me përmbajtjen e skedarit.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Parapamje e drejtpërdrejtë
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Shfaqje e numrave të rreshtave
+original=Line numbers
+translation=Numrat e rreshtave
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Shfaq numrat e rreshtave në anë të faqes.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Shfaq udhëzuesit e zhvendosjes brenda
+original=Indentation guides
+translation=Udhëzuesit e zhvendosjes brenda
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Shënimet dhe linqet
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Konfirmo fshirjen e faqes
+original=Confirm before deleting files
+translation=Konfirmo para fshirjes së skedarëve
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Përcakton nëse kërkohet konfirmim para fshirjes së një faqeje
+original=Avoid accidentally deleting files.
+translation=Shmang fshirjen aksidentale të skedarëve.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Dërgo ne mbeturinat e Obsidian (dosja .trash)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Fshi përgjithmonë
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Fshi bashkëngjitjet kur fshihen skedarët
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Hiq automatikisht bashkëngjitjet e lidhura me skedarin e fshirë nëse nuk përdoren diku tjetër.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Gjithmonë
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Pyet çdo herë
+
+[setting.file.option-choice-never]
+original=Never
+translation=Asnjëherë
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Shfaq shiritin e titullit të skedës
 original=Display the header at the top of every tab.
 translation=Shfaq kreun në krye të çdo skede.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Navigim lundrues
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Butonat e navigimit lundrojnë mbi përmbajtje në vend që të jenë të fiksuar.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Shirita anësorë rrëshqitës
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Shiritat anësorë rrëshqasin në anë të përmbajtjes në vend që të lundrojnë sipër saj.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Ekran i plotë
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Fshih automatikisht elementët e ndërfaqes gjatë leximit.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=U gjet {{count}} temë për përditësim.
@@ -966,6 +1010,10 @@ translation=Vetëm shkronja të vogla, numra dhe viza.
 original=Enter your secret.
 translation=Shkruani sekretin tuaj.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Asnjëherë i aksesuar
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Dështoi përditësimi i sekretit.
@@ -1006,6 +1054,30 @@ translation=Shto sekret...
 original=Link...
 translation=Lidh...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Sekretet ruhen pa enkriptim sepse në këtë sistem nuk ka një depo sekretesh të disponueshme.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Sekretet nuk janë të enkriptuara
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Mos e shfaq më
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Enkriptimi nuk është i disponueshëm
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Enkriptimi ofrohet nga depoja e sekreteve e sistemit tuaj operativ. Pa një depo sekretesh, sekretet tuaja do të ruhen pa enkriptim.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Në Linux, depot e sekreteve të mbështetura përfshijnë:
+
 [setting.about.name]
 original=General
 translation=Rreth produktit
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Versioni {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Versioni i instaluesit: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Aplikacioni juaj është i përditësuar!
+original=Installer version: {{version}}
+translation=Versioni i instaluesit: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnostikoni probleme me aplikacionin tuaj duke parë çfarë po e 
 [setting.about.button-check-startup]
 original=Check now
 translation=Kontrollo tani
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Ndërfaqe e linjës së komandës
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Lejo ndërveprimet me Obsidian nga linja e komandës.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Konfiguro CLI që të funksionojë në terminal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Regjistro "obsidian" në PATH për të mundësuar aksesimin e komandës "obsidian" kudo nga terminali yt.
+
+[setting.about.button-register]
+original=Register
+translation=Regjistro
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Nuk ka dokumenta shënimesh
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" është modifikuar jashtë këtij programi, ndryshimet bashkohen automatikisht.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Hap një kasafortë tjetër
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Ndërro skedat e stivuara
 original=Toggle readable line length
 translation=Ndërro gjatësinë e lexueshme të rreshtit
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Aktivizo/çaktivizo numrat e rreshtave
+
 [commands.navigate-back]
 original=Navigate back
 translation=Shko para
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Ndërro modalitetin e ndritshëm/të errët
 
 [commands.change-theme]
-original=Change theme
-translation=Ndrysho temën
+original=Change theme...
+translation=Ndrysho temën...
+
+[commands.change-vault]
+original=Change vault...
+translation=Ndrysho kasafortën...
+
+[commands.open-vault]
+original=Open vault...
+translation=Hap kasafortën...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Menaxho kasafortat
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Fshi dosjen
 original=Delete
 translation=Fshi
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Fshi dhe mos pyet përsëri
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Mos pyet më
@@ -3982,6 +4078,26 @@ translation=Riemërto titullin
 original=Rename block ID
 translation=Riemërto ID e bllokut
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Të fshihen bashkëngjitjet e skedarit?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Kjo bashkëngjitje nuk përdoret më në asnjë shënim. Dëshiron ta fshish?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Këto {{count}} bashkëngjitje nuk përdoren më në asnjë shënim. Dëshiron t'i fshish?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Pema e skedarëve
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galeri
+
 [menu-items.new-file]
 original=New Note
 translation=Create Note
@@ -4069,6 +4185,14 @@ translation=Tabelë
 [menu-items.insert-footnote]
 original=Footnote
 translation=Shënim poshtë faqes
+
+[menu-items.inline-title]
+original=Inline title
+translation=Titull në rresht
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Numrat e rreshtave
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Unike
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Krijo shënim të ri unik
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Shënim i ri unik
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Rendit
 original=Filter
 translation=Filtër
 
+[plugins.bases.label-search]
+original=Search
+translation=Kërko
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Veti
@@ -8953,6 +9085,10 @@ translation=Veti
 [plugins.bases.label-new-item]
 original=New
 translation=E re
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Po shfaqen {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Përmblidh...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Grupo sipas kësaj vetie
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Pastro vlerat
 
 [plugins.bases.table.label-summary]
 original=Summary

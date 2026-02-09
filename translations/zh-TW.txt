@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=拼寫檢查詞典是空的。
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=顯示內嵌標題
+original=Inline title
+translation=內嵌標題
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=將檔名顯示為可編輯的標題，與檔案內容並列。
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=實際預覽
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=顯示行號
+original=Line numbers
+translation=行號
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=在左側顯示行號。
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=顯示縮排指示
+original=Indentation guides
+translation=縮排指示
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=檔案與連結
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=確認刪除提示
+original=Confirm before deleting files
+translation=刪除檔案前確認
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=是否需要彈出提示對話窗以確認刪除檔案。
+original=Avoid accidentally deleting files.
+translation=避免不小心刪除檔案。
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=移至軟體回收筒（.trash 資料夾）
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=永久刪除
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=刪除檔案時刪除附件
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=若附件未在其他地方使用，則在刪除檔案時自動移除與其連結的附件。
+
+[setting.file.option-choice-always]
+original=Always
+translation=總是
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=每次都詢問
+
+[setting.file.option-choice-never]
+original=Never
+translation=永不
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=顯示分頁標題列
 original=Display the header at the top of every tab.
 translation=在每個分頁的上方顯示標題。
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=浮動導覽
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=導覽按鈕會浮在內容上方，而不是固定在介面上。
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=滑動側邊欄
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=側邊欄會滑動到內容旁邊，而不是浮在上方。
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=全螢幕
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=閱讀時自動隱藏介面元素。
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=有 {{count}} 個主題可更新。
@@ -966,6 +1010,10 @@ translation=僅限小寫字母、數字與連字號。
 original=Enter your secret.
 translation=輸入你的機密。
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=從未存取
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=更新機密失敗。
@@ -1006,6 +1054,30 @@ translation=新增機密…
 original=Link...
 translation=連結…
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=由於此系統沒有可用的密碼保管庫，機密資料將在未加密的情況下儲存。
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=機密資料未加密
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=不再顯示
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=加密不可用
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=加密由您的作業系統密碼保管庫提供。若沒有密碼保管庫，您的機密資料將在未加密的情況下儲存。
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=在 Linux 上，支援的密碼保管庫包含：
+
 [setting.about.name]
 original=General
 translation=關於
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=版本 {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=（安裝程式版本：{{version}}）
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=您使用的是最新版本！
+original=Installer version: {{version}}
+translation=安裝程式版本：{{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=檢查造成啟動緩慢的診斷。
 [setting.about.button-check-startup]
 original=Check now
 translation=執行檢查。
+
+[setting.about.option-cli]
+original=Command line interface
+translation=命令列介面
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=允許從命令列與 Obsidian 互動。
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=設定 CLI 以在終端機中運作
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=在 PATH 中註冊「obsidian」，以便在終端機的任何位置都能存取「obsidian」命令。
+
+[setting.about.button-register]
+original=Register
+translation=註冊
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=未開啟檔案
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=「{{file}}」已被外部修改，自動合併變動。
-
-[interface.switch-vault]
-original=Open another vault
-translation=開啟其他儲存庫
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=切換堆疊分頁
 original=Toggle readable line length
 translation=切換可讀行長
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=切換行號
+
 [commands.navigate-back]
 original=Navigate back
 translation=返回
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=切換亮色/暗色模式
 
 [commands.change-theme]
-original=Change theme
-translation=更改主題
+original=Change theme...
+translation=更改主題...
+
+[commands.change-vault]
+original=Change vault...
+translation=變更保管庫…
+
+[commands.open-vault]
+original=Open vault...
+translation=開啟保管庫…
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=管理保管庫
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=刪除資料夾
 original=Delete
 translation=刪除
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=刪除，且不再過問。
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=不再過問
@@ -3982,6 +4078,26 @@ translation=重新命名標題
 original=Rename block ID
 translation=重新命名區塊 ID
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=要刪除檔案附件嗎？
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=此附件已不再被任何筆記使用。要刪除它嗎？
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=這 {{count}} 個附件已不再被任何筆記使用。要刪除它們嗎？
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=檔案樹狀結構
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=圖庫
+
 [menu-items.new-file]
 original=New Note
 translation=建立筆記
@@ -4069,6 +4185,14 @@ translation=表格
 [menu-items.insert-footnote]
 original=Footnote
 translation=註腳
+
+[menu-items.inline-title]
+original=Inline title
+translation=行內標題
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=行號
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=唯一
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=建立新唯一筆記
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=新增唯一筆記
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=排序
 original=Filter
 translation=過濾
 
+[plugins.bases.label-search]
+original=Search
+translation=搜尋
+
 [plugins.bases.label-properties]
 original=Properties
 translation=屬性
@@ -8953,6 +9085,10 @@ translation=屬性
 [plugins.bases.label-new-item]
 original=New
 translation=新項目
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=顯示 {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=摘要...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=依此屬性分組
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=清除值
 
 [plugins.bases.table.label-summary]
 original=Summary

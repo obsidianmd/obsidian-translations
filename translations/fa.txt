@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=فرهنگ املایی خالی است.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=نمایش عنوان درون یادداشت
+original=Inline title
+translation=عنوان درون‌خطی
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=نام فایل را به عنوان عنوانی قابل ویرایش در کنار محتوای فایل نمایش می دهد.
+original=Display the filename as an editable title inline with the file contents.
+translation=نام فایل را به‌عنوان عنوانی قابل ویرایش در کنار محتوای فایل نمایش می‌دهد.
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=پیش‌نمایش زنده
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=نمایش شماره‌ی خطوط
+original=Line numbers
+translation=شماره‌ خط‌ها
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=نمایش شماره‌ی خطوط در کناره
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=نمایش راهنمای تورفتگی
+original=Indentation guides
+translation=راهنمای تورفتگی
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=پرونده‌ها و پیوندها
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=تایید حذف پرونده
+original=Confirm before deleting files
+translation=پیش از حذف فایل‌ها تأیید بگیرید
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=هنگام حذف پرونده‌ها پیامی نشان داده شود یا نه؟
+original=Avoid accidentally deleting files.
+translation=از حذف تصادفی فایل‌ها جلوگیری کنید.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=ریختن در زباله‌دان Obsidian (.trash پوشه‌ی)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=حذف برای همیشه
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=حذف پیوست‌ها هنگام حذف فایل‌ها
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=اگر پیوست‌های پیوندخورده به فایلِ حذف‌شده جای دیگری استفاده نشده باشند، به‌طور خودکار حذفشان کن.
+
+[setting.file.option-choice-always]
+original=Always
+translation=همیشه
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=هر بار بپرس
+
+[setting.file.option-choice-never]
+original=Never
+translation=هرگز
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=نمایش نوار عنوان زبانه
 original=Display the header at the top of every tab.
 translation=نمایش سرایند بالای همه‌ی زبانه‌ها
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=پیمایش شناور
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=دکمه‌های پیمایش به‌جای ثابت بودن، روی محتوا شناور می‌مانند.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=نوارهای کناری کشویی
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=نوارهای کناری به‌جای شناور شدن روی محتوا، به کنارِ محتوا سر می‌خورند.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=تمام‌صفحه
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=هنگام خواندن، عناصر رابط کاربری را به‌طور خودکار پنهان کن.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=تعداد {{count}} پوسته برای بروزرسانی پیدا شد.
@@ -966,6 +1010,10 @@ translation=فقط حروف کوچک، اعداد و خط تیره.
 original=Enter your secret.
 translation=راز خود را وارد کنید.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=هرگز دسترسی داده نشده
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=به‌روزرسانی راز ناموفق بود.
@@ -1006,6 +1054,30 @@ translation=افزودن راز...
 original=Link...
 translation=پیوند...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=به‌دلیل نبودِ ذخیره‌سازِ راز در این سیستم، رازها بدون رمزگذاری ذخیره می‌شوند.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=رازها رمزگذاری نشده‌اند
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=دیگر نشان نده
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=رمزگذاری در دسترس نیست
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=رمزگذاری توسط ذخیره‌سازِ رازِ سیستم‌عامل شما فراهم می‌شود. بدون ذخیره‌ساز راز، رازهای شما بدون رمزگذاری ذخیره خواهند شد.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=در Linux، ذخیره‌سازهای رازِ پشتیبانی‌شده شامل موارد زیر است:
+
 [setting.about.name]
 original=General
 translation=عمومی
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=نسخه {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(نسخه‌ی نصبگر: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=برنامه به‌روز است!
+original=Installer version: {{version}}
+translation=نسخهٔ نصب‌کننده: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=با مشاهده علت کندی بارگذاری برنامه، م
 [setting.about.button-check-startup]
 original=Check now
 translation=بررسی کن
+
+[setting.about.option-cli]
+original=Command line interface
+translation=رابط خط فرمان
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=اجازهٔ تعامل با Obsidian از طریق خط فرمان را بده.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=راه‌اندازی CLI برای کار در ترمینال
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation="obsidian" را در PATH ثبت کن تا بتوان از هر جای ترمینال به دستور "obsidian" دسترسی داشت.
+
+[setting.about.button-register]
+original=Register
+translation=ثبت
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=پرونده‌ای نیست
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" از بیرون دستکاری شده است، تغییرات دارند خودبه‌خود یکی کردن می‌شوند.
-
-[interface.switch-vault]
-original=Open another vault
-translation=گشودن خزانه‌ای دیگر
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=روشن/خاموش کردن زبانه‌های برهم
 original=Toggle readable line length
 translation=تغییر حالت طول خط قابل‌خواندن
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=تغییر وضعیت شمارهٔ خط‌ها
+
 [commands.navigate-back]
 original=Navigate back
 translation=عقب‌گرد
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=تغییر حالت روشن/تاریک
 
 [commands.change-theme]
-original=Change theme
-translation=تغییر پوسته
+original=Change theme...
+translation=تغییر پوسته...
+
+[commands.change-vault]
+original=Change vault...
+translation=تغییر گاوصندوق...
+
+[commands.open-vault]
+original=Open vault...
+translation=باز کردن گاوصندوق...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=مدیریت گاوصندوق‌ها
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=حذف پوشه
 original=Delete
 translation=حذف
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=حذف کن و دیگر نپرس
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=دیگر نپرس
@@ -3982,6 +4078,26 @@ translation=نام‌گذاری سرفصل
 original=Rename block ID
 translation=نام‌گذاری شناسه‌ی بلوک
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=پیوست‌های فایل حذف شوند؟
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=این پیوست دیگر در هیچ یادداشتی استفاده نمی‌شود. آیا می‌خواهید آن را حذف کنید؟
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=این {{count}} پیوست دیگر در هیچ یادداشتی استفاده نمی‌شوند. آیا می‌خواهید آن‌ها را حذف کنید؟
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=درخت فایل
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=گالری
+
 [menu-items.new-file]
 original=New Note
 translation=ساختن یادداشت
@@ -4069,6 +4185,14 @@ translation=جدول
 [menu-items.insert-footnote]
 original=Footnote
 translation=پاورقی
+
+[menu-items.inline-title]
+original=Inline title
+translation=عنوان درون‌خطی
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=شمارهٔ خط‌ها
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=یکتا
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=ساختن یادداشت یکتای نو
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=یادداشتِ یکتای جدید
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=مرتب‌سازی
 original=Filter
 translation=فیلتر
 
+[plugins.bases.label-search]
+original=Search
+translation=جستجو
+
 [plugins.bases.label-properties]
 original=Properties
 translation=ویژگی‌ها
@@ -8953,6 +9085,10 @@ translation=ویژگی‌ها
 [plugins.bases.label-new-item]
 original=New
 translation=جدید
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=در حال نمایش {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=خلاصه‌سازی...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=گروه‌بندی بر اساس این ویژگی
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=پاک کردن مقدارها
 
 [plugins.bases.table.label-summary]
 original=Summary

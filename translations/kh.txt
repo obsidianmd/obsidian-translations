@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=វចនានុក្រមនៃការពិនិត្យអក្ខរាវិរុទ្ធគឺទទេ។
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=បង្ហាញចំណងជើងក្នុងបន្ទាត់
+original=Inline title
+translation=ចំណងជើងក្នុងបន្ទាត់
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=បង្ហាញឈ្មោះឯកសារជាចំណងជើងក្នុងជួរដែលអាចកែសម្រួលបានជាមួយមាតិកាឯកសារ។
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=ការមើលជាមុននៃការផ្សាយបន្តផ្ទាល់
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=បង្ហាញលេខបន្ទាត់
+original=Line numbers
+translation=លេខបន្ទាត់
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=បង្ហាញ​លេខជួរ​ក្នុង​ផ្ទៃទទេ។
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=បង្ហាញការណែនាំអំពីការចូលបន្ទាត់
+original=Indentation guides
+translation=ការណែនាំអំពីការចូលបន្ទាត់
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=ឯកសារ & តំណ
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=បញ្ជាក់ការលុបឯកសារ
+original=Confirm before deleting files
+translation=បញ្ជាក់មុនពេលលុបឯកសារ
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=ការបញ្ជាក់មុនពេលលុបឯកសារ។
+original=Avoid accidentally deleting files.
+translation=ជៀសវាងការលុបឯកសារដោយចៃដន្យ។
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=ផ្លាស់ទីទៅធុងសំរាម Obsidian (.tr
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=លុបជាអចិន្ត្រៃយ៍
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=លុបឯកសារភ្ជាប់ពេលលុបឯកសារ
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=ដកចេញដោយស្វ័យប្រវត្តិនូវឯកសារភ្ជាប់ដែលភ្ជាប់ទៅឯកសារដែលបានលុប ប្រសិនបើវាមិនត្រូវបានប្រើនៅកន្លែងផ្សេងទៀត។
+
+[setting.file.option-choice-always]
+original=Always
+translation=ជានិច្ច
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=សួររាល់លើក
+
+[setting.file.option-choice-never]
+original=Never
+translation=មិនដែល
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=បង្ហាញ tab របារចំណងជើង
 original=Display the header at the top of every tab.
 translation=បង្ហាញក្បាលទំព័រនៅផ្នែកខាងលើនៃ tab នីមួយៗ។
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=ការរុករកអណ្ដែត
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=ប៊ូតុងរុករកអណ្ដែតលើមាតិកា ជំនួសឱ្យការចងជាប់នៅទីតាំង។
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=របារចំហៀងរអិល
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=របារចំហៀងរអិលទៅក្បែរមាតិកា ជំនួសឱ្យការអណ្ដែតនៅខាងលើ។
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=អេក្រង់ពេញ
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=លាក់ធាតុចំណុចប្រទាក់ដោយស្វ័យប្រវត្តិពេលកំពុងអាន។
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=រកឃើញ {{count}} ​រូបរាងដើម្បីអាប់ដេត។
@@ -966,6 +1010,10 @@ translation=អក្សរតូច លេខ និងសញ្ញាដាច
 original=Enter your secret.
 translation=បញ្ចូលអាថ៌កំបាំងរបស់អ្នក។
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=មិនដែលបានចូលប្រើ
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=បរាជ័យក្នុងការធ្វើបច្ចុប្បន្នភាពអាថ៌កំបាំង។
@@ -1006,6 +1054,30 @@ translation=បន្ថែមអាថ៌កំបាំង...
 original=Link...
 translation=តភ្ជាប់...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=ទិន្នន័យសម្ងាត់ត្រូវបានរក្សាទុកដោយគ្មានការអ៊ិនគ្រីប ព្រោះប្រព័ន្ធនេះមិនមានឃ្លាំងទិន្នន័យសម្ងាត់។
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=ទិន្នន័យសម្ងាត់មិនត្រូវបានអ៊ិនគ្រីប
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=កុំបង្ហាញម្ដងទៀត
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=ការអ៊ិនគ្រីបមិនមាន
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=ការអ៊ិនគ្រីបត្រូវបានផ្តល់ដោយឃ្លាំងទិន្នន័យសម្ងាត់របស់ប្រព័ន្ធប្រតិបត្តិការ។ បើគ្មានឃ្លាំងទិន្នន័យសម្ងាត់ ទិន្នន័យសម្ងាត់របស់អ្នកនឹងត្រូវបានរក្សាទុកដោយគ្មានការអ៊ិនគ្រីប។
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=នៅលើ Linux ឃ្លាំងទិន្នន័យសម្ងាត់ដែលគាំទ្ររួមមាន៖
+
 [setting.about.name]
 original=General
 translation=អំពី
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=កំណែ {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(កំណែកម្មវិធីដំឡើង៖ {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=កម្មវិធីរបស់អ្នកគឺទាន់សម័យ!
+original=Installer version: {{version}}
+translation=កំណែកម្មវិធីដំឡើង៖ {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=ធ្វើរោគវិនិច្ឆ័យបញ្ហាជ�
 [setting.about.button-check-startup]
 original=Check now
 translation=ពិនិត្យឥឡូវនេះ
+
+[setting.about.option-cli]
+original=Command line interface
+translation=ចំណុចប្រទាក់បន្ទាត់ពាក្យបញ្ជា
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=អនុញ្ញាតឱ្យធ្វើអន្តរកម្មជាមួយ Obsidian តាមរយៈបន្ទាត់ពាក្យបញ្ជា។
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=រៀបចំ CLI ឱ្យដំណើរការនៅក្នុង Terminal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=ចុះឈ្មោះ "obsidian" នៅក្នុង PATH ដើម្បីអនុញ្ញាតឱ្យចូលប្រើពាក្យបញ្ជា "obsidian" បានគ្រប់ទីកន្លែងពី terminal របស់អ្នក។
+
+[setting.about.button-register]
+original=Register
+translation=ចុះឈ្មោះ
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=គ្មានឯកសារ
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" ត្រូវ​បាន​កែប្រែ​ខាង​ក្រៅ, ​បញ្ចូល​ការ​ផ្លាស់ប្ដូរ​ដោយ​ស្វ័យ​ប្រវត្តិ។
-
-[interface.switch-vault]
-original=Open another vault
-translation=បើក vault មួយទៀត
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=បិទ/បើក tabs ជង់
 original=Toggle readable line length
 translation=បិទ/បើក ប្រវែងបន្ទាត់ដែលងាយអាន
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=បិទ/បើក លេខបន្ទាត់
+
 [commands.navigate-back]
 original=Navigate back
 translation=រុករកត្រឡប់មកវិញ
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=បិទ/បើក របៀបពន្លឺ/ងងឹត
 
 [commands.change-theme]
-original=Change theme
-translation=ផ្លាស់ប្តូររូបរាង
+original=Change theme...
+translation=ផ្លាស់ប្តូររូបរាង...
+
+[commands.change-vault]
+original=Change vault...
+translation=ប្តូរ​វ៉ាល់...
+
+[commands.open-vault]
+original=Open vault...
+translation=បើក​វ៉ាល់...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=គ្រប់គ្រង​វ៉ាល់
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=លុបថតឯកសារ
 original=Delete
 translation=លុប
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=លុបហើយកុំសួរទៀត
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=កុំសួរម្តងទៀត
@@ -3982,6 +4078,26 @@ translation=ប្តូរឈ្មោះចំណងជើង
 original=Rename block ID
 translation=ប្តូរឈ្មោះលេខសម្គាល់​ block
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=លុបឯកសារភ្ជាប់របស់ឯកសារទេ?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=ឯកសារភ្ជាប់នេះមិនត្រូវបានប្រើក្នុងកំណត់ចំណាំណាមួយទៀតទេ។ តើអ្នកចង់លុបវាឬទេ?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=ឯកសារភ្ជាប់ទាំង {{count}} នេះមិនត្រូវបានប្រើក្នុងកំណត់ចំណាំណាមួយទៀតទេ។ តើអ្នកចង់លុបពួកវាឬទេ?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=មែកធាងឯកសារ
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=វិចិត្រសាល
+
 [menu-items.new-file]
 original=New Note
 translation=កំណត់ចំណាំថ្មី
@@ -4069,6 +4185,14 @@ translation=តារាង
 [menu-items.insert-footnote]
 original=Footnote
 translation=កំណត់ចំណាំជើងទំព័រ
+
+[menu-items.inline-title]
+original=Inline title
+translation=ចំណងជើងក្នុងបន្ទាត់
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=លេខបន្ទាត់
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=ពិសេស
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=បង្កើតកំណត់ចំណាំថ្មីពិសេស
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=កំណត់ចំណាំតែមួយគត់ថ្មី
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=តម្រៀប
 original=Filter
 translation=តម្រង
 
+[plugins.bases.label-search]
+original=Search
+translation=ស្វែងរក
+
 [plugins.bases.label-properties]
 original=Properties
 translation=លក្ខណៈសម្បត្តិ
@@ -8953,6 +9085,10 @@ translation=លក្ខណៈសម្បត្តិ
 [plugins.bases.label-new-item]
 original=New
 translation=ថ្មី
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=កំពុងបង្ហាញ {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=សង្ខេប...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=ដាក់ជាក្រុមតាមលក្ខណៈសម្បត្តិនេះ
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=សម្អាតតម្លៃ
 
 [plugins.bases.table.label-summary]
 original=Summary

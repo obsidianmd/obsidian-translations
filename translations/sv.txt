@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Stavningskontrollsordboken är tom.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Visa inbäddad titel
+original=Inline title
+translation=Inbäddad titel
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Visa filnamnet som en redigerbar inbäddad titel med filinnehållen.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Förhandsvy
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Visa radnummer
+original=Line numbers
+translation=Radnummer
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Visa radnummer i marginalen.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Visa förskjutningsmarkörer
+original=Indentation guides
+translation=Förskjutningsmarkörer
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Filer och länkar
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Bekräfta borttagning av fil
+original=Confirm before deleting files
+translation=Bekräfta innan filer raderas
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Huruvida du vill bli tillfrågad före filborttagning
+original=Avoid accidentally deleting files.
+translation=Undvik att oavsiktligt radera filer.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Flytta till Obsidian-papperskorgen (.trash-mappen)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Ta bort permanent
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Radera bilagor när filer raderas
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Ta automatiskt bort bilagor som är länkade till den raderade filen om de inte används någon annanstans.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Alltid
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Fråga varje gång
+
+[setting.file.option-choice-never]
+original=Never
+translation=Aldrig
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Visa tabbars titel-bar
 original=Display the header at the top of every tab.
 translation=Visa rubriken i toppen av varje tabb.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Flytande navigering
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Navigeringsknapparna flyter ovanpå innehållet i stället för att vara förankrade.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Skjutbara sidofält
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Sidofält skjuts till sidan av innehållet i stället för att flyta ovanpå.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Fullskärm
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Dölj automatiskt gränssnittselement vid läsning.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=Hittade {{count}} tema att uppdatera.
@@ -966,6 +1010,10 @@ translation=Endast gemener, siffror och bindestreck.
 original=Enter your secret.
 translation=Ange din hemlighet.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Aldrig öppnad
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Det gick inte att uppdatera hemligheten.
@@ -1006,6 +1054,30 @@ translation=Lägg till hemlighet...
 original=Link...
 translation=Länka...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Hemligheter lagras utan kryptering eftersom inget hemlighetslager är tillgängligt på det här systemet.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Hemligheter är inte krypterade
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Visa inte igen
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Kryptering är inte tillgänglig
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Kryptering tillhandahålls av operativsystemets hemlighetslager. Utan ett hemlighetslager kommer dina hemligheter att lagras utan kryptering.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=På Linux inkluderar hemlighetslager som stöds:
+
 [setting.about.name]
 original=General
 translation=Om oss
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Version {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Installerarversion: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Din app är uppdaterad!
+original=Installer version: {{version}}
+translation=Installationsprogramversion: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnostisera problem med din app genom att se vad som gör att appe
 [setting.about.button-check-startup]
 original=Check now
 translation=Kontrollera nu
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Kommandoradsgränssnitt
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Tillåt interaktioner med Obsidian från kommandoraden.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Ställ in CLI för att fungera i terminalen
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Registrera "obsidian" i PATH för att möjliggöra åtkomst till kommandot "obsidian" var som helst från din terminal.
+
+[setting.about.button-register]
+original=Register
+translation=Registrera
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Ingen fil
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" har ändrats externt, sammanfogar ändringar automatiskt.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Öppna ett annat valv
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Växla staplade flikar
 original=Toggle readable line length
 translation=Växla läsbar radlängd
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Växla radnummer
+
 [commands.navigate-back]
 original=Navigate back
 translation=Navigera bakåt
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Växla ljust/mörkt läge
 
 [commands.change-theme]
-original=Change theme
-translation=Byt tema
+original=Change theme...
+translation=Byt tema...
+
+[commands.change-vault]
+original=Change vault...
+translation=Byt valv...
+
+[commands.open-vault]
+original=Open vault...
+translation=Öppna valv...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Hantera valv
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Radera mapp
 original=Delete
 translation=Radera
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Radera och fråga inte igen
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Fråga inte igen
@@ -3982,6 +4078,26 @@ translation=Byt namn på rubrik
 original=Rename block ID
 translation=Byt namn på block-ID
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Radera filbilagor?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Den här bilagan används inte längre i några anteckningar. Vill du radera den?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Dessa {{count}} bilagor används inte längre i några anteckningar. Vill du radera dem?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Filträd
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galleri
+
 [menu-items.new-file]
 original=New Note
 translation=Skapa anteckning
@@ -4069,6 +4185,14 @@ translation=Tabell
 [menu-items.insert-footnote]
 original=Footnote
 translation=Fotnot
+
+[menu-items.inline-title]
+original=Inline title
+translation=Inbäddad rubrik
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Radnummer
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Unik
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Skapa ny unik anteckning
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Ny unik anteckning
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sortera
 original=Filter
 translation=Filter
 
+[plugins.bases.label-search]
+original=Search
+translation=Sök
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Egenskaper
@@ -8953,6 +9085,10 @@ translation=Egenskaper
 [plugins.bases.label-new-item]
 original=New
 translation=Ny
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Visar {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Sammanfatta...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Gruppera efter den här egenskapen
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Rensa värden
 
 [plugins.bases.table.label-summary]
 original=Summary

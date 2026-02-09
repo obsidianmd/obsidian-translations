@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=
+original=Inline title
+translation=ان لائن عنوان
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=
+original=Display the filename as an editable title inline with the file contents.
+translation=فائل نام کو فائل کے مواد کے ساتھ ان لائن ایک قابلِ ترمیم عنوان کے طور پر دکھائیں۔
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Show line number
+original=Line numbers
+translation=لائن نمبرز
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Show line number in the gutter.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=
+original=Indentation guides
+translation=انڈینٹیشن گائیڈز
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Files & Links
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=
+original=Confirm before deleting files
+translation=فائلیں حذف کرنے سے پہلے تصدیق کریں
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Whether you want to get prompted to confirm file deletion.
+original=Avoid accidentally deleting files.
+translation=غلطی سے فائلیں حذف ہونے سے بچائیں۔
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Permanent delete
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=
+
+[setting.file.option-choice-always]
+original=Always
+translation=
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=
+
+[setting.file.option-choice-never]
+original=Never
+translation=
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=
 original=Display the header at the top of every tab.
 translation=
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=
@@ -966,6 +1010,10 @@ translation=
 original=Enter your secret.
 translation=
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=
@@ -1006,6 +1054,30 @@ translation=
 original=Link...
 translation=
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=
+
 [setting.about.name]
 original=General
 translation=
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Your app is up to date!
+original=Installer version: {{version}}
+translation=انسٹالر ورژن: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1088,6 +1156,26 @@ translation=
 
 [setting.about.button-check-startup]
 original=Check now
+translation=
+
+[setting.about.option-cli]
+original=Command line interface
+translation=
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=
+
+[setting.about.button-register]
+original=Register
 translation=
 
 [setting.about.option-get-help]
@@ -2029,10 +2117,6 @@ translation=
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" has been modified externally, merging changes automatically.
-
-[interface.switch-vault]
-original=Open another vault
-translation=
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=
 original=Toggle readable line length
 translation=
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=
+
 [commands.navigate-back]
 original=Navigate back
 translation=
@@ -3443,7 +3531,19 @@ original=Toggle light/dark mode
 translation=
 
 [commands.change-theme]
-original=Change theme
+original=Change theme...
+translation=تھیم تبدیل کریں...
+
+[commands.change-vault]
+original=Change vault...
+translation=
+
+[commands.open-vault]
+original=Open vault...
+translation=
+
+[commands.manage-vaults]
+original=Manage vaults
 translation=
 
 [commands.search-current-file]
@@ -3810,10 +3910,6 @@ translation=
 original=Delete
 translation=
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=
@@ -3982,6 +4078,26 @@ translation=
 original=Rename block ID
 translation=
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=
+
 [menu-items.new-file]
 original=New Note
 translation=Create Note
@@ -4068,6 +4184,14 @@ translation=
 
 [menu-items.insert-footnote]
 original=Footnote
+translation=
+
+[menu-items.inline-title]
+original=Inline title
+translation=
+
+[menu-items.line-numbers]
+original=Line numbers
 translation=
 
 [menu-items.toggle-bullet-list]
@@ -5792,6 +5916,10 @@ translation=
 
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
+translation=
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
 translation=
 
 [plugins.unique-note-creator.action-add-link]
@@ -8946,12 +9074,20 @@ translation=
 original=Filter
 translation=
 
+[plugins.bases.label-search]
+original=Search
+translation=
+
 [plugins.bases.label-properties]
 original=Properties
 translation=
 
 [plugins.bases.label-new-item]
 original=New
+translation=
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
 translation=
 
 [plugins.bases.label-new-item-template-file]
@@ -9344,6 +9480,10 @@ translation=
 
 [plugins.bases.table.action-group-by]
 original=Group by this property
+translation=
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
 translation=
 
 [plugins.bases.table.label-summary]

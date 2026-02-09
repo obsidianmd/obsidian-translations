@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=El diccionari del corrector ortogràfic està buit.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Mostra el títol en línia
+original=Inline title
+translation=Títol en línia
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Mostra el nom del fitxer com un títol editable en línia amb el contingut del fitxer.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Previsualització en viu
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Mostra el número de línia
+original=Line numbers
+translation=Números de línia
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Mostra el número de línia a la vora.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Mostra les guies de sagnat
+original=Indentation guides
+translation=Guies de sagnat
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Fitxers i Enllaços
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Confirmar l'eliminació de fitxers
+original=Confirm before deleting files
+translation=Confirma abans de suprimir fitxers
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Si vols que es demani confirmació abans d'eliminar fitxers.
+original=Avoid accidentally deleting files.
+translation=Evita suprimir fitxers accidentalment.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Moure a la paperera d'Obsidian (carpeta .trash)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Eliminar permanentment
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Suprimeix els adjunts en suprimir fitxers
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Elimina automàticament els adjunts enllaçats al fitxer suprimit si no s'utilitzen en cap altre lloc.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Sempre
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Pregunta cada vegada
+
+[setting.file.option-choice-never]
+original=Never
+translation=Mai
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Mostra la barra de títol de les pestanyes
 original=Display the header at the top of every tab.
 translation=Mostra la capçalera a la part superior de cada pestanya.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Navegació flotant
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Els botons de navegació floten sobre el contingut en lloc d'estar ancorats.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Barres laterals lliscants
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Les barres laterals llisquen al costat del contingut en lloc de flotar a sobre.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Pantalla completa
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Amaga automàticament elements de la interfície mentre llegeixes.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=S'ha trobat {{count}} tema per actualitzar.
@@ -966,6 +1010,10 @@ translation=Només lletres en minúscula, números i guions.
 original=Enter your secret.
 translation=Introdueix el teu secret.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=No s'ha accedit mai
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=No s'ha pogut actualitzar el secret.
@@ -1006,6 +1054,30 @@ translation=Afegeix un secret...
 original=Link...
 translation=Enllaça...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Els secrets s'emmagatzemen sense xifratge perquè en aquest sistema no hi ha cap magatzem de secrets disponible.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Els secrets no estan xifrats
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=No ho tornis a mostrar
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Xifratge no disponible
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=El xifratge el proporciona el magatzem de secrets del teu sistema operatiu. Sense un magatzem de secrets, els teus secrets s'emmagatzemaran sense xifratge.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=A Linux, els magatzems de secrets compatibles inclouen:
+
 [setting.about.name]
 original=General
 translation=Quant a
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Versió {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Versió de l'instal·lador: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=La teva aplicació està actualitzada!
+original=Installer version: {{version}}
+translation=Versió de l'instal·lador: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Diagnostica problemes de l'aplicació veient què fa que l'aplicaci�
 [setting.about.button-check-startup]
 original=Check now
 translation=Comprova-ho ara
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Interfície de línia d'ordres
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Permet interaccions amb Obsidian des de la línia d'ordres.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Configura la CLI perquè funcioni al terminal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Registra "obsidian" al PATH per permetre l'accés a l'ordre "obsidian" des de qualsevol lloc del teu terminal.
+
+[setting.about.button-register]
+original=Register
+translation=Registra
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Sense fitxer
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" ha estat modificat externament, s'estan fusionant els canvis automàticament.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Obre una altra arca
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Alterna les pestanyes apilades
 original=Toggle readable line length
 translation=Commuta la longitud de línia llegible
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Activa/desactiva els números de línia
+
 [commands.navigate-back]
 original=Navigate back
 translation=Navega enrere
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Commuta el mode clar/fosc
 
 [commands.change-theme]
-original=Change theme
-translation=Canvia el tema
+original=Change theme...
+translation=Canvia el tema...
+
+[commands.change-vault]
+original=Change vault...
+translation=Canvia la cambra forta...
+
+[commands.open-vault]
+original=Open vault...
+translation=Obre la cambra forta...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Gestiona les cambres fortes
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Suprimeix la carpeta
 original=Delete
 translation=Suprimeix
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Suprimeix i no m'ho preguntis més
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=No ho preguntis més
@@ -3982,6 +4078,26 @@ translation=Canvia el nom de la capçalera
 original=Rename block ID
 translation=Canvia el nom de l'ID del bloc
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Vols suprimir els adjunts del fitxer?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Aquest adjunt ja no s'utilitza en cap nota. Vols suprimir-lo?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Aquests {{count}} adjunts ja no s'utilitzen en cap nota. Vols suprimir-los?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Arbre de fitxers
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galeria
+
 [menu-items.new-file]
 original=New Note
 translation=Crear nota
@@ -4069,6 +4185,14 @@ translation=Taula
 [menu-items.insert-footnote]
 original=Footnote
 translation=Nota a peu de pàgina
+
+[menu-items.inline-title]
+original=Inline title
+translation=Títol en línia
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Números de línia
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Única
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Crea una nova nota única
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Nota única nova
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Ordena
 original=Filter
 translation=Filtre
 
+[plugins.bases.label-search]
+original=Search
+translation=Cerca
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Propietats
@@ -8953,6 +9085,10 @@ translation=Propietats
 [plugins.bases.label-new-item]
 original=New
 translation=Nou
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Es mostren {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Resumeix...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Agrupa per aquesta propietat
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Esborra els valors
 
 [plugins.bases.table.label-summary]
 original=Summary

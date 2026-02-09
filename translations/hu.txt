@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=A helyesírás-ellenőrző szótár üres.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Címsor megjelenítése
+original=Inline title
+translation=Beágyazott cím
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Megjeleníti a fájlnevet mint szerkeszthető címsort a fájl tartalma mellett.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Élő előnézet
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Sorszámok megjelenítése
+original=Line numbers
+translation=Sorszámok
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=A sorszámok megjelenítése a margóban.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Behúzások megjelenítése
+original=Indentation guides
+translation=Behúzási segédvonalak
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Fájlok és hivatkozások
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Fájl törlésének megerősítése
+original=Confirm before deleting files
+translation=Megerősítés fájlok törlése előtt
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Megjelenjen-e megerősítési ablak fájl törlésekor.
+original=Avoid accidentally deleting files.
+translation=Elkerülhető a fájlok véletlen törlése.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Áthelyezés az Obsidian lomtárába (.trash mappa)
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Végleges törlés
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Mellékletek törlése fájlok törlésekor
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Automatikusan eltávolítja a törölt fájlhoz hivatkozott mellékleteket, ha máshol nincsenek használatban.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Mindig
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Kérdezzen rá minden alkalommal
+
+[setting.file.option-choice-never]
+original=Never
+translation=Soha
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Lap címsávjának megjelenítése
 original=Display the header at the top of every tab.
 translation=A címsáv megjelenítése minden lap tetején.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Lebegő navigáció
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=A navigációs gombok a tartalom felett lebegnek, nem rögzítettek.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Csúszó oldalsávok
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Az oldalsávok a tartalom mellé csúsznak, ahelyett hogy felette lebegnének.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Teljes képernyő
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Olvasás közben automatikusan elrejti a felület elemeit.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation={{count}} témához érhető el frissítés.
@@ -966,6 +1010,10 @@ translation=Csak kisbetűk, számok és kötőjelek.
 original=Enter your secret.
 translation=Add meg a titkodat.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Soha nem volt elérve
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Nem sikerült frissíteni a titkot.
@@ -1006,6 +1054,30 @@ translation=Titok hozzáadása...
 original=Link...
 translation=Hivatkozás...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=A titkok titkosítás nélkül vannak tárolva, mert ezen a rendszeren nem érhető el titoktároló.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=A titkok nincsenek titkosítva
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Ne jelenjen meg újra
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=A titkosítás nem érhető el
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=A titkosítást az operációs rendszer titoktárolója biztosítja. Titoktároló nélkül a titkai titkosítás nélkül lesznek tárolva.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Linuxon a támogatott titoktárolók többek között:
+
 [setting.about.name]
 original=General
 translation=Általános
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation={{version}} verzió
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Telepítő verziója: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Az alkalmazás naprakész!
+original=Installer version: {{version}}
+translation=Telepítő verziója: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Lehetővé teszi a hibák diagnosztizálását, hogy kiderítse, mi 
 [setting.about.button-check-startup]
 original=Check now
 translation=Ellenőrzés
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Parancssori felület
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Interakciók engedélyezése az Obsidian-nal a parancssorból.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=CLI beállítása terminálban való használathoz
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Az "obsidian" regisztrálása a PATH-ban, hogy a terminálból bárhonnan elérhető legyen az "obsidian" parancs.
+
+[setting.about.button-register]
+original=Register
+translation=Regisztrálás
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Nincs fájl
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=“{{file}}” az Obsidian-on kívül lett módosítva, a változások automatikus összefésülése folyamatban.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Másik széf megnyitása
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Vertikális lapok ki/be
 original=Toggle readable line length
 translation=Olvasható sorszélesség váltása
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Sorszámozás be/ki
+
 [commands.navigate-back]
 original=Navigate back
 translation=Navigálás visszafelé
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Világos/sötét mód váltása
 
 [commands.change-theme]
-original=Change theme
-translation=Téma váltása
+original=Change theme...
+translation=Téma váltása...
+
+[commands.change-vault]
+original=Change vault...
+translation=Széf váltása...
+
+[commands.open-vault]
+original=Open vault...
+translation=Széf megnyitása...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Széfek kezelése
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Mappa törlése
 original=Delete
 translation=Törlés
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Törlés, és többé ne kérdezzen rá
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Ne kérdezzen rá újra
@@ -3982,6 +4078,26 @@ translation=Cím átnevezése
 original=Rename block ID
 translation=Blokkazonosító átnevezése
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Fájlmellékletek törlése?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Ez a melléklet már nincs használatban egyetlen jegyzetben sem. Szeretné törölni?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Ez a(z) {{count}} melléklet már nincs használatban egyetlen jegyzetben sem. Szeretné törölni őket?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Fájlfa
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galéria
+
 [menu-items.new-file]
 original=New Note
 translation=Jegyzet létrehozása
@@ -4069,6 +4185,14 @@ translation=Táblázat
 [menu-items.insert-footnote]
 original=Footnote
 translation=Lábjegyzet
+
+[menu-items.inline-title]
+original=Inline title
+translation=Beágyazott cím
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Sorszámozás
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Egyedi
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Új egyedi jegyzet létrehozása
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Új egyedi jegyzet
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Rendezés
 original=Filter
 translation=Szűrés
 
+[plugins.bases.label-search]
+original=Search
+translation=Keresés
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Tulajdonságok
@@ -8953,6 +9085,10 @@ translation=Tulajdonságok
 [plugins.bases.label-new-item]
 original=New
 translation=Új
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}} megjelenítése
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Összegzés...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Csoportosítás e tulajdonság szerint
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Értékek törlése
 
 [plugins.bases.table.label-summary]
 original=Summary

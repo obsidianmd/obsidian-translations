@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=ไม่มีพจนานุกรมการพิสูจน์อักษร
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=แสดงขื้อไฟล์ในไฟล์
+original=Inline title
+translation=ชื่อเรื่องในบรรทัด
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=แสดงชื่อไฟล์ในไฟล์ ซึ่งสามารถแก้ไขได้เช่นเดียวกับเนื้อหาในไฟล์
+original=Display the filename as an editable title inline with the file contents.
+translation=แสดงชื่อไฟล์เป็นชื่อเรื่องในบรรทัดที่แก้ไขได้ภายในเนื้อหาไฟล์
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=โหมดพรีวิวสด
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=แสดงผลหมายเลขบรรทัด
+original=Line numbers
+translation=หมายเลขบรรทัด
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=แสดงผลหมายเลขบรรทัดที่หัวบรรทัด
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=แสดงระดับการย่อหน้า
+original=Indentation guides
+translation=ตัวช่วยบอกระดับการเยื้อง
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=ไฟล์และลิงค์
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=ยืนยันการลบไฟล์
+original=Confirm before deleting files
+translation=ยืนยันก่อนลบไฟล์
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=ตัวเลือกเพื่อเปิด-ปิดการยืนยันก่อนการลบไฟล์
+original=Avoid accidentally deleting files.
+translation=หลีกเลี่ยงการลบไฟล์โดยไม่ตั้งใจ
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=ย้ายไฟล์ไปที่ถังขยะของ O
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=ลบไฟล์โดยถาวร
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=ลบไฟล์แนบเมื่อทำการลบไฟล์
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=ลบไฟล์แนบที่เชื่อมโยงกับไฟล์ที่ถูกลบโดยอัตโนมัติ หากไม่ได้ถูกใช้งานที่อื่น
+
+[setting.file.option-choice-always]
+original=Always
+translation=เสมอ
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=ถามทุกครั้ง
+
+[setting.file.option-choice-never]
+original=Never
+translation=ไม่เลย
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=แสดงชื่อแท็บ
 original=Display the header at the top of every tab.
 translation=แสดง header ที่ด้านบนของทุกแท็บ
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=การนำทางแบบลอย
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=ปุ่มนำทางจะลอยอยู่เหนือเนื้อหาแทนที่จะถูกยึดติด
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=แถบด้านข้างแบบเลื่อน
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=แถบด้านข้างจะเลื่อนไปที่ด้านข้างของเนื้อหาแทนที่จะลอยอยู่ด้านบน
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=เต็มหน้าจอ
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=ซ่อนองค์ประกอบของอินเทอร์เฟซโดยอัตโนมัติขณะอ่าน
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=ตรวจพบ {{count}} ธีมที่มีการอัพเดต
@@ -966,6 +1010,10 @@ translation=ใช้ได้เฉพาะตัวพิมพ์เล็�
 original=Enter your secret.
 translation=ป้อนความลับของคุณ
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=ไม่เคยเข้าถึง
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=อัปเดตความลับไม่สำเร็จ
@@ -1006,6 +1054,30 @@ translation=เพิ่มความลับ...
 original=Link...
 translation=ลิงก์...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=ข้อมูลลับจะถูกจัดเก็บโดยไม่มีการเข้ารหัส เนื่องจากไม่มีที่เก็บข้อมูลลับบนระบบนี้
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=ข้อมูลลับไม่ได้ถูกเข้ารหัส
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=ไม่ต้องแสดงอีก
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=ไม่พร้อมใช้งานการเข้ารหัส
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=การเข้ารหัสถูกจัดเตรียมโดยที่เก็บข้อมูลลับของระบบปฏิบัติการของคุณ หากไม่มีที่เก็บข้อมูลลับ ข้อมูลลับของคุณจะถูกจัดเก็บโดยไม่มีการเข้ารหัส
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=บน Linux ที่เก็บข้อมูลลับที่รองรับประกอบด้วย:
+
 [setting.about.name]
 original=General
 translation=เกี่ยวกับ
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=เวอร์ชัน {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(รุ่นตัวติดตั้ง: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=โปรแกรมเป็นรุ่นล่าสุดแล้ว!
+original=Installer version: {{version}}
+translation=รุ่นตัวติดตั้ง: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=วินิจฉัยปัญหาของแอปโดย�
 [setting.about.button-check-startup]
 original=Check now
 translation=ตรวจสอบตอนนี้
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Command line interface
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=อนุญาตให้โต้ตอบกับ Obsidian จาก command line
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=ตั้งค่า CLI ให้ทำงานในเทอร์มินัล
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=ลงทะเบียน "obsidian" ใน PATH เพื่อให้สามารถเข้าถึงคำสั่ง "obsidian" ได้จากที่ใดก็ได้ในเทอร์มินัลของคุณ
+
+[setting.about.button-register]
+original=Register
+translation=ลงทะเบียน
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=ไม่มีไฟล์ดังกล่าว
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=ไฟล์ "{{file}}" ถูกแก้ไขด้วยโปรแกรมภายนอกและจะถูกรวมข้อมูลโดยอัตโนมัติ
-
-[interface.switch-vault]
-original=Open another vault
-translation=เปิดห้องนิรภัยอื่น
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=สลับแท็บแบบซ้อน
 original=Toggle readable line length
 translation=สลับความยาวบรรทัดที่อ่านง่าย
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=สลับหมายเลขบรรทัด
+
 [commands.navigate-back]
 original=Navigate back
 translation=ย้อนกลับ
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=สลับโหมดสว่าง/มืด
 
 [commands.change-theme]
-original=Change theme
-translation=เปลี่ยนธีม
+original=Change theme...
+translation=เปลี่ยนธีม...
+
+[commands.change-vault]
+original=Change vault...
+translation=เปลี่ยนห้องนิรภัย...
+
+[commands.open-vault]
+original=Open vault...
+translation=เปิดห้องนิรภัย...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=จัดการห้องนิรภัย
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=ลบโฟลเดอร์
 original=Delete
 translation=ลบ
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=ลบและไม่ต้องถามอีก
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=ไม่ต้องถามอีก
@@ -3982,6 +4078,26 @@ translation=เปลี่ยนชื่อหัวข้อ
 original=Rename block ID
 translation=เปลี่ยนชื่อ ID ของบล็อก
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=ลบไฟล์แนบของไฟล์หรือไม่?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=ไฟล์แนบนี้ไม่ได้ถูกใช้งานในโน้ตใดอีกต่อไป คุณต้องการลบหรือไม่?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=ไฟล์แนบจำนวน {{count}} รายการนี้ไม่ได้ถูกใช้งานในโน้ตใดอีกต่อไป คุณต้องการลบหรือไม่?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=โครงสร้างไฟล์
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=แกลเลอรี
+
 [menu-items.new-file]
 original=New Note
 translation=สร้างโน้ตใหม่
@@ -4069,6 +4185,14 @@ translation=ตาราง
 [menu-items.insert-footnote]
 original=Footnote
 translation=เชิงอรรถ
+
+[menu-items.inline-title]
+original=Inline title
+translation=ชื่อเรื่องแบบอินไลน์
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=หมายเลขบรรทัด
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=ไม่ซ้ำ
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=สร้างโน้ตแบบไม่ซ้ำใหม่
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=โน้ตใหม่ที่ไม่ซ้ำ
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=จัดเรียง
 original=Filter
 translation=ตัวกรอง
 
+[plugins.bases.label-search]
+original=Search
+translation=ค้นหา
+
 [plugins.bases.label-properties]
 original=Properties
 translation=คุณสมบัติ
@@ -8953,6 +9085,10 @@ translation=คุณสมบัติ
 [plugins.bases.label-new-item]
 original=New
 translation=ใหม่
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=กำลังแสดง {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=สรุป...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=จัดกลุ่มตามคุณสมบัตินี้
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=ล้างค่า
 
 [plugins.bases.table.label-summary]
 original=Summary

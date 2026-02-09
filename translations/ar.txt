@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=قاموس التدقيق الإملائي فارغ.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=إظهار العنوان المضمن
+original=Inline title
+translation=العنوان المضمن
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=إظهار اسم الملف كعنوان قابل للتحرير في صفحة محتويات الملف.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=المعاينة المباشرة
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=إظهار رقم السطر
+original=Line numbers
+translation=أرقام الأسطر
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=إظهار رقم السطر في الحاشية.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=إظهار أدلة المسافة البادئة
+original=Indentation guides
+translation=أدلة المسافة البادئة
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=الملفات والروابط
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=تأكيد حذف الملف
+original=Confirm before deleting files
+translation=التأكيد قبل حذف الملفات
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=إظهار رسالة تأكيد عند حذفك لملف ما.
+original=Avoid accidentally deleting files.
+translation=تجنب حذف الملفات عن طريق الخطأ.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=نقل إلى سلة محذوفات البرنامج (مجلد .tras
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=حذف دائم
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=حذف المرفقات عند حذف الملفات
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=إزالة المرفقات المرتبطة بالملف المحذوف تلقائيًا إذا لم تكن مستخدمة في مكان آخر.
+
+[setting.file.option-choice-always]
+original=Always
+translation=دائمًا
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=السؤال في كل مرة
+
+[setting.file.option-choice-never]
+original=Never
+translation=أبدًا
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=إظهار شريط العنوان لعلامة التبويب
 original=Display the header at the top of every tab.
 translation=عرض العنوان في أعلى كل علامة تبويب.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=تنقّل عائم
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=تطفو أزرار التنقّل فوق المحتوى بدلًا من تثبيتها.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=أشرطة جانبية منزلقة
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=تنزلق الأشرطة الجانبية إلى جانب المحتوى بدلًا من الطفو فوقه.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=ملء الشاشة
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=إخفاء عناصر الواجهة تلقائيًا أثناء القراءة.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=تم العثور على {{count}} سمة للتحديث.
@@ -966,6 +1010,10 @@ translation=أحرف صغيرة وأرقام وشرطات فقط.
 original=Enter your secret.
 translation=أدخل السر الخاص بك.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=لم يتم الوصول إليه مطلقًا
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=فشل تحديث السر.
@@ -1006,6 +1054,30 @@ translation=إضافة سر...
 original=Link...
 translation=ربط...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=تُخزَّن الأسرار بدون التشفير لأنه لا يتوفر مخزن أسرار على هذا النظام.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=الأسرار غير مُشفّرة
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=عدم الإظهار مرة أخرى
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=التشفير غير متاح
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=يوفّر نظام التشغيل لديك التشفير عبر مخزن الأسرار. بدون مخزن أسرار، ستُخزَّن أسرارك بدون التشفير.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=على Linux، تشمل مخازن الأسرار المدعومة ما يلي:
+
 [setting.about.name]
 original=General
 translation=عام
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=الإصدار {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(الإصدار المثبت: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=التطبيق محدث!
+original=Installer version: {{version}}
+translation=إصدار المُثبّت: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=تشخيص المشكلات المتعلقة بالتطبيق من �
 [setting.about.button-check-startup]
 original=Check now
 translation=تحقق الآن
+
+[setting.about.option-cli]
+original=Command line interface
+translation=واجهة سطر الأوامر
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=السماح بالتفاعل مع Obsidian من سطر الأوامر.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=إعداد CLI للعمل في الطرفية
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=تسجيل "obsidian" في PATH لتمكين الوصول إلى أمر "obsidian" من أي مكان في الطرفية.
+
+[setting.about.button-register]
+original=Register
+translation=تسجيل
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=لا يوجد ملف
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=تم تعديل "{{file}}" خارجيًا، جارٍ دمج التغييرات تلقائيًا.
-
-[interface.switch-vault]
-original=Open another vault
-translation=فتح خزنة أخرى
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=تبديل علامات التبويب المرصوصة
 original=Toggle readable line length
 translation=تبديل طول السطر القابل للقراءة
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=تبديل أرقام الأسطر
+
 [commands.navigate-back]
 original=Navigate back
 translation=التنقل للخلف
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=تبديل الوضع الفاتح/الداكن
 
 [commands.change-theme]
-original=Change theme
-translation=تغيير السمة
+original=Change theme...
+translation=تغيير السمة...
+
+[commands.change-vault]
+original=Change vault...
+translation=تغيير الخزنة...
+
+[commands.open-vault]
+original=Open vault...
+translation=فتح خزنة...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=إدارة الخزنات
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=حذف المجلد
 original=Delete
 translation=حذف
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=احذف، ولا تسأل مرة أخرى
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=لا تسأل مرة أخرى
@@ -3982,6 +4078,26 @@ translation=إعادة تسمية العنوان
 original=Rename block ID
 translation=إعادة تسمية معرف الكتلة
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=حذف مرفقات الملف؟
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=لم يعد هذا المرفق مستخدمًا في أي ملاحظات. هل ترغب في حذفه؟
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=لم تعد هذه المرفقات وعددها {{count}} مستخدمة في أي ملاحظات. هل ترغب في حذفها؟
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=شجرة الملفات
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=المعرض
+
 [menu-items.new-file]
 original=New Note
 translation=إنشاء ملاحظة
@@ -4069,6 +4185,14 @@ translation=جدول
 [menu-items.insert-footnote]
 original=Footnote
 translation=حاشية
+
+[menu-items.inline-title]
+original=Inline title
+translation=عنوان ضمن السطر
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=أرقام الأسطر
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=فريد
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=أنشاء ملاحظة فريدة جديدة
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=ملاحظة فريدة جديدة
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=فرز
 original=Filter
 translation=تصفية
 
+[plugins.bases.label-search]
+original=Search
+translation=بحث
+
 [plugins.bases.label-properties]
 original=Properties
 translation=خصائص
@@ -8953,6 +9085,10 @@ translation=خصائص
 [plugins.bases.label-new-item]
 original=New
 translation=جديد
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=عرض {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=تلخيص...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=تجميع حسب هذه الخاصية
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=مسح القيم
 
 [plugins.bases.table.label-summary]
 original=Summary

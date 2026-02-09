@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=Dicționarul ortografic este gol.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=Afișați titlul în linie
+original=Inline title
+translation=Titlu în linie
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=Afișați numele fișierului ca un titlu editabil în linie cu conținutul fișierului.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=Modul de previzualizare în direct
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=Arătați numărul liniei
+original=Line numbers
+translation=Numerele liniilor
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=Afișați numărul liniilor de text.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=Afișați ghidurile de indentare
+original=Indentation guides
+translation=Ghiduri de indentare
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=Fișiere și legături
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=Confirmați ștergerea fișierelor
+original=Confirm before deleting files
+translation=Confirmați înainte de ștergerea fișierelor
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=Veți primi o întrebare pentru a confirma ștergerea fișierelor.
+original=Avoid accidentally deleting files.
+translation=Evitați ștergerea accidentală a fișierelor.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Se mută în coșul de gunoi al aplicației Obsidian (directorul „
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=Se șterg permanent
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=Șterge atașamentele la ștergerea fișierelor
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=Elimină automat atașamentele legate de fișierul șters, dacă nu sunt folosite în altă parte.
+
+[setting.file.option-choice-always]
+original=Always
+translation=Întotdeauna
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=Întreabă de fiecare dată
+
+[setting.file.option-choice-never]
+original=Never
+translation=Niciodată
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=Afișați bara de titlu a filei
 original=Display the header at the top of every tab.
 translation=Afișați antetul în partea de sus a fiecărei file.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=Navigare flotantă
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=Butoanele de navigare plutesc peste conținut, în loc să fie ancorate.
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=Bare laterale glisante
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=Barele laterale glisează pe lângă conținut, în loc să plutească deasupra.
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=Ecran complet
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=Ascunde automat elementele interfeței în timpul citirii.
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=S-a găsit {{count}} temă de actualizat.
@@ -966,6 +1010,10 @@ translation=Doar litere mici, cifre și liniuțe.
 original=Enter your secret.
 translation=Introduceți secretul.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=Niciodată accesat
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=Actualizarea secretului a eșuat.
@@ -1006,6 +1054,30 @@ translation=Adaugă secret...
 original=Link...
 translation=Link...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=Secretele sunt stocate fără criptare deoarece pe acest sistem nu este disponibil niciun depozit de secrete.
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=Secretele nu sunt criptate
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=Nu mai afișa
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=Criptare indisponibilă
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=Criptarea este furnizată de depozitul de secrete al sistemului dvs. de operare. Fără un depozit de secrete, secretele dvs. vor fi stocate fără criptare.
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Pe Linux, depozitele de secrete acceptate includ:
+
 [setting.about.name]
 original=General
 translation=General
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=Versiunea {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(Versiunea la instalare: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=Aveți cea mai nouă versiune a aplicației!
+original=Installer version: {{version}}
+translation=Versiunea pachetului de instalare: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=Depanează problemele aplicației identificând ce cauzează încăr
 [setting.about.button-check-startup]
 original=Check now
 translation=Verificați acum
+
+[setting.about.option-cli]
+original=Command line interface
+translation=Interfață în linie de comandă
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=Permite interacțiuni cu Obsidian din linia de comandă.
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=Configurează CLI pentru a funcționa în terminal
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=Înregistrează „obsidian” în PATH pentru a permite accesarea comenzii „obsidian” de oriunde din terminal.
+
+[setting.about.button-register]
+original=Register
+translation=Înregistrează
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=Niciun fișier
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=„{{file}}” a fost modificat din exterior. Fuzionarea modificărilor se va efectua automat.
-
-[interface.switch-vault]
-original=Open another vault
-translation=Deschideți alt seif
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=Comutați filele stivuite
 original=Toggle readable line length
 translation=Comută lungimea lizibilă a rândului
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=Comută numerele de linie
+
 [commands.navigate-back]
 original=Navigate back
 translation=Navigați înapoi
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=Comută modul deschis/închis
 
 [commands.change-theme]
-original=Change theme
-translation=Schimbați tema
+original=Change theme...
+translation=Schimbați tema...
+
+[commands.change-vault]
+original=Change vault...
+translation=Schimbă seiful...
+
+[commands.open-vault]
+original=Open vault...
+translation=Deschide seiful...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=Gestionează seifurile
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=Șterge director
 original=Delete
 translation=Șterge
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=Șterge și nu mai verifica încă o dată
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=Nu mai întreba
@@ -3982,6 +4078,26 @@ translation=Redenumește titlul
 original=Rename block ID
 translation=Redenumește ID-ul blocului
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=Șterge atașamentele fișierului?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=Acest atașament nu mai este folosit în nicio însemnare. Doriți să îl ștergeți?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=Aceste {{count}} atașamente nu mai sunt folosite în nicio însemnare. Doriți să le ștergeți?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=Arbore de fișiere
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=Galerie
+
 [menu-items.new-file]
 original=New Note
 translation=Create Note
@@ -4069,6 +4185,14 @@ translation=Tabel
 [menu-items.insert-footnote]
 original=Footnote
 translation=Notă de subsol
+
+[menu-items.inline-title]
+original=Inline title
+translation=Titlu inline
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=Numere de linie
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=Unic
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=Creează o notă unică nouă
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=Însemnare unică nouă
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=Sortează
 original=Filter
 translation=Filtru
 
+[plugins.bases.label-search]
+original=Search
+translation=Căutare
+
 [plugins.bases.label-properties]
 original=Properties
 translation=Proprietăți
@@ -8953,6 +9085,10 @@ translation=Proprietăți
 [plugins.bases.label-new-item]
 original=New
 translation=Nou
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=Se afișează {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=Rezumă...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Grupează după această proprietate
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=Golește valorile
 
 [plugins.bases.table.label-summary]
 original=Summary

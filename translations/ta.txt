@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=எழுத்துப்பிழை சரிபார்ப்பு அகராதி காலியாக உள்ளது.
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=உள்ளமை தலைப்பைக் காட்டு
+original=Inline title
+translation=உள்ளமை தலைப்பு
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=கோப்பின் பெயரை கோப்பின் உள்ளடக்கங்களுடன் திருத்தக்கூடிய தலைப்பாகக் காட்டுகிறது.
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=நேரடி முன்னோட்டம்
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=வரி எண்களைக் காட்டு
+original=Line numbers
+translation=வரி எண்கள்
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=ஓரத்தில் வரி எண்களைக் காட்டு.
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=உள்தள்ளல் வழிகாட்டிகளைக் காட்டு
+original=Indentation guides
+translation=உள்தள்ளல் வழிகாட்டிகள்
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -223,8 +223,8 @@ original=Number of spaces a tab character will render as.
 translation=ஒரு தாவல் எத்தனை இடைவெளிகளாகத் தெரிய வேண்டும்.
 
 [setting.editor.option-rtl]
-original=Right-to-left
-translation=வலமிருந்து இடது
+original=Right-to-left (RTL)
+translation=வலமிருந்து இடது (RTL)
 
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
@@ -303,12 +303,12 @@ original=Files and links
 translation=கோப்புகள் மற்றும் இணைப்புகள்
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=கோப்பு நீக்கத்தை உறுதிப்படுத்து
+original=Confirm before deleting files
+translation=கோப்புகளை நீக்கும் முன் உறுதிப்படுத்து
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=கோப்பை நீக்கும் முன் கேட்கவும்.
+original=Avoid accidentally deleting files.
+translation=தவறுதலாக கோப்புகள் நீக்கப்படுவதைத் தவிர்க்கவும்.
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Obsidian குப்பைத்தொட்டிக்கு ந�
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=நிரந்தரமாக நீக்கு
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=
+
+[setting.file.option-choice-always]
+original=Always
+translation=
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=
+
+[setting.file.option-choice-never]
+original=Never
+translation=
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -587,8 +607,8 @@ original=Set font for places like code blocks and frontmatter.
 translation=குறிமுறைத் தொகுதிகள் மற்றும் Frontmatter போன்ற இடங்களுக்கான எழுத்துருவை அமை.
 
 [setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font:
-translation=தற்போது பயன்படுத்தப்படும் எழுத்துரு:
+original= Currently applied font: 
+translation= தற்போது பயன்படுத்தப்படும் எழுத்துரு: 
 
 [setting.appearance.label-multiple-fonts-currently-in-effect]
 original= The following fonts are currently applied:
@@ -743,8 +763,8 @@ original=Determines the styling of the title bar of Obsidian windows. Requires a
 translation=Obsidian சாளரங்களின் தலைப்புப் பட்டையின் பாணியைத் தீர்மானிக்கிறது. இது நடைமுறைக்கு வர, செயலியை முழுமையாக மறுதொடக்கம் செய்ய வேண்டும்.
 
 [setting.appearance.option-frame-hidden]
-original=Hidden
-translation=மறைக்கப்பட்டது
+original=Hidden (default)
+translation=மறைக்கப்பட்டது (இயல்புநிலை)
 
 [setting.appearance.option-frame-obsidian]
 original=Obsidian frame
@@ -818,6 +838,30 @@ translation=தாவல் தலைப்பைக் காட்டு
 original=Display the header at the top of every tab.
 translation=ஒவ்வொரு தாவலின் மேற்புறத்திலும் தலைப்பைக் காட்டு.
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=புதுப்பிக்க {{count}} கருப்பொருள் உள்ளது.
@@ -859,12 +903,12 @@ original=Search hotkeys
 translation=குறுக்குவழிகளைத் தேடு
 
 [setting.hotkeys.option-search-desc]
-original=Showing {{count}} hotkey.
-translation={{count}} குறுக்குவழியைக் காட்டுகிறது.
+original=Showing {{count}} hotkey. 
+translation={{count}} குறுக்குவழியைக் காட்டுகிறது. 
 
 [setting.hotkeys.option-search-desc_plural]
-original=Showing {{count}} hotkeys.
-translation={{count}} குறுக்குவழிகள் காட்டப்படுகின்றன.
+original=Showing {{count}} hotkeys. 
+translation={{count}} குறுக்குவழிகள் காட்டப்படுகின்றன. 
 
 [setting.hotkeys.option-search-conflict]
 original={{count}} command with conflicts.
@@ -966,6 +1010,10 @@ translation=சிறிய எழுத்துகள், எண்கள் �
 original=Enter your secret.
 translation=உங்கள் இரகசியத்தை உள்ளிடவும்.
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=இரகசியத்தைப் புதுப்பிக்க முடியவில்லை.
@@ -1006,6 +1054,30 @@ translation=இரகசியத்தைச் சேர்...
 original=Link...
 translation=இணைப்பு...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=
+
 [setting.about.name]
 original=General
 translation=பொது
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=பதிப்பு {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(நிறுவி பதிப்பு: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=உங்கள் செயலி புதுப்பித்த நிலையில் உள்ளது!
+original=Installer version: {{version}}
+translation=நிறுவி பதிப்பு: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1055,8 +1123,8 @@ original=To support the latest features and to receive the latest security patch
 translation=புதிய அம்சங்கள் மற்றும் பாதுகாப்புத் திருத்தங்களைப் பெற, Obsidian-ஐ இணையதளத்திலிருந்து பதிவிறக்கி மீண்டும் நிறுவவும்.
 
 [setting.about.label-new-version-ready]
-original=A new version is ready to be installed.
-translation=புதிய பதிப்பு நிறுவத் தயாராக உள்ளது.
+original=A new version is ready to be installed. 
+translation=புதிய பதிப்பு நிறுவத் தயாராக உள்ளது. 
 
 [setting.about.label-disabled-updates]
 original=Updates are disabled.
@@ -1089,6 +1157,26 @@ translation=செயலி ஏன் மெதுவாகத் தொடங�
 [setting.about.button-check-startup]
 original=Check now
 translation=இப்போது சரிபார்
+
+[setting.about.option-cli]
+original=Command line interface
+translation=
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=
+
+[setting.about.button-register]
+original=Register
+translation=
 
 [setting.about.option-get-help]
 original=Help
@@ -1163,8 +1251,8 @@ original=Validating...
 translation=சரிபார்க்கிறது...
 
 [setting.about.label-invalid-commercial-license]
-original=License invalid:
-translation=உரிமம் செல்லாதது:
+original=License invalid: 
+translation=உரிமம் செல்லாதது: 
 
 [setting.about.button-remove-commercial-license]
 original=Remove
@@ -1283,8 +1371,8 @@ original=Failed to sign up
 translation=பதிவு செய்ய முடியவில்லை
 
 [setting.account.label-no-account]
-original=Don't have an account?
-translation=கணக்கு இல்லையா?
+original=Don't have an account? 
+translation=கணக்கு இல்லையா? 
 
 [setting.account.link-sign-up-now]
 original=Sign up now
@@ -1491,16 +1579,16 @@ original= (currently installed: {{version}})
 translation=(தற்போது நிறுவப்பட்டுள்ளது: {{version}})
 
 [setting.third-party-plugin.label-by-author]
-original=By
-translation=உருவாக்கியவர்
+original=By 
+translation=உருவாக்கியவர் 
 
 [setting.third-party-plugin.label-repository]
-original=Repository:
-translation=களஞ்சியம்:
+original=Repository: 
+translation=களஞ்சியம்: 
 
 [setting.third-party-plugin.label-last-update]
-original=Last update:
-translation=கடைசி புதுப்பிப்பு:
+original=Last update: 
+translation=கடைசி புதுப்பிப்பு: 
 
 [setting.third-party-plugin.tooltip-view-last-update]
 original=View the latest update
@@ -2029,10 +2117,6 @@ translation=கோப்பு இல்லை
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=“{{கோப்பு}}” வெளிப்புறமாக மாற்றப்பட்டுள்ளது. மாற்றங்கள் தானாக இணைக்கப்படுகின்றன.
-
-[interface.switch-vault]
-original=Open another vault
-translation=வேறொரு பெட்டகத்தைத் திற
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -2619,8 +2703,8 @@ original=Pick a place to put your new vault.
 translation=உங்கள் புதிய பெட்டகம் அமைய வேண்டிய இடத்தைத் தேர்வு செய்யவும்.
 
 [interface.start-screen.label-new-vault-location-preview]
-original=Your new vault will be placed in:
-translation=உங்கள் புதிய பெட்டகம் இங்கு வைக்கப்படும்:
+original=Your new vault will be placed in: 
+translation=உங்கள் புதிய பெட்டகம் இங்கு வைக்கப்படும்: 
 
 [interface.start-screen.option-reveal-vault-in-explorer]
 original=Reveal vault in system explorer
@@ -3247,16 +3331,16 @@ original=Loading plugins...
 translation=செருகுநிரல்களை ஏற்றுகிறது...
 
 [interface.start-up.msg-plugin-hang]
-original=Plugin “{{plugin}}” is taking long to load.
-translation=“{{செருகுநிரல்}}” செருகுநிரலை ஏற்ற நேரமாகிறது.
+original=Plugin “{{plugin}}” is taking long to load. 
+translation=செருகுநிரல் “{{plugin}}” ஏற்ற நீண்ட நேரம் எடுக்கிறது. 
 
 [interface.start-up.loading-vault]
 original=Loading vault...
 translation=பெட்டகம் ஏற்றப்படுகிறது...
 
 [interface.start-up.msg-failed-to-load-vault]
-original=Failed to load vault:
-translation=பெட்டகத்தை ஏற்ற முடியவில்லை:
+original=Failed to load vault: 
+translation=பெட்டகத்தை ஏற்ற முடியவில்லை: 
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -3430,6 +3514,10 @@ translation=அடுக்கப்பட்ட தாவல்களை மா
 original=Toggle readable line length
 translation=வாசிக்கக்கூடிய வரி நீளத்தை மாற்று
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=
+
 [commands.navigate-back]
 original=Navigate back
 translation=பின்செல்
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=பகல்/இரவு முறையை மாற்று
 
 [commands.change-theme]
-original=Change theme
-translation=தோற்றத்தை மாற்று
+original=Change theme...
+translation=கருப்பொருளை மாற்று...
+
+[commands.change-vault]
+original=Change vault...
+translation=
+
+[commands.open-vault]
+original=Open vault...
+translation=
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=
 
 [commands.search-current-file]
 original=Search current file
@@ -3459,7 +3559,7 @@ original=Add file property
 translation=பண்பைச் சேர்
 
 [commands.label-sort-property-a-to-z]
-original=Name
+original=Name (A to Z)
 translation=பெயர் (A முதல் Z வரை)
 
 [commands.label-sort-property-z-to-a]
@@ -3810,10 +3910,6 @@ translation=கோப்புறையை நீக்கு
 original=Delete
 translation=நீக்கு
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=நீக்கு (மீண்டும் கேட்காதே)
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=மீண்டும் கேட்காதே
@@ -3982,6 +4078,26 @@ translation=தலைப்பை மறுபெயரிடு
 original=Rename block ID
 translation=தொகுதி ஐடியை மறுபெயரிடு
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=
+
 [menu-items.new-file]
 original=New Note
 translation=புதிய குறிப்பு
@@ -4069,6 +4185,14 @@ translation=அட்டவணை
 [menu-items.insert-footnote]
 original=Footnote
 translation=அடிக்குறிப்பு
+
+[menu-items.inline-title]
+original=Inline title
+translation=
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -4311,28 +4435,28 @@ original=to dismiss
 translation=மூட
 
 [plugins.file-explorer.label-sort-a-to-z]
-original=File name
-translation=பெயர்
+original=File name (A to Z)
+translation=கோப்புப் பெயர் (A முதல் Z வரை)
 
 [plugins.file-explorer.label-sort-z-to-a]
-original=File name
-translation=பெயர்
+original=File name (Z to A)
+translation=கோப்புப் பெயர் (Z முதல் A வரை)
 
 [plugins.file-explorer.label-sort-new-to-old]
-original=Modified time
-translation=திருத்திய நேரம்
+original=Modified time (new to old)
+translation=திருத்திய நேரம் (புதியது முதல் பழையது வரை)
 
 [plugins.file-explorer.label-sort-old-to-new]
-original=Modified time
-translation=திருத்திய நேரம்
+original=Modified time (old to new)
+translation=திருத்திய நேரம் (பழையது முதல் புதியது வரை)
 
 [plugins.file-explorer.label-sort-created-old-to-new]
-original=Created time
-translation=உருவாக்கிய நேரம்
+original=Created time (old to new)
+translation=உருவாக்கிய நேரம் (பழையது முதல் புதியது வரை)
 
 [plugins.file-explorer.label-sort-created-new-to-old]
-original=Created time
-translation=உருவாக்கிய நேரம்
+original=Created time (new to old)
+translation=உருவாக்கிய நேரம் (புதியது முதல் பழையது வரை)
 
 [plugins.file-explorer.menu-opt-new-note]
 original=New note
@@ -4359,12 +4483,12 @@ original=Duplicate
 translation=நகலெடு
 
 [plugins.file-explorer.msg-invalid-characters]
-original=File name cannot contain any of these characters:
-translation=கோப்புப் பெயரில் பின்வரும் எழுத்துக்கள் இருக்கக்கூடாது:
+original=File name cannot contain any of these characters: 
+translation=கோப்புப் பெயரில் பின்வரும் எழுத்துக்கள் இருக்கக்கூடாது: 
 
 [plugins.file-explorer.msg-unsafe-characters]
-original=Links will not work with file names containing any of these characters:
-translation=பின்வரும் எழுத்துக்கள் இருந்தால் இணைப்புகள் வேலை செய்யாது:
+original=Links will not work with file names containing any of these characters: 
+translation=பின்வரும் எழுத்துக்கள் உள்ள கோப்புப் பெயர்களுடன் இணைப்புகள் வேலை செய்யாது: 
 
 [plugins.file-explorer.msg-file-already-exists]
 original=There's already a file with the same name
@@ -4443,24 +4567,24 @@ original=Search...
 translation=தேடு...
 
 [plugins.search.label-match-text]
-original=Matches text:
-translation=உரை பொருத்தம்:
+original=Matches text: 
+translation=உரை பொருத்தம்: 
 
 [plugins.search.label-match-regex]
-original=Matches regex:
-translation=Regex பொருத்தம்:
+original=Matches regex: 
+translation=Regex பொருத்தம்: 
 
 [plugins.search.label-match-exact-text]
-original=Contains exact text:
-translation=துல்லியமான உரை உள்ளது:
+original=Contains exact text: 
+translation=துல்லியமான உரை உள்ளது: 
 
 [plugins.search.label-match-greater-than]
-original=Greater than:
-translation=இதைவிடப் பெரியது:
+original=Greater than: 
+translation=இதைவிடப் பெரியது: 
 
 [plugins.search.label-match-less-than]
-original=Less than:
-translation=இதைவிடச் சிறியது:
+original=Less than: 
+translation=இதைவிடச் சிறியது: 
 
 [plugins.search.label-match-true]
 original=Is true
@@ -4479,16 +4603,16 @@ original=Contains property:
 translation=பண்பு உள்ளது:
 
 [plugins.search.label-match-all]
-original=Match all of:
-translation=இவை அனைத்தையும் பொருத்து:
+original=Match all of: 
+translation=இவை அனைத்தையும் பொருத்து: 
 
 [plugins.search.label-match-any]
-original=Match any of:
-translation=இவற்றில் ஏதேனும் ஒன்றைப் பொருத்து:
+original=Match any of: 
+translation=இவற்றில் ஏதேனும் ஒன்றைப் பொருத்து: 
 
 [plugins.search.label-excluding]
-original=Excluding:
-translation=தவிர்த்து:
+original=Excluding: 
+translation=தவிர்த்து: 
 
 [plugins.search.label-case-sensitive]
 original=Case sensitive
@@ -4499,44 +4623,44 @@ original=Case insensitive
 translation=எழுத்து வடிவம் உணரா
 
 [plugins.search.label-match-file-path]
-original=Match file path:
-translation=கோப்புப் பாதையைப் பொருத்து:
+original=Match file path: 
+translation=கோப்புப் பாதையைப் பொருத்து: 
 
 [plugins.search.label-match-file-name]
-original=Match file name:
-translation=கோப்புப் பெயரைப் பொருத்து:
+original=Match file name: 
+translation=கோப்புப் பெயரைப் பொருத்து: 
 
 [plugins.search.label-match-content]
-original=Match file content:
-translation=கோப்பு உள்ளடக்கத்தைப் பொருத்து:
+original=Match file content: 
+translation=கோப்பு உள்ளடக்கத்தைப் பொருத்து: 
 
 [plugins.search.label-match-task]
-original=Match task:
-translation=பணியைப் பொருத்து:
+original=Match task: 
+translation=பணியைப் பொருத்து: 
 
 [plugins.search.label-match-task-todo]
-original=Match task (todo):
-translation=பணியைப் பொருத்து (விருப்பம்):
+original=Match task (todo): 
+translation=பணியைப் பொருத்து (செய்யவேண்டியது): 
 
 [plugins.search.label-match-task-done]
-original=Match task (done):
-translation=பணியைப் பொருத்து (முடிந்தது):
+original=Match task (done): 
+translation=பணியைப் பொருத்து (முடிந்தது): 
 
 [plugins.search.label-match-line]
-original=Match line:
-translation=வரியைப் பொருத்து:
+original=Match line: 
+translation=வரியைப் பொருத்து: 
 
 [plugins.search.label-match-block]
-original=Match block:
-translation=தொகுதியைப் பொருத்து:
+original=Match block: 
+translation=தொகுதியைப் பொருத்து: 
 
 [plugins.search.label-match-section]
-original=Match section:
-translation=பிரிவைப் பொருத்து:
+original=Match section: 
+translation=பிரிவைப் பொருத்து: 
 
 [plugins.search.label-match-tag]
-original=Match tag:
-translation=குறிச்சொல்லைப் பொருத்து:
+original=Match tag: 
+translation=குறிச்சொல்லைப் பொருத்து: 
 
 [plugins.search.label-no-matches]
 original=No matches found.
@@ -5071,8 +5195,8 @@ original=No tags found.
 translation=குறிச்சொற்கள் எதுவும் இல்லை.
 
 [plugins.tag-pane.label-sort-by-name-a-to-z]
-original=Tag name
-translation=பெயர்
+original=Tag name (A to Z)
+translation=குறிச்சொல் பெயர் (A முதல் Z வரை)
 
 [plugins.tag-pane.label-sort-by-name-z-to-a]
 original=Tag name (Z to A)
@@ -5171,7 +5295,7 @@ original=Invalid properties.
 translation=செல்லாத பண்புகள்.
 
 [plugins.properties.label-sort-by-name-a-to-z]
-original=Property name
+original=Property name (A to Z)
 translation=பண்பு பெயர் (A முதல் Z வரை)
 
 [plugins.properties.label-sort-by-name-z-to-a]
@@ -5751,16 +5875,16 @@ original=Daily note folder not found.
 translation=தினசரி குறிப்பு கோப்புறை காணப்படவில்லை.
 
 [plugins.daily-notes.label-refer-to-syntax]
-original=For more syntax, refer to
-translation=மேலும் தொடரியல் அறிய, பார்க்கவும்:
+original=For more syntax, refer to 
+translation=மேலும் தொடரியல் அறிய, பார்க்கவும் 
 
 [plugins.daily-notes.label-syntax-link]
 original=format reference
 translation=வடிவக் குறிப்பு
 
 [plugins.daily-notes.label-syntax-live-preview]
-original=Your current syntax looks like this:
-translation=தற்போதைய வடிவம் இப்படி இருக்கும்:
+original=Your current syntax looks like this: 
+translation=தற்போதைய வடிவம் இப்படி இருக்கும்: 
 
 [plugins.daily-notes.option-new-file-location]
 original=New file location
@@ -5793,6 +5917,10 @@ translation=தனித்துவம்
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=புதிய தனித்துவமான குறிப்பை உருவாக்கு
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -6451,8 +6579,8 @@ original=Changed
 translation=மாற்றங்கள்
 
 [plugins.publish.label-unchanged-files-already-published]
-original=Unchanged
-translation=மாறாதவை
+original=Unchanged (select to unpublish)
+translation=மாறாதவை (வெளியீட்டை நீக்கத் தேர்வுசெய்க)
 
 [plugins.publish.label-file-selected]
 original= selected
@@ -6535,8 +6663,8 @@ original=It takes up to a few minutes for the changes to show up on your site. I
 translation=மாற்றங்கள் தளத்தில் தெரிய சில நிமிடங்கள் ஆகலாம். தெரியவில்லை என்றால், உலாவியின் தேக்ககத்தை அழிக்கவும்.
 
 [plugins.publish.label-visit-site]
-original=You can visit your site here:
-translation=உங்கள் தளத்தை இங்கே பார்வையிடலாம்:
+original=You can visit your site here: 
+translation=உங்கள் தளத்தை இங்கே பார்வையிடலாம்: 
 
 [plugins.publish.msg-something-went-wrong]
 original=Something went wrong.
@@ -6579,8 +6707,8 @@ original=Your password
 translation=உங்கள் கடவுச்சொல்
 
 [plugins.publish.option-nickname-name]
-original=Nickname
-translation=புனைபெயர்
+original=Nickname (optional)
+translation=புனைபெயர் (விருப்பம்)
 
 [plugins.publish.option-nickname-desc]
 original=Set a nickname to remind yourself what or who the password is for.
@@ -8946,6 +9074,10 @@ translation=வரிசைப்படுத்து
 original=Filter
 translation=வடிகட்டி
 
+[plugins.bases.label-search]
+original=Search
+translation=
+
 [plugins.bases.label-properties]
 original=Properties
 translation=பண்புகள்
@@ -8953,6 +9085,10 @@ translation=பண்புகள்
 [plugins.bases.label-new-item]
 original=New
 translation=புதிய
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9091,8 +9227,8 @@ original=1 → 0
 translation=1 → 0
 
 [plugins.bases.msg-invalid-view-name]
-original=View name cannot contain:
-translation=பார்வைப் பெயரில் இவை இருக்கக்கூடாது:
+original=View name cannot contain: 
+translation=பார்வைப் பெயரில் இவை இருக்கக்கூடாது: 
 
 [plugins.bases.msg-duplicate-view-name]
 original=View name already exists.
@@ -9346,6 +9482,10 @@ translation=சுருக்கவும்...
 original=Group by this property
 translation=இந்தப் பண்பின்படி குழுவாக்கு
 
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=
+
 [plugins.bases.table.label-summary]
 original=Summary
 translation=சுருக்கம்
@@ -9495,12 +9635,12 @@ original=Single page
 translation=ஒற்றைப் பக்கம்
 
 [pdf.label-spread-odd]
-original=Two-page
-translation=இரட்டைப் பக்கம்
+original=Two-page (odd)
+translation=இரட்டைப் பக்கம் (ஒற்றை)
 
 [pdf.label-spread-even]
-original=Two-page
-translation=இரட்டைப் பக்கம்
+original=Two-page (even)
+translation=இரட்டைப் பக்கம் (இரட்டை)
 
 [pdf.tooltip-sidebar-options]
 original=Sidebar options
@@ -9743,12 +9883,12 @@ original=Clear cells
 translation=கலங்களை அழி
 
 [table.action-sort-a-z]
-original=Sort by column
-translation=நிரலை A → Z வரிசைப்படுத்து
+original=Sort by column (A to Z)
+translation=நிரலை வரிசைப்படுத்து (A முதல் Z வரை)
 
 [table.action-sort-z-a]
-original=Sort by column
-translation=நிரலை Z → A வரிசைப்படுத்து
+original=Sort by column (Z to A)
+translation=நிரலை வரிசைப்படுத்து (Z முதல் A வரை)
 
 [table.label-command]
 original=Table: {{command}}

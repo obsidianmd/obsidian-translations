@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=हिज्जे जाँच शब्दकोश खाली छ।
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=इनलाइन शीर्षक देखाउनुहोस्
+original=Inline title
+translation=इनलाइन शीर्षक
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=फाइलको सामग्रीसँग सम्पादन योग्य शीर्षकको रूपमा फाइलनाम देखाउँछ।
+original=Display the filename as an editable title inline with the file contents.
+translation=फाइलको सामग्रीसँग इनलाइन रूपमा सम्पादन योग्य शीर्षकको रूपमा फाइलनाम देखाउनुहोस्।
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=लाइभ पूर्वावलोकन
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=लाइन नम्बर देखाउनुहोस्
+original=Line numbers
+translation=लाइन नम्बर
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=नालीमा लाइन नम्बर देखाउनुहोस्।
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=इन्डेन्टेशन गाइडहरू देखाउनुहोस्
+original=Indentation guides
+translation=इन्डेन्टेशन गाइडहरू
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=फाइलहरू र लिङ्कहरू
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=फाइल मेटाउने निश्चित गर्नुहोस्
+original=Confirm before deleting files
+translation=फाइलहरू मेटाउनु अघि पुष्टि गर्नुहोस्
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=तपाईले फाइल मेटाउने कुरा पुष्टि गर्न प्रोम्प्ट प्राप्त गर्न चाहनुहुन्छ कि होइन।
+original=Avoid accidentally deleting files.
+translation=अनायासै फाइलहरू मेटिनबाट बचाउनुहोस्।
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=ओब्सिडियन रद्दीटोकरीमा स
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=स्थायी रूपमा मेटाउने
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=फाइलहरू मेटाउँदा संलग्नकहरू मेटाउनुहोस्
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=मेटाइएको फाइलसँग लिङ्क भएका र अन्यत्र प्रयोग नभएका संलग्नकहरू स्वतः हटाउनुहोस्।
+
+[setting.file.option-choice-always]
+original=Always
+translation=सधैं
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=हरेक पटक सोध्नुहोस्
+
+[setting.file.option-choice-never]
+original=Never
+translation=कहिल्यै होइन
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=ट्याबको शीर्षक पट्टी देख�
 original=Display the header at the top of every tab.
 translation=हरेक ट्याबको शीर्षमा हेडर देखाउनुहोस्।
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=फ्लोटिङ नेभिगेसन
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=नेभिगेसन बटनहरू स्थिर रूपमा टाँसिनुको सट्टा सामग्रीमाथि तैरिन्छन्।
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=स्लाइडिङ साइडबारहरू
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=साइडबारहरू माथि तैरिनुको सट्टा सामग्रीको छेउतिर स्लाइड हुन्छन्।
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=पूर्ण स्क्रिन
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=पढ्ने क्रममा इन्टरफेसका तत्वहरू स्वतः लुकाउनुहोस्।
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=अपडेट गर्न {{count}} विषयवस्तु भेटियो।
@@ -966,6 +1010,10 @@ translation=सानो अक्षर, अंक र ड्यास मा�
 original=Enter your secret.
 translation=तपाईंको गोप्य प्रविष्ट गर्नुहोस्।
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=कहिल्यै पहुँच गरिएको छैन
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=गोप्य अद्यावधिक गर्न असफल।
@@ -1006,6 +1054,30 @@ translation=गोप्य थप्नुहोस्...
 original=Link...
 translation=लिङ्क...
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=यो प्रणालीमा कुनै secret store उपलब्ध नभएकाले गोप्य जानकारीहरू एनक्रिप्सन बिना भण्डारण गरिन्छ।
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=गोप्य जानकारीहरू एनक्रिप्ट छैनन्
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=फेरि नदेखाउनुहोस्
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=एनक्रिप्सन उपलब्ध छैन
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=एनक्रिप्सन तपाईंको operating system को secret store द्वारा प्रदान गरिन्छ। secret store नभएमा, तपाईंका गोप्य जानकारीहरू एनक्रिप्सन बिना भण्डारण हुनेछन्।
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Linux मा, समर्थित secret store हरूमा यी समावेश छन्:
+
 [setting.about.name]
 original=General
 translation=सामान्य
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=संस्करण {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(स्थापनाकर्ता संस्करण: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=तपाईँको एप अप टु डेट छ!
+original=Installer version: {{version}}
+translation=स्थापक संस्करण: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=एप ढिलो लोड हुनुको कारण के
 [setting.about.button-check-startup]
 original=Check now
 translation=अहिले जाँच गर्नुहोस्
+
+[setting.about.option-cli]
+original=Command line interface
+translation=कमाण्ड लाइन इन्टरफेस
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=कमाण्ड लाइनबाट Obsidian सँग अन्तरक्रिया गर्न अनुमति दिनुहोस्।
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=टर्मिनलमा काम गर्ने गरी CLI सेटअप गर्नुहोस्
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=तपाईंको टर्मिनलबाट जहाँबाट पनि "obsidian" कमाण्ड प्रयोग गर्न सक्षम बनाउन PATH मा "obsidian" दर्ता गर्नुहोस्।
+
+[setting.about.button-register]
+original=Register
+translation=दर्ता गर्नुहोस्
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=कुनै फाइल छैन
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" बाह्य रूपमा परिमार्जन गरिएको छ, परिवर्तनहरू स्वतः मर्ज गर्दै।
-
-[interface.switch-vault]
-original=Open another vault
-translation=अर्को भोल्ट खोल्नुहोस्
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=स्ट्याक गरिएका ट्याबहरू �
 original=Toggle readable line length
 translation=पढ्न मिल्ने लाइन लम्बाइ टगल गर्नुहोस्
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=लाइन नम्बरहरू टगल गर्नुहोस्
+
 [commands.navigate-back]
 original=Navigate back
 translation=पछाडि नेभिगेट गर्नुहोस्
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=लाइट/डार्क मोड टगल गर्नुहोस्
 
 [commands.change-theme]
-original=Change theme
-translation=विषयवस्तु परिवर्तन गर्नुहोस्
+original=Change theme...
+translation=थिम परिवर्तन गर्नुहोस्...
+
+[commands.change-vault]
+original=Change vault...
+translation=भल्ट परिवर्तन गर्नुहोस्...
+
+[commands.open-vault]
+original=Open vault...
+translation=भल्ट खोल्नुहोस्...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=भल्टहरू व्यवस्थापन गर्नुहोस्
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=फोल्डर मेटाउनुहोस्
 original=Delete
 translation=मेट्नुहोस्
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=मेटाउनुहोस् र फेरि नसोध्नुहोस्
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=फेरि नसोध्नुहोस्
@@ -3982,6 +4078,26 @@ translation=शीर्षक पुन: नामाकरण
 original=Rename block ID
 translation=ब्लक आइडीको नाम परिवर्तन गर्नुहोस्
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=फाइलका संलग्नकहरू मेटाउने?
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=यो संलग्नक अब कुनै पनि नोटमा प्रयोग हुँदैन। के तपाईं यसलाई मेटाउन चाहनुहुन्छ?
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=यी {{count}} संलग्नकहरू अब कुनै पनि नोटमा प्रयोग हुँदैनन्। के तपाईं तिनीहरूलाई मेटाउन चाहनुहुन्छ?
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=फाइल ट्री
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=ग्यालरी
+
 [menu-items.new-file]
 original=New Note
 translation=नोट सिर्जना गर्नुहोस्
@@ -4069,6 +4185,14 @@ translation=तालिका
 [menu-items.insert-footnote]
 original=Footnote
 translation=पादटिप्पणी
+
+[menu-items.inline-title]
+original=Inline title
+translation=इनलाइन शीर्षक
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=लाइन नम्बरहरू
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=अद्वितीय
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=नयाँ अद्वितीय नोट सिर्जना गर्नुहोस्
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=नयाँ अद्वितीय नोट
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=क्रमबद्ध गर्नुहोस्
 original=Filter
 translation=फिल्टर
 
+[plugins.bases.label-search]
+original=Search
+translation=खोज्नुहोस्
+
 [plugins.bases.label-properties]
 original=Properties
 translation=गुणहरू
@@ -8953,6 +9085,10 @@ translation=गुणहरू
 [plugins.bases.label-new-item]
 original=New
 translation=नयाँ
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}} देखाउँदै
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=सारांश बनाउनुहोस्...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=यो गुणअनुसार समूहबद्ध गर्नुहोस्
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=मानहरू खाली गर्नुहोस्
 
 [plugins.bases.table.label-summary]
 original=Summary

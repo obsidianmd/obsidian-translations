@@ -67,12 +67,12 @@ original=The spellcheck dictionary is empty.
 translation=拼写检查词典是空的。
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=显示页内标题
+original=Inline title
+translation=页内标题
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
-translation=在笔记页面内显示笔记标题。
+original=Display the filename as an editable title inline with the file contents.
+translation=将文件名作为可编辑的标题在文件内容中显示。
 
 [setting.editor.option-readable-line-length]
 original=Readable line length
@@ -191,16 +191,16 @@ original=Live Preview
 translation=实时预览
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=显示行号
+original=Line numbers
+translation=行号
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=在左侧显示行号。
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=显示缩进参考线
+original=Indentation guides
+translation=缩进参考线
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=文件与链接
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=确认删除提示
+original=Confirm before deleting files
+translation=删除文件前确认
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=是否需要弹出提示窗口以确认删除文件。
+original=Avoid accidentally deleting files.
+translation=避免意外删除文件。
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=移至 Obsidian 回收站（.trash 文件夹）
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=永久删除
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=删除文件时删除附件
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=如果附件仅链接到被删除的文件且在其他地方未使用，则自动移除该附件。
+
+[setting.file.option-choice-always]
+original=Always
+translation=始终
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=每次都询问
+
+[setting.file.option-choice-never]
+original=Never
+translation=从不
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=显示标签页标题栏
 original=Display the header at the top of every tab.
 translation=在每个标签页上方显示标题栏。
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=悬浮导航
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=导航按钮悬浮在内容上方，而不是固定在界面上。
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=滑动侧边栏
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=侧边栏滑入到内容侧边，而不是悬浮在内容上方。
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=全屏
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=阅读时自动隐藏界面元素。
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation=有 {{count}} 个社区主题需要更新。
@@ -966,6 +1010,10 @@ translation=仅限小写字母，数字和破折号。
 original=Enter your secret.
 translation=请输入您的密钥。
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=从未访问
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=更新密钥失败。
@@ -1006,6 +1054,30 @@ translation=添加密钥…
 original=Link...
 translation=链接…
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=由于此系统上没有可用的密钥存储，你的密钥将以未加密方式存储。
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=密钥未加密
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=不再显示
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=加密不可用
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=加密由你的操作系统密钥存储提供。若无密钥存储，你的密钥将以未加密方式存储。
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=在 Linux 上，支持的密钥存储包括：
+
 [setting.about.name]
 original=General
 translation=关于
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=版本 {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=（安装程序版本: {{version}}）
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=你使用的是最新版本!
+original=Installer version: {{version}}
+translation=安装程序版本: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=通过查看导致应用加载缓慢的原因来诊断问题。
 [setting.about.button-check-startup]
 original=Check now
 translation=立即检查
+
+[setting.about.option-cli]
+original=Command line interface
+translation=命令行界面
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=允许从命令行与 Obsidian 交互。
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=设置 CLI 以在终端中使用
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=将“obsidian”注册到 PATH 中，以便在终端的任意位置都能访问“obsidian”命令。
+
+[setting.about.button-register]
+original=Register
+translation=注册
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=未打开文件
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation=“{{file}}” 已被外部修改，正在自动合并更改。
-
-[interface.switch-vault]
-original=Open another vault
-translation=打开其他仓库
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=堆叠/取消堆叠标签页
 original=Toggle readable line length
 translation=切换限制行宽
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=切换行号
+
 [commands.navigate-back]
 original=Navigate back
 translation=返回
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=切换浅色/深色模式
 
 [commands.change-theme]
-original=Change theme
-translation=更换主题
+original=Change theme...
+translation=更换主题...
+
+[commands.change-vault]
+original=Change vault...
+translation=切换仓库…
+
+[commands.open-vault]
+original=Open vault...
+translation=打开仓库…
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=管理仓库
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=删除文件夹
 original=Delete
 translation=删除
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=删除，并且不要再询问。
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=不再询问
@@ -3982,6 +4078,26 @@ translation=重命名小标题
 original=Rename block ID
 translation=重命名块 ID
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=删除文件附件？
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=此附件已不再被任何笔记使用。是否要删除它？
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=这 {{count}} 个附件已不再被任何笔记使用。是否要删除它们？
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=文件树
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=图库
+
 [menu-items.new-file]
 original=New Note
 translation=新建笔记
@@ -4069,6 +4185,14 @@ translation=表格
 [menu-items.insert-footnote]
 original=Footnote
 translation=脚注
+
+[menu-items.inline-title]
+original=Inline title
+translation=行内标题
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=行号
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=时间戳
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=创建时间戳笔记
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=新建唯一笔记
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=排序
 original=Filter
 translation=筛选
 
+[plugins.bases.label-search]
+original=Search
+translation=搜索
+
 [plugins.bases.label-properties]
 original=Properties
 translation=属性
@@ -8953,6 +9085,10 @@ translation=属性
 [plugins.bases.label-new-item]
 original=New
 translation=新建
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation=显示 {{count}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=汇总…
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=使用该属性分组
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=清除值
 
 [plugins.bases.table.label-summary]
 original=Summary

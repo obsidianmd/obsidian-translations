@@ -67,11 +67,11 @@ original=The spellcheck dictionary is empty.
 translation=スペルチェック辞書が指定されていません。
 
 [setting.editor.option-show-inline-title]
-original=Show inline title
-translation=インラインタイトルの表示
+original=Inline title
+translation=インラインタイトル
 
 [setting.editor.option-show-inline-title-description]
-original=Displays the filename as an editable title inline with the file contents.
+original=Display the filename as an editable title inline with the file contents.
 translation=ファイル名をファイル内容と共に編集可能なインラインのタイトルとして表示します。
 
 [setting.editor.option-readable-line-length]
@@ -191,16 +191,16 @@ original=Live Preview
 translation=ライブプレビュー
 
 [setting.editor.option-show-line-number]
-original=Show line numbers
-translation=行番号の表示
+original=Line numbers
+translation=行番号
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
 translation=ガターに行番号を表示します。
 
 [setting.editor.option-indentation-guide]
-original=Show indentation guides
-translation=インデントガイドの表示
+original=Indentation guides
+translation=インデントガイド
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -303,12 +303,12 @@ original=Files and links
 translation=ファイルとリンク
 
 [setting.file.option-confirm-file-deletion]
-original=Confirm file deletion
-translation=ファイル削除の確認
+original=Confirm before deleting files
+translation=ファイル削除前に確認
 
 [setting.file.option-confirm-file-deletion-description]
-original=Ask before deleting a file.
-translation=ファイルを削除する際に確認メッセージを表示するかどうかを決めます。
+original=Avoid accidentally deleting files.
+translation=誤ってファイルを削除しないようにします。
 
 [setting.file.option-trash]
 original=Trash
@@ -333,6 +333,26 @@ translation=Obsidianのゴミ箱(.trashフォルダ)に移動する
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
 translation=完全に削除する
+
+[setting.file.option-delete-unlinked-attachments]
+original=Delete attachments when deleting files
+translation=ファイル削除時に添付ファイルも削除
+
+[setting.file.option-delete-unlinked-attachments-description]
+original=Automatically remove attachments linked to the deleted file if they're not used elsewhere.
+translation=削除したファイルにリンクされている添付ファイルが他で使用されていない場合、自動的に削除します。
+
+[setting.file.option-choice-always]
+original=Always
+translation=常に
+
+[setting.file.option-choice-ask-every-time]
+original=Ask each time
+translation=毎回確認する
+
+[setting.file.option-choice-never]
+original=Never
+translation=しない
 
 [setting.file.option-default-open-action]
 original=Default file to open
@@ -818,6 +838,30 @@ translation=タブタイトルバーの表示
 original=Display the header at the top of every tab.
 translation=すべてのタブ上にヘッダーを表示します。
 
+[setting.appearance.option-floating-navigation]
+original=Floating navigation
+translation=フローティングナビゲーション
+
+[setting.appearance.option-floating-navigation-desc]
+original=Navigation buttons float over the content instead of being anchored.
+translation=ナビゲーションボタンを固定せず、コンテンツ上に表示します。
+
+[setting.appearance.option-sliding-sidebar]
+original=Sliding sidebars
+translation=スライド式サイドバー
+
+[setting.appearance.option-sliding-sidebar-desc]
+original=Sidebars slide to the side of the content instead of floating above.
+translation=サイドバーを上に重ねて表示する代わりに、コンテンツの横へスライド表示します。
+
+[setting.appearance.option-auto-full-screen]
+original=Full screen
+translation=フルスクリーン
+
+[setting.appearance.option-auto-full-screen-desc]
+original=Automatically hide interface elements while reading.
+translation=リーディング中にインターフェース要素を自動的に非表示にします。
+
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
 translation={{count}}個のテーマが更新可能です。
@@ -966,6 +1010,10 @@ translation=小文字、数字、ハイフンのみ使用できます。
 original=Enter your secret.
 translation=シークレットを入力してください。
 
+[setting.keychain.msg-never-accessed]
+original=Never accessed
+translation=未アクセス
+
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=シークレットの更新に失敗しました。
@@ -1006,6 +1054,30 @@ translation=シークレットを追加…
 original=Link...
 translation=リンク…
 
+[setting.keychain.msg-secrets-not-encrypted]
+original=Secrets are stored without encryption because no secret store is available on this system.
+translation=このシステムで利用可能なシークレットストアがないため、シークレットは暗号化せずに保存されます。
+
+[setting.keychain.msg-secrets-not-encrypted-short]
+original=Secrets are not encrypted
+translation=シークレットは暗号化されていません
+
+[setting.keychain.button-dismiss-warning]
+original=Don't show again
+translation=今後表示しない
+
+[setting.keychain.label-encryption-not-available]
+original=Encryption not available
+translation=暗号化は利用できません
+
+[setting.keychain.msg-encryption-provided-by-o-s]
+original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
+translation=暗号化はお使いのオペレーティングシステムのシークレットストアによって提供されます。シークレットストアがない場合、シークレットは暗号化せずに保存されます。
+
+[setting.keychain.msg-linux-secret-stores]
+original=On Linux, supported secret stores include:
+translation=Linux でサポートされているシークレットストアには以下が含まれます:
+
 [setting.about.name]
 original=General
 translation=Obsidianについて
@@ -1039,12 +1111,8 @@ original=Version {{version}}
 translation=バージョン {{version}}
 
 [setting.about.label-install-version]
-original=(Installer version: {{version}})
-translation=(インストーラーのバージョン: {{version}})
-
-[setting.about.label-up-to-date]
-original=Obsidian is up to date!
-translation=アプリは最新版です！
+original=Installer version: {{version}}
+translation=インストーラーのバージョン: {{version}}
 
 [setting.about.label-read-changelog]
 original=Read the changelog.
@@ -1089,6 +1157,26 @@ translation=アプリが遅く読み込まれる原因を確認することで�
 [setting.about.button-check-startup]
 original=Check now
 translation=今すぐ確認
+
+[setting.about.option-cli]
+original=Command line interface
+translation=コマンドラインインターフェース
+
+[setting.about.option-cli-description]
+original=Allow interactions with Obsidian from the command line.
+translation=コマンドラインから Obsidian と連携できるようにします。
+
+[setting.about.option-register-path]
+original=Set up CLI to work in the terminal
+translation=ターミナルで動作するように CLI を設定
+
+[setting.about.option-register-path-description]
+original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
+translation=PATH に「obsidian」を登録し、ターミナルのどこからでも「obsidian」コマンドにアクセスできるようにします。
+
+[setting.about.button-register]
+original=Register
+translation=登録
 
 [setting.about.option-get-help]
 original=Help
@@ -2029,10 +2117,6 @@ translation=ファイルがありません
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
 translation="{{file}}" が外部で修正されています。自動的に変更をマージします。
-
-[interface.switch-vault]
-original=Open another vault
-translation=別の保管庫を開く
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -3430,6 +3514,10 @@ translation=スタックタブをトグル
 original=Toggle readable line length
 translation=読みやすい行の長さを切り替え
 
+[commands.toggle-line-numbers]
+original=Toggle line numbers
+translation=行番号を切り替え
+
 [commands.navigate-back]
 original=Navigate back
 translation=戻る
@@ -3443,8 +3531,20 @@ original=Toggle light/dark mode
 translation=ライト/ダークモードを切り替え
 
 [commands.change-theme]
-original=Change theme
-translation=テーマの変更
+original=Change theme...
+translation=テーマの変更...
+
+[commands.change-vault]
+original=Change vault...
+translation=保管庫を変更...
+
+[commands.open-vault]
+original=Open vault...
+translation=保管庫を開く...
+
+[commands.manage-vaults]
+original=Manage vaults
+translation=保管庫を管理
 
 [commands.search-current-file]
 original=Search current file
@@ -3810,10 +3910,6 @@ translation=フォルダの削除
 original=Delete
 translation=削除
 
-[dialogue.button-delete-do-not-ask-again]
-original=Delete and don't ask again
-translation=削除して次からは確認しない
-
 [dialogue.label-do-not-ask-again]
 original=Don't ask again
 translation=次からは確認しない
@@ -3982,6 +4078,26 @@ translation=見出しのリネーム
 original=Rename block ID
 translation=ブロックIDをリネーム
 
+[dialogue.orphan-attachments-title]
+original=Delete file attachments?
+translation=ファイルの添付ファイルを削除しますか？
+
+[dialogue.orphan-attachments-desc]
+original=This attachment is no longer used in any notes. Would you like to delete it?
+translation=この添付ファイルは、どのノートでも使用されなくなりました。削除しますか？
+
+[dialogue.orphan-attachments-desc_plural]
+original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
+translation=これらの {{count}} 個の添付ファイルは、どのノートでも使用されなくなりました。削除しますか？
+
+[dialogue.tooltip-file-tree]
+original=File tree
+translation=ファイルツリー
+
+[dialogue.tooltip-gallery]
+original=Gallery
+translation=ギャラリー
+
 [menu-items.new-file]
 original=New Note
 translation=ノートを作成
@@ -4069,6 +4185,14 @@ translation=テーブル
 [menu-items.insert-footnote]
 original=Footnote
 translation=脚注
+
+[menu-items.inline-title]
+original=Inline title
+translation=インラインタイトル
+
+[menu-items.line-numbers]
+original=Line numbers
+translation=行番号
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
@@ -5793,6 +5917,10 @@ translation=ユニーク
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
 translation=新規ユニークノートの作成
+
+[plugins.unique-note-creator.label-quick-action]
+original=New unique note
+translation=新規の一意なノート
 
 [plugins.unique-note-creator.action-add-link]
 original=Add unique internal link
@@ -8946,6 +9074,10 @@ translation=並べ替え
 original=Filter
 translation=フィルター
 
+[plugins.bases.label-search]
+original=Search
+translation=検索
+
 [plugins.bases.label-properties]
 original=Properties
 translation=プロパティ
@@ -8953,6 +9085,10 @@ translation=プロパティ
 [plugins.bases.label-new-item]
 original=New
 translation=新規
+
+[plugins.bases.label-search-results]
+original=Showing {{count}}
+translation={{count}} 件を表示
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9345,6 +9481,10 @@ translation=要約...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=このプロパティでグループ化
+
+[plugins.bases.table.action-clear-selection]
+original=Clear values
+translation=値をクリア
 
 [plugins.bases.table.label-summary]
 original=Summary
