@@ -21,9 +21,9 @@ If you want to do multiple translation pull requests, before doing work each tim
 
 ## Submit changes
 
-To translate, [fork this repo](https://guides.github.com/activities/forking/) and edit the JSON file of your language. After that, [submit a pull request](https://guides.github.com/activities/forking/).
+To translate, [fork this repo](https://guides.github.com/activities/forking/) and edit the txt file of your language. After that, [submit a pull request](https://guides.github.com/activities/forking/).
 
-Note that you don't have to clone your fork to make the edits; you can do everything on GitHub's web UI. Simply open a file in your own forked repo and click on the pencil icon to start editing.
+Note that you don't have to use git to clone your fork to make the edits; you can do everything on GitHub's web UI. Simply open a file in your own forked repo and click on the pencil icon to start editing.
 
 ## Translating
 
@@ -74,7 +74,7 @@ If you spot a missing phrase while using Obsidian, here's what to do:
 
 ### Testing translation
 
-Once you have the JSON file, you can test it by opening up developer console and enter `selectLanguageFileLocation()`. The app will prompt you for a JSON file location. After that, the app will reboot itself with the selected translation JSON file applied.
+Once you have the txt file, you can test it by opening up developer console and enter `selectLanguageFileLocation()`. The app will prompt you for a txt file location. After that, the app will reboot itself with the selected translation file applied.
 
 To revert to using the default language pack, open developer console and enter `localStorage.removeItem('language')`.
 
