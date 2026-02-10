@@ -788,23 +788,23 @@ translation=Изберете персонализирана икона
 
 [setting.appearance.option-configure-ribbon]
 original=Ribbon menu configuration
-translation=Ribbon menu
+translation=Настройка на лентата
 
 [setting.appearance.option-configure-ribbon-desc]
 original=Configure what commands appear in the ribbon menu.
-translation=Configure what commands appear in the ribbon menu in the navigation bar.
+translation=Настройте кои команди да се показват в лентата за навигация.
 
 [setting.appearance.option-mobile-quick-ribbon-item]
 original=Quick access ribbon item
-translation=Лента за бърз достъп
+translation=Елемент в лентата за бърз достъп
 
 [setting.appearance.option-mobile-quick-ribbon-item-desc]
 original=Choose the behavior of tapping the ribbon button in the navigation menu. By default, this will open a menu showing all your ribbon items.
-translation=Tapping on the ribbon item in the navigation menu will active this ribbon item. Tap and hold will still show the menu.
+translation=Докосване на бутона на лентата в навигационното меню активира този елемент. Задържането ще показва менюто.
 
 [setting.appearance.option-mobile-quick-ribbon-default]
 original=Open ribbon menu
-translation=Отваряне на ribbon менюто
+translation=Отваряне на менюто на лентата
 
 [setting.appearance.button-configure]
 original=Configure
@@ -812,7 +812,7 @@ translation=Конфигуриране
 
 [setting.appearance.option-show-ribbon]
 original=Show ribbon
-translation=Показване на ribbon
+translation=Показване на лентата
 
 [setting.appearance.option-show-ribbon-desc]
 original=Display vertical toolbar on the side of the window.
@@ -820,11 +820,11 @@ translation=Показва вертикална лента с инструмен
 
 [setting.appearance.label-additional-ribbon-items]
 original=Other ribbon items
-translation=Други панделки
+translation=Други елементи на лентата
 
 [setting.appearance.label-modal-configuration]
 original=Ribbon menu
-translation=Ribbon Configuration
+translation=Настройка на лентата
 
 [setting.appearance.label-modal-configuration-desc]
 original=Choose what items you want to be active in the ribbon. Drag and drop to change the order.
@@ -1292,7 +1292,7 @@ translation=You're currently signed in {{name}} ({{email}}).
 
 [setting.account.option-your-account-desc-no-login]
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
-translation=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and Catalyst insider builds.
+translation=В момента не сте влезли. Акаунт е нужен само за Obsidian Sync, Obsidian Publish и ранни версии.
 
 [setting.account.button-upgrade-catalyst]
 original=Upgrade
@@ -2261,7 +2261,7 @@ translation=Нов раздел
 
 [interface.option-hide-ribbon]
 original=Hide ribbon
-translation=Скриване на ribbon
+translation=Скриване на лентата
 
 [interface.msg-tab-busy]
 original=This tab is currently busy, please try again later
@@ -2289,7 +2289,7 @@ translation=Добавяне на външна връзка
 
 [interface.formatting.insert-callout]
 original=Callout
-translation=Callout
+translation=Извадка
 
 [interface.formatting.insert-horizontal-rule]
 original=Horizontal rule
@@ -2433,7 +2433,7 @@ translation=Текущ изглед: четене
 
 [interface.menu.ribbon]
 original=Ribbon
-translation=Ribbon
+translation=Лента
 
 [interface.menu.left-sidebar]
 original=Left sidebar
@@ -2681,7 +2681,7 @@ translation=Създайте ново Obsidian хранилище в папка.
 
 [interface.start-screen.option-connect-obsidian-sync]
 original=Open vault from Obsidian Sync
-translation=Connect to Obsidian Sync
+translation=Отвори хранилище от Obsidian Sync
 
 [interface.start-screen.option-connect-obsidian-sync-description]
 original=Set up a synced vault with existing remote vault.
@@ -2935,7 +2935,7 @@ translation=Create a synced vault on your Obsidian account so that you can acces
 
 [interface.start-screen.mobile.label-remote-vault-create]
 original=Sync encryption
-translation=Криптиране на Sync
+translation=Криптиране на Obsidian Sync
 
 [interface.start-screen.mobile.option-encryption-custom]
 original=End-to-end encryption
@@ -2983,7 +2983,7 @@ translation=Изпрати отново имейл
 
 [interface.start-screen.mobile.label-remote-vault-options]
 original=You have existing Sync vaults
-translation=Имате съществуващи Sync хранилища
+translation=Имате съществуващи Obsidian Sync хранилища
 
 [interface.start-screen.mobile.label-remote-vault-options-desc]
 original=Do you want to create a new vault or connect to an existing synced vault?
@@ -2991,7 +2991,7 @@ translation=Искате ли да създадете ново хранилищ�
 
 [interface.start-screen.mobile.option-remote-create]
 original=Create new Sync vault
-translation=Създай ново Sync хранилище
+translation=Създай ново Obsidian Sync хранилище
 
 [interface.start-screen.mobile.option-remote-choose]
 original=Choose an existing vault
@@ -3642,7 +3642,7 @@ translation=Превключете лявата странична лента
 
 [commands.toggle-ribbon]
 original=Toggle ribbon
-translation=Превключване на ribbon
+translation=Превключване на лентата
 
 [commands.toggle-right-sidebar]
 original=Toggle right sidebar
@@ -4150,7 +4150,7 @@ translation=Сменете
 
 [menu-items.insert-callout]
 original=Callout
-translation=надпис
+translation=Извадка
 
 [menu-items.insert-markdown-link]
 original=Markdown Link
@@ -4306,7 +4306,7 @@ translation=Toggle Right Sidebar
 
 [menu-items.toggle-ribbon]
 original=Ribbon
-translation=Ribbon
+translation=Лента
 
 [menu-items.split-right]
 original=Split Right
@@ -7027,7 +7027,7 @@ translation=Въведете име на оформлението...
 
 [plugins.sync.name]
 original=Sync
-translation=Синхр
+translation=Синхронизация
 
 [plugins.sync.desc]
 original=Synchronize your files through Obsidian Sync.
@@ -7299,7 +7299,7 @@ translation=Прекъснете връзката
 
 [plugins.sync.label-sync-status]
 original=Sync: {{status}}
-translation=Sync: {{status}}
+translation=Синхронизация: {{status}}
 
 [plugins.sync.label-not-remote-vaults]
 original=You don't have any remote vaults.
@@ -7323,7 +7323,7 @@ translation=Създайте ново хранилище
 
 [plugins.sync.label-sync-log]
 original=Sync log
-translation=Дневник за синхронизиране
+translation=Дневник на синхронизацията
 
 [plugins.sync.option-event-type-all]
 original=All
@@ -7391,7 +7391,7 @@ translation=Понастоящем не е свързан към никакво 
 
 [plugins.sync.option-sync-status]
 original=Sync status
-translation=Състояние на синхронизиране
+translation=Състояние на синхронизацията
 
 [plugins.sync.option-sync-status-desc-paused]
 original=Obsidian Sync is currently paused.
@@ -7675,7 +7675,7 @@ translation=Текущ файл
 
 [plugins.sync.label-sync-changes]
 original=Sync changes
-translation=Промени в Sync
+translation=Промени от синхронизацията
 
 [plugins.sync.label-today]
 original=Today
@@ -7715,7 +7715,7 @@ translation=Управление на изключените папки
 
 [plugins.sync.label-number-of-folders-excluded]
 original=Obsidian Sync is currently excluding {{folders}}.
-translation={{folders}} are currently excluded from being synced.
+translation=Obsidian Sync в момента изключва {{folders}}.
 
 [plugins.sync.label-add-excluded-folder]
 original=Exclude a folder
@@ -8335,7 +8335,7 @@ translation=Потребителска
 
 [plugins.web-viewer.option-enable-adblock]
 original=Enable ad blocker
-translation=Активирай ad blocker
+translation=Активирай блокиране на реклами
 
 [plugins.web-viewer.option-enable-adblock-desc]
 original=If enabled, the filter lists below will be applied to all web viewer tabs.
@@ -8347,11 +8347,11 @@ translation=Правила за блокиране на реклами
 
 [plugins.web-viewer.option-adblock-lists-desc]
 original=One ad block list URL per line. Shared by all vaults.
-translation=Един URL на ad block списък на ред. Споделено за всички хранилища.
+translation=Един URL на списък за блокиране на реклами на ред. Споделено за всички хранилища.
 
 [plugins.web-viewer.option-adblock-frequency]
 original=Ad block update frequency
-translation=Честота на обновяване на ad block
+translation=Честота на обновяване на блокирането на реклами
 
 [plugins.web-viewer.option-adblock-frequency-desc]
 original=Days between updating filter lists. 0 indicates disabled. Shared by all vaults.
@@ -8891,7 +8891,7 @@ translation=Canvas обнови {{count}} вградени карти
 
 [plugins.bases.name]
 original=Bases
-translation=Bases
+translation=Бази
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
@@ -9267,7 +9267,7 @@ translation=Невалидна конфигурация на свойство з
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Не може да се добави нов изглед на Bases „{{ viewId }}“. Вече съществува изглед с това ID.
+translation=Не може да се добави нов изглед на Бази „{{ viewId }}“. Вече съществува изглед с това ID.
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
@@ -9907,7 +9907,7 @@ translation=Таблица: {{command}}
 
 [callout.option-type]
 original=Callout type
-translation=Тип Callout
+translation=Тип извадка
 
 [callout.type.info]
 original=Info
@@ -9947,11 +9947,11 @@ translation=Няма
 
 [callout.option-other]
 original=Other...
-translation=Друг...
+translation=Друго...
 
 [callout.option-other-placeholder]
 original=Callout type...
-translation=Тип Callout...
+translation=Тип извадка...
 
 [nouns.count]
 original={{count}}
