@@ -16,7 +16,7 @@ file explorer|файлов браузър
 frontmatter|frontmatter
 graph view|графичен изглед
 hotkey|клавишна комбинация
-markdown|Markdown
+markdown|олекотено маркиране
 markdown link|Markdown връзка
 note|бележка
 obsidian|Obsidian
