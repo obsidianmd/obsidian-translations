@@ -68,7 +68,7 @@ translation=Oikoluvun sanakirja on tyhjä.
 
 [setting.editor.option-show-inline-title]
 original=Inline title
-translation=Sisäinen otsikko
+translation=Otsikko asiakirjassa
 
 [setting.editor.option-show-inline-title-description]
 original=Display the filename as an editable title inline with the file contents.
@@ -860,7 +860,7 @@ translation=Koko näyttö
 
 [setting.appearance.option-auto-full-screen-desc]
 original=Automatically hide interface elements while reading.
-translation=Piilota käyttöliittymän elementit automaattisesti lukemisen aikana.
+translation=Piilottaa käyttöliittymän elementit automaattisesti lukemisen aikana.
 
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
@@ -1056,11 +1056,11 @@ translation=Linkki...
 
 [setting.keychain.msg-secrets-not-encrypted]
 original=Secrets are stored without encryption because no secret store is available on this system.
-translation=Salaisuudet tallennetaan ilman salausta, koska tässä järjestelmässä ei ole käytettävissä salaisuussäilöä.
+translation=Sala-avaimet tallennetaan ilman salausta, koska tässä järjestelmässä ei ole salaisuussäilöä käytettävissä.
 
 [setting.keychain.msg-secrets-not-encrypted-short]
 original=Secrets are not encrypted
-translation=Salaisuuksia ei salata
+translation=Sala-avaimia ei salata
 
 [setting.keychain.button-dismiss-warning]
 original=Don't show again
@@ -1068,11 +1068,11 @@ translation=Älä näytä uudelleen
 
 [setting.keychain.label-encryption-not-available]
 original=Encryption not available
-translation=Salaus ei ole käytettävissä
+translation=Salaus ei käytettävissä
 
 [setting.keychain.msg-encryption-provided-by-o-s]
 original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
-translation=Salaus tarjotaan käyttöjärjestelmäsi salaisuussäilön kautta. Ilman salaisuussäilöä salaisuutesi tallennetaan ilman salausta.
+translation=Salaus tarjotaan käyttöjärjestelmäsi salaisuussäilön kautta. Jos sellaista ei ole saatavilla, salaisuutesi tallennetaan ilman salausta.
 
 [setting.keychain.msg-linux-secret-stores]
 original=On Linux, supported secret stores include:
@@ -1160,19 +1160,19 @@ translation=Tarkista nyt
 
 [setting.about.option-cli]
 original=Command line interface
-translation=Komentorivin käyttöliittymä
+translation=Komentoliittymä
 
 [setting.about.option-cli-description]
 original=Allow interactions with Obsidian from the command line.
-translation=Salli Obsidianin käyttäminen komentoriviltä.
+translation=Sallii Obsidian-sovelluksen käyttäminen komentoliittymästä.
 
 [setting.about.option-register-path]
 original=Set up CLI to work in the terminal
-translation=Määritä CLI toimimaan terminaalissa
+translation=Ota komentoliittymä käyttöön päätteessäsi
 
 [setting.about.option-register-path-description]
 original=Register "obsidian" in PATH to enable accessing the "obsidian" command anywhere from your terminal.
-translation=Rekisteröi "obsidian" PATHiin, jotta voit käyttää "obsidian"-komentoa missä tahansa terminaalista.
+translation=Rekisteröi "obsidian" PATH-muuttujaan, jotta voisit käyttää "obsidian"-komentoa päätteestä koska tahansa.
 
 [setting.about.button-register]
 original=Register
@@ -1792,7 +1792,7 @@ translation=Lisää sisäinen linkki
 
 [setting.mobile-toolbar.option-internal-embed]
 original=Add embed
-translation=Lisää upotus
+translation=Lisää upote
 
 [setting.mobile-toolbar.option-tag]
 original=Add tag
@@ -3040,7 +3040,7 @@ translation=Tietosi eivät ole muiden sovellusten käytettävissä.
 
 [interface.start-screen.mobile.label-app-storage-desc2]
 original=Android will delete your data if you uninstall Obsidian.
-translation=Android poistaa tietosi, jos poistat Obsidianin.
+translation=Android poistaa tietosi, jos poistat Obsidian-sovelluksen.
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
@@ -3524,7 +3524,7 @@ translation=Luettava rivin pituus päälle/pois
 
 [commands.toggle-line-numbers]
 original=Toggle line numbers
-translation=Vaihda rivinumerot
+translation=Rivinumerot päälle/pois
 
 [commands.navigate-back]
 original=Navigate back
@@ -3552,7 +3552,7 @@ translation=Avaa holvi...
 
 [commands.manage-vaults]
 original=Manage vaults
-translation=Hallitse holveja
+translation=Hallinnoi holveja
 
 [commands.search-current-file]
 original=Search current file
@@ -3924,11 +3924,11 @@ translation=Älä kysy uudelleen
 
 [dialogue.label-existing-backlink]
 original=There is currently {{count}} link pointing to this file.
-translation=Tällä hetkellä on {{count}} linkki, joka osoittaa tähän tiedostoon.
+translation=Tällä hetkellä {{count}} linkki osoittaa tähän tiedostoon.
 
 [dialogue.label-existing-backlink_plural]
 original=There are currently {{count}} links pointing to this file.
-translation=Tällä hetkellä on {{count}} linkkiä, jotka osoittavat tähän tiedostoon.
+translation=Tällä hetkellä {{count}} linkkiä osoittaa tähän tiedostoon.
 
 [dialogue.label-delete-file]
 original=Delete file
@@ -4092,11 +4092,11 @@ translation=Poistetaanko tiedoston liitteet?
 
 [dialogue.orphan-attachments-desc]
 original=This attachment is no longer used in any notes. Would you like to delete it?
-translation=Tätä liitettä ei enää käytetä missään muistiinpanoissa. Haluatko poistaa sen?
+translation=Tätä liitettä ei enää käytetä missään muistiinpanossa. Haluatko poistaa sen?
 
 [dialogue.orphan-attachments-desc_plural]
 original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
-translation=Näitä {{count}} liitettä ei enää käytetä missään muistiinpanoissa. Haluatko poistaa ne?
+translation=Näitä {{count}} liitettä ei enää käytetä missään muistiinpanossa. Haluatko poistaa ne?
 
 [dialogue.tooltip-file-tree]
 original=File tree
@@ -4196,7 +4196,7 @@ translation=Alaviite
 
 [menu-items.inline-title]
 original=Inline title
-translation=Rivinsisäinen otsikko
+translation=Otsikko asiakirjassa
 
 [menu-items.line-numbers]
 original=Line numbers
@@ -5924,7 +5924,7 @@ translation=Uniikki
 
 [plugins.unique-note-creator.action-create-note]
 original=Create new unique note
-translation=Luo uusi uniikki muistiinpano
+translation=Luo uusi yksilöllinen muistiinpano
 
 [plugins.unique-note-creator.label-quick-action]
 original=New unique note
