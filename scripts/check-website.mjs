@@ -1,34 +1,29 @@
 #!/usr/bin/env node
-// Check website translations for missing or extra keys compared to en.json
+// Check website translations for missing or extra keys compared to en.txt
 
 import { readFileSync, readdirSync } from 'fs';
 import { join, basename } from 'path';
 
 const websiteDir = join(import.meta.dirname, '..', 'website');
-const en = JSON.parse(readFileSync(join(websiteDir, 'en.json'), 'utf8'));
 
-function getKeys(obj, prefix = '') {
-	let keys = [];
-	for (const [k, v] of Object.entries(obj)) {
-		const key = prefix ? `${prefix}.${k}` : k;
-		if (typeof v === 'object' && v !== null) {
-			keys = keys.concat(getKeys(v, key));
-		} else {
-			keys.push(key);
+function getKeys(content) {
+	const keys = [];
+	for (const line of content.split('\n')) {
+		if (line.startsWith('[') && line.endsWith(']')) {
+			keys.push(line.slice(1, -1));
 		}
 	}
 	return keys;
 }
 
-const enKeys = new Set(getKeys(en));
+const enKeys = new Set(getKeys(readFileSync(join(websiteDir, 'en.txt'), 'utf8')));
 let hasIssues = false;
 
 for (const file of readdirSync(websiteDir).sort()) {
-	if (file === 'en.json' || file === 'locales.json' || !file.endsWith('.json')) continue;
+	if (file === 'en.txt' || file === 'locales.json' || !file.endsWith('.txt')) continue;
 
-	const locale = basename(file, '.json');
-	const data = JSON.parse(readFileSync(join(websiteDir, file), 'utf8'));
-	const localeKeys = new Set(getKeys(data));
+	const locale = basename(file, '.txt');
+	const localeKeys = new Set(getKeys(readFileSync(join(websiteDir, file), 'utf8')));
 
 	const missing = [...enKeys].filter(k => !localeKeys.has(k));
 	const extra = [...localeKeys].filter(k => !enKeys.has(k));
