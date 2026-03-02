@@ -2225,7 +2225,6 @@ translation=Индексирането е завършено.
 [interface.msg-sandbox-vault]
 original=This is a sandbox vault.\nChanges you make in this vault will be lost.
 translation=Това е sandbox хранилище.
-Промените в него ще бъдат загубени.
 
 [interface.msg-indexed-db-not-supported]
 original=IndexedDB is required for this feature, but it is currently disabled.
@@ -2591,6 +2590,10 @@ translation=Залепете
 original=Copy path
 translation=Копирай пътя
 
+[interface.menu.copy-image]
+original=Copy image
+translation=Копирай изображението
+
 [interface.menu.copy-obsidian-url]
 original=as Obsidian URL
 translation=като Obsidian URL
@@ -2894,7 +2897,6 @@ translation=Препоръчително
 [interface.start-screen.mobile.label-start-screen-desc]
 original=Obsidian stores notes on your device, so you can access them quickly and privately, even offline.\nYour data is stored in a secure local folder called a **vault**.
 translation=Obsidian съхранява бележките на вашето устройство, така че да имате бърз и личен достъп до тях дори офлайн.
-Данните ви се съхраняват в защитена локална папка, наречена **хранилище**.
 
 [interface.start-screen.mobile.option-create]
 original=Create a vault
@@ -2911,7 +2913,6 @@ translation=За да имате достъп до бележките си на 
 [interface.start-screen.mobile.label-sync-intro-desc]
 original=Because Obsidian stores your notes on your devices, you'll need to set up sync if you want to access your notes on another phone or computer.\nYou can set up sync now, or just start writing and set it up later.
 translation=Тъй като Obsidian съхранява бележките ви на устройствата ви, ще трябва да настроите синхронизация, ако искате достъп до бележките на друг телефон или компютър.
-Можете да я настроите сега или да започнете да пишете и да я настроите по-късно.
 
 [interface.start-screen.mobile.option-setup-sync]
 original=Set up sync
@@ -3192,9 +3193,6 @@ translation=Други методи за синхронизация
 [interface.start-screen.mobile.label-sync-other-desc]
 original=Obsidian officially supports two syncing methods: **Obsidian Sync** and **iCloud**.\nHowever, because Obsidian gives you control over your data there are other sync options you can use.\nThese options include third-party plugins and other tools which may require more advanced set up.\nTo use an alternate syncing method, **create a vault** and follow the instructions provided by the plugin or third-party sync provider.
 translation=Obsidian официално поддържа два метода за синхронизация: **Obsidian Sync** и **iCloud**.
-Въпреки това, тъй като Obsidian ви дава контрол над данните ви, има и други опции за синхронизация, които можете да използвате.
-Тези опции включват плъгини на трети страни и други инструменти, които може да изискват по-сложна настройка.
-За да използвате алтернативен метод, **създайте хранилище** и следвайте инструкциите, предоставени от плъгина или доставчика на синхронизация.
 
 [interface.start-screen.mobile.label-email-entry]
 original=Enter your email
@@ -3267,10 +3265,6 @@ translation=Добре дошли
 [interface.starter-content.welcome-file-content]
 original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
 translation=Това е вашето ново *хранилище*.
-
-Запишете нещо, [[създайте връзка]] или пробвайте [Импортера](https://help.obsidian.md/Plugins/Importer)!
-
-Когато сте готови, изтрийте тази бележка и направете хранилището свое.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3999,6 +3993,10 @@ translation=Потвърди
 [dialogue.button-cancel]
 original=Cancel
 translation=Отказ
+
+[dialogue.button-skip]
+original=Skip
+translation=
 
 [dialogue.button-download]
 original=Download
@@ -5067,7 +5065,6 @@ translation=Нова група
 [plugins.graph-view.tooltip-click-to-change-drag-to-reorder]
 original=Click to change color\nDrag to reorder groups
 translation=Щракнете, за да смените цвета
-Плъзнете, за да пренаредите групите
 
 [plugins.graph-view.action-timelapse]
 original=Start graph timelapse animation
@@ -8208,10 +8205,6 @@ translation=Запази в хранилището
 [plugins.web-viewer.action-save-image]
 original=Save image to vault
 translation=Запази изображението в хранилището
-
-[plugins.web-viewer.action-copy-image]
-original=Copy image
-translation=Копирай изображението
 
 [plugins.web-viewer.action-copy-image-link]
 original=Copy image link
