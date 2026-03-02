@@ -708,27 +708,27 @@ translation=CSS-kodestykker
 
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
-translation=Ingen CSS-kodestykker fundet i kodestykker-mappen.
+translation=Ingen CSS kodestykker fundet i CSS kodestykkemappen.
 
 [setting.appearance.no-snippet-description]
 original=CSS Snippets are stored in “{{path}}”.
-translation=CSS-kodestykker er gemt i "{{path}}".
+translation=CSS kodestykker er gemt i "{{path}}".
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
-translation=Genindlæs kodestykker
+translation=Genindlæs CSS kodestykker
 
 [setting.appearance.button-open-snippets-folder]
 original=Open snippets folder
-translation=Åbn kodestykker-mappe
+translation=Åbn mappe med CSS kodestykker
 
 [setting.appearance.msg-reloaded-snippets]
 original=Reloaded CSS snippets.
-translation=Genindlæste CSS-kodestykker.
+translation=Genindlæste CSS kodestykker.
 
 [setting.appearance.option-toggle-snippet-description]
 original=Apply CSS snippet at “{{path}}”.
-translation=Anvend CSS-kodestykke ved "{{path}}".
+translation=Anvend CSS kodestykke på "{{path}}".
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -1200,11 +1200,11 @@ translation=Skift det viste sprog.
 
 [setting.about.option-insider-build]
 original=Receive early access versions
-translation=Modtag insider-versioner
+translation=Modtag insider versioner
 
 [setting.about.option-insider-build-description]
 original=Auto-update to the latest early access version. These versions include new features but may be less stable.
-translation=Auto-opdater til insider-versioner for at afprøve nye funktioner. Bemærk, at disse versioner er helt nye og kan være mindre stabile.
+translation=Opdatér insider versioner atomatisk for at afprøve nye funktioner. Bemærk, at disse versioner er helt nye og kan være mindre stabile.
 
 [setting.about.option-advanced]
 original=Advanced
@@ -5576,11 +5576,11 @@ translation=Stop brugen af dette tema
 
 [plugins.custom-css.label-install-and-use]
 original=Install and use
-translation=Installer og brug
+translation=Installér og anvend
 
 [plugins.custom-css.label-update]
 original=Update
-translation=Opdater
+translation=Opdatér
 
 [plugins.custom-css.label-no-readme]
 original=This theme did not provide a README file.
@@ -5600,7 +5600,7 @@ translation=Kunne ikke indlæse fællesskabstemaer. Tjek venligst din internetfo
 
 [plugins.custom-css.msg-now-using-theme]
 original=You're now using {{title}} as your CSS theme.
-translation=Du bruger nu {{title}} som dit CSS-tema.
+translation=Du bruger nu {{title}} som dit CSS tema.
 
 [plugins.custom-css.msg-deleted-theme]
 original=The theme {{title}} has been deleted.
@@ -5772,7 +5772,7 @@ translation=Dine filer overskrives. Sikkerhedskopiér alle dine filer, før du f
 
 [plugins.markdown-format-importer.label-start-conversion]
 original=Start conversion
-translation=Start Konvertering
+translation=Start konvertering
 
 [plugins.markdown-format-importer.label-stop]
 original=Stop
@@ -7612,15 +7612,15 @@ translation=Indstillinger for udseende
 
 [plugins.sync.option-sync-appearance-desc]
 original=Sync appearance settings like dark mode, active theme, and enabled snippets.
-translation=Synkroniser indstillinger for udseende som mørk tilstand, aktivt tema og aktiverede kodestykker.
+translation=Synkroniser indstillinger for udseende som mørk tilstand, aktivt tema og aktiverede CSS kodestykker.
 
 [plugins.sync.option-sync-appearance-data]
 original=Themes and snippets
-translation=Temaer og kodestykker
+translation=Temaer og CSS kodestykker
 
 [plugins.sync.option-sync-appearance-data-desc]
 original=Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.
-translation=Synkroniser hentede temaer og kodestykker. Om de er aktiveret, afhænger af den tidligere indstilling.
+translation=Synkroniser hentede temaer og CSS kodestykker. Om de er aktiveret, afhænger af den tidligere indstilling.
 
 [plugins.sync.option-sync-hotkey]
 original=Hotkeys
@@ -8992,11 +8992,11 @@ translation=Vis alle ({{count}})
 
 [plugins.bases.button-add-summary]
 original=Add summary
-translation=Tilføj oversigt
+translation=Tilføj summering
 
 [plugins.bases.button-hide-summary]
 original=Hide summary
-translation=Skjul oversigt
+translation=Skjul summering
 
 [plugins.bases.label-all-views]
 original=All views
@@ -9112,7 +9112,7 @@ translation=Ny element mappe
 
 [plugins.bases.label-any-of-the-following]
 original=Any of the following are true
-translation=Enhver af det følgende er sandt
+translation=Én af det følgende er sandt
 
 [plugins.bases.label-all-the-following]
 original=All the following are true
@@ -9428,11 +9428,11 @@ translation=Billedtilpasning
 
 [plugins.bases.cards.option-image-fit-cover]
 original=Cover
-translation=Omslag
+translation=Beskåret
 
 [plugins.bases.cards.option-image-fit-contain]
 original=Contain
-translation=Indhold
+translation=Skaleret
 
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
@@ -9488,7 +9488,7 @@ translation=Ekstra høj
 
 [plugins.bases.table.action-select-summary]
 original=Summarize...
-translation=Sammenfat...
+translation=Summér...
 
 [plugins.bases.table.action-group-by]
 original=Group by this property
@@ -9500,7 +9500,7 @@ translation=Ryd værdier
 
 [plugins.bases.table.label-summary]
 original=Summary
-translation=Sammenfatning
+translation=Summering
 
 [formulas.msg-error-parse-formula]
 original=Failed to parse formula "{{ formula }}"
