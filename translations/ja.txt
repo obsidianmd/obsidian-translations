@@ -204,7 +204,7 @@ translation=インデントガイド
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
-translation=バレットポイント間の関係性を視覚的ガイドとして表現する垂直ラインを表示します。
+translation=リスト間の関係性を視覚的ガイドとして表現する垂直ラインを表示します。
 
 [setting.editor.option-use-tabs]
 original=Indent using tabs
@@ -1800,31 +1800,31 @@ translation=タグを追加
 
 [setting.mobile-toolbar.option-heading]
 original=Toggle heading
-translation=見出しをトグル
+translation=見出しを追加/解除
 
 [setting.mobile-toolbar.option-strikethrough]
 original=Toggle strikethrough
-translation=取り消し線をトグル
+translation=取り消し線を追加/解除
 
 [setting.mobile-toolbar.option-highlight]
 original=Toggle highlight
-translation=ハイライトをトグル
+translation=ハイライトを追加/解除
 
 [setting.mobile-toolbar.option-code]
 original=Toggle code
-translation=コードをトグル
+translation=コードを追加/解除
 
 [setting.mobile-toolbar.option-blockquote]
 original=Toggle blockquote
-translation=ブロッククォートをトグル
+translation=ブロッククォートを追加/解除
 
 [setting.mobile-toolbar.option-inline-math]
 original=Toggle inline math
-translation=インライン数学をトグル
+translation=インライン数学を追加/解除
 
 [setting.mobile-toolbar.option-math-block]
 original=Toggle math block
-translation=数学ブロックをトグル
+translation=数学ブロックを追加/解除
 
 [setting.mobile-toolbar.option-markdown-link]
 original=Add Markdown link
@@ -1832,11 +1832,11 @@ translation=マークダウンリンクを追加
 
 [setting.mobile-toolbar.option-bullet-list]
 original=Toggle bullet list
-translation=バレットリストをトグル
+translation=バレットリスト（箇条書き）を追加/解除
 
 [setting.mobile-toolbar.option-numbered-list]
 original=Toggle numbered list
-translation=順序付きリストをトグル
+translation=順序付きリストを追加/解除
 
 [setting.mobile-toolbar.option-indent-list]
 original=Indent list item
@@ -1880,7 +1880,7 @@ translation=最終行に移動
 
 [setting.mobile-toolbar.option-toggle-keyboard]
 original=Toggle keyboard
-translation=キーボードをトグル
+translation=キーボードを切り替え
 
 [setting.mobile-toolbar.option-configure-toolbar]
 original=Configure mobile toolbar
@@ -2348,7 +2348,7 @@ translation=数学
 
 [interface.formatting.toggle-bullet-list]
 original=Bullet list
-translation=バレットリスト
+translation=バレットリスト（箇条書き）
 
 [interface.formatting.toggle-checklist]
 original=Task list
@@ -3508,7 +3508,7 @@ translation=右のタブグループにフォーカス
 
 [commands.toggle-pin]
 original=Toggle pin
-translation=ピンをトグル
+translation=ピンを追加/解除
 
 [commands.split-right]
 original=Split right
@@ -3520,7 +3520,7 @@ translation=下に分割
 
 [commands.toggle-stacked-tabs]
 original=Toggle stacked tabs
-translation=スタックタブをトグル
+translation=スタックタブを追加/解除
 
 [commands.toggle-readable-line-length]
 original=Toggle readable line length
@@ -3600,7 +3600,7 @@ translation=編集ビュー/リーディングビューを切り替える
 
 [commands.toggle-source-mode]
 original=Toggle Live Preview/Source mode
-translation=ライブプレビュー/ソースモードを切り替える
+translation=ライブプレビュー/ソースモードを切り替え
 
 [commands.delete-current-file]
 original=Delete current file
@@ -3652,7 +3652,7 @@ translation=右のサイドバーを開閉
 
 [commands.toggle-default-new-tab-mode]
 original=Toggle default mode for new tabs
-translation=新規タブのデフォルトモードを切り替える
+translation=新規タブのデフォルトモードを切り替え
 
 [commands.add-cursor-above]
 original=Add cursor above
@@ -3668,7 +3668,7 @@ translation=エディタにフォーカス
 
 [commands.toggle-fold-properties]
 original=Toggle fold properties in current file
-translation=現在のファイル内のプロパティの開閉をトグル
+translation=現在のファイル内のプロパティの開閉を切り替え
 
 [commands.toggle-fold]
 original=Toggle fold on the current line
@@ -3696,7 +3696,7 @@ translation=上の行と入れ替える
 
 [commands.swap-line-down]
 original=Move line down
-translation=下の行と入れ替える
+translation=下の行と入れ替え
 
 [commands.remove-heading]
 original=Remove heading
@@ -3708,19 +3708,19 @@ translation=見出し {{level}} に設定
 
 [commands.toggle-bold]
 original=Toggle bold
-translation=選択範囲のボールドをトグル
+translation=太字を追加/解除
 
 [commands.toggle-italics]
 original=Toggle italic
-translation=選択範囲のイタリックをトグル
+translation=イタリック体を追加/解除
 
 [commands.toggle-highlight]
 original=Toggle highlight
-translation=選択範囲のハイライトをトグル
+translation=ハイライトを追加/解除
 
 [commands.toggle-comments]
 original=Toggle comment
-translation=選択範囲のコメントをトグル
+translation=コメントを追加/解除
 
 [commands.clear-formatting]
 original=Clear formatting
@@ -3732,7 +3732,7 @@ translation=リンクを挿入
 
 [commands.toggle-spellcheck]
 original=Toggle spellcheck
-translation=スペルチェックをトグル
+translation=スペルチェックを追加/解除
 
 [commands.delete-paragraph]
 original=Delete paragraph
@@ -3740,11 +3740,11 @@ translation=パラグラフを削除
 
 [commands.toggle-checklist]
 original=Toggle checkbox status
-translation=チェックリストをトグル
+translation=チェックボックスを追加/解除
 
 [commands.cycle-list-checklist]
 original=Cycle bullet/checkbox
-translation=バレット/チェックボックスをサイクル
+translation=バレット（箇条書き）/チェックボックスを順に切り替え
 
 [commands.insert-callout]
 original=Insert callout
@@ -3812,7 +3812,7 @@ translation=サンドボックス保管庫を開く
 
 [commands.always-on-top]
 original=Toggle window always on top
-translation=ウィンドウの常時トップ表示をトグル
+translation=ウィンドウの常時トップ表示を切り替え
 
 [commands.zoom-in]
 original=Zoom in
@@ -3828,7 +3828,7 @@ translation=ズームをリセット
 
 [commands.toggle-preview]
 original=Toggle reading view
-translation=編集モードとプレビューモードを切り替える
+translation=編集モードとプレビューモードを切り替え
 
 [commands.move-to-new-window]
 original=Move current tab to new window
@@ -4212,7 +4212,7 @@ translation=行番号
 
 [menu-items.toggle-bullet-list]
 original=Bullet List
-translation=バレットリスト
+translation=バレットリスト（箇条書き）
 
 [menu-items.toggle-numbered-list]
 original=Numbered List
@@ -5100,7 +5100,7 @@ translation=現在のファイルのバックリンクを開く
 
 [plugins.backlinks.action-toggle-backlinks-in-document]
 original=Toggle backlinks in document
-translation=ドキュメント内バックリンクをトグル
+translation=ドキュメント内バックリンクを切り替え
 
 [plugins.backlinks.menu-opt-backlinks-in-document]
 original=Backlinks in document
@@ -8960,7 +8960,7 @@ translation=表をクリップボードにコピー
 
 [plugins.bases.command-change-view]
 original=Switch view...
-translation=Change view
+translation=ビューを切り替え
 
 [plugins.bases.command-add-view]
 original=Add view
@@ -9560,7 +9560,7 @@ translation=目次に表示
 
 [pdf.action-toggle-sidebar]
 original=Toggle sidebar
-translation=サイドバーをトグル
+translation=サイドバーを切り替え
 
 [pdf.action-previous-page]
 original=Previous page
