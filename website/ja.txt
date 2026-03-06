@@ -2931,8 +2931,8 @@ original=Show your support
 translation=サポートを表明
 
 [pages.enterprise.show_support_desc]
-original=Obsidian is 100% user-supported.<br>Join the movement. Support independent software.
-translation=Obsidianは100%ユーザー支援です。<br>ムーブメントに参加して、独立したソフトウェアを支援しましょう。
+original=Obsidian is 100% user-supported. Join the movement. Support independent software.
+translation=Obsidianは100%ユーザー支援です。ムーブメントに参加して、独立したソフトウェアを支援しましょう。
 
 [pages.enterprise.supporters_suffix]
 original=supporters
@@ -3159,12 +3159,12 @@ original=Look, here’s a table covered with red cloth. On it is a cage the size
 translation=いいかい、赤い布をかけたテーブルがある。その上に小さな水槽ほどの大きさの檻がある。檻の中には、ピンクの鼻とピンクがかった目をした白いウサギがいる。その背中には、青いインクで数字の8がはっきりと書かれている。ここで一番面白いのは、檻の中でニンジンをかじっているウサギそのものではなく、その背中に書かれた数字だ。私は一度も口を開いていないし、あなたも口を開いていない。私たちは同じ部屋にいるどころか、同じ年にすらいないのだ……それでも私たちはつながっている。近くにいるのだ。心を通わせているのだ。これはテレパシーという行為なのだ。
 
 [pages.index.mock_hero_bullet_1]
-original=A <strong>sending place</strong>, a transmission place — where the writer sends ideas, such as a desk
-translation=<strong>送信する場所</strong>、伝達の場所 — 書き手がアイデアを送り出す場所。たとえば書斎の机
+original=A **sending place**, a transmission place — where the writer sends ideas, such as a desk
+translation=**送信する場所**、伝達の場所 — 書き手がアイデアを送り出す場所。たとえば書斎の机
 
 [pages.index.mock_hero_bullet_2]
-original=A <strong>receiving place</strong> — where the reader receives the ideas/imagery such as a couch, a comfortable chair, in bed
-translation=<strong>受信する場所</strong> — 読み手がアイデアやイメージを受け取る場所。たとえばソファ、安楽椅子、ベッドの中
+original=A **receiving place** — where the reader receives the ideas/imagery such as a couch, a comfortable chair, in bed
+translation=**受信する場所** — 読み手がアイデアやイメージを受け取る場所。たとえばソファ、安楽椅子、ベッドの中
 
 [pages.index.mock_hero_chars]
 original=1139 char
@@ -3347,20 +3347,20 @@ original=206 words
 translation=206 語
 
 [pages.index.mock_links_autocomplete_1]
-original=I <strong>thin</strong>k therefore I am
-translation=我<strong>思</strong>う、ゆえに我あり
+original=I **thin**k therefore I am
+translation=我**思**う、ゆえに我あり
 
 [pages.index.mock_links_autocomplete_2]
-original=Just <strong>thin</strong>k about it
-translation=ちょっと<strong>思</strong>い出しただけ
+original=Just **thin**k about it
+translation=ちょっと**思**い出しただけ
 
 [pages.index.mock_links_autocomplete_3]
-original=<strong>Thin</strong>king, Fast and Slow
-translation=<strong>思</strong>考の整理学
+original=**Thin**king, Fast and Slow
+translation=**思**考の整理学
 
 [pages.index.mock_links_autocomplete_4]
-original=The <strong>Thin</strong>g
-translation=<strong>思</strong>い出のマーニー
+original=The **Thin**g
+translation=**思**い出のマーニー
 
 [pages.index.mock_links_books]
 original=Books/
@@ -3371,8 +3371,16 @@ original=Movies/
 translation=映画/
 
 [pages.index.mock_links_p1]
-original=In <span class="text-accent-400 hover:text-accent-300 underline">Meditations on First Philosophy</span> the philosopher <span class="text-accent-400 hover:text-accent-300 underline">René Descartes</span> describes a series of doubts about the nature of reality, arriving at the famous phrase:
-translation=<span class="text-accent-400 hover:text-accent-300 underline">省察</span>の中で哲学者<span class="text-accent-400 hover:text-accent-300 underline">ルネ・デカルト</span>は現実の本質についての一連の疑いを述べ、有名なフレーズにたどり着く：
+original=In {{link1}} the philosopher {{link2}} describes a series of doubts about the nature of reality, arriving at the famous phrase:
+translation={{link1}}の中で哲学者{{link2}}は現実の本質についての一連の疑いを述べ、有名なフレーズにたどり着く：
+
+[pages.index.mock_links_p1_link1]
+original=Meditations on First Philosophy
+translation=省察
+
+[pages.index.mock_links_p1_link2]
+original=René Descartes
+translation=ルネ・デカルト
 
 [pages.index.mock_links_p2]
 original=He argues that doubting requires thinking, and therefore, the act of thinking confirms his existence.
@@ -3627,8 +3635,8 @@ original=API Docs
 translation=APIドキュメント
 
 [pages.plugins.hero_desc]
-original=Explore <span class="plugin-count">Obsidian plugins</span> made by the community.
-translation=コミュニティが作った<span class="plugin-count">Obsidianプラグイン</span>を探索。
+original=Explore Obsidian plugins made by the community.
+translation=コミュニティが作ったObsidianプラグインを探索。
 
 [pages.plugins.meta_desc]
 original=With thousands of plugins and our open API, it's easy to tailor Obsidian to fit your personal workflow.
@@ -3774,9 +3782,13 @@ translation=優先サポート
 original=Publish notes to the web
 translation=ノートをウェブにパブリッシュ
 
-[pages.pricing.subtitle_desc]
-original=No sign-up required.<br>No strings attached.
-translation=サインアップ不要。一切の制約なし。
+[pages.pricing.subtitle_desc_1]
+original=No sign-up required.
+translation=サインアップ不要。
+
+[pages.pricing.subtitle_desc_2]
+original=No strings attached.
+translation=一切の制約なし。
 
 [pages.pricing.support_btn]
 original=Support Obsidian
@@ -4023,8 +4035,8 @@ original=Penetration test and source code audit of Obsidian apps. Covers all exi
 translation=Obsidianアプリのペネトレーションテストとソースコード監査。現時点でのすべてのクライアントコードを対象としています。このテストの結果、Cure53チームはすべての脆弱性が対処され、推奨事項が遵守されたと報告しました。
 
 [pages.security.audit_2024_desc]
-original=Penetration test and source code audit of Obsidian apps. Covers all client code, with particular attention to hardening the <strong>Web viewer</strong> plugin ahead of its release. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
-translation=Obsidianアプリのペネトレーションテストとソースコード監査。リリースに先立つ<strong>Webビューア</strong>プラグインの強化に特に注力し、すべてのクライアントコードを対象としています。このテストの結果、Cure53チームはすべての脆弱性が対処され、推奨事項が遵守されたと報告しました。
+original=Penetration test and source code audit of Obsidian apps. Covers all client code, with particular attention to hardening the **Web viewer** plugin ahead of its release. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Obsidianアプリのペネトレーションテストとソースコード監査。リリースに先立つ**Webビューア**プラグインの強化に特に注力し、すべてのクライアントコードを対象としています。このテストの結果、Cure53チームはすべての脆弱性が対処され、推奨事項が遵守されたと報告しました。
 
 [pages.security.audited_by]
 original=Audited by
@@ -4171,7 +4183,7 @@ original=Obsidian Sync lets you decide which files and preferences you want to s
 translation=Obsidian Syncでは、どのファイルと設定をどのデバイスに同期するか選べます。
 
 [pages.sync.hero]
-original=All your notes,<br />on all your devices.
+original=All your notes, on all your devices.
 translation=すべてのノートを、すべてのデバイスで。
 
 [pages.sync.hero_desc]
@@ -4364,7 +4376,7 @@ translation=完全なレポート
 
 [ui.label_separator]
 original=.
-translation=
+translation=.
 
 [ui.last_updated]
 original=Last updated
