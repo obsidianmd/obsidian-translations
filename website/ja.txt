@@ -2579,8 +2579,12 @@ original=Like everything else in Obsidian, Canvas is extensible and designed to 
 translation=Obsidianの他の機能と同様に、Canvasは拡張可能で耐久性を重視して設計されています。APIを使って、Canvasに新機能を追加するプラグインを簡単に作成できます。
 
 [pages.canvas.extensible_2_desc]
-original=Your Canvas files are stored locally using the open <a href="https://jsoncanvas.org" target="_blank" class="text-accent font-medium">JSON&nbsp;Canvas file format</a> that we designed to work with other tools. Apps, scripts, and plugins can easily enhance Canvas by adding or modifying cards and&nbsp;connections.
-translation=Canvasファイルは、他のツールとの互換性を考慮して設計したオープンな<a href="https://jsoncanvas.org" target="_blank" class="text-accent font-medium">JSONCanvasファイルフォーマット</a>でローカルに保存されます。アプリ、スクリプト、プラグインがカードや接続を追加・変更してCanvasを簡単に拡張できます。
+original=Your Canvas files are stored locally using the open {{link}} that we designed to work with other tools. Apps, scripts, and plugins can easily enhance Canvas by adding or modifying cards and&nbsp;connections.
+translation=
+
+[pages.canvas.extensible_2_desc_link]
+original=JSON&nbsp;Canvas file format
+translation=JSONCanvasファイルフォーマット
 
 [pages.canvas.flexible]
 original=Flexible and intuitive
@@ -2699,8 +2703,12 @@ original=Capture any data from the page: meta tags, Schema.org variables, and ev
 translation=メタタグ、Schema.org変数、さらには要素セレクタまで、ページからあらゆるデータをキャプチャ。
 
 [pages.clipper.features_desc]
-original=Web Clipper is free, <a href="https://github.com/obsidianmd/obsidian-clipper" target="_blank" class="text-accent font-medium">open source</a>, and packed with useful features that make your favorite browser a sharper&nbsp;tool.
-translation=Webクリッパーは無料で<a href="https://github.com/obsidianmd/obsidian-clipper" target="_blank" class="text-accent font-medium">オープンソース</a>。お気に入りのブラウザをより便利なツールにする機能が満載。
+original=Web Clipper is free, {{link}}, and packed with useful features that make your favorite browser a sharper&nbsp;tool.
+translation=
+
+[pages.clipper.features_desc_link]
+original=open source
+translation=オープンソース
 
 [pages.clipper.features_heading]
 original=Bring the web to your personal knowledge base.
@@ -2743,8 +2751,12 @@ original=Manipulate page data
 translation=ページデータを加工
 
 [pages.clipper.manipulate_desc]
-original=Powerful <a href="https://help.obsidian.md/web-clipper" target="_blank" class="text-accent font-medium">templating features</a> allow you to modify page data before it's saved to your&nbsp;vault.
-translation=強力な<a href="https://help.obsidian.md/web-clipper" target="_blank" class="text-accent font-medium">テンプレート機能</a>で、保管庫に保存する前にページデータを加工。
+original=Powerful {{link}} allow you to modify page data before it's saved to your&nbsp;vault.
+translation=
+
+[pages.clipper.manipulate_desc_link]
+original=templating features
+translation=テンプレート機能
 
 [pages.clipper.meta_desc]
 original=Highlight and capture web pages in your favorite browser. Save anything and everything with just one click.
@@ -2899,8 +2911,12 @@ original=Meet the teams that trust Obsidian.
 translation=Obsidianを信頼するチーム。
 
 [pages.enterprise.hero_desc]
-original=Organizations that demand the <a href="%LOCALE_PATH%/security" class="underline">highest security</a> trust Obsidian. Their teams rely on Obsidian to think more effectively and keep total ownership over private&nbsp;data.
-translation=<a href="%LOCALE_PATH%/security" class="underline">最高レベルのセキュリティ</a>を求める組織がObsidianを信頼しています。チームはObsidianを活用してより効果的に思考し、プライベートデータの完全な所有権を維持しています。
+original=Organizations that demand the {{link}} trust Obsidian. Their teams rely on Obsidian to think more effectively and keep total ownership over private&nbsp;data.
+translation=
+
+[pages.enterprise.hero_desc_link]
+original=highest security
+translation=最高レベルのセキュリティ
 
 [pages.enterprise.meta_desc]
 original=Organizations that demand the highest security trust Obsidian. Their teams rely on Obsidian to think more effectively and keep total ownership over private data.
@@ -2931,8 +2947,12 @@ original=More than 10,000 organizations help keep Obsidian 100% user-supported. 
 translation=10,000以上の組織がObsidianを100%ユーザー支援で維持することに貢献しています。商用ライセンスの購入でご参加ください。
 
 [pages.index.canvas_desc]
-original=An infinite space to research, brainstorm, diagram, and lay out your ideas. Canvas is a limitless playground for your mind. <span class="text-accent font-medium hover:text-accent-300">Learn&nbsp;more.</span>
-translation=リサーチ、ブレインストーミング、図表作成、アイデアのレイアウトのための無限のスペース。Canvasはあなたの思考のための無限の遊び場です。<span class="text-accent font-medium hover:text-accent-300">詳しく見る。</span>
+original=An infinite space to research, brainstorm, diagram, and lay out your ideas. Canvas is a limitless playground for your mind. {{link}}
+translation=
+
+[pages.index.canvas_desc_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.index.collaboration]
 original=Collaboration.
@@ -2971,8 +2991,16 @@ original=Download now
 translation=今すぐダウンロード
 
 [pages.index.explore_help_desc]
-original=Explore the <a href="https://help.obsidian.md" class="underline" target="_blank">Obsidian Help</a> site, powered&nbsp;by&nbsp;<a href="%LOCALE_PATH%/publish" class="underline">Obsidian&nbsp;Publish</a>.
-translation=<a href="https://help.obsidian.md" class="underline" target="_blank">Obsidian Help</a>サイトをご覧ください。<a href="%LOCALE_PATH%/publish" class="underline">Obsidian&nbsp;Publish</a>で運営されています。
+original=Explore the {{link1}} site, powered&nbsp;by&nbsp;{{link2}}.
+translation=
+
+[pages.index.explore_help_desc_link1]
+original=Obsidian Help
+translation=Obsidian Help
+
+[pages.index.explore_help_desc_link2]
+original=Obsidian&nbsp;Publish
+translation=Obsidian&nbsp;Publish
 
 [pages.index.fine_grained_control]
 original=Fine-grained control.
@@ -3035,8 +3063,12 @@ original=Obsidian - Sharpen your thinking
 translation=Obsidian - 思考を研ぎ澄ます
 
 [pages.index.mind_desc]
-original=With <a href="%LOCALE_PATH%/plugins" class="underline">thousands of plugins</a> and themes, you can shape Obsidian to fit your way of&nbsp;thinking.
-translation=<a href="%LOCALE_PATH%/plugins" class="underline">数千のプラグイン</a>とテーマで、Obsidianをあなたの思考スタイルに合わせてカスタマイズできます。
+original=With {{link}} and themes, you can shape Obsidian to fit your way of&nbsp;thinking.
+translation=
+
+[pages.index.mind_desc_link]
+original=thousands of plugins
+translation=数千のプラグイン
 
 [pages.index.mind_title]
 original=Your mind is unique.
@@ -3495,16 +3527,24 @@ original=Obsidian Publish sites are fast, mobile-friendly, and optimized for SEO
 translation=Obsidian Publishサイトは高速でモバイルフレンドリー、設定不要でSEOに最適化されています。
 
 [pages.index.plugins_desc]
-original=Build your ideal thinking space. With thousands of plugins and our open API, it's easy to tailor Obsidian to fit your personal workflow. <span class="text-accent font-medium hover:text-accent-300">Learn&nbsp;more.</span>
-translation=理想的な思考空間を構築しましょう。数千のプラグインとオープンなAPIで、Obsidianをあなたのワークフローに合わせて簡単にカスタマイズできます。<span class="text-accent font-medium hover:text-accent-300">詳しく見る。</span>
+original=Build your ideal thinking space. With thousands of plugins and our open API, it's easy to tailor Obsidian to fit your personal workflow. {{link}}
+translation=
+
+[pages.index.plugins_desc_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.index.publish_instantly]
 original=Publish instantly.
 translation=すぐに公開。
 
 [pages.index.publish_instantly_desc]
-original=Turn your notes into an online wiki, knowledge base, documentation, or digital&nbsp;garden. <a href="%LOCALE_PATH%/publish" class="text-accent font-medium">Learn&nbsp;more.</a>
-translation=ノートをオンラインのWiki、ナレッジベース、ドキュメント、デジタルガーデンに変換。<a href="%LOCALE_PATH%/publish" class="text-accent font-medium">詳しく見る。</a>
+original=Turn your notes into an online wiki, knowledge base, documentation, or digital&nbsp;garden. {{link}}
+translation=
+
+[pages.index.publish_instantly_desc_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.index.seamless_editing]
 original=Seamless editing
@@ -3527,8 +3567,12 @@ original=Sync securely.
 translation=安全に同期。
 
 [pages.index.sync_securely_desc]
-original=Access your notes on any device, secured with end-to-end encryption. <a href="%LOCALE_PATH%/sync" class="text-accent font-medium">Learn&nbsp;more.</a>
-translation=エンドツーエンド暗号化で保護された、あらゆるデバイスでノートにアクセス。<a href="%LOCALE_PATH%/sync" class="text-accent font-medium">詳しく見る。</a>
+original=Access your notes on any device, secured with end-to-end encryption. {{link}}
+translation=
+
+[pages.index.sync_securely_desc_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.index.thoughts_desc]
 original=Obsidian stores notes privately on your device, so you can access them quickly, even offline. No one else can read them, not even&nbsp;us.
@@ -3619,8 +3663,12 @@ original=Community badges
 translation=コミュニティバッジ
 
 [pages.pricing.bulk_desc]
-original=For bulk purchases and other inquiries, contact us at <a href="mailto:support@obsidian.md" class="underline">sup<!--break spam-->port@obsidian.md</a>
-translation=一括購入やその他のお問い合わせは <a href="mailto:support@obsidian.md" class="underline">sup<!--break spam-->port@obsidian.md</a> までご連絡ください
+original=For bulk purchases and other inquiries, contact us at {{link}}
+translation=
+
+[pages.pricing.bulk_desc_link]
+original=sup<!--break spam-->port@obsidian.md
+translation=sup<!--break spam-->port@obsidian.md
 
 [pages.pricing.collaborate]
 original=Collaborate on shared vaults
@@ -3635,32 +3683,68 @@ original=Early access to beta versions
 translation=ベータ版への早期アクセス
 
 [pages.pricing.faq_a_catalyst]
-original=By becoming a <a href="https://help.obsidian.md/Licenses+and+payment/Catalyst+license" target="_blank" class="text-accent font-medium">Catalyst member</a>, you'll receive early access to beta versions of Obsidian, as well as special badges within the community. Catalyst plays a vital role in helping Obsidian remain 100% user-supported, free from investor influence that could compromise <a href="%LOCALE_PATH%/about" class="text-accent font-medium">our&nbsp;values</a>.
-translation=<a href="https://help.obsidian.md/Licenses+and+payment/Catalyst+license" target="_blank" class="text-accent font-medium">Catalystメンバー</a>になると、Obsidianのベータ版への早期アクセスや、コミュニティ内での特別バッジが付与されます。Catalystは、投資家の影響を受けずに<a href="%LOCALE_PATH%/about" class="text-accent font-medium">私たちの理念</a>を守り、Obsidianを100%ユーザー支援で維持するために重要な役割を果たしています。
+original=By becoming a {{link1}}, you'll receive early access to beta versions of Obsidian, as well as special badges within the community. Catalyst plays a vital role in helping Obsidian remain 100% user-supported, free from investor influence that could compromise {{link2}}.
+translation=
+
+[pages.pricing.faq_a_catalyst_link1]
+original=Catalyst member
+translation=Catalystメンバー
+
+[pages.pricing.faq_a_catalyst_link2]
+original=our&nbsp;values
+translation=私たちの理念
 
 [pages.pricing.faq_a_commercial]
-original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. <a href="/enterprise" class="text-accent font-medium">Learn&nbsp;more.</a>
-translation=いいえ。商用ライセンスの購入は<em>義務</em>ではありませんが、組織でObsidianを業務に使用している場合は、Obsidianの独立性と100%ユーザー支援を維持するために商用ライセンスの購入をお勧めします。<a href="/enterprise" class="text-accent font-medium">詳しく見る。</a>
+original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
+translation=
+
+[pages.pricing.faq_a_commercial_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.pricing.faq_a_data_1]
 original=Obsidian is a private and secure space for your thoughts. You can use our apps without sharing any personal information, and your data is stored locally on your device, making it inaccessible to us. Additionally, our apps do not collect telemetry data, and we never sell user data.
 translation=Obsidianはあなたの思考のためのプライベートで安全な空間です。個人情報を共有することなくアプリを使用でき、データはデバイスにローカルに保存されるため、私たちはアクセスできません。また、アプリはテレメトリデータを収集せず、ユーザーデータを販売することもありません。
 
 [pages.pricing.faq_a_data_2]
-original=If you choose to use <a href="%LOCALE_PATH%/sync" class="text-accent font-medium">Obsidian Sync</a>, your data is secured with AES&#8209;256 end-to-end encryption, preventing us from reading it. <a href="%LOCALE_PATH%/security" class="text-accent font-medium">Learn more.</a>
-translation=<a href="%LOCALE_PATH%/sync" class="text-accent font-medium">Obsidian Sync</a>を使用する場合、データはAES&#8209;256エンドツーエンド暗号化で保護され、私たちが読むことはできません。<a href="%LOCALE_PATH%/security" class="text-accent font-medium">詳しく見る。</a>
+original=If you choose to use {{link1}}, your data is secured with AES&#8209;256 end-to-end encryption, preventing us from reading it. {{link2}}
+translation=
+
+[pages.pricing.faq_a_data_2_link1]
+original=Obsidian Sync
+translation=Obsidian Sync
+
+[pages.pricing.faq_a_data_2_link2]
+original=Learn more.
+translation=詳しく見る。
 
 [pages.pricing.faq_a_discount]
-original=Yes, we do! Students, faculty members, and nonprofit employees are eligible for a 40% discount on Obsidian Sync and Publish. We do not offer any other discounts or promotions. <a href="https://help.obsidian.md/Licenses+and+payment/Education+and+non-profit+discount" target="_blank" class="text-accent font-medium">Learn&nbsp;more.</a>
-translation=はい！学生、教職員、非営利団体の従業員は、Obsidian SyncとPublishの40%割引を受けることができます。その他の割引やプロモーションは実施しておりません。<a href="https://help.obsidian.md/Licenses+and+payment/Education+and+non-profit+discount" target="_blank" class="text-accent font-medium">詳しく見る。</a>
+original=Yes, we do! Students, faculty members, and nonprofit employees are eligible for a 40% discount on Obsidian Sync and Publish. We do not offer any other discounts or promotions. {{link}}
+translation=
+
+[pages.pricing.faq_a_discount_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.pricing.faq_a_gift]
-original=Yes! You can purchase Obsidian Credit for friends, family, and coworkers. This credit can be used to pay for any Obsidian license or service. To get started, <a href="/account" class="text-accent font-medium">create an account</a> and buy credit. You can then send it to the recipient via email or a shareable link. <a href="https://help.obsidian.md/Licenses+and+payment/Gifting" target="_blank" class="text-accent font-medium">Learn&nbsp;more.</a>
-translation=はい！友人、家族、同僚のためにObsidianクレジットを購入できます。このクレジットは、あらゆるObsidianライセンスやサービスの支払いに使用できます。開始するには、<a href="/account" class="text-accent font-medium">アカウントを作成</a>してクレジットを購入してください。メールまたは共有リンクで受取人に送ることができます。<a href="https://help.obsidian.md/Licenses+and+payment/Gifting" target="_blank" class="text-accent font-medium">詳しく見る。</a>
+original=Yes! You can purchase Obsidian Credit for friends, family, and coworkers. This credit can be used to pay for any Obsidian license or service. To get started, {{link1}} and buy credit. You can then send it to the recipient via email or a shareable link. {{link2}}
+translation=
+
+[pages.pricing.faq_a_gift_link1]
+original=create an account
+translation=アカウントを作成
+
+[pages.pricing.faq_a_gift_link2]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.pricing.faq_a_refund]
-original=We offer full refunds within 7 days of purchase with no questions asked for Obsidian Sync and Publish. However, please note that Catalyst licenses, Commercial licenses, and Obsidian Credit are non-refundable. <a href="https://help.obsidian.md/Licenses+and+payment/Refund+policy" target="_blank" class="text-accent font-medium">Learn&nbsp;more.</a>
-translation=Obsidian SyncとPublishについては、購入後7日以内であれば、理由を問わず全額返金いたします。ただし、Catalystライセンス、商用ライセンス、Obsidianクレジットは返金不可ですのでご注意ください。<a href="https://help.obsidian.md/Licenses+and+payment/Refund+policy" target="_blank" class="text-accent font-medium">詳しく見る。</a>
+original=We offer full refunds within 7 days of purchase with no questions asked for Obsidian Sync and Publish. However, please note that Catalyst licenses, Commercial licenses, and Obsidian Credit are non-refundable. {{link}}
+translation=
+
+[pages.pricing.faq_a_refund_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.pricing.faq_desc]
 original=Frequently asked questions about pricing
@@ -3707,8 +3791,12 @@ original=Obsidian is free and 100% user-supported.
 translation=Obsidianは無料で、100%ユーザーに支えられています。
 
 [pages.pricing.more_questions_desc]
-original=More questions? Visit our <a href="https://help.obsidian.md" target="_blank" class="text-accent font-medium">Help&nbsp;site<i data-lucide="chevron-right" class="icon-lg"></i></a>
-translation=その他のご質問は <a href="https://help.obsidian.md" target="_blank" class="text-accent font-medium">ヘルプサイト<i data-lucide="chevron-right" class="icon-lg"></i></a> をご覧ください
+original=More questions? Visit our {{link}}
+translation=
+
+[pages.pricing.more_questions_desc_link]
+original=Help&nbsp;site
+translation=ヘルプサイト
 
 [pages.pricing.no_tech]
 original=No technical knowledge required
@@ -3943,8 +4031,16 @@ original=Active
 translation=開発中
 
 [pages.roadmap.detail_desc]
-original=For more detail about individual releases see the <a href="%LOCALE_PATH%/changelog" class="text-accent font-medium">Changelog</a>. Have a feature request? Visit the <a href="https://forum.obsidian.md/" class="text-accent font-medium">official&nbsp;forum</a>.
-translation=個々のリリースの詳細は<a href="%LOCALE_PATH%/changelog" class="text-accent font-medium">変更履歴</a>をご覧ください。機能リクエストは<a href="https://forum.obsidian.md/" class="text-accent font-medium">公式フォーラム</a>へ。
+original=For more detail about individual releases see the {{link1}}. Have a feature request? Visit the {{link2}}.
+translation=
+
+[pages.roadmap.detail_desc_link1]
+original=Changelog
+translation=変更履歴
+
+[pages.roadmap.detail_desc_link2]
+original=official&nbsp;forum
+translation=公式フォーラム
 
 [pages.roadmap.launched]
 original=Launched
@@ -4083,12 +4179,20 @@ original=Cross-platform apps
 translation=クロスプラットフォーム
 
 [pages.sync.cross_platform_desc]
-original=Obsidian is available on all major platforms, so you can sync notes to any device. Seamlessly work across Mac, Windows, Linux, iOS, Android, and even <a href="https://help.obsidian.md/sync/headless" class="text-accent font-medium" target="_blank">headless on a&nbsp;server.</a>
-translation=Obsidianはすべての主要プラットフォームで利用可能で、あらゆるデバイスにノートを同期できます。Mac、Windows、Linux、iOS、Android、さらには<a href="https://help.obsidian.md/sync/headless" class="text-accent font-medium" target="_blank">サーバー上のヘッドレス環境</a>でもシームレスに利用できます。
+original=Obsidian is available on all major platforms, so you can sync notes to any device. Seamlessly work across Mac, Windows, Linux, iOS, Android, and even {{link}}
+translation=
+
+[pages.sync.cross_platform_desc_link]
+original=headless on a&nbsp;server.
+translation=サーバー上のヘッドレス環境
 
 [pages.sync.e2e_desc]
-original=Your data is automatically secured using AES&#8209;256, the strongest encryption standard. With Obsidian&nbsp;Sync you're always in total control of your notes. <a href="https://help.obsidian.md/Obsidian+Sync/Security+and+privacy" class="text-accent font-medium" target="_blank">Learn&nbsp;more.</a>
-translation=AES&#8209;256（最強の暗号化規格）を使用してデータが自動的に保護されます。ObsidianSyncを使えば、常にノートを完全にコントロールできます。<a href="https://help.obsidian.md/Obsidian+Sync/Security+and+privacy" class="text-accent font-medium" target="_blank">詳しく見る。</a>
+original=Your data is automatically secured using AES&#8209;256, the strongest encryption standard. With Obsidian&nbsp;Sync you're always in total control of your notes. {{link}}
+translation=
+
+[pages.sync.e2e_desc_link]
+original=Learn&nbsp;more.
+translation=詳しく見る。
 
 [pages.sync.features_desc]
 original=Obsidian Sync works in the background to keep your notes synchronized effortlessly and privately.
