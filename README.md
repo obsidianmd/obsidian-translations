@@ -83,13 +83,13 @@ To revert to using the default language pack, open developer console and enter `
 The `website/` directory contains translations for the [Obsidian website](https://obsidian.md). These are JSON files used by the static site generator to produce localized versions of the marketing pages.
 
 - `website/locales.json` — lists enabled locales and their display names
-- `website/{locale}.json` — translations for each locale
+- `website/{locale}.txt` — translations for each locale
 
 Website translations cover the header, footer, navigation, and all marketing page content.
 
 ### Workflow
 
-1. **English is the source of truth.** Add or change strings in `website/en.json` first.
+1. **English is the source of truth.** Add or change strings in `website/en.txt` first.
 2. **Run `node scripts/check-website.mjs`** to see which locales have missing or extra keys.
 3. **Translators update their locale files** to match. Missing keys automatically fall back to English on the site.
 
