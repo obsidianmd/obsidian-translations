@@ -121,7 +121,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `el` | Greek | Ελληνικά | ✅ | |
 | `en-GB` | English (GB) | English (GB) | ✅ | |
 | `eo` | Esperanto | Esperanto | 🚧 | |
-| `es` | Spanish | Español | ✅ | |
+| `es` | Spanish | Español | ✅ | ✅ |
 | `eu` | Basque | Euskara | 🚧 | |
 | `fa` | Persian | فارسی | ✅ | |
 | `fi` | Finnish | suomi | ✅ | |
@@ -179,4 +179,3 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ | |
 
 > Note: the Chinese translation is maintained by Obsidian.zh. If you want to discuss it, please come here: https://github.com/obsidianzh/obsidian-translations.
-
