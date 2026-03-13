@@ -138,7 +138,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `ka` | Georgian | ქართული | ✅ | |
 | `kh` | Khmer | ខេមរភាសា | ✅ | |
 | `kn` | Kannada | ಕನ್ನಡ | 🚧 | |
-| `ko` | Korean | 한국어 | ✅ | |
+| `ko` | Korean | 한국어 | ✅ | ✅ |
 | `ky` | Kyrgyz | Кыргызча | 🚧 | |
 | `la` | Latin | Latina | 🚧 | |
 | `lt` | Lithuanian | ? | 🚧 | |
