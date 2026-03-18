@@ -108,7 +108,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `en` | English | English | ✅ | ✅ |
 | `af` | Afrikaans | Afrikaans | 🚧 | |
 | `am` | Amharic |  አማርኛ | ✅ | |
-| `ar` | Arabic | العربية | ✅ | |
+| `ar` | Arabic | العربية | ✅ | ✅ |
 | `az` | Azerbaijani | ? | 🚧 | |
 | `be` | Belarusian | Беларуская мова | ✅ | |
 | `bg` | Bulgarian | български език | 🚧 | |
@@ -116,7 +116,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `ca` | Catalan | català | ✅ | |
 | `cs` | Czech | čeština | ✅ | |
 | `da` | Danish | Dansk | ✅ | |
-| `de` | German | Deutsch | ✅ | |
+| `de` | German | Deutsch | ✅ | ✅ |
 | `dv` | Dhivehi | ދިވެހި | 🚧 | |
 | `el` | Greek | Ελληνικά | ✅ | |
 | `en-GB` | English (GB) | English (GB) | ✅ | |
@@ -133,12 +133,12 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `hr` | Croatian | ? | 🚧 | |
 | `hu` | Hungarian | Magyar | ✅ | |
 | `id` | Indonesian | Bahasa Indonesia | ✅ | |
-| `it` | Italian | Italiano | ✅ | |
+| `it` | Italian | Italiano | ✅ | ✅ |
 | `ja` | Japanese | 日本語 | ✅ | ✅ |
 | `ka` | Georgian | ქართული | ✅ | |
 | `kh` | Khmer | ខេមរភាសា | ✅ | |
 | `kn` | Kannada | ಕನ್ನಡ | 🚧 | |
-| `ko` | Korean | 한국어 | ✅ | |
+| `ko` | Korean | 한국어 | ✅ | ✅ |
 | `ky` | Kyrgyz | Кыргызча | 🚧 | |
 | `la` | Latin | Latina | 🚧 | |
 | `lt` | Lithuanian | ? | 🚧 | |
