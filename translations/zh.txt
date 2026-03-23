@@ -68,7 +68,7 @@ translation=拼写检查词典是空的。
 
 [setting.editor.option-show-inline-title]
 original=Inline title
-translation=页内标题
+translation=页面内标题
 
 [setting.editor.option-show-inline-title-description]
 original=Display the filename as an editable title inline with the file contents.
@@ -412,7 +412,7 @@ translation=当前文件所在的文件夹
 
 [setting.file.option-choice-specified-folder]
 original=In the folder specified below
-translation=指定的附件文件夹
+translation=指定的文件夹
 
 [setting.file.option-new-file-folder-path]
 original=Folder to create new notes in
@@ -600,11 +600,11 @@ translation=设置编辑视图和阅读视图中笔记正文的字体。
 
 [setting.appearance.option-monospace-font]
 original=Monospace font
-translation=代码字体
+translation=等宽字体
 
 [setting.appearance.option-monospace-font-description]
 original=Set font for places like code blocks and frontmatter.
-translation=设置代码块、元数据源码等文本的字体。
+translation=设置代码块、元数据（Frontmatter）源码等文本的字体。
 
 [setting.appearance.label-single-font-currently-in-effect]
 original= Currently applied font: 
@@ -704,31 +704,31 @@ translation=打开主题文件夹
 
 [setting.appearance.option-css-snippets]
 original=CSS snippets
-translation=CSS 代码片段
+translation=CSS 样式代码片段
 
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
-translation=没有在代码片段文件夹中发现 CSS 代码片段。
+translation=没有在样式代码片段文件夹中发现 CSS 样式代码片段。
 
 [setting.appearance.no-snippet-description]
 original=CSS Snippets are stored in “{{path}}”.
-translation=CSS 代码片段的存放路径为：“{{path}}”。
+translation=CSS 样式代码片段的存放路径为：“{{path}}”。
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
-translation=重新加载代码片段
+translation=重新加载样式代码片段
 
 [setting.appearance.button-open-snippets-folder]
 original=Open snippets folder
-translation=打开代码片段文件夹
+translation=打开样式代码片段文件夹
 
 [setting.appearance.msg-reloaded-snippets]
 original=Reloaded CSS snippets.
-translation=重新加载 CSS 代码片段
+translation=重新加载 CSS 样式代码片段
 
 [setting.appearance.option-toggle-snippet-description]
 original=Apply CSS snippet at “{{path}}”.
-translation=应用当前代码片段。该代码片段的存放路径为：“{{path}}”。
+translation=应用当前样式代码片段。该样式代码片段的存放路径为：“{{path}}”。
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -1812,19 +1812,19 @@ translation=高亮
 
 [setting.mobile-toolbar.option-code]
 original=Toggle code
-translation=代码块
+translation=行内代码
 
 [setting.mobile-toolbar.option-blockquote]
 original=Toggle blockquote
-translation=引用
+translation=引用块
 
 [setting.mobile-toolbar.option-inline-math]
 original=Toggle inline math
-translation=行内数学
+translation=行内数学公式
 
 [setting.mobile-toolbar.option-math-block]
 original=Toggle math block
-translation=数学块
+translation=数学公式块
 
 [setting.mobile-toolbar.option-markdown-link]
 original=Add Markdown link
@@ -4204,7 +4204,7 @@ translation=脚注
 
 [menu-items.inline-title]
 original=Inline title
-translation=行内标题
+translation=页面内标题
 
 [menu-items.line-numbers]
 original=Line numbers
@@ -4228,7 +4228,7 @@ translation=加粗
 
 [menu-items.toggle-code]
 original=Code
-translation=代码块
+translation=行内代码
 
 [menu-items.toggle-comment]
 original=Comment
@@ -4236,11 +4236,11 @@ translation=注释
 
 [menu-items.toggle-italics]
 original=Italics
-translation=倾斜
+translation=斜体
 
 [menu-items.toggle-inline-math]
 original=Math
-translation=数学
+translation=数学公式
 
 [menu-items.toggle-highlight]
 original=Highlight
@@ -6512,11 +6512,11 @@ translation=开启后，当鼠标悬停在链接上时将显示页面预览。
 
 [plugins.publish.option-hide-title]
 original=Hide page title
-translation=隐藏页内标题
+translation=隐藏页面内标题
 
 [plugins.publish.option-hide-title-description]
 original=Hide the page title heading. Useful when you have your own headings at the beginning of each page.
-translation=开启后将隐藏页内的标题。这个设置对于将一级小标题用作标题的笔记非常有用。
+translation=开启后将隐藏页面内的标题。这个设置对于将一级小标题用作标题的笔记非常有用。
 
 [plugins.publish.option-readable-line-length]
 original=Readable line length
@@ -7612,15 +7612,15 @@ translation=外观设置
 
 [plugins.sync.option-sync-appearance-desc]
 original=Sync appearance settings like dark mode, active theme, and enabled snippets.
-translation=同步外观设置，比如基础颜色、当前应用的主题、开启的 CSS 代码片段等设置信息。
+translation=同步外观设置，比如基础颜色、当前应用的主题、开启的 CSS 样式代码片段等设置信息。
 
 [plugins.sync.option-sync-appearance-data]
 original=Themes and snippets
-translation=主题与 CSS 代码片段
+translation=主题与 CSS 样式代码片段
 
 [plugins.sync.option-sync-appearance-data-desc]
 original=Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.
-translation=同步已保存的主题与 CSS 代码片段文件。文件启用情况由上一同步设置决定。
+translation=同步已保存的主题与 CSS 样式代码片段文件。文件启用情况由上一同步设置决定。
 
 [plugins.sync.option-sync-hotkey]
 original=Hotkeys
@@ -9796,7 +9796,7 @@ translation=显示源代码
 
 [properties.label-invalid-yaml-marker]
 original=Syntax error. Your frontmatter is invalid.
-translation=语法错误。无效的元数据 (Frontmatter)
+translation=语法错误。无效的元数据 (Frontmatter)。
 
 [properties.label-add-property-button]
 original=Add property
