@@ -112,7 +112,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `az` | Azerbaijani | ? | 🚧 | |
 | `be` | Belarusian | Беларуская мова | ✅ | |
 | `bg` | Bulgarian | български език | 🚧 | |
-| `bn` | Bengali | বাংলা | ✅ | |
+| `bn` | Bengali | বাংলা | ✅ |✅|
 | `ca` | Catalan | català | ✅ | |
 | `cs` | Czech | čeština | ✅ | |
 | `da` | Danish | Dansk | ✅ | |
