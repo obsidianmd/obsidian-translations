@@ -96,7 +96,7 @@ translation=Proprietà nel documento
 
 [setting.editor.option-properties-in-document-description]
 original=Choose how properties are displayed at the top of notes. Select “source” to show properties as raw YAML.
-translation=Scegli la modalità di visualizzazione delle proprietà nell'editor. Seleziona "Codice" per visualizzare le proprietà come YAML.
+translation=Scegli come visualizzare le proprietà all'inizio delle note. Seleziona "Sorgente" per mostrarle come YAML grezzo.
 
 [setting.editor.option-properties-hidden]
 original=Hidden
@@ -108,7 +108,7 @@ translation=Visibili
 
 [setting.editor.option-properties-source]
 original=Source
-translation=Codice
+translation=Sorgente
 
 [setting.editor.option-auto-pair-brackets]
 original=Auto-pair brackets
@@ -392,7 +392,7 @@ translation=Aggiorna sempre collegamenti interni
 
 [setting.file.option-always-update-links-description]
 original=Turn off to be prompted to update links after renaming a file.
-translation=Indica se aggiornare automaticamente i collegamenti dopo aver rinominato un file.
+translation=Disattiva per ricevere un avviso per aggiornare i collegamenti dopo aver rinominato un file.
 
 [setting.file.option-new-note-location]
 original=Default location for new notes
@@ -424,19 +424,19 @@ translation=Le nuove note verranno inserite nella cartella specificata. I plugin
 
 [setting.file.option-use-wiki-links]
 original=Use [[Wikilinks]]
-translation=Usa [[Wikilink]]
+translation=Usa [[collegamento wiki]]
 
 [setting.file.option-use-wiki-links-description]
 original=Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.
-translation=Crea automaticamente Wikilink per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilitare questa opzione per utilizzare il formato Markdown.
+translation=Crea automaticamente collegamento wiki per [[collegamenti]] e ![[immagini]] al posto di collegamenti e immagini Markdown. Disabilita questa opzione per generare collegamenti Markdown invece.
 
 [setting.file.option-show-unsupported-files]
 original=Show all file types
-translation=Rileva tutte le estensioni di file
+translation=Mostra tutti i tipi di file
 
 [setting.file.option-show-unsupported-files-description]
 original=Show files with any extension even if Obsidian can't open them natively, so you can link to them and see them in File Explorer and Quick Switcher.
-translation=Mostra i file con qualsiasi estensione anche se Obsidian non può aprirli nativamente, in modo da poterli collegare o vedere in Esplora risorse e Selezione rapida.
+translation=Mostra i file con qualsiasi estensione anche se Obsidian non può aprirli nativamente, in modo da poterli vedere e collegare in Esplora file e Selettore rapido.
 
 [setting.file.option-links]
 original=Links
@@ -472,7 +472,7 @@ translation=Indica dove inserire gli allegati appena aggiunti.
 
 [setting.file.option-new-attachment-location-default]
 original=Attachments
-translation=allegati
+translation=Allegati
 
 [setting.file.option-choice-subdirectory]
 original=In subfolder under current folder
@@ -484,7 +484,7 @@ translation=Percorso cartella degli allegati
 
 [setting.file.option-attachment-folder-path-description]
 original=Place newly created attachment files, such as images created via drag-and-drop or audio recordings, in this folder.
-translation=I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite drag and drop o copia/incolla e le registrazioni audio.
+translation=I nuovi file allegati verranno inseriti nella cartella specificata. Comprende le immagini create tramite trascina e rilascia o copia/incolla e le registrazioni audio.
 
 [setting.file.option-attachment-subfolder-path]
 original=Subfolder name
@@ -500,7 +500,7 @@ translation=File esclusi
 
 [setting.file.option-excluded-files-desc]
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
-translation=I file esclusi verranno nascosti o saranno meno evidenti in alcuni posti come Selezione rapida, suggerimenti e Vista grafo.
+translation=I file esclusi verranno nascosti in Ricerca, Vista grafo e Menzioni non collegate, e saranno meno evidenti nel Selettore rapido e nei suggerimenti.
 
 [setting.file.label-no-excluded-filters-applied]
 original=No excluded filter is applied right now. Add one below.
@@ -900,15 +900,15 @@ translation=Tasti di scelta rapida
 
 [setting.hotkeys.option-search]
 original=Search hotkeys
-translation=Cerca tasti di scelta rapida
+translation=Cerca scorciatoie da tastiera
 
 [setting.hotkeys.option-search-desc]
 original=Showing {{count}} hotkey. 
-translation={{count}} tasto di scelta rapida. 
+translation={{count}} scorciatoia da tastiera.
 
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
-translation={{count}} tasti di scelta rapida. 
+translation={{count}} scorciatoie da tastiera.
 
 [setting.hotkeys.option-search-conflict]
 original={{count}} command with conflicts.
@@ -924,11 +924,11 @@ translation=Filtra...
 
 [setting.hotkeys.tooltip-delete-hotkey]
 original=Delete hotkey
-translation=Elimina combinazione di tasti
+translation=Elimina scorciatoia da tastiera
 
 [setting.hotkeys.label-waiting-for-hotkey-press]
 original=Press hotkey...
-translation=Premi tasti di scelta rapida...
+translation=Premi scorciatoia da tastiera...
 
 [setting.hotkeys.label-show-all]
 original=All
@@ -956,11 +956,11 @@ translation=Personalizza comando
 
 [setting.hotkeys.tooltip-hotkey-single-conflict]
 original=This hotkey conflicts with “{{command}}”
-translation=Questa combinazione è in conflitto con "{{command}}"
+translation=Questa scorciatoia è in conflitto con "{{command}}"
 
 [setting.hotkeys.tooltip-hotkey-multiple-conflicts]
 original=This hotkey conflicts with {{count}} other commands
-translation=Questa combinazione è in conflitto con {{count}} altri comandi
+translation=Questa scorciatoia è in conflitto con {{count}} altri comandi
 
 [setting.hotkeys.label-blank-hotkey]
 original=Blank
@@ -1552,7 +1552,7 @@ translation=Disabilita
 
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
-translation=Copia link di condivisione
+translation=Copia collegamento di condivisione
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1816,15 +1816,15 @@ translation=Imposta codice
 
 [setting.mobile-toolbar.option-blockquote]
 original=Toggle blockquote
-translation=Imposta citazione
+translation=Imposta blocco citazione
 
 [setting.mobile-toolbar.option-inline-math]
 original=Toggle inline math
-translation=Imposta Math in linea
+translation=Imposta matematica in linea
 
 [setting.mobile-toolbar.option-math-block]
 original=Toggle math block
-translation=Imposta blocco Math
+translation=Imposta blocco matematica
 
 [setting.mobile-toolbar.option-markdown-link]
 original=Add Markdown link
@@ -2292,11 +2292,11 @@ translation=Aggiungi collegamento
 
 [interface.formatting.insert-external-link]
 original=Add external link
-translation=Aggiungi link
+translation=Aggiungi collegamento esterno
 
 [interface.formatting.insert-callout]
 original=Callout
-translation=Riquadro
+translation=Callout
 
 [interface.formatting.insert-horizontal-rule]
 original=Horizontal rule
@@ -2308,7 +2308,7 @@ translation=Blocco di codice
 
 [interface.formatting.insert-math-block]
 original=Math block
-translation=Blocco di matematica
+translation=Blocco matematica
 
 [interface.formatting.insert-table]
 original=Table
@@ -2524,11 +2524,11 @@ translation=Chiudi schede a destra
 
 [interface.menu.pin]
 original=Pin
-translation=Blocca
+translation=Appunta
 
 [interface.menu.unpin]
 original=Unpin
-translation=Sblocca
+translation=Rilascia
 
 [interface.menu.unlink-tab]
 original=Unlink tab
@@ -3508,7 +3508,7 @@ translation=Stato attivo su gruppo di schede a destra
 
 [commands.toggle-pin]
 original=Toggle pin
-translation=Blocca/sblocca nota
+translation=Appunta/rilascia
 
 [commands.split-right]
 original=Split right
@@ -3756,7 +3756,7 @@ translation=Inserisci blocco di codice
 
 [commands.insert-math-block]
 original=Insert math block
-translation=Inserisci blocco Math
+translation=Inserisci blocco matematica
 
 [commands.insert-horizontal-rule]
 original=Insert horizontal rule
@@ -4156,7 +4156,7 @@ translation=Sostituisci
 
 [menu-items.insert-callout]
 original=Callout
-translation=Riquadro
+translation=Callout
 
 [menu-items.insert-markdown-link]
 original=Markdown Link
@@ -4192,7 +4192,7 @@ translation=Blocco di codice
 
 [menu-items.insert-math-block]
 original=Math Block
-translation=Blocco Math
+translation=Blocco matematica
 
 [menu-items.insert-table]
 original=Table
@@ -4332,19 +4332,19 @@ translation=Plugin
 
 [plugins.file-explorer.name]
 original=Files
-translation=Esplora risorse
+translation=Esplora file
 
 [plugins.file-explorer.desc]
 original=Browse the files and folders in your vault.
-translation=Visualizza tutti i file nel tuo vault.
+translation=Esplora i file e le cartelle nel tuo vault.
 
 [plugins.file-explorer.action-open]
 original=Open file explorer
-translation=Apri Esplora risorse
+translation=Apri Esplora file
 
 [plugins.file-explorer.action-show]
 original=Show file explorer
-translation=Mostra Esplora risorse
+translation=Mostra Esplora file
 
 [plugins.file-explorer.action-create-note]
 original=Create new note
@@ -4364,7 +4364,7 @@ translation=Crea nota a destra
 
 [plugins.file-explorer.action-auto-reveal]
 original=Auto-reveal current file
-translation=Rivela automaticamente file attuale
+translation=Rivela automaticamente il file attuale
 
 [plugins.file-explorer.action-collapse-all]
 original=Collapse all
@@ -4388,11 +4388,11 @@ translation=Ordinamento
 
 [plugins.file-explorer.action-reveal-file]
 original=Reveal file in navigation
-translation=Mostra in Esplora risorse
+translation=Mostra in Esplora file
 
 [plugins.file-explorer.action-reveal-active-file]
 original=Reveal current file in navigation
-translation=Mostra file attivo in Esplora risorse
+translation=Mostra il file attivo in Esplora file
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
@@ -4816,7 +4816,7 @@ translation=Ricerca nella cartella
 
 [plugins.quick-switcher.name]
 original=Quick switcher
-translation=Selezione rapida
+translation=Selettore rapido
 
 [plugins.quick-switcher.desc]
 original=Jump to other files with your keyboard.
@@ -4828,7 +4828,7 @@ translation=Selezione
 
 [plugins.quick-switcher.action-open]
 original=Open quick switcher
-translation=Apri selezione rapida
+translation=Apri selettore rapido
 
 [plugins.quick-switcher.instruction-navigate]
 original=to navigate
@@ -5692,7 +5692,7 @@ translation=Digita un comando...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
-translation=Comandi in evidenza
+translation=Comandi appuntati
 
 [plugins.markdown-format-importer.name]
 original=Format converter
@@ -5756,11 +5756,11 @@ translation=Converte i collegamenti "[[UID]]" e li abbellisce in "[[UID File Nam
 
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
-translation=Migrazione dei metadati iniziali
+translation=Migrazione del frontmatter
 
 [plugins.markdown-format-importer.frontmatter-migration-description]
 original=Migrate frontmatter tags, aliases, and cssclasses to the strict format required by Obsidian v1.9+
-translation=Migra etichette dei metadati iniziali, alias e cssclasses nel formato rigoroso richiesto da Obsidian v1.9+
+translation=Migra etichette di frontmatter, alias e cssclasses nel formato rigoroso richiesto da Obsidian v1.9+
 
 [plugins.markdown-format-importer.msg-all-files-warning]
 original=Warning: the converter will convert all the files in your vault, not just the current file.
@@ -5816,11 +5816,11 @@ translation=Non riuscito
 
 [plugins.daily-notes.name]
 original=Daily notes
-translation=Note del giorno
+translation=Note giornaliere
 
 [plugins.daily-notes.desc]
 original=Create or open today's daily note.
-translation=Apre la nota del giorno o ne crea una se non è presente.
+translation=Apre o crea la nota giornaliera.
 
 [plugins.daily-notes.short-name]
 original=Today
@@ -5828,43 +5828,43 @@ translation=Oggi
 
 [plugins.daily-notes.action-open]
 original=Open today's daily note
-translation=Apri nota del giorno
+translation=Apri nota giornaliera
 
 [plugins.daily-notes.action-open-previous]
 original=Open previous daily note
-translation=Apri nota del giorno precedente
+translation=Apri nota giornaliera precedente
 
 [plugins.daily-notes.action-open-next]
 original=Open next daily note
-translation=Apri nota del giorno successiva
+translation=Apri nota giornaliera successiva
 
 [plugins.daily-notes.action-insert-text]
 original=Today's daily note
-translation=Inserisci testo nella nota del giorno
+translation=Nota giornaliera
 
 [plugins.daily-notes.action-insert-link]
 original=Insert link into daily note
-translation=Inserisci collegamento nella nota del giorno
+translation=Inserisci collegamento nella nota giornaliera
 
 [plugins.daily-notes.msg-fail-format]
 original=Failed to create daily note. “{{format}}” is not a valid format.
-translation=Impossibile creare la nota del giorno. "{{format}}" non è un formato valido.
+translation=Impossibile creare la nota giornaliera. "{{format}}" non è un formato valido.
 
 [plugins.daily-notes.msg-fail-folder]
 original=Failed to create daily note. Folder “{{folderOption}}” not found.
-translation=Impossibile creare la nota del giorno. Cartella "{{folderOption}}" non trovata.
+translation=Impossibile creare la nota giornaliera. Cartella "{{folderOption}}" non trovata.
 
 [plugins.daily-notes.msg-fail-template-file]
 original=Failed to create daily note. Template file “{{template}}” not found.
-translation=Impossibile creare la nota del giorno. Modello "{{template}}" non trovato.
+translation=Impossibile creare la nota giornaliera. Modello "{{template}}" non trovato.
 
 [plugins.daily-notes.msg-no-previous]
 original=There's no daily note before this one.
-translation=Nessuna nota del giorno prima di questa.
+translation=Nessuna nota giornaliera prima di questa.
 
 [plugins.daily-notes.msg-no-next]
 original=There's no daily note after this one.
-translation=Nessuna nota del giorno dopo di questa.
+translation=Nessuna nota giornaliera dopo di questa.
 
 [plugins.daily-notes.option-date-format]
 original=Date format
@@ -5872,7 +5872,7 @@ translation=Formato data
 
 [plugins.daily-notes.option-date-format-desc]
 original=Choose how daily note are named in your vault.
-translation=Scegli come vengono denominate le note quotidiane nella tua cassaforte.
+translation=Scegli come vengono denominate le note giornaliere nel tuo vault.
 
 [plugins.daily-notes.option-custom-date-format]
 original=Custom format
@@ -5888,7 +5888,7 @@ translation=Formato data non valido
 
 [plugins.daily-notes.msg-missing-folder]
 original=Daily note folder not found.
-translation=Cartella delle note quotidiane non trovata.
+translation=Cartella delle note giornaliere non trovata.
 
 [plugins.daily-notes.label-refer-to-syntax]
 original=For more syntax, refer to 
@@ -5908,7 +5908,7 @@ translation=Posizione dei nuovi file
 
 [plugins.daily-notes.option-new-file-location-description]
 original=New daily notes will be placed here.
-translation=Percorso della cartella per le nuove note del giorno.
+translation=Percorso della cartella per le nuove note giornaliere.
 
 [plugins.daily-notes.option-template]
 original=Template file location
@@ -6180,7 +6180,7 @@ translation=Impossibile visualizzare i modelli. Cartella "{{folderOption}}" non 
 
 [plugins.templates.msg-fail-invalid-template-properties]
 original=Unable to insert template, the properties in the template file could not be read.
-translation=Inserimento del template fallito, non è stato possibile leggere le proprietà nel file del template.
+translation=Impossibile inserire il modello, le proprietà nel file del modello non sono leggibili.
 
 [plugins.templates.msg-no-folder-set]
 original=Failed to list templates. No template folder configured.
@@ -6200,7 +6200,7 @@ translation=Attiva l'effetto di traslucenza per aumentare il senso di profondit�
 
 [plugins.slash-command.name]
 original=Slash commands
-translation=Comandi Slash
+translation=Comandi slash
 
 [plugins.slash-command.desc]
 original=Trigger commands in the editor by using the forward slash key.
@@ -6252,7 +6252,7 @@ translation=Obsidian Publish è un servizio aggiuntivo a pagamento che consente 
 
 [plugins.publish.label-please-login]
 original=To start publishing, please log in or create a new Obsidian account.
-translation=Per iniziare a pubblicare, effettuare il login o creare un nuovo account Obsidian.
+translation=Per iniziare a pubblicare, accedi o crea un nuovo account Obsidian.
 
 [plugins.publish.label-no-publish-subscription]
 original=You do not have an Obsidian Publish subscription yet.
@@ -6408,7 +6408,7 @@ translation=Nascondi pagine o cartelle dalla navigazione
 
 [plugins.publish.option-hide-items-in-navigation-desc]
 original=Right click and select “Hide” to prevent specific pages from appearing in the site navigation. The pages will still be accessible via links or accessing the URL directly.
-translation=Fai clic con il tasto destro e seleziona "Nascondi" per impedire la visualizzazione di pagine specifiche nella navigazione del sito. Le pagine saranno comunque accessibili dai link o accedendo direttamente all'URL.
+translation=Fai clic con il tasto destro e seleziona "Nascondi" per impedire la visualizzazione di pagine specifiche nella navigazione del sito. Le pagine saranno comunque accessibili tramite collegamenti o accedendo direttamente all'URL.
 
 [plugins.publish.option-show-hidden-items]
 original=Show hidden
@@ -6508,7 +6508,7 @@ translation=Mostra anteprima al passaggio del mouse
 
 [plugins.publish.option-hover-preview-file-description]
 original=Display page preview when hovering links.
-translation=Visualizza l'anteprima della pagina quando si passa il mouse sui link.
+translation=Visualizza l'anteprima della pagina quando si passa il mouse sui collegamenti.
 
 [plugins.publish.option-hide-title]
 original=Hide page title
@@ -7604,7 +7604,7 @@ translation=Impostazioni principali
 
 [plugins.sync.option-sync-app-desc]
 original=Enable to sync editor settings, files & links settings, etc.
-translation=Sincronizza le impostazioni di editor, file e collegamenti, tasti di scelta rapida, etc.
+translation=Sincronizza le impostazioni di editor, file, collegamenti e scorciatoie da tastiera, ecc.
 
 [plugins.sync.option-sync-appearance]
 original=Appearance settings
@@ -7624,11 +7624,11 @@ translation=Sincronizzazione temi e snippet. La loro abilitazione dipende dall'i
 
 [plugins.sync.option-sync-hotkey]
 original=Hotkeys
-translation=Tasti di scelta rapida
+translation=Scorciatoie da tastiera
 
 [plugins.sync.option-sync-hotkey-desc]
 original=Sync custom hotkeys.
-translation=Sincronizza tasti di scelta rapida personalizzati.
+translation=Sincronizza scorciatoie da tastiera personalizzate.
 
 [plugins.sync.option-sync-core-plugin]
 original=Active core plugin list
@@ -7672,7 +7672,7 @@ translation=Obsidian Sync è un servizio aggiuntivo di Obsidian con crittografia
 
 [plugins.sync.label-account-required]
 original=To start syncing, please log in or create a new Obsidian account.
-translation=Per iniziare a sincronizzare, effettuare il login o creare un nuovo account Obsidian.
+translation=Per iniziare a sincronizzare, accedi o crea un nuovo account Obsidian.
 
 [plugins.sync.label-current-file]
 original=Current file
