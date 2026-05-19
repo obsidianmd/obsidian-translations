@@ -10,6 +10,10 @@ translation=Modul
 original=Core plugins
 translation=Module integrate
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Afișează în lista de module
+
 [setting.plugin-options]
 original=Plugin options
 translation=Opțiunile modulului
@@ -22,9 +26,41 @@ translation=Exemplu: director 1/director 2
 original=Example: folder/note
 translation=Exemplu: director/însemnare
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Niciun fișier selectat
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Schimbarea acestei opțiuni necesită o repornire pentru a lua efect.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Număr nevalid
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Valoarea trebuie să fie cel puțin {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Valoarea trebuie să fie cel mult {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Fișierul nu a fost găsit.
+
+[setting.search-settings]
+original=Search settings...
+translation=Caută în setări...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Nu s-au găsit setări.
+
+[setting.search-show-more]
+original={{count}} more
+translation=încă {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Setați afișarea de la dreapta la stânga (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Setați direcția textului în cadrul însemnărilor astfel încât acesta să fie afișat de la dreapta la stânga.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Afișează diagrame Mermaid în însemnări
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Redă diagrame de flux, diagrame de secvență și alte diagrame din blocuri de cod „mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Alegeți fișierele care să fie excluse
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Fișierele excluse vor fi ascunse sau mai puțin vizibile în diferite locuri, cum ar fi în comutatorul rapid, în sugestiile de legături cât și în afișajul grafic.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Niciun filtru de excludere nu este aplicat în acest moment. Adăugați unul mai jos.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Adaugă excludere...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Fișierele care corespund următoarelor filtre sunt în prezent excluse:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Nu au fost adăugate excluderi.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filtru
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Adaugă excludere
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Introdu o cale sau o expresie regulată, de ex. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filtrul nu poate fi gol
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Introduceți calea sau „/expresia regulată/”...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Permiteți callback-uri URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Activați utilizarea x-callback-url prin x-success sau x-error la gestionarea URI-urilor Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=URI Obsidian
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Gestionează acțiunile de încredere și configurează comportamentul URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Acțiuni de încredere
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Nu există încă acțiuni de încredere. Acțiunile URI aprobate vor apărea aici.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Alegeți schema de culoare implicită
 original=Choose Obsidian's default color scheme.
 translation=Alegeți schema de culoare implicită a aplicației Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=întunecat luminos sistem mod nocturn schemă de culori
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Alegeți culoarea de accent
@@ -549,6 +613,10 @@ translation=Alegeți culoarea de accent
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Alegeți culoarea de accent utilizată în cadrul aplicației.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=evidențiere brand culoare primară
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Alegeți dimensiunea fontului
 original=Font size in pixels that affects editing and reading views.
 translation=Alegeți dimensiunea fontului în pixeli. Această setare afectează editorul și previzualizarea.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=dimensiune text mărire
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Reglați rapid dimensiunea fontului
@@ -673,6 +745,10 @@ translation=Gestionați temele
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Gestionați temele instalate și răsfoiți temele comunitare.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=comunitate răsfoire instalare descărcare
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Utilizați meniurile native
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Meniurile din întreaga aplicație vor fi conforme sistemului de operare. Acestea nu vor fi afectate de tema aleasă de către dvs.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Reîncărcați temele
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Temele CSS personalizate au fost reîncărcate.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Deschide directorul cu teme
@@ -710,9 +778,17 @@ translation= Fragmente CSS
 original=No CSS snippets found.
 translation=Nu am găsit fragmente CSS în directorul cu fragmente.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Ai în prezent {{count}} fragment activat.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Ai în prezent {{count}} fragmente activate.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Fragmentele CSS se află în „{{path}}”.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Fragmentele CSS vă permit să personalizați aparența Obsidian. Plasați fișierele CSS în „{{path}}” pentru ca acestea să apară aici.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Deschide directorul de fragmente
 original=Reloaded CSS snippets.
 translation=Fragmentele CSS au fost reîncărcate.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Aplică fragmentul CSS din „{{path}}”.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Caută fragmente...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=În prezent, aveți instalată {{count}} temă.
 original=You currently have {{count}} themes installed.
 translation=În prezent, aveți instalate {{count}} teme.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Deschide setările într-o fereastră nouă
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Deschide setările în propria fereastră, în loc să fie încorporate în aplicație.
+
+[setting.interface.name]
+original=Interface
+translation=Interfață
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Avansat
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Combinații de taste
@@ -909,14 +1005,6 @@ translation=Se afișează {{count}} combinație de taste.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Se afișează {{count}} combinații de taste. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} comenzi cu conflicte.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} comenzi cu conflicte.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Apăsați o combinație de taste...
 original=All
 translation=Toate
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Conflicte ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Neatribuite
@@ -945,6 +1037,10 @@ translation=Atribuite
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Atribuite manual
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Nu s-au găsit rezultate.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Modul restricționat
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Modul restricționat este dezactivat. Activați-l pentru a dezactiva modulele comunitare.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Activați modul restricționat pentru a folosi aplicația fără module comunitare.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1531,15 @@ original=Community plugins
 translation=Module comunitare
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Previzualizați și folosiți fantasticele module comunitare.
+original=Browse and install community plugins made by the community.
+translation=Răsfoiți și instalați module comunitare create de comunitate.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Răsfoiți
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Ieșiți din modul restricționat
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=În ciuda eforturilor noastre, încă există o mică șansă ca un modul comunitar să se comporte necorespunzător.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Facem o revizuire inițială a codului
+original=Code review
+translation=Revizuire a codului
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Modulele sunt supuse unei revizuiri inițiale a codului de către echipa noastră înainte de a apărea în magazin.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Modulele din directorul oficial al comunității sunt revizuite automat după fiecare actualizare.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Punem la dispoziție mecanisme de raportare
 original=We follow up and remove faulty plugins upon user report.
 translation=Urmărim și eliminăm modulele defecte în urma rapoartelor utilizatorilor.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Dorești să ieșiți din modul restricționat pentru a activa modulele comunitare? Recomandăm cu tărie să faceți copii de rezervă ale datelor înainte de a face acest lucru.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Aflați mai multe despre securitatea modulelor
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Activați modulele comunitare
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Permite module comunitare
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Modulele pot executa cod arbitrar pe dispozitivul tău. Îți recomandăm să faci o copie de siguranță a datelor înainte de a le activa.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Reactivează modulele instalate
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Restaurează {{count}} modul instalat anterior.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Restaurează {{count}} module instalate anterior.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Afișează informații despre module
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Module activate
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Aceste module vor fi activate la ieșirea din modul restricționat.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Căutați prin modulele instalate...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Afișați doar modulele instalate
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Nu există module instalate.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=În prezent există {{count}} linkuri care indică către acest fiș
 original=Delete file
 translation=Șterge fișier
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Rulezi acțiunea dintr-un link extern?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Acțiunea „{{action}}” este pe cale să ruleze. Continuă doar dacă ai încredere în sursa linkului.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Modulul „{{source}}” este pe cale să ruleze acțiunea „{{action}}”. Continuă doar dacă ai încredere în sursa linkului.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Nu mai întreba pentru „{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Descarcă atașamentele
@@ -3993,6 +4133,10 @@ translation=Confirmă
 [dialogue.button-cancel]
 original=Cancel
 translation=Anulează
+
+[dialogue.button-allow]
+original=Allow
+translation=Permite
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Afișează toate fișierele, inclusiv pe cele pe care Obsidian nu le
 [plugins.graph-view.name]
 original=Graph view
 translation=Afișaj grafic
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Grafic local
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Număr de cuvinte
 original=Show word count in the status bar.
 translation=Afișează numărul de cuvinte în bara de status.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Afișezi diagrame Mermaid în acest seif?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Permite doar dacă ai încredere în conținutul acestui seif.
+
 [plugins.slides.name]
 original=Slides
 translation=Prezentări
@@ -6845,10 +7001,6 @@ translation=Introdu e-mailul...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Te rugăm să introduci un e-mail valid pentru a invita pe cineva.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Te rugăm să activezi modulul integrat Publish în Setări -> Module integrate pentru a vedea site-urile.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Module comunitare instalate
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Sincronizează modulele comunitare instalate (fișierele .js, .css și manifest.json) și setările acestora.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Permite modulelor sincronizate să ruleze pe acest dispozitiv?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync nu poate verifica conținutul modulelor sincronizate pe acest dispozitiv, iar acestea pot diferi de modulele publicate în directorul comunității.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Activează acest lucru doar dacă seiful și dispozitivele conectate sunt de încredere.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Da, activează sincronizarea modulelor
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync încă se încarcă, vă rugăm să reîmprospătați această pagină mai târziu.
@@ -8277,6 +8445,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Mod cititor
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Rezumă...
 original=Group by this property
 translation=Grupează după această proprietate
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Redimensionează coloana...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Resetează dimensiunea coloanei
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Trage pentru a redimensiona
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Golește valorile
@@ -10065,3 +10249,87 @@ translation={{count}} temă
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} teme
+
+[main.button-cancel]
+original=Cancel
+translation=Anulează
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Copiază
+
+[main.button-open-link]
+original=Open Link
+translation=Deschide legătura
+
+[main.button-open-file]
+original=Open this file
+translation=Deschide acest fișier
+
+[main.button-run-file]
+original=Run File
+translation=Rulează fișierul
+
+[main.external-link-title]
+original=Open external link?
+translation=Deschizi legătura externă?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Această legătură va deschide o aplicație externă în afara Obsidian. Continuă doar dacă ai încredere în sursa acestei legături.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Deschide întotdeauna legăturile {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Avertisment privind fișierul la distanță
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Acest fișier se află pe un server la distanță și poate fi periculos.\nSigur dorești să-l deschizi?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Locație: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Acces la unitatea de rețea
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Acest conținut solicită date de pe o unitate de rețea. Permiterea acestui lucru poate expune datele tale de autentificare sau alte informații sensibile către gazda la distanță.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Gazdă: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Permite
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Rulezi fișierul executabil?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Această legătură indică un fișier executabil. Rularea acestuia îți poate afecta computerul.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fișier: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Seiful nu a fost găsit.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Nu se poate găsi un seif pentru URL-ul {{url}}

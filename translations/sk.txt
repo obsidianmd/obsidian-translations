@@ -10,6 +10,10 @@ translation=Doplnok
 original=Core plugins
 translation=Vstavané pluginy
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Zobraziť v zozname doplnkov
+
 [setting.plugin-options]
 original=Plugin options
 translation=Možnosti pluginov
@@ -22,9 +26,41 @@ translation=Napr. priečinok 1/priečinok 2
 original=Example: folder/note
 translation=Napr. priečinok/poznámka
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Nie je vybraný žiadny súbor
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Na prejavenie tejto zmeny je nutný reštart.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Neplatné číslo
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Hodnota musí byť aspoň {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Hodnota musí byť najviac {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Súbor sa nenašiel.
+
+[setting.search-settings]
+original=Search settings...
+translation=Hľadať v nastaveniach...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Nenašli sa žiadne nastavenia.
+
+[setting.search-show-more]
+original={{count}} more
+translation=Ďalších {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Sprava doľava (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Nastavenie smeru textu poznámok na zobrazenie sprava doľava.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Zobrazovať diagramy Mermaid v poznámkach
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Vykresľovať vývojové diagramy, sekvenčné diagramy a ďalšie diagramy z blokov kódu „mermaid“.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Vylúčené súbory
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Vylúčené súbory budú buď skryté, alebo menej viditeľné na rôznych miestach, ako napríklad Rýchly prepínač, návrhy odkazov, a zobrazenie grafu.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Žiadny filter vylúčených súborov nie je aktuálne použitý. Pridáte ho nižšie.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Pridať vylúčenie...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Súbory zodpovedajúce nasledujúcim filtrom sú aktuálne vylúčené:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Neboli pridané žiadne vylúčenia.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filter
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Pridať vylúčenie
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Zadajte cestu alebo regulárny výraz, napr. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filter nemôže byť prázdny
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Zadajte cestu, alebo "/regulárny výraz (regex)/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Povoliť URI callbacky
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Povoľuje použitie x-callback-url cez x-success alebo x-error pri spracovaní URI Obsidianu.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Spravovať dôveryhodné akcie a konfigurovať správanie URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Dôveryhodné akcie
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Zatiaľ žiadne dôveryhodné akcie. Schválené akcie URI sa zobrazia tu.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Základná téma
 original=Choose Obsidian's default color scheme.
 translation=Vyberte predvolenú farebnú tému pre Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=tmavý svetlý systém nočný režim farebná schéma
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Farba akcentu
@@ -549,6 +613,10 @@ translation=Farba akcentu
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Vyberte farbu akcentu, ktorá sa bude používať v aplikácií.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=zvýraznenie značka primárna farba
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Veľkosť písma
 original=Font size in pixels that affects editing and reading views.
 translation=Veľkosť písma v pixeloch, pre editor a náhľad.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=veľkosť textu priblíženie
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Rýchla zmena veľkosti písma
@@ -673,6 +745,10 @@ translation=Témy
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Spravovať nainštalované a prehliadať komunitné témy.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=komunita prehliadať nainštalovať stiahnuť
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Predvolené menu
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Menu v aplikácii sa bude zhodovať s operačným systémom. Menu nebude ovplyvnené témou.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Znovu načítať témy
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Znovu načítať vlastné CSS témy.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Otvoriť priečinok s témami
@@ -710,9 +778,17 @@ translation=CSS snippety
 original=No CSS snippets found.
 translation=Žiadne CSS snippety nájdené v priečinku snippetov.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Momentálne máte povolený {{count}} úryvok.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Momentálne máte povolených {{count}} úryvkov.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS snippety sú uložené v "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Úryvky CSS vám umožňujú prispôsobiť vzhľad aplikácie Obsidian. Umiestnite súbory CSS do „{{path}}“, aby sa zobrazili tu.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Otvoriť priečinok so snippetmi
 original=Reloaded CSS snippets.
 translation=Znovu načítané CSS snippety.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Použi CSS snippet na "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Hľadať úryvky...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Aktuálne máte nainštalovanú {{count}} tému.
 original=You currently have {{count}} themes installed.
 translation=Aktuálne máte nainštalované(ých) {{count}} témy(m).
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Otvoriť nastavenia v novom okne
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Otvoriť nastavenia vo vlastnom okne namiesto vloženia v aplikácii.
+
+[setting.interface.name]
+original=Interface
+translation=Rozhranie
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Rozšírené
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Klávesové skratky
@@ -909,14 +1005,6 @@ translation=Zobrazená {{count}} klávesovej skratky.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Zobrazené(ých) {{count}} klávesové(ých) skratky(iek).
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} príkaz s konfliktom.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} príkazy(ov) s konfliktmi.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Stlačte klávesovú skratku...
 original=All
 translation=Všetko
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Konflikty ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Nepriradené
@@ -945,6 +1037,10 @@ translation=Priradené
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Priradené mnou
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Nenašli sa žiadne výsledky.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Obmedzený režim
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Obmedzený režim je vypnutý. Zapnutím zakážete komunitné pluginy.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Zapnite obmedzený režim, ak chcete používať aplikáciu bez komunitných pluginov.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1531,15 @@ original=Community plugins
 translation=Komunitné pluginy
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Prechádzajte a inštalujte pluginy tretích strán vytvorené našou super komunitou.
+original=Browse and install community plugins made by the community.
+translation=Prechádzajte a inštalujte komunitné pluginy vytvorené komunitou.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Prehľadávať
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Ukončiť obmedzený režim
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Napriek nášmu úsiliu stále existuje malá pravdepodobnosť, že komunitný plugin bude chybný.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Prvotná revízia kódu
+original=Code review
+translation=Revízia kódu
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Skôr ako sa pluginy objavia v ponuke, prejdú úvodnou kontrolou našim tímom.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Pluginy v oficiálnom komunitnom adresári sa po každej aktualizácii automaticky kontrolujú.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Mechanizmus nahlásenia
 original=We follow up and remove faulty plugins upon user report.
 translation=Chybné pluginy sledujeme a odstraňujeme na základe nahlásení od používateľov.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Chcete ukončiť obmedzený režim a povoliť komunitné pluginy? Odporúčame najprv zálohovať svoje dáta.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Ďalšie informácie o zabezpečení pluginov
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Zapnúť komunitné pluginy
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Povoliť komunitné pluginy
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Doplnky môžu na vašom zariadení spúšťať ľubovoľný kód. Pred ich povolením odporúčame zálohovať vaše údaje.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Znova povoliť nainštalované doplnky
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Obnoviť {{count}} predtým nainštalovaný doplnok.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Obnoviť {{count}} predtým nainštalovaných doplnkov.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Zobraziť informácie o doplnku
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Povolené doplnky
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Tieto doplnky budú povolené po opustení obmedzeného režimu.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Hľadať nainštalované pluginy...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Zobraziť iba nainštalované
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Nie sú nainštalované žiadne doplnky.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Momentálne existuje {{count}} odkazov smerujúcich na tento súbor.
 original=Delete file
 translation=Odstrániť súbor
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Spustiť akciu z externého odkazu?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Akcia „{{action}}“ sa chystá spustiť. Pokračujte iba vtedy, ak dôverujete zdroju odkazu.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Doplnok „{{source}}“ sa chystá spustiť akciu „{{action}}“. Pokračujte iba vtedy, ak dôverujete zdroju odkazu.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Už sa nepýtať na „{{action}}“
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Stiahnuť prílohy
@@ -3993,6 +4133,10 @@ translation=Potvrdiť
 [dialogue.button-cancel]
 original=Cancel
 translation=Zrušiť
+
+[dialogue.button-allow]
+original=Allow
+translation=Povoliť
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Zobraziť všetky súbory vrátane tých, ktoré Obsidian nedokáže
 [plugins.graph-view.name]
 original=Graph view
 translation=Graf
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokálny graf
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Počet slov
 original=Show word count in the status bar.
 translation=Zobrazovať počet slov v stavovom riadku.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Zobrazovať diagramy Mermaid v tomto trezore?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Povoľte iba vtedy, ak dôverujete obsahu tohto trezora.
+
 [plugins.slides.name]
 original=Slides
 translation=Snímky
@@ -6845,10 +7001,6 @@ translation=Zadajte jeho email...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Prosím vložte platný email pre pozvánku.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Ak chcete zobraziť stránky, povoľte plugin Publish v Nastavenia -> Vstavané pluginy.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Nainštalované komunitné pluginy
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Synchronizovať nainštalované komunitné pluginy (.js, .css, a manifest.json súbory) a ich nastavenia.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Povoliť spustenie synchronizovaných doplnkov na tomto zariadení?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync nedokáže overiť obsah doplnkov synchronizovaných do tohto zariadenia a môžu sa líšiť od doplnkov zverejnených v komunitnom adresári.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Toto povoľte iba vtedy, ak dôverujete trezoru a pripojeným zariadeniam.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Áno, zapnúť synchronizáciu doplnkov
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Synchronizácia sa načíta, aktualizujte túto stránku neskôr.
@@ -8277,6 +8445,10 @@ translation=Túto stránku nie je možné načítať.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Skontrolujte, že ste zadali správnu adresu.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Režim čítania
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Zhrnúť...
 original=Group by this property
 translation=Zoskupiť podľa tejto vlastnosti
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Zmeniť veľkosť stĺpca...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Obnoviť veľkosť stĺpca
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Potiahnutím zmeníte veľkosť
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Vymazať hodnoty
@@ -10065,3 +10249,87 @@ translation={{count}} téma
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} témy(m)
+
+[main.button-cancel]
+original=Cancel
+translation=Zrušiť
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopírovať
+
+[main.button-open-link]
+original=Open Link
+translation=Otvoriť odkaz
+
+[main.button-open-file]
+original=Open this file
+translation=Otvoriť tento súbor
+
+[main.button-run-file]
+original=Run File
+translation=Spustiť súbor
+
+[main.external-link-title]
+original=Open external link?
+translation=Otvoriť externý odkaz?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Tento odkaz otvorí externú aplikáciu mimo Obsidian. Pokračujte iba vtedy, ak dôverujete zdroju tohto odkazu.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Vždy otvárať odkazy {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Upozornenie na vzdialený súbor
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Tento súbor sa nachádza na vzdialenom serveri a môže byť nebezpečný.\nNaozaj ho chcete otvoriť?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Umiestnenie: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Prístup k sieťovej jednotke
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Tento obsah požaduje údaje zo sieťovej jednotky. Povolením sa môžu vaše prihlasovacie údaje alebo iné citlivé informácie sprístupniť vzdialenému hostiteľovi.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Hostiteľ: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Povoliť
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Spustiť spustiteľný súbor?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Tento odkaz odkazuje na spustiteľný súbor. Jeho spustenie môže poškodiť váš počítač.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Súbor: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Trezor sa nenašiel.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Nedá sa nájsť trezor pre URL {{url}}

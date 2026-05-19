@@ -10,6 +10,10 @@ translation=Plugin
 original=Core plugins
 translation=Plugin teras
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Dedahkan dalam senarai plugin
+
 [setting.plugin-options]
 original=Plugin options
 translation=Tetapan plugin
@@ -22,9 +26,41 @@ translation=Contoh: folder 1/folder 2
 original=Example: folder/note
 translation=Contoh: folder/nota
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Tiada fail dipilih
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Menukar pilihan ini memerlukan mulakan semula untuk berkuat kuasa.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Nombor tidak sah
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Nilai mestilah sekurang-kurangnya {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Nilai mestilah tidak melebihi {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Fail tidak ditemui.
+
+[setting.search-settings]
+original=Search settings...
+translation=Cari tetapan...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Tiada tetapan ditemui.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} lagi
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Kanan ke kiri (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Tunjukkan rajah Mermaid dalam nota
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Paparkan carta alir, rajah jujukan dan rajah lain daripada bongkah kod “mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Fail dikecualikan
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Fail dikecualikan akan disembunyikan dalam Carian, Paparan graf dan Sebutan tidak dipaut, serta kurang ketara dalam Penukaran pantas dan cadangan pautan.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Tiada penapis pengecualian digunakan sekarang. Tambah satu di bawah.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Tambah pengecualian...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Fail yang sepadan dengan penapis berikut sedang dikecualikan:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Tiada pengecualian ditambahkan.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Penapis
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Tambah pengecualian
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Masukkan laluan atau ungkapan biasa, cth. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Penapis tidak boleh kosong
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Enter path or "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Benarkan panggilan balik URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Dayakan penggunaan x-callback-url melalui x-success atau x-error semasa mengendalikan URI Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=URI Obsidian
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Urus tindakan dipercayai dan konfigurasikan kelakuan URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Tindakan dipercayai
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Tiada tindakan dipercayai lagi. Tindakan URI yang diluluskan akan muncul di sini.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Tema asal
 original=Choose Obsidian's default color scheme.
 translation=Gunakan tema asal Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=gelap terang sistem mod malam skema warna
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Warna aksen
@@ -549,6 +613,10 @@ translation=Warna aksen
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Pilih warna aksen yang digunakan di seluruh apl.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=tumpuan jenama warna utama
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Saiz huruf
 original=Font size in pixels that affects editing and reading views.
 translation=Saiz huruf dalam ukuran piksel yang akan mempengaruhi mod suntingan dan pralihat.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=saiz teks zum
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Ubah saiz huruf dengan pantas
@@ -673,6 +745,10 @@ translation=Tema
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Urus tema yang dipasang dan layari tema komuniti.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=komuniti semak imbas pasang muat turun
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Menu natif
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Menu di seluruh apl akan sepadan dengan sistem operasi. Ia tidak akan dipengaruhi oleh tema anda.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Muat semula tema
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Tema CSS sendiri sudah dimuatkan semula.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Buka folder tema
@@ -710,9 +778,17 @@ translation=Snippet CSS
 original=No CSS snippets found.
 translation=Tiada snippet CSS dijumpai dalam folder snippet.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Anda kini mempunyai {{count}} petikan yang didayakan.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Anda kini mempunyai {{count}} petikan yang didayakan.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Snippet CSS disimpan dalam "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Petikan CSS membolehkan anda menyesuaikan penampilan Obsidian. Letakkan fail CSS dalam “{{path}}” supaya ia muncul di sini.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Buka folder snippet
 original=Reloaded CSS snippets.
 translation=Snippet CSS sudah dimuatkan semula.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Gunakan snippet CSS dari "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Cari petikan...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Anda kini mempunyai {{count}} tema dipasang.
 original=You currently have {{count}} themes installed.
 translation=Anda kini mempunyai {{count}} tema dipasang.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Buka tetapan dalam tetingkap baharu
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Buka tetapan dalam tetingkapnya sendiri dan bukannya dibenamkan dalam apl.
+
+[setting.interface.name]
+original=Interface
+translation=Antara muka
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mudah alih
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Lanjutan
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Kekunci Pintasan
@@ -909,14 +1005,6 @@ translation=Menunjukkan {{count}} kekunci pintasan.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Menunjukkan {{count}} kekunci pintasan. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} arahan dengan konflik.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} arahan dengan konflik.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Tekan kekunci pintasan...
 original=All
 translation=Semua
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Konflik ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Belum ditetapkan
@@ -945,6 +1037,10 @@ translation=Ditugaskan
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Ditugaskan oleh saya
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Tiada hasil ditemui.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Mod terhad
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Mod terhad dimatikan. Hidupkan untuk melumpuhkan pemalam komuniti.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Hidupkan Mod terhad untuk menggunakan apl tanpa pemalam komuniti.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Plugin komuniti
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Gelintar dan pasang plugin pihak ketiga yang dihasilkan oleh komuniti kami yang hebat-hebat belaka.
+original=Browse and install community plugins made by the community.
+translation=Semak imbas dan pasang pemalam komuniti yang dibuat oleh komuniti.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Gelintar
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Keluar Mod Terhad
+original=Exit Restricted mode
+translation=Keluar daripada Mod terhad
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Walaupun dengan usaha kami, masih ada kemungkinan kecil pemalam komuniti mungkin berkelakuan tidak semestinya.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Semakan kod awal
+original=Code review
+translation=Semakan kod
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins undergo an initial code review by our team before they appear in the store.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Plugin dalam direktori komuniti rasmi disemak secara automatik selepas setiap kemas kini.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Mekanisme laporan
 original=We follow up and remove faulty plugins upon user report.
 translation=Kami menindak susulan dan membuang plugin yang bermasalah berdasarkan laporan pengguna.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Adakah anda mahu keluar daripada Mod Terhad untuk mendayakan pemalam komuniti? Kami sangat mengesyorkan anda membuat sandaran data anda sebelum berbuat demikian.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Ketahui lebih lanjut tentang keselamatan plugin
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Hidupkan pemalam komuniti
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Benarkan pemalam komuniti
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Plugin boleh menjalankan kod arbitrari pada peranti anda. Kami mengesyorkan agar anda membuat sandaran data anda sebelum mendayakannya.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Dayakan semula plugin yang dipasang
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Pulihkan {{count}} plugin yang dipasang sebelum ini.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Pulihkan {{count}} plugin yang dipasang sebelum ini.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Tunjukkan maklumat plugin
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Plugin didayakan
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Plugin ini akan didayakan apabila meninggalkan mod terhad.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Cari plugin yang dipasang...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Tunjukkan yang dipasang sahaja
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Tiada plugin dipasang.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Pada masa ini terdapat {{count}} pautan yang menunjuk kepada fail in
 original=Delete file
 translation=Hapus fail
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Jalankan tindakan daripada pautan luaran?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Tindakan “{{action}}” akan dijalankan. Hanya teruskan jika anda mempercayai sumber pautan tersebut.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Plugin “{{source}}” akan menjalankan tindakan “{{action}}”. Hanya teruskan jika anda mempercayai sumber pautan tersebut.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Jangan tanya lagi untuk “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Muat turun lampiran
@@ -3993,6 +4133,10 @@ translation=Sahkan
 [dialogue.button-cancel]
 original=Cancel
 translation=Batal
+
+[dialogue.button-allow]
+original=Allow
+translation=Benarkan
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Tunjukkan semua fail termasuk yang Obsidian tidak boleh buka. Fail a
 [plugins.graph-view.name]
 original=Graph view
 translation=Paparan graf
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Graf setempat
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Jumlah kata
 original=Show word count in the status bar.
 translation=Tunjukkan jumlah perkataan dalam jalur status.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Paparkan rajah Mermaid dalam peti nota ini?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Hanya benarkan jika anda mempercayai kandungan peti nota ini.
+
 [plugins.slides.name]
 original=Slides
 translation=Slaid
@@ -6845,10 +7001,6 @@ translation=Masukkan e-mel mereka...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Sila masukkan e-mel yang sah untuk menjemput seseorang.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Sila dayakan plugin teras Publish dalam Tetapan -> Plugin teras untuk melihat tapak.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Pemalam komuniti dipasang
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Sync pemalam komuniti yang dipasang (fail .js, .css, dan manifest.json) serta tetapan mereka.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Benarkan plugin yang disegerakkan berjalan pada peranti ini?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync tidak dapat mengesahkan kandungan plugin yang disegerakkan ke peranti ini, dan kandungan tersebut mungkin berbeza daripada plugin yang diterbitkan dalam direktori komuniti.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Hanya dayakan ini jika peti nota dan peranti yang disambungkan dipercayai.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ya, hidupkan penyegerakan plugin
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync masih sedang dimuatkan, sila segar semula halaman ini kemudian.
@@ -8277,6 +8445,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Paparan pembaca
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Ringkaskan...
 original=Group by this property
 translation=Kumpulkan mengikut sifat ini
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Ubah saiz lajur...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Tetapkan semula saiz lajur
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Seret untuk ubah saiz
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Kosongkan nilai
@@ -10065,3 +10249,87 @@ translation={{count}} tema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} tema
+
+[main.button-cancel]
+original=Cancel
+translation=Batal
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Salin
+
+[main.button-open-link]
+original=Open Link
+translation=Buka pautan
+
+[main.button-open-file]
+original=Open this file
+translation=Buka fail ini
+
+[main.button-run-file]
+original=Run File
+translation=Jalankan fail
+
+[main.external-link-title]
+original=Open external link?
+translation=Buka pautan luaran?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Pautan ini akan membuka aplikasi luaran di luar Obsidian. Hanya teruskan jika anda mempercayai sumber pautan ini.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Sentiasa buka pautan {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Amaran fail jauh
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Fail ini terletak pada pelayan jauh dan mungkin berbahaya.\nAdakah anda pasti mahu membukanya?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Lokasi: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Akses pemacu rangkaian
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Kandungan ini meminta data daripada pemacu rangkaian. Membenarkan ini mungkin mendedahkan kelayakan log masuk anda atau maklumat sensitif lain kepada hos jauh.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Hos: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Benarkan
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Jalankan fail boleh laku?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Pautan ini menunjuk kepada fail boleh laku. Menjalankannya boleh membahayakan komputer anda.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fail: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Peti nota tidak ditemui.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Tidak dapat mencari peti nota untuk URL {{url}}

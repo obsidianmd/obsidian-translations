@@ -10,6 +10,10 @@ translation=إضافة
 original=Core plugins
 translation=الإضافات الأساسية
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=إظهار في قائمة المكوّنات الإضافية
+
 [setting.plugin-options]
 original=Plugin options
 translation=خيارات الإضافة
@@ -22,9 +26,41 @@ translation=مثال: مجلد 1/مجلد 2
 original=Example: folder/note
 translation=مثال: مجلد/ملاحظة
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=لم يتم تحديد ملف
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=يتطلب تغيير هذا الخيار إعادة تشغيل البرنامج ليظهر تأثيره.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=رقم غير صالح
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=يجب أن تكون القيمة {{min}} على الأقل
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=يجب أن تكون القيمة {{max}} على الأكثر
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=الملف غير موجود.
+
+[setting.search-settings]
+original=Search settings...
+translation=بحث في الإعدادات...
+
+[setting.no-search-results]
+original=No settings found.
+translation=لم يتم العثور على إعدادات.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} إضافية
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=من اليمين إلى اليسار
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=تحديد اتجاه نص الملاحظات لعرضه من اليمين إلى اليسار.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=إظهار مخططات Mermaid في الملاحظات
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=عرض المخططات الانسيابية ومخططات التسلسل ومخططات أخرى من كتل تعليمات برمجية “mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=الملفات المستبعدة
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=ستكون الملفات المستبعدة إما مخفية أو أقل وضوحًا في أماكن مختلفة، مثل الانتقال السريع، واقتراح الرابط، والعرض البياني.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=لا يتم تطبيق أي تصفية لاستبعاد المفات في الوقت الحالي. أضف تصفية أدناه.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=إضافة استثناء...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=الملفات المطابقة للتصفية التالية مستبعدة حاليًا:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=لم تتم إضافة أي استثناءات.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=التصفية
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=إضافة استثناء
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=أدخل مسارًا أو تعبيرًا نمطيًا، مثل /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=لا يمكن أن تكون التصفية فارغة
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=أدخل المسار أو "/التعبير النمطي/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=السماح باتصالات الروابط الإلكترونية
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=تمكين استخدام x-callback-url من خلال x-success أو x-error عند التعامل مع عناوين الخاصة بـ Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=إدارة الإجراءات الموثوقة وتكوين سلوك URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=الإجراءات الموثوقة
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=لا توجد إجراءات موثوقة حتى الآن. ستظهر إجراءات URI المعتمدة هنا.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=السمة الأساسية
 original=Choose Obsidian's default color scheme.
 translation=اختر نظام الألوان الافتراضي للبرنامج.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=داكن فاتح النظام الوضع الليلي نظام الألوان
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=اللون المميز
@@ -549,6 +613,10 @@ translation=اللون المميز
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=اختر لون مميز لاستخدامه في جميع أنحاء التطبيق.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=تمييز علامة تجارية أساسي لون
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=حجم الخط
 original=Font size in pixels that affects editing and reading views.
 translation=حجم الخط بالبكسل الذي يؤثر على محرر النص والمعاينة.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=حجم النص تكبير
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=ضبط سريع لحجم الخط
@@ -673,6 +745,10 @@ translation=السمات
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=إدارة السمات المثبتة وتصفح سمات المجتمع.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=مجتمعية تصفح تثبيت تنزيل
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=القوائم الأصلية
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=ستتوافق القوائم في جميع أنحاء التطبيق مع نظام التشغيل. لن تتأثر بالسمة التي تستخدمها.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=إعادة تحميل السمات
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=إعادة تحميل سمات CSS المخصصة.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=فتح مجلد السمات
@@ -710,9 +778,17 @@ translation=مقتطفات CSS
 original=No CSS snippets found.
 translation=لا يوجد مقتطفات CSS في مجلد المقتطفات.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=لديك حاليًا {{count}} مقتطف مُمكّن.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=لديك حاليًا {{count}} مقتطفات مُمكّنة.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=يتم تخزين مقتطفات CSS في "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=تتيح لك مقتطفات CSS تخصيص مظهر Obsidian. ضع ملفات CSS في “{{path}}” لتظهر هنا.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=فتح مجلد المقتطفات
 original=Reloaded CSS snippets.
 translation=تم إعادة تحميل مقتطفات CSS.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=تطبيق مقتطف CSS في "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=بحث في المقتطفات...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=لديك  {{count}} سمة مثبتة حاليًا.
 original=You currently have {{count}} themes installed.
 translation=لديك  {{count}} سمات مثبتة حاليًا.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=فتح الإعدادات في نافذة جديدة
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=فتح الإعدادات في نافذتها الخاصة بدلًا من تضمينها في التطبيق.
+
+[setting.interface.name]
+original=Interface
+translation=الواجهة
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=الهاتف المحمول
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=متقدم
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=مفاتيح الاختصار
@@ -909,14 +1005,6 @@ translation=عرض {{count}} مفتاح اختصار.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=عرض {{count}} مفاتيح اختصار. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} تعارض بين الأمر.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} تعارض بين الأوامر.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=اضغط على مفتاح الاختصار...
 original=All
 translation=الكل
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=تعارضات ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=غير معين
@@ -945,6 +1037,10 @@ translation=معين
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=تم تعيينها بواسطتي
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=لم يتم العثور على نتائج.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=الوضع المقيد
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=الوضع المقيد معطّل. فعّله لتعطيل إضافات المجتمع.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=فعّل الوضع المقيّد لاستخدام التطبيق بدون إضافات مجتمعية.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=إضافات المجتمع
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=تصفّح وثبت إضافات خارجية التي أنشأها مجتمعنا.
+original=Browse and install community plugins made by the community.
+translation=تصفّح وثبّت الإضافات المجتمعية التي أنشأها المجتمع.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=تصفّح
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=الخروج من الوضع المقيد
+original=Exit Restricted mode
+translation=الخروج من الوضع المقيّد
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=على الرغم من جهودنا، لا يزال هناك فرصة ضئيلة لسلوك غير لائق من إضافات المجتمع.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=مراجعة أولية للشيفرة المصدرية
+original=Code review
+translation=مراجعة الشيفرة المصدرية
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=يتم خضوع الإضافات لمراجعة رمزية أولية من قبل فريقنا قبل أن تظهر في المتجر.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=تُراجع المكوّنات الإضافية في الدليل المجتمعي الرسمي تلقائيًا بعد كل تحديث.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=آلية الإبلاغ
 original=We follow up and remove faulty plugins upon user report.
 translation=نتابع ونزيل الإضافات المعيبة بناءً على تقارير المستخدمين.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=هل ترغب في الخروج من الوضع المقيد لتمكين إضافات المجتمع؟ نوصي بشدة بإنشاء نسخ احتياطية من بياناتك قبل فعل ذلك.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=تعرف على المزيد حول أمان الإضافات
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=تفعيل إضافات المجتمع
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=السماح بالإضافة المجتمعية
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=يمكن للمكوّنات الإضافية تنفيذ تعليمات برمجية عشوائية على جهازك. نوصي بعمل نسخة احتياطية لبياناتك قبل تمكينها.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=إعادة تمكين المكوّنات الإضافية المثبتة
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=استعادة {{count}} مكوّن إضافي مثبت سابقًا.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=استعادة {{count}} مكوّنات إضافية مثبتة سابقًا.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=إظهار معلومات المكوّن الإضافي
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=المكوّنات الإضافية المُمكّنة
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=سيتم تمكين هذه المكوّنات الإضافية عند مغادرة الوضع المقيّد.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=البحث عن الإضافات المثبتة...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=عرض المثبتة فقط
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=لا توجد مكوّنات إضافية مثبتة.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=يوجد حاليًا {{count}} روابط تشير إلى هذا ا
 original=Delete file
 translation=حذف الملف
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=هل تريد تشغيل الإجراء من رابط خارجي؟
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=الإجراء “{{action}}” على وشك التشغيل. لا تتابع إلا إذا كنت تثق بمصدر الرابط.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=المكوّن الإضافي “{{source}}” على وشك تشغيل الإجراء “{{action}}”. لا تتابع إلا إذا كنت تثق بمصدر الرابط.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=لا تسأل مرة أخرى عن “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=نزل المرفقات
@@ -3993,6 +4133,10 @@ translation=تأكيد
 [dialogue.button-cancel]
 original=Cancel
 translation=إلغاء
+
+[dialogue.button-allow]
+original=Allow
+translation=السماح
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=عرض جميع الملفات بما في ذلك تلك التي ل
 [plugins.graph-view.name]
 original=Graph view
 translation=العرض البياني
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=الرسم البياني المحلي
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=عدّاد الكلمات
 original=Show word count in the status bar.
 translation=إظهار عدد الكلمات في شريط الحالة.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=هل تريد عرض مخططات Mermaid في هذه الخزنة؟
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=اسمح بذلك فقط إذا كنت تثق بمحتويات هذه الخزنة.
+
 [plugins.slides.name]
 original=Slides
 translation=الشرائح
@@ -6845,10 +7001,6 @@ translation=أدخل بريدهم الإلكتروني...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=يرجى إدخال بريد إلكتروني صحيح لدعوة شخص ما.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=يرجى تمكين إضافة النشر الأساسية في الإعدادات -> الإضافات الأساسية لعرض المواقع.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=إضافات المجتمع المثبتة
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=مزامنة إضافات المجتمع المثبتة (js ،.css.، وملفات manifest.json) وإعداداتها.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=هل تريد السماح للمكوّنات الإضافية المتزامنة بالعمل على هذا الجهاز؟
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=لا يستطيع Obsidian Sync التحقق من محتويات المكوّنات الإضافية المتزامنة إلى هذا الجهاز، وقد تختلف عن المكوّنات الإضافية المنشورة في دليل المجتمع.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=لا تُمكّن هذا إلا إذا كانت الخزنة والأجهزة المتصلة موثوقة.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=نعم، فعّل مزامنة المكوّنات الإضافية
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=المزامنة لا تزال قيد التحميل، يرجى تحديث هذه الصفحة لاحقاً.
@@ -8277,6 +8445,10 @@ translation=غير قادر على تحميل الموقع.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=يرجى التأكد من أن لديك العنوان الصحيح.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=عرض القارئ
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=تلخيص...
 original=Group by this property
 translation=تجميع حسب هذه الخاصية
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=تغيير حجم العمود...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=إعادة تعيين حجم العمود
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=اسحب لتغيير الحجم
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=مسح القيم
@@ -10065,3 +10249,87 @@ translation={{count}} سمة
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} سمات
+
+[main.button-cancel]
+original=Cancel
+translation=إلغاء
+
+[main.button-ok]
+original=OK
+translation=موافق
+
+[main.button-copy]
+original=Copy
+translation=نسخ
+
+[main.button-open-link]
+original=Open Link
+translation=فتح الرابط
+
+[main.button-open-file]
+original=Open this file
+translation=فتح هذا الملف
+
+[main.button-run-file]
+original=Run File
+translation=تشغيل الملف
+
+[main.external-link-title]
+original=Open external link?
+translation=فتح رابط خارجي؟
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=سيفتح هذا الرابط تطبيقًا خارجيًا خارج Obsidian. لا تتابع إلا إذا كنت تثق بمصدر هذا الرابط.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=فتح روابط {{scheme}}:// دائمًا
+
+[main.remote-file-title]
+original=Remote file warning
+translation=تحذير ملف بعيد
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=يقع هذا الملف على خادم بعيد، وقد يكون خطرًا.\nهل أنت متأكد من أنك تريد فتحه؟
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=الموقع: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=الوصول إلى محرك أقراص الشبكة
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=يطلب هذا المحتوى بيانات من محرك أقراص شبكة. قد يؤدي السماح بذلك إلى كشف بيانات اعتماد تسجيل الدخول الخاصة بك أو معلومات حساسة أخرى للمضيف البعيد.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=المضيف: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=السماح
+
+[main.executable-file-title]
+original=Run executable file?
+translation=تشغيل ملف قابل للتنفيذ؟
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=يشير هذا الرابط إلى ملف قابل للتنفيذ. قد يؤدي تشغيله إلى إلحاق الضرر بجهاز الكمبيوتر لديك.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=الملف: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=لم يتم العثور على الخزنة.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=تعذّر العثور على خزنة لعنوان URL {{url}}
