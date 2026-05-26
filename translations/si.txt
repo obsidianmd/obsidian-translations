@@ -116,7 +116,7 @@ translation=කියවිය හැකි රේඛා දිග
 
 [setting.editor.option-readable-line-description]
 original=Limit maximum line length. Less content fits onscreen, but long blocks of text are more readable.
-translation=Limit maximum line length. Fits less content on the screen, but makes long paragraphs more readable.
+translation=කියවිය හැකි රේඛා දිග සීමා කරන්න. තිරය මත අඩු අන්තර්ගතයක් ගැලපෙන නමුත්, දිගු ඡේද වඩාත් කියවිය හැකි වේ.
 
 [setting.editor.option-strict-line-break]
 original=Strict line breaks
@@ -124,7 +124,7 @@ translation=දැඩි රේඛා බිඳ වැටීම්
 
 [setting.editor.option-strict-line-break-description]
 original=Markdown specs ignore single line breaks in reading view. Turn this off to make single line breaks visible.
-translation=In preview mode, ignore single line breaks according to the Markdown specs. Turn this off for single line breaks to show in preview.
+translation=පෙරදසුන් මාදිලියේදී, Markdown පිරිවිතරයන්ට අනුව තනි රේඛා බිඳවැටීම් නොසලකා හරින්න. පෙරදසුනෙහි තනි රේඛා බිඳවැටීම් පෙන්වීමට මෙය අක්‍රිය කරන්න.
 
 [setting.editor.option-properties-in-document]
 original=Properties in document
@@ -132,7 +132,7 @@ translation=ලේඛනයේ ගුණාංග
 
 [setting.editor.option-properties-in-document-description]
 original=Choose how properties are displayed at the top of notes. Select “source” to show properties as raw YAML.
-translation=Choose how properties are displayed within the editor. Select “source” to have the properties displayed as YAML.
+translation=සකසනය තුළ ගුණාංග දර්ශනය වන ආකාරය තෝරන්න. ගුණාංග YAML ලෙස දර්ශනය වීමට "මූලාශ්‍රය" තෝරන්න.
 
 [setting.editor.option-properties-hidden]
 original=Hidden
@@ -148,7 +148,7 @@ translation=මූලාශ්‍රය
 
 [setting.editor.option-auto-pair-brackets]
 original=Auto-pair brackets
-translation=Auto pair brackets
+translation=වරහන් ස්වයංක්‍රීයව යුගල කරන්න
 
 [setting.editor.option-auto-pair-brackets-description]
 original=Pair brackets and quotes automatically.
@@ -156,19 +156,19 @@ translation=වරහන් සහ උද්ධෘත ස්වයංක්‍�
 
 [setting.editor.option-auto-pair-markdown]
 original=Auto-pair Markdown syntax
-translation=Auto pair Markdown syntax
+translation=Markdown වාක්‍ය ඛණ්ඩ ස්වයංක්‍රීයව යුගල කරන්න
 
 [setting.editor.option-auto-pair-markdown-description]
 original=Pair symbols automatically for bold, italic, code, and more.
-translation=Pair symbols automatically for bold, italics, highlight, strikethrough, and code.
+translation=තද, ඇල, උද්දීපනය, මැදින් ඉරක් ඇඳීම සහ කේත සඳහා සංකේත ස්වයංක්‍රීයව යුගල කරන්න.
 
 [setting.editor.option-smart-indent-lists]
 original=Smart lists
-translation=Smart indent lists
+translation=ස්මාර්ට් ඉන්ඩෙන්ට් ලැයිස්තු
 
 [setting.editor.option-smart-indent-lists-description]
 original=Automatically set indentation and place list items correctly.
-translation=Take care of indentation and list marker for you.
+translation=ඔබ වෙනුවෙන් ඉන්ඩෙන්ටේෂන් සහ ලැයිස්තු සලකුණුකරුවන් බලාගනී.
 
 [setting.editor.option-fold-heading]
 original=Fold heading
@@ -176,7 +176,7 @@ translation=ශීර්ෂය නැමීම
 
 [setting.editor.option-fold-heading-description]
 original=Lets you fold all content under a heading.
-translation=Let you fold everything under a heading.
+translation=ශීර්ෂයක් යටතේ ඇති සියල්ල නැමීමට ඔබට ඉඩ සලසයි.
 
 [setting.editor.option-fold-indent]
 original=Fold indent
@@ -184,7 +184,7 @@ translation=ඉන්ඩෙන්ට් නැමීම
 
 [setting.editor.option-fold-indent-description]
 original=Lets you fold part of an indentation, such as lists.
-translation=Let you fold a portion of the same indentation, such as lists.
+translation=ලැයිස්තු වැනි එකම ඉන්ඩෙන්ටේෂන් එකක කොටසක් නැමීමට ඔබට ඉඩ සලසයි.
 
 [setting.editor.option-default-new-tab-view]
 original=Default view for new tabs
@@ -216,7 +216,7 @@ translation=පෙරනිමි සංස්කරණ ආකාරය
 
 [setting.editor.option-default-editing-mode-description]
 original=The default editing mode a new tab will start with.
-translation=The default editing mode a new pane will start with.
+translation=නව පුවරුවක් ආරම්භ වන පෙරනිමි සංස්කරණ මාදිලිය.
 
 [setting.editor.option-default-editing-mode-source]
 original=Source mode
@@ -232,7 +232,7 @@ translation=පේළි අංක
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
-translation=Show line number in the gutter.
+translation=ගටරයේ (gutter) පේළි අංකය පෙන්වන්න.
 
 [setting.editor.option-indentation-guide]
 original=Indentation guides
@@ -240,23 +240,23 @@ translation=ඉන්ඩෙන්ට් මාර්ගෝපදේශ
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
-translation=Show vertical relationship lines between bullet points for visual guidance.
+translation=දෘශ්‍ය මාර්ගෝපදේශනය සඳහා බුලට් පොයින්ට් අතර සිරස් සම්බන්ධතා රේඛා පෙන්වන්න.
 
 [setting.editor.option-use-tabs]
 original=Indent using tabs
-translation=Use tabs
+translation=ටැබ් භාවිතා කරන්න
 
 [setting.editor.option-use-tabs-description]
 original=Use tabs to indent by pressing the “Tab” key. Turn this off to indent using 4 spaces.
-translation=Use tabs to indent when pressing the "Tab" key. Set this to off to use spaces.
+translation="Tab" යතුර එබූ විට ඉන්ඩෙන්ට් කිරීමට ටැබ් භාවිතා කරන්න. හිස්තැන් භාවිතා කිරීමට මෙය අක්‍රිය කරන්න.
 
 [setting.editor.option-tab-size]
 original=Indent visual width
-translation=Tab size
+translation=ටැබ් ප්‍රමාණය
 
 [setting.editor.option-tab-size-description]
 original=Number of spaces a tab character will render as.
-translation=Number of spaces a tab is equivalent to.
+translation=ටැබ් එකකට සමාන හිස්තැන් ගණන.
 
 [setting.editor.option-rtl]
 original=Right-to-left (RTL)
@@ -264,7 +264,7 @@ translation=දකුණේ සිට වමට (RTL)
 
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
-translation=Sets the text direction of notes to display in right-to-left.
+translation=දකුණේ සිට වමට දර්ශනය වීමට සටහන්වල පෙළ දිශාව සකසයි.
 
 [setting.editor.option-mermaid-allow]
 original=Show Mermaid diagrams in notes
@@ -276,11 +276,11 @@ translation=”mermaid” කේත කොටස් වලින් ප්‍ර
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
-translation=Auto convert HTML
+translation=HTML ස්වයංක්‍රීයව පරිවර්තනය කරන්න
 
 [setting.editor.option-auto-convert-html-description]
 original=Automatically convert HTML to Markdown when pasting and drag-and-drop from web pages. Use Ctrl/Cmd+Shift+V to paste HTML without converting.
-translation=Automatically convert HTML to Markdown when pasting and drag-and-drop from webpages. Use Ctrl/Cmd+Shift+V to paste without conversion.
+translation=වෙබ් පිටු වලින් අලවන විට සහ ඇදගෙන ගොස් අතහරින විට HTML ස්වයංක්‍රීයව Markdown බවට පරිවර්තනය කරන්න. පරිවර්තනයකින් තොරව ඇලවීමට Ctrl/Cmd+Shift+V භාවිතා කරන්න.
 
 [setting.editor.option-vim-key-bindings]
 original=Vim key bindings
@@ -288,7 +288,7 @@ translation=Vim යතුරු බන්ධන
 
 [setting.editor.option-vim-key-bindings-description]
 original=Use Vim key bindings when editing.
-translation=Let you use Vim key bindings in the source editor.
+translation=මූලාශ්‍ර සකසනය තුළ Vim යතුරු බන්ධන භාවිතා කිරීමට ඔබට ඉඩ සලසයි.
 
 [setting.editor.option-vim-key-bindings-mobile]
 original=On mobile devices, this setting is per-device and is not synchronized through the config file.
@@ -344,7 +344,7 @@ translation=කරුණාකර Vim ප්‍රකාරය සක්‍ර�
 
 [setting.file.name]
 original=Files and links
-translation=Files & Links
+translation=ගොනු සහ සබැඳි
 
 [setting.file.option-confirm-file-deletion]
 original=Confirm before deleting files
@@ -364,7 +364,7 @@ translation=මකා දැමූ ගොනු
 
 [setting.file.option-delete-destination-description]
 original=What happens to a file after you delete it.
-translation=What to do with files after you delete them.
+translation=ගොනු මකා දැමීමෙන් පසු ඒවාට කුමක් කළ යුතුද යන්න.
 
 [setting.file.option-choice-system-trash]
 original=Move to system trash
@@ -376,7 +376,7 @@ translation=Obsidian කුණු කූඩයට ගෙන යන්න (.trash
 
 [setting.file.option-choice-permanent-delete]
 original=Permanently delete
-translation=Permanent delete
+translation=ස්ථිරවම මකා දමන්න
 
 [setting.file.option-delete-unlinked-attachments]
 original=Delete attachments when deleting files
@@ -432,27 +432,27 @@ translation=පෙරනිමියෙන් විවෘත කිරීම �
 
 [setting.file.option-always-update-links]
 original=Automatically update internal links
-translation=Always update internal links
+translation=සෑම විටම අභ්‍යන්තර සබැඳි යාවත්කාලීන කරන්න
 
 [setting.file.option-always-update-links-description]
 original=Turn off to be prompted to update links after renaming a file.
-translation=Whether to automatically update links after renaming a file or prompt.
+translation=ගොනුවක් නැවත නම් කිරීමෙන් පසු සබැඳි ස්වයංක්‍රීයව යාවත්කාලීන කරන්නේද නැතහොත් විමසන්නේද යන්න.
 
 [setting.file.option-new-note-location]
 original=Default location for new notes
-translation=New note default location
+translation=නව සටහනේ පෙරනිමි ස්ථානය
 
 [setting.file.option-new-note-location-description]
 original=Where newly created notes are placed.
-translation=Where to put newly created notes.
+translation=අලුතින් සාදන ලද සටහන් තැබිය යුතු ස්ථානය.
 
 [setting.file.option-choice-vault-root]
 original=Vault folder
-translation=Vault root
+translation=Vault මූලය
 
 [setting.file.option-choice-current-folder]
 original=Same folder as current file
-translation=Same folder as the file is in
+translation=ගොනුව ඇති ෆෝල්ඩරයම
 
 [setting.file.option-choice-specified-folder]
 original=In the folder specified below
@@ -464,7 +464,7 @@ translation=නව සටහන් සෑදිය යුතු ෆෝල්ඩ�
 
 [setting.file.option-new-file-folder-path-description]
 original=Newly created notes will appear in this folder.
-translation=Newly created notes will appear under this folder.
+translation=අලුතින් සාදන ලද සටහන් මෙම ෆෝල්ඩරය යටතේ දිස්වනු ඇත.
 
 [setting.file.option-use-wiki-links]
 original=Use [[Wikilinks]]
@@ -476,11 +476,11 @@ translation=Markdown සබැඳි සහ රූප වෙනුවට [[links
 
 [setting.file.option-show-unsupported-files]
 original=Show all file types
-translation=Detect all file extensions
+translation=සියලුම ගොනු දිගු හඳුනා ගන්න
 
 [setting.file.option-show-unsupported-files-description]
 original=Show files with any extension even if Obsidian can't open them natively, so you can link to them and see them in File Explorer and Quick Switcher.
-translation=Show files with any extension even if Obsidian can't open them natively, so that you can link to them and see them in File Explorer and Quick Switcher.
+translation=Obsidian හට දේශීයව විවෘත කළ නොහැකි වුවද ඕනෑම දිගුවක් සහිත ගොනු පෙන්වන්න, එවිට ඔබට ඒවාට සම්බන්ධ වී File Explorer සහ Quick Switcher හි දැකිය හැක.
 
 [setting.file.option-links]
 original=Links
@@ -492,7 +492,7 @@ translation=නව සබැඳි ආකෘතිය
 
 [setting.file.option-link-autocompleted-format-description]
 original=What links to insert when auto-generating internal links.
-translation=What links to insert when auto generating internal links.
+translation=අභ්‍යන්තර සබැඳි ස්වයංක්‍රීයව උත්පාදනය කිරීමේදී ඇතුළත් කළ යුතු සබැඳි මොනවාද.
 
 [setting.file.option-choice-shortest-linktext]
 original=Shortest path when possible
@@ -500,11 +500,11 @@ translation=හැකි විට කෙටිම මාර්ගය
 
 [setting.file.option-choice-relative-path]
 original=Path from current file
-translation=Relative path to file
+translation=ගොනුවට සාපේක්ෂ මාර්ගය
 
 [setting.file.option-choice-absolute-path]
 original=Path from vault folder
-translation=Absolute path in vault
+translation=Vault හි නිරපේක්ෂ මාර්ගය
 
 [setting.file.option-new-attachment-location]
 original=Default location for new attachments
@@ -528,7 +528,7 @@ translation=ඇමුණුම් ෆෝල්ඩරයේ මාර්ගය
 
 [setting.file.option-attachment-folder-path-description]
 original=Place newly created attachment files, such as images created via drag-and-drop or audio recordings, in this folder.
-translation=Newly created attachment files will appear here. That includes images created via drag and drop or pasting, and audio recordings.
+translation=අලුතින් සාදන ලද ඇමුණුම් ගොනු මෙහි දිස්වනු ඇත. ඊට ඇදගෙන ගොස් අතහැරීමෙන් හෝ ඇලවීමෙන් සාදන ලද රූප සහ ශ්‍රව්‍ය පටිගත කිරීම් ඇතුළත් වේ.
 
 [setting.file.option-attachment-subfolder-path]
 original=Subfolder name
@@ -536,7 +536,7 @@ translation=උප-ෆෝල්ඩරයේ නම
 
 [setting.file.option-attachment-subfolder-path-description]
 original=If your file is in “vault/folder”, and you set subfolder name to “attachments”, attachments will be saved to “vault/folder/attachments”.
-translation=If your file is under "vault/folder", and your set subfolder name to "attachments", attachments will be saved to "vault/folder/attachments".
+translation=ඔබගේ ගොනුව "vault/folder" යටතේ තිබේ නම්, සහ ඔබ උප ෆෝල්ඩරයේ නම "attachments" ලෙස සකසා ඇත්නම්, ඇමුණුම් "vault/folder/attachments" හි සුරැකෙනු ඇත.
 
 [setting.file.option-excluded-files]
 original=Excluded files
@@ -544,7 +544,7 @@ translation=බැහැර කළ ගොනු
 
 [setting.file.option-excluded-files-desc]
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
-translation=Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
+translation=බැහැර කරන ලද ගොනු Quick Switcher, සබැඳි යෝජනා සහ ප්‍රස්ථාර දසුන වැනි විවිධ ස්ථානවල සැඟවී හෝ අඩුවෙන් කැපී පෙනෙනු ඇත.
 
 [setting.file.label-add-excluded-filter]
 original=Add exclusion...
@@ -596,11 +596,11 @@ translation=පෙනුම
 
 [setting.appearance.option-base-theme]
 original=Base color scheme
-translation=Base theme
+translation=මූලික තේමාව
 
 [setting.appearance.option-base-theme-description]
 original=Choose Obsidian's default color scheme.
-translation=Choose Obsidian’s default color scheme.
+translation=Obsidian හි පෙරනිමි වර්ණ ක්‍රමය තෝරන්න.
 
 [setting.appearance.alias-base-theme]
 original=dark light system night mode color scheme
@@ -708,7 +708,7 @@ translation=අකුරුවල නම
 
 [setting.appearance.option-community-themes]
 original=Community themes
-translation=Open community themes
+translation=ප්‍රජා තේමා විවෘත කරන්න
 
 [setting.appearance.option-community-themes-description]
 original=Preview and use amazing themes created by the community.
@@ -724,7 +724,7 @@ translation=අකුරුවල ප්‍රමාණය
 
 [setting.appearance.option-font-size-description]
 original=Font size in pixels that affects editing and reading views.
-translation=Font size in pixels that affects editor and preview.
+translation=සංස්කාරකය සහ පෙරදසුන කෙරෙහි බලපාන පික්සල වලින් අකුරු ප්‍රමාණය.
 
 [setting.appearance.alias-font-size]
 original=text size zoom
@@ -776,7 +776,7 @@ translation=CSS ස්නිපෙට්
 
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
-translation=No CSS snippets found in the snippets folder.
+translation=ස්නිපෙට් ෆෝල්ඩරයේ CSS ස්නිපෙට් කිසිවක් හමු නොවීය.
 
 [setting.appearance.label-currently-enabled-snippets]
 original=You currently have {{count}} snippet enabled.
@@ -864,11 +864,11 @@ translation=අභිරුචි නිරූපකය තෝරන්න
 
 [setting.appearance.option-configure-ribbon]
 original=Ribbon menu configuration
-translation=Ribbon menu
+translation=රිබන් මෙනුව
 
 [setting.appearance.option-configure-ribbon-desc]
 original=Configure what commands appear in the ribbon menu.
-translation=Configure what commands appear in the ribbon menu in the navigation bar.
+translation=සංචාලන තීරුවේ රිබන් මෙනුවේ දිස්වන විධාන මොනවාදැයි වින්‍යාස කරන්න.
 
 [setting.appearance.option-mobile-quick-ribbon-item]
 original=Quick access ribbon item
@@ -876,7 +876,7 @@ translation=ඉක්මන් ප්‍රවේශ රිබන් (ribbon) �
 
 [setting.appearance.option-mobile-quick-ribbon-item-desc]
 original=Choose the behavior of tapping the ribbon button in the navigation menu. By default, this will open a menu showing all your ribbon items.
-translation=Tapping on the ribbon item in the navigation menu will active this ribbon item. Tap and hold will still show the menu.
+translation=සංචාලන මෙනුවේ රිබන් අයිතමය මත තට්ටු කිරීමෙන් මෙම රිබන් අයිතමය සක්‍රිය වේ. ස්පර්ශ කරගෙන සිටීමෙන් තවමත් මෙනුව පෙන්වයි.
 
 [setting.appearance.option-mobile-quick-ribbon-default]
 original=Open ribbon menu
@@ -900,7 +900,7 @@ translation=වෙනත් රිබන් අයිතම
 
 [setting.appearance.label-modal-configuration]
 original=Ribbon menu
-translation=Ribbon Configuration
+translation=රිබන් වින්‍යාසය
 
 [setting.appearance.label-modal-configuration-desc]
 original=Choose what items you want to be active in the ribbon. Drag and drop to change the order.
@@ -1052,7 +1052,7 @@ translation=මෙම විධානය අභිරුචිකරණය ක�
 
 [setting.hotkeys.tooltip-hotkey-single-conflict]
 original=This hotkey conflicts with “{{command}}”
-translation=This hotkey conflicts with "{{command}}"
+translation=මෙම කෙටිමං යතුර "{{command}}" සමඟ ගැටේ
 
 [setting.hotkeys.tooltip-hotkey-multiple-conflicts]
 original=This hotkey conflicts with {{count}} other commands
@@ -1276,11 +1276,11 @@ translation=ලියාපදිංචි කරන්න
 
 [setting.about.option-get-help]
 original=Help
-translation=Get help
+translation=උදව් ලබා ගන්න
 
 [setting.about.option-get-help-description]
 original=Learn how to use Obsidian and get help from the community.
-translation=Get help on using Obsidian.
+translation=Obsidian භාවිතා කිරීම පිළිබඳ උදව් ලබා ගන්න.
 
 [setting.about.button-open]
 original=Open
@@ -1296,11 +1296,11 @@ translation=දර්ශන භාෂාව වෙනස් කරන්න.
 
 [setting.about.option-insider-build]
 original=Receive early access versions
-translation=Receive insider builds
+translation=Insider ගොඩනැගීම් ලබා ගන්න
 
 [setting.about.option-insider-build-description]
 original=Auto-update to the latest early access version. These versions include new features but may be less stable.
-translation=Auto-update to insider builds to try out new features. Note that these builds are bleeding edge and might be less stable.
+translation=නව විශේෂාංග අත්හදා බැලීම සඳහා insider ගොඩනැගීම් වෙත ස්වයංක්‍රීයව යාවත්කාලීන කරන්න. මෙම ගොඩනැගීම් පරීක්ෂණ මට්ටමේ පවතින අතර අඩු ස්ථායීතාවයකින් යුක්ත විය හැකි බව සලකන්න.
 
 [setting.about.option-advanced]
 original=Advanced
@@ -1308,7 +1308,7 @@ translation=උසස්
 
 [setting.about.option-hw-acceleration]
 original=Hardware acceleration
-translation=Hardware Acceleration
+translation=දෘඪාංග ත්වරණය
 
 [setting.about.option-hw-acceleration-description]
 original=Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.
@@ -1336,11 +1336,11 @@ translation=බලපත්‍රය
 
 [setting.about.label-your-commercial-license-key]
 original=Your commercial license key is “{{key}}”.
-translation=Your commercial license key is "{{key}}".
+translation=ඔබගේ වාණිජ බලපත්‍ර යතුර "{{key}}" වේ.
 
 [setting.about.label-commercial-license-info]
 original=Registered to “{{company}}” for {{seats}} users. Valid until {{expiry}}.
-translation=Registered to "{{company}}" for {{seats}} users. Valid until {{expiry}}.
+translation={{seats}} පරිශීලකයින් සඳහා "{{company}}" වෙත ලියාපදිංචි කර ඇත. {{expiry}} දක්වා වලංගු වේ.
 
 [setting.about.label-validating-commercial-license]
 original=Validating...
@@ -1364,7 +1364,7 @@ translation=ඔබට දැනට {{tier}} Catalyst බලපත්‍රය �
 
 [setting.about.option-catalyst-desc-no-license]
 original=You don't have a Catalyst license. Catalyst is a one-time donation that helps Obsidian remain 100% user-supported and gives you early access to new features.
-translation=You don't have a Catalyst license right now. Catalyst license is a one-time donation to support Obsidian development.
+translation=ඔබට දැනට Catalyst බලපත්‍රයක් නොමැත. Catalyst බලපත්‍රය යනු Obsidian සංවර්ධනයට සහාය වීම සඳහා වන එක් වරක් කරන පරිත්‍යාගයකි.
 
 [setting.about.label-app]
 original=App
@@ -1384,11 +1384,11 @@ translation=ඔබගේ ගිණුම
 
 [setting.account.option-your-account-desc]
 original=You're currently signed in as {{name}} ({{email}}).
-translation=You're currently signed in {{name}} ({{email}}).
+translation=ඔබ දැනට {{name}} ({{email}}) ලෙස පුරනය වී ඇත.
 
 [setting.account.option-your-account-desc-no-login]
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
-translation=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and Catalyst insider builds.
+translation=ඔබ දැනට පුරනය වී නොමැත. ගිණුමක් අවශ්‍ය වන්නේ Obsidian Sync, Obsidian Publish සහ Catalyst insider ගොඩනැගීම් සඳහා පමණි.
 
 [setting.account.button-upgrade-catalyst]
 original=Upgrade
@@ -1400,7 +1400,7 @@ translation=වාණිජ බලපත්‍රය
 
 [setting.account.option-commercial-license-desc]
 original=Help keep Obsidian 100% user-supported.
-translation=If you use Obsidian for commercial purposes, you may need to get a commercial license.
+translation=ඔබ වාණිජමය අරමුණු සඳහා Obsidian භාවිතා කරන්නේ නම්, ඔබට වාණිජ බලපත්‍රයක් ලබා ගැනීමට අවශ්‍ය විය හැක.
 
 [setting.account.button-purchase]
 original=Purchase
@@ -1460,7 +1460,7 @@ translation=මුරපදය හිස් විය නොහැක.
 
 [setting.account.message-login-failed]
 original=Login failed, please double check your email and password.
-translation=Login failed, please double-check your email and password.
+translation=පුරනය වීම අසාර්ථක විය, කරුණාකර ඔබගේ විද්‍යුත් තැපෑල සහ මුරපදය නැවත පරීක්ෂා කරන්න.
 
 [setting.account.message-signup-failed]
 original=Failed to sign up
@@ -1504,7 +1504,7 @@ translation=ප්ලගින සොයන්න...
 
 [setting.third-party-plugin.name]
 original=Community plugins
-translation=Third-party plugin
+translation=තුන්වන පාර්ශවීය ප්ලගිනය
 
 [setting.third-party-plugin.option-restricted-mode]
 original=Restricted mode
@@ -1516,7 +1516,7 @@ translation=ප්‍රජා ප්ලගින නොමැතිව යෙ�
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
-translation=Turn on
+translation=සක්‍රිය කරන්න
 
 [setting.third-party-plugin.option-automatic-update-check]
 original=Automatically check for plugin updates
@@ -1728,15 +1728,15 @@ translation=මෙම ප්ලගිනය README ගොනුවක් සප�
 
 [setting.third-party-plugin.msg-installing-plugin]
 original=Installing plugin “{{name}}”...
-translation=Installing plugin "{{name}}"...
+translation="{{name}}" ප්ලගිනය ස්ථාපනය කරමින් පවතී...
 
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
-translation=Failed to install plugin "{{name}}".
+translation="{{name}}" ප්ලගිනය ස්ථාපනය කිරීම අසාර්ථක විය.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
-translation=Successfully installed plugin "{{name}}".
+translation="{{name}}" ප්ලගිනය සාර්ථකව ස්ථාපනය කරන ලදී.
 
 [setting.third-party-plugin.msg-failed-to-uninstall-plugin]
 original=Failed to uninstall plugin “{{id}}”.
@@ -1856,7 +1856,7 @@ translation=මෙම ප්ලගිනයට සහය වන්න:
 
 [setting.third-party-plugin.label-search-summary]
 original=Showing {{pluginCount}}
-translation=Showing {{pluginCount}}:
+translation=පෙන්වමින් {{pluginCount}}:
 
 [setting.third-party-plugin.label-by-popularity]
 original=Most downloaded
@@ -1880,7 +1880,7 @@ translation={{time}} යාවත්කාලීන කරන ලදී
 
 [setting.mobile-toolbar.name]
 original=Toolbar
-translation=Mobile toolbar
+translation=ජංගම මෙවලම් තීරුව
 
 [setting.mobile-toolbar.option-configure-quick-action]
 original=Configure mobile Quick Action
@@ -1888,7 +1888,7 @@ translation=ජංගම ඉක්මන් ක්‍රියාව (Quick Acti
 
 [setting.mobile-toolbar.option-configure-quick-action-description]
 original=Configure which command to trigger when pulling down from the top. The current command is set to “{{command}}”.
-translation=Configure which command to trigger when pull down from the top. The current command is set to "{{command}}".
+translation=ඉහළින් පහළට අදින විට ක්‍රියාරම්භ කළ යුතු විධානය වින්‍යාස කරන්න. වත්මන් විධානය "{{command}}" ලෙස සකසා ඇත.
 
 [setting.mobile-toolbar.msg-missing-quick-action]
 original=Action not configured
@@ -2024,11 +2024,11 @@ translation=ඇමුණුමක් ඇතුළත් කරන්න
 
 [editor.search.placeholder-find]
 original=Find...
-translation=Find
+translation=සොයන්න
 
 [editor.search.placeholder-replace]
 original=Replace...
-translation=Replace
+translation=ප්‍රතිස්ථාපනය කරන්න
 
 [editor.search.label-exit-search]
 original=Exit search
@@ -2040,7 +2040,7 @@ translation=මීළඟ
 
 [editor.search.label-previous]
 original=Previous
-translation=Prev
+translation=පෙර
 
 [editor.search.label-find-all]
 original=Find all
@@ -2148,7 +2148,7 @@ translation=PDF ලෙස අපනයනය (Export) කරන්න
 
 [editor.print-modal.caption]
 original=Export “{{filename}}” to PDF with the settings below.
-translation=Export "{{filename}}" to PDF with the setting below.
+translation=පහත සැකසුම සමඟින් "{{filename}}" PDF වෙත අපනයනය කරන්න.
 
 [editor.print-modal.setting-page-size]
 original=Page size
@@ -2212,7 +2212,7 @@ translation=පෙරනිමි යෙදුමෙන් විවෘත ක�
 
 [interface.empty-sidebar]
 original=The sidebar is empty, try dragging a tab here.
-translation=The sidebar is empty, try dragging a pane here.
+translation=පැති තීරුව හිස්ය, පුවරුවක් මෙහි ඇදගෙන යාමට උත්සාහ කරන්න.
 
 [interface.sidebar-expand]
 original=Expand
@@ -2224,7 +2224,7 @@ translation=හකුලන්න
 
 [interface.msg-fail-to-save-file]
 original=Failed to save file “{{filepath}}”. {{message}}. Make a backup of the contents of this file now to avoid losing data.
-translation=Failed to save file "{{filepath}}". {{message}}.
+translation="{{filepath}}" ගොනුව සුරැකීම අසාර්ථක විය. {{message}}.
 
 [interface.msg-failed-to-load-plugin]
 original=Failed to load plugin “{{plugin}}”
@@ -2248,7 +2248,7 @@ translation=ගොනුවක් නොමැත
 
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
-translation="{{file}}" has been modified externally, merging changes automatically.
+translation="{{file}}" බාහිරව වෙනස් කර ඇත, වෙනස්කම් ස්වයංක්‍රීයව ඒකාබද්ධ කෙරේ.
 
 [interface.manage-vaults]
 original=Manage vaults...
@@ -2272,7 +2272,7 @@ translation=පෙරනිමි දර්ශන මාදිලිය කි�
 
 [interface.msg-switched-to-edit]
 original=Switched default view mode to editing view.
-translation=Switched default view mode to editor.
+translation=පෙරනිමි දර්ශන මාදිලිය සංස්කාරකය වෙත මාරු කෙරිණි.
 
 [interface.msg-upgrade-installer]
 original=To use this feature, please re-install with latest installer available from our website.
@@ -2320,11 +2320,11 @@ translation=කේත කොටස විදැහුම්කරණයේදී
 
 [interface.msg-open-file-through-uri]
 original=Opened file “{{path}}”
-translation=Opened file "{{path}}"
+translation="{{path}}" ගොනුව විවෘත කරන ලදී
 
 [interface.msg-file-not-found-through-uri]
 original=File “{{name}}” not found.
-translation=File "{{name}}" not found.
+translation="{{name}}" ගොනුව හමු නොවීය.
 
 [interface.msg-invalid-uri-action]
 original=Unrecognized URI action: {{action}}
@@ -2336,7 +2336,7 @@ translation=මකන්න
 
 [interface.msg-indexing]
 original=Indexing vault...
-translation=Obsidian is indexing your vault...\nThis should only happen once.\nSome functionality may not be available until this is complete.
+translation=Obsidian ඔබගේ vault එක දර්ශකගත කරයි...\nමෙය සිදුවිය යුත්තේ එක් වරක් පමණි.\nමෙය සම්පූර්ණ වන තුරු සමහර විශේෂාංග ලබා ගත නොහැකි විය හැක.
 
 [interface.msg-indexing-desc]
 original=Some functionality may not be available until this is complete.
@@ -2509,7 +2509,7 @@ translation=ගොනුවක් විවෘත කර නැත
 
 [interface.empty-state.create-new-file]
 original=Create new note
-translation=Create new file
+translation=නව ගොනුවක් සාදන්න
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -2533,7 +2533,7 @@ translation=ප්ලගිනය තවදුරටත් සක්‍රිය
 
 [interface.empty-state.unknown-pane-desc]
 original=The plugin that created this tab ({{type}}) has gone away.
-translation=The plugin that created this pane ({{type}}) has gone away
+translation=මෙම පුවරුව ({{type}}) සෑදූ ප්ලගිනය ඉවත් වී ඇත
 
 [interface.release-notes.tab-title]
 original=Release Notes {{version}}
@@ -2557,7 +2557,7 @@ translation={{version}} හි අලුත් මොනවාද
 
 [interface.menu.edit-view]
 original=Current view: editing
-translation=Edit (Ctrl/Cmd+Click to edit in new pane)
+translation=සංස්කරණය කරන්න (නව පුවරුවක සංස්කරණය කිරීමට Ctrl/Cmd+Click)
 
 [interface.menu.read-view]
 original=Current view: reading
@@ -2585,7 +2585,7 @@ translation=කියවීමට ක්ලික් කරන්න
 
 [interface.menu.mod-click-open-new-tab]
 original={{key}}+Click to open to the right
-translation={{key}}+Click to open in new tab
+translation=නව ටැබයක විවෘත කිරීමට {{key}}+Click කරන්න
 
 [interface.menu.msg-markdown-copy-instructions]
 original=Press {{key}}+C to copy source
@@ -2697,7 +2697,7 @@ translation=දකුණු පසින් විවෘත කරන්න
 
 [interface.menu.copy-url]
 original=Copy URL
-translation=Copy url
+translation=URL පිටපත් කරන්න
 
 [interface.menu.copy]
 original=Copy
@@ -2761,7 +2761,7 @@ translation=නව කවුළුවකට ගෙන යන්න
 
 [interface.menu.open-in-browser]
 original=Open external link
-translation=Open in browser
+translation=බ්‍රවුසරයේ විවෘත කරන්න
 
 [interface.menu.stack-tabs]
 original=Stack tabs
@@ -2817,7 +2817,7 @@ translation=ෆෝල්ඩරයක් යටතේ නව Obsidian vault එ�
 
 [interface.start-screen.option-connect-obsidian-sync]
 original=Open vault from Obsidian Sync
-translation=Connect to Obsidian Sync
+translation=Obsidian Sync වෙත සම්බන්ධ කරන්න
 
 [interface.start-screen.option-connect-obsidian-sync-description]
 original=Set up a synced vault with existing remote vault.
@@ -2949,7 +2949,7 @@ translation=Vault එක සෑදීම අසාර්ථක විය.
 
 [interface.start-screen.msg-failed-to-create-vault-at-location]
 original=Could not create vault at the given location. Please double check the location and permission.
-translation=Could not create vault at the given location. Please double-check the location and permission.
+translation=ලබා දී ඇති ස්ථානයේ vault එකක් සෑදිය නොහැක. කරුණාකර ස්ථානය සහ අවසරය නැවත පරීක්ෂා කරන්න.
 
 [interface.start-screen.msg-error-failed-to-open-vault]
 original=Failed to open.
@@ -3047,7 +3047,7 @@ translation=සමමුහුර්ත කිරීම සකසන්න
 
 [interface.start-screen.mobile.option-skip]
 original=Continue without sync
-translation=Skip for now
+translation=දැනට මඟ හරින්න
 
 [interface.start-screen.mobile.option-skip-short]
 original=Skip
@@ -3055,7 +3055,7 @@ translation=මඟ හරින්න
 
 [interface.start-screen.mobile.label-vault-create]
 original=Configure your new vault.
-translation=Choose a name for your vault.
+translation=ඔබගේ vault එක සඳහා නමක් තෝරන්න.
 
 [interface.start-screen.mobile.button-create]
 original=Create vault
@@ -3067,7 +3067,7 @@ translation=සමමුහුර්ත සැකසුම
 
 [interface.start-screen.mobile.label-sync-setup-desc]
 original=Create a synced vault on your Obsidian account so you can access your data from other devices.
-translation=Create a synced vault on your Obsidian account so that you can access your data from other devices.
+translation=වෙනත් උපාංගවලින් ඔබගේ දත්ත වෙත ප්‍රවේශ වීමට හැකි වන පරිදි ඔබගේ Obsidian ගිණුමෙහි සමමුහුර්ත කළ vault එකක් සාදන්න.
 
 [interface.start-screen.mobile.label-remote-vault-create]
 original=Sync encryption
@@ -3135,7 +3135,7 @@ translation=පවතින vault එකක් තෝරන්න
 
 [interface.start-screen.mobile.button-logout]
 original=Log out
-translation=Log Out
+translation=ඉවත් වන්න
 
 [interface.start-screen.mobile.button-forgot-password]
 original=Forgot password
@@ -3271,7 +3271,7 @@ translation=iCloud භාවිතා කරන්න
 
 [interface.start-screen.mobile.opt-use-other]
 original=Use third-party sync
-translation=Use Third-party sync
+translation=තෙවන පාර්ශවීය සමමුහුර්තකරණය භාවිතා කරන්න
 
 [interface.start-screen.mobile.opt-learn-other-sync]
 original=Other sync methods
@@ -3410,7 +3410,7 @@ translation=මෙහි සබැඳි ඇතුළත් කරන්න
 
 [interface.drag-and-drop.move-into-folder]
 original=Move into “{{folder}}”
-translation=Move into "{{folder}}"
+translation="{{folder}}" වෙත ගෙන යන්න
 
 [interface.drag-and-drop.star-this-file]
 original=Star this file
@@ -3466,7 +3466,7 @@ translation=යෙදුම නැවත පූරණය කරන්න
 
 [interface.start-up.button-reload-app-in-safe-mode]
 original=Reload app in Restricted Mode
-translation=Reload app in safe mode
+translation=ආරක්ෂිත මාදිලියෙන් යෙදුම නැවත පූරණය කරන්න
 
 [interface.start-up.button-open-another-vault]
 original=Open another vault
@@ -3506,15 +3506,15 @@ translation=ගොනුවට පෙළ එක් කරන්න:
 
 [interface.mobile.action-choose-file-to-insert]
 original=Choose a file...
-translation=Choose a file to insert
+translation=ඇතුළත් කිරීම සඳහා ගොනුවක් තෝරන්න
 
 [interface.mobile.action-insert-text-into-file]
 original={{filename}}
-translation=Insert text into {{filename}}
+translation={{filename}} තුළට පෙළ ඇතුළත් කරන්න
 
 [interface.mobile.action-insert-link-into-file]
 original=Insert link into “{{filename}}”
-translation=Insert link into {{filename}}
+translation={{filename}} තුළට සබැඳිය ඇතුළත් කරන්න
 
 [interface.mobile.action-show-switcher]
 original=Show tab overview
@@ -3798,7 +3798,7 @@ translation=පහළින් කර්සරය එක් කරන්න
 
 [commands.focus-editor]
 original=Focus on last note
-translation=Focus on editor
+translation=සංස්කාරකය වෙත යොමු වන්න
 
 [commands.toggle-fold-properties]
 original=Toggle fold properties in current file
@@ -3826,11 +3826,11 @@ translation=අඩුවෙන් හකුලන්න
 
 [commands.swap-line-up]
 original=Move line up
-translation=Swap line up
+translation=පේළිය ඉහළට මාරු කරන්න
 
 [commands.swap-line-down]
 original=Move line down
-translation=Swap line down
+translation=පේළිය පහළට මාරු කරන්න
 
 [commands.remove-heading]
 original=Remove heading
@@ -3842,19 +3842,19 @@ translation=ශීර්ෂය {{level}} ලෙස සකසන්න
 
 [commands.toggle-bold]
 original=Toggle bold
-translation=Toggle bold for selection
+translation=තේරීම සඳහා තද බව වෙනස් කරන්න
 
 [commands.toggle-italics]
 original=Toggle italic
-translation=Toggle italics for selection
+translation=තේරීම සඳහා ඇල බව වෙනස් කරන්න
 
 [commands.toggle-highlight]
 original=Toggle highlight
-translation=Toggle highlight for selection
+translation=තේරීම සඳහා උද්දීපනය වෙනස් කරන්න
 
 [commands.toggle-comments]
 original=Toggle comment
-translation=Toggle comments for selection
+translation=තේරීම සඳහා අදහස් වෙනස් කරන්න
 
 [commands.clear-formatting]
 original=Clear formatting
@@ -3862,7 +3862,7 @@ translation=ආකෘතිය ඉවත් කරන්න
 
 [commands.insert-link]
 original=Insert Markdown link
-translation=Insert link
+translation=සබැඳිය ඇතුළත් කරන්න
 
 [commands.toggle-spellcheck]
 original=Toggle spellcheck
@@ -3874,7 +3874,7 @@ translation=ඡේදය මකා දමන්න
 
 [commands.toggle-checklist]
 original=Toggle checkbox status
-translation=Toggle checklist status
+translation=පරීක්ෂා කොටු තත්වය වෙනස් කරන්න
 
 [commands.cycle-list-checklist]
 original=Cycle bullet/checkbox
@@ -3906,7 +3906,7 @@ translation=පාද සටහන ඇතුළත් කරන්න
 
 [commands.edit-file-title]
 original=Rename file
-translation=Edit file title
+translation=ගොනුවේ මාතෘකාව සංස්කරණය කරන්න
 
 [commands.copy-path]
 original=Copy current file path from vault folder
@@ -3918,11 +3918,11 @@ translation=පද්ධති root වෙතින් වත්මන් ගො
 
 [commands.copy-url]
 original=Copy Obsidian URL for current file
-translation=Copy obsidian url
+translation=Obsidian url පිටපත් කරන්න
 
 [commands.export-pdf]
 original=Export to PDF...
-translation=Export to PDF
+translation=PDF වෙත අපනයනය කරන්න
 
 [commands.reload]
 original=Reload app without saving
@@ -3962,15 +3962,15 @@ translation=විශාලනය යළි පිහිටුවන්න
 
 [commands.toggle-preview]
 original=Toggle reading view
-translation=Toggle edit/preview mode
+translation=සංස්කරණ/පෙරදසුන් මාදිලිය වෙනස් කරන්න
 
 [commands.move-to-new-window]
 original=Move current tab to new window
-translation=Move current pane to new window
+translation=වත්මන් පුවරුව නව කවුළුවකට ගෙන යන්න
 
 [commands.open-in-new-window]
 original=Open current tab in new window
-translation=Open current pane in new window
+translation=වත්මන් පුවරුව නව කවුළුවක විවෘත කරන්න
 
 [commands.rename-current-file]
 original=Rename current file
@@ -4026,7 +4026,7 @@ translation=යාවත්කාලීන නොකරන්න
 
 [dialogue.label-confirm-deletion]
 original=Are you sure you want to delete “{{filename}}”?
-translation=Are you sure you want to delete "{{filename}}"?
+translation="{{filename}}" මකා දැමීමට ඔබට අවශ්‍ය බව විශ්වාසද?
 
 [dialogue.label-move-to-system-trash]
 original=It will be moved to your system trash.
@@ -4034,11 +4034,11 @@ translation=එය ඔබගේ පද්ධති කුණු කූඩයට 
 
 [dialogue.label-move-to-vault-trash]
 original=It will be moved to your Obsidian trash, which is located in the “.trash” hidden folder in your vault.
-translation=It will be moved to your Obsidian trash, which is located in the ".trash" hidden folder in your vault.
+translation=එය ඔබගේ vault හි ඇති ".trash" සැඟවුණු ෆෝල්ඩරයේ පිහිටා ඇති ඔබගේ Obsidian කුණු කූඩයට ගෙන යනු ඇත.
 
 [dialogue.label-permanent-delete]
 original=The file will be permanent deleted.
-translation=The file will be permanently deleted.
+translation=ගොනුව ස්ථිරවම මකා දැමෙනු ඇත.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4198,7 +4198,7 @@ translation=PDF සූදානම් කරමින්...
 
 [dialogue.label-rename-file]
 original=Note title
-translation=Rename file
+translation=ගොනුව නැවත නම් කරන්න
 
 [dialogue.label-rename-file-generic]
 original=File name
@@ -4270,7 +4270,7 @@ translation=ගැලරිය
 
 [menu-items.new-file]
 original=New Note
-translation=Create Note
+translation=සටහනක් සාදන්න
 
 [menu-items.new-file-to-the-right]
 original=New Note to the Right
@@ -4490,7 +4490,7 @@ translation=File explorer
 
 [plugins.file-explorer.desc]
 original=Browse the files and folders in your vault.
-translation=See all the files in your vault.
+translation=ඔබගේ vault හි ඇති සියලුම ගොනු බලන්න.
 
 [plugins.file-explorer.action-open]
 original=Open file explorer
@@ -4542,11 +4542,11 @@ translation=වර්ග කිරීමේ අනුපිළිවෙල ව�
 
 [plugins.file-explorer.action-reveal-file]
 original=Reveal file in navigation
-translation=Reveal file in file explorer
+translation=ගොනු ගවේෂකය තුළ ගොනුව පෙන්වන්න
 
 [plugins.file-explorer.action-reveal-active-file]
 original=Reveal current file in navigation
-translation=Reveal active file in file explorer
+translation=ගොනු ගවේෂකය තුළ සක්‍රීය ගොනුව පෙන්වන්න
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
@@ -4558,7 +4558,7 @@ translation=වත්මන් ගොනුව අනුපිටපත් (Dupl
 
 [plugins.file-explorer.command-move-file]
 original=Move current file to another folder
-translation=Move file to another folder
+translation=වෙනත් ෆෝල්ඩරයකට ගොනුව ගෙන යන්න
 
 [plugins.file-explorer.action-new-folder-with-count]
 original=New folder with selection ({{count}} item)
@@ -4586,7 +4586,7 @@ translation=ෆෝල්ඩරයක් ටයිප් කරන්න
 
 [plugins.file-explorer.label-no-folders]
 original=No existing folders found.
-translation=No folders found.
+translation=ෆෝල්ඩර කිසිවක් හමු නොවීය.
 
 [plugins.file-explorer.instruction-navigate]
 original=to navigate
@@ -4606,19 +4606,19 @@ translation=ඉවත් කිරීමට
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
-translation=Sort by file name (A to Z)
+translation=ගොනු නාමය අනුව වර්ග කරන්න (A සිට Z)
 
 [plugins.file-explorer.label-sort-z-to-a]
 original=File name (Z to A)
-translation=Sort by file name (Z to A)
+translation=ගොනු නාමය අනුව වර්ග කරන්න (Z සිට A)
 
 [plugins.file-explorer.label-sort-new-to-old]
 original=Modified time (new to old)
-translation=Sort by edit time (new to old)
+translation=සංස්කරණ වේලාව අනුව වර්ග කරන්න (නවතම සිට පැරණි)
 
 [plugins.file-explorer.label-sort-old-to-new]
 original=Modified time (old to new)
-translation=Sort by edit time (old to new)
+translation=සංස්කරණ වේලාව අනුව වර්ග කරන්න (පැරණි සිට නවතම)
 
 [plugins.file-explorer.label-sort-created-old-to-new]
 original=Created time (old to new)
@@ -4638,7 +4638,7 @@ translation=නව ෆෝල්ඩරය
 
 [plugins.file-explorer.menu-opt-rename]
 original=Rename...
-translation=Rename
+translation=නැවත නම් කරන්න
 
 [plugins.file-explorer.menu-opt-delete]
 original=Delete
@@ -4654,7 +4654,7 @@ translation=අනුපිටපත් (Duplicate) කරන්න
 
 [plugins.file-explorer.msg-invalid-characters]
 original=File name cannot contain any of these characters: 
-translation=File name cannot contain any of the following characters: 
+translation=ගොනු නාමයෙහි පහත අක්ෂර කිසිවක් අඩංගු විය නොහැක:
 
 [plugins.file-explorer.msg-unsafe-characters]
 original=Links will not work with file names containing any of these characters: 
@@ -4690,7 +4690,7 @@ translation=මාතෘකාවක් නොමැති (Untitled)
 
 [plugins.file-explorer.msg-set-attachment-folder]
 original=Attachments will be saved to “{{path}}” from now on.
-translation=Attachments will be saved to "{{path}}" from now on.
+translation=ඇමුණුම් මින් ඉදිරියට "{{path}}" හි සුරැකෙනු ඇත.
 
 [plugins.search.name]
 original=Search
@@ -4698,7 +4698,7 @@ translation=සෙවුම
 
 [plugins.search.desc]
 original=Search for a keyword in all the notes.
-translation=Search for keyword in all the notes.
+translation=සියලුම සටහන් වල මූලපදය සඳහා සොයන්න.
 
 [plugins.search.action-open-search]
 original=Search in all files
@@ -4714,7 +4714,7 @@ translation=කැපිටල්/සිම්පල් අකුරු ගල�
 
 [plugins.search.label-explain-search-term]
 original=Explain search terms
-translation=Explain search term
+translation=සෙවුම් පදය පැහැදිලි කරන්න
 
 [plugins.search.label-more-context]
 original=Show more context
@@ -4734,7 +4734,7 @@ translation=සෙවුම් සැකසුම්
 
 [plugins.search.prompt-start-search]
 original=Search...
-translation=Type to start search...
+translation=සෙවීම ආරම්භ කිරීමට ටයිප් කරන්න...
 
 [plugins.search.label-match-text]
 original=Matches text: 
@@ -4962,7 +4962,7 @@ translation=ගුණාංගය (property) ගලපන්න
 
 [plugins.search.menu-opt-search-for]
 original=Search for “{{keyword}}”
-translation=Search for "{{keyword}}"
+translation="{{keyword}}" සඳහා සොයන්න
 
 [plugins.search.menu-opt-search-in-folder]
 original=Search in folder
@@ -4974,7 +4974,7 @@ translation=ඉක්මන් මාරුව (Quick switcher)
 
 [plugins.quick-switcher.desc]
 original=Jump to other files with your keyboard.
-translation=Jump to any files without leaving your keyboard. Ctrl/Cmd+O to activate.
+translation=යතුරුපුවරුවෙන් ඉවත් නොවී ඕනෑම ගොනුවකට පනින්න. සක්‍රිය කිරීමට Ctrl/Cmd+O.
 
 [plugins.quick-switcher.short-name]
 original=Switcher
@@ -5018,7 +5018,7 @@ translation=සටහන් කිසිවක් හමු නොවීය. අ
 
 [plugins.quick-switcher.prompt-type-file-name]
 original=Find or create a note...
-translation=Type file to switch to or create...
+translation=මාරු වීමට හෝ සෑදීමට ගොනුව ටයිප් කරන්න...
 
 [plugins.quick-switcher.label-enter-to-create]
 original=Enter to create
@@ -5034,7 +5034,7 @@ translation=පවතින ඒවා පමණක් පෙන්වන්න
 
 [plugins.quick-switcher.option-show-existing-only-description]
 original=Only show results from existing files. Links to files that are not yet created will be hidden.
-translation=Whether to show links to files that are not yet created.
+translation=තවමත් නිර්මාණය කර නොමැති ගොනු වෙත සබැඳි පෙන්විය යුතුද යන්න.
 
 [plugins.quick-switcher.option-show-attachments]
 original=Show attachments
@@ -5062,7 +5062,7 @@ translation=දේශීය ප්‍රස්ථාරය
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
-translation=See a graph overview of which notes link to which.
+translation=කුමන සටහන් කුමකට සම්බන්ධ වේද යන්න පිළිබඳ ප්‍රස්ථාර දළ විශ්ලේෂණයක් බලන්න.
 
 [plugins.graph-view.action-open]
 original=Open graph view
@@ -5102,7 +5102,7 @@ translation=අසල්වැසි සබැඳි (Neighbor links)
 
 [plugins.graph-view.option-neighbor-links-description]
 original=Show links between neighbors
-translation=Show links between neighbors.
+translation=අසල්වැසියන් අතර සබැඳි පෙන්වන්න.
 
 [plugins.graph-view.option-forelinks]
 original=Outgoing links
@@ -5134,7 +5134,7 @@ translation=ඇමුණුම්
 
 [plugins.graph-view.option-show-attachments-description]
 original=Show attachments
-translation=Show attachments included by files
+translation=ගොනු විසින් ඇතුළත් කර ඇති ඇමුණුම් පෙන්වන්න
 
 [plugins.graph-view.option-show-existing-files-only]
 original=Existing files only
@@ -5142,7 +5142,7 @@ translation=පවතින ගොනු පමණි
 
 [plugins.graph-view.option-show-existing-files-only-description]
 original=When enabled, links to nonexistent files are not shown
-translation=When checked, links to nonexistent files are not shown
+translation=මෙය තේරූ විට, නොපවතින ගොනු වෙත ඇති සබැඳි පෙන්වන්නේ නැත
 
 [plugins.graph-view.option-show-orphans]
 original=Orphans
@@ -5243,7 +5243,7 @@ translation=පසු-සබැඳි (Backlinks)
 
 [plugins.backlinks.desc]
 original=Show links from other files to the current file. Backlinks can be shown in a separate view or at the bottom of the note.
-translation=Show number of backlinks in the status bar.
+translation=තත්ව තීරුවේ පසු-සබැඳි ගණන පෙන්වන්න.
 
 [plugins.backlinks.action-open]
 original=Open backlinks
@@ -5251,11 +5251,11 @@ translation=පසු-සබැඳි විවෘත කරන්න
 
 [plugins.backlinks.action-show]
 original=Show backlinks
-translation=Show backlinks pane
+translation=පසු-සබැඳි පුවරුව පෙන්වන්න
 
 [plugins.backlinks.action-open-for-current]
 original=Open backlinks for the current note
-translation=Open backlinks for the current file
+translation=වත්මන් ගොනුව සඳහා පසු-සබැඳි විවෘත කරන්න
 
 [plugins.backlinks.action-toggle-backlinks-in-document]
 original=Toggle backlinks in document
@@ -5299,15 +5299,15 @@ translation=...
 
 [plugins.backlinks.option-backlink-in-document]
 original=Show backlinks at the bottom of notes
-translation=Backlink in document
+translation=ලේඛනය තුළ පසු-සබැඳි
 
 [plugins.backlinks.option-backlink-in-document-desc]
 original=Make backlinks visible in new tabs by default.
-translation=Show backlinks in document by default when opening new panes.
+translation=නව පුවරු විවෘත කරන විට පෙරනිමියෙන් ලේඛනය තුළ පසු-සබැඳි පෙන්වන්න.
 
 [plugins.outgoing-links.name]
 original=Outgoing links
-translation=Outgoing Links
+translation=පිටතට යන සබැඳි
 
 [plugins.outgoing-links.desc]
 original=Show outgoing links and detect unlinked mentions of other notes in the current note.
@@ -5319,7 +5319,7 @@ translation=පිටතට යන සබැඳි විවෘත කරන්�
 
 [plugins.outgoing-links.action-show]
 original=Show outgoing links
-translation=Show outgoing links pane
+translation=පිටතට යන සබැඳි පුවරුව පෙන්වන්න
 
 [plugins.outgoing-links.action-open-for-current]
 original=Open outgoing links for the current file
@@ -5351,7 +5351,7 @@ translation=තවමත් සාදා නැත
 
 [plugins.tag-pane.name]
 original=Tags view
-translation=Tag pane
+translation=ටැග් පුවරුව
 
 [plugins.tag-pane.short-name]
 original=Tags
@@ -5359,11 +5359,11 @@ translation=ටැග්
 
 [plugins.tag-pane.desc]
 original=Show a list of all tags and their number of occurrences.
-translation=Displays all your tags along with their number of occurrences.
+translation=ඔබගේ සියලුම ටැග් ඒවා සිදුවීම් ගණන සමඟ පෙන්වයි.
 
 [plugins.tag-pane.action-show]
 original=Show tags
-translation=Show tag pane
+translation=ටැග් පුවරුව පෙන්වන්න
 
 [plugins.tag-pane.label-no-tags]
 original=No tags found.
@@ -5515,7 +5515,7 @@ translation=පිටු පෙරදසුන
 
 [plugins.page-preview.desc]
 original=Hover an internal link to preview its content. In editor mode, press Ctrl/Cmd while hovering.
-translation=Preview a note when hovering an internal link. Ctrl/Cmd + hover in editor mode.
+translation=අභ්‍යන්තර සබැඳියක් මත hover කරන විට සටහනක් පෙරදසුන් කරන්න. සංස්කාරක මාදිලිය තුළ Ctrl/Cmd + hover.
 
 [plugins.page-preview.label-empty-attachment]
 original=“{{linktext}}” could not be found.
@@ -5523,7 +5523,7 @@ translation=“{{linktext}}” සොයාගත නොහැකි විය.
 
 [plugins.page-preview.label-empty-note]
 original=“{{linktext}}” is not created yet. Click to create.
-translation="{{linktext}}" is not created yet. Click to create.
+translation="{{linktext}}" තවමත් සාදා නැත. සෑදීමට ක්ලික් කරන්න.
 
 [plugins.page-preview.label-missing-footote]
 original=Footnote {{id}} not found. Click to create.
@@ -5531,11 +5531,11 @@ translation=පාද සටහන {{id}} හමු නොවීය. සෑද�
 
 [plugins.page-preview.label-source-editor]
 original=Editing view
-translation=Editor
+translation=සකසනය
 
 [plugins.page-preview.label-source-preview]
 original=Reading view
-translation=Preview
+translation=පෙරදසුන
 
 [plugins.page-preview.label-source-search]
 original=Search, Backlinks, and Outgoing links
@@ -5555,7 +5555,7 @@ translation=පිටු සලකුණු (Bookmarks)
 
 [plugins.bookmarks.desc]
 original=Save shortcuts to files, searches, headings, and graphs.
-translation=Bookmark frequently used files and searches.
+translation=නිතර භාවිතා කරන ගොනු සහ සෙවුම් පිටු සලකුණු කරන්න.
 
 [plugins.bookmarks.action-show]
 original=Show bookmarks
@@ -5571,7 +5571,7 @@ translation=සක්‍රීය ටැබය පිටු සලකුණු �
 
 [plugins.bookmarks.action-new-group]
 original=New group
-translation=New bookmark group
+translation=නව පිටු සලකුණු කණ්ඩායම
 
 [plugins.bookmarks.action-bookmark]
 original=Bookmark...
@@ -5599,7 +5599,7 @@ translation=වත්මන් සෙවුම පිටු සලකුණු �
 
 [plugins.bookmarks.action-remove-bookmark]
 original=Remove bookmark for the current file
-translation=Remove bookmark for current file
+translation=වත්මන් ගොනුව සඳහා පිටු සලකුණ ඉවත් කරන්න
 
 [plugins.bookmarks.action-bookmark-tab-group]
 original=Bookmark {{count}} tab...
@@ -5727,7 +5727,7 @@ translation=ආලෝකවත් තේමා පමණි
 
 [plugins.custom-css.label-use]
 original=Use this theme
-translation=Use
+translation=භාවිතා කරන්න
 
 [plugins.custom-css.label-stop-use]
 original=Stop using this theme
@@ -5799,19 +5799,19 @@ translation=යාවත්කාලීන කිරීමට තේමා {{cou
 
 [plugins.custom-css.msg-failed-to-install-theme]
 original=Failed to install theme “{{name}}”.
-translation=Failed to install theme "{{name}}".
+translation="{{name}}" තේමාව ස්ථාපනය කිරීම අසාර්ථක විය.
 
 [plugins.custom-css.msg-successfully-installed-theme]
 original=Successfully installed theme “{{name}}”.
-translation=Successfully installed theme "{{name}}".
+translation="{{name}}" තේමාව සාර්ථකව ස්ථාපනය කරන ලදී.
 
 [plugins.custom-css.msg-installing-theme]
 original=Installing theme “{{name}}”...
-translation=Installing theme "{{name}}"...
+translation="{{name}}" තේමාව ස්ථාපනය කරමින් පවතී...
 
 [plugins.custom-css.label-search-summary]
 original=Showing {{themeCount}}
-translation=Showing {{themeCount}}:
+translation=පෙන්වමින් {{themeCount}}:
 
 [plugins.custom-css.label-update-available]
 original=Update available
@@ -5823,7 +5823,7 @@ translation=විධාන පුවරුව (Command palette)
 
 [plugins.command-palette.desc]
 original=Use Cmd/Ctrl+P and begin typing to invoke a command.
-translation=Type a command to invoke it. No need to use the UI or remember the shortcut.
+translation=විධානයක් ඇමතීමට එය ටයිප් කරන්න. UI භාවිතා කිරීමට හෝ කෙටිමං මතක තබා ගැනීමට අවශ්‍ය නොවේ.
 
 [plugins.command-palette.action-open]
 original=Open command palette
@@ -5847,7 +5847,7 @@ translation=විධාන කිසිවක් හමු නොවීය.
 
 [plugins.command-palette.prompt-type-command]
 original=Select a command to add...
-translation=Type a command...
+translation=විධානයක් ටයිප් කරන්න...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -5855,7 +5855,7 @@ translation=පින් කළ විධාන
 
 [plugins.markdown-format-importer.name]
 original=Format converter
-translation=Markdown format importer
+translation=Markdown ආකෘතිය ආනයනය කරන්නා
 
 [plugins.markdown-format-importer.desc]
 original=Convert Markdown from other apps to Obsidian format.
@@ -5863,7 +5863,7 @@ translation=වෙනත් යෙදුම්වලින් Markdown, Obsidian
 
 [plugins.markdown-format-importer.action-open]
 original=Open format converter
-translation=Open Markdown importer
+translation=Markdown ආනයනකරු විවෘත කරන්න
 
 [plugins.markdown-format-importer.option-roam-tag-fixer]
 original=Roam Research tag fixer
@@ -5871,7 +5871,7 @@ translation=Roam Research ටැග් නිවැරදිකරනය
 
 [plugins.markdown-format-importer.option-roam-tag-fixer-description]
 original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converts "#tag" and "#[[tag]]" to "[[tag]]".
+translation=#tag සහ #[[tag]] යන්න [[tag]] බවට පරිවර්තනය කරයි.
 
 [plugins.markdown-format-importer.option-roam-highlight-fixer]
 original=Roam Research highlight fixer
@@ -5879,7 +5879,7 @@ translation=Roam Research උද්දීපන (highlight) නිවැරද�
 
 [plugins.markdown-format-importer.option-roam-highlight-fixer-description]
 original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converts "^^highlight^^" to "==highlight==".
+translation="^^highlight^^" "==highlight==" බවට පරිවර්තනය කරයි.
 
 [plugins.markdown-format-importer.option-roam-todo-converter]
 original=Roam Research TODO converter
@@ -5887,7 +5887,7 @@ translation=Roam Research TODO පරිවර්තකය
 
 [plugins.markdown-format-importer.option-roam-todo-converter-description]
 original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converts "{{[[TODO]]}}" to "[ ]".
+translation="{{[[TODO]]}}" "[ ]" බවට පරිවර්තනය කරයි.
 
 [plugins.markdown-format-importer.option-bear-highlight-fixer]
 original=Bear highlight fixer
@@ -5895,7 +5895,7 @@ translation=Bear උද්දීපන (highlight) නිවැරදිකර�
 
 [plugins.markdown-format-importer.option-bear-highlight-fixer-description]
 original=Converts “::highlight::” to “==highlight==”.
-translation=Converts "::highlight::" to "==highlight==".
+translation="::highlight::" "==highlight==" බවට පරිවර්තනය කරයි.
 
 [plugins.markdown-format-importer.zettelkasten-link-fixer]
 original=Zettelkasten link fixer
@@ -5903,7 +5903,7 @@ translation=Zettelkasten සබැඳි නිවැරදිකරනය
 
 [plugins.markdown-format-importer.zettelkasten-link-fixer-description]
 original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Fixes "[[UID]]" links to full "[[UID File Name]]".
+translation="[[UID]]" සබැඳි සම්පූර්ණ "[[UID File Name]]" වෙත නිවැරදි කරයි.
 
 [plugins.markdown-format-importer.zettelkasten-link-beautifier]
 original=Zettelkasten link beautifier
@@ -5911,7 +5911,7 @@ translation=Zettelkasten සබැඳි අලංකාරකය (beautifier)
 
 [plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
 original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Fixes "[[UID]]" links and also beautify them "[[UID File Name|File Name]]".
+translation="[[UID]]" සබැඳි නිවැරදි කරන අතර ඒවා "[[UID File Name|File Name]]" ලෙස අලංකාර කරයි.
 
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
@@ -5923,7 +5923,7 @@ translation=Frontmatter ටැග්, aliases, සහ cssclasses Obsidian v1.9+ 
 
 [plugins.markdown-format-importer.msg-all-files-warning]
 original=Warning: the converter will convert all the files in your vault, not just the current file.
-translation=Warning: the importer will convert all the files in your vault, not just the current file.
+translation=අනතුරු ඇඟවීම: ආනයනකරු වත්මන් ගොනුව පමණක් නොව ඔබගේ vault හි ඇති සියලුම ගොනු පරිවර්තනය කරනු ඇත.
 
 [plugins.markdown-format-importer.msg-override-files-warning]
 original=Your files will be overwritten. Back up all your files before attempting conversion.
@@ -5931,7 +5931,7 @@ translation=ඔබගේ ගොනු ප්‍රතිස්ථාපනය (o
 
 [plugins.markdown-format-importer.label-start-conversion]
 original=Start conversion
-translation=Start Conversion
+translation=පරිවර්තනය අරඹන්න
 
 [plugins.markdown-format-importer.label-stop]
 original=Stop
@@ -5979,7 +5979,7 @@ translation=දෛනික සටහන්
 
 [plugins.daily-notes.desc]
 original=Create or open today's daily note.
-translation=Open today's daily note, or create one if not present.
+translation=අද දින දෛනික සටහන විවෘත කරන්න, නැතහොත් නොමැති නම් එකක් සාදන්න.
 
 [plugins.daily-notes.short-name]
 original=Today
@@ -5987,7 +5987,7 @@ translation=අද
 
 [plugins.daily-notes.action-open]
 original=Open today's daily note
-translation=Open today's note
+translation=අද දින සටහන විවෘත කරන්න
 
 [plugins.daily-notes.action-open-previous]
 original=Open previous daily note
@@ -5999,7 +5999,7 @@ translation=මීළඟ දෛනික සටහන විවෘත කරන�
 
 [plugins.daily-notes.action-insert-text]
 original=Today's daily note
-translation=Insert text into daily note
+translation=දෛනික සටහනට පෙළ ඇතුළත් කරන්න
 
 [plugins.daily-notes.action-insert-link]
 original=Insert link into daily note
@@ -6007,15 +6007,15 @@ translation=දෛනික සටහනට සබැඳියක් ඇතු�
 
 [plugins.daily-notes.msg-fail-format]
 original=Failed to create daily note. “{{format}}” is not a valid format.
-translation=Failed to create daily note. "{{format}}" is not a valid format.
+translation=දෛනික සටහන සෑදීම අසාර්ථක විය. "{{format}}" යනු වලංගු ආකෘතියක් නොවේ.
 
 [plugins.daily-notes.msg-fail-folder]
 original=Failed to create daily note. Folder “{{folderOption}}” not found.
-translation=Failed to create daily note. Folder "{{folderOption}}" not found.
+translation=දෛනික සටහන සෑදීම අසාර්ථක විය. "{{folderOption}}" ෆෝල්ඩරය හමු නොවීය.
 
 [plugins.daily-notes.msg-fail-template-file]
 original=Failed to create daily note. Template file “{{template}}” not found.
-translation=Failed to create daily note. Template file "{{template}}" not found.
+translation=දෛනික සටහන සෑදීම අසාර්ථක විය. "{{template}}" අච්චු ගොනුව හමු නොවීය.
 
 [plugins.daily-notes.msg-no-previous]
 original=There's no daily note before this one.
@@ -6051,7 +6051,7 @@ translation=දෛනික සටහන් ෆෝල්ඩරය හමු න�
 
 [plugins.daily-notes.label-refer-to-syntax]
 original=For more syntax, refer to 
-translation=For more syntax, refer to: 
+translation=වැඩිදුර වාක්‍ය වින්‍යාසය සඳහා, යොමු වන්න:
 
 [plugins.daily-notes.label-syntax-link]
 original=format reference
@@ -6059,7 +6059,7 @@ translation=ආකෘති යොමුව (format reference)
 
 [plugins.daily-notes.label-syntax-live-preview]
 original=Your current syntax looks like this: 
-translation=Here is what it will look like: 
+translation=එය පෙනෙන්නේ කෙසේද යන්න මෙන්න:
 
 [plugins.daily-notes.option-new-file-location]
 original=New file location
@@ -6067,7 +6067,7 @@ translation=නව ගොනුවේ ස්ථානය
 
 [plugins.daily-notes.option-new-file-location-description]
 original=New daily notes will be placed here.
-translation=The folder path to create the new daily note.
+translation=නව දෛනික සටහන සෑදීමට ෆෝල්ඩර මාර්ගය.
 
 [plugins.daily-notes.option-template]
 original=Template file location
@@ -6075,7 +6075,7 @@ translation=අච්චු (Template) ගොනුවේ ස්ථානය
 
 [plugins.daily-notes.option-template-description]
 original=Choose the file to use as a template.
-translation=The file path to use as template.
+translation=අච්චුවක් ලෙස භාවිතා කළ යුතු ගොනු මාර්ගය.
 
 [plugins.unique-note-creator.name]
 original=Unique note creator
@@ -6107,11 +6107,11 @@ translation=නව ගොනුවේ ස්ථානය
 
 [plugins.unique-note-creator.option-new-file-location-description]
 original=The folder path to create the new unique note in.
-translation=The folder path to create the new unique note.
+translation=නව අද්විතීය සටහන සෑදීමට ෆෝල්ඩර මාර්ගය.
 
 [plugins.unique-note-creator.msg-folder-not-found]
 original=Failed to create unique note. Folder “{{folderOption}}” not found.
-translation=Failed to create unique note. Folder "{{folderOption}}" not found.
+translation=අද්විතීය සටහන සෑදීම අසාර්ථක විය. "{{folderOption}}" ෆෝල්ඩරය හමු නොවීය.
 
 [plugins.unique-note-creator.option-template-file]
 original=Template file location
@@ -6131,11 +6131,11 @@ translation=අද්විතීය උපසර්ග ආකෘතිය
 
 [plugins.unique-note-creator.msg-template-file-not-found]
 original=Failed to create unique note. Template file “{{template}}” not found.
-translation=Failed to create unique note. Template file "{{template}}" not found.
+translation=අද්විතීය සටහන සෑදීම අසාර්ථක විය. "{{template}}" අච්චු ගොනුව හමු නොවීය.
 
 [plugins.unique-note-creator.msg-failed-to-generate]
 original=Failed to generate a unique note with the format “{{format}}”
-translation=Failed to generate a unique note with the format "{{format}}
+translation="{{format}}" ආකෘතියෙන් අද්විතීය සටහනක් උත්පාදනය කිරීම අසාර්ථක විය
 
 [plugins.random-note.name]
 original=Random note
@@ -6143,7 +6143,7 @@ translation=අහඹු සටහන (Random note)
 
 [plugins.random-note.desc]
 original=Open a random note to rediscover or review.
-translation=Opens a random note. Useful for reviewing and discovering.
+translation=අහඹු සටහනක් විවෘත කරයි. සමාලෝචනය කිරීම සහ සොයා ගැනීම සඳහා ප්‍රයෝජනවත් වේ.
 
 [plugins.random-note.short-name]
 original=Random
@@ -6159,7 +6159,7 @@ translation=පිටපත (Outline)
 
 [plugins.outline.desc]
 original=Show the table of contents for the current note.
-translation=Displays the outline of the current file or linked pane.
+translation=වත්මන් ගොනුවේ හෝ සම්බන්ධිත පුවරුවේ පිටපත දර්ශනය කරයි.
 
 [plugins.outline.action-open]
 original=Open outline
@@ -6167,7 +6167,7 @@ translation=පිටපත (outline) විවෘත කරන්න
 
 [plugins.outline.action-show]
 original=Show outline
-translation=Show outline pane
+translation=පිටපත් පුවරුව පෙන්වන්න
 
 [plugins.outline.action-open-for-current]
 original=Open outline of the current file
@@ -6207,7 +6207,7 @@ translation=ස්ලයිඩ (Slides)
 
 [plugins.slides.desc]
 original=Create a presentation by using “---” to separate slides.
-translation=Present from Markdown. Use "---" to separate slides.
+translation=Markdown වෙතින් ඉදිරිපත් කරන්න. ස්ලයිඩ වෙන් කිරීමට "---" භාවිතා කරන්න.
 
 [plugins.slides.action-start]
 original=Start presentation
@@ -6219,7 +6219,7 @@ translation=ශ්‍රව්‍ය රෙකෝඩරය
 
 [plugins.audio-recorder.desc]
 original=Record audio notes and save them as attachments.
-translation=Record audio and save as attachment.
+translation=ශ්‍රව්‍ය පටිගත කර ඇමුණුමක් ලෙස සුරකින්න.
 
 [plugins.audio-recorder.action-start]
 original=Start recording audio
@@ -6251,7 +6251,7 @@ translation=පෙරනිමි යෙදුමෙන් විවෘත ක�
 
 [plugins.open-with-default-app.desc]
 original=Add a button to open the current file in its default app.
-translation=Add button to open current file in the default app.
+translation=පෙරනිමි යෙදුම තුළ වත්මන් ගොනුව විවෘත කිරීමට බොත්තමක් එක් කරන්න.
 
 [plugins.open-with-default-app.action-open-file]
 original=Open in default app
@@ -6263,7 +6263,7 @@ translation=බෙදාගන්න
 
 [plugins.open-with-default-app.action-show-in-folder]
 original=Show in system explorer
-translation=Show in folder
+translation=ෆෝල්ඩරය තුළ පෙන්වන්න
 
 [plugins.open-with-default-app.action-show-in-folder-mac]
 original=Reveal in Finder
@@ -6379,7 +6379,7 @@ translation=Editor status
 
 [plugins.editor-status.desc]
 original=Show the editing mode toggle in the status bar.
-translation=Adds a status bar item to show and change the current editor mode.
+translation=වත්මන් සංස්කරණ මාදිලිය පෙන්වීමට සහ වෙනස් කිරීමට තත්ව තීරුවේ අයිතමයක් එක් කරයි.
 
 [plugins.editor-status.read]
 original=Reading
@@ -6399,7 +6399,7 @@ translation=ප්‍රකාශනය (Publish)
 
 [plugins.publish.desc]
 original=Host your notes online as a website, wiki or documentation.
-translation=Publish your notes through Obsidian Publish.
+translation=Obsidian Publish හරහා ඔබගේ සටහන් ප්‍රකාශයට පත් කරන්න.
 
 [plugins.publish.action-publish-changes]
 original=Publish changes...
@@ -6459,7 +6459,7 @@ translation=මෙය ඔබගේ අඩවිය වහාම සහ ස්ථ
 
 [plugins.publish.label-confirm-delete-site]
 original=Confirm delete site “{{site}}”
-translation=Confirm delete site "{{site}}"
+translation="{{site}}" අඩවිය මැකීම තහවුරු කරන්න
 
 [plugins.publish.option-site-id]
 original=Site ID
@@ -6467,7 +6467,7 @@ translation=අඩවි ID
 
 [plugins.publish.option-site-id-description]
 original=Your site will be at https://publish.obsidian.md/{site id}. You can change this later. Only lower case letters, numbers, and dashes are allowed.
-translation=Your site will be at https://publish.obsidian.md/{site id}. You can change this later. Only lowercase letters, numbers, and dashes are allowed.
+translation=ඔබගේ අඩවිය https://publish.obsidian.md/{site id} හි පිහිටනු ඇත. ඔබට මෙය පසුව වෙනස් කළ හැක. කුඩා අකුරු, ඉලක්කම් සහ ඉරි සඳහා පමණක් අවසර ඇත.
 
 [plugins.publish.option-site-id-placeholder]
 original=Pick a site ID
@@ -6487,7 +6487,7 @@ translation=මෙම අඩවි ID එක දැනටමත් භාවි�
 
 [plugins.publish.msg-create-site-issue]
 original=There was an issue when creating your site.
-translation=That was an issue when creating your site.
+translation=ඔබගේ අඩවිය නිර්මාණය කිරීමේදී ගැටළුවක් ඇති විය.
 
 [plugins.publish.label-site-options]
 original=Site options
@@ -6575,7 +6575,7 @@ translation=සැරිසැරීමෙන් පිටු හෝ ෆෝල�
 
 [plugins.publish.option-hide-items-in-navigation-desc]
 original=Right click and select “Hide” to prevent specific pages from appearing in the site navigation. The pages will still be accessible via links or accessing the URL directly.
-translation=Right click and select "Hide" to prevent specific pages from appearing in the site navigation. The pages will still be accessible via links or accessing the URL directly.
+translation=නිශ්චිත පිටු අඩවි සංචාලනයේ දිස්වීම වැළැක්වීමට Right click කර "Hide" තෝරන්න. මෙම පිටු තවමත් සබැඳි හරහා හෝ සෘජුවම URL වෙත ප්‍රවේශ වීමෙන් ලබාගත හැක.
 
 [plugins.publish.option-show-hidden-items]
 original=Show hidden
@@ -6619,7 +6619,7 @@ translation=ආලෝකවත්/අඳුරු ටොගලය
 
 [plugins.publish.option-show-theme-toggle-description]
 original=Let visitors toggle between light and dark theme on their own.
-translation=Let the visitor toggle between light and dark theme on their own.
+translation=අමුත්තන්ට ආලෝකවත් සහ අඳුරු තේමා අතර තනිවම මාරු වීමට ඉඩ දෙන්න.
 
 [plugins.publish.option-show-navigation]
 original=Show navigation
@@ -6635,7 +6635,7 @@ translation=සෙවුම් තීරුව පෙන්වන්න
 
 [plugins.publish.option-show-search-description]
 original=Display a search bar that lets the visitors search pages, aliases, and headings on your site.
-translation=Display a search bar at top of the navigation that lets the visitors search pages and headings on your site.
+translation=අමුත්තන්ට ඔබගේ වෙබ් අඩවියේ පිටු සහ ශීර්ෂ සෙවීමට ඉඩ සලසන සංචාලනය මුදුනේ සෙවුම් තීරුවක් දර්ශනය කරන්න.
 
 [plugins.publish.option-show-graph]
 original=Show graph view
@@ -6663,11 +6663,11 @@ translation=එක් එක් පිටුවේ අවසානයේ පස�
 
 [plugins.publish.option-sliding-window-mode]
 original=Stack pages
-translation=Use sliding windows
+translation=ලිස්සා යන (sliding) කවුළු භාවිතා කරන්න
 
 [plugins.publish.option-sliding-window-mode-description]
 original=Links will open next to the current page in the same window. Scroll horizontally to see stacked pages.
-translation=Open pages in new panes to the right. Allows scrolling through panes horizontally.
+translation=දකුණු පස ඇති නව පුවරුවල පිටු විවෘත කරන්න. පුවරු හරහා තිරස් අතට අනුචලනය කිරීමට ඉඩ දෙයි.
 
 [plugins.publish.option-hover-preview-file]
 original=Show hover preview
@@ -6759,11 +6759,11 @@ translation=වෙනස්කම් කිසිවක් හමු නොව�
 
 [plugins.publish.label-changed-files-to-be-published]
 original=Changed
-translation=Changes
+translation=වෙනස්කම්
 
 [plugins.publish.label-unchanged-files-already-published]
 original=Unchanged (select to unpublish)
-translation=Unchanged (select to delete)
+translation=වෙනස් කර නොමැත (මකා දැමීමට තෝරන්න)
 
 [plugins.publish.label-file-selected]
 original= selected
@@ -6791,7 +6791,7 @@ translation=ප්‍රකාශයට පත් කරන්න
 
 [plugins.publish.msg-no-permission-to-publish-to-site]
 original=You do not have permissions to publish to the current site.
-translation=You do not have permission to publish to the current site.
+translation=වත්මන් අඩවියේ ප්‍රකාශයට පත් කිරීමට ඔබට අවසර නොමැත.
 
 [plugins.publish.msg-select-at-least-one-file]
 original=Please select at least one file.
@@ -6851,11 +6851,11 @@ translation=ඔබට මෙතැනින් ඔබේ වෙබ් අඩව�
 
 [plugins.publish.msg-something-went-wrong]
 original=Something went wrong.
-translation=Something went wrong. Please check the developer console for details.
+translation=යම් දෝෂයක් සිදුවී ඇත. කරුණාකර වැඩි විස්තර සඳහා developer console පරීක්ෂා කරන්න.
 
 [plugins.publish.msg-network-error]
 original=A network error occurred.
-translation=A network error occurred. 
+translation=ජාල දෝෂයක් ඇති විය.
 
 [plugins.publish.label-manage-passwords]
 original=Manage passwords
@@ -6943,7 +6943,7 @@ translation=අභිරුචි URL
 
 [plugins.publish.option-custom-url-desc]
 original=Enter the URL of your custom site, do not include “www.”
-translation=The URL that your site will be located at.
+translation=ඔබගේ අඩවිය පිහිටන URL එක.
 
 [plugins.publish.option-custom-url-redirect]
 original=Redirect to your custom domain
@@ -6971,7 +6971,7 @@ translation=ඔබ ඔබගේ {{limit}} සීමාවෙන් {{site}}ක�
 
 [plugins.publish.button-add-more-sites]
 original=Add more sites
-translation=Buy more sites
+translation=තවත් අඩවි මිලදී ගන්න
 
 [plugins.publish.label-no-sites-bought]
 original=You haven't bought any sites.
@@ -6983,11 +6983,11 @@ translation=අඩවියක් ලබා ගන්න
 
 [plugins.publish.label-manage-sharing]
 original=Manage sharing for “{{name}}”
-translation=Manage sharing for "{{name}}"
+translation="{{name}}" සඳහා බෙදාගැනීම කළමනාකරණය කරන්න
 
 [plugins.publish.label-sharing-with-users]
 original=This site is currently shared with the following people:
-translation=This site is currently shared with the following people.
+translation=මෙම අඩවිය දැනට පහත පුද්ගලයින් සමඟ බෙදාගෙන ඇත.
 
 [plugins.publish.label-not-sharing]
 original=This site is not currently shared with anyone.
@@ -7139,7 +7139,7 @@ translation=වැඩබිම් (Workspaces)
 
 [plugins.workspaces.desc]
 original=Save and load workspace layouts.
-translation=Save and load workspace layout.
+translation=වැඩබිම් පිරිසැලසුම සුරකින්න සහ පූරණය කරන්න.
 
 [plugins.workspaces.action-load-layout]
 original=Load workspace layout
@@ -7179,7 +7179,7 @@ translation=කරුණාකර නව පිරිසැලසුම සඳ�
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=Successfully saved layout.
+translation=පිරිසැලසුම සාර්ථකව සුරකින ලදී.
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
@@ -7203,7 +7203,7 @@ translation=Obsidian Sync හරහා ඔබගේ ගොනු සමමුහ
 
 [plugins.sync.action-view-version-history]
 original=Open version history for the current file
-translation=View version history
+translation=අනුවාද ඉතිහාසය බලන්න
 
 [plugins.sync.action-setup-sync]
 original=Set up Sync
@@ -7227,7 +7227,7 @@ translation=තවත් පූරණය කරන්න
 
 [plugins.sync.label-show-diff]
 original=Show changes
-translation=Show diff
+translation=වෙනස්කම් පෙන්වන්න
 
 [plugins.sync.label-copy-to-clipboard]
 original=Copy to clipboard
@@ -7235,7 +7235,7 @@ translation=ක්ලිප්බෝඩ් එකට පිටපත් කර�
 
 [plugins.sync.label-restore-this-version]
 original=Restore
-translation=Restore this version
+translation=මෙම අනුවාදය ප්‍රතිසාධනය කරන්න
 
 [plugins.sync.msg-already-latest-version]
 original=This version is already the latest version.
@@ -7255,7 +7255,7 @@ translation={{ device }} හරහා මකා දමන ලදී
 
 [plugins.sync.label-file-renamed-from]
 original=Renamed from “{{from}}”
-translation=Renamed from “{{filepath}}”
+translation="{{filepath}}" සිට නැවත නම් කරන ලදී
 
 [plugins.sync.label-file-renamed-from-to]
 original=Renamed from “{{from}}” to “{{to}}”
@@ -7271,11 +7271,11 @@ translation=“{{from}}” සිට “{{to}}” දක්වා ගෙන ය�
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 revision
+translation=ප්‍රතිශෝධන 1 ක්
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
-translation={{revisions}} revisions
+translation=ප්‍රතිශෝධන {{revisions}} ක්
 
 [plugins.sync.label-via-device]
 original=via {{device}}
@@ -7287,7 +7287,7 @@ translation=මෙම ගොනුව සඳහා සමමුහුර්ත �
 
 [plugins.sync.label-empty-file]
 original=Empty content
-translation=Empty
+translation=හිස්
 
 [plugins.sync.label-unable-to-retrieve]
 original=Unable to retrieve version history
@@ -7307,7 +7307,7 @@ translation=අනුවාද ඉතිහාසය
 
 [plugins.sync.label-click-to-see-history]
 original=Click on a file to see its history.
-translation=Click on a deleted file to see its history.
+translation=මකා දැමූ ගොනුවක ඉතිහාසය බැලීමට එය මත ක්ලික් කරන්න.
 
 [plugins.sync.label-create-remote-vault]
 original=Create remote vault
@@ -7323,7 +7323,7 @@ translation=Vault හි නම හිස් විය නොහැක.
 
 [plugins.sync.msg-successfully-created-vault]
 original=Successfully created remote vault “{{name}}”.
-translation=Successfully create remote vault "{{name}}".
+translation="{{name}}" දුරස්ථ vault එක සාර්ථකව නිර්මාණය කරන ලදී.
 
 [plugins.sync.label-remote-vault-explanation]
 original=Remote vaults securely synchronize your vault between devices.
@@ -7439,7 +7439,7 @@ translation=Vault එක මැකීම තහවුරු කරන්න
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=Are you sure you want to delete this remote vault?
+translation=මෙම දුරස්ථ vault එක මකා දැමීමට ඔබට අවශ්‍ය බව විශ්වාසද?
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7575,7 +7575,7 @@ translation=උපාංගයේ නම
 
 [plugins.sync.option-device-name-desc]
 original=This name will be displayed in the activity log. Leave empty to use the default name.
-translation=This name will be displayed in the sync log. Leave empty to use the default name.
+translation=මෙම නම සමමුහුර්ත ලොගයේ දර්ශනය වනු ඇත. පෙරනිමි නම භාවිතා කිරීමට හිස්ව තබන්න.
 
 [plugins.sync.button-resume]
 original=Resume
@@ -7595,7 +7595,7 @@ translation=මකා දැමූ ගොනු බලන්න සහ ප්‍
 
 [plugins.sync.option-sync-log]
 original=Activity log
-translation=Sync activity
+translation=සමමුහුර්ත ක්‍රියාකාරකම
 
 [plugins.sync.option-sync-log-desc]
 original=View recent sync activities for debugging.
@@ -7627,7 +7627,7 @@ translation=ප්‍රතිසාධනය කරමින්...
 
 [plugins.sync.msg-restoring-complete]
 original=Restore complete: {{succeeded}} succeeded and {{failed}} failed.
-translation=`Restore complete: {{succeeded}} succeeded and {{failed}} failed.`
+translation=ප්‍රතිසාධනය සම්පූර්ණයි: {{succeeded}} සාර්ථක වූ අතර {{failed}} අසාර්ථක විය.
 
 [plugins.sync.option-vault-size]
 original=Storage usage
@@ -7703,7 +7703,7 @@ translation=සමහර ෆෝල්ඩර සමමුහුර්ත වී�
 
 [plugins.sync.option-currently-excluded-folders]
 original= These folders are currently excluded:
-translation= These folders currently excluded:
+translation=මෙම ෆෝල්ඩර දැනට බැහැර කර ඇත:
 
 [plugins.sync.button-manage-excluded-folders]
 original=Manage
@@ -7767,7 +7767,7 @@ translation=ප්‍රධාන සැකසුම්
 
 [plugins.sync.option-sync-app-desc]
 original=Enable to sync editor settings, files & links settings, etc.
-translation=Enable to sync editor settings, files & links settings, custom hotkeys, etc.
+translation=සංස්කාරක සැකසුම්, ගොනු සහ සබැඳි සැකසුම්, අභිරුචි කෙටිමං යතුරු ආදිය සමමුහුර්ත කිරීමට සක්‍රීය කරන්න.
 
 [plugins.sync.option-sync-appearance]
 original=Appearance settings
@@ -7899,7 +7899,7 @@ translation=බැහැර කළ ෆෝල්ඩර කළමනාකරණ�
 
 [plugins.sync.label-number-of-folders-excluded]
 original=Obsidian Sync is currently excluding {{folders}}.
-translation={{folders}} are currently excluded from being synced.
+translation={{folders}} දැනට සමමුහුර්ත කිරීමෙන් බැහැර කර ඇත.
 
 [plugins.sync.label-add-excluded-folder]
 original=Exclude a folder
@@ -7931,7 +7931,7 @@ translation=දුරස්ථ vault එකට සම්බන්ධ වීම �
 
 [plugins.sync.label-now-connected-to-vault]
 original=You're now connected to “{{name}}”.
-translation=You're now connected to "{{name}}".
+translation=ඔබ දැන් "{{name}}" වෙත සම්බන්ධ කර ඇත.
 
 [plugins.sync.button-start-syncing]
 original=Start syncing
@@ -7947,7 +7947,7 @@ translation=ඔබගේ දේශීය vault හි දැනටමත් ස�
 
 [plugins.sync.msg-vault-merge-warning]
 original=If you connect to the remote vault “{{name}}”, notes in your local vault will be merged with notes from your remote vault. In case of conflicts, the most recent version of the note will be preserved.
-translation=If you connect to the remote vault "{{name}}", notes in your local vault will be merged with notes from your remote vault. In case of conflicts, the most recent version of the note will be preserved.
+translation=ඔබ "{{name}}" දුරස්ථ vault එකට සම්බන්ධ වුවහොත්, ඔබගේ දේශීය vault හි ඇති සටහන් ඔබගේ දුරස්ථ vault වෙතින් සටහන් සමඟ ඒකාබද්ධ කෙරේ. ගැටුම් ඇති වුවහොත්, සටහනේ නවතම අනුවාදය සංරක්ෂණය කරනු ලැබේ.
 
 [plugins.sync.tooltip-update-setting-on-all-devices]
 original=Please update this option and restart app on all the devices where you want it to take effect.
@@ -7955,7 +7955,7 @@ translation=කරුණාකර මෙම අභිරුචිය යාව�
 
 [plugins.sync.label-sharing-with-users]
 original=This remote vault is currently shared with the following people:
-translation=This remote vault is currently shared with the following people.
+translation=මෙම දුරස්ථ vault එක දැනට පහත පුද්ගලයින් සමඟ බෙදාගෙන ඇත.
 
 [plugins.sync.label-not-sharing]
 original=This remote vault is not currently shared with anyone.
@@ -8015,7 +8015,7 @@ translation=Sync දුරස්ථ vault එකකට සම්බන්ධ ක
 
 [plugins.sync.msg-remote-vault-limit-hit]
 original=You have created the maximum number of remote vaults. In order to create a new remote vault, please upgrade your account or remove an existing one.
-translation=Obsidian Sync lets you create up to 5 remote vaults. In order to create a new remote vault, please remove an existing one.
+translation=Obsidian Sync ඔබට දුරස්ථ vaults 5ක් දක්වා සෑදීමට ඉඩ සලසයි. නව දුරස්ථ vault එකක් සෑදීමට, කරුණාකර පවතින එකක් ඉවත් කරන්න.
 
 [plugins.sync.label-upgrade-vault]
 original=Upgrade vault
@@ -8099,11 +8099,11 @@ translation=ගොනු ප්‍රතිසාධනය (File recovery)
 
 [plugins.file-recovery.desc]
 original=Restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.
-translation=Let you restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.
+translation=අහම්බෙන් වන දත්ත අහිමි වීම් වලින් නැවත ලබා ගැනීම සඳහා මෑත ස්නැප්ෂොට් ප්‍රතිසාධනය කිරීමට ඔබට ඉඩ සලසයි. ස්නැප්ෂොට් සුරැකෙන්නේ Markdown ගොනු සඳහා පමණි.
 
 [plugins.file-recovery.action-open]
 original=Open local history
-translation=Open saved snapshots
+translation=සුරකින ලද ස්නැප්ෂොට් විවෘත කරන්න
 
 [plugins.file-recovery.option-interval]
 original=Snapshot interval
@@ -8119,7 +8119,7 @@ translation=ඉතිහාසයේ දිග
 
 [plugins.file-recovery.option-keep-description]
 original=Number of days the snapshots are kept for.
-translation=Length in days snapshots is kept for.
+translation=ස්නැප්ෂොට් තබා ගන්නා දින ගණනෙහි දිග.
 
 [plugins.file-recovery.option-open-history]
 original=Snapshots
@@ -8139,7 +8139,7 @@ translation=ඉතිහාසය හිස් කරන්න
 
 [plugins.file-recovery.option-clear-description]
 original=Delete all snapshots.
-translation=Wipe all snapshots.
+translation=සියලුම ස්නැප්ෂොට් මකා දමන්න.
 
 [plugins.file-recovery.button-clear-history]
 original=Clear
@@ -8147,15 +8147,15 @@ translation=හිස් කරන්න
 
 [plugins.file-recovery.label-clear-warning]
 original=Are you sure you want to delete all snapshots? Files inside your vault will not be affected.
-translation=Are you sure you want to delete all snapshots? Note that only snapshots will be removed. All files inside your vault will not be affected.
+translation=ඔබට සියලුම ස්නැප්ෂොට් මකා දැමීමට අවශ්‍ය බව විශ්වාසද? ස්නැප්ෂොට් පමණක් ඉවත් කරනු ලබන බව සලකන්න. ඔබගේ vault එක තුළ ඇති කිසිදු ගොනුවකට බලපෑමක් සිදු නොවනු ඇත.
 
 [plugins.file-recovery.msg-clear-complete]
 original=Local history cleared.
-translation=Snapshots cleared.
+translation=ස්නැප්ෂොට් හිස් කරන ලදී.
 
 [plugins.file-recovery.label-no-history-found]
 original=Snapshots found.
-translation=No snapshots found.
+translation=ස්නැප්ෂොට් කිසිවක් හමු නොවීය.
 
 [plugins.file-recovery.placeholder-choose-file]
 original=Choose a file...
@@ -8171,7 +8171,7 @@ translation=සටහන් නිර්මාපකය (Note composer)
 
 [plugins.note-composer.desc]
 original=Merge two notes or split one into two.
-translation=Merge, split, and refactor notes.
+translation=සටහන් ඒකාබද්ධ කරන්න, බෙදන්න, සහ ප්‍රතිව්‍යුහගත (refactor) කරන්න.
 
 [plugins.note-composer.option-confirm-file-merge]
 original=Confirm file merge
@@ -8179,7 +8179,7 @@ translation=ගොනු ඒකාබද්ධ කිරීම තහවුර�
 
 [plugins.note-composer.option-confirm-file-merge-description]
 original=Prompt before merge two files.
-translation=Prompt before merging two files.
+translation=ගොනු දෙකක් ඒකාබද්ධ කිරීමට පෙර විමසන්න.
 
 [plugins.note-composer.option-split-replacement-text]
 original=Text after extraction
@@ -8251,7 +8251,7 @@ translation=ගොනුව ඒකාබද්ධ කරන්න
 
 [plugins.note-composer.label-confirm-file-merge]
 original=Are you sure you want to merge “{{file}}” into “{{destination}}”? “{{file}}” will be deleted.
-translation=Are you sure you want to merge "{{file}}" into "{{destination}}"? "{{file}}" will be deleted.
+translation=ඔබට නිසැකවම "{{file}}" ගොනුව "{{destination}}" වෙත ඒකාබද්ධ කිරීමට අවශ්‍යද? "{{file}}" මකා දැමෙනු ඇත.
 
 [plugins.note-composer.button-merge]
 original=Merge
@@ -8275,7 +8275,7 @@ translation=ඉහළට ගෙන යාමට
 
 [plugins.note-composer.msg-fail-to-fetch-template]
 original=Failed to fetch template file: “{{template}}” not found.
-translation=Failed to fetch template file: "{{template}}" not found.
+translation=අච්චු ගොනුව ලබා ගැනීම අසාර්ථක විය: "{{template}}" හමු නොවීය.
 
 [plugins.note-composer.msg-fail-to-find-heading]
 original=Failed to find heading
@@ -8451,11 +8451,11 @@ translation=නව වෙබ් නරඹන්නා
 
 [plugins.web-viewer.label-fail-to-load]
 original=Unable to load site.
-translation=Unable to load that site.
+translation=එම අඩවිය පූරණය කළ නොහැක.
 
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
-translation=Please make sure you have the correct address.
+translation=කරුණාකර ඔබ සතුව නිවැරදි ලිපිනය ඇති බව තහවුරු කරගන්න.
 
 [plugins.web-viewer.action-reader-view]
 original=Reader view
@@ -8547,7 +8547,7 @@ translation=වෙබ් නරඹන්නාගේ දත්ත හිස් �
 
 [plugins.web-viewer.msg-error-extracting-content]
 original=Unexpected error extracting content.
-translation=Unexected error extracting content.
+translation=අන්තර්ගතය නිස්සාරණය කිරීමේදී අනපේක්ෂිත දෝෂයකි.
 
 [plugins.web-viewer.msg-error-finding-content]
 original=Unable to find content to extract.
@@ -8771,7 +8771,7 @@ translation=අලුතින් සාදන ලද කැන්වස් ග�
 
 [plugins.canvas.option-node-label]
 original=Show card names
-translation=Display card label
+translation=කාඩ්පත් ලේබලය දර්ශනය කරන්න
 
 [plugins.canvas.option-snap-to-grid]
 original=Snap to grid
@@ -8919,7 +8919,7 @@ translation=කණ්ඩායම වෙත යාමට
 
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
-translation=Type name of heading
+translation=ශීර්ෂයේ නම ටයිප් කරන්න
 
 [plugins.canvas.label-enter-url]
 original=Enter URL
@@ -8927,7 +8927,7 @@ translation=URL ඇතුළත් කරන්න
 
 [plugins.canvas.label-empty-embed]
 original=“{{linktext}}” could not be found.
-translation="{{linktext}}" could not be found.
+translation="{{linktext}}" සොයාගත නොහැකි විය.
 
 [plugins.canvas.prompt-add-text]
 original=Add text...
@@ -9079,7 +9079,7 @@ translation=දත්ත සමුදාය (Bases)
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=සටහන් ගුණාංග විමසීමෙන් bases සාදන්න.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -9143,7 +9143,7 @@ translation=වගුව ක්ලිප්බෝඩ් එකට පිටප�
 
 [plugins.bases.command-change-view]
 original=Switch view...
-translation=Change view
+translation=දර්ශනය වෙනස් කරන්න
 
 [plugins.bases.command-add-view]
 original=Add view
@@ -9463,7 +9463,7 @@ translation="{{ view }}" දසුන හමු නොවීය
 
 [plugins.bases.msg-error-unknown-view-type]
 original=Unknown view type: {{ viewtype }}
-translation=Base configured with an unknown view type: {{ viewtype }}
+translation=Base එක නොදන්නා දර්ශන වර්ගයක් සමඟ වින්‍යාස කර ඇත: {{ viewtype }}
 
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
@@ -9723,11 +9723,11 @@ translation="{{ function }}" හි වර්ගයේ දෝෂයකි, "{{ p
 
 [formulas.msg-error-invalid-array-access]
 original=Cannot access index "{{ index }}" of non-array value
-translation=Cannot access index {{ index }} of non-array value
+translation=අරාවක් නොවන අගයක {{ index }} දර්ශකයට ප්‍රවේශ විය නොහැක
 
 [formulas.msg-error-invalid-object-access]
 original=Cannot find "{{ index }}" on type {{ type }}
-translation=Cannot find {{ index }} on type {{ type }}
+translation={{ type }} වර්ගයෙහි {{ index }} සොයාගත නොහැක
 
 [pdf.action-highlight-all]
 original=Highlight all
@@ -9843,11 +9843,11 @@ translation=තනි පිටුව
 
 [pdf.label-spread-odd]
 original=Two-page (odd)
-translation=Two page (odd)
+translation=පිටු දෙකක් (ඔත්තේ)
 
 [pdf.label-spread-even]
 original=Two-page (even)
-translation=Two page (even)
+translation=පිටු දෙකක් (ඉරට්ටේ)
 
 [pdf.tooltip-sidebar-options]
 original=Sidebar options
@@ -10023,15 +10023,15 @@ translation=පේළිය (Row)
 
 [table.action-row-after]
 original=Add row below
-translation=Add row after
+translation=පසුව පේළියක් එක් කරන්න
 
 [table.action-column-after]
 original=Add column to the right
-translation=Add column after
+translation=පසුව තීරුවක් එක් කරන්න
 
 [table.action-row-before]
 original=Add row above
-translation=Add row before
+translation=පෙර පේළියක් එක් කරන්න
 
 [table.action-row-up]
 original=Move row up
@@ -10043,7 +10043,7 @@ translation=පේළිය පහළට ගෙන යන්න
 
 [table.action-column-before]
 original=Add column to the left
-translation=Add column before
+translation=පෙර තීරුවක් එක් කරන්න
 
 [table.action-column-left]
 original=Move column left
@@ -10191,7 +10191,7 @@ translation=ගොනු {{count}}
 
 [nouns.file-with-count_plural]
 original={{count}} files
-translation={{count}} file
+translation=ගොනු {{count}}
 
 [nouns.folder-with-count]
 original={{count}} folder
