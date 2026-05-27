@@ -40,7 +40,7 @@ translation=Visualización
 
 [setting.editor.option-spellcheck]
 original=Spellcheck
-translation=Spell check
+translation=Corrector ortográfico
 
 [setting.editor.option-spellcheck-description]
 original=Turn on the spellchecker.
@@ -112,19 +112,19 @@ translation=Fonte
 
 [setting.editor.option-auto-pair-brackets]
 original=Auto-pair brackets
-translation=Auto pair brackets
+translation=Emparellamento automático de parénteses
 
 [setting.editor.option-auto-pair-brackets-description]
 original=Pair brackets and quotes automatically.
-translation=Emparelha parénteses e comiñas automaticamente.
+translation=Emparella parénteses e comiñas automaticamente.
 
 [setting.editor.option-auto-pair-markdown]
 original=Auto-pair Markdown syntax
-translation=Emparelar automaticamente a sintaxe de Markdown
+translation=Emparellar automaticamente a sintaxe de Markdown
 
 [setting.editor.option-auto-pair-markdown-description]
 original=Pair symbols automatically for bold, italic, code, and more.
-translation=Emparelha símbolos automaticamente para negriña, cursiva, código e máis.
+translation=Emparella símbolos automaticamente para negriña, cursiva, código e máis.
 
 [setting.editor.option-smart-indent-lists]
 original=Smart lists
@@ -232,7 +232,7 @@ translation=Establece a dirección de texto predeterminada das notas de dereita 
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
-translation=Auto convert HTML
+translation=Converter o HTML pegado a Markdown
 
 [setting.editor.option-auto-convert-html-description]
 original=Automatically convert HTML to Markdown when pasting and drag-and-drop from web pages. Use Ctrl/Cmd+Shift+V to paste HTML without converting.
@@ -420,7 +420,7 @@ translation=Cartafol para crear novas notas
 
 [setting.file.option-new-file-folder-path-description]
 original=Newly created notes will appear in this folder.
-translation=As notas novas aparecerán nesta cartafol.
+translation=As notas novas aparecerán neste cartafol.
 
 [setting.file.option-use-wiki-links]
 original=Use [[Wikilinks]]
@@ -432,7 +432,7 @@ translation=Xerar automaticamente Wikilinks para [[ligazóns]] e ![[imaxes]] en 
 
 [setting.file.option-show-unsupported-files]
 original=Show all file types
-translation=Detect all file extensions
+translation=Mostrar todos os tipos de ficheiro
 
 [setting.file.option-show-unsupported-files-description]
 original=Show files with any extension even if Obsidian can't open them natively, so you can link to them and see them in File Explorer and Quick Switcher.
@@ -448,19 +448,19 @@ translation=Formato de nova ligazón
 
 [setting.file.option-link-autocompleted-format-description]
 original=What links to insert when auto-generating internal links.
-translation=What links to insert when auto generating internal links.
+translation=Que ligazóns inserir ao auto-xerar ligazóns internas.
 
 [setting.file.option-choice-shortest-linktext]
 original=Shortest path when possible
-translation=Camiño máis curto posible
+translation=Ruta máis curta posible
 
 [setting.file.option-choice-relative-path]
 original=Path from current file
-translation=Camiño relativo ao ficheiro
+translation=Ruta relativa ao ficheiro
 
 [setting.file.option-choice-absolute-path]
 original=Path from vault folder
-translation=Camiño absoluto no almacén
+translation=Ruta absoluta no almacén
 
 [setting.file.option-new-attachment-location]
 original=Default location for new attachments
@@ -492,7 +492,7 @@ translation=Nome do subcartafol
 
 [setting.file.option-attachment-subfolder-path-description]
 original=If your file is in “vault/folder”, and you set subfolder name to “attachments”, attachments will be saved to “vault/folder/attachments”.
-translation=Se o teu ficheiro está en "vault/folder" e o nome do subcartafol é "attachments", os anexos gardaranse en "vault/folder/attachments".
+translation=Se o teu ficheiro está en "almacén/cartafol" e o nome do subcartafol é "anexos", os anexos gardaranse en "almacén/cartafol/anexos".
 
 [setting.file.option-excluded-files]
 original=Excluded files
@@ -500,7 +500,7 @@ translation=Ficheiros excluídos
 
 [setting.file.option-excluded-files-desc]
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
-translation=Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
+translation=Os ficheiros excluídos estarán ocultos na Busca, Vista de grafo e Mencións sen enlazar; menos aparentes no Cambiador rápido e suxestións de ligazón.
 
 [setting.file.label-no-excluded-filters-applied]
 original=No excluded filter is applied right now. Add one below.
@@ -520,7 +520,7 @@ translation=O filtro non pode estar baleiro
 
 [setting.file.placeholder-excluded-filter]
 original=Enter path or “/regex/”...
-translation=Enter path or "/regex/"...
+translation=Introduce ruta ou "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -528,7 +528,7 @@ translation=Permitir devolucións de chamada URI
 
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
-translation=Activa o uso de x-callback-url a través de x-success ou x-error ao xestionar URI de Obsidian.
+translation=Activa o uso de x-callback-url a través de x-success ou x-error ao xestionar URIs de Obsidian.
 
 [setting.appearance.name]
 original=Appearance
@@ -536,11 +536,11 @@ translation=Aparencia
 
 [setting.appearance.option-base-theme]
 original=Base color scheme
-translation=Base theme
+translation=Esquema de cor base
 
 [setting.appearance.option-base-theme-description]
 original=Choose Obsidian's default color scheme.
-translation=Choose Obsidian’s default color scheme.
+translation=Elixe o esquema de cor por defecto de Obsidian.
 
 [setting.appearance.option-accent-color]
 original=Accent color
@@ -604,7 +604,7 @@ translation=Tipo de letra monoespazado
 
 [setting.appearance.option-monospace-font-description]
 original=Set font for places like code blocks and frontmatter.
-translation=Establece o tipo de letra para lugares como bloques de código e frontmatter.
+translation=Establece o tipo de letra para lugares como bloques de código e materia previa.
 
 [setting.appearance.label-single-font-currently-in-effect]
 original= Currently applied font: 
@@ -640,11 +640,11 @@ translation=Nome do tipo de letra
 
 [setting.appearance.option-community-themes]
 original=Community themes
-translation=Open community themes
+translation=Temas da comunidade
 
 [setting.appearance.option-community-themes-description]
 original=Preview and use amazing themes created by the community.
-translation=Previsualiza e usa temas incriúbles creados pola comunidade.
+translation=Previsualiza e usa temas incríbles creados pola comunidade.
 
 [setting.appearance.button-browse-community-themes]
 original=Browse
@@ -656,7 +656,7 @@ translation=Tamaño do tipo de letra
 
 [setting.appearance.option-font-size-description]
 original=Font size in pixels that affects editing and reading views.
-translation=Font size in pixels that affects editor and preview.
+translation=Tamaño do tipo de letra en píxels que afecta ás vistas de edición e lectura.
 
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
@@ -708,11 +708,11 @@ translation=Fragmentos CSS
 
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
-translation=No CSS snippets found in the snippets folder.
+translation=Non se atoparon fragmentos CSS.
 
 [setting.appearance.no-snippet-description]
 original=CSS Snippets are stored in “{{path}}”.
-translation=CSS Snippets are stored in "{{path}}".
+translation=Os fragmentos CSS almacénanse en "{{path}}".
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -728,7 +728,7 @@ translation=Recargáronse os fragmentos CSS.
 
 [setting.appearance.option-toggle-snippet-description]
 original=Apply CSS snippet at “{{path}}”.
-translation=Apply CSS snippet at "{{path}}".
+translation=Aplicar fragmento CSS en "{{path}}".
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -788,7 +788,7 @@ translation=Escoller icona personalizada
 
 [setting.appearance.option-configure-ribbon]
 original=Ribbon menu configuration
-translation=Ribbon menu
+translation=Configuración do menú da cinta
 
 [setting.appearance.option-configure-ribbon-desc]
 original=Configure what commands appear in the ribbon menu.
@@ -824,7 +824,7 @@ translation=Outros elementos da cinta
 
 [setting.appearance.label-modal-configuration]
 original=Ribbon menu
-translation=Ribbon Configuration
+translation=Configuración do menú da cinta
 
 [setting.appearance.label-modal-configuration-desc]
 original=Choose what items you want to be active in the ribbon. Drag and drop to change the order.
@@ -852,7 +852,7 @@ translation=Barras laterais deslizantes
 
 [setting.appearance.option-sliding-sidebar-desc]
 original=Sidebars slide to the side of the content instead of floating above.
-translation=As barras laterais deslizan cara ao lado do contido en lugar de flotar encima.
+translation=As barras laterais deslizan cara ao lado do contido en lugar de flotar enriba.
 
 [setting.appearance.option-auto-full-screen]
 original=Full screen
@@ -956,7 +956,7 @@ translation=Personalizar este comando
 
 [setting.hotkeys.tooltip-hotkey-single-conflict]
 original=This hotkey conflicts with “{{command}}”
-translation=This hotkey conflicts with "{{command}}"
+translation=Este atallo está en conflito con "{{command}}"
 
 [setting.hotkeys.tooltip-hotkey-multiple-conflicts]
 original=This hotkey conflicts with {{count}} other commands
@@ -1240,11 +1240,11 @@ translation=Licenza
 
 [setting.about.label-your-commercial-license-key]
 original=Your commercial license key is “{{key}}”.
-translation=Your commercial license key is "{{key}}".
+translation=A túa clave de licenza comercial é "{{key}}".
 
 [setting.about.label-commercial-license-info]
 original=Registered to “{{company}}” for {{seats}} users. Valid until {{expiry}}.
-translation=Registered to "{{company}}" for {{seats}} users. Valid until {{expiry}}.
+translation=Rexistrado por "{{company}}" para {{seats}} usuarios. Válido ata {{expiry}}.
 
 [setting.about.label-validating-commercial-license]
 original=Validating...
@@ -1268,7 +1268,7 @@ translation=Actualmente tes a licenza Catalyst {{tier}}. Grazas polo teu apoio!
 
 [setting.about.option-catalyst-desc-no-license]
 original=You don't have a Catalyst license. Catalyst is a one-time donation that helps Obsidian remain 100% user-supported and gives you early access to new features.
-translation=You don't have a Catalyst license right now. Catalyst license is a one-time donation to support Obsidian development.
+translation=Non tes unha licenza Catalyst. Catalyst é unha doazón única que axuda a manter Obsidian 100% financiado polos usuarios e dáche acceso anticipado a novas funcionalidades.
 
 [setting.about.label-app]
 original=App
@@ -1276,7 +1276,7 @@ translation=Aplicación
 
 [setting.about.label-add-own-language]
 original=Learn how to add a new language to Obsidian.
-translation=See how to add your language to Obsidian.
+translation=Aprende como engadir un novo idioma a Obsidian.
 
 [setting.account.name]
 original=Account
@@ -1288,11 +1288,11 @@ translation=A túa conta
 
 [setting.account.option-your-account-desc]
 original=You're currently signed in as {{name}} ({{email}}).
-translation=You're currently signed in {{name}} ({{email}}).
+translation=Actualmente tes a sesión iniciada como {{name}} ({{email}}).
 
 [setting.account.option-your-account-desc-no-login]
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
-translation=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and Catalyst insider builds.
+translation=Non tes a sesión iniciada. Só se necesita unha conta para Obsidian Sync, Obsidian Publish e as versións de acceso anticipado.
 
 [setting.account.button-upgrade-catalyst]
 original=Upgrade
@@ -1304,7 +1304,7 @@ translation=Licenza comercial
 
 [setting.account.option-commercial-license-desc]
 original=Help keep Obsidian 100% user-supported.
-translation=If you use Obsidian for commercial purposes, you may need to get a commercial license.
+translation=Axuda a manter Obsidian 100% financiado polos usuarios.
 
 [setting.account.button-purchase]
 original=Purchase
@@ -1364,7 +1364,7 @@ translation=O contrasinal non pode estar baleiro.
 
 [setting.account.message-login-failed]
 original=Login failed, please double check your email and password.
-translation=Login failed, please double-check your email and password.
+translation=Erro ao iniciar sesión. Por favor, comproba o teu correo electrónico e contrasinal.
 
 [setting.account.message-signup-failed]
 original=Failed to sign up
@@ -1396,7 +1396,7 @@ translation=Lista de complementos
 
 [setting.core-plugin.option-search-plugin]
 original=Search core plugins
-translation=Buscar complementos básicos
+translation=Buscar complementos principais
 
 [setting.core-plugin.option-search-plugin-description]
 original=Filter plugins by name or description.
@@ -1408,7 +1408,7 @@ translation=Buscar complementos...
 
 [setting.third-party-plugin.name]
 original=Community plugins
-translation=Third-party plugin
+translation=Complementos da comunidade
 
 [setting.third-party-plugin.option-restricted-mode]
 original=Restricted mode
@@ -1416,19 +1416,19 @@ translation=Modo restrinxido
 
 [setting.third-party-plugin.option-restricted-mode-description]
 original=Restricted mode is off. Turn on to disable community plugins.
-translation=Restricted Mode is off. Turn on to disable community plugins.
+translation=O modo restrinxido está desactivado. Actívao para desactivar os complementos da comunidade.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
-translation=Turn on
+translation=Activar e recargar
 
 [setting.third-party-plugin.option-automatic-update-check]
 original=Automatically check for plugin updates
-translation=Comprobar automaticamente actualizacións de complementos
+translation=Comprobar automáticamente actualizacións de complementos
 
 [setting.third-party-plugin.option-automatic-update-check-desc]
 original=Periodically check for plugin updates.
-translation=Comproba periodicamente as actualizacións dos complementos.
+translation=Comproba periódicamente as actualizacións dos complementos.
 
 [setting.third-party-plugin.option-browse-community-plugins]
 original=Community plugins
@@ -1436,7 +1436,7 @@ translation=Complementos da comunidade
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
 original=Browse and install community plugins made by our amazing community.
-translation=Browse and install third-party plugins made by our amazing community.
+translation=Explora e instala complementos da comunidade creados pola nosa incríble comunidade.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
@@ -1448,7 +1448,7 @@ translation=Saír do modo restrinxido
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
-translation=Os complementos da comunidade, como calquera outro software que instales, podrían causar problemas de integridade dos datos e de seguridade.
+translation=Os complementos da comunidade, como calquera outro software que instales, poderían causar problemas de integridade dos datos e de seguridade.
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-2]
 original=Plugin security is important to us. Here's what we do:
@@ -1480,7 +1480,7 @@ translation=Auditoría entre pares
 
 [setting.third-party-plugin.label-peer-audit-desc]
 original=We have a large community of developers who watch out for each other.
-translation=Temos unha gran comunidade de desenvolvedores que se vixian mutuamente.
+translation=Temos unha gran comunidade de desenvolvedores que se axudan uns aos outros.
 
 [setting.third-party-plugin.label-report-mechanism]
 original=Report mechanism
@@ -1504,7 +1504,7 @@ translation=Activar os complementos da comunidade
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
-translation=Confíaês no autor deste almacén?
+translation=Confías no autor deste almacén?
 
 [setting.third-party-plugin.label-trust-author-description-1]
 original=You're opening this vault for the first time, and it comes with some plugins.
@@ -1516,7 +1516,7 @@ translation=Se obtiveches este almacén doutra persoa, ten en conta que os compl
 
 [setting.third-party-plugin.label-trust-author-description-3]
 original=If you do not fully trust the author of this vault, we recommend staying in Restricted Mode, so the plugins in this vault do not run.
-translation=Se non confíaês completamente no autor deste almacén, recomendamos permanecer no modo restrinxido, para que os complementos deste almacén non se executen.
+translation=Se non confías completamente no autor deste almacén, recomendamos permanecer no modo restrinxido, para que os complementos deste almacén non se executen.
 
 [setting.third-party-plugin.button-enable-plugins]
 original=Trust author and enable plugins
@@ -1584,11 +1584,11 @@ translation=Por
 
 [setting.third-party-plugin.label-repository]
 original=Repository: 
-translation=Repositorio: 
+translation=Almacén: 
 
 [setting.third-party-plugin.label-last-update]
 original=Last update: 
-translation=Útima actualización: 
+translation=Última actualización: 
 
 [setting.third-party-plugin.tooltip-view-last-update]
 original=View the latest update
@@ -1608,15 +1608,15 @@ translation=Este complemento non proporcionou un ficheiro README.
 
 [setting.third-party-plugin.msg-installing-plugin]
 original=Installing plugin “{{name}}”...
-translation=Installing plugin "{{name}}"...
+translation=Instalando o complemento "{{name}}"...
 
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
-translation=Failed to install plugin "{{name}}".
+translation=Non se puido instalar o complemento "{{name}}".
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
-translation=Successfully installed plugin "{{name}}".
+translation=O complemento "{{name}}" instalouse correctamente.
 
 [setting.third-party-plugin.msg-failed-to-uninstall-plugin]
 original=Failed to uninstall plugin “{{id}}”.
@@ -1716,7 +1716,7 @@ translation=Donar para apoiar {{name}}
 
 [setting.third-party-plugin.label-donate-modal-text1]
 original=Plugin developers are community volunteers who make amazing things out of passion. If you find this plugin useful, please consider funding its development.
-translation=Os desenvolvedores de complementos son voluntarios da comunidade que crean cousas incríbles por paixón. Se atopas útil este complemento, considera financiar o seu desenvolvemento.
+translation=Os desenvolvedores de complementos son voluntarios da comunidade que crean cousas incríbeis por paixón. Se atopas útil este complemento, considera financiar o seu desenvolvemento.
 
 [setting.third-party-plugin.label-donate-modal-text2]
 original=100% of your contribution will go to the plugin developer; Obsidian does not take a cut. The funding platform they choose might charge a fee.
@@ -1756,7 +1756,7 @@ translation=Actualizado {{time}}
 
 [setting.mobile-toolbar.name]
 original=Toolbar
-translation=Mobile toolbar
+translation=Barra de ferramentas
 
 [setting.mobile-toolbar.option-configure-quick-action]
 original=Configure mobile Quick Action
@@ -1804,11 +1804,11 @@ translation=Alternar cabeceira
 
 [setting.mobile-toolbar.option-strikethrough]
 original=Toggle strikethrough
-translation=Alternar tachado
+translation=Alternar riscado
 
 [setting.mobile-toolbar.option-highlight]
 original=Toggle highlight
-translation=Alternar resaltado
+translation=Alternar realzado
 
 [setting.mobile-toolbar.option-code]
 original=Toggle code
@@ -1856,7 +1856,7 @@ translation=Refacer
 
 [setting.mobile-toolbar.option-move-caret-up]
 original=Move caret up
-translation=Mover cursor arriba
+translation=Mover cursor enriba
 
 [setting.mobile-toolbar.option-move-caret-down]
 original=Move caret down
@@ -1916,7 +1916,7 @@ translation=Seguinte
 
 [editor.search.label-previous]
 original=Previous
-translation=Prev
+translation=Previo
 
 [editor.search.label-find-all]
 original=Find all
@@ -2024,7 +2024,7 @@ translation=Exportar a PDF
 
 [editor.print-modal.caption]
 original=Export “{{filename}}” to PDF with the settings below.
-translation=Export "{{filename}}" to PDF with the setting below.
+translation=Exporta "{{filename}}" a PDF coas opcións de abaixo.
 
 [editor.print-modal.setting-page-size]
 original=Page size
@@ -2100,7 +2100,7 @@ translation=Contraer
 
 [interface.msg-fail-to-save-file]
 original=Failed to save file “{{filepath}}”. {{message}}. Make a backup of the contents of this file now to avoid losing data.
-translation=Failed to save file "{{filepath}}". {{message}}.
+translation=Non se puido gardar o ficheiro "{{filepath}}". {{message}}. Fai unha copia de seguridade do contido deste ficheiro agora para evitar perder datos.
 
 [interface.msg-failed-to-load-plugin]
 original=Failed to load plugin “{{plugin}}”
@@ -2124,11 +2124,11 @@ translation=Sen ficheiro
 
 [interface.msg-file-changed]
 original=“{{file}}” has been modified externally, merging changes automatically.
-translation="{{file}}" has been modified externally, merging changes automatically.
+translation=“{{file}}” foi modificado externamente; combinando os cambios automaticamente.
 
 [interface.manage-vaults]
 original=Manage vaults...
-translation=Xestionar bóvedas...
+translation=Xestionar almacéns...
 
 [interface.help]
 original=Help
@@ -2148,7 +2148,7 @@ translation=O modo de visualización por defecto cambiou á vista de lectura.
 
 [interface.msg-switched-to-edit]
 original=Switched default view mode to editing view.
-translation=Switched default view mode to editor.
+translation=O modo de visualización por defecto cambiou á vista de edición.
 
 [interface.msg-upgrade-installer]
 original=To use this feature, please re-install with latest installer available from our website.
@@ -2196,11 +2196,11 @@ translation=Atopouse un erro ao renderizar o bloque de código.
 
 [interface.msg-open-file-through-uri]
 original=Opened file “{{path}}”
-translation=Opened file "{{path}}"
+translation=Abriuse o ficheiro "{{path}}"
 
 [interface.msg-file-not-found-through-uri]
 original=File “{{name}}” not found.
-translation=File "{{name}}" not found.
+translation=O ficheiro "{{name}}" non se atopou.
 
 [interface.msg-invalid-uri-action]
 original=Unrecognized URI action: {{action}}
@@ -2224,7 +2224,7 @@ translation=Indexación completada.
 
 [interface.msg-sandbox-vault]
 original=This is a sandbox vault.\nChanges you make in this vault will be lost.
-translation=Esta é unha bóveda de probas.\nOs cambios que fagas nesta bóveda perderanse.
+translation=Este é un almacén de probas.\nOs cambios que fagas neste almacén perderanse.
 
 [interface.msg-indexed-db-not-supported]
 original=IndexedDB is required for this feature, but it is currently disabled.
@@ -2264,7 +2264,7 @@ translation=Xestionar
 
 [interface.label-new-tab]
 original=New tab
-translation=Nova pestana
+translation=Nova lapela
 
 [interface.option-hide-ribbon]
 original=Hide ribbon
@@ -2272,7 +2272,7 @@ translation=Ocultar a cinta
 
 [interface.msg-tab-busy]
 original=This tab is currently busy, please try again later
-translation=Esta pestana está actualmente ocupada, inténtao de novo máis tarde
+translation=Esta lapela está actualmente ocupada, inténtao de novo máis tarde
 
 [interface.formatting.label-formatting]
 original=Format
@@ -2288,11 +2288,11 @@ translation=Inserir
 
 [interface.formatting.insert-link]
 original=Add link
-translation=Engadir ligazon
+translation=Engadir ligazón
 
 [interface.formatting.insert-external-link]
 original=Add external link
-translation=Engadir ligazon externa
+translation=Engadir ligazón externa
 
 [interface.formatting.insert-callout]
 original=Callout
@@ -2320,7 +2320,7 @@ translation=Nota ao pé
 
 [interface.formatting.toggle-bold]
 original=Bold
-translation=Negrita
+translation=Negriña
 
 [interface.formatting.toggle-code]
 original=Code
@@ -2332,7 +2332,7 @@ translation=Comentario
 
 [interface.formatting.toggle-highlight]
 original=Highlight
-translation=Resaltado
+translation=Realzado
 
 [interface.formatting.toggle-italics]
 original=Italic
@@ -2340,7 +2340,7 @@ translation=Cursiva
 
 [interface.formatting.toggle-strikethrough]
 original=Strikethrough
-translation=Tachado
+translation=Riscado
 
 [interface.formatting.toggle-math]
 original=Math
@@ -2384,7 +2384,7 @@ translation=Non hai ningún ficheiro aberto
 
 [interface.empty-state.create-new-file]
 original=Create new note
-translation=Create new file
+translation=Crear nova nota
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -2400,7 +2400,7 @@ translation=Pechar
 
 [interface.empty-state.close-all]
 original=Close all “{{id}}” tabs ({{count}})
-translation=Pechar todas as pestanas “{{id}}” ({{count}})
+translation=Pechar todas as lapelas “{{id}}” ({{count}})
 
 [interface.empty-state.unknown-pane-title]
 original=Plugin no longer active
@@ -2432,7 +2432,7 @@ translation=Que hai de novo en {{version}}
 
 [interface.menu.edit-view]
 original=Current view: editing
-translation=Edit (Ctrl/Cmd+Click to edit in new pane)
+translation=Vista actual: edición
 
 [interface.menu.read-view]
 original=Current view: reading
@@ -2460,7 +2460,7 @@ translation=Facer clic para ler
 
 [interface.menu.mod-click-open-new-tab]
 original={{key}}+Click to open to the right
-translation={{key}}+Click to open in new tab
+translation={{key}}+Clic para abrir á dereita
 
 [interface.menu.msg-markdown-copy-instructions]
 original=Press {{key}}+C to copy source
@@ -2508,11 +2508,11 @@ translation=Pechar todo
 
 [interface.menu.close-tabs-with-count]
 original=Close {{count}} tab
-translation=Pechar {{count}} pestana
+translation=Pechar {{count}} lapela
 
 [interface.menu.close-tabs-with-count_plural]
 original=Close {{count}} tabs
-translation=Pechar {{count}} pestanas
+translation=Pechar {{count}} lapelas
 
 [interface.menu.close-others]
 original=Close others
@@ -2520,7 +2520,7 @@ translation=Pechar as demáis
 
 [interface.menu.close-after]
 original=Close tabs after
-translation=Pechar pestanas despois
+translation=Pechar lapelas despois
 
 [interface.menu.pin]
 original=Pin
@@ -2532,11 +2532,11 @@ translation=Desafixar
 
 [interface.menu.unlink-tab]
 original=Unlink tab
-translation=Desligar pestana
+translation=Desligar lapela
 
 [interface.menu.link-tab]
 original=Link with tab...
-translation=Ligar con pestana...
+translation=Ligar con lapela...
 
 [interface.menu.toggle-source-mode]
 original=Source mode
@@ -2560,11 +2560,11 @@ translation=Crear este ficheiro
 
 [interface.menu.open-link]
 original=Open link
-translation=Abrir ligazon
+translation=Abrir ligazón
 
 [interface.menu.open-in-new-tab]
 original=Open in new tab
-translation=Abrir nunha nova pestana
+translation=Abrir nunha nova lapela
 
 [interface.menu.open-to-the-right]
 original=Open to the right
@@ -2572,7 +2572,7 @@ translation=Abrir á dereita
 
 [interface.menu.copy-url]
 original=Copy URL
-translation=Copy url
+translation=Copiar URL
 
 [interface.menu.copy]
 original=Copy
@@ -2604,7 +2604,7 @@ translation=dende a raíz do sistema
 
 [interface.menu.copy-vault-path]
 original=from vault folder
-translation=dende o cartafol da bóveda
+translation=dende o cartafol do almacén
 
 [interface.menu.paste-as-plain-text]
 original=Paste as plain text
@@ -2636,15 +2636,15 @@ translation=Mover a nova xanela
 
 [interface.menu.open-in-browser]
 original=Open external link
-translation=Open in browser
+translation=Abrir ligazón externa
 
 [interface.menu.stack-tabs]
 original=Stack tabs
-translation=Apilar pestanas
+translation=Apilar lapelas
 
 [interface.menu.unstack-tabs]
 original=Unstack tabs
-translation=Desapilar pestanas
+translation=Desapilar lapelas
 
 [interface.menu.open-linked-view]
 original=Open linked view
@@ -2652,11 +2652,11 @@ translation=Abrir a vista ligada
 
 [interface.tooltip.click-to-expand]
 original=Click to expand
-translation=Facer clic para expandir
+translation=Fai clic para expandir
 
 [interface.tooltip.click-to-collapse]
 original=Click to collapse
-translation=Facer clic para contraer
+translation=Fai clic para contraer
 
 [interface.tooltip.alias]
 original=Alias
@@ -2672,11 +2672,11 @@ translation=Versión
 
 [interface.start-screen.label-create-local-vault]
 original=Create local vault
-translation=Crear bóveda local
+translation=Crear almacén local
 
 [interface.start-screen.option-open-folder-as-vault]
 original=Open folder as vault
-translation=Abrir cartafol como bóveda
+translation=Abrir cartafol como almacén
 
 [interface.start-screen.option-open-folder-as-vault-description]
 original=Choose an existing folder of Markdown files.
@@ -2684,27 +2684,27 @@ translation=Escolla un cartafol existente de ficheiros Markdown.
 
 [interface.start-screen.option-create-vault]
 original=Create new vault
-translation=Crear nova bóveda
+translation=Crear novo almacén
 
 [interface.start-screen.option-create-vault-description]
 original=Create a new Obsidian vault under a folder.
-translation=Crea unha nova bóveda de Obsidian dentro dun cartafol.
+translation=Crea un novo almacén de Obsidian dentro dun cartafol.
 
 [interface.start-screen.option-connect-obsidian-sync]
 original=Open vault from Obsidian Sync
-translation=Connect to Obsidian Sync
+translation=Abrir almacén dende Obsidian Sync
 
 [interface.start-screen.option-connect-obsidian-sync-description]
 original=Set up a synced vault with existing remote vault.
-translation=Configura unha bóveda sincronizada cunha bóveda remota existente.
+translation=Configura un almacén sincronizo cun almacén remoto existente.
 
 [interface.start-screen.option-new-vault-name]
 original=Vault name
-translation=Nome da bóveda
+translation=Nome do almacén
 
 [interface.start-screen.option-new-vault-name-description]
 original=Pick a name for your awesome vault.
-translation=Escolla un nome para a túa incriële bóveda.
+translation=Escolla un nome para o teu incrible almacén.
 
 [interface.start-screen.option-new-vault-location]
 original=Location
@@ -2712,51 +2712,51 @@ translation=Localización
 
 [interface.start-screen.option-new-vault-location-description]
 original=Pick a place to put your new vault.
-translation=Escolla un lugar para poñer a túa nova bóveda.
+translation=Escolla un lugar para poñer o teu novo almacén.
 
 [interface.start-screen.label-new-vault-location-preview]
 original=Your new vault will be placed in: 
-translation=A túa nova bóveda crearase en: 
+translation=O teu novo almacén crearase en: 
 
 [interface.start-screen.option-reveal-vault-in-explorer]
 original=Reveal vault in system explorer
-translation=Mostrar a bóveda no explorador do sistema
+translation=Mostrar o almacén no explorador do sistema
 
 [interface.start-screen.option-reveal-vault-in-explorer-mac]
 original=Reveal vault in Finder
-translation=Mostrar a bóveda no Finder
+translation=Mostrar o almacén no Finder
 
 [interface.start-screen.option-rename-vault]
 original=Rename vault...
-translation=Renomear a bóveda...
+translation=Renomear o almacén...
 
 [interface.start-screen.option-copy-vault-i-d]
 original=Copy vault ID
-translation=Copiar o ID da bóveda
+translation=Copiar o ID do almacén
 
 [interface.start-screen.msg-error-rename-exists]
 original=There is already a vault with this name.
-translation=Xa existe unha bóveda con este nome.
+translation=Xa existe un almacén con este nome.
 
 [interface.start-screen.msg-error-nested]
 original=Cannot move vault into a subfolder of itself.
-translation=Non se pode mover a bóveda a un subcartafol de si mesma.
+translation=Non se pode mover o almacén a un subcartafol de si mesmo.
 
 [interface.start-screen.msg-error-rename-open]
 original=Can't rename a currently open vault.
-translation=Non se pode renomear unha bóveda actualmente aberta.
+translation=Non se pode renomear un almacén actualmente aberto.
 
 [interface.start-screen.msg-rename-failed]
 original=Failed to rename vault.
-translation=Erro ao renomear a bóveda.
+translation=Erro ao renomear o almacén.
 
 [interface.start-screen.msg-rename-success]
 original=Successfully renamed vault.
-translation=A bóveda renomeouse correctamente.
+translation=O almacén renomeouse correctamente.
 
 [interface.start-screen.option-move-vault]
 original=Move vault...
-translation=Mover a bóveda...
+translation=Mover o almacén...
 
 [interface.start-screen.msg-move-select-dest]
 original=Select destination folder
@@ -2764,19 +2764,19 @@ translation=Seleccionar o cartafol de destino
 
 [interface.start-screen.msg-error-move-exists]
 original=There is already a vault at the destination.
-translation=Xa existe unha bóveda no destino.
+translation=Xa existe un almacén no destino.
 
 [interface.start-screen.msg-error-move-open]
 original=Can't move a currently open vault.
-translation=Non se pode mover unha bóveda actualmente aberta.
+translation=Non se pode mover un almacén actualmente aberto.
 
 [interface.start-screen.msg-move-failed]
 original=Failed to move vault.
-translation=Erro ao mover a bóveda.
+translation=Erro ao mover o almacén.
 
 [interface.start-screen.msg-move-success]
 original=Successfully moved vault.
-translation=A bóveda moveuse correctamente.
+translation=O almacén moveuse correctamente.
 
 [interface.start-screen.option-remove]
 original=Remove from list
@@ -2808,11 +2808,11 @@ translation=Atrás
 
 [interface.start-screen.msg-empty-vault-name]
 original=Vault name cannot be empty.
-translation=O nome da bóveda non pode estar baleiro.
+translation=O nome do almacén non pode estar baleiro.
 
 [interface.start-screen.msg-trailing-dot-vault-name]
 original=Vault name cannot end with a dot.
-translation=O nome da bóveda non pode rematar cun punto.
+translation=O nome do almacén non pode rematar cun punto.
 
 [interface.start-screen.msg-invalid-folder]
 original=Please pick a valid folder.
@@ -2820,7 +2820,7 @@ translation=Por favor, escolle un cartafol válido.
 
 [interface.start-screen.msg-failed-to-create-vault]
 original=Failed to create vault.
-translation=Erro ao crear a bóveda.
+translation=Erro ao crear o almacén.
 
 [interface.start-screen.msg-failed-to-create-vault-at-location]
 original=Could not create vault at the given location. Please double check the location and permission.
@@ -2832,7 +2832,7 @@ translation=Erro ao abrir.
 
 [interface.start-screen.msg-error-remove-current-open-vault]
 original=Can't remove a currently open vault.
-translation=Non se pode eliminar unha bóveda actualmente aberta.
+translation=Non se pode eliminar o almacén actualmente aberto.
 
 [interface.start-screen.option-get-help]
 original=Get Help
@@ -2864,15 +2864,15 @@ translation=Configurar
 
 [interface.start-screen.option-connect-vault-desc]
 original=Create a synced vault on this device.
-translation=Crea unha bóveda sincronizada neste dispositivo.
+translation=Crea un almacén sincronizado neste dispositivo.
 
 [interface.start-screen.tooltip-own-vault]
 original=This is a remote vault owned by you.
-translation=Esta é unha bóveda remota da túa propiedade.
+translation=Esta é un almacén remoto da túa propiedade.
 
 [interface.start-screen.tooltip-shared-vault]
 original=This is a remote vault shared with you.
-translation=Esta é unha bóveda remota compartida contigo.
+translation=Esta é un almacén remoto compartida contigo.
 
 [interface.start-screen.mobile.label-start-screen]
 original=Your thoughts are yours.
@@ -2896,15 +2896,15 @@ translation=Recomendado
 
 [interface.start-screen.mobile.label-start-screen-desc]
 original=Obsidian stores notes on your device, so you can access them quickly and privately, even offline.\nYour data is stored in a secure local folder called a **vault**.
-translation=Obsidian almacena as notas no teu dispositivo, polo que podes acceder a elas de forma rápida e privada, mesmo sen conexión.\nOs teus datos gárdanse nunha carpeta local segura chamada **bóveda**.
+translation=Obsidian almacena as notas no teu dispositivo, polo que podes acceder a elas de forma rápida e privada, mesmo sen conexión.\nOs teus datos gárdanse nunha carpeta local segura chamada **almacén**.
 
 [interface.start-screen.mobile.option-create]
 original=Create a vault
-translation=Crear unha bóveda
+translation=Crear un almacén
 
 [interface.start-screen.mobile.option-use-existing]
 original=Use my existing vault
-translation=Usar a miña bóveda existente
+translation=Usar o meu almacén existente
 
 [interface.start-screen.mobile.label-sync-intro]
 original=To access your notes on other devices you need to set up sync.
@@ -2920,7 +2920,7 @@ translation=Configurar a sincronización
 
 [interface.start-screen.mobile.option-skip]
 original=Continue without sync
-translation=Skip for now
+translation=Continuar sen sincronización
 
 [interface.start-screen.mobile.option-skip-short]
 original=Skip
@@ -2928,11 +2928,11 @@ translation=Omitir
 
 [interface.start-screen.mobile.label-vault-create]
 original=Configure your new vault.
-translation=Choose a name for your vault.
+translation=Escolle un nome para o teu novo almacén.
 
 [interface.start-screen.mobile.button-create]
 original=Create vault
-translation=Crear bóveda
+translation=Crear almacén
 
 [interface.start-screen.mobile.label-sync-setup]
 original=Sync setup
@@ -2940,7 +2940,7 @@ translation=Configuración da sincronización
 
 [interface.start-screen.mobile.label-sync-setup-desc]
 original=Create a synced vault on your Obsidian account so you can access your data from other devices.
-translation=Crea un almacén sincronizado na túa conta de Obsidian para poder acceder aos teus datos desde outros dispositivos.
+translation=Crea un almacén sincronizado na túa conta de Obsidian para poder acceder aos teus datos dende outros dispositivos.
 
 [interface.start-screen.mobile.label-remote-vault-create]
 original=Sync encryption
@@ -2992,23 +2992,23 @@ translation=Reenviar correo electrónico
 
 [interface.start-screen.mobile.label-remote-vault-options]
 original=You have existing Sync vaults
-translation=Tes bóvedas de sincronización existentes
+translation=Tes almacéns de sincronización existentes
 
 [interface.start-screen.mobile.label-remote-vault-options-desc]
 original=Do you want to create a new vault or connect to an existing synced vault?
-translation=Queres crear unha nova bóveda ou conectarte a unha bóveda sincronizada existente?
+translation=Queres crear un novo almacén ou conectarte a un almacén sincronizada existente?
 
 [interface.start-screen.mobile.option-remote-create]
 original=Create new Sync vault
-translation=Crear nova bóveda de Sync
+translation=Crear novo almacén de Sync
 
 [interface.start-screen.mobile.option-remote-choose]
 original=Choose an existing vault
-translation=Escoller unha bóveda existente
+translation=Escoller un almacén existente
 
 [interface.start-screen.mobile.button-logout]
 original=Log out
-translation=Log Out
+translation=Pechar sesión
 
 [interface.start-screen.mobile.button-forgot-password]
 original=Forgot password
@@ -3016,11 +3016,11 @@ translation=Esquecín o contrasinal
 
 [interface.start-screen.mobile.label-vault-name]
 original=Vault name
-translation=Nome da bóveda
+translation=Nome do almacén
 
 [interface.start-screen.mobile.label-vault-location]
 original=Vault location
-translation=Localización da bóveda
+translation=Localización do almacén
 
 [interface.start-screen.mobile.label-device-storage]
 original=Device storage
@@ -3048,15 +3048,15 @@ translation=Android eliminará os teus datos se desinstalas Obsidian.
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
-translation=A túa nova bóveda crearase en {{vaultLocation}}
+translation=A túa novo almacén crearase en {{vaultLocation}}
 
 [interface.start-screen.mobile.label-region-selection]
 original=Region
-translation=Rexion
+translation=Rexión
 
 [interface.start-screen.mobile.label-region-selection-help]
 original=Choose a server region near you to make syncing faster.
-translation=Escolle unha rexion de servidor cerca de ti para que a sincronización sexa máis rápida.
+translation=Escolle unha rexión de servidor cerca de ti para que a sincronización sexa máis rápida.
 
 [interface.start-screen.mobile.label-encryption-key]
 original=Encryption key
@@ -3068,7 +3068,7 @@ translation=Este contrasinal non se pode cambiar máis tarde. Se esqueces o teu 
 
 [interface.start-screen.mobile.placeholder-vault-name]
 original=My vault
-translation=A miña bóveda
+translation=O meu almacén
 
 [interface.start-screen.mobile.opt-region-selection-automatic]
 original=Automatic
@@ -3076,11 +3076,11 @@ translation=Automático
 
 [interface.start-screen.mobile.label-remote-vault-selection]
 original=Choose a vault
-translation=Escoller unha bóveda
+translation=Escoller o almacén
 
 [interface.start-screen.mobile.label-remote-vault-selection-desc]
 original=Your account **{{email}}** has existing vaults you can connect to.
-translation=A túa conta **{{email}}** ten bóvedas existentes ás que podes conectarte.
+translation=A túa conta **{{email}}** ten almacéns existentes ás que podes conectarte.
 
 [interface.start-screen.mobile.label-sign-in]
 original=Sign in to your Obsidian account
@@ -3144,7 +3144,7 @@ translation=Usar iCloud
 
 [interface.start-screen.mobile.opt-use-other]
 original=Use third-party sync
-translation=Use Third-party sync
+translation=Usar sincronización de terceiros
 
 [interface.start-screen.mobile.opt-learn-other-sync]
 original=Other sync methods
@@ -3156,7 +3156,7 @@ translation=Usar métodos de sincronización admitidos
 
 [interface.start-screen.mobile.label-sync-restore]
 original=Where is your vault located?
-translation=Onde está a túa bóveda?
+translation=Onde está o teu almacén?
 
 [interface.start-screen.mobile.label-other]
 original=Other
@@ -3192,7 +3192,7 @@ translation=Outros métodos de sincronización
 
 [interface.start-screen.mobile.label-sync-other-desc]
 original=Obsidian officially supports two syncing methods: **Obsidian Sync** and **iCloud**.\nHowever, because Obsidian gives you control over your data there are other sync options you can use.\nThese options include third-party plugins and other tools which may require more advanced set up.\nTo use an alternate syncing method, **create a vault** and follow the instructions provided by the plugin or third-party sync provider.
-translation=Obsidian admite oficialmente dous métodos de sincronización: **Obsidian Sync** e **iCloud**.\nPorén, dado que Obsidian che dá control sobre os teus datos, hai outras opcións de sincronización que podes usar.\nEstas opcións inclúen complementos de terceiros e outras ferramentas que poden requirir unha configuración máis avanzada.\nPara usar un método de sincronización alternativo, **crea unha bóveda** e segue as instrucións proporcionadas polo complemento ou provedor de sincronización de terceiros.
+translation=Obsidian admite oficialmente dous métodos de sincronización: **Obsidian Sync** e **iCloud**.\nPorén, dado que Obsidian che dá control sobre os teus datos, hai outras opcións de sincronización que podes usar.\nEstas opcións inclúen complementos de terceiros e outras ferramentas que poden requirir unha configuración máis avanzada.\nPara usar un método de sincronización alternativo, **crea un almacén** e segue as instrucións proporcionadas polo complemento ou provedor de sincronización de terceiros.
 
 [interface.start-screen.mobile.label-email-entry]
 original=Enter your email
@@ -3216,15 +3216,15 @@ translation=En breve recibirás un correo electrónico en **{{email}}** con inst
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
-translation=Non se detectou a túa bóveda de iCloud. Isto poderia deberse a algunha das seguintes razóns:
+translation=Non se detectou o teu almacén de iCloud. Isto poderia deberse a algunha das seguintes razóns:
 
 [interface.start-screen.mobile.icloud-missing-reason1]
 original=Your vault is on a different iCloud account than the one you are currently signed into on this device.
-translation=A túa bóveda está nunha conta de iCloud diferente á que estás actualmente conectado neste dispositivo.
+translation=O teu almacén está nunha conta de iCloud diferente á que estás actualmente conectado neste dispositivo.
 
 [interface.start-screen.mobile.icloud-missing-reason2]
 original=Your vault is not stored on the top-level Obsidian folder of your iCloud Drive.
-translation=A túa bóveda non está almacenada no cartafol Obsidian de nivel superior do teu iCloud Drive.
+translation=O teu almacén non está almacenada no cartafol Obsidian de nivel superior do teu iCloud Drive.
 
 [interface.start-screen.mobile.i-cloud-unsupported]
 original=iCloud not supported
@@ -3232,7 +3232,7 @@ translation=iCloud non compatible
 
 [interface.start-screen.mobile.i-cloud-unsupported-desc]
 original=iCloud syncing is only available on Apple devices. If your vault is currently syncing via iCloud, learn how to migrate your vault to a different sync service.
-translation=A sincronización de iCloud só está dispoñible en dispositivos Apple. Se a túa bóveda se está sincronizando actualmente a través de iCloud, aprende a migrar a túa bóveda a un servizo de sincronización diferente.
+translation=A sincronización de iCloud só está dispoñible en dispositivos Apple. Se o teu almacén se está sincronizando actualmente a través de iCloud, aprende a migrar o teu almacén a un servizo de sincronización diferente.
 
 [interface.start-screen.mobile.allow-file-access]
 original=Allow file access
@@ -3244,7 +3244,7 @@ translation=Iniciando a túa sesión...
 
 [interface.start-screen.mobile.msg-name-required]
 original=Vault name is required
-translation=O nome da bóveda é obrigatorio
+translation=O nome do almacén é obrigatorio
 
 [interface.start-screen.mobile.msg-new-email-success]
 original=New confirmation email sent.
@@ -3256,7 +3256,7 @@ translation=Erro ao reenviar o correo electrónico.
 
 [interface.start-screen.mobile.msg-invalid-vault]
 original=Vault location must be a folder.
-translation=A localización da bóveda debe ser un cartafol.
+translation=A localización do almacén debe ser un cartafol.
 
 [interface.starter-content.welcome-filename]
 original=Welcome
@@ -3264,19 +3264,19 @@ translation=Benvido
 
 [interface.starter-content.welcome-file-content]
 original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Esta é a túa nova *bóveda*.\n\nToma nota de algo, [[crea unha ligazon]], ou proba [o Importador](https://help.obsidian.md/Plugins/Importer)!\n\nCando esteas listo, elimina esta nota e fai a bóveda túa.
+translation=Este é o teu novo *almacén*.\n\nToma nota de algo, [[crea unha ligazón]], ou proba [o Importador](https://help.obsidian.md/Plugins/Importer)!\n\nCando esteas listo, elimina esta nota e fai o almacén teu.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
-translation=Inserir ligazon aquí
+translation=Inserir ligazón aquí
 
 [interface.drag-and-drop.insert-links-here]
 original=Insert links here
-translation=Inserir ligazons aquí
+translation=Inserir ligazóns aquí
 
 [interface.drag-and-drop.move-into-folder]
 original=Move into “{{folder}}”
-translation=Move into "{{folder}}"
+translation=Mover ó cartafol "{{folder}}"
 
 [interface.drag-and-drop.star-this-file]
 original=Star this file
@@ -3288,11 +3288,11 @@ translation=Destacar estes ficheiros
 
 [interface.drag-and-drop.open-in-this-tab]
 original=Open in this tab
-translation=Abrir nesta pestana
+translation=Abrir nesta lapela
 
 [interface.drag-and-drop.open-as-tab]
 original=Open as new tab
-translation=Abrir como nova pestana
+translation=Abrir como nova lapela
 
 [interface.window.maximize]
 original=Maximize
@@ -3332,11 +3332,11 @@ translation=Recargar a aplicación
 
 [interface.start-up.button-reload-app-in-safe-mode]
 original=Reload app in Restricted Mode
-translation=Reload app in safe mode
+translation=Recargar a aplicación en modo restrinxido
 
 [interface.start-up.button-open-another-vault]
 original=Open another vault
-translation=Abrir outra bóveda
+translation=Abrir outro almacén
 
 [interface.start-up.loading-plugins]
 original=Loading plugins...
@@ -3348,11 +3348,11 @@ translation=O complemento “{{plugin}}” está tardando moito en cargar.
 
 [interface.start-up.loading-vault]
 original=Loading vault...
-translation=Cargando a bóveda...
+translation=Cargando o almacén...
 
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
-translation=Erro ao cargar a bóveda: 
+translation=Erro ao cargar o almacén: 
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -3364,7 +3364,7 @@ translation=Cargando o espazo de traballo...
 
 [interface.mobile.action-import]
 original=Import into vault
-translation=Importar á bóveda
+translation=Importar o almacén
 
 [interface.mobile.action-insert-text-desc]
 original=Add text to file:
@@ -3376,15 +3376,15 @@ translation=Escoller un ficheiro...
 
 [interface.mobile.action-insert-text-into-file]
 original={{filename}}
-translation=Insert text into {{filename}}
+translation={{filename}}
 
 [interface.mobile.action-insert-link-into-file]
 original=Insert link into “{{filename}}”
-translation=Insert link into {{filename}}
+translation=Inserir ligazón en "{{filename}}"
 
 [interface.mobile.action-show-switcher]
 original=Show tab overview
-translation=Mostrar vista xeral das pestanas
+translation=Mostrar vista xeral das lapelas
 
 [interface.mobile.msg-importing]
 original=Importing...
@@ -3396,7 +3396,7 @@ translation=Importación correcta
 
 [interface.mobile.msg-failed-to-import-file]
 original=Failed to import file “{{filename}}”
-translation=Failed to import file {{filename}}
+translation=Fallou a importación do ficheiro "{{filename}}"
 
 [interface.mobile.msg-back-again-to-exit]
 original=Press back again to exit.
@@ -3420,7 +3420,7 @@ translation=Ignorar
 
 [interface.mobile.icloud-startup.msg-reload-needed]
 original=Configuration files updated from iCloud, reload required
-translation=Os ficheiros de configuración actualizAronse desde iCloud, é necesario recargar
+translation=Os ficheiros de configuración actualizáronse desde iCloud, é necesario recargar
 
 [interface.mobile.icloud-startup.action-reload]
 original=Reload
@@ -3460,7 +3460,7 @@ translation=Axudádevos, publicade solicitudes de funcionalidades, informade de 
 
 [interface.help-screen.label-sandbox-vault]
 original=Sandbox vault
-translation=Bóveda de probas
+translation=Almacén de probas
 
 [interface.help-screen.label-sandbox-vault-desc]
 original=Play around and experiment with various features. Please note your changes will not be saved.
@@ -3476,35 +3476,35 @@ translation=Descargar os anexos do ficheiro actual
 
 [commands.follow-cursor-link]
 original=Follow link under cursor
-translation=Seguir a ligazon baixo o cursor
+translation=Seguir a ligazón baixo o cursor
 
 [commands.open-cursor-link-in-new-tab]
 original=Open link under cursor in new tab
-translation=Abrir a ligazon baixo o cursor nunha nova pestana
+translation=Abrir a ligazón baixo o cursor nunha nova lapela
 
 [commands.open-cursor-link-to-the-right]
 original=Open link under cursor to the right
-translation=Abrir a ligazon baixo o cursor á dereita
+translation=Abrir a ligazón baixo o cursor á dereita
 
 [commands.open-cursor-link-in-new-window]
 original=Open link under cursor in new window
-translation=Abrir a ligazon baixo o cursor nunha nova xanela
+translation=Abrir a ligazón baixo o cursor nunha nova xanela
 
 [commands.navigate-tab-above]
 original=Focus on tab group above
-translation=Enfocar no grupo de pestanas de arriba
+translation=Enfocar no grupo de lapelas de arriba
 
 [commands.navigate-tab-below]
 original=Focus on tab group below
-translation=Enfocar no grupo de pestanas de abaixo
+translation=Enfocar no grupo de lapelas de abaixo
 
 [commands.navigate-tab-left]
 original=Focus on tab group to the left
-translation=Enfocar no grupo de pestanas á esquerda
+translation=Enfocar no grupo de lapelas á esquerda
 
 [commands.navigate-tab-right]
 original=Focus on tab group to the right
-translation=Enfocar no grupo de pestanas á dereita
+translation=Enfocar no grupo de lapelas á dereita
 
 [commands.toggle-pin]
 original=Toggle pin
@@ -3520,7 +3520,7 @@ translation=Dividir abaixo
 
 [commands.toggle-stacked-tabs]
 original=Toggle stacked tabs
-translation=Activar/desactivar pestanas apiladas
+translation=Activar/desactivar lapelas apiladas
 
 [commands.toggle-readable-line-length]
 original=Toggle readable line length
@@ -3548,15 +3548,15 @@ translation=Cambiar tema...
 
 [commands.change-vault]
 original=Change vault...
-translation=Cambiar de bóveda...
+translation=Cambiar de almacén...
 
 [commands.open-vault]
 original=Open vault...
-translation=Abrir bóveda...
+translation=Abrir almacén...
 
 [commands.manage-vaults]
 original=Manage vaults
-translation=Xestionar bóvedas
+translation=Xestionar almacéns
 
 [commands.search-current-file]
 original=Search current file
@@ -3608,7 +3608,7 @@ translation=Eliminar o ficheiro actual
 
 [commands.new-tab]
 original=New tab
-translation=Nova pestana
+translation=Nova lapela
 
 [commands.new-window]
 original=New window
@@ -3620,23 +3620,23 @@ translation=Mostrar a papeleira
 
 [commands.close-all-tabs]
 original=Close all tabs
-translation=Pechar todas as pestanas
+translation=Pechar todas as lapelas
 
 [commands.close-active-tab]
 original=Close current tab
-translation=Pechar a pestana actual
+translation=Pechar a lapela actual
 
 [commands.close-others-in-tab-group]
 original=Close others in tab group
-translation=Pechar as demáis no grupo de pestanas
+translation=Pechar as demáis no grupo de lapelas
 
 [commands.close-other-tabs]
 original=Close all other tabs
-translation=Pechar todas as demáis pestanas
+translation=Pechar todas as demáis lapelas
 
 [commands.close-tab-group]
 original=Close this tab group
-translation=Pechar este grupo de pestanas
+translation=Pechar este grupo de lapelas
 
 [commands.toggle-left-sidebar]
 original=Toggle left sidebar
@@ -3652,7 +3652,7 @@ translation=Activar/desactivar a barra lateral dereita
 
 [commands.toggle-default-new-tab-mode]
 original=Toggle default mode for new tabs
-translation=Alternar o modo por defecto para novas pestanas
+translation=Alternar o modo por defecto para novas lapelas
 
 [commands.add-cursor-above]
 original=Add cursor above
@@ -3664,15 +3664,15 @@ translation=Engadir cursor abaixo
 
 [commands.focus-editor]
 original=Focus on last note
-translation=Focus on editor
+translation=Enfocar na última nota
 
 [commands.toggle-fold-properties]
 original=Toggle fold properties in current file
-translation=Activar/desactivar as propiedades de plegado no ficheiro actual
+translation=Activar/desactivar as propiedades de pregado no ficheiro actual
 
 [commands.toggle-fold]
 original=Toggle fold on the current line
-translation=Activar/desactivar o plegado na liña actual
+translation=Activar/desactivar o pregado na liña actual
 
 [commands.fold-all]
 original=Fold all headings and lists
@@ -3692,11 +3692,11 @@ translation=Pregar menos
 
 [commands.swap-line-up]
 original=Move line up
-translation=Swap line up
+translation=Mover liña arriba
 
 [commands.swap-line-down]
 original=Move line down
-translation=Swap line down
+translation=Mover liña abaixo
 
 [commands.remove-heading]
 original=Remove heading
@@ -3708,19 +3708,19 @@ translation=Establecer como título {{level}}
 
 [commands.toggle-bold]
 original=Toggle bold
-translation=Toggle bold for selection
+translation=Alternar negriña
 
 [commands.toggle-italics]
 original=Toggle italic
-translation=Toggle italics for selection
+translation=Alternar cursiva
 
 [commands.toggle-highlight]
 original=Toggle highlight
-translation=Toggle highlight for selection
+translation=Alternar realzado
 
 [commands.toggle-comments]
 original=Toggle comment
-translation=Toggle comments for selection
+translation=Alternar comentarios
 
 [commands.clear-formatting]
 original=Clear formatting
@@ -3728,7 +3728,7 @@ translation=Limpar o formato
 
 [commands.insert-link]
 original=Insert Markdown link
-translation=Insert link
+translation=Inserir ligazón Markdown
 
 [commands.toggle-spellcheck]
 original=Toggle spellcheck
@@ -3772,11 +3772,11 @@ translation=Inserir nota ao pé
 
 [commands.edit-file-title]
 original=Rename file
-translation=Edit file title
+translation=Renomear ficheiro
 
 [commands.copy-path]
 original=Copy current file path from vault folder
-translation=Copiar a ruta do ficheiro actual dende o cartafol da bóveda
+translation=Copiar a ruta do ficheiro actual dende o cartafol do almacén
 
 [commands.copy-full-path]
 original=Copy current file path from system root
@@ -3796,7 +3796,7 @@ translation=Recargar a aplicación sen gardar
 
 [commands.undo-close-tab]
 original=Undo close tab
-translation=Desfacer o peche da pestana
+translation=Desfacer o peche da lapela
 
 [commands.context-menu]
 original=Show context menu under cursor
@@ -3808,7 +3808,7 @@ translation=Mostrar información de depuración
 
 [commands.open-sandbox-vault]
 original=Open sandbox vault
-translation=Abrir a bóveda de probas
+translation=Abrir o almacén de probas
 
 [commands.always-on-top]
 original=Toggle window always on top
@@ -3828,15 +3828,15 @@ translation=Restablecer o zoom
 
 [commands.toggle-preview]
 original=Toggle reading view
-translation=Toggle edit/preview mode
+translation=Alternar vista de lectura
 
 [commands.move-to-new-window]
 original=Move current tab to new window
-translation=Move current pane to new window
+translation=Mover lapela actual a unha nova xanela
 
 [commands.open-in-new-window]
 original=Open current tab in new window
-translation=Open current pane in new window
+translation=Abrir a lapela actual nunha nova xanela
 
 [commands.rename-current-file]
 original=Rename current file
@@ -3844,19 +3844,19 @@ translation=Renomear o ficheiro actual
 
 [commands.go-to-prev-tab]
 original=Go to previous tab
-translation=Ir á pestana anterior
+translation=Ir á lapela anterior
 
 [commands.go-to-next-tab]
 original=Go to next tab
-translation=Ir á pestana seguinte
+translation=Ir á lapela seguinte
 
 [commands.go-to-last-tab]
 original=Go to last tab
-translation=Ir á última pestana
+translation=Ir á última lapela
 
 [commands.go-to-nth-tab]
 original=Go to tab #{{n}}
-translation=Ir á pestana #{{n}}
+translation=Ir á lapela #{{n}}
 
 [commands.show-release-notes]
 original=Show release notes
@@ -3872,11 +3872,11 @@ translation=Actualizadas {{links}} en {{files}}.
 
 [dialogue.label-update-links]
 original=Update links
-translation=Actualizar ligazons
+translation=Actualizar ligazóns
 
 [dialogue.label-confirm-update-link-to-file]
 original=Do you want to update internal links that link to this file?
-translation=Queres actualizar as ligazons internas que apuntan a este ficheiro?
+translation=Queres actualizar as ligazóns internas que apuntan a este ficheiro?
 
 [dialogue.button-always-update]
 original=Always update
@@ -3892,11 +3892,11 @@ translation=Non actualizar
 
 [dialogue.label-confirm-deletion]
 original=Are you sure you want to delete “{{filename}}”?
-translation=Are you sure you want to delete "{{filename}}"?
+translation=Seguro que desexas eliminar "{{filename}}"?
 
 [dialogue.label-move-to-system-trash]
 original=It will be moved to your system trash.
-translation=Moveráse á papeleira do sistema.
+translation=Moverase á papeleira do sistema.
 
 [dialogue.label-move-to-vault-trash]
 original=It will be moved to your Obsidian trash, which is located in the “.trash” hidden folder in your vault.
@@ -4044,7 +4044,7 @@ translation=Preparando o PDF...
 
 [dialogue.label-rename-file]
 original=Note title
-translation=Rename file
+translation=Título da nota
 
 [dialogue.label-rename-file-generic]
 original=File name
@@ -4076,7 +4076,7 @@ translation=O ficheiro ou cartafol “{{path}}” non existe.
 
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
-translation=O título non pode estar baleiro
+translation=O encabezado non pode estar baleiro
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4124,7 +4124,7 @@ translation=Nova nota á dereita
 
 [menu-items.new-tab]
 original=New Tab
-translation=Nova pestana
+translation=Nova lapela
 
 [menu-items.new-window]
 original=New Window
@@ -4132,15 +4132,15 @@ translation=Nova xanela
 
 [menu-items.open-switcher]
 original=Open Quickly...
-translation=Abrir rapidamente...
+translation=Abrir rápido...
 
 [menu-items.open-vault]
 original=Open Vault...
-translation=Abrir bóveda...
+translation=Abrir almacén...
 
 [menu-items.close-tab]
 original=Close Tab
-translation=Pechar pestana
+translation=Pechar lapela
 
 [menu-items.close-window]
 original=Close Window
@@ -4160,19 +4160,19 @@ translation=Aviso
 
 [menu-items.insert-markdown-link]
 original=Markdown Link
-translation=Ligazon Markdown
+translation=lLgazón Markdown
 
 [menu-items.insert-wikilink]
 original=Link
-translation=Ligazon
+translation=Ligazón
 
 [menu-items.set-heading]
 original=Heading {{level}}
-translation=Título {{level}}
+translation=Encabezado {{level}}
 
 [menu-items.no-heading]
 original=Body
-translation=No Heading
+translation=Corpo
 
 [menu-items.insert-quote]
 original=Quote
@@ -4224,7 +4224,7 @@ translation=Lista de tarefas
 
 [menu-items.toggle-bold]
 original=Bold
-translation=Negrita
+translation=Negriña
 
 [menu-items.toggle-code]
 original=Code
@@ -4244,11 +4244,11 @@ translation=Matemáticas
 
 [menu-items.toggle-highlight]
 original=Highlight
-translation=Resaltado
+translation=Realzado
 
 [menu-items.toggle-strikethrough]
 original=Strikethrough
-translation=Tachado
+translation=Riscado
 
 [menu-items.toggle-comments]
 original=Comment
@@ -4256,7 +4256,7 @@ translation=Comentario
 
 [menu-items.folding-menu]
 original=Folding
-translation=Plegado
+translation=Pregado
 
 [menu-items.fold-all]
 original=Fold All
@@ -4288,7 +4288,7 @@ translation=Mostrar información de depuración
 
 [menu-items.open-sandbox]
 original=Open Sandbox Vault
-translation=Abrir a bóveda de probas
+translation=Abrir o almacén de probas
 
 [menu-items.move-to-new-window]
 original=Move To New Window
@@ -4304,11 +4304,11 @@ translation=Navegar adiante
 
 [menu-items.toggle-left-sidebar]
 original=Left Sidebar
-translation=Toggle Left Sidebar
+translation=Barra lateral esquerda
 
 [menu-items.toggle-right-sidebar]
 original=Right Sidebar
-translation=Toggle Right Sidebar
+translation=Bara lateral dereita
 
 [menu-items.toggle-ribbon]
 original=Ribbon
@@ -4332,11 +4332,11 @@ translation=Complementos
 
 [plugins.file-explorer.name]
 original=Files
-translation=File explorer
+translation=Ficheiros
 
 [plugins.file-explorer.desc]
 original=Browse the files and folders in your vault.
-translation=See all the files in your vault.
+translation=Explora os ficheiros e carpetas do teu almacén.
 
 [plugins.file-explorer.action-open]
 original=Open file explorer
@@ -4356,7 +4356,7 @@ translation=Crear novo cartafol
 
 [plugins.file-explorer.action-create-note-in-current-tab]
 original=Create new note in current tab
-translation=Crear nova nota na pestana actual
+translation=Crear nova nota na lapela actual
 
 [plugins.file-explorer.action-create-note-to-the-right]
 original=Create note to the right
@@ -4388,11 +4388,11 @@ translation=Cambiar a orde de clasificación
 
 [plugins.file-explorer.action-reveal-file]
 original=Reveal file in navigation
-translation=Reveal file in file explorer
+translation=Mostrar ficheiro no navegador
 
 [plugins.file-explorer.action-reveal-active-file]
 original=Reveal current file in navigation
-translation=Reveal active file in file explorer
+translation=Mostrar o ficheiro actual no navegador
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
@@ -4404,7 +4404,7 @@ translation=Duplicar o ficheiro actual
 
 [plugins.file-explorer.command-move-file]
 original=Move current file to another folder
-translation=Move file to another folder
+translation=Mover o ficheiro actual a outro cartafol
 
 [plugins.file-explorer.action-new-folder-with-count]
 original=New folder with selection ({{count}} item)
@@ -4432,7 +4432,7 @@ translation=Escribe un cartafol
 
 [plugins.file-explorer.label-no-folders]
 original=No existing folders found.
-translation=No folders found.
+translation=Non se atoparon cartafois existentes.
 
 [plugins.file-explorer.instruction-navigate]
 original=to navigate
@@ -4452,19 +4452,19 @@ translation=para pechar
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
-translation=Sort by file name (A to Z)
+translation=Nome de ficheiro (A a Z)
 
 [plugins.file-explorer.label-sort-z-to-a]
 original=File name (Z to A)
-translation=Sort by file name (Z to A)
+translation=Nome de ficheiro (Z a A)
 
 [plugins.file-explorer.label-sort-new-to-old]
 original=Modified time (new to old)
-translation=Sort by edit time (new to old)
+translation=Data de modificación (novo a vello)
 
 [plugins.file-explorer.label-sort-old-to-new]
 original=Modified time (old to new)
-translation=Sort by edit time (old to new)
+translation=Data de modificación (vello a novo)
 
 [plugins.file-explorer.label-sort-created-old-to-new]
 original=Created time (old to new)
@@ -4504,7 +4504,7 @@ translation=O nome do ficheiro non pode conter ningún dos seguintes caracteres:
 
 [plugins.file-explorer.msg-unsafe-characters]
 original=Links will not work with file names containing any of these characters: 
-translation=As ligazons non funcionarán con nomes de ficheiro que conteñan algures destes caracteres: 
+translation=As ligazóns non funcionarán con nomes de ficheiro que conteñan algures destes caracteres: 
 
 [plugins.file-explorer.msg-file-already-exists]
 original=There's already a file with the same name
@@ -4536,7 +4536,7 @@ translation=Sen título
 
 [plugins.file-explorer.msg-set-attachment-folder]
 original=Attachments will be saved to “{{path}}” from now on.
-translation=Attachments will be saved to "{{path}}" from now on.
+translation=Os anexos salvaranse en "{{path}}" dende agora.
 
 [plugins.search.name]
 original=Search
@@ -4544,7 +4544,7 @@ translation=Buscar
 
 [plugins.search.desc]
 original=Search for a keyword in all the notes.
-translation=Search for keyword in all the notes.
+translation=Buscar palabra clave en tódalas notas.
 
 [plugins.search.action-open-search]
 original=Search in all files
@@ -4560,7 +4560,7 @@ translation=Distinguir maiúsculas e minúsculas
 
 [plugins.search.label-explain-search-term]
 original=Explain search terms
-translation=Explain search term
+translation=Explicar termo de busca
 
 [plugins.search.label-more-context]
 original=Show more context
@@ -4580,7 +4580,7 @@ translation=Axustes de busca
 
 [plugins.search.prompt-start-search]
 original=Search...
-translation=Type to start search...
+translation=Buscar...
 
 [plugins.search.label-match-text]
 original=Matches text: 
@@ -4712,11 +4712,11 @@ translation=Mostra a ruta completa do ficheiro en lugar de só o nome do ficheir
 
 [plugins.search.option-link-style]
 original=Link style
-translation=Estilo de ligazon
+translation=Estilo de ligazón
 
 [plugins.search.option-link-style-description]
 original=Optionally turn each file result in to a link.
-translation=Opcionalmente converte cada resultado de ficheiro nunha ligazon.
+translation=Opcionalmente converte cada resultado de ficheiro nunha ligazón.
 
 [plugins.search.option-choice-link-style-none]
 original=None
@@ -4728,7 +4728,7 @@ translation=Wikilink
 
 [plugins.search.option-choice-link-style-markdown-link]
 original=Markdown link
-translation=Ligazon Markdown
+translation=ligazón Markdown
 
 [plugins.search.option-list-prefix]
 original=List prefix
@@ -4808,7 +4808,7 @@ translation=coincidir coa propiedade
 
 [plugins.search.menu-opt-search-for]
 original=Search for “{{keyword}}”
-translation=Search for "{{keyword}}"
+translation=Buscar por "{{keyword}}"
 
 [plugins.search.menu-opt-search-in-folder]
 original=Search in folder
@@ -4820,7 +4820,7 @@ translation=Selector rápido
 
 [plugins.quick-switcher.desc]
 original=Jump to other files with your keyboard.
-translation=Jump to any files without leaving your keyboard. Ctrl/Cmd+O to activate.
+translation=Saltar a outros ficheiros co teclado.
 
 [plugins.quick-switcher.short-name]
 original=Switcher
@@ -4840,7 +4840,7 @@ translation=para abrir
 
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
-translation=para abrir nunha nova pestana
+translation=para abrir nunha nova lapela
 
 [plugins.quick-switcher.instruction-open-to-the-right]
 original=to open to the right
@@ -4864,7 +4864,7 @@ translation=Non se atoparon notas. Preme Intro para crear unha nova.
 
 [plugins.quick-switcher.prompt-type-file-name]
 original=Find or create a note...
-translation=Type file to switch to or create...
+translation=Busca ou crea unha nota...
 
 [plugins.quick-switcher.label-enter-to-create]
 original=Enter to create
@@ -4896,7 +4896,7 @@ translation=Mostrar todos os tipos de ficheiro
 
 [plugins.quick-switcher.option-show-all-file-types-desc]
 original=Show all files including ones that Obsidian can't open. The file will be opened with the default app for that file type.
-translation=Mostra todos os ficheiros incluídos os que Obsidian non pode abrir. O ficheiro abrirase coa aplicación por defecto para ese tipo de ficheiro.
+translation=Mostra tódolos ficheiros incluídos os que Obsidian non pode abrir. O ficheiro abrirase coa aplicación por defecto para ese tipo de ficheiro.
 
 [plugins.graph-view.name]
 original=Graph view
@@ -4908,11 +4908,11 @@ translation=Visualiza as relacións entre as túas notas.
 
 [plugins.graph-view.action-open]
 original=Open graph view
-translation=Abrir a vista de gráfico
+translation=Abrir a vista de grafo
 
 [plugins.graph-view.action-open-local]
 original=Open local graph
-translation=Abrir o gráfico local
+translation=Abrir o grafo local
 
 [plugins.graph-view.action-copy-screenshot]
 original=Copy screenshot
@@ -4936,11 +4936,11 @@ translation=Profundidade
 
 [plugins.graph-view.option-depth-description]
 original=Show nodes this number of links away
-translation=Mostrar nodos a este número de ligazons de distancia
+translation=Mostrar nodos a este número de ligazóns de distancia
 
 [plugins.graph-view.option-neighbor-links]
 original=Neighbor links
-translation=Ligazons veciñas
+translation=Ligazóns veciñas
 
 [plugins.graph-view.option-neighbor-links-description]
 original=Show links between neighbors
@@ -4948,19 +4948,19 @@ translation=Amosa as ligazóns entre veciños
 
 [plugins.graph-view.option-forelinks]
 original=Outgoing links
-translation=Ligazons de saída
+translation=Ligazóns de saída
 
 [plugins.graph-view.option-forelinks-description]
 original=Show links to other files
-translation=Mostrar ligazons a outros ficheiros
+translation=Mostrar ligazóns a outros ficheiros
 
 [plugins.graph-view.option-backlinks]
 original=Incoming links
-translation=Ligazons de entrada
+translation=Ligazóns de entrada
 
 [plugins.graph-view.option-backlinks-description]
 original=Show links from other files
-translation=Mostrar ligazons desde outros ficheiros
+translation=Mostrar ligazóns desde outros ficheiros
 
 [plugins.graph-view.option-show-tags]
 original=Tags
@@ -4976,7 +4976,7 @@ translation=Anexos
 
 [plugins.graph-view.option-show-attachments-description]
 original=Show attachments
-translation=Show attachments included by files
+translation=Mostrar anexos
 
 [plugins.graph-view.option-show-existing-files-only]
 original=Existing files only
@@ -4984,7 +4984,7 @@ translation=Só ficheiros existentes
 
 [plugins.graph-view.option-show-existing-files-only-description]
 original=When enabled, links to nonexistent files are not shown
-translation=Cando está activado, non se amosan as ligazóns a ficheiros que non existen
+translation=Cando estea activado, non se amosan as ligazóns a ficheiros que non existen
 
 [plugins.graph-view.option-show-orphans]
 original=Orphans
@@ -5028,7 +5028,7 @@ translation=Forza central
 
 [plugins.graph-view.option-link-force]
 original=Link force
-translation=Forza de enlace
+translation=Forza de ligazón
 
 [plugins.graph-view.option-link-distance]
 original=Link distance
@@ -5040,7 +5040,7 @@ translation=Forza de repulsión
 
 [plugins.graph-view.tooltip-open-graph-settings]
 original=Open graph settings
-translation=Abrir configuración do gráfico
+translation=Abrir configuración do grafo
 
 [plugins.graph-view.msg-screenshot-copied]
 original=Screenshot copied to the clipboard.
@@ -5068,7 +5068,7 @@ translation=Facer clic para cambiar a cor\nArrastrar para reordenar os grupos
 
 [plugins.graph-view.action-timelapse]
 original=Start graph timelapse animation
-translation=Iniciar animación de time-lapse do gráfico
+translation=Iniciar animación de time-lapse do grafo
 
 [plugins.graph-view.tooltip-start-timelapse-animation]
 original=Start timelapse animation
@@ -5084,7 +5084,7 @@ translation=Ligazóns cara atrás
 
 [plugins.backlinks.desc]
 original=Show links from other files to the current file. Backlinks can be shown in a separate view or at the bottom of the note.
-translation=Amosa as ligazóns desde outros ficheiros ao ficheiro actual. Os backlinks pódense amosar nunha lapela separada ou inseridos no documento.
+translation=Amosa as ligazóns desde outros ficheiros ao ficheiro actual. As ligazóns cara atrás pódense amosar nunha lapela separada ou inseridos no documento.
 
 [plugins.backlinks.action-open]
 original=Open backlinks
@@ -5092,11 +5092,11 @@ translation=Abrir ligazóns cara atrás
 
 [plugins.backlinks.action-show]
 original=Show backlinks
-translation=Show backlinks pane
+translation=Mostrar ligazóns cara atrás
 
 [plugins.backlinks.action-open-for-current]
 original=Open backlinks for the current note
-translation=Open backlinks for the current file
+translation=Mostrar ligazóns cara atrás para a nota actual
 
 [plugins.backlinks.action-toggle-backlinks-in-document]
 original=Toggle backlinks in document
@@ -5140,15 +5140,15 @@ translation=...
 
 [plugins.backlinks.option-backlink-in-document]
 original=Show backlinks at the bottom of notes
-translation=Backlink in document
+translation=Mostrar ligazóns cara atrás baixo as notas
 
 [plugins.backlinks.option-backlink-in-document-desc]
 original=Make backlinks visible in new tabs by default.
-translation=Amosa os backlinks no documento de forma predeterminada ao abrir novas lapelas.
+translation=Amosa as ligazóns cara atrás no documento de forma predeterminada ao abrir novas lapelas.
 
 [plugins.outgoing-links.name]
 original=Outgoing links
-translation=Outgoing Links
+translation=Ligazóns saíntes
 
 [plugins.outgoing-links.desc]
 original=Show outgoing links and detect unlinked mentions of other notes in the current note.
@@ -5160,7 +5160,7 @@ translation=Abrir ligazóns saíntes
 
 [plugins.outgoing-links.action-show]
 original=Show outgoing links
-translation=Show outgoing links pane
+translation=Mostrar ligazóns saíntes
 
 [plugins.outgoing-links.action-open-for-current]
 original=Open outgoing links for the current file
@@ -5192,7 +5192,7 @@ translation=Aínda non creado
 
 [plugins.tag-pane.name]
 original=Tags view
-translation=Tag pane
+translation=Vista de etiquetas
 
 [plugins.tag-pane.short-name]
 original=Tags
@@ -5200,11 +5200,11 @@ translation=Etiquetas
 
 [plugins.tag-pane.desc]
 original=Show a list of all tags and their number of occurrences.
-translation=Amosa a lista de todas as etiquetas e o número de ocorrencias de cada una.
+translation=Amosa a lista de tódalas etiquetas e o número de ocorrencias de cada unha.
 
 [plugins.tag-pane.action-show]
 original=Show tags
-translation=Show tag pane
+translation=Mostrar etiquetas
 
 [plugins.tag-pane.label-no-tags]
 original=No tags found.
@@ -5268,7 +5268,7 @@ translation=Amosa os metadatos dos teus ficheiros na barra lateral.
 
 [plugins.properties.name-global]
 original=All properties
-translation=Todas as propiedades
+translation=Tódalas propiedades
 
 [plugins.properties.name-local]
 original=File properties
@@ -5280,7 +5280,7 @@ translation=Propiedades do ficheiro para {{displayText}}
 
 [plugins.properties.action-show]
 original=Show all properties
-translation=Mostrar todas as propiedades
+translation=Mostrar tódalas propiedades
 
 [plugins.properties.action-show-local]
 original=Show file properties
@@ -5356,7 +5356,7 @@ translation=Vista previa da páxina
 
 [plugins.page-preview.desc]
 original=Hover an internal link to preview its content. In editor mode, press Ctrl/Cmd while hovering.
-translation=Preview a note when hovering an internal link. Ctrl/Cmd + hover in editor mode.
+translation=Mantente enriba dunha ligazón interna para previsualizar o seu contido. No modo de edicion, presiona Ctrl/Cmd namentres.
 
 [plugins.page-preview.label-empty-attachment]
 original=“{{linktext}}” could not be found.
@@ -5364,7 +5364,7 @@ translation=Non se atopou “{{linktext}}”.
 
 [plugins.page-preview.label-empty-note]
 original=“{{linktext}}” is not created yet. Click to create.
-translation="{{linktext}}" is not created yet. Click to create.
+translation="{{linktext}}" non existe aínda. Clica para crear.
 
 [plugins.page-preview.label-missing-footote]
 original=Footnote {{id}} not found. Click to create.
@@ -5372,11 +5372,11 @@ translation=Nota ao pé {{id}} non atopada. Fai clic para crear.
 
 [plugins.page-preview.label-source-editor]
 original=Editing view
-translation=Editor
+translation=Vista de edición
 
 [plugins.page-preview.label-source-preview]
 original=Reading view
-translation=Preview
+translation=Vista de lectura
 
 [plugins.page-preview.label-source-search]
 original=Search, Backlinks, and Outgoing links
@@ -5384,7 +5384,7 @@ translation=Busca, ligazóns cara atrás e ligazóns saíntes
 
 [plugins.page-preview.label-source-tab-header]
 original=Tab header
-translation=Cabeceira da pestaña
+translation=Cabeceira da lapela
 
 [plugins.page-preview.label-require-mod]
 original=Require {{key}} to trigger page preview on hover
@@ -5396,7 +5396,7 @@ translation=Marcadores
 
 [plugins.bookmarks.desc]
 original=Save shortcuts to files, searches, headings, and graphs.
-translation=Bookmark frequently used files and searches.
+translation=Salva atallos a ficheiros, buscas, encabezados e grafos.
 
 [plugins.bookmarks.action-show]
 original=Show bookmarks
@@ -5408,11 +5408,11 @@ translation=Contraer todo
 
 [plugins.bookmarks.action-new-bookmark]
 original=Bookmark the active tab...
-translation=Marcar a pestaña activa...
+translation=Marcar a lapela activa...
 
 [plugins.bookmarks.action-new-group]
 original=New group
-translation=New bookmark group
+translation=Novo grupo
 
 [plugins.bookmarks.action-bookmark]
 original=Bookmark...
@@ -5440,23 +5440,23 @@ translation=Marcar busca actual...
 
 [plugins.bookmarks.action-remove-bookmark]
 original=Remove bookmark for the current file
-translation=Remove bookmark for current file
+translation=Eliminar marcador ó ficheiro actual
 
 [plugins.bookmarks.action-bookmark-tab-group]
 original=Bookmark {{count}} tab...
-translation=Marcar {{count}} pestaña...
+translation=Marcar {{count}} lapela...
 
 [plugins.bookmarks.action-bookmark-tab-group_plural]
 original=Bookmark {{count}} tabs...
-translation=Marcar {{count}} pestañas...
+translation=Marcar {{count}} lapelas...
 
 [plugins.bookmarks.action-bookmark-all-tabs]
 original=Bookmark all tabs...
-translation=Marcar todas as pestañas...
+translation=Marcar todas as lapelas...
 
 [plugins.bookmarks.action-bookmark-graph]
 original=Bookmark this graph...
-translation=Marcar este gráfico...
+translation=Marcar este grafo...
 
 [plugins.bookmarks.label-bookmark]
 original=Bookmark
@@ -5492,7 +5492,7 @@ translation=Grupo sen título
 
 [plugins.bookmarks.label-untitled-graph]
 original=Untitled Graph
-translation=Gráfico sen título
+translation=Grafo sen título
 
 [plugins.bookmarks.menu-opt-edit]
 original=Edit...
@@ -5568,7 +5568,7 @@ translation=Só temas claros
 
 [plugins.custom-css.label-use]
 original=Use this theme
-translation=Use
+translation=Usar este tema
 
 [plugins.custom-css.label-stop-use]
 original=Stop using this theme
@@ -5600,7 +5600,7 @@ translation=Non foi posible cargar os temas da comunidade, comproba a túa rede.
 
 [plugins.custom-css.msg-now-using-theme]
 original=You're now using {{title}} as your CSS theme.
-translation=Agora estás usando {{title}} como tema CSS.
+translation=Agora estás a usar {{title}} como tema CSS.
 
 [plugins.custom-css.msg-deleted-theme]
 original=The theme {{title}} has been deleted.
@@ -5640,15 +5640,15 @@ translation=Atopáronse {{count}} temas para actualizar.
 
 [plugins.custom-css.msg-failed-to-install-theme]
 original=Failed to install theme “{{name}}”.
-translation=Failed to install theme "{{name}}".
+translation=Non se puido instalar o tema "{{name}}".
 
 [plugins.custom-css.msg-successfully-installed-theme]
 original=Successfully installed theme “{{name}}”.
-translation=Successfully installed theme "{{name}}".
+translation=O tema "{{name}}" instalouse correctamente.
 
 [plugins.custom-css.msg-installing-theme]
 original=Installing theme “{{name}}”...
-translation=Installing theme "{{name}}"...
+translation=Instalando tema "{{name}}"...
 
 [plugins.custom-css.label-search-summary]
 original=Showing {{themeCount}}
@@ -5688,7 +5688,7 @@ translation=Non se atoparon comandos.
 
 [plugins.command-palette.prompt-type-command]
 original=Select a command to add...
-translation=Type a command...
+translation=Selecciona un comando para engadir...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -5696,7 +5696,7 @@ translation=Comandos fixados
 
 [plugins.markdown-format-importer.name]
 original=Format converter
-translation=Markdown format importer
+translation=Conversor de formato
 
 [plugins.markdown-format-importer.desc]
 original=Convert Markdown from other apps to Obsidian format.
@@ -5712,7 +5712,7 @@ translation=Corrector de etiquetas Roam Research
 
 [plugins.markdown-format-importer.option-roam-tag-fixer-description]
 original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converts "#tag" and "#[[tag]]" to "[[tag]]".
+translation=Converte "#tag" e "#[[tag]]" a "[[tag]]".
 
 [plugins.markdown-format-importer.option-roam-highlight-fixer]
 original=Roam Research highlight fixer
@@ -5720,7 +5720,7 @@ translation=Corrector de resaltados Roam Research
 
 [plugins.markdown-format-importer.option-roam-highlight-fixer-description]
 original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converts "^^highlight^^" to "==highlight==".
+translation=Converte "^^highlight^^" a "==highlight==".
 
 [plugins.markdown-format-importer.option-roam-todo-converter]
 original=Roam Research TODO converter
@@ -5728,7 +5728,7 @@ translation=Conversor de TODO de Roam Research
 
 [plugins.markdown-format-importer.option-roam-todo-converter-description]
 original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converts "{{[[TODO]]}}" to "[ ]".
+translation=Converte "{{[[TODO]]}}" a "[ ]".
 
 [plugins.markdown-format-importer.option-bear-highlight-fixer]
 original=Bear highlight fixer
@@ -5744,7 +5744,7 @@ translation=Corrector de ligazóns Zettelkasten
 
 [plugins.markdown-format-importer.zettelkasten-link-fixer-description]
 original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Fixes "[[UID]]" links to full "[[UID File Name]]".
+translation=Arranxa ligazóns "[[UID]]" a "[[UID File Name]]" enteiros.
 
 [plugins.markdown-format-importer.zettelkasten-link-beautifier]
 original=Zettelkasten link beautifier
@@ -5752,7 +5752,7 @@ translation=Embellecedor de ligazóns Zettelkasten
 
 [plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
 original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Fixes "[[UID]]" links and also beautify them "[[UID File Name|File Name]]".
+translation=Arranxa ligazóns "[[UID]]" e os mellora a "[[UID File Name|File Name]]".
 
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
@@ -5772,7 +5772,7 @@ translation=Os teus ficheiros serán sobrescritos. Fai unha copia de seguridade 
 
 [plugins.markdown-format-importer.label-start-conversion]
 original=Start conversion
-translation=Start Conversion
+translation=Comezar conversión
 
 [plugins.markdown-format-importer.label-stop]
 original=Stop
@@ -5780,7 +5780,7 @@ translation=Deter
 
 [plugins.markdown-format-importer.label-go-back]
 original=Go back
-translation=Volver
+translation=Voltar
 
 [plugins.markdown-format-importer.label-done]
 original=Done
@@ -5808,7 +5808,7 @@ translation=Ficheiros modificados
 
 [plugins.markdown-format-importer.label-total-replacements]
 original=Total replacements
-translation=Total de substituìións
+translation=Total de substitucións
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -5820,7 +5820,7 @@ translation=Notas diarias
 
 [plugins.daily-notes.desc]
 original=Create or open today's daily note.
-translation=Open today's daily note, or create one if not present.
+translation=Crea ou abre a nota diaria de hoxe.
 
 [plugins.daily-notes.short-name]
 original=Today
@@ -5840,7 +5840,7 @@ translation=Abrir a seguinte nota diaria
 
 [plugins.daily-notes.action-insert-text]
 original=Today's daily note
-translation=Insert text into daily note
+translation=Nota diaria de hoxe
 
 [plugins.daily-notes.action-insert-link]
 original=Insert link into daily note
@@ -5848,15 +5848,15 @@ translation=Inserir ligazón na nota diaria
 
 [plugins.daily-notes.msg-fail-format]
 original=Failed to create daily note. “{{format}}” is not a valid format.
-translation=Failed to create daily note. "{{format}}" is not a valid format.
+translation=Fallou a creación da nota diaria. "{{format}}" non é un formato válido.
 
 [plugins.daily-notes.msg-fail-folder]
 original=Failed to create daily note. Folder “{{folderOption}}” not found.
-translation=Failed to create daily note. Folder "{{folderOption}}" not found.
+translation=Fallou a creación da nota diaria. Cartafol "{{folderOption}}" non atopado.
 
 [plugins.daily-notes.msg-fail-template-file]
 original=Failed to create daily note. Template file “{{template}}” not found.
-translation=Failed to create daily note. Template file "{{template}}" not found.
+translation=Fallou a creación da nota diaria. Modelo "{{template}}" non atopado.
 
 [plugins.daily-notes.msg-no-previous]
 original=There's no daily note before this one.
@@ -5916,7 +5916,7 @@ translation=Localización do ficheiro de modelo
 
 [plugins.daily-notes.option-template-description]
 original=Choose the file to use as a template.
-translation=The file path to use as template.
+translation=Elixe o ficheiro a usar como modelo.
 
 [plugins.unique-note-creator.name]
 original=Unique note creator
@@ -5952,7 +5952,7 @@ translation=A ruta do cartafol onde crear a nova nota única.
 
 [plugins.unique-note-creator.msg-folder-not-found]
 original=Failed to create unique note. Folder “{{folderOption}}” not found.
-translation=Failed to create unique note. Folder "{{folderOption}}" not found.
+translation=Fallou a creación da nota única. Cartafol "{{folderOption}}" non atopado.
 
 [plugins.unique-note-creator.option-template-file]
 original=Template file location
@@ -5972,11 +5972,11 @@ translation=Formato de prefixo único
 
 [plugins.unique-note-creator.msg-template-file-not-found]
 original=Failed to create unique note. Template file “{{template}}” not found.
-translation=Failed to create unique note. Template file "{{template}}" not found.
+translation=Fallou a creación da nota única. Modelo "{{template}}" non atopado.
 
 [plugins.unique-note-creator.msg-failed-to-generate]
 original=Failed to generate a unique note with the format “{{format}}”
-translation=Failed to generate a unique note with the format "{{format}}
+translation=Fallou a creación da nota única co formato "{{format}}
 
 [plugins.random-note.name]
 original=Random note
@@ -5984,7 +5984,7 @@ translation=Nota aleatoria
 
 [plugins.random-note.desc]
 original=Open a random note to rediscover or review.
-translation=Opens a random note. Useful for reviewing and discovering.
+translation=Abre unha nota aleatoria para revisar ou redescubrir.
 
 [plugins.random-note.short-name]
 original=Random
@@ -6008,7 +6008,7 @@ translation=Abrir esquema
 
 [plugins.outline.action-show]
 original=Show outline
-translation=Show outline pane
+translation=Mostrar esquema
 
 [plugins.outline.action-open-for-current]
 original=Open outline of the current file
@@ -6040,7 +6040,7 @@ translation=Diapositivas
 
 [plugins.slides.desc]
 original=Create a presentation by using “---” to separate slides.
-translation=Present from Markdown. Use "---" to separate slides.
+translation=Crear unha presentación usando "---" para separar diapositivas.
 
 [plugins.slides.action-start]
 original=Start presentation
@@ -6052,7 +6052,7 @@ translation=Gravador de audio
 
 [plugins.audio-recorder.desc]
 original=Record audio notes and save them as attachments.
-translation=Record audio and save as attachment.
+translation=Gravar notas de audio e gardalas como anexos.
 
 [plugins.audio-recorder.action-start]
 original=Start recording audio
@@ -6096,7 +6096,7 @@ translation=Compartir
 
 [plugins.open-with-default-app.action-show-in-folder]
 original=Show in system explorer
-translation=Show in folder
+translation=Mostrar no explorador do sistema
 
 [plugins.open-with-default-app.action-show-in-folder-mac]
 original=Reveal in Finder
@@ -6108,7 +6108,7 @@ translation=Modelos
 
 [plugins.templates.desc]
 original=Insert template content from a folder of template files.
-translation=Inserir contido de modelo dunha carpeta de ficheiros de modelo.
+translation=Inserir contido do modelo dun cartafol de ficheiros de modelo.
 
 [plugins.templates.action-insert]
 original=Insert template
@@ -6124,7 +6124,7 @@ translation=Inserir hora actual
 
 [plugins.templates.option-template-folder-location]
 original=Template folder location
-translation=Localización da carpeta de modelos
+translation=Localización do cartafol de modelos
 
 [plugins.templates.option-template-folder-location-description]
 original=Files in this folder will be available as templates.
@@ -6176,7 +6176,7 @@ translation=Non foi posible listar os modelos. O cartafol de modelos non é vál
 
 [plugins.templates.msg-fail-folder-not-found]
 original=Failed to list templates. Folder “{{folderOption}}” not found.
-translation=Failed to list templates. Folder "{{folderOption}}" not found.
+translation=Fallou a listaxe de modelos. Cartafol "{{folderOption}}" non atopado.
 
 [plugins.templates.msg-fail-invalid-template-properties]
 original=Unable to insert template, the properties in the template file could not be read.
@@ -6208,7 +6208,7 @@ translation=Activa os comandos de barra oblicua no editor escribindo o carácter
 
 [plugins.editor-status.name]
 original=Show editing mode in status bar
-translation=Editor status
+translation=Mostra o modo de edición na barra de estado
 
 [plugins.editor-status.desc]
 original=Show the editing mode toggle in the status bar.
@@ -6232,7 +6232,7 @@ translation=Publicar
 
 [plugins.publish.desc]
 original=Host your notes online as a website, wiki or documentation.
-translation=Publish your notes through Obsidian Publish.
+translation=Hospeda as túas notas online como un sitio web, wiki ou documentación.
 
 [plugins.publish.action-publish-changes]
 original=Publish changes...
@@ -6380,7 +6380,7 @@ translation=Escolle un ficheiro de imaxe como logotipo do teu sitio.
 
 [plugins.publish.option-logo-placeholder]
 original=Any uploaded image in your vault...
-translation=Calquera imaxe subida ao teu vault...
+translation=Calquera imaxe subida o teu almacén...
 
 [plugins.publish.option-site-collaboration]
 original=Site collaboration
@@ -6396,7 +6396,7 @@ translation=Personalizar a navegación
 
 [plugins.publish.option-customize-navigation-desc]
 original=Override the order of navigation items and hide pages or folders from showing.
-translation=Substúde a orde dos elementos de navegación e oculta páxinas ou cartafoles.
+translation=Substitúe a orde dos elementos de navegación e oculta páxinas ou cartafoles.
 
 [plugins.publish.option-navigation-order]
 original=Navigation item display order
@@ -6408,7 +6408,7 @@ translation=Ocultar páxinas ou cartafoles da navegación
 
 [plugins.publish.option-hide-items-in-navigation-desc]
 original=Right click and select “Hide” to prevent specific pages from appearing in the site navigation. The pages will still be accessible via links or accessing the URL directly.
-translation=Fai clic dereito e selecciona "Agochar" para evitar que páxinas específicas aparezan na barra lateral do sitio.
+translation=Fai clic dereito e selecciona "Agochar" para evitar que páxinas específicas aparezan na barra lateral do sitio. As páxinas seguirán sendo accesibles a través de ligazóns ou accedendo directamnte á URL.
 
 [plugins.publish.option-show-hidden-items]
 original=Show hidden
@@ -6448,7 +6448,7 @@ translation=Adaptar ao sistema
 
 [plugins.publish.option-show-theme-toggle]
 original=Light/dark toggle
-translation=Alternancia claro/escuro
+translation=Alternar claro/escuro
 
 [plugins.publish.option-show-theme-toggle-description]
 original=Let visitors toggle between light and dark theme on their own.
@@ -6472,11 +6472,11 @@ translation=Amosa unha barra de busca que permite aos visitantes buscar páxinas
 
 [plugins.publish.option-show-graph]
 original=Show graph view
-translation=Mostrar vista de gráfico
+translation=Mostrar vista de grafo
 
 [plugins.publish.option-show-graph-description]
 original=Display a small local graph on each page.
-translation=Mostra un pequeño gráfico local en cada páxina.
+translation=Mostra un pequeño grafo local en cada páxina.
 
 [plugins.publish.option-show-outline]
 original=Show table of contents
@@ -6496,11 +6496,11 @@ translation=Mostra a sección de ligazóns cara atrás ao final de cada páxina.
 
 [plugins.publish.option-sliding-window-mode]
 original=Stack pages
-translation=Use sliding windows
+translation=Apilar páxinas
 
 [plugins.publish.option-sliding-window-mode-description]
 original=Links will open next to the current page in the same window. Scroll horizontally to see stacked pages.
-translation=As ligazóns abren a carón da páxina actual na mesma fiestra. Permite o desprazamento horizontal polas páxinas.
+translation=As ligazóns abren a carón da páxina actual na mesma xanela. Permite o desprazamento horizontal polas páxinas.
 
 [plugins.publish.option-hover-preview-file]
 original=Show hover preview
@@ -6556,7 +6556,7 @@ translation=Opcións do sitio actualizadas.
 
 [plugins.publish.button-go-back]
 original=Back
-translation=Volver
+translation=Voltar
 
 [plugins.publish.label-publishing-to]
 original=Publishing to
@@ -6568,19 +6568,19 @@ translation=Cambiar sitio
 
 [plugins.publish.button-add-linked]
 original=Add linked
-translation=Engadir enlazados
+translation=Engadir ligados
 
 [plugins.publish.tooltip-add-linked]
 original=Add all files that are linked by currently selected items
-translation=Engadir todos os ficheiros enlazados polos elementos seleccionados actualmente
+translation=Engadir todos os ficheiros ligados polos elementos seleccionados actualmente
 
 [plugins.publish.msg-added-linked-files]
 original={{count}} linked file has been added.
-translation=Engadiuse {{count}} ficheiro enlazado.
+translation=Engadiuse {{count}} ficheiro ligado.
 
 [plugins.publish.msg-added-linked-files_plural]
 original={{count}} linked files have been added.
-translation=Engadíronse {{count}} ficheiros enlazados.
+translation=Engadíronse {{count}} ficheiros ligados.
 
 [plugins.publish.tooltip-open-site-options]
 original=Change site options
@@ -6596,7 +6596,7 @@ translation=Changes
 
 [plugins.publish.label-unchanged-files-already-published]
 original=Unchanged (select to unpublish)
-translation=Unchanged (select to delete)
+translation=Sen cambios (selecciona para despublicar)
 
 [plugins.publish.label-file-selected]
 original= selected
@@ -6684,7 +6684,7 @@ translation=Podes visitar o teu sitio aquí:
 
 [plugins.publish.msg-something-went-wrong]
 original=Something went wrong.
-translation=Something went wrong. Please check the developer console for details.
+translation=Algo fallou.
 
 [plugins.publish.msg-network-error]
 original=A network error occurred.
@@ -6800,11 +6800,11 @@ translation=guía de configuración do dominio personalizado
 
 [plugins.publish.label-site-usage]
 original=You're using {{site}} out of your {{limit}}.
-translation=Estás usando {{site}} dos teus {{limit}}.
+translation=Estás a usar {{site}} dos teus {{limit}}.
 
 [plugins.publish.button-add-more-sites]
 original=Add more sites
-translation=Buy more sites
+translation=Engade máis sitios
 
 [plugins.publish.label-no-sites-bought]
 original=You haven't bought any sites.
@@ -6816,7 +6816,7 @@ translation=Obter un sitio
 
 [plugins.publish.label-manage-sharing]
 original=Manage sharing for “{{name}}”
-translation=Manage sharing for "{{name}}"
+translation=Xestiona a compartición para "{{name}}"
 
 [plugins.publish.label-sharing-with-users]
 original=This site is currently shared with the following people:
@@ -6976,7 +6976,7 @@ translation=Espazos de traballo
 
 [plugins.workspaces.desc]
 original=Save and load workspace layouts.
-translation=Save and load workspace layout.
+translation=Garda e carga disposicións de espazos de traballo.
 
 [plugins.workspaces.action-load-layout]
 original=Load workspace layout
@@ -7040,11 +7040,11 @@ translation=Sincroniza os teus ficheiros mediante Obsidian Sync.
 
 [plugins.sync.action-view-version-history]
 original=Open version history for the current file
-translation=View version history
+translation=Abrir historial de versións do ficheiro actual
 
 [plugins.sync.action-setup-sync]
 original=Set up Sync
-translation=Configurar sincronización
+translation=Configurar Sync
 
 [plugins.sync.menu-opt-view-version-history]
 original=Open version history
@@ -7052,7 +7052,7 @@ translation=Abrir historial de versións
 
 [plugins.sync.action-view-sync-sidebar]
 original=Show Sync history
-translation=Mostrar historial de sincronización
+translation=Mostrar historial de Sync
 
 [plugins.sync.action-activity-log]
 original=Open activity log
@@ -7064,7 +7064,7 @@ translation=Cargar máis
 
 [plugins.sync.label-show-diff]
 original=Show changes
-translation=Show diff
+translation=Mostrar cambios
 
 [plugins.sync.label-copy-to-clipboard]
 original=Copy to clipboard
@@ -7072,7 +7072,7 @@ translation=Copiar ao portapapeis
 
 [plugins.sync.label-restore-this-version]
 original=Restore
-translation=Restore this version
+translation=Restaurar
 
 [plugins.sync.msg-already-latest-version]
 original=This version is already the latest version.
@@ -7124,7 +7124,7 @@ translation=Non hai historial de sincronización para este ficheiro.
 
 [plugins.sync.label-empty-file]
 original=Empty content
-translation=Empty
+translation=Contido baleiro
 
 [plugins.sync.label-unable-to-retrieve]
 original=Unable to retrieve version history
@@ -7148,7 +7148,7 @@ translation=Fai clic nun ficheiro para ver o seu historial.
 
 [plugins.sync.label-create-remote-vault]
 original=Create remote vault
-translation=Crear repositorio remoto
+translation=Crear almacén remota¡o
 
 [plugins.sync.msg-please-enter-password]
 original=Please enter a password.
@@ -7156,23 +7156,23 @@ translation=Por favor, introduce un contrasinal.
 
 [plugins.sync.msg-vault-name-cannot-be-empty]
 original=Vault name cannot be empty.
-translation=O nome do repositorio non pode estar baleiro.
+translation=O nome do almacén non pode estar baleiro.
 
 [plugins.sync.msg-successfully-created-vault]
 original=Successfully created remote vault “{{name}}”.
-translation=O repositorio remoto "{{name}}" creouse correctamente.
+translation=O almacén remoto "{{name}}" creouse correctamente.
 
 [plugins.sync.label-remote-vault-explanation]
 original=Remote vaults securely synchronize your vault between devices.
-translation=Os repositorios remotos sincronizan de forma segura o teu repositorio entre dispositivos.
+translation=Os almacéns remotos sincronizan de forma segura o teu almacén entre dispositivos.
 
 [plugins.sync.option-vault-name]
 original=Vault name
-translation=Nome do repositorio
+translation=Nome do almacén
 
 [plugins.sync.option-vault-name-desc]
 original=Helps you remember what this vault is for.
-translation=Axúdache a lembrar para que é este repositorio.
+translation=Axúdache a lembrar para que é este almacén.
 
 [plugins.sync.option-vault-region]
 original=Region
@@ -7184,11 +7184,11 @@ translation=Automático
 
 [plugins.sync.option-vault-region-desc]
 original=Select the server region closest to you to store the remote vault. This cannot be changed in the future.
-translation=Selecciona a rexión de servidores máis próxima a ti para almacenar o repositorio remoto. Non se pode cambiar no futuro.
+translation=Selecciona a rexión de servidores máis próxima a ti para almacenar o almacén remoto. Non se pode cambiar no futuro.
 
 [plugins.sync.option-vault-name-placeholder]
 original=My awesome vault
-translation=O meu fantástico repositorio
+translation=O meu fantástico almacén
 
 [plugins.sync.option-encryption]
 original=Encryption
@@ -7228,7 +7228,7 @@ translation=Isto non afecta aos teus datos locais.
 
 [plugins.sync.label-encryption-password-explanation]
 original=The remote vault “{{name}}” is currently encrypted. Enter your password to unlock.
-translation=O repositorio remoto "{{name}}" está actualmente cifrado. Introduce o teu contrasinal para desbloquealo.
+translation=O almacén remoto "{{name}}" está actualmente cifrado. Introduce o teu contrasinal para desbloquealo.
 
 [plugins.sync.option-encryption-password-placeholder]
 original=Your password
@@ -7236,15 +7236,15 @@ translation=O teu contrasinal
 
 [plugins.sync.label-unlock-encrypted-vault]
 original=Unlock your remote vault
-translation=Desbloquea o teu repositorio remoto
+translation=Desbloquea o teu almacén remoto
 
 [plugins.sync.button-unlock-vault]
 original=Unlock vault
-translation=Desbloquear repositorio
+translation=Desbloquear almacén
 
 [plugins.sync.label-remote-vaults]
 original=Your remote vaults
-translation=Os teus repositorios remotos
+translation=Os teus almacéns remotos
 
 [plugins.sync.label-vault-created-time]
 original=Created {{time}}
@@ -7260,11 +7260,11 @@ translation=Renomear
 
 [plugins.sync.label-rename-remote-vault]
 original=Rename remote vault “{{name}}”
-translation=Renomear repositorio remoto "{{name}}"
+translation=Renomear almacén remoto "{{name}}"
 
 [plugins.sync.label-rename-remote-vault-desc]
 original=Enter a new name for this remote vault.
-translation=Introduce un novo nome para este repositorio remoto.
+translation=Introduce un novo nome para este almacén remoto.
 
 [plugins.sync.tooltip-manage-sharing]
 original=Manage sharing
@@ -7272,11 +7272,11 @@ translation=Xestionar o uso compartido
 
 [plugins.sync.label-confirm-delete-remote-vault]
 original=Confirm delete vault
-translation=Confirmar a eliminación do repositorio
+translation=Confirmar a eliminación do almacén
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=Tes a certeza de que queres eliminar o repositorio remoto "{{name}}"?
+translation=Tes a certeza de que queres eliminar o almacén "{{name}}"?
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7288,11 +7288,11 @@ translation=Esta acción é permanente e irreversible.
 
 [plugins.sync.msg-remote-vault-deleted]
 original={{name}} has been deleted.
-translation={{name}} foi eliminado.
+translation={{name}} foi eliminada.
 
 [plugins.sync.msg-disconnect-from-deleted-vault]
 original=Obsidian Sync: The connected remote vault no longer exists.
-translation=Obsidian Sync: O repositorio remoto conectado xa non existe.
+translation=Obsidian Sync: O almacén remoto conectada xa non existe.
 
 [plugins.sync.button-connect-to-remote-vault]
 original=Connect
@@ -7308,7 +7308,7 @@ translation=Sincronización: {{status}}
 
 [plugins.sync.label-not-remote-vaults]
 original=You don't have any remote vaults.
-translation=Non tes ningún repositorio remoto.
+translation=Non tes ningún almacén remoto.
 
 [plugins.sync.label-no-subscription]
 original=You don't have an active Obsidian Sync subscription.
@@ -7324,7 +7324,7 @@ translation=Non se pode previsualizar ficheiros {{type}}.
 
 [plugins.sync.button-create-new-remote-vault]
 original=Create new vault
-translation=Crear novo repositorio
+translation=Crear novo almacén
 
 [plugins.sync.label-sync-log]
 original=Sync log
@@ -7368,7 +7368,7 @@ translation=Detectouse un servizo de sincronización de ficheiros en conflito
 
 [plugins.sync.label-third-party-sync-warning-desc]
 original=Warning: Your vault seems to be using {{service}} as a third party sync service. If you use Obsidian Sync with this vault, you may run into conflicts, file corruption, or data loss.
-translation=Aviso: o teu repositorio parece estar usando {{service}} como servizo de sincronización de terceiros. Se usas Obsidian Sync con este repositorio, podes atopar conflitos, corrupción de ficheiros ou perda de datos.
+translation=Aviso: o teu almacén parece estar usando {{service}} como servizo de sincronización de terceiros. Se usas Obsidian Sync con este almacén, podes atopar conflitos, corrupción de ficheiros ou perda de datos.
 
 [plugins.sync.label-icloud-drive-warning]
 original=If you are using iCloud Drive, your Documents and Desktop folders might be synced by iCloud. This could cause conflicts with Obsidian Sync.
@@ -7376,7 +7376,7 @@ translation=Se estás usando iCloud Drive, os teus cartafoles Documentos e Escri
 
 [plugins.sync.option-remote-vault]
 original=Remote vault
-translation=Repositorio remoto
+translation=Almacén remoto
 
 [plugins.sync.button-choose-remote-vault]
 original=Choose
@@ -7388,11 +7388,11 @@ translation=Xestionar
 
 [plugins.sync.option-remote-vault-desc-connected]
 original=Currently connected to the “{{name}}” remote vault.
-translation=Actualmente conectado ao repositorio remoto "{{name}}".
+translation=Actualmente conectado ao almacén remota "{{name}}".
 
 [plugins.sync.option-remote-vault-desc-not-connected]
 original=Currently not connected to any remote vault.
-translation=Actualmente non está conectado a ningún repositorio remoto.
+translation=Actualmente non está conectado a ningún almacén remoto.
 
 [plugins.sync.option-sync-status]
 original=Sync status
@@ -7468,7 +7468,7 @@ translation=Restauración completa: {{succeeded}} correctos e {{failed}} con err
 
 [plugins.sync.option-vault-size]
 original=Storage usage
-translation=Vault size
+translation=Uso de almacenamento
 
 [plugins.sync.option-vault-size-desc]
 original=You are using {{size}} out of {{limit}}
@@ -7476,19 +7476,19 @@ translation=Estás usando {{size}} de {{limit}}
 
 [plugins.sync.option-vault-size-unknown]
 original=Unable to retrieve your vault size.
-translation=Non se pode recuperar o tamaño do teu repositorio.
+translation=Non se pode recuperar o tamaño do teu almacén.
 
 [plugins.sync.option-vault-size-loading]
 original=Retrieving your vault size...
-translation=Recuperando o tamaño do teu repositorio...
+translation=Recuperando o tamaño do teu almacén...
 
 [plugins.sync.option-over-size]
 original=Vault size over limit
-translation=Tamaño do repositorio superado
+translation=Tamaño do almacén superado
 
 [plugins.sync.option-almost-over-size]
 original=Vault size approaching limit
-translation=O tamaño do repositorio está próximo ao límite
+translation=O tamaño do almacén está próximo ao límite
 
 [plugins.sync.msg-largest-files]
 original=View largest files
@@ -7496,7 +7496,7 @@ translation=Ver os ficheiros máis grandes
 
 [plugins.sync.msg-largest-files-desc]
 original=These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.
-translation=Estes son os ficheiros remotos que ocupan máis espazo. Despois de eliminar anexos, usa o botón de limpeza para liberar espazo no repositorio remoto.
+translation=Estes son os ficheiros remotos que ocupan máis espazo. Despois de eliminar anexos, usa o botón de limpeza para liberar espazo no almacén remoto.
 
 [plugins.sync.button-upgrade-storage]
 original=Upgrade storage
@@ -7512,7 +7512,7 @@ translation=Ocultar os meus cambios
 
 [plugins.sync.tooltip-purge-remote]
 original=Permanently purge deleted attachments from remote vault to save space.
-translation=Eliminar permanentemente os anexos eliminados do repositorio remoto para aforrar espazo.
+translation=Eliminar permanentemente os anexos eliminados do almacén remoto para aforrar espazo.
 
 [plugins.sync.msg-purge-complete]
 original=Purge complete.
@@ -7588,7 +7588,7 @@ translation=Sincroniza tipos de ficheiro non compatibles.
 
 [plugins.sync.option-vault-config-sync]
 original=Vault configuration sync
-translation=Sincronización da configuración do repositorio
+translation=Sincronización da configuración do almacén
 
 [plugins.sync.option-view-config-files]
 original=Settings version history
@@ -7748,11 +7748,11 @@ translation=Conexión fallida
 
 [plugins.sync.label-connection-failed-desc]
 original=Failed to connect to remote vault.
-translation=Non se puido conectar ao repositorio remoto.
+translation=Non se puido conectar ao almacén remoto.
 
 [plugins.sync.label-now-connected-to-vault]
 original=You're now connected to “{{name}}”.
-translation=You're now connected to "{{name}}".
+translation=Agora estás conectado a "{{name}}".
 
 [plugins.sync.button-start-syncing]
 original=Start syncing
@@ -7760,15 +7760,15 @@ translation=Comezar a sincronizar
 
 [plugins.sync.label-confirm-merge-vault]
 original=Confirm Merge Vault
-translation=Confirmar fusión do repositorio
+translation=Confirmar fusión do almacén
 
 [plugins.sync.msg-vault-has-notes]
 original=Your local vault already contains some notes.
-translation=O teu repositorio local xa contén algunhas notas.
+translation=O teu almacén local xa contén algunhas notas.
 
 [plugins.sync.msg-vault-merge-warning]
 original=If you connect to the remote vault “{{name}}”, notes in your local vault will be merged with notes from your remote vault. In case of conflicts, the most recent version of the note will be preserved.
-translation=Se te conectas ao repositorio remoto "{{name}}", as notas do teu almacén local fusionaranse coas do repositorio remoto. En caso de conflitos, conservarase a versión máis recente da nota.
+translation=Se te conectas ao almacén remoto "{{name}}", as notas do teu almacén local fusionaranse coas do almacén remoto. En caso de conflitos, conservarase a versión máis recente da nota.
 
 [plugins.sync.tooltip-update-setting-on-all-devices]
 original=Please update this option and restart app on all the devices where you want it to take effect.
@@ -7776,31 +7776,31 @@ translation=Por favor, actualiza esta opción e reinicia a aplicación en todos 
 
 [plugins.sync.label-sharing-with-users]
 original=This remote vault is currently shared with the following people:
-translation=Este repositorio remoto está compartido actualmente coas seguintes persoas:
+translation=Este almacén remoto está compartido actualmente coas seguintes persoas:
 
 [plugins.sync.label-not-sharing]
 original=This remote vault is not currently shared with anyone.
-translation=Este repositorio remoto non está compartido actualmente con ninguén.
+translation=Este almacén remoto non está compartido actualmente con ninguén.
 
 [plugins.sync.label-vaults-shared-with-you]
 original=Vaults shared with you
-translation=Repositorios compartidos contigo
+translation=Almacéns compartidos contigo
 
 [plugins.sync.tooltip-leave-vault-sharing]
 original=Stop collaborating on this vault
-translation=Deixar de colaborar neste repositorio
+translation=Deixar de colaborar neste almacén
 
 [plugins.sync.label-leave-vault-confirmation]
 original=Confirm stop vault collaboration
-translation=Confirmar a detención da colaboración no repositorio
+translation=Confirmar a detención da colaboración no almacén
 
 [plugins.sync.label-leave-vault-confirmation-details]
 original=This will remove this vault from the list of vaults shared with you. This action cannot be reverted.
-translation=Isto eliminará este repositorio da lista de repositorios compartidos contigo. Esta acción non se pode reverter.
+translation=Isto eliminará este almacén da lista de almacéns compartidos contigo. Esta acción non se pode reverter.
 
 [plugins.sync.label-leave-vault-confirmation-details-2]
 original=Please contact the owner of the vault if you wish to collaborate on this vault again.
-translation=Por favor, contacta co propietario do repositorio se desexas colaborar nel de novo.
+translation=Por favor, contacta co propietario do almacén se desexas colaborar nel de novo.
 
 [plugins.sync.button-leave]
 original=Leave
@@ -7808,11 +7808,11 @@ translation=Saír
 
 [plugins.sync.msg-error-failed-to-fetch]
 original=Failed to load remote vaults.
-translation=Non se puideron cargar os repositorios remotos.
+translation=Non se puideron cargar os almacéns remotos.
 
 [plugins.sync.label-require-subscription-to-connect]
 original=You need an Obsidian Sync subscription to connect to this vault.
-translation=Necesitas unha subscrición de Obsidian Sync para conectarte a este repositorio.
+translation=Necesitas unha subscrición de Obsidian Sync para conectarte a este almacén.
 
 [plugins.sync.option-contact-support]
 original=Contact support
@@ -7832,31 +7832,31 @@ translation=Enviar correo ao soporte
 
 [plugins.sync.label-sync-disconnected]
 original=Sync is not connected to a remote vault.
-translation=A sincronización non está conectada a un repositorio remoto.
+translation=A sincronización non está conectada a un almacén remoto.
 
 [plugins.sync.msg-remote-vault-limit-hit]
 original=You have created the maximum number of remote vaults. In order to create a new remote vault, please upgrade your account or remove an existing one.
-translation=Obsidian Sync lets you create up to 5 remote vaults. In order to create a new remote vault, please remove an existing one.
+translation=Acadaches o número máximo de almacéns remotos. Por favor, para crear un novo almacén remoto, mellora a tua conta ou elimina un existente.
 
 [plugins.sync.label-upgrade-vault]
 original=Upgrade vault
-translation=Actualizar repositorio
+translation=Actualizar almacén
 
 [plugins.sync.label-upgrade-vault-encryption]
 original=Upgrade vault encryption
-translation=Actualizar o cifrado do repositorio
+translation=Actualizar o cifrado do almacén
 
 [plugins.sync.label-upgrade-vault-encryption-desc]
 original=There is a new encryption version available for remote vaults.
-translation=Hai unha nova versión de cifrado dispoñible para os repositorios remotos.
+translation=Hai unha nova versión de cifrado dispoñible para os almcéns remotos.
 
 [plugins.sync.label-migrate-remote-vault]
 original=Migrate remote vault
-translation=Migrar repositorio remoto
+translation=Migrar almacén remoto
 
 [plugins.sync.label-remote-vault-configuration]
 original=Remote vault configuration
-translation=Configuración do repositorio remoto
+translation=Configuración do almacén remoto
 
 [plugins.sync.button-migrate]
 original=Migrate
@@ -7864,27 +7864,27 @@ translation=Migrar
 
 [plugins.sync.msg-recreate-remote-vault]
 original=This will delete your remote vault and recreate it with the latest encryption. Local files will not be affected, however your version history will be lost.
-translation=Isto eliminará o teu repositorio remoto e recreará con o último cifrado. Os ficheiros locais non se verán afectados, pero o historial de versións perderase.
+translation=Isto eliminará o teu almacén remoto e recrearalo co último cifrado. Os ficheiros locais non se verán afectados, pero o historial de versións perderase.
 
 [plugins.sync.label-confirm-migrate]
 original=Confirm vault migration
-translation=Confirmar a migración do repositorio
+translation=Confirmar a migración do almacén
 
 [plugins.sync.msg-migrate-pre-confirmation-part1]
 original=To upgrade your encryption, all data in the vault will be re-uploaded to the Obsidian Sync servers using the new encryption method. This process will permanently delete all data encrypted with the old encryption, including the version history for your vault.
-translation=Para actualizar o teu cifrado, todos os datos do repositorio serán cargados de novo nos servidores de Obsidian Sync usando o novo método de cifrado. Este proceso eliminará permanentemente todos os datos cifrados co cifrado antigo, incluído o historial de versións do teu repositorio.
+translation=Para actualizar o teu cifrado, todos os datos do almacén serán cargados de novo nos servidores de Obsidian Sync usando o novo método de cifrado. Este proceso eliminará permanentemente todos os datos cifrados co cifrado antigo, incluído o historial de versións do teu almacén.
 
 [plugins.sync.msg-migrate-pre-confirmation-part2]
 original=Important: we strongly recommend creating a backup of your vault before proceeding to prevent any potential data loss.
-translation=Importante: recomendamos encarecidamente crear unha copia de seguridade do teu repositorio antes de continuar para evitar calquera perda de datos.
+translation=Importante: recomendamos encarecidamente crear unha copia de seguridade do teu almacén antes de continuar para evitar calquera perda de datos.
 
 [plugins.sync.msg-migrate-pre-confirmation-part3]
 original=After completing the upgrade, you will need to reconnect all your devices to the updated remote vault.
-translation=Despois de completar a actualización, terás que volver conectar todos os teus dispositivos ao repositorio remoto actualizado.
+translation=Despois de completar a actualización, terás que volver conectar todos os teus dispositivos ao almacén remoto actualizado.
 
 [plugins.sync.msg-migrate-confirmation]
 original=Migrating your vault may take some time. You will need to keep Obsidian active on this device to re-upload all your notes and attachments. It is best to do this on your primary device.
-translation=A migración do teu repositorio pode levar algún tempo. Terás que manter Obsidian activo neste dispositivo para cargar de novo todas as túas notas e anexos. É mellor facelo no teu dispositivo principal.
+translation=A migración do teu almacén pode levar algún tempo. Terás que manter Obsidian activo neste dispositivo para cargar de novo todas as túas notas e anexos. É mellor facelo no teu dispositivo principal.
 
 [plugins.sync.msg-proceed-prompt]
 original=Do you want to proceed?
@@ -7892,11 +7892,11 @@ translation=Queres continuar?
 
 [plugins.sync.msg-vault-migration-started]
 original=Vault migration in progress.
-translation=Migración do repositorio en curso.
+translation=Migración do almacén en curso.
 
 [plugins.sync.msg-vault-migration-completed]
 original=Vault migration complete.
-translation=Migración do repositorio completada.
+translation=Migración do almacén completada.
 
 [plugins.sync.label-resolve-conflicts]
 original=Conflict resolution
@@ -7920,11 +7920,11 @@ translation=Recuperación de ficheiros
 
 [plugins.file-recovery.desc]
 original=Restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.
-translation=Let you restore recent snapshots to recover from accidental data loss. Snapshots are only saved for Markdown files.
+translation=Resatura instantáneas recentes para recuperarse dunha perda de datos accidental. As instantáneas só se guardan para ficheiros Markdown.
 
 [plugins.file-recovery.action-open]
 original=Open local history
-translation=Open saved snapshots
+translation=Abrir histórico local
 
 [plugins.file-recovery.option-interval]
 original=Snapshot interval
@@ -7936,11 +7936,11 @@ translation=Intervalo mínimo en minutos entre dúas instantáneas.
 
 [plugins.file-recovery.option-keep]
 original=History length
-translation=Duración do historial
+translation=Tamaño do historial
 
 [plugins.file-recovery.option-keep-description]
 original=Number of days the snapshots are kept for.
-translation=Length in days snapshots is kept for.
+translation=Número de días que se gardan as instantáneas.
 
 [plugins.file-recovery.option-open-history]
 original=Snapshots
@@ -7960,7 +7960,7 @@ translation=Borrar historial
 
 [plugins.file-recovery.option-clear-description]
 original=Delete all snapshots.
-translation=Wipe all snapshots.
+translation=Borrar tódalas instantáneas.
 
 [plugins.file-recovery.button-clear-history]
 original=Clear
@@ -7968,7 +7968,7 @@ translation=Borrar
 
 [plugins.file-recovery.label-clear-warning]
 original=Are you sure you want to delete all snapshots? Files inside your vault will not be affected.
-translation=Tes a certeza de que queres eliminar todas as instantáneas? Os ficheiros do almacén non se verán afectados.
+translation=Tes a certeza de que queres eliminar tódalas instantáneas? Os ficheiros do almacén non se verán afectados.
 
 [plugins.file-recovery.msg-clear-complete]
 original=Local history cleared.
@@ -7976,7 +7976,7 @@ translation=Historial local eliminado.
 
 [plugins.file-recovery.label-no-history-found]
 original=Snapshots found.
-translation=No snapshots found.
+translation=Non se atoparon instantáneas.
 
 [plugins.file-recovery.placeholder-choose-file]
 original=Choose a file...
@@ -7992,7 +7992,7 @@ translation=Compositor de notas
 
 [plugins.note-composer.desc]
 original=Merge two notes or split one into two.
-translation=Merge, split, and refactor notes.
+translation=Fusiona dúas notas ou divide unha en dúas.
 
 [plugins.note-composer.option-confirm-file-merge]
 original=Confirm file merge
@@ -8000,7 +8000,7 @@ translation=Confirmar fusión de ficheiros
 
 [plugins.note-composer.option-confirm-file-merge-description]
 original=Prompt before merge two files.
-translation=Prompt before merging two files.
+translation=Preguntar antes de fusionar dous ficheiros.
 
 [plugins.note-composer.option-split-replacement-text]
 original=Text after extraction
@@ -8072,7 +8072,7 @@ translation=Fusionar ficheiro
 
 [plugins.note-composer.label-confirm-file-merge]
 original=Are you sure you want to merge “{{file}}” into “{{destination}}”? “{{file}}” will be deleted.
-translation=Tes a certeza de que queres combinar "{{file}}" con "{{destination}}"? "{{file}}" será eliminado.
+translation=Tes a certeza de que queres fusionar "{{file}}" con "{{destination}}"? "{{file}}" será eliminado.
 
 [plugins.note-composer.button-merge]
 original=Merge
@@ -8096,7 +8096,7 @@ translation=para mover ao inicio
 
 [plugins.note-composer.msg-fail-to-fetch-template]
 original=Failed to fetch template file: “{{template}}” not found.
-translation=Failed to fetch template file: "{{template}}" not found.
+translation=Non se puido obter o fichero de modelo: "{{template}}" non atopado.
 
 [plugins.note-composer.msg-fail-to-find-heading]
 original=Failed to find heading
@@ -8200,11 +8200,11 @@ translation=Seleccionar todo
 
 [plugins.web-viewer.action-save-to-vault]
 original=Save to vault
-translation=Gardar no repositorio
+translation=Gardar no almacén
 
 [plugins.web-viewer.action-save-image]
 original=Save image to vault
-translation=Gardar imaxe no repositorio
+translation=Gardar imaxe no almacén
 
 [plugins.web-viewer.action-copy-image-link]
 original=Copy image link
@@ -8272,7 +8272,7 @@ translation=Novo visor web
 
 [plugins.web-viewer.label-fail-to-load]
 original=Unable to load site.
-translation=Unable to load that site.
+translation=Non se puido cargar o sitio.
 
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
@@ -8348,7 +8348,7 @@ translation=Regras de bloqueo de anuncios
 
 [plugins.web-viewer.option-adblock-lists-desc]
 original=One ad block list URL per line. Shared by all vaults.
-translation=Un URL de lista de bloqueo de anuncios por liña. Compartido por todos os repositorios.
+translation=Un URL de lista de bloqueo de anuncios por liña. Compartido por todos os almacéns.
 
 [plugins.web-viewer.option-adblock-frequency]
 original=Ad block update frequency
@@ -8356,7 +8356,7 @@ translation=Frecuencia de actualización do bloqueador de anuncios
 
 [plugins.web-viewer.option-adblock-frequency-desc]
 original=Days between updating filter lists. 0 indicates disabled. Shared by all vaults.
-translation=Días entre actualizacións de listas de filtros. 0 indica desactivado. Compartido por todos os repositorios.
+translation=Días entre actualizacións de listas de filtros. 0 indica desactivado. Compartido por tódolos almacéns.
 
 [plugins.web-viewer.title-clear-data-modal]
 original=Clear web viewer data
@@ -8364,7 +8364,7 @@ translation=Borrar datos do visor web
 
 [plugins.web-viewer.msg-error-extracting-content]
 original=Unexpected error extracting content.
-translation=Unexected error extracting content.
+translation=Erro inesperado extraíndo contido.
 
 [plugins.web-viewer.msg-error-finding-content]
 original=Unable to find content to extract.
@@ -8380,11 +8380,11 @@ translation=Organiza e conecta notas nun lenzo infinito.
 
 [plugins.canvas.action-add-note]
 original=Add note from vault
-translation=Engadir nota do repositorio
+translation=Engadir nota do almacén
 
 [plugins.canvas.action-add-media]
 original=Add media from vault
-translation=Engadir multimedia do repositorio
+translation=Engadir multimedia do almacén
 
 [plugins.canvas.action-add-card]
 original=Add card
@@ -8408,11 +8408,11 @@ translation=Converter a ficheiro...
 
 [plugins.canvas.action-drag-to-add-note]
 original=Drag to add note from vault
-translation=Arrastrar para engadir nota do repositorio
+translation=Arrastrar para engadir nota do almacén
 
 [plugins.canvas.action-drag-to-add-media]
 original=Drag to add media from vault
-translation=Arrastrar para engadir multimedia do repositorio
+translation=Arrastrar para engadir multimedia do almacén
 
 [plugins.canvas.action-drag-to-add-card]
 original=Drag to add card
@@ -8524,7 +8524,7 @@ translation=Non se atoparon elementos multimedia.
 
 [plugins.canvas.label-export-png-desc]
 original=Export “{{title}}” as a PNG file with the settings below.
-translation=Export "{{title}}" with a PNG file with the settings below.
+translation=Exportar "{{title}}" coma un ficheiro PNG coa configuración seguinte.
 
 [plugins.canvas.label-export-png-dimensions]
 original=Estimated image dimensions: {{dimensions}}
@@ -8680,11 +8680,11 @@ translation=Eliminar
 
 [plugins.canvas.action-narrow-heading]
 original=Narrow to heading...
-translation=Filtrar por cabeceira...
+translation=Axustar á cabeceira...
 
 [plugins.canvas.action-narrow-block]
 original=Narrow to block...
-translation=Filtrar por bloque...
+translation=Axustar ao bloque...
 
 [plugins.canvas.action-narrow-bases-view]
 original=Pin view...
@@ -8736,7 +8736,7 @@ translation=para navegar ao grupo
 
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
-translation=Type name of heading
+translation=Escribe para atopar un ficheiro, cabeceira ou bloque
 
 [plugins.canvas.label-enter-url]
 original=Enter URL
@@ -8744,7 +8744,7 @@ translation=Introducir URL
 
 [plugins.canvas.label-empty-embed]
 original=“{{linktext}}” could not be found.
-translation="{{linktext}}" could not be found.
+translation="{{linktext}}" non se puido atopar.
 
 [plugins.canvas.prompt-add-text]
 original=Add text...
@@ -8896,7 +8896,7 @@ translation=Bases
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=Crear vistas personalizads que permiten editar, ordear e filtrar ficheiros polas súas propiedades.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -9000,7 +9000,7 @@ translation=Ocultar resumo
 
 [plugins.bases.label-all-views]
 original=All views
-translation=Todas as vistas
+translation=Tódalas vistas
 
 [plugins.bases.label-current-view]
 original=This view
@@ -9116,7 +9116,7 @@ translation=Calquera dos seguintes é verdadeiro
 
 [plugins.bases.label-all-the-following]
 original=All the following are true
-translation=Todos os seguintes son verdadeiros
+translation=Tódolos seguintes son verdadeiros
 
 [plugins.bases.label-none-of-the-following]
 original=None of the following are true
@@ -9184,7 +9184,7 @@ translation=tamaño do ficheiro
 
 [plugins.bases.label-file-prop-backlinks]
 original=file backlinks
-translation=backlinks do ficheiro
+translation=ligazóns cara atrás do ficheiro
 
 [plugins.bases.label-file-prop-links]
 original=file links
@@ -9280,7 +9280,7 @@ translation=Vista "{{ view }}" non atopada
 
 [plugins.bases.msg-error-unknown-view-type]
 original=Unknown view type: {{ viewtype }}
-translation=Base configured with an unknown view type: {{ viewtype }}
+translation=Tipo de vista descoñecido: {{ viewtype }}
 
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
@@ -9296,7 +9296,7 @@ translation="{{ key }}" debe ser un {{ type }}
 
 [plugins.bases.msg-error-filter-type]
 original="filters" must be a string or an object
-translation="filters" debe ser unha cadea ou un obxecto
+translation="filtros" debe ser unha cadea ou un obxecto
 
 [plugins.bases.msg-error-filter-must-be-array]
 original="{{ conjunction }}" filter must be an array
@@ -9304,7 +9304,7 @@ translation=O filtro "{{ conjunction }}" debe ser un array
 
 [plugins.bases.msg-error-filter-allowed-keys]
 original="filters" may only have one of an "and", "or", or "not" keys.
-translation="filters" só pode ter unha das claves "and", "or" ou "not".
+translation="filtros" só pode ter unha das claves "e", "ou" ou "non".
 
 [plugins.bases.msg-error-filter-failed-to-evaluate]
 original=Failed to evaluate a filter: {{ message }}
@@ -9528,7 +9528,7 @@ translation=Erro de tipo en "{{ function }}", parámetro "{{ parameter }}". Espe
 
 [formulas.msg-error-invalid-array-access]
 original=Cannot access index "{{ index }}" of non-array value
-translation=Cannot access index {{ index }} of non-array value
+translation=Non se pode acceder o índice {{ index }} do valor non-array
 
 [formulas.msg-error-invalid-object-access]
 original=Cannot find "{{ index }}" on type {{ type }}
@@ -9648,11 +9648,11 @@ translation=Páxina individual
 
 [pdf.label-spread-odd]
 original=Two-page (odd)
-translation=Two page (odd)
+translation=Dúas páxinas (impar)
 
 [pdf.label-spread-even]
 original=Two-page (even)
-translation=Two page (even)
+translation=Dúas páxinas (par)
 
 [pdf.tooltip-sidebar-options]
 original=Sidebar options
@@ -9780,7 +9780,7 @@ translation=Non se puideron ler as propiedades.
 
 [properties.label-no-value]
 original=Empty
-translation=No value
+translation=Baleiro
 
 [properties.label-heading]
 original=Properties
@@ -9804,11 +9804,11 @@ translation=Engadir propiedade
 
 [properties.label-type-mismatch-warning]
 original=Type mismatch, expected {{type}}
-translation=Non coincidencia de tipo, esperábase {{type}}
+translation=Non coincide o tipo, esperábase {{type}}
 
 [properties.label-type-mismatch-warning-generic]
 original=Type mismatch
-translation=Non coincidencia de tipo
+translation=Non coincide o tipo
 
 [properties.label-change-property-type]
 original=Display as {{type}}?
@@ -9828,19 +9828,19 @@ translation=Fila
 
 [table.action-row-after]
 original=Add row below
-translation=Add row after
+translation=Engadir fila abaixo
 
 [table.action-column-after]
 original=Add column to the right
-translation=Add column after
+translation=Engadir columna á dereita
 
 [table.action-row-before]
 original=Add row above
-translation=Add row before
+translation=Engadir fila enriba
 
 [table.action-row-up]
 original=Move row up
-translation=Mover fila arriba
+translation=Mover fila enriba
 
 [table.action-row-down]
 original=Move row down
@@ -9848,7 +9848,7 @@ translation=Mover fila abaixo
 
 [table.action-column-before]
 original=Add column to the left
-translation=Add column before
+translation=Engadir columna á esquerda
 
 [table.action-column-left]
 original=Move column left
@@ -9996,7 +9996,7 @@ translation={{count}} ficheiro
 
 [nouns.file-with-count_plural]
 original={{count}} files
-translation={{count}} file
+translation={{count}} ficheiros
 
 [nouns.folder-with-count]
 original={{count}} folder
@@ -10008,11 +10008,11 @@ translation={{count}} cartafoles
 
 [nouns.backlink-with-count]
 original={{count}} backlink
-translation={{count}} backlink
+translation={{count}} ligazón cara atrás
 
 [nouns.backlink-with-count_plural]
 original={{count}} backlinks
-translation={{count}} backlinks
+translation={{count}} ligazóns cara atrás
 
 [nouns.tabs-with-count]
 original={{count}} tab
