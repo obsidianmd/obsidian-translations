@@ -10,6 +10,10 @@ translation=Connector
 original=Core plugins
 translation=Connectors principals
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Mostra a la llista de connectors
+
 [setting.plugin-options]
 original=Plugin options
 translation=Opcions del connector
@@ -22,9 +26,41 @@ translation=Exemple: carpeta 1/carpeta 2
 original=Example: folder/note
 translation=Exemple: carpeta/nota
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=No s'ha seleccionat cap fitxer
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Canviar aquesta opció requereix un reinici perquè tingui efecte.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Nombre no vàlid
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=El valor ha de ser com a mínim {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=El valor ha de ser com a màxim {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=No s'ha trobat el fitxer.
+
+[setting.search-settings]
+original=Search settings...
+translation=Cerca a la configuració...
+
+[setting.no-search-results]
+original=No settings found.
+translation=No s'ha trobat cap configuració.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} més
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Dreta a esquerra (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Defineix la direcció del text de les notes com a de dreta a esquerra.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Mostra els diagrames Mermaid a les notes
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Renderitza diagrames de flux, diagrames de seqüència i altres diagrames a partir de blocs de codi «mermaid».
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Fitxers exclosos
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Els fitxers exclosos es mostraran ocults o menys visibles en diversos llocs, com ara al Quick Switcher, la suggerència d'enllaços i la Vista de Gràfic.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=No s'aplica cap filtre d'exclusió ara mateix. Afegeix-ne un a continuació.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Afegeix una exclusió...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Actualment s'exclouen els fitxers que coincideixen amb els següents filtres:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=No s'ha afegit cap exclusió.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filtre
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Afegeix una exclusió
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Introduïu un camí o una expressió regular, p. ex. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=El filtre no pot estar buit
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Introdueix la ruta o "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Permet callbacks d'URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Activa l'ús de x-callback-url mitjançant x-success o x-error en gestionar els URI d'Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=URI d'Obsidian
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Gestiona les accions de confiança i configura el comportament dels URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Accions de confiança
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Encara no hi ha cap acció de confiança. Les accions d'URI aprovades apareixeran aquí.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Tema base
 original=Choose Obsidian's default color scheme.
 translation=Tria l'esquema de colors per defecte d'Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=fosc clar sistema mode nocturn esquema de colors
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Color d'accent
@@ -549,6 +613,10 @@ translation=Color d'accent
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Tria el color d'accent utilitzat a tota l'aplicació.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=ressaltat marca color primari
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Mida de la font
 original=Font size in pixels that affects editing and reading views.
 translation=Mida de la font en píxels que afecta l'editor i a la visualització prèvia.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=mida del text zoom
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Ajust ràpid de la mida de la font
@@ -673,6 +745,10 @@ translation=Temes
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Gestiona els temes instal·lats i navega pels temes de la comunitat.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=comunitat navega instal·la baixa
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Menús nadius
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Els menús a tota l'aplicació coincidiran amb el sistema operatiu. No es veuran afectats pel teu tema.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Recarrega els temes
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Temes CSS personalitzats recarregats.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Obre la carpeta de temes
@@ -710,9 +778,17 @@ translation=Pedaços de CSS
 original=No CSS snippets found.
 translation=No s'han trobat pedaços de CSS a la carpeta de pedaços.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Actualment hi ha {{count}} fragment activat.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Actualment hi ha {{count}} fragments activats.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Els Pedaços de CSS s'emmagatzemen a "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Els fragments CSS et permeten personalitzar l'aparença d'Obsidian. Col·loca els fitxers CSS a “{{path}}” perquè apareguin aquí.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Obre la carpeta de pedaços
 original=Reloaded CSS snippets.
 translation=Pedaços de CSS recarregats.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Aplica el tros de CSS a "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Cerca fragments...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Actualment tens {{count}} tema instal·lat.
 original=You currently have {{count}} themes installed.
 translation=Actualment tens {{count}} temes instal·lats.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Obre la configuració en una finestra nova
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Obre la configuració en una finestra pròpia en lloc d'incrustada a l'aplicació.
+
+[setting.interface.name]
+original=Interface
+translation=Interfície
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mòbil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Avançat
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Dreceres de teclat
@@ -909,14 +1005,6 @@ translation=Mostrant {{count}} drecera.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Mostrant {{count}} dreceres.
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} comandament amb conflicte.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} comandaments amb conflictes.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Prem la tecla de drecera...
 original=All
 translation=Totes
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Conflictes ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=No assignades
@@ -945,6 +1037,10 @@ translation=Assignades
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Assignades per mi
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=No s'ha trobat cap resultat.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Mode restringit
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=El mode restringit està apagat. Activa'l per desactivar els connectors de la comunitat.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Activa el mode restringit per fer servir l'aplicació sense connectors de la comunitat.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1531,15 @@ original=Community plugins
 translation=Connectors de la comunitat
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Navega i instaŀla connectors de tercers creats per la nostra increïble comunitat.
+original=Browse and install community plugins made by the community.
+translation=Navega i instal·la connectors de la comunitat creats per la comunitat.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Navega
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Sortir del mode restringit
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Tot i els nostres esforços, encara hi ha una petita possibilitat que un connector de la comunitat pugui funcionar incorrectament.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Revisió de codi inicial
+original=Code review
+translation=Revisió de codi
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Els connectors passen per una revisió de codi inicial per part del nostre equip abans d'aparèixer a la botiga.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Els connectors del directori oficial de la comunitat es revisen automàticament després de cada actualització.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Mecanisme de notificació
 original=We follow up and remove faulty plugins upon user report.
 translation=Donem seguiment i eliminem els connectors defectuosos quan els usuaris ho notifiquen.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Vols sortir del mode restringit per habilitar els connectors de la comunitat? Recomanem molt fer còpies de seguretat de les teves dades abans de fer-ho.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Més informació sobre la seguretat dels connectors
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Habilitar els connectors de la comunitat
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Permet connectors de la comunitat
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Els connectors poden executar codi arbitrari al dispositiu. Recomanem fer una còpia de seguretat de les dades abans d'activar-los.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Torna a activar els connectors instal·lats
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Restaura {{count}} connector instal·lat anteriorment.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Restaura {{count}} connectors instal·lats anteriorment.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Mostra la informació del connector
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Connectors activats
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Aquests connectors s'activaran en sortir del mode restringit.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Cerca connectors instal·lats...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Mostra només els instal·lats
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=No hi ha connectors instal·lats.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Actualment hi ha {{count}} enllaços que apunten a aquest fitxer.
 original=Delete file
 translation=Suprimeix l'arxiu
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Voleu executar l'acció des d'un enllaç extern?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=L'acció «{{action}}» està a punt d'executar-se. Continueu només si confieu en l'origen de l'enllaç.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=El connector «{{source}}» està a punt d'executar l'acció «{{action}}». Continueu només si confieu en l'origen de l'enllaç.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=No ho tornis a preguntar per a «{{action}}»
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Descarrega adjunts
@@ -3993,6 +4133,10 @@ translation=Confirma
 [dialogue.button-cancel]
 original=Cancel
 translation=Cancel·la
+
+[dialogue.button-allow]
+original=Allow
+translation=Permet
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Mostra tots els fitxers, inclosos aquells que Obsidian no pot obrir.
 [plugins.graph-view.name]
 original=Graph view
 translation=Vista gràfica
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Gràfic local
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Comptador de paraules
 original=Show word count in the status bar.
 translation=Mostra el comptador de paraules a la barra d'estat.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Voleu mostrar els diagrames Mermaid en aquesta cambra forta?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Permeteu-ho només si confieu en el contingut d'aquesta cambra forta.
+
 [plugins.slides.name]
 original=Slides
 translation=Presentació
@@ -6845,10 +7001,6 @@ translation=Introdueix el seu correu electrònic...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Si us plau, introdueix un correu electrònic vàlid per convidar algú.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Si us plau, habilita el onnector Publish almenys en la configuració -> Connectors principals per veure els llocs.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Connectors de la comunitat instal·lats
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Sincronitza connectors de la comunitat instal·lats (fitxers .js, .css i manifest.json) i la seva configuració.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Voleu permetre que els connectors sincronitzats s'executin en aquest dispositiu?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync no pot verificar el contingut dels connectors sincronitzats amb aquest dispositiu, i poden diferir dels connectors publicats al directori de la comunitat.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Activeu-ho només si confieu en la cambra forta i els dispositius connectats.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Sí, activa la sincronització de connectors
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync encara s'està carregant. Actualitzeu aquesta pàgina més tard.
@@ -8277,6 +8445,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Vista de lectura
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Resumeix...
 original=Group by this property
 translation=Agrupa per aquesta propietat
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Redimensiona la columna...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Restableix la mida de la columna
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Arrossegueu per redimensionar
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Esborra els valors
@@ -10065,3 +10249,87 @@ translation={{count}} tema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} temes
+
+[main.button-cancel]
+original=Cancel
+translation=Cancel·la
+
+[main.button-ok]
+original=OK
+translation=D'acord
+
+[main.button-copy]
+original=Copy
+translation=Copia
+
+[main.button-open-link]
+original=Open Link
+translation=Obre l'enllaç
+
+[main.button-open-file]
+original=Open this file
+translation=Obre aquest fitxer
+
+[main.button-run-file]
+original=Run File
+translation=Executa el fitxer
+
+[main.external-link-title]
+original=Open external link?
+translation=Voleu obrir l'enllaç extern?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Aquest enllaç obrirà una aplicació externa fora d'Obsidian. Continueu només si confieu en l'origen d'aquest enllaç.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Obre sempre els enllaços {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Avís de fitxer remot
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Aquest fitxer es troba en un servidor remot i pot ser perillós.\nSegur que voleu obrir-lo?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Ubicació: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Accés a la unitat de xarxa
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Aquest contingut sol·licita dades d'una unitat de xarxa. Permetre-ho pot exposar les vostres credencials d'inici de sessió o altra informació sensible a l'amfitrió remot.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Amfitrió: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Permet
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Voleu executar el fitxer executable?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Aquest enllaç apunta a un fitxer executable. Executar-lo podria danyar l'ordinador.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fitxer: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Cambra forta no trobada.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=No s'ha pogut trobar cap cambra forta per a l'URL {{url}}

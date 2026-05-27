@@ -10,6 +10,10 @@ translation=Plugin
 original=Core plugins
 translation=Kerneplugins
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Vis i pluginlisten
+
 [setting.plugin-options]
 original=Plugin options
 translation=Pluginindstillinger
@@ -22,9 +26,41 @@ translation=Eksempel: mappe 1/mappe 2
 original=Example: folder/note
 translation=Eksempel: mappe/note
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Ingen fil valgt
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Ændring af denne indstilling kræver en genstart for at fungere.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Ugyldigt tal
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Værdien skal være mindst {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Værdien må højst være {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Filen blev ikke fundet.
+
+[setting.search-settings]
+original=Search settings...
+translation=Søg i indstillinger...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Ingen indstillinger fundet.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} flere
 
 [setting.editor.name]
 original=Editor
@@ -44,7 +80,7 @@ translation=Stavekontrol
 
 [setting.editor.option-spellcheck-description]
 original=Turn on the spellchecker.
-translation=Aktiverer stavekontrol. Fungerer i øjeblikket kun på engelsk (USA).
+translation=Aktiverer stavekontrol.
 
 [setting.editor.spellcheck-languages]
 original=Spellcheck languages
@@ -68,7 +104,7 @@ translation=Stavekontrolordbogen er tom.
 
 [setting.editor.option-show-inline-title]
 original=Inline title
-translation=Indlejret titel
+translation=Vis indlejret titel
 
 [setting.editor.option-show-inline-title-description]
 original=Display the filename as an editable title inline with the file contents.
@@ -112,7 +148,7 @@ translation=Kilde
 
 [setting.editor.option-auto-pair-brackets]
 original=Auto-pair brackets
-translation=Auto-par paranteser
+translation=Auto-par parenteser
 
 [setting.editor.option-auto-pair-brackets-description]
 original=Pair brackets and quotes automatically.
@@ -120,7 +156,7 @@ translation=Par parenteser og anførselstegn automatisk.
 
 [setting.editor.option-auto-pair-markdown]
 original=Auto-pair Markdown syntax
-translation=Auto-par Markdown-syntaks
+translation=Auto-par Markdown syntaks
 
 [setting.editor.option-auto-pair-markdown-description]
 original=Pair symbols automatically for bold, italic, code, and more.
@@ -152,11 +188,11 @@ translation=Lader dig folde en del af den samme indrykning, fx lister.
 
 [setting.editor.option-default-new-tab-view]
 original=Default view for new tabs
-translation=Standardview for nye faner
+translation=Standardvisning for nye faner
 
 [setting.editor.option-default-new-tab-view-description]
 original=The default view that a new Markdown tab gets opened in.
-translation=Standardviewet, som en ny Markdown fane åbnes i.
+translation=Standardvisning, som en ny Markdown fane åbnes i.
 
 [setting.editor.option-default-new-tab-view-editing]
 original=Editing view
@@ -168,7 +204,7 @@ translation=Læsning
 
 [setting.editor.option-open-tab-in-foreground]
 original=Always focus new tabs
-translation=Fokuser altid på nye faner
+translation=Fokusér altid på nye faner
 
 [setting.editor.option-open-tab-in-foreground-description]
 original=When you open a link in a new tab, switch to it immediately.
@@ -192,15 +228,15 @@ translation=Live forhåndsvisning
 
 [setting.editor.option-show-line-number]
 original=Line numbers
-translation=Linjenummer
+translation=Vis linjenumre
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
-translation=Vis linjenummer i margen.
+translation=Viser linjenumre i margen.
 
 [setting.editor.option-indentation-guide]
 original=Indentation guides
-translation=Indrykningshjælpelinjer
+translation=Vis indrykningshjælpelinjer
 
 [setting.editor.option-indentation-guide-description]
 original=Show vertical relationship lines between list items.
@@ -208,11 +244,11 @@ translation=Vis lodrette hjælpelinjer mellem punkter for visuel vejledning.
 
 [setting.editor.option-use-tabs]
 original=Indent using tabs
-translation=Brug tabulatorer
+translation=Anvend tabulator til indrykning
 
 [setting.editor.option-use-tabs-description]
 original=Use tabs to indent by pressing the “Tab” key. Turn this off to indent using 4 spaces.
-translation=Brug tabulatorer til indrykning ved tryk på "Tab"-tasten. Slå dette fra for at bruge mellemrum.
+translation=Anvend tabulator til indrykning ved tryk på "Tab"-tasten. Slå dette fra for at bruge mellemrum.
 
 [setting.editor.option-tab-size]
 original=Indent visual width
@@ -230,21 +266,29 @@ translation=Højre-til-venstre (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Indstiller tekstretningen for noter til at vises fra højre mod venstre.
 
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Vis Mermaid-diagrammer i noter
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Render flowcharts, sekvensdiagrammer og andre diagrammer fra “mermaid”-kodeblokke.
+
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
-translation=Auto-konverter HTML
+translation=Auto-konvertér HTML
 
 [setting.editor.option-auto-convert-html-description]
 original=Automatically convert HTML to Markdown when pasting and drag-and-drop from web pages. Use Ctrl/Cmd+Shift+V to paste HTML without converting.
-translation=Konverter automatisk HTML til Markdown ved indsætning og træk-og-slip fra hjemmesider. Brug Ctrl/Cmd+Shift+V for at indsætte uden konvertering.
+translation=Konverterer HTML automatisk til Markdown ved indsætning og træk-og-slip fra hjemmesider. Brug Ctrl/Cmd+Shift+V for at indsætte uden konvertering.
 
 [setting.editor.option-vim-key-bindings]
 original=Vim key bindings
-translation=Vim-tastaturgenveje
+translation=Vim tastaturgenveje
 
 [setting.editor.option-vim-key-bindings-description]
 original=Use Vim key bindings when editing.
-translation=Lader dig bruge Vim-tastaturgenveje i kildeeditoren.
+translation=Lader dig bruge Vim tastaturgenveje i kildeeditoren.
 
 [setting.editor.option-vim-key-bindings-mobile]
 original=On mobile devices, this setting is per-device and is not synchronized through the config file.
@@ -264,11 +308,11 @@ translation=Genopbyg
 
 [setting.editor.label-confirm-enable-vim]
 original=Confirm entering Vim mode
-translation=Bekræft, at gå ind i Vim-tilstand
+translation=Bekræft, at gå ind i Vim tilstand
 
 [setting.editor.label-vim-warning]
 original=Vim mode is for efficient text editing but can be quite counter-intuitive. If you're not familiar with Vim, this option might make it look like Obsidian has stopped working.
-translation=Vim-tilstand er til effektiv tekstredigering, men kan være ret ulogisk. Hvis du ikke kender Vim, kan denne indstilling få Obsidian til at se ud, som om den ikke virker mere.
+translation=Vim tilstand er til effektiv tekstredigering, men kan være ret ulogisk. Hvis du ikke kender Vim, kan denne indstilling få Obsidian til at se ud, som om den ikke virker mere.
 
 [setting.editor.label-vim-test]
 original=To verify that you know your way around Vim, please enter the command to quit Vim without saving below:
@@ -288,15 +332,15 @@ translation=Lad mig aktivere Vim
 
 [setting.editor.msg-vim-mode-enabled]
 original=Command is correct. Vim mode now enabled.
-translation=Kommandoen er korrekt. Vim-tilstand er nu aktiveret.
+translation=Kommandoen er korrekt. Vim tilstand er nu aktiveret.
 
 [setting.editor.msg-vim-mode-not-enabled]
 original=Command is incorrect. Vim mode remains disabled to protect you.
-translation=Kommandoen er ikke korrekt. Vim-tilstand forbliver deaktiveret for at beskytte dig.
+translation=Kommandoen er ikke korrekt. Vim tilstand forbliver deaktiveret for at beskytte dig.
 
 [setting.editor.msg-vim-mode-please-enter-command]
 original=Please enter the command to enable Vim mode
-translation=Indtast venligst kommandoen for at aktivere Vim-tilstand
+translation=Indtast venligst kommandoen for at aktivere Vim tilstand
 
 [setting.file.name]
 original=Files and links
@@ -388,7 +432,7 @@ translation=Vælg en bestemt fil, der åbnes som standard.
 
 [setting.file.option-always-update-links]
 original=Automatically update internal links
-translation=Opdater altid interne links
+translation=Opdatér automatisk interne links
 
 [setting.file.option-always-update-links-description]
 original=Turn off to be prompted to update links after renaming a file.
@@ -408,7 +452,7 @@ translation=Boksmappe
 
 [setting.file.option-choice-current-folder]
 original=Same folder as current file
-translation=I Samme mappe som nuværende fil
+translation=I samme mappe som nuværende fil
 
 [setting.file.option-choice-specified-folder]
 original=In the folder specified below
@@ -424,7 +468,7 @@ translation=Nye noter vises i denne mappe. Plugin-indstillinger tilsidesætter d
 
 [setting.file.option-use-wiki-links]
 original=Use [[Wikilinks]]
-translation=Brug [[Wikilinks]]
+translation=Anvend [[Wikilinks]]
 
 [setting.file.option-use-wiki-links-description]
 original=Auto-generate Wikilinks for [[links]] and ![[images]] instead of Markdown links and images. Disable this option to generate Markdown links instead.
@@ -432,7 +476,7 @@ translation=Auto-generér Wikilinks for [[links]] og ![[images]] i stedet for Ma
 
 [setting.file.option-show-unsupported-files]
 original=Show all file types
-translation=Registrer alle filtyper
+translation=Vis alle filtyper
 
 [setting.file.option-show-unsupported-files-description]
 original=Show files with any extension even if Obsidian can't open them natively, so you can link to them and see them in File Explorer and Quick Switcher.
@@ -444,11 +488,11 @@ translation=Links
 
 [setting.file.option-link-autocompleted-format]
 original=New link format
-translation=Nyt linkformat
+translation=Format for nye links
 
 [setting.file.option-link-autocompleted-format-description]
 original=What links to insert when auto-generating internal links.
-translation=Hvilke links skal indsættes ved auto-generering af interne links.
+translation=Hvilket linkformat, der skal anvendes ved auto-generering af interne links.
 
 [setting.file.option-choice-shortest-linktext]
 original=Shortest path when possible
@@ -460,7 +504,7 @@ translation=Relativ sti til fil
 
 [setting.file.option-choice-absolute-path]
 original=Path from vault folder
-translation=Absolut sti til boks
+translation=Absolut sti i boks
 
 [setting.file.option-new-attachment-location]
 original=Default location for new attachments
@@ -502,25 +546,25 @@ translation=Ekskluderede filer
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Ekskluderede filer bliver enten skjult eller mindre synlige forskellige steder, fx i Quick Switcher, linkforslag og Grafvisning.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Intet eksklusionsfilter anvendes lige nu. Tilføj et nedenfor.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Tilføj udelukkelse...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Filer, der matcher følgende filtre, er i øjeblikket ekskluderet:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Ingen udelukkelser tilføjet.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filter
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Tilføj udelukkelse
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Indtast en sti eller et regulært udtryk, f.eks. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filter må ikke være tomt
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Angiv sti eller "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -530,17 +574,37 @@ translation=Tillad URI callbacks
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Slå brugen til af x-callback-url gennem x-success eller x-error for Obsidian URIs.
 
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Administrer betroede handlinger, og konfigurer URI-adfærd.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Betroede handlinger
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Ingen betroede handlinger endnu. Godkendte URI-handlinger vises her.
+
 [setting.appearance.name]
 original=Appearance
 translation=Udseende
 
 [setting.appearance.option-base-theme]
 original=Base color scheme
-translation=Basistema
+translation=Standard farvetema
 
 [setting.appearance.option-base-theme-description]
 original=Choose Obsidian's default color scheme.
 translation=Vælg Obsidians standard farvetema.
+
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=mørk lys system nattilstand farveskema
 
 [setting.appearance.option-accent-color]
 original=Accent color
@@ -549,6 +613,10 @@ translation=Accentfarve
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Vælg accentfarven, der bruges i hele appen.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=fremhævning brand primær farve
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,9 +726,13 @@ translation=Skriftstørrelse
 original=Font size in pixels that affects editing and reading views.
 translation=Skriftstørrelse i pixels, der påvirker editor og forhåndsvisning.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=tekststørrelse zoom
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
-translation=Hurtig justering af skriftstørrelse
+translation=Hurtigjustering af skriftstørrelse
 
 [setting.appearance.option-font-size-action-description]
 original=Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.
@@ -672,11 +744,15 @@ translation=Temaer
 
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
-translation=Administrer installerede temaer og gennemse fællesskabstemaer.
+translation=Administrér installerede temaer og gennemse fællesskabstemaer.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=fællesskab gennemse installer download
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [setting.appearance.option-choice-none]
 original=None
@@ -684,19 +760,11 @@ translation=Ingen
 
 [setting.appearance.option-native-menus]
 original=Native menus
-translation=Styresystemets menuer
+translation=Systemets menuer
 
 [setting.appearance.option-native-menus-desc]
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
-translation=Menuer i hele appen vil matche styresystemets menuer. De påvirkes ikke af dit tema.
-
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Genindlæs temaer
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Genindlæste brugerdefinerede CSS-temaer.
+translation=Menuer i hele appen vil matche operativsystemets menuer. De påvirkes ikke af dit tema.
 
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
@@ -710,9 +778,17 @@ translation=CSS-kodestykker
 original=No CSS snippets found.
 translation=Ingen CSS kodestykker fundet i CSS kodestykkemappen.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Du har i øjeblikket {{count}} uddrag aktiveret.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Du har i øjeblikket {{count}} uddrag aktiveret.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS kodestykker er gemt i "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS-uddrag lader dig tilpasse udseendet af Obsidian. Placer CSS-filer i “{{path}}”, så de vises her.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Åbn mappe med CSS kodestykker
 original=Reloaded CSS snippets.
 translation=Genindlæste CSS kodestykker.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Anvend CSS kodestykke på "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Søg i uddrag...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -772,7 +848,7 @@ translation=Obsidian stil
 
 [setting.appearance.option-frame-native]
 original=Native frame
-translation=Styresystem stil
+translation=Systemets stil
 
 [setting.appearance.option-custom-icon]
 original=Custom app icon
@@ -894,6 +970,26 @@ translation=Du har i øjeblikket {{count}} tema installeret.
 original=You currently have {{count}} themes installed.
 translation=Du har i øjeblikket {{count}} temaer installeret.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Åbn indstillinger i nyt vindue
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Åbn indstillinger i deres eget vindue i stedet for indlejret i applikationen.
+
+[setting.interface.name]
+original=Interface
+translation=Brugerflade
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Avanceret
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Genvejstaster
@@ -909,14 +1005,6 @@ translation=Viser {{count}} genvejstast.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Viser {{count}} genvejstaster. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} kommando med konflikter.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} kommandoer med konflikter.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Tryk på genvejstast...
 original=All
 translation=Alle
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Konflikter ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Ikke tildelt
@@ -945,6 +1037,10 @@ translation=Tildelt
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Tildelt af mig
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Ingen resultater fundet.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1080,7 +1176,7 @@ translation=På Linux omfatter understøttede hemmelighedslagre:
 
 [setting.about.name]
 original=General
-translation=Om
+translation=Generelt
 
 [setting.about.label-commercial-license]
 original=Commercial license
@@ -1148,7 +1244,7 @@ translation=Slå dette fra for at forhindre appen i at tjekke for opdateringer.
 
 [setting.about.option-check-slow-startup]
 original=Notify if startup takes longer than expected
-translation=Notificer hvis opstarten tager længere tid end forventet
+translation=Notificér hvis opstarten tager længere tid end forventet
 
 [setting.about.option-check-slow-startup-description]
 original=Diagnose issues with your app by seeing what is causing the app to load slowly.
@@ -1260,15 +1356,15 @@ translation=Fjern
 
 [setting.about.option-catalyst]
 original=Catalyst license
-translation=Catalyst-licens
+translation=Catalyst licens
 
 [setting.about.option-catalyst-desc]
 original=You currently have the {{tier}} Catalyst license. Thanks for your support!
-translation=Du har i øjeblikket {{tier}} Catalyst-licens. Tak for din støtte!
+translation=Du har i øjeblikket {{tier}} Catalyst licens. Tak for din støtte!
 
 [setting.about.option-catalyst-desc-no-license]
 original=You don't have a Catalyst license. Catalyst is a one-time donation that helps Obsidian remain 100% user-supported and gives you early access to new features.
-translation=Du har ingen Catalyst-licens i øjeblikket. Catalyst-licensen er en engangsdonation til at støtte Obsidians udvikling.
+translation=Du har ingen Catalyst licens i øjeblikket. Catalyst licensen er en engangsdonation til at støtte Obsidians udvikling.
 
 [setting.about.label-app]
 original=App
@@ -1296,7 +1392,7 @@ translation=Du er ikke logget ind i øjeblikket. En konto er kun nødvendig for 
 
 [setting.account.button-upgrade-catalyst]
 original=Upgrade
-translation=Opgrader
+translation=Opgradér
 
 [setting.account.option-commercial-license]
 original=Commercial license
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Begrænset tilstand
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Begrænset tilstand er slået fra. Slå til for at deaktivere fællesskabsplugins.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Slå begrænset tilstand til for at bruge applikationen uden fællesskabsplugins.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Fællesskabsplugins
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Gennemse og installer fællesskabssplugins skabt af vores fantastiske fællesskab.
+original=Browse and install community plugins made by the community.
+translation=Gennemse og installer fællesskabsplugins skabt af fællesskabet.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Gennemse
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Afslut Begrænset Tilstand
+original=Exit Restricted mode
+translation=Afslut begrænset tilstand
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=På trods af vores indsats er der stadig en lille chance for, at et fællesskabsplugin opfører sig forkert.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Indledende kodegennemgang
+original=Code review
+translation=Kodegennemgang
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins gennemgår en indledende kodegennemgang af vores team, før de vises i butikken.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Plugins i det officielle fællesskabskatalog gennemgås automatisk efter hver opdatering.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Rapporteringsmekanisme
 original=We follow up and remove faulty plugins upon user report.
 translation=Vi følger op og fjerner fejlbehæftede plugins ved brugerrapportering.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Vil du gerne afslutte Begrænset Tilstand for at aktivere fællesskabsplugins? Det er stærkt anbefalet at lave en sikkerhedskopi af dine data, før du gør det.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Få mere at vide om pluginsikkerhed
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Aktiver fællesskabsplugins
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Tillad fællesskabsplugins
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Plugins kan køre vilkårlig kode på din enhed. Vi anbefaler, at du sikkerhedskopierer dine data, før du aktiverer dem.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Genaktivér installerede plugins
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Gendan {{count}} tidligere installeret plugin.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Gendan {{count}} tidligere installerede plugins.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Vis plugininfo
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Aktiverede plugins
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Disse plugins bliver aktiveret, når begrænset tilstand forlades.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1710,6 +1830,10 @@ translation=Søg i installerede plugins...
 original=Show installed only
 translation=Vis kun installerede
 
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Ingen plugins installeret.
+
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
 translation=Donér for at støtte {{name}}
@@ -1784,7 +1908,7 @@ translation=Ingen
 
 [setting.mobile-toolbar.manage-toolbar-options]
 original=Manage toolbar options
-translation=Administrer værktøjslinjeindstillinger
+translation=Administrér værktøjslinjeindstillinger
 
 [setting.mobile-toolbar.option-internal-link]
 original=Add internal link
@@ -2232,7 +2356,7 @@ translation=Der kræves IndexedDB for denne feature, men den er deaktiveret i ø
 
 [interface.msg-indexed-db-i-o-s]
 original=If you are using iOS in Lockdown Mode, please exclude Obsidian from the "Configure Web Browsing" setting of Lockdown Mode.
-translation=Hvis du benytter iOS i Lockdown mode, så ekskluder Obsidian fra "Configure Web Browsing" indstillingerne under Lockdown Mode.
+translation=Hvis du benytter iOS i Lockdown mode, så ekskludér Obsidian fra "Configure Web Browsing" indstillingerne under Lockdown Mode.
 
 [interface.label-enter-to-create]
 original=Enter to create
@@ -2260,7 +2384,7 @@ translation=Tilføj
 
 [interface.button-manage]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [interface.label-new-tab]
 original=New tab
@@ -2432,11 +2556,11 @@ translation=Hvad er nyt i {{version}}
 
 [interface.menu.edit-view]
 original=Current view: editing
-translation=Rediger (Ctrl/Cmd+Klik for at redigere i nyt panel)
+translation=Redigering
 
 [interface.menu.read-view]
 original=Current view: reading
-translation=Nuværende visning: læsning
+translation=Læsning
 
 [interface.menu.ribbon]
 original=Ribbon
@@ -3492,19 +3616,19 @@ translation=Åbn link under markør i nyt vindue
 
 [commands.navigate-tab-above]
 original=Focus on tab group above
-translation=Fokuser på fanegruppen ovenfor
+translation=Fokusér på fanegruppen ovenfor
 
 [commands.navigate-tab-below]
 original=Focus on tab group below
-translation=Fokuser på fanegruppen nedenfor
+translation=Fokusér på fanegruppen nedenfor
 
 [commands.navigate-tab-left]
 original=Focus on tab group to the left
-translation=Fokuser på fanegruppen til venstre
+translation=Fokusér på fanegruppen til venstre
 
 [commands.navigate-tab-right]
 original=Focus on tab group to the right
-translation=Fokuser på fanegruppen til højre
+translation=Fokusér på fanegruppen til højre
 
 [commands.toggle-pin]
 original=Toggle pin
@@ -3556,7 +3680,7 @@ translation=Åbn boks...
 
 [commands.manage-vaults]
 original=Manage vaults
-translation=Administrer bokse
+translation=Administrér bokse
 
 [commands.search-current-file]
 original=Search current file
@@ -3664,7 +3788,7 @@ translation=Tilføj markør nedenfor
 
 [commands.focus-editor]
 original=Focus on last note
-translation=Fokuser på editor
+translation=Fokusér på editor
 
 [commands.toggle-fold-properties]
 original=Toggle fold properties in current file
@@ -3938,6 +4062,22 @@ translation=Der er i øjeblikket {{count}} links, der peger på denne fil.
 original=Delete file
 translation=Slet fil
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Kør handling fra eksternt link?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Handlingen “{{action}}” er ved at blive kørt. Fortsæt kun, hvis du har tillid til linkets kilde.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Pluginnet “{{source}}” er ved at køre handlingen “{{action}}”. Fortsæt kun, hvis du har tillid til linkets kilde.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Spørg ikke igen om “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Hent vedhæftninger
@@ -3980,7 +4120,7 @@ translation=Indlæser...
 
 [dialogue.button-manage]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [dialogue.button-view]
 original=View
@@ -3993,6 +4133,10 @@ translation=Bekræft
 [dialogue.button-cancel]
 original=Cancel
 translation=Annuller
+
+[dialogue.button-allow]
+original=Allow
+translation=Tillad
 
 [dialogue.button-skip]
 original=Skip
@@ -4388,11 +4532,11 @@ translation=Skift sorteringsrækkefølge
 
 [plugins.file-explorer.action-reveal-file]
 original=Reveal file in navigation
-translation=Vis fil i stifinder
+translation=Find fil i boks
 
 [plugins.file-explorer.action-reveal-active-file]
 original=Reveal current file in navigation
-translation=Vis aktiv fil i stifinder
+translation=Find aktiv fil i boks
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
@@ -4628,7 +4772,7 @@ translation=Matcher enhver:
 
 [plugins.search.label-excluding]
 original=Excluding: 
-translation=Ekskluder: 
+translation=Ekskluderer: 
 
 [plugins.search.label-case-sensitive]
 original=Case sensitive
@@ -4901,6 +5045,10 @@ translation=Vis alle filtyper, også dem Obsidian ikke kan åbne. Filen åbnes m
 [plugins.graph-view.name]
 original=Graph view
 translation=Grafvisning
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokal graf
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Ordtælling
 original=Show word count in the status bar.
 translation=Vis ordtælling i statuslinjen.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Vis Mermaid-diagrammer i denne boks?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Tillad kun, hvis du har tillid til indholdet i denne boks.
+
 [plugins.slides.name]
 original=Slides
 translation=Slides
@@ -6080,7 +6236,7 @@ translation=Ingen mikrofon er tilsluttet.
 
 [plugins.open-with-default-app.name]
 original=Open in default app
-translation=Åbn i standardapp
+translation=Åbn i standard app
 
 [plugins.open-with-default-app.desc]
 original=Add a button to open the current file in its default app.
@@ -6096,11 +6252,11 @@ translation=Del
 
 [plugins.open-with-default-app.action-show-in-folder]
 original=Show in system explorer
-translation=Vis i mappe
+translation=Vis i system app
 
 [plugins.open-with-default-app.action-show-in-folder-mac]
 original=Reveal in Finder
-translation=Vis i Stifinder
+translation=Find i Finder
 
 [plugins.templates.name]
 original=Templates
@@ -6264,7 +6420,7 @@ translation=Køb
 
 [plugins.publish.label-manage-sites]
 original=Manage sites
-translation=Administrer sider
+translation=Administrér sider
 
 [plugins.publish.label-no-sites]
 original=You don't have any sites.
@@ -6388,7 +6544,7 @@ translation=Side-samarbejde
 
 [plugins.publish.option-site-collaboration-desc]
 original=Manage collaborators for this site.
-translation=Administrer samarbejdspartnere for denne side.
+translation=Administrér samarbejdspartnere for denne side.
 
 [plugins.publish.option-customize-navigation]
 original=Customize navigation
@@ -6416,7 +6572,7 @@ translation=Vis skjulte
 
 [plugins.publish.button-customize-sidebar]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [plugins.publish.label-navigation-modal-title]
 original=Navigation
@@ -6432,7 +6588,7 @@ translation=Skjul i navigation
 
 [plugins.publish.button-manage-collaborators]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [plugins.publish.option-theme]
 original=Theme
@@ -6544,7 +6700,7 @@ translation=Konfigurer Google Analytics for din side. Kun tilgængelig for besø
 
 [plugins.publish.button-manage-passwords]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [plugins.publish.button-save-site-settings]
 original=Save site settings
@@ -6692,7 +6848,7 @@ translation=Der opstod en netværksfejl.
 
 [plugins.publish.label-manage-passwords]
 original=Manage passwords
-translation=Administrer adgangskoder
+translation=Administrér adgangskoder
 
 [plugins.publish.label-add-password]
 original=Add password
@@ -6816,7 +6972,7 @@ translation=Få en side
 
 [plugins.publish.label-manage-sharing]
 original=Manage sharing for “{{name}}”
-translation=Administrer deling for "{{name}}"
+translation=Administrér deling for "{{name}}"
 
 [plugins.publish.label-sharing-with-users]
 original=This site is currently shared with the following people:
@@ -6845,10 +7001,6 @@ translation=Indtast deres e-mail...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Indtast venligst en gyldig e-mail for at invitere nogen.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Aktiver venligst Publish-kerneplugin i Indstillinger -> Kerneplugins for at se sider.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -6916,7 +7068,7 @@ translation=Åbn fil
 
 [plugins.publish.tooltip-manage-publish-filters]
 original=Manage publish filters
-translation=Administrer udgivelsesfiltre
+translation=Administrér udgivelsesfiltre
 
 [plugins.publish.option-included-folders]
 original=Included folders
@@ -6948,11 +7100,11 @@ translation=Obsidian Publish ekskluderer i øjeblikket {{folders}}.
 
 [plugins.publish.label-manage-included-folders]
 original=Manage included folders
-translation=Administrer inkluderede mapper
+translation=Administrér inkluderede mapper
 
 [plugins.publish.label-manage-excluded-folders]
 original=Manage excluded folders
-translation=Administrer ekskluderede mapper
+translation=Administrér ekskluderede mapper
 
 [plugins.publish.label-add-included-folder]
 original=Include a folder
@@ -6984,7 +7136,7 @@ translation=Indlæs arbejdsområdelayout
 
 [plugins.workspaces.action-manage-layouts]
 original=Manage workspace layouts
-translation=Administrer arbejdsområdelayouts
+translation=Administrér arbejdsområdelayouts
 
 [plugins.workspaces.action-save]
 original=Save layout
@@ -7036,7 +7188,7 @@ translation=Sync
 
 [plugins.sync.desc]
 original=Synchronize your files through Obsidian Sync.
-translation=Synkroniser dine filer med Obsidian Sync.
+translation=Synkronisér dine filer med Obsidian Sync.
 
 [plugins.sync.action-view-version-history]
 original=Open version history for the current file
@@ -7048,11 +7200,11 @@ translation=Opsæt Obsidian Sync
 
 [plugins.sync.menu-opt-view-version-history]
 original=Open version history
-translation=Åbn versions historie
+translation=Åbn versionshistorik
 
 [plugins.sync.action-view-sync-sidebar]
 original=Show Sync history
-translation=Vis Sync historie
+translation=Vis Sync historik
 
 [plugins.sync.action-activity-log]
 original=Open activity log
@@ -7120,7 +7272,7 @@ translation=via {{device}}
 
 [plugins.sync.label-no-history]
 original=No sync history for this file.
-translation=Der er ingen synkroniserings historik for denne fil.
+translation=Der er ingen synkroniseringshistorik for denne fil.
 
 [plugins.sync.label-empty-file]
 original=Empty content
@@ -7268,7 +7420,7 @@ translation=Indtast et nyt navn til denne eksterne boks.
 
 [plugins.sync.tooltip-manage-sharing]
 original=Manage sharing
-translation=Administrer deling
+translation=Administrér deling
 
 [plugins.sync.label-confirm-delete-remote-vault]
 original=Confirm delete vault
@@ -7312,7 +7464,7 @@ translation=Du har ingen eksterne bokse.
 
 [plugins.sync.label-no-subscription]
 original=You don't have an active Obsidian Sync subscription.
-translation=Du har ikke et aktivt Obsidian Sync-abonnement.
+translation=Du har ikke et aktivt Obsidian Sync abonnement.
 
 [plugins.sync.label-please-visit]
 original=Please visit
@@ -7340,7 +7492,7 @@ translation=Fejl
 
 [plugins.sync.option-event-type-skipped]
 original=Skipped
-translation=Sprunget over
+translation=Overspringning
 
 [plugins.sync.option-event-type-merge-conflicts]
 original=Merge conflicts
@@ -7384,7 +7536,7 @@ translation=Vælg
 
 [plugins.sync.button-manage-remote-vault]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [plugins.sync.option-remote-vault-desc-connected]
 original=Currently connected to the “{{name}}” remote vault.
@@ -7468,31 +7620,31 @@ translation=`Gendannelse fuldført: {{succeeded}} lykkedes og {{failed}} mislykk
 
 [plugins.sync.option-vault-size]
 original=Storage usage
-translation=Boksstørrelse
+translation=Lagerforbrug
 
 [plugins.sync.option-vault-size-desc]
 original=You are using {{size}} out of {{limit}}
-translation=Du bruger {{size}} ud af {{limit}}
+translation=Du anvender {{size}} ud af {{limit}}
 
 [plugins.sync.option-vault-size-unknown]
 original=Unable to retrieve your vault size.
-translation=Kan ikke hente din boksstørrelse.
+translation=Kan ikke hente dit lagerforbrug.
 
 [plugins.sync.option-vault-size-loading]
 original=Retrieving your vault size...
-translation=Henter din boksstørrelse...
+translation=Henter din lagerbforbrug...
 
 [plugins.sync.option-over-size]
 original=Vault size over limit
-translation=Boksstørrelse overstiger grænsen
+translation=Lagerforbruget overstiger grænsen
 
 [plugins.sync.option-almost-over-size]
 original=Vault size approaching limit
-translation=Størrelsen på boksen nærmer sig grænsen
+translation=Størrelsen på dit lagerforbrug nærmer sig grænsen
 
 [plugins.sync.msg-largest-files]
 original=View largest files
-translation=Se største filer
+translation=Vis de største filer
 
 [plugins.sync.msg-largest-files-desc]
 original=These are the remote files that are taking the most space. After deleting attachments, use the purge button to free up remote vault space.
@@ -7500,11 +7652,11 @@ translation=Disse er de eksterne filer, der optager mest plads. Efter sletning a
 
 [plugins.sync.button-upgrade-storage]
 original=Upgrade storage
-translation=Opgrader lagerplads
+translation=Opgradér lagerplads
 
 [plugins.sync.button-purge-remote]
 original=Purge
-translation=Fjern
+translation=Ryd op
 
 [plugins.sync.button-hide-my-changes]
 original=Hide my changes
@@ -7520,7 +7672,7 @@ translation=Oprydning fuldført.
 
 [plugins.sync.option-prevent-sleep]
 original=Prevent device sleep
-translation=Forhindr, at enheden går i dvale
+translation=Forhindr at enheden går i dvaletilstand
 
 [plugins.sync.option-prevent-sleep-desc]
 original=Prevents the device from going to sleep when there are still files to be synced.
@@ -7544,47 +7696,47 @@ translation= Disse mapper er i øjeblikket ekskluderet:
 
 [plugins.sync.button-manage-excluded-folders]
 original=Manage
-translation=Administrer
+translation=Administrér
 
 [plugins.sync.option-sync-image]
 original=Sync images
-translation=Synkroniser billeder
+translation=Synkronisér billeder
 
 [plugins.sync.option-sync-image-desc]
 original=Sync image files with these extensions: {{extensions}}.
-translation=Synkroniser billedfiler med disse udvidelser: {{extensions}}.
+translation=Synkronisér billedfiler med disse udvidelser: {{extensions}}.
 
 [plugins.sync.option-sync-audio]
 original=Sync audio
-translation=Synkroniser lyd
+translation=Synkronisér lyd
 
 [plugins.sync.option-sync-audio-desc]
 original=Sync audio files with these extensions: {{extensions}}.
-translation=Synkroniser lydfiler med disse udvidelser: {{extensions}}.
+translation=Synkronisér lydfiler med disse udvidelser: {{extensions}}.
 
 [plugins.sync.option-sync-video]
 original=Sync videos
-translation=Synkroniser videoer
+translation=Synkronisér videoer
 
 [plugins.sync.option-sync-video-desc]
 original=Sync video files with these extensions: {{extensions}}.
-translation=Synkroniser videoer med disse udvidelser: {{extensions}}.
+translation=Synkronisér videoer med disse udvidelser: {{extensions}}.
 
 [plugins.sync.option-sync-pdf]
 original=Sync PDFs
-translation=Synkroniser PDF-filer
+translation=Synkronisér PDF-filer
 
 [plugins.sync.option-sync-pdf-desc]
 original=Sync PDF files.
-translation=Synkroniser PDF-filer.
+translation=Synkronisér PDF-filer.
 
 [plugins.sync.option-sync-unsupported]
 original=Sync all other types
-translation=Synkroniser alle andre typer
+translation=Synkronisér alle andre typer
 
 [plugins.sync.option-sync-unsupported-desc]
 original=Sync unsupported file types.
-translation=Synkroniser ikke-understøttede filtyper.
+translation=Synkronisér ikke-understøttede filtyper.
 
 [plugins.sync.option-vault-config-sync]
 original=Vault configuration sync
@@ -7596,7 +7748,7 @@ translation=Indstillingernes versionshistorik
 
 [plugins.sync.option-view-config-files-desc]
 original=View and restore version history of setting files.
-translation=Se og gendan versionhistorik for indstillingsfiler.
+translation=Vis og gendan versionhistorik for indstillingsfiler.
 
 [plugins.sync.option-sync-app]
 original=Main settings
@@ -7604,7 +7756,7 @@ translation=Hovedindstillinger
 
 [plugins.sync.option-sync-app-desc]
 original=Enable to sync editor settings, files & links settings, etc.
-translation=Aktiver for at synkronisere editorindstillinger, fil- og linkindstillinger, brugerdefinerede genvejstaster osv.
+translation=Aktivér for at synkronisere editorindstillinger, fil- og linkindstillinger, brugerdefinerede genvejstaster osv.
 
 [plugins.sync.option-sync-appearance]
 original=Appearance settings
@@ -7612,7 +7764,7 @@ translation=Indstillinger for udseende
 
 [plugins.sync.option-sync-appearance-desc]
 original=Sync appearance settings like dark mode, active theme, and enabled snippets.
-translation=Synkroniser indstillinger for udseende som mørk tilstand, aktivt tema og aktiverede CSS kodestykker.
+translation=Synkroniserer indstillinger for udseende som mørk tilstand, aktivt tema og aktiverede CSS kodestykker.
 
 [plugins.sync.option-sync-appearance-data]
 original=Themes and snippets
@@ -7620,7 +7772,7 @@ translation=Temaer og CSS kodestykker
 
 [plugins.sync.option-sync-appearance-data-desc]
 original=Sync downloaded themes and snippets. Whether they are enabled depends on the previous setting.
-translation=Synkroniser hentede temaer og CSS kodestykker. Om de er aktiveret, afhænger af den tidligere indstilling.
+translation=Synkroniserer hentede temaer og CSS kodestykker. Om de er aktiveret, afhænger af den tidligere indstilling.
 
 [plugins.sync.option-sync-hotkey]
 original=Hotkeys
@@ -7628,7 +7780,7 @@ translation=Genvejstaster
 
 [plugins.sync.option-sync-hotkey-desc]
 original=Sync custom hotkeys.
-translation=Synkroniser brugerdefinerede genvejstaster.
+translation=Synkronisér brugerdefinerede genvejstaster.
 
 [plugins.sync.option-sync-core-plugin]
 original=Active core plugin list
@@ -7636,15 +7788,15 @@ translation=Liste over aktive kerneplugins
 
 [plugins.sync.option-sync-core-plugin-desc]
 original=Sync which core plugins are enabled.
-translation=Synkroniser, hvilke kerneplugins er aktiveret.
+translation=Synkroniserer aktiverede kerneplugins.
 
 [plugins.sync.option-sync-core-plugin-data]
 original=Core plugin settings
-translation=Kerneplugin-indstillinger
+translation=Kerneplugin indstillinger
 
 [plugins.sync.option-sync-core-plugin-data-desc]
 original=Sync core plugin settings.
-translation=Synkroniser indstilling for kerneplugin.
+translation=Synkroniserer indstillinger for kerneplugins.
 
 [plugins.sync.option-sync-community-plugin]
 original=Active community plugin list
@@ -7652,7 +7804,7 @@ translation=Liste over aktive fællesskabsplugins
 
 [plugins.sync.option-sync-community-plugin-desc]
 original=Sync which community plugins are enabled.
-translation=Synkroniser, hvilke fællesskabsplugins er aktiveret.
+translation=Synkroniser aktiverede fællesskabsplugins.
 
 [plugins.sync.option-sync-community-plugin-data]
 original=Installed community plugins
@@ -7662,17 +7814,33 @@ translation=Installerede fællesskabsplugins
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Synkroniser installerede fællesskabsplugins (.js, .css og manifest.json-filer) og deres indstillinger.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Tillad synkroniserede plugins at køre på denne enhed?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync kan ikke verificere indholdet af plugins, der er synkroniseret til denne enhed, og de kan være forskellige fra plugins, der er udgivet i fællesskabskataloget.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Aktivér kun dette, hvis boksen og tilsluttede enheder er betroede.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ja, slå synkronisering af plugins til
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync arbejder stadig, så genopfrisk denne side senere.
 
 [plugins.sync.label-sync-introduction]
 original=Obsidian Sync is Obsidian's add-on sync service with end-to-end encryption and version history.
-translation=Obsidian Sync er Obsidians ekstra synkroniseringstjeneste med end-to-end-kryptering og versionshistorik.
+translation=Obsidian Sync er Obsidians ekstra synkroniseringstjeneste med slut-til-slut kryptering og versionshistorik.
 
 [plugins.sync.label-account-required]
 original=To start syncing, please log in or create a new Obsidian account.
-translation=For at starte synkroniseringen skal du logge ind eller oprette en ny Obsidian-konto.
+translation=For at starte synkroniseringen, skal du logge ind eller oprette en ny Obsidian-konto.
 
 [plugins.sync.label-current-file]
 original=Current file
@@ -7680,7 +7848,7 @@ translation=Nuværende fil
 
 [plugins.sync.label-sync-changes]
 original=Sync changes
-translation=Synkroniserings ændringer
+translation=Synkroniseringsændringer
 
 [plugins.sync.label-today]
 original=Today
@@ -7716,7 +7884,7 @@ translation=Log ind
 
 [plugins.sync.label-manage-excluded-folders]
 original=Manage excluded folders
-translation=Administrer ekskluderede mapper
+translation=Administrér ekskluderede mapper
 
 [plugins.sync.label-number-of-folders-excluded]
 original=Obsidian Sync is currently excluding {{folders}}.
@@ -7724,7 +7892,7 @@ translation={{folders}} er i øjeblikket ekskluderet fra synkronisering.
 
 [plugins.sync.label-add-excluded-folder]
 original=Exclude a folder
-translation=Ekskluder en mappe
+translation=Ekskludér en mappe
 
 [plugins.sync.label-add-excluded-folder-desc]
 original=You can exclude both existing folders and folders that have not been created yet.
@@ -7772,7 +7940,7 @@ translation=Hvis du opretter forbindelse til den eksterne boks "{{name}}", flett
 
 [plugins.sync.tooltip-update-setting-on-all-devices]
 original=Please update this option and restart app on all the devices where you want it to take effect.
-translation=Opdater venligst denne indstilling, og genstart appen på alle de enheder, hvor den skal træde i kraft.
+translation=Opdatér venligst denne indstilling, og genstart appen på alle de enheder, hvor den skal træde i kraft.
 
 [plugins.sync.label-sharing-with-users]
 original=This remote vault is currently shared with the following people:
@@ -7840,11 +8008,11 @@ translation=Obsidian Sync lader dig oprette op til 5 eksterne bokse. For at opre
 
 [plugins.sync.label-upgrade-vault]
 original=Upgrade vault
-translation=Opgrader boks
+translation=Opgradér boks
 
 [plugins.sync.label-upgrade-vault-encryption]
 original=Upgrade vault encryption
-translation=Opgrader boks kryptering
+translation=Opgradér bokskryptering
 
 [plugins.sync.label-upgrade-vault-encryption-desc]
 original=There is a new encryption version available for remote vaults.
@@ -7852,15 +8020,15 @@ translation=Der er en ny krypteringsversion klar for fjernbokse.
 
 [plugins.sync.label-migrate-remote-vault]
 original=Migrate remote vault
-translation=Migrer fjernboks
+translation=Migrér fjernboks
 
 [plugins.sync.label-remote-vault-configuration]
 original=Remote vault configuration
-translation=Fjernboks konfiguration
+translation=Fjernbokskonfiguration
 
 [plugins.sync.button-migrate]
 original=Migrate
-translation=Migrer
+translation=Migrér
 
 [plugins.sync.msg-recreate-remote-vault]
 original=This will delete your remote vault and recreate it with the latest encryption. Local files will not be affected, however your version history will be lost.
@@ -8278,6 +8446,10 @@ translation=Kunne ikke indlæse dette websted.
 original=Make sure you have the correct address.
 translation=Sørg på at have den korrekte adresse.
 
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Læsevisning
+
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
 translation=Søg på nettet
@@ -8404,7 +8576,7 @@ translation=Opret et kort med en bestemt størrelse
 
 [plugins.canvas.action-convert-to-file]
 original=Convert to file...
-translation=Konverter til fil...
+translation=Konvertér til fil...
 
 [plugins.canvas.action-drag-to-add-note]
 original=Drag to add note from vault
@@ -8720,7 +8892,7 @@ translation=Opret nyt lærred
 
 [plugins.canvas.command-convert-to-file]
 original=Convert to file...
-translation=Konverter til fil...
+translation=Konvertér til fil...
 
 [plugins.canvas.instruction-narrow-heading]
 original=to embed heading
@@ -9412,11 +9584,11 @@ translation=Ingen
 
 [plugins.bases.cards.name]
 original=Cards
-translation=Kort
+translation=Landkort
 
 [plugins.bases.cards.label-card-size]
 original=Card size
-translation=Størrelse på kort
+translation=Størrelse på landkort
 
 [plugins.bases.cards.label-image-property]
 original=Image property
@@ -9472,7 +9644,7 @@ translation=Rækkehøjde
 
 [plugins.bases.table.option-short]
 original=Short
-translation=Kort
+translation=Lille
 
 [plugins.bases.table.option-medium]
 original=Medium
@@ -9493,6 +9665,18 @@ translation=Summér...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Gruppér efter denne egenskab
+
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Tilpas kolonnestørrelse...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Nulstil kolonnestørrelse
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Træk for at ændre størrelse
 
 [plugins.bases.table.action-clear-selection]
 original=Clear values
@@ -10065,3 +10249,87 @@ translation={{count}} tema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} temaer
+
+[main.button-cancel]
+original=Cancel
+translation=Annuller
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopiér
+
+[main.button-open-link]
+original=Open Link
+translation=Åbn link
+
+[main.button-open-file]
+original=Open this file
+translation=Åbn denne fil
+
+[main.button-run-file]
+original=Run File
+translation=Kør fil
+
+[main.external-link-title]
+original=Open external link?
+translation=Åbn eksternt link?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Dette link åbner en ekstern applikation uden for Obsidian. Fortsæt kun, hvis du har tillid til kilden til dette link.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Åbn altid {{scheme}}://-links
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Advarsel om fjernfil
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Denne fil er placeret på en fjernserver og kan være farlig.\nEr du sikker på, at du vil åbne den?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Placering: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Adgang til netværksdrev
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Dette indhold anmoder om data fra et netværksdrev. Hvis du tillader dette, kan dine loginoplysninger eller andre følsomme oplysninger blive eksponeret for fjernværten.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Vært: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Tillad
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Kør eksekverbar fil?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Dette link peger på en eksekverbar fil. Hvis du kører den, kan det skade din computer.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fil: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Boks ikke fundet.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Kan ikke finde en boks for URL'en {{url}}

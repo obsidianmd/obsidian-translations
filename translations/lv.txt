@@ -10,6 +10,10 @@ translation=Spraudnis
 original=Core plugins
 translation=Pamatspraudņi
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Rādīt spraudņu sarakstā
+
 [setting.plugin-options]
 original=Plugin options
 translation=Spraudņu opcijas
@@ -22,9 +26,41 @@ translation=Piemērs: mape 1/mape 2
 original=Example: folder/note
 translation=Piemērs: mape/piezīme
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Nav atlasīts neviens fails
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Šīs opcijas maiņa prasa restartu, lai stātos spēkā.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Nederīgs skaitlis
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Vērtībai jābūt vismaz {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Vērtībai jābūt ne vairāk kā {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Fails nav atrasts.
+
+[setting.search-settings]
+original=Search settings...
+translation=Meklēt iestatījumos...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Nav atrasti iestatījumi.
+
+[setting.search-show-more]
+original={{count}} more
+translation=Vēl {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=No labās uz kreiso (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Iestata teksta virzienu piezīmēm no labās uz kreiso pusi.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Rādīt Mermaid diagrammas piezīmēs
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Atveidot blokshēmas, secību diagrammas un citas diagrammas no “mermaid” koda blokiem.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Izslēgtie faili
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Izslēgtie faili tiks vai nu paslēpti, vai mazāk pamanāmi dažādās vietās, piemēram, Ātrajā pārslēdzējā, saišu ieteikumos un Grafika skatā.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Pašlaik nav piemērots neviens izslēgšanas filtrs. Pievienojiet vienu zemāk.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Pievienot izņēmumu...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Faili, kas atbilst šādiem filtriem, pašlaik ir izslēgti:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Izņēmumi nav pievienoti.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filtrs
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Pievienot izņēmumu
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Ievadiet ceļu vai regulāro izteiksmi, piemēram, /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filtrs nevar būt tukšs
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Ievadiet ceļu vai "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Atļaut URI atzvanus
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Iespējot x-callback-url izmantošanu ar x-success vai x-error, apstrādājot Obsidian URI.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Pārvaldiet uzticamās darbības un konfigurējiet URI uzvedību.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Uzticamās darbības
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Vēl nav uzticamu darbību. Apstiprinātās URI darbības parādīsies šeit.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Pamata tēma
 original=Choose Obsidian's default color scheme.
 translation=Izvēlies Obsidian noklusējuma krāsu shēmu.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=tumšs gaišs sistēma nakts režīms krāsu shēma
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Akcenta krāsa
@@ -549,6 +613,10 @@ translation=Akcenta krāsa
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Izvēlies akcenta krāsu, kas tiek izmantota visā lietotnē.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=izcelšana zīmols primārā krāsa
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Fonta izmērs
 original=Font size in pixels that affects editing and reading views.
 translation=Fonta izmērs pikseļos, kas ietekmē redaktoru un priekšskatījumu.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=teksta izmērs tālummaiņa
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Ātrā fonta izmēra pielāgošana
@@ -673,6 +745,10 @@ translation=Tēmas
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Pārvaldi instalētās tēmas un pārlūko kopienas tēmas.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=kopiena pārlūkot instalēt lejupielādēt
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Vietējās izvēlnes
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Izvēlnes visā lietotnē tiks pielāgotas operētājsistēmai. Tās netiks ietekmētas jūsu tēmas dēļ.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Pārlādēt tēmas
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Pielāgotās CSS tēmas ir pārlādētas.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Atvērt tēmu mapi
@@ -710,9 +778,17 @@ translation=CSS fragmenti
 original=No CSS snippets found.
 translation=CSS fragmenti netika atrasti fragmentu mapē.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Pašlaik ir iespējots {{count}} fragments.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Pašlaik ir iespējoti {{count}} fragmenti.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS fragmenti tiek glabāti "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS fragmenti ļauj pielāgot Obsidian izskatu. Ievietojiet CSS failus mapē “{{path}}”, lai tie parādītos šeit.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Atvērt fragmentu mapi
 original=Reloaded CSS snippets.
 translation=CSS fragmenti ir pārlādēti.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Pielietot CSS fragmentu "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Meklēt fragmentus...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Jums pašlaik ir instalēta {{count}} tēma.
 original=You currently have {{count}} themes installed.
 translation=Jums pašlaik ir instalētas {{count}} tēmas.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Atvērt iestatījumus jaunā logā
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Atvērt iestatījumus atsevišķā logā, nevis iegultus lietotnē.
+
+[setting.interface.name]
+original=Interface
+translation=Saskarne
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobilais
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Papildu
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Karstie taustiņi
@@ -909,14 +1005,6 @@ translation=Parādīts {{count}} karstais taustiņš.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Parādīti {{count}} karstie taustiņi. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} komanda ar konfliktiem.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} komandas ar konfliktiem.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Nospiediet karsto taustiņu...
 original=All
 translation=Visi
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Konflikti ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Neuzdevumi
@@ -945,6 +1037,10 @@ translation=Piešķirtie
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Piešķirts man
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Nav atrasts neviens rezultāts.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Ierobežotais režīms
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Ierobežotais režīms ir izslēgts. Ieslēdziet, lai atspējotu kopienas spraudņus.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Ieslēdziet ierobežoto režīmu, lai lietotni izmantotu bez kopienas spraudņiem.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Kopienas spraudņi
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Pārlūkojiet un instalējiet trešās puses spraudņus, kurus izstrādājusi mūsu brīnišķīgā kopiena.
+original=Browse and install community plugins made by the community.
+translation=Pārlūkojiet un instalējiet kopienas spraudņus, kurus izstrādājusi kopiena.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Pārlūkot
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Iziet no Ierobežotā režīma
+original=Exit Restricted mode
+translation=Iziet no ierobežotā režīma
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Neskatoties uz mūsu pūlēm, joprojām pastāv neliels risks, ka kāds kopienas spraudnis varētu uzvesties nepareizi.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Sākotnējā koda pārbaude
+original=Code review
+translation=Koda pārbaude
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Spraudņi tiek pakļauti sākotnējai koda pārbaudei no mūsu komandas puses, pirms tie parādās veikalā.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Oficiālajā kopienas katalogā esošie spraudņi tiek automātiski pārbaudīti pēc katra atjauninājuma.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Ziņošanas mehānisms
 original=We follow up and remove faulty plugins upon user report.
 translation=Mēs reaģējam un izņemam kļūdainos spraudņus pēc lietotāju ziņojumiem.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Vai vēlaties iziet no Ierobežotā režīma, lai iespējotu kopienas spraudņus? Mēs stingri iesakām veikt datu rezerves kopēšanu pirms tam.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Uzziniet vairāk par spraudņu drošību
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Ieslēgt kopienas spraudņus
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Atļaut kopienas spraudņus
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Spraudņi var izpildīt patvaļīgu kodu jūsu ierīcē. Pirms to iespējošanas iesakām dublēt jūsu datus.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Atkārtoti iespējot instalētos spraudņus
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Atjaunot {{count}} iepriekš instalētu spraudni.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Atjaunot {{count}} iepriekš instalētus spraudņus.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Rādīt spraudņa informāciju
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Iespējotie spraudņi
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Šie spraudņi tiks iespējoti, izejot no ierobežotā režīma.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Meklēt instalētos spraudņus..
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Rādīt tikai instalētos
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Nav instalētu spraudņu.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Pašlaik ir {{count}} saites, kas norāda uz šo failu.
 original=Delete file
 translation=Dzēst failu
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Vai palaist darbību no ārējas saites?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Tiks palaista darbība “{{action}}”. Turpiniet tikai tad, ja uzticaties saites avotam.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Spraudnis “{{source}}” gatavojas palaist darbību “{{action}}”. Turpiniet tikai tad, ja uzticaties saites avotam.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Vairs nejautāt par “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Lejupielādēt pielikumus
@@ -3993,6 +4133,10 @@ translation=Apstiprināt
 [dialogue.button-cancel]
 original=Cancel
 translation=Atcelt
+
+[dialogue.button-allow]
+original=Allow
+translation=Atļaut
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Rādīt visus failus, ieskaitot tos, kurus Obsidian nevar atvērt. F
 [plugins.graph-view.name]
 original=Graph view
 translation=Grafu skats
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokālais grafs
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Vārdu skaits
 original=Show word count in the status bar.
 translation=Parādīt vārdu skaitu statusjoslā.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Vai rādīt Mermaid diagrammas šajā glabātuvē?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Atļaujiet tikai tad, ja uzticaties šīs glabātuves saturam.
+
 [plugins.slides.name]
 original=Slides
 translation=Slaidi
@@ -6845,10 +7001,6 @@ translation=Ievadiet viņu e-pastu...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Lūdzu, ievadiet derīgu e-pastu, lai uzaicinātu kādu.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Lūdzu, iespējojiet Publish Core spraudni sadaļā Iestatījumi -> Core spraudņi, lai apskatītu vietnes.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Uzstādītie kopienas spraudņi
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Sinhronizēt uzstādītos kopienas spraudņus (.js, .css un manifest.json faili) un to iestatījumus.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Vai atļaut sinhronizētajiem spraudņiem darboties šajā ierīcē?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync nevar pārbaudīt uz šo ierīci sinhronizēto spraudņu saturu, un tie var atšķirties no kopienas katalogā publicētajiem spraudņiem.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Iespējojiet to tikai tad, ja glabātuve un pievienotās ierīces ir uzticamas.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Jā, ieslēgt spraudņu sinhronizāciju
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync joprojām ielādējas; lūdzu, atsvaidziniet šo lapu vēlāk.
@@ -8277,6 +8445,10 @@ translation=Neizdevās ielādēt šo vietni.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Pārliecinieties, ka ievadījāt pareizo adresi.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Lasītāja skats
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Apkopot...
 original=Group by this property
 translation=Grupēt pēc šīs īpašības
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Mainīt kolonnas izmēru...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Atiestatīt kolonnas izmēru
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Velciet, lai mainītu izmēru
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Notīrīt vērtības
@@ -10065,3 +10249,87 @@ translation={{count}} tēma
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} tēmas
+
+[main.button-cancel]
+original=Cancel
+translation=Atcelt
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopēt
+
+[main.button-open-link]
+original=Open Link
+translation=Atvērt saiti
+
+[main.button-open-file]
+original=Open this file
+translation=Atvērt šo failu
+
+[main.button-run-file]
+original=Run File
+translation=Palaist failu
+
+[main.external-link-title]
+original=Open external link?
+translation=Vai atvērt ārēju saiti?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Šī saite atvērs ārēju lietotni ārpus Obsidian. Turpiniet tikai tad, ja uzticaties šīs saites avotam.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Vienmēr atvērt {{scheme}}:// saites
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Brīdinājums par attālinātu failu
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Šis fails atrodas attālinātā serverī un var būt bīstams.\nVai tiešām vēlaties to atvērt?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Atrašanās vieta: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Piekļuve tīkla diskam
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Šis saturs pieprasa datus no tīkla diska. Atļaujot to, attālinātajam resursdatoram var tikt atklāti jūsu pieteikšanās dati vai cita sensitīva informācija.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Resursdators: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Atļaut
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Vai palaist izpildāmu failu?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Šī saite norāda uz izpildāmu failu. Tā palaišana var kaitēt jūsu datoram.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fails: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Glabātuve nav atrasta.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Neizdevās atrast glabātuvi URL adresei {{url}}

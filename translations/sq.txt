@@ -10,6 +10,10 @@ translation=Shtojcë
 original=Core plugins
 translation=Shtojca të integruara
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Shfaq në listën e shtojcave
+
 [setting.plugin-options]
 original=Plugin options
 translation=Preferenca për shtojcat
@@ -22,9 +26,41 @@ translation=Shembull: dosja 1/dosja 2
 original=Example: folder/note
 translation=Shembull: dosja/faqja-me-shënime
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Nuk është zgjedhur asnjë skedar
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Ndryshimi i këtij opsioni kërkon rindezje që të hyjë në fuqi.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Numër i pavlefshëm
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Vlera duhet të jetë të paktën {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Vlera duhet të jetë jo më shumë se {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Skedari nuk u gjet.
+
+[setting.search-settings]
+original=Search settings...
+translation=Kërko te cilësimet...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Nuk u gjetën cilësime.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} të tjera
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Nga e djathta në të majtë (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Shfaq diagramet Mermaid në shënime
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Rendero diagrame rrjedhe, diagrame sekuence dhe diagrame të tjera nga blloqet e kodit “mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Skedarë të përjashtuar
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Nuk është zbatuar asnjë filtër përjashtimi tani. Shtoni një më poshtë.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Shto përjashtim...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Skedarët që përputhen me filtrat e mëposhtëm aktualisht janë të përjashtuar:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Nuk është shtuar asnjë përjashtim.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filtër
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Shto përjashtim
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Fut një shteg ose një shprehje të rregullt, p.sh. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filtri nuk mund të jetë bosh
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Enter path or "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Lejo callback-e URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Aktivizo përdorimin e x-callback-url përmes x-success ose x-error gjatë trajtimit të URI-ve të Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Menaxho veprimet e besuara dhe konfiguro sjelljen e URI-së.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Veprime të besuara
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Ende asnjë veprim i besuar. Veprimet URI të miratuara do të shfaqen këtu.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Motivi bazë
 original=Choose Obsidian's default color scheme.
 translation=Përzgjedh skemën "default" të ngjyrave Obisidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=errët dritë sistem modalitet nate skemë ngjyrash
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Ngjyra e theksit
@@ -549,6 +613,10 @@ translation=Ngjyra e theksit
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Zgjidhni ngjyrën e theksit që përdoret në të gjithë aplikacionin.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=theksim markë ngjyrë kryesore
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Përmasa e gërmave
 original=Font size in pixels that affects editing and reading views.
 translation=Përmasa në piksela që ndikon pamjet e përpunimit dhe afishimit.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=madhësi teksti zmadho
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Përshtatje e shpejtë e përmasës së gërmave
@@ -673,6 +745,10 @@ translation=Motifet
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Menaxho temat e instaluara dhe shfleto temat e komunitetit.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=komunitet shfleto instalo shkarko
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Menu vendase
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Menutë në të gjithë aplikacionin do të përputhen me sistemin operativ. Ato nuk do të ndikohen nga tema jote.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Ringarko motifet
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Motifet CSS u ringarkuan.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Hap dosjen e motifeve
@@ -710,9 +778,17 @@ translation=Copëza CSS
 original=No CSS snippets found.
 translation=Në dosjen përkatëse nuk gjendet asnjë copëz CSS-je
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Aktualisht keni {{count}} copëz të aktivizuar.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Aktualisht keni {{count}} copëza të aktivizuara.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Copëzat CSS ruhen në "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Copëzat CSS ju lejojnë të personalizoni pamjen e Obsidian. Vendosni skedarët CSS në “{{path}}” që të shfaqen këtu.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Hap dosjen e copëzave
 original=Reloaded CSS snippets.
 translation=Ringarko copëzat CSS.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Apliko copëzat CSS nga "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Kërko copëza...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Aktualisht keni të instaluar {{count}} temë.
 original=You currently have {{count}} themes installed.
 translation=Aktualisht keni të instaluara {{count}} tema.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Hap cilësimet në dritare të re
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Hap cilësimet në një dritare më vete në vend që të jenë të ngulitura në aplikacion.
+
+[setting.interface.name]
+original=Interface
+translation=Ndërfaqja
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Celular
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Të avancuara
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Shkurtime komandash
@@ -909,14 +1005,6 @@ translation=Po shfaqet {{count}} shkurtore tastiere.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Po shfaqen {{count}} shkurtore tastiere. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} komandë me konflikte.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} komanda me konflikte.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Shtyp një kombinim...
 original=All
 translation=Të gjitha
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Konflikte ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Të pacaktuara
@@ -945,6 +1037,10 @@ translation=Të caktuara
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Të caktuara nga unë
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Nuk u gjetën rezultate.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Modalitet i kufizuar
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Restricted Mode is off. Turn on to disable community plugins.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Aktivizo modalitetin e kufizuar për të përdorur aplikacionin pa shtojca të komunitetit.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Shtojcat e komunitetit
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Kërko dhe instalo shtojca të treta të krijuara nga komuniteti ynë i mrekullueshëm.
+original=Browse and install community plugins made by the community.
+translation=Shfleto dhe instalo shtojca të komunitetit të krijuara nga komuniteti.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Kërko
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Dil nga Modaliteti i kufizuar
+original=Exit Restricted mode
+translation=Dil nga modaliteti i kufizuar
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Pavarësisht përpjekjeve tona, ekziston ende një mundësi e vogël që një shtojcë e komunitetit të mos sillet siç duhet.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Rishikim fillestar i kodit
+original=Code review
+translation=Rishikim i kodit
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins undergo an initial code review by our team before they appear in the store.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Shtojcat në katalogun zyrtar të komunitetit rishikohen automatikisht pas çdo përditësimi.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Mekanizëm raportimi
 original=We follow up and remove faulty plugins upon user report.
 translation=Ne i ndjekim raportimet dhe i heqim shtojcat me probleme pas raportimit nga përdoruesit.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Dëshironi të dilni nga Modaliteti i kufizuar për të aktivizuar shtojcat e komunitetit? Ne rekomandojmë fuqishëm të bëni kopje rezervë të të dhënave tuaja para se ta bëni këtë.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Mësoni më shumë rreth sigurisë së shtojcave
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Aktivizo shtojcat e komunitetit
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Lejo shtojcat e komunitetit
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Shtojcat mund të ekzekutojnë kod arbitrar në pajisjen tënde. Rekomandojmë të bësh kopje rezervë të të dhënave para se t’i aktivizosh.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Riaktivizo shtojcat e instaluara
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Rikthe {{count}} shtojcë të instaluar më parë.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Rikthe {{count}} shtojca të instaluara më parë.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Shfaq informacionin e shtojcës
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Shtojcat e aktivizuara
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Këto shtojca do të aktivizohen kur të dilni nga modaliteti i kufizuar.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Kërko në shtojcat e instaluara...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Shfaq vetëm të instaluarat
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Nuk ka shtojca të instaluara.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Aktualisht ka {{count}} lidhje që tregojnë drejt këtij skedari.
 original=Delete file
 translation=Fshi dokumentin
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Të ekzekutohet veprimi nga lidhja e jashtme?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Veprimi “{{action}}” është gati të ekzekutohet. Vazhdo vetëm nëse i beson burimit të lidhjes.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Shtojca “{{source}}” është gati të ekzekutojë veprimin “{{action}}”. Vazhdo vetëm nëse i beson burimit të lidhjes.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Mos pyet përsëri për “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Shkarko bashkëngjitjet
@@ -3993,6 +4133,10 @@ translation=Konfirmo
 [dialogue.button-cancel]
 original=Cancel
 translation=Anullo
+
+[dialogue.button-allow]
+original=Allow
+translation=Lejo
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Shfaq të gjitha dokumentet, përfshirë ata të cilat Obsidian nuk 
 [plugins.graph-view.name]
 original=Graph view
 translation=Pamja me grafik
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Graf lokal
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Numri i fjalëve
 original=Show word count in the status bar.
 translation=Shfaq numrin e fjalëve ne shiritin e gjendjes.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Të shfaqen diagramet Mermaid në këtë kasafortë?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Lejo vetëm nëse i beson përmbajtjes së kësaj kasaforte.
+
 [plugins.slides.name]
 original=Slides
 translation=Slide-t
@@ -6845,10 +7001,6 @@ translation=Shkruaj email-in e tij/saj...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Ju lutem vendosni një email të vlefshëm për të ftuar dikë.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Ju lutem aktivizoni shtojcën bazë Publish te Cilësimet -> Shtojcat bazë për të parë faqet.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Shtojcat e instaluara të komunitetit
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Sinkronizo shtojcat e instaluara të komunitetit (dokumenta .js, .css, dhe manifest.json) dhe konfigurimet e tyre.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Të lejohet ekzekutimi i shtojcave të sinkronizuara në këtë pajisje?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync nuk mund të verifikojë përmbajtjen e shtojcave të sinkronizuara në këtë pajisje dhe ato mund të ndryshojnë nga shtojcat e publikuara në drejtorinë e komunitetit.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Aktivizoje këtë vetëm nëse kasaforta dhe pajisjet e lidhura janë të besuara.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Po, aktivizo sinkronizimin e shtojcave
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync ende po ngarkohet, ju lutemi rifreskoni këtë faqe më vonë.
@@ -8277,6 +8445,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Pamja e leximit
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Përmblidh...
 original=Group by this property
 translation=Grupo sipas kësaj vetie
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Ndrysho madhësinë e kolonës...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Rivendos madhësinë e kolonës
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Zvarrit për të ndryshuar madhësinë
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Pastro vlerat
@@ -10065,3 +10249,87 @@ translation={{count}} temë
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} tema
+
+[main.button-cancel]
+original=Cancel
+translation=Anulo
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopjo
+
+[main.button-open-link]
+original=Open Link
+translation=Hap lidhjen
+
+[main.button-open-file]
+original=Open this file
+translation=Hap këtë skedar
+
+[main.button-run-file]
+original=Run File
+translation=Ekzekuto skedarin
+
+[main.external-link-title]
+original=Open external link?
+translation=Të hapet lidhja e jashtme?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Kjo lidhje do të hapë një aplikacion të jashtëm jashtë Obsidian. Vazhdo vetëm nëse i beson burimit të kësaj lidhjeje.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Hap gjithmonë lidhjet {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Paralajmërim për skedar në distancë
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Ky skedar ndodhet në një server në distancë dhe mund të jetë i rrezikshëm.\nJeni të sigurt që dëshironi ta hapni?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Vendndodhja: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Qasje në disk rrjeti
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Kjo përmbajtje po kërkon të dhëna nga një disk rrjeti. Lejimi i kësaj mund të ekspozojë kredencialet e hyrjes ose informacione të tjera të ndjeshme te hosti në distancë.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Hosti: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Lejo
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Të ekzekutohet skedari i ekzekutueshëm?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Kjo lidhje tregon te një skedar i ekzekutueshëm. Ekzekutimi i tij mund të dëmtojë kompjuterin tuaj.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Skedari: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Kasaforta nuk u gjet.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Nuk mund të gjendet një kasafortë për URL-në {{url}}

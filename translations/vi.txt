@@ -10,6 +10,10 @@ translation=Plugin
 original=Core plugins
 translation=Plugin cốt lõi
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Hiển thị trong danh sách plugin
+
 [setting.plugin-options]
 original=Plugin options
 translation=Tùy chọn plugin
@@ -22,9 +26,41 @@ translation=Ví dụ: folder 1/folder 2
 original=Example: folder/note
 translation=Ví dụ: folder/note
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Chưa chọn tệp nào
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Thay đổi tùy chọn này yêu cầu khởi động lại để có hiệu lực.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Số không hợp lệ
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Giá trị phải ít nhất là {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Giá trị phải nhiều nhất là {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Không tìm thấy tệp.
+
+[setting.search-settings]
+original=Search settings...
+translation=Tìm kiếm cài đặt...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Không tìm thấy cài đặt nào.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} mục nữa
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Hướng văn bản từ phải sang trái (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Đặt hướng văn bản của các ghi chú để hiển thị từ phải sang trái.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Hiển thị sơ đồ Mermaid trong ghi chú
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Kết xuất lưu đồ, sơ đồ trình tự và các sơ đồ khác từ khối mã “mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Tệp bị loại trừ
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Các tệp bị loại trừ sẽ bị ẩn hoặc ít nổi bật trong các vị trí khác nhau, chẳng hạn như Trình chuyển đổi nhanh, đề xuất liên kết và Xem biểu đồ.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Hiện tại không áp dụng bộ lọc bị loại trừ nào. Thêm một bộ lọc dưới đây.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Thêm loại trừ...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Các tệp phù hợp với các bộ lọc sau đây hiện đang bị loại trừ:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Chưa thêm loại trừ nào.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Bộ lọc
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Thêm loại trừ
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Nhập đường dẫn hoặc biểu thức chính quy, ví dụ /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Bộ lọc không thể để trống
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Nhập đường dẫn hoặc "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Cho phép callback URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Bật việc sử dụng x-callback-url thông qua x-success hoặc x-error khi xử lý URI của Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Quản lý các hành động được tin cậy và cấu hình hành vi URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Hành động được tin cậy
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Chưa có hành động được tin cậy nào. Các hành động URI đã được phê duyệt sẽ xuất hiện ở đây.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Chủ đề cơ bản
 original=Choose Obsidian's default color scheme.
 translation=Chọn sơ đồ màu mặc định của Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=tối sáng hệ thống chế độ ban đêm bảng màu
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Màu nhấn
@@ -549,6 +613,10 @@ translation=Màu nhấn
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Chọn màu nhấn được sử dụng trong toàn bộ ứng dụng.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=tô sáng thương hiệu màu chính
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Cỡ chữ
 original=Font size in pixels that affects editing and reading views.
 translation=Cỡ chữ tính bằng pixel ảnh ảnh hưởng đến chỉnh sửa và xem trước.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=kích thước văn bản cỡ chữ phóng to
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Điều chỉnh nhanh cỡ chữ
@@ -673,6 +745,10 @@ translation=Chủ đề
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Quản lý chủ đề đã cài đặt và duyệt các chủ đề cộng đồng.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=cộng đồng duyệt cài đặt tải xuống
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Các menu hệ thống
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Các menu trong ứng dụng sẽ phù hợp với hệ điều hành. Chúng sẽ không bị ảnh hưởng bởi chủ đề của bạn.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Tải lại chủ đề
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Đã tải lại các chủ đề CSS tùy chỉnh.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Mở thư mục chủ đề
@@ -710,9 +778,17 @@ translation=Mẩu CSS
 original=No CSS snippets found.
 translation=Không có mẩu CSS nào được tìm thấy trong thư mục mẩu.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Hiện bạn đã bật {{count}} đoạn trích.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Hiện bạn đã bật {{count}} đoạn trích.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Mẩu CSS được lưu trữ trong "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Đoạn trích CSS cho phép bạn tùy chỉnh giao diện của Obsidian. Đặt các tệp CSS vào “{{path}}” để chúng xuất hiện ở đây.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Mở thư mục mẩu
 original=Reloaded CSS snippets.
 translation=Đã tải lại các mẩu CSS.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Áp dụng mẩu CSS tại "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Tìm kiếm đoạn trích...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Bạn hiện có {{count}} chủ đề đã cài đặt.
 original=You currently have {{count}} themes installed.
 translation=Bạn hiện có {{count}} chủ đề đã cài đặt.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Mở cài đặt trong cửa sổ mới
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Mở cài đặt trong cửa sổ riêng thay vì nhúng trong ứng dụng.
+
+[setting.interface.name]
+original=Interface
+translation=Giao diện người dùng
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Di động
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Nâng cao
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Phím tắt
@@ -909,14 +1005,6 @@ translation=Hiển thị {{count}} phím tắt.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Hiển thị {{count}} phím tắt. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} lệnh có xung đột.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} lệnh có xung đột.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Nhấn phím tắt...
 original=All
 translation=Tất cả
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Xung đột ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Chưa được gán
@@ -945,6 +1037,10 @@ translation=Đã được gán
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Được gán bởi tôi
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Không tìm thấy kết quả nào.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Chế độ hạn chế
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Chế độ Hạn chế đã được tắt. Bật để vô hiệu hóa các phần mở rộng từ cộng đồng.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Bật chế độ hạn chế để sử dụng ứng dụng mà không có plugin cộng đồng.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Phần mở rộng từ cộng đồng
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Duyệt và cài đặt các phần mở rộng của bên thứ ba do cộng đồng tuyệt vời của chúng ta tạo ra.
+original=Browse and install community plugins made by the community.
+translation=Duyệt và cài đặt plugin cộng đồng do cộng đồng tạo ra.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Duyệt
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Thoát khỏi Chế độ Hạn chế
+original=Exit Restricted mode
+translation=Thoát khỏi chế độ hạn chế
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Mặc dù chúng tôi đã nỗ lực, vẫn có một khả năng nhỏ rằng một số phần mở rộng từ cộng đồng có thể hoạt động không đúng.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Đánh giá mã ban đầu
+original=Code review
+translation=Đánh giá mã
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Các phần mở rộng phải trải qua đánh giá mã ban đầu từ đội ngũ của chúng tôi trước khi xuất hiện trong cửa hàng.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Các plugin trong danh mục cộng đồng chính thức được tự động đánh giá sau mỗi lần cập nhật.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Cơ chế báo cáo
 original=We follow up and remove faulty plugins upon user report.
 translation=Chúng tôi tiếp tục theo dõi và gỡ bỏ các phần mở rộng lỗi sau khi người dùng báo cáo.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Bạn có muốn thoát khỏi Chế độ Hạn chế để kích hoạt các phần mở rộng từ cộng đồng không? Chúng tôi khuyên bạn nên sao lưu dữ liệu trước khi làm điều này.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Tìm hiểu thêm về bảo mật phần mở rộng
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Bật phần mở rộng từ cộng đồng
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Cho phép plugin cộng đồng
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Plugin có thể thực thi mã tùy ý trên thiết bị của bạn. Chúng tôi khuyên bạn nên sao lưu dữ liệu trước khi bật chúng.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Bật lại các plugin đã cài đặt
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Khôi phục {{count}} plugin đã cài đặt trước đó.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Khôi phục {{count}} plugin đã cài đặt trước đó.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Hiển thị thông tin plugin
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Plugin đã bật
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Các plugin này sẽ được bật khi rời khỏi chế độ hạn chế.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Tìm kiếm phần mở rộng đã cài đặt...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Chỉ hiển thị đã cài đặt
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Chưa cài đặt plugin nào.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Hiện tại có {{count}} liên kết trỏ đến tệp này.
 original=Delete file
 translation=Xóa tệp
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Chạy hành động từ liên kết bên ngoài?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Hành động “{{action}}” sắp chạy. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Plugin “{{source}}” sắp chạy hành động “{{action}}”. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Không hỏi lại đối với “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Tải xuống tệp đính kèm
@@ -3993,6 +4133,10 @@ translation=Xác nhận
 [dialogue.button-cancel]
 original=Cancel
 translation=Hủy bỏ
+
+[dialogue.button-allow]
+original=Allow
+translation=Cho phép
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Hiển thị tất cả các tệp bao gồm cả những tệp mà 
 [plugins.graph-view.name]
 original=Graph view
 translation=Xem biểu đồ
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Đồ thị cục bộ
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Số từ
 original=Show word count in the status bar.
 translation=Hiển thị số từ trong thanh trạng thái.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Hiển thị sơ đồ Mermaid trong kho này?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Chỉ cho phép nếu bạn tin tưởng nội dung của kho này.
+
 [plugins.slides.name]
 original=Slides
 translation=Trang trình chiếu
@@ -6845,10 +7001,6 @@ translation=Nhập địa chỉ email của họ...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Vui lòng nhập một địa chỉ email hợp lệ để mời một người nào đó.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Vui lòng kích hoạt plugin Publish core trong Cài đặt -> Plugin cốt lõi để xem trang web.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Cài đặt plugin cộng đồng đã cài đặt
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Đồng bộ hóa plugin cộng đồng đã cài đặt (tệp .js, .css và manifest.json) và cài đặt của chúng.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Cho phép các plugin đã đồng bộ chạy trên thiết bị này?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync không thể xác minh nội dung của các plugin được đồng bộ với thiết bị này và chúng có thể khác với các plugin được xuất bản trong thư mục cộng đồng.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Chỉ bật nếu kho và các thiết bị đã kết nối đáng tin cậy.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Có, bật đồng bộ plugin
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync vẫn đang tải, vui lòng làm mới trang này sau.
@@ -8277,6 +8445,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Chế độ đọc
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Tóm tắt...
 original=Group by this property
 translation=Nhóm theo thuộc tính này
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Thay đổi kích thước cột...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Đặt lại kích thước cột
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Kéo để thay đổi kích thước
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Xóa giá trị
@@ -10065,3 +10249,87 @@ translation={{count}} giao diện
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} giao diện
+
+[main.button-cancel]
+original=Cancel
+translation=Hủy
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Sao chép
+
+[main.button-open-link]
+original=Open Link
+translation=Mở liên kết
+
+[main.button-open-file]
+original=Open this file
+translation=Mở tệp này
+
+[main.button-run-file]
+original=Run File
+translation=Chạy tệp
+
+[main.external-link-title]
+original=Open external link?
+translation=Mở liên kết bên ngoài?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Liên kết này sẽ mở một ứng dụng bên ngoài Obsidian. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết này.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Luôn mở các liên kết {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Cảnh báo tệp từ xa
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Tệp này nằm trên máy chủ từ xa và có thể nguy hiểm.\nBạn có chắc chắn muốn mở không?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Vị trí: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Truy cập ổ đĩa mạng
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Nội dung này đang yêu cầu dữ liệu từ một ổ đĩa mạng. Việc cho phép có thể làm lộ thông tin đăng nhập hoặc thông tin nhạy cảm khác của bạn cho máy chủ từ xa.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Máy chủ: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Cho phép
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Chạy tệp thực thi?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Liên kết này trỏ đến một tệp thực thi. Việc chạy tệp này có thể gây hại cho máy tính của bạn.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Tệp: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Không tìm thấy kho.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Không thể tìm thấy kho cho URL {{url}}

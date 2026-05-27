@@ -10,6 +10,10 @@ translation=Plug-in
 original=Core plugins
 translation=Ingebouwde plug-ins
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Weergeven in plug-inlijst
+
 [setting.plugin-options]
 original=Plugin options
 translation=Plug-inopties
@@ -22,9 +26,41 @@ translation=Voorbeeld: map 1/map 2
 original=Example: folder/note
 translation=Voorbeeld: map/notitie
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Geen bestand geselecteerd
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Deze optie aanpassen vereist een herstart om effect te hebben..
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Ongeldig getal
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Waarde moet minimaal {{min}} zijn
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Waarde mag maximaal {{max}} zijn
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Bestand niet gevonden.
+
+[setting.search-settings]
+original=Search settings...
+translation=Instellingen zoeken...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Geen instellingen gevonden.
+
+[setting.search-show-more]
+original={{count}} more
+translation=Nog {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Rechts-naar-links
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Stelt de tekstrichting van de te tonen notities in van rechts naar links.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Mermaid-diagrammen in notities tonen
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Render stroomdiagrammen, sequentiediagrammen en andere diagrammen uit “mermaid”-codeblokken.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Uitgesloten bestanden
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Uitgesloten bestanden worden verborgen of zijn minder opvallend op verschillende plekken, zoals in snel wisselen, linksuggesties en grafiekweergave.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Op het moment wordt er geen uitsluitingsfilter toegepast. Voeg er beneden één toe.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Uitsluiting toevoegen...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Bestanden die onder de volgende mappen vallen worden uitgesloten:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Geen uitsluitingen toegevoegd.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filter
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Uitsluiting toevoegen
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Voer een pad of een reguliere expressie in, bijv. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filter mag niet leeg zijn
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Voer pad of "/regex/" in ...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=URI-callbacks toestaan
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Sta het gebruik van x-callback-url toe via x-success of x-error bij het afhandelen van Obsidian-URI’s.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Beheer vertrouwde acties en configureer URI-gedrag.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Vertrouwde acties
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Nog geen vertrouwde acties. Goedgekeurde URI-acties verschijnen hier.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Basisthema
 original=Choose Obsidian's default color scheme.
 translation=Kies het standaard kleurenschema voor Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=donker licht systeem nachtmodus kleurenschema
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Accentkleur
@@ -549,6 +613,10 @@ translation=Accentkleur
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Kies de accentkleur die de app gebruikt.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=markeren merk primaire kleur
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Lettertypegrootte
 original=Font size in pixels that affects editing and reading views.
 translation=Lettertypegrootte in pixels voor de bewerk- en voorbeeldmodus.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=tekstgrootte zoom
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Snelle lettertypegrootte aanpassing
@@ -673,6 +745,10 @@ translation=Thema's
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Beheer geïnstalleerde thema's en doorzoek cummunitythema's.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=community bladeren installeren downloaden
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Systeemmenu's
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Appmenu's worden aangepast aan het besturingssysteem. Ze worden niet aangepast door het thema dat je selecteert.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Laad thema's opnieuw
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Aangepaste CSS-thema's opnieuw geladen.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Open de themamap
@@ -710,9 +778,17 @@ translation=CSS-fragmenten
 original=No CSS snippets found.
 translation=Geen CSS-fragmenten gevonden in de fragmentenmap.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=Je hebt momenteel {{count}} snippet ingeschakeld.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=Je hebt momenteel {{count}} snippets ingeschakeld.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS-fragmenten worden opgeslagen in "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Met CSS-snippets kun je de vormgeving van Obsidian aanpassen. Plaats CSS-bestanden in “{{path}}” zodat ze hier verschijnen.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Open de map met fragmenten
 original=Reloaded CSS snippets.
 translation=Herladen CSS-fragmenten.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Pas het CSS-fragment toe op "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Snippets zoeken...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=U hebt momenteel {{count}} thema geinstalleerd.
 original=You currently have {{count}} themes installed.
 translation=U hebt momenteel {{count}} thema's geinstalleerd.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Instellingen openen in nieuw venster
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Open instellingen in een eigen venster in plaats van ingebed in de app.
+
+[setting.interface.name]
+original=Interface
+translation=Interface
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobiel
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Geavanceerd
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Sneltoetsen
@@ -909,14 +1005,6 @@ translation=Toon {{count}} sneltoets.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Toon {{count}} sneltoetsen. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} opdracht met conflicten.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} opdracht met conflicten.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Druk sneltoets in...
 original=All
 translation=Allemaal
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Conflicten ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Niet toegewezen
@@ -945,6 +1037,10 @@ translation=Toegewezen
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Door mij toegewezen
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Geen resultaten gevonden.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Beperkte modus
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Beperkte Modus staat uit. Zet deze aan om het gebruik van communityplug-ins uit te schakelen.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Schakel beperkte modus in om de app zonder community-plug-ins te gebruiken.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Communityplug-ins
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Blader door en installeer plug-ins van derden die zijn gemaakt door onze geweldige community.
+original=Browse and install community plugins made by the community.
+translation=Blader door en installeer community-plug-ins die door de community zijn gemaakt.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Doorbladeren
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Verlaat beperkte modus
+original=Exit Restricted mode
+translation=Beperkte modus verlaten
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Ondanks onze inspanningen is er nog steeds een kleine kans dat een communityplug-in zich misdraagt.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Eerste codebeoordeling
+original=Code review
+translation=Codebeoordeling
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins ondergaan een eerste codebeoordeling door ons team voordat ze in de winkel verschijnen..
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Plug-ins in de officiële community-directory worden na elke update automatisch beoordeeld.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Meldingsmechanisme
 original=We follow up and remove faulty plugins upon user report.
 translation=We volgen en verwijderen defecte plug-ins na gebruikersmelding.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Wilt u de beperkte modus afsluiten om communityplug-ins in te schakelen? We raden ten zeerste aan om back-ups van uw gegevens te maken voordat u dit doet.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Meer informatie over plug-inbeveiliging
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Schakel communityplug-ins in
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Community-plug-ins toestaan
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Plug-ins kunnen willekeurige code uitvoeren op je apparaat. We raden aan een back-up van je gegevens te maken voordat je ze inschakelt.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Geïnstalleerde plug-ins opnieuw inschakelen
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Herstel {{count}} eerder geïnstalleerde plug-in.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Herstel {{count}} eerder geïnstalleerde plug-ins.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Plug-ininformatie tonen
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Ingeschakelde plug-ins
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Deze plug-ins worden ingeschakeld wanneer je de beperkte modus verlaat.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Doorzoek geïnstalleerde plug-ins...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Toon alleen geïnstalleerde
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Geen plug-ins geïnstalleerd.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2128,7 +2252,7 @@ translation="{{file}}" is ergens anders gewijzigd, automatisch veranderingen sam
 
 [interface.manage-vaults]
 original=Manage vaults...
-translation=Kluisen beheren...
+translation=Kluizen beheren...
 
 [interface.help]
 original=Help
@@ -3938,6 +4062,22 @@ translation=Er zijn momenteel {{count}} links die naar dit bestand verwijzen.
 original=Delete file
 translation=Bestand verwijderen
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Actie uitvoeren via externe koppeling?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=De actie “{{action}}” wordt uitgevoerd. Ga alleen door als je de bron van de koppeling vertrouwt.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=De plug-in “{{source}}” staat op het punt de actie “{{action}}” uit te voeren. Ga alleen door als je de bron van de koppeling vertrouwt.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Niet opnieuw vragen voor “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Bijlagen downloaden
@@ -3993,6 +4133,10 @@ translation=Bevestigen
 [dialogue.button-cancel]
 original=Cancel
 translation=Annuleren
+
+[dialogue.button-allow]
+original=Allow
+translation=Toestaan
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Toon alle bestanden, inclusief degene die Obsidian niet kan openen. 
 [plugins.graph-view.name]
 original=Graph view
 translation=Grafiek weergave
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokale grafiek
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Woordenaantal
 original=Show word count in the status bar.
 translation=Toon woordenaantal in de statusbalk
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Mermaid-diagrammen in deze kluis weergeven?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Sta dit alleen toe als je de inhoud van deze kluis vertrouwt.
+
 [plugins.slides.name]
 original=Slides
 translation=Dia's
@@ -6845,10 +7001,6 @@ translation=Voer hun e-mail in...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Voer alstublieft een geldig e-mailadres in om iemand uit te nodigen.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Activeer de Publish kernplug-in in Instellingen -> Kernplug-ins om sites the zien..
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Geïnstalleerde comminityplug-ins
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Synchroniseer geïnstalleerde communityplug-ins (.js, .css, en manifest.json bestanden) en bijbehorende instellingen.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Toestaan dat gesynchroniseerde plug-ins op dit apparaat worden uitgevoerd?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync kan de inhoud van plug-ins die naar dit apparaat zijn gesynchroniseerd niet verifiëren, en ze kunnen verschillen van plug-ins die in de community-directory zijn gepubliceerd.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Schakel dit alleen in als de kluis en verbonden apparaten vertrouwd zijn.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ja, plug-insynchronisatie inschakelen
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync is nog aan het laden; vernieuw deze pagina later.
@@ -8277,6 +8445,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Leesweergave
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Samenvatten...
 original=Group by this property
 translation=Groeperen op deze eigenschap
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Kolomgrootte wijzigen...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Kolomgrootte herstellen
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Sleep om de grootte te wijzigen
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Waarden wissen
@@ -10065,3 +10249,87 @@ translation={{count}} thema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} thema's
+
+[main.button-cancel]
+original=Cancel
+translation=Annuleren
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopiëren
+
+[main.button-open-link]
+original=Open Link
+translation=Koppeling openen
+
+[main.button-open-file]
+original=Open this file
+translation=Dit bestand openen
+
+[main.button-run-file]
+original=Run File
+translation=Bestand uitvoeren
+
+[main.external-link-title]
+original=Open external link?
+translation=Externe koppeling openen?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Deze koppeling opent een externe app buiten Obsidian. Ga alleen verder als u de bron van deze koppeling vertrouwt.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation={{scheme}}://-koppelingen altijd openen
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Waarschuwing voor bestand op afstand
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Dit bestand bevindt zich op een externe server en kan gevaarlijk zijn.\nWeet u zeker dat u het wilt openen?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Locatie: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Toegang tot netwerkstation
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Deze inhoud vraagt gegevens op van een netwerkstation. Als u dit toestaat, kunnen uw inloggegevens of andere gevoelige informatie worden blootgesteld aan de externe host.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Host: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Toestaan
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Uitvoerbaar bestand uitvoeren?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Deze koppeling verwijst naar een uitvoerbaar bestand. Het uitvoeren ervan kan uw computer schade toebrengen.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Bestand: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Kluis niet gevonden.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Kan geen kluis vinden voor de URL {{url}}

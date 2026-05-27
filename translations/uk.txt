@@ -10,6 +10,10 @@ translation=Додаток
 original=Core plugins
 translation=Вбудовані додатки
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Показати у списку додатків
+
 [setting.plugin-options]
 original=Plugin options
 translation=Налаштування додатків
@@ -22,9 +26,41 @@ translation=Приклад: тека 1/тека 2
 original=Example: folder/note
 translation=Приклад: тека/нотатка
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Файл не вибрано
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Зміна цього налаштування потребує перезавантаження.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Недійсне число
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Значення має бути щонайменше {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Значення має бути щонайбільше {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Файл не знайдено.
+
+[setting.search-settings]
+original=Search settings...
+translation=Пошук налаштувань...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Налаштувань не знайдено.
+
+[setting.search-show-more]
+original={{count}} more
+translation=Ще {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Напрямок письма (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Встановлює напрямок письма нотаток справа наліво.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Показувати діаграми Mermaid у нотатках
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Відображати блок-схеми, діаграми послідовностей та інші діаграми з блоків коду “mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=Виключені файли
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Виключені файли будуть сховані або менш помітними в різних місцях, наприклад у Швидкому Переході, запропонованих посиланнях, або Графі.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Не засновано жодного фільтра. Додайте його нижче.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Додати виключення...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Файли що задовільняють наступні фільтри наразі виключені:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Виключень не додано.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Фільтр
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Додати виключення
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Введіть шлях або регулярний вираз, наприклад /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Фільтр не може бути пустим
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Введіть шлях або "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=Дозволити зворотні виклики URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Увімкнути використання x-callback-url через x-success або x-error під час обробки URI Obsidian.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Керуйте довіреними діями та налаштовуйте поведінку URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Довірені дії
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Довірених дій поки немає. Схвалені дії URI з’являться тут.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=Основна тема
 original=Choose Obsidian's default color scheme.
 translation=Вибір основної колірної схеми оформлення.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=темна світла системна нічний режим колірна схема
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Колір акценту
@@ -549,6 +613,10 @@ translation=Колір акценту
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Виберіть акцентний колір, що використовуватиметься по всьому застосунку.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=виділення бренд основний колір
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=Розмір шрифту
 original=Font size in pixels that affects editing and reading views.
 translation=Розмір шрифту в пікселях для режиму редагування та читання.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=розмір тексту масштабування
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Швидка зміна розміру шрифту
@@ -673,6 +745,10 @@ translation=Теми
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Керування встановленими темами та перегляд тем спільноти.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=спільнота перегляд встановити завантажити
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=Нативні меню
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Меню в усьому застосунку будуть відповідати вашій операційній системі. Ваша тема на них не впливатиме.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Оновити теми
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Список CSS-тем оновлено.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Відкрити теку з темами
@@ -710,9 +778,17 @@ translation=Сніпети (користувацький CSS)
 original=No CSS snippets found.
 translation=У теці сніпетів нічого не знайдено.
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=У вас зараз увімкнено {{count}} сніпет.
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=У вас зараз увімкнено {{count}} сніпетів.
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Сніпети зберігаються в "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS-сніпети дають змогу налаштувати оформлення Obsidian. Розмістіть CSS-файли в «{{path}}», щоб вони з’явилися тут.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=Відкрити теку зі сніпетами
 original=Reloaded CSS snippets.
 translation=Список сніпетів оновлено.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Застосувати сніпет до "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Пошук сніпетів...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=Встановлено тем: {{count}}.
 original=You currently have {{count}} themes installed.
 translation=Встановлено тем: {{count}}.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Відкривати налаштування в новому вікні
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Відкривати налаштування в окремому вікні, а не вбудованими в застосунок.
+
+[setting.interface.name]
+original=Interface
+translation=Інтерфейс
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Мобільний
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Розширені
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Сполучення клавіш
@@ -909,14 +1005,6 @@ translation=Показується {{count}} сполучень.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Показується {{count}} сполучень. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} команд з конфліктами.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} команд з конфліктами.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=Натисніть комбінацію клавіш...
 original=All
 translation=Всі
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=Конфлікти ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Непризначені
@@ -945,6 +1037,10 @@ translation=Призначені
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Призначені мною
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Результатів не знайдено.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=Обмежений режим
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Обмежений режим ВИМКНЕНО. Увімкніть, щоб вимкнути усі додатки спільноти.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Увімкніть обмежений режим, щоб користуватися застосунком без додатків спільноти.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=Додатки спільноти
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Огляд і встановлення сторонніх додатків, створених нашою дивовижною спільнотою.
+original=Browse and install community plugins made by the community.
+translation=Огляд і встановлення додатків спільноти, створених спільнотою.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Огляд
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Вийти з Обмеженого режиму
+original=Exit Restricted mode
+translation=Вийти з обмеженого режиму
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Попри наші зусилля, існує невелика ймовірність того, що додаток спільноти може працювати неправильно.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Початковий огляд коду
+original=Code review
+translation=Огляд коду
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Додатки проходять первинну перевірку коду нашою командою, перш ніж вони з’являться в магазині.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Додатки в офіційному каталозі спільноти автоматично проходять перевірку коду після кожного оновлення.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=Механізм скарги
 original=We follow up and remove faulty plugins upon user report.
 translation=Ми відстежуємо та видаляємо несправні додатки після скарг користувачів.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Бажаєте вийти з обмеженого режиму, щоб увімкнути додатки спільноти? Ми наполегливо рекомендуємо зробити резервні копії ваших даних перед цим.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Дізнайтеся більше про безпеку додатків
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Увімкнути додатки спільноти
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Дозволити додатки спільноти
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Додатки можуть виконувати довільний код на вашому пристрої. Рекомендуємо створити резервну копію ваших даних перед їх увімкненням.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Повторно увімкнути встановлені додатки
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Відновити {{count}} раніше встановлений додаток.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Відновити {{count}} раніше встановлених додатків.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Показати інформацію про додаток
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Увімкнені додатки
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Ці додатки буде увімкнено після виходу з обмеженого режиму.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=Пошук встановлених додатків...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Показати тільки встановлені
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Додатків не встановлено.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=Зараз існує {{count}} посилань, що вказую�
 original=Delete file
 translation=Видалити файл
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Виконати дію із зовнішнього посилання?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Дія “{{action}}” незабаром буде виконана. Продовжуйте лише якщо довіряєте джерелу посилання.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Додаток “{{source}}” незабаром виконає дію “{{action}}”. Продовжуйте лише якщо довіряєте джерелу посилання.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Більше не запитувати для “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Завантажити вкладення
@@ -3993,6 +4133,10 @@ translation=Підтвердити
 [dialogue.button-cancel]
 original=Cancel
 translation=Скасувати
+
+[dialogue.button-allow]
+original=Allow
+translation=Дозволити
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Показувати всі файли, включаючи ті, щ�
 [plugins.graph-view.name]
 original=Graph view
 translation=Граф
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Локальний граф
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=Лічильник слів
 original=Show word count in the status bar.
 translation=Показує кількість слів у рядку стану.
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Відображати діаграми Mermaid у цьому сховищі?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Дозволяйте лише якщо довіряєте вмісту цього сховища.
+
 [plugins.slides.name]
 original=Slides
 translation=Слайди
@@ -6845,10 +7001,6 @@ translation=Введіть їх ел. пошту...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=Будь ласка, введіть плавильну ел. пошту щоб запросити когось.
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Будь ласка, увімкніть вбудований додаток "Публікація" в Налаштуваннях → Вбудовані додатки, щоб переглянути сайти.
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=Завантажені додатки спільноти
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Синхронізувати встановленні додатки спільноти (файли .js, .css, та manifest.json) та їх налаштування.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Дозволити синхронізованим додаткам запускатися на цьому пристрої?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync не може перевірити вміст додатків, синхронізованих із цим пристроєм, і вони можуть відрізнятися від додатків, опублікованих у каталозі спільноти.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Увімкніть це лише якщо сховище та підключені пристрої є довіреними.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Так, увімкнути синхронізацію додатків
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync все ще завантажується, будь ласка, оновіть цю сторінку пізніше.
@@ -8277,6 +8445,10 @@ translation=Не вдалося завантажити цей сайт.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Будь ласка, переконайтеся, що вказана правильна адреса.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Режим читання
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=Підсумувати...
 original=Group by this property
 translation=Групувати за цією властивістю
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Змінити розмір стовпця...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Скинути розмір стовпця
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Перетягніть, щоб змінити розмір
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Очистити значення
@@ -10065,3 +10249,87 @@ translation={{count}} тем
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} тем
+
+[main.button-cancel]
+original=Cancel
+translation=Скасувати
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Копіювати
+
+[main.button-open-link]
+original=Open Link
+translation=Відкрити посилання
+
+[main.button-open-file]
+original=Open this file
+translation=Відкрити цей файл
+
+[main.button-run-file]
+original=Run File
+translation=Запустити файл
+
+[main.external-link-title]
+original=Open external link?
+translation=Відкрити зовнішнє посилання?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Це посилання відкриє зовнішній застосунок поза Obsidian. Продовжуйте лише якщо довіряєте джерелу цього посилання.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Завжди відкривати посилання {{scheme}}://
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Попередження щодо віддаленого файлу
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Цей файл розташований на віддаленому сервері й може бути небезпечним.\nВи впевнені, що хочете його відкрити?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Розташування: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Доступ до мережевого диска
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Цей вміст запитує дані з мережевого диска. Якщо дозволити це, ваші облікові дані для входу або інша конфіденційна інформація можуть бути розкриті віддаленому хосту.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Хост: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Дозволити
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Запустити виконуваний файл?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Це посилання вказує на виконуваний файл. Його запуск може зашкодити вашому комп’ютеру.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Файл: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Сховище не знайдено.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Не вдалося знайти сховище для URL-адреси {{url}}

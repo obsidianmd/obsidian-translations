@@ -10,6 +10,10 @@ translation=প্লাগইন
 original=Core plugins
 translation=কোর প্লাগইন
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=প্লাগইন তালিকায় দেখান
+
 [setting.plugin-options]
 original=Plugin options
 translation=প্লাগইন বিকল্প
@@ -22,9 +26,41 @@ translation=উদাহরণ: ফোল্ডার 1/ফোল্ডার 2
 original=Example: folder/note
 translation=উদাহরণ: ফোল্ডার/নোট
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=কোনো ফাইল নির্বাচিত নেই
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=এই বিকল্পটি পরিবর্তন করলে কার্যকর হতে পুনরায় চালু করতে হবে।
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=অবৈধ সংখ্যা
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=মান অন্তত {{min}} হতে হবে
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=মান সর্বোচ্চ {{max}} হতে হবে
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=ফাইল পাওয়া যায়নি।
+
+[setting.search-settings]
+original=Search settings...
+translation=সেটিংস অনুসন্ধান করুন...
+
+[setting.no-search-results]
+original=No settings found.
+translation=কোনো সেটিংস পাওয়া যায়নি।
+
+[setting.search-show-more]
+original={{count}} more
+translation=আরও {{count}}টি
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=ডান থেকে বাম (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=এটা চালু করুন যদি ডান থেকে বামে লেখা দেখতে চান।
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=নোটে Mermaid ডায়াগ্রাম দেখান
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=“mermaid” কোড ব্লক থেকে ফ্লোচার্ট, সিকোয়েন্স ডায়াগ্রাম এবং অন্যান্য ডায়াগ্রাম রেন্ডার করুন।
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,25 @@ translation=বাদ দেয়া ফাইলগুলি
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=বাদ দেওয়া ফাইলগুলি অনুসন্ধান, গ্রাফ ভিউ এবং আনলিঙ্কড উল্লেখে লুকানো থাকবে এবং কুইক সুইচার, লিঙ্ক সাজেশনে কম লক্ষণীয় হবে। 
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=এখন কোনো বাদ দেওয়ার ফিল্টার প্রয়োগ করা হয়নি। যদি চান তো নিচে একটি যোগ করতে পারবেন।
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=বর্জন যোগ করুন...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=নিম্নলিখিত ফিল্টারগুলির সাথে মিলে যাওয়া ফাইলগুলি বর্তমানে বাদ দেওয়া হয়েছে:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=কোনো বর্জন যোগ করা হয়নি।
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=ফিল্টার
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=বর্জন যোগ করুন
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=একটি পাথ বা রেগুলার এক্সপ্রেশন লিখুন, যেমন /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=ফিল্টার খালি থাকতে পারবে না
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=পথ বসান অথবা "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +573,22 @@ translation=URI কলব্যাক অনুমোদন করুন
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI ব্যবহারের সময় x-success বা x-error এর মাধ্যমে x-callback-url সক্রিয় করুন।
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=বিশ্বস্ত অ্যাকশন পরিচালনা করুন এবং URI আচরণ কনফিগার করুন।
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=বিশ্বস্ত অ্যাকশন
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=এখনও কোনো বিশ্বস্ত অ্যাকশন নেই। অনুমোদিত URI অ্যাকশন এখানে দেখা যাবে।
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +602,10 @@ translation=রঙের মূল বিন্যাস
 original=Choose Obsidian's default color scheme.
 translation=Obisidian-এ রঙের মুল বিন্যাসটি বেছে নিন।
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=অন্ধকার হালকা সিস্টেম নাইট মোড রঙের স্কিম
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=অ্যাকসেন্ট রঙ
@@ -549,6 +613,10 @@ translation=অ্যাকসেন্ট রঙ
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=অ্যাপ জুড়ে ব্যবহৃত অ্যাকসেন্ট রঙটি বেছে নিন।
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=হাইলাইট ব্র্যান্ড প্রাথমিক রঙ
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -658,6 +726,10 @@ translation=ফন্ট সাইজ
 original=Font size in pixels that affects editing and reading views.
 translation=এই বিকল্পটি সম্পাদনা রূপে এবং প্রিভিউতে ফন্ট সাইজ(পিক্সেলে) বড় বা ছোট করা নিয়ন্ত্রণ করে।
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=টেক্সট আকার জুম
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=তাৎক্ষণিক ফন্ট সাইজ অ্যাডজাস্টমেন্ট
@@ -673,6 +745,10 @@ translation=থিম
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=ইনস্টল করা থিমগুলি পরিচালনা করুন এবং কমিউনিটি থিমগুলি ব্রাউজ করুন।
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=কমিউনিটি ব্রাউজ ইনস্টল ডাউনলোড
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +766,6 @@ translation=নেটিভ মেনুস
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=অ্যাপ জুড়ে থাকা মেনুগুলি অপারেটিং সিস্টেমের সাথে মিলবে। আপনার থিমের দ্বারা সেগুলি প্রভাবিত হবে না।
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=থিমগুলি পুনরায় লোড করুন
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=কাস্টম CSS থিমগুলি পুনরায় লোড করা হয়েছে।
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=থিম ফোল্ডার খুলুন
@@ -710,9 +778,17 @@ translation=CSS স্নিপেট
 original=No CSS snippets found.
 translation=স্নিপেটস ফোল্ডারে কোনো CSS স্নিপেট পাওয়া যায়নি।
 
+[setting.appearance.label-currently-enabled-snippets]
+original=You currently have {{count}} snippet enabled.
+translation=বর্তমানে আপনার {{count}}টি স্নিপেট সক্রিয় আছে।
+
+[setting.appearance.label-currently-enabled-snippets_plural]
+original=You currently have {{count}} snippets enabled.
+translation=বর্তমানে আপনার {{count}}টি স্নিপেট সক্রিয় আছে।
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS স্নিপেটগুলি "{{path}}" এ সংরক্ষিত আছে।
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS স্নিপেট আপনাকে Obsidian-এর চেহারা কাস্টমাইজ করতে দেয়। এগুলো এখানে দেখানোর জন্য CSS ফাইলগুলো “{{path}}”-এ রাখুন।
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +802,9 @@ translation=স্নিপেটস ফোল্ডার খুলুন
 original=Reloaded CSS snippets.
 translation=CSS স্নিপেটগুলো পুনরায় লোড করা হয়েছে।
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation="{{path}}" এ রাখা CSS স্নিপেটটি ব্যাবহার করা হচ্ছে।
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=স্নিপেট অনুসন্ধান করুন...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +970,26 @@ translation=বর্তমানে {{count}}টি থিম ইনস্ট�
 original=You currently have {{count}} themes installed.
 translation=বর্তমানে {{count}}টি থিম ইনস্টল করা আছে।
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=নতুন উইন্ডোতে সেটিংস খুলুন
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=অ্যাপে এম্বেড করার পরিবর্তে নিজস্ব উইন্ডোতে সেটিংস খুলুন।
+
+[setting.interface.name]
+original=Interface
+translation=ইন্টারফেস
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=মোবাইল
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=উন্নত
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=হট-কিই
@@ -909,14 +1005,6 @@ translation={{count}}টা হট-কিই দেখাচ্ছে।
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation={{count}}টা হট-কিই দেখাচ্ছে।
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}}টা কমান্ডে সমস্যা আছে।
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}}টা কমান্ডে সমস্যা আছে।
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1022,10 @@ translation=হট-কিই টা চাপুন...
 original=All
 translation=সবগুলো
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts ({{count}})
+translation=দ্বন্দ্ব ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=অনির্ধারিত
@@ -945,6 +1037,10 @@ translation=নির্ধারিত
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=আমি নির্ধারণ করেছি
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=কোনো ফলাফল পাওয়া যায়নি।
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1511,8 @@ original=Restricted mode
 translation=নিয়ন্ত্রিত মোড
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=নিয়ন্ত্রিত মোড বন্ধ আছে। এটি পুনরায় চালু করলে কমিউনিটি প্লাগইনগুলো বন্ধ হয়ে যাবে।
+original=Turn on Restricted mode to use the app without community plugins.
+translation=কমিউনিটি প্লাগইন ছাড়া অ্যাপ ব্যবহার করতে সীমাবদ্ধ মোড চালু করুন।
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1531,16 @@ original=Community plugins
 translation=কমিউনিটি প্লাগইনস
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=আমাদের কমিউনিটির তৈরি বিচিত্র প্লাগইন ব্রাউজ এবং ইনস্টল করুন।
+original=Browse and install community plugins made by the community.
+translation=কমিউনিটির তৈরি কমিউনিটি প্লাগইনগুলো ব্রাউজ এবং ইনস্টল করুন।
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=ব্রাউজ
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=নিয়ন্ত্রিত মোড বন্ধ করুন
+original=Exit Restricted mode
+translation=সীমাবদ্ধ মোড থেকে বেরিয়ে যান
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1555,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=আমাদের শত চেষ্টা সত্বেও কোনো একটি প্লাগইন নিরাপত্তা সমস্যা তৈরী করতে পারে।
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=প্রাথমিক কোড পর্যালোচনা
+original=Code review
+translation=কোড পর্যালোচনা
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=কোনো প্লাগইন অবসিডিয়ান স্টোরে উপস্থিত হওয়ার আগে আমাদের টিমের দ্বারা একটি প্রাথমিক কোড পর্যালোচনার মধ্যে দিয়ে যায়।
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=অফিশিয়াল কমিউনিটি ডিরেক্টরির প্লাগইনগুলো প্রতিটি আপডেটের পরে স্বয়ংক্রিয়ভাবে পর্যালোচনা করা হয়।
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1586,41 @@ translation=রিপোর্ট সংগ্রহ
 original=We follow up and remove faulty plugins upon user report.
 translation=অবসিডিয়ান ব্যবহারকারীদের রিপোর্টের ভিত্তিতে আমরা ত্রুটিপূর্ণ প্লাগইনগুলিকে খতিয়ে দেখি এবং অপসারণ করি।
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=আপনি কি নিয়ন্ত্রিত মোড থেকে বেরিয়ে আসতে চান? তাহলে আপনি প্লাগইন ব্যাবহার করতে পারবেন। তবে এসব করার আগে আপনার তথ্য ব্যাকআপ করে নিলে ভালো হবে।
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=প্লাগইন সিক্যুরিটি সম্পর্কে আরও জানুন
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=কমিউনিটি প্লাগইন চালু করুন
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=কমিউনিটি প্লাগইন অনুমতি দিন
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=প্লাগইন আপনার ডিভাইসে যেকোনো কোড চালাতে পারে। এগুলো সক্রিয় করার আগে আপনার ডেটা ব্যাকআপ রাখার পরামর্শ দিই।
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=ইনস্টল করা প্লাগইন পুনরায় সক্রিয় করুন
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=আগে ইনস্টল করা {{count}}টি প্লাগইন পুনরুদ্ধার করুন।
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=আগে ইনস্টল করা {{count}}টি প্লাগইন পুনরুদ্ধার করুন।
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=প্লাগইনের তথ্য দেখান
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=সক্রিয় প্লাগইন
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=সীমাবদ্ধ মোড থেকে বের হলে এই প্লাগইনগুলো সক্রিয় করা হবে।
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1709,6 +1829,10 @@ translation=ইনস্টলড প্লাগইন অনুসন্ধা
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=শুধুমাত্র ইনস্টলড প্লাগইনগুলো দেখান
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=কোনো প্লাগইন ইনস্টল করা নেই।
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -3938,6 +4062,22 @@ translation=বর্তমানে {{count}}টি লিঙ্ক এই ফ�
 original=Delete file
 translation=ফাইল মুছে ফেলুন
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=বাহ্যিক লিঙ্ক থেকে অ্যাকশন চালাবেন?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=“{{action}}” অ্যাকশনটি চালানো হবে। লিঙ্কটির উৎসকে বিশ্বাস করলেই শুধু চালিয়ে যান।
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=“{{source}}” প্লাগইনটি “{{action}}” অ্যাকশন চালাতে যাচ্ছে। লিঙ্কটির উৎসকে বিশ্বাস করলেই শুধু চালিয়ে যান।
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=“{{action}}” এর জন্য আবার জিজ্ঞাসা করবেন না
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=আটাচমেন্টগুলো ডাউনলোড করুন
@@ -3993,6 +4133,10 @@ translation=নিশ্চিত করুন
 [dialogue.button-cancel]
 original=Cancel
 translation=বাতিল
+
+[dialogue.button-allow]
+original=Allow
+translation=অনুমতি দিন
 
 [dialogue.button-skip]
 original=Skip
@@ -4901,6 +5045,10 @@ translation=Obisidian খুলতে না পারলেও সব ফাই
 [plugins.graph-view.name]
 original=Graph view
 translation=গ্রাফ ভিউ
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=স্থানীয় গ্রাফ
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -6034,6 +6182,14 @@ translation=শব্দ গণনা
 original=Show word count in the status bar.
 translation=স্ট্যাটাস বারে শব্দের সংখ্যা দেখান।
 
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=এই ভল্টে Mermaid ডায়াগ্রাম প্রদর্শন করবেন?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=এই ভল্টের বিষয়বস্তুতে বিশ্বাস থাকলেই শুধু অনুমতি দিন।
+
 [plugins.slides.name]
 original=Slides
 translation=স্লাইড
@@ -6845,10 +7001,6 @@ translation=ইমেইল লিখুন...
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=অনুগ্রহ করে একটি বৈধ ইমেইল দিন।
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=সাইট দেখতে সেটিংস → কোর প্লাগইন থেকে Publishপ্লাগইন সক্রিয় করুন।
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -7662,6 +7814,22 @@ translation=ইনস্টল করা কমিউনিটি প্লা�
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=ইনস্টল করা কমিউনিটি প্লাগইন ও তাদের সেটিংস সিঙ্ক করুন।
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=সিঙ্ক করা প্লাগইনগুলোকে এই ডিভাইসে চলতে দেবেন?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync এই ডিভাইসে সিঙ্ক করা প্লাগইনগুলোর বিষয়বস্তু যাচাই করতে পারে না, এবং সেগুলো কমিউনিটি ডিরেক্টরিতে প্রকাশিত প্লাগইন থেকে ভিন্ন হতে পারে।
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=শুধুমাত্র ভল্ট এবং সংযুক্ত ডিভাইসগুলো বিশ্বস্ত হলে এটি সক্রিয় করুন।
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=হ্যাঁ, প্লাগইন সিঙ্ক চালু করুন
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=সিঙ্ক এখনো লোড হচ্ছে, পরে পেজ রিফ্রেশ করুন।
@@ -8277,6 +8445,10 @@ translation=এই সাইটটি লোড করা যায়নি।
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=অনুগ্রহ করে ঠিকানা সঠিক আছে কিনা যাচাই করুন।
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=রিডার ভিউ
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9666,18 @@ translation=সারসংক্ষেপ করুন...
 original=Group by this property
 translation=এই বৈশিষ্ট্য অনুযায়ী গ্রুপ করুন
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=কলামের আকার পরিবর্তন করুন...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=কলামের আকার রিসেট করুন
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=আকার পরিবর্তন করতে টানুন
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=মান পরিষ্কার করুন
@@ -10065,3 +10249,87 @@ translation={{count}}টা থিম
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}}টা থিম
+
+[main.button-cancel]
+original=Cancel
+translation=বাতিল
+
+[main.button-ok]
+original=OK
+translation=ঠিক আছে
+
+[main.button-copy]
+original=Copy
+translation=কপি
+
+[main.button-open-link]
+original=Open Link
+translation=লিঙ্ক খুলুন
+
+[main.button-open-file]
+original=Open this file
+translation=এই ফাইলটি খুলুন
+
+[main.button-run-file]
+original=Run File
+translation=ফাইল চালান
+
+[main.external-link-title]
+original=Open external link?
+translation=বাহ্যিক লিঙ্ক খুলবেন?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=এই লিঙ্কটি Obsidian-এর বাইরে একটি বাহ্যিক অ্যাপ্লিকেশন খুলবে। শুধুমাত্র এই লিঙ্কের উৎসকে বিশ্বাস করলে এগিয়ে যান।
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=সবসময় {{scheme}}:// লিঙ্ক খুলুন
+
+[main.remote-file-title]
+original=Remote file warning
+translation=রিমোট ফাইল সতর্কতা
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=এই ফাইলটি একটি রিমোট সার্ভারে অবস্থিত, এবং বিপজ্জনক হতে পারে।\nআপনি কি নিশ্চিত যে এটি খুলতে চান?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=অবস্থান: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=নেটওয়ার্ক ড্রাইভ অ্যাক্সেস
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=এই কনটেন্টটি একটি নেটওয়ার্ক ড্রাইভ থেকে ডেটা অনুরোধ করছে। এটি অনুমতি দিলে আপনার লগইন ক্রেডেনশিয়াল বা অন্যান্য সংবেদনশীল তথ্য রিমোট হোস্টের কাছে প্রকাশ হতে পারে।
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=হোস্ট: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=অনুমতি দিন
+
+[main.executable-file-title]
+original=Run executable file?
+translation=এক্সিকিউটেবল ফাইল চালাবেন?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=এই লিঙ্কটি একটি এক্সিকিউটেবল ফাইল নির্দেশ করে। এটি চালালে আপনার কম্পিউটারের ক্ষতি হতে পারে।
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=ফাইল: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=ভল্ট পাওয়া যায়নি।
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation={{url}} URL-এর জন্য কোনো ভল্ট খুঁজে পাওয়া যায়নি
