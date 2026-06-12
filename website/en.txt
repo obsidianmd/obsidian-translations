@@ -947,7 +947,11 @@ original=PayPal currency conversion
 translation=
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=
+
+[account.payment.paypal_update_link]
+original=click here
 translation=
 
 [account.payment.update]
@@ -2406,10 +2410,6 @@ translation=
 original=Help
 translation=
 
-[nav.join_community]
-original=Join the community
-translation=
-
 [nav.learn]
 original=Learn
 translation=
@@ -2762,16 +2762,12 @@ translation=
 original=Install Obsidian CLI
 translation=
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
 translation=
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
 translation=
 
 [pages.cli.install_step1]
@@ -4544,6 +4540,14 @@ translation=
 
 [pages.security.report_issue]
 original=Report a security issue
+translation=
+
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
 translation=
 
 [pages.security.sync_security_faqs]

@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=Conversione di valuta PayPal
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=Se sei abbonato con PayPal, clicca qui per aggiornare il tuo abbonamento.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=Se ti sei abbonato con PayPal, {{link}} per aggiornare il tuo abbonamento.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=clicca qui
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=Inizia
 original=Help
 translation=Aiuto
 
-[nav.join_community]
-original=Join the community
-translation=Entra a far parte della community
-
 [nav.learn]
 original=Learn
 translation=Impara
@@ -2762,17 +2762,13 @@ translation=Tutto ciò che puoi fare in Obsidian, lo puoi fare dalla riga di com
 original=Install Obsidian CLI
 translation=Installa Obsidian CLI
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=Un symlink è creato in `/usr/local/bin/obsidian` (richiede sudo). Se sudo non funziona, ricorre a\u00a0`~/.local/bin`.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=Un symlink è creato automaticamente. Se l’operazione non va a buona fine, creane uno manualmente che punti all’export\u00a0Flatpak.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=Il file binario CLI viene copiato in `~/.local/bin/obsidian`. Assicurati che `~/.local/bin` sia nel tuo\u00a0PATH.
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
-translation=La registrazione aggiunge il file binario di Obsidian al tuo PATH tramite `~/.zprofile`. Se usi bash o fish, aggiungi manualmente il percorso alla configurazione della tua\u00a0shell.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
+translation=La registrazione crea un collegamento simbolico in `/usr/local/bin/obsidian`. Questo richiede privilegi di amministratore. Ti verrà mostrata una finestra di sistema.
 
 [pages.cli.install_step1]
 original=Update Obsidian
@@ -4545,6 +4541,14 @@ translation=Informazioni correlate
 [pages.security.report_issue]
 original=Report a security issue
 translation=Segnala un problema di sicurezza
+
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Audit dell'API, del server e della crittografia di Obsidian Sync. A seguito di questo test, il team di Cure53 ha riferito che tutte le vulnerabilità sono state risolte e che le raccomandazioni sono state seguite.
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=Audit dell'API, del server e della crittografia di Obsidian Sync, con particolare attenzione all'aggiornamento della crittografia di agosto 2025. Tutti i risultati sono stati affrontati tramite correzioni e divulgazioni validate dagli auditor.
 
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
