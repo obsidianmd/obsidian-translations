@@ -554,6 +554,14 @@ translation=Pievienot izņēmumu...
 original=No exclusions added.
 translation=Izņēmumi nav pievienoti.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} kārtula
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} kārtulas
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Pievienot izņēmumu
@@ -674,13 +682,13 @@ translation=Monospace fonts
 original=Set font for places like code blocks and frontmatter.
 translation=Iestatīt fontu, piemēram, koda blokiem un frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Pašlaik piemērotais fonts: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} fonts
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Pašlaik piemērotie fonti:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} fonti
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Atvērt tēmu mapi
 original=CSS snippets
 translation=CSS fragmenti
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Pārvaldiet savu CSS failu kolekciju lietotnes izskata pielāgošanai.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS fragmenti netika atrasti fragmentu mapē.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Pašlaik ir iespējots {{count}} fragments.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Pašlaik ir iespējoti {{count}} fragmenti.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} iespējoti
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Visi
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Konflikti ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Atspējot
 original=Copy share link
 translation=Kopēt koplietošanas saiti
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Skatīt detalizētu informāciju
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Atvērt kopienas lapu
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Iestatījumi
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Ziedot
@@ -2234,6 +2254,18 @@ translation=Neizdevās ielādēt spraudni "{{plugin}}"
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Spraudnis “{{plugin}}” ielādējoties radās kļūda
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} netika ielādēts. Šis spraudnis nav saderīgs ar Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} vairs nedarbojas. Iesakām to atinstalēt.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Neizdevās ielādēt spraudni {{plugin}} v{{version}}. Ir ziņots, ka šī versija rada problēmas. Lūdzu, pārbaudiet, vai nav pieejama jaunāka spraudņa versija.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Neizdevās atvērt failu "{{filepath}}"
@@ -2673,6 +2705,10 @@ translation=Lasīšanas skats
 [interface.menu.add-property]
 original=Add file property
 translation=Pievienot faila īpašību
+
+[interface.menu.delete]
+original=Delete
+translation=Dzēst
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Atcelt
 [dialogue.button-allow]
 original=Allow
 translation=Atļaut
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Atļaut vienreiz
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Vienmēr atļaut
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=aizvērt
 original=No commands found.
 translation=Nav atrastas komandas.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Ievadiet komandu...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Pievienot komandu...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Atlasiet komandu...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

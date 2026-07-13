@@ -554,6 +554,14 @@ translation=Cuir eisiamh leis...
 original=No exclusions added.
 translation=Níor cuireadh aon eisiamh leis.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} riail
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} riail
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Cuir eisiamh leis
@@ -674,13 +682,13 @@ translation=Cló Monospace
 original=Set font for places like code blocks and frontmatter.
 translation=Socraigh cló d'áiteanna cosúil le bloic cód agus tosaigh.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Cló atá i bhfeidhm faoi láthair: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} cló
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Tá na clónna seo a leanas i bhfeidhm faoi láthair:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} cló
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Fillteán téamaí osc
 original=CSS snippets
 translation=Snippets CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Bainistigh do bhailiúchán comhad CSS chun cuma na haipe a mhionathrú.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Níor aimsíodh aon snippets CSS.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Tá {{count}} sliocht cumasaithe agat faoi láthair.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Tá {{count}} sliocht cumasaithe agat faoi láthair.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} cumasaithe
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Gach
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Coinbhleachtaí ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Díchumasaigh
 original=Copy share link
 translation=Cóipeáil nasc roinnt
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Amharc ar na sonraí
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Oscail leathanach an phobail
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Socruithe
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Deontas
@@ -2234,6 +2254,18 @@ translation=Theip ar an breiseán “{{plugin}}” a luchtú
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Bhí earráid ag an mbreiseán “{{plugin}}” agus é á luchtú
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Níor lódáladh {{plugin}}. Níl an breiseán seo comhoiriúnach le Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=Níl {{plugin}} ag feidhmiú a thuilleadh. Molaimid é a dhíshuiteáil.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Ní féidir breiseán {{plugin}} v{{version}} a lódáil. Tuairiscíodh go mbíonn fadhbanna mar thoradh ar an leagan seo. Seiceáil an bhfuil leagan níos nuaí den bhreiseán ar fáil.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Theip ar oscailt “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Féach léitheoire
 [interface.menu.add-property]
 original=Add file property
 translation=Cuir maoin comhad leis
+
+[interface.menu.delete]
+original=Delete
+translation=Scrios
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Cealaigh
 [dialogue.button-allow]
 original=Allow
 translation=Ceadaigh
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Ceadaigh uair amháin
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Ceadaigh i gcónaí
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,8 +5878,12 @@ translation=a dhíscríobh
 original=No commands found.
 translation=Níor aimsíodh aon orduithe.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Cuir ordú leis...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
 translation=Roghnaigh ordú...
 
 [plugins.command-palette.label-pinned-commands]

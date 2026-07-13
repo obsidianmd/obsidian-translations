@@ -554,6 +554,14 @@ translation=Istisno qo‘shish...
 original=No exclusions added.
 translation=Istisnolar qo‘shilmagan.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} ta qoida
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} ta qoida
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Istisno qo‘shish
@@ -674,13 +682,13 @@ translation=Monospace shrift
 original=Set font for places like code blocks and frontmatter.
 translation=Kod bloklari va frontmatter uchun shriftni tanlash.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=Hozirda quyidagi shrift ishlatilmoqda:
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} ta shrift
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=Hozirda quyidagi shriftlar ishlatilmoqda:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} ta shrift
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Mavzular papkasini ochish
 original=CSS snippets
 translation=CSS kod parchalari
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Ilova ko‘rinishini sozlash uchun CSS fayllari to‘plamingizni boshqaring.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS kod parchalari papkasida hech narsa topilmadi.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Hozirda sizda {{count}} ta parcha yoqilgan.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Hozirda sizda {{count}} ta parcha yoqilgan.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} ta yoqilgan
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Hammasi
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Ziddiyatlar ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=O'chirish
 original=Copy share link
 translation=Havolani nusxalash
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Tafsilotlarni ko‘rish
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Hamjamiyat sahifasini ochish
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Sozlamalar
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Rahmat aytish
@@ -2234,6 +2254,18 @@ translation=Plaginni “{{plugin}}” yuklab bo‘lmadi
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=“{{plugin}}” plagini yuklanish vaqtida xatolikka uchradi
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} yuklanmadi. Bu plagin Obsidian v{{version}} bilan mos kelmaydi.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} endi ishlamaydi. Uni o‘chirib tashlashni tavsiya qilamiz.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation={{plugin}} plaginining v{{version}} versiyasini yuklab bo‘lmadi. Bu versiya muammolarga sabab bo‘lishi haqida xabar berilgan. Plaginning yangiroq versiyasi mavjudligini tekshiring.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Faylni “{{filepath}}” ochib bo‘lmadi
@@ -2673,6 +2705,10 @@ translation=Ko'rish
 [interface.menu.add-property]
 original=Add file property
 translation=Fayl xususiyatini qo'shish
+
+[interface.menu.delete]
+original=Delete
+translation=O‘chirish
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Bekor qilish
 [dialogue.button-allow]
 original=Allow
 translation=Ruxsat berish
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Bir marta ruxsat berish
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Har doim ruxsat berish
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=bekor qilish
 original=No commands found.
 translation=Buyruq topilmadi.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Buyruq nomini kiriting...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Buyruq qo‘shish...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Buyruqni tanlang...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

@@ -554,6 +554,14 @@ translation=
 original=No exclusions added.
 translation=
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=
@@ -674,13 +682,13 @@ translation=Monospace pisava
 original=Set font for places like code blocks and frontmatter.
 translation=Nastavite pisavo za mesta, kot so blok kode in frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Trenutno uporabljena pisava: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation=
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Naslednje pisave so trenutno uporabljene:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation=
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,16 +782,16 @@ translation=Odpri mapo tem
 original=CSS snippets
 translation=CSS izrezki
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=V mapi z izrezki ni najdenih CSS izrezkov.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
 translation=
 
 [setting.appearance.no-snippet-description]
@@ -1023,7 +1031,7 @@ original=All
 translation=Vse
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Onemogoči
 original=Copy share link
 translation=Kopiraj povezavo za deljenje
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Doniraj
@@ -2234,6 +2254,18 @@ translation=Ni uspelo naložiti vtičnika “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Vtičnik “{{plugin}}” je naletel na napako pri nalaganju
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Ni uspelo odpreti “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Način branja
 [interface.menu.add-property]
 original=Add file property
 translation=Dodaj lastnost datoteke
+
+[interface.menu.delete]
+original=Delete
+translation=
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4136,6 +4172,14 @@ translation=Prekliči
 
 [dialogue.button-allow]
 original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -5834,9 +5878,13 @@ translation=za preklic
 original=No commands found.
 translation=Ni najdenih ukazov.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Vnesite ukaz...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

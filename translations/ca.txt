@@ -554,6 +554,14 @@ translation=Afegeix una exclusió...
 original=No exclusions added.
 translation=No s'ha afegit cap exclusió.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} regla
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} regles
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Afegeix una exclusió
@@ -674,13 +682,13 @@ translation=Font monoespaiada
 original=Set font for places like code blocks and frontmatter.
 translation=Estableix la font per a llocs com ara blocs de codi i metadades.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Font actualment aplicada: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} tipus de lletra
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Les següents fonts s'apliquen actualment:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} tipus de lletra
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Obre la carpeta de temes
 original=CSS snippets
 translation=Pedaços de CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Gestiona la col·lecció de fitxers CSS per ajustar l'aparença de l'aplicació.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=No s'han trobat pedaços de CSS a la carpeta de pedaços.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Actualment hi ha {{count}} fragment activat.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Actualment hi ha {{count}} fragments activats.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} activats
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Totes
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Conflictes ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Desactivar
 original=Copy share link
 translation=Copiar l'enllaç de compartició
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Mostra els detalls
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Obre la pàgina de la comunitat
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Configuració
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Donar
@@ -2234,6 +2254,18 @@ translation=No s'ha pogut carregar el connector “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=El connector “{{plugin}}” ha trobat un error en carregar-se
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} no s'ha carregat. Aquest connector no és compatible amb Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} ja no funciona. Us recomanem que el desinstal·leu.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=No s'ha pogut carregar el connector {{plugin}} v{{version}}. S'ha informat que aquesta versió causa problemes. Comproveu si hi ha una versió més recent del connector.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=No s'ha pogut obrir “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Vista de lectura
 [interface.menu.add-property]
 original=Add file property
 translation=Afegeix una propietat del fitxer
+
+[interface.menu.delete]
+original=Delete
+translation=Suprimeix
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Cancel·la
 [dialogue.button-allow]
 original=Allow
 translation=Permet
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Permet-ho una vegada
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Permet-ho sempre
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=per descartar
 original=No commands found.
 translation=No s'han trobat ordres.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Escriu una ordre...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Afegeix una ordre...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Selecciona una ordre...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

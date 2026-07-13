@@ -554,6 +554,14 @@ translation=הוסף החרגה...
 original=No exclusions added.
 translation=לא נוספו החרגות.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=כלל {{count}}
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} כללים
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=הוסף החרגה
@@ -674,13 +682,13 @@ translation=גופן ברוחב קבוע
 original=Set font for places like code blocks and frontmatter.
 translation=הגדר גופן למקומות כמו בלוקי קוד ו־frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=הגופן המוחל כעת:
+[setting.appearance.label-font-count]
+original={{count}} font
+translation=גופן {{count}}
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=הגופנים הבאים מוחלים כעת:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} גופנים
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=פתח את תיקיית ערכות הנושא
 original=CSS snippets
 translation=קטעי CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=ניהול אוסף קובצי ה-CSS להתאמת מראה האפליקציה.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=לא נמצאו קטעי CSS בתיקיית הקטעים.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=יש לך כרגע {{count}} קטע מופעל.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=יש לך כרגע {{count}} קטעים מופעלים.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} מופעלים
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=הכל
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=התנגשויות ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=השבתה
 original=Copy share link
 translation=העתק קישור לשיתוף
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=הצגת פרטים
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=פתיחת דף הקהילה
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=הגדרות
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=תרומה
@@ -2234,6 +2254,18 @@ translation=טעינת התוסף „{{plugin}}” נכשלה
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=התוסף „{{plugin}}” נתקל בשגיאה בעת הטעינה
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} לא נטען. תוסף זה אינו תואם ל-Obsidian גרסה {{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} אינו פועל עוד. מומלץ להסיר אותו.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=לא ניתן לטעון את התוסף {{plugin}} בגרסה {{version}}. דווח שגרסה זו גורמת לבעיות. יש לבדוק אם קיימת גרסה חדשה יותר של התוסף.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=פתיחת „{{filepath}}” נכשלה
@@ -2673,6 +2705,10 @@ translation=תצוגת קריאה
 [interface.menu.add-property]
 original=Add file property
 translation=הוסף מאפיין קובץ
+
+[interface.menu.delete]
+original=Delete
+translation=מחק
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=בטל
 [dialogue.button-allow]
 original=Allow
 translation=אפשר
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=אפשר פעם אחת
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=אפשר תמיד
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=לביטול
 original=No commands found.
 translation=לא נמצאו פקודות.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=בחר פקודה להוספה...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=הוספת פקודה...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=בחירת פקודה...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

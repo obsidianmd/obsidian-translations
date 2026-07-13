@@ -554,6 +554,14 @@ translation=Додати виключення...
 original=No exclusions added.
 translation=Виключень не додано.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} правило
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} правила
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Додати виключення
@@ -674,13 +682,13 @@ translation=Моноширинний шрифт
 original=Set font for places like code blocks and frontmatter.
 translation=Встановлює шрифт для блоків коду та frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Встановлений наразі шрифт: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} шрифт
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Наступні шрифти наразі встановленні:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} шрифти
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Відкрити теку з темами
 original=CSS snippets
 translation=Сніпети (користувацький CSS)
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Керуйте своєю колекцією CSS-файлів для налаштування оформлення застосунку.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=У теці сніпетів нічого не знайдено.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=У вас зараз увімкнено {{count}} сніпет.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=У вас зараз увімкнено {{count}} сніпетів.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation=Увімкнено: {{count}}
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Всі
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Конфлікти ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Вимкнути
 original=Copy share link
 translation=Скопіювати посилання
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Переглянути подробиці
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Відкрити сторінку спільноти
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Налаштування
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Пожертвувати
@@ -2234,6 +2254,18 @@ translation=Не вдалося завантажити додаток "{{plugin}
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Під час завантаження додатка "{{plugin}}" виникла помилка
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} не завантажено. Цей додаток несумісний з Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} більше не працює. Рекомендуємо видалити його.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Не вдалося завантажити додаток {{plugin}} v{{version}}. Повідомлялося, що ця версія спричиняє проблеми. Перевірте наявність новішої версії додатка.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Не вдалося відкрити ”{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Режим читання
 [interface.menu.add-property]
 original=Add file property
 translation=Додати властивість файлу
+
+[interface.menu.delete]
+original=Delete
+translation=Видалити
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Скасувати
 [dialogue.button-allow]
 original=Allow
 translation=Дозволити
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Дозволити один раз
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Дозволяти завжди
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=скасувати
 original=No commands found.
 translation=Команда не знайдена.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Введіть назву команди...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Додати команду...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Виберіть команду...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

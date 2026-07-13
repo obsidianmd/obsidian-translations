@@ -554,6 +554,14 @@ translation=ማግለያ ጨምር...
 original=No exclusions added.
 translation=ምንም ማግለያዎች አልተጨመሩም።
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} ደንብ
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} ደንቦች
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=ማግለያ ጨምር
@@ -674,13 +682,13 @@ translation=ሞኖስፔስ ቅርጸ-ቁምፊ
 original=Set font for places like code blocks and frontmatter.
 translation=እንደ ኮድ ብሎኮች እና የፊት ጉዳይ ላሉ ቦታዎች ቅርጸ-ቁምፊ ያዘጋጁ።
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= በአሁኑ ጊዜ የሚተገበር ቅርጸ-ቁምፊ፡-
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} ቅርጸ ቁምፊ
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= የሚከተሉት ቅርጸ ቁምፊዎች በአሁኑ ጊዜ ተተግብረዋል፡
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} ቅርጸ ቁምፊዎች
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=የገጽታዎች አቃፊን ክፈት
 original=CSS snippets
 translation=የሲኤስኤስ ቅንጥቦች
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=የመተግበሪያውን መልክ ለማሻሻል የCSS ፋይሎች ስብስብዎን ያስተዳድሩ።
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=በቅንጥብ አቃፊ ውስጥ ምንም የሲኤስኤስ ቅንጥቦች አልተገኙም።
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=በአሁኑ ጊዜ {{count}} ቅንጥብ ነቅቶልዎታል።
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=በአሁኑ ጊዜ {{count}} ቅንጥቦች ነቅተውልዎታል።
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} ነቅተዋል
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,8 +1031,8 @@ original=All
 translation=ሁሉም
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
-translation=ግጭቶች ({{count}})
+original=Conflicts
+translation=ግጭቶች
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -1674,6 +1682,18 @@ translation=አሰናክል
 original=Copy share link
 translation=የማጋራት አገናኝ ቅዳ
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=ዝርዝሮችን ይመልከቱ
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=የማህበረሰብ ገጽ ክፈት
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=ቅንብሮች
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=ለገሱ
@@ -2234,6 +2254,18 @@ translation=ተሰኪ “{{plugin}}”ን መጫን አልተሳካም
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=ተሰኪ “{{plugin}}” በመጫን ላይ ሳለ ስህተት አጋጥሞታል
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} አልተጫነም። ይህ ተሰኪ ከObsidian v{{version}} ጋር አይጣጣምም።
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} ከእንግዲህ አይሰራም። እንዲያራግፉት እንመክራለን።
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=ተሰኪ {{plugin}} v{{version}} መጫን አልተቻለም። ይህ ስሪት ችግሮች እንደሚያስከትል ተዘግቧል። እባክዎ የተሰኪውን አዲስ ስሪት ያረጋግጡ።
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” መክፈት አልተሳካም
@@ -2673,6 +2705,10 @@ translation=የንባብ እይታ
 [interface.menu.add-property]
 original=Add file property
 translation=የፋይል ባህሪ አክል
+
+[interface.menu.delete]
+original=Delete
+translation=ሰርዝ
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=ሰርዝ
 [dialogue.button-allow]
 original=Allow
 translation=ፍቀድ
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=አንድ ጊዜ ፍቀድ
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=ሁልጊዜ ፍቀድ
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=ለማሰናበት
 original=No commands found.
 translation=ምንም ትዕዛዞች አልተገኙም።
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=ትዕዛዝ ይተይቡ...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=ትዕዛዝ ጨምር...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=ትዕዛዝ ይምረጡ...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

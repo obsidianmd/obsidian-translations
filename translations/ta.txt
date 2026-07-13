@@ -554,6 +554,14 @@ translation=
 original=No exclusions added.
 translation=
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=
@@ -674,13 +682,13 @@ translation=மோனோஸ்பேஸ் எழுத்துரு
 original=Set font for places like code blocks and frontmatter.
 translation=குறிமுறைத் தொகுதிகள் மற்றும் Frontmatter போன்ற இடங்களுக்கான எழுத்துருவை அமை.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= தற்போது பயன்படுத்தப்படும் எழுத்துரு: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation=
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=பின்வரும் எழுத்துருக்கள் தற்போது பயன்படுத்தப்படுகின்றன:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation=
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,16 +782,16 @@ translation=கருப்பொருள் கோப்புறையைத�
 original=CSS snippets
 translation=CSS துணுக்குகள்
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS Snippets எதுவும் இல்லை.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
 translation=
 
 [setting.appearance.no-snippet-description]
@@ -1023,7 +1031,7 @@ original=All
 translation=அனைத்தும்
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=முடக்கு
 original=Copy share link
 translation=பகிர்வு இணைப்பை நகலெடு
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=நன்கொடை
@@ -2234,6 +2254,18 @@ translation=“{{செருகுநிரல்}}” செருகுநி
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=“{{செருகுநிரல்}}” செருகுநிரலை ஏற்றும்போது பிழை ஏற்பட்டது
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” திறக்க முடியவில்லை
@@ -2673,6 +2705,10 @@ translation=வாசிப்புப் பார்வை
 [interface.menu.add-property]
 original=Add file property
 translation=பண்பு-யை சேர்
+
+[interface.menu.delete]
+original=Delete
+translation=
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4136,6 +4172,14 @@ translation=ரத்துசெய்
 
 [dialogue.button-allow]
 original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -5834,9 +5878,13 @@ translation=மூட
 original=No commands found.
 translation=கட்டளைகள் எதுவும் இல்லை.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=சேர்க்க வேண்டிய கட்டளையைத் தேர்ந்தெடுக்கவும்...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

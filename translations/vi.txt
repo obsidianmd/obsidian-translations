@@ -554,6 +554,14 @@ translation=Thêm loại trừ...
 original=No exclusions added.
 translation=Chưa thêm loại trừ nào.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} quy tắc
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} quy tắc
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Thêm loại trừ
@@ -674,13 +682,13 @@ translation=Phông chữ không chia khoảng
 original=Set font for places like code blocks and frontmatter.
 translation=Thiết lập phông chữ cho các vị trí như khối mã và frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Phông chữ đang áp dụng: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} phông chữ
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Các phông chữ sau đang áp dụng:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} phông chữ
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Mở thư mục chủ đề
 original=CSS snippets
 translation=Mẩu CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Quản lý bộ sưu tập tệp CSS để tinh chỉnh giao diện của ứng dụng.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Không có mẩu CSS nào được tìm thấy trong thư mục mẩu.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Hiện bạn đã bật {{count}} đoạn trích.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Hiện bạn đã bật {{count}} đoạn trích.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation=Đã bật {{count}}
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Tất cả
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Xung đột ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Vô hiệu hóa
 original=Copy share link
 translation=Sao chép liên kết chia sẻ
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Xem chi tiết
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Mở trang cộng đồng
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Cài đặt
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Ủng hộ
@@ -2234,6 +2254,18 @@ translation=Không thể tải plugin “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Plugin “{{plugin}}” gặp lỗi khi tải
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Không thể tải {{plugin}}. Plugin này không tương thích với Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} không còn hoạt động. Bạn nên gỡ cài đặt plugin này.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Không thể tải plugin {{plugin}} v{{version}}. Phiên bản này đã được báo cáo là gây ra sự cố. Vui lòng kiểm tra phiên bản mới hơn của plugin.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Không thể mở “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Chế độ đọc
 [interface.menu.add-property]
 original=Add file property
 translation=Thêm thuộc tính tệp
+
+[interface.menu.delete]
+original=Delete
+translation=Xóa
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Hủy bỏ
 [dialogue.button-allow]
 original=Allow
 translation=Cho phép
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Chỉ cho phép lần này
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Luôn cho phép
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=để hủy
 original=No commands found.
 translation=Không tìm thấy lệnh.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Nhập lệnh...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Thêm lệnh...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Chọn lệnh...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

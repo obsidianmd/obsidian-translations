@@ -554,6 +554,14 @@ translation=
 original=No exclusions added.
 translation=
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=
@@ -674,12 +682,12 @@ translation=
 original=Set font for places like code blocks and frontmatter.
 translation=
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
+[setting.appearance.label-font-count]
+original={{count}} font
 translation=
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
 translation=
 
 [setting.appearance.option-font-placeholder]
@@ -774,16 +782,16 @@ translation=
 original=CSS snippets
 translation=
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=No CSS snippets found in the snippets folder.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
 translation=
 
 [setting.appearance.no-snippet-description]
@@ -1023,7 +1031,7 @@ original=All
 translation=
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=
 original=Copy share link
 translation=
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=
@@ -2234,6 +2254,18 @@ translation=
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=
@@ -2672,6 +2704,10 @@ translation=
 
 [interface.menu.add-property]
 original=Add file property
+translation=
+
+[interface.menu.delete]
+original=Delete
 translation=
 
 [interface.menu.delete-file]
@@ -4136,6 +4172,14 @@ translation=
 
 [dialogue.button-allow]
 original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -5834,9 +5878,13 @@ translation=
 original=No commands found.
 translation=
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Type a command...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

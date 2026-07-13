@@ -554,6 +554,14 @@ translation=제외 파일 추가...
 original=No exclusions added.
 translation=추가된 제외 파일이 없습니다.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=규칙 {{count}}개
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=규칙 {{count}}개
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=제외 파일 추가
@@ -674,13 +682,13 @@ translation=모노스페이스 폰트
 original=Set font for places like code blocks and frontmatter.
 translation=코드 블럭이나 Frontmatter 등의 도구들을 사용 할 때 적용되는 폰트를 설정합니다.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= 현재 적용중인 폰트: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation=글꼴 {{count}}개
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=현재 다음 폰트들이 적용돼 있습니다: 
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation=글꼴 {{count}}개
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=테마 폴더 열기
 original=CSS snippets
 translation=CSS 스니펫
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=앱의 외형을 조정하는 CSS 파일 모음을 관리합니다.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=스니펫 폴더에서 CSS 스니펫을 찾지 못했습니다.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=현재 {{count}}개의 스니펫이 활성화되어 있습니다.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=현재 {{count}}개의 스니펫이 활성화되어 있습니다.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}}개 활성화됨
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=전체
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=충돌 ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=비활성화
 original=Copy share link
 translation=공유 링크 복사
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=세부 정보 보기
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=커뮤니티 페이지 열기
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=설정
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=후원
@@ -2234,6 +2254,18 @@ translation=“{{plugin}}” 플러그인을 로드하지 못했습니다.
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=“{{plugin}}” 플러그인을 로드하던 중 오류가 발생했습니다.
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}}을(를) 불러오지 못했습니다. 이 플러그인은 Obsidian v{{version}}과(와) 호환되지 않습니다.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}}은(는) 더 이상 작동하지 않습니다. 제거하는 것이 좋습니다.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=플러그인 {{plugin}} v{{version}}을(를) 불러올 수 없습니다. 이 버전은 문제를 일으키는 것으로 보고되었습니다. 더 새로운 버전의 플러그인이 있는지 확인하세요.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” 파일을 열지 못했습니다.
@@ -2673,6 +2705,10 @@ translation=읽기 화면
 [interface.menu.add-property]
 original=Add file property
 translation=파일 속성 추가
+
+[interface.menu.delete]
+original=Delete
+translation=삭제
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=취소
 [dialogue.button-allow]
 original=Allow
 translation=허용
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=한 번만 허용
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=항상 허용
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=닫기
 original=No commands found.
 translation=명령어를 찾지 못했습니다.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=명령어 입력...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=명령 추가...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=명령 선택...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
