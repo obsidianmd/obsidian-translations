@@ -554,6 +554,14 @@ translation=Engadir exclusión...
 original=No exclusions added.
 translation=Non se engadiron exclusións.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Engadir exclusión
@@ -674,13 +682,13 @@ translation=Tipo de letra monoespazado
 original=Set font for places like code blocks and frontmatter.
 translation=Establece o tipo de letra para lugares como bloques de código e materia previa.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Tipo de letra actualmente aplicado: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} fonte
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Os seguintes tipos de letra están actualmente aplicados:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} fontes
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,16 +782,16 @@ translation=Abrir o cartafol de temas
 original=CSS snippets
 translation=Fragmentos CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Non se atoparon fragmentos CSS.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
 translation=
 
 [setting.appearance.no-snippet-description]
@@ -1023,7 +1031,7 @@ original=All
 translation=Todos
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Desactivar
 original=Copy share link
 translation=Copiar ligazón para compartir
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Doar
@@ -2234,6 +2254,18 @@ translation=Erro ao cargar o complemento “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=O complemento “{{plugin}}” atopou un erro ao cargar
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Erro ao abrir “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Vista de lectura
 [interface.menu.add-property]
 original=Add file property
 translation=Engadir propiedade do ficheiro
+
+[interface.menu.delete]
+original=Delete
+translation=
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4136,6 +4172,14 @@ translation=Cancelar
 
 [dialogue.button-allow]
 original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -5834,9 +5878,13 @@ translation=para pechar
 original=No commands found.
 translation=Non se atoparon comandos.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Selecciona un comando para engadir...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Engade un comando...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Selecciona un comando...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

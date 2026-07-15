@@ -296,11 +296,11 @@ translation=En dispositius mòbils, aquesta configuració és per dispositiu i n
 
 [setting.editor.option-reindex-vault]
 original=Rebuild vault cache
-translation=Reconstrueix la memòria cau de la cambra forta
+translation=Reconstrueix la memòria cau de l'Arca
 
 [setting.editor.option-reindex-vault-description]
 original=Rebuilding the cache could take a few seconds to a few minutes depending on the size of your vault.
-translation=Reconstruir la memòria cau pot trigar d'uns segons a uns quants minuts segons la mida de la cambra forta.
+translation=Reconstruir la memòria cau pot trigar d'uns segons a uns quants minuts segons la mida de l'Arca.
 
 [setting.editor.label-reindex]
 original=Rebuild
@@ -554,6 +554,14 @@ translation=Afegeix una exclusió...
 original=No exclusions added.
 translation=No s'ha afegit cap exclusió.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} regla
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} regles
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Afegeix una exclusió
@@ -674,13 +682,13 @@ translation=Font monoespaiada
 original=Set font for places like code blocks and frontmatter.
 translation=Estableix la font per a llocs com ara blocs de codi i metadades.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Font actualment aplicada: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} tipus de lletra
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Les següents fonts s'apliquen actualment:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} tipus de lletra
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Obre la carpeta de temes
 original=CSS snippets
 translation=Pedaços de CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Gestiona la col·lecció de fitxers CSS per ajustar l'aparença de l'aplicació.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=No s'han trobat pedaços de CSS a la carpeta de pedaços.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Actualment hi ha {{count}} fragment activat.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Actualment hi ha {{count}} fragments activats.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} activats
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Totes
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Conflictes ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Desactivar
 original=Copy share link
 translation=Copiar l'enllaç de compartició
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Mostra els detalls
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Obre la pàgina de la comunitat
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Configuració
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Donar
@@ -2234,6 +2254,18 @@ translation=No s'ha pogut carregar el connector “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=El connector “{{plugin}}” ha trobat un error en carregar-se
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} no s'ha carregat. Aquest connector no és compatible amb Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} ja no funciona. Us recomanem que el desinstal·leu.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=No s'ha pogut carregar el connector {{plugin}} v{{version}}. S'ha informat que aquesta versió causa problemes. Comproveu si hi ha una versió més recent del connector.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=No s'ha pogut obrir “{{filepath}}”
@@ -2674,6 +2706,10 @@ translation=Vista de lectura
 original=Add file property
 translation=Afegeix una propietat del fitxer
 
+[interface.menu.delete]
+original=Delete
+translation=Suprimeix
+
 [interface.menu.delete-file]
 original=Delete file
 translation=Esborra el fitxer
@@ -2728,7 +2764,7 @@ translation=des de l'arrel del sistema
 
 [interface.menu.copy-vault-path]
 original=from vault folder
-translation=des de la carpeta de la cambra forta
+translation=des de la carpeta de l'Arca
 
 [interface.menu.paste-as-plain-text]
 original=Paste as plain text
@@ -3020,15 +3056,15 @@ translation=Recomanat
 
 [interface.start-screen.mobile.label-start-screen-desc]
 original=Obsidian stores notes on your device, so you can access them quickly and privately, even offline.\nYour data is stored in a secure local folder called a **vault**.
-translation=Obsidian desa les notes al dispositiu, perquè hi pugueu accedir de manera ràpida i privada, fins i tot sense connexió.\nLes dades s'emmagatzemen en una carpeta local segura anomenada **cambra forta**.
+translation=Obsidian desa les notes al dispositiu, perquè hi pugueu accedir de manera ràpida i privada, fins i tot sense connexió.\nLes dades s'emmagatzemen en una carpeta local segura anomenada **Arca**.
 
 [interface.start-screen.mobile.option-create]
 original=Create a vault
-translation=Crea una cambra forta
+translation=Crea una Arca
 
 [interface.start-screen.mobile.option-use-existing]
 original=Use my existing vault
-translation=Fes servir la meva cambra forta existent
+translation=Fes servir la meva Arca existent
 
 [interface.start-screen.mobile.label-sync-intro]
 original=To access your notes on other devices you need to set up sync.
@@ -3056,7 +3092,7 @@ translation=Choose a name for your vault.
 
 [interface.start-screen.mobile.button-create]
 original=Create vault
-translation=Crea una cambra forta
+translation=Crea una Arca
 
 [interface.start-screen.mobile.label-sync-setup]
 original=Sync setup
@@ -3120,15 +3156,15 @@ translation=Teniu cambres fortes de Sync existents
 
 [interface.start-screen.mobile.label-remote-vault-options-desc]
 original=Do you want to create a new vault or connect to an existing synced vault?
-translation=Voleu crear una cambra forta nova o connectar-vos a una cambra forta sincronitzada existent?
+translation=Voleu crear una Arca nova o connectar-vos a una Arca sincronitzada existent?
 
 [interface.start-screen.mobile.option-remote-create]
 original=Create new Sync vault
-translation=Crea una cambra forta de Sync nova
+translation=Crea una Arca de Sync nova
 
 [interface.start-screen.mobile.option-remote-choose]
 original=Choose an existing vault
-translation=Trieu una cambra forta existent
+translation=Trieu una Arca existent
 
 [interface.start-screen.mobile.button-logout]
 original=Log out
@@ -3140,11 +3176,11 @@ translation=Heu oblidat la contrasenya
 
 [interface.start-screen.mobile.label-vault-name]
 original=Vault name
-translation=Nom de la cambra forta
+translation=Nom de l'Arca
 
 [interface.start-screen.mobile.label-vault-location]
 original=Vault location
-translation=Ubicació de la cambra forta
+translation=Ubicació de l'Arca
 
 [interface.start-screen.mobile.label-device-storage]
 original=Device storage
@@ -3172,7 +3208,7 @@ translation=Android suprimirà les vostres dades si desinstal·leu Obsidian.
 
 [interface.start-screen.mobile.label-vault-location-desc]
 original=Your new vault will be placed in {{vaultLocation}}
-translation=La vostra cambra forta nova es col·locarà a {{vaultLocation}}
+translation=La vostra Arca nova es col·locarà a {{vaultLocation}}
 
 [interface.start-screen.mobile.label-region-selection]
 original=Region
@@ -3192,7 +3228,7 @@ translation=Aquesta contrasenya no es pot canviar més endavant. Si oblideu la c
 
 [interface.start-screen.mobile.placeholder-vault-name]
 original=My vault
-translation=La meva cambra forta
+translation=La meva Arca
 
 [interface.start-screen.mobile.opt-region-selection-automatic]
 original=Automatic
@@ -3200,7 +3236,7 @@ translation=Automàtic
 
 [interface.start-screen.mobile.label-remote-vault-selection]
 original=Choose a vault
-translation=Trieu una cambra forta
+translation=Trieu una Arca
 
 [interface.start-screen.mobile.label-remote-vault-selection-desc]
 original=Your account **{{email}}** has existing vaults you can connect to.
@@ -3280,7 +3316,7 @@ translation=Utilitza mètodes de sincronització compatibles
 
 [interface.start-screen.mobile.label-sync-restore]
 original=Where is your vault located?
-translation=On es troba la teva cambra forta?
+translation=On es troba la teva Arca?
 
 [interface.start-screen.mobile.label-other]
 original=Other
@@ -3316,7 +3352,7 @@ translation=Altres mètodes de sincronització
 
 [interface.start-screen.mobile.label-sync-other-desc]
 original=Obsidian officially supports two syncing methods: **Obsidian Sync** and **iCloud**.\nHowever, because Obsidian gives you control over your data there are other sync options you can use.\nThese options include third-party plugins and other tools which may require more advanced set up.\nTo use an alternate syncing method, **create a vault** and follow the instructions provided by the plugin or third-party sync provider.
-translation=Obsidian admet oficialment dos mètodes de sincronització: **Obsidian Sync** i **iCloud**.\nTanmateix, com que Obsidian et dona control sobre les teves dades, hi ha altres opcions de sincronització que pots utilitzar.\nAquestes opcions inclouen connectors de tercers i altres eines que poden requerir una configuració més avançada.\nPer utilitzar un mètode de sincronització alternatiu, **crea una cambra forta** i segueix les instruccions proporcionades pel connector o el proveïdor de sincronització de tercers.
+translation=Obsidian admet oficialment dos mètodes de sincronització: **Obsidian Sync** i **iCloud**.\nTanmateix, com que Obsidian et dona control sobre les teves dades, hi ha altres opcions de sincronització que pots utilitzar.\nAquestes opcions inclouen connectors de tercers i altres eines que poden requerir una configuració més avançada.\nPer utilitzar un mètode de sincronització alternatiu, **crea una Arca** i segueix les instruccions proporcionades pel connector o el proveïdor de sincronització de tercers.
 
 [interface.start-screen.mobile.label-email-entry]
 original=Enter your email
@@ -3340,15 +3376,15 @@ translation=Hauries de rebre aviat un correu electrònic a **{{email}}** amb ins
 
 [interface.start-screen.mobile.icloud-missing-desc]
 original=Your iCloud vault was not detected. This could be due to any of the following reasons:
-translation=No s'ha detectat la teva cambra forta d'iCloud. Això pot ser degut a algun dels motius següents:
+translation=No s'ha detectat la teva Arca d'iCloud. Això pot ser degut a algun dels motius següents:
 
 [interface.start-screen.mobile.icloud-missing-reason1]
 original=Your vault is on a different iCloud account than the one you are currently signed into on this device.
-translation=La teva cambra forta és en un compte d'iCloud diferent del que tens iniciat actualment en aquest dispositiu.
+translation=La teva Arca és en un compte d'iCloud diferent del que tens iniciat actualment en aquest dispositiu.
 
 [interface.start-screen.mobile.icloud-missing-reason2]
 original=Your vault is not stored on the top-level Obsidian folder of your iCloud Drive.
-translation=La teva cambra forta no està desada a la carpeta d'Obsidian de nivell superior de l'iCloud Drive.
+translation=La teva Arca no està desada a la carpeta d'Obsidian de nivell superior de l'iCloud Drive.
 
 [interface.start-screen.mobile.i-cloud-unsupported]
 original=iCloud not supported
@@ -3356,7 +3392,7 @@ translation=iCloud no compatible
 
 [interface.start-screen.mobile.i-cloud-unsupported-desc]
 original=iCloud syncing is only available on Apple devices. If your vault is currently syncing via iCloud, learn how to migrate your vault to a different sync service.
-translation=La sincronització amb iCloud només està disponible en dispositius Apple. Si la teva cambra forta s'està sincronitzant actualment mitjançant iCloud, informa't sobre com migrar-la a un servei de sincronització diferent.
+translation=La sincronització amb iCloud només està disponible en dispositius Apple. Si la teva Arca s'està sincronitzant actualment mitjançant iCloud, informa't sobre com migrar-la a un servei de sincronització diferent.
 
 [interface.start-screen.mobile.allow-file-access]
 original=Allow file access
@@ -3368,7 +3404,7 @@ translation=S'està iniciant la sessió...
 
 [interface.start-screen.mobile.msg-name-required]
 original=Vault name is required
-translation=El nom de la cambra forta és obligatori
+translation=El nom de l'Arca és obligatori
 
 [interface.start-screen.mobile.msg-new-email-success]
 original=New confirmation email sent.
@@ -3380,7 +3416,7 @@ translation=No s'ha pogut reenviar el correu electrònic.
 
 [interface.start-screen.mobile.msg-invalid-vault]
 original=Vault location must be a folder.
-translation=La ubicació de la cambra forta ha de ser una carpeta.
+translation=La ubicació de l'Arca ha de ser una carpeta.
 
 [interface.starter-content.welcome-filename]
 original=Welcome
@@ -3672,11 +3708,11 @@ translation=Canvia el tema...
 
 [commands.change-vault]
 original=Change vault...
-translation=Canvia la cambra forta...
+translation=Canvia l'Arca...
 
 [commands.open-vault]
 original=Open vault...
-translation=Obre la cambra forta...
+translation=Obre l'Arca...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4137,6 +4173,14 @@ translation=Cancel·la
 [dialogue.button-allow]
 original=Allow
 translation=Permet
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Permet-ho una vegada
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Permet-ho sempre
 
 [dialogue.button-skip]
 original=Skip
@@ -5692,7 +5736,7 @@ translation=CSS personalitzat
 
 [plugins.custom-css.desc]
 original=Read and apply “obsidian.css” in the vault folder.
-translation=Llegeix i aplica “obsidian.css” a la carpeta de la cambra forta.
+translation=Llegeix i aplica “obsidian.css” a la carpeta de l'Arca.
 
 [plugins.custom-css.setting-community-themes]
 original=Community themes
@@ -5834,9 +5878,13 @@ translation=per descartar
 original=No commands found.
 translation=No s'han trobat ordres.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Escriu una ordre...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Afegeix una ordre...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Selecciona una ordre...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6020,7 +6068,7 @@ translation=Format de data
 
 [plugins.daily-notes.option-date-format-desc]
 original=Choose how daily note are named in your vault.
-translation=Trieu com s'anomenen les notes diàries a la vostra cambra forta.
+translation=Trieu com s'anomenen les notes diàries a la vostra Arca.
 
 [plugins.daily-notes.option-custom-date-format]
 original=Custom format
@@ -6184,11 +6232,11 @@ translation=Mostra el comptador de paraules a la barra d'estat.
 
 [plugins.mermaid.label-guard-title]
 original=Display Mermaid diagrams in this vault?
-translation=Voleu mostrar els diagrames Mermaid en aquesta cambra forta?
+translation=Voleu mostrar els diagrames Mermaid en aquesta Arca?
 
 [plugins.mermaid.label-guard-desc]
 original=Only allow if you trust this vault's contents.
-translation=Permeteu-ho només si confieu en el contingut d'aquesta cambra forta.
+translation=Permeteu-ho només si confieu en el contingut d'aquesta Arca.
 
 [plugins.slides.name]
 original=Slides
@@ -7024,7 +7072,7 @@ translation=Això eliminarà aquest lloc de la llista de llocs compartits amb tu
 
 [plugins.publish.label-leave-site-confirmation-details-2]
 original=Please contact the owner of the site if you wish to collaborate on this site again.
-translation=Si us plau, contacta amb el propietari del lloc si vols col·laborar en aquest lloc de nou.
+translation=Contacta amb el propietari del lloc si vols col·laborar en aquest lloc de nou.
 
 [plugins.publish.button-leave]
 original=Leave
@@ -7824,7 +7872,7 @@ translation=Obsidian Sync no pot verificar el contingut dels connectors sincroni
 
 [plugins.sync.label-community-plugin-data-warning-2]
 original=Only enable this if the vault and connected devices are trusted.
-translation=Activeu-ho només si confieu en la cambra forta i els dispositius connectats.
+translation=Activeu-ho només si confieu en l'Arca i els dispositius connectats.
 
 [plugins.sync.button-confirm-community-plugin-data-warning]
 original=Yes, turn on plugin sync
@@ -8008,11 +8056,11 @@ translation=Obsidian Sync et permet crear fins a 5 arcque remotes. Per crear una
 
 [plugins.sync.label-upgrade-vault]
 original=Upgrade vault
-translation=Actualitza la cambra forta
+translation=Actualitza l'Arca
 
 [plugins.sync.label-upgrade-vault-encryption]
 original=Upgrade vault encryption
-translation=Actualitza el xifratge de la cambra forta
+translation=Actualitza el xifratge de l'Arca
 
 [plugins.sync.label-upgrade-vault-encryption-desc]
 original=There is a new encryption version available for remote vaults.
@@ -8036,15 +8084,15 @@ translation=Això suprimirà la vostra cambra remota i la recrearà amb el xifra
 
 [plugins.sync.label-confirm-migrate]
 original=Confirm vault migration
-translation=Confirma la migració de la cambra forta
+translation=Confirma la migració de l'Arca
 
 [plugins.sync.msg-migrate-pre-confirmation-part1]
 original=To upgrade your encryption, all data in the vault will be re-uploaded to the Obsidian Sync servers using the new encryption method. This process will permanently delete all data encrypted with the old encryption, including the version history for your vault.
-translation=Per actualitzar el xifratge, totes les dades de la cambra forta es tornaran a pujar als servidors d'Obsidian Sync amb el nou mètode de xifratge. Aquest procés suprimirà de manera permanent totes les dades xifrades amb el xifratge antic, inclòs l'historial de versions de la vostra cambra forta.
+translation=Per actualitzar el xifratge, totes les dades de l'Arca es tornaran a pujar als servidors d'Obsidian Sync amb el nou mètode de xifratge. Aquest procés suprimirà de manera permanent totes les dades xifrades amb el xifratge antic, inclòs l'historial de versions de la vostra Arca.
 
 [plugins.sync.msg-migrate-pre-confirmation-part2]
 original=Important: we strongly recommend creating a backup of your vault before proceeding to prevent any potential data loss.
-translation=Important: recomanem fermament crear una còpia de seguretat de la vostra cambra forta abans de continuar per evitar qualsevol possible pèrdua de dades.
+translation=Important: recomanem fermament crear una còpia de seguretat de la vostra Arca abans de continuar per evitar qualsevol possible pèrdua de dades.
 
 [plugins.sync.msg-migrate-pre-confirmation-part3]
 original=After completing the upgrade, you will need to reconnect all your devices to the updated remote vault.
@@ -8052,7 +8100,7 @@ translation=Un cop completada l'actualització, haureu de reconnectar tots els v
 
 [plugins.sync.msg-migrate-confirmation]
 original=Migrating your vault may take some time. You will need to keep Obsidian active on this device to re-upload all your notes and attachments. It is best to do this on your primary device.
-translation=La migració de la cambra forta pot trigar una estona. Haureu de mantenir Obsidian actiu en aquest dispositiu per tornar a pujar totes les vostres notes i adjunts. És millor fer-ho al vostre dispositiu principal.
+translation=La migració de l'Arca pot trigar una estona. Haureu de mantenir Obsidian actiu en aquest dispositiu per tornar a pujar totes les vostres notes i adjunts. És millor fer-ho al vostre dispositiu principal.
 
 [plugins.sync.msg-proceed-prompt]
 original=Do you want to proceed?
@@ -8060,11 +8108,11 @@ translation=Voleu continuar?
 
 [plugins.sync.msg-vault-migration-started]
 original=Vault migration in progress.
-translation=La migració de la cambra forta està en curs.
+translation=La migració de l'Arca està en curs.
 
 [plugins.sync.msg-vault-migration-completed]
 original=Vault migration complete.
-translation=La migració de la cambra forta s'ha completat.
+translation=La migració de l'Arca s'ha completat.
 
 [plugins.sync.label-resolve-conflicts]
 original=Conflict resolution
@@ -8368,11 +8416,11 @@ translation=Selecciona-ho tot
 
 [plugins.web-viewer.action-save-to-vault]
 original=Save to vault
-translation=Desa a la cambra forta
+translation=Desa a l'Arca
 
 [plugins.web-viewer.action-save-image]
 original=Save image to vault
-translation=Desa la imatge a la cambra forta
+translation=Desa la imatge a l'Arca
 
 [plugins.web-viewer.action-copy-image-link]
 original=Copy image link
@@ -8436,15 +8484,15 @@ translation=Elimina tot l'anterior, així com l'emmagatzematge local i les sessi
 
 [plugins.web-viewer.label-new-web-viewer]
 original=New web viewer
-translation=Visor web nou
+translation=Nou visor web
 
 [plugins.web-viewer.label-fail-to-load]
 original=Unable to load site.
-translation=Unable to load that site.
+translation=No es pot carregar aquest lloc web.
 
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
-translation=Please make sure you have the correct address.
+translation=Assegureu-vos que teniu l'adreça correcta.
 
 [plugins.web-viewer.action-reader-view]
 original=Reader view
@@ -9068,7 +9116,7 @@ translation=Bases
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=Crea vistes personalitzades que et permetin editar, ordenar i filtrar fitxers mitjançant les seves propietats.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -9076,7 +9124,7 @@ translation=Base nova
 
 [plugins.bases.action-add-property]
 original=Add "{{name}}" property
-translation=Add property
+translation=Afegeix la propietat "{{name}}" 
 
 [plugins.bases.action-add-summary]
 original=Add "{{name}}" summary
@@ -9320,7 +9368,7 @@ translation=fitxer
 
 [plugins.bases.label-file-prop-name]
 original=file name
-translation=name
+translation=nom
 
 [plugins.bases.label-file-prop-base-name]
 original=file base name
@@ -9332,7 +9380,7 @@ translation=nom complet del fitxer
 
 [plugins.bases.label-file-prop-path]
 original=file path
-translation=path
+translation=camí
 
 [plugins.bases.label-file-prop-folder]
 original=folder
@@ -9440,7 +9488,7 @@ translation=Configuració de propietat no vàlida per a "{{ name }}".
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+translation=No s'ha pogut afegir la nova vista de Bases "{{ viewID }}". Ja existeix una vista amb aquest ID.
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
@@ -10328,8 +10376,8 @@ translation=Fitxer: {{path}}
 
 [main.vault-not-found-title]
 original=Vault not found.
-translation=Cambra forta no trobada.
+translation=Arca no trobada.
 
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
-translation=No s'ha pogut trobar cap cambra forta per a l'URL {{url}}
+translation=No s'ha pogut trobar cap Arca per a l'URL {{url}}

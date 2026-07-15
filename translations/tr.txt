@@ -554,6 +554,14 @@ translation=Hariç tutma ekle...
 original=No exclusions added.
 translation=Hariç tutma eklenmedi.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} kural
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} kural
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Hariç tutma ekle
@@ -674,13 +682,13 @@ translation=Tek aralıklı yazı tipi
 original=Set font for places like code blocks and frontmatter.
 translation=Kod blokları ve ön madde gibi yerler için yazı tipini ayarlayın.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=Şu anda uygulanan yazı tipi: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} yazı tipi
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=Şu anda aşağıdaki yazı tipleri uygulanmaktadır:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} yazı tipi
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Tema klasörünü aç
 original=CSS snippets
 translation=CSS kod parçaları
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Uygulamanın görünümünü özelleştirmek için CSS dosyaları koleksiyonunuzu yönetin.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Kod parçaları klasöründe hiç CSS kod parçası bulunamadı.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Şu anda {{count}} kod parçacığı etkin.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Şu anda {{count}} kod parçacığı etkin.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} etkin
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Tümü
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Çakışmalar ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Devre dışı bırak
 original=Copy share link
 translation=Paylaşma linkini kopyala
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Ayrıntıları görüntüle
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Topluluk sayfasını aç
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Ayarlar
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Bağış Yapın
@@ -2234,6 +2254,18 @@ translation=“{{plugin}}” eklentisi yüklenemedi
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=“{{plugin}}” eklentisi yüklenirken bir hatayla karşılaştı
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} yüklenmedi. Bu eklenti, Obsidian v{{version}} ile uyumlu değil.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} artık çalışmıyor. Eklentiyi kaldırmanızı öneririz.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation={{plugin}} v{{version}} eklentisi yüklenemedi. Bu sürümün sorunlara yol açtığı bildirildi. Lütfen eklentinin daha yeni bir sürümü olup olmadığını kontrol edin.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” açılamadı
@@ -2673,6 +2705,10 @@ translation=Okuma görünümü
 [interface.menu.add-property]
 original=Add file property
 translation=Dosya özelliği ekle
+
+[interface.menu.delete]
+original=Delete
+translation=Sil
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=İptal
 [dialogue.button-allow]
 original=Allow
 translation=İzin ver
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Bir kez izin ver
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Her zaman izin ver
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=Vazgeçmek
 original=No commands found.
 translation=Komut bulunamadı.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Bir komut yazın...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Komut ekle...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Bir komut seç...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

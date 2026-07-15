@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=PayPalの為替換算
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=PayPalでサブスクリプションを登録された場合は、こちらをクリックしてサブスクリプションを更新してください。
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=PayPalでご購読された場合、サブスクリプションを更新するには{{link}}。
+
+[account.payment.paypal_update_link]
+original=click here
+translation=こちらをクリック
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=はじめる
 original=Help
 translation=ヘルプ
 
-[nav.join_community]
-original=Join the community
-translation=コミュニティに参加
-
 [nav.learn]
 original=Learn
 translation=学ぶ
@@ -2485,6 +2485,14 @@ translation=未解決のリンクが見つかりました。
 [pages.about.about]
 original=About Obsidian
 translation=Obsidianについて
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=Obsidianは、素晴らしい貢献者とボランティアコミュニティのおかげで実現しています。詳しくは{{link}}ページをご覧ください。
+
+[pages.about.credits_link]
+original=Credits
+translation=クレジット
 
 [pages.about.durable]
 original=Durable
@@ -2762,17 +2770,13 @@ translation=Obsidianでできることはすべて、コマンドラインから
 original=Install Obsidian CLI
 translation=Obsidian CLIをインストール
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=`/usr/local/bin/obsidian` にシンボリックリンクが作成されます（sudoが必要）。sudoに失敗した場合は `~/.local/bin` にフォールバックします。
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=シンボリックリンクは自動的に作成されます。失敗した場合は、Flatpak export を指すものを手動で作成してください。
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=CLIバイナリが `~/.local/bin/obsidian` にコピーされます。`~/.local/bin` がPATHに含まれていることを確認してください。
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
-translation=登録すると、`~/.zprofile` を介して Obsidian のバイナリが PATH に追加されます。bash や fish を使っている場合は、そのパスをシェル設定に手動で追加してください。
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
+translation=登録すると `/usr/local/bin/obsidian` にシンボリックリンクが作成されます。これには管理者権限が必要です。システムダイアログが表示されます。
 
 [pages.cli.install_step1]
 original=Update Obsidian
@@ -4546,6 +4550,14 @@ translation=関連情報
 original=Report a security issue
 translation=セキュリティ問題を報告
 
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Obsidian SyncのAPI、サーバー、暗号技術の監査。このテストの結果、Cure53チームはすべての脆弱性が対処され、推奨事項が遵守されたと報告しました。
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=Obsidian SyncのAPI、サーバー、暗号技術の監査。2025年8月の暗号化アップグレードに特に注力しています。すべての指摘事項は、監査人により検証された修正および開示を通じて対処されました。
+
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
 translation=同期セキュリティFAQ
@@ -4863,7 +4875,7 @@ original=Monthly
 translation=月払い
 
 [ui.monthly_billing]
-original=Monthly\u00a0billing
+original=Monthly
 translation=月払い
 
 [ui.more_browsers]
@@ -4951,5 +4963,6 @@ original=Yearly
 translation=年払い
 
 [ui.yearly_billing]
-original=Yearly\u00a0billing
+original=Yearly
 translation=年払い
+

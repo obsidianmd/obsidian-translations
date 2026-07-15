@@ -554,6 +554,14 @@ translation=Shto përjashtim...
 original=No exclusions added.
 translation=Nuk është shtuar asnjë përjashtim.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} rregull
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} rregulla
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Shto përjashtim
@@ -674,13 +682,13 @@ translation=Font monospace
 original=Set font for places like code blocks and frontmatter.
 translation=Cakto fontin për vende si blloqet e kodit dhe metadata e fillimit.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Fonti aktualisht i aplikuar: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} font
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Fontet e mëposhtme janë aktualisht të aplikuara:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} fonte
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Hap dosjen e motifeve
 original=CSS snippets
 translation=Copëza CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Menaxho koleksionin tënd të skedarëve CSS për të përshtatur pamjen e aplikacionit.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Në dosjen përkatëse nuk gjendet asnjë copëz CSS-je
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Aktualisht keni {{count}} copëz të aktivizuar.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Aktualisht keni {{count}} copëza të aktivizuara.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} të aktivizuara
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Të gjitha
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Konflikte ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Çaktivizo
 original=Copy share link
 translation=Kopjo lidhjen e ndarjes
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Shiko hollësitë
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Hap faqen e komunitetit
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Cilësimet
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Dhuro
@@ -2234,6 +2254,18 @@ translation=Dështoi ngarkimi i shtojcës “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Shtojca “{{plugin}}” hasi një gabim gjatë ngarkimit
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} nuk u ngarkua. Kjo shtojcë nuk është e përputhshme me Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} nuk funksionon më. Rekomandojmë ta çinstaloni.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Shtojca {{plugin}} v{{version}} nuk mund të ngarkohet. Është raportuar se ky version shkakton probleme. Ju lutemi, kontrolloni nëse ka një version më të ri të shtojcës.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Dështoi hapja e “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Pamja e leximit
 [interface.menu.add-property]
 original=Add file property
 translation=Shto veti skedari
+
+[interface.menu.delete]
+original=Delete
+translation=Fshi
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Anullo
 [dialogue.button-allow]
 original=Allow
 translation=Lejo
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Lejo një herë
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Lejo gjithmonë
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=për të anulluar
 original=No commands found.
 translation=Nuk ka komanda.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Shtyp një komandë...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Shto një komandë...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Zgjidh një komandë...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

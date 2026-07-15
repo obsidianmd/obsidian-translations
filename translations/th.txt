@@ -554,6 +554,14 @@ translation=เพิ่มรายการยกเว้น...
 original=No exclusions added.
 translation=ยังไม่ได้เพิ่มรายการยกเว้น
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} กฎ
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} กฎ
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=เพิ่มรายการยกเว้น
@@ -674,13 +682,13 @@ translation=ฟอนต์ Monospace
 original=Set font for places like code blocks and frontmatter.
 translation=ตั้งค่าฟอนต์สำหรับโค้ดบล็อค และ frontmatter
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= ฟอนต์ที่ใช้อยู่ในขณะนี้: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} แบบอักษร
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= รายการฟอนต์ที่ใช้อยู่ในขณะนี้:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} แบบอักษร
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=เปิดโฟลเดอร์ธีม
 original=CSS snippets
 translation=snippet CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=จัดการคอลเลกชันไฟล์ CSS สำหรับปรับแต่งลักษณะของแอป
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=ไม่พบ CSS snippets ในโฟลเดอร์ snippets
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=คุณเปิดใช้งาน snippet อยู่ {{count}} รายการ
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=คุณเปิดใช้งาน snippet อยู่ {{count}} รายการ
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation=เปิดใช้งาน {{count}} รายการ
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=ทั้งหมด
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=ข้อขัดแย้ง ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=ปิดใช้งาน
 original=Copy share link
 translation=คัดลอกลิงค์เพื่อแชร์
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=ดูรายละเอียด
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=เปิดหน้าชุมชน
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=การตั้งค่า
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=บริจาค
@@ -2234,6 +2254,18 @@ translation=ไม่สามารถโหลดปลั๊กอิน “{
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=ปลั๊กอิน “{{plugin}}” พบข้อผิดพลาดขณะโหลด
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=ไม่ได้โหลด {{plugin}} เนื่องจากปลั๊กอินนี้ไม่สามารถใช้งานร่วมกับ Obsidian v{{version}} ได้
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} ใช้งานไม่ได้อีกต่อไป เราขอแนะนำให้ถอนการติดตั้ง
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=ไม่สามารถโหลดปลั๊กอิน {{plugin}} v{{version}} ได้ มีรายงานว่าเวอร์ชันนี้ก่อให้เกิดปัญหา โปรดตรวจสอบว่ามีปลั๊กอินเวอร์ชันใหม่กว่าหรือไม่
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=ไม่สามารถเปิด “{{filepath}}” ได้
@@ -2673,6 +2705,10 @@ translation=มุมมองการอ่าน
 [interface.menu.add-property]
 original=Add file property
 translation=เพิ่มคุณสมบัติไฟล์
+
+[interface.menu.delete]
+original=Delete
+translation=ลบ
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=ยกเลิก
 [dialogue.button-allow]
 original=Allow
 translation=อนุญาต
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=อนุญาตครั้งเดียว
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=อนุญาตเสมอ
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=เพื่อยกเลิก
 original=No commands found.
 translation=ไม่พบคำสั่ง
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=พิมพ์คำสั่ง...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=เพิ่มคำสั่ง...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=เลือกคำสั่ง...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

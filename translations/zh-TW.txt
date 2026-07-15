@@ -554,6 +554,14 @@ translation=新增排除項目...
 original=No exclusions added.
 translation=尚未新增排除項目。
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} 項規則
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} 項規則
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=新增排除項目
@@ -674,13 +682,13 @@ translation=等寬字型
 original=Set font for places like code blocks and frontmatter.
 translation=設定程式碼區塊及正文前頁等區域的字型。
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= 目前套用的字型：
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} 種字型
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=目前已套用下列字型：
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} 種字型
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=開啟佈景主題資料夾
 original=CSS snippets
 translation=CSS 片段
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=管理用於調整應用程式外觀的 CSS 檔案集合。
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=在 snippets 資料夾裡找不到 CSS 片段。
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=你目前已啟用 {{count}} 個程式碼片段。
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=你目前已啟用 {{count}} 個程式碼片段。
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation=已啟用 {{count}} 個
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=全部
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=衝突（{{count}}）
 
 [setting.hotkeys.label-show-unassigned]
@@ -1068,23 +1076,23 @@ translation=鑰匙圈
 
 [setting.keychain.secrets]
 original=Secrets
-translation=機密
+translation=密鑰
 
 [setting.keychain.action-add-secret]
 original=Add secret
-translation=新增機密
+translation=新增密鑰
 
 [setting.keychain.action-edit-secret]
 original=Edit secret
-translation=編輯機密
+translation=編輯密鑰
 
 [setting.keychain.action-show-secret-value]
 original=Show secret
-translation=顯示機密
+translation=顯示密鑰
 
 [setting.keychain.action-hide-secret-value]
 original=Hide secret
-translation=隱藏機密
+translation=隱藏密鑰
 
 [setting.keychain.label-secret-id]
 original=ID
@@ -1092,11 +1100,11 @@ translation=ID
 
 [setting.keychain.label-secret-value]
 original=Secret
-translation=機密
+translation=密鑰
 
 [setting.keychain.placeholder-secret-id]
 original=secret-name
-translation=secret-name
+translation=密鑰名稱
 
 [setting.keychain.option-secret-id-description]
 original=Lowercase letters, numbers and dashes only.
@@ -1104,7 +1112,7 @@ translation=僅限小寫字母、數字與連字號。
 
 [setting.keychain.option-secret-value-description]
 original=Enter your secret.
-translation=輸入你的機密。
+translation=輸入您的密鑰。
 
 [setting.keychain.msg-never-accessed]
 original=Never accessed
@@ -1112,39 +1120,39 @@ translation=從未存取
 
 [setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
-translation=更新機密失敗。
+translation=更新密鑰失敗。
 
 [setting.keychain.msg-error-add-secret]
 original=Failed to add secret.
-translation=新增機密失敗。
+translation=新增密鑰失敗。
 
 [setting.keychain.msg-error-secret-id-exists]
 original=A secret with this ID already exists.
-translation=已存在具有此 ID 的機密。
+translation=已存在具有此 ID 的密鑰。
 
 [setting.keychain.msg-error-secret-value-empty]
 original=Secret value cannot be empty.
-translation=機密值不得為空。
+translation=密鑰值不得為空。
 
 [setting.keychain.msg-error-secret-id-invalid]
 original=Secret ID is invalid. Use only lowercase letters, numbers and dashes. 64 characters max.
-translation=機密 ID 無效。僅使用小寫字母、數字與連字號。最多 64 個字元。
+translation=密鑰 ID 無效。僅使用小寫字母、數字與連字號。最多 64 個字元。
 
 [setting.keychain.keychain-empty-state]
 original=No secrets have been added. Secrets are used to store information like API keys and passwords that plugins can use.
-translation=尚未新增任何機密。機密用於儲存外掛可使用的資訊，例如 API 金鑰與密碼。
+translation=尚未新增任何密鑰。密鑰將用於儲存外掛可使用之資訊，如 API 金鑰及密碼。
 
 [setting.keychain.label-select-secret]
 original=Select secret
-translation=選取機密
+translation=選取密鑰
 
 [setting.keychain.placeholder-search-secret]
 original=Find secret...
-translation=尋找機密…
+translation=尋找密鑰…
 
 [setting.keychain.button-add-secret]
 original=Add secret...
-translation=新增機密…
+translation=新增密鑰…
 
 [setting.keychain.button-link]
 original=Link...
@@ -1152,11 +1160,11 @@ translation=連結…
 
 [setting.keychain.msg-secrets-not-encrypted]
 original=Secrets are stored without encryption because no secret store is available on this system.
-translation=由於此系統沒有可用的密碼保管庫，機密資料將在未加密的情況下儲存。
+translation=由於此系統沒有可用的密鑰保管庫，密鑰以未加密的情況下被儲存。
 
 [setting.keychain.msg-secrets-not-encrypted-short]
 original=Secrets are not encrypted
-translation=機密資料未加密
+translation=密鑰未加密
 
 [setting.keychain.button-dismiss-warning]
 original=Don't show again
@@ -1168,11 +1176,11 @@ translation=加密不可用
 
 [setting.keychain.msg-encryption-provided-by-o-s]
 original=Encryption is provided by your operating system's secret store. Without a secret store, your secrets will be stored without encryption.
-translation=加密由您的作業系統密碼保管庫提供。若沒有密碼保管庫，您的機密資料將在未加密的情況下儲存。
+translation=加密將由您作業系統之密鑰保管庫提供。若沒有密鑰保管庫，您的密鑰將在未加密的情況下被儲存。
 
 [setting.keychain.msg-linux-secret-stores]
 original=On Linux, supported secret stores include:
-translation=在 Linux 上，支援的密碼保管庫包含：
+translation=在 Linux 上，支援的密鑰保管庫包含：
 
 [setting.about.name]
 original=General
@@ -1673,6 +1681,18 @@ translation=停用
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=複製分享連結
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=檢視詳細資料
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=開啟社群頁面
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=設定
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -2234,6 +2254,18 @@ translation=轉入外掛失敗：「{{plugin}}」
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=載入外掛「{{plugin}}」時發生錯誤
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=未載入 {{plugin}}。此外掛與 Obsidian v{{version}} 不相容。
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} 已無法運作。建議將其解除安裝。
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=無法載入外掛 {{plugin}} v{{version}}。據回報，此版本會造成問題。請檢查此外掛是否有較新的版本。
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=開啟失敗：「{{filepath}}」
@@ -2673,6 +2705,10 @@ translation=閱讀檢視模式
 [interface.menu.add-property]
 original=Add file property
 translation=新增檔案屬性
+
+[interface.menu.delete]
+original=Delete
+translation=刪除
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=取消
 [dialogue.button-allow]
 original=Allow
 translation=允許
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=允許一次
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=一律允許
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=離開
 original=No commands found.
 translation=找不到命令。
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=輸入命令……
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=新增命令...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=選取命令...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
