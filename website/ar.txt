@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=تحويل عملة PayPal
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=إذا اشتركت عبر PayPal، انقر هنا لتحديث اشتراكك.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=إذا اشتركت باستخدام PayPal، {{link}} لتحديث اشتراكك.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=انقر هنا
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=ابدأ الآن
 original=Help
 translation=المساعدة
 
-[nav.join_community]
-original=Join the community
-translation=انضم إلى المجتمع
-
 [nav.learn]
 original=Learn
 translation=تعلّم
@@ -2485,6 +2485,14 @@ translation=لقد وجدت رابطاً غير\u00a0محلول.
 [pages.about.about]
 original=About Obsidian
 translation=حول Obsidian
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=أصبح Obsidian ممكناً بفضل مساهمينا الرائعين ومجتمعنا من المتطوعين. اطّلع على المزيد في صفحة {{link}}.
+
+[pages.about.credits_link]
+original=Credits
+translation=الشكر والتقدير
 
 [pages.about.durable]
 original=Durable
@@ -2762,17 +2770,13 @@ translation=أي شيء يمكنك فعله في Obsidian يمكنك فعله م
 original=Install Obsidian CLI
 translation=تثبيت Obsidian CLI
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=يُنشأ رابط رمزي في `/usr/local/bin/obsidian` (يتطلب sudo). يعود إلى `~/.local/bin` إذا فشل\u00a0sudo.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=يُنشأ رابط رمزي تلقائياً. إذا فشل، أنشئ رابطاً يدوياً يشير إلى تصدير\u00a0Flatpak.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=يتم نسخ ملف CLI التنفيذي إلى `~/.local/bin/obsidian`. تأكد من أن `~/.local/bin` موجود في متغير\u00a0PATH.
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
-translation=يضيف التسجيل ملف Obsidian التنفيذي إلى PATH عبر `~/.zprofile`. إذا كنت تستخدم bash أو fish، أضف المسار إلى إعدادات الشل\u00a0يدوياً.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
+translation=يؤدي التسجيل إلى إنشاء رابط رمزي في `/usr/local/bin/obsidian`. يتطلب ذلك صلاحيات المسؤول. سيُطلب منك ذلك عبر مربع حوار\u00a0النظام.
 
 [pages.cli.install_step1]
 original=Update Obsidian
@@ -4042,22 +4046,6 @@ translation=Obsidian Mobile سريع للغاية، فيمكنك تدوين ال
 original=With the customizable toolbar and touch-friendly gestures, zip around your second brain with\u00a0ease.
 translation=مع شريط الأدوات القابل للتخصيص والإيماءات المتوافقة مع اللمس، تنقّل في دماغك الثاني\u00a0بسهولة.
 
-[pages.plugins.api_docs_btn]
-original=API Docs
-translation=توثيق الواجهة البرمجية
-
-[pages.plugins.hero_desc]
-original=Explore {{count}} Obsidian plugins made by the community.
-translation=استكشف {{count}} إضافة لـ Obsidian صنعها المجتمع.
-
-[pages.plugins.meta_desc]
-original=With thousands of plugins and our open API, it’s easy to tailor Obsidian to fit your personal workflow.
-translation=مع آلاف الإضافات وواجهة البرمجة المفتوحة، من السهل تخصيص Obsidian ليناسب سير عملك الشخصي.
-
-[pages.plugins.search]
-original=Search plugins...
-translation=البحث عن إضافات...
-
 [pages.pricing.addons_desc]
 original=Optional add-on services make it easy to sync and publish your\u00a0notes.
 translation=خدمات إضافية اختيارية تسهّل مزامنة ونشر\u00a0ملاحظاتك.
@@ -4069,10 +4057,6 @@ translation=شارات المجتمع
 [pages.pricing.bulk_desc]
 original=For bulk purchases and other inquiries, contact us at {{link}}
 translation=للمشتريات بالجملة والاستفسارات الأخرى، تواصل معنا عبر {{link}}
-
-[pages.pricing.bulk_desc_link]
-original=sup<!--break spam-->port@obsidian.md
-translation=sup<!--break spam-->port@obsidian.md
 
 [pages.pricing.collaborate]
 original=Collaborate on shared vaults
@@ -4099,8 +4083,8 @@ original=our\u00a0values
 translation=قيمنا\u00a0ومبادئنا
 
 [pages.pricing.faq_a_commercial]
-original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
-translation=لا. لستَ <em>مُلزماً</em> بدفع ثمن ترخيص تجاري، ولكن إذا كنت تستخدم Obsidian للعمل في مؤسسة، نشجعك على شراء ترخيص تجاري لإبقاء Obsidian مستقلاً ومدعوماً بالكامل من المستخدمين. {{link}}
+original=No. You are not *required* to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
+translation=لا. لستَ *مُلزماً* بدفع ثمن ترخيص تجاري، ولكن إذا كنت تستخدم Obsidian للعمل في مؤسسة، نشجعك على شراء ترخيص تجاري لإبقاء Obsidian مستقلاً ومدعوماً بالكامل من المستخدمين. {{link}}
 
 [pages.pricing.faq_a_data_1]
 original=Obsidian is a private and secure space for your thoughts. You can use our apps without sharing any personal information, and your data is stored locally on your device, making it inaccessible to us. Additionally, our apps do not collect telemetry data, and we never sell user data.
@@ -4566,6 +4550,14 @@ translation=معلومات ذات صلة
 original=Report a security issue
 translation=الإبلاغ عن مشكلة أمنية
 
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=تدقيق API وخادم وتشفير Obsidian Sync. بعد هذا الاختبار، أفاد فريق Cure53 بأن جميع الثغرات قد تمت معالجتها وأن التوصيات قد تم اتباعها.
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=تدقيق API وخادم وتشفير Obsidian Sync، مع اهتمام خاص بترقية التشفير في أغسطس 2025. تمت معالجة جميع النتائج من خلال إصلاحات وإفصاحات صادق عليها المدققون.
+
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
 translation=الأسئلة\u00a0الشائعة\u00a0حول أمان Sync
@@ -4973,3 +4965,4 @@ translation=سنوي
 [ui.yearly_billing]
 original=Yearly\u00a0billing
 translation=فوترة\u00a0سنوية
+

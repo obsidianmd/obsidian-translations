@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=PayPal valutakonvertering
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=Om du prenumererade med PayPal, klicka här för att uppdatera din prenumeration.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=Om du prenumererade med PayPal, {{link}} för att uppdatera din prenumeration.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=Kom igång
 original=Help
 translation=Hjälp
 
-[nav.join_community]
-original=Join the community
-translation=Gå med i communityn
-
 [nav.learn]
 original=Learn
 translation=Lär dig
@@ -2485,6 +2485,14 @@ translation=Du har hittat en olöst länk.
 [pages.about.about]
 original=About Obsidian
 translation=Om Obsidian
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=
+
+[pages.about.credits_link]
+original=Credits
+translation=
 
 [pages.about.durable]
 original=Durable
@@ -2762,16 +2770,12 @@ translation=Allt du kan göra i Obsidian kan du göra från kommandoraden.
 original=Install Obsidian CLI
 translation=Installera Obsidian CLI
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=En symbolisk länk skapas på `/usr/local/bin/obsidian` (kräver sudo). Återgår till `~/.local/bin` om sudo misslyckas.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=En symbolisk länk skapas automatiskt. Om det misslyckas, skapa en symbolisk länk manuellt som pekar på Flatpak-exporten.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
 translation=Registrering lägger till Obsidian-binären i din PATH via `~/.zprofile`. Om du använder bash eller fish, lägg till sökvägen i din shell-konfiguration manuellt.
 
 [pages.cli.install_step1]
@@ -3259,7 +3263,7 @@ original=Universal
 translation=Universell
 
 [pages.enterprise.add_support_btn]
-original=Add your support
+original=Add  your support
 translation=Lägg till ditt stöd
 
 [pages.enterprise.buy_license_btn]
@@ -4042,22 +4046,6 @@ translation=Obsidian Mobile är blixtsnabb, så du kan skriva ner saker innan du
 original=With the customizable toolbar and touch-friendly gestures, zip around your second brain with\u00a0ease.
 translation=Med den anpassningsbara verktygsfältet och touchvänliga gester kan du navigera runt i din andra hjärna med lätthet.
 
-[pages.plugins.api_docs_btn]
-original=API Docs
-translation=API-dokumentation
-
-[pages.plugins.hero_desc]
-original=Explore {{count}} Obsidian plugins made by the community.
-translation=Utforska {{count}} Obsidian-tillägg skapade av communityn.
-
-[pages.plugins.meta_desc]
-original=With thousands of plugins and our open API, it’s easy to tailor Obsidian to fit your personal workflow.
-translation=Med tusentals tillägg och vårt öppna API är det enkelt att anpassa Obsidian efter ditt personliga arbetsflöde.
-
-[pages.plugins.search]
-original=Search plugins...
-translation=Sök tillägg...
-
 [pages.pricing.addons_desc]
 original=Optional add-on services make it easy to sync and publish your\u00a0notes.
 translation=Valfria tilläggstjänster gör det enkelt att synkronisera och publicera dina anteckningar.
@@ -4069,10 +4057,6 @@ translation=Community-märken
 [pages.pricing.bulk_desc]
 original=For bulk purchases and other inquiries, contact us at {{link}}
 translation=För större inköp och andra förfrågningar, kontakta oss på {{link}}
-
-[pages.pricing.bulk_desc_link]
-original=sup<!--break spam-->port@obsidian.md
-translation=sup<!--break spam-->port@obsidian.md
 
 [pages.pricing.collaborate]
 original=Collaborate on shared vaults
@@ -4099,7 +4083,7 @@ original=our\u00a0values
 translation=våra värderingar
 
 [pages.pricing.faq_a_commercial]
-original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
+original=No. You are not *required* to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
 translation=Nej. Du är inte <em>obligerad</em> att betala för en kommersiell licens, men om du använder Obsidian för arbete i en organisation uppmuntrar vi dig att köpa en kommersiell licens för att hålla Obsidian oberoende och 100% användarstött. {{link}}
 
 [pages.pricing.faq_a_data_1]
@@ -4565,6 +4549,14 @@ translation=Relaterad information
 [pages.security.report_issue]
 original=Report a security issue
 translation=Rapportera ett säkerhetsproblem
+
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=
 
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs

@@ -10,6 +10,10 @@ translation=Plugin
 original=Core plugins
 translation=मुख्य plugins
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=
+
 [setting.plugin-options]
 original=Plugin options
 translation=Plugin विकल्पाः
@@ -22,9 +26,41 @@ translation=उदाहरणम् : सञ्चय: १/सञ्चयः �
 original=Example: folder/note
 translation=उदाहरणम् : सञ्चयः(folder)/टिप्पणी
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=एतत् विकल्पं परिवर्तयितुं प्रभावी भवितुं पुनः आरम्भस्य आवश्यकता भवति
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=
+
+[setting.search-settings]
+original=Search settings...
+translation=
+
+[setting.no-search-results]
+original=No settings found.
+translation=
+
+[setting.search-show-more]
+original={{count}} more
+translation=
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=दक्षिणतः वामतः (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=दक्षिणतः वामे प्रदर्शयितुं टिप्पणीनां पाठदिशां इति करोति
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=बहिष्कृताः सञ्चिकाः
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=बहिष्कृताः सञ्चिकाः विविधस्थानेषु गुप्ताः वा न्यूनाः वा लक्ष्यन्ते, यथा Quick Switcher, परिसन्धि सुझाव, आलेखदृश्यम् च
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=अधुना कोऽपि बहिष्कृतः शोधकम् न प्रयुक्तः। अधः एकं योजयन्तु
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=निम्नलिखित-शोधकाणां मेलनं कुर्वन्ति सञ्चिकाः सम्प्रति बहिष्कृताः सन्ति :
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=शोधकम्
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=शोधकम् रिक्तं न भवितुम् शक्यते
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=मार्गं लिखन्तु अथवा "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URI प्रतिपुष्टेः अनुमतिं द�
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URIs निर्वहणकाले x-success अथवा x-error माध्यमेन x-callback-url प्रयोगं समर्थं कुर्वन्तु।
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=आधार विषयवस्तु
 original=Choose Obsidian's default color scheme.
 translation=Obsidian's पूर्वनिर्धारितवर्णयोजनां चयन कुर्वन्तु
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Accent रङ्गः
@@ -549,6 +621,10 @@ translation=Accent रङ्गः
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=सम्पूर्णे अनुप्रयोग मध्ये प्रयुक्तं accent रङ्गः चयन करोतु
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Monospace वर्णमुखम्
 original=Set font for places like code blocks and frontmatter.
 translation=विधिलेख-खण्डम् and frontmatter इत्यादीनां स्थानानां कृते वर्णमुखम् set कुर्वन्तु
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=सम्प्रति प्रयुक्तः वर्णमुखम् : 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation=
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=सम्प्रति निम्नलिखित-वर्णमुखनि प्रयुक्तानि सन्ति :
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation=
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=वर्णमुख आकारः
 original=Font size in pixels that affects editing and reading views.
 translation=चित्राणु मध्ये वर्णमुख आकारः यः सम्पादकं पूर्वावलोकनं च प्रभावितं करोति
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=शीघ्र वर्णमुख आकारसमायोजनम्
@@ -673,6 +753,10 @@ translation=विषयवस्तुनि
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=संस्थापितानि विषयवस्तुनि प्रबन्धयन्तु समुदायविषयवस्तुनि च गवेष कुर्वन्तु
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=देशी सूचिकाः
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=सम्पूर्णे अनुप्रयोग मध्ये सूचिकाः कारकसम्विधा इत्यनेन सह मेलनं करिष्यति। ते भवतः विषयवस्तुनाम् प्रभाविताः न भविष्यन्ति
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Reload विषयवस्तुनि
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=स्वानुकूलतां CSS विषयवस्तुनि reload कृतम्
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=विषयवस्तुनि सञ्चयानि उद्घाटयन्तु
@@ -706,13 +782,21 @@ translation=विषयवस्तुनि सञ्चयानि उद्
 original=CSS snippets
 translation=CSS खण्डाः
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS खण्डाः न प्राप्ताः।
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation=
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS खण्डाः "{{path}}" मध्ये सञ्चिताः सन्ति।
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS खण्डाः Obsidian इत्यस्य रूपं स्वेच्छया अनुकूलयितुं सहायकाः भवन्ति। अत्र तेषां दर्शनार्थं CSS सञ्चिकाः “{{path}}” मध्ये स्थापयन्तु।
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=खण्ड सञ्चयां उद्घाटयन्तु
 original=Reloaded CSS snippets.
 translation=CSS खण्डानां पुनः भारणं कृतम्।
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation="{{path}}" स्थाने CSS खण्डं प्रयुञ्जन्तु।
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=भवता सम्प्रति {{count}} विषयवस�
 original=You currently have {{count}} themes installed.
 translation=भवता सम्प्रति {{count}} विषयवस्तुनि संस्थापितः अस्ति
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=
+
+[setting.interface.name]
+original=Interface
+translation=
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Hotkeys
@@ -909,14 +1013,6 @@ translation={{count}} hotkey प्रदर्श्यते।
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation={{count}} hotkeys प्रदर्श्यन्ते।
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} समादेशः विग्रहैः सह
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} समादेशाः विग्रहैः सह
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Hotkey नुदन्तु...
 original=All
 translation=सर्वे
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=अनियुक्तम्
@@ -945,6 +1045,10 @@ translation=नियुक्तम्
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=मया नियुक्तः
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1012,9 +1116,9 @@ translation=स्वकीयं गुप्तं प्रविशन्त
 
 [setting.keychain.msg-never-accessed]
 original=Never accessed
-translation=कदापि न प्राप्तम्
+translation=कदापि न अभिगतम्
 
-[setting.keychain.msg-error-update-secret] 
+[setting.keychain.msg-error-update-secret]
 original=Failed to update secret.
 translation=गुप्तस्य अद्यतनीकरणे विफलता।
 
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=प्रतिबन्धितविधिः
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=प्रतिबन्धितविधिः निष्क्रियः अस्ति । समुदायस्य plugins अक्षमीकरणाय चालू कुर्वन्तु
+original=Turn on Restricted mode to use the app without community plugins.
+translation=समुदाय-प्लगिन्-विना अनुप्रयोगस्य उपयोगाय नियन्त्रितं प्रकारं सक्रियीकुर्वन्तु।
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1539,16 @@ original=Community plugins
 translation=समुदायस्य plugins
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=अस्माकं अद्भुतसमुदायेन निर्मिताः तृतीयपक्षीय plugins गवेष कृत्वा संस्थापयन्तु
+original=Browse and install community plugins made by the community.
+translation=समुदायेन निर्मितान् समुदाय-प्लगिन् अन्विष्य संस्थापयन्तु।
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=गवेष
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=प्रतिबन्धितविधिः निर्गच्छन्तु
+original=Exit Restricted mode
+translation=नियन्त्रितात् प्रकारात् निर्गच्छन्तु
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=अस्माकं प्रयत्नानाम् अभावेऽपि अद्यापि अल्पसंभावना अस्ति यत् समुदायस्य plugin दुर्व्यवहारं कर्तुं शक्नोति
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=प्रारम्भिक विधिलेखः समीक्षा
+original=Code review
+translation=विधिलेख-समीक्षा
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins भण्डारे दृश्यमानानां पूर्वं अस्माकं दलेन प्रारम्भिक विधिलेखः समीक्षाम् कुर्वन्ति
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=आधिकारिक-समुदाय-निर्देशिकायां विद्यमानाः प्लगिन् प्रत्येकस्य अद्यतनस्य पश्चात् स्वयमेव समीक्ष्यन्ते।
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=प्रतिवेदनतन्त्रम्
 original=We follow up and remove faulty plugins upon user report.
 translation=वयं अनुसरणं कृत्वा उपयोक्तृप्रतिवेदने दोषपूर्णं plugin निष्कासयामः
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=समुदायस्य plugins सक्षमीकरणाय भवान् प्रतिबन्धितविधानात् निर्गन्तुं इच्छति वा? तत् कर्तुं पूर्वं भवतः दत्तांशस्य प्रतिलिखितं कर्तुं वयं दृढतया अनुशंसयामः
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Plugin सुरक्षाविषये अधिकं ज्ञातव्यम्
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=समुदायस्य plugins चालू कुर्वन्तु
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=अक्षमम्
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=साझाकरणीयं परिसन्धि प्रतिलिख्यताम्
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=संस्थापितानि plugins अन्वेष्�
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=केवलं संस्थापितम् इति दर्शयतु
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=“{{plugin}}” plugin भारणे विफलं जातम
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=भारणकाले “{{plugin}}” plugin मध्ये त्रुटिः अभवत्
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=पठनदृश्यम्
 [interface.menu.add-property]
 original=Add file property
 translation=सञ्चिकागुणं योजयतु
+
+[interface.menu.delete]
+original=Delete
+translation=
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=अधुना अस्य सञ्चिकायाः दि�
 original=Delete file
 translation=सञ्चिकां विलोपयतु
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=संलग्नकानि download कुर्वन्तु
@@ -3993,6 +4169,18 @@ translation=पुष्टि करोतु
 [dialogue.button-cancel]
 original=Cancel
 translation=निरसयतु
+
+[dialogue.button-allow]
+original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Obsidian न उद्घाटयितुं न शक्नो�
 original=Graph view
 translation=आलेखदृश्यम्
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=काः टिप्पण्याः कस्य परिसन्धिं कुर्वन्ति इति आलेखस्य अवलोकनं पश्यन्तु
@@ -5686,9 +5878,13 @@ translation=बहिष्कर्तुं
 original=No commands found.
 translation=न आदेशाः प्राप्ताः
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=एकं आदेशं टङ्कयन्तु...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=शब्दगणना
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=स्थितिशलाकायां शब्दगणनां दर्शयतु
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=वैद्युतकपत्रम्(email) प्रविश
 original=Please enter a valid email to invite someone.
 translation=कस्यचित् आमन्त्रणाय कृपया वैधं ई-पत्रं प्रविशन्तु।
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Your sites
@@ -7662,6 +7862,22 @@ translation=स्थापिताः समुदाय plugins
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=स्थापितान् समुदाय plugins (.js, .css, तथा manifest.json सञ्चिकाः) तेषां समायोजनानि च समकालीकुर्वन्तु।
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=समकालीकरणं अद्यापि भार्यमाणम् अस्ति, कृपया पश्चात् एतं पृष्ठं पुनः भारयन्तु।
@@ -8277,6 +8493,10 @@ translation=Site load कर्तुं न शक्यते।
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=कृपया पश्यन्तु यत् भवतां समीपे उचितः सङ्केतः अस्ति।
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Summarize...
 original=Group by this property
 translation=एतेन गुणेन समूहयन्तु
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Clear values
@@ -10065,3 +10297,87 @@ translation={{count}} विषयवस्तु
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} विषयवस्तुनि
+
+[main.button-cancel]
+original=Cancel
+translation=
+
+[main.button-ok]
+original=OK
+translation=
+
+[main.button-copy]
+original=Copy
+translation=
+
+[main.button-open-link]
+original=Open Link
+translation=
+
+[main.button-open-file]
+original=Open this file
+translation=
+
+[main.button-run-file]
+original=Run File
+translation=
+
+[main.external-link-title]
+original=Open external link?
+translation=
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=
+
+[main.remote-file-title]
+original=Remote file warning
+translation=
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=
+
+[main.network-drive-title]
+original=Network drive access
+translation=
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=
+
+[main.button-allow]
+original=Allow
+translation=
+
+[main.executable-file-title]
+original=Run executable file?
+translation=
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=

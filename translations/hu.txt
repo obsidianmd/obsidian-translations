@@ -10,6 +10,10 @@ translation=Bővítmény
 original=Core plugins
 translation=Alap bővítmények
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Megjelenítés a bővítmények listájában
+
 [setting.plugin-options]
 original=Plugin options
 translation=Bővítmény beállítások
@@ -22,9 +26,41 @@ translation=Példa: mappa 1/mappa 2
 original=Example: folder/note
 translation=Példa: mappa/jegyzet
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Nincs fájl kiválasztva
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Ezen beállítás érvényesítéséhez újraindítás szükséges.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Érvénytelen szám
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Az értéknek legalább {{min}} kell lennie
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Az érték legfeljebb {{max}} lehet
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=A fájl nem található.
+
+[setting.search-settings]
+original=Search settings...
+translation=Beállítások keresése...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Nem találhatók beállítások.
+
+[setting.search-show-more]
+original={{count}} more
+translation=További {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Jobbról-balra (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=A jegyzetek szövegirányának beállítása jobbról-balra (RTL) megjelenítéshez.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Mermaid-diagramok megjelenítése a jegyzetekben
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Folyamatábrák, szekvenciadiagramok és más diagramok megjelenítése „mermaid” kódblokkokból.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Kizárt fájlok
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=A kizárt fájlok nem lesznek megjelenítve a keresőben, a Gráf nézetben és a nem hivatkozott említésekben, és kevésbé lesznek feltűnőek a hivatkozási javaslatokban.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Jelenleg nincs fájlkizáró szűrő megadva. Alább hozzáadhatja őket.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Kizárás hozzáadása...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=A következő szűrőkkel megegyező fájlok jelenleg kizárásra kerülnek:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Nincs hozzáadott kizárás.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Szűrő
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} szabály
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} szabály
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Kizárás hozzáadása
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Adj meg egy elérési utat vagy egy reguláris kifejezést, pl. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=A szűrő nem lehet üres
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Elérési út vagy “/regex/“...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URI-visszahívások engedélyezése
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Az x-callback-url engedélyezése 'x-success'-en vagy 'x-error'-on keresztül Obsidian URL-ek kezelése során.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Megbízható műveletek kezelése és az URI viselkedésének beállítása.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Megbízható műveletek
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Még nincsenek megbízható műveletek. A jóváhagyott URI-műveletek itt jelennek meg.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Alap színséma
 original=Choose Obsidian's default color scheme.
 translation=Válassza ki az Obsidian alapértelmezett színsémáját.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=sötét világos rendszer éjszakai mód színséma
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Hangsúly szín
@@ -549,6 +621,10 @@ translation=Hangsúly szín
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Válassza ki az alkalmazásban használt hangsúly színt.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=kiemelés márka elsődleges szín
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Monospace betűtípus
 original=Set font for places like code blocks and frontmatter.
 translation=Beállítja az olyan helyek, mint a kódblokkok és a metaadatok, betűtípusát.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Jelenleg alkalmazott betűtípus: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} betűtípus
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Jelenleg alkalmazott betűtípusok: 
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} betűtípus
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Betűméret
 original=Font size in pixels that affects editing and reading views.
 translation=A szerkesztő és az olvasási nézet betűmérete pixelben.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=szövegméret nagyítás
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Betűméret gyors állítása
@@ -673,6 +753,10 @@ translation=Témák
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Telepített témák kezelése, és közösségi témák böngészése.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=közösségi böngészés telepítés letöltés
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Natív menük
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Az alkalmazásban lévő menük igazodnak az operációs rendszerhez. Ezt a témák nem befolyásolják.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Témák újratöltése
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Újratöltött egyedi CSS témák.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Témamappa megnyitása
@@ -706,13 +782,21 @@ translation=Témamappa megnyitása
 original=CSS snippets
 translation=CSS kódrészletek
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Az alkalmazás megjelenésének testreszabására szolgáló CSS-fájlok gyűjteményének kezelése.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Nem található CSS kódrészlet a kódrészletek mappában.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} engedélyezve
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=A CSS kódrészletek itt tárolódnak: “{{path}}”.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=A CSS-kódrészletekkel testreszabhatja az Obsidian megjelenését. Helyezze a CSS-fájlokat ide: “{{path}}”, hogy itt megjelenjenek.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Kódrészletek mappa megnyitása
 original=Reloaded CSS snippets.
 translation=CSS kódrészletek újratöltve.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=A(z) “{{path}}” útvonalon lévő CSS kódrészlet alkalmazása.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Kódrészletek keresése...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=Jelenleg {{count}} téma van telepítve.
 original=You currently have {{count}} themes installed.
 translation=Jelenleg {{count}} téma van telepítve.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Beállítások megnyitása új ablakban
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=A beállítások megnyitása saját ablakban, az alkalmazásba ágyazás helyett.
+
+[setting.interface.name]
+original=Interface
+translation=Felület
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Speciális
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Gyorsbillentyűk
@@ -909,14 +1013,6 @@ translation={{count}} gyorsbillentyű megjelenítve.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation={{count}} gyorsbillentyű megjelenítve. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} parancs ütközik.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} parancs ütközik.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Nyomjon meg egy gyorsbillentyűt...
 original=All
 translation=Minden
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Ütközések ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Hozzárendelés nélküli
@@ -945,6 +1045,10 @@ translation=Hozzárendelt
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Általam hozzárendelve
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Nincs találat.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Korlátozott mód
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=A korlátozott mód ki van kapcsolva. Kapcsolja be a közösségi bővítmények letiltásához.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Kapcsolja be a korlátozott módot, hogy az alkalmazást közösségi bővítmények nélkül használja.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=Közösségi bővítmények
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Böngésszen és telepítsen bővítményeket, amelyeket a fantasztikus közösségünk tagjai készítettek.
+original=Browse and install community plugins made by the community.
+translation=Böngésszen és telepítsen közösségi bővítményeket, amelyeket a közösség készített.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Böngészés
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Kilépés a korlátozott módból
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Erőfeszítéseink ellenére még mindig van kis esély arra, hogy egy közösségi bővítmény ne az elvárt módon viselkedjen.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Kezdeti kódellenőrzés
+original=Code review
+translation=Kódellenőrzés
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=A bővítmények az áruházban való megjelenés előtt, a csapatunk által, egy kezdeti kódellenőrzésen esnek át.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=A hivatalos közösségi könyvtárban szereplő bővítményeket minden frissítés után automatikusan ellenőrzik.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Bővítmények jelentése
 original=We follow up and remove faulty plugins upon user report.
 translation=Felhasználói bejelentéseket követően utánanézünk és eltávolítjuk a hibás bővítményeket.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Szeretne kilépni a korlátozott módból a közösségi bővítmények engedélyezéséhez? Mielőtt megtenné, erősen ajánlott adatairól biztonsági mentést készíteni.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Tudjon meg többet a bővítménybiztonságról
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
 translation=Közösségi bővítmények engedélyezése
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=A bővítmények tetszőleges kódot futtathatnak az eszközödön. Javasoljuk, hogy engedélyezésük előtt készíts biztonsági mentést az adataidról.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Telepített bővítmények újbóli engedélyezése
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation={{count}} korábban telepített bővítmény visszaállítása.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation={{count}} korábban telepített bővítmény visszaállítása.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Bővítményadatok megjelenítése
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Engedélyezett bővítmények
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Ezek a bővítmények a korlátozott módból való kilépéskor lesznek engedélyezve.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Letiltás
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Megosztási link másolása
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Részletek megtekintése
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Közösségi oldal megnyitása
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Beállítások
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=Telepített bővítmények keresése...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Csak a telepítettek mutatása
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Nincs telepített bővítmény.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Nem sikerült betölteni a(z) “{{plugin}}” bővítményt
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=A(z) “{{plugin}}” bővítmény hibába ütközött a betöltés során
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=A(z) {{plugin}} nem töltődött be. Ez a bővítmény nem kompatibilis az Obsidian v{{version}} verziójával.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=A(z) {{plugin}} már nem működik. Javasoljuk az eltávolítását.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Nem sikerült betölteni a(z) {{plugin}} v{{version}} verzióját. A jelentések szerint ez a verzió problémákat okoz. Ellenőrizze, hogy elérhető-e a bővítmény újabb verziója.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Olvasási nézet
 [interface.menu.add-property]
 original=Add file property
 translation=Fájltulajdonság hozzáadása
+
+[interface.menu.delete]
+original=Delete
+translation=Törlés
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=Jelenleg {{count}} hivatkozás mutat erre a fájlra.
 original=Delete file
 translation=Fájl törlése
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Művelet futtatása külső hivatkozásból?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=A(z) „{{action}}” művelet futni fog. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=A(z) „{{source}}” bővítmény futtatni fogja a(z) „{{action}}” műveletet. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Ne kérdezzen rá újra erre: „{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Csatolmányok letöltése
@@ -3993,6 +4169,18 @@ translation=Megerősítés
 [dialogue.button-cancel]
 original=Cancel
 translation=Mégse
+
+[dialogue.button-allow]
+original=Allow
+translation=Engedélyezés
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Engedélyezés egyszer
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Mindig engedélyezés
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Megjeleníti az összes fájlt, beleértve azokat is, amelyeket az O
 original=Graph view
 translation=Gráf nézet
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Helyi gráf
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=Vizualizálja a jegyzetek közötti kapcsolatokat.
@@ -5686,9 +5878,13 @@ translation=elutasításhoz
 original=No commands found.
 translation=Nincsenek találatok.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Válasszon egy parancsot...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Parancs hozzáadása...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Parancs kiválasztása...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=Szavak száma
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Szavak számának megjelenítése az állapotsorban.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Megjelenjenek a Mermaid-diagramok ebben a széfben?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Csak akkor engedélyezd, ha megbízol a széf tartalmában.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Írja ide az e-mail címüket...
 original=Please enter a valid email to invite someone.
 translation=Kérjük, adjon meg érvényes e-mail címet a meghíváshoz.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=A webhelyek megtekintéséhez kérjük, engedélyezze a Publish alap bővítményt a Beállítások -> Alap bővítmények menüben.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=A webhelyei
@@ -7662,6 +7862,22 @@ translation=Telepített közösségi bővítmények
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Szinkronizálja a telepített közösségi bővítményeket (.js, .css és manifest.json fájlok) és azok beállításait.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Engedélyezed a szinkronizált bővítmények futtatását ezen az eszközön?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Az Obsidian Sync nem tudja ellenőrizni az erre az eszközre szinkronizált bővítmények tartalmát, és azok eltérhetnek a közösségi könyvtárban közzétett bővítményektől.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Csak akkor engedélyezd ezt, ha a széf és a csatlakoztatott eszközök megbízhatók.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Igen, a bővítmény-szinkronizálás bekapcsolása
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=A Sync betöltése folyamatban, kérjük, frissítse az oldalt később.
@@ -8277,6 +8493,10 @@ translation=Az oldal betöltése sikertelen.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Bizonyosodjon meg róla, hogy helyes a megadott cím.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Olvasó nézet
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Összegzés...
 original=Group by this property
 translation=Csoportosítás e tulajdonság szerint
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Oszlop átméretezése...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Oszlopméret visszaállítása
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Húzással átméretezhető
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Értékek törlése
@@ -10065,3 +10297,87 @@ translation={{count}} téma
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} téma
+
+[main.button-cancel]
+original=Cancel
+translation=Mégse
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Másolás
+
+[main.button-open-link]
+original=Open Link
+translation=Hivatkozás megnyitása
+
+[main.button-open-file]
+original=Open this file
+translation=Fájl megnyitása
+
+[main.button-run-file]
+original=Run File
+translation=Fájl futtatása
+
+[main.external-link-title]
+original=Open external link?
+translation=Megnyitod a külső hivatkozást?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Ez a hivatkozás egy Obsidianon kívüli külső alkalmazást fog megnyitni. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation={{scheme}}:// hivatkozások mindig megnyitása
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Távoli fájlra vonatkozó figyelmeztetés
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Ez a fájl egy távoli szerveren található, és veszélyes lehet.\nBiztosan meg szeretnéd nyitni?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Hely: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Hozzáférés hálózati meghajtóhoz
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Ez a tartalom adatokat kér egy hálózati meghajtóról. Ennek engedélyezése felfedheti a bejelentkezési adataidat vagy más érzékeny információkat a távoli gazdagép számára.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Gazdagép: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Engedélyezés
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Futtatod a végrehajtható fájlt?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Ez a hivatkozás egy végrehajtható fájlra mutat. A futtatása kárt tehet a számítógépedben.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fájl: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=A széf nem található.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Nem található széf ehhez az URL-hez: {{url}}

@@ -145,7 +145,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `lv` | Latvian | Latviešu | ✅ | |
 | `ml` | Malayalam | മലയാളം | 🚧 | |
 | `ms` | Malay | Bahasa Melayu | ✅ | |
-| `nan-TW` | Taiwanese (Min Nan) | ? | 🚧 | |
+| `nan-TW` | Taiwanese (Min Nan) | Tâi-gí (Lô-má-jī) | 🚧 | |
 | `ne` | Nepali | नेपाली | ✅ | |
 | `nl` | Dutch | Nederlands | ✅ | |
 | `nn` | Norwegian Nynorsk | ? | 🚧 | |
