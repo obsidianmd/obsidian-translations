@@ -554,6 +554,14 @@ translation=إضافة استثناء...
 original=No exclusions added.
 translation=لم تتم إضافة أي استثناءات.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} قاعدة
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} قواعد
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=إضافة استثناء
@@ -674,13 +682,13 @@ translation=خط أحادي المسافة
 original=Set font for places like code blocks and frontmatter.
 translation=تعيين الخط المستخدم في أماكن مثل كتل الشيفرة ورأسية المستند.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= الخط المطبق حاليًا: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} خط
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=  الخطوط التالية مطبقة حاليًا:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} خطوط
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=فتح مجلد السمات
 original=CSS snippets
 translation=مقتطفات CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=إدارة مجموعتك من ملفات CSS لتخصيص مظهر التطبيق.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=لا يوجد مقتطفات CSS في مجلد المقتطفات.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=لديك حاليًا {{count}} مقتطف مُمكّن.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=لديك حاليًا {{count}} مقتطفات مُمكّنة.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} مُمكّن
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,8 +1031,8 @@ original=All
 translation=الكل
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
-translation=تعارضات ({{count}})
+original=Conflicts
+translation=تعارضات
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -1674,6 +1682,18 @@ translation=تعطيل
 original=Copy share link
 translation=نسخ رابط المشاركة
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=عرض التفاصيل
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=فتح صفحة المجتمع
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=الإعدادات
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=تبرع
@@ -2234,6 +2254,18 @@ translation=فشل في تحميل الإضافة “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=الإضافة “{{plugin}}” واجه خطأ أثناء التحميل
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=لم يتم تحميل {{plugin}}. هذا المكوّن الإضافي غير متوافق مع Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=لم يعد {{plugin}} يعمل. نوصي بإلغاء تثبيته.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=تعذّر تحميل المكوّن الإضافي {{plugin}} v{{version}}. تم الإبلاغ عن أن هذا الإصدار يسبب مشكلات. يُرجى التحقق من وجود إصدار أحدث من المكوّن الإضافي.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=فشل في فتح “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=عرض القراءة
 [interface.menu.add-property]
 original=Add file property
 translation=أضف خصائص
+
+[interface.menu.delete]
+original=Delete
+translation=حذف
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=إلغاء
 [dialogue.button-allow]
 original=Allow
 translation=السماح
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=السماح مرة واحدة
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=السماح دائمًا
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=للإلغاء
 original=No commands found.
 translation=لم يتم العثور على أوامر.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=اكتب أمر...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=إضافة أمر...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=حدّد أمرًا...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

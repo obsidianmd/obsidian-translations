@@ -554,6 +554,14 @@ translation=Adicionar exclusão...
 original=No exclusions added.
 translation=Nenhuma exclusão adicionada.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} regra
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} regras
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Adicionar exclusão
@@ -674,13 +682,13 @@ translation=Fonte  monoespaçada
 original=Set font for places like code blocks and frontmatter.
 translation=Definir fonte para lugares como blocos de código e pré-texto.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Fonte atualmente aplicada: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} tipo de letra
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= As fontes seguintes estão atualmente aplicadas:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} tipos de letra
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Abrir pasta de temas
 original=CSS snippets
 translation=Fragmentos CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Faça a gestão da sua coleção de ficheiros CSS para ajustar a aparência da aplicação.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Nenhum fragmento CSS encontrado na pasta de fragmentos.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Tem atualmente {{count}} excerto ativado.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Tem atualmente {{count}} excertos ativados.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} ativado
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Todos
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Conflitos ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Desativar
 original=Copy share link
 translation=Copiar ligação de partilha
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Ver detalhes
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Abrir página da comunidade
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Definições
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Doar
@@ -2234,6 +2254,18 @@ translation=Falha ao carregar o plugin “{{plugin}}”
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=O plugin “{{plugin}}” encontrou um erro ao carregar
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Não foi possível carregar {{plugin}}. Este plugin não é compatível com o Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} deixou de funcionar. Recomendamos que o desinstale.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Não foi possível carregar o plugin {{plugin}} v{{version}}. Foram comunicados problemas causados por esta versão. Verifique se existe uma versão mais recente do plugin.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Falha ao abrir “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Modo de leitura
 [interface.menu.add-property]
 original=Add file property
 translation=Adicionar propriedade do ficheiro
+
+[interface.menu.delete]
+original=Delete
+translation=Eliminar
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Cancelar
 [dialogue.button-allow]
 original=Allow
 translation=Permitir
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Permitir uma vez
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Permitir sempre
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=Ignorar
 original=No commands found.
 translation=Nenhum comando encontrado.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Digite um comando...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Adicionar um comando...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Selecionar um comando...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

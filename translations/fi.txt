@@ -12,7 +12,7 @@ translation=Sisäänrakennetut lisäosat
 
 [setting.action-reveal-plugin-in-list]
 original=Reveal in plugin list
-translation=Näytä lisäosaluettelossa
+translation=Näytä lisäosalistassa
 
 [setting.plugin-options]
 original=Plugin options
@@ -554,6 +554,14 @@ translation=Lisää poissulku...
 original=No exclusions added.
 translation=Poissulkuja ei ole lisätty.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} sääntö
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} sääntöä
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Lisää poissulku
@@ -674,13 +682,13 @@ translation=Tasalevyinen kirjasin
 original=Set font for places like code blocks and frontmatter.
 translation=Aseta kirjasin tasalevyiselle sisällölle, kuten koodilohkoille ja alkulehdille.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Tällä hetkellä käytössä oleva kirjasin: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} fontti
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Seuraavat kirjasimet ovat tällä hetkellä käytössä:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} fonttia
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -728,7 +736,7 @@ translation=Kirjasimen koko pikseleissä. Vaikuttaa muokkaus- ja lukunäkymiin.
 
 [setting.appearance.alias-font-size]
 original=text size zoom
-translation=tekstin koko suurenna/pienennä
+translation=tekstin koko suurenna/pienennä zoomaa
 
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
@@ -774,21 +782,21 @@ translation=Avaa teemakansio
 original=CSS snippets
 translation=CSS-pätkät
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Hallitse CSS-tiedostojen kokoelmaa, jolla voit mukauttaa sovelluksen ulkoasua.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS-pätkiä ei löytynyt pätkäkansiosta.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Sinulla on tällä hetkellä {{count}} pätkä käytössä.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Sinulla on tällä hetkellä {{count}} pätkää käytössä.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} käytössä
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
-translation=CSS-pätkien avulla voit mukauttaa Obsidianin ulkoasua. Sijoita CSS-tiedostot kansioon ”{{path}}”, jotta ne näkyvät täällä.
+translation=CSS-pätkien avulla voit mukauttaa Obsidian-sovelluksen ulkoasua. Sijoita CSS-tiedostot kansioon ”{{path}}”, jotta ne näkyvät täällä.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -1023,7 +1031,7 @@ original=All
 translation=Kaikki
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Ristiriidat ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1560,7 +1568,7 @@ translation=Koodin tarkastus
 
 [setting.third-party-plugin.label-code-review-desc]
 original=Plugins in the official community directory are automatically reviewed after every update.
-translation=Virallisen yhteisön lisäosahakemiston lisäosat tarkastetaan automaattisesti jokaisen päivityksen jälkeen.
+translation=Virallisen yhteisön lisäosakirjaston lisäosat tarkastetaan automaattisesti joka päivityksen jälkeen.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1673,6 +1681,18 @@ translation=Poista käytöstä
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Kopioi jakamislinkki
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Näytä tiedot
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Avaa yhteisösivu
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Asetukset
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -2234,6 +2254,18 @@ translation=Lisäosan “{{plugin}}” lataus epäonnistui
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Lisäosaa ”{{plugin}}” ladattaessa tapahtui virhe
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Lisäosaa {{plugin}} ei ladattu. Tämä lisäosa ei ole yhteensopiva Obsidianin version v{{version}} kanssa.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=Lisäosa {{plugin}} ei enää toimi. Suosittelemme poistamaan sen.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Lisäosan {{plugin}} versiota v{{version}} ei voitu ladata. Tämän version on ilmoitettu aiheuttavan ongelmia. Tarkista, onko lisäosasta saatavilla uudempi versio.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Tiedoston “{{filepath}}” avaus epäonnistui
@@ -2673,6 +2705,10 @@ translation=Lukunäkymä
 [interface.menu.add-property]
 original=Add file property
 translation=Lisää tiedostolle määre
+
+[interface.menu.delete]
+original=Delete
+translation=Poista
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4138,6 +4174,14 @@ translation=Peruuta
 original=Allow
 translation=Salli
 
+[dialogue.button-allow-once]
+original=Allow once
+translation=Salli kerran
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Salli aina
+
 [dialogue.button-skip]
 original=Skip
 translation=Ohita
@@ -5048,7 +5092,7 @@ translation=Verkkonäkymä
 
 [plugins.graph-view.local-name]
 original=Local graph
-translation=Paikallinen verkkonäkymä
+translation=Lähiverkko
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -5834,9 +5878,13 @@ translation=sulkee
 original=No commands found.
 translation=Komentoja ei löytynyt.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Kirjoita komento...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Lisää komento...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Valitse komento...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -7820,11 +7868,11 @@ translation=Sallitaanko synkronoitujen lisäosien suorittaminen tällä laitteel
 
 [plugins.sync.label-community-plugin-data-warning-1]
 original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
-translation=Obsidian Sync ei voi vahvistaa tälle laitteelle synkronoitujen lisäosien sisältöä, ja ne voivat poiketa yhteisöhakemistossa julkaistuista lisäosista.
+translation=Obsidian Sync ei voi vahvistaa tälle laitteelle synkronoitujen lisäosien sisältöä, ja ne voivat poiketa yhteisökirjastolla julkaistuista lisäosista.
 
 [plugins.sync.label-community-plugin-data-warning-2]
 original=Only enable this if the vault and connected devices are trusted.
-translation=Ota tämä käyttöön vain, jos holvi ja yhdistetyt laitteet ovat luotettuja.
+translation=Ota tämä käyttöön vain, jos luotat holviin ja yhdistettyihin laitteisiin.
 
 [plugins.sync.button-confirm-community-plugin-data-warning]
 original=Yes, turn on plugin sync
@@ -8448,7 +8496,7 @@ translation=Tarkista, että osoite on oikein.
 
 [plugins.web-viewer.action-reader-view]
 original=Reader view
-translation=Lukijanäkymä
+translation=Lukunäkymä
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -10280,7 +10328,7 @@ translation=Avataanko ulkoinen linkki?
 
 [main.external-link-message]
 original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
-translation=Tämä linkki avaa ulkoisen sovelluksen Obsidianin ulkopuolella. Jatka vain, jos luotat tämän linkin lähteeseen.
+translation=Tämä linkki avaa ulkoisen sovelluksen Obsidian-sovelluksen ulkopuolella. Jatka vain, jos luotat tämän linkin lähteeseen.
 
 [main.external-link-always-open]
 original=Always open {{scheme}}:// links
@@ -10288,7 +10336,7 @@ translation=Avaa aina {{scheme}}://-linkit
 
 [main.remote-file-title]
 original=Remote file warning
-translation=Etätiedoston varoitus
+translation=Etätiedostovaroitus
 
 [main.remote-file-message]
 original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
@@ -10304,7 +10352,7 @@ translation=Verkkolevyn käyttö
 
 [main.network-drive-message]
 original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
-translation=Tämä sisältö pyytää tietoja verkkolevyltä. Tämän salliminen voi paljastaa kirjautumistietosi tai muita arkaluonteisia tietoja etäisännälle.
+translation=Tämä sisältö pyytää tietoja verkkolevyltä. Tämän salliminen voi paljastaa kirjautumistietosi tai muita arkaluonteisia tietoja ulkoiselle tietokoneelle.
 
 [main.network-drive-host]
 original=Host: {{host}}

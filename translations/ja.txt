@@ -554,6 +554,14 @@ translation=除外を追加...
 original=No exclusions added.
 translation=除外は追加されていません。
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}}件のルール
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}}件のルール
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=除外を追加
@@ -674,13 +682,13 @@ translation=モノスペースフォント
 original=Set font for places like code blocks and frontmatter.
 translation=コードブロックやフロントマターといった場所で使用するフォントを設定します。
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= 現在適用中のフォント: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}}個のフォント
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= 現在、次のフォントが適用されています:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}}個のフォント
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=テーマフォルダを開く
 original=CSS snippets
 translation=CSSスニペット
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=アプリの外観を調整するためのCSSファイルのコレクションを管理します。
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=スニペットフォルダにCSSスニペットが見つかりません。
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=現在、{{count}} 個のスニペットが有効です。
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=現在、{{count}} 個のスニペットが有効です。
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}}件が有効
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=すべて
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=競合 ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=無効化
 original=Copy share link
 translation=共有リンクをコピー
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=詳細を表示
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=コミュニティページを開く
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=設定
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=寄付
@@ -2234,6 +2254,18 @@ translation=プラグイン "{{plugin}}" の読み込みに失敗しました。
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=プラグイン「{{plugin}}」の読み込み中にエラーが発生しました
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}}は読み込まれませんでした。このプラグインはObsidian v{{version}}と互換性がありません。
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}}は機能しなくなりました。アンインストールすることをおすすめします。
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=プラグイン{{plugin}} v{{version}}を読み込めません。このバージョンは問題を引き起こすことが報告されています。プラグインの新しいバージョンがないか確認してください。
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=ファイル "{{filepath}}" を開くのに失敗しました。
@@ -2673,6 +2705,10 @@ translation=リーディングビュー
 [interface.menu.add-property]
 original=Add file property
 translation=ファイルプロパティを追加
+
+[interface.menu.delete]
+original=Delete
+translation=削除
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=キャンセル
 [dialogue.button-allow]
 original=Allow
 translation=許可
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=今回のみ許可
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=常に許可
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=パレットを閉じる
 original=No commands found.
 translation=コマンドが見つかりません。
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=コマンドを入力…
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=コマンドを追加...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=コマンドを選択...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
