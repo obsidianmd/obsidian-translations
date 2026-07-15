@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=Przeliczenie waluty PayPal
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=Jeśli subskrybujesz przez PayPal, kliknij tutaj, aby zaktualizować subskrypcję.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=Jeśli subskrybujesz przez PayPal, {{link}}, aby zaktualizować subskrypcję.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=kliknij tutaj
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=Rozpocznij
 original=Help
 translation=Pomoc
 
-[nav.join_community]
-original=Join the community
-translation=Dołącz do społeczności
-
 [nav.learn]
 original=Learn
 translation=Nauka
@@ -2485,6 +2485,14 @@ translation=Znalazłeś nierozwiązany link.
 [pages.about.about]
 original=About Obsidian
 translation=O Obsidian
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=Obsidian powstaje dzięki naszym niesamowitym współtwórcom i społeczności wolontariuszy. Więcej informacji znajdziesz na stronie {{link}}.
+
+[pages.about.credits_link]
+original=Credits
+translation=Podziękowania
 
 [pages.about.durable]
 original=Durable
@@ -2762,16 +2770,12 @@ translation=Wszystko, co możesz zrobić w Obsidian, możesz zrobić z linii pol
 original=Install Obsidian CLI
 translation=Zainstaluj Obsidian CLI
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=Dowiązanie symboliczne jest tworzone w `/usr/local/bin/obsidian` (wymaga sudo). W przypadku niepowodzenia cofa się do `~/.local/bin`.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=Dowiązanie symboliczne jest tworzone automatycznie. Jeśli się nie powiedzie, utwórz je ręcznie wskazując na eksport Flatpak.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=Plik binarny CLI jest kopiowany do `~/.local/bin/obsidian`. Upewnij się, że `~/.local/bin` znajduje się w zmiennej\u00a0PATH.
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
 translation=Rejestracja dodaje plik binarny Obsidian do PATH przez `~/.zprofile`. Jeśli używasz bash lub fish, dodaj ścieżkę do konfiguracji powłoki ręcznie.
 
 [pages.cli.install_step1]
@@ -4546,6 +4550,14 @@ translation=Powiązane informacje
 original=Report a security issue
 translation=Zgłoś problem bezpieczeństwa
 
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Audyt API, serwera i kryptografii Obsidian Sync. Po tym teście zespół Cure53 potwierdził, że wszystkie podatności zostały usunięte, a rekomendacje wdrożone.
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=Audyt API, serwera i kryptografii Obsidian Sync. Wszystkie wykryte problemy zostały rozwiązane poprzez poprawki i ujawnienia zweryfikowane przez audytorów.
+
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
 translation=FAQ bezpieczeństwa Sync
@@ -4864,7 +4876,7 @@ translation=Miesięcznie
 
 [ui.monthly_billing]
 original=Monthly\u00a0billing
-translation=Rozliczenie miesięczne
+translation=Miesięcznie
 
 [ui.more_browsers]
 original=More browsers
@@ -4952,4 +4964,4 @@ translation=Rocznie
 
 [ui.yearly_billing]
 original=Yearly\u00a0billing
-translation=Rozliczenie roczne
+translation=Rocznie
