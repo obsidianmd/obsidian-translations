@@ -554,6 +554,14 @@ translation=
 original=No exclusions added.
 translation=
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=
@@ -652,11 +660,11 @@ translation=
 
 [setting.appearance.option-zoom-level]
 original=Zoom level
-translation=
+translation=Sok-pàng-pí
 
 [setting.appearance.option-zoom-level-description]
 original=Controls the overall zoom level of the app.
-translation=
+translation=Khòng-tsè kui-ê ìng-iōng tîng-sik sok-hòng ê pí-lē.
 
 [setting.appearance.option-text-font]
 original=Text font
@@ -674,12 +682,12 @@ translation=
 original=Set font for places like code blocks and frontmatter.
 translation=
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
+[setting.appearance.label-font-count]
+original={{count}} font
 translation=
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
 translation=
 
 [setting.appearance.option-font-placeholder]
@@ -728,7 +736,7 @@ translation=Font size in pixels that affects editor and preview.
 
 [setting.appearance.alias-font-size]
 original=text size zoom
-translation=
+translation=Tiâu-tsíng bûn-jī tuā-sè
 
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
@@ -736,7 +744,7 @@ translation=
 
 [setting.appearance.option-font-size-action-description]
 original=Adjust the font size using Ctrl + Scroll, or using the trackpad pinch-zoom gesture.
-translation=
+translation=Iōng "Ctrl + kńg-tōng" lâi tiâu-tsíng jī ê tuā-sè, ia̍h-sī iōng tshiok-khòng pang-á ê nn̄g tsáinn sok-hòng tshiú-sè. 
 
 [setting.appearance.option-themes]
 original=Themes
@@ -774,16 +782,16 @@ translation=
 original=CSS snippets
 translation=
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=No CSS snippets found in the snippets folder.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
 translation=
 
 [setting.appearance.no-snippet-description]
@@ -1023,7 +1031,7 @@ original=All
 translation=
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=
 
 [setting.hotkeys.label-show-unassigned]
@@ -1432,15 +1440,15 @@ translation=
 
 [setting.account.label-password]
 original=Password
-translation=
+translation=Àm-bé
 
 [setting.account.placeholder-password]
 original=Your password...
-translation=
+translation=Lí ê àm-bé...
 
 [setting.account.label-forgot-password]
 original=Forgot password?
-translation=
+translation=Buē-kì-tit àm-bé bô?
 
 [setting.account.button-login]
 original=Login
@@ -1456,11 +1464,11 @@ translation=
 
 [setting.account.message-empty-password]
 original=Password cannot be empty.
-translation=
+translation=Àm-bé-lân bē-sái sī khang--ê.
 
 [setting.account.message-login-failed]
 original=Login failed, please double check your email and password.
-translation=Login failed, please double-check your email and password.
+translation=Ting-ji̍p sit-pāi, tshiánn koh tîng kiám-tsa lí ê email kháu-tsō kah àm-bé.
 
 [setting.account.message-signup-failed]
 original=Failed to sign up
@@ -1672,6 +1680,18 @@ translation=
 
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
+translation=
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
 translation=
 
 [setting.third-party-plugin.button-donate]
@@ -2234,6 +2254,18 @@ translation=
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=
@@ -2674,6 +2706,10 @@ translation=
 original=Add file property
 translation=
 
+[interface.menu.delete]
+original=Delete
+translation=
+
 [interface.menu.delete-file]
 original=Delete file
 translation=
@@ -2972,11 +3008,11 @@ translation=
 
 [interface.start-screen.option-user-password]
 original=Password
-translation=
+translation=Àm-bé
 
 [interface.start-screen.placeholder-your-password]
 original=Your password...
-translation=
+translation=Lí ê àm-bé...
 
 [interface.start-screen.button-sign-in]
 original=Sign in
@@ -3136,7 +3172,7 @@ translation=
 
 [interface.start-screen.mobile.button-forgot-password]
 original=Forgot password
-translation=
+translation=Pàng buē-kì àm-bé
 
 [interface.start-screen.mobile.label-vault-name]
 original=Vault name
@@ -3212,15 +3248,15 @@ translation=
 
 [interface.start-screen.mobile.label-forgot-password]
 original=Forgot password
-translation=
+translation=Buē-kì-tit àm-bé
 
 [interface.start-screen.mobile.button-reset-password]
 original=Reset password
-translation=
+translation=Tiông siat àm-bé
 
 [interface.start-screen.mobile.msg-password-reset]
 original=We have sent an email to {{email}} to reset your password.
-translation=
+translation=Í-king kià tsi̍t tiunn tiān-tsú-phue kàu {{email}} ē-tit tîng siat lí ê àm-bé.
 
 [interface.start-screen.mobile.label-sync-method-selection]
 original=Choose how to sync your notes
@@ -3328,7 +3364,7 @@ translation=
 
 [interface.start-screen.mobile.label-signup]
 original=Enter your name and password
-translation=
+translation=Phah-ji̍p lí ê miâ kah àm-bé
 
 [interface.start-screen.mobile.email-verification]
 original=Connect to Obsidian Sync
@@ -3940,15 +3976,15 @@ translation=
 
 [commands.zoom-in]
 original=Zoom in
-translation=
+translation=Pàng-tuā
 
 [commands.zoom-out]
 original=Zoom out
-translation=
+translation=Sok-sió
 
 [commands.reset-zoom]
 original=Reset zoom
-translation=
+translation=Tiông siat sok-pàng-pí
 
 [commands.toggle-preview]
 original=Toggle reading view
@@ -4136,6 +4172,14 @@ translation=
 
 [dialogue.button-allow]
 original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -4672,11 +4716,11 @@ translation=
 
 [plugins.file-explorer.label-untitled-file]
 original=Untitled
-translation=
+translation=Bô miâ-tshing tóng-àn 
 
 [plugins.file-explorer.label-untitled-folder]
 original=Untitled
-translation=
+translation=Bô miâ-tshing tsu-liāu giap-á
 
 [plugins.file-explorer.msg-set-attachment-folder]
 original=Attachments will be saved to “{{path}}” from now on.
@@ -5148,11 +5192,11 @@ translation=
 
 [plugins.graph-view.option-show-arrows]
 original=Arrows
-translation=
+translation=Tsìnn-thâu
 
 [plugins.graph-view.option-show-arrows-description]
 original=Show arrows when zoomed in
-translation=
+translation=Hòng-tuā uē-bìn ê sî-tsūn hián-sī tsìnn-thâu
 
 [plugins.graph-view.option-text-fade]
 original=Text fade threshold
@@ -5636,11 +5680,11 @@ translation=
 
 [plugins.bookmarks.label-untitled-group]
 original=Untitled group
-translation=
+translation=Bô miâ-tshing kûn-tsoo
 
 [plugins.bookmarks.label-untitled-graph]
 original=Untitled Graph
-translation=
+translation=Bô miâ-tshing kuan-liân-tôo
 
 [plugins.bookmarks.menu-opt-edit]
 original=Edit...
@@ -5834,9 +5878,13 @@ translation=
 original=No commands found.
 translation=
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Type a command...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6684,7 +6732,7 @@ translation=
 
 [plugins.publish.option-site-password]
 original=Passwords
-translation=
+translation=Àm-bé
 
 [plugins.publish.option-site-password-description]
 original=Restrict access to your site with passwords.
@@ -6700,7 +6748,7 @@ translation=
 
 [plugins.publish.button-manage-passwords]
 original=Manage
-translation=
+translation=Kuán-lí
 
 [plugins.publish.button-save-site-settings]
 original=Save site settings
@@ -6848,15 +6896,15 @@ translation=A network error occurred.
 
 [plugins.publish.label-manage-passwords]
 original=Manage passwords
-translation=
+translation=Kuán-lí àm-bé
 
 [plugins.publish.label-add-password]
 original=Add password
-translation=
+translation=Ka-thiam àm-bé
 
 [plugins.publish.action-new-password]
 original=New password
-translation=
+translation=Sin àm-bé
 
 [plugins.publish.label-no-password]
 original=Your site currently does not have any passwords. Anyone can visit it.
@@ -6892,7 +6940,7 @@ translation=
 
 [plugins.publish.label-untitled-password]
 original=Untitled password
-translation=
+translation=Bô miâ-tshing àm-bé
 
 [plugins.publish.label-password-created-time]
 original=Created {{time}}
@@ -7124,63 +7172,63 @@ translation=
 
 [plugins.workspaces.name]
 original=Workspaces
-translation=
+translation=Tsok-gia̍p-khu
 
 [plugins.workspaces.desc]
 original=Save and load workspace layouts.
-translation=Save and load workspace layout.
+translation=Pó-tsûn kah lóo tsok-gia̍p-khu pán-bīn.
 
 [plugins.workspaces.action-load-layout]
 original=Load workspace layout
-translation=
+translation=Lóo tsok-gia̍p-khu pán-bīn
 
 [plugins.workspaces.action-manage-layouts]
 original=Manage workspace layouts
-translation=
+translation=Kuán-lí tsok-gia̍p-khu pán-bīn
 
 [plugins.workspaces.action-save]
 original=Save layout
-translation=
+translation=Pó-tsûn tsok-gia̍p-khu pán-bīn
 
 [plugins.workspaces.action-save-and-load-layout]
 original=Save and load another layout
-translation=
+translation=Pó-tsûn kah lóo pa̍t-khuán pán-bīn
 
 [plugins.workspaces.placeholder-save-current-layout-as]
 original=Save current workspace layout as...
-translation=
+translation=Pó-tsûn tsit-má ê pán-bīn tī...
 
 [plugins.workspaces.button-save]
 original=Save
-translation=
+translation=Pó-tsûn
 
 [plugins.workspaces.button-load]
 original=Load
-translation=
+translation=Lóo
 
 [plugins.workspaces.tooltip-delete-layout]
 original=Delete layout
-translation=
+translation=San-tû pán-bīn
 
 [plugins.workspaces.msg-enter-name]
 original=Please enter a name for the new layout.
-translation=
+translation=Tshiánn kā sin--ê pán-bīn hō-miâ.
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=Successfully saved layout.
+translation=Pán-bīn "{{name}}" í-king pó-tsûn thò-tòng.
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
-translation=
+translation=Tshuē bô jīm-hô ê pán-bīn.
 
 [plugins.workspaces.label-workspace-modified-time]
 original=Modified {{time}}
-translation=
+translation=Piàn-king sî-kan: {{time}}
 
 [plugins.workspaces.placeholder-type-to-search-layouts]
 original=Type layout name...
-translation=
+translation=Phah-ji̍p pán-bīn ê miâ...
 
 [plugins.sync.name]
 original=Sync
@@ -8780,11 +8828,11 @@ translation=
 
 [plugins.canvas.option-zoom-breakpoint]
 original=Zoom threshold for hiding card content
-translation=
+translation=Ún-tsông khah-phìnn luē-iông ê sok-pàng hōo-tīng
 
 [plugins.canvas.option-zoom-breakpoint-desc]
 original=Lower values will increase performance but hide card content sooner when zooming out.
-translation=
+translation=Hōo-tīng khah kē ē-sái tsīng-ka sìng-lîng, m̄-koh sok-sió ê sî khah-phìnn luē-iông ē khah tsá tshàng--khí-lâi.
 
 [plugins.canvas.option-export-png-show-logo]
 original=Show logo
@@ -8804,11 +8852,11 @@ translation=
 
 [plugins.canvas.option-export-png-zoom]
 original=Zoom
-translation=
+translation=sok-pàng
 
 [plugins.canvas.option-export-png-zoom-desc]
 original=A higher zoom will generate a higher resolution image.
-translation=
+translation=Khah kuân ê sok-pàng-pí ē-sài sán-sing khak kuân kái-sik-tōo ê tôo.
 
 [plugins.canvas.option-export-png-frame]
 original=Viewport
@@ -8872,11 +8920,11 @@ translation=
 
 [plugins.canvas.action-zoom-to-fit]
 original=Zoom to fit
-translation=
+translation=Sok-hòng kah bā-bā
 
 [plugins.canvas.action-zoom-to-selection]
 original=Zoom to selection
-translation=
+translation=Sok-hòng kàu suán-ti̍k huān-uî
 
 [plugins.canvas.action-reload-page]
 original=Reload page
@@ -8960,7 +9008,7 @@ translation=
 
 [plugins.canvas.label-zoom]
 original=Zoom
-translation=
+translation=Sok-pàng
 
 [plugins.canvas.label-select-all]
 original=Select all
@@ -9000,7 +9048,7 @@ translation=
 
 [plugins.canvas.label-pinch-zoom]
 original=Pinch to zoom
-translation=
+translation=Iōng nn̄g tsáinn sok-pàng
 
 [plugins.canvas.label-space-drag-pan]
 original=Space + Drag to pan
@@ -9008,11 +9056,11 @@ translation=
 
 [plugins.canvas.label-scroll-to-zoom]
 original=Scroll to zoom
-translation=
+translation=Iōng kńg--ê sok-pàng
 
 [plugins.canvas.label-untitled-group]
 original=Untitled group
-translation=
+translation=Bô miâ-tshing kûn-tsoo
 
 [plugins.canvas.label-line-direction]
 original=Line direction
@@ -9312,7 +9360,7 @@ translation=
 
 [plugins.bases.label-untitled-property]
 original=Untitled
-translation=
+translation=Bô miâ-tshing sio̍k-sìng
 
 [plugins.bases.label-file-prop-file]
 original=file

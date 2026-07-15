@@ -554,6 +554,14 @@ translation=Kizárás hozzáadása...
 original=No exclusions added.
 translation=Nincs hozzáadott kizárás.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} szabály
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} szabály
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Kizárás hozzáadása
@@ -674,13 +682,13 @@ translation=Monospace betűtípus
 original=Set font for places like code blocks and frontmatter.
 translation=Beállítja az olyan helyek, mint a kódblokkok és a metaadatok, betűtípusát.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Jelenleg alkalmazott betűtípus: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} betűtípus
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Jelenleg alkalmazott betűtípusok: 
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} betűtípus
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,17 +782,17 @@ translation=Témamappa megnyitása
 original=CSS snippets
 translation=CSS kódrészletek
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Az alkalmazás megjelenésének testreszabására szolgáló CSS-fájlok gyűjteményének kezelése.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Nem található CSS kódrészlet a kódrészletek mappában.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Jelenleg {{count}} kódrészlet van engedélyezve.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Jelenleg {{count}} kódrészlet van engedélyezve.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} engedélyezve
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1023,7 +1031,7 @@ original=All
 translation=Minden
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Ütközések ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1674,6 +1682,18 @@ translation=Letiltás
 original=Copy share link
 translation=Megosztási link másolása
 
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Részletek megtekintése
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Közösségi oldal megnyitása
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Beállítások
+
 [setting.third-party-plugin.button-donate]
 original=Donate
 translation=Adományozás
@@ -2234,6 +2254,18 @@ translation=Nem sikerült betölteni a(z) “{{plugin}}” bővítményt
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=A(z) “{{plugin}}” bővítmény hibába ütközött a betöltés során
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=A(z) {{plugin}} nem töltődött be. Ez a bővítmény nem kompatibilis az Obsidian v{{version}} verziójával.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=A(z) {{plugin}} már nem működik. Javasoljuk az eltávolítását.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Nem sikerült betölteni a(z) {{plugin}} v{{version}} verzióját. A jelentések szerint ez a verzió problémákat okoz. Ellenőrizze, hogy elérhető-e a bővítmény újabb verziója.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Nem sikerült megnyitni a következőt: “{{filepath}}”
@@ -2673,6 +2705,10 @@ translation=Olvasási nézet
 [interface.menu.add-property]
 original=Add file property
 translation=Fájltulajdonság hozzáadása
+
+[interface.menu.delete]
+original=Delete
+translation=Törlés
 
 [interface.menu.delete-file]
 original=Delete file
@@ -4137,6 +4173,14 @@ translation=Mégse
 [dialogue.button-allow]
 original=Allow
 translation=Engedélyezés
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Engedélyezés egyszer
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Mindig engedélyezés
 
 [dialogue.button-skip]
 original=Skip
@@ -5834,9 +5878,13 @@ translation=elutasításhoz
 original=No commands found.
 translation=Nincsenek találatok.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Válasszon egy parancsot...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Parancs hozzáadása...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Parancs kiválasztása...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands

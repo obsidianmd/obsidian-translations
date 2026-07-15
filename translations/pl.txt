@@ -68,7 +68,7 @@ translation=Edytor
 
 [setting.editor.section-behavior]
 original=Behavior
-translation=Funkcje edytora
+translation=Zachowanie
 
 [setting.editor.section-display]
 original=Display
@@ -554,6 +554,14 @@ translation=Dodaj wykluczenie...
 original=No exclusions added.
 translation=Nie dodano wykluczeń.
 
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} reguła
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} reguły
+
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
 translation=Dodaj wykluczenie
@@ -674,13 +682,13 @@ translation=Czcionka o stałej szerokości (monospace)
 original=Set font for places like code blocks and frontmatter.
 translation=Wybierz czcionkę elementów takich jak bloki kodu i frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Aktywna czcionka: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} font
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Następujące czcionki są aktywne:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} fonty
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -774,21 +782,21 @@ translation=Otwórz folder motywów
 original=CSS snippets
 translation=Snippety CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Zarządzaj kolekcją plików CSS służących do dostosowywania wyglądu aplikacji.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Nie znaleziono żadnych snippetów CSS w folderze.
 
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Masz obecnie włączony {{count}} fragment.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Masz obecnie włączone {{count}} fragmenty.
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} włączonych
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
-translation=Fragmenty CSS pozwalają dostosować wygląd aplikacji Obsidian. Umieść pliki CSS w „{{path}}”, aby pojawiły się tutaj.
+translation=Snippety CSS pozwalają dostosować wygląd aplikacji Obsidian. Umieść pliki CSS w „{{path}}”, aby pojawiły się tutaj.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -804,7 +812,7 @@ translation=Odświeżono snippety CSS.
 
 [setting.appearance.placeholder-search-snippet]
 original=Search snippets...
-translation=Szukaj fragmentów...
+translation=Szukaj snippetów...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -1023,7 +1031,7 @@ original=All
 translation=Wszystkie
 
 [setting.hotkeys.label-show-conflicts]
-original=Conflicts ({{count}})
+original=Conflicts
 translation=Konflikty ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
@@ -1372,7 +1380,7 @@ translation=Aplikacja
 
 [setting.about.label-add-own-language]
 original=Learn how to add a new language to Obsidian.
-translation=Dowiedz się jak dodać nowy język do Obsidian.
+translation=Dowiedz się, jak dodać nowy język do Obsidian.
 
 [setting.account.name]
 original=Account
@@ -1673,6 +1681,18 @@ translation=Wyłącz
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Kopiuj łącze udostępniania
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Wyświetl szczegóły
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Otwórz stronę społeczności
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Ustawienia
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -2212,7 +2232,7 @@ translation=Otwórz w aplikacji domyślnej
 
 [interface.empty-sidebar]
 original=The sidebar is empty, try dragging a tab here.
-translation=Pasek boczny jest pusty, spróbuj przeciągnąć tu jednen z paneli.
+translation=Pasek boczny jest pusty, spróbuj przeciągnąć tu jeden z paneli.
 
 [interface.sidebar-expand]
 original=Expand
@@ -2233,6 +2253,18 @@ translation=Nie udało się wczytać wtyczki “{{plugin}}”
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Wystąpił błąd podczas wczytywania wtyczki “{{plugin}}”
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Nie załadowano wtyczki {{plugin}}. Ta wtyczka nie jest zgodna z Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=Wtyczka {{plugin}} już nie działa. Zalecamy jej odinstalowanie.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Nie można załadować wtyczki {{plugin}} v{{version}}. Zgłoszono, że ta wersja powoduje problemy. Sprawdź, czy jest dostępna nowsza wersja wtyczki.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2320,7 +2352,7 @@ translation=Wystąpił błąd podczas renderowania bloku kodu.
 
 [interface.msg-open-file-through-uri]
 original=Opened file “{{path}}”
-translation=Otwarto plik {{path}}”
+translation=Otwarto plik “{{path}}”
 
 [interface.msg-file-not-found-through-uri]
 original=File “{{name}}” not found.
@@ -2404,7 +2436,7 @@ translation=Format
 
 [interface.formatting.label-paragraph]
 original=Paragraph
-translation=Paragraf
+translation=Akapit
 
 [interface.formatting.label-insert]
 original=Insert
@@ -2508,7 +2540,7 @@ translation=Żaden plik nie jest otwarty
 
 [interface.empty-state.create-new-file]
 original=Create new note
-translation=Stwórz nowy plik
+translation=Stwórz nową notatkę
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -2644,7 +2676,7 @@ translation=Zamknij pozostałe
 
 [interface.menu.close-after]
 original=Close tabs after
-translation=Zamknij karty za
+translation=Zamknij karty po
 
 [interface.menu.pin]
 original=Pin
@@ -2673,6 +2705,10 @@ translation=Tryb odczytu
 [interface.menu.add-property]
 original=Add file property
 translation=Dodaj atrybut
+
+[interface.menu.delete]
+original=Delete
+translation=Usuń
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3216,7 +3252,7 @@ translation=Nie pamiętam hasła
 
 [interface.start-screen.mobile.button-reset-password]
 original=Reset password
-translation=Reset hasła
+translation=Zresetuj hasło
 
 [interface.start-screen.mobile.msg-password-reset]
 original=We have sent an email to {{email}} to reset your password.
@@ -3672,15 +3708,15 @@ translation=Zmień motyw...
 
 [commands.change-vault]
 original=Change vault...
-translation=Zmień skarbiec...
+translation=Zmień sejf...
 
 [commands.open-vault]
 original=Open vault...
-translation=Otwórz skarbiec...
+translation=Otwórz sejf...
 
 [commands.manage-vaults]
 original=Manage vaults
-translation=Zarządzaj skarbcami
+translation=Zarządzaj sejfami
 
 [commands.search-current-file]
 original=Search current file
@@ -3860,7 +3896,7 @@ translation=Włącz lub wyłącz sprawdzanie pisowni
 
 [commands.delete-paragraph]
 original=Delete paragraph
-translation=Usuń paragraf
+translation=Usuń akapit
 
 [commands.toggle-checklist]
 original=Toggle checkbox status
@@ -4064,15 +4100,15 @@ translation=Usuń plik
 
 [dialogue.label-uri-action-title]
 original=Run action from external link?
-translation=Uruchomić akcję z linku zewnętrznego?
+translation=Uruchomić akcję z zewnętrznego łącza?
 
 [dialogue.label-uri-action-intro]
 original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Akcja „{{action}}” zostanie uruchomiona. Kontynuuj tylko wtedy, gdy ufasz źródłu linku.
+translation=Akcja „{{action}}” zostanie uruchomiona. Kontynuuj tylko wtedy, gdy ufasz źródłu łącza.
 
 [dialogue.label-uri-action-intro-from-plugin]
 original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Wtyczka „{{source}}” zamierza uruchomić akcję „{{action}}”. Kontynuuj tylko wtedy, gdy ufasz źródłu linku.
+translation=Wtyczka „{{source}}” zamierza uruchomić akcję „{{action}}”. Kontynuuj tylko wtedy, gdy ufasz źródłu łącza.
 
 [dialogue.label-uri-action-dont-ask-again]
 original=Don't ask again for “{{action}}”
@@ -4137,6 +4173,14 @@ translation=Anuluj
 [dialogue.button-allow]
 original=Allow
 translation=Zezwól
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Zezwól raz
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Zawsze zezwalaj
 
 [dialogue.button-skip]
 original=Skip
@@ -4284,7 +4328,7 @@ translation=Otwórz sejf...
 
 [menu-items.close-tab]
 original=Close Tab
-translation=Zakmnij kartę
+translation=Zamknij kartę
 
 [menu-items.close-window]
 original=Close Window
@@ -4380,7 +4424,7 @@ translation=Komentarz
 
 [menu-items.toggle-italics]
 original=Italics
-translation=Pochylenie
+translation=Kursywa
 
 [menu-items.toggle-inline-math]
 original=Math
@@ -4420,7 +4464,7 @@ translation=Rozwiń sekcję
 
 [menu-items.source-mode]
 original=Source Mode
-translation=Tryb kodu
+translation=Tryb źródłowy
 
 [menu-items.reading-view]
 original=Reading View
@@ -5272,7 +5316,7 @@ translation=Pokaż filtry wyszukiwania
 
 [plugins.backlinks.label-link-button-text]
 original=Link
-translation=Dodaj link
+translation=Dodaj łącze
 
 [plugins.backlinks.tab-title]
 original=Backlinks for {{displayText}}
@@ -5808,7 +5852,7 @@ translation=Dostępna aktualizacja
 
 [plugins.command-palette.name]
 original=Command palette
-translation=Lista poleceń
+translation=Paleta poleceń
 
 [plugins.command-palette.desc]
 original=Use Cmd/Ctrl+P and begin typing to invoke a command.
@@ -5816,7 +5860,7 @@ translation=Użyj kombinacji klawiszy Cmd/Ctrl+P i zacznij pisać, aby wywołać
 
 [plugins.command-palette.action-open]
 original=Open command palette
-translation=Otwórz listę poleceń
+translation=Otwórz paletę poleceń
 
 [plugins.command-palette.instruction-navigate]
 original=to navigate
@@ -5834,8 +5878,12 @@ translation=aby anulować
 original=No commands found.
 translation=Nie znaleziono żadnych poleceń.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Dodaj polecenie...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
 translation=Wybierz polecenie...
 
 [plugins.command-palette.label-pinned-commands]
@@ -5968,7 +6016,7 @@ translation=Dziennik
 
 [plugins.daily-notes.desc]
 original=Create or open today's daily note.
-translation=Stwórz lub otwórz dzisiejszy dziennik
+translation=Stwórz lub otwórz dzisiejszy dziennik.
 
 [plugins.daily-notes.short-name]
 original=Today
@@ -6000,7 +6048,7 @@ translation=Tworzenie dziennika nie powiodło się. “{{format}}” nie jest pr
 
 [plugins.daily-notes.msg-fail-folder]
 original=Failed to create daily note. Folder “{{folderOption}}” not found.
-translation=Tworzenie cdziennika nie powiodło się. Folder “{{folderOption}}” nie został odnaleziony.
+translation=Tworzenie dziennika nie powiodło się. Folder “{{folderOption}}” nie został odnaleziony.
 
 [plugins.daily-notes.msg-fail-template-file]
 original=Failed to create daily note. Template file “{{template}}” not found.
@@ -6184,11 +6232,11 @@ translation=Pokaż liczbę słów na pasku stanu.
 
 [plugins.mermaid.label-guard-title]
 original=Display Mermaid diagrams in this vault?
-translation=Wyświetlać diagramy Mermaid w tym skarbcu?
+translation=Wyświetlać diagramy Mermaid w tym sejfie?
 
 [plugins.mermaid.label-guard-desc]
 original=Only allow if you trust this vault's contents.
-translation=Zezwól tylko wtedy, gdy ufasz zawartości tego skarbca.
+translation=Zezwól tylko wtedy, gdy ufasz zawartości tego sejfu.
 
 [plugins.slides.name]
 original=Slides
@@ -6356,11 +6404,11 @@ translation=Włącz efekt półprzezroczystości, aby zwiększyć poczucie głę
 
 [plugins.slash-command.name]
 original=Slash commands
-translation=Ukośnik komend
+translation=Ukośnik poleceń
 
 [plugins.slash-command.desc]
 original=Trigger commands in the editor by using the forward slash key.
-translation=Włącza możliwość uruchamiania komend poprzez wpisanie znaku ukośnika.
+translation=Włącza możliwość uruchamiania poleceń poprzez wpisanie znaku ukośnika (/).
 
 [plugins.editor-status.name]
 original=Show editing mode in status bar
@@ -7756,7 +7804,7 @@ translation=Ustawienia główne
 
 [plugins.sync.option-sync-app-desc]
 original=Enable to sync editor settings, files & links settings, etc.
-translation=Włącz synchronizację ustawień edycji, plików i linków, niestandardowych skrótów klawiszowych itp.
+translation=Włącz synchronizację ustawień edycji, plików i łączy, niestandardowych skrótów klawiszowych itp.
 
 [plugins.sync.option-sync-appearance]
 original=Appearance settings
@@ -7824,7 +7872,7 @@ translation=Obsidian Sync nie może zweryfikować zawartości wtyczek zsynchroni
 
 [plugins.sync.label-community-plugin-data-warning-2]
 original=Only enable this if the vault and connected devices are trusted.
-translation=Włącz to tylko wtedy, gdy skarbiec i połączone urządzenia są zaufane.
+translation=Włącz to tylko wtedy, gdy sejf i połączone urządzenia są zaufane.
 
 [plugins.sync.button-confirm-community-plugin-data-warning]
 original=Yes, turn on plugin sync
@@ -10264,7 +10312,7 @@ translation=Kopiuj
 
 [main.button-open-link]
 original=Open Link
-translation=Otwórz link
+translation=Otwórz łącze
 
 [main.button-open-file]
 original=Open this file
@@ -10276,15 +10324,15 @@ translation=Uruchom plik
 
 [main.external-link-title]
 original=Open external link?
-translation=Otworzyć zewnętrzny link?
+translation=Otworzyć zewnętrzne łącze?
 
 [main.external-link-message]
 original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
-translation=Ten link otworzy zewnętrzną aplikację poza Obsidian. Kontynuuj tylko wtedy, gdy ufasz źródłu tego linku.
+translation=To łącze otworzy zewnętrzną aplikację poza Obsidian. Kontynuuj tylko wtedy, gdy ufasz źródłu tego łącza.
 
 [main.external-link-always-open]
 original=Always open {{scheme}}:// links
-translation=Zawsze otwieraj linki {{scheme}}://
+translation=Zawsze otwieraj łącza {{scheme}}://
 
 [main.remote-file-title]
 original=Remote file warning
@@ -10320,7 +10368,7 @@ translation=Uruchomić plik wykonywalny?
 
 [main.executable-file-message]
 original=This link points to an executable file. Running it could harm your computer.
-translation=Ten link wskazuje na plik wykonywalny. Jego uruchomienie może uszkodzić Twój komputer.
+translation=To łącze wskazuje na plik wykonywalny. Jego uruchomienie może uszkodzić Twój komputer.
 
 [main.executable-file-location]
 original=File: {{path}}
@@ -10328,8 +10376,8 @@ translation=Plik: {{path}}
 
 [main.vault-not-found-title]
 original=Vault not found.
-translation=Nie znaleziono skarbca.
+translation=Nie znaleziono sejfu.
 
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
-translation=Nie można znaleźć skarbca dla adresu URL {{url}}
+translation=Nie można znaleźć sejfu dla adresu URL {{url}}
