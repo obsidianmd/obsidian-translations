@@ -10,6 +10,10 @@ translation=Erweiterungen
 original=Core plugins
 translation=Obsidian-Erweiterungen
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=In Erweiterungsliste anzeigen
+
 [setting.plugin-options]
 original=Plugin options
 translation=Erweiterungs-Einstellungen
@@ -22,9 +26,41 @@ translation=Beispiel: Ordner 1/Ordner 2
 original=Example: folder/note
 translation=Beispiel: Ordner/Notiz
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Keine Datei ausgewählt
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Damit diese Änderungen wirksam werden, starte Obsidian bitte neu.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Ungültige Zahl
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Wert muss mindestens {{min}} betragen
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Wert darf höchstens {{max}} betragen
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Datei nicht gefunden.
+
+[setting.search-settings]
+original=Search settings...
+translation=Einstellungen suchen...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Keine Einstellungen gefunden.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} weitere
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Schreib- und Leserichtung (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Ändert die Laufrichtung von Text in Notizen nach RTL (von rechts nach links).
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Mermaid-Diagramme in Notizen anzeigen
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Flussdiagramme, Sequenzdiagramme und andere Diagramme aus „mermaid“-Quelltext-Blöcken rendern.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Ignorierte Dateien
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Ignorierte Dateien sind entweder ausgeblendet oder weniger auffällig an verschiedenen Stellen, wie z.B. in der Schnellauswahl, Linkvorschlägen und der Graph-Ansicht.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Im Moment werden keine Dateien ignoriert. Füge einen Filter hinzu.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Ausschluss hinzufügen...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Dateien, die den folgenden Filterkriterien entsprechen, werden momentan ignoriert:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Keine Ausschlüsse hinzugefügt.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filter
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} Regel
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} Regeln
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Ausschluss hinzufügen
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Gib einen Pfad oder eine Regex ein, z. B. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filter darf nicht leer sein
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Pfad oder "/regex/" eingeben...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URI-Callbacks erlauben
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Bei der Behandlung von Obsidian-URIs die Verwendung von X-Callback-URLs durch x-success oder x-error aktivieren.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian-URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Vertrauenswürdige Aktionen verwalten und URI-Verhalten konfigurieren.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Vertrauenswürdige Aktionen
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Noch keine vertrauenswürdigen Aktionen. Genehmigte URI-Aktionen werden hier angezeigt.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Farbschema
 original=Choose Obsidian's default color scheme.
 translation=Wähle das Standard-Farbschema für Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=dunkel hell system nachtmodus farbschema
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Akzentfarbe
@@ -549,6 +621,10 @@ translation=Akzentfarbe
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Wähle eine Akzentfarbe, die in der gesamten Anwendung verwendet werden soll.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=hervorhebung marke primärfarbe
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Monospace-Schriftart
 original=Set font for places like code blocks and frontmatter.
 translation=Wähle eine Schriftart für Quelltext-Blöcke und Frontmatter.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=Aktuell verwendete Schriftart: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} Schriftart
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=Die folgenden Schriftarten werden momentan verwendet:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} Schriftarten
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Schriftgröße
 original=Font size in pixels that affects editing and reading views.
 translation=Schriftgröße in Pixeln für die Bearbeitungs- und Leseansicht.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=textgröße zoom
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Schnellanpassung der Schriftgröße
@@ -673,6 +753,10 @@ translation=Thema
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Verwalte installierte Themen und durchsuche von der Community erstellte Designs.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=community durchsuchen installieren herunterladen
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Native Menüs
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Der Menü-Stil wird an die Systemeinstellung angepasst. Das gewählte Farbschema hat darauf keinen Einfluss.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Themen neu laden
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Themen wurden neu geladen.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Themen-Ordner öffnen
@@ -706,13 +782,21 @@ translation=Themen-Ordner öffnen
 original=CSS snippets
 translation=CSS-Bausteine
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Verwalte deine Sammlung von CSS-Dateien, um die Darstellung der App anzupassen.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Keine CSS-Bausteine gefunden.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} aktiviert
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS-Bausteine sind in "{{path}}" gespeichert.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Mit CSS-Snippets kannst du die Darstellung von Obsidian anpassen. Lege CSS-Dateien in „{{path}}“ ab, damit sie hier erscheinen.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=CSS-Baustein-Ordner öffnen
 original=Reloaded CSS snippets.
 translation=CSS-Bausteine wurden neu geladen.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=CSS-Baustein unter "{{path}}" anwenden.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Snippets suchen...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=Du hast derzeit {{count}} Thema installiert.
 original=You currently have {{count}} themes installed.
 translation=Du hast derzeit {{count}} Themen installiert.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Einstellungen in neuem Fenster öffnen
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Öffnet die Einstellungen in einem eigenen Fenster, statt sie in die App einzubetten.
+
+[setting.interface.name]
+original=Interface
+translation=Oberfläche
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Erweitert
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Tastenkürzel
@@ -909,14 +1013,6 @@ translation=Zeige {{count}} Tastenkürzel.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Zeige {{count}} Tastenkürzel. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} Befehl mit Konflikten.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} Befehle mit Konflikten.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Tastenkürzel drücken...
 original=All
 translation=Alle
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Konflikte ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Nicht zugewiesen
@@ -945,6 +1045,10 @@ translation=Zugewiesen
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Von mir zugewiesen
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Keine Ergebnisse gefunden.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Eingeschränkter Modus
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Eingeschränkter Modus ist abgeschaltet. Schalte ihn ein, um Community-Erweiterungen zu deaktivieren.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Aktiviere den Eingeschränkten Modus, um die App ohne externe Erweiterungen zu verwenden.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=Community-Erweiterungen
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Durchsuche und installiere von unserer großartigen Community erstellte Erweiterungen.
+original=Browse and install community plugins made by the community.
+translation=Durchsuche und installiere externe Erweiterungen, die von der Community erstellt wurden.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Durchsuchen
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Eingeschränkten Modus verlassen
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Trotz all unserer Bemühungen besteht dennoch die Möglichkeit, dass eine Community-Erweiterung sich unangemessen verhält.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Erste Code-Überprüfung
+original=Code review
+translation=Code-Überprüfung
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Erweiterungen werden von unserem Team einer Code-Überprüfung unterzogen, bevor sie in der offiziellen Plugin-Liste erscheinen.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Erweiterungen im offiziellen Community-Verzeichnis werden nach jeder Aktualisierung automatisch überprüft.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Meldesystem
 original=We follow up and remove faulty plugins upon user report.
 translation=Wir verfolgen und entfernen fehlerhafte Plugins nach Meldung durch unsere Anwender.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Möchtest du den eingeschränkten Modus verlassen, um Community-Erweiterungen zu verwenden? Wir empfehlen dringend, vorher eine Sicherungskopie deiner Daten zu erstellen.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Erfahre mehr zur Sicherheit von Erweiterungen
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Community-Erweiterungen aktivieren
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Externe Erweiterungen zulassen
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Erweiterungen können beliebigen Code auf deinem Gerät ausführen. Wir empfehlen, deine Daten zu sichern, bevor du sie aktivierst.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Installierte Erweiterungen erneut aktivieren
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation={{count}} zuvor installierte Erweiterung wiederherstellen.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation={{count}} zuvor installierte Erweiterungen wiederherstellen.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Erweiterungsinfos anzeigen
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Aktivierte Erweiterungen
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Diese Erweiterungen werden aktiviert, wenn der Eingeschränkte Modus verlassen wird.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Deaktivieren
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Öffentlichen Link kopieren
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Details anzeigen
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Community-Seite öffnen
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Einstellungen
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=Installierte Erweiterungen durchsuchen...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Nur installierte anzeigen
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Keine Erweiterungen installiert.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Erweiterung “{{plugin}}” konnte nicht geladen werden
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Beim Laden der Erweiterung “{{plugin}}” ist ein Fehler aufgetreten
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} wurde nicht geladen. Diese Erweiterung ist nicht mit Obsidian v{{version}} kompatibel.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} funktioniert nicht mehr. Wir empfehlen, sie zu deinstallieren.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Die Erweiterung {{plugin}} v{{version}} konnte nicht geladen werden. Es wurde gemeldet, dass diese Version Probleme verursacht. Bitte prüfe, ob eine neuere Version der Erweiterung verfügbar ist.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Leseansicht
 [interface.menu.add-property]
 original=Add file property
 translation=Dateieigenschaften hinzufügen
+
+[interface.menu.delete]
+original=Delete
+translation=Löschen
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=Es existieren {{count}} Links, die auf diese Datei verweisen.
 original=Delete file
 translation=Datei löschen
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Aktion über externen Link ausführen?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Die Aktion „{{action}}“ wird gleich ausgeführt. Fahre nur fort, wenn du der Quelle des Links vertraust.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Die Erweiterung „{{source}}“ wird gleich die Aktion „{{action}}“ ausführen. Fahre nur fort, wenn du der Quelle des Links vertraust.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Für „{{action}}“ nicht erneut fragen
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Anhänge herunterladen
@@ -3993,6 +4169,18 @@ translation=Bestätigen
 [dialogue.button-cancel]
 original=Cancel
 translation=Abbrechen
+
+[dialogue.button-allow]
+original=Allow
+translation=Zulassen
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Einmal erlauben
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Immer erlauben
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Zeigt alle Dateitypen an, inklusive solcher, die Obsidian nicht öff
 original=Graph view
 translation=Graph-Ansicht
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokales Diagramm
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=Zeigt Beziehungen zwischen deinen Notizen in einer graphischen Übersicht.
@@ -5686,9 +5878,13 @@ translation=zum Schließen
 original=No commands found.
 translation=Keine Befehle gefunden.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Gib einen Befehl ein...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Befehl hinzufügen...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Befehl auswählen...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=Anzahl der Wörter
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Zeigt die Anzahl der Wörter in der Statusleiste an.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Mermaid-Diagramme in diesem Vault anzeigen?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Nur zulassen, wenn du den Inhalten dieses Vaults vertraust.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Gib die Email-Adresse ein...
 original=Please enter a valid email to invite someone.
 translation=Bitte gib eine gültige Email-Adresse ein, um jemanden einzuladen.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Bitte aktiviere das Publish-Kernplugin in Einstellungen -> Obsidian-Erweiterungen, um Websites anzuzeigen.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Deine Websites
@@ -7662,6 +7862,22 @@ translation=Installierte externe Erweiterungen
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Synchronisiert installierte Community-Erweiterungen (.js, .css, und manifest.json Dateien) und deren Einstellungen.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Synchronisierte Erweiterungen auf diesem Gerät ausführen lassen?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync kann den Inhalt von Erweiterungen, die mit diesem Gerät synchronisiert wurden, nicht überprüfen. Sie können sich von den im Community-Verzeichnis veröffentlichten Erweiterungen unterscheiden.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Aktiviere dies nur, wenn der Vault und die verbundenen Geräte vertrauenswürdig sind.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ja, Erweiterungssynchronisierung aktivieren
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync wird noch geladen, bitte aktualisiere diese Seite später.
@@ -8277,6 +8493,10 @@ translation=Seite konnte nicht geladen werden.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Stelle sicher, dass die Adresse korrekt geschrieben ist.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Leseransicht
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Zusammenfassen...
 original=Group by this property
 translation=Nach dieser Eigenschaft gruppieren
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Spaltengröße ändern...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Spaltengröße zurücksetzen
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Zum Ändern der Größe ziehen
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Werte löschen
@@ -10065,3 +10297,87 @@ translation={{count}} Thema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} Themen
+
+[main.button-cancel]
+original=Cancel
+translation=Abbrechen
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopieren
+
+[main.button-open-link]
+original=Open Link
+translation=Link öffnen
+
+[main.button-open-file]
+original=Open this file
+translation=Diese Datei öffnen
+
+[main.button-run-file]
+original=Run File
+translation=Datei ausführen
+
+[main.external-link-title]
+original=Open external link?
+translation=Externen Link öffnen?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Dieser Link öffnet eine externe Anwendung außerhalb von Obsidian. Fahre nur fort, wenn du der Quelle dieses Links vertraust.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation={{scheme}}://-Links immer öffnen
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Warnung zu Remote-Datei
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Diese Datei befindet sich auf einem Remote-Server und kann gefährlich sein.\nMöchtest du sie wirklich öffnen?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Speicherort: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Zugriff auf Netzlaufwerk
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Dieser Inhalt fordert Daten von einem Netzlaufwerk an. Wenn du dies zulässt, können deine Anmeldedaten oder andere vertrauliche Informationen dem Remote-Host offengelegt werden.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Host: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Zulassen
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Ausführbare Datei ausführen?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Dieser Link verweist auf eine ausführbare Datei. Sie auszuführen könnte deinem Computer schaden.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Datei: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Vault nicht gefunden.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Für die URL {{url}} konnte kein Vault gefunden werden

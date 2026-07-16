@@ -748,11 +748,11 @@ translation=Invia crediti
 
 [account.gift.send_intro]
 original=You can send Obsidian Credit to anyone, such as friends, family, and coworkers. Credit can be used to pay for any Obsidian license or service. The minimum you can send is $5\u00a0USD.
-translation=Puoi inviare un Crediti Obsidian a chiunque, come amici, familiari e colleghi. Il credito può essere usato per pagare qualsiasi licenza o servizio Obsidian. L’importo minimo che puoi inviare è 5$\u00a0USD.
+translation=Puoi inviare Crediti Obsidian a chiunque, come amici, familiari e colleghi. Il credito può essere usato per pagare qualsiasi licenza o servizio Obsidian. L’importo minimo che puoi inviare è 5$\u00a0USD.
 
 [account.gift.send_only_purchased]
 original=You may only send credit which you purchased. Credit received from another account may not be sent.
-translation=Puoi inviare solo crediti da te acquistato. I crediti ricevuto da un altro account non può essere inviato.
+translation=Puoi inviare solo crediti che hai acquistato. I crediti ricevuti da un altro account non possono essere inviati.
 
 [account.gift.send_title]
 original=Send credit
@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=Conversione di valuta PayPal
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=Se sei abbonato con PayPal, clicca qui per aggiornare il tuo abbonamento.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=Se ti sei abbonato con PayPal, {{link}} per aggiornare il tuo abbonamento.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=clicca qui
 
 [account.payment.update]
 original=Update
@@ -2096,7 +2100,7 @@ translation=Consulta\u00a0le\u00a0nostre\u00a0FAQ.
 
 [buy.license.org_desc]
 original=Your organization should have at least one seat per Obsidian user. Organizations with 25 licenses or more can be featured as a supporting organization.
-translation=La tua organizzazione dovrebbe disporre di almeno un utente per ogni persona che fa uso di Obsidian. Le organizzazioni che detengono 25 o più licenze possono godere in esclusiva dello status di organizzazioni sostenitrici.
+translation=La tua organizzazione dovrebbe disporre di almeno un posto per ogni utente Obsidian. Le organizzazioni con 25 o più licenze possono essere messe in evidenza come organizzazioni sostenitrici.
 
 [buy.license.questions]
 original=Questions? {{link}}
@@ -2406,10 +2410,6 @@ translation=Inizia
 original=Help
 translation=Aiuto
 
-[nav.join_community]
-original=Join the community
-translation=Entra a far parte della community
-
 [nav.learn]
 original=Learn
 translation=Impara
@@ -2485,6 +2485,14 @@ translation=Hai trovato un collegamento non\u00a0risolto.
 [pages.about.about]
 original=About Obsidian
 translation=Informazioni su Obsidian
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=Obsidian è reso possibile dai nostri fantastici collaboratori e dalla nostra comunità di volontari. Scopri di più nella pagina {{link}}.
+
+[pages.about.credits_link]
+original=Credits
+translation=Riconoscimenti
 
 [pages.about.durable]
 original=Durable
@@ -2644,7 +2652,7 @@ translation=Spazio infinito per fare ricerche, brainstorming, creare diagrammi e
 
 [pages.canvas.meta_desc]
 original=Obsidian Canvas gives you infinite space to research, brainstorm, diagram, and lay out your ideas.
-translation=Obsidian Canvas ti fornisce uno spazio infinito per fare ricerche, brainstorming, creare diagrammi e organizzare le tue idee. 
+translation=Obsidian Canvas ti fornisce uno spazio infinito per fare ricerche, brainstorming, creare diagrammi e organizzare le tue idee.
 
 [pages.canvas.meta_title]
 original=Obsidian Canvas - Visualize your ideas
@@ -2762,17 +2770,13 @@ translation=Tutto ciò che puoi fare in Obsidian, lo puoi fare dalla riga di com
 original=Install Obsidian CLI
 translation=Installa Obsidian CLI
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=Un symlink è creato in `/usr/local/bin/obsidian` (richiede sudo). Se sudo non funziona, ricorre a\u00a0`~/.local/bin`.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=Un symlink è creato automaticamente. Se l’operazione non va a buona fine, creane uno manualmente che punti all’export\u00a0Flatpak.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=Il file binario CLI viene copiato in `~/.local/bin/obsidian`. Assicurati che `~/.local/bin` sia nel tuo\u00a0PATH.
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
-translation=La registrazione aggiunge il file binario di Obsidian al tuo PATH tramite `~/.zprofile`. Se usi bash o fish, aggiungi manualmente il percorso alla configurazione della tua\u00a0shell.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
+translation=La registrazione crea un collegamento simbolico in `/usr/local/bin/obsidian`. Questo richiede privilegi di amministratore. Ti verrà mostrata una finestra di sistema.
 
 [pages.cli.install_step1]
 original=Update Obsidian
@@ -2788,7 +2792,7 @@ translation=Attiva il CLI
 
 [pages.cli.install_step2_desc]
 original=Enable **Command line interface** in **Settings** → **General**.
-translation=Abilita **Interfaccia a riga di comando** in **Impostazioni** → **Informazioni**. 
+translation=Abilita **Interfaccia a riga di comando** in **Impostazioni** → **Informazioni**.
 
 [pages.cli.install_step3]
 original=Register the CLI
@@ -2824,7 +2828,7 @@ translation=Automatizza la routine mattutina
 
 [pages.cli.mock_ex_auto_unresolved]
 original=Check for unresolved links
-translation=Cerca collegamenti non risolti 
+translation=Cerca collegamenti non risolti
 
 [pages.cli.mock_ex_create]
 original=Create a new note from template
@@ -2896,7 +2900,7 @@ translation=terminale
 
 [pages.cli.mock_val_01]
 original=Buy groceries
-translation=Fai la spesa 
+translation=Fai la spesa
 
 [pages.cli.mock_val_02]
 original=Check calendar
@@ -3072,7 +3076,7 @@ translation=I template ti consentono di personalizzare il modo in cui le pagine 
 
 [pages.clipper.capture_title]
 original=Easily capture pages and metadata to durable files you can read\u00a0offline.
-translation=Cattura e salva facilmente le pagine ed i metadati su dei file duraturi che puoi leggere pure\u00a0offline.
+translation=Cattura facilmente pagine e metadati in file duraturi che puoi leggere anche\u00a0offline.
 
 [pages.clipper.clip]
 original=Clip
@@ -3080,7 +3084,7 @@ translation=Ritaglia
 
 [pages.clipper.clip_desc]
 original=your highlights to Obsidian in one\u00a0click.
-translation=i tuoi highlight in Obsidian con un solo\u00a0click.
+translation=le tue evidenziazioni in Obsidian con un solo\u00a0clic.
 
 [pages.clipper.custom_templates]
 original=Custom templates
@@ -3116,7 +3120,7 @@ translation=Salva\u00a0il\u00a0web.
 
 [pages.clipper.hero_desc]
 original=Highlight and capture web pages in your favorite\u00a0browser. Save anything and everything with just one\u00a0click.
-translation=Evidenzia e cattura le pagine dal web nel tuo browser\u00a0preferito. Salva qualsiasi cosa e ogni elemento ti serva con un solo\u00a0click.
+translation=Evidenzia e cattura pagine web nel tuo browser\u00a0preferito. Salva tutto ciò che ti serve con un solo\u00a0clic.
 
 [pages.clipper.highlight]
 original=Highlight
@@ -3124,7 +3128,7 @@ translation=Evidenzia
 
 [pages.clipper.highlight_desc]
 original=Easily highlight important passages you want to save to Obsidian. Your highlights are always visible, so you can revisit them when you return to a\u00a0page.
-translation=Evidenzia facilmente i passaggi importanti che desideri salvare su Obsidian. Le tue annotazioni saranno sempre visibili, così potrai rivederle quando torni su una data\u00a0pagina.
+translation=Evidenzia facilmente i passaggi importanti che desideri salvare su Obsidian. Le tue evidenziazioni saranno sempre visibili, così potrai rivederle quando torni su una\u00a0pagina.
 
 [pages.clipper.highlight_text]
 original=Highlight
@@ -3148,7 +3152,7 @@ translation=Manipola i dati della pagina
 
 [pages.clipper.manipulate_desc]
 original=Powerful {{link}} allow you to modify page data before it’s saved to your\u00a0vault.
-translation=Delle potenti {{link}} ti consentono di modificare tutti i dati della pagina prima che questa venga salvata nel tuo\u00a0vault.
+translation=Potenti {{link}} ti consentono di modificare i dati della pagina prima che vengano salvati nel tuo\u00a0vault.
 
 [pages.clipper.manipulate_desc_link]
 original=templating features
@@ -3168,7 +3172,7 @@ translation=Nessun vincolo
 
 [pages.clipper.no_lockin_desc]
 original=Your clips are saved to durable Markdown files. All your highlights and settings are exportable to\u00a0JSON.
-translation=I tuoi ritagli sono salvati in duraturi file Markdown. Tutte le tue annotazioni o impostazioni sono esportabili in formato\u00a0JSON.
+translation=I tuoi ritagli sono salvati in file Markdown duraturi. Tutte le tue evidenziazioni e impostazioni sono esportabili in formato\u00a0JSON.
 
 [pages.clipper.private]
 original=Stay private
@@ -3176,7 +3180,7 @@ translation=Mantieni la riservatezza
 
 [pages.clipper.private_desc]
 original=All your clipped content is stored locally in your Obsidian vault. Your thoughts are yours.
-translation=Tutti contenuti che hai salvato sono archiviati localmente nel tuo vault Obsidian. I tuoi pensieri sono tuoi.
+translation=Tutti i contenuti che hai salvato sono archiviati localmente nel tuo vault Obsidian. I tuoi pensieri sono tuoi.
 
 [pages.clipper.recipes]
 original=Recipes
@@ -3184,7 +3188,7 @@ translation=Ricette
 
 [pages.clipper.recipes_desc]
 original=with ingredients, steps, and\u00a0nutrition.
-translation=con ingredienti, procedimento, e\u00a0valori\u00a0nutrizionali.
+translation=con ingredienti, procedimento e\u00a0valori\u00a0nutrizionali.
 
 [pages.clipper.references]
 original=References
@@ -4042,22 +4046,6 @@ translation=Obsidian Mobile è fulmineo, così puoi annotare le cose prima di\u0
 original=With the customizable toolbar and touch-friendly gestures, zip around your second brain with\u00a0ease.
 translation=Grazie alla barra degli strumenti personalizzabile e le gesture touch-friendly, naviga nel tuo secondo cervello con estrema\u00a0facilità.
 
-[pages.plugins.api_docs_btn]
-original=API Docs
-translation=Documentazione API
-
-[pages.plugins.hero_desc]
-original=Explore {{count}} Obsidian plugins made by the community.
-translation=Esplora {{count}} plugin Obsidian realizzati dalla community.
-
-[pages.plugins.meta_desc]
-original=With thousands of plugins and our open API, it’s easy to tailor Obsidian to fit your personal workflow.
-translation=Con migliaia di plugin e la nostra API aperta, è facile adattare Obsidian al tuo flusso di lavoro personale.
-
-[pages.plugins.search]
-original=Search plugins...
-translation=Cerca plugin...
-
 [pages.pricing.addons_desc]
 original=Optional add-on services make it easy to sync and publish your\u00a0notes.
 translation=I servizi aggiuntivi opzionali facilitano la sincronizzazione e la pubblicazione delle tue\u00a0note.
@@ -4069,10 +4057,6 @@ translation=Badge della comunità
 [pages.pricing.bulk_desc]
 original=For bulk purchases and other inquiries, contact us at {{link}}
 translation=Per acquisti in gran quantità e altre richieste, contattaci all’indirizzo {{link}}
-
-[pages.pricing.bulk_desc_link]
-original=sup<!--break spam-->port@obsidian.md
-translation=sup<!--break spam-->port@obsidian.md
 
 [pages.pricing.collaborate]
 original=Collaborate on shared vaults
@@ -4099,8 +4083,8 @@ original=our\u00a0values
 translation=nostri\u00a0valori
 
 [pages.pricing.faq_a_commercial]
-original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
-translation=No. Non sei <em>obbligato</em> a pagare per una licenza commerciale, tuttavia se stai usando Obsidian per lavoro all’interno di un’organizzazione ti incoraggiamo ad acquistare una licenza commerciale per mantenere Obsidian indipendente e supportata al 100% dagli utenti. {{link}}
+original=No. You are not *required* to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
+translation=No. Non sei *obbligato* a pagare per una licenza commerciale, tuttavia se stai usando Obsidian per lavoro all’interno di un’organizzazione ti incoraggiamo ad acquistare una licenza commerciale per mantenere Obsidian indipendente e supportata al 100% dagli utenti. {{link}}
 
 [pages.pricing.faq_a_data_1]
 original=Obsidian is a private and secure space for your thoughts. You can use our apps without sharing any personal information, and your data is stored locally on your device, making it inaccessible to us. Additionally, our apps do not collect telemetry data, and we never sell user data.
@@ -4316,7 +4300,7 @@ translation=Il modo più semplice per pubblicare la tua wiki, base di conoscenza
 
 [pages.publish.hosting]
 original=Hosting for your site up to 4GB
-translation=Hosting per il tuo sito fino a 4GB.
+translation=Hosting per il tuo sito fino a 4GB
 
 [pages.publish.hover_previews_desc]
 original=Display a popover preview of the linked page when you hover over it, like\u00a0Wikipedia.
@@ -4364,7 +4348,7 @@ translation=Definisci il tuo dominio personalizzato.
 
 [pages.publish.mock_pub_enter_password]
 original=Enter password...
-translation=Inserici password...
+translation=Inserisci password...
 
 [pages.publish.mock_pub_indexing]
 original=Disallow search engine indexing
@@ -4380,7 +4364,7 @@ translation=Logo
 
 [pages.publish.mock_pub_logo_desc]
 original=Pick an image for your site.
-translation=Scegli un immagine per il tuo sito.
+translation=Scegli un'immagine per il tuo sito.
 
 [pages.publish.mock_pub_password_protected]
 original=This site is password protected
@@ -4392,7 +4376,7 @@ translation=Reindirizza al tuo dominio
 
 [pages.publish.mock_pub_redirect_desc]
 original=Visitors to your site will be redirected.
-translation=I visitatori del tuo sito verrano reindirizzati.
+translation=I visitatori del tuo sito verranno reindirizzati.
 
 [pages.publish.mock_pub_settings]
 original=Site settings
@@ -4444,7 +4428,7 @@ translation=Rendi pubbliche le tue modifiche in pochi tocchi, anche dai tuoi dis
 
 [pages.publish.seamless]
 original=A seamless publishing experience
-translation=Un’esperienza di pubblicazione fluida.
+translation=Un’esperienza di pubblicazione fluida
 
 [pages.publish.seamless_desc]
 original=Publish is built into Obsidian so you can write, collaborate, and publish seamlessly.
@@ -4456,7 +4440,7 @@ translation=SEO di prima classe
 
 [pages.publish.seo_desc]
 original=Your Publish site is automatically optimized for search engines and social sharing cards. You can even customize metadata with descriptions, slugs, and images, on a page-by-page\u00a0level.
-translation=Il tuo sito Publish è ottimizzato automaticamente per i motori di ricerca e le schede di condivisione sui social. Puoi persino personalizzare i metadata con descrizioni, slug o immagini, a livello di singola\u00a0pagina.
+translation=Il tuo sito Publish è ottimizzato automaticamente per i motori di ricerca e le schede di condivisione sui social. Puoi persino personalizzare i metadati con descrizioni, slug e immagini, a livello di singola\u00a0pagina.
 
 [pages.publish.seo_mobile]
 original=SEO and mobile performance
@@ -4464,7 +4448,7 @@ translation=SEO e prestazioni mobile
 
 [pages.publish.stacked_pages_desc]
 original=Make links open in horizontal panes that you can browse like a stack of pages on a\u00a0desk.
-translation=Crea collegamenti che si aprono in riquadri orizzontali che puoi sfogliare come una pila di pagina su una\u00a0scrivania.
+translation=Apri i collegamenti in riquadri orizzontali che puoi sfogliare come una pila di pagine su una\u00a0scrivania.
 
 [pages.publish.themes_desc]
 original=The look of your Obsidian Publish site can be fully customized with CSS and Javascript.
@@ -4480,7 +4464,7 @@ translation=Attivo
 
 [pages.roadmap.detail_desc]
 original=For more detail about individual releases see the {{link1}}. Have a feature request? Visit the {{link2}}.
-translation=Per maggiori dettagli sulle singoli versioni, vedi {{link1}}. Vuoi proporre una funzionalità? Visita il {{link2}}
+translation=Per maggiori dettagli sulle singole versioni, vedi {{link1}}. Vuoi proporre una funzionalità? Visita il {{link2}}
 
 [pages.roadmap.detail_desc_link1]
 original=Changelog
@@ -4508,7 +4492,7 @@ translation=Test di penetrazione e revisione del codice sorgente delle app Obsid
 
 [pages.security.audit_2024_desc]
 original=Penetration test and source code audit of Obsidian apps. Covers all client code, with particular attention to hardening the **Web viewer** plugin ahead of its release. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
-translation=Test di penetrazione e revisione del codice sorgente delle app Obsidian. Copre tutto il codice client, con particolare attenzione al rafforzamento del plugin **Web viewer** prima del suo rilascio. A seguito di questo testo, il team di Cure53 ha riferito che tutte le vulnerabilità sono state risolte e che le raccomandazioni sono state seguite.
+translation=Test di penetrazione e revisione del codice sorgente delle app Obsidian. Copre tutto il codice client, con particolare attenzione al rafforzamento del plugin **Web viewer** prima del suo rilascio. A seguito di questo test, il team di Cure53 ha riferito che tutte le vulnerabilità sono state risolte e che le raccomandazioni sono state seguite.
 
 [pages.security.audited_by]
 original=Audited by
@@ -4565,6 +4549,14 @@ translation=Informazioni correlate
 [pages.security.report_issue]
 original=Report a security issue
 translation=Segnala un problema di sicurezza
+
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Audit dell'API, del server e della crittografia di Obsidian Sync. A seguito di questo test, il team di Cure53 ha riferito che tutte le vulnerabilità sono state risolte e che le raccomandazioni sono state seguite.
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=Audit dell'API, del server e della crittografia di Obsidian Sync, con particolare attenzione all'aggiornamento della crittografia di agosto 2025. Tutti i risultati sono stati affrontati tramite correzioni e divulgazioni validate dagli auditor.
 
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
@@ -4632,7 +4624,7 @@ translation=Obsidian è disponibile su tutte le principali piattaforme, quindi p
 
 [pages.sync.cross_platform_desc_link]
 original=headless on a\u00a0server.
-translation=terminale headless su\u00a0server.
+translation=in modalità headless su\u00a0server.
 
 [pages.sync.e2e_desc]
 original=Your data is automatically secured using AES\u2011256, the strongest encryption standard. With Obsidian\u00a0Sync you’re always in total control of your notes. {{link}}
@@ -4716,7 +4708,7 @@ translation=Aggiornabile fino a 100\u00a0GB di spazio d’archiviazione
 
 [pages.sync.vault_settings]
 original=Vault settings
-translation=Impostazioni Vault
+translation=Impostazioni vault
 
 [pages.sync.vault_settings_desc]
 original=Sync your hotkeys, file and editor preferences, or individually set them per device.
@@ -4883,7 +4875,7 @@ original=Monthly
 translation=Mensile
 
 [ui.monthly_billing]
-original=Monthly\u00a0billing
+original=Monthly
 translation=Mensile
 
 [ui.more_browsers]
@@ -4971,5 +4963,6 @@ original=Yearly
 translation=Annuale
 
 [ui.yearly_billing]
-original=Yearly\u00a0billing
+original=Yearly
 translation=Annuale
+

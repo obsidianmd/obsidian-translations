@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=PayPal-Währungsumrechnung
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=Wenn du mit PayPal abonniert hast, klicke hier, um dein Abonnement zu aktualisieren.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=Wenn du dein Abonnement mit PayPal abgeschlossen hast, {{link}}, um dein Abonnement zu aktualisieren.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=klicke hier
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=Erste Schritte
 original=Help
 translation=Hilfe
 
-[nav.join_community]
-original=Join the community
-translation=Zur Community
-
 [nav.learn]
 original=Learn
 translation=Lernen
@@ -2485,6 +2485,14 @@ translation=Sie haben einen nicht aufgelösten\u00a0Link gefunden.
 [pages.about.about]
 original=About Obsidian
 translation=Über Obsidian
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=Obsidian wird durch unsere großartigen Mitwirkenden und unsere Community aus Freiwilligen möglich gemacht. Mehr dazu findest du auf der\u00a0Seite {{link}}.
+
+[pages.about.credits_link]
+original=Credits
+translation=Mitwirkende
 
 [pages.about.durable]
 original=Durable
@@ -2762,17 +2770,13 @@ translation=Alles, was du in Obsidian tun kannst, kannst du auch über die Befeh
 original=Install Obsidian CLI
 translation=Obsidian CLI installieren
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=Ein Symlink wird unter `/usr/local/bin/obsidian` erstellt (erfordert sudo). Falls sudo fehlschlägt, wird auf `~/.local/bin` zurückgegriffen.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=Ein Symlink wird automatisch erstellt. Falls das fehlschlägt, erstelle manuell einen, der auf den Flatpak\u00a0Export zeigt.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=Die CLI-Binärdatei wird nach `~/.local/bin/obsidian` kopiert. Stelle sicher, dass `~/.local/bin` in deinem PATH\u00a0enthalten ist.
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
-translation=Die Registrierung fügt die Obsidian-Binärdatei über `~/.zprofile` zu deinem PATH hinzu. Wenn du bash oder fish verwendest, füge den Pfad manuell zu deiner Shell-Konfiguration\u00a0hinzu.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
+translation=Bei der Registrierung wird ein Symlink unter `/usr/local/bin/obsidian` erstellt. Dafür sind Administratorrechte erforderlich. Du wirst über einen Systemdialog dazu aufgefordert.
 
 [pages.cli.install_step1]
 original=Update Obsidian
@@ -4042,22 +4046,6 @@ translation=Obsidian Mobile ist blitzschnell, damit du Dinge notieren kannst, be
 original=With the customizable toolbar and touch-friendly gestures, zip around your second brain with\u00a0ease.
 translation=Mit der anpassbaren Symbolleiste und für Berührung optimierten Gesten bewegst du dich mühelos durch dein zweites\u00a0Gehirn.
 
-[pages.plugins.api_docs_btn]
-original=API Docs
-translation=API-Doku
-
-[pages.plugins.hero_desc]
-original=Explore {{count}} Obsidian plugins made by the community.
-translation=Entdecke {{count}} Obsidian-Erweiterungen aus der\u00a0Community.
-
-[pages.plugins.meta_desc]
-original=With thousands of plugins and our open API, it’s easy to tailor Obsidian to fit your personal workflow.
-translation=Mit Tausenden von Erweiterungen und unserer offenen API kannst du Obsidian ganz einfach an deinen persönlichen Workflow\u00a0anpassen.
-
-[pages.plugins.search]
-original=Search plugins...
-translation=Erweiterungen suchen...
-
 [pages.pricing.addons_desc]
 original=Optional add-on services make it easy to sync and publish your\u00a0notes.
 translation=Optionale Zusatzdienste machen es einfach, deine\u00a0Notizen zu synchronisieren und zu veröffentlichen.
@@ -4069,10 +4057,6 @@ translation=Community-Abzeichen
 [pages.pricing.bulk_desc]
 original=For bulk purchases and other inquiries, contact us at {{link}}
 translation=Für Großeinkäufe und andere Anfragen kontaktiere uns unter {{link}}
-
-[pages.pricing.bulk_desc_link]
-original=sup<!--break spam-->port@obsidian.md
-translation=sup<!--break spam-->port@obsidian.md
 
 [pages.pricing.collaborate]
 original=Collaborate on shared vaults
@@ -4099,8 +4083,8 @@ original=our\u00a0values
 translation=unsere\u00a0Werte
 
 [pages.pricing.faq_a_commercial]
-original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
-translation=Nein. Du bist nicht <em>verpflichtet</em>, für eine kommerzielle Lizenz zu bezahlen. Wenn du Obsidian jedoch beruflich in einer Organisation nutzt, empfehlen wir dir den Kauf einer kommerziellen Lizenz, damit Obsidian unabhängig und zu 100\u00a0% von Nutzern unterstützt bleibt. {{link}}
+original=No. You are not *required* to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
+translation=Nein. Du bist nicht *verpflichtet*, für eine kommerzielle Lizenz zu bezahlen. Wenn du Obsidian jedoch beruflich in einer Organisation nutzt, empfehlen wir dir den Kauf einer kommerziellen Lizenz, damit Obsidian unabhängig und zu 100\u00a0% von Nutzern unterstützt bleibt. {{link}}
 
 [pages.pricing.faq_a_data_1]
 original=Obsidian is a private and secure space for your thoughts. You can use our apps without sharing any personal information, and your data is stored locally on your device, making it inaccessible to us. Additionally, our apps do not collect telemetry data, and we never sell user data.
@@ -4566,6 +4550,14 @@ translation=Verwandte Informationen
 original=Report a security issue
 translation=Ein Sicherheitsproblem melden
 
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Audit der Obsidian Sync API, des Servers und der Kryptografie. Nach diesem Test berichtete das Cure53-Team, dass alle Schwachstellen behoben wurden und die Empfehlungen befolgt\u00a0wurden.
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=Audit der Obsidian Sync API, des Servers und der Kryptografie, mit besonderem Fokus auf das Verschlüsselungs-Upgrade vom August 2025. Alle Befunde wurden durch Korrekturen und von den Prüfern validierte Offenlegungen behoben.
+
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
 translation=Sync-Sicherheits-FAQs
@@ -4883,7 +4875,7 @@ original=Monthly
 translation=Monatlich
 
 [ui.monthly_billing]
-original=Monthly\u00a0billing
+original=Monthly
 translation=Monatlich
 
 [ui.more_browsers]
@@ -4971,5 +4963,6 @@ original=Yearly
 translation=Jährlich
 
 [ui.yearly_billing]
-original=Yearly\u00a0billing
+original=Yearly
 translation=Jährlich
+

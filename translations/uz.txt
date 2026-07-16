@@ -10,6 +10,10 @@ translation=Plaginlar
 original=Core plugins
 translation=O'rnatilgan plaginlar
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Plaginlar roʻyxatida ko‘rsatish
+
 [setting.plugin-options]
 original=Plugin options
 translation=Plaginlar
@@ -22,9 +26,41 @@ translation=Misol: papka 1/papka 2
 original=Example: folder/note
 translation=Misol: papka/izoh
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Fayl tanlanmagan
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Bu parametrni o'zgartirish uchun dasturni qayta ishga tushirish talab etiladi.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Noto‘g‘ri raqam
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Qiymat kamida {{min}} bo‘lishi kerak
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Qiymat ko‘pi bilan {{max}} bo‘lishi kerak
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Fayl topilmadi.
+
+[setting.search-settings]
+original=Search settings...
+translation=Sozlamalarni qidirish...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Sozlamalar topilmadi.
+
+[setting.search-show-more]
+original={{count}} more
+translation=Yana {{count}} ta
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=O'ngdan chapga yo'nalish (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Esdaliklarning matn yo'nalishini o'ngdan chapga belgilash.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Eslatmalarda Mermaid diagrammalarini ko‘rsatish
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=“mermaid” kod bloklaridan blok-sxemalar, ketma-ketlik diagrammalari va boshqa diagrammalarni ko‘rsatish.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Chiqindiga chiqarilgan fayllar va papkalar
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Chiqindiga chiqarilgan fayllar va papkalar qidiruv natijalarida, havolalarni avtomatik to'ldirishda, Tez o'tishda va Grafikda kamroq ko'rinadigan bo'ladi.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Hozirgi vaqtda hech qanday filtrlash qo'llanilmayapti. Quyida filtr qo'shing.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Istisno qo‘shish...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Quyidagi filtrlarga mos keladigan fayllar va papkalar hozirgi vaqtda chiqindiga chiqarilgan:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Istisnolar qo‘shilmagan.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filtr
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} ta qoida
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} ta qoida
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Istisno qo‘shish
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Yo‘l yoki muntazam ifoda kiriting, masalan: /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filtr bo'sh bo'lishi mumkin emas
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Ismni, yo'lni yoki "/regex/" kiriting...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URI callbacklariga ruxsat berish
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI’lari bilan ishlaganda x-success yoki x-error orqali x-callback-url’dan foydalanishni yoqing.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Ishonchli amallarni boshqaring va URI xatti-harakatini sozlang.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Ishonchli amallar
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Hali ishonchli amallar yo‘q. Tasdiqlangan URI amallari shu yerda ko‘rinadi.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Asosiy tema
 original=Choose Obsidian's default color scheme.
 translation=Obsidian asosiy rang sxemasini tanlash.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=qorong‘i yorug‘ tizim tungi rejim rang sxemasi
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Aksent rangi
@@ -549,6 +621,10 @@ translation=Aksent rangi
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Butun dasturda ishlatiladigan aksent rangini tanlash.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=ajratib ko‘rsatish brend asosiy rang
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Monospace shrift
 original=Set font for places like code blocks and frontmatter.
 translation=Kod bloklari va frontmatter uchun shriftni tanlash.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=Hozirda quyidagi shrift ishlatilmoqda:
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} ta shrift
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=Hozirda quyidagi shriftlar ishlatilmoqda:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} ta shrift
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Shrift hajmi
 original=Font size in pixels that affects editing and reading views.
 translation=Tahrirlash va oldindan ko'rish maydonidagi shrift hajmi pikselda.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=matn o‘lchami kattalashtirish
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Shrift hajmini tez o'zgartirish
@@ -673,6 +753,10 @@ translation=Mavzular
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=O'rnatilgan mavzularni boshqarish va hamjamiyat mavzularini ko'rish.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=hamjamiyat ko‘rib chiqish o‘rnatish yuklab olish
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Tizim kontekst menyusi
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Ilovaning kontekst menyularini tanlangan mavzudan qat'iy nazar operatsion tizimga mos ravishda ko'rsatish.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Mavzularni yangilash
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=CSS mavzular ro'yxati yangilandi.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Mavzular papkasini ochish
@@ -706,13 +782,21 @@ translation=Mavzular papkasini ochish
 original=CSS snippets
 translation=CSS kod parchalari
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Ilova ko‘rinishini sozlash uchun CSS fayllari to‘plamingizni boshqaring.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS kod parchalari papkasida hech narsa topilmadi.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} ta yoqilgan
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS kod parchalari "{{path}}" papkasida saqlanadi.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS parchalari Obsidian ko‘rinishini moslashtirish imkonini beradi. Bu yerda ko‘rinishi uchun CSS fayllarini “{{path}}” jildiga joylashtiring.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Parchalar papkasini ochish
 original=Reloaded CSS snippets.
 translation=CSS parchalar ro'yxati yangilandi.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation="{{path}}" uchun CSS parchasini qo'llash.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Parchalarni qidirish...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=O'rnatilgan mavzular: {{count}}
 original=You currently have {{count}} themes installed.
 translation=O'rnatilgan mavzular: {{count}}
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Sozlamalarni yangi oynada ochish
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Sozlamalarni ilova ichiga joylashtirish o‘rniga alohida oynada ochish.
+
+[setting.interface.name]
+original=Interface
+translation=Interfeys
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Kengaytirilgan
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Klaviatura yorliqlari
@@ -909,14 +1013,6 @@ translation=Klaviatura yorliqlari: {{count}}.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Klaviatura yorliqlari: {{count}}.
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation=To'qnashuvli buyruqlar: {{count}}
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation=To'qnashuvli buyruqlar: {{count}}
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Klaviatura yorliqini bosing...
 original=All
 translation=Hammasi
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Ziddiyatlar ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Tayinlanmagan
@@ -945,6 +1045,10 @@ translation=Tayinlangan
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Mening tayinlanganlarim
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Natijalar topilmadi.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Xavfsiz rejim
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Xavfsiz rejim o'chirilgan. Hamjamiyat plaginlarini o'chirish uchun yoqing.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Ilovadan hamjamiyat plaginlarisiz foydalanish uchun Cheklangan rejimni yoqing.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1539,16 @@ original=Community plugins
 translation=Hamjamiyat plaginlari
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Bizning ajoyib hamjamiyatimiz tomonidan yaratilgan tashqi plaginlarni ko'rish va o'rnatish.
+original=Browse and install community plugins made by the community.
+translation=Hamjamiyat tomonidan yaratilgan hamjamiyat plaginlarini ko‘rib chiqing va o‘rnating.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Ko'rish
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Xavfsiz rejimdan chiqish
+original=Exit Restricted mode
+translation=Cheklangan rejimdan chiqish
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Bizning sa'y-harakatlarimizga qaramay, hamjamiyat plaginlari noto'g'ri ishlash ehtimoli hali ham mavjud.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Kodning dastlabki tekshiruvi
+original=Code review
+translation=Kodni tekshirish
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plaginlar katalogga qo'shilishidan oldin bizning jamoamiz tomonidan dastlabki kod tekshiruvidan o'tadi.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Rasmiy hamjamiyat katalogidagi plaginlar har bir yangilanishdan keyin avtomatik kod tekshiruvidan o‘tadi.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Hisobot mexanizmi
 original=We follow up and remove faulty plugins upon user report.
 translation=Biz foydalanuvchi fikr-mulohazalari asosida ishlamayotgan plaginlarni kuzatamiz va o'chiramiz.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Hamjamiyat plaginlarini yoqish uchun Xavfsiz rejimdan chiqishni xohlaysizmi? Ma'lumotlaringizni zaxiralashni tavsiya qilamiz.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Plaginlarning xavfsizligi haqida ko'proq ma'lumot oling
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Hamjamiyat plaginlarini yoqing
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Hamjamiyat plaginlariga ruxsat berish
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Plaginlar qurilmangizda ixtiyoriy kodni bajarishi mumkin. Ularni yoqishdan oldin ma’lumotlaringizning zaxira nusxasini yaratishni tavsiya qilamiz.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=O‘rnatilgan plaginlarni qayta yoqish
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Avval o‘rnatilgan {{count}} ta plaginni tiklash.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Avval o‘rnatilgan {{count}} ta plaginni tiklash.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Plagin ma’lumotini ko‘rsatish
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Yoqilgan plaginlar
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Cheklangan rejimdan chiqilganda bu plaginlar yoqiladi.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=O'chirish
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Havolani nusxalash
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Tafsilotlarni ko‘rish
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Hamjamiyat sahifasini ochish
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Sozlamalar
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=O'rnatilgan plaginlarni qidirish...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Faqat o'rnatilganlarni ko'rsatish
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=O‘rnatilgan plaginlar yo‘q.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Plaginni “{{plugin}}” yuklab bo‘lmadi
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=“{{plugin}}” plagini yuklanish vaqtida xatolikka uchradi
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} yuklanmadi. Bu plagin Obsidian v{{version}} bilan mos kelmaydi.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} endi ishlamaydi. Uni o‘chirib tashlashni tavsiya qilamiz.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation={{plugin}} plaginining v{{version}} versiyasini yuklab bo‘lmadi. Bu versiya muammolarga sabab bo‘lishi haqida xabar berilgan. Plaginning yangiroq versiyasi mavjudligini tekshiring.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Ko'rish
 [interface.menu.add-property]
 original=Add file property
 translation=Fayl xususiyatini qo'shish
+
+[interface.menu.delete]
+original=Delete
+translation=O‘chirish
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=Hozirda ushbu faylga ishora qiluvchi {{count}} havolalar mavjud.
 original=Delete file
 translation=Faylni o'chirish
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Tashqi havoladan amal ishga tushirilsinmi?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=“{{action}}” amali ishga tushirilmoqchi. Faqat havola manbasiga ishonsangiz davom eting.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=“{{source}}” plagini “{{action}}” amalini ishga tushirmoqchi. Faqat havola manbasiga ishonsangiz davom eting.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=“{{action}}” uchun boshqa so‘ralmasin
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Ilovalarni yuklab olish
@@ -3993,6 +4169,18 @@ translation=Tasdiqlash
 [dialogue.button-cancel]
 original=Cancel
 translation=Bekor qilish
+
+[dialogue.button-allow]
+original=Allow
+translation=Ruxsat berish
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Bir marta ruxsat berish
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Har doim ruxsat berish
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Obsidian tomonidan o'zini ocholmaydigan har qanday kengaytmali fayll
 original=Graph view
 translation=Graf
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Mahalliy graf
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=Grafik ko'rsatishda eslatmalar o'rtasidagi bog'lanishlar.
@@ -5686,9 +5878,13 @@ translation=bekor qilish
 original=No commands found.
 translation=Buyruq topilmadi.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Buyruq nomini kiriting...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Buyruq qo‘shish...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Buyruqni tanlang...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=So'zlar hisoblagichi
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Holat satrida so'zlar sonini ko'rsatadi.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Bu omborda Mermaid diagrammalari ko‘rsatilsinmi?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Faqat bu ombor mazmuniga ishonsangiz ruxsat bering.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Taklif yuborish uchun elektron pochta manzilini kiriting...
 original=Please enter a valid email to invite someone.
 translation=Kimnidir taklif qilish uchun haqiqiy elektron pochta manzilini kiriting.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Saytlarni ko'rish uchun Ixtiyoriy plaginlar bo'limida Nashr qilish plaginini yoqing.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Sizning saytlaringiz
@@ -7662,6 +7862,22 @@ translation=O'rnatilgan uchinchi tomon plaginlari
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=O'rnatilgan uchinchi tomon plaginlarini (fayllar .js, .css va manifest.json) va ularning sozlamalarini sinxronizatsiya qilish.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Sinxronlangan plaginlarga bu qurilmada ishlashga ruxsat berilsinmi?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync bu qurilmaga sinxronlangan plaginlar tarkibini tekshira olmaydi va ular hamjamiyat katalogida e’lon qilingan plaginlardan farq qilishi mumkin.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Buni faqat ombor va ulangan qurilmalarga ishonsangiz yoqing.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ha, plagin sinxronlashni yoqish
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync hali ham yuklanmoqda, iltimos keyinroq ushbu sahifani yangilang.
@@ -8277,6 +8493,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=O‘qish ko‘rinishi
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Xulosa chiqarish...
 original=Group by this property
 translation=Ushbu xususiyat bo‘yicha guruhlash
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Ustun o‘lchamini o‘zgartirish...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Ustun o‘lchamini tiklash
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=O‘lchamini o‘zgartirish uchun sudrang
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Qiymatlarni tozalash
@@ -10065,3 +10297,87 @@ translation=mavzular: {{count}}
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation=mavzular: {{count}}
+
+[main.button-cancel]
+original=Cancel
+translation=Bekor qilish
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Nusxa olish
+
+[main.button-open-link]
+original=Open Link
+translation=Havolani ochish
+
+[main.button-open-file]
+original=Open this file
+translation=Bu faylni ochish
+
+[main.button-run-file]
+original=Run File
+translation=Faylni ishga tushirish
+
+[main.external-link-title]
+original=Open external link?
+translation=Tashqi havola ochilsinmi?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Bu havola Obsidian tashqarisidagi tashqi ilovani ochadi. Faqat bu havola manbasiga ishonsangiz davom eting.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation={{scheme}}:// havolalarini har doim ochish
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Masofaviy fayl ogohlantirishi
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Bu fayl masofaviy serverda joylashgan va xavfli bo‘lishi mumkin.\nUni ochishni xohlaysizmi?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Joylashuv: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Tarmoq diskiga kirish
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Bu kontent tarmoq diskidan ma’lumot so‘ramoqda. Bunga ruxsat berish kirish ma’lumotlaringiz yoki boshqa maxfiy ma’lumotlarni masofaviy hostga oshkor qilishi mumkin.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Host: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Ruxsat berish
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Bajariladigan fayl ishga tushirilsinmi?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Bu havola bajariladigan faylga ishora qiladi. Uni ishga tushirish kompyuteringizga zarar yetkazishi mumkin.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fayl: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Ombor topilmadi.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation={{url}} URL manzili uchun ombor topilmadi

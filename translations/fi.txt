@@ -10,6 +10,10 @@ translation=Lisäosa
 original=Core plugins
 translation=Sisäänrakennetut lisäosat
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Näytä lisäosalistassa
+
 [setting.plugin-options]
 original=Plugin options
 translation=Lisäosan asetukset
@@ -22,9 +26,41 @@ translation=esim. kansio 1/kansio 2
 original=Example: folder/note
 translation=esim. kansio/muistiinpano
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Tiedostoa ei ole valittu
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Tämän asetuksen vaihtaminen vaatii ohjelman uudelleenkäynnistyksen.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Virheellinen luku
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Arvon on oltava vähintään {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Arvon on oltava enintään {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Tiedostoa ei löytynyt.
+
+[setting.search-settings]
+original=Search settings...
+translation=Hae asetuksista...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Asetuksia ei löytynyt.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} lisää
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Oikealta vasemmalle (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Asettaa muistiinpanojen tekstin suunnan näyttämään oikealta vasemmalle.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Näytä Mermaid-kaaviot muistiinpanoissa
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Näytä vuokaaviot, sekvenssikaaviot ja muut kaaviot “mermaid”-koodilohkoista.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Pois jätettävät tiedostot
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Pois jätettävät tiedostot ovat joko piilotettuja tai vähemmän esillä eri paikoissa, kuten pikavaihtimessa, linkkiehdotuksissa, haussa ja verkkonäkymässä.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Poisjättösuodattimia ei ole käytössä. Lisää suodatin alta.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Lisää poissulku...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Alla olevia suodattimia vastaavat tiedostot jätetään tällä hetkellä pois:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Poissulkuja ei ole lisätty.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Suodatin
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} sääntö
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} sääntöä
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Lisää poissulku
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Anna polku tai säännöllinen lauseke, esim. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Suodatin ei voi olla tyhjä
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Syötä polku tai ”/regex/”...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=Salli takaisinkutsuosoitteet
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Sallii x-callback-url-osoitteiden käytön (x-success tai x-error) Obsidian-URI-osoitetta käytettäessä.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Hallitse luotettuja toimintoja ja määritä URI-käyttäytyminen.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Luotetut toiminnot
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Luotettuja toimintoja ei vielä ole. Hyväksytyt URI-toiminnot näkyvät tässä.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Pohjateema
 original=Choose Obsidian's default color scheme.
 translation=Valitse oletuksena käytettävä Obsidian-väriteema.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=tumma vaalea järjestelmä yötila värimalli
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Korostusväri
@@ -549,6 +621,10 @@ translation=Korostusväri
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Valitse sovelluksessa käytettävä korostusväri.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=korostus brändi ensisijainen väri
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Tasalevyinen kirjasin
 original=Set font for places like code blocks and frontmatter.
 translation=Aseta kirjasin tasalevyiselle sisällölle, kuten koodilohkoille ja alkulehdille.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Tällä hetkellä käytössä oleva kirjasin: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} fontti
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Seuraavat kirjasimet ovat tällä hetkellä käytössä:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} fonttia
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Kirjasinkoko
 original=Font size in pixels that affects editing and reading views.
 translation=Kirjasimen koko pikseleissä. Vaikuttaa muokkaus- ja lukunäkymiin.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=tekstin koko suurenna/pienennä zoomaa
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Nopea kirjasinkoon säätö
@@ -673,6 +753,10 @@ translation=Teemat
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Hallinnoi asennettuja teemoja ja selaa yhteisön teemoja.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=yhteisö selaa asenna lataa
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Natiivivalikot
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Sovelluksen valikot tulevat käyttöjärjestelmältä, jolloin teemat eivät vaikuta niihin.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Lataa teemat uudelleen
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Mukautetut CSS-teemat ladattiin uudelleen.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Avaa teemakansio
@@ -706,13 +782,21 @@ translation=Avaa teemakansio
 original=CSS snippets
 translation=CSS-pätkät
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Hallitse CSS-tiedostojen kokoelmaa, jolla voit mukauttaa sovelluksen ulkoasua.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS-pätkiä ei löytynyt pätkäkansiosta.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} käytössä
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS-pätkät ovat kansiossa ”{{path}}”.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS-pätkien avulla voit mukauttaa Obsidian-sovelluksen ulkoasua. Sijoita CSS-tiedostot kansioon ”{{path}}”, jotta ne näkyvät täällä.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Avaa pätkäkansio
 original=Reloaded CSS snippets.
 translation=CSS-pätkät ladattiin uudelleen.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Käytä CSS-pätkää polussa ”{{path}}”.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Hae pätkiä...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=Sinulla on {{count}} teema asennettuna.
 original=You currently have {{count}} themes installed.
 translation=Sinulla on {{count}} teemaa asennettuna.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Avaa asetukset uudessa ikkunassa
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Avaa asetukset omassa ikkunassaan sovellukseen upottamisen sijaan.
+
+[setting.interface.name]
+original=Interface
+translation=Käyttöliittymä
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobiili
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Lisäasetukset
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Pikanäppäimet
@@ -909,14 +1013,6 @@ translation=Näytetään {{count}} pikanäppäin.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Näytetään {{count}} pikanäppäintä. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} komento, jolla on ristiriitoja.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} komentoa, joilla on ristiriitoja.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Paina pikanäppäintä...
 original=All
 translation=Kaikki
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Ristiriidat ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Asettamatta
@@ -945,6 +1045,10 @@ translation=Asetettu
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Minun asettamani
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Tuloksia ei löytynyt.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Rajoitettu tila
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Rajoitettu tila on pois päältä. Laita päälle poistaaksesi yhteisön lisäosat käytöstä.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Ota rajoitettu tila käyttöön käyttääksesi sovellusta ilman yhteisön lisäosia.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=Yhteisön lisäosat
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Selaa ja asenna yhteisön lisäosia, joita meidän mahtava yhteisömme on tehnyt.
+original=Browse and install community plugins made by the community.
+translation=Selaa ja asenna yhteisön tekemiä lisäosia.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Selaa
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Poistu rajoitetusta tilasta
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Ponnisteluistamme huolimatta on aina pieni mahdollisuus, että yhteisön lisäosa voi tehdä jotain sopimatonta.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Alustava koodin tarkastus
+original=Code review
+translation=Koodin tarkastus
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Tiimimme tarkastaa lisäosan koodin ennen kuin lisäosa lisätään viralliselle yhteisön lisäosalistalle.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Virallisen yhteisön lisäosakirjaston lisäosat tarkastetaan automaattisesti joka päivityksen jälkeen.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Ilmoitusjärjestelmä
 original=We follow up and remove faulty plugins upon user report.
 translation=Käyttäjäraporttien pohjalta voimme poistaa väärin toimivia lisäosia.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Haluatko poistua rajoitetusta tilasta ja ottaa käyttöön yhteisön lisäosat? Suosittelemme vahvasti sinua ottamaan varmuuskopion tiedoistasi ennen sitä.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Lue lisää lisäosien turvallisuudesta
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Ota yhteisön lisäosat käyttöön
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Salli yhteisön lisäosat
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Lisäosat voivat suorittaa mielivaltaista koodia laitteellasi. Suosittelemme varmuuskopioimaan tietosi ennen niiden käyttöönottoa.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Ota asennetut lisäosat uudelleen käyttöön
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Palauta {{count}} aiemmin asennettu lisäosa.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Palauta {{count}} aiemmin asennettua lisäosaa.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Näytä lisäosan tiedot
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Käytössä olevat lisäosat
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Nämä lisäosat otetaan käyttöön, kun poistut rajoitetusta tilasta.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Poista käytöstä
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Kopioi jakamislinkki
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Näytä tiedot
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Avaa yhteisösivu
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Asetukset
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=Hae asennetuista lisäosista...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Näytä vain asennetut
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Lisäosia ei ole asennettu.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Lisäosan “{{plugin}}” lataus epäonnistui
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Lisäosaa ”{{plugin}}” ladattaessa tapahtui virhe
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Lisäosaa {{plugin}} ei ladattu. Tämä lisäosa ei ole yhteensopiva Obsidianin version v{{version}} kanssa.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=Lisäosa {{plugin}} ei enää toimi. Suosittelemme poistamaan sen.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Lisäosan {{plugin}} versiota v{{version}} ei voitu ladata. Tämän version on ilmoitettu aiheuttavan ongelmia. Tarkista, onko lisäosasta saatavilla uudempi versio.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Lukunäkymä
 [interface.menu.add-property]
 original=Add file property
 translation=Lisää tiedostolle määre
+
+[interface.menu.delete]
+original=Delete
+translation=Poista
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=Tällä hetkellä {{count}} linkkiä osoittaa tähän tiedostoon.
 original=Delete file
 translation=Poista tiedosto
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Suoritetaanko toiminto ulkoisesta linkistä?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Toimintoa “{{action}}” ollaan suorittamassa. Jatka vain, jos luotat linkin lähteeseen.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Lisäosa “{{source}}” on suorittamassa toimintoa “{{action}}”. Jatka vain, jos luotat linkin lähteeseen.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Älä kysy uudelleen toiminnosta “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Lataa liitteet
@@ -3993,6 +4169,18 @@ translation=Vahvista
 [dialogue.button-cancel]
 original=Cancel
 translation=Peruuta
+
+[dialogue.button-allow]
+original=Allow
+translation=Salli
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Salli kerran
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Salli aina
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Näyttää kaikki tiedostot, vaikka Obsidian ei osaisi itse avata ni
 original=Graph view
 translation=Verkkonäkymä
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lähiverkko
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=Näe muistiinpanosi väliset suhteet helposti.
@@ -5686,9 +5878,13 @@ translation=sulkee
 original=No commands found.
 translation=Komentoja ei löytynyt.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Kirjoita komento...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Lisää komento...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Valitse komento...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=Sanamäärä
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Näyttää sanamäärän tilarivillä.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Näytetäänkö Mermaid-kaaviot tässä holvissa?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Salli vain, jos luotat tämän holvin sisältöön.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Syötä sähköpostiosoite...
 original=Please enter a valid email to invite someone.
 translation=Syötä kutsuttavan henkilön sähköpostiosoite.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Ota julkaisulisäosa käyttöön asetuksista -> Sisäänrakennetut lisäosat katsellaksesi sivustojen sisältöä.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Sivustosi
@@ -7662,6 +7862,22 @@ translation=Asennetut yhteisön lisäosat
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Synkronoi asennetut yhteisön lisäosat (.js-, .css-, ja manifest.json-tiedostot) ja niiden asetukset.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Sallitaanko synkronoitujen lisäosien suorittaminen tällä laitteella?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync ei voi vahvistaa tälle laitteelle synkronoitujen lisäosien sisältöä, ja ne voivat poiketa yhteisökirjastolla julkaistuista lisäosista.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Ota tämä käyttöön vain, jos luotat holviin ja yhdistettyihin laitteisiin.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Kyllä, ota lisäosien synkronointi käyttöön
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync lataa vielä, päivitä sivu myöhemmin.
@@ -8277,6 +8493,10 @@ translation=Sivustoa ei voitu ladata.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Tarkista, että osoite on oikein.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Lukunäkymä
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Yhteenveto...
 original=Group by this property
 translation=Ryhmitä määreen mukaan
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Muuta sarakkeen kokoa...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Palauta sarakkeen koko
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Muuta kokoa raahaamalla
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Tyhjennä arvot
@@ -10065,3 +10297,87 @@ translation={{count}} teema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} teemaa
+
+[main.button-cancel]
+original=Cancel
+translation=Peruuta
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopioi
+
+[main.button-open-link]
+original=Open Link
+translation=Avaa linkki
+
+[main.button-open-file]
+original=Open this file
+translation=Avaa tämä tiedosto
+
+[main.button-run-file]
+original=Run File
+translation=Suorita tiedosto
+
+[main.external-link-title]
+original=Open external link?
+translation=Avataanko ulkoinen linkki?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Tämä linkki avaa ulkoisen sovelluksen Obsidian-sovelluksen ulkopuolella. Jatka vain, jos luotat tämän linkin lähteeseen.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Avaa aina {{scheme}}://-linkit
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Etätiedostovaroitus
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Tämä tiedosto sijaitsee etäpalvelimella ja voi olla vaarallinen.\nHaluatko varmasti avata sen?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Sijainti: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Verkkolevyn käyttö
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Tämä sisältö pyytää tietoja verkkolevyltä. Tämän salliminen voi paljastaa kirjautumistietosi tai muita arkaluonteisia tietoja ulkoiselle tietokoneelle.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Isäntä: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Salli
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Suoritetaanko suoritettava tiedosto?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Tämä linkki osoittaa suoritettavaan tiedostoon. Sen suorittaminen voi vahingoittaa tietokonettasi.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Tiedosto: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Holvia ei löytynyt.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=URL-osoitteelle {{url}} ei löytynyt holvia
