@@ -10,6 +10,10 @@ translation=Плъгин
 original=Core plugins
 translation=Основни пплъгини
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=
+
 [setting.plugin-options]
 original=Plugin options
 translation=Настройки на плъгините
@@ -22,9 +26,41 @@ translation=Пример: папка 1/папка 2
 original=Example: folder/note
 translation=Пример: папка/бележка
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Промяната на тази опция изисква рестартиране за да влезе в сила.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=
+
+[setting.search-settings]
+original=Search settings...
+translation=
+
+[setting.no-search-results]
+original=No settings found.
+translation=
+
+[setting.search-show-more]
+original={{count}} more
+translation=
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Отдясно наляво (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Изключени файлове
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=В момента не се прилага филтър за изключване. Добавете едно по-долу.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Понастоящем са изключени файлове, отговарящи на следните филтри:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Филтър
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation=
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation=
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Филтърът не може да бъде празен
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Enter path or "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=Разрешаване на URI callbacks
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Разрешава използването на x-callback-url чрез x-success или x-error при обработка на Obsidian URI.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Base theme
 original=Choose Obsidian's default color scheme.
 translation=Choose Obsidian’s default color scheme.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Цвят на акцента
@@ -549,6 +621,10 @@ translation=Цвят на акцента
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Изберете цвета на акцента, използван в цялото приложение.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Еднопространствен шрифт
 original=Set font for places like code blocks and frontmatter.
 translation=Задайте шрифт за места като кодови блокове и преден материал.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Приложен в момента шрифт: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation=
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= В момента се прилагат следните шрифтове:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation=
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Размер на шрифта
 original=Font size in pixels that affects editing and reading views.
 translation=Font size in pixels that affects editor and preview.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Бързо регулиране на размера на шрифта
@@ -673,6 +753,10 @@ translation=Теми
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Управлявайте инсталирани теми и преглеждайте теми на общността.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Родни менюта
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Менютата в цялото приложение ще съответстват на операционната система. Те няма да бъдат засегнати от вашата тема.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Презаредете темите
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Презаредени потребителски CSS теми.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Отворете папката с теми
@@ -706,13 +782,21 @@ translation=Отворете папката с теми
 original=CSS snippets
 translation=CSS фрагменти
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=No CSS snippets found in the snippets folder.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation=
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS Snippets are stored in "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS снипетите ви позволяват да персонализирате външния вид на Obsidian. Поставете CSS файловете в „{{path}}“, за да се появят тук.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Отворете папката с фрагменти
 original=Reloaded CSS snippets.
 translation=Презаредени CSS фрагменти.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Apply CSS snippet at "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=В момента имате инсталирана тема {{count
 original=You currently have {{count}} themes installed.
 translation=В момента имате инсталирани {{count}} теми.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=
+
+[setting.interface.name]
+original=Interface
+translation=
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Бързи клавиши
@@ -909,14 +1013,6 @@ translation=Показване на {{count}} клавишна комбинац�
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Показани са {{count}} клавишни комбинации. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} команда с конфликти.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} команди с конфликти.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Натиснете бърз клавиш...
 original=All
 translation=Всички
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Неприсвоен
@@ -945,6 +1045,10 @@ translation=Възложено
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Възложено от мен
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Ограничен режим
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Ограниченият режим е изключен. Включете, за да деактивирате плъгините на общността.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Включете ограничен режим, за да използвате приложението без плъгини на общността.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=Плъгини на общността
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Browse and install third-party plugins made by our amazing community.
+original=Browse and install community plugins made by the community.
+translation=Разглеждайте и инсталирайте плъгини на общността, създадени от общността.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Прегледайте
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Излезте от ограничен режим
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Въпреки усилията ни, все още има малък шанс плъгина на общността да не работи правилно.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Първоначален преглед на кода
+original=Code review
+translation=Преглед на кода
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins undergo an initial code review by our team before they appear in the store.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Плъгините в официалната директория на общността се преглеждат автоматично след всяко обновяване.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Механизъм за докладване
 original=We follow up and remove faulty plugins upon user report.
 translation=Ние проследяваме и премахваме дефектни плъгини при потребителски сигнал.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Искате ли да излезете от ограничения режим, за да активирате плъгините на общността? Силно препоръчваме да направите резервно копие на вашите данни, преди да го направите.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Научете повече за сигурността на плъгините
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Включете плъгините на общността
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Деактивиране
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Копиране на връзката за споделяне
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=Търсете инсталирани плъгини...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Показване само на инсталирани
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Неуспешно зареждане на плъгин „{{plugin}
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Плъгин „{{plugin}}“ срещна грешка при зареждане
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Изглед за четене
 [interface.menu.add-property]
 original=Add file property
 translation=Добави свойство на файл
+
+[interface.menu.delete]
+original=Delete
+translation=
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=В момента има {{count}} връзки, сочещи към
 original=Delete file
 translation=Изтриване на файл
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Изтегляне на прикачени файлове
@@ -3993,6 +4169,18 @@ translation=Потвърди
 [dialogue.button-cancel]
 original=Cancel
 translation=Отказ
+
+[dialogue.button-allow]
+original=Allow
+translation=
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Покажи всички файлове, включително т�
 original=Graph view
 translation=Графичен изглед
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=See a graph overview of which notes link to which.
@@ -5686,9 +5878,13 @@ translation=да уволнявам
 original=No commands found.
 translation=Няма намерени команди.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Type a command...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=Брой думи
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Показване на броя на думите в лентата на състоянието.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Въведете техния имейл...
 original=Please enter a valid email to invite someone.
 translation=Моля, въведете валиден имейл, за да поканите някого.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Моля, активирайте основния плъгин за публикуване в Настройки -> Основни плъгини, за да видите сайтове.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Вашите сайтове
@@ -7662,6 +7862,22 @@ translation=Инсталирани плъгини на общността
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Синхронизирайте инсталираните плъгини на общността (.js, .css и manifest.json файлове) и техните настройки.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync все още се зарежда, моля обновете страницата по-късно.
@@ -8277,6 +8493,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Обобщи...
 original=Group by this property
 translation=Групирай по това свойство
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Изчисти стойностите
@@ -10065,3 +10297,87 @@ translation={{count}} тема
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} теми
+
+[main.button-cancel]
+original=Cancel
+translation=
+
+[main.button-ok]
+original=OK
+translation=
+
+[main.button-copy]
+original=Copy
+translation=
+
+[main.button-open-link]
+original=Open Link
+translation=
+
+[main.button-open-file]
+original=Open this file
+translation=
+
+[main.button-run-file]
+original=Run File
+translation=
+
+[main.external-link-title]
+original=Open external link?
+translation=
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=
+
+[main.remote-file-title]
+original=Remote file warning
+translation=
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=
+
+[main.network-drive-title]
+original=Network drive access
+translation=
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=
+
+[main.button-allow]
+original=Allow
+translation=
+
+[main.executable-file-title]
+original=Run executable file?
+translation=
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=

@@ -10,6 +10,10 @@ translation=Breiseán
 original=Core plugins
 translation=Breiseáin lárnacha
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Taispeáin i liosta na mbreiseán
+
 [setting.plugin-options]
 original=Plugin options
 translation=Roghanna breiseán
@@ -22,9 +26,41 @@ translation=Sampla: fillteán 1/fillteán 2
 original=Example: folder/note
 translation=Sampla: fillteán/nóta
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Níl aon chomhad roghnaithe
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Éilíonn an rogha seo a athrú chun atosú a bheith i bhfeidhm.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Uimhir neamhbhailí
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Caithfidh an luach a bheith {{min}} ar a laghad
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Caithfidh an luach a bheith {{max}} ar a mhéad
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Níor aimsíodh an comhad.
+
+[setting.search-settings]
+original=Search settings...
+translation=Cuardaigh socruithe...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Níor aimsíodh socruithe ar bith.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} eile
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Ar dheis go clé (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Socraíonn treo réamhshocraithe téacs na nótaí ar dheis go clé.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Taispeáin léaráidí Mermaid i nótaí
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Rindreáil sreabhchairteacha, léaráidí seichimh, agus léaráidí eile ó bhloic cóid “mermaid”.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Comhaid eisiata
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Beidh comhaid eisiata i bhfolach i gCuardach, Amharc Graf, agus Luanna Neamhnasctha, nach bhfuil chomh suntasach i gQuick Switcher agus moltaí nasc.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Ní chuirtear aon scagaire eisiata i bhfeidhm anois. Cuir ceann thíos.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Cuir eisiamh leis...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Tá comhaid a mheaitseálann leis na scagairí seo a leanas eisiata
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Níor cuireadh aon eisiamh leis.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Scagaire
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} riail
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} riail
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Cuir eisiamh leis
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Cuir isteach cosán nó slonn rialta, m.sh. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Ní féidir leis an scagaire a bheith folamh
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Cuir isteach cosán nó “/regex/”...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=Ceadaigh aisghlaonna URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Cumasaigh úsáid x-callback-url trí x-success nó x-error agus URIs Obsidian á láimhseáil.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=URI Obsidian
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Bainistigh gníomhartha iontaofa agus cumraigh iompar URI.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Gníomhartha iontaofa
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Níl aon ghníomhartha iontaofa ann fós. Beidh gníomhartha URI ceadaithe le feiceáil anseo.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Scéim dathanna bonn
 original=Choose Obsidian's default color scheme.
 translation=Roghnaigh scéim dathanna réamhshocraithe Obsidian.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=dorcha geal córas mód oíche scéim dathanna
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Dath blas
@@ -549,6 +621,10 @@ translation=Dath blas
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Roghnaigh an dath blas a úsáidtear ar fud an aip.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=aibhsiú branda príomhdhath
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Cló Monospace
 original=Set font for places like code blocks and frontmatter.
 translation=Socraigh cló d'áiteanna cosúil le bloic cód agus tosaigh.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Cló atá i bhfeidhm faoi láthair: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} cló
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Tá na clónna seo a leanas i bhfeidhm faoi láthair:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} cló
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Méid cló
 original=Font size in pixels that affects editing and reading views.
 translation=Méid cló i bpicteilíní a théann i bhfeidhm ar eagarthóireacht agus
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=méid téacs zúmáil
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Coigeartú tapa ar mhéid cló
@@ -673,6 +753,10 @@ translation=Téamaí
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Bainistigh téamaí suiteáilte agus téamaí pobail a
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=pobal brabhsáil suiteáil íoslódáil
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Biachláir dúchasacha
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Meaitneoidh biachláir ar fud an aip an córas oibriúcháin. Ní bheidh tionchar ag do théama orthu.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Athluchtaigh téamaí
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Téamaí saincheaptha CSS athluchtaithe.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Fillteán téamaí osc
@@ -706,13 +782,21 @@ translation=Fillteán téamaí osc
 original=CSS snippets
 translation=Snippets CSS
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Bainistigh do bhailiúchán comhad CSS chun cuma na haipe a mhionathrú.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Níor aimsíodh aon snippets CSS.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} cumasaithe
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=Stóráiltear Snippets CSS i “{{path}}”.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=Ligeann sleachta CSS duit cuma Obsidian a shaincheapadh. Cuir comhaid CSS in “{{path}}” chun go dtaispeánfar anseo iad.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Oscail fillteán snippets
 original=Reloaded CSS snippets.
 translation=Snippets CSS athluchtaithe.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Cuir snippet CSS i bhfeidhm ag “{{path}}”.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Cuardaigh sleachta...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=Tá téama {{count}} suiteáilte agat faoi láthair.
 original=You currently have {{count}} themes installed.
 translation=Tá téamaí {{count}} suiteáilte agat faoi láthair.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Oscail socruithe i bhfuinneog nua
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Oscail socruithe ina bhfuinneog féin in ionad iad a bheith leabaithe san aip.
+
+[setting.interface.name]
+original=Interface
+translation=Comhéadan
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Soghluaiste
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Casta
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Aicearraí méarchláir
@@ -909,14 +1013,6 @@ translation=Ag taispeáint hotkey {{count}}.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Ag taispeáint hotkeys {{count}}. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation=Ordú {{count}} le coinbhleachtaí.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation=Orduithe {{count}} le coinbhleachtaí.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Brúigh hotkey...
 original=All
 translation=Gach
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Coinbhleachtaí ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Neamhshannaithe
@@ -945,6 +1045,10 @@ translation=Sannaithe
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Sannaithe agam
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Níor aimsíodh torthaí ar bith.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Modh srianta
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Tá modh srianta as. Cas air chun breiseáin phobail a dhíchumasú.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Cas mód srianta air chun an aip a úsáid gan breiseáin phobail.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,16 +1539,16 @@ original=Community plugins
 translation=Breiseáin pobail
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Brabhsáil agus suiteáil breiseáin pobail a rinne ár bpobal iontach.
+original=Browse and install community plugins made by the community.
+translation=Brabhsáil agus suiteáil breiseáin pobail a rinne an pobal.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Brabhsáil
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Mód Srianta Scoir
+original=Exit Restricted mode
+translation=Scoir den mhód srianta
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=In ainneoin ár n-iarrachtaí, tá seans beag ann fós go bhféadfadh breiseán pobail mí-iompar.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Athbhreithniú tosaigh
+original=Code review
+translation=Athbhreithniú ar chód
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Déanann ár bhfoireann athbhreithniú tosaigh ar chód breiseáin san eolaire pobail oifigiúil sula ndéantar iad a liostáil
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Déantar athbhreithniú uathoibríoch ar bhreiseáin san eolaire pobail oifigiúil tar éis gach nuashonraithe.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Meicníocht tuar
 original=We follow up and remove faulty plugins upon user report.
 translation=Leanaimid suas agus bainimid breiseáin lochtacha ar thuarascáil an úsáideora.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Ar mhaith leat an Mód Srianta a fhágáil chun breiseáin phobail a chumasú? Molaimid go láidir cúltacaí a dhéanamh de do shonraí sula ndéanann tú é sin.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Tuilleadh eolais a fháil faoi shlándáil
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Cas ar bhreiseáin pobail
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Ceadaigh breiseáin pobail
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Is féidir le breiseáin cód treallach a rith ar do ghléas. Molaimid cúltaca a dhéanamh de do shonraí sula gcumasaíonn tú iad.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Athchumasaigh breiseáin suiteáilte
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Athchóirigh {{count}} bhreiseán a bhí suiteáilte roimhe seo.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Athchóirigh {{count}} breiseán a bhí suiteáilte roimhe seo.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Taispeáin eolas faoin mbreiseán
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Breiseáin chumasaithe
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Cumasófar na breiseáin seo nuair a fhágfar Mód Srianta.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Díchumasaigh
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Cóipeáil nasc roinnt
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Amharc ar na sonraí
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Oscail leathanach an phobail
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Socruithe
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=Cuardaigh breiseáin suiteáilte
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Taispeáin suiteáilte amháin
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Níl aon bhreiseáin suiteáilte.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Theip ar an breiseán “{{plugin}}” a luchtú
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Bhí earráid ag an mbreiseán “{{plugin}}” agus é á luchtú
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation=Níor lódáladh {{plugin}}. Níl an breiseán seo comhoiriúnach le Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation=Níl {{plugin}} ag feidhmiú a thuilleadh. Molaimid é a dhíshuiteáil.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Ní féidir breiseán {{plugin}} v{{version}} a lódáil. Tuairiscíodh go mbíonn fadhbanna mar thoradh ar an leagan seo. Seiceáil an bhfuil leagan níos nuaí den bhreiseán ar fáil.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Féach léitheoire
 [interface.menu.add-property]
 original=Add file property
 translation=Cuir maoin comhad leis
+
+[interface.menu.delete]
+original=Delete
+translation=Scrios
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=Tá naisc {{count}} ann faoi láthair ag díriú ar an gcomhad seo.
 original=Delete file
 translation=Scrios comhad
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Rith gníomh ó nasc seachtrach?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Tá an gníomh “{{action}}” ar tí rith. Ná lean ar aghaidh ach má tá muinín agat as foinse an naisc.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Tá an breiseán “{{source}}” ar tí an gníomh “{{action}}” a rith. Ná lean ar aghaidh ach má tá muinín agat as foinse an naisc.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Ná fiafraigh arís faoi “{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Íoslódáil ceangal
@@ -3993,6 +4169,18 @@ translation=Deimhnigh
 [dialogue.button-cancel]
 original=Cancel
 translation=Cealaigh
+
+[dialogue.button-allow]
+original=Allow
+translation=Ceadaigh
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Ceadaigh uair amháin
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Ceadaigh i gcónaí
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Taispeáin gach comhad lena n-áirítear cinn nach féidir le Obsidi
 original=Graph view
 translation=Amharc graif
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Graf áitiúil
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=Samhlaigh na caidrimh idir do nótaí.
@@ -5686,8 +5878,12 @@ translation=a dhíscríobh
 original=No commands found.
 translation=Níor aimsíodh aon orduithe.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Cuir ordú leis...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
 translation=Roghnaigh ordú...
 
 [plugins.command-palette.label-pinned-commands]
@@ -6033,6 +6229,14 @@ translation=Líon focal
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Taispeáin comhaireamh focal sa bharra stádais.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Taispeáin léaráidí Mermaid sa bhoghta seo?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Ná ceadaigh é ach má tá muinín agat as ábhar an bhoghta seo.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Cuir isteach a r-phost...
 original=Please enter a valid email to invite someone.
 translation=Cuir isteach ríomhphost bailí chun cuireadh a thabhairt do dhuine.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Cumasaigh an croí-breiseán Foilsigh i Socruithe -> Breiseáin lárnacha chun suíomhanna a fheiceáil
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Do shuíomhanna
@@ -7662,6 +7862,22 @@ translation=Breiseáin pobail suiteáil
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Sync breiseáin pobail suiteáilte (comhaid .js, .css, agus manifest.json) agus a gcuid socruithe.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=An gceadófar do bhreiseáin shioncronaithe rith ar an ngléas seo?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Ní féidir le Obsidian Sync ábhar na mbreiseán atá sioncronaithe leis an ngléas seo a fhíorú, agus d’fhéadfadh siad a bheith éagsúil leis na breiseáin atá foilsithe san eolaire pobail.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Ná cumasaigh é seo ach amháin má tá muinín agat as an mboghta agus as na gléasanna nasctha.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Tá, cuir sioncronú breiseán ar siúl
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Tá sioncrónú fós á luchtú, athnuachan an leathanach seo níos déanaí.
@@ -8277,6 +8493,10 @@ translation=Ní féidir an láithreán a luchtú.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Déan cinnte go bhfuil an seoladh ceart agat.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Amharc léitheora
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Déan achoimre...
 original=Group by this property
 translation=Grúpáil de réir an airí seo
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Athraigh méid an cholúin...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Athshocraigh méid an cholúin
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Tarraing chun méid a athrú
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Glan luachanna
@@ -10065,3 +10297,87 @@ translation={{count}} téama
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} téamaí
+
+[main.button-cancel]
+original=Cancel
+translation=Cealaigh
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Cóipeáil
+
+[main.button-open-link]
+original=Open Link
+translation=Oscail nasc
+
+[main.button-open-file]
+original=Open this file
+translation=Oscail an comhad seo
+
+[main.button-run-file]
+original=Run File
+translation=Rith an comhad
+
+[main.external-link-title]
+original=Open external link?
+translation=Oscail nasc seachtrach?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Osclóidh an nasc seo feidhmchlár seachtrach lasmuigh de Obsidian. Ná lean ar aghaidh ach amháin má tá muinín agat as foinse an naisc seo.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Oscail naisc {{scheme}}:// i gcónaí
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Rabhadh comhaid iargúlta
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Tá an comhad seo suite ar fhreastalaí iargúlta, agus d’fhéadfadh sé a bheith contúirteach.\nAn bhfuil tú cinnte gur mhaith leat é a oscailt?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Suíomh: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Rochtain ar thiomántán líonra
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Tá an t-ábhar seo ag iarraidh sonraí ó thiomántán líonra. Má cheadaíonn tú é seo, d’fhéadfadh do dhintiúir logála isteach nó faisnéis íogair eile a bheith nochtaithe don óstach iargúlta.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Óstach: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Ceadaigh
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Rith comhad inrite?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Díríonn an nasc seo ar chomhad inrite. D’fhéadfadh sé dochar a dhéanamh do do ríomhaire má ritheann tú é.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Comhad: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Níor aimsíodh an boghta.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Ní féidir boghta a aimsiú don URL {{url}}

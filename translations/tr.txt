@@ -10,6 +10,10 @@ translation=Eklenti
 original=Core plugins
 translation=Yerleşik Eklentiler
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Eklenti listesinde göster
+
 [setting.plugin-options]
 original=Plugin options
 translation=Eklenti seçenekleri
@@ -22,9 +26,41 @@ translation=Örnek: klasör 1/klasör 2
 original=Example: folder/note
 translation=Örnek: klasör/not
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Dosya seçilmedi
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Bu seçeneği değiştirdiğinizde etkisini görmek için yeniden başlatmanız gerekir.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Geçersiz sayı
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Değer en az {{min}} olmalıdır
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Değer en fazla {{max}} olmalıdır
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Dosya bulunamadı.
+
+[setting.search-settings]
+original=Search settings...
+translation=Ayarlarda ara...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Ayar bulunamadı.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} tane daha
 
 [setting.editor.name]
 original=Editor
@@ -124,7 +160,7 @@ translation=Markdown işaretlerini otomatik eşle.
 
 [setting.editor.option-auto-pair-markdown-description]
 original=Pair symbols automatically for bold, italic, code, and more.
-translation=Kalın ve italik sembollerini otomatik eşle.
+translation=Kalın, italik, kod ve diğer biçimler için simgeleri otomatik olarak eşleştirin.
 
 [setting.editor.option-smart-indent-lists]
 original=Smart lists
@@ -148,7 +184,7 @@ translation=İçerlemeleri katla
 
 [setting.editor.option-fold-indent-description]
 original=Lets you fold part of an indentation, such as lists.
-translation=Liste vb. çoklu içerliklerin yalnızca bir kısmını katlayabilmeni sağlar.
+translation=Liste gibi çoklu içeriklerin yalnızca bir kısmını katlamanızı sağlar.
 
 [setting.editor.option-default-new-tab-view]
 original=Default view for new tabs
@@ -196,7 +232,7 @@ translation=Satır numaraları
 
 [setting.editor.option-show-line-number-description]
 original=Show line numbers in the gutter.
-translation=Satır numaralarını en altta göster.
+translation=Satır numaralarını kenar boşluğunda göster.
 
 [setting.editor.option-indentation-guide]
 original=Indentation guides
@@ -208,7 +244,7 @@ translation=Görsel rehberlik için madde işaretleri arasındaki dikey ilişki 
 
 [setting.editor.option-use-tabs]
 original=Indent using tabs
-translation=Boşluklar için tab kullan
+translation=Girinti için tab kullan
 
 [setting.editor.option-use-tabs-description]
 original=Use tabs to indent by pressing the “Tab” key. Turn this off to indent using 4 spaces.
@@ -230,9 +266,17 @@ translation=Sağdan sola (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Notlarda metin yönünü sağdan sola şeklinde ayarlar.
 
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Notlarda Mermaid diyagramlarını göster
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Akış şemalarını, sekans diyagramlarını ve diğer diyagramları “mermaid” kod bloklarından işle.
+
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
-translation=HTML'e otomatik olarak çevir
+translation=Yapıştırılan HTML'i Markdown'a dönüştür
 
 [setting.editor.option-auto-convert-html-description]
 original=Automatically convert HTML to Markdown when pasting and drag-and-drop from web pages. Use Ctrl/Cmd+Shift+V to paste HTML without converting.
@@ -392,7 +436,7 @@ translation=Bağlantıları hep güncelle
 
 [setting.file.option-always-update-links-description]
 original=Turn off to be prompted to update links after renaming a file.
-translation=Bir dosyanın adını değiştirdiğinzde gelen bağlantıları otomatik olarak güncelle.
+translation=Bir dosyanın adını değiştirdiğinizde bağlantıları otomatik olarak günceller.
 
 [setting.file.option-new-note-location]
 original=Default location for new notes
@@ -502,25 +546,33 @@ translation=Hariç tutulan dosyalar
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Hariç tutulan dosyalar Hızlı Değiştirici, bağlantı önerisi ve Grafik Görünümü gibi çeşitli yerlerde ya gizlenecek ya da daha az fark edilecektir.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Şu anda hariç tutulan filtre uygulanmıyor. Aşağıya bir tane ekleyin.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Hariç tutma ekle...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Aşağıdaki filtrelerle eşleşen dosyalar şu anda hariç tutulmaktadır:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Hariç tutma eklenmedi.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filtre
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} kural
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} kural
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Hariç tutma ekle
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Bir yol veya düzenli ifade girin, örn. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filtre boş olamaz
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Yolu girin veya "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URI geri çağrılarına izin ver
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI'larını işlerken x-success veya x-error üzerinden x-callback-url kullanımını etkinleştir.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Güvenilen eylemleri yönetin ve URI davranışını yapılandırın.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Güvenilen eylemler
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Henüz güvenilen eylem yok. Onaylanan URI eylemleri burada görünecek.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Temel tema
 original=Choose Obsidian's default color scheme.
 translation=Obsidian'ın varsayılan renk modunu seçin.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=koyu açık sistem gece modu renk şeması
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Vurgu rengi
@@ -549,6 +621,10 @@ translation=Vurgu rengi
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Uygulama boyunca kullanılan vurgu rengini seçin.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=vurgulama marka birincil renk
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Tek aralıklı yazı tipi
 original=Set font for places like code blocks and frontmatter.
 translation=Kod blokları ve ön madde gibi yerler için yazı tipini ayarlayın.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation=Şu anda uygulanan yazı tipi: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} yazı tipi
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation=Şu anda aşağıdaki yazı tipleri uygulanmaktadır:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} yazı tipi
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -648,7 +724,7 @@ translation=Topluluk tarafından yaratılmış harika temaları incele veya kull
 
 [setting.appearance.button-browse-community-themes]
 original=Browse
-translation=Tara
+translation=Göz at
 
 [setting.appearance.option-font-size]
 original=Font size
@@ -657,6 +733,10 @@ translation=Yazı tipi boyutu
 [setting.appearance.option-font-size-description]
 original=Font size in pixels that affects editing and reading views.
 translation=Editör ve önizleme modundaki fontların piksel olarak boyutunu belirler.
+
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=metin boyutu yakınlaştırma
 
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
@@ -674,6 +754,10 @@ translation=Temalar
 original=Manage installed themes and browse community themes.
 translation=Kurulu temaları yönetin ve topluluk temalarını inceleyin.
 
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=topluluk göz at yükle indir
+
 [setting.appearance.option-theme-button-manage]
 original=Manage
 translation=Yönet
@@ -690,14 +774,6 @@ translation=Yerel menüler
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Uygulamadaki menüler işletim sistemiyle eşleşecektir. Temanızdan etkilenmeyeceklerdir.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Temaları yeniden yükle
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Özel CSS temaları tekrar yüklendi.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Tema klasörünü aç
@@ -706,13 +782,21 @@ translation=Tema klasörünü aç
 original=CSS snippets
 translation=CSS kod parçaları
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Uygulamanın görünümünü özelleştirmek için CSS dosyaları koleksiyonunuzu yönetin.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Kod parçaları klasöründe hiç CSS kod parçası bulunamadı.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} etkin
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS Kod parçaları "{{path}}" klasöründe saklanmaktadır.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS kod parçacıkları Obsidian'ın görünümünü özelleştirmenizi sağlar. Burada görünmeleri için CSS dosyalarını “{{path}}” konumuna yerleştirin.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Kod parçaları klasörünü aç
 original=Reloaded CSS snippets.
 translation=CSS kod parçaları tekrar yüklendi.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation="{{path}}" konumundaki CSS kod parçalarını uygula.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Kod parçacıklarında ara...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -768,7 +852,7 @@ translation=Gizli (varsayılan)
 
 [setting.appearance.option-frame-obsidian]
 original=Obsidian frame
-translation=Obsidyen çerçeve
+translation=Obsidian çerçevesi
 
 [setting.appearance.option-frame-native]
 original=Native frame
@@ -788,7 +872,7 @@ translation=Özel simgeyi seç
 
 [setting.appearance.option-configure-ribbon]
 original=Ribbon menu configuration
-translation=Şerit menüsü
+translation=Şerit menüsü yapılandırması
 
 [setting.appearance.option-configure-ribbon-desc]
 original=Configure what commands appear in the ribbon menu.
@@ -808,7 +892,7 @@ translation=Şerit menüsünü aç
 
 [setting.appearance.button-configure]
 original=Configure
-translation=Yapılandırma
+translation=Yapılandır
 
 [setting.appearance.option-show-ribbon]
 original=Show ribbon
@@ -894,6 +978,26 @@ translation=Şu anda yüklü {{count}} temanız var.
 original=You currently have {{count}} themes installed.
 translation=Şu anda yüklü {{count}} temanız var.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Ayarları yeni pencerede aç
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Ayarları uygulamanın içine gömmek yerine kendi penceresinde aç.
+
+[setting.interface.name]
+original=Interface
+translation=Arayüz
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Gelişmiş
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Kısayollar
@@ -909,14 +1013,6 @@ translation={{count}} kısayol tuşu gösteriliyor.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation={{count}} kısayol tuşları gösteriliyor. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation=Çakışma içeren {{count}} komut.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation=Çakışma içeren {{count}} komut.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Kısayol tuşu bekleniyor...
 original=All
 translation=Tümü
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Çakışmalar ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Atanmamış
@@ -945,6 +1045,10 @@ translation=Atanmış
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Benim tarafımdan atandı
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Sonuç bulunamadı.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1212,11 +1316,11 @@ translation=Gelişmiş
 
 [setting.about.option-hw-acceleration]
 original=Hardware acceleration
-translation=Donanım İvmelendirici
+translation=Donanım hızlandırma
 
 [setting.about.option-hw-acceleration-description]
 original=Turns on Hardware Acceleration, which uses your GPU to make Obsidian smoother.
-translation=Donanım İvmelendiriciyi aktifleştirir, bu sayede Obsidian GPU'yu kullanarak daha akıcı bir şekilde çalışır.
+translation=Donanım hızlandırmayı aktifleştirir, bu sayede Obsidian GPU'yu kullanarak daha akıcı bir şekilde çalışır.
 
 [setting.about.option-hw-acceleration-warning]
 original=If you turn this off, app performance will be severely degraded.
@@ -1288,7 +1392,7 @@ translation=Hesabınız
 
 [setting.account.option-your-account-desc]
 original=You're currently signed in as {{name}} ({{email}}).
-translation=Şu anda {{isim}} ile giriş yaptınız ({{email}}).
+translation=Şu anda {{name}} ile giriş yaptınız ({{email}}).
 
 [setting.account.option-your-account-desc-no-login]
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
@@ -1360,7 +1464,7 @@ translation=E-posta geçersiz
 
 [setting.account.message-empty-password]
 original=Password cannot be empty.
-translation=Şifre boş bırakalımaz.
+translation=Şifre boş bırakılamaz.
 
 [setting.account.message-login-failed]
 original=Login failed, please double check your email and password.
@@ -1408,19 +1512,19 @@ translation=Eklenti ara...
 
 [setting.third-party-plugin.name]
 original=Community plugins
-translation=Topluluk Eklentisi
+translation=Topluluk Eklentileri
 
 [setting.third-party-plugin.option-restricted-mode]
 original=Restricted mode
 translation=Kısıtlı mod
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Kısıtlı Mod kapalı. Topluluk eklentilerini devre dışı bırakmak için açın.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Uygulamayı topluluk eklentileri olmadan kullanmak için kısıtlı modu açın.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
-translation=Açın
+translation=Aç ve yeniden yükle
 
 [setting.third-party-plugin.option-automatic-update-check]
 original=Automatically check for plugin updates
@@ -1435,16 +1539,16 @@ original=Community plugins
 translation=Topluluk Eklentileri
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Topluluğumuzun yaptığı eklentilere göz at ve Yükle.
+original=Browse and install community plugins made by the community.
+translation=Topluluk tarafından yapılan topluluk eklentilerine göz atın ve yükleyin.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
-translation=Ara
+translation=Göz at
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Kısıtlı Moddan Çık
+original=Exit Restricted mode
+translation=Kısıtlı moddan çık
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Çabalarımıza rağmen, bir topluluk eklentisinin hatalı davranma ihtimali hala küçük de olsa vardır.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=İlk kod incelemesi
+original=Code review
+translation=Kod incelemesi
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Eklentiler, mağazada görünmeden önce ekibimiz tarafından ilk kod incelemesinden geçirilir.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Resmî topluluk dizinindeki eklentiler her güncellemeden sonra otomatik olarak incelenir.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Rapor mekanizması
 original=We follow up and remove faulty plugins upon user report.
 translation=Kullanıcı raporu üzerine hatalı eklentileri takip ediyor ve kaldırıyoruz.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Topluluk eklentilerini etkinleştirmek için Kısıtlı Moddan çıkmak ister misiniz? Bunu yapmadan önce verilerinizi yedeklemenizi şiddetle tavsiye ederiz.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Eklenti güvenliği hakkında daha fazla bilgi edinin
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Topluluk eklentilerini açın
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Topluluk eklentilerine izin ver
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Eklentiler cihazınızda rastgele kod çalıştırabilir. Etkinleştirmeden önce verilerinizi yedeklemenizi öneririz.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Yüklü eklentileri yeniden etkinleştir
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Daha önce yüklenmiş {{count}} eklentiyi geri yükle.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Daha önce yüklenmiş {{count}} eklentiyi geri yükle.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Eklenti bilgilerini göster
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Etkin eklentiler
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Kısıtlı moddan çıkıldığında bu eklentiler etkinleştirilecek.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Devre dışı bırak
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Paylaşma linkini kopyala
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Ayrıntıları görüntüle
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Topluluk sayfasını aç
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Ayarlar
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1632,7 +1772,7 @@ translation=Yüklü Eklentiler
 
 [setting.third-party-plugin.button-reload-plugins]
 original=Reload plugins
-translation=Eklentileri tekrardan yükle
+translation=Eklentileri yeniden yükle
 
 [setting.third-party-plugin.msg-reloaded-third-party-plugins]
 original=Reloaded third-party plugins.
@@ -1652,15 +1792,15 @@ translation=Bu eklentiyi silmek istediğine emin misin? Bu işlem eklenti klasö
 
 [setting.third-party-plugin.button-open-plugins-folder]
 original=Open plugins folder
-translation=Eklentiler Klasörünü aç Aç
+translation=Eklentiler klasörünü aç
 
 [setting.third-party-plugin.button-check-for-updates]
 original=Check for updates
-translation=Güncellemeleri Denetle
+translation=Güncellemeleri denetle
 
 [setting.third-party-plugin.button-update-all-plugins]
 original=Update all
-translation=Hepsini Güncelle
+translation=Hepsini güncelle
 
 [setting.third-party-plugin.label-current-plugins]
 original=Current plugins
@@ -1680,7 +1820,7 @@ translation=Yüklenmiş {{count}} eklentiniz var.
 
 [setting.third-party-plugin.msg-no-updates-found]
 original=No plugin updates found.
-translation=Eklenti Güncellemesi Bulunamadı.
+translation=Eklenti güncellemesi bulunamadı.
 
 [setting.third-party-plugin.msg-updates-found]
 original=Found {{count}} plugin to update.
@@ -1709,6 +1849,10 @@ translation=Kurulu eklentiler içinde ara...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Yalnızca kurulu olanları göster
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Yüklü eklenti yok.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -1752,7 +1896,7 @@ translation=Alfabetik
 
 [setting.third-party-plugin.label-last-updated]
 original=Updated {{time}}
-translation={{time}} Güncellendi
+translation={{time}} önce güncellendi
 
 [setting.mobile-toolbar.name]
 original=Toolbar
@@ -2110,6 +2254,18 @@ translation=“{{plugin}}” eklentisi yüklenemedi
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=“{{plugin}}” eklentisi yüklenirken bir hatayla karşılaştı
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} yüklenmedi. Bu eklenti, Obsidian v{{version}} ile uyumlu değil.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} artık çalışmıyor. Eklentiyi kaldırmanızı öneririz.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation={{plugin}} v{{version}} eklentisi yüklenemedi. Bu sürümün sorunlara yol açtığı bildirildi. Lütfen eklentinin daha yeni bir sürümü olup olmadığını kontrol edin.
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” açılamadı
@@ -2128,7 +2284,7 @@ translation="{{file}}" başka bir yerde değiştirildi, değişiklikler otomatik
 
 [interface.manage-vaults]
 original=Manage vaults...
-translation=Tresorları yönet...
+translation=Kasaları yönet...
 
 [interface.help]
 original=Help
@@ -2168,7 +2324,7 @@ translation=Varsayılan ayarları geri yükle
 
 [interface.label-copy]
 original=Copy to clipboard
-translation=Kopyala
+translation=Panoya Kopyala
 
 [interface.label-copy-short]
 original=Copy
@@ -2408,7 +2564,7 @@ translation=Eklenti artık aktif değil
 
 [interface.empty-state.unknown-pane-desc]
 original=The plugin that created this tab ({{type}}) has gone away.
-translation=Bu pencereyi açan eklenti ({{type}}) mevcut değil
+translation=Bu sekmeyi açan eklenti ({{type}}) mevcut değil.
 
 [interface.release-notes.tab-title]
 original=Release Notes {{version}}
@@ -2549,6 +2705,10 @@ translation=Okuma görünümü
 [interface.menu.add-property]
 original=Add file property
 translation=Dosya özelliği ekle
+
+[interface.menu.delete]
+original=Delete
+translation=Sil
 
 [interface.menu.delete-file]
 original=Delete file
@@ -2920,7 +3080,7 @@ translation=Senkronizasyonu ayarla
 
 [interface.start-screen.mobile.option-skip]
 original=Continue without sync
-translation=Skip for now
+translation=Senkronizasyon olmadan devam et
 
 [interface.start-screen.mobile.option-skip-short]
 original=Skip
@@ -2928,7 +3088,7 @@ translation=Atla
 
 [interface.start-screen.mobile.label-vault-create]
 original=Configure your new vault.
-translation=Choose a name for your vault.
+translation=Yeni kasanızı yapılandırın.
 
 [interface.start-screen.mobile.button-create]
 original=Create vault
@@ -2940,7 +3100,7 @@ translation=Sync kurulumu
 
 [interface.start-screen.mobile.label-sync-setup-desc]
 original=Create a synced vault on your Obsidian account so you can access your data from other devices.
-translation=Create a synced vault on your Obsidian account so that you can access your data from other devices.
+translation=Diğer cihazlardan verilerinize erişebilmek için Obsidian hesabınızda senkronize bir kasa oluşturun.
 
 [interface.start-screen.mobile.label-remote-vault-create]
 original=Sync encryption
@@ -3008,7 +3168,7 @@ translation=Mevcut bir kasa seç
 
 [interface.start-screen.mobile.button-logout]
 original=Log out
-translation=Log Out
+translation=Çıkış yap
 
 [interface.start-screen.mobile.button-forgot-password]
 original=Forgot password
@@ -3144,7 +3304,7 @@ translation=iCloud kullan
 
 [interface.start-screen.mobile.opt-use-other]
 original=Use third-party sync
-translation=Use Third-party sync
+translation=Üçüncü taraf senkronizasyon kullan
 
 [interface.start-screen.mobile.opt-learn-other-sync]
 original=Other sync methods
@@ -3264,7 +3424,7 @@ translation=Hoş geldiniz
 
 [interface.starter-content.welcome-file-content]
 original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=İşte yeni *tresör*ünüz.\n\nBir not alın, [[bağlantı oluştur]], veya [İçe Aktarıcı'yı](https://help.obsidian.md/Plugins/Importer) deneyin!\n\nHazır olduğunuzda, bu notu silin ve tresörü kendinize göre düzenleyin.
+translation=Bu senin yeni *kasandan*.\n\nBir şeyler not al, [[bir bağlantı oluştur]] ya da [Importer](https://help.obsidian.md/Plugins/Importer) aracını dene!\n\nHazır olduğunda bu notu sil ve kasayı kendine göre şekillendir.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3938,6 +4098,22 @@ translation=Şu anda bu dosyaya işaret eden {{count}} bağlantı var.
 original=Delete file
 translation=Dosyayı sil
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Harici bağlantıdan eylem çalıştırılsın mı?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=“{{action}}” eylemi çalıştırılmak üzere. Yalnızca bağlantının kaynağına güveniyorsanız devam edin.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=“{{source}}” eklentisi “{{action}}” eylemini çalıştırmak üzere. Yalnızca bağlantının kaynağına güveniyorsanız devam edin.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=“{{action}}” için tekrar sorma
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Ekleri indir
@@ -3993,6 +4169,18 @@ translation=Onayla
 [dialogue.button-cancel]
 original=Cancel
 translation=İptal
+
+[dialogue.button-allow]
+original=Allow
+translation=İzin ver
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Bir kez izin ver
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Her zaman izin ver
 
 [dialogue.button-skip]
 original=Skip
@@ -4396,7 +4584,7 @@ translation=Dosya gezgininde aktif dosyayı göster
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
-translation=Geçerli dosyanın bir kopyasını oluşturuns
+translation=Geçerli dosyanın bir kopyasını oluşturun
 
 [plugins.file-explorer.command-make-a-copy-mac]
 original=Duplicate current file
@@ -4436,7 +4624,7 @@ translation=Klasörler bulunamadı
 
 [plugins.file-explorer.instruction-navigate]
 original=to navigate
-translation=Yönlendirme
+translation=Gezinmek için
 
 [plugins.file-explorer.instruction-move]
 original=to move
@@ -4556,7 +4744,7 @@ translation=Sonuçları gizle
 
 [plugins.search.label-match-case]
 original=Match case
-translation=Harf boyutunu kullan
+translation=Büyük/küçük harfe duyarlı eşleşme
 
 [plugins.search.label-explain-search-term]
 original=Explain search terms
@@ -4824,7 +5012,7 @@ translation=Klavyenizi bırakmadan hızlıca başka bir dosyaya geçin. Ctrl/Cmd
 
 [plugins.quick-switcher.short-name]
 original=Switcher
-translation=Geçici
+translation=Geçiş
 
 [plugins.quick-switcher.action-open]
 original=Open quick switcher
@@ -4901,6 +5089,10 @@ translation=Obsidian'ın açamadığı dosyalar dahil tüm dosyaları göster. D
 [plugins.graph-view.name]
 original=Graph view
 translation=Grafik Görünümü
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Yerel graf
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -5072,7 +5264,7 @@ translation=Hızlandırılmış animasyonunu başlat
 
 [plugins.graph-view.tooltip-start-timelapse-animation]
 original=Start timelapse animation
-translation=Hızlandırma nimasyonunu başlat
+translation=Hızlandırma animasyonunu başlat
 
 [plugins.graph-view.button-animate-timelapse]
 original=Animate
@@ -5500,7 +5692,7 @@ translation=Düzenle...
 
 [plugins.bookmarks.menu-opt-remove]
 original=Remove
-translation=Kaldırmak
+translation=Kaldır
 
 [plugins.bookmarks.menu-opt-rename]
 original=Rename
@@ -5686,9 +5878,13 @@ translation=Vazgeçmek
 original=No commands found.
 translation=Komut bulunamadı.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Bir komut yazın...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Komut ekle...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Bir komut seç...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -5736,7 +5932,7 @@ translation=Bear vurgu düzeltici
 
 [plugins.markdown-format-importer.option-bear-highlight-fixer-description]
 original=Converts “::highlight::” to “==highlight==”.
-translation= "::highlight::" ifadesini "==highlight==" dönüştürür.
+translation=“::vurgulama::” ifadesini “==vurgulama==” formatına dönüştürür.
 
 [plugins.markdown-format-importer.zettelkasten-link-fixer]
 original=Zettelkasten link fixer
@@ -6033,6 +6229,14 @@ translation=Kelime sayısı
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Durum barında kelime sayısını göster.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Bu kasada Mermaid diyagramları gösterilsin mi?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Yalnızca bu kasanın içeriğine güveniyorsanız izin verin.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=E-postalarını girin...
 original=Please enter a valid email to invite someone.
 translation=Birini davet etmek için lütfen geçerli bir e-posta girin.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Siteleri görüntülemek için lütfen Ayarlar -> Çekirdek eklentiler bölümünden Yayınla çekirdek eklentisini etkinleştirin.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Siteleriniz
@@ -7016,7 +7216,7 @@ translation=Lütfen yeni düzen için bir ad girin.
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=Düzen başarıyla kaydedildi.
+translation=“{{name}}” düzeni başarıyla kaydedildi
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
@@ -7092,7 +7292,7 @@ translation={{ device }} üzerinden silindi
 
 [plugins.sync.label-file-renamed-from]
 original=Renamed from “{{from}}”
-translation=Bu dosya "{{filepath}}" adından yeniden adlandırıldı
+translation=Bu dosya "{{from}}" adından yeniden adlandırıldı
 
 [plugins.sync.label-file-renamed-from-to]
 original=Renamed from “{{from}}” to “{{to}}”
@@ -7108,11 +7308,11 @@ translation=“{{from}}” konumundan “{{to}}” konumuna taşındı
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 revizyon
+translation={{count}} revizyon
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
-translation={{revisions}} revizyon
+translation={{count}} revizyon
 
 [plugins.sync.label-via-device]
 original=via {{device}}
@@ -7184,11 +7384,11 @@ translation=Otomatik
 
 [plugins.sync.option-vault-region-desc]
 original=Select the server region closest to you to store the remote vault. This cannot be changed in the future.
-translation=Size en yakın sunucu bölgesini seçerek uzak depoyu saklayın. Bu seçim ileride değiştirilemez.
+translation=Uzak kasayı depolamak için size en yakın sunucu bölgesini seçin. Bu seçim daha sonra değiştirilemez.
 
 [plugins.sync.option-vault-name-placeholder]
 original=My awesome vault
-translation=benim harika kasam
+translation=Benim harika kasam
 
 [plugins.sync.option-encryption]
 original=Encryption
@@ -7228,7 +7428,7 @@ translation=Bu, yerel verilerinizi etkilemez.
 
 [plugins.sync.label-encryption-password-explanation]
 original=The remote vault “{{name}}” is currently encrypted. Enter your password to unlock.
-translation= Uzak depo “{{name}}” şu anda şifreli. Kilidini açmak için şifrenizi girin.
+translation=“{{name}}” adlı uzak kasa şu anda şifrelenmiş durumda. Kilidi açmak için şifrenizi girin.
 
 [plugins.sync.option-encryption-password-placeholder]
 original=Your password
@@ -7260,11 +7460,11 @@ translation=Yeniden Adlandır
 
 [plugins.sync.label-rename-remote-vault]
 original=Rename remote vault “{{name}}”
-translation=Uzak depoyu "{{name}}" olarak yeniden adlandır
+translation=Uzak kasayı "{{name}}" olarak yeniden adlandır
 
 [plugins.sync.label-rename-remote-vault-desc]
 original=Enter a new name for this remote vault.
-translation=Bu uzak depo için yeni bir isim girin.
+translation=Bu uzak kasa için yeni bir isim girin.
 
 [plugins.sync.tooltip-manage-sharing]
 original=Manage sharing
@@ -7276,7 +7476,7 @@ translation=Kasayı silme işlemini onayla
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=Bu uzaktan erişim kasasını silmek istediğinizden emin misiniz?
+translation=“{{name}}” adlı uzak kasayı silmek istediğinizden emin misiniz?
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7292,7 +7492,7 @@ translation={{name}} silindi.
 
 [plugins.sync.msg-disconnect-from-deleted-vault]
 original=Obsidian Sync: The connected remote vault no longer exists.
-translation=Obsidian Sync: Bağlı uzak depo artık mevcut değil.
+translation=Obsidian Sync: Bağlı uzak kasa artık mevcut değil.
 
 [plugins.sync.button-connect-to-remote-vault]
 original=Connect
@@ -7508,7 +7708,7 @@ translation=Temizle
 
 [plugins.sync.button-hide-my-changes]
 original=Hide my changes
-translation=Değiikliklerimi gizle
+translation=Değişikliklerimi gizle
 
 [plugins.sync.tooltip-purge-remote]
 original=Permanently purge deleted attachments from remote vault to save space.
@@ -7662,6 +7862,22 @@ translation=Yüklü topluluk eklentileri
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Yüklü topluluk eklentilerini (.js, .css ve manifest.json dosyaları) ve ayarlarını senkronize edin.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Eşitlenen eklentilerin bu cihazda çalışmasına izin verilsin mi?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync, bu cihaza eşitlenen eklentilerin içeriğini doğrulayamaz ve bunlar topluluk dizininde yayımlanan eklentilerden farklı olabilir.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Bunu yalnızca kasa ve bağlı cihazlara güveniyorsanız etkinleştirin.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Evet, eklenti eşitlemesini aç
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync hâlâ yükleniyor, lütfen bu sayfayı daha sonra yenileyin.
@@ -7796,7 +8012,7 @@ translation=Kasa işbirliğini durdurmayı onayla
 
 [plugins.sync.label-leave-vault-confirmation-details]
 original=This will remove this vault from the list of vaults shared with you. This action cannot be reverted.
-translation=Bu, bu kasa sizinle paylaşılan kasalar listesinden kaldıracaktır. Bu eylem geri alınamaz.
+translation=Bu işlem, bu kasayı sizinle paylaşılan kasalar listesinden kaldıracaktır.
 
 [plugins.sync.label-leave-vault-confirmation-details-2]
 original=Please contact the owner of the vault if you wish to collaborate on this vault again.
@@ -7808,7 +8024,7 @@ translation=Ayrıl
 
 [plugins.sync.msg-error-failed-to-fetch]
 original=Failed to load remote vaults.
-translation=Uzak depolar yüklenemedi.
+translation=Uzak kasalar yüklenemedi.
 
 [plugins.sync.label-require-subscription-to-connect]
 original=You need an Obsidian Sync subscription to connect to this vault.
@@ -7828,11 +8044,11 @@ translation=Hata ayıklama bilgisini kopyala
 
 [plugins.sync.button-email-support]
 original=Email support
-translation=E-posta desteği
+translation=Destek ekibine e-posta gönder
 
 [plugins.sync.label-sync-disconnected]
 original=Sync is not connected to a remote vault.
-translation=Sync uzak bir depoya bağlı değil.
+translation=Sync uzak bir kasaya bağlı değil.
 
 [plugins.sync.msg-remote-vault-limit-hit]
 original=You have created the maximum number of remote vaults. In order to create a new remote vault, please upgrade your account or remove an existing one.
@@ -8048,7 +8264,7 @@ translation=Yönlendirme
 
 [plugins.note-composer.instruction-merge]
 original=to merge
-translation=Birleştirme
+translation=Birleştirmek için
 
 [plugins.note-composer.instruction-create-new]
 original=to create new
@@ -8272,11 +8488,15 @@ translation=Yeni web görüntüleyici
 
 [plugins.web-viewer.label-fail-to-load]
 original=Unable to load site.
-translation=Unable to load that site.
+translation=Site yüklenemiyor.
 
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
-translation=Please make sure you have the correct address.
+translation=Adresin doğru olduğundan emin olun.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Okuma görünümü
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -8364,7 +8584,7 @@ translation=Web görüntüleyici verilerini temizle
 
 [plugins.web-viewer.msg-error-extracting-content]
 original=Unexpected error extracting content.
-translation=Unexected error extracting content.
+translation=İçeriği çıkarırken beklenmedik bir hata oluştu.
 
 [plugins.web-viewer.msg-error-finding-content]
 original=Unable to find content to extract.
@@ -8896,7 +9116,7 @@ translation=Tabanlar
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=Özelliklerini kullanarak dosyaları düzenlemenize, sıralamanıza ve filtrelemenize olanak tanıyan özel görünümler oluşturun.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -8904,7 +9124,7 @@ translation=Yeni taban
 
 [plugins.bases.action-add-property]
 original=Add "{{name}}" property
-translation=Add property
+translation="{{name}}" özelliğini ekle
 
 [plugins.bases.action-add-summary]
 original=Add "{{name}}" summary
@@ -8960,7 +9180,7 @@ translation=Tabloyu panoya kopyala
 
 [plugins.bases.command-change-view]
 original=Switch view...
-translation=Change view
+translation=Görünümü değiştir...
 
 [plugins.bases.command-add-view]
 original=Add view
@@ -9268,7 +9488,7 @@ translation="{{ name }}" için geçersiz özellik yapılandırması.
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+translation="{{ viewId }}" adlı yeni Bases görünümü eklenemedi. Bu kimlik numarasına sahip bir görünüm zaten mevcut.
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
@@ -9280,7 +9500,7 @@ translation="{{ view }}" görünümü bulunamadı
 
 [plugins.bases.msg-error-unknown-view-type]
 original=Unknown view type: {{ viewtype }}
-translation=Base configured with an unknown view type: {{ viewtype }}
+translation=Bilinmeyen görünüm türü: {{ viewtype }}
 
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
@@ -9494,6 +9714,18 @@ translation=Özetle...
 original=Group by this property
 translation=Bu özelliğe göre grupla
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Sütunu yeniden boyutlandır...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Sütun boyutunu sıfırla
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Yeniden boyutlandırmak için sürükle
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Değerleri temizle
@@ -9528,11 +9760,11 @@ translation="{{ function }}" içinde tür hatası, "{{ parameter }}" parametresi
 
 [formulas.msg-error-invalid-array-access]
 original=Cannot access index "{{ index }}" of non-array value
-translation=Cannot access index {{ index }} of non-array value
+translation=Dizi olmayan bir değerin “{{ index }}” dizinine erişilemiyor
 
 [formulas.msg-error-invalid-object-access]
 original=Cannot find "{{ index }}" on type {{ type }}
-translation=Cannot find {{ index }} on type {{ type }}
+translation={{ type }} türünde "{{ index }}" bulunamıyor
 
 [pdf.action-highlight-all]
 original=Highlight all
@@ -9596,7 +9828,7 @@ translation=Seçimin linkini kopyala
 
 [pdf.action-copy-annot-link]
 original=Copy link to annotation
-translation=Etiketin linkini koptala
+translation=Etiketin linkini kopyala
 
 [pdf.action-copy-section-link]
 original=Copy link to section
@@ -9744,7 +9976,7 @@ translation=Yazın [[
 
 [properties.value-suggestion.instruction-link-note]
 original=to link note
-translation=notaya bağlantı oluşturmak için
+translation=nota bağlantı oluşturmak için
 
 [properties.value-suggestion.instruction-dismiss]
 original=to dismiss
@@ -10065,3 +10297,87 @@ translation={{count}} tema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} tema
+
+[main.button-cancel]
+original=Cancel
+translation=İptal
+
+[main.button-ok]
+original=OK
+translation=Tamam
+
+[main.button-copy]
+original=Copy
+translation=Kopyala
+
+[main.button-open-link]
+original=Open Link
+translation=Bağlantıyı aç
+
+[main.button-open-file]
+original=Open this file
+translation=Bu dosyayı aç
+
+[main.button-run-file]
+original=Run File
+translation=Dosyayı çalıştır
+
+[main.external-link-title]
+original=Open external link?
+translation=Harici bağlantı açılsın mı?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Bu bağlantı, Obsidian dışında harici bir uygulama açacak. Yalnızca bu bağlantının kaynağına güveniyorsanız devam edin.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation={{scheme}}:// bağlantılarını her zaman aç
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Uzak dosya uyarısı
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Bu dosya uzak bir sunucuda bulunuyor ve tehlikeli olabilir.\nAçmak istediğinizden emin misiniz?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Konum: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Ağ sürücüsü erişimi
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Bu içerik bir ağ sürücüsünden veri istiyor. Buna izin vermek, giriş kimlik bilgilerinizi veya diğer hassas bilgilerinizi uzak ana makineye ifşa edebilir.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Ana makine: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=İzin ver
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Yürütülebilir dosya çalıştırılsın mı?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Bu bağlantı yürütülebilir bir dosyaya işaret ediyor. Çalıştırmak bilgisayarınıza zarar verebilir.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Dosya: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Kasa bulunamadı.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation={{url}} URL'si için bir kasa bulunamadı

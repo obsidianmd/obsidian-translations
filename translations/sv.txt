@@ -8,7 +8,11 @@ translation=Tillägg
 
 [setting.builtin-plugins]
 original=Core plugins
-translation=Kärntillägg
+translation=Grundtillägg
+
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Visa i tilläggslistan
 
 [setting.plugin-options]
 original=Plugin options
@@ -22,9 +26,41 @@ translation=Exempel: mapp 1/mapp 2
 original=Example: folder/note
 translation=Exempel: mapp/anteckning
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Ingen fil vald
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Ändring av denna inställning kräver omstart för verkan
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Ogiltigt nummer
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Värdet måste vara minst {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Värdet får vara högst {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Filen hittades inte.
+
+[setting.search-settings]
+original=Search settings...
+translation=Sök inställningar...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Inga inställningar hittades.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} till
 
 [setting.editor.name]
 original=Editor
@@ -84,7 +120,7 @@ translation=Begränsa radlängd. Mindre får plats på skärmen, men långa styc
 
 [setting.editor.option-strict-line-break]
 original=Strict line breaks
-translation=Stränga radbyten
+translation=Strikta radbyten
 
 [setting.editor.option-strict-line-break-description]
 original=Markdown specs ignore single line breaks in reading view. Turn this off to make single line breaks visible.
@@ -152,11 +188,11 @@ translation=Låter dig vika in en del av samma förflyttning (t.ex en lista).
 
 [setting.editor.option-default-new-tab-view]
 original=Default view for new tabs
-translation=Standardvy för nya tabbar
+translation=Standardvy för nya flikar
 
 [setting.editor.option-default-new-tab-view-description]
 original=The default view that a new Markdown tab gets opened in.
-translation=Standardvyn som en ny markdown-tabb öppnas i.
+translation=Standardvyn som en ny markdownflik öppnas i.
 
 [setting.editor.option-default-new-tab-view-editing]
 original=Editing view
@@ -168,19 +204,19 @@ translation=Läsvy
 
 [setting.editor.option-open-tab-in-foreground]
 original=Always focus new tabs
-translation=Fokusera alltid nya tabbar
+translation=Fokusera alltid nya flikar
 
 [setting.editor.option-open-tab-in-foreground-description]
 original=When you open a link in a new tab, switch to it immediately.
-translation=När en länk öppnas i en ny tabb, byt till den automatiskt
+translation=När en länk öppnas i en ny flik, byt till den automatiskt
 
 [setting.editor.option-default-editing-mode]
 original=Default editing mode
-translation=Normala skrivläget
+translation=Standardskrivläge
 
 [setting.editor.option-default-editing-mode-description]
 original=The default editing mode a new tab will start with.
-translation=Normala läget som en ny panel börjar med.
+translation=Standardskrivläge som en ny panel börjar med.
 
 [setting.editor.option-default-editing-mode-source]
 original=Source mode
@@ -208,7 +244,7 @@ translation=Visa vertikala linjer mellan punkter som markörer
 
 [setting.editor.option-use-tabs]
 original=Indent using tabs
-translation=Använd tabbar
+translation=Använd tabbar för att förskjuta text
 
 [setting.editor.option-use-tabs-description]
 original=Use tabs to indent by pressing the “Tab” key. Turn this off to indent using 4 spaces.
@@ -224,11 +260,19 @@ translation=Antal mellanslag som en tabb motsvarar.
 
 [setting.editor.option-rtl]
 original=Right-to-left (RTL)
-translation=Skriv högerifrån (RTL)
+translation=Skriv från höger till vänster (RTL)
 
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Gör så att texten går från höger till vänster.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Visa Mermaid-diagram i anteckningar
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Rendera flödesscheman, sekvensdiagram och andra diagram från ”mermaid”-kodblock.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -396,7 +440,7 @@ translation=Om länkar ska uppdateras efter att man byter namn på en fil.
 
 [setting.file.option-new-note-location]
 original=Default location for new notes
-translation=Stället där nya anteckningar hamnar
+translation=Plats där nya anteckningar hamnar
 
 [setting.file.option-new-note-location-description]
 original=Where newly created notes are placed.
@@ -502,25 +546,33 @@ translation=Exkluderade filer
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Exkluderade filer kommer att gömmas eller vara mindre synliga, t.ex. snabbnavigatorn och länkförslag.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Inga exkluderade fileter används just nu. Lägg till ett nedan.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Lägg till undantag...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Filter som matchar följande filter är exkluderade:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Inga undantag har lagts till.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filter
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} regel
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} regler
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Lägg till undantag
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Ange en sökväg eller ett reguljärt uttryck, t.ex. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
-translation=Filter kan ej vara tomma
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Mata in sökväg eller "/regex/"...
+translation=Filter kan inte vara tomt
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -530,17 +582,37 @@ translation=Tillåt URI-callbacks
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Aktivera användningen av x-callback-url genom x-success eller x-error när du hanterar Obsidian URIs.
 
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian-URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Hantera betrodda åtgärder och konfigurera URI-beteende.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Betrodda åtgärder
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Inga betrodda åtgärder ännu. Godkända URI-åtgärder visas här.
+
 [setting.appearance.name]
 original=Appearance
 translation=Utseende
 
 [setting.appearance.option-base-theme]
 original=Base color scheme
-translation=Bastema
+translation=Färgtema
 
 [setting.appearance.option-base-theme-description]
 original=Choose Obsidian's default color scheme.
-translation=Använd Obsidians normala färger
+translation=Välj Obsidians standardfärgtema.
+
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=mörk ljus system nattläge färgschema
 
 [setting.appearance.option-accent-color]
 original=Accent color
@@ -548,7 +620,11 @@ translation=Accentfärg
 
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
-translation=Välj den i appen tillämpade accentfärgen.
+translation=Välj accentfärg som används i hela appen.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=markering varumärke primär färg
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,17 +682,17 @@ translation=Typsnitt där alla bokstäver är lika breda
 original=Set font for places like code blocks and frontmatter.
 translation=Välj typsnitt för kodblock och inledning.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Nuvarande typsnitt:
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} teckensnitt
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Följande typsnitt används nu:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} teckensnitt
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
-translation=Skriv in namnet av ett typsnitt...
+translation=Skriv namn på typsnitt...
 
 [setting.appearance.label-no-custom-font-set]
 original=No custom font is applied right now. Add one below.
@@ -636,7 +712,7 @@ translation=Typsnittet hittades.
 
 [setting.appearance.label-font-name]
 original=Font name
-translation=Namnet av typsnittet
+translation=Namn på typsnittet
 
 [setting.appearance.option-community-themes]
 original=Community themes
@@ -658,6 +734,10 @@ translation=Typsnittsstorlek
 original=Font size in pixels that affects editing and reading views.
 translation=Typsnittsstorlek i pixlar som påverkar skrivläget och läsläget.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=textstorlek zoom
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Snabb typsnittsstorleksändring
@@ -674,6 +754,10 @@ translation=Teman
 original=Manage installed themes and browse community themes.
 translation=Hantera installerade teman samt bläddra bland community-teman.
 
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=gemenskap bläddra installera ladda ned
+
 [setting.appearance.option-theme-button-manage]
 original=Manage
 translation=Hantera
@@ -684,19 +768,11 @@ translation=Inga
 
 [setting.appearance.option-native-menus]
 original=Native menus
-translation=Native-menyer
+translation=Operativsystemets menyer
 
 [setting.appearance.option-native-menus-desc]
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Menyer i appen kommer matcha operativsystemet. De kommer inte påverkas av det valda temat.
-
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Ladda om teman
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Laddade om anpassade CSS-teman.
 
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
@@ -706,13 +782,21 @@ translation=Öppna temamappen
 original=CSS snippets
 translation=CSS-instick
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Hantera din samling av CSS-filer för att anpassa appens utseende.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Inga CSS-instick kunde hittas i insticksmappen.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} aktiverade
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS-instick lagras i "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS-instick låter dig anpassa utseendet på Obsidian. Placera CSS-filer i “{{path}}” för att de ska visas här.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Öppna insticksmappen
 original=Reloaded CSS snippets.
 translation=Laddade om CSS-instick
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Tillämpa CSS-instick i "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Sök css-instick...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -760,7 +844,7 @@ translation=Fönsterramens stil
 
 [setting.appearance.option-frame-description]
 original=Determines the styling of the title bar of Obsidian windows. Requires a full restart to take effect.
-translation=Bestämmer stilen av titel-baren för Obsidian-fönstrer. Kräver omstart för att tillämpas.
+translation=Bestämmer utseendet av titelraden i Obsidians fönster. Kräver en fullständig omstart för att träda i kraft.
 
 [setting.appearance.option-frame-hidden]
 original=Hidden (default)
@@ -796,7 +880,7 @@ translation=Ändra vilka ikoner som dyker upp i Ribbon-menyn i navigations-baren
 
 [setting.appearance.option-mobile-quick-ribbon-item]
 original=Quick access ribbon item
-translation=Snabbtillgänligt ribbon-element
+translation=Snabbtillgängligt ribbon-element
 
 [setting.appearance.option-mobile-quick-ribbon-item-desc]
 original=Choose the behavior of tapping the ribbon button in the navigation menu. By default, this will open a menu showing all your ribbon items.
@@ -824,19 +908,19 @@ translation=Övriga ribbon-element
 
 [setting.appearance.label-modal-configuration]
 original=Ribbon menu
-translation=Ribbon-konfiguration
+translation=Verktygsmenykonfiguration
 
 [setting.appearance.label-modal-configuration-desc]
 original=Choose what items you want to be active in the ribbon. Drag and drop to change the order.
-translation=Välj vilka element du vill ska vara aktiva i ribbon-menyn. Klicka och dra för att ändra ordningen.
+translation=Välj vilka element du vill ska vara aktiva i verktygsmenyn. Klicka och dra för att ändra ordningen.
 
 [setting.appearance.option-show-view-header]
 original=Show tab title bar
-translation=Visa tabbars titel-bar
+translation=Visa flikars titelrad
 
 [setting.appearance.option-show-view-header-desc]
 original=Display the header at the top of every tab.
-translation=Visa rubriken i toppen av varje tabb.
+translation=Visa rubriken i toppen av varje flik.
 
 [setting.appearance.option-floating-navigation]
 original=Floating navigation
@@ -884,7 +968,7 @@ translation=Uppdatera alla
 
 [setting.appearance.label-current-themes]
 original=Current community themes
-translation=Nuvarande community-teman
+translation=Installerade community-teman
 
 [setting.appearance.label-currently-installed]
 original=You currently have {{count}} theme installed.
@@ -893,6 +977,26 @@ translation=För närvarande är {{count}} tema installerade.
 [setting.appearance.label-currently-installed_plural]
 original=You currently have {{count}} themes installed.
 translation=För närvarande är {{count}} teman installerade.
+
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Öppna inställningar i nytt fönster
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Öppna inställningar i ett eget fönster i stället för inbäddat i appen.
+
+[setting.interface.name]
+original=Interface
+translation=Gränssnitt
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Avancerat
 
 [setting.hotkeys.name]
 original=Hotkeys
@@ -910,14 +1014,6 @@ translation=Visar {{count}} tangentbordsgenväg.
 original=Showing {{count}} hotkeys. 
 translation=Visar {{count}} tangentbordsgenvägar. 
 
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} kommando med konflikter.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} kommandon med konflikter.
-
 [setting.hotkeys.prompt-filter]
 original=Filter...
 translation=Filtrera...
@@ -934,6 +1030,10 @@ translation=Tryck tangentbordsgenvägen...
 original=All
 translation=Alla
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Konflikter ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Otilldelade
@@ -945,6 +1045,10 @@ translation=Tilldelade
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Tilldelade av mig
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Inga resultat hittades.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1080,7 +1184,7 @@ translation=På Linux inkluderar hemlighetslager som stöds:
 
 [setting.about.name]
 original=General
-translation=Om oss
+translation=Allmänt
 
 [setting.about.label-commercial-license]
 original=Commercial license
@@ -1224,7 +1328,7 @@ translation=Om detta stängs av kommer appens prestanda att försämras avsevär
 
 [setting.about.option-config-location]
 original=Override config folder
-translation=Överstyr konfiguratinosmappen
+translation=Åsidosätt konfigurationsmappen
 
 [setting.about.option-config-location-description]
 original=Use a different config folder than the default one. Must start with a dot.
@@ -1396,27 +1500,27 @@ translation=Tilläggslista
 
 [setting.core-plugin.option-search-plugin]
 original=Search core plugins
-translation=Sök efter kärntillägg
+translation=Sök efter grundtillägg
 
 [setting.core-plugin.option-search-plugin-description]
 original=Filter plugins by name or description.
-translation=Filtrera tillägg efter namn eller beskrivning.
+translation=Filtrera grundtillägg efter namn eller beskrivning.
 
 [setting.core-plugin.placeholder-search-plugin]
 original=Search plugins...
-translation=Sök efter tillägg...
+translation=Sök efter grundtillägg...
 
 [setting.third-party-plugin.name]
 original=Community plugins
-translation=Gemenskapstillägg
+translation=Användartillägg
 
 [setting.third-party-plugin.option-restricted-mode]
 original=Restricted mode
-translation=Begränsat Tillstånd
+translation=Begränsat läge
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Begränsat Tillstånd är av. Slå på för att inaktivera gemenskapstillägg.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Aktivera begränsat läge för att använda appen utan gemenskapstillägg.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1432,23 +1536,23 @@ translation=Sök regelbundet efter tilläggsuppdateringar.
 
 [setting.third-party-plugin.option-browse-community-plugins]
 original=Community plugins
-translation=Gemenskapstillägg
+translation=Användartillägg
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Bläddra och installera gemenskapstillägg skapats av vår fantastiska gemenskap.
+original=Browse and install community plugins made by the community.
+translation=Bläddra bland och installera gemenskapstillägg skapade av gemenskapen.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Bläddra
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
-translation=Avsluta Begränsat Tillstånd
+original=Exit Restricted mode
+translation=Avsluta begränsat läge
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
 original=Community plugins, like any other software you install, could potentially cause data integrity and security issues.
-translation=Gemenskapstillägg, liksom all annan programvara som du installerar, kan potentiellt orsaka dataintegritet- och säkerhetsproblem.
+translation=Användartillägg, liksom all annan programvara som du installerar, kan potentiellt orsaka dataintegritet- och säkerhetsproblem.
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-2]
 original=Plugin security is important to us. Here's what we do:
@@ -1456,15 +1560,15 @@ translation=Tilläggssäkerhet är viktig för oss. Här är vad vi gör:
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-3]
 original=Despite our efforts, there is still a small chance that a community plugin might misbehave.
-translation=Trots våra insatser, finns det fortfarande en liten risk att en gemenskapstillägg kan orsaka problem.
+translation=Trots våra insatser, finns det fortfarande en liten risk att ett användartillägg kan orsaka problem.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Inledande kodgranskning
+original=Code review
+translation=Kodgranskning
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Tillägg genomgår en inledande kodgranskning av vårt team innan de visas i butiken.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Tillägg i den officiella katalogen för gemenskapstillägg granskas automatiskt efter varje uppdatering.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Rapportera mekanism
 original=We follow up and remove faulty plugins upon user report.
 translation=Vi följer upp och tar bort felaktiga tillägg när de rapporteras till oss.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Vill du avsluta Begränsat Tillstånd för att aktivera gemenskapstillägg? Vi rekommenderar att du skapa säkerhetskopior av dina data innan du gör det.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Lär mer om tilläggssäkerhet
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Slå på gemenskapstillägg
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Tillåt gemenskapstillägg
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Tillägg kan köra godtycklig kod på din enhet. Vi rekommenderar att du säkerhetskopierar dina data innan du aktiverar dem.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Återaktivera installerade tillägg
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Återaktivera {{count}} tidigare installerat tillägg.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Återaktivera {{count}} tidigare installerade tillägg.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Visa tilläggsinformation
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Aktiverade tillägg
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Dessa tillägg aktiveras när du lämnar begränsat läge.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1528,11 +1656,11 @@ translation=Bläddra valv i Begränsat Tillstånd
 
 [setting.third-party-plugin.placeholder-community-plugins]
 original=Search community plugins...
-translation=Sök efter gemenskapstillägg...
+translation=Sök efter användartillägg...
 
 [setting.third-party-plugin.msg-failed-load-plugins]
 original=Failed to load community plugins.
-translation=Misslyckades med att ladda ner gemenskapstillägg.
+translation=Misslyckades med att ladda användartillägg.
 
 [setting.third-party-plugin.label-installed]
 original=Installed
@@ -1553,6 +1681,18 @@ translation=Inaktivera
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Kopiera delningslänk
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Visa detaljer
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Öppna gemenskapssidan
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Inställningar
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1636,7 +1776,7 @@ translation=Ladda om tillägg
 
 [setting.third-party-plugin.msg-reloaded-third-party-plugins]
 original=Reloaded third-party plugins.
-translation=Återladdade gemenskapstillägg.
+translation=Laddade om användartillägg.
 
 [setting.third-party-plugin.label-uninstall]
 original=Uninstall
@@ -1710,13 +1850,17 @@ translation=Sök efter installerade tillägg...
 original=Show installed only
 translation=Visa endast installerade
 
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Inga tillägg installerade.
+
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
 translation=Donera för att stödja {{name}}
 
 [setting.third-party-plugin.label-donate-modal-text1]
 original=Plugin developers are community volunteers who make amazing things out of passion. If you find this plugin useful, please consider funding its development.
-translation=Tilläggsutvecklare är gemenskapsvolontärer som utvecklar fantastiska saker av passion. Om du tycker att detta tillägg är användbar, kan du överväga att stödja dess utveckling.
+translation=Tilläggsutvecklare är användarvolontärer som utvecklar fantastiska saker av passion. Om du tycker att detta tillägg är användbart, kan du överväga att stödja dess utveckling.
 
 [setting.third-party-plugin.label-donate-modal-text2]
 original=100% of your contribution will go to the plugin developer; Obsidian does not take a cut. The funding platform they choose might charge a fee.
@@ -1756,7 +1900,7 @@ translation=Uppdaterad {{time}}
 
 [setting.mobile-toolbar.name]
 original=Toolbar
-translation=Mobil verktygsfält
+translation=Mobilt verktygsfält
 
 [setting.mobile-toolbar.option-configure-quick-action]
 original=Configure mobile Quick Action
@@ -1828,7 +1972,7 @@ translation=Växla matematikblock
 
 [setting.mobile-toolbar.option-markdown-link]
 original=Add Markdown link
-translation=Lägg till Markdown-länk
+translation=Lägg till Markdownlänk
 
 [setting.mobile-toolbar.option-bullet-list]
 original=Toggle bullet list
@@ -1856,11 +2000,11 @@ translation=Gör om
 
 [setting.mobile-toolbar.option-move-caret-up]
 original=Move caret up
-translation=Flytta markören upp
+translation=Flytta markören uppåt
 
 [setting.mobile-toolbar.option-move-caret-down]
 original=Move caret down
-translation=Flytta markören ner
+translation=Flytta markören neråt
 
 [setting.mobile-toolbar.option-move-caret-left]
 original=Move caret left
@@ -1884,7 +2028,7 @@ translation=Växla tangentbord
 
 [setting.mobile-toolbar.option-configure-toolbar]
 original=Configure mobile toolbar
-translation=Konfigurera mobil verktygsfält
+translation=Konfigurera mobilt verktygsfält
 
 [setting.mobile-toolbar.option-added-options]
 original=Added options
@@ -2109,6 +2253,18 @@ translation=Misslyckades med att ladda tillägg "{{plugin}}"
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Tillägg “{{plugin}}” stötte på ett fel vid laddning
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} lästes inte in. Det här tillägget är inte kompatibelt med Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} fungerar inte längre. Vi rekommenderar att du avinstallerar det.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Det gick inte att läsa in tillägget {{plugin}} v{{version}}. Den här versionen har rapporterats orsaka problem. Kontrollera om det finns en nyare version av tillägget.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2548,7 +2704,11 @@ translation=Läsvy
 
 [interface.menu.add-property]
 original=Add file property
-translation=Lägg till fil-egenskap
+translation=Lägg till filegenskap
+
+[interface.menu.delete]
+original=Delete
+translation=Radera
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3404,7 +3564,7 @@ translation=Tryck tillbaka igen för att avsluta.
 
 [interface.mobile.feedback.label-feedback]
 original=Feedback
-translation=Feedback
+translation=Återkoppling
 
 [interface.mobile.feedback.label-feedback-desc]
 original=Are you enjoying Obsidian? Help us by giving it a rating.
@@ -3776,7 +3936,7 @@ translation=Redigera filtitel
 
 [commands.copy-path]
 original=Copy current file path from vault folder
-translation=Kopiera filväg
+translation=Kopiera aktuell filsökväg från valvets mapp
 
 [commands.copy-full-path]
 original=Copy current file path from system root
@@ -3808,7 +3968,7 @@ translation=Visa felsökningsinformation
 
 [commands.open-sandbox-vault]
 original=Open sandbox vault
-translation=Öppna sandlådevvalv
+translation=Öppna sandlådevalv
 
 [commands.always-on-top]
 original=Toggle window always on top
@@ -3938,6 +4098,22 @@ translation=Det finns för närvarande {{count}} länkar som pekar på denna fil
 original=Delete file
 translation=Radera fil
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Kör åtgärd från extern länk?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Åtgärden ”{{action}}” kommer att köras. Fortsätt endast om du litar på länkens källa.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Tillägget ”{{source}}” kommer att köra åtgärden ”{{action}}”. Fortsätt endast om du litar på länkens källa.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Fråga inte igen för ”{{action}}”
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Ladda ner bilagor
@@ -3993,6 +4169,18 @@ translation=Bekräfta
 [dialogue.button-cancel]
 original=Cancel
 translation=Avbryt
+
+[dialogue.button-allow]
+original=Allow
+translation=Tillåt
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Tillåt en gång
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Tillåt alltid
 
 [dialogue.button-skip]
 original=Skip
@@ -4364,7 +4552,7 @@ translation=Skapa anteckning till höger
 
 [plugins.file-explorer.action-auto-reveal]
 original=Auto-reveal current file
-translation=Avslöja aktuell fil automatiskt
+translation=Visa aktuell fil automatiskt
 
 [plugins.file-explorer.action-collapse-all]
 original=Collapse all
@@ -4388,11 +4576,11 @@ translation=Ändra sorteringsordning
 
 [plugins.file-explorer.action-reveal-file]
 original=Reveal file in navigation
-translation=Avslöja fil i filutforskaren
+translation=Visa fil i filutforskaren
 
 [plugins.file-explorer.action-reveal-active-file]
 original=Reveal current file in navigation
-translation=Avslöja aktiv fil i filutforskaren
+translation=Visa aktiv fil i filutforskaren
 
 [plugins.file-explorer.command-make-a-copy]
 original=Make a copy of the current file
@@ -4876,11 +5064,11 @@ translation=Inte skapad än, välj för att skapa
 
 [plugins.quick-switcher.option-show-existing-only]
 original=Show existing only
-translation=Visa endast befintliga
+translation=Visa endast befintliga filer
 
 [plugins.quick-switcher.option-show-existing-only-description]
 original=Only show results from existing files. Links to files that are not yet created will be hidden.
-translation=Om länkar till filer som ännu inte är skapade ska visas.
+translation=Visa endast resultat från befintliga filer. Länkar till filer som ännu inte är skapade kommer att döljas.
 
 [plugins.quick-switcher.option-show-attachments]
 original=Show attachments
@@ -4901,6 +5089,10 @@ translation=Visa alla filer inklusive de som Obsidian inte kan öppna. Filerna �
 [plugins.graph-view.name]
 original=Graph view
 translation=Grafvy
+
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokal graf
 
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
@@ -5686,9 +5878,13 @@ translation=för att avfärda
 original=No commands found.
 translation=Inga kommandon hittades.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Skriv ett kommando...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Lägg till ett kommando...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Välj ett kommando...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -5892,7 +6088,7 @@ translation=Mappen för dagliga anteckningar hittades inte.
 
 [plugins.daily-notes.label-refer-to-syntax]
 original=For more syntax, refer to 
-translation=För mer syntax, se: 
+translation=För syntax, se: 
 
 [plugins.daily-notes.label-syntax-link]
 original=format reference
@@ -5900,7 +6096,7 @@ translation=formatreferens
 
 [plugins.daily-notes.label-syntax-live-preview]
 original=Your current syntax looks like this: 
-translation=Så här kommer det att se ut: 
+translation=Din nuvarande syntax ser ut så här: 
 
 [plugins.daily-notes.option-new-file-location]
 original=New file location
@@ -5920,7 +6116,7 @@ translation=Filsökvägen att använda som mall.
 
 [plugins.unique-note-creator.name]
 original=Unique note creator
-translation=Unik anteckningsskapare
+translation=Unik anteckning
 
 [plugins.unique-note-creator.desc]
 original=Create notes with unique timestamp prefixes, for workflows like zettelkasten or slip box.
@@ -5968,7 +6164,7 @@ translation=Exempel: mapp1/anteckning
 
 [plugins.unique-note-creator.option-id-format]
 original=Unique prefix format
-translation=Unikt prefixformat
+translation=Prefixformat
 
 [plugins.unique-note-creator.msg-template-file-not-found]
 original=Failed to create unique note. Template file “{{template}}” not found.
@@ -6033,6 +6229,14 @@ translation=Ordräkning
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Visa ordräkning i statusfältet.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Visa Mermaid-diagram i detta valv?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Tillåt endast om du litar på innehållet i detta valv.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Ange deras e-post...
 original=Please enter a valid email to invite someone.
 translation=Vänligen ange en giltig e-postadress för att bjuda in någon.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Vänligen aktivera kärntillägget Publicera i Inställningar -> Kärntillägg för att visa webbplatser.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Dina webbplatser
@@ -7016,7 +7216,7 @@ translation=Vänligen ange ett namn för den nya layouten.
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=Lyckades spara layout.
+translation=Lyckades spara layout "{{name}}".
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
@@ -7092,7 +7292,7 @@ translation=Raderad via {{ device }}
 
 [plugins.sync.label-file-renamed-from]
 original=Renamed from “{{from}}”
-translation=Denna fil döptes om från "{{filepath}}"
+translation=Denna fil döptes om från "{{from}}"
 
 [plugins.sync.label-file-renamed-from-to]
 original=Renamed from “{{from}}” to “{{to}}”
@@ -7108,11 +7308,11 @@ translation=Flyttade från “{{from}}” till “{{to}}”
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 revision
+translation={{count}} revision
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
-translation={{revisions}} revisioner
+translation={{count}} revisioner
 
 [plugins.sync.label-via-device]
 original=via {{device}}
@@ -7276,7 +7476,7 @@ translation=Bekräfta radering av valv
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=Är du säker på att du vill radera detta fjärrvalv?
+translation=Är du säker på att du vill radera fjärrvalvet "{{name}}"?
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7304,7 +7504,7 @@ translation=Koppla från
 
 [plugins.sync.label-sync-status]
 original=Sync: {{status}}
-translation=Sync: {{status}}
+translation=Synk: {{status}}
 
 [plugins.sync.label-not-remote-vaults]
 original=You don't have any remote vaults.
@@ -7632,35 +7832,51 @@ translation=Synkronisera anpassade snabbkommandon.
 
 [plugins.sync.option-sync-core-plugin]
 original=Active core plugin list
-translation=Aktiv kärntilläggslista
+translation=Aktiv grundtilläggslista
 
 [plugins.sync.option-sync-core-plugin-desc]
 original=Sync which core plugins are enabled.
-translation=Synkronisera vilka kärntillägg som är aktiverade.
+translation=Synkronisera vilka grundtillägg som är aktiverade.
 
 [plugins.sync.option-sync-core-plugin-data]
 original=Core plugin settings
-translation=Kärntilläggsinställningar
+translation=Grundtilläggsinställningar
 
 [plugins.sync.option-sync-core-plugin-data-desc]
 original=Sync core plugin settings.
-translation=Synkronisera kärntilläggsinställningar.
+translation=Synkronisera grundtilläggsinställningar.
 
 [plugins.sync.option-sync-community-plugin]
 original=Active community plugin list
-translation=Aktiv gemenskapstilläggslista
+translation=Aktiv användartilläggslista
 
 [plugins.sync.option-sync-community-plugin-desc]
 original=Sync which community plugins are enabled.
-translation=Synkronisera vilka gemenskapstillägg som är aktiverade.
+translation=Synkronisera vilka användartillägg som är aktiverade.
 
 [plugins.sync.option-sync-community-plugin-data]
 original=Installed community plugins
-translation=Installerade gemenskapstillägg
+translation=Installerade användartillägg
 
 [plugins.sync.option-sync-community-plugin-data-desc]
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
-translation=Synkronisera installerade gemenskapstillägg (.js, .css och manifest.json-filer) och deras inställningar.
+translation=Synkronisera installerade användartillägg (.js, .css och manifest.json-filer) och deras inställningar.
+
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Vill du tillåta synkade tillägg att köras på den här enheten?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync kan inte verifiera innehållet i tillägg som synkats till den här enheten, och de kan skilja sig från tillägg som publicerats i gemenskapskatalogen.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Aktivera detta endast om valvet och anslutna enheter är betrodda.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ja, aktivera synkronisering av tillägg
 
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
@@ -7988,7 +8204,7 @@ translation=Vänligen välj en fil till vänster för att visa ögonblicksbilder
 
 [plugins.note-composer.name]
 original=Note composer
-translation=Anteckningskompositör
+translation=Anteckningshantering
 
 [plugins.note-composer.desc]
 original=Merge two notes or split one into two.
@@ -8244,7 +8460,7 @@ translation=Rensa data
 
 [plugins.web-viewer.action-clear-data-cookies]
 original=Cookies
-translation=Cookies
+translation=Kakor
 
 [plugins.web-viewer.action-clear-data-cookies-desc]
 original=May sign you out of websites.
@@ -8277,6 +8493,10 @@ translation=Kan inte ladda den webbplatsen.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Vänligen se till att du har rätt adress.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Läsvy
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -8372,7 +8592,7 @@ translation=Kan inte hitta innehåll att extrahera.
 
 [plugins.canvas.name]
 original=Canvas
-translation=canvas
+translation=Canvas
 
 [plugins.canvas.desc]
 original=Arrange and connect notes on an infinite canvas.
@@ -8632,7 +8852,7 @@ translation=Detta kommer att dölja all text på din canvas.
 
 [plugins.canvas.option-export-png-zoom]
 original=Zoom
-translation=zoom
+translation=Zoom
 
 [plugins.canvas.option-export-png-zoom-desc]
 original=A higher zoom will generate a higher resolution image.
@@ -8892,15 +9112,15 @@ translation=Canvas uppdaterade {{count}} inbäddningskort
 
 [plugins.bases.name]
 original=Bases
-translation=baser
+translation=Bases
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=Skapa anpassade vyer som låter dig redigera, sortera och filtrera filer med deras egenskaper.
 
 [plugins.bases.action-new-base]
 original=New base
-translation=Ny bas
+translation=Ny base
 
 [plugins.bases.action-add-property]
 original=Add "{{name}}" property
@@ -8948,11 +9168,11 @@ translation=Exportera CSV...
 
 [plugins.bases.command-create-new]
 original=Create new base
-translation=Skapa ny bas
+translation=Skapa ny base
 
 [plugins.bases.command-insert-new]
 original=Insert new base
-translation=Infoga ny bas
+translation=Infoga ny base
 
 [plugins.bases.command-copy-table]
 original=Copy table to clipboard
@@ -8960,7 +9180,7 @@ translation=Kopiera tabell till urklipp
 
 [plugins.bases.command-change-view]
 original=Switch view...
-translation=Change view
+translation=Ändra vy
 
 [plugins.bases.command-add-view]
 original=Add view
@@ -9268,11 +9488,11 @@ translation=Ogiltig egenskapskonfiguration för "{{ name }}".
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Det går inte att lägga till den nya Bas-vyn "{{ viewId }}". En vy med detta ID finns redan.
+translation=Det går inte att lägga till den nya base-vyn "{{ viewId }}". En vy med detta ID finns redan.
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
-translation=Det går inte att tolka din basfil:
+translation=Det går inte att tolka din base-fil:
 
 [plugins.bases.msg-error-view-not-found]
 original=View "{{ view }}" not found
@@ -9493,6 +9713,18 @@ translation=Sammanfatta...
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=Gruppera efter den här egenskapen
+
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Ändra storlek på kolumn...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Återställ kolumnstorlek
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Dra för att ändra storlek
 
 [plugins.bases.table.action-clear-selection]
 original=Clear values
@@ -9804,7 +10036,7 @@ translation=Lägg till egenskap
 
 [properties.label-type-mismatch-warning]
 original=Type mismatch, expected {{type}}
-translation=Fel matchning av typ, förväntade {{typ}}
+translation=Fel matchning av typ, förväntade {{type}}
 
 [properties.label-type-mismatch-warning-generic]
 original=Type mismatch
@@ -10065,3 +10297,87 @@ translation={{count}} tema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} teman
+
+[main.button-cancel]
+original=Cancel
+translation=Avbryt
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopiera
+
+[main.button-open-link]
+original=Open Link
+translation=Öppna länk
+
+[main.button-open-file]
+original=Open this file
+translation=Öppna den här filen
+
+[main.button-run-file]
+original=Run File
+translation=Kör fil
+
+[main.external-link-title]
+original=Open external link?
+translation=Öppna extern länk?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Den här länken öppnar en extern app utanför Obsidian. Fortsätt endast om du litar på källan till länken.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Öppna alltid {{scheme}}://-länkar
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Varning för fjärrfil
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Den här filen finns på en fjärrserver och kan vara farlig.\nÄr du säker på att du vill öppna den?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Plats: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Åtkomst till nätverksenhet
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Det här innehållet begär data från en nätverksenhet. Om du tillåter detta kan dina inloggningsuppgifter eller annan känslig information exponeras för fjärrvärden.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Värd: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Tillåt
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Kör körbar fil?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Den här länken pekar på en körbar fil. Att köra den kan skada din dator.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fil: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Valvet hittades inte.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Det gick inte att hitta ett valv för URL:en {{url}}
