@@ -10,6 +10,10 @@ translation=プラグイン
 original=Core plugins
 translation=コアプラグイン
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=プラグインリストで表示
+
 [setting.plugin-options]
 original=Plugin options
 translation=プラグインオプション
@@ -22,9 +26,41 @@ translation=例: フォルダ1/フォルダ2
 original=Example: folder/note
 translation=例: フォルダ/ノート
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=ファイルが選択されていません
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=このオプションを変更した後、変更した設定を適用するには再起動する必要があります。
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=無効な数値
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=値は {{min}} 以上である必要があります
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=値は {{max}} 以下である必要があります
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=ファイルが見つかりません。
+
+[setting.search-settings]
+original=Search settings...
+translation=設定を検索...
+
+[setting.no-search-results]
+original=No settings found.
+translation=設定が見つかりません。
+
+[setting.search-show-more]
+original={{count}} more
+translation=さらに {{count}} 件
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=右横書き表示 (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=テキストを右横書きに表示するように設定します。
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=ノートに Mermaid 図を表示
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=“mermaid”コードブロックからフローチャート、シーケンス図、その他の図をレンダリングします。
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=除外ファイル
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=除外ファイルに設定したファイルはクイックスイッチャーやリンクサジェスト、グラフビューなどの様々な場所において非表示になるか、候補に挙がりづらくなります。
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=現在、除外フィルターは適用されていません。以下に追加してください。
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=除外を追加...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=現在、以下のフィルターにマッチするファイルが除外されています:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=除外は追加されていません。
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=フィルター
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}}件のルール
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}}件のルール
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=除外を追加
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=パスまたは正規表現を入力してください。例: /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=フィルターは空にできません
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=ファイルパスまたは "/regex/" を入力…
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URIコールバックを許可
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=ObsidianのURIを処理する際に、x-successまたはx-errorを介してx-callback-urlの使用を有効にします。
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=信頼済みアクションを管理し、URI の動作を設定します。
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=信頼済みアクション
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=信頼済みアクションはまだありません。承認済みの URI アクションがここに表示されます。
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=ベーステーマ
 original=Choose Obsidian's default color scheme.
 translation=Obsidianのデフォルトのカラースキームを選んでください。
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=ダーク ライト システム ナイトモード カラースキーム
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=アクセントカラー
@@ -549,6 +621,10 @@ translation=アクセントカラー
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=アプリ全体で使用されるアクセントカラーを選択してください。
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=ハイライト ブランド プライマリカラー
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=モノスペースフォント
 original=Set font for places like code blocks and frontmatter.
 translation=コードブロックやフロントマターといった場所で使用するフォントを設定します。
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= 現在適用中のフォント: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}}個のフォント
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= 現在、次のフォントが適用されています:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}}個のフォント
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=フォントサイズ
 original=Font size in pixels that affects editing and reading views.
 translation=フォントサイズはピクセル単位であり、エディタとプレビューの表示に影響を与えます。
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=テキスト サイズ 拡大
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=フォントサイズのクイック調整
@@ -673,6 +753,10 @@ translation=テーマ
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=コミュニティテーマを閲覧とインストールされたテーマの管理を行います。
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=コミュニティ 参照 インストール ダウンロード
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=ネイティブメニュー
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=アプリ全体で使用されるメニューはOSのスタイルに合致します。この設定はテーマによる影響を受けません。
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=テーマをリロード
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=カスタムCSSテーマをリロードしました。
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=テーマフォルダを開く
@@ -706,13 +782,21 @@ translation=テーマフォルダを開く
 original=CSS snippets
 translation=CSSスニペット
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=アプリの外観を調整するためのCSSファイルのコレクションを管理します。
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=スニペットフォルダにCSSスニペットが見つかりません。
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}}件が有効
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSSスニペットは "{{path}}" に格納されます。
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSSスニペットを使うと、Obsidianの外観をカスタマイズできます。ここに表示するには、CSSファイルを “{{path}}” に配置してください。
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=スニペットフォルダを開く
 original=Reloaded CSS snippets.
 translation=CSSスニペットをリロードしました。
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation="{{path}}" のCSSスニペットを適用します。
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=スニペットを検索...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -864,11 +948,11 @@ translation=リーディング中にインターフェース要素を自動的�
 
 [setting.appearance.msg-updates-found]
 original=Found {{count}} theme to update.
-translation={{count}}個のテーマが更新可能です。
+translation={{count}} 個のテーマが更新可能です。
 
 [setting.appearance.msg-updates-found_plural]
 original=Found {{count}} themes to update.
-translation={{count}}個のプラグインが更新可能です。
+translation={{count}} 個のテーマが更新可能です。
 
 [setting.appearance.button-check-for-updates]
 original=Check for updates
@@ -888,11 +972,31 @@ translation=現在のコミュニティテーマ
 
 [setting.appearance.label-currently-installed]
 original=You currently have {{count}} theme installed.
-translation=現在、{{count}}個のテーマがインストールされています。
+translation=現在、{{count}} 個のテーマがインストールされています。
 
 [setting.appearance.label-currently-installed_plural]
 original=You currently have {{count}} themes installed.
-translation=現在、{{count}}個のテーマがインストールされています。
+translation=現在、{{count}} 個のテーマがインストールされています。
+
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=設定を新しいウィンドウで開く
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=設定をアプリに埋め込まず、独立したウィンドウで開きます。
+
+[setting.interface.name]
+original=Interface
+translation=インターフェース
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=モバイル
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=詳細
 
 [setting.hotkeys.name]
 original=Hotkeys
@@ -904,19 +1008,11 @@ translation=ホットキーを検索
 
 [setting.hotkeys.option-search-desc]
 original=Showing {{count}} hotkey. 
-translation={{count}}個のホットキーを表示中。
+translation={{count}} 個のホットキーを表示中。
 
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
-translation={{count}}個のホットキーを表示中。
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}}個のコマンドが衝突しています。
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}}個のコマンドが衝突しています。
+translation={{count}} 個のホットキーを表示中。
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -928,11 +1024,15 @@ translation=ホットキーを削除
 
 [setting.hotkeys.label-waiting-for-hotkey-press]
 original=Press hotkey...
-translation=キーを押してください
+translation=キーを押してください…
 
 [setting.hotkeys.label-show-all]
 original=All
 translation=すべて
+
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=競合 ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -945,6 +1045,10 @@ translation=割り当て済み
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=ユーザーによる割り当て
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=結果が見つかりません。
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1092,7 +1196,7 @@ translation=ライセンスキー
 
 [setting.about.license-key-placeholder]
 original=Your license key...
-translation=ここにライセンスキーを入力
+translation=ここにライセンスキーを入力…
 
 [setting.about.label-activate-license]
 original=Activate license
@@ -1244,7 +1348,7 @@ translation=あなたの商用ライセンスのキーは "{{key}}" です。
 
 [setting.about.label-commercial-license-info]
 original=Registered to “{{company}}” for {{seats}} users. Valid until {{expiry}}.
-translation="{{company}}" によって{{seats}}人が登録されています。{{expiry}}まで有効です。
+translation="{{company}}" によって {{seats}} 人が登録されています。{{expiry}} まで有効です。
 
 [setting.about.label-validating-commercial-license]
 original=Validating...
@@ -1264,7 +1368,7 @@ translation=カタリストライセンス
 
 [setting.about.option-catalyst-desc]
 original=You currently have the {{tier}} Catalyst license. Thanks for your support!
-translation=現在、{{tier}}カタリストライセンスを使用しています。Obsidianへのサポートありがとうございます！
+translation=現在、{{tier}} カタリストライセンスを使用しています。Obsidianへのサポートありがとうございます！
 
 [setting.about.option-catalyst-desc-no-license]
 original=You don't have a Catalyst license. Catalyst is a one-time donation that helps Obsidian remain 100% user-supported and gives you early access to new features.
@@ -1288,7 +1392,7 @@ translation=あなたのアカウント
 
 [setting.account.option-your-account-desc]
 original=You're currently signed in as {{name}} ({{email}}).
-translation=現在、次のアカウントでサインインしています: {{name}} ({{email}})
+translation=現在、次のアカウントでサインインしています: {{name}} ({{email}})。
 
 [setting.account.option-your-account-desc-no-login]
 original=You're not logged in right now. An account is only needed for Obsidian Sync, Obsidian Publish, and early access versions.
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=制限モード
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=制限モードが無効になっています。コミュニティプラグインを無効化するにはこの設定を有効にしてください。
+original=Turn on Restricted mode to use the app without community plugins.
+translation=コミュニティプラグインなしでアプリを使用するには、制限モードを有効にしてください。
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=コミュニティプラグイン
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=最高のコミュニティによって開発されたサードパーティプラグインを閲覧してインストールします。
+original=Browse and install community plugins made by the community.
+translation=コミュニティが作成したコミュニティプラグインを閲覧してインストールします。
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=閲覧
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=制限モードを終了する
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=努力に関わらず、コミュニティプラグインが不正を行う可能性が依然としてわずかに存在しています。
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=初期コードレビュー
+original=Code review
+translation=コードレビュー
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=プラグインはストアに登場する前に私達のチームによって初期コードレビューを受けます。
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=公式コミュニティディレクトリ内のプラグインは、アップデートのたびに自動的にレビューされます。
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=報告の仕組み
 original=We follow up and remove faulty plugins upon user report.
 translation=ユーザーの報告に応じて欠陥のあるプラグインについての追跡調査を行い、削除します。
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=制限モードを終了してコミュニティプラグインを有効化しますか？制限モードを終了する前にデータのバックアップを作成することを強く推奨しています。
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=プラグインセキュリティについての詳細を確認
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=コミュニティプラグインを有効化
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=コミュニティプラグインを許可
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=プラグインはデバイス上で任意のコードを実行できます。有効にする前にデータをバックアップすることをおすすめします。
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=インストール済みプラグインを再度有効化
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=以前インストールされていた {{count}} 個のプラグインを復元します。
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=以前インストールされていた {{count}} 個のプラグインを復元します。
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=プラグイン情報を表示
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=有効なプラグイン
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=これらのプラグインは、制限モードを終了すると有効になります。
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=無効化
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=共有リンクをコピー
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=詳細を表示
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=コミュニティページを開く
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=設定
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1672,11 +1812,11 @@ translation=アップデートを確認しています…
 
 [setting.third-party-plugin.label-currently-installed]
 original=You currently have {{count}} plugin installed.
-translation=現在、{{count}}個のプラグインがインストールされています。
+translation=現在、{{count}} 個のプラグインがインストールされています。
 
 [setting.third-party-plugin.label-currently-installed_plural]
 original=You currently have {{count}} plugins installed.
-translation=現在、{{count}}個のプラグインがインストールされています。
+translation=現在、{{count}} 個のプラグインがインストールされています。
 
 [setting.third-party-plugin.msg-no-updates-found]
 original=No plugin updates found.
@@ -1684,11 +1824,11 @@ translation=アップデートできるものは見つかりませんでした�
 
 [setting.third-party-plugin.msg-updates-found]
 original=Found {{count}} plugin to update.
-translation={{count}}個のプラグインにアップデートが見つかりました。
+translation={{count}} 個のプラグインにアップデートが見つかりました。
 
 [setting.third-party-plugin.msg-updates-found_plural]
 original=Found {{count}} plugins to update.
-translation={{count}}個のプラグインにアップデートが見つかりました。
+translation={{count}} 個のプラグインにアップデートが見つかりました。
 
 [setting.third-party-plugin.msg-update-plugin]
 original=Update to version {{version}}
@@ -1710,9 +1850,13 @@ translation=プラグインを検索…
 original=Show installed only
 translation=インストール済みのみを表示
 
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=インストール済みのプラグインはありません。
+
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
-translation={{name}}を支援するために寄付する
+translation={{name}} を支援するために寄付する
 
 [setting.third-party-plugin.label-donate-modal-text1]
 original=Plugin developers are community volunteers who make amazing things out of passion. If you find this plugin useful, please consider funding its development.
@@ -1732,7 +1876,7 @@ translation=このプラグインを支援:
 
 [setting.third-party-plugin.label-search-summary]
 original=Showing {{pluginCount}}
-translation={{pluginCount}}を表示中:
+translation={{pluginCount}} を表示中:
 
 [setting.third-party-plugin.label-by-popularity]
 original=Most downloaded
@@ -1752,7 +1896,7 @@ translation=アルファベット順
 
 [setting.third-party-plugin.label-last-updated]
 original=Updated {{time}}
-translation={{time}}に更新
+translation={{time}} に更新
 
 [setting.mobile-toolbar.name]
 original=Toolbar
@@ -1900,11 +2044,11 @@ translation=添付ファイルを追加
 
 [editor.search.placeholder-find]
 original=Find...
-translation=検索
+translation=検索…
 
 [editor.search.placeholder-replace]
 original=Replace...
-translation=置換
+translation=置換…
 
 [editor.search.label-exit-search]
 original=Exit search
@@ -1976,7 +2120,7 @@ translation=で確定
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
-translation=新しい脚注...
+translation=新しい脚注…
 
 [editor.spellcheck.no-suggestion]
 original=No suggestions...
@@ -2110,6 +2254,18 @@ translation=プラグイン "{{plugin}}" の読み込みに失敗しました。
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=プラグイン「{{plugin}}」の読み込み中にエラーが発生しました
 
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}}は読み込まれませんでした。このプラグインはObsidian v{{version}}と互換性がありません。
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}}は機能しなくなりました。アンインストールすることをおすすめします。
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=プラグイン{{plugin}} v{{version}}を読み込めません。このバージョンは問題を引き起こすことが報告されています。プラグインの新しいバージョンがないか確認してください。
+
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=ファイル "{{filepath}}" を開くのに失敗しました。
@@ -2188,7 +2344,7 @@ translation=クリップボードにコピーできません
 
 [interface.prompt-filter]
 original=Filter...
-translation=フィルター...
+translation=フィルター…
 
 [interface.msg-codeblock-render-error]
 original=Encountered an error while rendering code block.
@@ -2408,7 +2564,7 @@ translation=アクティブでなくなったプラグイン
 
 [interface.empty-state.unknown-pane-desc]
 original=The plugin that created this tab ({{type}}) has gone away.
-translation=このペイン({{type}})を作成したプラグインはなくなりました
+translation=このペイン ({{type}}) を作成したプラグインはなくなりました
 
 [interface.release-notes.tab-title]
 original=Release Notes {{version}}
@@ -2549,6 +2705,10 @@ translation=リーディングビュー
 [interface.menu.add-property]
 original=Add file property
 translation=ファイルプロパティを追加
+
+[interface.menu.delete]
+original=Delete
+translation=削除
 
 [interface.menu.delete-file]
 original=Delete file
@@ -2824,7 +2984,7 @@ translation=保管庫が作成できませんでした。
 
 [interface.start-screen.msg-failed-to-create-vault-at-location]
 original=Could not create vault at the given location. Please double check the location and permission.
-translation=指定の場所に保管庫を作成できませんでした。もういちど場所とパーミッションを確認してください。
+translation=指定の場所に保管庫を作成できませんでした。もう一度場所と権限を確認してください。
 
 [interface.start-screen.msg-error-failed-to-open-vault]
 original=Failed to open.
@@ -2920,7 +3080,7 @@ translation=同期を設定
 
 [interface.start-screen.mobile.option-skip]
 original=Continue without sync
-translation=Skip for now
+translation=同期せずに続行
 
 [interface.start-screen.mobile.option-skip-short]
 original=Skip
@@ -2928,7 +3088,7 @@ translation=スキップ
 
 [interface.start-screen.mobile.label-vault-create]
 original=Configure your new vault.
-translation=Choose a name for your vault.
+translation=新しい保管庫を設定します。
 
 [interface.start-screen.mobile.button-create]
 original=Create vault
@@ -2940,7 +3100,7 @@ translation=同期の設定
 
 [interface.start-screen.mobile.label-sync-setup-desc]
 original=Create a synced vault on your Obsidian account so you can access your data from other devices.
-translation=Create a synced vault on your Obsidian account so that you can access your data from other devices.
+translation=Obsidianアカウント上に同期された保管庫を作成すると、他のデバイスからデータにアクセスできます。
 
 [interface.start-screen.mobile.label-remote-vault-create]
 original=Sync encryption
@@ -3144,7 +3304,7 @@ translation=iCloud を使用
 
 [interface.start-screen.mobile.opt-use-other]
 original=Use third-party sync
-translation=Use Third-party sync
+translation=サードパーティの同期を使用
 
 [interface.start-screen.mobile.opt-learn-other-sync]
 original=Other sync methods
@@ -3220,11 +3380,11 @@ translation=iCloudの保管庫が検出されませんでした。原因とし�
 
 [interface.start-screen.mobile.icloud-missing-reason1]
 original=Your vault is on a different iCloud account than the one you are currently signed into on this device.
-translation=保管庫が、このデバイスで現在サインインしているものとは別のiCloudアカウント上にある。
+translation=保管庫が、このデバイスで現在サインインしているものとは別のiCloudアカウント上にあります。
 
 [interface.start-screen.mobile.icloud-missing-reason2]
 original=Your vault is not stored on the top-level Obsidian folder of your iCloud Drive.
-translation=保管庫がiCloud Drive内の最上位のObsidianフォルダに保存されていない。
+translation=保管庫がiCloud Drive内の最上位のObsidianフォルダに保存されていません。
 
 [interface.start-screen.mobile.i-cloud-unsupported]
 original=iCloud not supported
@@ -3240,7 +3400,7 @@ translation=ファイルアクセスを許可
 
 [interface.start-screen.mobile.msg-login-pending]
 original=Logging you in...
-translation=ログインしています...
+translation=ログインしています…
 
 [interface.start-screen.mobile.msg-name-required]
 original=Vault name is required
@@ -3376,11 +3536,11 @@ translation=挿入するファイルを選択
 
 [interface.mobile.action-insert-text-into-file]
 original={{filename}}
-translation={{filename}}にテキストを挿入
+translation={{filename}} にテキストを挿入
 
 [interface.mobile.action-insert-link-into-file]
 original=Insert link into “{{filename}}”
-translation={{filename}}にリンクを挿入
+translation={{filename}} にリンクを挿入
 
 [interface.mobile.action-show-switcher]
 original=Show tab overview
@@ -3544,15 +3704,15 @@ translation=ライト/ダークモードを切り替え
 
 [commands.change-theme]
 original=Change theme...
-translation=テーマの変更...
+translation=テーマの変更…
 
 [commands.change-vault]
 original=Change vault...
-translation=保管庫を変更...
+translation=保管庫を変更…
 
 [commands.open-vault]
 original=Open vault...
-translation=保管庫を開く...
+translation=保管庫を開く…
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -3788,7 +3948,7 @@ translation=Obsidian URIをコピー
 
 [commands.export-pdf]
 original=Export to PDF...
-translation=PDFにエクスポート
+translation=PDFにエクスポート…
 
 [commands.reload]
 original=Reload app without saving
@@ -3856,7 +4016,7 @@ translation=最後のタブに移動
 
 [commands.go-to-nth-tab]
 original=Go to tab #{{n}}
-translation=#{{n}}のタブに移動
+translation=#{{n}} のタブに移動
 
 [commands.show-release-notes]
 original=Show release notes
@@ -3864,11 +4024,11 @@ translation=リリースノートを表示
 
 [dialogue.label-link-affected]
 original=This will affect {{links}} in {{files}}.
-translation={{files}}の{{links}}に影響があります。
+translation={{files}} の {{links}} に影響があります。
 
 [dialogue.msg-updated-links]
 original=Updated {{links}} in {{files}}.
-translation={{files}}の{{links}}を更新しました。
+translation={{files}} の {{links}} を更新しました。
 
 [dialogue.label-update-links]
 original=Update links
@@ -3938,6 +4098,22 @@ translation=現在、このファイルを指している {{count}} 個のリン
 original=Delete file
 translation=ファイルの削除
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=外部リンクからアクションを実行しますか？
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=「{{action}}」アクションが実行されようとしています。リンク元を信頼できる場合のみ続行してください。
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=「{{source}}」プラグインが「{{action}}」アクションを実行しようとしています。リンク元を信頼できる場合のみ続行してください。
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=「{{action}}」について今後確認しない
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=添付ファイルをダウンロード
@@ -3976,7 +4152,7 @@ translation=インターネット接続がありません
 
 [dialogue.msg-loading]
 original=Loading...
-translation=読み込み中...
+translation=読み込み中…
 
 [dialogue.button-manage]
 original=Manage
@@ -3993,6 +4169,18 @@ translation=確認
 [dialogue.button-cancel]
 original=Cancel
 translation=キャンセル
+
+[dialogue.button-allow]
+original=Allow
+translation=許可
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=今回のみ許可
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=常に許可
 
 [dialogue.button-skip]
 original=Skip
@@ -4180,7 +4368,7 @@ translation=引用
 
 [menu-items.export-pdf]
 original=Export To PDF...
-translation=PDFとしてエクスポート
+translation=PDFとしてエクスポート…
 
 [menu-items.insert-attachment]
 original=Insert Attachment...
@@ -4416,15 +4604,15 @@ translation=選択項目から新規フォルダを作成（{{count}} 件）
 
 [plugins.file-explorer.action-move-file]
 original=Move file to...
-translation=ファイルを移動
+translation=ファイルを移動…
 
 [plugins.file-explorer.action-move-folder]
 original=Move folder to...
-translation=フォルダを移動
+translation=フォルダを移動…
 
 [plugins.file-explorer.action-move-items]
 original=Move {{count}} items to...
-translation={{count}}個のアイテムを移動…
+translation={{count}} 個のアイテムを移動…
 
 [plugins.file-explorer.prompt-type-folder]
 original=Type a folder
@@ -4484,7 +4672,7 @@ translation=新規フォルダ
 
 [plugins.file-explorer.menu-opt-rename]
 original=Rename...
-translation=名前を変更
+translation=名前を変更…
 
 [plugins.file-explorer.menu-opt-delete]
 original=Delete
@@ -4568,11 +4756,11 @@ translation=前後を表示
 
 [plugins.search.label-result-count]
 original={{count}} result
-translation={{count}}件
+translation={{count}} 件
 
 [plugins.search.label-result-count_plural]
 original={{count}} results
-translation={{count}}件
+translation={{count}} 件
 
 [plugins.search.label-toggle-search-settings]
 original=Search settings
@@ -4902,6 +5090,10 @@ translation=Obsidian内で開くことのできないタイプのものを含む
 original=Graph view
 translation=グラフビュー
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=ローカルグラフ
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=ノートがどのようにリンクしているかグラフ化します。
@@ -4920,7 +5112,7 @@ translation=スクリーンショットをコピー
 
 [plugins.graph-view.tab-title]
 original=Graph of {{displayText}}
-translation={{displayText}}のグラフ
+translation={{displayText}} のグラフ
 
 [plugins.graph-view.label-filters]
 original=Filters
@@ -5128,7 +5320,7 @@ translation=リンク
 
 [plugins.backlinks.tab-title]
 original=Backlinks for {{displayText}}
-translation={{displayText}}へのバックリンク
+translation={{displayText}} へのバックリンク
 
 [plugins.backlinks.label-no-unlinked-mentions]
 original=No unlinked mentions found.
@@ -5168,7 +5360,7 @@ translation=現在のファイルのアウトゴーイングリンクを開く
 
 [plugins.outgoing-links.tab-title]
 original=Outgoing links from {{displayText}}
-translation={{displayText}}からのアウトゴーイングリンク
+translation={{displayText}} からのアウトゴーイングリンク
 
 [plugins.outgoing-links.label-links]
 original=Links
@@ -5276,7 +5468,7 @@ translation=ファイルプロパティ
 
 [plugins.properties.tab-title]
 original=File properties for {{displayText}}
-translation={{displayText}}のファイルプロパティ
+translation={{displayText}} のファイルプロパティ
 
 [plugins.properties.action-show]
 original=Show all properties
@@ -5360,7 +5552,7 @@ translation=マウスホバーでノートのプレビューを表示します�
 
 [plugins.page-preview.label-empty-attachment]
 original=“{{linktext}}” could not be found.
-translation=“{{linktext}}”が見つかりませんでした。
+translation=“{{linktext}}” が見つかりませんでした。
 
 [plugins.page-preview.label-empty-note]
 original=“{{linktext}}” is not created yet. Click to create.
@@ -5388,7 +5580,7 @@ translation=タブヘッダー
 
 [plugins.page-preview.label-require-mod]
 original=Require {{key}} to trigger page preview on hover
-translation=ページプレビューを表示するには{{key}}キーを押しながらホバーします
+translation=ページプレビューを表示するには {{key}} キーを押しながらホバーします
 
 [plugins.bookmarks.name]
 original=Bookmarks
@@ -5444,11 +5636,11 @@ translation=現在のファイルへのブックマークを削除
 
 [plugins.bookmarks.action-bookmark-tab-group]
 original=Bookmark {{count}} tab...
-translation={{count}}個のタブをブックマーク…
+translation={{count}} 個のタブをブックマーク…
 
 [plugins.bookmarks.action-bookmark-tab-group_plural]
 original=Bookmark {{count}} tabs...
-translation={{count}}個のタブをブックマーク…
+translation={{count}} 個のタブをブックマーク…
 
 [plugins.bookmarks.action-bookmark-all-tabs]
 original=Bookmark all tabs...
@@ -5600,15 +5792,15 @@ translation=コミュニティテーマを読み込めませんでした。ネ�
 
 [plugins.custom-css.msg-now-using-theme]
 original=You're now using {{title}} as your CSS theme.
-translation={{title}}を新規CSSテーマにしました。
+translation={{title}} を新規CSSテーマにしました。
 
 [plugins.custom-css.msg-deleted-theme]
 original=The theme {{title}} has been deleted.
-translation={{title}}テーマが削除されました。
+translation={{title}} テーマが削除されました。
 
 [plugins.custom-css.msg-updated-theme]
 original=The theme {{title}} has been updated.
-translation={{title}}テーマがアップデートされました。
+translation={{title}} テーマがアップデートされました。
 
 [plugins.custom-css.label-installed]
 original=Installed
@@ -5632,19 +5824,19 @@ translation=更新されたテーマは見つかりませんでした。
 
 [plugins.custom-css.msg-updates-found]
 original=Found {{count}} theme to update.
-translation={{count}}テーマの更新が見つかりました。
+translation={{count}} テーマの更新が見つかりました。
 
 [plugins.custom-css.msg-updates-found_plural]
 original=Found {{count}} themes to update.
-translation={{count}}テーマの更新が見つかりました。
+translation={{count}} テーマの更新が見つかりました。
 
 [plugins.custom-css.msg-failed-to-install-theme]
 original=Failed to install theme “{{name}}”.
-translation="{{name}}"テーマのインストールに失敗しました。
+translation="{{name}}" テーマのインストールに失敗しました。
 
 [plugins.custom-css.msg-successfully-installed-theme]
 original=Successfully installed theme “{{name}}”.
-translation="{{name}}"テーマのインストールに成功しました。
+translation="{{name}}" テーマのインストールに成功しました。
 
 [plugins.custom-css.msg-installing-theme]
 original=Installing theme “{{name}}”...
@@ -5652,7 +5844,7 @@ translation="{{name}}" テーマをインストール中…
 
 [plugins.custom-css.label-search-summary]
 original=Showing {{themeCount}}
-translation={{themeCount}}テーマを表示中:
+translation={{themeCount}} テーマを表示中:
 
 [plugins.custom-css.label-update-available]
 original=Update available
@@ -5664,7 +5856,7 @@ translation=コマンドパレット
 
 [plugins.command-palette.desc]
 original=Use Cmd/Ctrl+P and begin typing to invoke a command.
-translation=コマンドを入力して機能を呼び出します。UIを使用したりショートカットを覚えることなくコマンドを使用できます。
+translation=Cmd/Ctrl+P を押して入力を開始すると、コマンドを実行できます。
 
 [plugins.command-palette.action-open]
 original=Open command palette
@@ -5686,9 +5878,13 @@ translation=パレットを閉じる
 original=No commands found.
 translation=コマンドが見つかりません。
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=コマンドを入力…
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=コマンドを追加...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=コマンドを選択...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6016,7 +6212,7 @@ translation=現在のファイルのアウトラインを開く
 
 [plugins.outline.tab-title]
 original=Outline of {{displayText}}
-translation={{displayText}}のアウトライン
+translation={{displayText}} のアウトライン
 
 [plugins.outline.label-no-headings]
 original=No headings found.
@@ -6033,6 +6229,14 @@ translation=ワードカウント
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=ステータスバーにワード数を表示します。
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=この保管庫で Mermaid 図を表示しますか？
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=この保管庫の内容を信頼できる場合のみ許可してください。
 
 [plugins.slides.name]
 original=Slides
@@ -6136,11 +6340,11 @@ translation=日付の書式
 
 [plugins.templates.option-template-date-format-description]
 original={{date}} in the template file will be replaced with this value.
-translation=テンプレートファイルの{{date}}はこの値に置き換えられます。
+translation=テンプレートファイルの {{date}} はこの値に置き換えられます。
 
 [plugins.templates.option-template-date-format-description2]
 original=You can also use {{date:YYYY-MM-DD}} to override the format once.
-translation={{date:YYYY-MM-DD}}を使用して、書式を上書きすることもできます。
+translation={{date:YYYY-MM-DD}} を使用して、書式を上書きすることもできます。
 
 [plugins.templates.option-template-time-format]
 original=Time format
@@ -6148,11 +6352,11 @@ translation=時刻の書式
 
 [plugins.templates.option-template-time-format-description]
 original={{time}} in the template file will be replaced with this value.
-translation=テンプレートファイルの{{time}}はこの値に置き換えられます。
+translation=テンプレートファイルの {{time}} はこの値に置き換えられます。
 
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
-translation={{time:HH:mm}}を使用して、書式を上書きすることもできます。
+translation={{time:HH:mm}} を使用して、書式を上書きすることもできます。
 
 [plugins.templates.instruction-navigate]
 original=to navigate
@@ -6236,7 +6440,7 @@ translation=Obsidian Publishを用いてインターネット上にノートを�
 
 [plugins.publish.action-publish-changes]
 original=Publish changes...
-translation=パブリッシュによる変更の公開
+translation=パブリッシュによる変更の公開…
 
 [plugins.publish.action-publish-file]
 original=Publish current file
@@ -6740,7 +6944,7 @@ translation=タイトルの無いパスワード
 
 [plugins.publish.label-password-created-time]
 original=Created {{time}}
-translation={{time}}に作成
+translation={{time}} に作成
 
 [plugins.publish.msg-added-new-password]
 original=Added new password.
@@ -6792,7 +6996,7 @@ translation=ドメイン設定を更新
 
 [plugins.publish.label-custom-domain-instructions]
 original=Please refer to our {{link}} on our help site for more information.
-translation=更に多くの情報が必要な場合にはヘルプサイトの{{link}}を確認してください。
+translation=更に多くの情報が必要な場合にはヘルプサイトの {{link}} を確認してください。
 
 [plugins.publish.label-custom-domain-link-name]
 original=custom domain setup guide
@@ -6800,7 +7004,7 @@ translation=カスタムドメインの設定ガイド
 
 [plugins.publish.label-site-usage]
 original=You're using {{site}} out of your {{limit}}.
-translation=現在、{{limit}}中の{{site}}個を利用しています。
+translation=現在、{{limit}} 中の {{site}} 個を利用しています。
 
 [plugins.publish.button-add-more-sites]
 original=Add more sites
@@ -6845,10 +7049,6 @@ translation=ユーザーのEメールアドレスを入力…
 [plugins.publish.error-email-must-be-valid]
 original=Please enter a valid email to invite someone.
 translation=ユーザーを招待するための有効なEメールアドレスを入力してください。
-
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=サイトを閲覧するには、「設定」 -> 「コアプラグイン」の項目からパブリッシュのコアプラグインを有効にしてください。
 
 [plugins.publish.label-your-sites]
 original=Your sites
@@ -6940,11 +7140,11 @@ translation=これらのフォルダ内のファイルは公開の変更をプ�
 
 [plugins.publish.label-number-of-folders-included]
 original=Obsidian Publish is currently including {{folders}}.
-translation=現在、Obsidian Publishは{{folders}}を含みます。
+translation=現在、Obsidian Publishは {{folders}} を含みます。
 
 [plugins.publish.label-number-of-folders-excluded]
 original=Obsidian Publish is currently excluding {{folders}}.
-translation=現在、Obsidian Publishは{{folders}}を除外しています。
+translation=現在、Obsidian Publishは {{folders}} を除外しています。
 
 [plugins.publish.label-manage-included-folders]
 original=Manage included folders
@@ -7016,7 +7216,7 @@ translation=新規レイアウトの名前を入力してください。
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=レイアウトが正常に保存されました。
+translation=レイアウト "{{name}}" を正常に保存しました
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
@@ -7080,7 +7280,7 @@ translation=このバージョンはすでに最新です。
 
 [plugins.sync.msg-restored-version]
 original=Successfully restored version from {{time}}
-translation={{time}}から正常にバージョンを復元しました。
+translation={{time}} から正常にバージョンを復元しました。
 
 [plugins.sync.label-file-deleted]
 original=This file was deleted
@@ -7096,23 +7296,23 @@ translation=このファイルは "{{filepath}}" からリネームされまし�
 
 [plugins.sync.label-file-renamed-from-to]
 original=Renamed from “{{from}}” to “{{to}}”
-translation=“{{from}}”から“{{to}}”にリネーム
+translation=“{{from}}” から “{{to}}” にリネーム
 
 [plugins.sync.label-file-moved-from]
 original=Moved from “{{from}}”
-translation=“{{from}}”から移動
+translation=“{{from}}” から移動
 
 [plugins.sync.label-file-moved-from-to]
 original=Moved from “{{from}}” to “{{to}}”
-translation=“{{from}}”から“{{to}}”へ移動
+translation=“{{from}}” から “{{to}}” へ移動
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 revision
+translation={{count}} 件の変更
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
-translation={{revisions}} revisions
+translation={{count}} 件の変更
 
 [plugins.sync.label-via-device]
 original=via {{device}}
@@ -7228,7 +7428,7 @@ translation=これはローカルデータに一切影響を及ぼしません�
 
 [plugins.sync.label-encryption-password-explanation]
 original=The remote vault “{{name}}” is currently encrypted. Enter your password to unlock.
-translation=リモート保管庫“{{name}}”は現在暗号化されています。ロック解除するにはパスワードを入力してください。
+translation=リモート保管庫 “{{name}}” は現在暗号化されています。ロック解除するにはパスワードを入力してください。
 
 [plugins.sync.option-encryption-password-placeholder]
 original=Your password
@@ -7276,7 +7476,7 @@ translation=削除された保管庫の確認
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=このリモート保管庫の削除を行いますか？
+translation=リモート保管庫 "{{name}}" の削除を行いますか？
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7288,7 +7488,7 @@ translation=この実行は永続的であり、元に戻すことはできま�
 
 [plugins.sync.msg-remote-vault-deleted]
 original={{name}} has been deleted.
-translation={{name}}は削除されています。
+translation={{name}} は削除されています。
 
 [plugins.sync.msg-disconnect-from-deleted-vault]
 original=Obsidian Sync: The connected remote vault no longer exists.
@@ -7368,7 +7568,7 @@ translation=ファイル共有サービスでの競合が検知されました
 
 [plugins.sync.label-third-party-sync-warning-desc]
 original=Warning: Your vault seems to be using {{service}} as a third party sync service. If you use Obsidian Sync with this vault, you may run into conflicts, file corruption, or data loss.
-translation=警告: この保管庫は{{service}}をサードパーティの共有サービスとして利用しているようです。この保管庫に対してObsidian Syncを利用すると、競合やファイル破損、データ損失の発生する可能性があります。
+translation=警告: この保管庫は {{service}} をサードパーティの共有サービスとして利用しているようです。この保管庫に対してObsidian Syncを利用すると、競合やファイル破損、データ損失の発生する可能性があります。
 
 [plugins.sync.label-icloud-drive-warning]
 original=If you are using iCloud Drive, your Documents and Desktop folders might be synced by iCloud. This could cause conflicts with Obsidian Sync.
@@ -7480,7 +7680,7 @@ translation=保管庫のサイズを取得できません。
 
 [plugins.sync.option-vault-size-loading]
 original=Retrieving your vault size...
-translation=保管庫のサイズを取得しています...
+translation=保管庫のサイズを取得しています…
 
 [plugins.sync.option-over-size]
 original=Vault size over limit
@@ -7552,7 +7752,7 @@ translation=画像を同期
 
 [plugins.sync.option-sync-image-desc]
 original=Sync image files with these extensions: {{extensions}}.
-translation=次の拡張子の画像ファイルを同期します: {{extensions}}
+translation=次の拡張子の画像ファイルを同期します: {{extensions}}。
 
 [plugins.sync.option-sync-audio]
 original=Sync audio
@@ -7560,7 +7760,7 @@ translation=音声を同期
 
 [plugins.sync.option-sync-audio-desc]
 original=Sync audio files with these extensions: {{extensions}}.
-translation=次の拡張子の音声ファイルを同期します: {{extensions}}
+translation=次の拡張子の音声ファイルを同期します: {{extensions}}。
 
 [plugins.sync.option-sync-video]
 original=Sync videos
@@ -7662,6 +7862,22 @@ translation=インストールされているコミュニティプラグイン
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=インストールされているコミュニティプラグイン(.jsファイル、.cssファイルとmanifest.jsonファイル)とプラグイン設定を同期するかどうかを決めます。
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=同期されたプラグインをこのデバイスで実行することを許可しますか？
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync は、このデバイスに同期されたプラグインの内容を検証できません。また、コミュニティディレクトリで公開されているプラグインとは異なる場合があります。
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=保管庫と接続済みデバイスを信頼できる場合にのみ有効にしてください。
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=はい、プラグイン同期をオンにする
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync はまだ読み込み中です。後でこのページを更新してください。
@@ -7720,7 +7936,7 @@ translation=除外フォルダの管理
 
 [plugins.sync.label-number-of-folders-excluded]
 original=Obsidian Sync is currently excluding {{folders}}.
-translation=現在、{{folders}}が同期から除外されています。
+translation=現在、{{folders}} が同期から除外されています。
 
 [plugins.sync.label-add-excluded-folder]
 original=Exclude a folder
@@ -7740,7 +7956,7 @@ translation=接続の設定
 
 [plugins.sync.label-connecting-to-vault]
 original=Connecting...
-translation=接続中...
+translation=接続中…
 
 [plugins.sync.label-connection-failed]
 original=Connection failed
@@ -8028,7 +8244,7 @@ translation=テンプレートファイルの場所
 
 [plugins.note-composer.option-template-file-description]
 original=Template file to use when merging or extracting. Available variables: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}}, e.g. {{date:YYYY-MM-DD}}.
-translation=統合や抽出の際に使用するテンプレートファイルを選択してください。利用可能な変数: {{content}}, {{fromTitle}}, {{newTitle}}, {{date:FORMAT}} (例: {{date:YYYY-MM-DD}})
+translation=統合や抽出の際に使用するテンプレートファイルを選択してください。利用可能な変数: {{content}}、{{fromTitle}}、{{newTitle}}、{{date:FORMAT}}, 例 {{date:YYYY-MM-DD}}。
 
 [plugins.note-composer.command-merge-file]
 original=Merge current file with another file...
@@ -8278,6 +8494,10 @@ translation=Unable to load that site.
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
 
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=リーダービュー
+
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
 translation=Webを検索
@@ -8364,7 +8584,7 @@ translation=Webビューアのデータを消去
 
 [plugins.web-viewer.msg-error-extracting-content]
 original=Unexpected error extracting content.
-translation=Unexected error extracting content.
+translation=コンテンツの抽出中に予期しないエラーが発生しました。
 
 [plugins.web-viewer.msg-error-finding-content]
 original=Unable to find content to extract.
@@ -8688,7 +8908,7 @@ translation=ブロックに絞り込み…
 
 [plugins.canvas.action-narrow-bases-view]
 original=Pin view...
-translation=ビューをピン...
+translation=ビューをピン…
 
 [plugins.canvas.action-swap-file]
 original=Swap file...
@@ -8876,11 +9096,11 @@ translation=空のキャンバスはエクスポートできません
 
 [plugins.canvas.msg-updating-links]
 original=Canvas detected file renames affecting {{count}} canvas file, updating...
-translation=Canvas が {{count}} 件のCanvasファイルに影響するファイルのリネームを検出しました。更新しています...
+translation=Canvas が {{count}} 件のCanvasファイルに影響するファイルのリネームを検出しました。更新しています…
 
 [plugins.canvas.msg-updating-links_plural]
 original=Canvas detected file renames affecting {{count}} canvas files, updating...
-translation=Canvas が {{count}} 件のCanvasファイルに影響するファイルのリネームを検出しました。更新しています...
+translation=Canvas が {{count}} 件のCanvasファイルに影響するファイルのリネームを検出しました。更新しています…
 
 [plugins.canvas.msg-updated-links]
 original=Canvas updated {{count}} embed card
@@ -8896,7 +9116,7 @@ translation=ベース
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=ノートのプロパティを照会してベースを作成します。
 
 [plugins.bases.action-new-base]
 original=New base
@@ -8904,7 +9124,7 @@ translation=新規ベース
 
 [plugins.bases.action-add-property]
 original=Add "{{name}}" property
-translation=Add property
+translation="{{name}}" のプロパティを追加
 
 [plugins.bases.action-add-summary]
 original=Add "{{name}}" summary
@@ -8944,7 +9164,7 @@ translation=サマリーを削除
 
 [plugins.bases.action-export-c-s-v]
 original=Export CSV...
-translation=CSVを書き出し...
+translation=CSVを書き出し…
 
 [plugins.bases.command-create-new]
 original=Create new base
@@ -8960,7 +9180,7 @@ translation=表をクリップボードにコピー
 
 [plugins.bases.command-change-view]
 original=Switch view...
-translation=ビューを切り替え
+translation=ビューを切り替え…
 
 [plugins.bases.command-add-view]
 original=Add view
@@ -9008,7 +9228,7 @@ translation=このビュー
 
 [plugins.bases.placeholder-search-property]
 original=Find or create...
-translation=検索または作成...
+translation=検索または作成…
 
 [plugins.bases.label-computed-properties]
 original=Computed properties
@@ -9268,7 +9488,7 @@ translation="{{ name }}" のプロパティ設定が無効です。
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Unable to add new Bases view "{{ viewID }}". A view with this ID already exists.
+translation=新しいベースビュー "{{ viewId }}" を追加できません。このIDを持つビューは既に存在します。
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
@@ -9448,11 +9668,11 @@ translation=列を非表示
 
 [plugins.bases.table.action-edit-property]
 original=Edit property...
-translation=プロパティを編集...
+translation=プロパティを編集…
 
 [plugins.bases.table.action-edit-formula]
 original=Edit formula...
-translation=数式を編集...
+translation=数式を編集…
 
 [plugins.bases.table.action-sort-default]
 original=Clear sort
@@ -9488,11 +9708,23 @@ translation=特に高
 
 [plugins.bases.table.action-select-summary]
 original=Summarize...
-translation=要約...
+translation=要約…
 
 [plugins.bases.table.action-group-by]
 original=Group by this property
 translation=このプロパティでグループ化
+
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=列のサイズを変更...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=列のサイズをリセット
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=ドラッグしてサイズ変更
 
 [plugins.bases.table.action-clear-selection]
 original=Clear values
@@ -9528,11 +9760,11 @@ translation="{{ function }}" の型エラー、パラメータ "{{ parameter }}"
 
 [formulas.msg-error-invalid-array-access]
 original=Cannot access index "{{ index }}" of non-array value
-translation=Cannot access index {{ index }} of non-array value
+translation=配列ではない値に対してインデックス "{{ index }}" にはアクセスできません
 
 [formulas.msg-error-invalid-object-access]
 original=Cannot find "{{ index }}" on type {{ type }}
-translation=Cannot find {{ index }} on type {{ type }}
+translation=型 {{ type }} に "{{ index }}" が見つかりません
 
 [pdf.action-highlight-all]
 original=Highlight all
@@ -9604,11 +9836,11 @@ translation=セクションへのリンクをコピー
 
 [pdf.action-copy-section-link-title]
 original=Copy link to “{{title}}”
-translation=“{{title}}”へのリンクをコピー
+translation=“{{title}}” へのリンクをコピー
 
 [pdf.action-copy-page-link]
 original=Copy link to page {{page}}
-translation={{page}}ページへのリンクをコピー
+translation={{page}} ページへのリンクをコピー
 
 [pdf.msg-max-search-results]
 original={{current}} of over {{limit}} matches
@@ -9616,7 +9848,7 @@ translation={{total}} 件中 {{current}} 件目に一致
 
 [pdf.msg-search-count]
 original={{current}} of {{total}} match
-translation={{total}} 件中 {{current}}件目に一致
+translation={{total}} 件中 {{current}} 件目に一致
 
 [pdf.msg-search-count_plural]
 original={{current}} of {{total}} matches
@@ -9740,7 +9972,7 @@ translation=チェックボックス
 
 [properties.value-suggestion.key-link-note]
 original=Type [[
-translation=[[ を入力で
+translation=[[ を入力
 
 [properties.value-suggestion.instruction-link-note]
 original=to link note
@@ -9804,7 +10036,7 @@ translation=プロパティを追加
 
 [properties.label-type-mismatch-warning]
 original=Type mismatch, expected {{type}}
-translation={{type}}のタイプと不一致です
+translation={{type}} のタイプと不一致です
 
 [properties.label-type-mismatch-warning-generic]
 original=Type mismatch
@@ -9812,7 +10044,7 @@ translation=型の不一致
 
 [properties.label-change-property-type]
 original=Display as {{type}}?
-translation={{type}}として表示しますか？
+translation={{type}} として表示しますか？
 
 [properties.label-change-property-type-desc]
 original=Your {{oldType}} data is not compatible. It will be adapted to fit the new format.
@@ -9828,15 +10060,15 @@ translation=行
 
 [table.action-row-after]
 original=Add row below
-translation=Add row after
+translation=行を下に追加
 
 [table.action-column-after]
 original=Add column to the right
-translation=Add column after
+translation=列を右に追加
 
 [table.action-row-before]
 original=Add row above
-translation=Add row before
+translation=行を上に追加
 
 [table.action-row-up]
 original=Move row up
@@ -9848,7 +10080,7 @@ translation=行を下へ移動
 
 [table.action-column-before]
 original=Add column to the left
-translation=Add column before
+translation=列を左に追加
 
 [table.action-column-left]
 original=Move column left
@@ -9860,11 +10092,11 @@ translation=列を右へ移動
 
 [table.action-duplicate-row]
 original=Duplicate row
-translation=行の複製を作成
+translation=行を複製
 
 [table.action-duplicate-column]
 original=Duplicate column
-translation=列の複製を作成
+translation=列を複製
 
 [table.action-delete-row]
 original=Delete row
@@ -9948,11 +10180,11 @@ translation=なし
 
 [callout.option-other]
 original=Other...
-translation=その他...
+translation=その他…
 
 [callout.option-other-placeholder]
 original=Callout type...
-translation=コールアウトの種類...
+translation=コールアウトの種類…
 
 [nouns.count]
 original={{count}}
@@ -10065,3 +10297,87 @@ translation={{count}} テーマ
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} テーマ
+
+[main.button-cancel]
+original=Cancel
+translation=キャンセル
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=コピー
+
+[main.button-open-link]
+original=Open Link
+translation=リンクを開く
+
+[main.button-open-file]
+original=Open this file
+translation=このファイルを開く
+
+[main.button-run-file]
+original=Run File
+translation=ファイルを実行
+
+[main.external-link-title]
+original=Open external link?
+translation=外部リンクを開きますか？
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=このリンクは Obsidian の外部にあるアプリケーションを開きます。このリンクの提供元を信頼できる場合にのみ続行してください。
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation={{scheme}}:// リンクを常に開く
+
+[main.remote-file-title]
+original=Remote file warning
+translation=リモートファイルの警告
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=このファイルはリモートサーバー上にあり、危険な可能性があります。\n本当に開きますか？
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=場所: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=ネットワークドライブへのアクセス
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=このコンテンツはネットワークドライブからデータを要求しています。許可すると、ログイン認証情報やその他の機密情報がリモートホストに公開される可能性があります。
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=ホスト: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=許可
+
+[main.executable-file-title]
+original=Run executable file?
+translation=実行可能ファイルを実行しますか？
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=このリンクは実行可能ファイルを指しています。実行するとコンピューターに被害を与える可能性があります。
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=ファイル: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=保管庫が見つかりません。
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=URL {{url}} に対応する保管庫が見つかりません

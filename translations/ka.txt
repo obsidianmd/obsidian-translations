@@ -10,6 +10,10 @@ translation=პლაგინი
 original=Core plugins
 translation=ძირითადი პლაგინები
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=პლაგინების სიაში ჩვენება
+
 [setting.plugin-options]
 original=Plugin options
 translation=პლაგინის პარამეტრები
@@ -22,9 +26,41 @@ translation=მაგალითი: საქაღალდე 1/საქა
 original=Example: folder/note
 translation=მაგალითი: საქაღალდე/ჩანაწერი
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=ფაილი არჩეული არ არის
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=ამ პარამეტრის შეცვლა საჭიროებს პროგრამის გადატვირთვას.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=არასწორი რიცხვი
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=მნიშვნელობა უნდა იყოს მინიმუმ {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=მნიშვნელობა უნდა იყოს მაქსიმუმ {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=ფაილი ვერ მოიძებნა.
+
+[setting.search-settings]
+original=Search settings...
+translation=პარამეტრების ძებნა...
+
+[setting.no-search-results]
+original=No settings found.
+translation=პარამეტრები ვერ მოიძებნა.
+
+[setting.search-show-more]
+original={{count}} more
+translation=კიდევ {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=მარჯვნიდან-მარცხნივ (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=ტექსტის მიმართულების შეცვლა მარჯვნიდან მარცხნივ.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=შენიშვნებში Mermaid დიაგრამების ჩვენება
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=„mermaid“ კოდის ბლოკებიდან ბლოკ-სქემების, თანმიმდევრობის დიაგრამებისა და სხვა დიაგრამების გამოსახვა.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=გამორიცხული ფაილები
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=გამორიცხული ფაილები დაიმალება ძიებაში, გრაფის ხედში და სხვა ფუნქციებში.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=გამორიცხვის ფილტრი არ არის გამოყენებული. დაამატეთ ქვემოთ.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=გამორიცხვის დამატება...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=ფაილები, რომლებიც ემთხვევა შემდეგ ფილტრებს, გამორიცხულია:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=გამორიცხვები დამატებული არ არის.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=ფილტრი
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} წესი
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} წესი
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=გამორიცხვის დამატება
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=შეიყვანეთ გზა ან რეგულარული გამოსახულება, მაგ. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=ფილტრი არ შეიძლება იყოს ცარიელი
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=შეიყვანეთ გზა ან “/regex/”...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=URI callback-ების დაშვება
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=x-callback-url-ის გამოყენების დაშვება Obsidian URI-ს დამუშავებისას.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=მართეთ სანდო მოქმედებები და დააკონფიგურირეთ URI ქცევა.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=სანდო მოქმედებები
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=სანდო მოქმედებები ჯერ არ არის. დამტკიცებული URI მოქმედებები აქ გამოჩნდება.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=ფერთა ძირითადი სქემა
 original=Choose Obsidian's default color scheme.
 translation=აირჩიეთ Obsidian-ის ნაგულისხმევი ფერთა სქემა.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=მუქი ნათელი სისტემა ღამის რეჟიმი ფერთა სქემა
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=აქცენტის ფერი
@@ -549,6 +621,10 @@ translation=აქცენტის ფერი
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=აირჩიეთ აქცენტის ფერი, რომელიც გამოყენებული იქნება აპლიკაციაში.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=გამოკვეთა ბრენდი ძირითადი ფერი
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=ფიქსირებული სიგანის შრიფ
 original=Set font for places like code blocks and frontmatter.
 translation=შრიფტი კოდის ბლოკებისთვის და მსგავსი ელემენტებისთვის.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= ამჟამად გამოყენებული შრიფტი: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} შრიფტი
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= ამჟამად გამოყენებულია შემდეგი შრიფტები:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} შრიფტი
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=შრიფტის ზომა
 original=Font size in pixels that affects editing and reading views.
 translation=შრიფტის ზომა პიქსელებში რედაქტირების და კითხვის ხედებისთვის.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=ტექსტის ზომა გადიდება
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=შრიფტის ზომის სწრაფი რეგულირება
@@ -673,6 +753,10 @@ translation=თემები
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=დაინსტალირებული თემების მართვა.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=საზოგადოება დათვალიერება ინსტალაცია ჩამოტვირთვა
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=სისტემური (Native) მენიუები
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=მენიუები დაემსგავსება ოპერაციულ სისტემას და არ შეიცვლება თემის მიხედვით.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=თემების გადატვირთვა
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=CSS თემები განახლდა.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=თემების საქაღალდის გახსნა
@@ -706,13 +782,21 @@ translation=თემების საქაღალდის გახსნ
 original=CSS snippets
 translation=CSS ფრაგმენტები (Snippets)
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=მართეთ CSS ფაილების თქვენი კოლექცია აპის გარეგნობის მოსარგებად.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=CSS ფრაგმენტები ვერ მოიძებნა.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} ჩართულია
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS ფრაგმენტები ინახება აქ: “{{path}}”.
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS ფრაგმენტები საშუალებას გაძლევთ მოარგოთ Obsidian-ის გარეგნობა. განათავსეთ CSS ფაილები “{{path}}”-ში, რომ ისინი აქ გამოჩნდეს.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=ფრაგმენტების საქაღალდის 
 original=Reloaded CSS snippets.
 translation=CSS ფრაგმენტები განახლდა.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=CSS ფრაგმენტის გამოყენება: “{{path}}”.
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=ფრაგმენტების ძებნა...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=თქვენ გაქვთ {{count}} დაინსტალ�
 original=You currently have {{count}} themes installed.
 translation=თქვენ გაქვთ {{count}} დაინსტალირებული თემა.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=პარამეტრების ახალ ფანჯარაში გახსნა
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=გახსენით პარამეტრები საკუთარ ფანჯარაში, აპში ჩაშენების ნაცვლად.
+
+[setting.interface.name]
+original=Interface
+translation=ინტერფეისი
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=მობილური
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=გაფართოებული
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=მალმხმობები
@@ -909,14 +1013,6 @@ translation=ნაჩვენებია {{count}} მალმხმობი
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=ნაჩვენებია {{count}} მალმხმობი. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} ბრძანება კონფლიქტით.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} ბრძანება კონფლიქტით.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=დააჭირეთ ღილაკებს...
 original=All
 translation=ყველა
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=კონფლიქტები ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=მიუმაგრებელი
@@ -945,6 +1045,10 @@ translation=მინიჭებული
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=ჩემ მიერ მინიჭებული
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=შედეგები ვერ მოიძებნა.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=შეზღუდული რეჟიმი
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=შეზღუდული რეჟიმი გამორთულია. ჩართეთ, რომ დაბლოკოთ საზოგადოების პლაგინები.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=ჩართეთ შეზღუდული რეჟიმი, რომ აპი საზოგადოების პლაგინების გარეშე გამოიყენოთ.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=საზოგადოების პლაგინები
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=დაათვალიერეთ და დააინსტალირეთ ჩვენი საზოგადოების მიერ შექმნილი პლაგინები.
+original=Browse and install community plugins made by the community.
+translation=დაათვალიერეთ და დააინსტალირეთ საზოგადოების მიერ შექმნილი პლაგინები.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=დათვალიერება
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=შეზღუდული რეჟიმიდან გამოსვლა
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=ჩვენი ძალისხმევის მიუხედავად, მაინც რჩება მცირე შანსი, რომ საზოგადოების პლაგინმა არასწორად იმუშაოს.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=საწყისი კოდის მიმოხილვა
+original=Code review
+translation=კოდის მიმოხილვა
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=ოფიციალურ საზოგადოებრივ დირექტორიაში არსებული პლაგინები სიაში მოხვედრამდე ჩვენი გუნდის მიერ გადიან საწყის კოდის მიმოხილვას.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=ოფიციალურ საზოგადოებრივ დირექტორიაში არსებული პლაგინები ყოველი განახლების შემდეგ ავტომატურად გადიან კოდის მიმოხილვას.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=შეტყობინების მექანიზმი
 original=We follow up and remove faulty plugins upon user report.
 translation=მომხმარებლის შეტყობინების შემთხვევაში ვამოწმებთ და ვშლით გაუმართავ პლაგინებს.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=გსურთ შეზღუდული რეჟიმიდან გამოსვლა, რათა ჩართოთ საზოგადოების პლაგინები? გირჩევთ, მანამდე შექმნათ თქვენი მონაცემების სარეზერვო ასლები.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=გაიგეთ მეტი პლაგინების უსაფრთხოების შესახებ
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=საზოგადოების პლაგინების ჩართვა
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=საზოგადოების პლაგინების დაშვება
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=პლაგინებს შეუძლიათ თქვენს მოწყობილობაზე ნებისმიერი კოდის შესრულება. მათ ჩართვამდე გირჩევთ, შექმნათ თქვენი მონაცემების სარეზერვო ასლი.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=დაინსტალირებული პლაგინების ხელახლა ჩართვა
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=ადრე დაინსტალირებული {{count}} პლაგინის აღდგენა.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=ადრე დაინსტალირებული {{count}} პლაგინის აღდგენა.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=პლაგინის ინფორმაციის ჩვენება
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=ჩართული პლაგინები
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=ეს პლაგინები ჩაირთვება შეზღუდული რეჟიმიდან გასვლისას.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=გამორთვა
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=გაზიარების ბმულის კოპირება
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=დეტალების ნახვა
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=საზოგადოების გვერდის გახსნა
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=პარამეტრები
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=დაინსტალირებული პლაგინე�
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=მხოლოდ დაინსტალირებულების ჩვენება
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=პლაგინები დაინსტალირებული არ არის.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=პლაგინის “{{plugin}}” ჩატვირთვ�
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=პლაგინმა “{{plugin}}” ჩატვირთვისას შეცდომა გამოავლინა
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} არ ჩაიტვირთა. ეს პლაგინი შეუთავსებელია Obsidian v{{version}}-თან.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} აღარ მუშაობს. გირჩევთ, წაშალოთ იგი.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=ვერ ჩაიტვირთა პლაგინი {{plugin}} v{{version}}. გავრცელებული ინფორმაციით, ეს ვერსია პრობლემებს იწვევს. გთხოვთ, შეამოწმოთ, ხელმისაწვდომია თუ არა პლაგინის უფრო ახალი ვერსია.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=კითხვის ხედი
 [interface.menu.add-property]
 original=Add file property
 translation=ფაილის თვისების დამატება
+
+[interface.menu.delete]
+original=Delete
+translation=წაშლა
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=ამჟამად არის {{count}} ბმული, რო
 original=Delete file
 translation=ფაილის წაშლა
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=შესრულდეს მოქმედება გარე ბმულიდან?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=მოქმედება „{{action}}“ უნდა შესრულდეს. გააგრძელეთ მხოლოდ იმ შემთხვევაში, თუ ენდობით ბმულის წყაროს.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=პლაგინი „{{source}}“ აპირებს მოქმედების „{{action}}“ შესრულებას. გააგრძელეთ მხოლოდ იმ შემთხვევაში, თუ ენდობით ბმულის წყაროს.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=აღარ მკითხოთ „{{action}}“-ზე
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=დანართების გადმოწერა
@@ -3993,6 +4169,18 @@ translation=დადასტურება
 [dialogue.button-cancel]
 original=Cancel
 translation=გაუქმება
+
+[dialogue.button-allow]
+original=Allow
+translation=დაშვება
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=ერთხელ დაშვება
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=ყოველთვის დაშვება
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=აჩვენოს ყველა ფაილი, მათ შ
 original=Graph view
 translation=გრაფის ხედი
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=ლოკალური გრაფი
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=თქვენს ჩანაწერებს შორის კავშირების ვიზუალიზაცია.
@@ -5686,9 +5878,13 @@ translation=დახურვა
 original=No commands found.
 translation=ბრძანებები ვერ მოიძებნა.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=აირჩიეთ ბრძანება...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=ბრძანების დამატება...
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=ბრძანების არჩევა...
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=სიტყვების რაოდენობა
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=აჩვენებს სიტყვების რაოდენობას სტატუსის ზოლში.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=გამოჩნდეს Mermaid დიაგრამები ამ საცავში?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=დაუშვით მხოლოდ იმ შემთხვევაში, თუ ენდობით ამ საცავის შიგთავსს.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=შეიყვანეთ ელ-ფოსტა...
 original=Please enter a valid email to invite someone.
 translation=მოსაწვევად შეიყვანეთ ვალიდური ელ-ფოსტა.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=საიტების სანახავად გთხოვთ ჩართოთ Publish პლაგინი: პარამეტრები -> ძირითადი პლაგინები.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=თქვენი საიტები
@@ -7662,6 +7862,22 @@ translation=დაინსტალირებული საზოგად�
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=დაინსტალირებული საზოგადოების პლაგინების (.js, .css და manifest.json ფაილები) და მათი პარამეტრების სინქრონიზაცია.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=დავრთოთ ნება სინქრონიზებულ პლაგინებს ამ მოწყობილობაზე გაშვებისთვის?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync ვერ ამოწმებს ამ მოწყობილობაზე სინქრონიზებული პლაგინების შიგთავსს და ისინი შეიძლება განსხვავდებოდეს საზოგადოების კატალოგში გამოქვეყნებული პლაგინებისგან.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=ჩართეთ ეს მხოლოდ იმ შემთხვევაში, თუ საცავსა და დაკავშირებულ მოწყობილობებს ენდობით.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=დიახ, ჩართე პლაგინების სინქრონიზაცია
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=სინქრონიზაცია ჯერ კიდევ იტვირთება, გთხოვთ განაახლოთ გვერდი მოგვიანებით.
@@ -8277,6 +8493,10 @@ translation=საიტი ვერ ჩაიტვირთა.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=დარწმუნდით, რომ მისამართი სწორია.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=კითხვის ხედი
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=შეჯამება...
 original=Group by this property
 translation=დაჯგუფება ამ თვისების მიხედვით
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=სვეტის ზომის შეცვლა...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=სვეტის ზომის აღდგენა
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=გადათრიეთ ზომის შესაცვლელად
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=მნიშვნელობების გასუფთავება
@@ -10065,3 +10297,87 @@ translation={{count}} თემა
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} თემა
+
+[main.button-cancel]
+original=Cancel
+translation=გაუქმება
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=კოპირება
+
+[main.button-open-link]
+original=Open Link
+translation=ბმულის გახსნა
+
+[main.button-open-file]
+original=Open this file
+translation=ამ ფაილის გახსნა
+
+[main.button-run-file]
+original=Run File
+translation=ფაილის გაშვება
+
+[main.external-link-title]
+original=Open external link?
+translation=გაიხსნას გარე ბმული?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=ეს ბმული გახსნის გარე აპს Obsidian-ის გარეთ. გააგრძელეთ მხოლოდ იმ შემთხვევაში, თუ ამ ბმულის წყაროს ენდობით.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=ყოველთვის გაიხსნას {{scheme}}:// ბმულები
+
+[main.remote-file-title]
+original=Remote file warning
+translation=დისტანციური ფაილის გაფრთხილება
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=ეს ფაილი დისტანციურ სერვერზე მდებარეობს და შეიძლება საშიში იყოს.\nდარწმუნებული ხართ, რომ გსურთ მისი გახსნა?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=მდებარეობა: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=ქსელურ დისკზე წვდომა
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=ეს შიგთავსი ითხოვს მონაცემებს ქსელური დისკიდან. ამის დაშვებამ შეიძლება თქვენი შესვლის მონაცემები ან სხვა კონფიდენციალური ინფორმაცია დისტანციურ ჰოსტს გაუმჟღავნოს.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=ჰოსტი: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=დაშვება
+
+[main.executable-file-title]
+original=Run executable file?
+translation=გაეშვას შესრულებადი ფაილი?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=ეს ბმული მიუთითებს შესრულებად ფაილზე. მისი გაშვება შეიძლება საზიანო იყოს თქვენი კომპიუტერისთვის.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=ფაილი: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=საცავი ვერ მოიძებნა.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=URL-ისთვის {{url}} საცავის პოვნა ვერ მოხერხდა

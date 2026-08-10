@@ -10,6 +10,10 @@ translation=Utvidelse
 original=Core plugins
 translation=Kjerneutvidelser
 
+[setting.action-reveal-plugin-in-list]
+original=Reveal in plugin list
+translation=Vis i listen over tillegg
+
 [setting.plugin-options]
 original=Plugin options
 translation=Utvidelsesvalg
@@ -22,9 +26,41 @@ translation=Eksempel: mappe 1/mappe 2
 original=Example: folder/note
 translation=Eksempel: mappe/notat
 
+[setting.no-file-placeholder]
+original=No file selected
+translation=Ingen fil valgt
+
 [setting.msg-restart-required]
 original=Changing this option requires a restart to take effect.
 translation=Endring av dette alternativet krever omstart for å tre i kraft.
+
+[setting.msg-invalid-number]
+original=Invalid number
+translation=Ugyldig tall
+
+[setting.msg-value-at-least]
+original=Value must be at least {{min}}
+translation=Verdien må være minst {{min}}
+
+[setting.msg-value-at-most]
+original=Value must be at most {{max}}
+translation=Verdien må være høyst {{max}}
+
+[setting.msg-file-not-found]
+original=File not found.
+translation=Filen ble ikke funnet.
+
+[setting.search-settings]
+original=Search settings...
+translation=Søk i innstillinger...
+
+[setting.no-search-results]
+original=No settings found.
+translation=Fant ingen innstillinger.
+
+[setting.search-show-more]
+original={{count}} more
+translation={{count}} til
 
 [setting.editor.name]
 original=Editor
@@ -229,6 +265,14 @@ translation=Høyre-til-venstre (RTL)
 [setting.editor.option-rtl-description]
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
+
+[setting.editor.option-mermaid-allow]
+original=Show Mermaid diagrams in notes
+translation=Vis Mermaid-diagrammer i notater
+
+[setting.editor.option-mermaid-allow-description]
+original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
+translation=Gjengi flytdiagrammer, sekvensdiagrammer og andre diagrammer fra «mermaid»-kodeblokker.
 
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
@@ -502,25 +546,33 @@ translation=Ekskluderte filer
 original=Excluded files will be hidden in Search, Graph View, and Unlinked Mentions, less noticeable in Quick Switcher and link suggestions.
 translation=Excluded files will be either hidden or less noticeable in various places, such as Quick Switcher, link suggestion, and Graph View.
 
-[setting.file.label-no-excluded-filters-applied]
-original=No excluded filter is applied right now. Add one below.
-translation=Ingen ekskluderingsfiltre er brukt.
+[setting.file.label-add-excluded-filter]
+original=Add exclusion...
+translation=Legg til unntak...
 
-[setting.file.label-excluded-filters-applied]
-original=Files matching the following filters are currently excluded:
-translation=Filer som samsvarer med disse filtrene er ekskludert:
+[setting.file.label-no-excluded-filters]
+original=No exclusions added.
+translation=Ingen unntak lagt til.
 
-[setting.file.label-excluded-filter]
-original=Filter
-translation=Filter
+[setting.file.label-excluded-files-count]
+original={{count}} rule
+translation={{count}} regel
+
+[setting.file.label-excluded-files-count_plural]
+original={{count}} rules
+translation={{count}} regler
+
+[setting.file.title-add-excluded-filter]
+original=Add exclusion
+translation=Legg til unntak
+
+[setting.file.help-excluded-filter]
+original=Enter a path or a regular expression, e.g. /daily-.*/
+translation=Angi en sti eller et regulært uttrykk, f.eks. /daily-.*/
 
 [setting.file.message-empty-filter]
 original=Filter cannot be empty
 translation=Filter kan ikke være tomt
-
-[setting.file.placeholder-excluded-filter]
-original=Enter path or “/regex/”...
-translation=Enter path or "/regex/"...
 
 [setting.file.option-uri-callbacks]
 original=Allow URI callbacks
@@ -529,6 +581,22 @@ translation=Tillat URI-callbacker
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Aktiver bruk av x-callback-url ved håndtering av Obsidian-URI-er.
+
+[setting.file.label-obsidian-uri]
+original=Obsidian URI
+translation=Obsidian URI
+
+[setting.file.label-obsidian-uri-desc]
+original=Manage trusted actions and configure URI behavior.
+translation=Administrer klarerte handlinger og konfigurer URI-atferd.
+
+[setting.file.label-trusted-uri-actions]
+original=Trusted actions
+translation=Klarerte handlinger
+
+[setting.file.label-no-trusted-uri-actions]
+original=No trusted actions yet. Approved URI actions will appear here.
+translation=Ingen klarerte handlinger ennå. Godkjente URI-handlinger vises her.
 
 [setting.appearance.name]
 original=Appearance
@@ -542,6 +610,10 @@ translation=Base theme
 original=Choose Obsidian's default color scheme.
 translation=Choose Obsidian’s default color scheme.
 
+[setting.appearance.alias-base-theme]
+original=dark light system night mode color scheme
+translation=mørk lys system nattmodus fargeskjema
+
 [setting.appearance.option-accent-color]
 original=Accent color
 translation=Aksentfarge
@@ -549,6 +621,10 @@ translation=Aksentfarge
 [setting.appearance.option-accent-color-description]
 original=Choose the accent color used throughout the app.
 translation=Velg aksentfargen som brukes i hele appen.
+
+[setting.appearance.alias-accent-color]
+original=highlight brand primary color
+translation=utheving merkevare primær farge
 
 [setting.appearance.dark-theme]
 original=Dark
@@ -606,13 +682,13 @@ translation=Fastbredde-skrift
 original=Set font for places like code blocks and frontmatter.
 translation=Skrifttype for kodeblokker og metadata.
 
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Skrifttype som er i bruk nå: 
+[setting.appearance.label-font-count]
+original={{count}} font
+translation={{count}} skrifttype
 
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Følgende skrifttyper er i bruk nå:
+[setting.appearance.label-font-count_plural]
+original={{count}} fonts
+translation={{count}} skrifttyper
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -658,6 +734,10 @@ translation=Skriftstørrelse
 original=Font size in pixels that affects editing and reading views.
 translation=Font size in pixels that affects editor and preview.
 
+[setting.appearance.alias-font-size]
+original=text size zoom
+translation=tekststørrelse zoom
+
 [setting.appearance.option-font-size-action]
 original=Quick font size adjustment
 translation=Rask justering av skriftstørrelse
@@ -673,6 +753,10 @@ translation=Temaer
 [setting.appearance.option-manage-themes-description]
 original=Manage installed themes and browse community themes.
 translation=Administrer installerte temaer og bla gjennom community-temaer.
+
+[setting.appearance.alias-themes]
+original=community browse install download
+translation=community bla gjennom installer last ned
 
 [setting.appearance.option-theme-button-manage]
 original=Manage
@@ -690,14 +774,6 @@ translation=Native menyer
 original=Menus throughout the app will match the operating system. They will not be affected by your theme.
 translation=Menyer i hele appen vil samsvare med operativsystemet. De vil ikke bli påvirket av temaet ditt.
 
-[setting.appearance.button-reload-themes]
-original=Reload themes
-translation=Last temaer på nytt
-
-[setting.appearance.msg-reloaded-themes]
-original=Reloaded custom CSS themes.
-translation=Egendefinerte CSS-temaer lastet på nytt.
-
 [setting.appearance.button-open-themes-folder]
 original=Open themes folder
 translation=Åpne temamappe
@@ -706,13 +782,21 @@ translation=Åpne temamappe
 original=CSS snippets
 translation=CSS-utdrag
 
+[setting.appearance.option-css-snippets-description]
+original=Manage your collection of CSS files for tweaking the app's appearance.
+translation=Administrer samlingen din av CSS-filer for å tilpasse appens utseende.
+
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=No CSS snippets found in the snippets folder.
 
+[setting.appearance.label-enabled-snippets-count]
+original={{count}} enabled
+translation={{count}} aktivert
+
 [setting.appearance.no-snippet-description]
-original=CSS Snippets are stored in “{{path}}”.
-translation=CSS Snippets are stored in "{{path}}".
+original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
+translation=CSS-utdrag lar deg tilpasse utseendet til Obsidian. Plasser CSS-filer i «{{path}}» for at de skal vises her.
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -726,9 +810,9 @@ translation=Åpne utdragsmappe
 original=Reloaded CSS snippets.
 translation=CSS-utdrag lastet på nytt.
 
-[setting.appearance.option-toggle-snippet-description]
-original=Apply CSS snippet at “{{path}}”.
-translation=Apply CSS snippet at "{{path}}".
+[setting.appearance.placeholder-search-snippet]
+original=Search snippets...
+translation=Søk i utdrag...
 
 [setting.appearance.label-installed-themes]
 original=Installed themes
@@ -894,6 +978,26 @@ translation=Du har for øyeblikket {{count}} tema installert.
 original=You currently have {{count}} themes installed.
 translation=Du har for øyeblikket {{count}} temaer installert.
 
+[setting.appearance.option-open-settings-in-window]
+original=Open settings in new window
+translation=Åpne innstillinger i nytt vindu
+
+[setting.appearance.option-open-settings-in-window-description]
+original=Open settings in its own window instead of embedded in the app.
+translation=Åpne innstillinger i eget vindu i stedet for innebygd i appen.
+
+[setting.interface.name]
+original=Interface
+translation=Grensesnitt
+
+[setting.interface.option-mobile]
+original=Mobile
+translation=Mobil
+
+[setting.interface.option-advanced]
+original=Advanced
+translation=Avansert
+
 [setting.hotkeys.name]
 original=Hotkeys
 translation=Hurtigtaster
@@ -909,14 +1013,6 @@ translation=Viser {{count}} hurtigtast.
 [setting.hotkeys.option-search-desc_plural]
 original=Showing {{count}} hotkeys. 
 translation=Viser {{count}} hurtigtaster. 
-
-[setting.hotkeys.option-search-conflict]
-original={{count}} command with conflicts.
-translation={{count}} kommando med konflikter.
-
-[setting.hotkeys.option-search-conflict_plural]
-original={{count}} commands with conflicts.
-translation={{count}} kommandoer med konflikter.
 
 [setting.hotkeys.prompt-filter]
 original=Filter...
@@ -934,6 +1030,10 @@ translation=Trykk hurtigtast...
 original=All
 translation=Alle
 
+[setting.hotkeys.label-show-conflicts]
+original=Conflicts
+translation=Konflikter ({{count}})
+
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
 translation=Uten tildeling
@@ -945,6 +1045,10 @@ translation=Tildelt
 [setting.hotkeys.label-show-user-assigned]
 original=Assigned by me
 translation=Tildelt av meg
+
+[setting.hotkeys.label-no-results-found]
+original=No results found.
+translation=Ingen resultater funnet.
 
 [setting.hotkeys.tooltip-restore-default]
 original=Restore default
@@ -1415,8 +1519,8 @@ original=Restricted mode
 translation=Begrenset modus
 
 [setting.third-party-plugin.option-restricted-mode-description]
-original=Restricted mode is off. Turn on to disable community plugins.
-translation=Restricted Mode is off. Turn on to disable community plugins.
+original=Turn on Restricted mode to use the app without community plugins.
+translation=Slå på begrenset modus for å bruke appen uten community-utvidelser.
 
 [setting.third-party-plugin.button-turn-on]
 original=Turn on and reload
@@ -1435,15 +1539,15 @@ original=Community plugins
 translation=Community-utvidelser
 
 [setting.third-party-plugin.option-browse-community-plugins-description]
-original=Browse and install community plugins made by our amazing community.
-translation=Browse and install third-party plugins made by our amazing community.
+original=Browse and install community plugins made by the community.
+translation=Bla gjennom og installer community-utvidelser laget av fellesskapet.
 
 [setting.third-party-plugin.button-browse]
 original=Browse
 translation=Bla gjennom
 
 [setting.third-party-plugin.label-exit-restricted-mode]
-original=Exit Restricted Mode
+original=Exit Restricted mode
 translation=Avslutt begrenset modus
 
 [setting.third-party-plugin.label-exit-restricted-mode-description-1]
@@ -1459,12 +1563,12 @@ original=Despite our efforts, there is still a small chance that a community plu
 translation=Til tross for innsatsen vår er det fortsatt en liten sjanse for at en community-utvidelse kan oppføre seg uventet.
 
 [setting.third-party-plugin.label-code-review]
-original=Initial code review
-translation=Innledende kodegjennomgang
+original=Code review
+translation=Kodegjennomgang
 
 [setting.third-party-plugin.label-code-review-desc]
-original=Plugins in the official community directory undergo an initial code review by our team before they are listed.
-translation=Plugins undergo an initial code review by our team before they appear in the store.
+original=Plugins in the official community directory are automatically reviewed after every update.
+translation=Tillegg i den offisielle community-katalogen gjennomgås automatisk etter hver oppdatering.
 
 [setting.third-party-plugin.label-open-source]
 original=Open source
@@ -1490,17 +1594,41 @@ translation=Rapporteringsmekanisme
 original=We follow up and remove faulty plugins upon user report.
 translation=Vi følger opp og fjerner tillegg med feil når de rapporteres av brukere.
 
-[setting.third-party-plugin.label-exit-restricted-mode-disable-confirmation]
-original=Would you like to exit Restricted Mode to enable community plugins? We strongly recommend making backups of your data before doing so.
-translation=Vil du avslutte Begrenset modus for å aktivere community-utvidelser? Vi anbefaler sterkt å ta sikkerhetskopi av dataene dine før du gjør dette.
-
 [setting.third-party-plugin.label-learn-more]
 original=Learn more about plugin security
 translation=Finn ut mer om sikkerhet for tillegg
 
-[setting.third-party-plugin.button-turn-on-community-plugins]
-original=Turn on community plugins
-translation=Slå på community-utvidelser
+[setting.third-party-plugin.label-allow-community-plugins]
+original=Allow community plugins
+translation=Tillat community-utvidelser
+
+[setting.third-party-plugin.label-enable-community-plugins-desc]
+original=Plugins can execute arbitrary code on your device. We recommend backing up your data before enabling them.
+translation=Tillegg kan kjøre vilkårlig kode på enheten din. Vi anbefaler at du sikkerhetskopierer dataene dine før du aktiverer dem.
+
+[setting.third-party-plugin.label-reenable-plugins]
+original=Re-enable installed plugins
+translation=Aktiver installerte tillegg på nytt
+
+[setting.third-party-plugin.label-reenable-plugins-desc]
+original=Restore {{count}} previously installed plugin.
+translation=Gjenopprett {{count}} tidligere installert tillegg.
+
+[setting.third-party-plugin.label-reenable-plugins-desc_plural]
+original=Restore {{count}} previously installed plugins.
+translation=Gjenopprett {{count}} tidligere installerte tillegg.
+
+[setting.third-party-plugin.tooltip-debug-installed-plugins]
+original=Show plugin info
+translation=Vis tilleggsinfo
+
+[setting.third-party-plugin.title-enabled-plugins-debug]
+original=Enabled plugins
+translation=Aktiverte tillegg
+
+[setting.third-party-plugin.desc-enabled-plugins-debug]
+original=These plugins will be enabled when leaving Restricted Mode.
+translation=Disse tilleggene blir aktivert når du forlater begrenset modus.
 
 [setting.third-party-plugin.label-trust-author]
 original=Do you trust the author of this vault?
@@ -1553,6 +1681,18 @@ translation=Deaktiver
 [setting.third-party-plugin.button-copy-share-link]
 original=Copy share link
 translation=Kopier delelenke
+
+[setting.third-party-plugin.action-view-details]
+original=View details
+translation=Vis detaljer
+
+[setting.third-party-plugin.action-open-community-page]
+original=Open community page
+translation=Åpne community-siden
+
+[setting.third-party-plugin.action-settings]
+original=Settings
+translation=Innstillinger
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -1709,6 +1849,10 @@ translation=Søk i installerte tillegg...
 [setting.third-party-plugin.show-installed-only]
 original=Show installed only
 translation=Vis kun installerte
+
+[setting.third-party-plugin.label-no-installed-plugins]
+original=No plugins installed.
+translation=Ingen tillegg installert.
 
 [setting.third-party-plugin.label-donate-modal-title]
 original=Donate to support {{name}}
@@ -2109,6 +2253,18 @@ translation=Kunne ikke laste tillegg «{{plugin}}»
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
 translation=Tillegget «{{plugin}}» støtte på en feil under lasting
+
+[interface.msg-plugin-incompatible]
+original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
+translation={{plugin}} ble ikke lastet inn. Denne utvidelsen er ikke kompatibel med Obsidian v{{version}}.
+
+[interface.msg-plugin-nonfunctional]
+original={{plugin}} is no longer functional. We recommend uninstalling it.
+translation={{plugin}} fungerer ikke lenger. Vi anbefaler å avinstallere utvidelsen.
+
+[interface.msg-plugin-version-issues]
+original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
+translation=Kan ikke laste inn utvidelsen {{plugin}} v{{version}}. Det er rapportert at denne versjonen forårsaker problemer. Se etter en nyere versjon av utvidelsen.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -2549,6 +2705,10 @@ translation=Lesevisning
 [interface.menu.add-property]
 original=Add file property
 translation=Legg til filegenskap
+
+[interface.menu.delete]
+original=Delete
+translation=Slett
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3938,6 +4098,22 @@ translation=Det er for øyeblikket {{count}} lenker som peker til denne filen.
 original=Delete file
 translation=Slett fil
 
+[dialogue.label-uri-action-title]
+original=Run action from external link?
+translation=Kjøre handling fra ekstern lenke?
+
+[dialogue.label-uri-action-intro]
+original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
+translation=Handlingen «{{action}}» er i ferd med å kjøre. Fortsett bare hvis du stoler på lenkens kilde.
+
+[dialogue.label-uri-action-intro-from-plugin]
+original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
+translation=Tillegget «{{source}}» er i ferd med å kjøre handlingen «{{action}}». Fortsett bare hvis du stoler på lenkens kilde.
+
+[dialogue.label-uri-action-dont-ask-again]
+original=Don't ask again for “{{action}}”
+translation=Ikke spør igjen for «{{action}}»
+
 [dialogue.label-download-attachments]
 original=Download attachments
 translation=Last ned vedlegg
@@ -3993,6 +4169,18 @@ translation=Bekreft
 [dialogue.button-cancel]
 original=Cancel
 translation=Avbryt
+
+[dialogue.button-allow]
+original=Allow
+translation=Tillat
+
+[dialogue.button-allow-once]
+original=Allow once
+translation=Tillat én gang
+
+[dialogue.button-always-allow]
+original=Always allow
+translation=Tillat alltid
 
 [dialogue.button-skip]
 original=Skip
@@ -4902,6 +5090,10 @@ translation=Vis alle filer, inkludert de Obsidian ikke kan åpne. Filen åpnes m
 original=Graph view
 translation=Grafvisnining
 
+[plugins.graph-view.local-name]
+original=Local graph
+translation=Lokal graf
+
 [plugins.graph-view.desc]
 original=Visualize the relationships between your notes.
 translation=Se en graf over alle notatene dine, og hvordan de knyttes sammen.
@@ -5686,9 +5878,13 @@ translation=for å lukke
 original=No commands found.
 translation=Ingen kommandoer funnet.
 
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Skriv en kommando...
+[plugins.command-palette.action-add-command]
+original=Add a command...
+translation=Legg til en kommando …
+
+[plugins.command-palette.prompt-add-command]
+original=Select a command...
+translation=Velg en kommando …
 
 [plugins.command-palette.label-pinned-commands]
 original=Pinned commands
@@ -6033,6 +6229,14 @@ translation=Antall ord
 [plugins.word-count.desc]
 original=Show word count in the status bar.
 translation=Vis antall ord i statusbaren.
+
+[plugins.mermaid.label-guard-title]
+original=Display Mermaid diagrams in this vault?
+translation=Vise Mermaid-diagrammer i dette hvelvet?
+
+[plugins.mermaid.label-guard-desc]
+original=Only allow if you trust this vault's contents.
+translation=Tillat bare hvis du stoler på innholdet i dette hvelvet.
 
 [plugins.slides.name]
 original=Slides
@@ -6846,10 +7050,6 @@ translation=Skriv inn e-postadressen deres...
 original=Please enter a valid email to invite someone.
 translation=Skriv inn en gyldig e-postadresse for å invitere noen.
 
-[plugins.publish.msg-enable-publish-plugin]
-original=Please enable the Publish core plugin in Settings -> Core plugins to view sites.
-translation=Aktiver Publish-kjerneutvidelsen i Innstillinger -> Kjerneutvidelser for å se nettsteder.
-
 [plugins.publish.label-your-sites]
 original=Your sites
 translation=Dine nettsteder
@@ -7662,6 +7862,22 @@ translation=Installerte community-utvidelser
 original=Sync installed community plugins (.js, .css, and manifest.json files) and their settings.
 translation=Synkroniser installerte community-utvidelser (.js-, .css- og manifest.json-filer) og innstillingene deres.
 
+[plugins.sync.label-community-plugin-data-warning-title]
+original=Allow synced plugins to run on this device?
+translation=Tillat synkroniserte utvidelser å kjøre på denne enheten?
+
+[plugins.sync.label-community-plugin-data-warning-1]
+original=Obsidian Sync cannot verify the contents of plugins synced to this device, and they may differ from plugins published in the community directory.
+translation=Obsidian Sync kan ikke verifisere innholdet i utvidelser som er synkronisert til denne enheten, og de kan avvike fra utvidelser publisert i community-katalogen.
+
+[plugins.sync.label-community-plugin-data-warning-2]
+original=Only enable this if the vault and connected devices are trusted.
+translation=Aktiver dette bare hvis hvelvet og tilkoblede enheter er klarert.
+
+[plugins.sync.button-confirm-community-plugin-data-warning]
+original=Yes, turn on plugin sync
+translation=Ja, slå på synkronisering av tillegg
+
 [plugins.sync.label-sync-loading]
 original=Sync is still loading, please refresh this page later.
 translation=Sync lastes fortsatt inn. Oppdater denne siden senere.
@@ -8277,6 +8493,10 @@ translation=Unable to load that site.
 [plugins.web-viewer.label-fail-to-load-desc]
 original=Make sure you have the correct address.
 translation=Please make sure you have the correct address.
+
+[plugins.web-viewer.action-reader-view]
+original=Reader view
+translation=Leservisning
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9494,6 +9714,18 @@ translation=Oppsummer...
 original=Group by this property
 translation=Grupper etter denne egenskapen
 
+[plugins.bases.table.action-resize-column]
+original=Resize column...
+translation=Endre kolonnestørrelse...
+
+[plugins.bases.table.action-reset-column-size]
+original=Reset column size
+translation=Tilbakestill kolonnestørrelse
+
+[plugins.bases.table.tooltip-drag-to-resize]
+original=Drag to resize
+translation=Dra for å endre størrelse
+
 [plugins.bases.table.action-clear-selection]
 original=Clear values
 translation=Tøm verdier
@@ -10065,3 +10297,87 @@ translation={{count}} tema
 [nouns.theme-with-count_plural]
 original={{count}} themes
 translation={{count}} temaer
+
+[main.button-cancel]
+original=Cancel
+translation=Avbryt
+
+[main.button-ok]
+original=OK
+translation=OK
+
+[main.button-copy]
+original=Copy
+translation=Kopier
+
+[main.button-open-link]
+original=Open Link
+translation=Åpne lenke
+
+[main.button-open-file]
+original=Open this file
+translation=Åpne denne filen
+
+[main.button-run-file]
+original=Run File
+translation=Kjør fil
+
+[main.external-link-title]
+original=Open external link?
+translation=Åpne ekstern lenke?
+
+[main.external-link-message]
+original=This link will open an external application outside of Obsidian. Only proceed if you trust the source of this link.
+translation=Denne lenken åpner et eksternt program utenfor Obsidian. Fortsett bare hvis du stoler på kilden til denne lenken.
+
+[main.external-link-always-open]
+original=Always open {{scheme}}:// links
+translation=Åpne alltid {{scheme}}://-lenker
+
+[main.remote-file-title]
+original=Remote file warning
+translation=Advarsel om fjernfil
+
+[main.remote-file-message]
+original=This file is located on a remote server, and may be dangerous.\nAre you sure you want to open it?
+translation=Denne filen ligger på en ekstern server og kan være farlig.\nEr du sikker på at du vil åpne den?
+
+[main.remote-file-location]
+original=Location: {{location}}
+translation=Plassering: {{location}}
+
+[main.network-drive-title]
+original=Network drive access
+translation=Tilgang til nettverksstasjon
+
+[main.network-drive-message]
+original=This content is requesting data from a network drive. Allowing this may expose your login credentials or other sensitive information to the remote host.
+translation=Dette innholdet ber om data fra en nettverksstasjon. Hvis du tillater dette, kan innloggingsopplysningene dine eller annen sensitiv informasjon bli eksponert for den eksterne verten.
+
+[main.network-drive-host]
+original=Host: {{host}}
+translation=Vert: {{host}}
+
+[main.button-allow]
+original=Allow
+translation=Tillat
+
+[main.executable-file-title]
+original=Run executable file?
+translation=Kjøre kjørbar fil?
+
+[main.executable-file-message]
+original=This link points to an executable file. Running it could harm your computer.
+translation=Denne lenken peker til en kjørbar fil. Å kjøre den kan skade datamaskinen din.
+
+[main.executable-file-location]
+original=File: {{path}}
+translation=Fil: {{path}}
+
+[main.vault-not-found-title]
+original=Vault not found.
+translation=Finner ikke hvelvet.
+
+[main.vault-not-found-message]
+original=Unable to find a vault for the URL {{url}}
+translation=Kan ikke finne et hvelv for URL-en {{url}}

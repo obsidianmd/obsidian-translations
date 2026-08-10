@@ -947,8 +947,12 @@ original=PayPal currency conversion
 translation=PayPal 환전
 
 [account.payment.paypal_update]
-original=If you subscribed with PayPal, click here to update your subscription.
-translation=PayPal로 구독하셨다면, 여기를 클릭하여 구독을 업데이트하세요.
+original=If you subscribed with PayPal, {{link}} to update your subscription.
+translation=PayPal로 구독하셨다면 구독을 업데이트하려면 {{link}}.
+
+[account.payment.paypal_update_link]
+original=click here
+translation=여기를 클릭하세요
 
 [account.payment.update]
 original=Update
@@ -2406,10 +2410,6 @@ translation=시작하기
 original=Help
 translation=도움말
 
-[nav.join_community]
-original=Join the community
-translation=커뮤니티 참여하기
-
 [nav.learn]
 original=Learn
 translation=알아보기
@@ -2485,6 +2485,14 @@ translation=해결되지 않은 링크를 찾으셨네요.
 [pages.about.about]
 original=About Obsidian
 translation=Obsidian 소개
+
+[pages.about.credits_desc]
+original=Obsidian is made possible by our amazing contributors and community of volunteers. See more on the {{link}} page.
+translation=Obsidian은 놀라운 기여자들과 자원봉사자 커뮤니티 덕분에 가능했습니다. 자세한 내용은 {{link}} 페이지에서 확인하세요.
+
+[pages.about.credits_link]
+original=Credits
+translation=크레딧
 
 [pages.about.durable]
 original=Durable
@@ -2762,17 +2770,13 @@ translation=Obsidian에서 할 수 있는 모든 일을 명령줄에서도 할 �
 original=Install Obsidian CLI
 translation=Obsidian CLI 설치
 
-[pages.cli.install_linux_appimage_desc]
-original=A symlink is created at `/usr/local/bin/obsidian` (requires sudo). Falls back to `~/.local/bin` if sudo\u00a0fails.
-translation=심볼릭 링크가 `/usr/local/bin/obsidian`에 생성됩니다(sudo 필요). sudo가 실패하면 `~/.local/bin`으로 대체됩니다.
-
-[pages.cli.install_linux_flatpak_desc]
-original=A symlink is created automatically. If it fails, create one manually pointing to the Flatpak\u00a0export.
-translation=심볼릭 링크가 자동으로 생성됩니다. 실패하면 Flatpak export를 가리키도록 수동으로 생성하세요.
+[pages.cli.install_linux_desc]
+original=The CLI binary is copied to `~/.local/bin/obsidian`. Make sure `~/.local/bin` is in your\u00a0PATH.
+translation=CLI 바이너리가 `~/.local/bin/obsidian`에 복사됩니다. `~/.local/bin`이 PATH에 포함되어 있는지 확인하세요.
 
 [pages.cli.install_macos_desc]
-original=Registration adds the Obsidian binary to your PATH via `~/.zprofile`. If you use bash or fish, add the path to your shell config\u00a0manually.
-translation=등록하면 `~/.zprofile`을 통해 Obsidian 바이너리가 PATH에 추가됩니다. bash 또는 fish를 사용하는 경우 셸 설정에 경로를 수동으로 추가하세요.
+original=Registration creates a symlink at `/usr/local/bin/obsidian`. This requires administrator privileges. You will be prompted via a system\u00a0dialog.
+translation=등록하면 `/usr/local/bin/obsidian`에 심볼릭 링크가 생성됩니다. 이 작업에는 관리자 권한이 필요합니다. 시스템 대화상자를 통해 안내됩니다.
 
 [pages.cli.install_step1]
 original=Update Obsidian
@@ -4042,22 +4046,6 @@ translation=Obsidian 모바일은 매우 빨라서 잊기 전에 빠르게 기�
 original=With the customizable toolbar and touch-friendly gestures, zip around your second brain with\u00a0ease.
 translation=커스터마이징 가능한 툴바와 터치 친화적 제스처로 제2의 두뇌를 손쉽게\u00a0탐색하세요.
 
-[pages.plugins.api_docs_btn]
-original=API Docs
-translation=API 문서
-
-[pages.plugins.hero_desc]
-original=Explore {{count}} Obsidian plugins made by the community.
-translation=커뮤니티가 만든 {{count}}개의 Obsidian 플러그인을 탐색하세요.
-
-[pages.plugins.meta_desc]
-original=With thousands of plugins and our open API, it’s easy to tailor Obsidian to fit your personal workflow.
-translation=수천 개의 플러그인과 공개 API로 Obsidian을 나만의 워크플로에 맞게 쉽게 구성할 수 있습니다.
-
-[pages.plugins.search]
-original=Search plugins...
-translation=플러그인 검색...
-
 [pages.pricing.addons_desc]
 original=Optional add-on services make it easy to sync and publish your\u00a0notes.
 translation=선택적 부가 서비스로 노트를 쉽게 동기화하고\u00a0퍼블리시하세요.
@@ -4069,10 +4057,6 @@ translation=커뮤니티 배지
 [pages.pricing.bulk_desc]
 original=For bulk purchases and other inquiries, contact us at {{link}}
 translation=대량 구매 및 기타 문의는 {{link}}로 연락해 주세요
-
-[pages.pricing.bulk_desc_link]
-original=sup<!--break spam-->port@obsidian.md
-translation=sup<!--break spam-->port@obsidian.md
 
 [pages.pricing.collaborate]
 original=Collaborate on shared vaults
@@ -4099,8 +4083,8 @@ original=our\u00a0values
 translation=우리의\u00a0가치
 
 [pages.pricing.faq_a_commercial]
-original=No. You are not <em>required</em> to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
-translation=아닙니다. 상업용 라이선스 구매가 <em>필수</em>는 아니지만, 조직에서 업무용으로 Obsidian을 사용하신다면 Obsidian의 독립성과 100% 사용자 지원 체제를 유지하기 위해 상업용 라이선스 구매를 권장합니다. {{link}}
+original=No. You are not *required* to pay for a commercial license, however if you are using Obsidian for work in an organization we encourage you to purchase a commercial license to keep Obsidian independent and 100% user-supported. {{link}}
+translation=아닙니다. 상업용 라이선스 구매가 *필수*는 아니지만, 조직에서 업무용으로 Obsidian을 사용하신다면 Obsidian의 독립성과 100% 사용자 지원 체제를 유지하기 위해 상업용 라이선스 구매를 권장합니다. {{link}}
 
 [pages.pricing.faq_a_data_1]
 original=Obsidian is a private and secure space for your thoughts. You can use our apps without sharing any personal information, and your data is stored locally on your device, making it inaccessible to us. Additionally, our apps do not collect telemetry data, and we never sell user data.
@@ -4223,8 +4207,8 @@ original=Optional licenses help support the independent development of Obsidian.
 translation=선택적 라이선스가 Obsidian의 독립적인 개발을 지원합니다.
 
 [pages.pricing.vip]
-original=VIP channel
-translation=VIP 채널
+original=Exclusive channels
+translation=전용 채널
 
 [pages.publish.accessible]
 original=Accessible by default
@@ -4566,6 +4550,14 @@ translation=관련 정보
 original=Report a security issue
 translation=보안 이슈 신고
 
+[pages.security.sync_audit_cure53_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. Following this test, the Cure53 team reported that all vulnerabilities have been addressed and the recommendations have been followed.
+translation=Obsidian Sync API, 서버, 암호화에 대한 감사. 이 테스트 후 Cure53 팀은 모든 취약점이 해결되었고 권고 사항이 이행되었다고 보고했습니다.
+
+[pages.security.sync_audit_tob_desc]
+original=Audit of the Obsidian Sync API, server, and cryptography. All findings were addressed via remediations and disclosures validated by the auditors.
+translation=Obsidian Sync API, 서버, 암호화에 대한 감사로, 2025년 8월 암호화 업그레이드에 특히 중점을 두었습니다. 모든 발견 사항은 감사인이 검증한 수정 및 공개를 통해 해결되었습니다.
+
 [pages.security.sync_security_faqs]
 original=Sync\u00a0security\u00a0FAQs
 translation=Sync\u00a0보안\u00a0FAQ
@@ -4774,6 +4766,10 @@ translation=월간
 original=Need help?
 translation=도움이 필요하신가요?
 
+[shared.no_results]
+original=No results
+translation=결과 없음
+
 [shared.proceed_to_payment]
 original=Proceed to payment
 translation=결제 진행
@@ -4805,6 +4801,10 @@ translation=성공적으로 삭제됨
 [shared.successfully_updated]
 original=Successfully updated
 translation=성공적으로 업데이트됨
+
+[shared.switch_language]
+original=Switch language...
+translation=언어 전환...
 
 [shared.total]
 original=Total
@@ -4883,8 +4883,8 @@ original=Monthly
 translation=월간
 
 [ui.monthly_billing]
-original=Monthly\u00a0billing
-translation=월간\u00a0결제
+original=Monthly
+translation=월간
 
 [ui.more_browsers]
 original=More browsers
@@ -4897,6 +4897,10 @@ translation=다음\u00a0페이지\u00a0→
 [ui.next_release]
 original=Next release
 translation=다음 릴리스
+
+[ui.no_results]
+original=No results
+translation=결과 없음
 
 [ui.obsidian_blog]
 original=Obsidian Blog
@@ -4958,6 +4962,10 @@ translation=가입하기
 original=Summary
 translation=요약
 
+[ui.switch_language]
+original=Switch language...
+translation=언어 전환...
+
 [ui.use_cases]
 original=Use cases
 translation=사용 사례
@@ -4971,5 +4979,6 @@ original=Yearly
 translation=연간
 
 [ui.yearly_billing]
-original=Yearly\u00a0billing
-translation=연간\u00a0결제
+original=Yearly
+translation=연간
+
