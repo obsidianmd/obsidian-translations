@@ -448,7 +448,7 @@ translation=Gdzie umieszczać nowo utworzone notatki?
 
 [setting.file.option-choice-vault-root]
 original=Vault folder
-translation=W folderze głównym
+translation=Folder sejfu
 
 [setting.file.option-choice-current-folder]
 original=Same folder as current file
@@ -536,7 +536,7 @@ translation=Nazwa podfolderu
 
 [setting.file.option-attachment-subfolder-path-description]
 original=If your file is in “vault/folder”, and you set subfolder name to “attachments”, attachments will be saved to “vault/folder/attachments”.
-translation=Jeżeli plik znajduje się w folderze "sejf/folder", a nazwa podfolderu to "załączniki", będą one zapisane w "sejf/folder/załączniki".
+translation=Jeżeli plik znajduje się w „sejf/folder”, a nazwa podfolderu to „załączniki”, załączniki zostaną zapisane w „sejf/folder/załączniki”.
 
 [setting.file.option-excluded-files]
 original=Excluded files
@@ -680,15 +680,15 @@ translation=Czcionka o stałej szerokości (monospace)
 
 [setting.appearance.option-monospace-font-description]
 original=Set font for places like code blocks and frontmatter.
-translation=Wybierz czcionkę elementów takich jak bloki kodu i frontmatter.
+translation=Wybierz czcionkę elementów takich jak bloki kodu i Frontmatter.
 
 [setting.appearance.label-font-count]
 original={{count}} font
-translation={{count}} font
+translation={{count}} czcionka
 
 [setting.appearance.label-font-count_plural]
 original={{count}} fonts
-translation={{count}} fonty
+translation={{count}} czcionki
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -1032,7 +1032,7 @@ translation=Wszystkie
 
 [setting.hotkeys.label-show-conflicts]
 original=Conflicts
-translation=Konflikty ({{count}})
+translation=Konflikty
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -2764,7 +2764,7 @@ translation=z systemu
 
 [interface.menu.copy-vault-path]
 original=from vault folder
-translation=z sejfu
+translation=z folderu sejfu
 
 [interface.menu.paste-as-plain-text]
 original=Paste as plain text
@@ -2852,11 +2852,11 @@ translation=Stwórz nowy sejf Obsidian w folderze.
 
 [interface.start-screen.option-connect-obsidian-sync]
 original=Open vault from Obsidian Sync
-translation=Połącz z Obsidian Sync
+translation=Otwórz sejf z Obsidian Sync
 
 [interface.start-screen.option-connect-obsidian-sync-description]
 original=Set up a synced vault with existing remote vault.
-translation=Ustaw synchronizowany sejf lokalny z istniejącym sejfem zdalnym.
+translation=Skonfiguruj synchronizowany sejf lokalny z istniejącym sejfem zdalnym.
 
 [interface.start-screen.option-new-vault-name]
 original=Vault name
@@ -3936,7 +3936,7 @@ translation=Zmień nazwę pliku
 
 [commands.copy-path]
 original=Copy current file path from vault folder
-translation=Skopiuj ścieżkę pliku
+translation=Skopiuj ścieżkę bieżącego pliku z folderu sejfu
 
 [commands.copy-full-path]
 original=Copy current file path from system root
@@ -5504,11 +5504,11 @@ translation=Nieprawidłowe atrybuty.
 
 [plugins.properties.label-sort-by-name-a-to-z]
 original=Property name (A to Z)
-translation=wg nazwy (od A do Z)
+translation=Nazwa atrybutu (od A do Z)
 
 [plugins.properties.label-sort-by-name-z-to-a]
 original=Property name (Z to A)
-translation=wg nazwy (od Z do A)
+translation=Nazwa atrybutu (od Z do A)
 
 [plugins.properties.label-sort-by-frequency-high-to-low]
 original=Frequency (high to low)
@@ -6068,7 +6068,7 @@ translation=Format daty
 
 [plugins.daily-notes.option-date-format-desc]
 original=Choose how daily note are named in your vault.
-translation=Wybierz format daty dla swoich notatek dziennika.
+translation=Wybierz sposób nazywania dzienników w sejfie.
 
 [plugins.daily-notes.option-custom-date-format]
 original=Custom format
@@ -7216,7 +7216,7 @@ translation=Wprowadź nazwę nowego układu.
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=Układ został pomyślnie zapisany.
+translation=Układ „{{name}}” został pomyślnie zapisany.
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
@@ -9488,7 +9488,7 @@ translation=Nieprawidłowa konfiguracja atrybutów "{{ name }}".
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Nie udało się dodać nowego podglądu bazy danych "{{ viewID }}". Podgląd z tym ID już istnieje.
+translation=Nie udało się dodać nowego widoku Bases „{{ viewId }}”. Widok o tym identyfikatorze już istnieje.
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
