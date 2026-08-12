@@ -60,7 +60,7 @@ translation=Nie znaleziono ustawień.
 
 [setting.search-show-more]
 original={{count}} more
-translation={{count}} więcej
+translation=Więcej: {{count}}
 
 [setting.editor.name]
 original=Editor
@@ -556,11 +556,11 @@ translation=Nie dodano wykluczeń.
 
 [setting.file.label-excluded-files-count]
 original={{count}} rule
-translation={{count}} reguła
+translation=Reguły: {{count}}
 
 [setting.file.label-excluded-files-count_plural]
 original={{count}} rules
-translation={{count}} reguły
+translation=Reguły: {{count}}
 
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
@@ -684,11 +684,11 @@ translation=Wybierz czcionkę elementów takich jak bloki kodu i Frontmatter.
 
 [setting.appearance.label-font-count]
 original={{count}} font
-translation={{count}} czcionka
+translation=Czcionki: {{count}}
 
 [setting.appearance.label-font-count_plural]
 original={{count}} fonts
-translation={{count}} czcionki
+translation=Czcionki: {{count}}
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -792,7 +792,7 @@ translation=Nie znaleziono żadnych snippetów CSS w folderze.
 
 [setting.appearance.label-enabled-snippets-count]
 original={{count}} enabled
-translation={{count}} włączonych
+translation=Włączone: {{count}}
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
@@ -1612,11 +1612,11 @@ translation=Włącz ponownie zainstalowane wtyczki
 
 [setting.third-party-plugin.label-reenable-plugins-desc]
 original=Restore {{count}} previously installed plugin.
-translation=Przywróć {{count}} wcześniej zainstalowaną wtyczkę.
+translation=Przywróć wcześniej zainstalowane wtyczki: {{count}}.
 
 [setting.third-party-plugin.label-reenable-plugins-desc_plural]
 original=Restore {{count}} previously installed plugins.
-translation=Przywróć {{count}} wcześniej zainstalowane wtyczki.
+translation=Przywróć wcześniej zainstalowane wtyczki: {{count}}.
 
 [setting.third-party-plugin.tooltip-debug-installed-plugins]
 original=Show plugin info
@@ -4292,7 +4292,7 @@ translation=Ten załącznik nie jest już używany w żadnych notatkach. Czy chc
 
 [dialogue.orphan-attachments-desc_plural]
 original=These {{count}} attachments are no longer used in any notes. Would you like to delete them?
-translation=Te {{count}} załączniki nie są już używane w żadnych notatkach. Czy chcesz je usunąć?
+translation=Te załączniki (liczba: {{count}}) nie są już używane w żadnych notatkach. Czy chcesz je usunąć?
 
 [dialogue.tooltip-file-tree]
 original=File tree
@@ -4596,11 +4596,11 @@ translation=Przenieś plik do innego folderu
 
 [plugins.file-explorer.action-new-folder-with-count]
 original=New folder with selection ({{count}} item)
-translation=Nowy folder zawierający (pliki: {{count}})
+translation=Nowy folder z plikami (liczba: {{count}})
 
 [plugins.file-explorer.action-new-folder-with-count_plural]
 original=New folder with selection ({{count}} items)
-translation=Nowy folder zawierający (pliki: {{count}})
+translation=Nowy folder z plikami (liczba: {{count}})
 
 [plugins.file-explorer.action-move-file]
 original=Move file to...
@@ -4612,7 +4612,7 @@ translation=Przenieś folder do...
 
 [plugins.file-explorer.action-move-items]
 original=Move {{count}} items to...
-translation=Przenieś {{count}} plików do...
+translation=Przenieś pliki (liczba: {{count}}) do...
 
 [plugins.file-explorer.prompt-type-folder]
 original=Type a folder
@@ -5636,11 +5636,11 @@ translation=Usuń z ulubionych aktywny plik
 
 [plugins.bookmarks.action-bookmark-tab-group]
 original=Bookmark {{count}} tab...
-translation=Dodaj do ulubionych {{count}}...
+translation=Dodaj karty do ulubionych (liczba: {{count}})...
 
 [plugins.bookmarks.action-bookmark-tab-group_plural]
 original=Bookmark {{count}} tabs...
-translation=Dodaj do ulubionych {{count}}...
+translation=Dodaj karty do ulubionych (liczba: {{count}})...
 
 [plugins.bookmarks.action-bookmark-all-tabs]
 original=Bookmark all tabs...
@@ -6780,11 +6780,11 @@ translation=Dodaj wszystkie pliki, które są powiązane z aktualnie wybranymi e
 
 [plugins.publish.msg-added-linked-files]
 original={{count}} linked file has been added.
-translation=Dodano łącza: {{count}}.
+translation=Dodano połączone pliki: {{count}}.
 
 [plugins.publish.msg-added-linked-files_plural]
 original={{count}} linked files have been added.
-translation=Dodano łącza: {{count}}.
+translation=Dodano połączone pliki: {{count}}.
 
 [plugins.publish.tooltip-open-site-options]
 original=Change site options
@@ -7920,7 +7920,7 @@ translation=Ostatnia synchronizacja
 
 [plugins.sync.label-more]
 original={{count}} more
-translation={{count}} więcej
+translation=Więcej: {{count}}
 
 [plugins.sync.button-sign-up]
 original=Sign up
@@ -9096,19 +9096,19 @@ translation=Nie można wyeksportować pustej tablicy
 
 [plugins.canvas.msg-updating-links]
 original=Canvas detected file renames affecting {{count}} canvas file, updating...
-translation=Wprowadzanie wykrytych zmian nazw plików tablic {{count}}...
+translation=Wykryto zmiany nazw plików używanych w tablicach (liczba: {{count}}). Aktualizowanie...
 
 [plugins.canvas.msg-updating-links_plural]
 original=Canvas detected file renames affecting {{count}} canvas files, updating...
-translation=Wprowadzanie wykrytych zmian nazw plików tablic {{count}}...
+translation=Wykryto zmiany nazw plików używanych w tablicach (liczba: {{count}}). Aktualizowanie...
 
 [plugins.canvas.msg-updated-links]
 original=Canvas updated {{count}} embed card
-translation=Wprowadzono zmiany w zamieszczonych kartach {{count}}
+translation=Zaktualizowano zamieszczone karty na tablicach (liczba: {{count}}).
 
 [plugins.canvas.msg-updated-links_plural]
 original=Canvas updated {{count}} embed cards
-translation=Wprowadzono zmiany w zamieszczonych kartach {{count}}
+translation=Zaktualizowano zamieszczone karty na tablicach (liczba: {{count}}).
 
 [plugins.bases.name]
 original=Bases
