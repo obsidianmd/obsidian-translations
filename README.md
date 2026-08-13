@@ -130,7 +130,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `gl` | Galician  | Galego | 🚧 | | |
 | `he` | Hebrew  | עברית 🇮🇱 | ✅ | | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 | | |
-| `hr` | Croatian | ? | 🚧 | | |
+| `hr` | Croatian | Hrvatski | 🚧 | | |
 | `hu` | Hungarian | Magyar | ✅ | | ✅ |
 | `id` | Indonesian | Bahasa Indonesia | ✅ | | ✅ |
 | `it` | Italian | Italiano | ✅ | ✅ | ✅ |
