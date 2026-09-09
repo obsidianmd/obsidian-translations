@@ -93,11 +93,6 @@ translation=Изберете езиците, които ще бъдат изпо
 [setting.editor.spellcheck-languages-mac-description]
 original=The native spellchecker will automatically detect the language being used for you on macOS.
 translation=Вградената функция за проверка на правописа автоматично ще избере езика, който използвате в macOS.
-translation=Изберете езиците, които ще се използват за проверка на правописа.
-
-[setting.editor.spellcheck-languages-mac-description]
-original=The native spellchecker will automatically detect the language being used for you on macOS.
-translation=Вградената функция за проверка на правописа автоматично ще избере езика, който използвате в macOS.
 
 [setting.editor.spellcheck-dict]
 original=Spellcheck dictionary
@@ -587,22 +582,6 @@ translation=Разрешаване на обратни извиквания къ
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Разрешава използването на x-callback-url чрез x-success или x-error при обработка на URI в приложението.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Управление на доверените действия и настройване на поведението на URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Доверени действия
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Няма доверени действия все още. Одобрените URI действия ще се покажат тук.
-
 [setting.appearance.name]
 original=Appearance
 translation=Изглед
@@ -686,14 +665,6 @@ translation=Непропорционален шрифт
 [setting.appearance.option-monospace-font-description]
 original=Set font for places like code blocks and frontmatter.
 translation=Задава шрифта за определени места като блокове с код и блока с основни метаданни (Frontmatter).
-
-[setting.appearance.label-single-font-currently-in-effect]
-original= Currently applied font: 
-translation= Използван в момента шрифт:
-
-[setting.appearance.label-multiple-fonts-currently-in-effect]
-original= The following fonts are currently applied:
-translation= Понястоящем се прилагат следните шрифтове:
 
 [setting.appearance.label-font-count]
 original={{count}} font
@@ -802,14 +773,6 @@ translation=
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
 translation=Няма намерени CSS откъси.
-
-[setting.appearance.label-currently-enabled-snippets]
-original=You currently have {{count}} snippet enabled.
-translation=Понастоящем имате {{count}} включен откъс.
-
-[setting.appearance.label-currently-enabled-snippets_plural]
-original=You currently have {{count}} snippets enabled.
-translation=Понастоящем имате {{count}} включени откъса.
 
 [setting.appearance.label-enabled-snippets-count]
 original={{count}} enabled
@@ -2446,6 +2409,7 @@ translation=Информация за отстраняване на грешки
 [interface.button-learn-more]
 original=Learn more
 translation=Повече информация
+
 [interface.button-not-now]
 original=Not now
 translation=Не сега
@@ -3343,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Защитено с най-силния стандарт за криптиране от край до край.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Изисква Obsidian профил.
+original=Requires a paid subscription.
+translation=Изисква платен абонамент.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -5925,10 +5889,6 @@ translation=отмени
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Няма намерени команди.
-
-[plugins.command-palette.prompt-type-command]
-original=Select a command to add...
-translation=Въведете команда...
 
 [plugins.command-palette.action-add-command]
 original=Add a command...
