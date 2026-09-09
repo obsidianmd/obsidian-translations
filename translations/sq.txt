@@ -582,22 +582,6 @@ translation=Lejo callback-e URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Aktivizo përdorimin e x-callback-url përmes x-success ose x-error gjatë trajtimit të URI-ve të Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Menaxho veprimet e besuara dhe konfiguro sjelljen e URI-së.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Veprime të besuara
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Ende asnjë veprim i besuar. Veprimet URI të miratuara do të shfaqen këtu.
-
 [setting.appearance.name]
 original=Appearance
 translation=Pamja
@@ -1422,6 +1406,10 @@ translation=Dil
 original=Log in
 translation=Kyçu
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Hyr në Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Regjistrohu
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Keni harruar fjalëkalimin?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Hyr
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Opsione të tjera për panelin
 original=Insert attachment
 translation=Bashkangjit një material
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Bëj fotografi
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Zgjidh skedarin
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Find
@@ -2149,6 +2145,10 @@ translation=Fshi shënimin poshtë faqes dhe referencën
 [editor.menu.reset-size]
 original=Reset size
 translation=Rikthe madhësinë
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Hiq imazhin
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Shtojca {{plugin}} v{{version}} nuk mund të ngarkohet. Është rapo
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Dështoi hapja e “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Pamja “{{name}}” hasi një gabim gjatë mbylljes
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Paragraf
 [interface.formatting.label-insert]
 original=Insert
 translation=Fut
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Parazgjedhur
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=E kuqe
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Portokalli
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=E verdhë
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=E gjelbër
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Blu
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Vjollcë
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=E siguruar me standardin më të fortë të enkriptimit nga skaji në skaj.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Kërkon një llogari Obsidian.
+original=Requires a paid subscription.
+translation=Kërkon një abonim me pagesë.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=(Ç)Aktivizo italizimin e tekstit për tekstin e përzgjedhur
 original=Toggle highlight
 translation=(Ç)Aktivizo nënvijezimin për tekstin e përzgjedhur
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Aktivizo/çaktivizo theksimin {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=(Ç)Aktivizo komentet për tekstin e përzgjedhur
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Objekti do dërgohet ne mbeturinat e Obsidian, të cilat ndodhen në dosjen e fshehur ".trash" brenda kasafortës tuaj.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=Ky objekt do fshihet përgjithmonë.
+original=The file will be permanently deleted.
+translation=Ky skedar do të fshihet përgjithmonë.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=Aktualisht ka {{count}} lidhje që tregojnë drejt këtij skedari.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Fshi dokumentin
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Të ekzekutohet veprimi nga lidhja e jashtme?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Veprimi “{{action}}” është gati të ekzekutohet. Vazhdo vetëm nëse i beson burimit të lidhjes.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Shtojca “{{source}}” është gati të ekzekutojë veprimin “{{action}}”. Vazhdo vetëm nëse i beson burimit të lidhjes.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Mos pyet përsëri për “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Anullo
 [dialogue.button-allow]
 original=Allow
 translation=Lejo
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Lejo një herë
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Lejo gjithmonë
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Përmbajtje
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Raporti i pamjes së imazhit
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Rivendos renditjen
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Gjerësia e kolonës
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Fshih kolonat boshe
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Zgjidh një veti për grupim nga menyja e renditjes
 
 [plugins.bases.table.name]
 original=Table

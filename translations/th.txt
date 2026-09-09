@@ -582,22 +582,6 @@ translation=อนุญาต URI callbacks
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=เปิดใช้งานการใช้ x-callback-url ผ่าน x-success หรือ x-error เมื่อจัดการ Obsidian URI
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=จัดการการดำเนินการที่เชื่อถือและกำหนดค่าพฤติกรรม URI
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=การดำเนินการที่เชื่อถือ
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=ยังไม่มีการดำเนินการที่เชื่อถือ การดำเนินการ URI ที่อนุมัติแล้วจะแสดงที่นี่
-
 [setting.appearance.name]
 original=Appearance
 translation=การแสดงผล
@@ -1422,6 +1406,10 @@ translation=ล็อกเอาท์
 original=Log in
 translation=ล็อกอิน
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=เข้าสู่ระบบ Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=สมัครสมาชิก
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=ลืมรหัสผ่าน?
 
 [setting.account.button-login]
-original=Login
-translation=ล็อกอิน
+original=Log in
+translation=เข้าสู่ระบบ
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=แถบเครื่องมือเพิ่มเติม
 original=Insert attachment
 translation=เพิ่มไฟล์แนบ
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=ถ่ายรูป
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=เลือกไฟล์
+
 [editor.search.placeholder-find]
 original=Find...
 translation=ค้นหา
@@ -2149,6 +2145,10 @@ translation=ลบเชิงอรรถและการอ้างอิ�
 [editor.menu.reset-size]
 original=Reset size
 translation=รีเซตขนาด
+
+[editor.menu.remove-image]
+original=Remove image
+translation=นำรูปภาพออก
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=ไม่สามารถโหลดปลั๊กอิน {{pl
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=ไม่สามารถเปิด “{{filepath}}” ได้
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=มุมมอง “{{name}}” พบข้อผิดพลาดขณะปิด
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=ย่อหน้า
 [interface.formatting.label-insert]
 original=Insert
 translation=แทรก
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=ค่าเริ่มต้น
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=สีแดง
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=สีส้ม
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=สีเหลือง
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=สีเขียว
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=สีน้ำเงิน
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=สีม่วง
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=ปลอดภัยด้วยมาตรฐานการเข้ารหัสแบบต้นทางถึงปลายทางที่แข็งแกร่งที่สุด
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=ต้องมีบัญชี Obsidian
+original=Requires a paid subscription.
+translation=ต้องสมัครสมาชิกแบบชำระเงิน
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=เปิดปิดตัวเอียงที่ข้อค�
 original=Toggle highlight
 translation=เปิดปิดการเน้นที่ข้อความที่เลือก
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=เปิด/ปิดไฮไลต์สี{{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=เปิดปิดคอมเมนท์ที่ข้อความที่เลือก
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=ไฟล์จะถูกย้ายไปยังถังขยะของ Obsidian ซึ่งอยู่ที่โฟลเดอร์ ".trash" ที่ถูกซ่อนไว้ในห้องนิรภัย
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=ไฟล์นี้จะถูกลบอย่างถาวร
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=ปัจจุบันมี {{count}} ลิงก์ที่ช
 [dialogue.label-delete-file]
 original=Delete file
 translation=ลบไฟล์
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=เรียกใช้การดำเนินการจากลิงก์ภายนอกหรือไม่
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=การดำเนินการ “{{action}}” กำลังจะถูกเรียกใช้ ดำเนินการต่อเฉพาะเมื่อคุณเชื่อถือแหล่งที่มาของลิงก์เท่านั้น
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=ปลั๊กอิน “{{source}}” กำลังจะเรียกใช้การดำเนินการ “{{action}}” ดำเนินการต่อเฉพาะเมื่อคุณเชื่อถือแหล่งที่มาของลิงก์เท่านั้น
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=ไม่ต้องถามอีกสำหรับ “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=ยกเลิก
 [dialogue.button-allow]
 original=Allow
 translation=อนุญาต
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=อนุญาตครั้งเดียว
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=อนุญาตเสมอ
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=พอดีในกรอบ
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=อัตราส่วนภาพ
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=คัมบัง
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=รีเซ็ตลำดับ
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=ความกว้างคอลัมน์
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=ซ่อนคอลัมน์ว่าง
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=เลือกคุณสมบัติที่จะใช้จัดกลุ่มจากเมนูจัดเรียง
 
 [plugins.bases.table.name]
 original=Table

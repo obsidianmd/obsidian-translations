@@ -582,22 +582,6 @@ translation=អនុញ្ញាត URI callbacks
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=បើកឱ្យប្រើ x-callback-url តាមរយៈ x-success ឬ x-error នៅពេលដោះស្រាយ URI របស់ Obsidian។
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=គ្រប់គ្រងសកម្មភាពដែលទុកចិត្ត និងកំណត់រចនាសម្ព័ន្ធឥរិយាបថ URI។
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=សកម្មភាពដែលទុកចិត្ត
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=មិនទាន់មានសកម្មភាពដែលទុកចិត្តទេ។ សកម្មភាព URI ដែលបានអនុម័តនឹងបង្ហាញនៅទីនេះ។
-
 [setting.appearance.name]
 original=Appearance
 translation=រូបរាង
@@ -1422,6 +1406,10 @@ translation=ចេញពីគណនី
 original=Log in
 translation=ចូលក្នុងគណនី
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=ចូលទៅ Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=ចុះ​ឈ្មោះ
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=ភ្លេចពាក្យសម្ងាត់?
 
 [setting.account.button-login]
-original=Login
-translation=ចូលក្នុងគណនី
+original=Log in
+translation=ចូល
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=ជម្រើសរបារឧបករណ៍ច្រើនទ�
 original=Insert attachment
 translation=បញ្ចូលឯកសារភ្ជាប់
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=ថតរូប
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=ជ្រើសរើសឯកសារ
+
 [editor.search.placeholder-find]
 original=Find...
 translation=ស្វែងរក
@@ -2149,6 +2145,10 @@ translation=លុបកំណត់ចំណាំជើងទំព័រ ន�
 [editor.menu.reset-size]
 original=Reset size
 translation=កំណត់ទំហំឡើងវិញ
+
+[editor.menu.remove-image]
+original=Remove image
+translation=លុបរូបភាព
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=មិនអាចផ្ទុកកម្មវិធីជំន�
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=មិនអាចបើក “{{filepath}}” បាន
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=ទិដ្ឋភាព “{{name}}” បានជួបប្រទះកំហុសពេលកំពុងបិទ
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=កថាខណ្ឌ
 [interface.formatting.label-insert]
 original=Insert
 translation=បញ្ចូល
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=លំនាំដើម
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=ក្រហម
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=ទឹកក្រូច
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=លឿង
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=បៃតង
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=ខៀវ
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=ស្វាយ
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=បានការពារដោយស្តង់ដារការអ៊ិនគ្រីបពីចុងដល់ចុងដែលខ្លាំងបំផុត។
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=ត្រូវការគណនី Obsidian។
+original=Requires a paid subscription.
+translation=តម្រូវឱ្យមានការជាវបង់ប្រាក់។
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=បិទ/បើកទ្រេត
 original=Toggle highlight
 translation=បិទ/បើក ពណ៌ចំណាំ
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=បិទ/បើកការបន្លិចពណ៌ {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=បិទ/បើក មតិយោបល់
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=វានឹងត្រូវបានផ្លាស់ទីទៅធុងសំរាម Obsidian របស់អ្នក ដែលមានទីតាំងនៅ ".trash" ថតដែលលាក់នៅក្នុង vault​ របស់អ្នក។
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=ឯកសារនឹងត្រូវបានលុបជាអចិន្ត្រៃយ៍។
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=បច្ចុប្បន្នមាន {{count}} តំណភ្
 [dialogue.label-delete-file]
 original=Delete file
 translation=លុប​ឯកសារ
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=ដំណើរការសកម្មភាពពីតំណខាងក្រៅឬ?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=សកម្មភាព “{{action}}” នឹងដំណើរការ។ បន្តតែបើអ្នកទុកចិត្តប្រភពរបស់តំណប៉ុណ្ណោះ។
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=កម្មវិធីជំនួយ “{{source}}” នឹងដំណើរការសកម្មភាព “{{action}}”។ បន្តតែបើអ្នកទុកចិត្តប្រភពរបស់តំណប៉ុណ្ណោះ។
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=កុំសួរម្តងទៀតសម្រាប់ “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=បោះបង់
 [dialogue.button-allow]
 original=Allow
 translation=អនុញ្ញាត
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=អនុញ្ញាតម្តង
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=អនុញ្ញាតជានិច្ច
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=ដាក់ឲ្យសម
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=សមាមាត្ររូបភាព
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=កំណត់លំដាប់ឡើងវិញ
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=ទទឹងជួរឈរ
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=លាក់ជួរឈរទទេ
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=ជ្រើសរើសលក្ខណៈសម្បត្តិមួយពីម៉ឺនុយតម្រៀប ដើម្បីដាក់ជាក្រុមតាមលក្ខណៈសម្បត្តិនោះ
 
 [plugins.bases.table.name]
 original=Table

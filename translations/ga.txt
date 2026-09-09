@@ -582,22 +582,6 @@ translation=Ceadaigh aisghlaonna URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Cumasaigh úsáid x-callback-url trí x-success nó x-error agus URIs Obsidian á láimhseáil.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=URI Obsidian
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Bainistigh gníomhartha iontaofa agus cumraigh iompar URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Gníomhartha iontaofa
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Níl aon ghníomhartha iontaofa ann fós. Beidh gníomhartha URI ceadaithe le feiceáil anseo.
-
 [setting.appearance.name]
 original=Appearance
 translation=Dealramh
@@ -1422,6 +1406,10 @@ translation=Logáil amach
 original=Log in
 translation=Logáil isteach
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Logáil isteach in Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Cláraigh
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Dearmad ar phasfhocal?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Logáil isteach
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Roghanna uirlisí níos mó
 original=Insert attachment
 translation=Cuir isteach ceangaltán
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Glac grianghraf
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Roghnaigh comhad
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Aimsigh...
@@ -2149,6 +2145,10 @@ translation=Scrios fónóta agus tagairt
 [editor.menu.reset-size]
 original=Reset size
 translation=Athshocraigh méid
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Bain an íomhá
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Ní féidir breiseán {{plugin}} v{{version}} a lódáil. Tuairiscí
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Theip ar oscailt “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Tharla earráid san amharc “{{name}}” agus é á dhúnadh
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Mír
 [interface.formatting.label-insert]
 original=Insert
 translation=Cuir isteach
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Réamhshocrú
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Dearg
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Oráiste
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Buí
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Glas
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Gorm
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Corcra
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Daingnithe leis an gcaighdeán criptithe deireadh go deireadh is láidre
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Teastaíonn cuntas Obsidian.
+original=Requires a paid subscription.
+translation=Teastaíonn síntiús íoctha.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Athraigh iodálach
 original=Toggle highlight
 translation=Athraigh buaicphointe
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Scoránaigh aibhsiú {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Athraigh trácht
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Aistreofar é chuig do bhruscar Obsidian, atá suite san fhillteán “.trash” i do chluiche.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Scriosfar an comhad go buan.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Tá naisc {{count}} ann faoi láthair ag díriú ar an gcomhad seo.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Scrios comhad
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Rith gníomh ó nasc seachtrach?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Tá an gníomh “{{action}}” ar tí rith. Ná lean ar aghaidh ach má tá muinín agat as foinse an naisc.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Tá an breiseán “{{source}}” ar tí an gníomh “{{action}}” a rith. Ná lean ar aghaidh ach má tá muinín agat as foinse an naisc.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Ná fiafraigh arís faoi “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Cealaigh
 [dialogue.button-allow]
 original=Allow
 translation=Ceadaigh
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Ceadaigh uair amháin
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Ceadaigh i gcónaí
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Cuimsíonn
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=cóimheas gné íomhá
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Athshocraigh an t-ord
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Leithead an cholúin
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Folaigh colúin fholmha
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Roghnaigh airí ón roghchlár sórtála chun grúpáil dá réir
 
 [plugins.bases.table.name]
 original=Table

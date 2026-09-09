@@ -582,22 +582,6 @@ translation=אפשר קריאות חזרה של URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=אפשר שימוש ב־x-callback-url דרך x-success או x-error בעת טיפול ב־URI של Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=נהל פעולות מהימנות והגדר את התנהגות ה־URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=פעולות מהימנות
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=אין עדיין פעולות מהימנות. פעולות URI שאושרו יופיעו כאן.
-
 [setting.appearance.name]
 original=Appearance
 translation=מראה
@@ -1422,6 +1406,10 @@ translation=התנתקות
 original=Log in
 translation=התחברות
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=התחברות ל-Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=הרשמה
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=שכחת סיסמה?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=התחברות
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=אפשרויות נוספות של סרגל כלים
 original=Insert attachment
 translation=הכנס קובץ מצורף
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=צלם תמונה
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=בחר קובץ
+
 [editor.search.placeholder-find]
 original=Find...
 translation=חפש...
@@ -2149,6 +2145,10 @@ translation=מחק הערת שוליים והפניה
 [editor.menu.reset-size]
 original=Reset size
 translation=איפוס הגודל
+
+[editor.menu.remove-image]
+original=Remove image
+translation=הסר תמונה
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=לא ניתן לטעון את התוסף {{plugin}} בגרסה {{ver
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=פתיחת „{{filepath}}” נכשלה
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=אירעה שגיאה בעת סגירת התצוגה „{{name}}”
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=פסקה
 [interface.formatting.label-insert]
 original=Insert
 translation=הוספה
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=ברירת מחדל
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=אדום
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=כתום
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=צהוב
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=ירוק
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=כחול
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=סגול
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=מאובטח באמצעות תקן ההצפנה מקצה לקצה החזק ביותר.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=נדרש חשבון Obsidian.
+original=Requires a paid subscription.
+translation=נדרש מנוי בתשלום.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=החלף נטוי
 original=Toggle highlight
 translation=החלף סימון
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=הפעלת או השבתת הדגשה בצבע {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=החלף הערה
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=הוא יועבר לאשפה של Obsidian, שנמצאת בתיקייה הנסתרת ".trash" בכספת שלך.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=הקובץ יימחק לצמיתות.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=כרגע יש {{count}} קישורים המצביעים על קוב�
 [dialogue.label-delete-file]
 original=Delete file
 translation=מחק קובץ
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=להריץ פעולה מקישור חיצוני?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=הפעולה “{{action}}” עומדת לפעול. המשך רק אם מקור הקישור מהימן בעיניך.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=התוסף “{{source}}” עומד להריץ את הפעולה “{{action}}”. המשך רק אם מקור הקישור מהימן בעיניך.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=אל תשאל שוב לגבי “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=בטל
 [dialogue.button-allow]
 original=Allow
 translation=אפשר
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=אפשר פעם אחת
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=אפשר תמיד
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=הכלה
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=יחס גובה־רוחב של התמונה
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=קנבן
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=אפס את הסדר
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=רוחב עמודה
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=הסתר עמודות ריקות
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=בחר מאפיין לקיבוץ מתפריט המיון
 
 [plugins.bases.table.name]
 original=Table

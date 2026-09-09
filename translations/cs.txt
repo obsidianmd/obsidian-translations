@@ -582,22 +582,6 @@ translation=Povolit URI callbacky
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Povolit použití x-callback-url prostřednictvím x-success nebo x-error při zpracování Obsidian URI.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Spravujte důvěryhodné akce a nakonfigurujte chování URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Důvěryhodné akce
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Zatím žádné důvěryhodné akce. Schválené akce URI se zobrazí zde.
-
 [setting.appearance.name]
 original=Appearance
 translation=Vzhled
@@ -1422,6 +1406,10 @@ translation=Odhlásit
 original=Log in
 translation=Přihlásit
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Přihlásit se do Obsidianu
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Registrovat
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=Zapomněli jste heslo?
 
 [setting.account.button-login]
-original=Login
-translation=Přihlásit
+original=Log in
+translation=Přihlásit se
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=Další nastavení
 original=Insert attachment
 translation=Vložit přílohu
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Pořídit fotografii
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Vybrat soubor
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Najít
@@ -2149,6 +2145,10 @@ translation=Smazat poznámku pod čarou a odkaz
 [editor.menu.reset-size]
 original=Reset size
 translation=Obnovit velikost
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Odebrat obrázek
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Nelze načíst plugin {{plugin}} v{{version}}. Bylo nahlášeno, že
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Nepodařilo se otevřít „{{filepath}}“
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Při zavírání zobrazení „{{name}}“ došlo k chybě
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Odstavec
 [interface.formatting.label-insert]
 original=Insert
 translation=Vložit
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Výchozí
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Červená
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Oranžová
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Žlutá
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Zelená
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Modrá
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Fialová
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Zabezpečeno nejsilnějším standardem end-to-end šifrování.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Vyžaduje účet Obsidian.
+original=Requires a paid subscription.
+translation=Vyžaduje placené předplatné.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Přepnout kurzívu pro výběr
 original=Toggle highlight
 translation=Přepnout zvýraznění pro výběr
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Přepnout zvýraznění – {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Toggle comments for selection
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Soubor bude přesunut do koše Obsidian, který se nachází ve skryté složce ".trash" ve vašem trezoru.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=Soubor bude permanentně odstraněn.
+original=The file will be permanently deleted.
+translation=Soubor bude trvale odstraněn.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=Aktuálně existuje {{count}} odkazů směřujících na tento soubo
 [dialogue.label-delete-file]
 original=Delete file
 translation=Odstranit soubor
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Spustit akci z externího odkazu?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Chystá se spustit akce „{{action}}“. Pokračujte pouze tehdy, pokud důvěřujete zdroji odkazu.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Plugin „{{source}}“ se chystá spustit akci „{{action}}“. Pokračujte pouze tehdy, pokud důvěřujete zdroji odkazu.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=U akce „{{action}}“ se znovu neptat
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Zrušit
 [dialogue.button-allow]
 original=Allow
 translation=Povolit
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Povolit jednou
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Vždy povolit
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Přizpůsobit
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Poměr stran obrázku
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Obnovit pořadí
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Šířka sloupce
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Skrýt prázdné sloupce
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=V nabídce řazení vyberte vlastnost, podle které chcete seskupovat
 
 [plugins.bases.table.name]
 original=Table

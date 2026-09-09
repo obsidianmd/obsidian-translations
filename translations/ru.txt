@@ -80,7 +80,7 @@ translation=Проверять орфографию
 
 [setting.editor.option-spellcheck-description]
 original=Turn on the spellchecker.
-translation=На данный момент работает только с американским английским.
+translation=Включить проверку орфографии.
 
 [setting.editor.spellcheck-languages]
 original=Spellcheck languages
@@ -336,7 +336,7 @@ translation=Верная команда. Режим Vim активирован.
 
 [setting.editor.msg-vim-mode-not-enabled]
 original=Command is incorrect. Vim mode remains disabled to protect you.
-translation=Команда не верна. Режим Vim остается отключённым для вашего удобства.
+translation=Команда неверна. Режим Vim остаётся отключённым для вашего удобства.
 
 [setting.editor.msg-vim-mode-please-enter-command]
 original=Please enter the command to enable Vim mode
@@ -581,22 +581,6 @@ translation=Разрешить обратные вызовы URI
 [setting.file.option-uri-callbacks-desc]
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Включите использование x-callback-url с помощью x-success или x-error при обработке URI Obsidian.
-
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Управляйте доверенными действиями и настройте поведение URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Доверенные действия
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Доверенных действий пока нет. Одобренные действия URI появятся здесь.
 
 [setting.appearance.name]
 original=Appearance
@@ -912,7 +896,7 @@ translation=Настройка вертикальной панели
 
 [setting.appearance.label-modal-configuration-desc]
 original=Choose what items you want to be active in the ribbon. Drag and drop to change the order.
-translation=Выбрать команды для отображения в вертикальной панели. Порядок отображения команд задается перетаскиванием.
+translation=Выбрать команды для отображения в вертикальной панели. Порядок отображения команд задаётся перетаскиванием.
 
 [setting.appearance.option-show-view-header]
 original=Show tab title bar
@@ -1032,7 +1016,7 @@ translation=Все
 
 [setting.hotkeys.label-show-conflicts]
 original=Conflicts
-translation=Конфликты ({{count}})
+translation=Конфликты
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -1422,6 +1406,10 @@ translation=Выйти
 original=Log in
 translation=Войти
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Войти в Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Зарегистрироваться
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Забыли пароль?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Войти
 
 [setting.account.message-empty-email]
@@ -1860,11 +1848,11 @@ translation=Поддержать разработку плагина {{name}}
 
 [setting.third-party-plugin.label-donate-modal-text1]
 original=Plugin developers are community volunteers who make amazing things out of passion. If you find this plugin useful, please consider funding its development.
-translation=Разработка плагина ведется на добровольной основе. Если вы считаете этот плагин полезным, пожалуйста, рассмотрите возможность финансовой поддержки его разработки.
+translation=Разработка плагина ведётся на добровольной основе. Если вы считаете этот плагин полезным, пожалуйста, рассмотрите возможность финансовой поддержки его разработки.
 
 [setting.third-party-plugin.label-donate-modal-text2]
 original=100% of your contribution will go to the plugin developer; Obsidian does not take a cut. The funding platform they choose might charge a fee.
-translation=100% взноса пойдет разработчику плагина. Платформа для сбора средств, выбранная разработчиком, может взимать дополнительную плату.
+translation=100% взноса пойдёт разработчику плагина. Платформа для сбора средств, выбранная разработчиком, может взимать дополнительную плату.
 
 [setting.third-party-plugin.label-donate-modal-text3]
 original=Thanks for your generous support!
@@ -2042,6 +2030,14 @@ translation=Другие настройки
 original=Insert attachment
 translation=Вложение
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Сделать фото
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Выбрать файл
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Найти
@@ -2149,6 +2145,10 @@ translation=Удалить сноску и ссылку
 [editor.menu.reset-size]
 original=Reset size
 translation=Сбросить размер
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Удалить изображение
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2270,6 +2270,10 @@ translation=Не удалось загрузить плагин {{plugin}} v{{ve
 original=Failed to open “{{filepath}}”
 translation=Не удалось открыть “{{filepath}}”
 
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=При закрытии представления «{{name}}» произошла ошибка
+
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
 translation=Не удалось открыть расположение “{{href}}”
@@ -2372,7 +2376,7 @@ translation=Хранилище индексируется...
 
 [interface.msg-indexing-desc]
 original=Some functionality may not be available until this is complete.
-translation=Некоторые функции могут быть недоступны до тех пор, пока индексаци не будет завершена.
+translation=Некоторые функции могут быть недоступны до тех пор, пока индексация не будет завершена.
 
 [interface.msg-indexing-complete]
 original=Indexing complete.
@@ -2441,6 +2445,34 @@ translation=Абзац
 [interface.formatting.label-insert]
 original=Insert
 translation=Вставка
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=По умолчанию
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Красный
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Оранжевый
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Жёлтый
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Зелёный
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Синий
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Фиолетовый
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Защищён с помощью самого надёжного стандарта сквозного шифрования.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Требуется аккаунт Obsidian.
+original=Requires a paid subscription.
+translation=Требуется платная подписка.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3696,7 +3728,7 @@ translation=Вернуться назад
 
 [commands.navigate-forward]
 original=Navigate forward
-translation=Перейти вперед
+translation=Перейти вперёд
 
 [commands.toggle-light-dark-mode]
 original=Toggle light/dark mode
@@ -3877,6 +3909,10 @@ translation=Включить/отключить курсивное начерт�
 [commands.toggle-highlight]
 original=Toggle highlight
 translation=Включить/отключить тег подсветки для выделения
+
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Переключить {{color, lowercase}} выделение
 
 [commands.toggle-comments]
 original=Toggle comment
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Будет перемещён в корзину Obsidian, которая находится в скрытой папке ".trash" вашего хранилища.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=Файл будет удален безвозвратно.
+original=The file will be permanently deleted.
+translation=Файл будет удалён безвозвратно.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=В настоящее время существует {{count}} сс
 [dialogue.label-delete-file]
 original=Delete file
 translation=Удалить файл
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Выполнить действие из внешней ссылки?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Сейчас будет выполнено действие «{{action}}». Продолжайте, только если доверяете источнику ссылки.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Плагин «{{source}}» собирается выполнить действие «{{action}}». Продолжайте, только если доверяете источнику ссылки.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Больше не спрашивать для «{{action}}»
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Отмена
 [dialogue.button-allow]
 original=Allow
 translation=Разрешить
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Разрешить один раз
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Всегда разрешать
 
 [dialogue.button-skip]
 original=Skip
@@ -4488,7 +4500,7 @@ translation=Вернуться назад
 
 [menu-items.navigate-forward]
 original=Navigate Forward
-translation=Перейти вперед
+translation=Перейти вперёд
 
 [menu-items.toggle-left-sidebar]
 original=Left Sidebar
@@ -5948,7 +5960,7 @@ translation=Исправить и отформатировать ссылки н
 
 [plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
 original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Сконвертирует ссылки "[[UID]]", а также приведет их к формату "[[UID File Name|File Name]]".
+translation=Сконвертирует ссылки "[[UID]]", а также приведёт их к формату "[[UID File Name|File Name]]".
 
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
@@ -6492,7 +6504,7 @@ translation=Вы действительно хотите удалить этот
 
 [plugins.publish.label-delete-site-details]
 original=This will immediately and permanently delete your site.
-translation=Сайт будет незамедлительно и навсегда удален.
+translation=Сайт будет незамедлительно и навсегда удалён.
 
 [plugins.publish.label-confirm-delete-site]
 original=Confirm delete site “{{site}}”
@@ -6796,7 +6808,7 @@ translation=Изменения не обнаружены.
 
 [plugins.publish.label-changed-files-to-be-published]
 original=Changed
-translation=Изменен
+translation=Изменён
 
 [plugins.publish.label-unchanged-files-already-published]
 original=Unchanged (select to unpublish)
@@ -6880,7 +6892,7 @@ translation=Изменить
 
 [plugins.publish.label-clear-cache]
 original=It takes up to a few minutes for the changes to show up on your site. If you do not see your latest changes, try clearing the cache in your browser.
-translation=Изменения отобразятся на сайте в течении нескольких минут. Попробуйте очистить кэш браузера, если изменения не видны.
+translation=Изменения отобразятся на сайте в течение нескольких минут. Попробуйте очистить кеш браузера, если изменения не видны.
 
 [plugins.publish.label-visit-site]
 original=You can visit your site here: 
@@ -6948,7 +6960,7 @@ translation=Создан {{time}}
 
 [plugins.publish.msg-added-new-password]
 original=Added new password.
-translation=Новый пароль сохранен.
+translation=Новый пароль сохранён.
 
 [plugins.publish.option-custom-domain]
 original=Custom domain
@@ -7068,7 +7080,7 @@ translation=Подтвердить прекращение совместной �
 
 [plugins.publish.label-leave-site-confirmation-details]
 original=This will remove this site from the list of sites shared with you. This action cannot be reverted.
-translation=Это приведет к удалению этого сайта из списка сайтов, к которым у вас есть общий доступ. Это действие не может быть отменено.
+translation=Это приведёт к удалению этого сайта из списка сайтов, к которым у вас есть общий доступ. Это действие не может быть отменено.
 
 [plugins.publish.label-leave-site-confirmation-details-2]
 original=Please contact the owner of the site if you wish to collaborate on this site again.
@@ -7120,7 +7132,7 @@ translation=Настроить фильтры публикации
 
 [plugins.publish.option-included-folders]
 original=Included folders
-translation=Включенные папки
+translation=Включённые папки
 
 [plugins.publish.option-included-folders-desc]
 original=Files under these folders will automatically be selected when you review changes to publish.
@@ -7128,7 +7140,7 @@ translation=Файлы в этих папках будут автоматиче�
 
 [plugins.publish.option-currently-included-folders]
 original= These folders are currently included:
-translation=Папки включенные в данный момент:
+translation=Папки, включённые в данный момент:
 
 [plugins.publish.option-excluded-folders]
 original=Excluded folders
@@ -7136,7 +7148,7 @@ translation=Исключенные папки
 
 [plugins.publish.option-excluded-folders-desc]
 original=Files under these folders won't show up when you review changes to publish. This setting takes priority over included folders above.
-translation=Файлы в этих папках не будут отображаться при просмотре изменений перед публикацией. Эта настройка имеет приоритет над включенными папками.
+translation=Файлы в этих папках не будут отображаться при просмотре изменений перед публикацией. Эта настройка имеет приоритет над включёнными папками.
 
 [plugins.publish.label-number-of-folders-included]
 original=Obsidian Publish is currently including {{folders}}.
@@ -7148,7 +7160,7 @@ translation=Obsidian Publish исключает {{folders}}.
 
 [plugins.publish.label-manage-included-folders]
 original=Manage included folders
-translation=Настроить включенные папки
+translation=Настроить включённые папки
 
 [plugins.publish.label-manage-excluded-folders]
 original=Manage excluded folders
@@ -7216,7 +7228,7 @@ translation=Введите имя нового пространства.
 
 [plugins.workspaces.msg-save-layout-success]
 original=Successfully saved layout “{{name}}”
-translation=Пространство сохранено.
+translation=Пространство «{{name}}» сохранено.
 
 [plugins.workspaces.label-no-layout-found]
 original=No saved layout found.
@@ -7292,7 +7304,7 @@ translation=Удалено через {{ device }}
 
 [plugins.sync.label-file-renamed-from]
 original=Renamed from “{{from}}”
-translation=Этот файл был переименован из "{{filepath}}"
+translation=Файл переименован из «{{from}}»
 
 [plugins.sync.label-file-renamed-from-to]
 original=Renamed from “{{from}}” to “{{to}}”
@@ -7308,11 +7320,11 @@ translation=Перемещено из “{{from}}” в “{{to}}”
 
 [plugins.sync.label-revision]
 original={{count}} revision
-translation=1 версия
+translation={{count}} версия
 
 [plugins.sync.label-revision_plural]
 original={{count}} revisions
-translation={{revisions}} версий
+translation={{count}} версий
 
 [plugins.sync.label-via-device]
 original=via {{device}}
@@ -7476,7 +7488,7 @@ translation=Подтвердите удаление хранилища
 
 [plugins.sync.label-confirm-delete-remote-vault-question]
 original=Are you sure you want to delete the remote vault "{{name}}"?
-translation=Вы уверены, что хотите удалить это хранилище из Obsidian Sync?
+translation=Вы уверены, что хотите удалить удалённое хранилище «{{name}}»?
 
 [plugins.sync.label-confirm-delete-remote-vault-result]
 original=All data on our server, including version history, will be deleted. Your local files will stay intact.
@@ -7492,7 +7504,7 @@ translation=Хранилище {{name}} удалено из Obsidian Sync.
 
 [plugins.sync.msg-disconnect-from-deleted-vault]
 original=Obsidian Sync: The connected remote vault no longer exists.
-translation=Obsidian Sync: Подключенное внешнее хранилище больше не существует.
+translation=Obsidian Sync: подключённое удалённое хранилище больше не существует.
 
 [plugins.sync.button-connect-to-remote-vault]
 original=Connect
@@ -7664,7 +7676,7 @@ translation=Восстановление...
 
 [plugins.sync.msg-restoring-complete]
 original=Restore complete: {{succeeded}} succeeded and {{failed}} failed.
-translation=`Восстановление завершено: {{succeeded}} успешно и {{failed}} неудачно.`
+translation=`Восстановление завершено: {{succeeded}} успешно, {{failed}} с ошибками.`
 
 [plugins.sync.option-vault-size]
 original=Storage usage
@@ -7812,7 +7824,7 @@ translation=Настройки оформления
 
 [plugins.sync.option-sync-appearance-desc]
 original=Sync appearance settings like dark mode, active theme, and enabled snippets.
-translation=Синхронизировать настройки оформления, такие как ночной режим, активная тема и включенные CSS-фрагменты.
+translation=Синхронизировать настройки оформления, такие как ночной режим, активная тема и включённые CSS-фрагменты.
 
 [plugins.sync.option-sync-appearance-data]
 original=Themes and snippets
@@ -7944,7 +7956,7 @@ translation=Исключить папку
 
 [plugins.sync.label-add-excluded-folder-desc]
 original=You can exclude both existing folders and folders that have not been created yet.
-translation=Вы можете исключить как существующие папки, так и папки, которые еще не были созданы.
+translation=Вы можете исключить как существующие папки, так и папки, которые ещё не были созданы.
 
 [plugins.sync.tooltip-remove-excluded-folder]
 original=Remove from excluded list
@@ -8048,7 +8060,7 @@ translation=Отправить сообщение
 
 [plugins.sync.label-sync-disconnected]
 original=Sync is not connected to a remote vault.
-translation=Sync не подключен к внешнему хранилищу.
+translation=Sync не подключён к удалённому хранилищу.
 
 [plugins.sync.msg-remote-vault-limit-hit]
 original=You have created the maximum number of remote vaults. In order to create a new remote vault, please upgrade your account or remove an existing one.
@@ -8140,7 +8152,7 @@ translation=Позволяет восстанавливать недавние �
 
 [plugins.file-recovery.action-open]
 original=Open local history
-translation=Открыть сохраненные снимки
+translation=Открыть сохранённые снимки
 
 [plugins.file-recovery.option-interval]
 original=Snapshot interval
@@ -8288,7 +8300,7 @@ translation=Объединение файла
 
 [plugins.note-composer.label-confirm-file-merge]
 original=Are you sure you want to merge “{{file}}” into “{{destination}}”? “{{file}}” will be deleted.
-translation=Вы уверены что хотите объединить "{{file}}" с "{{destination}}"? Файл "{{file}}" будет удален.
+translation=Вы уверены, что хотите объединить «{{file}}» с «{{destination}}»? Файл «{{file}}» будет удалён.
 
 [plugins.note-composer.button-merge]
 original=Merge
@@ -8560,7 +8572,7 @@ translation=Включить блокировщик рекламы
 
 [plugins.web-viewer.option-enable-adblock-desc]
 original=If enabled, the filter lists below will be applied to all web viewer tabs.
-translation=Если этот параметр включен, приведенные ниже списки фильтров будут применены ко всем вкладкам веб-просмотра.
+translation=Если этот параметр включён, приведённые ниже списки фильтров будут применены ко всем вкладкам веб-просмотра.
 
 [plugins.web-viewer.option-adblock-lists]
 original=Ad blocking rules
@@ -8568,7 +8580,7 @@ translation=Правила блокировки рекламы
 
 [plugins.web-viewer.option-adblock-lists-desc]
 original=One ad block list URL per line. Shared by all vaults.
-translation=Один URL-адрес из списка запрещенной рекламы в строке. Общий для всех хранилищ.
+translation=Один URL-адрес из списка запрещённой рекламы в строке. Общий для всех хранилищ.
 
 [plugins.web-viewer.option-adblock-frequency]
 original=Ad block update frequency
@@ -9124,7 +9136,7 @@ translation=Создать базу данных
 
 [plugins.bases.action-add-property]
 original=Add "{{name}}" property
-translation=Добавить свойство
+translation=Добавить свойство «{{name}}»
 
 [plugins.bases.action-add-summary]
 original=Add "{{name}}" summary
@@ -9488,7 +9500,7 @@ translation=Недопустимая конфигурация свойства "
 
 [plugins.bases.msg-error-register-view]
 original=Unable to add new Bases view "{{ viewId }}". A view with this ID already exists.
-translation=Не удается добавить новое представление базы "{{ viewID }}". Представление с этим идентификатором уже существует.
+translation=Не удаётся добавить новое представление Bases «{{ viewId }}». Представление с таким идентификатором уже существует.
 
 [plugins.bases.msg-error-unable-to-parse]
 original=Unable to parse your base file:
@@ -9520,7 +9532,7 @@ translation="фильтры" должны быть строкой или объ�
 
 [plugins.bases.msg-error-filter-must-be-array]
 original="{{ conjunction }}" filter must be an array
-translation=фильтр "{{ конъюнкция }}" должен быть массивом
+translation=Фильтр «{{ conjunction }}» должен быть массивом
 
 [plugins.bases.msg-error-filter-allowed-keys]
 original="filters" may only have one of an "and", "or", or "not" keys.
@@ -9658,6 +9670,26 @@ translation=Содержит
 original=Image aspect ratio
 translation=Соотношение сторон изображения
 
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Канбан
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Сбросить порядок
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Ширина столбца
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Скрыть пустые столбцы
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Выберите в меню сортировки свойство для группировки
+
 [plugins.bases.table.name]
 original=Table
 translation=Таблица
@@ -9736,7 +9768,7 @@ translation=Сводка
 
 [formulas.msg-error-parse-formula]
 original=Failed to parse formula "{{ formula }}"
-translation=Не удалось обработаать формулу "{{ formula }}"
+translation=Не удалось обработать формулу «{{ formula }}»
 
 [formulas.msg-error-invalid-function]
 original=Cannot find function "{{ function }}"
@@ -9744,7 +9776,7 @@ translation=Не удаётся найти функцию "{{ function }}"
 
 [formulas.msg-error-invalid-instance-function]
 original=Cannot find function "{{ function }}" on type {{ type }}
-translation=Не удается найти функцию "{{ function }}" типа {{ type }}
+translation=Не удаётся найти функцию «{{ function }}» для типа {{ type }}
 
 [formulas.msg-error-not-enough-arguments]
 original=Cannot call function "{{ function }}", not enough arguments.
@@ -9756,15 +9788,15 @@ translation=Не удаётся вызвать функцию "{{ function }}", 
 
 [formulas.msg-error-type-error]
 original=Type error in "{{ function }}", parameter "{{ parameter }}". Expected {{ expected }}, given {{ given }}.
-translation=Ошибка ввода в функции "{{ function }}", параметр "{{ parameter }}". Ожидалось { expected }}, введено {{ given }}.
+translation=Ошибка типа в функции «{{ function }}», параметр «{{ parameter }}». Ожидалось {{ expected }}, получено {{ given }}.
 
 [formulas.msg-error-invalid-array-access]
 original=Cannot access index "{{ index }}" of non-array value
-translation=Не удается получить доступ к индексу {{ index }} значения, отличного от массива
+translation=Не удаётся получить доступ к индексу {{ index }} значения, не являющегося массивом
 
 [formulas.msg-error-invalid-object-access]
 original=Cannot find "{{ index }}" on type {{ type }}
-translation=Не удаётся найти {{ index }} типа {{ type }}
+translation=Не удаётся найти {{ index }} для типа {{ type }}
 
 [pdf.action-highlight-all]
 original=Highlight all
@@ -9784,11 +9816,11 @@ translation=Миниатюры
 
 [pdf.action-show-outline]
 original=Table of contents
-translation=Содержание
+translation=Оглавление
 
 [pdf.action-reveal-in-outline]
 original=Reveal page in table of contents
-translation=Показать страницу в содержании
+translation=Показать страницу в оглавлении
 
 [pdf.action-toggle-sidebar]
 original=Toggle sidebar

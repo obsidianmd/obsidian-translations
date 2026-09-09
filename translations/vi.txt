@@ -582,22 +582,6 @@ translation=Cho phép callback URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Bật việc sử dụng x-callback-url thông qua x-success hoặc x-error khi xử lý URI của Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Quản lý các hành động được tin cậy và cấu hình hành vi URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Hành động được tin cậy
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Chưa có hành động được tin cậy nào. Các hành động URI đã được phê duyệt sẽ xuất hiện ở đây.
-
 [setting.appearance.name]
 original=Appearance
 translation=Giao diện
@@ -1422,6 +1406,10 @@ translation=Đăng xuất
 original=Log in
 translation=Đăng nhập
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Đăng nhập vào Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Đăng ký
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Quên mật khẩu?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Đăng nhập
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Thêm tùy chọn thanh công cụ
 original=Insert attachment
 translation=Chèn tệp đính kèm
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Chụp ảnh
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Chọn tệp
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Tìm kiếm
@@ -2149,6 +2145,10 @@ translation=Xóa chú thích và tham chiếu
 [editor.menu.reset-size]
 original=Reset size
 translation=Đặt lại kích thước
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Xóa hình ảnh
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Không thể tải plugin {{plugin}} v{{version}}. Phiên bản này
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Không thể mở “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Chế độ xem “{{name}}” gặp lỗi khi đóng
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Đoạn văn
 [interface.formatting.label-insert]
 original=Insert
 translation=Chèn
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Mặc định
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Đỏ
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Cam
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Vàng
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Xanh lá
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Xanh dương
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Tím
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Được bảo vệ bằng tiêu chuẩn mã hóa đầu cuối mạnh nhất.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Yêu cầu một tài khoản Obsidian.
+original=Requires a paid subscription.
+translation=Yêu cầu gói đăng ký trả phí.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Bật/tắt chế độ in nghiêng cho lựa chọn
 original=Toggle highlight
 translation=Bật/tắt chế độ tô sáng cho lựa chọn
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Bật/tắt tô sáng màu {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Bật/tắt chế độ bình luận cho lựa chọn
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Tệp sẽ được di chuyển vào thùng rác của Obsidian, nằm trong thư mục ẩn ".trash" trong kho lưu trữ của bạn.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Tệp sẽ bị xóa vĩnh viễn.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Hiện tại có {{count}} liên kết trỏ đến tệp này.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Xóa tệp
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Chạy hành động từ liên kết bên ngoài?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Hành động “{{action}}” sắp chạy. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Plugin “{{source}}” sắp chạy hành động “{{action}}”. Chỉ tiếp tục nếu bạn tin tưởng nguồn của liên kết.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Không hỏi lại đối với “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Hủy bỏ
 [dialogue.button-allow]
 original=Allow
 translation=Cho phép
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Chỉ cho phép lần này
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Luôn cho phép
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Chứa trong
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Tỷ lệ khung hình
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Đặt lại thứ tự
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Độ rộng cột
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Ẩn các cột trống
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Chọn một thuộc tính để nhóm theo từ trình đơn sắp xếp
 
 [plugins.bases.table.name]
 original=Table

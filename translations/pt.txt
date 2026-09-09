@@ -582,22 +582,6 @@ translation=Permitir callbacks URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Ativar o uso de x-callback-url através de x-success ou x-error ao lidar com URIs do Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=URI do Obsidian
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Gerir ações de confiança e configurar o comportamento de URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Ações de confiança
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Ainda não há ações de confiança. As ações URI aprovadas aparecerão aqui.
-
 [setting.appearance.name]
 original=Appearance
 translation=Aparência
@@ -1422,6 +1406,10 @@ translation=Sair
 original=Log in
 translation=Conecte-se
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Iniciar sessão no Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Inscrever-se
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=Esqueceu-se da palavra-passe?
 
 [setting.account.button-login]
-original=Login
-translation=Entrar
+original=Log in
+translation=Iniciar sessão
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=Mais opções da barra de ferramentas
 original=Insert attachment
 translation=Inserir anexo
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Tirar fotografia
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Escolher ficheiro
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Pesquisar
@@ -2149,6 +2145,10 @@ translation=Eliminar nota de rodapé e referência
 [editor.menu.reset-size]
 original=Reset size
 translation=Repor tamanho
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Remover imagem
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Não foi possível carregar o plugin {{plugin}} v{{version}}. Foram 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Falha ao abrir “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Ocorreu um erro ao fechar a vista “{{name}}”
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Parágrafo
 [interface.formatting.label-insert]
 original=Insert
 translation=Inserir
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Predefinido
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Vermelho
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Laranja
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Amarelo
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Verde
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Azul
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Roxo
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Protegido com o padrão mais forte de encriptação ponto a ponto.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Requer uma conta Obsidian.
+original=Requires a paid subscription.
+translation=Requer uma subscrição paga.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Ativar o itálico para seleção
 original=Toggle highlight
 translation=Ativar o destaque para seleção
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Alternar realce {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Ativar comentários para seleção
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Será movido para a reciclagem do Obsidian, que está localizada na pasta escondida ".trash" em seu vault.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=O ficheiro será permanentemente apagado.
+original=The file will be permanently deleted.
+translation=O ficheiro será permanentemente eliminado.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=Atualmente existem {{count}} links apontando para este ficheiro.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Eliminar ficheiro
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Executar ação a partir de uma ligação externa?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=A ação “{{action}}” está prestes a ser executada. Continue apenas se confiar na origem da ligação.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=O plugin “{{source}}” está prestes a executar a ação “{{action}}”. Continue apenas se confiar na origem da ligação.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Não perguntar novamente para “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Cancelar
 [dialogue.button-allow]
 original=Allow
 translation=Permitir
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Permitir uma vez
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Permitir sempre
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Conter
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Proporção da imagem
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Repor ordem
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Largura da coluna
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Ocultar colunas vazias
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Escolha uma propriedade pela qual agrupar no menu de ordenação
 
 [plugins.bases.table.name]
 original=Table

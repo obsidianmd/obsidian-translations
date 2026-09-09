@@ -582,22 +582,6 @@ translation=Abilita callback URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Abilita l'uso di x-callback-url attraverso x-success o x-error durante la gestione degli URI di Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=URI Obsidian
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Gestisci le azioni attendibili e configura il comportamento degli URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Azioni attendibili
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Ancora nessuna azione attendibile. Le azioni URI approvate appariranno qui.
-
 [setting.appearance.name]
 original=Appearance
 translation=Aspetto
@@ -1422,6 +1406,10 @@ translation=Disconnetti
 original=Log in
 translation=Accesso
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Accedi a Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Iscriviti
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Password dimenticata?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Accedi
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Altre opzioni
 original=Insert attachment
 translation=Inserisci allegato
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Scatta una foto
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Scegli un file
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Trova
@@ -2149,6 +2145,10 @@ translation=Elimina nota a piè di pagina e riferimento
 [editor.menu.reset-size]
 original=Reset size
 translation=Ripristina dimensione
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Rimuovi immagine
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Impossibile caricare il plugin {{plugin}} v{{version}}. È stato seg
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Impossibile aprire “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Si è verificato un errore durante la chiusura della vista “{{name}}”
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Paragrafo
 [interface.formatting.label-insert]
 original=Insert
 translation=Inserisci
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Predefinito
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Rosso
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Arancione
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Giallo
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Verde
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Blu
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Viola
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Protetto dal più robusto standard di crittografia end-to-end.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Richiede un account Obsidian.
+original=Requires a paid subscription.
+translation=Richiede un abbonamento a pagamento.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Imposta il corsivo per la selezione
 original=Toggle highlight
 translation=Evidenzia la selezione
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Attiva/disattiva evidenziazione {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Imposta commento per la selezione
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Verrà spostato nel cestino di Obsidian, nella cartella nascosta ".trash" del tuo vault.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Il file verrà eliminato definitivamente.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Attualmente ci sono {{count}} collegamenti che puntano a questo file
 [dialogue.label-delete-file]
 original=Delete file
 translation=Eliminazione file
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Eseguire l'azione dal collegamento esterno?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=L'azione “{{action}}” sta per essere eseguita. Continua solo se ritieni attendibile la fonte del collegamento.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Il plugin “{{source}}” sta per eseguire l'azione “{{action}}”. Continua solo se ritieni attendibile la fonte del collegamento.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Non chiedere più per “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Annulla
 [dialogue.button-allow]
 original=Allow
 translation=Consenti
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Consenti una volta
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Consenti sempre
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Contieni
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Proporzioni immagine
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Reimposta ordine
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Larghezza colonna
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Nascondi colonne vuote
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Scegli dal menu di ordinamento una proprietà in base alla quale raggruppare
 
 [plugins.bases.table.name]
 original=Table

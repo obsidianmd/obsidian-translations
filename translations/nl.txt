@@ -582,22 +582,6 @@ translation=URI-callbacks toestaan
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Sta het gebruik van x-callback-url toe via x-success of x-error bij het afhandelen van Obsidian-URI’s.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Beheer vertrouwde acties en configureer URI-gedrag.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Vertrouwde acties
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Nog geen vertrouwde acties. Goedgekeurde URI-acties verschijnen hier.
-
 [setting.appearance.name]
 original=Appearance
 translation=Uiterlijk
@@ -1422,6 +1406,10 @@ translation=Uitloggen
 original=Log in
 translation=Inloggen
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Inloggen bij Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Aanmelden
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Wachtwoord vergeten?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Inloggen
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Meer werkbalk opties
 original=Insert attachment
 translation=Bijlage invoegen
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Foto maken
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Bestand kiezen
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Zoek
@@ -2149,6 +2145,10 @@ translation=Voetnoot en verwijzing verwijderen
 [editor.menu.reset-size]
 original=Reset size
 translation=Grootte herstellen
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Afbeelding verwijderen
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Kan plug-in {{plugin}} v{{version}} niet laden. Er zijn problemen ge
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Kan “{{filepath}}” niet openen
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Er is een fout opgetreden bij het sluiten van de weergave ‘{{name}}’
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Alinea
 [interface.formatting.label-insert]
 original=Insert
 translation=Invoegen
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Standaard
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Rood
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Oranje
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Geel
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Groen
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Blauw
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Paars
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Beveiligd met de sterkste end-to-end-encryptiestandaard.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Vereist een Obsidian-account.
+original=Requires a paid subscription.
+translation=Vereist een betaald abonnement.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Selectie cursief maken
 original=Toggle highlight
 translation=Selectie markeren
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation={{color, lowercase}} markering in-/uitschakelen
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Opmerking plaatsen bij selectie
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Het wordt verplaatst naar de Obsidian-prullenbak. Deze bevindt zich in de verborgen ".trash" map in je kluis.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Het bestand wordt permanent verwijderd.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Er zijn momenteel {{count}} links die naar dit bestand verwijzen.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Bestand verwijderen
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Actie uitvoeren via externe koppeling?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=De actie “{{action}}” wordt uitgevoerd. Ga alleen door als je de bron van de koppeling vertrouwt.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=De plug-in “{{source}}” staat op het punt de actie “{{action}}” uit te voeren. Ga alleen door als je de bron van de koppeling vertrouwt.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Niet opnieuw vragen voor “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Annuleren
 [dialogue.button-allow]
 original=Allow
 translation=Toestaan
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Eenmalig toestaan
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Altijd toestaan
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Inpassen
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Beeldverhouding van afbeelding
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Volgorde opnieuw instellen
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Kolombreedte
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Lege kolommen verbergen
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Kies in het sorteermenu een eigenschap om op te groeperen
 
 [plugins.bases.table.name]
 original=Table

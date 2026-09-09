@@ -582,22 +582,6 @@ translation=اجازه دادن به کالبک‌های یو‌آر‌آی
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=فعال کردن استفاده از x-callback-url از طریق x-success یا x-error هنگام مدیریت یو‌آر‌آی‌های Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=URI ‏Obsidian
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=اقدام‌های مورد اعتماد را مدیریت کنید و رفتار URI را پیکربندی کنید.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=اقدام‌های مورد اعتماد
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=هنوز اقدام مورد اعتمادی وجود ندارد. اقدام‌های URI تأییدشده اینجا نمایش داده می‌شوند.
-
 [setting.appearance.name]
 original=Appearance
 translation=چهره
@@ -1422,6 +1406,10 @@ translation=خروج
 original=Log in
 translation=ورود
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=ورود به Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=نام‌نویسی
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=؟رمز خود را فراموش کرده اید
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=ورود
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=گزینه‌های بیشتر
 original=Insert attachment
 translation=درج پیوست
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=گرفتن عکس
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=انتخاب فایل
+
 [editor.search.placeholder-find]
 original=Find...
 translation=یافتن
@@ -2149,6 +2145,10 @@ translation=حذف پانویس و مرجع
 [editor.menu.reset-size]
 original=Reset size
 translation=بازنشانی اندازه
+
+[editor.menu.remove-image]
+original=Remove image
+translation=حذف تصویر
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=افزونهٔ {{plugin}} نسخهٔ v{{version}} بارگیری ن�
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=باز کردن «{{filepath}}» ناموفق بود
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=هنگام بستن نمای «{{name}}» خطایی رخ داد
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=بندنوشت
 [interface.formatting.label-insert]
 original=Insert
 translation=درج
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=پیش‌فرض
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=قرمز
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=نارنجی
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=زرد
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=سبز
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=آبی
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=بنفش
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=با قوی‌ترین استاندارد رمزگذاری سرتاسری ایمن شده است.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=نیاز به یک حساب Obsidian دارد.
+original=Requires a paid subscription.
+translation=نیاز به اشتراک پولی دارد.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=کج‌نویس کردن/نکردن
 original=Toggle highlight
 translation=هایلایت کردن/نکردن
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=تغییر وضعیت برجسته‌سازی {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=دیدگاه کردن/نکردن
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=این پرونده به زباله‌دان Obsidian منتقل می‌شود که در پوشه‌ی ".trash" جای دارد و آن هم' خود در پوشه‌ی خزانه پنهان است.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=این پرونده برای همیشه حذف خواهد شد.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=در حال حاضر {{count}} پیوند به این فایل اش�
 [dialogue.label-delete-file]
 original=Delete file
 translation=حذف پرونده
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=اقدام از پیوند خارجی اجرا شود؟
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=اقدام «{{action}}» در آستانهٔ اجراست. فقط در صورتی ادامه دهید که به منبع پیوند اعتماد دارید.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=افزونهٔ «{{source}}» در آستانهٔ اجرای اقدام «{{action}}» است. فقط در صورتی ادامه دهید که به منبع پیوند اعتماد دارید.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=برای «{{action}}» دوباره نپرس
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=لغو
 [dialogue.button-allow]
 original=Allow
 translation=اجازه دادن
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=فقط یک‌بار اجازه دادن
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=همیشه اجازه دادن
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=در بر گرفتن
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=نسبت تصویر
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=کانبان
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=بازنشانی ترتیب
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=عرض ستون
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=پنهان کردن ستون‌های خالی
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=از منوی مرتب‌سازی، ویژگی‌ای را برای گروه‌بندی انتخاب کنید
 
 [plugins.bases.table.name]
 original=Table

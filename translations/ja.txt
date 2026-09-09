@@ -582,22 +582,6 @@ translation=URIコールバックを許可
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=ObsidianのURIを処理する際に、x-successまたはx-errorを介してx-callback-urlの使用を有効にします。
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=信頼済みアクションを管理し、URI の動作を設定します。
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=信頼済みアクション
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=信頼済みアクションはまだありません。承認済みの URI アクションがここに表示されます。
-
 [setting.appearance.name]
 original=Appearance
 translation=外観
@@ -1422,6 +1406,10 @@ translation=ログアウト
 original=Log in
 translation=ログイン
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Obsidianにログイン
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=サインアップ
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=パスワードを忘れた場合
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=ログイン
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=他のツールバーオプション
 original=Insert attachment
 translation=添付ファイルを追加
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=写真を撮る
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=ファイルを選択
+
 [editor.search.placeholder-find]
 original=Find...
 translation=検索…
@@ -2149,6 +2145,10 @@ translation=脚注と参照を削除
 [editor.menu.reset-size]
 original=Reset size
 translation=サイズをリセット
+
+[editor.menu.remove-image]
+original=Remove image
+translation=画像を削除
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=プラグイン{{plugin}} v{{version}}を読み込めません。こ
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=ファイル "{{filepath}}" を開くのに失敗しました。
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=「{{name}}」ビューを閉じる際にエラーが発生しました
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=パラグラフ
 [interface.formatting.label-insert]
 original=Insert
 translation=挿入
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=デフォルト
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=赤
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=オレンジ
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=黄
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=緑
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=青
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=紫
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=最も強力なエンドツーエンド暗号化の標準で保護されます。
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Obsidian アカウントが必要です。
+original=Requires a paid subscription.
+translation=有料サブスクリプションが必要です。
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=イタリック体を追加/解除
 original=Toggle highlight
 translation=ハイライトを追加/解除
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation={{color, lowercase}}のハイライトを切り替える
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=コメントを追加/解除
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Obsidianのゴミ箱に移動します。ゴミ箱は保管庫の隠しフォルダ ".trash" にあります。
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=ファイルはただちに削除されます。
+original=The file will be permanently deleted.
+translation=ファイルは完全に削除されます。
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=現在、このファイルを指している {{count}} 個のリン
 [dialogue.label-delete-file]
 original=Delete file
 translation=ファイルの削除
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=外部リンクからアクションを実行しますか？
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=「{{action}}」アクションが実行されようとしています。リンク元を信頼できる場合のみ続行してください。
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=「{{source}}」プラグインが「{{action}}」アクションを実行しようとしています。リンク元を信頼できる場合のみ続行してください。
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=「{{action}}」について今後確認しない
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=キャンセル
 [dialogue.button-allow]
 original=Allow
 translation=許可
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=今回のみ許可
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=常に許可
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=全体を表示
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=画像のアスペクト比
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=カンバン
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=順序をリセット
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=列の幅
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=空の列を非表示
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=並べ替えメニューからグループ化に使用するプロパティを選択
 
 [plugins.bases.table.name]
 original=Table

@@ -582,22 +582,6 @@ translation=Дозволити зворотні виклики URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Увімкнути використання x-callback-url через x-success або x-error під час обробки URI Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Керуйте довіреними діями та налаштовуйте поведінку URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Довірені дії
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Довірених дій поки немає. Схвалені дії URI з’являться тут.
-
 [setting.appearance.name]
 original=Appearance
 translation=Оформлення
@@ -1422,6 +1406,10 @@ translation=Вийти
 original=Log in
 translation=Увійти
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Увійти в Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Зареєструватися
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Забули пароль?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Увійти
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Інші опції
 original=Insert attachment
 translation=Прикріплення
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Зробити фото
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Вибрати файл
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Знайти
@@ -2149,6 +2145,10 @@ translation=Видалити виноску та посилання
 [editor.menu.reset-size]
 original=Reset size
 translation=Скинути розмір
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Видалити зображення
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Не вдалося завантажити додаток {{plugin}}
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Не вдалося відкрити ”{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Під час закриття подання «{{name}}» сталася помилка
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Абзац
 [interface.formatting.label-insert]
 original=Insert
 translation=Додати
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=За замовчуванням
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Червоний
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Помаранчевий
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Жовтий
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Зелений
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Синій
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Фіолетовий
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Захищено найпотужнішим стандартом наскрізного шифрування.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Потрібен обліковий запис Obsidian.
+original=Requires a paid subscription.
+translation=Потрібна платна підписка.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Перемкнути курсив для виділеного
 original=Toggle highlight
 translation=Перемкнути виділення для виділеного
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Перемкнути виділення кольором {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Перемкнути коментарі для виділеного
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Буде переміщено в кошик Obsidian, що знаходиться в прихованій теці ".trash" у вашому сховищі.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Файл буде видалений безповоротно.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Зараз існує {{count}} посилань, що вказую�
 [dialogue.label-delete-file]
 original=Delete file
 translation=Видалити файл
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Виконати дію із зовнішнього посилання?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Дія “{{action}}” незабаром буде виконана. Продовжуйте лише якщо довіряєте джерелу посилання.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Додаток “{{source}}” незабаром виконає дію “{{action}}”. Продовжуйте лише якщо довіряєте джерелу посилання.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Більше не запитувати для “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Скасувати
 [dialogue.button-allow]
 original=Allow
 translation=Дозволити
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Дозволити один раз
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Дозволяти завжди
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Умістити
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Співвідношення сторін зображення
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Канбан
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Скинути порядок
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Ширина стовпця
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Приховати порожні стовпці
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Виберіть у меню сортування властивість для групування
 
 [plugins.bases.table.name]
 original=Table

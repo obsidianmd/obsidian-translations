@@ -582,22 +582,6 @@ translation=Tillad URI-callbacks
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Slå brugen af x-callback-url via x-success eller x-error til ved håndtering af Obsidian-URI'er.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian-URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Administrer betroede handlinger, og konfigurer URI-adfærd.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Betroede handlinger
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Ingen betroede handlinger endnu. Godkendte URI-handlinger vises her.
-
 [setting.appearance.name]
 original=Appearance
 translation=Udseende
@@ -1422,6 +1406,10 @@ translation=Log ud
 original=Log in
 translation=Log ind
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Log ind på Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Tilmeld dig
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Glemt adgangskode?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Log ind
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Flere værktøjslinjeelementer
 original=Insert attachment
 translation=Indsæt vedhæftning
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Tag billede
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Vælg fil
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Find...
@@ -2149,6 +2145,10 @@ translation=Slet fodnote og reference
 [editor.menu.reset-size]
 original=Reset size
 translation=Nulstil størrelse
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Fjern billede
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Kunne ikke indlæse pluginet {{plugin}} v{{version}}. Denne version 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Kunne ikke åbne “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Visningen “{{name}}” stødte på en fejl under lukning
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Afsnit
 [interface.formatting.label-insert]
 original=Insert
 translation=Indsæt
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Standard
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Rød
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Orange
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Gul
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Grøn
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Blå
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Lilla
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Beskyttet med den stærkeste standard for end-to-end-kryptering.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Kræver en Obsidian-konto.
+original=Requires a paid subscription.
+translation=Kræver et betalt abonnement.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Kursiv til/fra
 original=Toggle highlight
 translation=Fremhævning til/fra
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Slå {{color, lowercase}} fremhævning til/fra
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Kommentar til/fra
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Den flyttes til Obsidians papirkurv, som ligger i boksens skjulte “.trash”-mappe.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Filen slettes permanent.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Der er i øjeblikket {{count}} links til denne fil.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Slet fil
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Kør handling fra eksternt link?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Handlingen “{{action}}” skal til at køre. Fortsæt kun, hvis du har tillid til linkets kilde.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Plugin “{{source}}” skal til at køre handlingen “{{action}}”. Fortsæt kun, hvis du har tillid til linkets kilde.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Spørg ikke igen om “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Annuller
 [dialogue.button-allow]
 original=Allow
 translation=Tillad
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Tillad én gang
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Tillad altid
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Tilpas
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Billedformat
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Nulstil rækkefølge
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Kolonnebredde
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Skjul tomme kolonner
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Vælg en egenskab at gruppere efter i sorteringsmenuen
 
 [plugins.bases.table.name]
 original=Table

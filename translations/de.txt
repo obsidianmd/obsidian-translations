@@ -582,22 +582,6 @@ translation=URI-Callbacks erlauben
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Bei der Behandlung von Obsidian-URIs die Verwendung von X-Callback-URLs durch x-success oder x-error aktivieren.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian-URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Vertrauenswürdige Aktionen verwalten und URI-Verhalten konfigurieren.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Vertrauenswürdige Aktionen
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Noch keine vertrauenswürdigen Aktionen. Genehmigte URI-Aktionen werden hier angezeigt.
-
 [setting.appearance.name]
 original=Appearance
 translation=Darstellung
@@ -1422,6 +1406,10 @@ translation=Abmelden
 original=Log in
 translation=Anmelden
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Bei Obsidian anmelden
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Registrieren
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Passwort vergessen?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Anmelden
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Mehr Optionen für die Werkzeugleiste
 original=Insert attachment
 translation=Anhang hinzufügen
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Foto aufnehmen
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Datei auswählen
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Suchen...
@@ -2149,6 +2145,10 @@ translation=Fußnote und Referenz löschen
 [editor.menu.reset-size]
 original=Reset size
 translation=Größe zurücksetzen
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Bild entfernen
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Die Erweiterung {{plugin}} v{{version}} konnte nicht geladen werden.
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” konnte nicht geöffnet werden
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Beim Schließen der Ansicht „{{name}}“ ist ein Fehler aufgetreten
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Absatz
 [interface.formatting.label-insert]
 original=Insert
 translation=Einfügen
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Standard
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Rot
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Orange
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Gelb
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Grün
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Blau
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Violett
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Gesichert mit dem stärksten Ende-zu-Ende-Verschlüsselungsstandard.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Erfordert ein Obsidian-Konto.
+original=Requires a paid subscription.
+translation=Erfordert ein kostenpflichtiges Abonnement.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3844,11 +3876,11 @@ translation=Alle Überschriften und Listen ausklappen
 
 [commands.fold-more]
 original=Fold more
-translation=Noch mehr einklappen
+translation=Aktuelle Überschrift oder Liste einklappen
 
 [commands.fold-less]
 original=Fold less
-translation=Weniger einklappen
+translation=Aktuelle Überschrift oder Liste ausklappen
 
 [commands.swap-line-up]
 original=Move line up
@@ -3877,6 +3909,10 @@ translation=Tausche kursiv für Auswahl
 [commands.toggle-highlight]
 original=Toggle highlight
 translation=Tausche hervorgehoben für Auswahl
+
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Hervorhebung in {{color, lowercase}} umschalten
 
 [commands.toggle-comments]
 original=Toggle comment
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Die Datei wird in deinen Obsidian Papierkorb verschoben, der sich im versteckten Ordner ".trash" in deinem Vault befindet.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Die Datei wird dauerhaft gelöscht.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Es existieren {{count}} Links, die auf diese Datei verweisen.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Datei löschen
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Aktion über externen Link ausführen?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Die Aktion „{{action}}“ wird gleich ausgeführt. Fahre nur fort, wenn du der Quelle des Links vertraust.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Die Erweiterung „{{source}}“ wird gleich die Aktion „{{action}}“ ausführen. Fahre nur fort, wenn du der Quelle des Links vertraust.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Für „{{action}}“ nicht erneut fragen
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Abbrechen
 [dialogue.button-allow]
 original=Allow
 translation=Zulassen
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Einmal erlauben
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Immer erlauben
 
 [dialogue.button-skip]
 original=Skip
@@ -4456,11 +4468,11 @@ translation=Alle ausklappen
 
 [menu-items.fold-more]
 original=Fold More
-translation=Noch mehr einklappen
+translation=Aktuelle Überschrift oder Liste einklappen
 
 [menu-items.fold-less]
 original=Fold Less
-translation=Weniger einklappen
+translation=Aktuelle Überschrift oder Liste ausklappen
 
 [menu-items.source-mode]
 original=Source Mode
@@ -9657,6 +9669,26 @@ translation=Einpassen
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Bildformat
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Reihenfolge zurücksetzen
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Spaltenbreite
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Leere Spalten ausblenden
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Im Sortiermenü eine Eigenschaft zum Gruppieren auswählen
 
 [plugins.bases.table.name]
 original=Table

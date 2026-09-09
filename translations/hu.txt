@@ -582,22 +582,6 @@ translation=URI-visszahívások engedélyezése
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Az x-callback-url engedélyezése 'x-success'-en vagy 'x-error'-on keresztül Obsidian URL-ek kezelése során.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Megbízható műveletek kezelése és az URI viselkedésének beállítása.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Megbízható műveletek
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Még nincsenek megbízható műveletek. A jóváhagyott URI-műveletek itt jelennek meg.
-
 [setting.appearance.name]
 original=Appearance
 translation=Megjelenés
@@ -1422,6 +1406,10 @@ translation=Kijelentkezés
 original=Log in
 translation=Bejelentkezés
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Bejelentkezés az Obsidianba
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Regisztráció
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Elfelejtette a jelszavát?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Bejelentkezés
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=További eszköztár beállítások
 original=Insert attachment
 translation=Csatolmány beszúrása
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Fénykép készítése
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Fájl kiválasztása
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Keresés...
@@ -2149,6 +2145,10 @@ translation=Lábjegyzet és hivatkozás törlése
 [editor.menu.reset-size]
 original=Reset size
 translation=Méret visszaállítása
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Kép eltávolítása
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Nem sikerült betölteni a(z) {{plugin}} v{{version}} verzióját. A
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Nem sikerült megnyitni a következőt: “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=A(z) „{{name}}” nézet bezárásakor hiba történt
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Bekezdés
 [interface.formatting.label-insert]
 original=Insert
 translation=Beszúrás
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Alapértelmezett
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Piros
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Narancssárga
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Sárga
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Zöld
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Kék
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Lila
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=A legerősebb, végpontok közötti titkosítás által nyújt biztonságot.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Használatához Obsidian fiók szükséges.
+original=Requires a paid subscription.
+translation=Fizetős előfizetés szükséges.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Dőlt ki/be
 original=Toggle highlight
 translation=Kiemelés ki/be
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation={{color, lowercase}} kiemelés be- és kikapcsolása
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Megjegyzések ki/be
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Az Obsidian lomtárába fog áthelyezésre kerülni, amely a széfjében tárolt “.trash” rejtett mappában található.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=A fájl véglegesen törlődni fog.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Jelenleg {{count}} hivatkozás mutat erre a fájlra.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Fájl törlése
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Művelet futtatása külső hivatkozásból?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=A(z) „{{action}}” művelet futni fog. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=A(z) „{{source}}” bővítmény futtatni fogja a(z) „{{action}}” műveletet. Csak akkor folytasd, ha megbízol a hivatkozás forrásában.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Ne kérdezzen rá újra erre: „{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Mégse
 [dialogue.button-allow]
 original=Allow
 translation=Engedélyezés
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Engedélyezés egyszer
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Mindig engedélyezés
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Tartalmazás
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Képarány
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Sorrend visszaállítása
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Oszlopszélesség
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Üres oszlopok elrejtése
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Válassz egy tulajdonságot a rendezési menüből a csoportosításhoz
 
 [plugins.bases.table.name]
 original=Table

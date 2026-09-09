@@ -582,22 +582,6 @@ translation=URI प्रतिपुष्टेः अनुमतिं द�
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URIs निर्वहणकाले x-success अथवा x-error माध्यमेन x-callback-url प्रयोगं समर्थं कुर्वन्तु।
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=
-
 [setting.appearance.name]
 original=Appearance
 translation=स्वरूपम्‌
@@ -1422,6 +1406,10 @@ translation=निष्क्रमणम्
 original=Log in
 translation=सम्प्रवेशः
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=पञ्जीकरणं कुर्वन्तु
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=गुप्तपदम् विस्मृतवान् वा?
 
 [setting.account.button-login]
-original=Login
-translation=सम्प्रवेशः
+original=Log in
+translation=प्रवेशः
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=अधिकानि साधनशालाकाविकल्�
 original=Insert attachment
 translation=अनुबद्धं निवेशयन्तु
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=
+
 [editor.search.placeholder-find]
 original=Find...
 translation=अन्वेषय
@@ -2149,6 +2145,10 @@ translation=पादटिप्पणीं सन्दर्भं च ल�
 [editor.menu.reset-size]
 original=Reset size
 translation=आकारं पुनः स्थापयन्तु
+
+[editor.menu.remove-image]
+original=Remove image
+translation=
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” उद्घाटने विफलता
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=अनुच्छेद
 [interface.formatting.label-insert]
 original=Insert
 translation=निवेशनम्
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=महत्तम अन्त्य-पर्यन्त-गूढलेखन मानकेन सुरक्षितः।
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Obsidiana खाता अपेक्षते।
+original=Requires a paid subscription.
+translation=सशुल्क-सदस्यता अपेक्षते।
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=चयनार्थं प्रवणाकृतिः विभ
 original=Toggle highlight
 translation=चयनार्थं उद्वर्णः विभाषतु
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=चयनार्थं टिप्पणिः विभाषतु
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=इदं भवतः Obsidian कचरायां - मध्ये स्थास्यति, यत् भवतः तिजोरीं ".trash" गुप्तसञ्चये स्थितम् अस्ति
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=सञ्चिका स्थायिरूपेण विलोपिता भविष्यति
+original=The file will be permanently deleted.
+translation=सञ्चिका स्थायिरूपेण विलोपिता भविष्यति।
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=अधुना अस्य सञ्चिकायाः दि�
 [dialogue.label-delete-file]
 original=Delete file
 translation=सञ्चिकां विलोपयतु
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4172,14 +4192,6 @@ translation=निरसयतु
 
 [dialogue.button-allow]
 original=Allow
-translation=
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=
-
-[dialogue.button-always-allow]
-original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -9657,6 +9669,26 @@ translation=Contain
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Image aspect ratio
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=
 
 [plugins.bases.table.name]
 original=Table

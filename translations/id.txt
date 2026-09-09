@@ -582,22 +582,6 @@ translation=Izinkan callback URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Aktifkan penggunaan x-callback-url melalui x-success atau x-error saat menangani URI Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=URI Obsidian
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Kelola tindakan tepercaya dan konfigurasikan perilaku URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Tindakan tepercaya
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Belum ada tindakan tepercaya. Tindakan URI yang disetujui akan muncul di sini.
-
 [setting.appearance.name]
 original=Appearance
 translation=Tampilan
@@ -1422,6 +1406,10 @@ translation=Keluar
 original=Log in
 translation=Masuk
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Masuk ke Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Daftar
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Lupa kata sandi?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Masuk
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Opsi bilah alat lainnya
 original=Insert attachment
 translation=Sisipkan lampiran
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Ambil foto
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Pilih file
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Cari
@@ -2149,6 +2145,10 @@ translation=Hapus catatan kaki dan referensi
 [editor.menu.reset-size]
 original=Reset size
 translation=Atur ulang ukuran
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Hapus gambar
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Tidak dapat memuat plugin {{plugin}} v{{version}}. Versi ini dilapor
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Gagal membuka “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Tampilan “{{name}}” mengalami kesalahan saat ditutup
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Paragraf
 [interface.formatting.label-insert]
 original=Insert
 translation=Sisipkan
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Bawaan
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Merah
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Oranye
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Kuning
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Hijau
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Biru
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Ungu
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Diamankan dengan standar enkripsi ujung-ke-ujung terkuat.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Memerlukan akun Obsidian.
+original=Requires a paid subscription.
+translation=Memerlukan langganan berbayar.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Miringkan teks yang dipilih
 original=Toggle highlight
 translation=Sorot teks yang dipilih
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Aktifkan/nonaktifkan sorotan {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Beri komentar untuk pilihan
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Berkas akan dipindahkan ke tempat sampah Obsidian, yang terletak di ".trash" yang tersembunyi di vault Anda.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=Berkas akan dihapus permanen.
+original=The file will be permanently deleted.
+translation=File akan dihapus secara permanen.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=Saat ini ada {{count}} tautan yang menunjuk ke file ini.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Hapus berkas
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Jalankan tindakan dari tautan eksternal?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Tindakan “{{action}}” akan dijalankan. Lanjutkan hanya jika Anda memercayai sumber tautan tersebut.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Plugin “{{source}}” akan menjalankan tindakan “{{action}}”. Lanjutkan hanya jika Anda memercayai sumber tautan tersebut.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Jangan tanya lagi untuk “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Batal
 [dialogue.button-allow]
 original=Allow
 translation=Izinkan
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Izinkan sekali
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Selalu izinkan
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Muat
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Rasio aspek gambar
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Atur ulang urutan
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Lebar kolom
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Sembunyikan kolom kosong
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Pilih properti untuk pengelompokan dari menu pengurutan
 
 [plugins.bases.table.name]
 original=Table

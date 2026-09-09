@@ -582,22 +582,6 @@ translation=Permiteți callback-uri URI
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Activați utilizarea x-callback-url prin x-success sau x-error la gestionarea URI-urilor Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=URI Obsidian
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Gestionează acțiunile de încredere și configurează comportamentul URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Acțiuni de încredere
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Nu există încă acțiuni de încredere. Acțiunile URI aprobate vor apărea aici.
-
 [setting.appearance.name]
 original=Appearance
 translation=Personalizare
@@ -1422,6 +1406,10 @@ translation=Deconectați-vă
 original=Log in
 translation=Autentificați-vă
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Autentifică-te în Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Înregistrați-vă
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Ați uitat parola?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Autentificați-vă
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Mai multe opțiuni pentru bara de instrumente
 original=Insert attachment
 translation=Inserați un atașament
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Fă o fotografie
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Alege un fișier
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Căutați...
@@ -2149,6 +2145,10 @@ translation=Ștergeți nota de subsol și referința
 [editor.menu.reset-size]
 original=Reset size
 translation=Resetează dimensiunea
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Elimină imaginea
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Modulul {{plugin}} v{{version}} nu a putut fi încărcat. S-a raport
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Deschiderea “{{filepath}}” a eșuat
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Vizualizarea „{{name}}” a întâmpinat o eroare la închidere
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Paragraf
 [interface.formatting.label-insert]
 original=Insert
 translation=Introduceți
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Implicită
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Roșu
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Portocaliu
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Galben
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Verde
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Albastru
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Mov
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Protejat folosind cel mai puternic standard de criptare de la un capăt la altul.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Necesită un cont Obsidian.
+original=Requires a paid subscription.
+translation=Necesită un abonament plătit.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Comutați textul cursiv pentru selecție
 original=Toggle highlight
 translation=Comutați textul evidențiat pentru selecție
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Comută evidențierea cu {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Comutați comentariile pentru selecție
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Va fi mutat în coșul de reciclare al Obsidian, localizat în directorul ascuns ".trash" din seiful tău.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Acest fișier va fi șters permanent.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=În prezent există {{count}} linkuri care indică către acest fiș
 [dialogue.label-delete-file]
 original=Delete file
 translation=Șterge fișier
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Rulezi acțiunea dintr-un link extern?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Acțiunea „{{action}}” este pe cale să ruleze. Continuă doar dacă ai încredere în sursa linkului.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Modulul „{{source}}” este pe cale să ruleze acțiunea „{{action}}”. Continuă doar dacă ai încredere în sursa linkului.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Nu mai întreba pentru „{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Anulează
 [dialogue.button-allow]
 original=Allow
 translation=Permite
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Permite o dată
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Permite întotdeauna
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Încadrare
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Raport de aspect imagine
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Resetează ordinea
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Lățimea coloanei
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Ascunde coloanele goale
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Alege din meniul de sortare o proprietate după care să se facă gruparea
 
 [plugins.bases.table.name]
 original=Table

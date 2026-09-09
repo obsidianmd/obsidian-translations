@@ -582,22 +582,6 @@ translation=URI ප්‍රතිඇමතුම් වලට ඉඩ දෙන�
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI හැසිරවීමේදී x-success හෝ x-error හරහා x-callback-url භාවිතය සක්‍රීය කරන්න.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=විශ්වාසදායක ක්‍රියා කළමනාකරණය කර URI හැසිරීම වින්‍යාස කරන්න.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=විශ්වාසදායක ක්‍රියා
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=තවමත් විශ්වාසදායක ක්‍රියා නොමැත. අනුමත URI ක්‍රියා මෙහි දිස් වනු ඇත.
-
 [setting.appearance.name]
 original=Appearance
 translation=පෙනුම
@@ -1422,6 +1406,10 @@ translation=ඉවත් වන්න
 original=Log in
 translation=ලොග් වන්න
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=ලියාපදිංචි වන්න
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=මුරපදය අමතකද?
 
 [setting.account.button-login]
-original=Login
-translation=ලොග් වන්න
+original=Log in
+translation=පිවිසෙන්න
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=තවත් මෙවලම් තීරු අභිරුචි
 original=Insert attachment
 translation=ඇමුණුමක් ඇතුළත් කරන්න
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=
+
 [editor.search.placeholder-find]
 original=Find...
 translation=සොයන්න
@@ -2149,6 +2145,10 @@ translation=පාද සටහන සහ යොමුව මකා දමන්
 [editor.menu.reset-size]
 original=Reset size
 translation=ප්‍රමාණය යළි පිහිටුවන්න
+
+[editor.menu.remove-image]
+original=Remove image
+translation=
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” විවෘත කිරීම අසාර්ථක විය
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=ඡේදය
 [interface.formatting.label-insert]
 original=Insert
 translation=ඇතුළත් කරන්න
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=ප්‍රබලතම අන්තයේ-සිට-අන්තයට සංකේතන ප්‍රමිතියෙන් සුරක්ෂිත කර ඇත.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Obsidian ගිණුමක් අවශ්‍ය වේ.
+original=Requires a paid subscription.
+translation=ගෙවන දායකත්වයක් අවශ්‍ය වේ.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=තේරීම සඳහා ඇල බව වෙනස් කරන
 original=Toggle highlight
 translation=තේරීම සඳහා උද්දීපනය වෙනස් කරන්න
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=තේරීම සඳහා අදහස් වෙනස් කරන්න
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=එය ඔබගේ vault හි ඇති ".trash" සැඟවුණු ෆෝල්ඩරයේ පිහිටා ඇති ඔබගේ Obsidian කුණු කූඩයට ගෙන යනු ඇත.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=ගොනුව ස්ථිරවම මකා දැමෙනු ඇත.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=දැනට මෙම ගොනුවට යොමු වන {{coun
 [dialogue.label-delete-file]
 original=Delete file
 translation=ගොනුව මකන්න
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=බාහිර සබැඳියෙන් ක්‍රියාවක් ක්‍රියාත්මක කරන්නද?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=“{{action}}” ක්‍රියාව ක්‍රියාත්මක වීමට නියමිතය. ඔබ සබැඳියේ මූලාශ්‍රය විශ්වාස කරන්නේ නම් පමණක් ඉදිරියට යන්න.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=“{{source}}” ප්ලගිනය මඟින් “{{action}}” ක්‍රියාව ක්‍රියාත්මක කිරීමට නියමිතය. ඔබ සබැඳියේ මූලාශ්‍රය විශ්වාස කරන්නේ නම් පමණක් ඉදිරියට යන්න.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=“{{action}}” සඳහා නැවත අසන්න එපා
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=අවලංගු කරන්න
 [dialogue.button-allow]
 original=Allow
 translation=ඉඩ දෙන්න
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=අඩංගු කරන්න (Contain)
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=රූපයේ දර්ශන අනුපාතය
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=
 
 [plugins.bases.table.name]
 original=Table

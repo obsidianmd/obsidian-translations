@@ -582,22 +582,6 @@ translation=Atļaut URI atzvanus
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Iespējot x-callback-url izmantošanu ar x-success vai x-error, apstrādājot Obsidian URI.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Pārvaldiet uzticamās darbības un konfigurējiet URI uzvedību.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Uzticamās darbības
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Vēl nav uzticamu darbību. Apstiprinātās URI darbības parādīsies šeit.
-
 [setting.appearance.name]
 original=Appearance
 translation=Izskats
@@ -1036,7 +1020,7 @@ translation=Konflikti ({{count}})
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
-translation=Neuzdevumi
+translation=Nepiešķirtie
 
 [setting.hotkeys.label-show-assigned]
 original=Assigned
@@ -1422,6 +1406,10 @@ translation=Izrakstīties
 original=Log in
 translation=Pieteikties
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Pieteikties Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Reģistrēties
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Aizmirsi paroli?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Pieteikties
 
 [setting.account.message-empty-email]
@@ -1512,7 +1500,7 @@ translation=Meklēt spraudņus...
 
 [setting.third-party-plugin.name]
 original=Community plugins
-translation=Trešās puses spraudnis
+translation=Kopienas spraudņi
 
 [setting.third-party-plugin.option-restricted-mode]
 original=Restricted mode
@@ -2042,6 +2030,14 @@ translation=Vairāk rīkjoslas opciju
 original=Insert attachment
 translation=Ievietot pielikumu
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Uzņemt fotoattēlu
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Izvēlēties failu
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Meklēt
@@ -2149,6 +2145,10 @@ translation=Dzēst zemsvītras piezīmi un atsauci
 [editor.menu.reset-size]
 original=Reset size
 translation=Atiestatīt izmēru
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Noņemt attēlu
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Neizdevās ielādēt spraudni {{plugin}} v{{version}}. Ir ziņots, k
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Neizdevās atvērt failu "{{filepath}}"
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Aizverot skatu “{{name}}”, radās kļūda
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Paragrāfs
 [interface.formatting.label-insert]
 original=Insert
 translation=Ievietot
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Noklusējuma
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Sarkana
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Oranža
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Dzeltena
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Zaļa
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Zila
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Violeta
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Nodrošināts ar spēcīgāko šifrēšanas no gala līdz galam standartu.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Nepieciešams Obsidian konts.
+original=Requires a paid subscription.
+translation=Nepieciešams maksas abonements.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Pārslēgt slīprakstu izvēlei
 original=Toggle highlight
 translation=Pārslēgt izcelšanu izvēlei
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Pārslēgt izcelšanu ({{color, lowercase}})
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Pārslēgt komentārus izvēlei
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Tas tiks pārvietots uz Obsidian atkritni, kas atrodas slēptajā mapē ".trash" jūsu krātuvē.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Fails tiks neatgriezeniski dzēsts.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Pašlaik ir {{count}} saites, kas norāda uz šo failu.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Dzēst failu
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Vai palaist darbību no ārējas saites?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Tiks palaista darbība “{{action}}”. Turpiniet tikai tad, ja uzticaties saites avotam.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Spraudnis “{{source}}” gatavojas palaist darbību “{{action}}”. Turpiniet tikai tad, ja uzticaties saites avotam.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Vairs nejautāt par “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Atcelt
 [dialogue.button-allow]
 original=Allow
 translation=Atļaut
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Atļaut vienreiz
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Vienmēr atļaut
 
 [dialogue.button-skip]
 original=Skip
@@ -9116,7 +9128,7 @@ translation=Bāzes
 
 [plugins.bases.desc]
 original=Create custom views that let you edit, sort, and filter files using their properties.
-translation=Create bases by querying note properties.
+translation=Veidojiet pielāgotus skatus, kas ļauj jums rediģēt, kārtot un filtrēt failus, izmantojot to īpašības.
 
 [plugins.bases.action-new-base]
 original=New base
@@ -9657,6 +9669,26 @@ translation=Ietilpināt
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Attēla malu attiecība
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Atiestatīt secību
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Kolonnas platums
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Paslēpt tukšās kolonnas
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Kārtošanas izvēlnē izvēlieties īpašību, pēc kuras grupēt
 
 [plugins.bases.table.name]
 original=Table

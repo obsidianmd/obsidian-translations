@@ -582,22 +582,6 @@ translation=URI መመለሻዎችን ፍቀድ
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI ሲያስተናግድ x-callback-urlን በ x-success ወይም x-error እንዲጠቀም አንቃ።
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=የታመኑ እርምጃዎችን ያስተዳድሩ እና የURI ባህሪን ያዋቅሩ።
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=የታመኑ እርምጃዎች
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=እስካሁን ምንም የታመኑ እርምጃዎች የሉም። የተፈቀዱ URI እርምጃዎች እዚህ ይታያሉ።
-
 [setting.appearance.name]
 original=Appearance
 translation=መልክ
@@ -1422,6 +1406,10 @@ translation=ውጣ
 original=Log in
 translation=ግባ
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=ወደ Obsidian ግባ
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=ክፈት
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=የይለፍ ቃል ረሳህ?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=ግባ
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=ተጨማሪ የመሳሪያ አሞሌ አማራጮች
 original=Insert attachment
 translation=አባሪ አስገባ
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=ፎቶ አንሳ
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=ፋይል ምረጥ
+
 [editor.search.placeholder-find]
 original=Find...
 translation=አግኝ
@@ -2149,6 +2145,10 @@ translation=የግርጌ ማስታወሻን እና ማጣቀሻውን ሰርዝ
 [editor.menu.reset-size]
 original=Reset size
 translation=መጠን ዳግም አስጀምር
+
+[editor.menu.remove-image]
+original=Remove image
+translation=ምስሉን አስወግድ
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=ተሰኪ {{plugin}} v{{version}} መጫን አልተቻለም። �
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” መክፈት አልተሳካም
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=የ“{{name}}” እይታ ሲዘጋ ስህተት አጋጠመው
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=አንቀጽ
 [interface.formatting.label-insert]
 original=Insert
 translation=አስገባ
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=ነባሪ
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=ቀይ
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=ብርቱካናማ
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=ቢጫ
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=አረንጓዴ
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=ሰማያዊ
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=ወይን ጠጅ
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=በጠንካራው ከመጨረሻ-እስከ-መጨረሻ ምስጠራ መስፈርት የተጠበቀ።
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=የObsidian መለያ ይፈልጋል።
+original=Requires a paid subscription.
+translation=የሚከፈልበት የደንበኝነት ምዝገባ ይፈልጋል።
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=ለምርጫ ሰያፍ ቀይር
 original=Toggle highlight
 translation=ድምቀትን ለምርጫ ቀያይር
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=የ{{color, lowercase}} ማድመቂያን ቀያይር
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=ለምርጫ አስተያየቶችን ቀያይር
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=በማከማቻዎ ውስጥ ባለው .መጣያ የተደበቀ አቃፊ ውስጥ ወደሚገኘው የ Obsidian መጣያ ይንቀሳቀሳል።
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=ፋይሉ በቋሚነት ይሰረዛል።
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=በአሁኑ ጊዜ ወደዚህ ፋይል የሚጠቁሙ {{count}}
 [dialogue.label-delete-file]
 original=Delete file
 translation=ፋይል ሰርዝ
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=ከውጫዊ አገናኝ እርምጃ ይሂድ?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=የ“{{action}}” እርምጃ ሊሂድ ነው። የአገናኙን ምንጭ ካመኑ ብቻ ይቀጥሉ።
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=የ“{{source}}” ተሰኪ የ“{{action}}” እርምጃን ሊያስኬድ ነው። የአገናኙን ምንጭ ካመኑ ብቻ ይቀጥሉ።
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=ለ“{{action}}” እንደገና አትጠይቅ
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=ሰርዝ
 [dialogue.button-allow]
 original=Allow
 translation=ፍቀድ
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=አንድ ጊዜ ፍቀድ
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=ሁልጊዜ ፍቀድ
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=በውስጥ አስገባ
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=የምስል መጠን-ሬሾ
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=ቅደም ተከተሉን ዳግም አስጀምር
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=የዓምድ ስፋት
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=ባዶ ዓምዶችን ደብቅ
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=ከመደርደሪያ ምናሌው ለመቧደን ባህሪ ምረጥ
 
 [plugins.bases.table.name]
 original=Table

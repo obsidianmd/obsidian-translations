@@ -582,22 +582,6 @@ translation=Tillat URI-callbacker
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Aktiver bruk av x-callback-url ved håndtering av Obsidian-URI-er.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Administrer klarerte handlinger og konfigurer URI-atferd.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Klarerte handlinger
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Ingen klarerte handlinger ennå. Godkjente URI-handlinger vises her.
-
 [setting.appearance.name]
 original=Appearance
 translation=Programstil
@@ -1422,6 +1406,10 @@ translation=Logg ut
 original=Log in
 translation=Logg inn
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Logg inn på Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Registrer deg
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=Glemt passord?
 
 [setting.account.button-login]
-original=Login
-translation=Log inn
+original=Log in
+translation=Logg inn
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=Flere alternativer for verktøylinjen
 original=Insert attachment
 translation=Sett inn vedlegg
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Ta bilde
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Velg fil
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Find
@@ -2149,6 +2145,10 @@ translation=Slett fotnote og referanse
 [editor.menu.reset-size]
 original=Reset size
 translation=Tilbakestill størrelse
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Fjern bilde
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Kan ikke laste inn utvidelsen {{plugin}} v{{version}}. Det er rappor
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Kunne ikke åpne «{{filepath}}»
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Det oppstod en feil da visningen «{{name}}» ble lukket
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Avsnitt
 [interface.formatting.label-insert]
 original=Insert
 translation=Sett inn
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Standard
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Rød
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Oransje
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Gul
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Grønn
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Blå
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Lilla
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Sikret med den sterkeste standarden for ende-til-ende-kryptering.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Krever en Obsidian-konto.
+original=Requires a paid subscription.
+translation=Krever et betalt abonnement.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Kursiv for markert tekst
 original=Toggle highlight
 translation=Fremhev markert tekst
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Slå {{color, lowercase}} utheving av/på
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Toggle comments for selection
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Filen blir flyttet til Obsidians papirkurv, den skjulte mappen ".trash", plassert i hvelvet ditt.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Filen blir slettet permanent.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Det er for øyeblikket {{count}} lenker som peker til denne filen.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Slett fil
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Kjøre handling fra ekstern lenke?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Handlingen «{{action}}» er i ferd med å kjøre. Fortsett bare hvis du stoler på lenkens kilde.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Tillegget «{{source}}» er i ferd med å kjøre handlingen «{{action}}». Fortsett bare hvis du stoler på lenkens kilde.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Ikke spør igjen for «{{action}}»
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Avbryt
 [dialogue.button-allow]
 original=Allow
 translation=Tillat
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Tillat én gang
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Tillat alltid
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Tilpass
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Bildets størrelsesforhold
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Tilbakestill rekkefølge
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Kolonnebredde
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Skjul tomme kolonner
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Velg en egenskap å gruppere etter fra sorteringsmenyen
 
 [plugins.bases.table.name]
 original=Table

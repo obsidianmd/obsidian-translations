@@ -582,22 +582,6 @@ translation=Дозволи URI повратне позиве
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Омогући коришћење x-callback-url преко x-success или x-error при обради Obsidian URI-ја.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Управљајте поузданим радњама и подесите понашање URI-ја.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Поуздане радње
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Још нема поузданих радњи. Одобрене URI радње ће се појавити овде.
-
 [setting.appearance.name]
 original=Appearance
 translation=Изглед
@@ -1422,6 +1406,10 @@ translation=Одјави се
 original=Log in
 translation=Пријави се
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Пријави се у Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Направи налог
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Заборавили сте лозинку?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Пријави се
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Више опција траке са алаткама
 original=Insert attachment
 translation=Уметни прилог
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Сними фотографију
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Изабери датотеку
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Пронађи
@@ -2149,6 +2145,10 @@ translation=Обриши фусноту и референцу
 [editor.menu.reset-size]
 original=Reset size
 translation=Ресетуј величину
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Уклони слику
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=Није могуће учитати додатак {{plugin}} v{{ve
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Није успело отварање „{{filepath}}“
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=Дошло је до грешке при затварању приказа „{{name}}”
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Параграф
 [interface.formatting.label-insert]
 original=Insert
 translation=Уметни
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Подразумевано
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Црвена
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=Наранџаста
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Жута
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Зелена
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Плава
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Љубичаста
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Заштићено најјачим стандардом енкрипције од краја до краја.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Захтева Obsidian налог.
+original=Requires a paid subscription.
+translation=Захтева плаћену претплату.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Пребаци курзив за селекцију
 original=Toggle highlight
 translation=Пребаци истицање за селекцију
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=Укључи/искључи истицање бојом {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Пребаци коментаре за селекцију
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Биће премештен у вашу Obsidian корпу, која се налази у скривеној фасцикли ".trash" у вашем сефу.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=Фајл ће бити трајно обрисан.
+original=The file will be permanently deleted.
+translation=Датотека ће бити трајно обрисана.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=Тренутно постоји {{count}} веза које указ
 [dialogue.label-delete-file]
 original=Delete file
 translation=Обриши фајл
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Покренути радњу из спољне везе?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=Радња „{{action}}” ће бити покренута. Наставите само ако верујете извору везе.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=Додатак „{{source}}” ће покренути радњу „{{action}}”. Наставите само ако верујете извору везе.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=Не питај поново за „{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Откажи
 [dialogue.button-allow]
 original=Allow
 translation=Дозволи
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Дозволи једном
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Увек дозволи
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Уклопи
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Однос страница слике
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Канбан
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Ресетуј редослед
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Ширина колоне
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Сакриј празне колоне
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Изабери својство за груписање из менија за сортирање
 
 [plugins.bases.table.name]
 original=Table

@@ -582,22 +582,6 @@ translation=URI callbacklariga ruxsat berish
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI’lari bilan ishlaganda x-success yoki x-error orqali x-callback-url’dan foydalanishni yoqing.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=Ishonchli amallarni boshqaring va URI xatti-harakatini sozlang.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=Ishonchli amallar
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=Hali ishonchli amallar yo‘q. Tasdiqlangan URI amallari shu yerda ko‘rinadi.
-
 [setting.appearance.name]
 original=Appearance
 translation=Tashqi ko'rinishi
@@ -1422,6 +1406,10 @@ translation=Chiqish
 original=Log in
 translation=Kirish
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Obsidian’ga kirish
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Ro'yxatdan o'tish
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Parolni unutdingizmi?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Kirish
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Boshqa sozlamalar
 original=Insert attachment
 translation=Ilova
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=Suratga olish
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=Faylni tanlash
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Qidirish
@@ -2149,6 +2145,10 @@ translation=Izoh va havolani o‘chirish
 [editor.menu.reset-size]
 original=Reset size
 translation=O‘lchamni tiklash
+
+[editor.menu.remove-image]
+original=Remove image
+translation=Rasmni olib tashlash
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation={{plugin}} plaginining v{{version}} versiyasini yuklab bo‘lmadi. B
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Faylni “{{filepath}}” ochib bo‘lmadi
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=“{{name}}” ko‘rinishini yopishda xatolik yuz berdi
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Paragraf
 [interface.formatting.label-insert]
 original=Insert
 translation=Kiritish
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=Standart
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=Qizil
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=To‘q sariq
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=Sariq
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=Yashil
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=Ko‘k
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=Binafsha
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=Eng kuchli boshidan-oxirigacha shifrlash standarti bilan himoyalangan.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Obsidian hisob talab qiladi.
+original=Requires a paid subscription.
+translation=Pulli obuna talab qilinadi.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=Kursivni qo'shish/o'chirish
 original=Toggle highlight
 translation=Yoritishni qo'shish/o'chirish
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation={{color, lowercase}} rangli ajratib ko‘rsatishni yoqish/o‘chirish
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Izohlarni qo'shish/o'chirish
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Obsidian Savatchasiga ko'chiriladi, bu sizning xotirangizdagi yashirin ".trash" papkada joylashgan.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=Fayl qaytarib bo'lmaydigan tarzda o'chiriladi.
+original=The file will be permanently deleted.
+translation=Fayl qaytarib bo‘lmaydigan tarzda o‘chiriladi.
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=Hozirda ushbu faylga ishora qiluvchi {{count}} havolalar mavjud.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Faylni o'chirish
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=Tashqi havoladan amal ishga tushirilsinmi?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=“{{action}}” amali ishga tushirilmoqchi. Faqat havola manbasiga ishonsangiz davom eting.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=“{{source}}” plagini “{{action}}” amalini ishga tushirmoqchi. Faqat havola manbasiga ishonsangiz davom eting.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=“{{action}}” uchun boshqa so‘ralmasin
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=Bekor qilish
 [dialogue.button-allow]
 original=Allow
 translation=Ruxsat berish
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=Bir marta ruxsat berish
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=Har doim ruxsat berish
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=Sig‘dirish
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Rasm tomonlar nisbati
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=Kanban
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=Tartibni tiklash
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=Ustun kengligi
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=Bo‘sh ustunlarni yashirish
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=Saralash menyusidan guruhlash uchun xususiyatni tanlang
 
 [plugins.bases.table.name]
 original=Table

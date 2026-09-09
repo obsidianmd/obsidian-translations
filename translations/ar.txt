@@ -582,22 +582,6 @@ translation=السماح باتصالات الروابط الإلكترونية
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=تمكين استخدام x-callback-url من خلال x-success أو x-error عند التعامل مع عناوين الخاصة بـ Obsidian.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=إدارة الإجراءات الموثوقة وتكوين سلوك URI.
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=الإجراءات الموثوقة
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=لا توجد إجراءات موثوقة حتى الآن. ستظهر إجراءات URI المعتمدة هنا.
-
 [setting.appearance.name]
 original=Appearance
 translation=المظهر
@@ -1422,6 +1406,10 @@ translation=تسجيل الخروج
 original=Log in
 translation=تسجيل الدخول
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=تسجيل الدخول إلى Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=اشتراك
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=هل نسيت كلمة المرور؟
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=تسجيل الدخول
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=المزيد من خيارات شريط الأدوات
 original=Insert attachment
 translation=إدراج مرفق
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=التقاط صورة
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=اختيار ملف
+
 [editor.search.placeholder-find]
 original=Find...
 translation=بحث
@@ -2149,6 +2145,10 @@ translation=حذف الحاشية والمرجع
 [editor.menu.reset-size]
 original=Reset size
 translation=إعادة تعيين الحجم
+
+[editor.menu.remove-image]
+original=Remove image
+translation=إزالة الصورة
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=تعذّر تحميل المكوّن الإضافي {{plugin}} v{{ve
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=فشل في فتح “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=واجه عرض «{{name}}» خطأ أثناء الإغلاق
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=فقرة
 [interface.formatting.label-insert]
 original=Insert
 translation=إدراج
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=افتراضي
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=أحمر
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=برتقالي
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=أصفر
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=أخضر
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=أزرق
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=أرجواني
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=مؤمن بأقوى معيار تشفير من الطرف إلى الطرف.
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=يتطلب حساب Obsidian.
+original=Requires a paid subscription.
+translation=يتطلب اشتراكًا مدفوعًا.
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=تبديل الخط المائل للنص المحدد
 original=Toggle highlight
 translation=تبديل التظليل للنص المحدد
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=تبديل التمييز باللون {{color, lowercase}}
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=تبديل التعليقات للنص المحدد
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=سيتم نقله إلى سلة محذوفات Obsidian، والتي تقع في مجلد مخفي بعنوان ".trash" داخل الخزنة الخاصة بك.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=سيتم حذف الملف بشكل دائم.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=يوجد حاليًا {{count}} روابط تشير إلى هذا ا
 [dialogue.label-delete-file]
 original=Delete file
 translation=حذف الملف
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=هل تريد تشغيل الإجراء من رابط خارجي؟
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=الإجراء “{{action}}” على وشك التشغيل. لا تتابع إلا إذا كنت تثق بمصدر الرابط.
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=المكوّن الإضافي “{{source}}” على وشك تشغيل الإجراء “{{action}}”. لا تتابع إلا إذا كنت تثق بمصدر الرابط.
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=لا تسأل مرة أخرى عن “{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=إلغاء
 [dialogue.button-allow]
 original=Allow
 translation=السماح
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=السماح مرة واحدة
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=السماح دائمًا
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=احتواء
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=نسبة أبعاد الصورة
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=كانبان
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=إعادة تعيين الترتيب
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=عرض العمود
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=إخفاء الأعمدة الفارغة
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=اختر خاصية للتجميع حسبها من قائمة الفرز
 
 [plugins.bases.table.name]
 original=Table

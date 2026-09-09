@@ -582,22 +582,6 @@ translation=URI कलब्याकहरू अनुमति दिनु�
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI हरू ह्यान्डल गर्दा x-success वा x-error मार्फत x-callback-url प्रयोग सक्षम गर्नुहोस्।
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=विश्वसनीय कार्यहरू व्यवस्थापन गर्नुहोस् र URI व्यवहार कन्फिगर गर्नुहोस्।
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=विश्वसनीय कार्यहरू
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=अहिलेसम्म कुनै विश्वसनीय कार्य छैन। स्वीकृत URI कार्यहरू यहाँ देखिनेछन्।
-
 [setting.appearance.name]
 original=Appearance
 translation=रूप
@@ -1422,6 +1406,10 @@ translation=लग आउट
 original=Log in
 translation=लग इन
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Obsidian मा लगइन गर्नुहोस्
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=साइन अप
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=पासवर्ड बिर्सनुभयो?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=लगइन
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=थप उपकरणपट्टी विकल्प
 original=Insert attachment
 translation=संलग्नक घुसाउनुहोस्
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=फोटो खिच्नुहोस्
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=फाइल छान्नुहोस्
+
 [editor.search.placeholder-find]
 original=Find...
 translation=फेला पार्नुहोस्
@@ -2149,6 +2145,10 @@ translation=पादटिप्पणी र सन्दर्भ मेट�
 [editor.menu.reset-size]
 original=Reset size
 translation=आकार रिसेट गर्नुहोस्
+
+[editor.menu.remove-image]
+original=Remove image
+translation=तस्बिर हटाउनुहोस्
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=प्लगइन {{plugin}} v{{version}} लोड गर्न �
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” खोल्न असफल
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=बन्द गर्ने क्रममा “{{name}}” दृश्यमा त्रुटि आयो
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=अनुच्छेद
 [interface.formatting.label-insert]
 original=Insert
 translation=घुसाउनुहोस्
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=पूर्वनिर्धारित
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=रातो
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=सुन्तला
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=पहेँलो
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=हरियो
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=निलो
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=बैजनी
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=सबैभन्दा बलियो एन्ड-टु-एन्ड इन्क्रिप्सन मानकद्वारा सुरक्षित।
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=Obsidian खाता आवश्यक छ।
+original=Requires a paid subscription.
+translation=सशुल्क सदस्यता आवश्यक छ।
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=चयनको लागि इटालिक टगल गर्�
 original=Toggle highlight
 translation=चयनको लागि हाइलाइट टगल गर्नुहोस्
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation={{color, lowercase}} हाइलाइट टगल गर्नुहोस्
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=चयनका लागि टिप्पणीहरू टगल गर्नुहोस्
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=यो तपाइँको ओब्सिडियन रद्दीटोकरीमा सारिनेछ, जुन तपाइँको भल्टमा लुकेको फोल्डर "। रद्दी टोकरी" मा अवस्थित छ।
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=फाइल सदाका लागि मेटिनेछ।
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=हाल यो फाइलमा इंगित गर्ने 
 [dialogue.label-delete-file]
 original=Delete file
 translation=फाइल मेटाउनुहोस्
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=बाह्य लिङ्कबाट कार्य चलाउने?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=“{{action}}” कार्य चल्न लागेको छ। लिङ्कको स्रोतमा विश्वास भए मात्र जारी राख्नुहोस्।
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=“{{source}}” प्लगइनले “{{action}}” कार्य चलाउन लागेको छ। लिङ्कको स्रोतमा विश्वास भए मात्र जारी राख्नुहोस्।
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=“{{action}}” का लागि फेरि नसोध्नुहोस्
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=रद्द गर्नुहोस्
 [dialogue.button-allow]
 original=Allow
 translation=अनुमति दिनुहोस्
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=एक पटक अनुमति दिनुहोस्
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=सधैँ अनुमति दिनुहोस्
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=समेट्नुहोस्
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=तस्बिर आस्पेक्ट रेसियो
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=कानबान
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=क्रम रिसेट गर्नुहोस्
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=स्तम्भको चौडाइ
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=खाली स्तम्भहरू लुकाउनुहोस्
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=क्रमबद्ध मेनुबाट समूहबद्ध गर्ने गुण छान्नुहोस्
 
 [plugins.bases.table.name]
 original=Table

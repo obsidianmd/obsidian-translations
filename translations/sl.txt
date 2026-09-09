@@ -582,22 +582,6 @@ translation=Dovoli URI povratne klice
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Omogoči uporabo x-callback-url prek x-success ali x-error pri obdelavi Obsidian URI-jev.
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=
-
 [setting.appearance.name]
 original=Appearance
 translation=Videz
@@ -1422,6 +1406,10 @@ translation=Odjava
 original=Log in
 translation=Prijava
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Registracija
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=Ste pozabili geslo?
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Prijava
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=Več možnosti orodne vrstice
 original=Insert attachment
 translation=Vstavi prilogo
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Najdi
@@ -2148,6 +2144,10 @@ translation=Izbriši opombo in referenco
 
 [editor.menu.reset-size]
 original=Reset size
+translation=
+
+[editor.menu.remove-image]
+original=Remove image
 translation=
 
 [editor.menu.delete-image]
@@ -2269,6 +2269,10 @@ translation=
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Ni uspelo odpreti “{{filepath}}”
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=Odstavek
 [interface.formatting.label-insert]
 original=Insert
 translation=Vstavi
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,7 +3307,7 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
+original=Requires a paid subscription.
 translation=
 
 [interface.start-screen.mobile.label-icloud-con1]
@@ -3878,6 +3910,10 @@ translation=Preklopi ležeče za izbor
 original=Toggle highlight
 translation=Preklopi označevanje za izbor
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Preklopi komentarje za izbor
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=Premaknjen bo v Obsidian koš, ki se nahaja v skriti mapi ".trash" v vašem sefu.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Datoteka bo trajno izbrisana.
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=Trenutno obstaja {{count}} povezav, ki kažejo na to datoteko.
 [dialogue.label-delete-file]
 original=Delete file
 translation=Izbriši datoteko
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4172,14 +4192,6 @@ translation=Prekliči
 
 [dialogue.button-allow]
 original=Allow
-translation=
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=
-
-[dialogue.button-always-allow]
-original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -9656,6 +9668,26 @@ translation=
 
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
+translation=
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
 translation=
 
 [plugins.bases.table.name]

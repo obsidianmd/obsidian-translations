@@ -45,24 +45,6 @@ translation=Стойността трябва да бъде не по-малка
 [setting.msg-value-at-most]
 original=Value must be at most {{max}}
 translation=Стойността трябва да бъде най-много {{max}}
-=======
-translation=Не е избран файл
-
-[setting.msg-restart-required]
-original=Changing this option requires a restart to take effect.
-translation=Промяната на тази опция изисква рестартиране на приложението.
-
-[setting.msg-invalid-number]
-original=Invalid number
-translation=Недопустимо число
-
-[setting.msg-value-at-least]
-original=Value must be at least {{min}}
-translation=Стойността трябва да бъде най-малко {{min}}
-
-[setting.msg-value-at-most]
-original=Value must be at most {{max}}
-translation=Стойността трябва да бъде най-много {{max}}
 
 [setting.msg-file-not-found]
 original=File not found.
@@ -75,16 +57,6 @@ translation=Настройки за търсене...
 [setting.no-search-results]
 original=No settings found.
 translation=Не са намерени настройки.
-
-[setting.search-show-more]
-original={{count}} more
-translation=Покажи още {{count}}
-=======
-translation=Търсене в настройки...
-
-[setting.no-search-results]
-original=No settings found.
-translation=Няма намерени настройки.
 
 [setting.search-show-more]
 original={{count}} more
@@ -121,7 +93,6 @@ translation=Изберете езиците, които ще бъдат изпо
 [setting.editor.spellcheck-languages-mac-description]
 original=The native spellchecker will automatically detect the language being used for you on macOS.
 translation=Вградената функция за проверка на правописа автоматично ще избере езика, който използвате в macOS.
-=======
 translation=Изберете езиците, които ще се използват за проверка на правописа.
 
 [setting.editor.spellcheck-languages-mac-description]
@@ -1472,6 +1443,10 @@ translation=Излизане
 original=Log in
 translation=Влизане
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=Регистриране
@@ -1501,7 +1476,7 @@ original=Forgot password?
 translation=Забравена парола
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=Вход
 
 [setting.account.message-empty-email]
@@ -2092,6 +2067,14 @@ translation=Още настройки на лентата с инструмен�
 original=Insert attachment
 translation=Вмъкване на прикачен файл
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=
+
 [editor.search.placeholder-find]
 original=Find...
 translation=Намери
@@ -2199,6 +2182,10 @@ translation=Изтрий бележката под линията и препр�
 [editor.menu.reset-size]
 original=Reset size
 translation=Нулирай размера
+
+[editor.menu.remove-image]
+original=Remove image
+translation=
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2319,6 +2306,10 @@ translation=
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Неуспешно отваряне на „{{filepath}}“
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2490,6 +2481,34 @@ translation=Параграф
 [interface.formatting.label-insert]
 original=Insert
 translation=Вмъкване
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3927,6 +3946,10 @@ translation=Курсив
 original=Toggle highlight
 translation=Подчертаване
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=Коментари
@@ -4112,7 +4135,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=It will be moved to your Obsidian trash, which is located in the ".trash" hidden folder in your vault.
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=Файлът ще бъде изтрит за постоянно.
 
 [dialogue.label-non-empty-folder]
@@ -4146,22 +4169,6 @@ translation=В момента има {{count}} връзки, сочещи към
 [dialogue.label-delete-file]
 original=Delete file
 translation=Изтриване на файл
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4221,14 +4228,6 @@ translation=Отказ
 
 [dialogue.button-allow]
 original=Allow
-translation=
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=
-
-[dialogue.button-always-allow]
-original=Always allow
 translation=
 
 [dialogue.button-skip]
@@ -9710,6 +9709,26 @@ translation=Побиране
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=Съотношение на страните на изображението
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=
 
 [plugins.bases.table.name]
 original=Table

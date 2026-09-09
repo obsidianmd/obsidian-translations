@@ -582,22 +582,6 @@ translation=URI কলব্যাক অনুমোদন করুন
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=Obsidian URI ব্যবহারের সময় x-success বা x-error এর মাধ্যমে x-callback-url সক্রিয় করুন।
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=বিশ্বস্ত অ্যাকশন পরিচালনা করুন এবং URI আচরণ কনফিগার করুন।
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=বিশ্বস্ত অ্যাকশন
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=এখনও কোনো বিশ্বস্ত অ্যাকশন নেই। অনুমোদিত URI অ্যাকশন এখানে দেখা যাবে।
-
 [setting.appearance.name]
 original=Appearance
 translation=রুপ
@@ -784,7 +768,7 @@ translation=CSS স্নিপেট
 
 [setting.appearance.option-css-snippets-description]
 original=Manage your collection of CSS files for tweaking the app's appearance.
-translation=অ্যাপের চেহারা টুইক করার জন্য আপনার CSS ফাইলগুলোর সংগ্রহ পরিচালনা করুন।
+translation=অ্যাপের চেহারায় পরিবর্তন আনতে আপনার CSS ফাইলগুলোর সংগ্রহ ব্যাবহার করতে পারেন।
 
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
@@ -796,7 +780,7 @@ translation={{count}}টি সক্রিয়
 
 [setting.appearance.no-snippet-description]
 original=CSS snippets let you customize the appearance of Obsidian. Place CSS files in “{{path}}” for them to appear here.
-translation=CSS স্নিপেট আপনাকে Obsidian-এর চেহারা কাস্টমাইজ করতে দেয়। এগুলো এখানে দেখানোর জন্য CSS ফাইলগুলো “{{path}}”-এ রাখুন।
+translation=CSS স্নিপেট আপনাকে Obsidian-এর চেহারা পরিবর্তন করতে দেয়়। তবে মনে রাখবেন, CSS ফাইলগুলো একমাত্র এই “{{path}}”-এ রাখলেই কাজ করবে।
 
 [setting.appearance.button-reload-snippets]
 original=Reload snippets
@@ -1032,7 +1016,7 @@ translation=সবগুলো
 
 [setting.hotkeys.label-show-conflicts]
 original=Conflicts
-translation=দ্বন্দ্ব ({{count}})
+translation=দ্বন্দ্ব
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -1422,6 +1406,10 @@ translation=লগ আউট
 original=Log in
 translation=লগ ইন
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=Obsidian-এ লগইন করুন
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=সাইন আপ
@@ -1451,8 +1439,8 @@ original=Forgot password?
 translation=পাসওয়ার্ড ভুলে গেছেন কি?
 
 [setting.account.button-login]
-original=Login
-translation=লগ ইন
+original=Log in
+translation=লগইন
 
 [setting.account.message-empty-email]
 original=Email cannot be empty.
@@ -2042,6 +2030,14 @@ translation=আরও টুলবার বিকল্প
 original=Insert attachment
 translation=আটাচমেন্ট যোগ করুন
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=ছবি তুলুন
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=ফাইল বেছে নিন
+
 [editor.search.placeholder-find]
 original=Find...
 translation=সন্ধান
@@ -2150,6 +2146,10 @@ translation=পাদটীকা এবং সূত্র মুছুন
 original=Reset size
 translation=আকার রিসেট করুন
 
+[editor.menu.remove-image]
+original=Remove image
+translation=ছবি সরান
+
 [editor.menu.delete-image]
 original=Delete image
 translation=ছবি মোছা
@@ -2252,23 +2252,27 @@ translation=“{{plugin}}” প্লাগইনটি লোড করা স
 
 [interface.msg-plugin-error]
 original=Plugin “{{plugin}}” encountered an error while loading
-translation=“{{plugin}}” 
+translation=“{{plugin}}” প্লাগইনটি লোড করার সময় একটি সমস্যা ধরা পড়েছে।
 
 [interface.msg-plugin-incompatible]
 original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
-translation={{plugin}} লোড করা হয়নি। এই প্লাগইনটি Obsidian v{{version}}-এর সাথে সামঞ্জস্যপূর্ণ নয়।
+translation={{plugin}} প্লাগইনটি লোড করা হয়নি। এই প্লাগইনটি Obsidian v{{version}} সংস্করনের সাথে সামঞ্জস্যপূর্ণ নয়।
 
 [interface.msg-plugin-nonfunctional]
 original={{plugin}} is no longer functional. We recommend uninstalling it.
-translation={{plugin}} আর কার্যকর নয়। আমরা এটি আনইনস্টল করার পরামর্শ দিচ্ছি।
+translation={{plugin}} প্লাগইনটি আর কার্যকর নেই। আমরা এটি আনইনস্টল করার পরামর্শ দিচ্ছি।
 
 [interface.msg-plugin-version-issues]
 original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
-translation={{plugin}} v{{version}} প্লাগইন লোড করা যায়নি। এই সংস্করণটি সমস্যার কারণ হতে পারে বলে রিপোর্ট করা হয়েছে। অনুগ্রহ করে প্লাগইনটির নতুন সংস্করণ আছে কি না দেখুন।
+translation={{plugin}} v{{version}} প্লাগইন লোড করা যায়নি। এই সংস্করণটি সমস্যার কারণ হতে পারে বলে রিপোর্ট করা হয়েছে। অনুগ্রহ করে প্লাগইনটির নতুন সংস্করণ উপলব্ধ আছে কি না দেখুন।
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” ফাইলটি লোড করা সম্ভব হয়নি।
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=বন্ধ করার সময় “{{name}}” ভিউতে একটি ত্রুটি ঘটেছে
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=অনুচ্ছেদ
 [interface.formatting.label-insert]
 original=Insert
 translation=যোগ করুন
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=ডিফল্ট
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=লাল
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=কমলা
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=হলুদ
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=সবুজ
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=নীল
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=বেগুনি
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=সবচেয়ে শক্তিশালী এন্ড-টু-এন্ড এনক্রিপশন মান দ্বারা সুরক্ষিত।
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=একটি Obisidian অ্যাকাউন্ট প্রয়োজন।
+original=Requires a paid subscription.
+translation=একটি পেইড সাবস্ক্রিপশন প্রয়োজন।
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=নির্বাচিত অংশে ইটালিক চা�
 original=Toggle highlight
 translation=নির্বাচিত অংশে হাইলাইট চালু/বন্ধ করুন
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation={{color, lowercase}} হাইলাইট টগল করুন
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=নির্বাচিত অংশে মন্তব্য চালু/বন্ধ করুন
@@ -4063,7 +4099,7 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=এটি আপনার Obisidian ট্র্যাশে স্থানান্তরিত হবে, যা আপনার ভল্টের ".trash" লুকানো ফোল্ডারে অবস্থিত।
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
+original=The file will be permanently deleted.
 translation=ফাইলটি স্থায়ীভাবে মুছে ফেলা হবে।
 
 [dialogue.label-non-empty-folder]
@@ -4097,22 +4133,6 @@ translation=বর্তমানে {{count}}টি লিঙ্ক এই ফ�
 [dialogue.label-delete-file]
 original=Delete file
 translation=ফাইল মুছে ফেলুন
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=বাহ্যিক লিঙ্ক থেকে অ্যাকশন চালাবেন?
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=“{{action}}” অ্যাকশনটি চালানো হবে। লিঙ্কটির উৎসকে বিশ্বাস করলেই শুধু চালিয়ে যান।
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=“{{source}}” প্লাগইনটি “{{action}}” অ্যাকশন চালাতে যাচ্ছে। লিঙ্কটির উৎসকে বিশ্বাস করলেই শুধু চালিয়ে যান।
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=“{{action}}” এর জন্য আবার জিজ্ঞাসা করবেন না
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=বাতিল
 [dialogue.button-allow]
 original=Allow
 translation=অনুমতি দিন
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=একবার অনুমতি দিন
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=সবসময় অনুমতি দিন
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=ধারণ
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=ছবির অ্যাসপেক্ট রেশিও
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=কানবান
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=ক্রম রিসেট করুন
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=কলামের প্রস্থ
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=খালি কলাম লুকান
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=সাজানোর মেনু থেকে গ্রুপ করার জন্য একটি বৈশিষ্ট্য বেছে নিন
 
 [plugins.bases.table.name]
 original=Table

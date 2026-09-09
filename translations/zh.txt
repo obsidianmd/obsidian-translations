@@ -582,22 +582,6 @@ translation=启用 URI 回调
 original=Enable the use of x-callback-url through x-success or x-error when handling Obsidian URIs.
 translation=在处理 Obsidian 的 URI 时，允许通过 x-success 或 x-error 参数使用 x-callback-url 功能。
 
-[setting.file.label-obsidian-uri]
-original=Obsidian URI
-translation=Obsidian URI
-
-[setting.file.label-obsidian-uri-desc]
-original=Manage trusted actions and configure URI behavior.
-translation=管理受信任的操作并配置 URI 行为。
-
-[setting.file.label-trusted-uri-actions]
-original=Trusted actions
-translation=受信任的操作
-
-[setting.file.label-no-trusted-uri-actions]
-original=No trusted actions yet. Approved URI actions will appear here.
-translation=暂无受信任的操作。已批准的 URI 操作将显示在这里。
-
 [setting.appearance.name]
 original=Appearance
 translation=外观
@@ -1422,6 +1406,10 @@ translation=退出登录
 original=Log in
 translation=登录
 
+[setting.account.title-log-in]
+original=Log in to Obsidian
+translation=登录 Obsidian
+
 [setting.account.label-sign-up]
 original=Sign up
 translation=注册
@@ -1451,7 +1439,7 @@ original=Forgot password?
 translation=忘记密码？
 
 [setting.account.button-login]
-original=Login
+original=Log in
 translation=登录
 
 [setting.account.message-empty-email]
@@ -2042,6 +2030,14 @@ translation=更多工具栏选项
 original=Insert attachment
 translation=插入附件
 
+[setting.mobile-toolbar.option-attach-camera]
+original=Take photo
+translation=拍照
+
+[setting.mobile-toolbar.option-attach-file]
+original=Choose file
+translation=选择文件
+
 [editor.search.placeholder-find]
 original=Find...
 translation=查找…
@@ -2149,6 +2145,10 @@ translation=删除脚注和引用
 [editor.menu.reset-size]
 original=Reset size
 translation=重置大小
+
+[editor.menu.remove-image]
+original=Remove image
+translation=移除图片
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2269,6 +2269,10 @@ translation=无法加载插件 {{plugin}} v{{version}}。据报告，此版本�
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” 打开失败。
+
+[interface.msg-failed-to-close-view]
+original=The “{{name}}” view encountered an error while closing
+translation=“{{name}}”视图在关闭时遇到错误
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2441,6 +2445,34 @@ translation=段落设置
 [interface.formatting.label-insert]
 original=Insert
 translation=插入
+
+[interface.formatting.highlight-color-default]
+original=Default
+translation=默认
+
+[interface.formatting.highlight-color.red]
+original=Red
+translation=红色
+
+[interface.formatting.highlight-color.orange]
+original=Orange
+translation=橙色
+
+[interface.formatting.highlight-color.yellow]
+original=Yellow
+translation=黄色
+
+[interface.formatting.highlight-color.green]
+original=Green
+translation=绿色
+
+[interface.formatting.highlight-color.blue]
+original=Blue
+translation=蓝色
+
+[interface.formatting.highlight-color.purple]
+original=Purple
+translation=紫色
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3275,8 +3307,8 @@ original=Secured with the strongest end-to-end encryption standard.
 translation=采用最强端到端加密标准
 
 [interface.start-screen.mobile.label-sync-pro3]
-original=Requires an Obsidian account.
-translation=需要 Obsidian 账户
+original=Requires a paid subscription.
+translation=需要付费订阅。
 
 [interface.start-screen.mobile.label-icloud-con1]
 original=Only for iOS and macOS.
@@ -3878,6 +3910,10 @@ translation=倾斜/取消倾斜
 original=Toggle highlight
 translation=高亮/取消高亮
 
+[commands.toggle-highlight-color]
+original=Toggle {{color, lowercase}} highlight
+translation=切换{{color, lowercase}}高亮
+
 [commands.toggle-comments]
 original=Toggle comment
 translation=注释/取消注释
@@ -4063,8 +4099,8 @@ original=It will be moved to your Obsidian trash, which is located in the “.tr
 translation=它将被移动到 Obsidian 回收站（即仓库目录中隐藏的 “.trash” 文件夹）里。
 
 [dialogue.label-permanent-delete]
-original=The file will be permanent deleted.
-translation=它将被永久删除。
+original=The file will be permanently deleted.
+translation=该文件将被永久删除。
 
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
@@ -4097,22 +4133,6 @@ translation=当前有 {{count}} 个指向该文件的链接。
 [dialogue.label-delete-file]
 original=Delete file
 translation=删除文件
-
-[dialogue.label-uri-action-title]
-original=Run action from external link?
-translation=要从外部链接运行操作吗？
-
-[dialogue.label-uri-action-intro]
-original=The “{{action}}” action is about to run. Only continue if you trust the link's source.
-translation=即将运行“{{action}}”操作。仅在你信任该链接来源时继续。
-
-[dialogue.label-uri-action-intro-from-plugin]
-original=The “{{source}}” plugin is about to run the “{{action}}” action. Only continue if you trust the link's source.
-translation=“{{source}}”插件即将运行“{{action}}”操作。仅在你信任该链接来源时继续。
-
-[dialogue.label-uri-action-dont-ask-again]
-original=Don't ask again for “{{action}}”
-translation=不再询问“{{action}}”
 
 [dialogue.label-download-attachments]
 original=Download attachments
@@ -4173,14 +4193,6 @@ translation=取消
 [dialogue.button-allow]
 original=Allow
 translation=允许
-
-[dialogue.button-allow-once]
-original=Allow once
-translation=仅允许一次
-
-[dialogue.button-always-allow]
-original=Always allow
-translation=始终允许
 
 [dialogue.button-skip]
 original=Skip
@@ -9657,6 +9669,26 @@ translation=完整包含 (contain)
 [plugins.bases.cards.label-image-aspect-ratio]
 original=Image aspect ratio
 translation=图像宽高比
+
+[plugins.bases.kanban.name]
+original=Kanban
+translation=看板
+
+[plugins.bases.kanban.action-reset-order]
+original=Reset order
+translation=重置顺序
+
+[plugins.bases.kanban.label-column-width]
+original=Column width
+translation=列宽
+
+[plugins.bases.kanban.label-hide-empty-groups]
+original=Hide empty columns
+translation=隐藏空列
+
+[plugins.bases.kanban.label-group-by-required]
+original=Choose a property to group by from the sort menu
+translation=从排序菜单中选择用于分组的属性
 
 [plugins.bases.table.name]
 original=Table
