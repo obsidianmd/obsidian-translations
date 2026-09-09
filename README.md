@@ -136,7 +136,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `it` | Italian | Italiano | ✅ | ✅ | ✅ |
 | `ja` | Japanese | 日本語 | ✅ | ✅ | ✅ |
 | `ka` | Georgian | ქართული | ✅ | | |
-| `kh` | Khmer | ខេមរភាសា | ✅ | | |
+| `km` | Khmer | ខេមរភាសា | ✅ | | |
 | `kn` | Kannada | ಕನ್ನಡ | 🚧 | | |
 | `ko` | Korean | 한국어 | ✅ | ✅ | ✅ |
 | `ky` | Kyrgyz | Кыргызча | 🚧 | | |
