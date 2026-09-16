@@ -2270,6 +2270,10 @@ translation=Nie można załadować wtyczki {{plugin}} v{{version}}. Zgłoszono, 
 original=Failed to open “{{filepath}}”
 translation=Nie udało się otworzyć “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Nie udało się wyeksportować „{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Wystąpił błąd podczas zamykania widoku „{{name}}”
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Witaj
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=To jest twój nowy *sejf*.\n\nZapisz coś, [[stwórz łącze]] lub wypróbuj [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nKiedy będziesz gotowy, usuń tę notatkę i dostosuj sejf do własnych potrzeb.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=To jest twój nowy *sejf*.\n\nZapisz coś, [[stwórz łącze]] lub wypróbuj [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nKiedy będziesz gotowy, usuń tę notatkę i dostosuj sejf do własnych potrzeb.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Przywróć
 [interface.window.close-window]
 original=Close window
 translation=Zamknij
-
-[interface.window.go-back]
-original=Go back
-translation=Wstecz
-
-[interface.window.go-forward]
-original=Go forward
-translation=Naprzód
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Zmień sejf...
 [commands.open-vault]
 original=Open vault...
 translation=Otwórz sejf...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Otwórz plik spoza skarbca...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Scalanie notatek nie powiodło się: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Ten plik lub folder nie istnieje: “{{path}}”.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian nie może otwierać plików „.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Nagłówek nie może być pusty
@@ -4333,6 +4337,10 @@ translation=Nowe okno
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Okno szybkiego wyboru...
+
+[menu-items.open-file]
+original=Open File...
+translation=Otwórz plik...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Przypięte polecenia
 original=Format converter
 translation=Konwerter formatowania
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Dostosuj format Markdown z innych aplikacji do formatu Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Otwórz konwerter formatowania
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Napraw tagi z aplikacji Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Zamienia “#tag” i “#[[tag]]” na “[[tag]]”.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Napraw wyróżnienia z aplikacji Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Zamienia “^^highlight^^” na “==highlight==”.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Napraw listę zadań z aplikacji Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Zamienia “{{[[TODO]]}}” na “[ ]”.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Napraw wyróżnienia z aplikacji Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Zamienia “::highlight::” na “==highlight==”.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Napraw łącza systemu Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Zamienia łącza “[[UID]]” na pełne “[[UID File Name]]”.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Popraw łącza systemu Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Zamienia łącza “[[UID]]” i poprawia na “[[UID File Name|File Name]]”.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Przenoszenie metadanych
@@ -6013,10 +5965,6 @@ translation=Przetworzone pliki
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Zmodyfikowane pliki
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Całkowita liczba zmian
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Nie znaleziono sejfu.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nie można znaleźć sejfu dla adresu URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Obsługiwane pliki

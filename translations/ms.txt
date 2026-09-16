@@ -2270,6 +2270,10 @@ translation=Tidak dapat memuatkan plugin {{plugin}} v{{version}}. Versi ini tela
 original=Failed to open “{{filepath}}”
 translation=Gagal membuka “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Gagal mengeksport “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Paparan “{{name}}” menghadapi ralat semasa ditutup
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Selamat datang
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Ini ialah *peti nota* baharu anda.\n\nCatat sesuatu, [[cipta pautan]], atau cuba [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nApabila anda sudah bersedia, hapus nota ini dan jadikan peti nota ini milik anda.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Ini ialah *peti nota* baharu anda.\n\nCatat sesuatu, [[cipta pautan]], atau cuba [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nApabila anda sudah bersedia, hapus nota ini dan jadikan peti nota ini milik anda.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Kecilkan
 [interface.window.close-window]
 original=Close window
 translation=Tutup
-
-[interface.window.go-back]
-original=Go back
-translation=Ke belakang
-
-[interface.window.go-forward]
-original=Go forward
-translation=Ke hadapan
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Tukar peti nota...
 [commands.open-vault]
 original=Open vault...
 translation=Buka peti nota...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Buka fail dari luar peti nota...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Gagal menggabungkan nota: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Fail atau folder “{{path}}” tidak wujud.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian tidak dapat membuka fail “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Pengepala tidak boleh kosong
@@ -4333,6 +4337,10 @@ translation=Tetingkap Baharu
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Buka dengan Pantas...
+
+[menu-items.open-file]
+original=Open File...
+translation=Buka Fail...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Arahan tersemat
 original=Format converter
 translation=Pengimport format Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Tukar fail Markdown dari aplikasi lain menjadi format Markdown Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Buka pengimport Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Baiki tag Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Menukar "#tag" dan "#[[tag]]" menjadi "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Baiki teks tumpu Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Menukar "^^tumpuan^^" menjadi "==tumpuan==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Tukar TODO Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Menukar "{{[[TODO]]}}" menjadi "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Baiki teks tumpu Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Menukar "::tumpuan::" menjadi "==tumpuan==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Baiki pautan Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Membaiki pautan "[[UID]]" menjadi pautan dengan nama penuh "[[UID Nama Fail]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Perkemas pautan Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Membaiki pautan "[[UID]]" dan perkemaskannya menjadi "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migrasi frontmatter
@@ -6013,10 +5965,6 @@ translation=Fail yang diproses
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Fail yang diubah suai
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Jumlah penggantian
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Peti nota tidak ditemui.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Tidak dapat mencari peti nota untuk URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Fail yang disokong

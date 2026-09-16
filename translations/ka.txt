@@ -2270,6 +2270,10 @@ translation=ვერ ჩაიტვირთა პლაგინი {{plugin
 original=Failed to open “{{filepath}}”
 translation=ფაილის “{{filepath}}” გახსნა ვერ მოხერხდა
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=„{{filename}}“-ის ექსპორტი ვერ მოხერხდა
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=„{{name}}“ ხედის დახურვისას შეცდომა მოხდა
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=მოგესალმებით
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=ეს არის თქვენი ახალი *საცავი*.\n\nჩაიწერეთ რაიმე, [[შექმენით ბმული]], ან სცადეთ [იმპორტი](https://help.obsidian.md/Plugins/Importer)!\n\nროცა მზად იქნებით, წაშალეთ ეს ჩანაწერი და მოირგეთ საცავი თქვენს გემოვნებას.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=ეს არის თქვენი ახალი *საცავი*.\n\nჩაიწერეთ რაიმე, [[შექმენით ბმული]], ან სცადეთ [იმპორტი](obsidian://show-plugin?id=obsidian-importer)!\n\nროცა მზად იქნებით, წაშალეთ ეს ჩანაწერი და მოირგეთ საცავი თქვენს გემოვნებას.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=ზომის აღდგენა
 [interface.window.close-window]
 original=Close window
 translation=ფანჯრის დახურვა
-
-[interface.window.go-back]
-original=Go back
-translation=უკან გადასვლა
-
-[interface.window.go-forward]
-original=Go forward
-translation=წინ გადასვლა
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=საცავის შეცვლა...
 [commands.open-vault]
 original=Open vault...
 translation=საცავის გახსნა...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=ფაილის გახსნა საცავის გარედან...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=ჩანაწერების გაერთიანება 
 original=The file or folder “{{path}}” does not exist.
 translation=ფაილი ან საქაღალდე “{{path}}” არ არსებობს.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian ვერ ხსნის „.{{extension}}“ ფაილებს.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=სათაური არ შეიძლება იყოს ცარიელი
@@ -4333,6 +4337,10 @@ translation=ახალი ფანჯარა
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=სწრაფი გახსნა...
+
+[menu-items.open-file]
+original=Open File...
+translation=ფაილის გახსნა...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=მიმაგრებული ბრძანებები
 original=Format converter
 translation=ფორმატის კონვერტერი
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Markdown-ის კონვერტაცია სხვა აპლიკაციებიდან Obsidian-ის ფორმატში.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=ფორმატის კონვერტერის გახსნა
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research-ის ტეგების შემკეთებელი
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=გარდაქმნის “#tag” და “#[[tag]]”-ს “[[tag]]”-ად.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research-ის მონიშვნების (Highlight) შემკეთებელი
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=გარდაქმნის “^^highlight^^”-ს “==highlight==”-ად.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research-ის TODO კონვერტერი
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=გარდაქმნის “{{[[TODO]]}}”-ს “[ ]”-ად.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear-ის მონიშვნების შემკეთებელი
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=გარდაქმნის “::highlight::”-ს “==highlight==”-ად.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten ბმულების შემკეთებელი
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=ასწორებს “[[UID]]” ბმულებს სრულ “[[UID File Name]]” ფორმატში.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten ბმულების გალამაზება
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=ასწორებს “[[UID]]” ბმულებს და ალამაზებს მათ “[[UID File Name|File Name]]” ფორმატში.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter-ის მიგრაცია
@@ -6013,10 +5965,6 @@ translation=დამუშავებული ფაილები
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=შეცვლილი ფაილები
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=სულ ჩანაცვლება
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=საცავი ვერ მოიძებნა.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL-ისთვის {{url}} საცავის პოვნა ვერ მოხერხდა
+
+[main.supported-files]
+original=Supported files
+translation=მხარდაჭერილი ფაილები

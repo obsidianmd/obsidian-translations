@@ -2270,6 +2270,10 @@ translation=Không thể tải plugin {{plugin}} v{{version}}. Phiên bản này
 original=Failed to open “{{filepath}}”
 translation=Không thể mở “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Không thể xuất “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Chế độ xem “{{name}}” gặp lỗi khi đóng
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Chào mừng
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Đây là *khối lưu trữ* mới của bạn.\n\nGhi chú điều gì đó, [[tạo một liên kết]], hoặc thử [Trình nhập](https://help.obsidian.md/Plugins/Importer)!\n\nKhi bạn đã sẵn sàng, xóa ghi chú này và biến kho lưu trữ này thành của riêng bạn.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Đây là *khối lưu trữ* mới của bạn.\n\nGhi chú điều gì đó, [[tạo một liên kết]], hoặc thử [Trình nhập](obsidian://show-plugin?id=obsidian-importer)!\n\nKhi bạn đã sẵn sàng, xóa ghi chú này và biến kho lưu trữ này thành của riêng bạn.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Khôi phục xuống
 [interface.window.close-window]
 original=Close window
 translation=Đóng cửa sổ
-
-[interface.window.go-back]
-original=Go back
-translation=Quay lại
-
-[interface.window.go-forward]
-original=Go forward
-translation=Tiến lên
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Đổi kho...
 [commands.open-vault]
 original=Open vault...
 translation=Mở kho...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Mở tệp từ bên ngoài kho...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Không thể hợp nhất ghi chú: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Tệp hoặc thư mục “{{path}}” không tồn tại.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian không thể mở tệp “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Tiêu đề không được để trống
@@ -4333,6 +4337,10 @@ translation=Cửa Sổ Mới
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Mở Chuyển Đổi Nhanh...
+
+[menu-items.open-file]
+original=Open File...
+translation=Mở tệp...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Lệnh được ghim
 original=Format converter
 translation=Bộ chuyển đổi định dạng Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Chuyển đổi định dạng Markdown từ các ứng dụng khác sang định dạng Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Mở trình chuyển đổi Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Sửa lỗi thẻ Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Chuyển "#tag" và "#[[tag]]" thành "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Sửa lỗi tô sáng Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Chuyển "^^highlight^^" thành "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Chuyển đổi ToDo Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Chuyển "{{[[TODO]]}}" thành "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Sửa lỗi tô sáng Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Chuyển "::highlight::" thành "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Sửa lỗi liên kết Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Sửa liên kết "[[UID]]" thành "[[UID File Name]]" đầy đủ.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Sửa lỗi liên kết Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Sửa liên kết "[[UID]]" và làm đẹp chúng "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Di chuyển siêu dữ liệu đầu tệp
@@ -6013,10 +5965,6 @@ translation=Tệp đã xử lý
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Tệp đã sửa đổi
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Tổng số sửa đổi
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Không tìm thấy kho.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Không thể tìm thấy kho cho URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Các tệp được hỗ trợ

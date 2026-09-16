@@ -2270,6 +2270,10 @@ translation=Neizdevās ielādēt spraudni {{plugin}} v{{version}}. Ir ziņots, k
 original=Failed to open “{{filepath}}”
 translation=Neizdevās atvērt failu "{{filepath}}"
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Neizdevās eksportēt “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Aizverot skatu “{{name}}”, radās kļūda
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Laipni lūdzam
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Šī ir jūsu jaunā *krātuve*.\n\nUzrakstiet piezīmi, [[izveidojiet saiti]] vai izmēģiniet [Importētāju](https://help.obsidian.md/Plugins/Importer)!\n\nKad būsiet gatavs, izdzēsiet šo piezīmi un padariet krātuvi par savu.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Šī ir jūsu jaunā *glabātuve*.\n\nUzrakstiet piezīmi, [[izveidojiet saiti]] vai izmēģiniet [Importētāju](obsidian://show-plugin?id=obsidian-importer)!\n\nKad būsiet gatavs, izdzēsiet šo piezīmi un padariet glabātuvi par savu.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Atjaunot
 [interface.window.close-window]
 original=Close window
 translation=Aizvērt
-
-[interface.window.go-back]
-original=Go back
-translation=Atpakaļ
-
-[interface.window.go-forward]
-original=Go forward
-translation=Uz priekšu
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Mainīt glabātuvi...
 [commands.open-vault]
 original=Open vault...
 translation=Atvērt glabātuvi...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Atvērt failu ārpus glabātuves...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Neizdevās apvienot piezīmes: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Fails vai mape “{{path}}” neeksistē.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian nevar atvērt “.{{extension}}” failus.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Virsraksts nevar būt tukšs
@@ -4333,6 +4337,10 @@ translation=Jauns logs
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Ātrā atvēršana...
+
+[menu-items.open-file]
+original=Open File...
+translation=Atvērt failu...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Piespraustās komandas
 original=Format converter
 translation=Markdown formāta importētājs
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Konvertēt Markdown no citām lietotnēm uz Obsidian formātu.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Atvērt Markdown importētāju
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research birku labotājs
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Konvertē "#tag" un "#[[tag]]" uz "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research iezīmējumu labotājs
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Konvertē "^^highlight^^" uz "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO pārveidotājs
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Konvertē "{{[[TODO]]}}" uz "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear iezīmējumu labotājs
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Konvertē "::highlight::" uz "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten saišu labotājs
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Labojiet "[[UID]]" saites uz pilnu formu "[[UID Faila nosaukums]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten saišu uzlabošanas rīks
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Labojiet "[[UID]]" saites un uzlabojiet tās uz "[[UID Faila nosaukums|Faila nosaukums]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Sākotnējo metadatu migrēšana
@@ -6013,10 +5965,6 @@ translation=Apstrādātie faili
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Modificētie faili
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Kopējās nomaiņas
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Glabātuve nav atrasta.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Neizdevās atrast glabātuvi URL adresei {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Atbalstītie faili

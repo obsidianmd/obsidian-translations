@@ -2270,6 +2270,10 @@ translation=Ní féidir breiseán {{plugin}} v{{version}} a lódáil. Tuairiscí
 original=Failed to open “{{filepath}}”
 translation=Theip ar oscailt “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Theip ar easpórtáil “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Tharla earráid san amharc “{{name}}” agus é á dhúnadh
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Fáilte
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Seo d'* vault* nua.\n\nDéan nóta ar rud éigin, [[cruthaigh nasc]], nó bain triail as [an Allmhaireoir] (https://help.obsidian.md/Plugins/Importer)!\n\nNuair a bheidh tú réidh, scrios an nóta seo agus déan an clúdach duit féin.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Seo é do *bhoghta* nua.\n\nDéan nóta de rud éigin, [[cruthaigh nasc]], nó bain triail as [an tAllmhaireoir](obsidian://show-plugin?id=obsidian-importer)!\n\nNuair a bheidh tú réidh, scrios an nóta seo agus déan do chuid féin den bhoghta.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Athchóirigh síos
 [interface.window.close-window]
 original=Close window
 translation=Dún an fhuinneog
-
-[interface.window.go-back]
-original=Go back
-translation=Téigh ar ais
-
-[interface.window.go-forward]
-original=Go forward
-translation=Téigh ar aghaidh
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Athraigh boghta...
 [commands.open-vault]
 original=Open vault...
 translation=Oscail boghta...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Oscail comhad ón taobh amuigh den bhoghta...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Theip ar nótaí a chumasc: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Níl an comhad nó an fillteán “{{path}}” ann.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Ní féidir le Obsidian comhaid “.{{extension}}” a oscailt.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Ní féidir ceannteideal a bheith folamh
@@ -4333,6 +4337,10 @@ translation=Fuinneog Nua
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Oscail go tapa...
+
+[menu-items.open-file]
+original=Open File...
+translation=Oscail Comhad...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Orduithe brionnaithe
 original=Format converter
 translation=Tiontaire formáid
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Tiontaigh Markdown ó aipeanna eile go formáid Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Tiontaire formáid oscail
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Socraitheoir clibeanna Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Athraíonn “#tag” agus “# [[tag]]” go “[[tag]]”.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Socraitheoir aibhsithe Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Athraíonn sé “^^highlight^^” go “==Highlight ==”.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Tiontaire TODO Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Athraíonn sé “{{[[TODO]]}}” go “[ ]”.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Socraitheoir aibhsithe béar
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Tiontaíonn “::highlight::” go “==Highlight ==”.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Socraitheoir nasc lámhaire
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Socraíonn nasc “[[UID]]” chuig “[[Ainm Comhaid UID]]” iomlán.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Áilleoir nasc Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Socraíonn naisc “[[UID]]” agus déanann sé iad a áilleamh freisin “[[Ainm Comhaid UID |Ainm Comhaid]]”.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Imirce Frontmatter
@@ -6013,10 +5965,6 @@ translation=comhaid próiseáilte
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Comhaid modhnaithe
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Athsholáthairtí iomlána
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Níor aimsíodh an boghta.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Ní féidir boghta a aimsiú don URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Comhaid a dtacaítear leo

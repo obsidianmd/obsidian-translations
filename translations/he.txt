@@ -2270,6 +2270,10 @@ translation=לא ניתן לטעון את התוסף {{plugin}} בגרסה {{ver
 original=Failed to open “{{filepath}}”
 translation=פתיחת „{{filepath}}” נכשלה
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=ייצוא הקובץ „{{filename}}” נכשל
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=אירעה שגיאה בעת סגירת התצוגה „{{name}}”
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=ברוך הבא
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=זו ה*כספת* החדשה שלך.\n\nרשום משהו, [[צור קישור]], או נסה את [היבואן](https://help.obsidian.md/Plugins/Importer)!\n\nכשתהיה מוכן, מחק את ההערה הזו והפוך את הכספת לשלך.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=זו ה*כספת* החדשה שלך.\n\nרשום משהו, [[צור קישור]], או נסה את [היבואן](obsidian://show-plugin?id=obsidian-importer)!\n\nכשתהיה מוכן, מחק את ההערה הזו והפוך את הכספת לשלך.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=שחזר למטה
 [interface.window.close-window]
 original=Close window
 translation=סגור חלון
-
-[interface.window.go-back]
-original=Go back
-translation=עבור אחורה
-
-[interface.window.go-forward]
-original=Go forward
-translation=עבור קדימה
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=שנה כספת...
 [commands.open-vault]
 original=Open vault...
 translation=פתח כספת...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=פתיחת קובץ מחוץ לכספת...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=מיזוג הערות נכשל: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=הקובץ או התיקייה "{{path}}" אינם קיימים.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian לא יכול לפתוח קובצי „.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=כותרת לא יכולה להיות ריקה
@@ -4333,6 +4337,10 @@ translation=חלון חדש
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=פתיחה מהירה...
+
+[menu-items.open-file]
+original=Open File...
+translation=פתיחת קובץ...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=פקודות מוצמדות
 original=Format converter
 translation=ממיר פורמטים
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=המרת Markdown מאפליקציות אחרות לפורמט Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=פתח את ממיר הפורמטים
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=מתקן תגיות Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=ממיר "#tag" ו"#[[tag]]" ל"[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=מתקן הדגשה של Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=ממיר "^^highlight^^" ל"==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=ממיר TODO של Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=ממיר את "{{[[TODO]]}}" ל"[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=מתקן הדגשות של Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=ממיר את "::highlight::" ל"==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=מתקן קישור Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=מתקן את קישורי "[[UID]]" ל"[[שם קובץ UID]]" המלא.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=מייפה קישורים של Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=מתקן קישורי "[[UID]]" וגם מייפה אותם "[[שם קובץ UID|שם קובץ]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=העברת מטא־נתונים בתחילת הקובץ
@@ -6013,10 +5965,6 @@ translation=קבצים מעובדים
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=קבצים ששונו
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=סך כל ההחלפות
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=הכספת לא נמצאה.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=לא ניתן למצוא כספת עבור כתובת ה־URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=קבצים נתמכים

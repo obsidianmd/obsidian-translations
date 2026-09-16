@@ -2270,6 +2270,10 @@ translation=Δεν είναι δυνατή η φόρτωση του πρόσθε
 original=Failed to open “{{filepath}}”
 translation=Αποτυχία ανοίγματος του «{{filepath}}»
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Αποτυχία εξαγωγής του «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Παρουσιάστηκε σφάλμα κατά το κλείσιμο της προβολής «{{name}}»
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Καλώς ορίσατε
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Αυτό είναι το νέο σας *θησαυροφυλάκιο*.\n\nΚρατήστε μια σημείωση για κάτι, [[δημιουργήστε έναν σύνδεσμο]], ή δοκιμάστε [το Importer](https://help.obsidian.md/Plugins/Importer)!\n\nΌταν είστε έτοιμοι, διαγράψτε αυτή τη σημείωση και κάντε το θησαυροφυλάκιο δικό σας.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Αυτό είναι το νέο σας *θησαυροφυλάκιο*.\n\nΚρατήστε μια σημείωση για κάτι, [[δημιουργήστε έναν σύνδεσμο]], ή δοκιμάστε [το Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nΌταν είστε έτοιμοι, διαγράψτε αυτή τη σημείωση και κάντε το θησαυροφυλάκιο δικό σας.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Επαναφορά κάτω
 [interface.window.close-window]
 original=Close window
 translation=Κλείσιμο παραθύρου
-
-[interface.window.go-back]
-original=Go back
-translation=Πίσω
-
-[interface.window.go-forward]
-original=Go forward
-translation=Μπροστά
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Αλλαγή θησαυροφυλακίου...
 [commands.open-vault]
 original=Open vault...
 translation=Άνοιγμα θησαυροφυλακίου...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Άνοιγμα αρχείου εκτός του θησαυροφυλακίου...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Αποτυχία συγχώνευσης σημειώσεων: {{mess
 original=The file or folder “{{path}}” does not exist.
 translation=Το αρχείο ή ο φάκελος «{{path}}» δεν υπάρχει.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Το Obsidian δεν μπορεί να ανοίξει αρχεία «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Η επικεφαλίδα δεν μπορεί να είναι κενή
@@ -4333,6 +4337,10 @@ translation=Νέο Παράθυρο
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Γρήγορο Άνοιγμα...
+
+[menu-items.open-file]
+original=Open File...
+translation=Άνοιγμα αρχείου...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Καρφιτσωμένες εντολές
 original=Format converter
 translation=Εισαγωγέας μορφής Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Μετατροπή Markdown από άλλες εφαρμογής σε μορφή Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Άνοιγμα εισαγωγέα
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Περιήγηση Ερευνητή για επισκευή ετικετών
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Μετατρέπει "#tag" και "#[[tag]]" σε "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Περιήγηση Ερευνητή για επισκευή υπογράμμισης
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Μετατρέπει "^^highlight^^" σε "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Περιήγηση Ερευνητή για μετατροπή TODO
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Μετατρέπει "{{[[TODO]]}}" σε "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear επισκευαστής υπογράμμισης
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Μετατρέπει "::highlight::" σε "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten επισκευαστής συνδέσμων
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Φτιάχνει "[[UID]]" συνδέσμους σε πλήρη "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten καλλωπιστής συνδέσμων
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Φτιάχνει "[[UID]]" συνδέσμους και επίσης τους καλλωπίζει "[[UID Όνομα Αρχείου|Όνομα Αρχείου]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Μεταφορά μεταδεδομένων αρχής
@@ -6013,10 +5965,6 @@ translation=Επεξεργασμένα αρχεία
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Τροποποιημένα αρχεία
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Συνολικές αντικαταστάσεις
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Το θησαυροφυλάκιο δεν βρέθηκε.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Δεν ήταν δυνατή η εύρεση θησαυροφυλακίου για τη διεύθυνση URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Υποστηριζόμενα αρχεία

@@ -2270,6 +2270,10 @@ translation=Det gick inte att läsa in tillägget {{plugin}} v{{version}}. Den h
 original=Failed to open “{{filepath}}”
 translation=Misslyckades med att öppna “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Det gick inte att exportera ”{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Ett fel uppstod när vyn ”{{name}}” stängdes
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Välkommen
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Detta är ditt nya *valv*.\n\nGör en anteckning, [[skapa en länk]], eller prova [Importören](https://help.obsidian.md/Plugins/Importer)!\n\nNär du är redo, radera denna anteckning och gör valvet till ditt eget.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Detta är ditt nya *valv*.\n\nGör en anteckning, [[skapa en länk]], eller prova [Importören](obsidian://show-plugin?id=obsidian-importer)!\n\nNär du är redo, radera denna anteckning och gör valvet till ditt eget.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Återställ ner
 [interface.window.close-window]
 original=Close window
 translation=Stäng fönster
-
-[interface.window.go-back]
-original=Go back
-translation=Gå tillbaka
-
-[interface.window.go-forward]
-original=Go forward
-translation=Gå framåt
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Byt valv...
 [commands.open-vault]
 original=Open vault...
 translation=Öppna valv...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Öppna fil utanför valvet...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Misslyckades med att slå samman anteckningar: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Filen eller mappen “{{path}}” finns inte.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian kan inte öppna filer av typen ”.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Rubrik kan inte vara tom
@@ -4333,6 +4337,10 @@ translation=Nytt fönster
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Öppna snabbt...
+
+[menu-items.open-file]
+original=Open File...
+translation=Öppna fil...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Fästa kommandon
 original=Format converter
 translation=Markdown-formatimportör
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Konvertera Markdown från andra appar till Obsidian-format.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Öppna Markdown-importör
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research taggfixare
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Konverterar "#tag" och "#[[tag]]" till "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research markeringsfixare
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Konverterar "^^highlight^^" till "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO-konverterare
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Konverterar "{{[[TODO]]}}" till "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear markeringsfixare
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Konverterar "::highlight::" till "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten länkfixare
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Fixar "[[UID]]" länkar till full "[[UID Filnamn]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten länkförskönare
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Fixar "[[UID]]" länkar och förskönar dem "[[UID Filnamn|Filnamn]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter-migrering
@@ -6013,10 +5965,6 @@ translation=Bearbetade filer
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Modifierade filer
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Totala ersättningar
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Valvet hittades inte.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Det gick inte att hitta ett valv för URL:en {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Filer som stöds

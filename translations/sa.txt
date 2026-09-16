@@ -2270,6 +2270,10 @@ translation={{plugin}} v{{version}} प्लगिन् लोड् कर्
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” उद्घाटने विफलता
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” निर्यातयितुं विफलम्
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=“{{name}}” दृश्यं पिधानसमये त्रुटिं प्राप्तवत्
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=स्वागतम्
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=एषः भवतः नूतनः **कोशः** अस्ति।\n\nकस्यचित् वस्तुनः टिप्पणीं कुर्वन्तु, [[सम्बन्धं सृजन्तु]], अथवा [the Importer](https://help.obsidian.md/Plugins/Importer) प्रयतन्ताम्!\n\nयदा भवन्तः सज्जः भवन्ति, तदा एतां टिप्पणीं लोपयन्तु तथा कोशं स्वकीयं कुर्वन्तु।
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=एषः भवतः नूतनः **कोशः** अस्ति।\n\nकस्यचित् वस्तुनः टिप्पणीं कुर्वन्तु, [[सम्बन्धं सृजन्तु]], अथवा [the Importer](obsidian://show-plugin?id=obsidian-importer) प्रयतन्ताम्!\n\nयदा भवन्तः सज्जः भवन्ति, तदा एतां टिप्पणीं लोपयन्तु तथा कोशं स्वकीयं कुर्वन्तु।
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=अधः पुनः स्थापयतु
 [interface.window.close-window]
 original=Close window
 translation=गवाक्षम् पिधाय
-
-[interface.window.go-back]
-original=Go back
-translation=पृष्ठतः गच्छतु
-
-[interface.window.go-forward]
-original=Go forward
-translation=अग्रे गच्छतु
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=तिजोरी परिवर्तयतु...
 [commands.open-vault]
 original=Open vault...
 translation=तिजोरी उद्घाटयन्तु...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=तिजोर्याः बहिः सञ्चिकाम् उद्घाटयतु...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=टिप्पणीनां विलीनीकरणे वि
 original=The file or folder “{{path}}” does not exist.
 translation="{{path}}" सञ्चिका वा सञ्चयः नास्ति।
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian “.{{extension}}” सञ्चिकाः उद्घाटयितुं न शक्नोति।
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=शीर्षकं रिक्तं भवितुं न शक्नोति
@@ -4333,6 +4337,10 @@ translation=नूतन गवाक्षः
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=शीघ्रं उद्घाटयतु...
+
+[menu-items.open-file]
+original=Open File...
+translation=सञ्चिकाम् उद्घाटयतु...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Pin-कृताः आदेशाः
 original=Format converter
 translation=प्रारूप-परिवर्तकः
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=अन्य-अनुप्रयोगात् Markdown इत्येतत् Obsidian प्रारूपे परिवर्तयन्तु।
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=प्रारूप-परिवर्तकं उद्घाटयन्तु
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research tag fixer
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converts "#tag" and "#[[tag]]" to "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research highlight fixer
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converts "^^highlight^^" to "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO converter
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converts "{{[[TODO]]}}" to "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear highlight fixer
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Converts "::highlight::" to "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten link fixer
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Fixes "[[UID]]" links to full "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten link beautifier
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Fixes "[[UID]]" links and also beautify them "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter migration
@@ -6013,10 +5965,6 @@ translation=संसाधिताः सञ्चिकाः
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=परिवर्तिताः सञ्चिकाः
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=कुल प्रतिस्थापनम्
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=तिजोरी न प्राप्ता।
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL कृते तिजोरीं अन्वेष्टुं न शक्यते
+
+[main.supported-files]
+original=Supported files
+translation=समर्थिताः सञ्चिकाः

@@ -2270,6 +2270,10 @@ translation={{plugin}} අතිරේකයේ v{{version}} අනුවාද�
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” විවෘත කිරීම අසාර්ථක විය
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” නිර්යාත කිරීමට අසමත් විය
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=“{{name}}” දසුන වැසීමේදී දෝෂයක් ඇති විය
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=සාදරයෙන් පිළිගනිමු
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=මෙය ඔබගේ නව *vault* එකයි.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=මෙය ඔබගේ නව *vault* එකයි.\n\nයමක් ගැන සටහනක් තබන්න, [[සබැඳියක් සාදන්න]], නැතහොත් [Importer](obsidian://show-plugin?id=obsidian-importer) උත්සාහ කරන්න!\n\nඔබ සූදානම් වූ විට, මෙම සටහන මකා vault එක ඔබේම කරගන්න.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=පහළට ප්‍රතිසාධනය කරන්න
 [interface.window.close-window]
 original=Close window
 translation=කවුළුව වසන්න
-
-[interface.window.go-back]
-original=Go back
-translation=ආපසු යන්න
-
-[interface.window.go-forward]
-original=Go forward
-translation=ඉදිරියට යන්න
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Vault එක වෙනස් කරන්න...
 [commands.open-vault]
 original=Open vault...
 translation=Vault එක විවෘත කරන්න...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=vault එකෙන් පිටත ගොනුවක් විවෘත කරන්න...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=සටහන් ඒකාබද්ධ කිරීම අසාර�
 original=The file or folder “{{path}}” does not exist.
 translation=“{{path}}” ගොනුව හෝ ෆෝල්ඩරය නොපවතී.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian හට “.{{extension}}” ගොනු විවෘත කළ නොහැක.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=ශීර්ෂය හිස් විය නොහැක
@@ -4333,6 +4337,10 @@ translation=නව කවුළුවක්
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=ඉක්මනින් විවෘත කරන්න...
+
+[menu-items.open-file]
+original=Open File...
+translation=ගොනුව විවෘත කරන්න...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=පින් කළ විධාන
 original=Format converter
 translation=Markdown ආකෘතිය ආනයනය කරන්නා
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=වෙනත් යෙදුම්වලින් Markdown, Obsidian ආකෘතියට පරිවර්තනය කරන්න.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdown ආනයනකරු විවෘත කරන්න
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research ටැග් නිවැරදිකරනය
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=#tag සහ #[[tag]] යන්න [[tag]] බවට පරිවර්තනය කරයි.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research උද්දීපන (highlight) නිවැරදිකරනය
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" "==highlight==" බවට පරිවර්තනය කරයි.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO පරිවර්තකය
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" "[ ]" බවට පරිවර්තනය කරයි.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear උද්දීපන (highlight) නිවැරදිකරනය
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::highlight::" "==highlight==" බවට පරිවර්තනය කරයි.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten සබැඳි නිවැරදිකරනය
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" සබැඳි සම්පූර්ණ "[[UID File Name]]" වෙත නිවැරදි කරයි.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten සබැඳි අලංකාරකය (beautifier)
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" සබැඳි නිවැරදි කරන අතර ඒවා "[[UID File Name|File Name]]" ලෙස අලංකාර කරයි.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter සංක්‍රමණය
@@ -6013,10 +5965,6 @@ translation=සැකසූ ගොනු
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=වෙනස් කළ ගොනු
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=මුළු ප්‍රතිස්ථාපන
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Vault හමු නොවීය.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL එක සඳහා vault එකක් සොයා ගැනීමට නොහැක
+
+[main.supported-files]
+original=Supported files
+translation=සහාය දක්වන ගොනු

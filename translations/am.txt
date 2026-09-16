@@ -2270,6 +2270,10 @@ translation=ተሰኪ {{plugin}} v{{version}} መጫን አልተቻለም። �
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” መክፈት አልተሳካም
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}”ን ወደ ውጭ መላክ አልተሳካም
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=የ“{{name}}” እይታ ሲዘጋ ስህተት አጋጠመው
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=እንኳን ደህና መጡ
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=ይህ አዲሱ *ቮልት*ዎ ነው።\n\nአንድ ነገር ማስታወሻ ያድርጉ፣ [[አገናኝ ፍጠር]]፣ ወይም [Importer](https://help.obsidian.md/Plugins/Importer)ን ይሞክሩ!\n\nዝግጁ ሲሆኑ፣ ይህን ማስታወሻ ሰርዙ እና ቮልትዎን የእርስዎ ያድርጉት።
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=ይህ አዲሱ *ቮልት*ዎ ነው።\n\nአንድ ነገር ማስታወሻ ያድርጉ፣ [[አገናኝ ፍጠር]]፣ ወይም [Importer](obsidian://show-plugin?id=obsidian-importer)ን ይሞክሩ!\n\nዝግጁ ሲሆኑ፣ ይህን ማስታወሻ ሰርዙ እና ቮልትዎን የእርስዎ ያድርጉት።
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=ወደ ታች እነበረበት መልስ
 [interface.window.close-window]
 original=Close window
 translation=መስኮት ዝጋ
-
-[interface.window.go-back]
-original=Go back
-translation=ተመለስ
-
-[interface.window.go-forward]
-original=Go forward
-translation=ወደፊት ሂድ
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=ቮልት ቀይር...
 [commands.open-vault]
 original=Open vault...
 translation=ቮልት ክፈት...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=ከቮልቱ ውጭ ፋይል ክፈት...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=ማስታወሻዎችን ማቀላቀል አልተሳካም፦ {{mes
 original=The file or folder “{{path}}” does not exist.
 translation=ፋይሉ ወይም አቃፊው “{{path}}” አልተገኘም።
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian የ“.{{extension}}” ፋይሎችን መክፈት አይችልም።
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=ርዕስ ባዶ ሊሆን አይችልም
@@ -4333,6 +4337,10 @@ translation=አዲስ መስኮት
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=በፍጥነት ክፈት...
+
+[menu-items.open-file]
+original=Open File...
+translation=ፋይል ክፈት...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=የተሰኩ ትዕዛዞች
 original=Format converter
 translation=ምልክት ማድረጊያ ቅርጸት አስመጪ
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Markdownን ከሌሎች መተግበሪያዎች ወደ Obsidian ቅርጸት ይለውጡ።
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdown አስመጪን ይክፈቱ
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=የሮም ምርምር መለያ መጠገኛ
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#መለያ" እና "#[[መለያ]]"ን ወደ "[[መለያ]]" ይለውጣል።
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=የሮም ምርምር ማድመቂያ አስተካክል።
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^ድምቀት^^" ወደ "==ድምቀት==" ይለውጣል።
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=የሮም ምርምር TODO መቀየሪያ
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" ወደ "[ ]" ይለውጣል።
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=የድብ ማድመቂያ አራሚ
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation= "::ማድመቅ::" ወደ "==ማድመቅ=="ይቀይራል።
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten አገናኝ አስተካክል
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" ወደ ሙሉ "[[UID ፋይል ስም]]" አገናኞችን ያስተካክላል።
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten አገናኝ ማስዋቢያ
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" አገናኞችን ያስተካክላል እና "[[UID የፋይል ስም|የፋይል ስም]]" ያስውበቸዋልም።
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=የፊት ጉዳይ ማዛወር
@@ -6013,10 +5965,6 @@ translation=የተስተካከሉ ፋይሎች
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=የተሻሻሉ ፋይሎች
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=ጠቅላላ ተተኪዎች
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=ቮልት አልተገኘም።
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=ለURL {{url}} ቮልት ማግኘት አልተቻለም
+
+[main.supported-files]
+original=Supported files
+translation=የሚደገፉ ፋይሎች

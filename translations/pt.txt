@@ -2270,6 +2270,10 @@ translation=Não foi possível carregar o plugin {{plugin}} v{{version}}. Foram 
 original=Failed to open “{{filepath}}”
 translation=Falha ao abrir “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Falha ao exportar “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Ocorreu um erro ao fechar a vista “{{name}}”
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Bem-vindo
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Este é o seu novo *cofre*.\n\nTome nota de algo, [[crie uma ligação]] ou experimente [o Importer](https://help.obsidian.md/Plugins/Importer)!\n\nQuando estiver pronto, elimine esta nota e personalize o cofre à sua maneira.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Este é o seu novo *cofre*.\n\nTome nota de algo, [[crie uma ligação]] ou experimente [o Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nQuando estiver pronto, elimine esta nota e personalize o cofre à sua maneira.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Diminuir
 [interface.window.close-window]
 original=Close window
 translation=Fechar
-
-[interface.window.go-back]
-original=Go back
-translation=Voltar
-
-[interface.window.go-forward]
-original=Go forward
-translation=Avançar
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Alterar cofre...
 [commands.open-vault]
 original=Open vault...
 translation=Abrir cofre...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Abrir ficheiro de fora do cofre...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Falha ao mesclar notas: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=O ficheiro ou pasta “{{path}}” não existe.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=O Obsidian não consegue abrir ficheiros “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=O cabeçalho não pode estar vazio
@@ -4333,6 +4337,10 @@ translation=Nova janela
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Abrir Rapidamente...
+
+[menu-items.open-file]
+original=Open File...
+translation=Abrir ficheiro...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Comandos fixados
 original=Format converter
 translation=Importador de formato Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Converter Markdown de outros aplicativos para o formato do Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Importador de Open Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Conversor de tags do Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converte "#tag" e "#[[tag]]" para "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Conversor de destaques do Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converte "^^highlight^^" para "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Conversor de TODO do Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converte "{{[[TODO]]}}" para "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Conversor de destaques do Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Converte "::highlight::" para "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Conversor de links de Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Converte links "[[UID]]" para "[[UID File Name]]" completo.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Embelezador de link de Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Converte links "[[UID]]" e também os embeleza "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migração de metadados iniciais
@@ -6013,10 +5965,6 @@ translation=Ficheiros processados
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Ficheiros modificados
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Substituição total
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Cofre não encontrado.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Não foi possível encontrar um cofre para o URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Ficheiros suportados

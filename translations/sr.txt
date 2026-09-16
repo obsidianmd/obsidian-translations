@@ -2270,6 +2270,10 @@ translation=Није могуће учитати додатак {{plugin}} v{{ve
 original=Failed to open “{{filepath}}”
 translation=Није успело отварање „{{filepath}}“
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Извоз датотеке „{{filename}}“ није успео
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Дошло је до грешке при затварању приказа „{{name}}”
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Добродошлица
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Ово је ваш нови *сеф*.\n\nНапишите нешто, [[креирајте линк]], или пробајте [импортер](https://help.obsidian.md/Plugins/Importer)!\n\nКада будете спремни, избришите ову белешку и учините сеф вашим.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Ово је ваш нови *трезор*.\n\nНапишите нешто, [[креирајте везу]], или пробајте [импортер](obsidian://show-plugin?id=obsidian-importer)!\n\nКада будете спремни, избришите ову белешку и учините трезор својим.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Врати на првобитно
 [interface.window.close-window]
 original=Close window
 translation=Затвори прозор
-
-[interface.window.go-back]
-original=Go back
-translation=Врати се
-
-[interface.window.go-forward]
-original=Go forward
-translation=Иди напред
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Промени трезор...
 [commands.open-vault]
 original=Open vault...
 translation=Отвори трезор...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Отвори датотеку изван трезора...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Неуспешно спајање белешки: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Фајл или фасцикла „{{path}}“ не постоји.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian не може да отвори датотеке типа „.{{extension}}“.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Наслов не може бити празан
@@ -4333,6 +4337,10 @@ translation=Нови прозор
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Отвори брзо...
+
+[menu-items.open-file]
+original=Open File...
+translation=Отвори датотеку...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Прикључене команде
 original=Format converter
 translation=Увозник за Маркдаун формат
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Конвертуј Маркдаун из других апликација у Obsidian формат.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Отвори увозник за Маркдаун
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Исправљач тагова из Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Конвертује „#tag“ и „#[[tag]]“ у „[[tag]]“.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Исправљач истицања из Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Конвертује „^^highlight^^“ у „==highlight==“.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Конвертор TODO листе из Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Конвертује „{{[[TODO]]}}“ у „[ ]“.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Исправљач истицања из Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Конвертује „::highlight::“ у „==highlight==“.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Исправљач линкова из Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Исправља „[[ID]]“ линкове на пуни „[[ID Име фајла]]“.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Улепшавач линкова из Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Исправља „[[ID]]“ линкове и улепшава их „[[ID Име фајла|Име фајла]]“.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Миграција почетних метаподатака
@@ -6013,10 +5965,6 @@ translation=Обрађени фајлови
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Измењени фајлови
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Укупно замена
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Трезор није пронађен.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Није могуће пронаћи трезор за URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Подржане датотеке

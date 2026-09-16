@@ -2270,6 +2270,10 @@ translation=Doplnok {{plugin}} v{{version}} sa nepodarilo načítať. Bolo hlás
 original=Failed to open “{{filepath}}”
 translation=Nepodarilo sa otvoriť “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Nepodarilo sa exportovať „{{filename}}“
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Pri zatváraní zobrazenia „{{name}}“ sa vyskytla chyba
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Vitajte
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Toto je váš nový *trezor*.\n\nVytvorte si poznámku o niečom, [[vytvorte odkaz]], alebo skúste [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nAk ste pripravený odstráňte túto poznámku a vytvorte si vlastný trezor.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Toto je váš nový *trezor*.\n\nVytvorte si poznámku o niečom, [[vytvorte odkaz]], alebo skúste [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nAk ste pripravený odstráňte túto poznámku a vytvorte si vlastný trezor.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Obnoviť nadol
 [interface.window.close-window]
 original=Close window
 translation=Zavrieť okno
-
-[interface.window.go-back]
-original=Go back
-translation=Vzad
-
-[interface.window.go-forward]
-original=Go forward
-translation=Vpred
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Zmeniť trezor...
 [commands.open-vault]
 original=Open vault...
 translation=Otvoriť trezor...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Otvoriť súbor mimo trezora...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Nepodarilo sa zlúčiť poznámky: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Súbor alebo priečinok “{{path}}” neexistuje.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian nedokáže otvoriť súbory „.{{extension}}“.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Nadpis nesmie byť prázdny
@@ -4333,6 +4337,10 @@ translation=Nové okno
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Rýchlo otvoriť...
+
+[menu-items.open-file]
+original=Open File...
+translation=Otvoriť súbor...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Pripnuté príkazy
 original=Format converter
 translation=Prevodník formátov
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Prevedie Markdown z iných aplikácií do formátu aplikácie Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Otvoriť importér Markdown formátu
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Oprava štítkov z Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Prevedie "#tag" a "#[[tag]]" na "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Oprava zvýraznenia Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Prevedie "^^highlight^^" na "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Oprava TODO z Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Prevedie "{{[[TODO]]}}" na "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Oprava zvýraznenie z Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Prevedie "::highlight::" na "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Oprava Zettelkasten odkazov
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Prevedie "[[UID]]" odkazy na úplné "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Skrášlenie Zettelkasten odkazov
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Prevedie "[[UID]]" odkazy a skrášli ich na "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter migrácia
@@ -6013,10 +5965,6 @@ translation=Spracované súbory
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Upravené súbory
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Celkovo nahradených
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Trezor sa nenašiel.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nedá sa nájsť trezor pre URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Podporované súbory

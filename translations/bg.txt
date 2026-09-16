@@ -2270,6 +2270,10 @@ translation=Плъгинът {{plugin}} v{{version}} не може да бъде
 original=Failed to open “{{filepath}}”
 translation=Неуспешно отваряне на „{{filepath}}“
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Неуспешно експортиране на „{{filename}}“
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Възникна грешка при затварянето на изгледа „{{name}}“
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Добре дошли
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Това е вашето ново *хранилище*. \n\nМожете да създавате бележки, да [[създадете връзка]], или да изпробвате приставката за импортиране на файлове [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nКогато сметнете, че сте готови, изтрийте тази бележка и започнете да съхранявате своята информация.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Това е вашето ново *хранилище*. \n\nМожете да създавате бележки, да [[създадете връзка]], или да изпробвате приставката за импортиране на файлове [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nКогато сметнете, че сте готови, изтрийте тази бележка и започнете да съхранявате своята информация.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Възстановяване надолу
 [interface.window.close-window]
 original=Close window
 translation=Затваряне на прозореца
-
-[interface.window.go-back]
-original=Go back
-translation=Стъпка назад
-
-[interface.window.go-forward]
-original=Go forward
-translation=Стъпка напред
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Смяна на хранилището...
 [commands.open-vault]
 original=Open vault...
 translation=Отваряне на хранилище...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Отвори файл извън хранилището...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Неуспешно обединяване на бележки: {{mes
 original=The file or folder “{{path}}” does not exist.
 translation=Файлът или папката „{{path}}“ не съществува.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian не може да отваря файлове с разширение „.{{extension}}“.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Заглавието не може да е празно
@@ -4333,6 +4337,10 @@ translation=Нов прозорец
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Отворете бързо...
+
+[menu-items.open-file]
+original=Open File...
+translation=Отвори файл...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Фиксирани команди
 original=Format converter
 translation=Преобразувател на формати
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Преобразува Markdown от други приложения във формат, съвместим с Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Преобразувател на формати
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Поправя формата на етикетите от Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Преобразува "#tag" и "#[[tag]]" в "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Поправя формата за подчертаване на текст от Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Преобразува "^^highlight^^" в "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Преобразува отметките от Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Преобразува "{{[[TODO]]}}" в "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Поправя формата за подчертаване на текст от Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Преобразува "::highlight::" в "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Поправя връзките в Zettelkasten бележките
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Преобразува връзките "[[UID]]" в "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Поправя и преобразува връзките в Zettelkasten бележките
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Преобразува връзките "[[UID]]" и ги преформатира в "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Прехвърляне на основни метаданни (Frontmatter)
@@ -6013,10 +5965,6 @@ translation=Обработени файлове
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Променени файлове
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Общо направени замени
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Хранилището не е намерено.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Не е намерено хранилище на адрес {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Поддържани файлове

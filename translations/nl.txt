@@ -2270,6 +2270,10 @@ translation=Kan plug-in {{plugin}} v{{version}} niet laden. Er zijn problemen ge
 original=Failed to open “{{filepath}}”
 translation=Kan “{{filepath}}” niet openen
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Exporteren van ‘{{filename}}’ is mislukt
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Er is een fout opgetreden bij het sluiten van de weergave ‘{{name}}’
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Welkom
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Dit is jouw nieuwe *kluis*.\n\nMaak een notitie over iets, [[verwijs ergens naar]], of probeer [iets te importeren](https://help.obsidian.md/Plugins/Importer)!\n\nAls je klaar bent kun je deze notitie verwijderen en de kluis naar jouw smaak inrichten.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Dit is jouw nieuwe *kluis*.\n\nMaak een notitie over iets, [[verwijs ergens naar]], of probeer [iets te importeren](obsidian://show-plugin?id=obsidian-importer)!\n\nAls je klaar bent kun je deze notitie verwijderen en de kluis naar jouw smaak inrichten.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Formaat van venster herstellen
 [interface.window.close-window]
 original=Close window
 translation=Venster sluiten
-
-[interface.window.go-back]
-original=Go back
-translation=Ga terug
-
-[interface.window.go-forward]
-original=Go forward
-translation=Ga verder
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Kluis wijzigen...
 [commands.open-vault]
 original=Open vault...
 translation=Kluis openen...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Bestand van buiten de kluis openen...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Kan notities niet samenvoegen: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Het bestand of de map “{{path}}” bestaat niet.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian kan ‘.{{extension}}’-bestanden niet openen.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Kop mag niet leeg zijn
@@ -4333,6 +4337,10 @@ translation=Nieuw scherm
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Snel openen...
+
+[menu-items.open-file]
+original=Open File...
+translation=Bestand openen...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Bewaarde opdrachten
 original=Format converter
 translation=Markdown-indeling importeren
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Converteer Markdown van andere apps naar de Obsidian-indeling.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Open Markdown-importeur
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research-labelcorrectie
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converteert "#label" en "#[[label]]" naar "[[label]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research-markeringcorrectie
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converteert "^^markering^^" naar "==markering==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research-takencorrectie
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converteert "{{[[Taak]]}}" naar "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear-markeringcorrectie
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Converteert "::markering::" naar "==markering==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkastenverwijzingencorrectie
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Corrigeert "[[UID]]" verwijzingen naar de volledige "[[UID bestandsnaam]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkastenverwijzingen mooier maken
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Corrigeert "[[UID]]" verwijzingen en maakt ze mooier "[[UID bestandsnaam|bestandsnaam]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migratie van voormetadata
@@ -6013,10 +5965,6 @@ translation=Verwerkte bestanden
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Aangepaste bestanden
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Totaal aantal vervangingen
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Kluis niet gevonden.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Kan geen kluis vinden voor de URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Ondersteunde bestanden

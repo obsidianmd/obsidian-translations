@@ -2270,6 +2270,10 @@ translation=プラグイン{{plugin}} v{{version}}を読み込めません。こ
 original=Failed to open “{{filepath}}”
 translation=ファイル "{{filepath}}" を開くのに失敗しました。
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=「{{filename}}」のエクスポートに失敗しました
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=「{{name}}」ビューを閉じる際にエラーが発生しました
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=ようこそ
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=これは新しい*保管庫*です。\n\n何かをメモしたり、[[リンクを作成]]したり、[Importer](https://help.obsidian.md/Plugins/Importer)を試してみてください！\n\n準備ができたら、このノートを削除して保管庫を自分好みにしましょう。
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=これは新しい*保管庫*です。\n\n何かをメモしたり、[[リンクを作成]]したり、[Importer](obsidian://show-plugin?id=obsidian-importer)を試してみてください！\n\n準備ができたら、このノートを削除して保管庫を自分好みにしましょう。
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=元のサイズに戻す
 [interface.window.close-window]
 original=Close window
 translation=ウィンドウを閉じる
-
-[interface.window.go-back]
-original=Go back
-translation=戻る
-
-[interface.window.go-forward]
-original=Go forward
-translation=進む
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=保管庫を変更…
 [commands.open-vault]
 original=Open vault...
 translation=保管庫を開く…
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=保管庫外のファイルを開く...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=ノートの統合に失敗しました: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=ファイルまたはフォルダ「{{path}}」は存在しません。
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidianでは「.{{extension}}」ファイルを開けません。
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=見出しを空にすることはできません
@@ -4333,6 +4337,10 @@ translation=新規ウィンドウ
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=クイックスイッチャーを開く…
+
+[menu-items.open-file]
+original=Open File...
+translation=ファイルを開く...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=ピン留めされたコマンド
 original=Format converter
 translation=Markdownフォーマットインポーター
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=他のアプリのマークダウンをObsidianの形式に変換します。
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdownインポーターを開く
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Researchタグフィクサー
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#tag" と "#[[tag]]" を "[[tag]]" に変換します。
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Researchハイライトフィクサー
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" を "==highlight==" に変換します。
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODOコンバータ
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" を "[ ]" に変換します。
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bearハイライトフィクサー
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::highlight::" を "==highlight==" に変換します。
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkastenリンクフィクサー
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" リンクを完全な "[[UID File Name]]" に変換します。
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkastenリンクビューティファイア
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" リンクを変換し "[[UID File Name|File Name]]" に美化します。
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=フロントマターの移行
@@ -6013,10 +5965,6 @@ translation=処理されたファイル
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=変更されたファイル
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=総置換
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=保管庫が見つかりません。
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL {{url}} に対応する保管庫が見つかりません
+
+[main.supported-files]
+original=Supported files
+translation=対応ファイル

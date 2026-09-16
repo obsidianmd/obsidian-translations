@@ -2270,6 +2270,10 @@ translation=Не вдалося завантажити додаток {{plugin}}
 original=Failed to open “{{filepath}}”
 translation=Не вдалося відкрити ”{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Не вдалося експортувати «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Під час закриття подання «{{name}}» сталася помилка
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Вітаємо
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Це ваше нове *сховище*.\n\nЗанотуйте щось, [[створіть посилання]] або спробуйте [Imported](https://help.obsidian.md/Plugins/Importer)!\n\nКоли будете готові, видаліть цю нотатку і зробіть це сховище своїм.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Це ваше нове *сховище*.\n\nЗанотуйте щось, [[створіть посилання]] або спробуйте [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nКоли будете готові, видаліть цю нотатку і зробіть це сховище своїм.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Відновити вікно
 [interface.window.close-window]
 original=Close window
 translation=Закрити вікно
-
-[interface.window.go-back]
-original=Go back
-translation=Перейти назад
-
-[interface.window.go-forward]
-original=Go forward
-translation=Перейти вперед
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Змінити сховище...
 [commands.open-vault]
 original=Open vault...
 translation=Відкрити сховище...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Відкрити файл за межами сховища...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Не вдалося об'єднати нотатки: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Файл або тека "{{path}}" не існує.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian не може відкрити файли «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Заголовок не може бути порожнім
@@ -4333,6 +4337,10 @@ translation=Нове вікно
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Швидко відкрити...
+
+[menu-items.open-file]
+original=Open File...
+translation=Відкрити файл...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Закріплені команди
 original=Format converter
 translation=Імпорт Markdown-файлів
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Конвертує Markdown-файли з інших застосунків у формат Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Імпорт Markdown-файлів
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Виправити мітки з Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Конвертує "#tag" і "#[[tag]]" в "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Виправити формат виділення тексту з Rоam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Конвертує "^^highlight^^" в "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Виправити чекбокси з Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Конвертує "{{[[TODO]]}}" в "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Виправити формат виділення тексту з Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Конвертує "::highlight::" в "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Виправити посилання на цетелькастен-нотатки
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Конвертує посилання "[[UID]]" в "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Виправити та відформатувати посилання на цетелькастен-нотатки
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Конвертує посилання "[[UID]]" а також приведе їх до формату "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Міграція початкових метаданих
@@ -6013,10 +5965,6 @@ translation=Оброблено
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Змінено
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Всього замін
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Сховище не знайдено.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Не вдалося знайти сховище для URL-адреси {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Підтримувані файли

@@ -2270,6 +2270,10 @@ translation=Die Erweiterung {{plugin}} v{{version}} konnte nicht geladen werden.
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” konnte nicht geöffnet werden
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=„{{filename}}“ konnte nicht exportiert werden
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Beim Schließen der Ansicht „{{name}}“ ist ein Fehler aufgetreten
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Willkommen
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Das ist dein neuer *Vault*.\n\nNotiere dir etwas oder, [[Neuer Link|erstelle einen neuen Link]], oder probiere [die Importer-Erweiterung aus](https://help.obsidian.md/Plugins/Importer)!\n\nWenn du soweit bist kannst du diese Seite löschen und den Vault ganz nach deinen Wünschen und Vorstellungen gestalten.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Das ist dein neuer *Vault*.\n\nNotiere dir etwas oder, [[Neuer Link|erstelle einen neuen Link]], oder probiere [die Importer-Erweiterung aus](obsidian://show-plugin?id=obsidian-importer)!\n\nWenn du soweit bist kannst du diese Seite löschen und den Vault ganz nach deinen Wünschen und Vorstellungen gestalten.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Kleines Fenster wiederherstellen
 [interface.window.close-window]
 original=Close window
 translation=Fenster schließen
-
-[interface.window.go-back]
-original=Go back
-translation=Zurück
-
-[interface.window.go-forward]
-original=Go forward
-translation=Weiter
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Vault wechseln...
 [commands.open-vault]
 original=Open vault...
 translation=Vault öffnen...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Datei von außerhalb des Vaults öffnen …
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Die Dateien konnten nicht zusammengeführt werden: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Die Datei oder der Pfad “{{path}}” gibt's nicht.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian kann „.{{extension}}“-Dateien nicht öffnen.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Überschrift darf nicht leer sein
@@ -4333,6 +4337,10 @@ translation=Neues Fenster
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Schnell öffnen...
+
+[menu-items.open-file]
+original=Open File...
+translation=Datei öffnen …
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Angeheftete Befehle
 original=Format converter
 translation=Importprogramm für Markdown Format
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Konvertiert Markdown aus anderen Anwendungen in das Obsidian Format.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdown Importprogramm öffnen
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Korrekturregel für Roam Research Kategorien
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Konvertiert "#tag" und "#[[tag]]" zu "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Korrekturregel für Roam Research Hervorhebung
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Konvertiert "^^highlight^^" zu "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Konvertierer für Roam Research TODO
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Konvertiert "{{[[TODO]]}}" zu "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Korrekturregel für Bear Hervorhebung
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Konvertiert "::highlight::" zu "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Korrekturregel für Zettelkasten-Links
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Konvertiert "[[UID]]" Links in vollständige Links: "[[UID Dateiname]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Erweiterte Korrekturregel für Zettelkasten-Links
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Konvertiert "[[UID]]" in erweiterte, vollständige Links: "[[UID Dateiname|Dateiname]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter-Migration
@@ -6013,10 +5965,6 @@ translation=Verarbeitete Dateien
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Geänderte Dateien
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Summe Ersetzungen
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Vault nicht gefunden.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Für die URL {{url}} konnte kein Vault gefunden werden
+
+[main.supported-files]
+original=Supported files
+translation=Unterstützte Dateien

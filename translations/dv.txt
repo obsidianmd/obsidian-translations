@@ -2270,6 +2270,10 @@ translation=
 original=Failed to open “{{filepath}}”
 translation=
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=
@@ -3455,7 +3459,7 @@ original=Welcome
 translation=
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
 translation=
 
 [interface.drag-and-drop.insert-link-here]
@@ -3500,14 +3504,6 @@ translation=
 
 [interface.window.close-window]
 original=Close window
-translation=
-
-[interface.window.go-back]
-original=Go back
-translation=
-
-[interface.window.go-forward]
-original=Go forward
 translation=
 
 [interface.start-up.loading-obsidian]
@@ -3744,6 +3740,10 @@ translation=
 
 [commands.open-vault]
 original=Open vault...
+translation=
+
+[commands.open-file]
+original=Open file from outside the vault...
 translation=
 
 [commands.manage-vaults]
@@ -4274,6 +4274,10 @@ translation=
 original=The file or folder “{{path}}” does not exist.
 translation=
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=
@@ -4332,6 +4336,10 @@ translation=
 
 [menu-items.open-switcher]
 original=Open Quickly...
+translation=
+
+[menu-items.open-file]
+original=Open File...
 translation=
 
 [menu-items.open-vault]
@@ -5906,62 +5914,6 @@ translation=
 original=Format converter
 translation=Markdown format importer
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Open Markdown importer
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converts "#tag" and "#[[tag]]" to "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converts "^^highlight^^" to "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converts "{{[[TODO]]}}" to "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Converts "::highlight::" to "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Fixes "[[UID]]" links to full "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Fixes "[[UID]]" links and also beautify them "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=
@@ -6012,10 +5964,6 @@ translation=
 
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
-translation=
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
 translation=
 
 [plugins.markdown-format-importer.label-failed]
@@ -10412,4 +10360,8 @@ translation=
 
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
+translation=
+
+[main.supported-files]
+original=Supported files
 translation=

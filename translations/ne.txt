@@ -2270,6 +2270,10 @@ translation=प्लगइन {{plugin}} v{{version}} लोड गर्न �
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” खोल्न असफल
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” निर्यात गर्न असफल भयो
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=बन्द गर्ने क्रममा “{{name}}” दृश्यमा त्रुटि आयो
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=स्वागत छ
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=यो तपाईको नयाँ *भल्ट* हो।\n\nकेही नोट बनाउनुहोस्, [[लिङ्क सिर्जना गर्नुहोस्]], वा [आयातकर्ता](https://help.obsidian.md) कोसिस गर्नुहोस्। /Plugins/Importer)!\n\nजब तपाईं तयार हुनुहुन्छ, यो नोट मेटाउनुहोस् र भल्टलाई आफ्नो बनाउनुहोस्।
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=यो तपाईँको नयाँ *भल्ट* हो।\n\nकेही नोट बनाउनुहोस्, [[लिङ्क सिर्जना गर्नुहोस्]], वा [आयातकर्ता](obsidian://show-plugin?id=obsidian-importer) कोसिस गर्नुहोस्!\n\nजब तपाईं तयार हुनुहुन्छ, यो नोट मेटाउनुहोस् र भल्टलाई आफ्नो बनाउनुहोस्।
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=पुनर्स्थापना गर्नुहोस्
 [interface.window.close-window]
 original=Close window
 translation=सञ्झ्याल बन्द गर्नुहोस्
-
-[interface.window.go-back]
-original=Go back
-translation=फिर्ता जानुहोस्
-
-[interface.window.go-forward]
-original=Go forward
-translation=अगाडि जाउ
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=भल्ट परिवर्तन गर्नुहोस्...
 [commands.open-vault]
 original=Open vault...
 translation=भल्ट खोल्नुहोस्...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=भल्ट बाहिरबाट फाइल खोल्नुहोस्...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=टिप्पणीहरू मर्ज गर्न असफ�
 original=The file or folder “{{path}}” does not exist.
 translation=फाइल वा फोल्डर {{path}} अवस्थित छैन।
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian ले “.{{extension}}” फाइलहरू खोल्न सक्दैन।
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=शीर्षक खाली हुन सक्दैन
@@ -4333,6 +4337,10 @@ translation=नयाँ विन्डो
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=छिटो खोल्नुहोस्...
+
+[menu-items.open-file]
+original=Open File...
+translation=फाइल खोल्नुहोस्...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=पिन गरिएका आदेशहरू
 original=Format converter
 translation=मार्कडाउन ढाँचा आयातकर्ता
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=अन्य एपबाट मार्कडाउनलाई ओब्सिडियन ढाँचामा रूपान्तरण गर्नुहोस्।
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=मार्कडाउन आयातकर्ता खोल्नुहोस्
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=रोम रिसर्च ट्याग फिक्सर
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#tag" र "#[[tag]]" लाई "[[tag]]" मा रूपान्तरण गर्छ।
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=रोम रिसर्च हाइलाइट फिक्सर
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" लाई "==highlight==" मा रूपान्तरण गर्छ।
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=रोम रिसर्च TODO कन्भर्टर
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}" लाई "[ ]" मा रूपान्तरण गर्दछ।
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=भालु हाइलाइट फिक्सर
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::highlight::" लाई "==highlight==" मा रूपान्तरण गर्दछ।
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten लिङ्क फिक्सर
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=पूरा "[[UID File Name]]" मा "[[UID]]" लिङ्क फिक्स गर्दछ।
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten लिंक ब्यूटिफायर
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" लिङ्कहरू फिक्स गर्छ र तिनीहरूलाई "[[UID फाइलको नाम|फाइलको नाम]]" पनि सुन्दर बनाउँछ।
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=सुरुवाती मेटाडाटा माइग्रेशन
@@ -6013,10 +5965,6 @@ translation=प्रशोधन गरिएका फाइलहरू
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=परिमार्जित फाइलहरू
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=कुल प्रतिस्थापन
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=भल्ट फेला परेन।
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL {{url}} का लागि भल्ट फेला पार्न सकिएन
+
+[main.supported-files]
+original=Supported files
+translation=समर्थित फाइलहरू

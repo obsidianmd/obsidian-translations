@@ -2270,6 +2270,10 @@ translation=無法載入外掛 {{plugin}} v{{version}}。據回報，此版本�
 original=Failed to open “{{filepath}}”
 translation=開啟失敗：「{{filepath}}」
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=無法匯出「{{filename}}」
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=「{{name}}」檢視在關閉時發生錯誤
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=歡迎
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=這是你的新儲存庫 *vault*.\n\n對筆記輸入一些內容、[[建立鏈接]]或試試匯入 [匯入外掛](https://help.obsidian.md/Plugins/Importer)!\n\n當一切就緒時，刪除此筆記並繼續使用此儲存庫。
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=這是你的新*保管庫*。\n\n記下一些內容、[[建立連結]]，或試試[匯入外掛](obsidian://show-plugin?id=obsidian-importer)！\n\n準備好後，請刪除此筆記，讓這個保管庫成為你自己的空間。
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=還原
 [interface.window.close-window]
 original=Close window
 translation=關閉視窗
-
-[interface.window.go-back]
-original=Go back
-translation=返回
-
-[interface.window.go-forward]
-original=Go forward
-translation=前往
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=變更保管庫…
 [commands.open-vault]
 original=Open vault...
 translation=開啟保管庫…
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=從保管庫外部開啟檔案…
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=合併筆記失敗: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=檔案或資料夾「{{path}}」不存在。
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian 無法開啟「.{{extension}}」檔案。
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=標題不能空白
@@ -4333,6 +4337,10 @@ translation=建立視窗
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=快速開啟…
+
+[menu-items.open-file]
+original=Open File...
+translation=開啟檔案…
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=已釘選命令
 original=Format converter
 translation=Markdown 格式轉換器
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=將其他應用程式中的 Markdown 格式轉換為 Obsidian 支援的格式
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=開啟 Markdown 格式轉換器
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research 標籤轉換
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=將 Roam Research 中的「#tag」和「#[[tag]]」轉換為「[[tag]]」。
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research 突顯標籤轉換
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=將 Roam Research 中的「^^highlight^^」轉換為「==highlight==」。
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research 待辦標籤轉換
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=將 Roam Research 中的「{{[[TODO]]}}」轉換為「[ ]」。
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear 高亮度修正
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=轉換「::highlight::」為「==highlight==」。
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=ZK 卡片連結轉換
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=將 ZK 卡片中使用的「[[UID]]」連結轉換為「[[UID 檔名]]」的形式。
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=美化 ZK 卡片連結
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=將 ZK 卡片中使用的「[[UID]]」連結美化為「[[UID 檔名|檔名]]」的形式。
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter 合併
@@ -6013,10 +5965,6 @@ translation=處理的檔案
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=修改的檔案
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=全部取代
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=找不到保管庫。
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=無法找到 URL {{url}} 對應的保管庫
+
+[main.supported-files]
+original=Supported files
+translation=支援的檔案

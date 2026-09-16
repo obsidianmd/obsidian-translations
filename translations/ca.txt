@@ -2270,6 +2270,10 @@ translation=No s'ha pogut carregar el connector {{plugin}} v{{version}}. S'ha in
 original=Failed to open “{{filepath}}”
 translation=No s'ha pogut obrir “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=No s'ha pogut exportar «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=S'ha produït un error en tancar la vista «{{name}}»
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Hola
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Aquesta és la teva nova *arca*.\n\nFes una nota d'alguna cosa, [[crea un enllaç]] o prova [l'importador](https://help.obsidian.md /Plugins/Importer)!\n\nQuan estiguis a punt, suprimeix aquesta nota i fes la teva arca.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Aquesta és la teva nova *cambra forta*.\n\nFes una nota d'alguna cosa, [[crea un enllaç]] o prova [l'importador](obsidian://show-plugin?id=obsidian-importer)!\n\nQuan estiguis a punt, suprimeix aquesta nota i fes-te teva la cambra forta.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Restaura
 [interface.window.close-window]
 original=Close window
 translation=Tanca la finestra
-
-[interface.window.go-back]
-original=Go back
-translation=Torna enrere
-
-[interface.window.go-forward]
-original=Go forward
-translation=Avança
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Canvia l'Arca...
 [commands.open-vault]
 original=Open vault...
 translation=Obre l'Arca...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Obre un fitxer de fora de la cambra forta...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Error en fusionar les notes: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=El fitxer o carpeta “{{path}}” no existeix.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian no pot obrir fitxers «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=L'encapçalament no pot estar buit
@@ -4333,6 +4337,10 @@ translation=Nova finestra
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Obre ràpidament...
+
+[menu-items.open-file]
+original=Open File...
+translation=Obre un fitxer...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Ordres fixades
 original=Format converter
 translation=Importador de format Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Converteix Markdown d'altres aplicacions al format Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Obre l'importador Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Reparador d'etiquetes de Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converteix "#etiqueta" i "#[[etiqueta]]" a "[[etiqueta]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Reparador de ressalts de Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converteix "^^ressaltat^^" a "==ressaltat==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Conversor de tasques de Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converteix "{{[[TODO]]}}" a "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Reparador de ressaltats de Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Converteix "::ressaltat::" a "==ressaltat==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Reparador d'enllaços Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Corregir els enllaços "[[UID]]" a "[[Nom del fitxer UID]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Embellidor d'enllaços Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Corregir els enllaços "[[UID]]" i també els embelleix "[[Nom del fitxer UID|Nom del fitxer]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migració de metadades inicials
@@ -6013,10 +5965,6 @@ translation=Fitxers processats
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Fitxers modificats
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Reemplaçaments totals
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Arca no trobada.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=No s'ha pogut trobar cap Arca per a l'URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Fitxers compatibles

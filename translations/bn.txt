@@ -2270,6 +2270,10 @@ translation={{plugin}} v{{version}} প্লাগইন লোড করা �
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” ফাইলটি লোড করা সম্ভব হয়নি।
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” এক্সপোর্ট করা যায়নি
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=বন্ধ করার সময় “{{name}}” ভিউতে একটি ত্রুটি ঘটেছে
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=স্বাগতম
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=এটি আপনার নতুন *ভল্ট*।\n\nকোন কিছুর একটি নোট তৈরি করুন, [[Create a link]], অথবা [Importer](https://help.obsidian.md/Plugins/Importer) ব্যাবহার করুন|\n\nআপনি প্রস্তুত থাকলে এই নোটটি মুছে ফেলুন এবং ভল্টটিকে নিজের মতো করে সাজান।
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=এটি আপনার নতুন *ভল্ট*।\n\nকোন কিছুর একটি নোট তৈরি করুন, [[Create a link]], অথবা [Importer](obsidian://show-plugin?id=obsidian-importer) ব্যাবহার করুন|\n\nআপনি প্রস্তুত থাকলে এই নোটটি মুছে ফেলুন এবং ভল্টটিকে নিজের মতো করে সাজান।
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=পূর্বাবস্থায় ফিরিয়ে আন
 [interface.window.close-window]
 original=Close window
 translation=উইন্ডো বন্ধ করুন
-
-[interface.window.go-back]
-original=Go back
-translation=পেছনে যান
-
-[interface.window.go-forward]
-original=Go forward
-translation=সামনে যান
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=ভল্ট পরিবর্তন করুন...
 [commands.open-vault]
 original=Open vault...
 translation=ভল্ট খুলুন...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=ভল্টের বাইরে থেকে ফাইল খুলুন...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=নোট একত্রিত করতে ব্যর্থ হ�
 original=The file or folder “{{path}}” does not exist.
 translation=“{{path}}” নামের ফাইল বা ফোল্ডারটি বিদ্যমান নেই।
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian “.{{extension}}” ফাইল খুলতে পারে না।
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=শিরোনাম খালি রাখা যাবে না
@@ -4333,6 +4337,10 @@ translation=নতুন উইন্ডো
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=দ্রুত খুলুন...
+
+[menu-items.open-file]
+original=Open File...
+translation=ফাইল খুলুন...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=পিন করা কমান্ডসমূহ
 original=Format converter
 translation=Markdown ফরম্যাট ইম্পোর্টার
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=অন্যান্য অ্যাপ থেকে Markdown Obisidian-এর ফরম্যাটে রূপান্তর করুন।
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdown ইম্পোর্টার খুলুন
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research ট্যাগ ফিক্সার
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#tag" এবং "#[[tag]]" কে "[[tag]]" এ রূপান্তর করে।
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research হাইলাইট ফিক্সার
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" কে "==highlight==" এ রূপান্তর করে।
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO রূপান্তরকারী
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" কে "[ ]" এ রূপান্তর করে।
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear হাইলাইট ফিক্সার
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::highlight::" কে "==highlight==" এ রূপান্তর করে।
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten লিঙ্ক ফিক্সার
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" লিঙ্ককে পুরোপুরিভাবে"[[UID File Name]]" এ ঠিক করে।
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten লিঙ্ক সৌন্দর্যবর্ধক
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" লিঙ্ক ঠিক করে এবং সেগুলোকে "[[UID File Name|File Name]]" আকারে সুন্দর করে।
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=ফ্রন্টম্যাটার মাইগ্রেশন
@@ -6013,10 +5965,6 @@ translation=প্রক্রিয়াধীন ফাইল
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=পরিবর্তিত ফাইল
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=মোট প্রতিস্থাপন
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=ভল্ট পাওয়া যায়নি।
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL-এর জন্য কোনো ভল্ট খুঁজে পাওয়া যায়নি
+
+[main.supported-files]
+original=Supported files
+translation=সমর্থিত ফাইল

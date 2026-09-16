@@ -2270,6 +2270,10 @@ translation={{plugin}} v{{version}} செருகுநிரலை ஏற்�
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” திறக்க முடியவில்லை
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” கோப்பை ஏற்றுமதி செய்ய முடியவில்லை
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=“{{name}}” காட்சியை மூடும்போது பிழை ஏற்பட்டது
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=வரவேற்பு
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=இது உங்கள் புதிய *பெட்டகம்*.\n\nஏதாவது குறிப்பெடுங்கள், [[ஓர் இணைப்பை உருவாக்குங்கள்]], அல்லது [Importer](https://உதவி.obsidian.md/Plugins/Importer)-ஐ முயற்சி செய்யுங்கள்!\n\nநீங்கள் தயாரானதும், இந்தக் குறிப்பை நீக்கிவிட்டு பெட்டகத்தைப் பயன்படுத்துங்கள்.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=இது உங்கள் புதிய *பெட்டகம்*.\n\nஏதாவது குறிப்பெடுங்கள், [[ஓர் இணைப்பை உருவாக்குங்கள்]], அல்லது [Importer](obsidian://show-plugin?id=obsidian-importer)-ஐ முயற்சி செய்யுங்கள்!\n\nநீங்கள் தயாரானதும், இந்தக் குறிப்பை நீக்கிவிட்டு பெட்டகத்தைப் பயன்படுத்துங்கள்.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=மீட்டமை
 [interface.window.close-window]
 original=Close window
 translation=சாளரத்தை மூடு
-
-[interface.window.go-back]
-original=Go back
-translation=பின்செல்
-
-[interface.window.go-forward]
-original=Go forward
-translation=முன்செல்
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=பெட்டகத்தை மாற்று...
 [commands.open-vault]
 original=Open vault...
 translation=பெட்டகத்தைத் திற...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=பெட்டகத்திற்கு வெளியிலிருந்து கோப்பைத் திற...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=குறிப்புகளை ஒன்றிணைக்க ம
 original=The file or folder “{{path}}” does not exist.
 translation=“{{path}}” என்ற கோப்பு அல்லது கோப்புறை இல்லை.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian-ஆல் “.{{extension}}” கோப்புகளைத் திறக்க முடியாது.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=தலைப்பு காலியாக இருக்கக்கூடாது
@@ -4333,6 +4337,10 @@ translation=புதிய Window
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=விரைவு மாற்றி...
+
+[menu-items.open-file]
+original=Open File...
+translation=கோப்பைத் திற...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=பொருத்தப்பட்ட கட்டளைகள்
 original=Format converter
 translation=வடிவ மாற்றி
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=பிற செயலிகளிலிருந்து Markdown-ஐ Obsidian வடிவத்திற்கு மாற்ற உதவும்.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=வடிவ மாற்றியைத் திற
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research குறிச்சொல் திருத்தி
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#குறிச்சொல்" மற்றும் "#[[குறிச்சொல்]]" ஐ "[[குறிச்சொல்]]" ஆக மாற்றுகிறது.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research சிறப்பித்தல் திருத்தி
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^தனிப்படுத்திக் காட்டு^^" ஐ "==தனிப்படுத்திக் காட்டு==" ஆக மாற்றுகிறது.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO மாற்றி
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" ஐ "[ ]" ஆக மாற்றுகிறது.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear சிறப்பித்தல் திருத்தி
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::தனிப்படுத்திக் காட்டு::" ஐ "==தனிப்படுத்திக் காட்டு==" ஆக மாற்றுகிறது.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten இணைப்புத் திருத்தி
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" இணைப்புகளை முழுமையான "[[UID கோப்பு Name]]" ஆக சரிசெய்கிறது.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten இணைப்பு அழகூட்டி
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" இணைப்புகளைச் சரிசெய்து அவற்றை "[[UID கோப்பு Name|கோப்பு Name]]" ஆக அழகூட்டுகிறது.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatterத் தரவு மாற்றம்
@@ -6013,10 +5965,6 @@ translation=Processed Files
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Modified Files
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Total replacements
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=பெட்டகம் கிடைக்கவில்லை.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL-க்கான பெட்டகத்தைக் கண்டறிய முடியவில்லை
+
+[main.supported-files]
+original=Supported files
+translation=ஆதரிக்கப்படும் கோப்புகள்

@@ -2270,6 +2270,10 @@ translation=Kunne ikke indlæse pluginet {{plugin}} v{{version}}. Denne version 
 original=Failed to open “{{filepath}}”
 translation=Kunne ikke åbne “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Kunne ikke eksportere “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Visningen “{{name}}” stødte på en fejl under lukning
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Velkommen
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Dette er din nye *boks*.\n\nSkriv en note, [[opret et link]], eller prøv [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nNår du er klar, kan du slette denne note og gøre boksen til din egen.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Dette er din nye *boks*.\n\nSkriv en note, [[opret et link]], eller prøv [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nNår du er klar, kan du slette denne note og gøre boksen til din egen.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Gendan ned
 [interface.window.close-window]
 original=Close window
 translation=Luk vindue
-
-[interface.window.go-back]
-original=Go back
-translation=Gå tilbage
-
-[interface.window.go-forward]
-original=Go forward
-translation=Gå frem
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Skift boks...
 [commands.open-vault]
 original=Open vault...
 translation=Åbn boks...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Åbn fil uden for boksen...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Kunne ikke flette noter: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Filen eller mappen “{{path}}” findes ikke.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian kan ikke åbne “.{{extension}}”-filer.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Overskrift kan ikke være tom
@@ -4333,6 +4337,10 @@ translation=Nyt vindue
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Åbn hurtigt...
+
+[menu-items.open-file]
+original=Open File...
+translation=Åbn fil...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Fastgjorte kommandoer
 original=Format converter
 translation=Formatkonvertering
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Konverter Markdown fra andre apps til Obsidian-format.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Åbn formatkonvertering
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Ret Roam Research-tags
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Konverterer “#tag” og “#[[tag]]” til “[[tag]]”.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Ret Roam Research-fremhævning
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Konverterer “^^fremhævning^^” til “==fremhævning==”.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Konverter Roam Research-TODOs
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Konverterer “{{[[TODO]]}}” til “[ ]”.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Ret Bear-fremhævning
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Konverterer “::fremhævning::” til “==fremhævning==”.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Ret Zettelkasten-links
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Konverterer “[[UID]]”-links til det fulde format “[[UID File Name]]”.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Forskøn Zettelkasten-link
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Retter “[[UID]]”-links og forskønner dem samtidig til “[[UID File Name|File Name]]”.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migrering af frontmatter
@@ -6013,10 +5965,6 @@ translation=Behandlede filer
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Ændrede filer
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Erstatninger i alt
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Boks ikke fundet.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Kan ikke finde en boks for URL'en {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Understøttede filer

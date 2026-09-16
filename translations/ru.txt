@@ -2270,6 +2270,10 @@ translation=Не удалось загрузить плагин {{plugin}} v{{ve
 original=Failed to open “{{filepath}}”
 translation=Не удалось открыть “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Не удалось экспортировать «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=При закрытии представления «{{name}}» произошла ошибка
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Добро пожаловать
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Это ваше новое *хранилище*.\n\nЗапишите что-нибудь, [[создайте ссылку]] или попробуйте [плагин Импорта Markdown-файлов](https://help.obsidian.md/Plugins/Importer)!\n\nКогда вы будете готовы, удалите эту заметку и сделайте хранилище своим собственным.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Это ваше новое *хранилище*.\n\nЗапишите что-нибудь, [[создайте ссылку]] или попробуйте [плагин Импорта Markdown-файлов](obsidian://show-plugin?id=obsidian-importer)!\n\nКогда вы будете готовы, удалите эту заметку и сделайте хранилище своим собственным.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Восстановить
 [interface.window.close-window]
 original=Close window
 translation=Закрыть окно
-
-[interface.window.go-back]
-original=Go back
-translation=Назад
-
-[interface.window.go-forward]
-original=Go forward
-translation=Вперёд
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Сменить хранилище...
 [commands.open-vault]
 original=Open vault...
 translation=Открыть хранилище...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Открыть файл за пределами хранилища...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Не удалось объединить заметки: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Файл или папка “{{path}}” не существуют.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian не может открыть файлы «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Заголовок не может быть пустым
@@ -4333,6 +4337,10 @@ translation=Открыть в новом окне
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Открыть быстрый переход
+
+[menu-items.open-file]
+original=Open File...
+translation=Открыть файл...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Закреплённые команды
 original=Format converter
 translation=Импорт Markdown-файлов
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Конвертирует Markdown-файлы из других приложений в формат Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Импорт Markdown-файлов
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Исправить формат тегов из Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Сконвертирует "#tag" и "#[[tag]]" в "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Исправить формат выделения текста из Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Сконвертирует "^^highlight^^" в "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Исправить чекбоксы из Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Сконвертирует "{{[[TODO]]}}" в "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Исправить формат выделения текста из Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Сконвертирует "::highlight::" в "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Исправить ссылки на Zettelkasten-заметки
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Сконвертирует ссылки "[[UID]]" в "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Исправить и отформатировать ссылки на Zettelkasten-заметки
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Сконвертирует ссылки "[[UID]]", а также приведёт их к формату "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Миграция начальных метаданных
@@ -6013,10 +5965,6 @@ translation=Обработано
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Изменено
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Всего замен
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Хранилище не найдено.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Не удалось найти хранилище для URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Поддерживаемые файлы

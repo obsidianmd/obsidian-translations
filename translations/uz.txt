@@ -2270,6 +2270,10 @@ translation={{plugin}} plaginining v{{version}} versiyasini yuklab bo‘lmadi. B
 original=Failed to open “{{filepath}}”
 translation=Faylni “{{filepath}}” ochib bo‘lmadi
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” faylini eksport qilib bo‘lmadi
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=“{{name}}” ko‘rinishini yopishda xatolik yuz berdi
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Xush kelibsiz
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Bu sizning yangi *xazina*ngiz.\n\nBiror narsa yozing, [[havola yarating]] yoki [Markdown-fayllar import qiluvchi plagin](https://help.obsidian.md/Plugins/Importer)ni sinab ko'ring!\n\nTayyor bo'lganingizda, ushbu eslatmani o'chirib tashlang va xazinani o'zingizga xos qiling.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Bu sizning yangi *ombor*ingiz.\n\nBiror narsa yozing, [[havola yarating]] yoki [Markdown-fayllar import qiluvchi plagin](obsidian://show-plugin?id=obsidian-importer)ni sinab ko'ring!\n\nTayyor bo'lganingizda, ushbu eslatmani o'chirib tashlang va omborni o'zingizga xos qiling.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Asl holatga qaytarish
 [interface.window.close-window]
 original=Close window
 translation=Oynani yopish
-
-[interface.window.go-back]
-original=Go back
-translation=Orqaga
-
-[interface.window.go-forward]
-original=Go forward
-translation=Oldinga
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Omborni o‘zgartirish...
 [commands.open-vault]
 original=Open vault...
 translation=Omborni ochish...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Ombordan tashqaridagi faylni ochish...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Eslatmalar birlashtirilmadi: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Fayl yoki papka “{{path}}” mavjud emas.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian “.{{extension}}” fayllarini ocha olmaydi.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Sarlavha bo‘sh bo‘lishi mumkin emas
@@ -4333,6 +4337,10 @@ translation=Yangi oynada ochish
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Tezkor o'tish
+
+[menu-items.open-file]
+original=Open File...
+translation=Faylni ochish...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Qo'shilgan buyruqlar
 original=Format converter
 translation=Markdown-fayllarni import qilish
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Boshqa dasturlardan Markdown-fayllarni Obsidian formatiga konvertatsiya qiladi.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdown-fayllarni import qilish
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research tag formatini tuzatish
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#tag" va "#[[tag]]" ni "[[tag]]" ga konvertatsiya qiladi.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research matnni ajratish formatini tuzatish
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" ni "==highlight==" ga konvertatsiya qiladi.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research checkboxlarini tuzatish
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" ni "[ ]" ga konvertatsiya qiladi.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear matnni ajratish formatini tuzatish
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::highlight::" ni "==highlight==" ga konvertatsiya qiladi.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten eslatmalari havolalarini tuzatish
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" havolalarini "[[UID File Name]]" ga konvertatsiya qiladi.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten eslatmalari havolalarini tuzatish va formatlash
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" havolalarini "[[UID File Name|File Name]]" formatiga keltiradi.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Boshlang‘ich metama’lumot migratsiyasi
@@ -6013,10 +5965,6 @@ translation=Qayta ishlangan
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=O'zgartirilgan
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Jami o'zgartirishlar
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Ombor topilmadi.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL manzili uchun ombor topilmadi
+
+[main.supported-files]
+original=Supported files
+translation=Qo‘llab-quvvatlanadigan fayllar

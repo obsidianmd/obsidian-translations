@@ -2270,6 +2270,10 @@ translation=플러그인 {{plugin}} v{{version}}을(를) 불러올 수 없습니
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” 파일을 열지 못했습니다.
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” 내보내기 실패
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=“{{name}}” 보기를 닫는 중 오류가 발생했습니다
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=환영합니다!
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=새로운 *보관함*입니다.\n\n내용을 한번 적어보세요. [[링크를 만들거나]], [Importer 플러그인](https://help.obsidian.md/Plugins/Importer)을 사용해봐도 좋습니다!\n\n준비가 됐다면 이 노트를 삭제하고 맞춤형 보관함을 만들어보세요.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=새로운 *보관함*입니다.\n\n내용을 한번 적어보세요. [[링크를 만들거나]], [Importer 플러그인](obsidian://show-plugin?id=obsidian-importer)을 사용해봐도 좋습니다!\n\n준비가 됐다면 이 노트를 삭제하고 맞춤형 보관함을 만들어보세요.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=원본 크기로 되돌리기
 [interface.window.close-window]
 original=Close window
 translation=창 닫기
-
-[interface.window.go-back]
-original=Go back
-translation=뒤로
-
-[interface.window.go-forward]
-original=Go forward
-translation=앞으로
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=보관함 변경...
 [commands.open-vault]
 original=Open vault...
 translation=보관함 열기...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=보관함 외부에서 파일 열기...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=노트 병합 실패: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=“{{path}}” 경로의 폴더/파일이 존재하지 않습니다.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian에서는 “.{{extension}}” 파일을 열 수 없습니다.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=제목은 비어있을 수 없습니다.
@@ -4333,6 +4337,10 @@ translation=새 창
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=빠르게 열기...
+
+[menu-items.open-file]
+original=Open File...
+translation=파일 열기...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=즐겨찾기된 명령어
 original=Format converter
 translation=마크다운 형식 불러오기
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=다른 앱의 마크다운을 Obsidian 형식으로 변환합니다.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=마크다운 형식 불러오기 열기
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research 태그 고치기
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#tag" 와 "#[[tag]]" 를 "[[tag]]" 로 변환합니다.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research 하이라이트 고치기
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" 를 "==highlight=="로 변환합니다.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research 체크박스 변환하기
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" 를 "[ ]" 로 변환합니다.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear 하이라이트 고치기
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation="::highlight::" 를 "==highlight==" 로 변환합니다.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten 링크 고치기
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" 링크를 전체 길이인 "[[UID File Name]]" 으로 변환합니다.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten 링크 꾸미기
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" 링크를 고치고 "[[UID File Name|File Name]]"로 아름답게 정리합니다.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Frontmatter 이전
@@ -6013,10 +5965,6 @@ translation=처리된 파일
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=변경된 파일
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=총 바꾼 횟수
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=보관함을 찾을 수 없습니다.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL {{url}}에 해당하는 보관함을 찾을 수 없습니다
+
+[main.supported-files]
+original=Supported files
+translation=지원되는 파일

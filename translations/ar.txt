@@ -2270,6 +2270,10 @@ translation=تعذّر تحميل المكوّن الإضافي {{plugin}} v{{ve
 original=Failed to open “{{filepath}}”
 translation=فشل في فتح “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=تعذّر تصدير «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=واجه عرض «{{name}}» خطأ أثناء الإغلاق
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=مرحبًا
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=هذه *خزنتك* الجديدة.\n\nأنشئ ملاحظة، [[create a link]]، أو جرب [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nعندما تكون جاهزًا، احذف هذه الملاحظة واجعل هذه الخزنة لك.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=هذه *خزنتك* الجديدة.\n\nأنشئ ملاحظة، [[create a link]]، أو جرب [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nعندما تكون جاهزًا، احذف هذه الملاحظة واجعل هذه الخزنة لك.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=استعادة الحجم الأصلي
 [interface.window.close-window]
 original=Close window
 translation=إغلاق النافذة
-
-[interface.window.go-back]
-original=Go back
-translation=عودة للخلف
-
-[interface.window.go-forward]
-original=Go forward
-translation=انتقال للأمام
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=تغيير الخزنة...
 [commands.open-vault]
 original=Open vault...
 translation=فتح خزنة...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=فتح ملف من خارج الخزنة...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=فشل في دمج الملاحظات: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=الملف أو المجلد “{{path}}” غير موجود.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=يتعذّر على Obsidian فتح ملفات «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=لا يمكن أن يكون العنوان فارغًا
@@ -4333,6 +4337,10 @@ translation=نافذة جديدة
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=فتح بسرعة...
+
+[menu-items.open-file]
+original=Open File...
+translation=فتح ملف...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=الأوامر المثبتة
 original=Format converter
 translation=مستورد تنسيق Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=يحول تنسيق Markdown من تطبيقات أخرى إلى تنسيق Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=إفتح مستورد Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=معالج وسوم Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=تحويل "#tag" و "#[[tag]]" إلى "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=محرر تظليل Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=تحويل "^^highlight^^" إلى "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=محول قائمة مهام Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=تحويل "{{[[TODO]]}}" إلى "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=معالج تظليل Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=تحويل "::highlight::" إلى "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=معالج روابط Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=يعالج الروابط من "[[UID]]" إلى "[[UID File Name|File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=مُحسن روابط Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=يعالج  الروابط من "[[UID]]" ويحسنها إلى "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=ترحيل الترويسة (Frontmatter)
@@ -6013,10 +5965,6 @@ translation=الملفات المعالجة
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=الملفات المعدلة
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=إجمالي الاستبدالات
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=لم يتم العثور على الخزنة.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=تعذّر العثور على خزنة لعنوان URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=الملفات المدعومة

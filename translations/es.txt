@@ -2270,6 +2270,10 @@ translation=No se ha podido cargar el complemento {{plugin}} v{{version}}. Se ha
 original=Failed to open “{{filepath}}”
 translation=No se pudo abrir “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=No se pudo exportar «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Se produjo un error al cerrar la vista «{{name}}»
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Bienvenido
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Esta es su nueva *bóveda*.\n\nCree una nota de algo, [[cree un enlace]], o pruebe [el Importador](https://help.obsidian.md/Plugins/Importer)!\n\nCuando esté listo, borre esta nota y aprópiese de la bóveda
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Esta es su nueva *bóveda*.\n\nCree una nota de algo, [[cree un enlace]], o pruebe [el Importador](obsidian://show-plugin?id=obsidian-importer)!\n\nCuando esté listo, borre esta nota y aprópiese de la bóveda
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Restaurar
 [interface.window.close-window]
 original=Close window
 translation=Cerrar ventana
-
-[interface.window.go-back]
-original=Go back
-translation=Ir atrás
-
-[interface.window.go-forward]
-original=Go forward
-translation=Ir adelante
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Cambiar bóveda...
 [commands.open-vault]
 original=Open vault...
 translation=Abrir bóveda...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Abrir un archivo externo a la bóveda...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Error al combinar las notas
 original=The file or folder “{{path}}” does not exist.
 translation=El archivo o carpeta “{{path}}” no existe.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian no puede abrir archivos «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=El encabezado no puede estar vacío
@@ -4333,6 +4337,10 @@ translation=Nueva ventana
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Abrir rápidamente...
+
+[menu-items.open-file]
+original=Open File...
+translation=Abrir archivo...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Comandos fijados
 original=Format converter
 translation=Importador de formato Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Convertir el formato Markdown de otras apps al formato de Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Abrir el importador de Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Corrector de etiquetas de Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Convierte "#etiqueta" y "#[[etiqueta]]" a "[[etiqueta]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Corrector de resaltados de Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Convierte "^^highlight^^" a "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Convertidor de tareas de Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Convierte de "{{[[TODO]]}}" a "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Corrector de resaltados de Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Convierte "::highlight::" en "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Corrector de enlaces de Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Corrige enlaces de "[[UID]]" a "[[UID Nombre de Archivo]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Embellece los enlaces de Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Arregla enlaces y cambia el formato de "[[UID]]" a "[[UID Nombre de Archivo|Nombre de Archivo]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migración de metadatos
@@ -6013,10 +5965,6 @@ translation=Archivos procesados
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Archivos modificados
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Reemplazos totales
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Bóveda no encontrada.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=No se ha podido encontrar una bóveda para la URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Archivos compatibles

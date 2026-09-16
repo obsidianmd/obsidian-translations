@@ -2270,6 +2270,10 @@ translation=មិនអាចផ្ទុកកម្មវិធីជំន�
 original=Failed to open “{{filepath}}”
 translation=មិនអាចបើក “{{filepath}}” បាន
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=មិនអាចនាំចេញ “{{filename}}” បានទេ
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=ទិដ្ឋភាព “{{name}}” បានជួបប្រទះកំហុសពេលកំពុងបិទ
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=សូមស្វាគមន៍
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=នេះគឺជា *វ៉ាល់* ថ្មីរបស់អ្នក។\n\nសរសេរកំណត់ចំណាំអំពីអ្វីមួយ, [[បង្កើតតំណ]], ឬសាកល្បង [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nពេលអ្នករួចរាល់ សូមលុបកំណត់ចំណាំនេះ ហើយធ្វើឱ្យវ៉ាល់នេះក្លាយជារបស់អ្នកផ្ទាល់។
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=នេះគឺជា *វ៉ាល់* ថ្មីរបស់អ្នក។\n\nសរសេរកំណត់ចំណាំអំពីអ្វីមួយ, [[បង្កើតតំណ]], ឬសាកល្បង [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nពេលអ្នករួចរាល់ សូមលុបកំណត់ចំណាំនេះ ហើយធ្វើឱ្យវ៉ាល់នេះក្លាយជារបស់អ្នកផ្ទាល់។
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=ស្តារឡើងវិញ
 [interface.window.close-window]
 original=Close window
 translation=បិទ window
-
-[interface.window.go-back]
-original=Go back
-translation=ត្រឡប់​ក្រោយ
-
-[interface.window.go-forward]
-original=Go forward
-translation=ឆ្ពោះទៅមុខ
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=ប្តូរ​វ៉ាល់...
 [commands.open-vault]
 original=Open vault...
 translation=បើក​វ៉ាល់...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=បើកឯកសារពីខាងក្រៅវ៉ាល់...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=បរាជ័យក្នុងការបញ្ចូលគ្�
 original=The file or folder “{{path}}” does not exist.
 translation=ឯកសារ ឬ ថត “{{path}}” មិនមានទេ។
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian មិនអាចបើកឯកសារ “.{{extension}}” បានទេ។
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=ចំណងជើងមិនអាចទទេបានទេ
@@ -4333,6 +4337,10 @@ translation=Window ថ្មី
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=បើករហ័ស...
+
+[menu-items.open-file]
+original=Open File...
+translation=បើកឯកសារ...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=ខ្ទាស់ពាក្យបញ្ជា
 original=Format converter
 translation=កម្មវិធីបម្លែងទ្រង់ទ្រាយ
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=បំលែង Markdown ពីកម្មវិធីផ្សេងទៀតទៅជាទម្រង់ Obsidian។
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=បើកកម្មវិធីបម្លែងទ្រង់ទ្រាយ
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=កម្មវិធីជួសជុល tag Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=បំប្លែង "#tag" និង "#[[tag]]" ទៅ "[[tag]]"។
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=កម្មវិធីជួសជុល highlight Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=បំប្លែង "^^highlight^^" ទៅ "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=កម្មវិធីបម្លែង Roam Research TODO
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=បំប្លែង "{{[[TODO]]}}" ទៅ "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=អ្នកជួសជុល bear highlight
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=បំប្លែង "::highlight::" ទៅ "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=អ្នកជួសជុលតំណភ្ជាប់ Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=ជួសជុល "[[UID]]" តំណភ្ជាប់ទៅពេញ "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=ឧបករណ៍កែសម្ផស្សតំណភ្ជាប់ Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=ជួសជុល "[[UID]]" តំណភ្ជាប់និងធ្វើឱ្យពួកវាស្រស់ស្អាត "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=ការផ្លាស់ទីទិន្នន័យមេតាដើមឯកសារ
@@ -6013,10 +5965,6 @@ translation=ឯកសារដែលបានដំណើរការ
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=ឯកសារដែលបានកែប្រែ
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=ការជំនួសសរុប
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=រកមិនឃើញវ៉ាល់។
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=មិនអាចរកឃើញវ៉ាល់សម្រាប់ URL {{url}} បានទេ
+
+[main.supported-files]
+original=Supported files
+translation=ឯកសារដែលគាំទ្រ

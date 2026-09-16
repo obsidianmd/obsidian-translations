@@ -2270,6 +2270,10 @@ translation=Не ўдалося загрузіць убудову {{plugin}} v{{
 original=Failed to open “{{filepath}}”
 translation=Не ўдалося адкрыць “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Не ўдалося экспартаваць «{{filename}}»
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Падчас закрыцця прадстаўлення «{{name}}» адбылася памылка
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Вітаем
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Гэта ваша новае *сховішча*.\n\nЗапішыце што-небудзь, [[стварыце спасылку]], або паспрабуйце [плагін Імпарта Markdown-файлаў](https://help.obsidian.md/Plugins/Importer)!\n\nКалі вы будзеце гатовы, выдаліце гэтую нататку і зрабіце сховішча сваім уласным.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Гэта ваша новае *сховішча*.\n\nЗапішыце што-небудзь, [[стварыце спасылку]], або паспрабуйце [плагін Імпарта Markdown-файлаў](obsidian://show-plugin?id=obsidian-importer)!\n\nКалі вы будзеце гатовы, выдаліце гэтую нататку і зрабіце сховішча сваім уласным.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Аднавіць
 [interface.window.close-window]
 original=Close window
 translation=Закрыць акно
-
-[interface.window.go-back]
-original=Go back
-translation=Назад
-
-[interface.window.go-forward]
-original=Go forward
-translation=Уперад
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Змяніць сховішча...
 [commands.open-vault]
 original=Open vault...
 translation=Адкрыць сховішча...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Адкрыць файл па-за сховішчам...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Не ўдалося аб'яднаць нататкі: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Файл ці папка "{{path}}" не існуе.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian не можа адкрываць файлы «.{{extension}}».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Загаловак не можа быць пусты
@@ -4333,6 +4337,10 @@ translation=Новае акно
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Хутка адкрыць...
+
+[menu-items.open-file]
+original=Open File...
+translation=Адкрыць файл...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Замацаваныя каманды
 original=Format converter
 translation=Імпарт Markdown-файлаў
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Канвертуе Markdown-файлы з іншых праграм у фармат Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Імпарт Markdown-файлаў
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Выправіць фармат тэгаў з Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Канвертуе "#tag" і "#[[tag]]" у "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Выправіць фармат вылучэння тэксту з Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Канвертуе "^^highlight^^" у "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Выправіць чэкбоксы з Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Канвертуе "{{[[TODO]]}}" у "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Выправіць фармат вылучэння тэксту з Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Канвертуе "::highlight::" у "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Выправіць спасылкі на Zettelkasten нататкі
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Канвертуе спасылкі "[[UID]]" у "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Упрыгожыць спасылкі на Zettelkasten нататкі
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Канвертуе і ўпрыгожвае спасылкі "[[UID]]" у "[[UID File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Міграцыя пярэдніх метаданых
@@ -6013,10 +5965,6 @@ translation=Апрацавана
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Зменена
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Усяго замен
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Сховішча не знойдзена.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Не ўдалося знайсці сховішча для URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Файлы, якія падтрымліваюцца

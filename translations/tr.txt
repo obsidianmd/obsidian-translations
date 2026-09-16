@@ -2270,6 +2270,10 @@ translation={{plugin}} v{{version}} eklentisi yüklenemedi. Bu sürümün sorunl
 original=Failed to open “{{filepath}}”
 translation=“{{filepath}}” açılamadı
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=“{{filename}}” dışa aktarılamadı
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=“{{name}}” görünümü kapatılırken bir hatayla karşılaştı
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Hoş geldiniz
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Bu senin yeni *kasandan*.\n\nBir şeyler not al, [[bir bağlantı oluştur]] ya da [Importer](https://help.obsidian.md/Plugins/Importer) aracını dene!\n\nHazır olduğunda bu notu sil ve kasayı kendine göre şekillendir.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Bu senin yeni *kasandan*.\n\nBir şeyler not al, [[bir bağlantı oluştur]] ya da [Importer](obsidian://show-plugin?id=obsidian-importer) aracını dene!\n\nHazır olduğunda bu notu sil ve kasayı kendine göre şekillendir.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Eski hâline küçült
 [interface.window.close-window]
 original=Close window
 translation=Pencereyi kapa
-
-[interface.window.go-back]
-original=Go back
-translation=Geri git
-
-[interface.window.go-forward]
-original=Go forward
-translation=İleri git
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Kasayı değiştir...
 [commands.open-vault]
 original=Open vault...
 translation=Kasayı aç...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Kasa dışından dosya aç...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Notları birleştirmede başarısız oldu: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=“{{path}}” dosya veya klasörü mevcut değil.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian “.{{extension}}” dosyalarını açamıyor.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Başlık boş olamaz
@@ -4333,6 +4337,10 @@ translation=Yeni Pencere
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Hızlı Aç...
+
+[menu-items.open-file]
+original=Open File...
+translation=Dosya Aç...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Sabitlenmiş komutlar
 original=Format converter
 translation=Markdown formatı içe aktarıcı
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Markdown'ı diğer uygulamalardan Obsidian formatına dönüştürün.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Markdown yükleyicisini aç
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research etiket düzelticisi
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation="#tag" ve "#[[tag]]" öğelerini "[[tag]]" biçimine dönüştürür.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research vurgulayıcı düzeltici
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation="^^highlight^^" ifadesini "==highlight==" dönüştürür.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TODO dönüştürücüsü
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation="{{[[TODO]]}}" öğesini "[ ]" biçimine dönüştürür.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear vurgu düzeltici
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=“::vurgulama::” ifadesini “==vurgulama==” formatına dönüştürür.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten bağlantı düzeltici
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation="[[UID]]" bağlantılarını tamamen "[[UID Dosya Adı]]" biçimine dönüştürür.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten bağlantı güzelleştirici
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation="[[UID]]" bağlantılarını düzeltir ve ayrıca onları "[[UID Dosya Adı|Dosya Adı]]" biçiminde güzelleştirir.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Başlangıç meta verileri geçişi
@@ -6013,10 +5965,6 @@ translation=İşlenmiş Dosyalar
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Değiştirilmiş dosyalar
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Toplam değiştirme
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Kasa bulunamadı.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL'si için bir kasa bulunamadı
+
+[main.supported-files]
+original=Supported files
+translation=Desteklenen dosyalar

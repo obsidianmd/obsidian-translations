@@ -2270,6 +2270,10 @@ translation=Tidak dapat memuat plugin {{plugin}} v{{version}}. Versi ini dilapor
 original=Failed to open “{{filepath}}”
 translation=Gagal membuka “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Gagal mengekspor “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Tampilan “{{name}}” mengalami kesalahan saat ditutup
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Selamat datang
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Ini adalah *brankas* baru Anda.\n\nCatat sesuatu, [[buat tautan]], atau coba [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nSaat Anda siap, hapus catatan ini dan jadikan brankas ini milik Anda sendiri.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Ini adalah *brankas* baru Anda.\n\nCatat sesuatu, [[buat tautan]], atau coba [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nSaat Anda siap, hapus catatan ini dan jadikan brankas ini milik Anda sendiri.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Kecilkan
 [interface.window.close-window]
 original=Close window
 translation=Tutup jendela
-
-[interface.window.go-back]
-original=Go back
-translation=Sebelumnya
-
-[interface.window.go-forward]
-original=Go forward
-translation=Sesudahnya
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Ganti brankas...
 [commands.open-vault]
 original=Open vault...
 translation=Buka brankas...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Buka file dari luar brankas...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Gagal menggabungkan catatan: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=File atau folder “{{path}}” tidak ada.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian tidak dapat membuka file “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Judul tidak boleh kosong
@@ -4333,6 +4337,10 @@ translation=Jendela Baru
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Buka Secara Cepat...
+
+[menu-items.open-file]
+original=Open File...
+translation=Buka File...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Perintah tersemat
 original=Format converter
 translation=Importir format Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Konversi format Markdown dari aplikasi lain ke format Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Buka importir Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Perbaikan tag Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Konversi "#tag" dan "#[[tag]]" ke "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Perbaikan sorotan Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Konversi "^^sorotan^^" ke "==sorotan==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Pengkonversian Roam Research TODO
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Konversi "{{[[TODO]]}}" ke "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Perbaikan sorotan Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Konversi "::sorotan::" ke "==sorotan==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Perbaikan tautan Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Memperbaiki tautan "[[UID]]" menjadi "[[UID Nama Berkas]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Perindah tautan Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Memperbaiki tautan "[[UID]]" dan memperindahnya menjadi "[[UID Nama Berkas|Nama Berkas]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migrasi metadata awal
@@ -6013,10 +5965,6 @@ translation=Berkas yang diproses
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Berkas yang dimodifikasi
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Total pergantian
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Brankas tidak ditemukan.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Tidak dapat menemukan brankas untuk URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=File yang didukung

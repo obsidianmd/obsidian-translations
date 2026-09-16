@@ -2270,6 +2270,10 @@ translation=Shtojca {{plugin}} v{{version}} nuk mund të ngarkohet. Është rapo
 original=Failed to open “{{filepath}}”
 translation=Dështoi hapja e “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Eksportimi i “{{filename}}” dështoi
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Pamja “{{name}}” hasi një gabim gjatë mbylljes
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Mirë se vini
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Kjo është *kasaforta* jote e re.\n\nShëno diçka, [[krijo një lidhje]], ose provo [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nKur të jesh gati, fshije këtë shënim dhe bëje kasafortën tënden.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Kjo është *kasaforta* jote e re.\n\nShëno diçka, [[krijo një lidhje]], ose provo [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nKur të jesh gati, fshije këtë shënim dhe bëje kasafortën tënden.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Rikthe në përmasen bazë
 [interface.window.close-window]
 original=Close window
 translation=Mbyll dritaren
-
-[interface.window.go-back]
-original=Go back
-translation=Shko mbrapa
-
-[interface.window.go-forward]
-original=Go forward
-translation=Shko para
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Ndrysho kasafortën...
 [commands.open-vault]
 original=Open vault...
 translation=Hap kasafortën...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Hap skedar nga jashtë kasafortës...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Dështoi bashkimi i shënimeve: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Skedari ose dosja “{{path}}” nuk ekziston.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian nuk mund të hapë skedarë “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Titulli nuk mund të jetë bosh
@@ -4333,6 +4337,10 @@ translation=Dritare e re
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Hap shpejt...
+
+[menu-items.open-file]
+original=Open File...
+translation=Hap skedarin...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Komanda të ngulitura
 original=Format converter
 translation=Importuesi për formatin Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Konverto Markdown nga aplikacione të tjera në formatin e Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Hap importuesin për Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Korrigjuesi i etiketimeve Roam Research 
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Konverton "#tag" dhe "#[[tag]]" në "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Korrigjuesi i nënvijëzimeve Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Konverton "^^highlight^^" në "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Konvertuesi i TODO Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Konveron "{{[[TODO]]}}" në "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Rregulluesi i nënvijëzimeve Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Konverton "::highlight::" në "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Korrigjuesi i lidhjeve Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Korrigjon lidhjet "[[UID]]" në variantin e plotë "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zbukuruesi i lidhjeve Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Korrigjon lidhjet "[[UID]]" dhe gjithashtu i zbukuron ato "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migrimi i frontmatter
@@ -6013,10 +5965,6 @@ translation=Dokumentat u përpunuan
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Dokumentuat u modifikuan
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Zëvendësime në total
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Kasaforta nuk u gjet.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nuk mund të gjendet një kasafortë për URL-në {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Skedarët e mbështetur

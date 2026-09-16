@@ -2270,6 +2270,10 @@ translation=افزونهٔ {{plugin}} نسخهٔ v{{version}} بارگیری ن�
 original=Failed to open “{{filepath}}”
 translation=باز کردن «{{filepath}}» ناموفق بود
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=برون‌بری «{{filename}}» ناموفق بود
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=هنگام بستن نمای «{{name}}» خطایی رخ داد
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=خوش آمدید
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=این *خزانه* جدید شماست.\n\nچیزی را یادداشت کنید، [[یک پیوند ایجاد کنید]]، یا [ابزار واردکننده](https://help.obsidian.md/Plugins/Importer) را امتحان کنید!\n\nوقتی آماده شدید، این یادداشت را حذف کنید و خزانه را مال خود کنید.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=این *خزانه* جدید شماست.\n\nچیزی را یادداشت کنید، [[یک پیوند ایجاد کنید]]، یا [ابزار واردکننده](obsidian://show-plugin?id=obsidian-importer) را امتحان کنید!\n\nوقتی آماده شدید، این یادداشت را حذف کنید و خزانه را مال خود کنید.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=بازنشانی کردن پنجره
 [interface.window.close-window]
 original=Close window
 translation=بستن پنجره
-
-[interface.window.go-back]
-original=Go back
-translation=عقب‌گرد
-
-[interface.window.go-forward]
-original=Go forward
-translation=پیش‌رفت
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=تغییر گاوصندوق...
 [commands.open-vault]
 original=Open vault...
 translation=باز کردن گاوصندوق...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=باز کردن فایل از خارج گاوصندوق...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=ادغام یادداشت‌ها ناموفق بود: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=فایل یا پوشه «{{path}}» وجود ندارد.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian نمی‌تواند فایل‌های «.{{extension}}» را باز کند.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=سرفصل نمی‌تواند خالی باشد
@@ -4333,6 +4337,10 @@ translation=پنجره‌ی نو
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=گشودن سریع...
+
+[menu-items.open-file]
+original=Open File...
+translation=باز کردن فایل...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=فرمان‌های سنجاق‌شده
 original=Format converter
 translation=واردکننده‌ی قالب مارک‌داون
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=تبدیل مارک‌داون از برنامه‌های دیگر به قالب Obsidian
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=گشودن واردکننده‌ی مارک‌داون
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=رفع‌کننده برچسب Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=برچسب‌های "#tag" و "#[[tag]]" را به "[[tag]]" تبدیل می‌کند.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=رفع‌کننده هایلایت Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=متن‌های "^^highlight^^" را به "==highlight==" تبدیل می‌کند.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=تبدیل‌کننده TODO در Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=متن "{{[[TODO]]}}" را به "[ ]" تبدیل می‌کند.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=رفع‌کننده هایلایت Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=متن‌های "::highlight::" را به "==highlight==" تبدیل می‌کند.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=رفع‌کننده پیوند Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=پیوندهای "[[UID]]" را به "[[UID File Name]]" کامل اصلاح می‌کند.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=زیباساز پیوند Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=پیوندهای "[[UID]]" را اصلاح و همچنین آن‌ها را "[[UID File Name|File Name]]" زیبا می‌کند.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=مهاجرت فرادادهٔ ابتدای فایل
@@ -6013,10 +5965,6 @@ translation=پرونده‌های پرداخته
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=پرونده‌های دستکاری‌شده
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=مجموع جایگزینی‌ها
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=گاوصندوق پیدا نشد.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=امکان یافتن گاوصندوقی برای URL ‏{{url}} وجود ندارد
+
+[main.supported-files]
+original=Supported files
+translation=فایل‌های پشتیبانی‌شده

@@ -2270,6 +2270,10 @@ translation=Lisäosan {{plugin}} versiota v{{version}} ei voitu ladata. Tämän 
 original=Failed to open “{{filepath}}”
 translation=Tiedoston “{{filepath}}” avaus epäonnistui
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Tiedoston “{{filename}}” vieminen epäonnistui
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Näkymää ”{{name}}” suljettaessa tapahtui virhe
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Tervetuloa
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Tämä on uusi *holvisi*.\n\nKirjoita muistiinpano, [[luo linkki]] tai kokeile [tuontityökalua](https://help.obsidian.md/Plugins/Importer)!\n\nKun olet valmis, poista tämä muistiinpano ja tee holvista omasi.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Tämä on uusi *holvisi*.\n\nKirjoita muistiinpano, [[luo linkki]] tai kokeile [tuontityökalua](obsidian://show-plugin?id=obsidian-importer)!\n\nKun olet valmis, poista tämä muistiinpano ja tee holvista omasi.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Palauta
 [interface.window.close-window]
 original=Close window
 translation=Sulje ikkuna
-
-[interface.window.go-back]
-original=Go back
-translation=Takaisin
-
-[interface.window.go-forward]
-original=Go forward
-translation=Eteenpäin
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Vaihda holvia...
 [commands.open-vault]
 original=Open vault...
 translation=Avaa holvi...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Avaa tiedosto holvin ulkopuolelta...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=Muistiinpanojen yhdistäminen epäonnistui: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Tiedostoa tai kansiota “{{path}}” ei ole.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian ei voi avata “.{{extension}}”-tiedostoja.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Otsikko ei voi olla tyhjä
@@ -4333,6 +4337,10 @@ translation=Uusi Ikkuna
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Avaa pikaisesti...
+
+[menu-items.open-file]
+original=Open File...
+translation=Avaa tiedosto...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Kiinnitetyt komennot
 original=Format converter
 translation=Muotoilumuunnin
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Muuntaa muiden sovellusten Markdown-tekstiä Obsidian-sovelluksen käyttämään muotoon.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Avaa muotoilumuunnin
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research -tunnisteiden korjaus
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Muuntaa tunnisteet ”#tag” ja ”#[[tag]]” -muodosta ”[[tag]]”-muotoon.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research -korostusten korjaus
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Muuntaa korostukset ”^^highlight^^”-muodosta ”==highlight==”-muotoon.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research -tehtävien muuntaminen
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Muuntaa tehtävät ”{{[[TODO]]}}”-muodosta ”[ ]”-muotoon.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear-korostusten korjaus
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Muuntaa korostukset ”::highlight::”-muodosta ”==highlight==”-muotoon.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten-linkkien korjaus
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Korjaa ”[[UID]]”-linkit täyteen ”[[UID File Name]]” -muotoon.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten-linkkien siistiminen
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Korjaa ”[[UID]]”-linkit ja siistii ne ”[[UID File Name|File Name]]” -muotoon.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Alkulehtien muuntaminen
@@ -6013,10 +5965,6 @@ translation=Käsitellyt tiedostot
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Muokatut tiedostot
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Korvauksia yhteensä
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=Holvia ei löytynyt.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL-osoitteelle {{url}} ei löytynyt holvia
+
+[main.supported-files]
+original=Supported files
+translation=Tuetut tiedostot

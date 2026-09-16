@@ -2270,6 +2270,10 @@ translation=Nem sikerült betölteni a(z) {{plugin}} v{{version}} verzióját. A
 original=Failed to open “{{filepath}}”
 translation=Nem sikerült megnyitni a következőt: “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=A(z) „{{filename}}” exportálása sikertelen
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=A(z) „{{name}}” nézet bezárásakor hiba történt
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Üdvözöljük
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Ez az Ön új *széfje*.\n\nJegyzeteljen, [[hozzon létre hivatkozást]], vagy próbálja ki [az Importálót](https://help.obsidian.md/Plugins/Importer)!\n\nAmikor készen áll, törölje ezt a jegyzetet, és rendezze be széfjét tetszése szerint.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Ez az Ön új *széfje*.\n\nJegyzeteljen, [[hozzon létre hivatkozást]], vagy próbálja ki [az Importálót](obsidian://show-plugin?id=obsidian-importer)!\n\nAmikor készen áll, törölje ezt a jegyzetet, és rendezze be széfjét tetszése szerint.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Előző méret
 [interface.window.close-window]
 original=Close window
 translation=Ablak bezárása
-
-[interface.window.go-back]
-original=Go back
-translation=Vissza
-
-[interface.window.go-forward]
-original=Go forward
-translation=Előre
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Széf váltása...
 [commands.open-vault]
 original=Open vault...
 translation=Széf megnyitása...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Fájl megnyitása a széfen kívülről...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4274,6 +4274,10 @@ translation=A jegyzetek egyesítése sikertelen: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=A “{{path}}” fájl vagy mappa nem létezik.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Az Obsidian nem tudja megnyitni a(z) „.{{extension}}” fájlokat.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=A cím nem lehet üres
@@ -4333,6 +4337,10 @@ translation=Új ablak
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Gyors megnyitás...
+
+[menu-items.open-file]
+original=Open File...
+translation=Fájl megnyitása...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5914,6 @@ translation=Rögzített parancsok
 original=Format converter
 translation=Formátum-konvertáló
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Az Obsidian formátumába konvertálhatja más alkalmazások Markdown-ját.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Formátum-konvertáló megnyitása
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Roam Research címkejavító
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Átalakítja a “#címke” és “#[[címke]]” formátumot “[[címke]]”-re.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Roam Research kiemelés-javító
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Átalakítja a “^^kiemelés^^” formátumot “==kiemelés==”-re.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Roam Research TEENDŐ-átalakító
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Átalakítja a “{{[[TODO]]}}” formátumot “[ ]”-re.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Bear kiemelés-javító
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Átalakítja a “::kiemelés::” formátumot “==kiemelés==”-re.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Zettelkasten hivatkozás-javító
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Javítja az “[[UID]]” hivatkozásokat teljes “[[UID Fájlnév]]” formátumra.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Zettelkasten hivatkozás-szépítő
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Javítja az “[[UID]]” hivatkozásokat, és szebbé teszi őket “[[UID Fájlnév|Fájlnév]]” formátumban.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Metaadatok migrációja
@@ -6013,10 +5965,6 @@ translation=Feldolgozott fájlok
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Módosított fájlok
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Összes csere
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -10413,3 +10361,7 @@ translation=A széf nem található.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nem található széf ehhez az URL-hez: {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Támogatott fájlok
