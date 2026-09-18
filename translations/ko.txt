@@ -668,11 +668,11 @@ translation=코드 블럭이나 Frontmatter 등의 도구들을 사용 할 때 �
 
 [setting.appearance.label-font-count]
 original={{count}} font
-translation=글꼴 {{count}}개
+translation=폰트 {{count}}개
 
 [setting.appearance.label-font-count_plural]
 original={{count}} fonts
-translation=글꼴 {{count}}개
+translation=폰트 {{count}}개
 
 [setting.appearance.option-font-placeholder]
 original=Enter font name...
@@ -1016,7 +1016,7 @@ translation=전체
 
 [setting.hotkeys.label-show-conflicts]
 original=Conflicts
-translation=충돌 ({{count}})
+translation=충돌
 
 [setting.hotkeys.label-show-unassigned]
 original=Unassigned
@@ -2256,15 +2256,15 @@ translation=“{{plugin}}” 플러그인을 로드하던 중 오류가 발생�
 
 [interface.msg-plugin-incompatible]
 original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
-translation={{plugin}}을(를) 불러오지 못했습니다. 이 플러그인은 Obsidian v{{version}}과(와) 호환되지 않습니다.
+translation={{plugin}} 플러그인을 불러오지 못했습니다. 이 플러그인은 Obsidian v{{version}} 버전과 호환되지 않습니다.
 
 [interface.msg-plugin-nonfunctional]
 original={{plugin}} is no longer functional. We recommend uninstalling it.
-translation={{plugin}}은(는) 더 이상 작동하지 않습니다. 제거하는 것이 좋습니다.
+translation={{plugin}} 플러그인은 더 이상 작동하지 않습니다. 제거하는 것이 좋습니다.
 
 [interface.msg-plugin-version-issues]
 original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
-translation=플러그인 {{plugin}} v{{version}}을(를) 불러올 수 없습니다. 이 버전은 문제를 일으키는 것으로 보고되었습니다. 더 새로운 버전의 플러그인이 있는지 확인하세요.
+translation={{plugin}} v{{version}} 플러그인을 불러올 수 없습니다. 이 버전은 문제를 일으키는 것으로 보고되었습니다. 더 새로운 버전의 플러그인이 있는지 확인하세요.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
@@ -3744,7 +3744,7 @@ translation=보관함 열기...
 
 [commands.open-file]
 original=Open file from outside the vault...
-translation=보관함 외부에서 파일 열기...
+translation=보관함 외부의 파일 열기...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -3912,7 +3912,7 @@ translation=선택된 텍스트 하이라이트 활성화/비활성화
 
 [commands.toggle-highlight-color]
 original=Toggle {{color, lowercase}} highlight
-translation={{color, lowercase}} 강조 표시 전환
+translation={{color, lowercase}} 하이라이트 표시 전환
 
 [commands.toggle-comments]
 original=Toggle comment
@@ -10364,4 +10364,4 @@ translation=URL {{url}}에 해당하는 보관함을 찾을 수 없습니다
 
 [main.supported-files]
 original=Supported files
-translation=지원되는 파일
+translation=지원하는 파일
