@@ -4010,6 +4010,14 @@ translation=স্যান্ডবক্স ভল্ট খুলুন
 original=Toggle window always on top
 translation=উইন্ডো সবসময় উপরে চালু রাখুন
 
+[commands.increase-font-size]
+original=Increase font size
+translation=ফন্টের আকার বাড়ান
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=ফন্টের আকার কমান
+
 [commands.zoom-in]
 original=Zoom in
 translation=জুম বাড়ান
@@ -9386,6 +9394,26 @@ translation=সাজানো যোগ করুন
 original=Group by
 translation=গ্রুপ করুন
 
+[plugins.bases.label-group]
+original=Group
+translation=গ্রুপ
+
+[plugins.bases.label-display]
+original=Display
+translation=প্রদর্শন
+
+[plugins.bases.label-results]
+original=Results
+translation=ফলাফল
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=ম্যানুয়াল
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=গ্রুপ যোগ করুন
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=সাজান
@@ -9622,21 +9650,33 @@ translation=ছবির অ্যাসপেক্ট রেশিও
 original=Kanban
 translation=কানবান
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=ক্রম রিসেট করুন
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=গ্রুপ সম্পাদনা করুন...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=কলামের প্রস্থ
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=খালি কলাম লুকান
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=কলাম যোগ করুন
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=সাজানোর মেনু থেকে গ্রুপ করার জন্য একটি বৈশিষ্ট্য বেছে নিন
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=গ্রুপ করার জন্য একটি বৈশিষ্ট্য বেছে নিন।
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=বৈশিষ্ট্য বেছে নিন
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=কোনো কলাম নেই
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=কলাম হিসেবে দেখানোর জন্য গ্রুপ নির্বাচন করুন।
 
 [plugins.bases.table.name]
 original=Table

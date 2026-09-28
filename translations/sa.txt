@@ -4010,6 +4010,14 @@ translation=Sandbox-तिजोरीं उद्घाटयतु
 original=Toggle window always on top
 translation=वातायनं सर्वदा उपरि स्थापयतु इति विभाषतु
 
+[commands.increase-font-size]
+original=Increase font size
+translation=अक्षरपरिमाणं वर्धयतु
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=अक्षरपरिमाणं न्यूनीकरोतु
+
 [commands.zoom-in]
 original=Zoom in
 translation=उपसर्पण
@@ -9386,6 +9394,26 @@ translation=विवरणं योजयन्तु (Add sort)
 original=Group by
 translation=समूहेषु विभजन्तु (Group by)
 
+[plugins.bases.label-group]
+original=Group
+translation=समूहः
+
+[plugins.bases.label-display]
+original=Display
+translation=प्रदर्शनम्
+
+[plugins.bases.label-results]
+original=Results
+translation=परिणामाः
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=हस्तचालितम्
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=समूहं योजयतु
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=क्रमेण स्थापयन्तु (Sort by)
@@ -9622,21 +9650,33 @@ translation=Image aspect ratio
 original=Kanban
 translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=क्रमं पुनर्निर्धारयतु
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=समूहान् सम्पादयतु...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=स्तम्भस्य विस्तारः
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=रिक्तस्तम्भान् गोपयतु
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=स्तम्भान् योजयतु
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=क्रमण-सूच्यां समूहकरणार्थं गुणं चिनोतु
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=समूहकरणार्थं गुणं चिनोतु।
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=गुणं चिनोतु
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=स्तम्भाः न सन्ति
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=स्तम्भरूपेण दर्शयितुं समूहान् चिनोतु।
 
 [plugins.bases.table.name]
 original=Table

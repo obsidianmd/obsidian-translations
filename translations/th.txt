@@ -4010,6 +4010,14 @@ translation=เปิดคลัง sandbox
 original=Toggle window always on top
 translation=สลับให้หน้าต่างอยู่บนสุดเสมอ
 
+[commands.increase-font-size]
+original=Increase font size
+translation=เพิ่มขนาดตัวอักษร
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=ลดขนาดตัวอักษร
+
 [commands.zoom-in]
 original=Zoom in
 translation=ซูมเข้า
@@ -9386,6 +9394,26 @@ translation=เพิ่มการจัดเรียง
 original=Group by
 translation=จัดกลุ่มตาม
 
+[plugins.bases.label-group]
+original=Group
+translation=กลุ่ม
+
+[plugins.bases.label-display]
+original=Display
+translation=การแสดงผล
+
+[plugins.bases.label-results]
+original=Results
+translation=ผลลัพธ์
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=กำหนดเอง
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=เพิ่มกลุ่ม
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=จัดเรียงตาม
@@ -9622,21 +9650,33 @@ translation=อัตราส่วนภาพ
 original=Kanban
 translation=คัมบัง
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=รีเซ็ตลำดับ
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=แก้ไขกลุ่ม...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=ความกว้างคอลัมน์
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=ซ่อนคอลัมน์ว่าง
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=เพิ่มคอลัมน์
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=เลือกคุณสมบัติที่จะใช้จัดกลุ่มจากเมนูจัดเรียง
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=เลือกคุณสมบัติที่จะใช้จัดกลุ่ม
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=เลือกคุณสมบัติ
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=ไม่มีคอลัมน์
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=เลือกกลุ่มที่จะแสดงเป็นคอลัมน์
 
 [plugins.bases.table.name]
 original=Table

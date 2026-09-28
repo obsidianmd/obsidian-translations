@@ -4010,6 +4010,14 @@ translation=サンドボックス保管庫を開く
 original=Toggle window always on top
 translation=ウィンドウの常時トップ表示を切り替え
 
+[commands.increase-font-size]
+original=Increase font size
+translation=文字サイズを大きくする
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=文字サイズを小さくする
+
 [commands.zoom-in]
 original=Zoom in
 translation=ズームイン
@@ -9386,6 +9394,26 @@ translation=並べ替えを追加
 original=Group by
 translation=グループ化
 
+[plugins.bases.label-group]
+original=Group
+translation=グループ
+
+[plugins.bases.label-display]
+original=Display
+translation=表示
+
+[plugins.bases.label-results]
+original=Results
+translation=結果
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=手動
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=グループを追加
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=並べ替え基準
@@ -9622,21 +9650,33 @@ translation=画像のアスペクト比
 original=Kanban
 translation=カンバン
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=順序をリセット
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=グループを編集...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=列の幅
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=空の列を非表示
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=列を追加
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=並べ替えメニューからグループ化に使用するプロパティを選択
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=グループ化に使用するプロパティを選択してください。
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=プロパティを選択
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=列がありません
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=列として表示するグループを選択してください。
 
 [plugins.bases.table.name]
 original=Table

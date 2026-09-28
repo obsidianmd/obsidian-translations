@@ -4010,6 +4010,14 @@ translation=Άνοιγμα θυρίδας sandbox
 original=Toggle window always on top
 translation=Εναλλαγή παραθύρου στην κορυφή
 
+[commands.increase-font-size]
+original=Increase font size
+translation=Αύξηση μεγέθους γραμματοσειράς
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Μείωση μεγέθους γραμματοσειράς
+
 [commands.zoom-in]
 original=Zoom in
 translation=Μεγέθυνση
@@ -9386,6 +9394,26 @@ translation=Προσθήκη ταξινόμησης
 original=Group by
 translation=Ομαδοποίηση κατά
 
+[plugins.bases.label-group]
+original=Group
+translation=Ομάδα
+
+[plugins.bases.label-display]
+original=Display
+translation=Εμφάνιση
+
+[plugins.bases.label-results]
+original=Results
+translation=Αποτελέσματα
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=Χειροκίνητα
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Προσθήκη ομάδας
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Ταξινόμηση κατά
@@ -9622,21 +9650,33 @@ translation=Αναλογία διαστάσεων εικόνας
 original=Kanban
 translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=Επαναφορά σειράς
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Επεξεργασία ομάδων...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=Πλάτος στήλης
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=Απόκρυψη κενών στηλών
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Προσθήκη στηλών
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=Επιλέξτε από το μενού ταξινόμησης μια ιδιότητα για την ομαδοποίηση
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Επιλέξτε μια ιδιότητα για ομαδοποίηση.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Επιλογή ιδιότητας
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Χωρίς στήλες
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Επιλέξτε ομάδες που θα εμφανίζονται ως στήλες.
 
 [plugins.bases.table.name]
 original=Table

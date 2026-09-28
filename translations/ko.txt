@@ -4010,6 +4010,14 @@ translation=샌드박스 보관함 열기
 original=Toggle window always on top
 translation=항상 최상단에 두는 창 활성화/비활성화
 
+[commands.increase-font-size]
+original=Increase font size
+translation=글꼴 크기 키우기
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=글꼴 크기 줄이기
+
 [commands.zoom-in]
 original=Zoom in
 translation=확대
@@ -9386,6 +9394,26 @@ translation=정렬 추가하기
 original=Group by
 translation=그룹 기준
 
+[plugins.bases.label-group]
+original=Group
+translation=그룹
+
+[plugins.bases.label-display]
+original=Display
+translation=표시
+
+[plugins.bases.label-results]
+original=Results
+translation=결과
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=수동
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=그룹 추가
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=정렬 기준
@@ -9622,21 +9650,33 @@ translation=이미지 가로/세로 비율
 original=Kanban
 translation=칸반
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=순서 재설정
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=그룹 편집...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=열 너비
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=빈 열 숨기기
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=열 추가
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=정렬 메뉴에서 그룹화 기준으로 사용할 속성을 선택하세요
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=그룹화할 속성을 선택하세요.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=속성 선택
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=열 없음
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=열로 표시할 그룹을 선택하세요.
 
 [plugins.bases.table.name]
 original=Table

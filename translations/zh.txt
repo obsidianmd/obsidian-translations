@@ -4010,6 +4010,14 @@ translation=打开沙盒仓库
 original=Toggle window always on top
 translation=将当前窗口置顶
 
+[commands.increase-font-size]
+original=Increase font size
+translation=增大字体
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=缩小字体
+
 [commands.zoom-in]
 original=Zoom in
 translation=放大
@@ -9386,6 +9394,26 @@ translation=添加排序
 original=Group by
 translation=分组依据
 
+[plugins.bases.label-group]
+original=Group
+translation=分组
+
+[plugins.bases.label-display]
+original=Display
+translation=显示
+
+[plugins.bases.label-results]
+original=Results
+translation=结果
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=手动
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=添加分组
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=排序依据
@@ -9622,21 +9650,33 @@ translation=图像宽高比
 original=Kanban
 translation=看板
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=重置顺序
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=编辑分组...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=列宽
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=隐藏空列
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=添加列
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=从排序菜单中选择用于分组的属性
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=选择用于分组的属性。
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=选择属性
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=没有列
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=选择要显示为列的分组。
 
 [plugins.bases.table.name]
 original=Table

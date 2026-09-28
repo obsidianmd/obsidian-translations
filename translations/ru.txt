@@ -4010,6 +4010,14 @@ translation=Открыть хранилище-песочницу
 original=Toggle window always on top
 translation=Включить/отключить отображение поверх всех окон
 
+[commands.increase-font-size]
+original=Increase font size
+translation=Увеличить размер шрифта
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Уменьшить размер шрифта
+
 [commands.zoom-in]
 original=Zoom in
 translation=Увеличить
@@ -9386,6 +9394,26 @@ translation=Добавить сортировку
 original=Group by
 translation=Группировать по
 
+[plugins.bases.label-group]
+original=Group
+translation=Группа
+
+[plugins.bases.label-display]
+original=Display
+translation=Отображение
+
+[plugins.bases.label-results]
+original=Results
+translation=Результаты
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=Вручную
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Добавить группу
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Сортировать по
@@ -9622,21 +9650,33 @@ translation=Соотношение сторон изображения
 original=Kanban
 translation=Канбан
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=Сбросить порядок
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Изменить группы...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=Ширина столбца
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=Скрыть пустые столбцы
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Добавить столбцы
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=Выберите в меню сортировки свойство для группировки
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Выберите свойство для группировки.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Выбрать свойство
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Нет столбцов
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Выберите группы, которые будут отображаться как столбцы.
 
 [plugins.bases.table.name]
 original=Table
