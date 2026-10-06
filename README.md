@@ -111,7 +111,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `ar` | Arabic | العربية | ✅ | ✅ | ✅ |
 | `az` | Azerbaijani | ? | 🚧 | | |
 | `be` | Belarusian | Беларуская мова | ✅ | | |
-| `bg` | Bulgarian | български език | 🚧 | | |
+| `bg` | Bulgarian | български език | ✅ | | |
 | `bn` | Bengali | বাংলা | ✅ | ✅ | ✅ |
 | `ca` | Catalan | català | ✅ | | ✅ |
 | `cs` | Czech | čeština | ✅ | | ✅ |
@@ -127,7 +127,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `fi` | Finnish | suomi | ✅ | | ✅ |
 | `fr` | French | français | ✅ | ✅ | ✅ |
 | `ga` | Irish | Gaeilge | ✅ | | |
-| `gl` | Galician  | Galego | 🚧 | | |
+| `gl` | Galician  | Galego | ✅ | | |
 | `he` | Hebrew  | עברית 🇮🇱 | ✅ | | ✅ |
 | `hi` | Hindi | हिन्दी | 🚧 | | |
 | `hr` | Croatian | ? | 🚧 | | |
@@ -136,6 +136,7 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `it` | Italian | Italiano | ✅ | ✅ | ✅ |
 | `ja` | Japanese | 日本語 | ✅ | ✅ | ✅ |
 | `ka` | Georgian | ქართული | ✅ | | |
+| `kab` | Kabyle | Taqbaylit | ✅ | | |
 | `km` | Khmer | ខេមរភាសា | ✅ | | |
 | `kn` | Kannada | ಕನ್ನಡ | 🚧 | | |
 | `ko` | Korean | 한국어 | ✅ | ✅ | ✅ |
@@ -158,14 +159,14 @@ Here is a table of language code to language name, in alphabetical order. The "A
 | `ro` | Romanian | Română | ✅ | ✅ | ✅ |
 | `ru` | Russian | Русский | ✅ | ✅ | ✅ |
 | `sa` | Sanskrit | संस्कृतम् | ✅ | | |
-| `si` | Sinhalese | සිංහල | 🚧 | | |
+| `si` | Sinhalese | සිංහල | ✅ | | |
 | `sk` | Slovak | Slovenčina | ✅ | | ✅ |
 | `sl` | Slovenian | ? | 🚧 | | |
 | `sq` | Albanian | Shqip | ✅ | | |
 | `sr` | Serbian | српски језик | ✅ | | |
 | `sv` | Swedish | Svenska | ✅ | ✅ | ✅ |
 | `sw` | Swahili | ? | 🚧 | | |
-| `ta` | Tamil | தமிழ் | 🚧 | | |
+| `ta` | Tamil | தமிழ் | ✅ | | |
 | `te` | Telugu | తెలుగు | 🚧 | | |
 | `th` | Thai | ไทย | ✅ | | ✅ |
 | `tl` | Filipino (Tagalog) | Tagalog | 🚧 | | |

@@ -2270,6 +2270,10 @@ translation=Não foi possível carregar o plugin {{plugin}} v{{version}}. Foi re
 original=Failed to open “{{filepath}}”
 translation=Falha ao abrir “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Falha ao exportar “{{filename}}”
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=A visualização “{{name}}” encontrou um erro ao ser fechada
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Bem-vindo
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Este é o seu novo *Cofre*.\n\nAnote algo, [[crie um link]], ou tente [o Importer](https://help.obsidian.md/Plugins/Importer)!\n\nQuando estiver pronto, exclua esta nota e monte o cofre do seu jeito.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Este é o seu novo *Cofre*.\n\nAnote algo, [[crie um link]], ou tente [o Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nQuando estiver pronto, exclua esta nota e monte o cofre do seu jeito.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Restaurar para baixo
 [interface.window.close-window]
 original=Close window
 translation=Fechar janela
-
-[interface.window.go-back]
-original=Go back
-translation=Voltar
-
-[interface.window.go-forward]
-original=Go forward
-translation=Próximo
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Trocar de cofre...
 [commands.open-vault]
 original=Open vault...
 translation=Abrir cofre...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Abrir arquivo de fora do cofre...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4010,6 +4010,14 @@ translation=Abrir cofre sandbox
 original=Toggle window always on top
 translation=Alternar janela sempre no topo
 
+[commands.increase-font-size]
+original=Increase font size
+translation=Aumentar o tamanho da fonte
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Diminuir o tamanho da fonte
+
 [commands.zoom-in]
 original=Zoom in
 translation=Aumentar zoom
@@ -4274,6 +4282,10 @@ translation=Não foi possível mesclar as notas: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=O arquivo ou pasta “{{path}}” não existe.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=O Obsidian não consegue abrir arquivos “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=O titulo não pode estar vazio
@@ -4333,6 +4345,10 @@ translation=Nova janela
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Abrir rapidamente...
+
+[menu-items.open-file]
+original=Open File...
+translation=Abrir arquivo...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5922,6 @@ translation=Comandos salvos
 original=Format converter
 translation=Importador de formato Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Converte Markdown de outros aplicativos para o formato do Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Abrir importador Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Conversor de etiquetas do Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Converte "#tag" e "#[[tag]]" para "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Conversor de destaques do Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Converte "^^highlight^^" para "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Conversor de TODO do Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Converte "{{[[TODO]]}}" para "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Conversor de destaques do Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Converte "::highlight::" para "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Conversor de links Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Converte "[[UID]]" links para "[[UID File Name]]" completo.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Embelezador de links Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Converte links "[[UID]]" e também os embeleza "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migração de frontmatter
@@ -6013,10 +5973,6 @@ translation=Arquivos processados
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Arquivos modificados
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Substituições totais
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -9438,6 +9394,26 @@ translation=Adicionar ordenação
 original=Group by
 translation=Agrupar por
 
+[plugins.bases.label-group]
+original=Group
+translation=Grupo
+
+[plugins.bases.label-display]
+original=Display
+translation=Exibição
+
+[plugins.bases.label-results]
+original=Results
+translation=Resultados
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=Manual
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Adicionar grupo
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Ordenar por
@@ -9674,21 +9650,33 @@ translation=Proporção da imagem
 original=Kanban
 translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=Redefinir ordem
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Editar grupos...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=Largura da coluna
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=Ocultar colunas vazias
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Adicionar colunas
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=Escolha uma propriedade para agrupar no menu de ordenação
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Escolha uma propriedade para agrupar.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Escolher propriedade
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Nenhuma coluna
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Selecione os grupos a serem exibidos como colunas.
 
 [plugins.bases.table.name]
 original=Table
@@ -10413,3 +10401,7 @@ translation=Cofre não encontrado.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Não foi possível encontrar um cofre para a URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Arquivos compatíveis

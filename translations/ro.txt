@@ -2270,6 +2270,10 @@ translation=Modulul {{plugin}} v{{version}} nu a putut fi încărcat. S-a raport
 original=Failed to open “{{filepath}}”
 translation=Deschiderea “{{filepath}}” a eșuat
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Exportarea fișierului „{{filename}}” a eșuat
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=Vizualizarea „{{name}}” a întâmpinat o eroare la închidere
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Bine ați venit
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Acesta este noul dvs. *seif*.\n\nÎnsemnați ceva, [[creați o legătură]] sau încercați [importatorul](https://help.obsidian.md/Plugins/Importer)!\n\nCând sunteți gata, ștergeți această însemnare și puneți-vă amprenta asupra acestui seif.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Acesta este noul dvs. *seif*.\n\nÎnsemnați ceva, [[creați o legătură]] sau încercați [importatorul](obsidian://show-plugin?id=obsidian-importer)!\n\nCând sunteți gata, ștergeți această însemnare și puneți-vă amprenta asupra acestui seif.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Restaurați dimensiunea
 [interface.window.close-window]
 original=Close window
 translation=Închideți fereastra
-
-[interface.window.go-back]
-original=Go back
-translation=Mergeți înapoi
-
-[interface.window.go-forward]
-original=Go forward
-translation=Mergeți înainte
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Schimbă seiful...
 [commands.open-vault]
 original=Open vault...
 translation=Deschide seiful...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Deschide un fișier din afara seifului...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4010,6 +4010,14 @@ translation=Deschideți seiful „cutie cu nisip”
 original=Toggle window always on top
 translation=Comutați fereastra mereu deasupra
 
+[commands.increase-font-size]
+original=Increase font size
+translation=Mărește dimensiunea fontului
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Micșorează dimensiunea fontului
+
 [commands.zoom-in]
 original=Zoom in
 translation=Măriți
@@ -4274,6 +4282,10 @@ translation=Nu s-a reușit îmbinarea însemnărilor: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Fișierul sau directorul „{{path}}” nu există.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian nu poate deschide fișiere „.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Titlul nu poate fi gol
@@ -4333,6 +4345,10 @@ translation=Fereastră nouă
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Deschide rapid...
+
+[menu-items.open-file]
+original=Open File...
+translation=Deschide fișierul...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5922,6 @@ translation=Comenzi fixate
 original=Format converter
 translation=Importator din format Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Transformă fișiere Markdown din alte aplicații în formatul din Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Deschide importatorul din format Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Reparare etichete Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Convertește "#tag" și "#[[tag]]" în "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Reparare text evidențiat Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Convertește "^^highlight^^" în "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Convertor Roam Research TODO
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Convertește "{{[[TODO]]}}" în "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Convertor de evidențiere a textului
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Convertește "::highlight::" în "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Reparare legături Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Repară legăturile "[[UID]]" și le transformă în "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Îmbunătățire legături Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Repară legăturile "[[UID]]" și le formatează  "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migrare frontmatter
@@ -6013,10 +5973,6 @@ translation=Fișiere procesate
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Fișiere modificate
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Înlocuiri totale
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -9438,6 +9394,26 @@ translation=Adaugă sortare
 original=Group by
 translation=Grupează după
 
+[plugins.bases.label-group]
+original=Group
+translation=Grup
+
+[plugins.bases.label-display]
+original=Display
+translation=Afișare
+
+[plugins.bases.label-results]
+original=Results
+translation=Rezultate
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=Manual
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Adaugă grup
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Sortează după
@@ -9674,21 +9650,33 @@ translation=Raport de aspect imagine
 original=Kanban
 translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=Resetează ordinea
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Editează grupurile...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=Lățimea coloanei
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=Ascunde coloanele goale
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Adaugă coloane
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=Alege din meniul de sortare o proprietate după care să se facă gruparea
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Alege o proprietate după care să grupezi.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Alege o proprietate
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Nicio coloană
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Selectează grupurile care să fie afișate ca coloane.
 
 [plugins.bases.table.name]
 original=Table
@@ -10413,3 +10401,7 @@ translation=Seiful nu a fost găsit.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nu se poate găsi un seif pentru URL-ul {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Fișiere acceptate

@@ -2270,6 +2270,10 @@ translation=ไม่สามารถโหลดปลั๊กอิน {{pl
 original=Failed to open “{{filepath}}”
 translation=ไม่สามารถเปิด “{{filepath}}” ได้
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=ส่งออก “{{filename}}” ไม่สำเร็จ
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=มุมมอง “{{name}}” พบข้อผิดพลาดขณะปิด
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=ยินดีต้อนรับ
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=นี่คือ *ห้องนิรภัย* ใหม่ของคุณ\n\nเขียนโน้ตสักอย่าง, [[สร้างลิงก์]], หรือลองใช้ [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nเมื่อพร้อมแล้ว ให้ลบโน้ตนี้ และปรับแต่งห้องนิรภัยให้เป็นแบบของคุณเอง
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=นี่คือ *ห้องนิรภัย* ใหม่ของคุณ\n\nเขียนโน้ตสักอย่าง, [[สร้างลิงก์]], หรือลองใช้ [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nเมื่อพร้อมแล้ว ให้ลบโน้ตนี้ และปรับแต่งห้องนิรภัยให้เป็นแบบของคุณเอง
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=ย่อหน้าต่าง
 [interface.window.close-window]
 original=Close window
 translation=ปิดหน้าต่าง
-
-[interface.window.go-back]
-original=Go back
-translation=ย้อนกลับ
-
-[interface.window.go-forward]
-original=Go forward
-translation=ไปข้างหน้า
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=เปลี่ยนห้องนิรภัย...
 [commands.open-vault]
 original=Open vault...
 translation=เปิดห้องนิรภัย...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=เปิดไฟล์จากภายนอกห้องนิรภัย...
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4010,6 +4010,14 @@ translation=เปิดคลัง sandbox
 original=Toggle window always on top
 translation=สลับให้หน้าต่างอยู่บนสุดเสมอ
 
+[commands.increase-font-size]
+original=Increase font size
+translation=เพิ่มขนาดตัวอักษร
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=ลดขนาดตัวอักษร
+
 [commands.zoom-in]
 original=Zoom in
 translation=ซูมเข้า
@@ -4274,6 +4282,10 @@ translation=ผสานโน้ตไม่สำเร็จ: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=ไม่มีไฟล์หรือโฟลเดอร์ “{{path}}” อยู่
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian ไม่สามารถเปิดไฟล์ “.{{extension}}” ได้
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=หัวเรื่องต้องไม่ว่างเปล่า
@@ -4333,6 +4345,10 @@ translation=เปิดหน้าต่างใหม่
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=เปิดอย่างรวดเร็ว...
+
+[menu-items.open-file]
+original=Open File...
+translation=เปิดไฟล์...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5922,6 @@ translation=คำสั่งที่ถูกปักหมุดไว้
 original=Format converter
 translation=นำเข้า Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=แปลง Markdown จากโปรแกรมอื่นให้อยู่ในฟอร์แมตของ Obsidian
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=เปิดหน้าต่างนำเข้า Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=ตัวช่วยแก้ไขแท็กของ Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=แปลง "#tag" และ "#[[tag]]" เป็น "[[tag]]"
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=ตัวช่วยแก้ไขการเน้นคำของ Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=แปลง "^^highlight^^" เป็น "==highlight=="
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=ตัวแปลง TODO ของ Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=แปลง "{{[[TODO]]}}" เป็น "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=ตัวช่วยแก่ไขการเน้นคำของ Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=แปลง "::highlight::" เป็น "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=ตัวช่วยแก้ไขลิงค์ของ Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=แก้ไขลิงค์ "[[UID]]" เป็น "[[UID File Name]]" แบบเต็ม
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=ตัวช่วยปรับลิงค์ของ Zettelkasten ให้สวยงาม
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=แก้ไขลิงค์ "[[UID]]" ให้สวยงามขึ้นเป็น "[[UID File Name|File Name]]"
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=การย้ายข้อมูล frontmatter
@@ -6013,10 +5973,6 @@ translation=ไฟล์ที่ถูกแปลง
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=ไฟล์ที่ถูกแก้ไข
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=ไฟล์ที่ถูกแทนที่ทั้งหมด
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -9438,6 +9394,26 @@ translation=เพิ่มการจัดเรียง
 original=Group by
 translation=จัดกลุ่มตาม
 
+[plugins.bases.label-group]
+original=Group
+translation=กลุ่ม
+
+[plugins.bases.label-display]
+original=Display
+translation=การแสดงผล
+
+[plugins.bases.label-results]
+original=Results
+translation=ผลลัพธ์
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=กำหนดเอง
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=เพิ่มกลุ่ม
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=จัดเรียงตาม
@@ -9674,21 +9650,33 @@ translation=อัตราส่วนภาพ
 original=Kanban
 translation=คัมบัง
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=รีเซ็ตลำดับ
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=แก้ไขกลุ่ม...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=ความกว้างคอลัมน์
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=ซ่อนคอลัมน์ว่าง
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=เพิ่มคอลัมน์
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=เลือกคุณสมบัติที่จะใช้จัดกลุ่มจากเมนูจัดเรียง
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=เลือกคุณสมบัติที่จะใช้จัดกลุ่ม
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=เลือกคุณสมบัติ
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=ไม่มีคอลัมน์
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=เลือกกลุ่มที่จะแสดงเป็นคอลัมน์
 
 [plugins.bases.table.name]
 original=Table
@@ -10413,3 +10401,7 @@ translation=ไม่พบห้องนิรภัย
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=ไม่พบห้องนิรภัยสำหรับ URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=ไฟล์ที่รองรับ

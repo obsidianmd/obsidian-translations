@@ -1408,7 +1408,7 @@ translation=Kcem
 
 [setting.account.title-log-in]
 original=Log in to Obsidian
-translation=
+translation=Kcem ɣer Obsidian
 
 [setting.account.label-sign-up]
 original=Sign up
@@ -2032,11 +2032,11 @@ translation=Ger amedday
 
 [setting.mobile-toolbar.option-attach-camera]
 original=Take photo
-translation=
+translation=Ṭṭef tugna
 
 [setting.mobile-toolbar.option-attach-file]
 original=Choose file
-translation=
+translation=Fren afaylu
 
 [editor.search.placeholder-find]
 original=Find...
@@ -2148,7 +2148,7 @@ translation=Wennez tiddi
 
 [editor.menu.remove-image]
 original=Remove image
-translation=
+translation=Kkes tugna
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2270,9 +2270,13 @@ translation=D awezɣi asali n usiɣzef {{plugin}} v{{version}}. Lqem-a yettwamel
 original=Failed to open “{{filepath}}”
 translation=Yecceḍ ulday n “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Asifeḍ n “{{filename}}” ur yeddi ara
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
-translation=
+translation=Taskant “{{name}}” temmuger-d tuccḍa mi ara temdel
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2448,31 +2452,31 @@ translation=Ger
 
 [interface.formatting.highlight-color-default]
 original=Default
-translation=
+translation=Amezwer
 
 [interface.formatting.highlight-color.red]
 original=Red
-translation=
+translation=Azeggaɣ
 
 [interface.formatting.highlight-color.orange]
 original=Orange
-translation=
+translation=Aččinawi
 
 [interface.formatting.highlight-color.yellow]
 original=Yellow
-translation=
+translation=Awraɣ
 
 [interface.formatting.highlight-color.green]
 original=Green
-translation=
+translation=Azegzaw
 
 [interface.formatting.highlight-color.blue]
 original=Blue
-translation=
+translation=Anili
 
 [interface.formatting.highlight-color.purple]
 original=Purple
-translation=
+translation=Amidadi
 
 [interface.formatting.insert-link]
 original=Add link
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Ansuf
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Wagi d *akaram-inek·inem n weḥraz* amaynut.\n\nXdem tazmilt ɣef kra, [[rnu aseɣwen]], neɣ ɛreḍ [Amaktar](https://help.obsidian.md/Plugins/Importer)!\n\nMi theggaḍ, kkes tazmilt-a yerna err akaram n weḥraz d ayla-k·m.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Wagi d *akaram-inek·inem n weḥraz* amaynut.\n\nXdem tazmilt ɣef kra, [[rnu aseɣwen]], neɣ ɛreḍ [Amaktar](obsidian://show-plugin?id=obsidian-importer)!\n\nMi theggaḍ, kkes tazmilt-a yerna err akaram n weḥraz d ayla-k·m.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Err-d ɣer wadda
 [interface.window.close-window]
 original=Close window
 translation=Mdel asfaylu
-
-[interface.window.go-back]
-original=Go back
-translation=Uɣal ɣer deffir
-
-[interface.window.go-forward]
-original=Go forward
-translation=Ddu ɣer zdat
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3746,6 +3742,10 @@ translation=Beddel akaram n weḥraz...
 original=Open vault...
 translation=Ldi akaram n weḥraz...
 
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Ldi afaylu seg berra n ukaram n weḥraz...
+
 [commands.manage-vaults]
 original=Manage vaults
 translation=Sefrek ikaramen n weḥraz 
@@ -3912,7 +3912,7 @@ translation=Qluqel asebruraq
 
 [commands.toggle-highlight-color]
 original=Toggle {{color, lowercase}} highlight
-translation=
+translation=Rmed/sens asebrureq {{color, lowercase}}
 
 [commands.toggle-comments]
 original=Toggle comment
@@ -4009,6 +4009,14 @@ translation=Ldi akaram n weḥraz n tenkult n yijdi
 [commands.always-on-top]
 original=Toggle window always on top
 translation=Qluqel asfaylu dima ufella 
+
+[commands.increase-font-size]
+original=Increase font size
+translation=Semɣer tiddi n tsefsit
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Semẓi tiddi n tsefsit
 
 [commands.zoom-in]
 original=Zoom in
@@ -4274,6 +4282,10 @@ translation=Yecceḍ wezday n tezmiltin: {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Afaylu neɣ akaram “{{path}}” ulac-it.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian ur yezmir ara ad yeldi ifuyla “.{{extension}}”.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Tasenṭit ur tezmir ara ad tili d tilemt
@@ -4333,6 +4345,10 @@ translation=Asfaylu Amaynut
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Ldi s Urured...
+
+[menu-items.open-file]
+original=Open File...
+translation=Ldi afaylu...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5922,6 @@ translation=Tiludna yettwasbeḍen
 original=Format converter
 translation=Aselkat n umasal 
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Selket Markdown seg yisnasen nniḍen ɣer umasal n Obsidian. 
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Ldi aselkat n umasal 
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Amseɣtay n tecraḍ Roam Research 
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Yesselkat “#tag” d “#[[tag]]” ɣer “[[tag]]”. 
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Amseɣtay n usebrureq Roam Research 
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Yesselkat “^^highlight^^” ɣer “==highlight==”. 
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Aselkat n TODO Roam Research 
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Yesselkat “{{[[TODO]]}}” ɣer “[ ]”. 
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Amseɣtay n usebrureq Bear 
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Yesselkat “::highlight::” ɣer “==highlight==”. 
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Amseɣtay n yiseɣwan Zettelkasten 
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Yeseɣtay iseɣwan “[[UID]]” ɣer “[[UID File Name]]” ummid. 
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Amsicebḥan n yiseɣwan Zettelkasten 
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Yeseɣtay iseɣwan “[[UID]]” yerna yescebḥay-iten “[[UID File Name|File Name]]”. 
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Tunigin n tsenṭit 
@@ -6013,10 +5973,6 @@ translation=Ifuyla yettwasefsren
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Ifuyla yettwabeddlen 
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Akk isemselsiyen 
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -6244,11 +6200,11 @@ translation=Sken amḍan n wawalen deg tfeggagt n waddad.
 
 [plugins.mermaid.label-guard-title]
 original=Display Mermaid diagrams in this vault?
-translation=
+translation=Sken idlifen Mermaid deg ukaram-agi n weḥraz?
 
 [plugins.mermaid.label-guard-desc]
 original=Only allow if you trust this vault's contents.
-translation=
+translation=Sireg kan ma tettekleḍ ɣef igburen n ukaram-agi n weḥraz.
 
 [plugins.slides.name]
 original=Slides
@@ -8508,7 +8464,7 @@ translation=Ḍmen belli tesɛiḍ tansa tameɣtut.
 
 [plugins.web-viewer.action-reader-view]
 original=Reader view
-translation=
+translation=Taskant n tɣuri
 
 [plugins.web-viewer.label-search-the-web]
 original=Search the web
@@ -9438,6 +9394,26 @@ translation=Rnu amizzwer
 original=Group by
 translation=Ssegrew s 
 
+[plugins.bases.label-group]
+original=Group
+translation=Agraw
+
+[plugins.bases.label-display]
+original=Display
+translation=Askan
+
+[plugins.bases.label-results]
+original=Results
+translation=Igmaḍ
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=S ufus
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Rnu agraw
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Smizzwer s 
@@ -9672,23 +9648,35 @@ translation=Assaɣ n tmuɣli n tugna
 
 [plugins.bases.kanban.name]
 original=Kanban
-translation=
+translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Ẓreg igrawen...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
-translation=
+translation=Tehri n tgejdit
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Rnu tigejda
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Fren arat i usdukkel.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Fren arat
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Ulac tigejda
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Fren igrawen ara d-yettwasknen am tigejda.
 
 [plugins.bases.table.name]
 original=Table
@@ -10413,3 +10401,7 @@ translation=Akaram n weḥraz ur yettwaf ara.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Ur yezmir ara ad d-yaf tansa URL {{url}} n ukaram n weḥraz
+
+[main.supported-files]
+original=Supported files
+translation=Ifuyla yettwasefraken

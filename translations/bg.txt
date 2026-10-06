@@ -556,11 +556,11 @@ translation=Не са добавени изключения.
 
 [setting.file.label-excluded-files-count]
 original={{count}} rule
-translation=
+translation={{count}} правило
 
 [setting.file.label-excluded-files-count_plural]
 original={{count}} rules
-translation=
+translation={{count}} правила
 
 [setting.file.title-add-excluded-filter]
 original=Add exclusion
@@ -768,7 +768,7 @@ translation=CSS откъси
 
 [setting.appearance.option-css-snippets-description]
 original=Manage your collection of CSS files for tweaking the app's appearance.
-translation=
+translation=Управлявайте колекцията си от CSS файлове за персонализиране на външния вид на приложението.
 
 [setting.appearance.label-no-css-snippets-found]
 original=No CSS snippets found.
@@ -1408,7 +1408,7 @@ translation=Влизане
 
 [setting.account.title-log-in]
 original=Log in to Obsidian
-translation=
+translation=Вход в Obsidian
 
 [setting.account.label-sign-up]
 original=Sign up
@@ -1672,15 +1672,15 @@ translation=Копиране на връзката за споделяне
 
 [setting.third-party-plugin.action-view-details]
 original=View details
-translation=
+translation=Преглед на подробностите
 
 [setting.third-party-plugin.action-open-community-page]
 original=Open community page
-translation=
+translation=Отвори страницата на общността
 
 [setting.third-party-plugin.action-settings]
 original=Settings
-translation=
+translation=Настройки
 
 [setting.third-party-plugin.button-donate]
 original=Donate
@@ -2032,11 +2032,11 @@ translation=Вмъкване на прикачен файл
 
 [setting.mobile-toolbar.option-attach-camera]
 original=Take photo
-translation=
+translation=Направи снимка
 
 [setting.mobile-toolbar.option-attach-file]
 original=Choose file
-translation=
+translation=Избери файл
 
 [editor.search.placeholder-find]
 original=Find...
@@ -2148,7 +2148,7 @@ translation=Нулирай размера
 
 [editor.menu.remove-image]
 original=Remove image
-translation=
+translation=Премахни изображението
 
 [editor.menu.delete-image]
 original=Delete image
@@ -2256,23 +2256,27 @@ translation=Възникна грешка при зареждането на п�
 
 [interface.msg-plugin-incompatible]
 original={{plugin}} was not loaded. This plugin is not compatible with Obsidian v{{version}}.
-translation=
+translation={{plugin}} не беше зареден. Този плъгин не е съвместим с Obsidian v{{version}}.
 
 [interface.msg-plugin-nonfunctional]
 original={{plugin}} is no longer functional. We recommend uninstalling it.
-translation=
+translation={{plugin}} вече не работи. Препоръчваме да го деинсталирате.
 
 [interface.msg-plugin-version-issues]
 original=Unable to load plugin {{plugin}} v{{version}}. This version has been reported to cause issues. Please check for a newer version of the plugin.
-translation=
+translation=Плъгинът {{plugin}} v{{version}} не може да бъде зареден. Съобщено е, че тази версия причинява проблеми. Проверете за по-нова версия на плъгина.
 
 [interface.msg-failed-to-load-file]
 original=Failed to open “{{filepath}}”
 translation=Неуспешно отваряне на „{{filepath}}“
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Неуспешно експортиране на „{{filename}}“
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
-translation=
+translation=Възникна грешка при затварянето на изгледа „{{name}}“
 
 [interface.msg-failed-to-open-href]
 original=Cannot open location “{{href}}”
@@ -2448,31 +2452,31 @@ translation=Вмъкване
 
 [interface.formatting.highlight-color-default]
 original=Default
-translation=
+translation=По подразбиране
 
 [interface.formatting.highlight-color.red]
 original=Red
-translation=
+translation=Червено
 
 [interface.formatting.highlight-color.orange]
 original=Orange
-translation=
+translation=Оранжево
 
 [interface.formatting.highlight-color.yellow]
 original=Yellow
-translation=
+translation=Жълто
 
 [interface.formatting.highlight-color.green]
 original=Green
-translation=
+translation=Зелено
 
 [interface.formatting.highlight-color.blue]
 original=Blue
-translation=
+translation=Синьо
 
 [interface.formatting.highlight-color.purple]
 original=Purple
-translation=
+translation=Лилаво
 
 [interface.formatting.insert-link]
 original=Add link
@@ -2740,7 +2744,7 @@ translation=Добави свойство на файл
 
 [interface.menu.delete]
 original=Delete
-translation=
+translation=Изтрий
 
 [interface.menu.delete-file]
 original=Delete file
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Добре дошли
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Това е вашето ново *хранилище*. \n\nМожете да създавате бележки, да [[създадете връзка]], или да изпробвате приставката за импортиране на файлове [Importer](https://help.obsidian.md/Plugins/Importer)!\n\nКогато сметнете, че сте готови, изтрийте тази бележка и започнете да съхранявате своята информация.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Това е вашето ново *хранилище*. \n\nМожете да създавате бележки, да [[създадете връзка]], или да изпробвате приставката за импортиране на файлове [Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nКогато сметнете, че сте готови, изтрийте тази бележка и започнете да съхранявате своята информация.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Възстановяване надолу
 [interface.window.close-window]
 original=Close window
 translation=Затваряне на прозореца
-
-[interface.window.go-back]
-original=Go back
-translation=Стъпка назад
-
-[interface.window.go-forward]
-original=Go forward
-translation=Стъпка напред
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3746,6 +3742,10 @@ translation=Смяна на хранилището...
 original=Open vault...
 translation=Отваряне на хранилище...
 
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Отвори файл извън хранилището...
+
 [commands.manage-vaults]
 original=Manage vaults
 translation=Управление на хранилища
@@ -3912,7 +3912,7 @@ translation=Подчертаване
 
 [commands.toggle-highlight-color]
 original=Toggle {{color, lowercase}} highlight
-translation=
+translation=Включване или изключване на маркирането с цвят {{color, lowercase}}
 
 [commands.toggle-comments]
 original=Toggle comment
@@ -4009,6 +4009,14 @@ translation=Отваряне на временното хранилище
 [commands.always-on-top]
 original=Toggle window always on top
 translation=Превключване на прозореца винаги отгоре
+
+[commands.increase-font-size]
+original=Increase font size
+translation=Увеличаване на размера на шрифта
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Намаляване на размера на шрифта
 
 [commands.zoom-in]
 original=Zoom in
@@ -4192,11 +4200,11 @@ translation=Отказ
 
 [dialogue.button-allow]
 original=Allow
-translation=
+translation=Разреши
 
 [dialogue.button-skip]
 original=Skip
-translation=
+translation=Пропусни
 
 [dialogue.button-download]
 original=Download
@@ -4274,6 +4282,10 @@ translation=Неуспешно обединяване на бележки: {{mes
 original=The file or folder “{{path}}” does not exist.
 translation=Файлът или папката „{{path}}“ не съществува.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian не може да отваря файлове с разширение „.{{extension}}“.
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Заглавието не може да е празно
@@ -4333,6 +4345,10 @@ translation=Нов прозорец
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Отворете бързо...
+
+[menu-items.open-file]
+original=Open File...
+translation=Отвори файл...
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5922,6 @@ translation=Фиксирани команди
 original=Format converter
 translation=Преобразувател на формати
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Преобразува Markdown от други приложения във формат, съвместим с Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Преобразувател на формати
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Поправя формата на етикетите от Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Преобразува "#tag" и "#[[tag]]" в "[[tag]]".
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Поправя формата за подчертаване на текст от Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Преобразува "^^highlight^^" в "==highlight==".
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Преобразува отметките от Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Преобразува "{{[[TODO]]}}" в "[ ]".
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Поправя формата за подчертаване на текст от Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Преобразува "::highlight::" в "==highlight==".
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Поправя връзките в Zettelkasten бележките
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Преобразува връзките "[[UID]]" в "[[UID File Name]]".
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Поправя и преобразува връзките в Zettelkasten бележките
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Преобразува връзките "[[UID]]" и ги преформатира в "[[UID File Name|File Name]]".
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Прехвърляне на основни метаданни (Frontmatter)
@@ -6013,10 +5973,6 @@ translation=Обработени файлове
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Променени файлове
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Общо направени замени
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -9438,6 +9394,26 @@ translation=Добави подредба
 original=Group by
 translation=Групирай по
 
+[plugins.bases.label-group]
+original=Group
+translation=Групиране
+
+[plugins.bases.label-display]
+original=Display
+translation=Показване
+
+[plugins.bases.label-results]
+original=Results
+translation=Резултати
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=Ръчно
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Добавяне на група
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Подреди по
@@ -9672,23 +9648,35 @@ translation=Съотношение на страните на изображен
 
 [plugins.bases.kanban.name]
 original=Kanban
-translation=
+translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Редактиране на групите...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
-translation=
+translation=Ширина на колоната
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Добавяне на колони
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Изберете свойство за групиране.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Избор на свойство
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Няма колони
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Изберете групи, които да се показват като колони.
 
 [plugins.bases.table.name]
 original=Table
@@ -10413,3 +10401,7 @@ translation=Хранилището не е намерено.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Не е намерено хранилище на адрес {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Поддържани файлове

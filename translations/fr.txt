@@ -2270,6 +2270,10 @@ translation=Impossible de charger le module {{plugin}} v{{version}}. Il a été 
 original=Failed to open “{{filepath}}”
 translation=Impossible d'ouvrir le fichier “{{filepath}}”
 
+[interface.msg-failed-to-export]
+original=Failed to export “{{filename}}”
+translation=Échec de l’exportation de « {{filename}} »
+
 [interface.msg-failed-to-close-view]
 original=The “{{name}}” view encountered an error while closing
 translation=La vue « {{name}} » a rencontré une erreur lors de sa fermeture
@@ -3455,8 +3459,8 @@ original=Welcome
 translation=Bienvenue
 
 [interface.starter-content.welcome-file-content]
-original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!\n\nWhen you're ready, delete this note and make the vault your own.
-translation=Voici votre nouveau *coffre*.\n\nAjoutez une note, [[créez un lien]], ou essayez [l'importateur](https://help.obsidian.md/Plugins/Importer)!\n\nLorsque vous serez prêt, supprimez cette note et faites de ce coffre le vôtre.
+original=This is your new *vault*.\n\nMake a note of something, [[create a link]], or try [the Importer](obsidian://show-plugin?id=obsidian-importer)!\n\nWhen you're ready, delete this note and make the vault your own.
+translation=Voici votre nouveau *coffre*.\n\nAjoutez une note, [[créez un lien]], ou essayez [l'importateur](obsidian://show-plugin?id=obsidian-importer)!\n\nLorsque vous serez prêt, supprimez cette note et faites de ce coffre le vôtre.
 
 [interface.drag-and-drop.insert-link-here]
 original=Insert link here
@@ -3501,14 +3505,6 @@ translation=Restaurer
 [interface.window.close-window]
 original=Close window
 translation=Fermer la fenêtre
-
-[interface.window.go-back]
-original=Go back
-translation=Précédent
-
-[interface.window.go-forward]
-original=Go forward
-translation=Suivant
 
 [interface.start-up.loading-obsidian]
 original=Loading Obsidian...
@@ -3745,6 +3741,10 @@ translation=Changer de coffre...
 [commands.open-vault]
 original=Open vault...
 translation=Ouvrir un coffre...
+
+[commands.open-file]
+original=Open file from outside the vault...
+translation=Ouvrir un fichier situé hors du coffre…
 
 [commands.manage-vaults]
 original=Manage vaults
@@ -4010,6 +4010,14 @@ translation=Ouvrir le coffre Bac à Sable
 original=Toggle window always on top
 translation=Rendre la fenêtre toujours visible
 
+[commands.increase-font-size]
+original=Increase font size
+translation=Augmenter la taille de la police
+
+[commands.decrease-font-size]
+original=Decrease font size
+translation=Diminuer la taille de la police
+
 [commands.zoom-in]
 original=Zoom in
 translation=Zoom avant
@@ -4274,6 +4282,10 @@ translation=Échec de la fusion des notes : {{message}}
 original=The file or folder “{{path}}” does not exist.
 translation=Le fichier ou dossier “{{path}}” n'existe pas.
 
+[dialogue.msg-unsupported-file-type]
+original=Obsidian can’t open “.{{extension}}” files.
+translation=Obsidian ne peut pas ouvrir les fichiers « .{{extension}} ».
+
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=L'entête ne peut pas être vide
@@ -4333,6 +4345,10 @@ translation=Nouvelle fenêtre
 [menu-items.open-switcher]
 original=Open Quickly...
 translation=Ouvrir rapidement...
+
+[menu-items.open-file]
+original=Open File...
+translation=Ouvrir un fichier…
 
 [menu-items.open-vault]
 original=Open Vault...
@@ -5906,62 +5922,6 @@ translation=Commandes épinglées
 original=Format converter
 translation=Convertisseur de fichiers Markdown
 
-[plugins.markdown-format-importer.desc]
-original=Convert Markdown from other apps to Obsidian format.
-translation=Importe et convertit les fichiers Markdown d'autres applications au format Obsidian.
-
-[plugins.markdown-format-importer.action-open]
-original=Open format converter
-translation=Ouvrir le convertisseur Markdown
-
-[plugins.markdown-format-importer.option-roam-tag-fixer]
-original=Roam Research tag fixer
-translation=Répare les mots-clés de Roam Research
-
-[plugins.markdown-format-importer.option-roam-tag-fixer-description]
-original=Converts “#tag” and “#[[tag]]” to “[[tag]]”.
-translation=Convertit “#tag” et “#[[tag]]” en “[[tag]]”.
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer]
-original=Roam Research highlight fixer
-translation=Répare le surlignage de Roam Research
-
-[plugins.markdown-format-importer.option-roam-highlight-fixer-description]
-original=Converts “^^highlight^^” to “==highlight==”.
-translation=Convertit “^^highlight^^” en “==highlight==”.
-
-[plugins.markdown-format-importer.option-roam-todo-converter]
-original=Roam Research TODO converter
-translation=Convertit les TODO de Roam Research
-
-[plugins.markdown-format-importer.option-roam-todo-converter-description]
-original=Converts “{{[[TODO]]}}” to “[ ]”.
-translation=Convertit “{{[[TODO]]}}” en “[ ]”.
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer]
-original=Bear highlight fixer
-translation=Répare le surlignage de Bear
-
-[plugins.markdown-format-importer.option-bear-highlight-fixer-description]
-original=Converts “::highlight::” to “==highlight==”.
-translation=Convertit “ ::highlight ::” en “==highlight==”.
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer]
-original=Zettelkasten link fixer
-translation=Répare les liens Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-fixer-description]
-original=Fixes “[[UID]]” links to full “[[UID File Name]]”.
-translation=Répare les liens “[[UID]]” en liens complets “[[UID File Name]]”.
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier]
-original=Zettelkasten link beautifier
-translation=Embellisseur de lien Zettelkasten
-
-[plugins.markdown-format-importer.zettelkasten-link-beautifier-description]
-original=Fixes “[[UID]]” links and also beautify them “[[UID File Name|File Name]]”.
-translation=Répare les liens “[[UID]]” et les embellit en “[[UID File Name|File Name]]”.
-
 [plugins.markdown-format-importer.frontmatter-migration]
 original=Frontmatter migration
 translation=Migration des métadonnées
@@ -6013,10 +5973,6 @@ translation=Fichiers traités
 [plugins.markdown-format-importer.label-modified-files]
 original=Modified files
 translation=Fichiers modifiés
-
-[plugins.markdown-format-importer.label-total-replacements]
-original=Total replacements
-translation=Remplacements totaux
 
 [plugins.markdown-format-importer.label-failed]
 original=Failed
@@ -9438,6 +9394,26 @@ translation=Ajouter un tri
 original=Group by
 translation=Grouper par
 
+[plugins.bases.label-group]
+original=Group
+translation=Groupe
+
+[plugins.bases.label-display]
+original=Display
+translation=Affichage
+
+[plugins.bases.label-results]
+original=Results
+translation=Résultats
+
+[plugins.bases.label-sort-manual]
+original=Manual
+translation=Manuel
+
+[plugins.bases.action-add-group]
+original=Add group
+translation=Ajouter un groupe
+
 [plugins.bases.label-sort-by]
 original=Sort by
 translation=Trier par
@@ -9674,21 +9650,33 @@ translation=Ratio d’aspect de l’image
 original=Kanban
 translation=Kanban
 
-[plugins.bases.kanban.action-reset-order]
-original=Reset order
-translation=Réinitialiser l’ordre
+[plugins.bases.kanban.action-edit-columns]
+original=Edit groups...
+translation=Modifier les groupes...
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
 translation=Largeur de colonne
 
-[plugins.bases.kanban.label-hide-empty-groups]
-original=Hide empty columns
-translation=Masquer les colonnes vides
+[plugins.bases.kanban.title-no-group-by]
+original=Add columns
+translation=Ajouter des colonnes
 
-[plugins.bases.kanban.label-group-by-required]
-original=Choose a property to group by from the sort menu
-translation=Choisissez une propriété de regroupement dans le menu de tri
+[plugins.bases.kanban.text-no-group-by]
+original=Choose a property to group by.
+translation=Choisissez une propriété pour regrouper les éléments.
+
+[plugins.bases.kanban.action-choose-property]
+original=Choose property
+translation=Choisir une propriété
+
+[plugins.bases.kanban.title-no-columns]
+original=No columns
+translation=Aucune colonne
+
+[plugins.bases.kanban.text-no-columns]
+original=Select groups to show as columns.
+translation=Sélectionnez les groupes à afficher sous forme de colonnes.
 
 [plugins.bases.table.name]
 original=Table
@@ -10413,3 +10401,7 @@ translation=Coffre introuvable.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Impossible de trouver un coffre pour l’URL {{url}}
+
+[main.supported-files]
+original=Supported files
+translation=Fichiers pris en charge
