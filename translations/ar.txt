@@ -266,14 +266,6 @@ translation=من اليمين إلى اليسار
 original=Sets the default text direction of notes to right-to-left.
 translation=تحديد اتجاه نص الملاحظات لعرضه من اليمين إلى اليسار.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=إظهار مخططات Mermaid في الملاحظات
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=عرض المخططات الانسيابية ومخططات التسلسل ومخططات أخرى من كتل تعليمات برمجية “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=تحويل HTML تلقائيًا 
@@ -914,14 +906,6 @@ translation=تنقّل عائم
 original=Navigation buttons float over the content instead of being anchored.
 translation=تطفو أزرار التنقّل فوق المحتوى بدلًا من تثبيتها.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=أشرطة جانبية منزلقة
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=تنزلق الأشرطة الجانبية إلى جانب المحتوى بدلًا من الطفو فوقه.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=ملء الشاشة
@@ -1498,6 +1482,14 @@ translation=تصفية الإضافات حسب الاسم أو الوصف.
 original=Search plugins...
 translation=البحث في الإضافات...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=تم إيقافه بموجب سياسة مؤسستك.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=مطلوب بموجب سياسة مؤسستك.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=إضافات تابعة لجهات خارجية
@@ -1741,6 +1733,14 @@ translation=جارٍ تثبيت الإضافة "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=فشل تثبيت الإضافة "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=المكوّن الإضافي «{{name}}» غير مسموح به بموجب سياسة مؤسستك.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=غير مسموح به بموجب سياسة مؤسستك.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=استبدال
 original=Replace all
 translation=استبدال الكل
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=اكتب #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=لربط العنوان
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=اكتب ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=لربط الكتل
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=اكتب |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=تعذر العثور على تطابق
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=حجم الصورة: {{size}} نقطة
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=لقبول
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=تعذر العثور على الملف "{{name}}".
 original=Unrecognized URI action: {{action}}
 translation=إجراء URI غير معرّف: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=تتطلب معلمة URI «{{param}}» استخدام «append» أو «prepend».
+
 [interface.delete-action-short-name]
 original=Delete
 translation=حذف
@@ -2573,10 +2561,6 @@ translation=فارغ
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=لا يوجد ملف مفتوح
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=إنشاء ملف جديد
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=فشل إعادة إرسال البريد الإلكتروني.
 original=Vault location must be a folder.
 translation=يجب أن يكون موقع الخزنة مجلدًا.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=لا يمكنك الوصول إلى الخزنات أو إنشاؤها في iCloud لأنه معطّل لتطبيق Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=إعداد Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=توجد هذه الخزنة في مجلد تطبيق Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=توجد هذه الخزنة في {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=على هذا الجهاز
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=الملفات
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=آخر فتح
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} مُمكّن
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=معطّلة
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=استغرق تحميل الإضافات المجتمعية {{seconds}} ثانية في المرة السابقة. إذا كان فتح هذه الخزنة بطيئًا، فجرّب الوضع المقيّد.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=لم يكتمل فتح هذه الخزنة في المرة السابقة.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=لم يكتمل فتح هذه الخزنة في المرة السابقة. إذا استمر ذلك، فجرّب الوضع المقيّد.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=فتح الخزنة
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=فتح الخزنة في الوضع المقيّد
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=إعادة تسمية الخزنة...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=نسيان الخزنة...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=نقل إلى مساحة تخزين الجهاز...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=حذف الخزنة...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=إعادة تسمية الخزنة «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=حذف الخزنة «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=سيؤدي حذف هذه الخزنة إلى حذف جميع الملفات الموجودة فيها.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=لا يمكن التراجع عن هذا الإجراء. يرجى تأكيد رغبتك في حذفها.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=نسيان الخزنة «{{name}}»
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=سيؤدي نسيان هذه الخزنة إلى إزالتها من قائمة الخزنات دون حذف أي ملفات.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=نسيان
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=تحديث Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=جهاز Android لديك غير محدّث، ويجب تحديثه ليعمل Obsidian. يرجى البحث عن طريقة لترقية تطبيق "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=لا يمكن أن يحتوي اسم الخزنة على أي من هذه الأحرف: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=ليس لدى Obsidian إذن بالوصول إلى هذا الموقع
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=تعذّر حذف الخزنة.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=جارٍ النقل من {{from}} إلى {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=تم نقل الخزنة، ولكن تعذّر حذف النسخة القديمة الموجودة في مجلد تطبيق Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=مرحبًا
@@ -3541,6 +3657,10 @@ translation=جارٍ تحميل الخزنة...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=فشل تحميل الخزنة: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=تعذّرت قراءة «{{path}}»، لذا لا تظهر ملفاته. تحقّق من أذونات الوصول إليه، ثم أعد تشغيل Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=سيتم نقله إلى سلة محذوفات Obsidian، والتي
 original=The file will be permanently deleted.
 translation=سيتم حذف الملف بشكل دائم.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=تعذّر نقل {{item}} إلى سلة مهملات النظام. للحذف رغم ذلك، غيّر إعداد «الملفات المحذوفة».
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=هذا المجلد ليس فارغاً.
@@ -4198,10 +4322,6 @@ translation=تأكيد
 original=Cancel
 translation=إلغاء
 
-[dialogue.button-allow]
-original=Allow
-translation=السماح
-
 [dialogue.button-skip]
 original=Skip
 translation=تخطي
@@ -4289,6 +4409,10 @@ translation=يتعذّر على Obsidian فتح ملفات «.{{extension}}».
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=لا يمكن أن يكون العنوان فارغًا
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=لم يُعثر على العنوان «{{heading}}» في الملف.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=اكتب اسم المجلد
 original=No existing folders found.
 translation=تعذر العثور على مجلدات.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=للتنقل
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=للنقل
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=للإنشاء
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=للتجاهل
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=يطابق الوسم:
 original=No matches found.
 translation=تعذر العثور على تطابق.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=الصلة
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... و {{count}} تطابق آخر.
@@ -5046,14 +5162,6 @@ translation=المتنقل
 original=Open quick switcher
 translation=إفتح الانتقال السريع
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=للتنقل
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=للفتح
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=للفتح في علامة تبويب جديدة
@@ -5065,14 +5173,6 @@ translation=للفتح على اليمين
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=للإنشاء
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=للتجاهل
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=للتحديد
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=اكتب الأمر لتنفيذه. لا حاجة لاستخدام �
 original=Open command palette
 translation=إفتح لوحة الأوامر
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=للتنقل
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=للاستخدام
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=للإلغاء
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=لم يتم العثور على أوامر.
@@ -6198,14 +6286,6 @@ translation=عدّاد الكلمات
 original=Show word count in the status bar.
 translation=إظهار عدد الكلمات في شريط الحالة.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=هل تريد عرض مخططات Mermaid في هذه الخزنة؟
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=اسمح بذلك فقط إذا كنت تثق بمحتويات هذه الخزنة.
-
 [plugins.slides.name]
 original=Slides
 translation=الشرائح
@@ -6325,18 +6405,6 @@ translation=سيتم استبدال {{time}} في ملف القالب بهذه �
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=يمكنك أيضًا استخدام {{time:HH:mm}} لتجاوز هذا التنسيق.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=للتنقل
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=لإدراج قالب
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=للتجاهل
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=دمج الملف بأكمله مع...
 original=No files found.
 translation=لم يتم العثور على ملفات.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=للتنقل
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=للدمج
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=لإنشاء جديد
@@ -8241,10 +8301,6 @@ translation=لإنشاء جديد
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=للدمج في الأعلى
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=للتجاهل
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=استخراج التحديد الحالي...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=استخراج هذا العنوان...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=نقل للأسفل
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=إنشاء لوحة بصرية جديدة
 original=Convert to file...
 translation=تحويل إلى ملف...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=لتضمين العنوان
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=لتضمين الكتلة
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=للانتقال إلى المجموعة
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=اكتب للعثور على ملف، عنوان، أو كتلة
@@ -9194,6 +9234,14 @@ translation=كل العروض
 original=This view
 translation=هذا العرض
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=نقل إلى جميع طرق العرض
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=نقل إلى طريقة العرض هذه
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=بحث أو إنشاء...
@@ -9246,10 +9294,6 @@ translation=اسم العرض
 original=View
 translation=عرض
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=جدول
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=اسم العرض
@@ -9287,8 +9331,8 @@ original=New
 translation=جديد
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=عرض {{count}}
+original=Showing {{shown}} of {{total}}
+translation=عرض {{shown}} من {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=العرض "{{ view }}" غير موجود
 original=Unknown view type: {{ viewtype }}
 translation=تم تهيئة القاعدة بنوع عرض غير معروف: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=نوع خاصية غير معروف: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=يجب أن تكون العروض في مصفوفة
@@ -9653,6 +9701,10 @@ translation=كانبان
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=تحرير المجموعات...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=إخفاء العمود
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=اكتب [[
 original=to link note
 translation=لربط ملاحظة
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=للتجاهل
-
 [properties.option-property-type]
 original=Property type
 translation=نوع الخاصية
@@ -10210,6 +10258,10 @@ translation=نوع القصاصة...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=«{{item}}»
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} كلمة
@@ -10257,6 +10309,14 @@ translation={{count}} مجلد
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} مجلدات
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} عنصر
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} عناصر
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=يشير هذا الرابط إلى ملف قابل للتنفيذ. 
 original=File: {{path}}
 translation=الملف: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=فتح الملف في تطبيق آخر؟
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=سيُفتح هذا الملف خارج Obsidian. يمكن لبعض أنواع الملفات تشغيل تعليمات برمجية على حاسوبك. لا تتابع إلا إذا كنت تثق بمصدر هذا الملف.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=لم يتم العثور على الخزنة.
@@ -10401,6 +10469,22 @@ translation=لم يتم العثور على الخزنة.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=تعذّر العثور على خزنة لعنوان URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=لا يمكن تخزين الخزنات في مجلد تثبيت Obsidian لأنه يُمسح عند تحديث Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=توجد هذه الخزنة داخل مجلد تثبيت Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=يمسح المُثبّت هذا المجلد عند تحديث Obsidian، ويمسح معه هذه الخزنة. اختر "إدارة الخزنات" لإغلاق الخزنة، ثم استخدم خيار "نقل الخزنة..." الخاص بها لنقلها إلى مكان آخر.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=إدارة الخزنات
 
 [main.supported-files]
 original=Supported files

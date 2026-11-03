@@ -266,14 +266,6 @@ translation=Ar dheis go clé (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Socraíonn treo réamhshocraithe téacs na nótaí ar dheis go clé.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Taispeáin léaráidí Mermaid i nótaí
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Rindreáil sreabhchairteacha, léaráidí seichimh, agus léaráidí eile ó bhloic cóid “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Tiontaigh HTML greamaithe go Markdown
@@ -914,14 +906,6 @@ translation=Nascleanúint ar snámh
 original=Navigation buttons float over the content instead of being anchored.
 translation=Snámhann cnaipí nascleanúna os cionn an ábhair in ionad a bheith ancraithe.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Taobhbharraí sleamhnáin
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Sleamhnaíonn na taobhbharraí go taobh an ábhair in ionad snámh os a chionn.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Lánscáileán
@@ -1498,6 +1482,14 @@ translation=Scagaigh breiseáin de réir ainm nó tuairisc.
 original=Search plugins...
 translation=Cuardaigh breiseáin...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Díchumasaithe de réir bheartas d'eagraíochta.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Riachtanach de réir bheartas d'eagraíochta.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Breiseáin pobail
@@ -1741,6 +1733,14 @@ translation=Suiteáil breiseán “{{name}}”...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Theip ar an breiseán “{{name}}” a shuiteáil.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Ní cheadaítear an breiseán “{{name}}” de réir bheartas d'eagraíochta.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Ní cheadaítear é de réir bheartas d'eagraíochta.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=athsholáthair
 original=Replace all
 translation=Cuir gach duine in ionad
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Cineál #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=chun ceannteideal a nascadh
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Cineál ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=chun bloic a nascadh
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Cineál |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Níl aon mheaitseáil le fáil
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Méid an íomhá: {{size}} px ar leithead
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=glacadh le
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Níor aimsíodh comhad “{{name}}”.
 original=Unrecognized URI action: {{action}}
 translation=Gníomh URI anaithnid: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Tá “append” nó “prepend” ag teastáil ón bparaiméadar URI “{{param}}”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Scrios
@@ -2573,10 +2561,6 @@ translation=Folamh
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Níl aon chomhad oscailte
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Cruthaigh nóta nua
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Theip ar ríomhphost a athsheoladh.
 original=Vault location must be a folder.
 translation=Caithfidh fillteán a bheith i suíomh an chosca.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Ní féidir leat boghtaí a rochtain ná a chruthú in iCloud toisc go bhfuil sé díchumasaithe le haghaidh Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Socraigh Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Tá an boghta seo i bhfillteán na haipe Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Tá an boghta seo ag {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Ar an ngléas seo
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Comhaid
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Oscailte den uair dheireanach
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} cumasaithe
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Díchumasaithe
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Thóg sé {{seconds}} soicind ar bhreiseáin phobail lódáil an uair dheireanach. Má tá an boghta seo mall ag oscailt, bain triail as mód srianta.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Níor críochnaíodh oscailt an bhoghta seo an uair dheireanach.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Níor críochnaíodh oscailt an bhoghta seo an uair dheireanach. Má leanann sé seo ar aghaidh, bain triail as mód srianta.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Oscail boghta
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Oscail boghta i mód srianta
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Athainmnigh boghta...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Déan dearmad ar bhoghta...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Bog go stóras an ghléis...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Scrios boghta...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Athainmnigh an boghta “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Scrios an boghta “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Má scriosann tú an boghta seo, scriosfar gach comhad ann.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Ní féidir an gníomh seo a chealú. Deimhnigh gur mian leat é a scriosadh.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Déan dearmad ar an mboghta “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Má dhéanann tú dearmad ar an mboghta seo, bainfear de liosta na mboghtaí é gan aon chomhad a scriosadh.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Déan dearmad
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Nuashonraigh Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Níl do ghléas Android cothrom le dáta, agus caithfear é a nuashonrú chun go n-oibreoidh Obsidian. Aimsigh bealach chun an aip "Android WebView" a uasghrádú.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Ní cheadaítear aon cheann de na carachtair seo in ainm boghta: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Níl cead ag Obsidian an suíomh seo a rochtain
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Níorbh fhéidir an boghta a scriosadh.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Á bhogadh ó {{from}} go {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Bogadh an boghta, ach níorbh fhéidir an seanchóip i bhfillteán na haipe Obsidian a scriosadh.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Fáilte
@@ -3541,6 +3657,10 @@ translation=Á lódáil vault...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Theip ar luchtú clúdach: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Ní féidir “{{path}}” a léamh, mar sin ní thaispeántar a chomhaid. Seiceáil a cheadanna, ansin atosaigh Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Aistreofar é chuig do bhruscar Obsidian, atá suite san fhillteán 
 original=The file will be permanently deleted.
 translation=Scriosfar an comhad go buan.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Níorbh fhéidir {{item}} a bhogadh go bruscar an chórais. Chun scriosadh mar sin féin, athraigh an socrú “Comhaid scriosta”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Níl an fillteán seo folamh.
@@ -4198,10 +4322,6 @@ translation=Deimhnigh
 original=Cancel
 translation=Cealaigh
 
-[dialogue.button-allow]
-original=Allow
-translation=Ceadaigh
-
 [dialogue.button-skip]
 original=Skip
 translation=Scipeáil
@@ -4289,6 +4409,10 @@ translation=Ní féidir le Obsidian comhaid “.{{extension}}” a oscailt.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Ní féidir ceannteideal a bheith folamh
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Níor aimsíodh an ceannteideal “{{heading}}” sa chomhad.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Clóscríobh fillteán
 original=No existing folders found.
 translation=Ní bhfuarthas aon fhillteáin ann cheana.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=nascleanúint a dhéanamh
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=bogadh
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=chun a chruthú
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=a dhíscríobh
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Clib meaitseála:
 original=No matches found.
 translation=Níor aimsíodh aon chluichí.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Ábharthacht
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... agus {{count}} níos mó meaitseála.
@@ -5046,14 +5162,6 @@ translation=Athraitheoir
 original=Open quick switcher
 translation=Oscail lascaire tapa
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=nascleanúint a dhéanamh
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=a oscailt
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=chun oscailt i gcluaisín nua
@@ -5065,14 +5173,6 @@ translation=chun oscailt ar dheis
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=chun a chruthú
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=a dhíscríobh
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=a roghnú
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Úsáid Cmd/Ctrl+P agus tosú ag clóscríobh chun ordú a ghairm.
 original=Open command palette
 translation=Oscailte pailéad ordaithe
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=nascleanúint a dhéanamh
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=le húsáid
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=a dhíscríobh
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Níor aimsíodh aon orduithe.
@@ -6198,14 +6286,6 @@ translation=Líon focal
 original=Show word count in the status bar.
 translation=Taispeáin comhaireamh focal sa bharra stádais.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Taispeáin léaráidí Mermaid sa bhoghta seo?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Ná ceadaigh é ach má tá muinín agat as ábhar an bhoghta seo.
-
 [plugins.slides.name]
 original=Slides
 translation=Sleamhnáin
@@ -6325,18 +6405,6 @@ translation=Cuirfear an luach seo in ionad {{time}} sa chomhad teimpléid.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Is féidir leat {{time:HH:mm}} a úsáid freisin chun an fhormáid a shárú uair amháin.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=nascleanúint a dhéanamh
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=teimpléad a chur isteach
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=a dhíscríobh
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Cumaisc an comhad iomlán le...
 original=No files found.
 translation=Níor aimsíodh aon chomhaid.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=nascleanúint a dhéanamh
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=a chumasc
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=chun nua a chruthú
@@ -8241,10 +8301,6 @@ translation=chun nua a chruthú
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=a chumasc ag an mbarr
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=a dhíscríobh
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Bain an rogha reatha a bhaint...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Bain an ceannteideal seo...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=bogadh go bun
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Cruthaigh canbhás nua
 original=Convert to file...
 translation=Tiontaigh go comhad...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=chun ceannteideal a leabú
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=chun bloc a leabú
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=chun nascleanúint a dhéanamh go dtí an
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Clóscríobh chun comhad, ceannteideal nó bloc a aimsiú
@@ -9194,6 +9234,14 @@ translation=Gach tuairimí
 original=This view
 translation=An dearcadh seo
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Bog chuig gach amharc
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Bog chuig an amharc seo
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Faigh nó cruthaigh...
@@ -9246,10 +9294,6 @@ translation=Féach ar ainm
 original=View
 translation=Féach
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tábla
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Ainm taispeána
@@ -9287,8 +9331,8 @@ original=New
 translation=Nua
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Á thaispeáint: {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Á thaispeáint: {{shown}} as {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Féach "{{ view }}" nach bhfuarthas
 original=Unknown view type: {{ viewtype }}
 translation=Bonn cumraithe le cineál amharc anaithnid: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Cineál airí anaithnid: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Caithfidh tuairimí a bheith ina eagar
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Cuir grúpaí in eagar...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Folaigh colún
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Cineál [[
 original=to link note
 translation=chun nóta a nascadh
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=a dhíscríobh
-
 [properties.option-property-type]
 original=Property type
 translation=Cineál maoine
@@ -10210,6 +10258,10 @@ translation=Cineál glaonna...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} focal
@@ -10257,6 +10309,14 @@ translation=Fillteán {{count}}
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation=Fillteáin {{count}}
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} mír
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} míreanna
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Díríonn an nasc seo ar chomhad inrite. D’fhéadfadh sé dochar a
 original=File: {{path}}
 translation=Comhad: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Oscail an comhad in aip eile?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Osclófar an comhad seo lasmuigh de Obsidian. Is féidir le cineálacha áirithe comhaid cód a rith ar do ríomhaire. Ná lean ar aghaidh ach amháin má tá muinín agat as foinse an chomhaid seo.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Níor aimsíodh an boghta.
@@ -10401,6 +10469,22 @@ translation=Níor aimsíodh an boghta.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Ní féidir boghta a aimsiú don URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Ní féidir boghtaí a stóráil i bhfillteán suiteála Obsidian toisc go nglantar é nuair a nuashonraítear Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Tá an boghta seo taobh istigh d'fhillteán suiteála Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Glanann an suiteálaí an fillteán seo nuair a nuashonraítear Obsidian, agus scriostar an boghta seo leis. Roghnaigh "Bainistigh boghtaí" chun an boghta a dhúnadh, ansin úsáid "Bog boghta..." air chun é a bhogadh go háit eile.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Bainistigh boghtaí
 
 [main.supported-files]
 original=Supported files

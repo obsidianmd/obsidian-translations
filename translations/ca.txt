@@ -266,14 +266,6 @@ translation=Dreta a esquerra (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Defineix la direcció del text de les notes com a de dreta a esquerra.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Mostra els diagrames Mermaid a les notes
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Renderitza diagrames de flux, diagrames de seqüència i altres diagrames a partir de blocs de codi «mermaid».
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Conversió automàtica d'HTML
@@ -914,14 +906,6 @@ translation=Navegació flotant
 original=Navigation buttons float over the content instead of being anchored.
 translation=Els botons de navegació floten sobre el contingut en lloc d'estar ancorats.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Barres laterals lliscants
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Les barres laterals llisquen al costat del contingut en lloc de flotar a sobre.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Pantalla completa
@@ -1498,6 +1482,14 @@ translation=Filtra els connectors per nom o descripció.
 original=Search plugins...
 translation=Cerca connectors...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Desactivat per la política de la teva organització.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Obligatori segons la política de la teva organització.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Connectors de tercers
@@ -1741,6 +1733,14 @@ translation=S'està instal·lant el connector "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=No s'ha pogut instal·lar el connector "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=La política de la teva organització no permet el connector “{{name}}”.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=No permès per la política de la teva organització.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Reemplaça
 original=Replace all
 translation=Reemplaça-ho tot
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Escriu #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=per enllaçar a títol
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Escriu ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=per enllaçar a blocs
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Escriu |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=No s'ha trobat coincidència
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Mida d'imatge: {{size}}px d'ample
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=acceptar
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=No s'ha trobat el fitxer "{{name}}".
 original=Unrecognized URI action: {{action}}
 translation=Acció d'URI no reconeguda: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=El paràmetre URI “{{param}}” requereix “append” o “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Esborra
@@ -2573,10 +2561,6 @@ translation=Buit
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=No s'ha obert cap fitxer
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Crea un fitxer nou
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=No s'ha pogut reenviar el correu electrònic.
 original=Vault location must be a folder.
 translation=La ubicació de l'Arca ha de ser una carpeta.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=No pots accedir a cambres fortes ni crear-ne a iCloud perquè està desactivat per a Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Configura Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Aquesta cambra forta es troba a la carpeta de l'aplicació Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Aquesta cambra forta es troba a {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=En aquest dispositiu
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Fitxers
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Darrera obertura
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} activats
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Desactivats
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Els connectors de la comunitat van trigar {{seconds}} segons a carregar-se la darrera vegada. Si aquesta cambra forta triga a obrir-se, prova el mode restringit.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Aquesta cambra forta no es va acabar d'obrir la darrera vegada.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Aquesta cambra forta no es va acabar d'obrir la darrera vegada. Si continua passant, prova el mode restringit.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Obre la cambra forta
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Obre la cambra forta en mode restringit
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Canvia el nom de la cambra forta...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Oblida la cambra forta...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Mou a l'emmagatzematge del dispositiu...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Suprimeix la cambra forta...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Canvia el nom de la cambra forta “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Suprimeix la cambra forta “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Si suprimeixes aquesta cambra forta, se suprimiran tots els fitxers que conté.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Aquesta acció és irreversible. Confirma que la vols suprimir.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Oblida la cambra forta “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Si oblides aquesta cambra forta, s'eliminarà de la llista de cambres fortes sense suprimir cap fitxer.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Oblida
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Actualitza Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=El teu dispositiu Android no està actualitzat i cal actualitzar-lo perquè Obsidian funcioni. Cerca una manera d'actualitzar l'aplicació "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=El nom de la cambra forta no pot contenir cap d'aquests caràcters: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian no té permís per accedir a aquesta ubicació
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=No s'ha pogut suprimir la cambra forta.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=S'està movent de {{from}} a {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=S'ha mogut la cambra forta, però no s'ha pogut suprimir la còpia antiga de la carpeta de l'aplicació Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Hola
@@ -3541,6 +3657,10 @@ translation=Carregant arca...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=No s'ha pogut carregar l'arca: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=No es pot llegir “{{path}}”, de manera que no se'n mostren els fitxers. Comprova'n els permisos i després reinicia Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=S'enviarà a la paperera d'Obsidian, que es troba a la carpeta ocult
 original=The file will be permanently deleted.
 translation=El fitxer se suprimirà permanentment.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=No s'ha pogut moure {{item}} a la paperera del sistema. Per suprimir igualment, canvia la configuració de “Fitxers suprimits”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Aquesta carpeta no està buida.
@@ -4198,10 +4322,6 @@ translation=Confirma
 original=Cancel
 translation=Cancel·la
 
-[dialogue.button-allow]
-original=Allow
-translation=Permet
-
 [dialogue.button-skip]
 original=Skip
 translation=Omet
@@ -4289,6 +4409,10 @@ translation=Obsidian no pot obrir fitxers «.{{extension}}».
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=L'encapçalament no pot estar buit
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=No s'ha trobat l'encapçalament “{{heading}}” al fitxer.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Escriu el nom de la carpeta
 original=No existing folders found.
 translation=No s'han trobat carpetes.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=per navegar
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=per moure
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=per crear
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=per descartar
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Coincideix amb l'etiqueta:
 original=No matches found.
 translation=No s'han trobat coincidències.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Rellevància
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... i {{count}} coincidència més.
@@ -5046,14 +5162,6 @@ translation=Selector
 original=Open quick switcher
 translation=Obre el selector ràpid
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=per navegar
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=per obrir
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=per obrir en una pestanya nova
@@ -5065,14 +5173,6 @@ translation=per obrir a la dreta
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=per crear
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=per descartar
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=per seleccionar
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Escriu una ordre per invocar-la. No cal utilitzar la interfície d'u
 original=Open command palette
 translation=Obre la paleta d'ordres
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=per navegar
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=per utilitzar
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=per descartar
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=No s'han trobat ordres.
@@ -6198,14 +6286,6 @@ translation=Comptador de paraules
 original=Show word count in the status bar.
 translation=Mostra el comptador de paraules a la barra d'estat.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Voleu mostrar els diagrames Mermaid en aquesta Arca?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Permeteu-ho només si confieu en el contingut d'aquesta Arca.
-
 [plugins.slides.name]
 original=Slides
 translation=Presentació
@@ -6325,18 +6405,6 @@ translation={{time}} en el fitxer de plantilla serà reemplaçat amb aquest valo
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=També pots utilitzar {{time:HH:mm}} per anul·lar el format una vegada.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=per navegar
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=per inserir la plantilla
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=per descartar
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Fusiona tot el fitxer amb...
 original=No files found.
 translation=No s'han trobat fitxers.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=per navegar
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=per fusionar
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=per crear de nou
@@ -8241,10 +8301,6 @@ translation=per crear de nou
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=per fusionar a la part superior
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=per descartar
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Extreu la selecció actual...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Extreu aquest encapçalament...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=per moure a la part inferior
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Crea un llenç nou
 original=Convert to file...
 translation=Converteix a fitxer...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=per incrustar l'encapçalament
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=per incrustar el bloc
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=per navegar al grup
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Escriu el nom de l'encapçalament
@@ -9194,6 +9234,14 @@ translation=Totes les vistes
 original=This view
 translation=Aquesta vista
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Mou a totes les vistes
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Mou a aquesta vista
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Cerca o crea...
@@ -9246,10 +9294,6 @@ translation=Nom de la vista
 original=View
 translation=Vista
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Taula
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Nom per mostrar
@@ -9287,8 +9331,8 @@ original=New
 translation=Nou
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Es mostren {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Es mostren {{shown}} de {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=No s'ha trobat la vista "{{ view }}"
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Tipus de propietat desconegut: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Les vistes han de ser una matriu
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Edita els grups...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Amaga la columna
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Escriu [[
 original=to link note
 translation=per enllaçar una nota
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=per descartar
-
 [properties.option-property-type]
 original=Property type
 translation=Tipus de propietat
@@ -10210,6 +10258,10 @@ translation=Tipus de destacat...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} paraula
@@ -10257,6 +10309,14 @@ translation={{count}} carpeta
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} carpetes
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} element
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elements
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Aquest enllaç apunta a un fitxer executable. Executar-lo podria dan
 original=File: {{path}}
 translation=Fitxer: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Vols obrir el fitxer en una altra aplicació?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Aquest fitxer s'obrirà fora d'Obsidian. Alguns tipus de fitxer poden executar codi al teu ordinador. Continua només si confies en l'origen d'aquest fitxer.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Arca no trobada.
@@ -10401,6 +10469,22 @@ translation=Arca no trobada.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=No s'ha pogut trobar cap Arca per a l'URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Les cambres fortes no es poden emmagatzemar a la carpeta d'instal·lació d'Obsidian perquè s'esborra quan s'actualitza Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Aquesta cambra forta és dins de la carpeta d'instal·lació d'Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=L'instal·lador esborra aquesta carpeta quan s'actualitza Obsidian, i també aquesta cambra forta. Tria "Gestiona les cambres fortes" per tancar la cambra forta i després fes servir l'opció "Mou la cambra forta..." per moure-la a una altra ubicació.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Gestiona les cambres fortes
 
 [main.supported-files]
 original=Supported files

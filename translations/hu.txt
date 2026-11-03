@@ -266,14 +266,6 @@ translation=Jobbról-balra (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=A jegyzetek szövegirányának beállítása jobbról-balra (RTL) megjelenítéshez.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Mermaid-diagramok megjelenítése a jegyzetekben
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Folyamatábrák, szekvenciadiagramok és más diagramok megjelenítése „mermaid” kódblokkokból.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Beillesztett HTML automatikus konvertálása Markdown-ba
@@ -914,14 +906,6 @@ translation=Lebegő navigáció
 original=Navigation buttons float over the content instead of being anchored.
 translation=A navigációs gombok a tartalom felett lebegnek, nem rögzítettek.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Csúszó oldalsávok
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Az oldalsávok a tartalom mellé csúsznak, ahelyett hogy felette lebegnének.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Teljes képernyő
@@ -1498,6 +1482,14 @@ translation=Bővítmények szűrése név vagy leírás alapján.
 original=Search plugins...
 translation=Bővítmények keresése...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=A szervezet házirendje letiltotta.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=A szervezet házirendje megköveteli.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Közösségi bővítmények
@@ -1741,6 +1733,14 @@ translation=Bővítmény telepítése: “{{name}}”...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Nem sikerült telepíteni a bővítményt: “{{name}}”.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=A szervezet házirendje nem engedélyezi a(z) „{{name}}” bővítményt.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=A szervezet házirendje nem engedélyezi.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Csere
 original=Replace all
 translation=Összes cseréje
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=# karakter
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=fejléc linkeléséhez
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=^ karakter
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=blokkok linkeléséhez
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=| karakter
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Nincs találat
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Képméret: {{size}}px széles
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=az elfogadáshoz
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=A fájl “{{name}}” nem található.
 original=Unrecognized URI action: {{action}}
 translation=Ismeretlen URI-művelet: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=A(z) „{{param}}” URI-paraméterhez az „append” vagy a „prepend” mód szükséges.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Törlés
@@ -2573,10 +2561,6 @@ translation=Üres
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Nincs megnyitott fájl
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Új fájl létrehozása
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Az e-mail küldése sikertelen.
 original=Vault location must be a folder.
 translation=A széf helye mappa kell legyen.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Nem érhet el és nem hozhat létre széfeket az iCloudban, mert az iCloud le van tiltva az Obsidian számára.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync beállítása
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Ez a széf az Obsidian alkalmazás mappájában található.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=A széf helye: {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Ezen az eszközön
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Fájlok
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Legutóbbi megnyitás
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} engedélyezve
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Letiltva
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=A közösségi bővítmények betöltése legutóbb {{seconds}} másodpercig tartott. Ha ez a széf lassan nyílik meg, próbálja ki a korlátozott módot.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=A széf megnyitása legutóbb nem fejeződött be.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=A széf megnyitása legutóbb nem fejeződött be. Ha ez ismétlődik, próbálja ki a korlátozott módot.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Széf megnyitása
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Széf megnyitása korlátozott módban
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Széf átnevezése...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Széf elfelejtése...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Áthelyezés az eszköz tárhelyére...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Széf törlése...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=A(z) „{{name}}” széf átnevezése
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=A(z) „{{name}}” széf törlése
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=A széf törlésével a benne lévő összes fájl törlődik.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Ez a művelet nem vonható vissza. Erősítse meg, hogy törölni szeretné.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=A(z) „{{name}}” széf elfelejtése
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=A széf elfelejtése eltávolítja azt a széfek listájából, de egyetlen fájlt sem töröl.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Elfelejtés
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView frissítése
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Android-eszköze nem naprakész, és az Obsidian működéséhez frissíteni kell. Keressen módot az „Android WebView” alkalmazás frissítésére.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=A széf neve nem tartalmazhatja a következő karaktereket: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Az Obsidian nem rendelkezik hozzáférési engedéllyel ehhez a helyhez
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Nem sikerült törölni a széfet.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Áthelyezés innen: {{from}}, ide: {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=A széf áthelyezése megtörtént, de az Obsidian alkalmazás mappájában lévő régi példányt nem sikerült törölni.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Üdvözöljük
@@ -3541,6 +3657,10 @@ translation=Széf betöltése...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=A széf betöltése nem sikerült: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=A(z) „{{path}}” nem olvasható, ezért a fájljai nem jelennek meg. Ellenőrizze a hozzáférési engedélyeit, majd indítsa újra az Obsidian alkalmazást.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Az Obsidian lomtárába fog áthelyezésre kerülni, amely a széfj�
 original=The file will be permanently deleted.
 translation=A fájl véglegesen törlődni fog.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Nem sikerült a rendszer kukájába helyezni: {{item}}. Ha mégis törölni szeretné, módosítsa a „Törölt fájlok” beállítást.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Ez a mappa nem üres.
@@ -4198,10 +4322,6 @@ translation=Megerősítés
 original=Cancel
 translation=Mégse
 
-[dialogue.button-allow]
-original=Allow
-translation=Engedélyezés
-
 [dialogue.button-skip]
 original=Skip
 translation=Kihagyás
@@ -4289,6 +4409,10 @@ translation=Az Obsidian nem tudja megnyitni a(z) „.{{extension}}” fájlokat.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=A cím nem lehet üres
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=A(z) „{{heading}}” fejléc nem található a fájlban.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Adjon meg egy mappát
 original=No existing folders found.
 translation=Nem található mappa.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=navigáláshoz
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=mozgatáshoz
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=létrehozáshoz
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=elvetéshez
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Egyezés címkével:
 original=No matches found.
 translation=Nincs találat.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevancia
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... és {{count}} további találat.
@@ -5046,14 +5162,6 @@ translation=Váltó
 original=Open quick switcher
 translation=Gyors váltó megnyitása
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=a navigáláshoz
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=a megnyitáshoz
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=megnyitás új lapon
@@ -5065,14 +5173,6 @@ translation=megnyitás jobbra
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=létrehozás
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=elvetés
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=kiválasztás
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Használja a Cmd/Ctrl+P billentyűket, majd gépeljen egy parancsot 
 original=Open command palette
 translation=Parancspaletta megnyitása
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=navigáláshoz
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=használathoz
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=elutasításhoz
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Nincsenek találatok.
@@ -6198,14 +6286,6 @@ translation=Szavak száma
 original=Show word count in the status bar.
 translation=Szavak számának megjelenítése az állapotsorban.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Megjelenjenek a Mermaid-diagramok ebben a széfben?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Csak akkor engedélyezd, ha megbízol a széf tartalmában.
-
 [plugins.slides.name]
 original=Slides
 translation=Diák
@@ -6325,18 +6405,6 @@ translation=A sablonfájlban lévő {{time}} erre az értékre lesz lecserélve.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Lehetőség van a {{time:HH:mm}} használatára, hogy felülbírálja a formátumot.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=a navigáláshoz
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=sablon beszúrásához
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=a bezáráshoz
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Teljes fájl egyesítése...
 original=No files found.
 translation=Nincsenek fájlok.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=a navigáláshoz
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=az egyesítéshez
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=a létrehozáshoz
@@ -8241,10 +8301,6 @@ translation=a létrehozáshoz
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=a tetején való egyesítéshez
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=az elvetéshez
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=A kiválasztott szövegrész kiszervezése...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Ezen fejléchez tartozó szöveg kiszervezése...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=az aljára mozgatáshoz
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Új vászon létrehozása
 original=Convert to file...
 translation=Átalakítás fájlra...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=cím beágyazásához
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=blokk beágyazásához
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=a csoportba ugráshoz
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Írjon be fájlnevet, fejlécet vagy blokkot a kereséshez
@@ -9194,6 +9234,14 @@ translation=Minden nézet
 original=This view
 translation=E nézet
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Áthelyezés az összes nézetbe
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Áthelyezés ebbe a nézetbe
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Keresés vagy létrehozás...
@@ -9246,10 +9294,6 @@ translation=Nézet neve
 original=View
 translation=Nézet
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Táblázat
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Megjelenített név
@@ -9287,8 +9331,8 @@ original=New
 translation=Új
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} megjelenítése
+original=Showing {{shown}} of {{total}}
+translation={{shown}} megjelenítése (összesen: {{total}})
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=A(z) "{{ view }}" nézet nem található
 original=Unknown view type: {{ viewtype }}
 translation=A bázis ismeretlen nézettípussal rendelkezik: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Ismeretlen tulajdonságtípus: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=A nézeteknek tömbnek kell lennie
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Csoportok szerkesztése...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Oszlop elrejtése
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Írjon [[-et
 original=to link note
 translation=jegyzet csatolásához
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=az elvetéshez
-
 [properties.option-property-type]
 original=Property type
 translation=Tulajdonságtípus
@@ -10210,6 +10258,10 @@ translation=Felhívás típusa...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=„{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} szó
@@ -10257,6 +10309,14 @@ translation={{count}} mappa
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} mappa
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} elem
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elem
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Ez a hivatkozás egy végrehajtható fájlra mutat. A futtatása ká
 original=File: {{path}}
 translation=Fájl: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Megnyitja a fájlt egy másik alkalmazásban?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Ez a fájl az Obsidian alkalmazáson kívül nyílik meg. Egyes fájltípusok kódot futtathatnak a számítógépén. Csak akkor folytassa, ha megbízik a fájl forrásában.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=A széf nem található.
@@ -10401,6 +10469,22 @@ translation=A széf nem található.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nem található széf ehhez az URL-hez: {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=A széfek nem tárolhatók az Obsidian telepítési mappájában, mert az Obsidian frissítésekor annak tartalma törlődik
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Ez a széf az Obsidian telepítési mappájában található
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Az Obsidian frissítésekor a telepítő törli a mappa tartalmát, ezzel együtt ezt a széfet is. Válassza a „Széfek kezelése” lehetőséget a széf bezárásához, majd a széf „Széf áthelyezése...” parancsával helyezze át máshová.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Széfek kezelése
 
 [main.supported-files]
 original=Supported files

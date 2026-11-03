@@ -266,14 +266,6 @@ translation=දකුණේ සිට වමට (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=දකුණේ සිට වමට දර්ශනය වීමට සටහන්වල පෙළ දිශාව සකසයි.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=සටහන්වල Mermaid රූප සටහන් පෙන්වන්න
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=”mermaid” කේත කොටස් වලින් ප්‍රවාහ සටහන්, අනුක්‍රම රූප සටහන් සහ අනෙකුත් රූප සටහන් සංදර්ශනය කරන්න.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=HTML ස්වයංක්‍රීයව පරිවර්තනය කරන්න
@@ -914,14 +906,6 @@ translation=පාවෙන සංචාලනය (Floating navigation)
 original=Navigation buttons float over the content instead of being anchored.
 translation=සංචාලන බොත්තම් නැංගුරම් ලා (anchored) තිබෙනවා වෙනුවට අන්තර්ගතය මත පාවේ.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=ලිස්සා යන (Sliding) පැති තීරු
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=පැති තීරු (Sidebars) ඉහළින් පාවෙනවා වෙනුවට අන්තර්ගතයේ පසෙකට ලිස්සා යයි.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=පූර්ණ තිරය (Full screen)
@@ -1498,6 +1482,14 @@ translation=නම හෝ විස්තරය අනුව ප්ලගින 
 original=Search plugins...
 translation=ප්ලගින සොයන්න...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=ඔබේ සංවිධානයේ ප්‍රතිපත්තිය අනුව අක්‍රීය කර ඇත.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=ඔබේ සංවිධානයේ ප්‍රතිපත්තිය අනුව අවශ්‍ය වේ.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=තුන්වන පාර්ශවීය ප්ලගිනය
@@ -1741,6 +1733,14 @@ translation="{{name}}" ප්ලගිනය ස්ථාපනය කරමි�
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation="{{name}}" ප්ලගිනය ස්ථාපනය කිරීම අසාර්ථක විය.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=ඔබේ සංවිධානයේ ප්‍රතිපත්තිය අනුව “{{name}}” අතිරේකයට අවසර නැත.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=ඔබේ සංවිධානයේ ප්‍රතිපත්තිය අනුව අවසර නැත.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=ප්‍රතිස්ථාපනය කරන්න
 original=Replace all
 translation=සියල්ල ප්‍රතිස්ථාපනය කරන්න
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=# ටයිප් කරන්න
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=ශීර්ෂයට සබැඳි කිරීමට
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=^ ටයිප් කරන්න
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=කොටස් (blocks) වලට සබැඳි කිරීමට
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=| ටයිප් කරන්න
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=ගැළපීමක් හමු නොවීය
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=රූපයේ ප්‍රමාණය: පළල පික්සල {{size}}
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=පිළිගැනීමට
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation="{{name}}" ගොනුව හමු නොවීය.
 original=Unrecognized URI action: {{action}}
 translation=හඳුනා නොගත් URI ක්‍රියාව: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI පරාමිතිය සඳහා “append” හෝ “prepend” අවශ්‍ය වේ.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=මකන්න
@@ -2573,10 +2561,6 @@ translation=හිස්
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=ගොනුවක් විවෘත කර නැත
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=නව ගොනුවක් සාදන්න
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=විද්‍යුත් තැපෑල නැවත යැව�
 original=Vault location must be a folder.
 translation=Vault ස්ථානය ෆෝල්ඩරයක් විය යුතුය.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Obsidian සඳහා iCloud අක්‍රීය කර ඇති බැවින් ඔබට එහි vault වෙත පිවිසීමට හෝ vault සෑදීමට නොහැක.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync සකසන්න
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=මෙම vault එක Obsidian යෙදුම් බහාලුමේ පිහිටා ඇත.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=මෙම vault එක {{path}} හි පිහිටා ඇත
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=මෙම උපාංගයේ
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=ගොනු
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=අවසන් වරට විවෘත කළේ
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}}ක් සක්‍රීයයි
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=අක්‍රීයයි
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=පසුගිය වර ප්‍රජා අතිරේක පූරණය වීමට තත්පර {{seconds}}ක් ගත විය. මෙම vault එක විවෘත වීමට වැඩි කාලයක් ගත වන්නේ නම්, සීමිත ප්‍රකාරය උත්සාහ කරන්න.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=පසුගිය වර මෙම vault එක විවෘත කිරීම සම්පූර්ණ නොවීය.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=පසුගිය වර මෙම vault එක විවෘත කිරීම සම්පූර්ණ නොවීය. මෙය දිගින් දිගටම සිදු වන්නේ නම්, සීමිත ප්‍රකාරය උත්සාහ කරන්න.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=vault විවෘත කරන්න
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=සීමිත ප්‍රකාරයෙන් vault විවෘත කරන්න
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=vault නම වෙනස් කරන්න...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=vault ලැයිස්තුවෙන් ඉවත් කරන්න...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=උපාංගයේ ගබඩාවට ගෙන යන්න...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=vault මකන්න...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” vault එකේ නම වෙනස් කරන්න
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” vault එක මකන්න
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=මෙම vault එක මැකීමෙන් එහි ඇති සියලුම ගොනු මැකෙනු ඇත.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=මෙම ක්‍රියාව ආපසු හැරවිය නොහැක. එය මැකීමට අවශ්‍ය බව තහවුරු කරන්න.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” vault එක ලැයිස්තුවෙන් ඉවත් කරන්න
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=මෙම vault එක ලැයිස්තුවෙන් ඉවත් කිරීමෙන් කිසිදු ගොනුවක් නොමැකෙන අතර, එය vault ලැයිස්තුවෙන් පමණක් ඉවත් වේ.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=ලැයිස්තුවෙන් ඉවත් කරන්න
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView යාවත්කාලීන කරන්න
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=ඔබේ Android උපාංගය යාවත්කාලීන නැති බැවින් Obsidian ක්‍රියා කිරීමට එය යාවත්කාලීන කළ යුතුය. කරුණාකර “Android WebView” යෙදුම උසස් කිරීමට ක්‍රමයක් සොයාගන්න.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=vault නමෙහි පහත කිසිදු අක්ෂරයක් ඇතුළත් විය නොහැක: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=මෙම ස්ථානයට ප්‍රවේශ වීමට Obsidian වෙත අවසර නැත
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=vault මැකීමට අසමත් විය.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}} සිට {{to}} වෙත ගෙන යමින්
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=vault එක ගෙන යන ලදී, නමුත් Obsidian යෙදුම් බහාලුමේ ඇති පැරණි පිටපත මැකීමට නොහැකි විය.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=සාදරයෙන් පිළිගනිමු
@@ -3541,6 +3657,10 @@ translation=Vault එක පූරණය වෙමින් පවතී...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Vault එක පූරණය කිරීම අසාර්ථක විය:
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}” කියවීමට නොහැකි බැවින් එහි ගොනු නොපෙන්වයි. එහි අවසර පරීක්ෂා කර, Obsidian නැවත ආරම්භ කරන්න.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=එය ඔබගේ vault හි ඇති ".trash" සැඟවු�
 original=The file will be permanently deleted.
 translation=ගොනුව ස්ථිරවම මකා දැමෙනු ඇත.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}} පද්ධතියේ කුණු කූඩයට ගෙන යාමට අසමත් විය. එසේ වුවද මැකීමට, “මකා දැමූ ගොනු” සැකසුම වෙනස් කරන්න.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=මෙම ෆෝල්ඩරය හිස් නොවේ.
@@ -4198,10 +4322,6 @@ translation=තහවුරු කරන්න
 original=Cancel
 translation=අවලංගු කරන්න
 
-[dialogue.button-allow]
-original=Allow
-translation=ඉඩ දෙන්න
-
 [dialogue.button-skip]
 original=Skip
 translation=මඟ හරින්න
@@ -4289,6 +4409,10 @@ translation=Obsidian හට “.{{extension}}” ගොනු විවෘත �
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=ශීර්ෂය හිස් විය නොහැක
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=“{{heading}}” ශීර්ෂය ගොනුවේ හමු නොවීය.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=ෆෝල්ඩරයක් ටයිප් කරන්න
 original=No existing folders found.
 translation=ෆෝල්ඩර කිසිවක් හමු නොවීය.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=සැරිසැරීමට (navigate)
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=ගෙන යාමට
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=සෑදීමට
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=ඉවත් කිරීමට
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=ටැගය ගලපන්න:
 original=No matches found.
 translation=ගැළපීම් කිසිවක් හමු නොවීය.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=අදාළත්වය
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... සහ තවත් ගැළපීම් {{count}}ක්.
@@ -5046,14 +5162,6 @@ translation=මාරුව (Switcher)
 original=Open quick switcher
 translation=ඉක්මන් මාරුව විවෘත කරන්න
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=සැරිසැරීමට
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=විවෘත කිරීමට
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=නව ටැබයක විවෘත කිරීමට
@@ -5065,14 +5173,6 @@ translation=දකුණු පසින් විවෘත කිරීමට
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=සෑදීමට
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=ඉවත් කිරීමට
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=තෝරාගැනීමට
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=විධානයක් ඇමතීමට එය ටයිප් �
 original=Open command palette
 translation=විධාන පුවරුව විවෘත කරන්න
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=සැරිසැරීමට
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=භාවිතා කිරීමට
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=ඉවත් කිරීමට
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=විධාන කිසිවක් හමු නොවීය.
@@ -6198,14 +6286,6 @@ translation=වචන ගණන
 original=Show word count in the status bar.
 translation=තත්ව තීරුවේ (status bar) වචන ගණන පෙන්වන්න.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=මෙම vault තුළ Mermaid රූප සටහන් පෙන්වන්නද?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=මෙම vault හි අන්තර්ගතය ඔබ විශ්වාස කරන්නේ නම් පමණක් ඉඩ දෙන්න.
-
 [plugins.slides.name]
 original=Slides
 translation=ස්ලයිඩ (Slides)
@@ -6325,18 +6405,6 @@ translation=අච්චු ගොනුවේ ඇති {{time}} මෙම අ�
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=ආකෘතිය එක් වරක් ප්‍රතික්‍ෂේප (override) කිරීමට ඔබට {{time:HH:mm}} ද භාවිතා කළ හැක.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=සැරිසැරීමට
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=අච්චුව ඇතුළත් කිරීමට
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=ඉවත් කිරීමට
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=සම්පූර්ණ ගොනුව ඒකාබද්ධ ක�
 original=No files found.
 translation=ගොනු හමු නොවීය.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=සැරිසැරීමට
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=ඒකාබද්ධ කිරීමට
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=අලුතින් සෑදීමට
@@ -8241,10 +8301,6 @@ translation=අලුතින් සෑදීමට
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=ඉහළින් ඒකාබද්ධ කිරීමට
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=ඉවත් කිරීමට
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=වත්මන් තේරීම උපුටා ගන්න...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=මෙම ශීර්ෂය උපුටා ගන්න...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=පහළට ගෙන යාමට
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=නව කැන්වසයක් සාදන්න
 original=Convert to file...
 translation=ගොනුවක් බවට පරිවර්තනය කරන්න...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=ශීර්ෂය ඇතුළත් (embed) කිරීමට
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=කොටස ඇතුළත් (embed) කිරීමට
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=කණ්ඩායම වෙත යාමට
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=ශීර්ෂයේ නම ටයිප් කරන්න
@@ -9194,6 +9234,14 @@ translation=සියලුම දසුන්
 original=This view
 translation=මෙම දසුන
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=සියලු දසුන් වෙත ගෙන යන්න
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=මෙම දසුන වෙත ගෙන යන්න
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=සොයන්න හෝ සාදන්න...
@@ -9246,10 +9294,6 @@ translation=දසුනේ නම
 original=View
 translation=දර්ශනය (View)
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=වගුව
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=දර්ශන නම
@@ -9287,8 +9331,8 @@ original=New
 translation=නව
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}}ක් පෙන්වයි
+original=Showing {{shown}} of {{total}}
+translation={{total}}කින් {{shown}}ක් පෙන්වයි
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation="{{ view }}" දසුන හමු නොවීය
 original=Unknown view type: {{ viewtype }}
 translation=Base එක නොදන්නා දර්ශන වර්ගයක් සමඟ වින්‍යාස කර ඇත: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=නොදන්නා ගුණාංග වර්ගයකි: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=දසුන් අරාවක් (array) විය යුතුය
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=සමූහ සංස්කරණය කරන්න...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=තීරුව සඟවන්න
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=[[ ටයිප් කරන්න
 original=to link note
 translation=සටහනට සබැඳි කිරීමට
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=ඉවත් කිරීමට
-
 [properties.option-property-type]
 original=Property type
 translation=ගුණාංග වර්ගය
@@ -10210,6 +10258,10 @@ translation=Callout වර්ගය...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation=වචන {{count}}
@@ -10257,6 +10309,14 @@ translation=ෆෝල්ඩර {{count}}
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation=ෆෝල්ඩර {{count}}
+
+[nouns.item-with-count]
+original={{count}} item
+translation=අයිතම {{count}}ක්
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation=අයිතම {{count}}ක්
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=මෙම සබැඳිය ක්‍රියාත්මක ක�
 original=File: {{path}}
 translation=ගොනුව: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=ගොනුව වෙනත් යෙදුමක විවෘත කරන්නද?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=මෙම ගොනුව Obsidian වෙතින් පිටත විවෘත වනු ඇත. සමහර ගොනු වර්ගවලට ඔබේ පරිගණකයේ කේත ක්‍රියාත්මක කළ හැක. මෙම ගොනුවේ මූලාශ්‍රය විශ්වාස කරන්නේ නම් පමණක් ඉදිරියට යන්න.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Vault හමු නොවීය.
@@ -10401,6 +10469,22 @@ translation=Vault හමු නොවීය.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL එක සඳහා vault එකක් සොයා ගැනීමට නොහැක
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian යාවත්කාලීන වන විට එහි ස්ථාපන බහාලුම මකා දමන බැවින් එහි vault ගබඩා කළ නොහැක
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=මෙම vault එක Obsidian ස්ථාපන බහාලුම තුළ ඇත
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian යාවත්කාලීන වන විට ස්ථාපකය මෙම බහාලුම සහ එහි ඇති මෙම vault එක මකා දමයි. vault එක වැසීමට “vault කළමනාකරණය කරන්න” තෝරන්න. ඉන්පසු එය වෙනත් ස්ථානයකට ගෙන යාමට එහි “vault ගෙන යන්න...” භාවිත කරන්න.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=vault කළමනාකරණය කරන්න
 
 [main.supported-files]
 original=Supported files

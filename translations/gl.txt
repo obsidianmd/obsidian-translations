@@ -266,14 +266,6 @@ translation=Dereita a esquerda (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Establece a dirección de texto predeterminada das notas de dereita a esquerda.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Mostrar diagramas de Mermaid nas notas
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Renderizar diagramas de fluxo, diagramas de secuencia e outros diagramas a partir de bloques de código «mermaid».
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Converter o HTML pegado a Markdown
@@ -914,14 +906,6 @@ translation=Navegación flotante
 original=Navigation buttons float over the content instead of being anchored.
 translation=Os botóns de navegación flotan sobre o contido en lugar de estar ancorados.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Barras laterais deslizantes
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=As barras laterais deslizan cara ao lado do contido en lugar de flotar enriba.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Pantalla completa
@@ -1498,6 +1482,14 @@ translation=Filtra complementos por nome ou descrición.
 original=Search plugins...
 translation=Buscar complementos...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Desactivado pola política da túa organización.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Obrigatorio pola política da túa organización.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Complementos da comunidade
@@ -1741,6 +1733,14 @@ translation=Instalando o complemento "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Non se puido instalar o complemento "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=O complemento “{{name}}” non está permitido pola política da túa organización.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Non permitido pola política da túa organización.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Substituír
 original=Replace all
 translation=Substituír todo
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Escribe #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=para ligar cabeceira
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Escribe ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=para ligar bloques
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Escribe |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Non se atoparon coincidencias
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Tamaño da imaxe: {{size}}px de ancho
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=para aceptar
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=O ficheiro "{{name}}" non se atopou.
 original=Unrecognized URI action: {{action}}
 translation=Acción URI non recoñecida: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=O parámetro URI “{{param}}” require “append” ou “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Eliminar
@@ -2573,10 +2561,6 @@ translation=Baleiro
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Non hai ningún ficheiro aberto
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Crear nova nota
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Erro ao reenviar o correo electrónico.
 original=Vault location must be a folder.
 translation=A localización do almacén debe ser un cartafol.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Non podes acceder a almacéns nin crealos en iCloud porque está desactivado para Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Configurar Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Este almacén está no cartafol da aplicación Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Este almacén está en {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Neste dispositivo
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Ficheiros
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Última apertura
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} activados
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Desactivados
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Os complementos da comunidade tardaron {{seconds}} segundos en cargar a última vez. Se este almacén tarda en abrirse, proba o modo restrinxido.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Este almacén non rematou de abrirse a última vez.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Este almacén non rematou de abrirse a última vez. Se segue a ocorrer, proba o modo restrinxido.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Abrir almacén
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Abrir almacén en modo restrinxido
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Renomear almacén...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Esquecer almacén...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Mover ao almacenamento do dispositivo...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Eliminar almacén...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Renomear o almacén “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Eliminar o almacén “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Ao eliminar este almacén, eliminaranse todos os ficheiros que contén.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Esta acción é irreversible. Confirma que queres eliminalo.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Esquecer o almacén “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Ao esquecer este almacén, retirarase da lista de almacéns sen eliminar ningún ficheiro.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Esquecer
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Actualizar Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=O teu dispositivo Android non está actualizado e debe actualizarse para que Obsidian funcione. Busca unha maneira de actualizar a aplicación "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=O nome do almacén non pode conter ningún destes caracteres: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian non ten permiso para acceder a esta localización
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Non se puido eliminar o almacén.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Movendo de {{from}} a {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Moveuse o almacén, pero non se puido eliminar a copia antiga do cartafol da aplicación Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Benvido
@@ -3541,6 +3657,10 @@ translation=Cargando o almacén...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Erro ao cargar o almacén: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Non se pode ler “{{path}}”, polo que non se amosan os seus ficheiros. Comproba os seus permisos e despois reinicia Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Moverase ao teu lixo de Obsidian, que está na cartafol oculta ".tra
 original=The file will be permanently deleted.
 translation=O ficheiro será eliminado de forma permanente.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Non se puido mover {{item}} ao lixo do sistema. Para eliminar de todos os xeitos, cambia o axuste “Ficheiros eliminados”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Este cartafol non está baleiro.
@@ -4198,10 +4322,6 @@ translation=Confirmar
 original=Cancel
 translation=Cancelar
 
-[dialogue.button-allow]
-original=Allow
-translation=Permitir
-
 [dialogue.button-skip]
 original=Skip
 translation=Omitir
@@ -4289,6 +4409,10 @@ translation=Obsidian non pode abrir ficheiros «.{{extension}}».
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=O encabezado non pode estar baleiro
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Non se atopou a cabeceira “{{heading}}” no ficheiro.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Escribe un cartafol
 original=No existing folders found.
 translation=Non se atoparon cartafois existentes.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=para navegar
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=para mover
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=para crear
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=para pechar
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Coincidir coa etiqueta:
 original=No matches found.
 translation=Non se atoparon coincidencias.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevancia
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... e {{count}} coincidencia máis.
@@ -5046,14 +5162,6 @@ translation=Selector
 original=Open quick switcher
 translation=Abrir o selector rápido
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=para navegar
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=para abrir
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=para abrir nunha nova lapela
@@ -5065,14 +5173,6 @@ translation=para abrir á dereita
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=para crear
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=para pechar
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=para seleccionar
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Usa Cmd/Ctrl+P e escribe para invocar un comando.
 original=Open command palette
 translation=Abrir paleta de comandos
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=para navegar
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=para usar
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=para pechar
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Non se atoparon comandos.
@@ -6198,14 +6286,6 @@ translation=Conta de palabras
 original=Show word count in the status bar.
 translation=Mostrar a conta de palabras na barra de estado.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Queres mostrar os diagramas de Mermaid neste almacén?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Permíteo só se confías no contido deste almacén.
-
 [plugins.slides.name]
 original=Slides
 translation=Diapositivas
@@ -6325,18 +6405,6 @@ translation={{time}} no ficheiro de modelo será substituído por este valor.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Tamén podes usar {{time:HH:mm}} para sobrescribir o formato unha vez.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=para navegar
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=para inserir modelo
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=para pechar
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Fusionar todo o ficheiro con...
 original=No files found.
 translation=Non se atoparon ficheiros.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=para navegar
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=para fusionar
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=para crear novo
@@ -8241,10 +8301,6 @@ translation=para crear novo
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=para fusionar na parte superior
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=para descartar
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Extraer a selección actual...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Extraer esta cabeceira...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=para mover ao final
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Crear novo lenzo
 original=Convert to file...
 translation=Converter a ficheiro...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=para inserir cabeceira
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=para inserir bloque
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=para navegar ao grupo
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Escribe para atopar un ficheiro, cabeceira ou bloque
@@ -9194,6 +9234,14 @@ translation=Tódalas vistas
 original=This view
 translation=Esta vista
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Mover a todas as vistas
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Mover a esta vista
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Atopar ou crear...
@@ -9246,10 +9294,6 @@ translation=Nome da vista
 original=View
 translation=Vista
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Táboa
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Nome para mostrar
@@ -9287,8 +9331,8 @@ original=New
 translation=Novo
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Mostrando {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Mostrando {{shown}} de {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Vista "{{ view }}" non atopada
 original=Unknown view type: {{ viewtype }}
 translation=Tipo de vista descoñecido: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Tipo de propiedade descoñecido: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=As vistas deben ser un array
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Editar grupos...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Agochar columna
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Escribe [[
 original=to link note
 translation=para ligar nota
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=para descartar
-
 [properties.option-property-type]
 original=Property type
 translation=Tipo de propiedade
@@ -10210,6 +10258,10 @@ translation=Tipo de aviso...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} palabra
@@ -10257,6 +10309,14 @@ translation={{count}} cartafol
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} cartafoles
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} elemento
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elementos
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Esta ligazón apunta a un ficheiro executable. Executalo pode dañar
 original=File: {{path}}
 translation=Ficheiro: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Abrir o ficheiro noutra aplicación?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Este ficheiro abrirase fóra de Obsidian. Algúns tipos de ficheiros poden executar código no teu ordenador. Continúa só se confías na orixe deste ficheiro.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Almacén non atopado.
@@ -10401,6 +10469,22 @@ translation=Almacén non atopado.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Non se puido atopar o almacén para a URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Os almacéns non se poden gardar no cartafol de instalación de Obsidian porque se borra cando Obsidian se actualiza
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Este almacén está dentro do cartafol de instalación de Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=O instalador borra este cartafol cando Obsidian se actualiza, e con el este almacén. Escolle "Xestionar almacéns" para pechar o almacén e despois usa a opción "Mover almacén..." para movelo a outro lugar.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Xestionar almacéns
 
 [main.supported-files]
 original=Supported files

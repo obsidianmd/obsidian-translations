@@ -266,14 +266,6 @@ translation=Setați afișarea de la dreapta la stânga (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Setați direcția textului în cadrul însemnărilor astfel încât acesta să fie afișat de la dreapta la stânga.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Afișează diagrame Mermaid în însemnări
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Redă diagrame de flux, diagrame de secvență și alte diagrame din blocuri de cod „mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Permiteți conversia automată a conținutului HTML
@@ -914,14 +906,6 @@ translation=Navigare flotantă
 original=Navigation buttons float over the content instead of being anchored.
 translation=Butoanele de navigare plutesc peste conținut, în loc să fie ancorate.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Bare laterale glisante
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Barele laterale glisează pe lângă conținut, în loc să plutească deasupra.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Ecran complet
@@ -1498,6 +1482,14 @@ translation=Filtrați modulele după nume sau descriere.
 original=Search plugins...
 translation=Căutați prin modulele integrate...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Dezactivat prin politica organizației tale.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Obligatoriu conform politicii organizației tale.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Module comunitare
@@ -1741,6 +1733,14 @@ translation=Se instalează modulul „{{name}}”...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Instalarea modulului „{{name}}” a eșuat.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Modulul „{{name}}” nu este permis de politica organizației tale.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Nepermis de politica organizației tale.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Înlocuiți
 original=Replace all
 translation=Înlocuiți tot
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Scrieți #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=pentru a crea o legătură către un titlu
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Scrieți ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=pentru a crea o legătură către un bloc
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Scrieți |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Nu s-a găsit
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Dimensiune imagine: lățime {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=pentru a accepta
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Fișierul „{{name}}” nu a fost găsit.
 original=Unrecognized URI action: {{action}}
 translation=Acțiune URI nerecunoscută: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Parametrul URI „{{param}}” necesită „append” sau „prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Ștergeți
@@ -2573,10 +2561,6 @@ translation=Gol
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Niciun fișier nu este deschis
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Creați un nou fișier
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Retrimiterea e-mail-ului a eșuat.
 original=Vault location must be a folder.
 translation=Locația seifului trebuie să fie un director.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Nu poți accesa sau crea seifuri în iCloud deoarece acesta este dezactivat pentru Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Configurează Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Acest seif se află în directorul aplicației Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Acest seif se află la {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Pe acest dispozitiv
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Fișiere
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Ultima deschidere
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} activate
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Dezactivate
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Încărcarea modulelor comunitare a durat {{seconds}} secunde ultima dată. Dacă acest seif se deschide lent, încearcă modul restricționat.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Deschiderea acestui seif nu s-a finalizat ultima dată.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Deschiderea acestui seif nu s-a finalizat ultima dată. Dacă problema persistă, încearcă modul restricționat.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Deschide seiful
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Deschide seiful în mod restricționat
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Redenumește seiful...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Elimină seiful din listă...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Mută în spațiul de stocare al dispozitivului...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Șterge seiful...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Redenumește seiful „{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Șterge seiful „{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Ștergerea acestui seif va șterge toate fișierele din el.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Această acțiune este ireversibilă. Confirmă că dorești să îl ștergi.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Elimină seiful „{{name}}” din listă
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Acest seif va fi eliminat din lista de seifuri fără a șterge niciun fișier.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Elimină din listă
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Actualizează Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Dispozitivul tău Android nu este la zi și trebuie actualizat pentru ca Obsidian să funcționeze. Găsește o modalitate de a actualiza aplicația „Android WebView”.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Numele seifului nu poate conține niciunul dintre aceste caractere: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian nu are permisiunea de a accesa această locație
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Ștergerea seifului a eșuat.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Se mută din {{from}} în {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Seiful a fost mutat, dar copia veche din directorul aplicației Obsidian nu a putut fi ștearsă.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Bine ați venit
@@ -3541,6 +3657,10 @@ translation=Se încarcă seiful...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Încărcarea seifului a eșuat: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Nu se poate citi „{{path}}”, așa că fișierele de acolo nu sunt afișate. Verifică permisiunile, apoi repornește Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Va fi mutat în coșul de reciclare al Obsidian, localizat în direc
 original=The file will be permanently deleted.
 translation=Acest fișier va fi șters permanent.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Mutarea {{item}} în coșul de gunoi al sistemului a eșuat. Pentru a șterge totuși, modifică setarea „Fișiere șterse”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Acest director nu este gol.
@@ -4198,10 +4322,6 @@ translation=Confirmă
 original=Cancel
 translation=Anulează
 
-[dialogue.button-allow]
-original=Allow
-translation=Permite
-
 [dialogue.button-skip]
 original=Skip
 translation=Sari
@@ -4289,6 +4409,10 @@ translation=Obsidian nu poate deschide fișiere „.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Titlul nu poate fi gol
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Titlul „{{heading}}” nu a fost găsit în fișier.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Scrie numele dosarului
 original=No existing folders found.
 translation=Nu am găsit dosare.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=pentru a răsfoi
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=pentru a muta
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=pentru a crea
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=pentru a înlătura
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Potrivește eticheta:
 original=No matches found.
 translation=Nu au fost găsite rezultate.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevanță
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... și încă {{count}} rezultat.
@@ -5046,14 +5162,6 @@ translation=Comutator
 original=Open quick switcher
 translation=Deschide comutarea rapidă
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=pentru a naviga
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=pentru a deschide
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=pentru a deschide într-o filă nouă
@@ -5065,14 +5173,6 @@ translation=pentru a deschide în dreapta
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=pentru a crea
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=pentru a respinge
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=pentru a selecta
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Scrie o comandă pentru a o folosi. Nu este nevoie de interfața gra
 original=Open command palette
 translation=Deschide paleta de comenzi
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=pentru a naviga
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=pentru a folosi
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=pentru a respinge
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Nu au fost găsite comenzi.
@@ -6198,14 +6286,6 @@ translation=Număr de cuvinte
 original=Show word count in the status bar.
 translation=Afișează numărul de cuvinte în bara de status.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Afișezi diagrame Mermaid în acest seif?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Permite doar dacă ai încredere în conținutul acestui seif.
-
 [plugins.slides.name]
 original=Slides
 translation=Prezentări
@@ -6325,18 +6405,6 @@ translation={{time}} din fișierul șablon va fi înlocuit cu această valoare.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=De asemenea, poți folosi și {{time:HH:mm}} pentru a suprascrie formatul o singură dată.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=pentru a naviga
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=pentru a insera șablonul
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=pentru a închide
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Îmbină întregul fișier cu...
 original=No files found.
 translation=Nu s-au găsit fișiere.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=pentru navigare
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=pentru îmbinare
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=pentru a crea unul nou
@@ -8241,10 +8301,6 @@ translation=pentru a crea unul nou
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=pentru a îmbina la început
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=pentru a închide
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Extrage selecția curentă...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Extrage acest titlu...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=pentru a muta la final
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Creează o pânză nouă
 original=Convert to file...
 translation=Convertește în fișier...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=pentru a încorpora titlul
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=pentru a încorpora blocul
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=pentru a naviga la grup
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Type name of heading
@@ -9194,6 +9234,14 @@ translation=Toate vizualizările
 original=This view
 translation=Această vizualizare
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Mută în toate vizualizările
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Mută în această vizualizare
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Găsește sau creează...
@@ -9246,10 +9294,6 @@ translation=Nume vizualizare
 original=View
 translation=Vizualizare
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabel
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Nume afișat
@@ -9287,8 +9331,8 @@ original=New
 translation=Nou
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Se afișează {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Se afișează {{shown}} din {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Vizualizarea „{{ view }}” nu a fost găsită
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Tip de proprietate necunoscut: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Vizualizările trebuie să fie un array
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Editează grupurile...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Ascunde coloana
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Tastați [[
 original=to link note
 translation=pentru a crea o legătură către însemnare
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=pentru a închide
-
 [properties.option-property-type]
 original=Property type
 translation=Tipul proprietății
@@ -10210,6 +10258,10 @@ translation=Tip de explicație...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=„{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} cuvânt
@@ -10257,6 +10309,14 @@ translation={{count}} director
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} directoare
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} element
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elemente
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Această legătură indică un fișier executabil. Rularea acestuia 
 original=File: {{path}}
 translation=Fișier: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Deschizi fișierul într-o altă aplicație?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Acest fișier se va deschide în afara Obsidian. Unele tipuri de fișiere pot executa cod pe computerul tău. Continuă doar dacă ai încredere în sursa acestui fișier.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Seiful nu a fost găsit.
@@ -10401,6 +10469,22 @@ translation=Seiful nu a fost găsit.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nu se poate găsi un seif pentru URL-ul {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Seifurile nu pot fi stocate în directorul de instalare Obsidian deoarece acesta este șters la actualizarea Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Acest seif se află în directorul de instalare Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Pachetul de instalare șterge acest director la actualizarea Obsidian, împreună cu seiful din el. Alege „Gestionează seifurile” pentru a închide seiful, apoi folosește opțiunea „Mută seiful...” pentru a-l muta în altă parte.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Gestionează seifurile
 
 [main.supported-files]
 original=Supported files

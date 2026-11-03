@@ -266,14 +266,6 @@ translation=Sprava doľava (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Nastavenie smeru textu poznámok na zobrazenie sprava doľava.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Zobrazovať diagramy Mermaid v poznámkach
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Vykresľovať vývojové diagramy, sekvenčné diagramy a ďalšie diagramy z blokov kódu „mermaid“.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Automaticky konvertovať HTML
@@ -914,14 +906,6 @@ translation=Plávajúca navigácia
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigačné tlačidlá plávajú nad obsahom namiesto toho, aby boli ukotvené.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Výsuvné bočné panely
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Bočné panely sa vysúvajú k okraju obsahu namiesto toho, aby plávali nad ním.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Celá obrazovka
@@ -1498,6 +1482,14 @@ translation=Filtrovať pluginy podľa názvu alebo popisu.
 original=Search plugins...
 translation=Hľadať pluginy...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Vypnuté pravidlami vašej organizácie.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Vyžadované pravidlami vašej organizácie.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Pluginy tretích strán
@@ -1741,6 +1733,14 @@ translation=Inštaluje sa plugin "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Plugin "{{name}}" sa nepodarilo nainštalovať.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Doplnok „{{name}}“ nie je povolený pravidlami vašej organizácie.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Nepovolené pravidlami vašej organizácie.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Nahradiť
 original=Replace all
 translation=Nahradiť všetky
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Zadajte #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=pre odkaz na nadpis
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Zadajte ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=pre odkaz na blok
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Zadajte |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Nenašla sa žiadna zhoda
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Veľkosť obrázku: {{size}}px široký
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=prijať
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Súbor "{{name}}" nenájdený.
 original=Unrecognized URI action: {{action}}
 translation=Nerozpoznaná akcia URI: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Parameter URI „{{param}}“ vyžaduje „append“ alebo „prepend“.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Odstrániť
@@ -2573,10 +2561,6 @@ translation=Prázdne
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Nie je otvorený žiadny súbor
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Vytvoriť nový súbor
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Opätovné odoslanie emailu zlyhalo.
 original=Vault location must be a folder.
 translation=Trezor musí byť umiestnený v priečinku.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Nemôžete pristupovať k trezorom v iCloud ani ich tam vytvárať, pretože iCloud je pre Obsidian vypnutý.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Nastaviť Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Tento trezor sa nachádza v priečinku aplikácie Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Tento trezor sa nachádza v {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=V tomto zariadení
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Súbory
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Naposledy otvorené
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation=Povolené: {{count}}
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Zakázané
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Načítanie komunitných pluginov naposledy trvalo {{seconds}} sekúnd. Ak sa tento trezor otvára pomaly, skúste obmedzený režim.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Otváranie tohto trezora sa naposledy nedokončilo.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Otváranie tohto trezora sa naposledy nedokončilo. Ak sa to opakuje, skúste obmedzený režim.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Otvoriť trezor
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Otvoriť trezor v obmedzenom režime
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Premenovať trezor...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Zabudnúť trezor...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Presunúť do úložiska zariadenia...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Odstrániť trezor...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Premenovať trezor „{{name}}“
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Odstrániť trezor „{{name}}“
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Odstránením tohto trezora sa odstránia všetky súbory v ňom.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Túto akciu nie je možné vrátiť späť. Potvrďte, že ho chcete odstrániť.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Zabudnúť trezor „{{name}}“
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Zabudnutím sa tento trezor odstráni zo zoznamu trezorov bez odstránenia súborov.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Zabudnúť
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Aktualizovať Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Vaše zariadenie so systémom Android nie je aktuálne a na fungovanie aplikácie Obsidian sa musí aktualizovať. Nájdite spôsob, ako aktualizovať aplikáciu „Android WebView“.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Názov trezora nesmie obsahovať žiadny z týchto znakov: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian nemá povolenie na prístup k tomuto umiestneniu
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Trezor sa nepodarilo odstrániť.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Presúva sa z {{from}} do {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Trezor bol presunutý, ale starú kópiu v priečinku aplikácie Obsidian sa nepodarilo odstrániť.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Vitajte
@@ -3541,6 +3657,10 @@ translation=Načítavanie trezoru...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Nepodarilo sa načítať trezor: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Umiestnenie „{{path}}“ sa nedá čítať, preto sa jeho súbory nezobrazujú. Skontrolujte jeho povolenia a potom reštartujte Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Bude presunutý do Obsidian koša, ktorý sa nachádza v skrytom pri
 original=The file will be permanently deleted.
 translation=Súbor bude natrvalo odstránený.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Položku {{item}} sa nepodarilo presunúť do systémového koša. Ak ju chcete napriek tomu odstrániť, zmeňte nastavenie „Odstránené súbory“.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Tento priečinok nie je prázdny.
@@ -4198,10 +4322,6 @@ translation=Potvrdiť
 original=Cancel
 translation=Zrušiť
 
-[dialogue.button-allow]
-original=Allow
-translation=Povoliť
-
 [dialogue.button-skip]
 original=Skip
 translation=Preskočiť
@@ -4289,6 +4409,10 @@ translation=Obsidian nedokáže otvoriť súbory „.{{extension}}“.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Nadpis nesmie byť prázdny
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Nadpis „{{heading}}“ sa v súbore nenašiel.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Zadajte priečinok
 original=No existing folders found.
 translation=Priečinok nebol nájdený.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=navigovať
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=presunúť
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=vytvoriť
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=odmietnuť
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Zhoduje sa so značkou:
 original=No matches found.
 translation=Neboli nájdené žiadne zhody.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevantnosť
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... a {{count}} ďalšia zhoda.
@@ -5046,14 +5162,6 @@ translation=Prepínač
 original=Open quick switcher
 translation=Otvoriť rýchly prepínač
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=navigovať
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=otvoriť
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=otvoriť v novej karte
@@ -5065,14 +5173,6 @@ translation=otvoriť vpravo
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=vytvoriť
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=odmietnuť
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=zvoliť
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Použite Cmd/Ctrl+P a zadajte príkaz, ktorý chcete vyvolať.
 original=Open command palette
 translation=Otvoriť paletu príkazov
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=navigovať
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=použiť
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=odmietnuť
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Neboli nájdené žiadne príkazy.
@@ -6198,14 +6286,6 @@ translation=Počet slov
 original=Show word count in the status bar.
 translation=Zobrazovať počet slov v stavovom riadku.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Zobrazovať diagramy Mermaid v tomto trezore?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Povoľte iba vtedy, ak dôverujete obsahu tohto trezora.
-
 [plugins.slides.name]
 original=Slides
 translation=Snímky
@@ -6325,18 +6405,6 @@ translation={{time}} v šablóne bude nahradený touto hodnotou.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Tiež môžte použiť {{time:HH:mm}} pre prepísanie formátu u konkrétneho súboru.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=navigovať
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=vložiť šablónu
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=odmietnuť
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Zlúčiť celý súbor s...
 original=No files found.
 translation=Žiadne súbory neboli nájdené.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=navigovať
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=zlúčiť
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=vytvoriť nový
@@ -8241,10 +8301,6 @@ translation=vytvoriť nový
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=zlúčiť navrchu
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=odmietnuť
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Extrahovať aktuálny výber...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Extrahovať tento nadpis...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=presunúť nadol
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Vytvoriť nové plátno
 original=Convert to file...
 translation=Konvertovať na súbor...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=vložiť nadpis
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=vložiť blok
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=navigovať na skupinu
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Zadajte názov nadpisu
@@ -9194,6 +9234,14 @@ translation=Všetky zobrazenia
 original=This view
 translation=Toto zobrazenie
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Presunúť do všetkých zobrazení
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Presunúť do tohto zobrazenia
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Nájsť alebo vytvoriť...
@@ -9246,10 +9294,6 @@ translation=Zobraziť meno
 original=View
 translation=Zobraziť
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabuľka
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Zobraziť meno
@@ -9287,8 +9331,8 @@ original=New
 translation=Nový
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Zobrazené: {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Zobrazené: {{shown}} z {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Zobrazenie "{{ view }}" nebolo nájdené
 original=Unknown view type: {{ viewtype }}
 translation=Databáza je konfigurovaná s neznámym typom zobrazenia: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Neznámy typ vlastnosti: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Zobrazenia musia byť pole
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Upraviť skupiny...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Skryť stĺpec
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Typ [[
 original=to link note
 translation=odkazovať na poznámku
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=odmietnuť
-
 [properties.option-property-type]
 original=Property type
 translation=Typ vlastnosti
@@ -10210,6 +10258,10 @@ translation=Typ upozornenia...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=„{{item}}“
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} slovo
@@ -10257,6 +10309,14 @@ translation={{count}} priečinok
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} priečinky(ov)
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} položka
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} položiek
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Tento odkaz odkazuje na spustiteľný súbor. Jeho spustenie môže 
 original=File: {{path}}
 translation=Súbor: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Otvoriť súbor v inej aplikácii?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Tento súbor sa otvorí mimo aplikácie Obsidian. Niektoré typy súborov môžu vo vašom počítači spúšťať kód. Pokračujte iba vtedy, ak dôverujete zdroju tohto súboru.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Trezor sa nenašiel.
@@ -10401,6 +10469,22 @@ translation=Trezor sa nenašiel.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nedá sa nájsť trezor pre URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Trezory nemožno ukladať do inštalačného priečinka aplikácie Obsidian, pretože pri aktualizácii aplikácie Obsidian sa tento priečinok vymaže
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Tento trezor je v inštalačnom priečinku aplikácie Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Inštalátor pri aktualizácii aplikácie Obsidian vymaže tento priečinok aj s týmto trezorom. Výberom možnosti „Spravovať trezory“ zatvorte trezor a potom pri ňom použite možnosť „Presunúť trezor...“ na jeho presunutie na iné miesto.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Spravovať trezory
 
 [main.supported-files]
 original=Supported files

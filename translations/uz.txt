@@ -266,14 +266,6 @@ translation=O'ngdan chapga yo'nalish (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Esdaliklarning matn yo'nalishini o'ngdan chapga belgilash.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Eslatmalarda Mermaid diagrammalarini ko‘rsatish
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=“mermaid” kod bloklaridan blok-sxemalar, ketma-ketlik diagrammalari va boshqa diagrammalarni ko‘rsatish.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=HTML-ni avtomatik konvertatsiya qilish
@@ -914,14 +906,6 @@ translation=Suzuvchi navigatsiya
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigatsiya tugmalari mahkamlanish o‘rniga kontent ustida suzib turadi.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Sirg‘aluvchi yon panellar
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Yon panellar yuqorida suzib turish o‘rniga kontent yon tomoni bo‘ylab sirg‘aladi.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=To‘liq ekran
@@ -1498,6 +1482,14 @@ translation=O'rnatilgan plaginlarni nomi yoki tavsifi bo'yicha qidirish.
 original=Search plugins...
 translation=O'rnatilgan plaginlarni qidirish...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Tashkilotingiz siyosatiga muvofiq oʻchirilgan.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Tashkilotingiz siyosatiga muvofiq majburiy.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Tashqi plaginlar
@@ -1741,6 +1733,14 @@ translation=Plagin "{{name}}" o'rnatilmoqda...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Plagin "{{name}}" o'rnatish mumkin emas.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Tashkilotingiz siyosatiga koʻra “{{name}}” plaginiga ruxsat berilmagan.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Tashkilotingiz siyosatiga koʻra ruxsat berilmagan.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=O'zgartirish
 original=Replace all
 translation=Hammamizni o'zgartirish
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Xesh (#) kiriting
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=, sarlavhaga havola qilish uchun
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Blok (^ ) kiriting
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=, blokka havola qilish uchun
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Truba (|) kiriting
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Moslik topilmadi
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Rasm o'lchami: {{size}}px kenglik
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=qabul qilish
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Fayl "{{name}}" topilmadi.
 original=Unrecognized URI action: {{action}}
 translation=Noma’lum URI amali: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI parametri “append” yoki “prepend”ni talab qiladi.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=O‘chirish
@@ -2573,10 +2561,6 @@ translation=Bo‘sh
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Hech qanday fayl ochilmagan
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Yangi fayl yaratish
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Elektron pochtani qayta yuborib bo‘lmadi.
 original=Vault location must be a folder.
 translation=Ombor joylashuvi jild bo‘lishi kerak.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=iCloud Obsidian uchun oʻchirilgani sababli undagi omborlarni ocha olmaysiz yoki yarata olmaysiz.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync’ni sozlash
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Bu ombor Obsidian ilovasi jildida joylashgan.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Bu ombor {{path}} manzilida joylashgan
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Shu qurilmada
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Fayllar
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Oxirgi ochilgan
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} ta yoqilgan
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Oʻchirilgan
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Oxirgi safar hamjamiyat plaginlarini yuklash {{seconds}} soniya davom etdi. Agar bu ombor sekin ochilsa, cheklangan rejimni sinab koʻring.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Oxirgi safar bu ombor toʻliq ochilmadi.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Oxirgi safar bu ombor toʻliq ochilmadi. Bu holat takrorlansa, cheklangan rejimni sinab koʻring.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Omborni ochish
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Omborni cheklangan rejimda ochish
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Ombor nomini oʻzgartirish...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Omborni unutish...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Qurilma xotirasiga koʻchirish...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Omborni oʻchirish...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” ombori nomini oʻzgartirish
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” omborini oʻchirish
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Bu ombor oʻchirilsa, undagi barcha fayllar ham oʻchiriladi.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Bu amalni bekor qilib boʻlmaydi. Uni oʻchirmoqchi ekaningizni tasdiqlang.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” omborini unutish
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Bu omborni unutish uni omborlar roʻyxatidan olib tashlaydi, ammo hech qanday faylni oʻchirmaydi.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Unutish
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView’ni yangilash
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Android qurilmangiz eskirgan va Obsidian ishlashi uchun uni yangilash kerak. “Android WebView” ilovasini yangilash yoʻlini toping.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Ombor nomida quyidagi belgilar boʻlishi mumkin emas: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian bu joylashuvga kirish ruxsatiga ega emas
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Omborni oʻchirib boʻlmadi.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}} manzilidan {{to}} manziliga koʻchirilmoqda
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Ombor koʻchirildi, lekin Obsidian ilovasi jildidagi eski nusxasini oʻchirib boʻlmadi.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Xush kelibsiz
@@ -3541,6 +3657,10 @@ translation=Xotira yuklanmoqda...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Xotirani yuklashda xatolik: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}”ni oʻqib boʻlmadi, shuning uchun undagi fayllar koʻrsatilmayapti. Uning ruxsatlarini tekshiring, soʻng Obsidian’ni qayta ishga tushiring.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Obsidian Savatchasiga ko'chiriladi, bu sizning xotirangizdagi yashir
 original=The file will be permanently deleted.
 translation=Fayl qaytarib bo‘lmaydigan tarzda o‘chiriladi.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}} tizim savatiga koʻchirilmadi. Baribir oʻchirish uchun “Oʻchirilgan fayllar” sozlamasini oʻzgartiring.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Ushbu papka bo'sh emas.
@@ -4198,10 +4322,6 @@ translation=Tasdiqlash
 original=Cancel
 translation=Bekor qilish
 
-[dialogue.button-allow]
-original=Allow
-translation=Ruxsat berish
-
 [dialogue.button-skip]
 original=Skip
 translation=O‘tkazib yuborish
@@ -4289,6 +4409,10 @@ translation=Obsidian “.{{extension}}” fayllarini ocha olmaydi.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Sarlavha bo‘sh bo‘lishi mumkin emas
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Faylda “{{heading}}” sarlavhasi topilmadi.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Papka nomini kiriting
 original=No existing folders found.
 translation=Bunday nomdagi papka topilmadi.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=naviatsiya
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=ko'chirish
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=yaratish
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=bekor qilish
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Teg bilan mos keladi:
 original=No matches found.
 translation=Mos keladigan narsalar topilmadi.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Moslik
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... va yana {{count}} mos kelish.
@@ -5046,14 +5162,6 @@ translation=Almashtirgich
 original=Open quick switcher
 translation=Tez o'tish menyusi
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=navigatsiya
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=ochish
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=yangi yorliqda ochish
@@ -5065,14 +5173,6 @@ translation=o'ngdagi sohada ochish
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=yaratish
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=bekor qilish
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=tanlash
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Ishga tushirmoqchi bo'lgan buyruqni kiriting. Obsidian funksiyalarig
 original=Open command palette
 translation=Buyruqlar palitrasini ochish
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=naviqatsiya
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=foydalanish
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=bekor qilish
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Buyruq topilmadi.
@@ -6198,14 +6286,6 @@ translation=So'zlar hisoblagichi
 original=Show word count in the status bar.
 translation=Holat satrida so'zlar sonini ko'rsatadi.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Bu omborda Mermaid diagrammalari ko‘rsatilsinmi?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Faqat bu ombor mazmuniga ishonsangiz ruxsat bering.
-
 [plugins.slides.name]
 original=Slides
 translation=Slaydlar
@@ -6325,18 +6405,6 @@ translation={{time}} shablon faylida ushbu qiymat bilan almashtiriladi.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Shablonda formatni to'g'ridan-to'g'ri belgilash uchun {{time:HH:mm}} konstruktsiyasidan foydalaning.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=naviatsiya
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=shablonni qo'shish
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=bekor qilish
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Barcha faylni birlashtirish...
 original=No files found.
 translation=Fayllar topilmadi.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=naviatsiya
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=birlashtirish
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=yangi yaratish
@@ -8241,10 +8301,6 @@ translation=yangi yaratish
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=yuqoriga joylashtirish
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=bekor qilish
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Joriy tanlovni chiqarish...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Ushbu sarlavhani chiqarish...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=oxiriga qo'shish
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Yangi kanvas yaratish
 original=Convert to file...
 translation=Faylga aylantirish...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=Sarlavhani tanlash
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=Blokni tanlash
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=Guruqqa o'tish
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Blok nomini kiriting
@@ -9194,6 +9234,14 @@ translation=Barcha ko‘rinishlar
 original=This view
 translation=Ushbu ko‘rinish
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Barcha koʻrinishlarga koʻchirish
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Shu koʻrinishga koʻchirish
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Topish yoki yaratish...
@@ -9246,10 +9294,6 @@ translation=Ko‘rinish nomi
 original=View
 translation=Ko‘rinish
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Jadval
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Ko‘rsatish nomi
@@ -9287,8 +9331,8 @@ original=New
 translation=Yangi
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} ko‘rsatilmoqda
+original=Showing {{shown}} of {{total}}
+translation={{total}} tadan {{shown}} tasi ko‘rsatilmoqda
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation="{{ view }}" ko‘rinishi topilmadi
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Nomaʼlum xususiyat turi: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Ko‘rinishlar massiv bo‘lishi kerak
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Guruhlarni tahrirlash...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Ustunni yashirish
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Kiritishingiz kerak [[
 original=to link note
 translation=eslatmani bog'lash uchun
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=bekor qilish
-
 [properties.option-property-type]
 original=Property type
 translation=Xususiyat turi
@@ -10210,6 +10258,10 @@ translation=Chiqish blok turini kiriting...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation=So'zlar: {{count}}
@@ -10257,6 +10309,14 @@ translation={{count}} papka
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} papkalar
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} ta element
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} ta element
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Bu havola bajariladigan faylga ishora qiladi. Uni ishga tushirish ko
 original=File: {{path}}
 translation=Fayl: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Fayl boshqa ilovada ochilsinmi?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Bu fayl Obsidian’dan tashqarida ochiladi. Ayrim fayl turlari kompyuteringizda kodni ishga tushirishi mumkin. Faqat bu fayl manbasiga ishonsangiz, davom eting.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Ombor topilmadi.
@@ -10401,6 +10469,22 @@ translation=Ombor topilmadi.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL manzili uchun ombor topilmadi
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Omborlarni Obsidian oʻrnatilgan jildda saqlab boʻlmaydi, chunki Obsidian yangilanganda bu jild tozalanadi
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Bu ombor Obsidian oʻrnatilgan jild ichida joylashgan
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian yangilanganda oʻrnatuvchi bu jildni va undagi omborni oʻchiradi. Omborni yopish uchun “Omborlarni boshqarish”ni tanlang, soʻng uni boshqa joyga koʻchirish uchun “Omborni koʻchirish...” buyrugʻidan foydalaning.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Omborlarni boshqarish
 
 [main.supported-files]
 original=Supported files

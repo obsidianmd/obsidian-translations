@@ -266,14 +266,6 @@ translation=Kanan ke kiri (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Tunjukkan rajah Mermaid dalam nota
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Paparkan carta alir, rajah jujukan dan rajah lain daripada bongkah kod “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Auto tukar dari HTML
@@ -914,14 +906,6 @@ translation=Navigasi terapung
 original=Navigation buttons float over the content instead of being anchored.
 translation=Butang navigasi terapung di atas kandungan dan bukannya ditambat.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Bar sisi gelongsor
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Bar sisi menggelongsor ke sisi kandungan dan bukannya terapung di atas.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Skrin penuh
@@ -1498,6 +1482,14 @@ translation=Tapis plugin mengikut nama atau penerangan.
 original=Search plugins...
 translation=Cari plugin...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Dimatikan oleh dasar organisasi anda.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Diwajibkan oleh dasar organisasi anda.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Plugin pihak ketiga
@@ -1741,6 +1733,14 @@ translation=Memasang plugin "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Gagal memasang plugin "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Plugin “{{name}}” tidak dibenarkan oleh dasar organisasi anda.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Tidak dibenarkan oleh dasar organisasi anda.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Ganti masuk
 original=Replace all
 translation=Ganti semua
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Letak #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=untuk pautkan ke pengepala
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Letak ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=untuk pautkan ke bongkah
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Letak |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Tiada padanan yang dijumpai
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Saiz imej: lebar {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=untuk terima
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Fail "{{name}}" tidak dijumpai.
 original=Unrecognized URI action: {{action}}
 translation=Tindakan URI tidak dikenali: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Parameter URI “{{param}}” memerlukan “append” atau “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Hapus
@@ -2573,10 +2561,6 @@ translation=Kosong
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Tiada fail yang dibuka
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Buat fail baharu
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Gagal menghantar semula e-mel.
 original=Vault location must be a folder.
 translation=Lokasi peti nota mestilah sebuah folder.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Anda tidak boleh mengakses atau mencipta peti nota dalam iCloud kerana iCloud dinyahdayakan untuk Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Sediakan Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Peti nota ini terletak dalam folder apl Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Peti nota ini terletak di {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Pada peranti ini
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Fail
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Kali terakhir dibuka
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} didayakan
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Dinyahdayakan
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Pemalam komuniti mengambil masa {{seconds}} saat untuk dimuatkan pada kali terakhir. Jika peti nota ini lambat dibuka, cuba mod terhad.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Peti nota ini tidak selesai dibuka pada kali terakhir.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Peti nota ini tidak selesai dibuka pada kali terakhir. Jika masalah ini berulang, cuba mod terhad.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Buka peti nota
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Buka peti nota dalam mod terhad
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Namakan semula peti nota...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Lupakan peti nota...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Alihkan ke storan peranti...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Hapus peti nota...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Namakan semula peti nota “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Hapus peti nota “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Menghapuskan peti nota ini akan menghapuskan semua fail di dalamnya.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Tindakan ini tidak boleh dibuat asal. Sila sahkan bahawa anda mahu menghapuskannya.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Lupakan peti nota “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Melupakan peti nota ini akan mengeluarkannya daripada senarai peti nota tanpa menghapuskan sebarang fail.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Lupakan
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Kemas kini Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Peranti Android anda tidak terkini dan mesti dikemas kini agar Obsidian dapat berfungsi. Sila cari cara untuk menaik taraf apl "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Nama peti nota tidak boleh mengandungi mana-mana aksara berikut: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian tidak mempunyai kebenaran untuk mengakses lokasi ini
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Gagal menghapuskan peti nota.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Mengalihkan dari {{from}} ke {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Peti nota telah dialihkan, tetapi salinan lama dalam folder apl Obsidian tidak dapat dihapuskan.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Selamat datang
@@ -3541,6 +3657,10 @@ translation=Memuatkan Peti Nota...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Gagal memuatkan Peti Nota: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Tidak dapat membaca “{{path}}”, jadi fail di dalamnya tidak dipaparkan. Semak kebenarannya, kemudian mulakan semula Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Ia akan dipindahkan ke tong sampah Obsidian, yang terletak pada fold
 original=The file will be permanently deleted.
 translation=Fail akan dihapuskan secara kekal.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Gagal mengalihkan {{item}} ke tong sampah sistem. Untuk tetap menghapus, ubah tetapan “Fail yang dihapuskan”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Folder ini tidak kosong.
@@ -4198,10 +4322,6 @@ translation=Sahkan
 original=Cancel
 translation=Batal
 
-[dialogue.button-allow]
-original=Allow
-translation=Benarkan
-
 [dialogue.button-skip]
 original=Skip
 translation=Langkau
@@ -4289,6 +4409,10 @@ translation=Obsidian tidak dapat membuka fail “.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Pengepala tidak boleh kosong
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Pengepala “{{heading}}” tidak ditemukan dalam fail.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Taip nama folder
 original=No existing folders found.
 translation=Tiada folder ditemui.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=untuk pergerakan
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=untuk mencipta
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=untuk abaikan
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Memadankan tag:
 original=No matches found.
 translation=Tiada padanan dijumpai.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Kerelevanan
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... dan {{count}} lagi padanan.
@@ -5046,14 +5162,6 @@ translation=Penukar fail
 original=Open quick switcher
 translation=Aktifkan penukaran pantas
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=untuk buka
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=untuk buka dalam tab baharu
@@ -5065,14 +5173,6 @@ translation=untuk buka di sebelah kanan
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=untuk wujudkan
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=untuk pilih
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Taipkan arahan untuk laksanakannya dengan pantas tanpa mengingati pi
 original=Open command palette
 translation=Buka palet arahan
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=untuk guna
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Tiada arahan ditemui.
@@ -6198,14 +6286,6 @@ translation=Jumlah kata
 original=Show word count in the status bar.
 translation=Tunjukkan jumlah perkataan dalam jalur status.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Paparkan rajah Mermaid dalam peti nota ini?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Hanya benarkan jika anda mempercayai kandungan peti nota ini.
-
 [plugins.slides.name]
 original=Slides
 translation=Slaid
@@ -6325,18 +6405,6 @@ translation={{time}} dalam templat akan digantikan dengan nilai ini.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Anda juga boleh guna {{time:HH:mm}} untuk memaksa format untuk templat terpilih.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=untuk masukkan templat
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Gabungkan keseluruhan fail dengan...
 original=No files found.
 translation=Tiada fail ditemui.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=untuk menavigasi
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=untuk menggabungkan
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=untuk mencipta baharu
@@ -8241,10 +8301,6 @@ translation=untuk mencipta baharu
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=untuk gabungkan di bahagian atas
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Ekstrak pilihan semasa...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Ekstrak pengepala ini...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=untuk alihkan ke bawah
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Cipta Canvas baharu
 original=Convert to file...
 translation=Tukar kepada fail...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=untuk menyelit pengepala
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=untuk menyelit blok
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=untuk menavigasi ke kumpulan
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Taip untuk mencari fail, pengepala, atau blok
@@ -9194,6 +9234,14 @@ translation=Semua paparan
 original=This view
 translation=Paparan ini
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Alihkan ke semua paparan
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Alihkan ke paparan ini
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Cari atau cipta...
@@ -9246,10 +9294,6 @@ translation=Nama paparan
 original=View
 translation=Paparan
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Jadual
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Nama paparan
@@ -9287,8 +9331,8 @@ original=New
 translation=Baharu
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Menunjukkan {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Menunjukkan {{shown}} daripada {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Paparan "{{ view }}" tidak ditemui
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Jenis sifat tidak diketahui: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Paparan mestilah sebuah tatasusunan
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Sunting kumpulan...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Sembunyikan lajur
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Taip [[
 original=to link note
 translation=untuk pautkan nota
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
-
 [properties.option-property-type]
 original=Property type
 translation=Jenis sifat
@@ -10210,6 +10258,10 @@ translation=Jenis callout...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} patah kata
@@ -10257,6 +10309,14 @@ translation={{count}} folder
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} folder
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} item
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} item
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Pautan ini menunjuk kepada fail boleh laku. Menjalankannya boleh mem
 original=File: {{path}}
 translation=Fail: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Buka fail dalam apl lain?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Fail ini akan dibuka di luar Obsidian. Sesetengah jenis fail boleh menjalankan kod pada komputer anda. Teruskan hanya jika anda mempercayai sumber fail ini.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Peti nota tidak ditemui.
@@ -10401,6 +10469,22 @@ translation=Peti nota tidak ditemui.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Tidak dapat mencari peti nota untuk URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Peti nota tidak boleh disimpan dalam folder pemasangan Obsidian kerana folder itu dipadamkan apabila Obsidian dikemas kini
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Peti nota ini berada dalam folder pemasangan Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Pemasang memadamkan folder ini apabila Obsidian dikemas kini, berserta peti nota ini. Pilih "Urus peti nota" untuk menutup peti nota, kemudian gunakan "Alihkan peti nota..." padanya untuk mengalihkannya ke lokasi lain.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Urus peti nota
 
 [main.supported-files]
 original=Supported files

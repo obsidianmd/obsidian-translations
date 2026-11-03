@@ -266,14 +266,6 @@ translation=Høyre-til-venstre (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Vis Mermaid-diagrammer i notater
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Gjengi flytdiagrammer, sekvensdiagrammer og andre diagrammer fra «mermaid»-kodeblokker.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Auto convert HTML
@@ -914,14 +906,6 @@ translation=Flytende navigasjon
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigasjonsknappene flyter over innholdet i stedet for å være forankret.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Glidende sidepaneler
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Sidepanelene glir til siden av innholdet i stedet for å flyte over.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Fullskjerm
@@ -1498,6 +1482,14 @@ translation=Filtrer tillegg etter navn eller beskrivelse.
 original=Search plugins...
 translation=Søk i tillegg...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Deaktivert i henhold til organisasjonens retningslinjer.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Påkrevd i henhold til organisasjonens retningslinjer.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Third-party plugin
@@ -1741,6 +1733,14 @@ translation=Installing plugin "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Failed to install plugin "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Tillegget «{{name}}» er ikke tillatt i henhold til organisasjonens retningslinjer.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Ikke tillatt i henhold til organisasjonens retningslinjer.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Erstatt
 original=Replace all
 translation=Erstatt alle
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Skriv #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=for overskriftslenker
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Skriv ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=for å lenke til blokker
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Skriv |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Ingen treff funnet
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Bildestørrelse: {{size}}px bredde
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=for å godta
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=File "{{name}}" not found.
 original=Unrecognized URI action: {{action}}
 translation=Ukjent URI-handling: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI-parameteren «{{param}}» krever «append» eller «prepend».
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Slett
@@ -2573,10 +2561,6 @@ translation=Tom
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Ingen åpne filer
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Lag ny fil
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Kunne ikke sende e-posten på nytt.
 original=Vault location must be a folder.
 translation=Hvelvplasseringen må være en mappe.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Du kan ikke åpne eller opprette hvelv i iCloud fordi iCloud er deaktivert for Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Sett opp Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Dette hvelvet ligger i appmappen til Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Dette hvelvet ligger i {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=På denne enheten
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Filer
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Sist åpnet
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} aktivert
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Deaktivert
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Det tok {{seconds}} sekunder å laste inn community-utvidelsene sist. Hvis dette hvelvet er tregt å åpne, kan du prøve begrenset modus.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Dette hvelvet ble ikke ferdig åpnet sist.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Dette hvelvet ble ikke ferdig åpnet sist. Hvis det fortsetter å skje, kan du prøve begrenset modus.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Åpne hvelv
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Åpne hvelv i begrenset modus
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Gi hvelvet nytt navn...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Glem hvelv...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Flytt til enhetslagring...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Slett hvelv...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Gi hvelvet «{{name}}» nytt navn
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Slett hvelvet «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Hvis du sletter dette hvelvet, slettes alle filene i det.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Denne handlingen kan ikke angres. Bekreft at du vil slette hvelvet.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Glem hvelvet «{{name}}»
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Hvis du glemmer dette hvelvet, fjernes det fra listen over hvelv uten at noen filer slettes.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Glem
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Oppdater Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Android-enheten din er ikke oppdatert og må oppdateres for at Obsidian skal fungere. Finn en måte å oppgradere appen «Android WebView» på.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Hvelvnavnet kan ikke inneholde noen av disse tegnene: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian har ikke tillatelse til å få tilgang til denne plasseringen
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Kunne ikke slette hvelvet.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Flytter fra {{from}} til {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Hvelvet ble flyttet, men den gamle kopien i appmappen til Obsidian kunne ikke slettes.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Velkommen
@@ -3541,6 +3657,10 @@ translation=Laster hvelv...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Kunne ikke laste inn hvelvet: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Kan ikke lese «{{path}}», så filene der vises ikke. Kontroller tilgangstillatelsene, og start deretter Obsidian på nytt.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Filen blir flyttet til Obsidians papirkurv, den skjulte mappen ".tra
 original=The file will be permanently deleted.
 translation=Filen blir slettet permanent.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Kunne ikke flytte {{item}} til systemets papirkurv. Endre innstillingen «Slettede filer» for å slette likevel.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Denne mappen er ikke tom.
@@ -4198,10 +4322,6 @@ translation=Bekreft
 original=Cancel
 translation=Avbryt
 
-[dialogue.button-allow]
-original=Allow
-translation=Tillat
-
 [dialogue.button-skip]
 original=Skip
 translation=Hopp over
@@ -4289,6 +4409,10 @@ translation=Obsidian kan ikke åpne «.{{extension}}»-filer.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Overskriften kan ikke være tom
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Fant ikke overskriften «{{heading}}» i filen.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Skriv inn en mappe
 original=No existing folders found.
 translation=No folders found.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=for å navigere
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=for å flytte
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=for å opprette
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=for å lukke
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Søker etter tag:
 original=No matches found.
 translation=Ingen søkeresultater.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevans
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... og {{count}} søkeresultat til.
@@ -5046,14 +5162,6 @@ translation=Bytter
 original=Open quick switcher
 translation=Åpne hurtigåpner
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=for å velge
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=for å åpne
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=for å åpne i ny fane
@@ -5065,14 +5173,6 @@ translation=for å åpne til høyre
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=for å lage nytt notat
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=for å lukke
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=for å velge
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Skriv inn en kommando for å aktivere den, så trenger du hverken hu
 original=Open command palette
 translation=Åpne kommandovelger
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=for å velge
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=for å aktivere
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=for å lukke
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Ingen kommandoer funnet.
@@ -6198,14 +6286,6 @@ translation=Antall ord
 original=Show word count in the status bar.
 translation=Vis antall ord i statusbaren.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Vise Mermaid-diagrammer i dette hvelvet?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Tillat bare hvis du stoler på innholdet i dette hvelvet.
-
 [plugins.slides.name]
 original=Slides
 translation=Presentasjonsmodus
@@ -6325,18 +6405,6 @@ translation={{time}} i malen blir erstattet med denne verdien.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Du kan også skrive {{time:HH:mm}} for å spesifisere formatet.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=for å velge
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=for å sette inn mal
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=for å lukke
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Slå sammen hele filen med...
 original=No files found.
 translation=Ingen filer funnet.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=for å navigere
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=for å slå sammen
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=for å opprette ny
@@ -8241,10 +8301,6 @@ translation=for å opprette ny
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=for å slå sammen øverst
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=for å lukke
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Trekk ut gjeldende utvalg...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Trekk ut denne overskriften...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=for å flytte til bunnen
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Opprett ny Canvas
 original=Convert to file...
 translation=Konverter til fil...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=for å bygge inn overskrift
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=for å bygge inn blokk
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=for å navigere til gruppe
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Type name of heading
@@ -9194,6 +9234,14 @@ translation=Alle visninger
 original=This view
 translation=Denne visningen
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Flytt til alle visninger
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Flytt til denne visningen
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Finn eller opprett...
@@ -9246,10 +9294,6 @@ translation=Visningsnavn
 original=View
 translation=Visning
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabell
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Visningsnavn
@@ -9287,8 +9331,8 @@ original=New
 translation=Ny
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Viser {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Viser {{shown}} av {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Fant ikke visningen "{{ view }}"
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Ukjent egenskapstype: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Visninger må være en matrise
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Rediger grupper...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Skjul kolonne
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Skriv [[
 original=to link note
 translation=for å lenke notat
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=for å avvise
-
 [properties.option-property-type]
 original=Property type
 translation=Egenskapstype
@@ -10210,6 +10258,10 @@ translation=Type uthevet blokk...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=«{{item}}»
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} ord
@@ -10257,6 +10309,14 @@ translation={{count}} mappe
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} mapper
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} element
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elementer
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Denne lenken peker til en kjørbar fil. Å kjøre den kan skade data
 original=File: {{path}}
 translation=Fil: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Åpne filen i en annen app?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Denne filen åpnes utenfor Obsidian. Noen filtyper kan kjøre kode på datamaskinen din. Fortsett bare hvis du stoler på kilden til denne filen.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Finner ikke hvelvet.
@@ -10401,6 +10469,22 @@ translation=Finner ikke hvelvet.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Kan ikke finne et hvelv for URL-en {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Hvelv kan ikke lagres i installasjonsmappen til Obsidian fordi den tømmes når Obsidian oppdateres
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Dette hvelvet ligger i installasjonsmappen til Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Installasjonsprogrammet tømmer denne mappen når Obsidian oppdateres, og sletter dermed også dette hvelvet. Velg «Administrer hvelv» for å lukke hvelvet, og bruk deretter «Flytt hvelv...» for å flytte det til et annet sted.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Administrer hvelv
 
 [main.supported-files]
 original=Supported files

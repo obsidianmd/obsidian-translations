@@ -266,14 +266,6 @@ translation=오른쪽-왼쪽 방향
 original=Sets the default text direction of notes to right-to-left.
 translation=텍스트를 오른쪽에서 왼쪽 방향으로 표시하도록 설정합니다.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=노트에 Mermaid 다이어그램 표시
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=“mermaid” 코드 블록에서 플로차트, 시퀀스 다이어그램 및 기타 다이어그램을 렌더링합니다.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=HTML 자동 변환
@@ -914,14 +906,6 @@ translation=떠다니는 탐색
 original=Navigation buttons float over the content instead of being anchored.
 translation=탐색 버튼이 고정되지 않고 콘텐츠 위에 떠서 표시됩니다.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=슬라이딩 사이드바
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=사이드바가 위에 떠서 표시되는 대신 콘텐츠 옆으로 슬라이드됩니다.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=전체 화면
@@ -1498,6 +1482,14 @@ translation=플러그인 이름이나 설명으로 플러그인을 찾습니다.
 original=Search plugins...
 translation=플러그인 검색하기...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=조직의 정책에 따라 비활성화되었습니다.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=조직의 정책에 따라 필수입니다.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=커뮤니티 플러그인
@@ -1741,6 +1733,14 @@ translation="{{name}}" 플러그인 설치 중...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation="{{name}}" 플러그인 설치에 실패했습니다.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=조직의 정책에 따라 “{{name}}” 플러그인이 허용되지 않습니다.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=조직의 정책에 따라 허용되지 않습니다.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=바꾸기
 original=Replace all
 translation=모두 바꾸기
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=#을 입력하면
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=제목에 연결할 수 있습니다
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=^를 입력하면
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=블럭에 연결할 수 있습니다
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=|를 입력하면
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=일치하는 내용을 찾지 못했습니다.
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=이미지 크기: 가로 {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=확인
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation="{{name}}" 파일을 찾지 못했습니다.
 original=Unrecognized URI action: {{action}}
 translation=인식할 수 없는 URI 작업: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI 매개변수에는 “append” 또는 “prepend”가 필요합니다.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=삭제
@@ -2573,10 +2561,6 @@ translation=비어 있음
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=열린 파일이 없습니다.
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=새 파일 생성하기
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=이메일 재전송에 실패함.
 original=Vault location must be a folder.
 translation=보관함의 위치는 폴더이어야만 합니다.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Obsidian에서 iCloud가 비활성화되어 있어 iCloud의 보관함에 접근하거나 보관함을 생성할 수 없습니다.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync 설정
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=이 보관함은 Obsidian 앱 폴더에 있습니다.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=이 보관함의 위치: {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=이 기기
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=파일
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=마지막으로 연 날짜
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}}개 활성화됨
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=비활성화됨
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=지난번에 커뮤니티 플러그인을 불러오는 데 {{seconds}}초가 걸렸습니다. 이 보관함이 열리는 속도가 느리면 제한 모드를 사용해 보세요.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=지난번에 이 보관함을 완전히 열지 못했습니다.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=지난번에 이 보관함을 완전히 열지 못했습니다. 이 문제가 계속되면 제한 모드를 사용해 보세요.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=보관함 열기
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=제한 모드로 보관함 열기
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=보관함 이름 바꾸기...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=보관함을 목록에서 제거...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=기기 저장소로 이동...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=보관함 삭제...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” 보관함 이름 바꾸기
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” 보관함 삭제
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=이 보관함을 삭제하면 보관함 내의 모든 파일이 삭제됩니다.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=이 작업은 되돌릴 수 없습니다. 삭제할지 확인해 주세요.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” 보관함을 목록에서 제거
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=파일을 삭제하지 않고 이 보관함을 보관함 목록에서 제거합니다.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=목록에서 제거
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView 업데이트
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Android 기기가 최신 상태가 아닙니다. Obsidian이 작동하려면 업데이트가 필요합니다. "Android WebView" 앱을 업그레이드해 주세요.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=보관함 이름에는 다음 문자를 사용할 수 없습니다: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian에 이 위치에 접근할 권한이 없습니다
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=보관함을 삭제하지 못했습니다.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}}에서 {{to}}(으)로 이동 중
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=보관함을 이동했지만 Obsidian 앱 폴더에 있는 기존 사본을 삭제하지 못했습니다.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=환영합니다!
@@ -3541,6 +3657,10 @@ translation=보관함 불러오는 중...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=보관함을 불러오지 못했습니다: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}”을(를) 읽을 수 없어 해당 위치의 파일이 표시되지 않습니다. 권한을 확인한 후 Obsidian을 다시 시작하세요.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Obsidian의 휴지통으로 이동합니다. Obsidian 휴지통은 �
 original=The file will be permanently deleted.
 translation=이 파일을 영구적으로 삭제합니다.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}}을(를) 시스템 휴지통으로 이동하지 못했습니다. 그래도 삭제하려면 “삭제된 파일” 설정을 변경하세요.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=해당 폴더가 비어 있지 않습니다.
@@ -4198,10 +4322,6 @@ translation=확인
 original=Cancel
 translation=취소
 
-[dialogue.button-allow]
-original=Allow
-translation=허용
-
 [dialogue.button-skip]
 original=Skip
 translation=건너뛰기
@@ -4289,6 +4409,10 @@ translation=Obsidian에서는 “.{{extension}}” 파일을 열 수 없습니�
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=제목은 비어있을 수 없습니다.
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=파일에서 “{{heading}}” 제목을 찾을 수 없습니다.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=폴더 입력
 original=No existing folders found.
 translation=폴더를 찾지 못했습니다.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=이동하기
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=옮기기
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=생성하기
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=닫기
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=일치시킨 태그:
 original=No matches found.
 translation=일치하는 결과가 없습니다.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=관련성
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... 그리고 {{count}} 개가 더 일치함.
@@ -5046,14 +5162,6 @@ translation=전환
 original=Open quick switcher
 translation=빠른 전환기 열기
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=파일 선택하기
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=파일 열기
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=새 탭에서 열기
@@ -5065,14 +5173,6 @@ translation=오른쪽에 열기
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=생성하기
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=닫기
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=선택하기
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Cmd/Ctrl+P를 누른 후 입력을 시작해 명령을 실행합니�
 original=Open command palette
 translation=명령어 팔레트 열기
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=선택하기
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=사용하기
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=닫기
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=명령어를 찾지 못했습니다.
@@ -6198,14 +6286,6 @@ translation=단어 개수
 original=Show word count in the status bar.
 translation=상태바에 단어 개수를 표시합니다.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=이 보관함에서 Mermaid 다이어그램을 표시할까요?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=이 보관함의 내용을 신뢰하는 경우에만 허용하세요.
-
 [plugins.slides.name]
 original=Slides
 translation=슬라이드
@@ -6325,18 +6405,6 @@ translation=템플릿 파일의 {{time}}은 다음 값으로 바뀝니다.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation={{time:HH:mm}} 처럼 형식을 임의로 덮어쓸 수도 있습니다.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=선택하기
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=템플릿 삽입하기
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=닫기
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=전체 파일을 다음으로 합치기...
 original=No files found.
 translation=파일을 찾을 수 없습니다.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=선택하기
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=병합하기
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=새로 생성하기
@@ -8241,10 +8301,6 @@ translation=새로 생성하기
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=최상단에 병합하기
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=닫기
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=현재 선택 영역 추출...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=현재 제목 추출...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=노트 최하단으로 이동
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=새 캔버스 만들기
 original=Convert to file...
 translation=파일로 변환...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=제목 임베드하기
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=블럭 임베드하기
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=그룹으로 이동하기
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=파일, 제목 또는 블럭을 찾으려면 입력하세요
@@ -9194,6 +9234,14 @@ translation=모든 뷰
 original=This view
 translation=해당 뷰
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=모든 보기로 이동
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=이 보기로 이동
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=찾거나 생성하기...
@@ -9246,10 +9294,6 @@ translation=뷰 이름
 original=View
 translation=뷰
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=표
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=표시 이름
@@ -9287,8 +9331,8 @@ original=New
 translation=추가
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}}개 표시 중
+original=Showing {{shown}} of {{total}}
+translation={{total}}개 중 {{shown}}개 표시 중
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation="{{ view }}" 뷰를 찾을 수 없음
 original=Unknown view type: {{ viewtype }}
 translation=알 수 없는 뷰 유형으로 뷰가 설정됨 {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=알 수 없는 속성 유형: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=뷰는 반드시 배열이어야 함
@@ -9653,6 +9701,10 @@ translation=칸반
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=그룹 편집...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=열 숨기기
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=유형 [[
 original=to link note
 translation=노트 링크하기
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=닫기
-
 [properties.option-property-type]
 original=Property type
 translation=속성 유형
@@ -10210,6 +10258,10 @@ translation=콜아웃 유형...
 original={{count}}
 translation={{count}}개
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}}개 단어
@@ -10257,6 +10309,14 @@ translation={{count}}개 폴더
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}}개 폴더
+
+[nouns.item-with-count]
+original={{count}} item
+translation=항목 {{count}}개
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation=항목 {{count}}개
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=이 링크는 실행 파일을 가리킵니다. 실행하면 컴퓨�
 original=File: {{path}}
 translation=파일: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=다른 앱에서 파일을 열까요?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=이 파일은 Obsidian 외부에서 열립니다. 일부 파일 형식은 컴퓨터에서 코드를 실행할 수 있습니다. 이 파일의 출처를 신뢰하는 경우에만 진행하세요.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=보관함을 찾을 수 없습니다.
@@ -10401,6 +10469,22 @@ translation=보관함을 찾을 수 없습니다.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL {{url}}에 해당하는 보관함을 찾을 수 없습니다
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian의 설치 폴더는 Obsidian 업데이트 시 삭제되므로 이 폴더에 보관함을 저장할 수 없습니다
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=이 보관함은 Obsidian의 설치 폴더 안에 있습니다
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian 업데이트 시 설치 프로그램이 이 폴더와 그 안의 보관함을 삭제합니다. "보관함 관리"를 선택하여 보관함을 닫은 후, 해당 보관함에서 "보관함 이동..."을 사용하여 다른 위치로 이동하세요.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=보관함 관리
 
 [main.supported-files]
 original=Supported files

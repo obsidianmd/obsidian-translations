@@ -266,14 +266,6 @@ translation=Højre mod venstre (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Indstiller standardtekstretningen for noter til at vises fra højre mod venstre.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Vis Mermaid-diagrammer i noter
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Vis flow-, sekvens- og andre diagrammer fra “mermaid”-kodeblokke.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Konverter indsat HTML til Markdown
@@ -914,14 +906,6 @@ translation=Flydende navigation
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigationsknapperne flyder over indholdet i stedet for at være fastgjort.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Glidende sidepaneler
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Sidepaneler glider ud ved siden af indholdet i stedet for at flyde ovenpå.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Fuld skærm
@@ -1498,6 +1482,14 @@ translation=Filtrér plugins efter navn eller beskrivelse.
 original=Search plugins...
 translation=Søg i plugins...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Deaktiveret af din organisations politik.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Påkrævet af din organisations politik.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Fællesskabsplugins
@@ -1741,6 +1733,14 @@ translation=Installerer plugin “{{name}}”...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Kunne ikke installere plugin “{{name}}”.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Pluginet “{{name}}” er ikke tilladt ifølge din organisations politik.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Ikke tilladt ifølge din organisations politik.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Erstat
 original=Replace all
 translation=Erstat alt
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Skriv #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=for at linke til en overskrift
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Skriv ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=for at linke til blokke
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Skriv |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Intet match fundet
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Billedbredde: {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=for at acceptere
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Filen “{{name}}” blev ikke fundet.
 original=Unrecognized URI action: {{action}}
 translation=Ukendt URI-handling: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI-parameteren “{{param}}” kræver “append” eller “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Slet
@@ -2573,10 +2561,6 @@ translation=Tom
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Ingen fil er åben
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Opret ny note
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Kunne ikke sende mailen igen.
 original=Vault location must be a folder.
 translation=Boksplaceringen skal være en mappe.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Du kan ikke få adgang til eller oprette bokse i iCloud, fordi iCloud er deaktiveret for Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Konfigurer Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Denne boks ligger i Obsidian-applikationens mappe.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Denne boks ligger i {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=På denne enhed
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Filer
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Sidst åbnet
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} aktiveret
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Deaktiveret
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Det tog {{seconds}} sekunder at indlæse fællesskabsplugins sidst. Hvis denne boks er langsom at åbne, kan du prøve begrænset tilstand.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Denne boks blev ikke åbnet helt sidst.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Denne boks blev ikke åbnet helt sidst. Hvis det bliver ved med at ske, kan du prøve begrænset tilstand.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Åbn boks
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Åbn boks i begrænset tilstand
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Omdøb boks...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Glem boks...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Flyt til enhedens lager...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Slet boks...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Omdøb boksen “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Slet boksen “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Hvis du sletter denne boks, slettes alle filer i den.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Denne handling kan ikke fortrydes. Bekræft, at du vil slette boksen.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Glem boksen “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Hvis du glemmer denne boks, fjernes den fra listen over bokse, uden at nogen filer slettes.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Glem
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Opdater Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Din Android-enhed er ikke opdateret og skal opdateres, for at Obsidian kan fungere. Find en måde at opgradere applikationen "Android WebView" på.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Boksens navn må ikke indeholde nogen af disse tegn: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian har ikke tilladelse til at få adgang til denne placering
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Kunne ikke slette boksen.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Flytter fra {{from}} til {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Boksen blev flyttet, men den gamle kopi i Obsidian-applikationens mappe kunne ikke slettes.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Velkommen
@@ -3541,6 +3657,10 @@ translation=Indlæser boks...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Kunne ikke indlæse boks: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Kan ikke læse “{{path}}”, så filerne vises ikke. Kontrollér adgangstilladelserne, og genstart derefter Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Den flyttes til Obsidians papirkurv, som ligger i boksens skjulte �
 original=The file will be permanently deleted.
 translation=Filen slettes permanent.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Kunne ikke flytte {{item}} til systemets papirkurv. Hvis du vil slette alligevel, skal du ændre indstillingen “Slettede filer”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Denne mappe er ikke tom.
@@ -4198,10 +4322,6 @@ translation=Bekræft
 original=Cancel
 translation=Annuller
 
-[dialogue.button-allow]
-original=Allow
-translation=Tillad
-
 [dialogue.button-skip]
 original=Skip
 translation=Spring over
@@ -4289,6 +4409,10 @@ translation=Obsidian kan ikke åbne “.{{extension}}”-filer.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Overskrift kan ikke være tom
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Overskriften “{{heading}}” blev ikke fundet i filen.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Indtast en mappe
 original=No existing folders found.
 translation=Ingen mapper fundet.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=for at navigere
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=for at flytte
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=for at oprette
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=for at afvise
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Matcher tag:
 original=No matches found.
 translation=Ingen matches fundet.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevans
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... og {{count}} match mere.
@@ -5046,14 +5162,6 @@ translation=Skifter
 original=Open quick switcher
 translation=Åbn Hurtigskifter
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=for at navigere
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=for at åbne
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=for at åbne i ny fane
@@ -5065,14 +5173,6 @@ translation=for at åbne til højre
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=for at oprette
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=for at afvise
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=for at vælge
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Brug Cmd/Ctrl+P, og begynd at skrive for at køre en kommando.
 original=Open command palette
 translation=Åbn kommandopalet
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=for at navigere
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=for at bruge
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=for at afvise
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Ingen kommandoer fundet.
@@ -6198,14 +6286,6 @@ translation=Ordtælling
 original=Show word count in the status bar.
 translation=Vis antal ord i statuslinjen.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Vis Mermaid-diagrammer i denne boks?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Tillad kun, hvis du har tillid til indholdet i denne boks.
-
 [plugins.slides.name]
 original=Slides
 translation=Slides
@@ -6325,18 +6405,6 @@ translation={{time}} i skabelonfilen erstattes med denne værdi.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Du kan også bruge {{time:HH:mm}} for at tilsidesætte formatet én gang.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=for at navigere
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=for at indsætte skabelon
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=for at afvise
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Flet hele filen med...
 original=No files found.
 translation=Ingen filer fundet.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=for at navigere
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=for at flette
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=for at oprette ny
@@ -8241,10 +8301,6 @@ translation=for at oprette ny
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=for at flette til toppen
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=for at afvise
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Udtræk nuværende markering...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Udtræk denne overskrift...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=for at flytte til bunden
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Opret nyt lærred
 original=Convert to file...
 translation=Konverter til fil...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=for at indlejre overskrift
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=for at indlejre blok
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=for at navigere til gruppe
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Indtast for at finde fil, overskrift eller blok
@@ -9194,6 +9234,14 @@ translation=Alle visninger
 original=This view
 translation=Denne visning
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Flyt til alle visninger
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Flyt til denne visning
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Find eller opret...
@@ -9246,10 +9294,6 @@ translation=Visningsnavn
 original=View
 translation=Visning
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabel
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Visningsnavn
@@ -9287,8 +9331,8 @@ original=New
 translation=Ny
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Viser {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Viser {{shown}} af {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Visningen “{{ view }}” blev ikke fundet
 original=Unknown view type: {{ viewtype }}
 translation=Ukendt visningstype: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Ukendt egenskabstype: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Visninger skal være et array
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Rediger grupper...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Skjul kolonne
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Indtast [[
 original=to link note
 translation=for at linke note
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=for at afvise
-
 [properties.option-property-type]
 original=Property type
 translation=Egenskabstype
@@ -10210,6 +10258,10 @@ translation=Callout-type...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} ord
@@ -10257,6 +10309,14 @@ translation={{count}} mappe
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} mapper
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} element
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elementer
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Dette link peger på en programfil. Hvis du kører den, kan den skad
 original=File: {{path}}
 translation=Fil: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Åbn filen i en anden applikation?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Denne fil åbnes uden for Obsidian. Nogle filtyper kan køre kode på din computer. Fortsæt kun, hvis du har tillid til filens kilde.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Boks ikke fundet.
@@ -10401,6 +10469,22 @@ translation=Boks ikke fundet.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Kan ikke finde en boks for URL'en {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Bokse kan ikke gemmes i Obsidians installationsmappe, fordi den slettes, når Obsidian opdateres
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Denne boks ligger i Obsidians installationsmappe
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Installationsprogrammet sletter denne mappe og dermed også denne boks, når Obsidian opdateres. Vælg "Administrer bokse" for at lukke boksen, og brug derefter "Flyt boks..." til at flytte den til en anden placering.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Administrer bokse
 
 [main.supported-files]
 original=Supported files

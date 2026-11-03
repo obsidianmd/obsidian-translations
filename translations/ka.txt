@@ -266,14 +266,6 @@ translation=მარჯვნიდან-მარცხნივ (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=ტექსტის მიმართულების შეცვლა მარჯვნიდან მარცხნივ.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=შენიშვნებში Mermaid დიაგრამების ჩვენება
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=„mermaid“ კოდის ბლოკებიდან ბლოკ-სქემების, თანმიმდევრობის დიაგრამებისა და სხვა დიაგრამების გამოსახვა.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=HTML-ის Markdown-ში გარდაქმნა
@@ -914,14 +906,6 @@ translation=მცურავი ნავიგაცია
 original=Navigation buttons float over the content instead of being anchored.
 translation=ნავიგაციის ღილაკები კონტენტზე ზემოდან ტივტივებს, მიმაგრების ნაცვლად.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=მოცურავი გვერდითი პანელები
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=გვერდითი პანელები კონტენტის ზემოდან ტივტივების ნაცვლად, კონტენტის გვერდით ჩამოსრიალდება.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=სრული ეკრანი
@@ -1498,6 +1482,14 @@ translation=პლაგინების ფილტრაცია სახ
 original=Search plugins...
 translation=პლაგინების ძიება...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=გამორთულია თქვენი ორგანიზაციის პოლიტიკის შესაბამისად.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=სავალდებულოა თქვენი ორგანიზაციის პოლიტიკის შესაბამისად.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=საზოგადოების პლაგინები
@@ -1741,6 +1733,14 @@ translation=პლაგინის „{{name}}“ ინსტალაცი�
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=პლაგინის „{{name}}“ ინსტალაცია ვერ მოხერხდა.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=პლაგინი „{{name}}“ დაუშვებელია თქვენი ორგანიზაციის პოლიტიკის შესაბამისად.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=დაუშვებელია თქვენი ორგანიზაციის პოლიტიკის შესაბამისად.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=ჩანაცვლება
 original=Replace all
 translation=ყველას ჩანაცვლება
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=აკრიფეთ #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=სათაურის დასაკავშირებლად
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=აკრიფეთ ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=ბლოკის დასაკავშირებლად
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=აკრიფეთ |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=დამთხვევა ვერ მოიძებნა
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=სურათის ზომა: {{size}}px სიგანე
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=მისაღებად
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=ფაილი “{{name}}” ვერ მოიძებნა.
 original=Unrecognized URI action: {{action}}
 translation=ამოუცნობი URI ქმედება: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI პარამეტრი „{{param}}“ მოითხოვს „append“-ს ან „prepend“-ს.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=წაშლა
@@ -2573,10 +2561,6 @@ translation=ცარიელი
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=ფაილი არ არის გახსნილი
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=ახალი ჩანაწერის შექმნა
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=ელ-ფოსტის ხელახლა გაგზავ�
 original=Vault location must be a folder.
 translation=საცავის მდებარეობა უნდა იყოს საქაღალდე.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=iCloud-ში საცავებზე წვდომა ან მათი შექმნა შეუძლებელია, რადგან iCloud გამორთულია Obsidian-ისთვის.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync-ის გამართვა
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=ეს საცავი მდებარეობს Obsidian-ის აპის საქაღალდეში.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=ამ საცავის მდებარეობაა {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=ამ მოწყობილობაზე
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=ფაილები
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=ბოლოს გაიხსნა
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} ჩართულია
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=გამორთულია
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=საზოგადოების პლაგინების ჩატვირთვას ბოლო ჯერზე {{seconds}} წამი დასჭირდა. თუ ეს საცავი ნელა იხსნება, სცადეთ შეზღუდული რეჟიმი.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=ბოლო ჯერზე ამ საცავის გახსნა ვერ დასრულდა.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=ბოლო ჯერზე ამ საცავის გახსნა ვერ დასრულდა. თუ ეს მეორდება, სცადეთ შეზღუდული რეჟიმი.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=საცავის გახსნა
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=საცავის გახსნა შეზღუდულ რეჟიმში
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=საცავის სახელის შეცვლა...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=საცავის დავიწყება...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=მოწყობილობის მეხსიერებაში გადატანა...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=საცავის წაშლა...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=საცავის „{{name}}“ სახელის შეცვლა
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=საცავის „{{name}}“ წაშლა
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=ამ საცავის წაშლით მასში არსებული ყველა ფაილი წაიშლება.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=ეს მოქმედება შეუქცევადია. გთხოვთ, დაადასტუროთ, რომ გსურთ მისი წაშლა.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=საცავის „{{name}}“ დავიწყება
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=ამ საცავის დავიწყებით ის ამოიშლება საცავების სიიდან, ფაილები კი არ წაიშლება.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=დავიწყება
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView-ის განახლება
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=თქვენი Android მოწყობილობა არ არის განახლებული და Obsidian-ის მუშაობისთვის საჭიროა მისი განახლება. გთხოვთ, მოძებნოთ აპის „Android WebView“ განახლების გზა.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=საცავის სახელი არ უნდა შეიცავდეს შემდეგ სიმბოლოებს: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian-ს ამ მდებარეობაზე წვდომის ნებართვა არ აქვს
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=საცავის წაშლა ვერ მოხერხდა.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=გადატანა {{from}}-დან {{to}}-ში
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=საცავი გადატანილია, მაგრამ Obsidian-ის აპის საქაღალდეში არსებული ძველი ასლის წაშლა ვერ მოხერხდა.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=მოგესალმებით
@@ -3541,6 +3657,10 @@ translation=საცავი იტვირთება...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=საცავის ჩატვირთვა ვერ მოხერხდა: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=„{{path}}“-ის წაკითხვა ვერ მოხერხდა, ამიტომ მისი ფაილები არ ჩანს. შეამოწმეთ წვდომის ნებართვები, შემდეგ ხელახლა გაუშვით Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=ის გადავა Obsidian-ის სანაგვეშ�
 original=The file will be permanently deleted.
 translation=ფაილი სამუდამოდ წაიშლება.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}}-ის სისტემურ სანაგვეში გადატანა ვერ მოხერხდა. წასაშლელად შეცვალეთ პარამეტრი „წაშლილი ფაილები“.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=ეს საქაღალდე ცარიელი არ არის.
@@ -4198,10 +4322,6 @@ translation=დადასტურება
 original=Cancel
 translation=გაუქმება
 
-[dialogue.button-allow]
-original=Allow
-translation=დაშვება
-
 [dialogue.button-skip]
 original=Skip
 translation=გამოტოვება
@@ -4289,6 +4409,10 @@ translation=Obsidian ვერ ხსნის „.{{extension}}“ ფაილ
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=სათაური არ შეიძლება იყოს ცარიელი
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=სათაური „{{heading}}“ ფაილში ვერ მოიძებნა.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=აკრიფეთ საქაღალდე
 original=No existing folders found.
 translation=არსებული საქაღალდეები ვერ მოიძებნა.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=ნავიგაცია
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=გადატანა
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=შექმნა
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=დახურვა
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=ტეგის დამთხვევა:
 original=No matches found.
 translation=შედეგი ვერ მოიძებნა.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=შესაბამისობა
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... და კიდევ {{count}} დამთხვევა.
@@ -5046,14 +5162,6 @@ translation=გადამრთველი
 original=Open quick switcher
 translation=სწრაფი გადამრთველის გახსნა
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=ნავიგაცია
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=გახსნა
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=ახალ ჩანართში გახსნა
@@ -5065,14 +5173,6 @@ translation=მარჯვნივ გახსნა
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=შექმნა
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=დახურვა
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=არჩევა
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=გამოიყენეთ Cmd/Ctrl+P და დაიწყე�
 original=Open command palette
 translation=ბრძანებების პალიტრის გახსნა
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=ნავიგაცია
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=გამოყენება
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=დახურვა
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=ბრძანებები ვერ მოიძებნა.
@@ -6198,14 +6286,6 @@ translation=სიტყვების რაოდენობა
 original=Show word count in the status bar.
 translation=აჩვენებს სიტყვების რაოდენობას სტატუსის ზოლში.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=გამოჩნდეს Mermaid დიაგრამები ამ საცავში?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=დაუშვით მხოლოდ იმ შემთხვევაში, თუ ენდობით ამ საცავის შიგთავსს.
-
 [plugins.slides.name]
 original=Slides
 translation=სლაიდები
@@ -6325,18 +6405,6 @@ translation={{time}} შაბლონის ფაილში ჩანაც
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=ასევე შეგიძლიათ გამოიყენოთ {{time:HH:mm}} ფორმატის ერთჯერადად შესაცვლელად.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=ნავიგაცია
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=შაბლონის ჩასმა
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=დახურვა
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=მთლიანი ფაილის შერწყმა...
 original=No files found.
 translation=ფაილები ვერ მოიძებნა.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=ნავიგაცია
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=შერწყმა
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=ახლის შექმნა
@@ -8241,10 +8301,6 @@ translation=ახლის შექმნა
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=ზემოთ შერწყმა
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=დახურვა
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=მიმდინარე მონიშნულის ამო
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=ამ სათაურის ამოღება...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=ბოლოში გადატანა
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=ახალი ტილოს შექმნა
 original=Convert to file...
 translation=ფაილად გარდაქმნა...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=სათაურის ჩასაშენებლად
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=ბლოკის ჩასაშენებლად
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=ჯგუფზე გადასასვლელად
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=აკრიფეთ ფაილის, სათაურის ან ბლოკის მოსაძებნად
@@ -9194,6 +9234,14 @@ translation=ყველა ხედი
 original=This view
 translation=მიმდინარე ხედი
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=ყველა ხედში გადატანა
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=ამ ხედში გადატანა
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=მოძებნეთ ან შექმენით...
@@ -9246,10 +9294,6 @@ translation=ხედის სახელი
 original=View
 translation=ხედი
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=ცხრილი
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=საჩვენებელი სახელი
@@ -9287,8 +9331,8 @@ original=New
 translation=ახალი
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=ნაჩვენებია {{count}}
+original=Showing {{shown}} of {{total}}
+translation=ნაჩვენებია {{shown}} / {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=ხედი “{{ view }}” ვერ მოიძებნა
 original=Unknown view type: {{ viewtype }}
 translation=ბაზა კონფიგურირებულია უცნობი ხედის ტიპით: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=თვისების უცნობი ტიპი: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=ხედები უნდა იყოს მასივი (Array)
@@ -9653,6 +9701,10 @@ translation=კანბანი
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=ჯგუფების რედაქტირება...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=სვეტის დამალვა
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=აკრიფეთ [[
 original=to link note
 translation=ჩანაწერის დასაკავშირებლად
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=დახურვა
-
 [properties.option-property-type]
 original=Property type
 translation=თვისების ტიპი
@@ -10210,6 +10258,10 @@ translation=ბლოკის ტიპი...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=„{{item}}“
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} სიტყვა
@@ -10257,6 +10309,14 @@ translation={{count}} საქაღალდე
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} საქაღალდე
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} ელემენტი
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} ელემენტი
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=ეს ბმული მიუთითებს შესრუ�
 original=File: {{path}}
 translation=ფაილი: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=გაიხსნას ფაილი სხვა აპში?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=ეს ფაილი Obsidian-ის გარეთ გაიხსნება. ზოგიერთი ტიპის ფაილს შეუძლია თქვენს კომპიუტერში კოდის გაშვება. გააგრძელეთ მხოლოდ იმ შემთხვევაში, თუ ენდობით ამ ფაილის წყაროს.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=საცავი ვერ მოიძებნა.
@@ -10401,6 +10469,22 @@ translation=საცავი ვერ მოიძებნა.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL-ისთვის {{url}} საცავის პოვნა ვერ მოხერხდა
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=საცავების შენახვა Obsidian-ის საინსტალაციო საქაღალდეში შეუძლებელია, რადგან Obsidian-ის განახლებისას ის იშლება
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=ეს საცავი Obsidian-ის საინსტალაციო საქაღალდეშია
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian-ის განახლებისას ინსტალერი ამ საქაღალდეს და მასში არსებულ საცავს შლის. აირჩიეთ „საცავების მართვა“ საცავის დასახურად, შემდეგ კი გამოიყენეთ „საცავის გადატანა...“ მის სხვა ადგილას გადასატანად.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=საცავების მართვა
 
 [main.supported-files]
 original=Supported files

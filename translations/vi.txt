@@ -266,14 +266,6 @@ translation=Hướng văn bản từ phải sang trái (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Đặt hướng văn bản của các ghi chú để hiển thị từ phải sang trái.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Hiển thị sơ đồ Mermaid trong ghi chú
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Kết xuất lưu đồ, sơ đồ trình tự và các sơ đồ khác từ khối mã “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Tự động chuyển đổi HTML
@@ -914,14 +906,6 @@ translation=Điều hướng nổi
 original=Navigation buttons float over the content instead of being anchored.
 translation=Các nút điều hướng nổi trên nội dung thay vì được neo cố định.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Thanh bên trượt
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Thanh bên trượt ra cạnh nội dung thay vì nổi phía trên.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Toàn màn hình
@@ -1498,6 +1482,14 @@ translation=Lọc phần mở rộng theo tên hoặc mô tả.
 original=Search plugins...
 translation=Tìm kiếm phần mở rộng...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Đã tắt theo chính sách của tổ chức bạn.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Bắt buộc theo chính sách của tổ chức bạn.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Phần mở rộng của bên thứ ba
@@ -1741,6 +1733,14 @@ translation=Đang cài đặt phần mở rộng "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Không cài đặt được phần mở rộng "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Plugin “{{name}}” không được chính sách của tổ chức bạn cho phép.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Không được chính sách của tổ chức bạn cho phép.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Thay thế
 original=Replace all
 translation=Thay thế tất cả
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Nhập #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=để liên kết đến tiêu đề
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Nhập ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=để liên kết đến khối
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Nhập |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Không tìm thấy kết quả nào
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Kích thước hình ảnh: rộng {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=để chấp nhận
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Không tìm thấy tệp "{{name}}".
 original=Unrecognized URI action: {{action}}
 translation=Hành động URI không được nhận dạng: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Tham số URI “{{param}}” yêu cầu “append” hoặc “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Xóa
@@ -2573,10 +2561,6 @@ translation=Trống
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Không có tệp nào được mở
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Tạo tệp mới
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Gửi lại email thất bại.
 original=Vault location must be a folder.
 translation=Vị trí kho phải là một thư mục.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Bạn không thể truy cập hoặc tạo kho trong iCloud vì iCloud đã bị tắt cho Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Thiết lập Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Kho này nằm trong thư mục ứng dụng Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Kho này nằm tại {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Trên thiết bị này
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Tệp
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Lần mở gần nhất
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} đã bật
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Đã tắt
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Các plugin cộng đồng mất {{seconds}} giây để tải trong lần trước. Nếu kho này mở chậm, hãy thử chế độ hạn chế.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Kho này chưa mở xong trong lần trước.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Kho này chưa mở xong trong lần trước. Nếu tình trạng này tiếp diễn, hãy thử chế độ hạn chế.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Mở kho
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Mở kho ở chế độ hạn chế
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Đổi tên kho...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Quên kho...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Di chuyển vào bộ nhớ thiết bị...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Xóa kho...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Đổi tên kho “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Xóa kho “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Xóa kho này sẽ xóa tất cả các tệp bên trong.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Không thể hoàn tác hành động này. Vui lòng xác nhận bạn muốn xóa kho.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Quên kho “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Quên kho này sẽ loại bỏ kho khỏi danh sách kho mà không xóa bất kỳ tệp nào.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Quên
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Cập nhật Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Thiết bị Android của bạn chưa được cập nhật và cần được cập nhật để Obsidian hoạt động. Vui lòng tìm cách nâng cấp ứng dụng "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Tên kho không được chứa bất kỳ ký tự nào sau đây: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian không có quyền truy cập vị trí này
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Không thể xóa kho.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Đang di chuyển từ {{from}} đến {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Kho đã được di chuyển, nhưng không thể xóa bản sao cũ trong thư mục ứng dụng Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Chào mừng
@@ -3541,6 +3657,10 @@ translation=Đang tải khối lưu trữ...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Không thể tải khối lưu trữ: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Không thể đọc “{{path}}” nên các tệp bên trong không được hiển thị. Hãy kiểm tra quyền truy cập rồi khởi động lại Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Tệp sẽ được di chuyển vào thùng rác của Obsidian, n�
 original=The file will be permanently deleted.
 translation=Tệp sẽ bị xóa vĩnh viễn.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Không thể chuyển {{item}} vào thùng rác hệ thống. Để vẫn xóa, hãy thay đổi cài đặt “Tệp đã xóa”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Thư mục này không trống.
@@ -4198,10 +4322,6 @@ translation=Xác nhận
 original=Cancel
 translation=Hủy bỏ
 
-[dialogue.button-allow]
-original=Allow
-translation=Cho phép
-
 [dialogue.button-skip]
 original=Skip
 translation=Bỏ qua
@@ -4289,6 +4409,10 @@ translation=Obsidian không thể mở tệp “.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Tiêu đề không được để trống
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Không tìm thấy tiêu đề “{{heading}}” trong tệp.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Nhập tên thư mục
 original=No existing folders found.
 translation=Không tìm thấy thư mục nào.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=để điều hướng
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=để di chuyển
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=để tạo
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=để hủy
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Khớp thẻ:
 original=No matches found.
 translation=Không tìm thấy kết quả.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Mức độ liên quan
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... và thêm {{count}} kết quả.
@@ -5046,14 +5162,6 @@ translation=Chuyển đổi
 original=Open quick switcher
 translation=Mở bộ chuyển đổi nhanh
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=để điều hướng
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=để mở
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=để mở trong tab mới
@@ -5065,14 +5173,6 @@ translation=để mở bên phải
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=để tạo
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=để hủy
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=để chọn
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Gõ một lệnh để kích hoạt nó. Không cần sử dụng gi
 original=Open command palette
 translation=Mở khay lệnh
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=để di chuyển
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=để sử dụng
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=để hủy
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Không tìm thấy lệnh.
@@ -6198,14 +6286,6 @@ translation=Số từ
 original=Show word count in the status bar.
 translation=Hiển thị số từ trong thanh trạng thái.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Hiển thị sơ đồ Mermaid trong kho này?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Chỉ cho phép nếu bạn tin tưởng nội dung của kho này.
-
 [plugins.slides.name]
 original=Slides
 translation=Trang trình chiếu
@@ -6325,18 +6405,6 @@ translation={{time}} trong tệp mẫu sẽ được thay thế bằng giá tr�
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Bạn cũng có thể sử dụng {{time:HH:mm}} để ghi đè định dạng một lần.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=để di chuyển
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=để chèn mẫu
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=để hủy
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Kết hợp toàn bộ tập tin với...
 original=No files found.
 translation=Không tìm thấy tập tin.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=để điều hướng
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=để kết hợp
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=để tạo mới
@@ -8241,10 +8301,6 @@ translation=để tạo mới
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=để kết hợp ở đầu
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=để hủy
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Trích xuất lựa chọn hiện tại...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Trích xuất tiêu đề này...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=để di chuyển xuống cuối
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Tạo bảng mới
 original=Convert to file...
 translation=Chuyển đổi thành tập tin...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=để nhúng tiêu đề
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=để nhúng khối
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=để điều hướng đến nhóm
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Nhập tên tiêu đề
@@ -9194,6 +9234,14 @@ translation=Tất cả chế độ xem
 original=This view
 translation=Chế độ xem này
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Di chuyển sang tất cả chế độ xem
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Di chuyển sang chế độ xem này
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Tìm hoặc tạo...
@@ -9246,10 +9294,6 @@ translation=Tên chế độ xem
 original=View
 translation=Chế độ xem
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Bảng
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Tên hiển thị
@@ -9287,8 +9331,8 @@ original=New
 translation=Mới
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Đang hiển thị {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Đang hiển thị {{shown}} trong tổng số {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Không tìm thấy chế độ xem "{{ view }}"
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Loại thuộc tính không xác định: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Chế độ xem phải là một mảng
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Chỉnh sửa nhóm...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Ẩn cột
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Loại [[
 original=to link note
 translation=để liên kết ghi chú
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=để hủy
-
 [properties.option-property-type]
 original=Property type
 translation=Loại thuộc tính
@@ -10210,6 +10258,10 @@ translation=Loại chú thích...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} từ
@@ -10257,6 +10309,14 @@ translation={{count}} thư mục
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} thư mục
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} mục
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} mục
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Liên kết này trỏ đến một tệp thực thi. Việc chạy 
 original=File: {{path}}
 translation=Tệp: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Mở tệp bằng ứng dụng khác?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Tệp này sẽ được mở bên ngoài Obsidian. Một số loại tệp có thể chạy mã trên máy tính của bạn. Chỉ tiếp tục nếu bạn tin tưởng nguồn của tệp này.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Không tìm thấy kho.
@@ -10401,6 +10469,22 @@ translation=Không tìm thấy kho.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Không thể tìm thấy kho cho URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Không thể lưu kho trong thư mục cài đặt của Obsidian vì thư mục này sẽ bị xóa khi Obsidian cập nhật
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Kho này nằm trong thư mục cài đặt của Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Trình cài đặt sẽ xóa thư mục này cùng với kho bên trong khi Obsidian cập nhật. Chọn "Quản lý kho" để đóng kho, sau đó chọn "Di chuyển kho..." cho kho đó để di chuyển đến nơi khác.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Quản lý kho
 
 [main.supported-files]
 original=Supported files

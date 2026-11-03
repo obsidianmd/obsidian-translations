@@ -266,14 +266,6 @@ translation=ከቀኝ-ወደ-ግራ (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=የማስታወሻዎቹን የጽሑፍ አቅጣጫ ከቀኝ-ወደ-ግራ ለማሳየት ያዘጋጃል።
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=በማስታወሻዎች ውስጥ Mermaid ዲያግራሞችን አሳይ
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=ከ“mermaid” የኮድ ብሎኮች የፍሰት ገበታዎችን፣ የቅደም ተከተል ዲያግራሞችን እና ሌሎች ዲያግራሞችን አቅርብ።
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=ኤችቲኤምኤልን በራስ-ሰር ይለውጡ
@@ -914,14 +906,6 @@ translation=ተንሳፋፊ አሰሳ
 original=Navigation buttons float over the content instead of being anchored.
 translation=የአሰሳ አዝራሮች መታሰር ፋንታ በይዘቱ ላይ ተንሳፍፈው ይታያሉ።
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=ተንሸራታች የጎን አሞሌዎች
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=የጎን አሞሌዎች በላይ ተንሳፈፍ ፋንታ ወደ ይዘቱ ጎን ተንሸራትተው ይጓዛሉ።
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=ሙሉ ስክሪን
@@ -1498,6 +1482,14 @@ translation=ተሰኪዎችን በስም ወይም በመግለጫ ያጣሩ።
 original=Search plugins...
 translation=ተሰኪዎችን ፈልግ...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=በድርጅትዎ ፖሊሲ መሠረት ጠፍቷል።
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=በድርጅትዎ ፖሊሲ መሠረት ያስፈልጋል።
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=የሶስተኛ ወገን ተሰኪ
@@ -1741,6 +1733,14 @@ translation=የተሰኪ "{{name}}" በመጫን ላይ...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=የተሰኪ "{{name}}" መጫን አልተሳካም።
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=“{{name}}” ተሰኪ በድርጅትዎ ፖሊሲ አይፈቀድም።
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=በድርጅትዎ ፖሊሲ አይፈቀድም።
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=ተካ
 original=Replace all
 translation=ሁሉንም ይተኩ
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=ዓይነት #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=ርዕስ ለማገናኘት
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=ዓይነት ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=ብሎኮችን ለማገናኘት
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=አይነት |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=ምንም ተዛማጅ አልተገኘም።
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=የምስል መጠን፡ {{size}}px ስፋት
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=ለመቀበል
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=ፋይል "{{name}}" አልተገኘም።
 original=Unrecognized URI action: {{action}}
 translation=ያልታወቀ URI እርምጃ፦ {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=የ“{{param}}” URI ግቤት “append” ወይም “prepend” ይፈልጋል።
+
 [interface.delete-action-short-name]
 original=Delete
 translation=ሰርዝ
@@ -2573,10 +2561,6 @@ translation=ባዶ
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=ምንም ፋይል አልተከፈተም።
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=አዲስ ፋይል ይፍጠሩ
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=ኢሜይሉን እንደገና መላክ አልተሳካም።
 original=Vault location must be a folder.
 translation=የቮልት አቀማመጥ አቃፊ መሆን አለበት።
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=iCloud ለObsidian ስለተሰናከለ፣ በiCloud ውስጥ ቮልቶችን መክፈት ወይም መፍጠር አይችሉም።
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync አዋቅር
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=ይህ ቮልት በObsidian መተግበሪያ አቃፊ ውስጥ ይገኛል።
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=ይህ ቮልት በ{{path}} ይገኛል
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=በዚህ መሣሪያ ላይ
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=ፋይሎች
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=ለመጨረሻ ጊዜ የተከፈተው
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} ነቅተዋል
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=ተሰናክለዋል
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=ባለፈው ጊዜ የማህበረሰብ ተሰኪዎች ለመጫን {{seconds}} ሰከንዶች ፈጅተዋል። ይህ ቮልት ለመከፈት የሚዘገይ ከሆነ፣ የተገደበ ሁነታን ይሞክሩ።
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=ይህ ቮልት ባለፈው ጊዜ መከፈቱን አላጠናቀቀም።
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=ይህ ቮልት ባለፈው ጊዜ መከፈቱን አላጠናቀቀም። ይህ ከቀጠለ፣ የተገደበ ሁነታን ይሞክሩ።
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=ቮልት ክፈት
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=ቮልት በተገደበ ሁነታ ክፈት
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=ቮልት እንደገና ሰይም...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=ቮልትን ከዝርዝሩ አስወግድ...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=ወደ መሣሪያ ማከማቻ አንቀሳቅስ...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=ቮልት ሰርዝ...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” ቮልትን እንደገና ሰይም
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” ቮልትን ሰርዝ
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=ይህን ቮልት መሰረዝ በውስጡ ያሉትን ሁሉንም ፋይሎች ይሰርዛል።
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=ይህን እርምጃ መቀልበስ አይቻልም። እባክዎ መሰረዝ እንደሚፈልጉ ያረጋግጡ።
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” ቮልትን ከዝርዝሩ አስወግድ
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=ይህን ቮልት ከዝርዝሩ ማስወገድ ምንም ፋይሎች ሳይሰረዙ ከቮልቶች ዝርዝር ያስወግደዋል።
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=ከዝርዝሩ አስወግድ
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView አዘምን
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=የAndroid መሣሪያዎ ወቅታዊ አይደለም፣ እና Obsidian እንዲሠራ መዘመን አለበት። እባክዎ “Android WebView” መተግበሪያን የሚያሻሽሉበትን መንገድ ይፈልጉ።
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=የቮልት ስም ከእነዚህ ቁምፊዎች ማንኛውንም መያዝ አይችልም፦ 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian ይህን ቦታ የመድረስ ፈቃድ የለውም
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=ቮልትን መሰረዝ አልተሳካም።
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=ከ{{from}} ወደ {{to}} በማንቀሳቀስ ላይ
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=ቮልቱ ተንቀሳቅሷል፣ ነገር ግን በObsidian መተግበሪያ አቃፊ ውስጥ ያለውን የቀድሞ ቅጂ መሰረዝ አልተቻለም።
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=እንኳን ደህና መጡ
@@ -3541,6 +3657,10 @@ translation=ቮልት በመጫን ላይ...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation= ቮልት መጫን አልተሳካም፦
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}”ን ማንበብ ስላልተቻለ፣ ፋይሎቹ አይታዩም። ፈቃዶቹን ያረጋግጡ፣ ከዚያ Obsidianን እንደገና ያስጀምሩ።
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=በማከማቻዎ ውስጥ ባለው .መጣያ የተደበቀ �
 original=The file will be permanently deleted.
 translation=ፋይሉ በቋሚነት ይሰረዛል።
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}}ን ወደ ስርዓቱ መጣያ ማንቀሳቀስ አልተሳካም። ያም ሆኖ ለመሰረዝ፣ “የተሰረዙ ፋይሎች” ቅንብርን ይቀይሩ።
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=ይህ አቃፊ ባዶ አይደለም።
@@ -4198,10 +4322,6 @@ translation=አረጋግጥ
 original=Cancel
 translation=ሰርዝ
 
-[dialogue.button-allow]
-original=Allow
-translation=ፍቀድ
-
 [dialogue.button-skip]
 original=Skip
 translation=ዝለል
@@ -4289,6 +4409,10 @@ translation=Obsidian የ“.{{extension}}” ፋይሎችን መክፈት አይ
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=ርዕስ ባዶ ሊሆን አይችልም
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=“{{heading}}” ርዕስ በፋይሉ ውስጥ አልተገኘም።
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=አቃፊ ይተይቡ
 original=No existing folders found.
 translation=ምንም አቃፊዎች አልተገኙም።
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=ለማሰስ
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=ለ መንቀሳቀስ
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=ለመፍጠር
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=ለማሰናበት
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation= ተዛማጅ መለያ
 original=No matches found.
 translation=ምንም ተዛማጅ አልተገኙም።
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=ተዛማጅነት
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... እና ተጨማሪ {{count}} ግጥሚያ።
@@ -5046,14 +5162,6 @@ translation=መቀየሪያ
 original=Open quick switcher
 translation=ፈጣን መቀየሪያን ይክፈቱ
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=ለማሰስ
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=ለመክፈት
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=በአዲስ ትር ለመክፈት
@@ -5065,14 +5173,6 @@ translation=ወደ ቀኝ ለመክፈት
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=መፍጠር
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=ለማሰናበት
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=ለመምረጥ
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=እሱን ለመጥራት ትእዛዝ ይተይቡ። UI መጠቀ�
 original=Open command palette
 translation=የትእዛዝ ቤተ-ስዕል ይክፈቱ
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=ለማሰስ
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=መጠቀም
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=ለማሰናበት
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=ምንም ትዕዛዞች አልተገኙም።
@@ -6198,14 +6286,6 @@ translation=የቃላት ብዛት
 original=Show word count in the status bar.
 translation=በሁኔታ አሞሌ ውስጥ የቃላት ብዛት አሳይ።
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=በዚህ ቮልት ውስጥ Mermaid ዲያግራሞችን ይታዩ?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=የዚህን ቮልት ይዘቶች ካመኑ ብቻ ይፍቀዱ።
-
 [plugins.slides.name]
 original=Slides
 translation=ስላይዶች
@@ -6325,18 +6405,6 @@ translation=በአብነት ፋይሉ ውስጥ ያለው {{time}} በዚህ ዋ
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=ቅርጸቱን አንድ ጊዜ ለመሻር {{time:HH:mm}}ን መጠቀም ይችላሉ።
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=ለማሰስ
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=አብነት ለማስገባት
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=ለማሰናበት
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=ሙሉውን ፋይል ከ...
 original=No files found.
 translation=ምንም ፋይሎች አልተገኙም።
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=ለማሰስ
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=ለማዋሃድ
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=አዲስ ለመፍጠር
@@ -8241,10 +8301,6 @@ translation=አዲስ ለመፍጠር
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=ከላይ ለመዋሃድ
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=ለማሰናበት
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=የአሁኑን ምርጫ ያውጡ...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=ይህን ርዕስ አውጣ...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=ወደ ታች ለመንቀሳቀስ
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=አዲስ ሸራ ይፍጠሩ
 original=Convert to file...
 translation=ወደ ፋይል ቀይር...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=ርዕስ ለማስገባት
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=ብሎክ ለማስገባት
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=ወደ ቡድን ለመዳሰስ
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=የርዕስ ስም ዓይነት
@@ -9194,6 +9234,14 @@ translation=ሁሉም እይታዎች
 original=This view
 translation=ይህ እይታ
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=ወደ ሁሉም እይታዎች አንቀሳቅስ
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=ወደዚህ እይታ አንቀሳቅስ
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=ፈልግ ወይም ፍጠር...
@@ -9246,10 +9294,6 @@ translation=የእይታ ስም
 original=View
 translation=እይታ
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=ሰንጠረዥ
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=የማሳያ ስም
@@ -9287,8 +9331,8 @@ original=New
 translation=አዲስ
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} በማሳየት ላይ
+original=Showing {{shown}} of {{total}}
+translation=ከ{{total}} ውስጥ {{shown}} በማሳየት ላይ
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=እይታ "{{ view }}" አልተገኘም
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=ያልታወቀ የባህሪ አይነት፦ {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=እይታዎች አሬይ መሆን አለባቸው
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=ቡድኖችን አርትዕ...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=ዓምድ ደብቅ
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=[[ ፃፍ
 original=to link note
 translation=ማስታወሻን ለማገናኘት
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=ለመዝጋት
-
 [properties.option-property-type]
 original=Property type
 translation=የባህሪ ዓይነት
@@ -10210,6 +10258,10 @@ translation=የማስጠንቀቂያ ዓይነት...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} ቃል
@@ -10257,6 +10309,14 @@ translation={{count}} አቃፊ
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} አቃፊዎች
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} ንጥል
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} ንጥሎች
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=ይህ አገናኝ ወደ ሊፈጸም የሚችል ፋይል ይ�
 original=File: {{path}}
 translation=ፋይል፦ {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=ፋይሉን በሌላ መተግበሪያ ይክፈቱ?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=ይህ ፋይል ከObsidian ውጭ ይከፈታል። አንዳንድ የፋይል አይነቶች በኮምፒውተርዎ ላይ ኮድ ማስኬድ ይችላሉ። የዚህን ፋይል ምንጭ የሚያምኑ ከሆነ ብቻ ይቀጥሉ።
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=ቮልት አልተገኘም።
@@ -10401,6 +10469,22 @@ translation=ቮልት አልተገኘም።
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=ለURL {{url}} ቮልት ማግኘት አልተቻለም
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian ሲዘመን የመጫኛ አቃፊው ስለሚሰረዝ፣ ቮልቶችን በውስጡ ማስቀመጥ አይቻልም
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=ይህ ቮልት በObsidian መጫኛ አቃፊ ውስጥ ይገኛል
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian ሲዘመን፣ መጫኛው ይህን አቃፊ ከዚህ ቮልት ጋር ይሰርዘዋል። ቮልቱን ለመዝጋት “ቮልቶችን አስተዳድር” ይምረጡ፣ ከዚያ ወደ ሌላ ቦታ ለማንቀሳቀስ በቮልቱ ላይ “ቮልት አንቀሳቅስ...” ይጠቀሙ።\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=ቮልቶችን አስተዳድር
 
 [main.supported-files]
 original=Supported files

@@ -266,14 +266,6 @@ translation=No labās uz kreiso (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Iestata teksta virzienu piezīmēm no labās uz kreiso pusi.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Rādīt Mermaid diagrammas piezīmēs
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Atveidot blokshēmas, secību diagrammas un citas diagrammas no “mermaid” koda blokiem.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Automātiski pārveidot HTML
@@ -914,14 +906,6 @@ translation=Peldoša navigācija
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigācijas pogas peld virs satura, nevis ir noenkurotas.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Slīdošās sānjoslas
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Sānjoslas slīd uz satura malu, nevis peld virs tā.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Pilnekrāns
@@ -1498,6 +1482,14 @@ translation=Filtrēt spraudņus pēc nosaukuma vai apraksta.
 original=Search plugins...
 translation=Meklēt spraudņus...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Izslēgts saskaņā ar jūsu organizācijas politiku.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Obligāts saskaņā ar jūsu organizācijas politiku.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Kopienas spraudņi
@@ -1741,6 +1733,14 @@ translation=Instalē spraudni "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Neizdevās instalēt spraudni "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Spraudnis “{{name}}” nav atļauts saskaņā ar jūsu organizācijas politiku.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Nav atļauts saskaņā ar jūsu organizācijas politiku.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Aizvietot
 original=Replace all
 translation=Aizvietot visu
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Ievadiet #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=lai pievienotu saiti uz virsrakstu
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Ievadiet ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=lai pievienotu saiti uz bloku
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Ievadiet |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Sakritības netika atrastas
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Attēla izmērs: {{size}}px plats
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=lai apstiprinātu
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Fails "{{name}}" nav atrasts.
 original=Unrecognized URI action: {{action}}
 translation=Neatpazīta URI darbība: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI parametram “{{param}}” nepieciešams “append” vai “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Dzēst
@@ -2573,10 +2561,6 @@ translation=Tukšs
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Neviens fails nav atvērts
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Izveidot jaunu failu
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Neizdevās atkārtoti nosūtīt e-pastu.
 original=Vault location must be a folder.
 translation=Glabātuves atrašanās vietai jābūt mapei.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Nevarat piekļūt glabātuvēm iCloud vai tās tur izveidot, jo lietotnei Obsidian ir atspējota piekļuve iCloud.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Iestatīt Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Šī glabātuve atrodas lietotnes Obsidian mapē.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Šī glabātuve atrodas šeit: {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Šajā ierīcē
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Faili
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Pēdējo reizi atvērta
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation=Iespējoti: {{count}}
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Atspējoti
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Iepriekšējā reizē kopienas spraudņu ielāde aizņēma {{seconds}} sekundes. Ja šī glabātuve atveras lēni, izmēģiniet ierobežoto režīmu.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Iepriekšējā reizē šī glabātuve netika pilnībā atvērta.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Iepriekšējā reizē šī glabātuve netika pilnībā atvērta. Ja tas atkārtojas, izmēģiniet ierobežoto režīmu.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Atvērt glabātuvi
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Atvērt glabātuvi ierobežotajā režīmā
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Pārdēvēt glabātuvi...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Aizmirst glabātuvi...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Pārvietot uz ierīces krātuvi...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Dzēst glabātuvi...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Pārdēvēt glabātuvi “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Dzēst glabātuvi “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Dzēšot šo glabātuvi, tiks dzēsti visi tajā esošie faili.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Šī darbība ir neatgriezeniska. Lūdzu, apstipriniet, ka vēlaties to dzēst.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Aizmirst glabātuvi “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Aizmirstot šo glabātuvi, tā tiks noņemta no glabātuvju saraksta, nedzēšot nevienu failu.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Aizmirst
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Atjaunināt Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Jūsu Android ierīce nav atjaunināta, un tā ir jāatjaunina, lai Obsidian darbotos. Lūdzu, atrodiet veidu, kā jaunināt lietotni “Android WebView”.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Glabātuves nosaukumā nedrīkst būt neviena no šīm rakstzīmēm: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian nav atļaujas piekļūt šai atrašanās vietai
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Neizdevās dzēst glabātuvi.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Pārvieto no {{from}} uz {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Glabātuve tika pārvietota, taču veco kopiju lietotnes Obsidian mapē neizdevās dzēst.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Laipni lūdzam
@@ -3541,6 +3657,10 @@ translation=Ielādē krātuvi...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Neizdevās ielādēt krātuvi: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Nevar nolasīt “{{path}}”, tāpēc tajā esošie faili netiek rādīti. Pārbaudiet piekļuves atļaujas un pēc tam restartējiet Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Tas tiks pārvietots uz Obsidian atkritni, kas atrodas slēptajā ma
 original=The file will be permanently deleted.
 translation=Fails tiks neatgriezeniski dzēsts.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Neizdevās pārvietot {{item}} uz sistēmas atkritni. Lai tomēr dzēstu, mainiet iestatījumu “Dzēstie faili”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Šī mape nav tukša.
@@ -4198,10 +4322,6 @@ translation=Apstiprināt
 original=Cancel
 translation=Atcelt
 
-[dialogue.button-allow]
-original=Allow
-translation=Atļaut
-
 [dialogue.button-skip]
 original=Skip
 translation=Izlaist
@@ -4289,6 +4409,10 @@ translation=Obsidian nevar atvērt “.{{extension}}” failus.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Virsraksts nevar būt tukšs
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Failā nav atrasts virsraksts “{{heading}}”.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Ievadiet mapi
 original=No existing folders found.
 translation=Mapes nav atrastas.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=navigācijai
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=lai pārvietotu
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=lai izveidotu
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=lai noraidītu
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Sakrīt ar birku:
 original=No matches found.
 translation=Sakritību nav atrasts.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Atbilstība
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... un vēl {{count}} sakritība.
@@ -5046,14 +5162,6 @@ translation=Pārslēdzējs
 original=Open quick switcher
 translation=Atvērt ātro pārslēgšanu
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=lai pārvietotos
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=lai atvērtu
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=lai atvērtu jaunā cilnē
@@ -5065,14 +5173,6 @@ translation=lai atvērtu pa labi
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=lai izveidotu
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=lai atceltu
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=lai atlasītu
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Ievadiet komandu, lai to izpildītu. Nav nepieciešams izmantot sask
 original=Open command palette
 translation=Atvērt komandu paleti
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=navigēt
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=lietot
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=aizvērt
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Nav atrastas komandas.
@@ -6198,14 +6286,6 @@ translation=Vārdu skaits
 original=Show word count in the status bar.
 translation=Parādīt vārdu skaitu statusjoslā.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Vai rādīt Mermaid diagrammas šajā glabātuvē?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Atļaujiet tikai tad, ja uzticaties šīs glabātuves saturam.
-
 [plugins.slides.name]
 original=Slides
 translation=Slaidi
@@ -6325,18 +6405,6 @@ translation={{time}} veidnes failā tiks aizstāts ar šo vērtību.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Jūs varat izmantot arī {{time:HH:mm}}, lai mainītu formātu vienreiz.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=navigācijai
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=lai ievietotu veidni
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=lai aizvērtu
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Apvienot visu failu ar...
 original=No files found.
 translation=Nav atrasti faili.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=pārvietoties
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=apvienot
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=izveidot jaunu
@@ -8241,10 +8301,6 @@ translation=izveidot jaunu
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=apvienot augšpusē
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=atteikties
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Izvilkt pašreizējo atlasi...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Izvilkt šo virsrakstu...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=pārvietot uz apakšu
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Izveidot jaunu audeklu
 original=Convert to file...
 translation=Konvertēt uz failu...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=lai iegultu virsrakstu
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=lai iegultu bloku
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=lai pārietu uz grupu
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Ierakstiet virsraksta nosaukumu
@@ -9194,6 +9234,14 @@ translation=Visi skati
 original=This view
 translation=Šis skats
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Pārvietot uz visiem skatiem
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Pārvietot uz šo skatu
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Atrast vai izveidot...
@@ -9246,10 +9294,6 @@ translation=Skata nosaukums
 original=View
 translation=Skats
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabula
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Attēlojamais nosaukums
@@ -9287,8 +9331,8 @@ original=New
 translation=Jauns
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Rāda: {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Rāda: {{shown}} no {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Skats "{{ view }}" nav atrasts
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Nezināms īpašības tips: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Skatiem jābūt masīvam
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Rediģēt grupas...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Paslēpt kolonnu
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Ievadiet [[
 original=to link note
 translation=lai saistītu piezīmi
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=lai atceltu
-
 [properties.option-property-type]
 original=Property type
 translation=Īpašības tips
@@ -10210,6 +10258,10 @@ translation=Izsaukuma veids...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} vārds
@@ -10257,6 +10309,14 @@ translation={{count}} mape
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} mapes
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} vienums
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} vienumi
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Šī saite norāda uz izpildāmu failu. Tā palaišana var kaitēt j
 original=File: {{path}}
 translation=Fails: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Atvērt failu citā lietotnē?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Šis fails tiks atvērts ārpus Obsidian. Dažu veidu faili var izpildīt kodu jūsu datorā. Turpiniet tikai tad, ja uzticaties šī faila avotam.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Glabātuve nav atrasta.
@@ -10401,6 +10469,22 @@ translation=Glabātuve nav atrasta.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Neizdevās atrast glabātuvi URL adresei {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Glabātuves nevar uzglabāt Obsidian instalācijas mapē, jo tā tiek izdzēsta, atjauninot Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Šī glabātuve atrodas Obsidian instalācijas mapē
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Atjauninot Obsidian, instalētājs izdzēš šo mapi un līdz ar to arī šo glabātuvi. Izvēlieties “Pārvaldīt glabātuves”, lai aizvērtu glabātuvi, un pēc tam izvēlieties tai darbību “Pārvietot glabātuvi...”, lai pārvietotu to citur.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Pārvaldīt glabātuves
 
 [main.supported-files]
 original=Supported files

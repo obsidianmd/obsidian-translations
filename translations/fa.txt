@@ -266,14 +266,6 @@ translation=راست‌به‌چپ
 original=Sets the default text direction of notes to right-to-left.
 translation=جهت ‌متن یادداشت‌ها را راست‌به‌چپ می‌کند.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=نمایش نمودارهای Mermaid در یادداشت‌ها
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=فلوچارت‌ها، نمودارهای توالی و نمودارهای دیگر را از بلوک‌های کد «mermaid» رندر کنید.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=تبدیل خودکار اچ‌تی‌ام‌ال
@@ -914,14 +906,6 @@ translation=پیمایش شناور
 original=Navigation buttons float over the content instead of being anchored.
 translation=دکمه‌های پیمایش به‌جای ثابت بودن، روی محتوا شناور می‌مانند.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=نوارهای کناری کشویی
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=نوارهای کناری به‌جای شناور شدن روی محتوا، به کنارِ محتوا سر می‌خورند.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=تمام‌صفحه
@@ -1498,6 +1482,14 @@ translation=پالایش افزونه‌ها براساس نام یا توضیح
 original=Search plugins...
 translation=جست‌وجوی افزونه‌ها...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=طبق خط‌مشی سازمان شما غیرفعال شده است.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=طبق خط‌مشی سازمان شما الزامی است.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=افزونه‌های شخص‌ثالث
@@ -1741,6 +1733,14 @@ translation=افزونه‌ی "{{name}}" دارد نصب می‌شود...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=نصب افزونه‌ی "{{name}}" به مشکل خورد.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=افزونهٔ «{{name}}» طبق خط‌مشی سازمان شما مجاز نیست.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=طبق خط‌مشی سازمان شما مجاز نیست.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=جایگزینی
 original=Replace all
 translation=جایگزین کردن همه
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=# بنویسید
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=برای پیوند سرفصل
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=بنویسید ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=برای پیوند بلوک
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=بنویسید |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=نتیجه‌ای پیدا نشد
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=اندازه تصویر: {{size}}px عرض
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=برای پذیرش
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=پرونده‌ی "{{name}}" پیدا نشد.
 original=Unrecognized URI action: {{action}}
 translation=عمل URI ناشناخته: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=پارامتر URI «{{param}}» به «append» یا «prepend» نیاز دارد.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=حذف
@@ -2573,10 +2561,6 @@ translation=خالی
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=پرونده‌ای باز نیست
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=ساخت پرونده‌ی نو
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=ارسال مجدد ایمیل ناموفق بود.
 original=Vault location must be a folder.
 translation=مکان خزانه باید یک پوشه باشد.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=نمی‌توانید به گاوصندوق‌های iCloud دسترسی داشته باشید یا در آن گاوصندوق بسازید، زیرا iCloud برای Obsidian غیرفعال است.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=راه‌اندازی Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=این گاوصندوق در پوشهٔ اپلیکیشن Obsidian قرار دارد.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=این گاوصندوق در مسیر {{path}} قرار دارد
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=در این دستگاه
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=فایل‌ها
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=آخرین بار بازشده
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} فعال
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=غیرفعال
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=بارگذاری افزونه‌های انجمن در آخرین بار {{seconds}} ثانیه طول کشید. اگر باز شدن این گاوصندوق کند است، حالت محدود را امتحان کنید.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=باز شدن این گاوصندوق در آخرین بار کامل نشد.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=باز شدن این گاوصندوق در آخرین بار کامل نشد. اگر این مشکل تکرار می‌شود، حالت محدود را امتحان کنید.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=باز کردن گاوصندوق
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=باز کردن گاوصندوق در حالت محدود
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=تغییر نام گاوصندوق...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=حذف گاوصندوق از فهرست...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=انتقال به حافظهٔ دستگاه...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=حذف گاوصندوق...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=تغییر نام گاوصندوق «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=حذف گاوصندوق «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=با حذف این گاوصندوق، همهٔ فایل‌های داخل آن حذف می‌شوند.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=این کار برگشت‌پذیر نیست. لطفاً تأیید کنید که می‌خواهید آن را حذف کنید.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=حذف گاوصندوق «{{name}}» از فهرست
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=با حذف این گاوصندوق از فهرست گاوصندوق‌ها، هیچ فایلی حذف نمی‌شود.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=حذف از فهرست
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=به‌روزرسانی Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=دستگاه Android شما به‌روز نیست و برای کار کردن Obsidian باید به‌روزرسانی شود. لطفاً راهی برای ارتقای اپلیکیشن «Android WebView» پیدا کنید.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=نام گاوصندوق نمی‌تواند شامل هیچ‌یک از این نویسه‌ها باشد: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian مجوز دسترسی به این مکان را ندارد
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=حذف گاوصندوق ناموفق بود.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=در حال انتقال از {{from}} به {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=گاوصندوق منتقل شد، اما نسخهٔ قدیمی در پوشهٔ اپلیکیشن Obsidian حذف نشد.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=خوش آمدید
@@ -3541,6 +3657,10 @@ translation=بارگیری خزانه...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=بارگیری خزانه به مشکل خورد: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=خواندن «{{path}}» ممکن نیست، بنابراین فایل‌های آن نمایش داده نمی‌شوند. مجوزهای دسترسی آن را بررسی کنید، سپس Obsidian را مجدداً راه‌اندازی کنید.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=این پرونده به زباله‌دان Obsidian منتقل م�
 original=The file will be permanently deleted.
 translation=این پرونده برای همیشه حذف خواهد شد.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=انتقال {{item}} به سطل زبالهٔ سیستم ناموفق بود. برای حذف به روشی دیگر، تنظیم «فایل‌های حذف‌شده» را تغییر دهید.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=این پوشه خالی نیست.
@@ -4198,10 +4322,6 @@ translation=تأیید
 original=Cancel
 translation=لغو
 
-[dialogue.button-allow]
-original=Allow
-translation=اجازه دادن
-
 [dialogue.button-skip]
 original=Skip
 translation=رد کردن
@@ -4289,6 +4409,10 @@ translation=Obsidian نمی‌تواند فایل‌های «.{{extension}}» ر
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=سرفصل نمی‌تواند خالی باشد
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=سرفصل «{{heading}}» در فایل یافت نشد.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=نام پوشه‌ای را بنویسید...
 original=No existing folders found.
 translation=پوشه‌ای پیدا نشد.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=برای جابه‌جایی
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=برای ریختن
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=برای ساختن
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=برای خروج
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=هم‌خوانی با برچسب:
 original=No matches found.
 translation=نتیجه‌ای پیدا
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=میزان ارتباط
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... و {{count}} مورد دیگر.
@@ -5046,14 +5162,6 @@ translation=پرش
 original=Open quick switcher
 translation=گشودن پرش سریع
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=برای جابه‌جایی
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=برای گشودن
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=برای گشودن در زبانه‌ی نو
@@ -5065,14 +5173,6 @@ translation=برای گشودن در سمت راست
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=برای ساختن
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=برای بستن
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=برای انتخاب
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=فراخوان فرمان‌ها با تایپ؛ دیگر نیازی
 original=Open command palette
 translation=گشودن فرمان‌دان
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=برای جابه‌جایی
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=برای استفاده
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=برای خروج
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=فرمانی یافت نشد.
@@ -6198,14 +6286,6 @@ translation=واژه‌شمار
 original=Show word count in the status bar.
 translation=نمایش تعداد واژه‌ها در نوار وضعیت
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=نمودارهای Mermaid در این گاوصندوق نمایش داده شوند؟
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=فقط در صورتی اجازه دهید که به محتوای این گاوصندوق اعتماد دارید.
-
 [plugins.slides.name]
 original=Slides
 translation=نمابرگ
@@ -6325,18 +6405,6 @@ translation={{time}} در فایل الگو با این مقدار جایگزی�
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=همچنین می‌توانید از {{time:HH:mm}} برای نادیده گرفتن یکباره قالب استفاده کنید.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=برای جابه‌جایی
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=برای درج الگو
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=برای خروج
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=یکی کردن کل پرونده با...
 original=No files found.
 translation=پرونده‌ای پیدا نشد.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=برای جابه‌جایی
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=برای یکی کردن
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=برای ساختن نو
@@ -8241,10 +8301,6 @@ translation=برای ساختن نو
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=برای یکی کردن در بالایی
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=برای خروج
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=بیرون کشیدن انتخاب کنونی...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=بیرون کشیدن این سرفصل...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=برای بردن به پایین
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=ساختن بوم نو
 original=Convert to file...
 translation=تبدیل به پرونده...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=برای جاسازی سرفصل
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=برای جاسازی بلوک
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=برای رفتن به گروه
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=نام سرفصل را بنویسید
@@ -9194,6 +9234,14 @@ translation=همهٔ نماها
 original=This view
 translation=این نما
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=انتقال به همهٔ نماها
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=انتقال به این نما
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=یافتن یا ایجاد...
@@ -9246,10 +9294,6 @@ translation=نام نما
 original=View
 translation=نما
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=جدول
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=نام نمایشی
@@ -9287,8 +9331,8 @@ original=New
 translation=جدید
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=در حال نمایش {{count}}
+original=Showing {{shown}} of {{total}}
+translation=در حال نمایش {{shown}} از {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=نمای "{{ view }}" یافت نشد
 original=Unknown view type: {{ viewtype }}
 translation=پایگاه با نوع نمای ناشناخته پیکربندی شده است: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=نوع ویژگی ناشناخته: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=نماها باید یک آرایه باشند
@@ -9653,6 +9701,10 @@ translation=کانبان
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=ویرایش گروه‌ها...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=پنهان کردن ستون
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=]] بنویسید
 original=to link note
 translation=برای پیوند زدن به یادداشت
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=برای لغو
-
 [properties.option-property-type]
 original=Property type
 translation=نوع ویژگی
@@ -10210,6 +10258,10 @@ translation=نوع فراخوان...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=«{{item}}»
+
 [nouns.word-with-count]
 original={{count}} word
 translation=واژه {{count}}
@@ -10257,6 +10309,14 @@ translation=پوشه {{count}}
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation=پوشه {{count}}
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} مورد
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} مورد
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=این پیوند به یک فایل اجرایی اشاره می‌
 original=File: {{path}}
 translation=فایل: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=فایل در اپلیکیشن دیگری باز شود؟
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=این فایل خارج از Obsidian باز خواهد شد. برخی از انواع فایل می‌توانند روی رایانهٔ شما کد اجرا کنند. فقط در صورتی ادامه دهید که به منبع این فایل اعتماد دارید.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=گاوصندوق پیدا نشد.
@@ -10401,6 +10469,22 @@ translation=گاوصندوق پیدا نشد.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=امکان یافتن گاوصندوقی برای URL ‏{{url}} وجود ندارد
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=گاوصندوق‌ها را نمی‌توان در پوشهٔ نصب Obsidian ذخیره کرد، زیرا این پوشه هنگام به‌روزرسانی Obsidian پاک می‌شود
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=این گاوصندوق داخل پوشهٔ نصب Obsidian است
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=نصب‌کننده هنگام به‌روزرسانی Obsidian این پوشه و گاوصندوق داخل آن را پاک می‌کند. برای بستن گاوصندوق، «مدیریت گاوصندوق‌ها» را انتخاب کنید، سپس با گزینهٔ «انتقال گاوصندوق...» آن را به مکان دیگری منتقل کنید.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=مدیریت گاوصندوق‌ها
 
 [main.supported-files]
 original=Supported files

@@ -266,14 +266,6 @@ translation=Sağdan sola (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Notlarda metin yönünü sağdan sola şeklinde ayarlar.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Notlarda Mermaid diyagramlarını göster
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Akış şemalarını, sekans diyagramlarını ve diğer diyagramları “mermaid” kod bloklarından işle.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Yapıştırılan HTML'i Markdown'a dönüştür
@@ -914,14 +906,6 @@ translation=Yüzen gezinme
 original=Navigation buttons float over the content instead of being anchored.
 translation=Gezinme düğmeleri sabitlenmek yerine içeriğin üzerinde yüzer.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Kayan kenar çubukları
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Kenar çubukları üstte yüzmek yerine içeriğin yanına kayar.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Tam ekran
@@ -1498,6 +1482,14 @@ translation=Eklentileri isim veya açıklamaya göre filtrele.
 original=Search plugins...
 translation=Eklenti ara...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Kuruluşunuzun politikası gereği kapatıldı.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Kuruluşunuzun politikası gereği zorunludur.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Topluluk Eklentileri
@@ -1741,6 +1733,14 @@ translation="{{name}}" eklentisi indiriliyor...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Yüklenemedi "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Kuruluşunuzun politikası “{{name}}” eklentisine izin vermiyor.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Kuruluşunuzun politikası gereği izin verilmiyor.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Değiştir
 original=Replace all
 translation=Hepsini değiştir
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Başlığa bağlantı kurmak için
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=# yazın
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=^ karakteri
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=blokları birbirine bağlamak için
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=| karakteri
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Eşleşme bulunamadı
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Resim boyutu: {{size}} piksel genişliğinde
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=kabul etmek
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation="{{name}}" dosyası bulunamadı.
 original=Unrecognized URI action: {{action}}
 translation=Tanınmayan URI eylemi: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI parametresi “append” veya “prepend” gerektirir.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Sil
@@ -2573,10 +2561,6 @@ translation=Boş
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Açık dosya yok
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Yeni dosya oluştur
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=E-posta yeniden gönderilemedi.
 original=Vault location must be a folder.
 translation=Kasa konumu bir klasör olmalıdır.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=iCloud, Obsidian için devre dışı olduğundan iCloud'daki kasalara erişemez veya yeni kasa oluşturamazsınız.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync'i ayarla
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Bu kasa, Obsidian uygulama klasöründe bulunuyor.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Bu kasa şu konumda bulunuyor: {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Bu cihazda
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Dosyalar
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Son açılma
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} etkin
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Devre dışı
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Topluluk eklentilerinin son yüklenmesi {{seconds}} saniye sürdü. Bu kasa yavaş açılıyorsa kısıtlı modu deneyin.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Bu kasanın son açılışı tamamlanamadı.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Bu kasanın son açılışı tamamlanamadı. Bu durum tekrarlanırsa kısıtlı modu deneyin.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Kasayı aç
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Kasayı kısıtlı modda aç
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Kasayı yeniden adlandır...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Kasayı unut...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Cihaz depolamasına taşı...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Kasayı sil...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” kasasını yeniden adlandır
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” kasasını sil
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Bu kasayı silmek, içindeki tüm dosyaları silecektir.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Bu işlem geri alınamaz. Lütfen silmek istediğinizi onaylayın.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” kasasını unut
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Bu kasayı unutmak, hiçbir dosyayı silmeden kasayı kasa listesinden kaldırır.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Unut
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView'ı güncelle
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Android cihazınız güncel değil ve Obsidian'ın çalışması için güncellenmesi gerekiyor. Lütfen “Android WebView” uygulamasını yükseltmenin bir yolunu bulun.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Kasa adı şu karakterlerden hiçbirini içeremez: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian'ın bu konuma erişim izni yok
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Kasa silinemedi.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}} konumundan {{to}} konumuna taşınıyor
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Kasa taşındı, ancak Obsidian uygulama klasöründeki eski kopyası silinemedi.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Hoş geldiniz
@@ -3541,6 +3657,10 @@ translation=Kasa yükleniyor...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Kasa yükleme başarısız oldu: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}” okunamadığından içindeki dosyalar gösterilmiyor. İzinlerini kontrol edin, ardından Obsidian'ı yeniden başlatın.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Obsidian çöpüne taşınacak. Kasanın içindeki ".trash" gizli kl
 original=The file will be permanently deleted.
 translation=Dosya kalıcı olarak silinecek.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}} sistem çöp kutusuna taşınamadı. Yine de silmek için “Silinen dosyalar” ayarını değiştirin.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Bu klasör boş değil.
@@ -4198,10 +4322,6 @@ translation=Onayla
 original=Cancel
 translation=İptal
 
-[dialogue.button-allow]
-original=Allow
-translation=İzin ver
-
 [dialogue.button-skip]
 original=Skip
 translation=Atla
@@ -4289,6 +4409,10 @@ translation=Obsidian “.{{extension}}” dosyalarını açamıyor.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Başlık boş olamaz
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Dosyada “{{heading}}” başlığı bulunamadı.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Bir klasör yazın
 original=No existing folders found.
 translation=Klasörler bulunamadı
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=Gezinmek için
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=Taşıma
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=oluşturmak için
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=Reddet
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Etiketi eşleştir:
 original=No matches found.
 translation=Eşleşme bulunamadı
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Alaka düzeyi
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... ve {{count}} tane daha sonuç.
@@ -5046,14 +5162,6 @@ translation=Geçiş
 original=Open quick switcher
 translation=Hızlı geçişi aç
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=geçmek için
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=açmak için
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=yeni sekmede açmak için
@@ -5065,14 +5173,6 @@ translation=sağa doğru açmak için
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=oluşturmak için
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=vazgeçmek için
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=seçmek için
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Çağırmak için bir komut yazın. Kullanıcı arayüzünü kullanm
 original=Open command palette
 translation=Komut paletini aç
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=Yönlendirmek
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=Kullanmak
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=Vazgeçmek
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Komut bulunamadı.
@@ -6198,14 +6286,6 @@ translation=Kelime sayısı
 original=Show word count in the status bar.
 translation=Durum barında kelime sayısını göster.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Bu kasada Mermaid diyagramları gösterilsin mi?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Yalnızca bu kasanın içeriğine güveniyorsanız izin verin.
-
 [plugins.slides.name]
 original=Slides
 translation=Slaytlar
@@ -6325,18 +6405,6 @@ translation=Şablon dosyasındaki {{time}} bu değerle değiştirilecektir.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Biçimi bir kez geçersiz kılmak için {{time:HH:mm}} öğesini de kullanabilirsiniz.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=Yönlendir
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=Şablon ekle
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=Vazgeç
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Dosyanın tamamını şununla birleştir...
 original=No files found.
 translation=Dosya bulunamadı.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=Yönlendirme
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=Birleştirmek için
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=Yeni bir tane oluştur
@@ -8241,10 +8301,6 @@ translation=Yeni bir tane oluştur
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=Üstte birleştir
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=Vazgeç
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Geçerli seçimi çıkar...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Bu başlığı çıkartın...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=aşağıya doğru hareket ettir
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Yeni tuval oluşturun
 original=Convert to file...
 translation=Dosyaya dönüştür...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=başlığı gömmek için
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=bloğu gömmek için
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=gruba gitmek için
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Başlığın adını yazın
@@ -9194,6 +9234,14 @@ translation=Tüm görünümler
 original=This view
 translation=Bu görünüm
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Tüm görünümlere taşı
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Bu görünüme taşı
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Bul veya oluştur...
@@ -9246,10 +9294,6 @@ translation=Görünüm adı
 original=View
 translation=Görünüm
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tablo
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Görünen ad
@@ -9287,8 +9331,8 @@ original=New
 translation=Yeni
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} gösteriliyor
+original=Showing {{shown}} of {{total}}
+translation={{total}} öğeden {{shown}} gösteriliyor
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation="{{ view }}" görünümü bulunamadı
 original=Unknown view type: {{ viewtype }}
 translation=Bilinmeyen görünüm türü: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Bilinmeyen özellik türü: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Görünümler bir dizi olmalıdır
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Grupları düzenle...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Sütunu gizle
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Yazın [[
 original=to link note
 translation=nota bağlantı oluşturmak için
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=kapatmak için
-
 [properties.option-property-type]
 original=Property type
 translation=Özellik tipi
@@ -10210,6 +10258,10 @@ translation=Callout türü...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} kelime
@@ -10257,6 +10309,14 @@ translation={{count}} klasör
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} klasör
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} öğe
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} öğe
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Bu bağlantı yürütülebilir bir dosyaya işaret ediyor. Çalışt
 original=File: {{path}}
 translation=Dosya: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Dosya başka bir uygulamada açılsın mı?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Bu dosya Obsidian dışında açılacak. Bazı dosya türleri bilgisayarınızda kod çalıştırabilir. Yalnızca bu dosyanın kaynağına güveniyorsanız devam edin.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Kasa bulunamadı.
@@ -10401,6 +10469,22 @@ translation=Kasa bulunamadı.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL'si için bir kasa bulunamadı
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian güncellendiğinde kurulum klasörü silindiğinden kasalar bu klasörde saklanamaz
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Bu kasa Obsidian'ın kurulum klasöründe
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian güncellendiğinde yükleyici bu klasörü ve içindeki bu kasayı siler. Kasayı kapatmak için "Kasaları yönet" seçeneğini seçin, ardından kasayı başka bir konuma taşımak için "Kasayı taşı..." seçeneğini kullanın.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Kasaları yönet
 
 [main.supported-files]
 original=Supported files

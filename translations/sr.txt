@@ -266,14 +266,6 @@ translation=Са десна на лево (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Подешава смер текста белешки да буде са десна на лево.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Прикажи Mermaid дијаграме у белешкама
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Рендеруј дијаграме тока, секвенцијалне дијаграме и друге дијаграме из „mermaid” блокова кода.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Аутоматски конверту ХТМЛ
@@ -914,14 +906,6 @@ translation=Плутајућа навигација
 original=Navigation buttons float over the content instead of being anchored.
 translation=Дугмад за навигацију плутају преко садржаја уместо да буду усидрена.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Клизне бочне траке
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Бочне траке клизе уз ивицу садржаја уместо да плутају изнад њега.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Цео екран
@@ -1498,6 +1482,14 @@ translation=Филтрирајте плагине по имену или опи�
 original=Search plugins...
 translation=Претражи плагине...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Искључено смерницама ваше организације.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Обавезно према смерницама ваше организације.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Плагин треће стране
@@ -1741,6 +1733,14 @@ translation=Инсталирање плагина "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Неуспешно инсталирање плагина "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Додатак „{{name}}“ није дозвољен смерницама ваше организације.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Није дозвољено смерницама ваше организације.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Замени
 original=Replace all
 translation=Замени све
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Укуцај #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=за линковање на наслов
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Укуцај ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=за линковање на блокове
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Укуцај |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Није пронађен никакав резултат
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Величина слике: {{size}} пиксела широка
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=за прихватање
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Датотека "{{name}}" није пронађена.
 original=Unrecognized URI action: {{action}}
 translation=Непрепозната URI радња: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI параметар „{{param}}“ захтева „append“ или „prepend“.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Обриши
@@ -2573,10 +2561,6 @@ translation=Празно
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Нема отворене датотеке
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Креирај нову датотеку
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Није успело поновно слање е-поште.
 original=Vault location must be a folder.
 translation=Локација трезора мора бити фасцикла.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Не можеш да приступиш трезорима нити да их направиш на iCloud-у јер је он онемогућен за Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Подеси Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Овај трезор се налази у фасцикли апликације Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Овај трезор се налази на путањи {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=На овом уређају
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Датотеке
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Последњи пут отворен
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} омогућено
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Онемогућено
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Учитавање додатака заједнице је прошли пут трајало {{seconds}} секунди. Ако се овај трезор споро отвара, пробај ограничени режим.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Отварање овог трезора прошли пут није довршено.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Отварање овог трезора прошли пут није довршено. Ако се то понавља, пробај ограничени режим.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Отвори трезор
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Отвори трезор у ограниченом режиму
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Преименуј трезор...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Заборави трезор...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Премести у складиште уређаја...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Обриши трезор...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Преименуј трезор „{{name}}“
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Обриши трезор „{{name}}“
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Брисањем овог трезора обрисаћеш све датотеке у њему.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Ова радња је неповратна. Потврди да желиш да га обришеш.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Заборави трезор „{{name}}“
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Заборављањем овог трезора уклонићеш га са листе трезора без брисања датотека.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Заборави
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Ажурирај Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Твој Android уређај није ажуриран и мора да се ажурира да би Obsidian радио. Пронађи начин да надоградиш апликацију „Android WebView“.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Назив трезора не сме да садржи ниједан од ових знакова: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian нема дозволу за приступ овој локацији
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Брисање трезора није успело.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Премештање из {{from}} у {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Трезор је премештен, али стара копија у фасцикли апликације Obsidian није могла да се обрише.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Добродошлица
@@ -3541,6 +3657,10 @@ translation=Учитавање сеф...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Није успело учитавање сеф: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Није могуће прочитати „{{path}}“, па датотеке са те путање нису приказане. Провери дозволе за ту путању, па поново покрени Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Биће премештен у вашу Obsidian корпу, кој�
 original=The file will be permanently deleted.
 translation=Датотека ће бити трајно обрисана.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Премештање ставке {{item}} у системску корпу није успело. Да ипак обришеш, промени подешавање „Обрисане датотеке“.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Ова фасцикла није празна.
@@ -4198,10 +4322,6 @@ translation=Потврди
 original=Cancel
 translation=Откажи
 
-[dialogue.button-allow]
-original=Allow
-translation=Дозволи
-
 [dialogue.button-skip]
 original=Skip
 translation=Прескочи
@@ -4289,6 +4409,10 @@ translation=Obsidian не може да отвори датотеке типа �
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Наслов не може бити празан
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Наслов „{{heading}}“ није пронађен у датотеци.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Унеси фолдер
 original=No existing folders found.
 translation=Нису пронађени фолдери.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=за навигацију
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=за премештање
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=за креирање
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=за одбацивање
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Поклапа се са ознаком:
 original=No matches found.
 translation=Нема пронађених поклапања.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Релевантност
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... и још {{count}} поклапање.
@@ -5046,14 +5162,6 @@ translation=Прекидач
 original=Open quick switcher
 translation=Отвори брзи прекидач
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=за навигацију
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=за отварање
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=за отварање у новој картици
@@ -5065,14 +5173,6 @@ translation=за отварање десно
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=за креирање
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=за затварање
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=за одабир
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Укуцајте команду да бисте је активир�
 original=Open command palette
 translation=Отвори командну палету
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=да бисте се кретали
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=да бисте користили
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=да бисте затворили
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Нису пронађене команде.
@@ -6198,14 +6286,6 @@ translation=Број речи
 original=Show word count in the status bar.
 translation=Приказује број речи у статусној траци.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Приказати Mermaid дијаграме у овом трезору?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Дозволите само ако верујете садржају овог трезора.
-
 [plugins.slides.name]
 original=Slides
 translation=Слајдови
@@ -6325,18 +6405,6 @@ translation={{time}} у фајлу шаблона биће замењен ово
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Такође можете користити {{time:HH:mm}} да бисте једнократно променили формат.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=за навигацију
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=за убацивање шаблона
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=за затварање
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Спаји целу датотеку са...
 original=No files found.
 translation=Ниједна датотека није пронађена.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=да бисте се кретали
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=да спојите
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=да бисте креирали ново
@@ -8241,10 +8301,6 @@ translation=да бисте креирали ново
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=да спојите на врху
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=да одбаците
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Извуците тренутни избор...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Извуците овај наслов...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=да бисте преместили на дно
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Креирај ново платно
 original=Convert to file...
 translation=Претвори у фајл...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=за уградњу наслова
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=за уградњу блока
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=за навигацију до групе
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Укуцајте име наслова
@@ -9194,6 +9234,14 @@ translation=Сви прикази
 original=This view
 translation=Овај приказ
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Премести у све приказе
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Премести у овај приказ
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Пронађи или направи...
@@ -9246,10 +9294,6 @@ translation=Назив приказа
 original=View
 translation=Приказ
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Табела
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Приказано име
@@ -9287,8 +9331,8 @@ original=New
 translation=Ново
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Приказује се {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Приказује се {{shown}} од {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Приказ „{{ view }}“ није пронађен
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Непознат тип својства: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Прикази морају бити низ
@@ -9653,6 +9701,10 @@ translation=Канбан
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Уреди групе...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Сакриј колону
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Укуцај [[
 original=to link note
 translation=за линковање белешке
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=за одбацивање
-
 [properties.option-property-type]
 original=Property type
 translation=Тип својства
@@ -10210,6 +10258,10 @@ translation=Тип позива...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=„{{item}}“
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} реч
@@ -10257,6 +10309,14 @@ translation={{count}} фасцикла
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} фасцикли
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} ставка
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} ставки
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Ова веза указује на извршну датотеку.
 original=File: {{path}}
 translation=Датотека: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Отворити датотеку у другој апликацији?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Ова датотека ће се отворити изван апликације Obsidian. Неки типови датотека могу да покрену кôд на твом рачунару. Настави само ако верујеш извору ове датотеке.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Трезор није пронађен.
@@ -10401,6 +10469,22 @@ translation=Трезор није пронађен.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Није могуће пронаћи трезор за URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Трезори не могу да се чувају у инсталационој фасцикли апликације Obsidian јер се она брише при ажурирању апликације Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Овај трезор се налази у инсталационој фасцикли апликације Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Инсталатер брише ову фасциклу при ажурирању апликације Obsidian, а са њом и овај трезор. Изабери „Управљај трезорима“ да затвориш трезор, а затим за њега изабери „Премести трезор...“ да га преместиш на друго место.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Управљај трезорима
 
 [main.supported-files]
 original=Supported files

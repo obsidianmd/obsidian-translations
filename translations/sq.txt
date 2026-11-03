@@ -266,14 +266,6 @@ translation=Nga e djathta në të majtë (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Sets the text direction of notes to display in right-to-left.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Shfaq diagramet Mermaid në shënime
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Rendero diagrame rrjedhe, diagrame sekuence dhe diagrame të tjera nga blloqet e kodit “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Konvertim automatik i HTML
@@ -914,14 +906,6 @@ translation=Navigim lundrues
 original=Navigation buttons float over the content instead of being anchored.
 translation=Butonat e navigimit lundrojnë mbi përmbajtje në vend që të jenë të fiksuar.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Shirita anësorë rrëshqitës
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Shiritat anësorë rrëshqasin në anë të përmbajtjes në vend që të lundrojnë sipër saj.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Ekran i plotë
@@ -1498,6 +1482,14 @@ translation=Filtro shtojcat sipas emrit ose përshkrimit.
 original=Search plugins...
 translation=Kërko shtojca...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Çaktivizuar nga politika e organizatës suaj.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Kërkohet nga politika e organizatës suaj.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Shtojca të treta
@@ -1741,6 +1733,14 @@ translation=Duke instaluar shtojcën "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Instalimi i shtojcës "{{name}}" dështoi.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Shtojca “{{name}}” nuk lejohet nga politika e organizatës suaj.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Nuk lejohet nga politika e organizatës suaj.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Zëvendëso
 original=Replace all
 translation=Zëvendëso të gjitha
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Shtyp #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=për të lidhur një titull
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Shtyp ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=për të lidhur një bllok
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Shtyp |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Nuk ka rezultate
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Madhësia e imazhit: {{size}}px gjerësi
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=për ta pranuar
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Dokumenti "{{name}}" nuk u gjend.
 original=Unrecognized URI action: {{action}}
 translation=Veprim URI i panjohur: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Parametri URI “{{param}}” kërkon “append” ose “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Fshi
@@ -2573,10 +2561,6 @@ translation=Bosh
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Nuk ka shënime të hapur
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Krijo një dokument të ri shënimesh
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Dështoi ridërgimi i email-it.
 original=Vault location must be a folder.
 translation=Vendndodhja e kasafortës duhet të jetë një dosje.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Nuk mund të hapni ose të krijoni kasaforta në iCloud sepse është çaktivizuar për Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Konfiguro Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Kjo kasafortë ndodhet në dosjen e aplikacionit Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Kjo kasafortë ndodhet te {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Në këtë pajisje
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Skedarë
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Hapur së fundmi
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} të aktivizuara
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Të çaktivizuara
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Shtojcave të komunitetit iu deshën {{seconds}} sekonda për t'u ngarkuar herën e fundit. Nëse kjo kasafortë hapet ngadalë, provoni modalitetin e kufizuar.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Hapja e kësaj kasaforte nuk përfundoi herën e fundit.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Hapja e kësaj kasaforte nuk përfundoi herën e fundit. Nëse kjo vazhdon të ndodhë, provoni modalitetin e kufizuar.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Hap kasafortën
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Hap kasafortën në modalitetin e kufizuar
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Riemërto kasafortën...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Harro kasafortën...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Zhvendos në hapësirën ruajtëse të pajisjes...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Fshi kasafortën...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Riemërto kasafortën “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Fshi kasafortën “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Fshirja e kësaj kasaforte do të fshijë të gjithë skedarët brenda saj.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Ky veprim është i pakthyeshëm. Ju lutemi, konfirmoni që dëshironi ta fshini.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Harro kasafortën “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Harrimi i kësaj kasaforte do ta heqë nga lista e kasafortave pa fshirë asnjë skedar.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Harro
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Përditëso Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Pajisja juaj Android nuk është e përditësuar dhe duhet përditësuar që Obsidian të funksionojë. Ju lutemi, gjeni një mënyrë për të përditësuar aplikacionin "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Emri i kasafortës nuk mund të përmbajë asnjë nga këto shenja: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian nuk ka leje për të hyrë në këtë vendndodhje
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Fshirja e kasafortës dështoi.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Po zhvendoset nga {{from}} te {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Kasaforta u zhvendos, por kopja e vjetër në dosjen e aplikacionit Obsidian nuk mund të fshihej.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Mirë se vini
@@ -3541,6 +3657,10 @@ translation=Duke ngarkuar kasafortën...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Ngarkimi i kasafortës dështoi: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Nuk mund të lexohet “{{path}}”, ndaj skedarët e saj nuk shfaqen. Kontrolloni lejet e saj, pastaj rinisni Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Objekti do dërgohet ne mbeturinat e Obsidian, të cilat ndodhen në
 original=The file will be permanently deleted.
 translation=Ky skedar do të fshihet përgjithmonë.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Zhvendosja e {{item}} në koshin e sistemit dështoi. Për ta fshirë gjithsesi, ndryshoni cilësimin “Skedarët e fshirë”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Kjo dosje nuk është bosh.
@@ -4198,10 +4322,6 @@ translation=Konfirmo
 original=Cancel
 translation=Anullo
 
-[dialogue.button-allow]
-original=Allow
-translation=Lejo
-
 [dialogue.button-skip]
 original=Skip
 translation=Kalo
@@ -4289,6 +4409,10 @@ translation=Obsidian nuk mund të hapë skedarë “.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Titulli nuk mund të jetë bosh
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Titulli “{{heading}}” nuk u gjet në skedar.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Shkruaj emrin e një dosjeje
 original=No existing folders found.
 translation=Nuk u gjet ndonjë dosje.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=për të naviguar
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=për të zhvendosur
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=për të krijuar
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=për të anulluar
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Përputhet me etiketimin:
 original=No matches found.
 translation=Nuk u gjet ndonjë element.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Përkatësia
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... dhe {{count}} përputhje të tjera.
@@ -5046,14 +5162,6 @@ translation=Ndërruesi
 original=Open quick switcher
 translation=Hap ndërruesin e shpejtë
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=për të naviguar
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=për të hapur një dokument
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=për ta hapur në skedë të re
@@ -5065,14 +5173,6 @@ translation=për ta hapur në të djathtë
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=për të krijuar diçka
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=për të anulluar
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=për të përzgjedhur
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Shtypni një komandë për t'a përdorur. Nuk keni nevojë të përd
 original=Open command palette
 translation=Hap paletën e komandavae
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=për të naviguar
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=për të përdorur
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=për të anulluar
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Nuk ka komanda.
@@ -6198,14 +6286,6 @@ translation=Numri i fjalëve
 original=Show word count in the status bar.
 translation=Shfaq numrin e fjalëve ne shiritin e gjendjes.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Të shfaqen diagramet Mermaid në këtë kasafortë?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Lejo vetëm nëse i beson përmbajtjes së kësaj kasaforte.
-
 [plugins.slides.name]
 original=Slides
 translation=Slide-t
@@ -6325,18 +6405,6 @@ translation={{time}} në dokumentin shabllon do zëvendësohet me këtë vlerë.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Mund të përdorni gjithashtu {{time:HH:mm}} për t'a mbishkruar formatin një herë.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=për të naviguar
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=për të shtuar një shabllon
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=për të anulluar
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Bashko të gjithë dokumentin me...
 original=No files found.
 translation=Nuk ka dokumente.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=për të naviguar
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=për të bashkuar
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=për të krijuar një të ri
@@ -8241,10 +8301,6 @@ translation=për të krijuar një të ri
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=për të bashkuar në krye
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=për të anulluar
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Ekstrakto përzgjedhjen aktuale...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Ekstrakto këtë titull...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=për t'a vendosur në fund
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Krijo canvas të ri
 original=Convert to file...
 translation=Konverto në skedar...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=për të ngulitur titullin
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=për të ngulitur bllokun
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=për të naviguar te grupi
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Type name of heading
@@ -9194,6 +9234,14 @@ translation=Të gjitha pamjet
 original=This view
 translation=Kjo pamje
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Zhvendos në të gjitha pamjet
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Zhvendos në këtë pamje
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Gjej ose krijo...
@@ -9246,10 +9294,6 @@ translation=Emri i pamjes
 original=View
 translation=Pamja
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabelë
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Emri i shfaqur
@@ -9287,8 +9331,8 @@ original=New
 translation=E re
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Po shfaqen {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Po shfaqen {{shown}} nga {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Pamja "{{ view }}" nuk u gjet
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Lloj i panjohur i vetisë: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Pamjet duhet të jenë një varg
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Redakto grupet...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Fshih kolonën
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Shkruaj [[
 original=to link note
 translation=për të lidhur shënimin
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=për ta mbyllur
-
 [properties.option-property-type]
 original=Property type
 translation=Lloji i vetisë
@@ -10210,6 +10258,10 @@ translation=Lloji i bllokut të theksimit...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} fjalë
@@ -10257,6 +10309,14 @@ translation={{count}} dosje
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} dosje
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} element
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} elemente
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Kjo lidhje tregon te një skedar i ekzekutueshëm. Ekzekutimi i tij 
 original=File: {{path}}
 translation=Skedari: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Të hapet skedari në një aplikacion tjetër?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Ky skedar do të hapet jashtë Obsidian. Disa lloje skedarësh mund të ekzekutojnë kod në kompjuterin tuaj. Vazhdoni vetëm nëse i besoni burimit të këtij skedari.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Kasaforta nuk u gjet.
@@ -10401,6 +10469,22 @@ translation=Kasaforta nuk u gjet.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Nuk mund të gjendet një kasafortë për URL-në {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Kasafortat nuk mund të ruhen në dosjen e instalimit të Obsidian sepse ajo fshihet kur Obsidian përditësohet
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Kjo kasafortë ndodhet brenda dosjes së instalimit të Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Instaluesi e fshin këtë dosje kur Obsidian përditësohet, bashkë me kasafortën brenda saj. Zgjidhni "Menaxho kasafortat" për ta mbyllur kasafortën, pastaj përdorni "Zhvendos kasafortën..." për ta zhvendosur diku tjetër.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Menaxho kasafortat
 
 [main.supported-files]
 original=Supported files

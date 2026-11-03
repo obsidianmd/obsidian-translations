@@ -266,14 +266,6 @@ translation=दायाँ-देखि-बायाँ (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=दायाँ-देखि-बायाँ प्रदर्शन गर्न नोटहरूको पाठ दिशा सेट गर्दछ।
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=टिप्पणीहरूमा Mermaid आरेखहरू देखाउनुहोस्
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=“mermaid” कोड ब्लकहरूबाट फ्लोचार्ट, अनुक्रम आरेख, र अन्य आरेखहरू रेन्डर गर्नुहोस्।
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=HTML स्वतः रूपान्तरण
@@ -914,14 +906,6 @@ translation=फ्लोटिङ नेभिगेसन
 original=Navigation buttons float over the content instead of being anchored.
 translation=नेभिगेसन बटनहरू स्थिर रूपमा टाँसिनुको सट्टा सामग्रीमाथि तैरिन्छन्।
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=स्लाइडिङ साइडबारहरू
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=साइडबारहरू माथि तैरिनुको सट्टा सामग्रीको छेउतिर स्लाइड हुन्छन्।
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=पूर्ण स्क्रिन
@@ -1498,6 +1482,14 @@ translation=नाम वा विवरण अनुसार प्लगइ�
 original=Search plugins...
 translation=प्लगइनहरू खोज्नुहोस्...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=तपाईंको संस्थाको नीतिअनुसार बन्द गरिएको छ।
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=तपाईंको संस्थाको नीतिअनुसार आवश्यक छ।
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=तेस्रो-पक्ष प्लगइन
@@ -1741,6 +1733,14 @@ translation=प्लगइन स्थापना गर्दै "{{name}}".
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=प्लगइन स्थापना गर्न असफल भयो "{{name}}"।
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=तपाईंको संस्थाको नीतिले “{{name}}” प्लगइनलाई अनुमति दिँदैन।
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=तपाईंको संस्थाको नीतिले अनुमति दिँदैन।
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=बदल्नुहोस्
 original=Replace all
 translation=सबै बदल्नुहोस्
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=टाइप #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=शीर्षक लिङ्क गर्न
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=प्रकार ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=ब्लकहरू लिङ्क गर्न
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=प्रकार |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=कुनै मेल फेला परेन
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=तस्बिर आकार: {{size}}px चौडाइ
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=स्वीकार गर्न
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=फाइल "{{name}}" फेला परेन।
 original=Unrecognized URI action: {{action}}
 translation=अपरिचित URI कार्य: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI प्यारामिटरका लागि “append” वा “prepend” आवश्यक छ।
+
 [interface.delete-action-short-name]
 original=Delete
 translation=मेट्नुहोस्
@@ -2573,10 +2561,6 @@ translation=खाली
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=कुनै पनि फाइल खुला छैन
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=नयाँ फाइल बनाउनुहोस्
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=इमेल पुनः पठाउन असफल भयो।
 original=Vault location must be a folder.
 translation=भल्टको स्थान फोल्डर हुनुपर्छ।
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Obsidian का लागि iCloud असक्षम गरिएको हुनाले तपाईंले त्यसमा भल्टहरू खोल्न वा सिर्जना गर्न सक्नुहुन्न।
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync सेटअप गर्नुहोस्
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=यो भल्ट Obsidian एपको फोल्डरमा छ।
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=यो भल्ट {{path}} मा छ
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=यस उपकरणमा
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=फाइलहरू
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=पछिल्लो पटक खोलिएको
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} सक्षम
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=असक्षम
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=पछिल्लो पटक समुदाय प्लगइनहरू लोड हुन {{seconds}} सेकेन्ड लाग्यो। यो भल्ट खोल्न ढिलो हुन्छ भने प्रतिबन्धित मोड प्रयोग गरी हेर्नुहोस्।
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=पछिल्लो पटक यो भल्ट पूर्ण रूपमा खुल्न सकेन।
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=पछिल्लो पटक यो भल्ट पूर्ण रूपमा खुल्न सकेन। यस्तो भइरहेमा प्रतिबन्धित मोड प्रयोग गरी हेर्नुहोस्।
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=भल्ट खोल्नुहोस्
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=प्रतिबन्धित मोडमा भल्ट खोल्नुहोस्
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=भल्टको नाम परिवर्तन गर्नुहोस्...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=भल्ट सूचीबाट हटाउनुहोस्...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=उपकरणको भण्डारणमा सार्नुहोस्...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=भल्ट मेटाउनुहोस्...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” भल्टको नाम परिवर्तन गर्नुहोस्
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” भल्ट मेटाउनुहोस्
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=यो भल्ट मेटाउँदा यसमा भएका सबै फाइलहरू मेटिनेछन्।
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=यो कार्य पूर्ववत गर्न सकिँदैन। कृपया तपाईं यसलाई मेटाउन चाहनुहुन्छ भनी पुष्टि गर्नुहोस्।
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” भल्ट सूचीबाट हटाउनुहोस्
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=यो भल्ट सूचीबाट हटाउँदा कुनै पनि फाइल नमेटाई भल्टहरूको सूचीबाट मात्र हटाइनेछ।
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=सूचीबाट हटाउनुहोस्
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView अपडेट गर्नुहोस्
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=तपाईंको Android उपकरण अद्यावधिक छैन र Obsidian चल्नका लागि यसलाई अपडेट गर्नुपर्छ। कृपया "Android WebView" एप अपग्रेड गर्ने उपाय खोज्नुहोस्।
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=भल्टको नाममा यीमध्ये कुनै पनि वर्ण राख्न मिल्दैन: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian लाई यो स्थानमा पहुँच गर्ने अनुमति छैन
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=भल्ट मेटाउन सकिएन।
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}} बाट {{to}} मा सारिँदै छ
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=भल्ट सारियो, तर Obsidian एपको फोल्डरमा रहेको पुरानो प्रतिलिपि मेटाउन सकिएन।
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=स्वागत छ
@@ -3541,6 +3657,10 @@ translation=भल्ट लोड हुँदै...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=भल्ट लोड गर्न असफल: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}” पढ्न नसकिएकाले यसका फाइलहरू देखाइएका छैनन्। यसका अनुमतिहरू जाँच गर्नुहोस्, त्यसपछि Obsidian पुनः सुरु गर्नुहोस्।
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=यो तपाइँको ओब्सिडियन रद्�
 original=The file will be permanently deleted.
 translation=फाइल सदाका लागि मेटिनेछ।
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}} लाई प्रणालीको रद्दीटोकरीमा सार्न सकिएन। तैपनि मेटाउन “मेटाइएका फाइलहरू” सेटिङ परिवर्तन गर्नुहोस्।
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=यो फोल्डर खाली छैन।
@@ -4198,10 +4322,6 @@ translation=पुष्टि गर्नुहोस्
 original=Cancel
 translation=रद्द गर्नुहोस्
 
-[dialogue.button-allow]
-original=Allow
-translation=अनुमति दिनुहोस्
-
 [dialogue.button-skip]
 original=Skip
 translation=छोड्नुहोस्
@@ -4289,6 +4409,10 @@ translation=Obsidian ले “.{{extension}}” फाइलहरू खोल
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=शीर्षक खाली हुन सक्दैन
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=फाइलमा “{{heading}}” शीर्षक फेला परेन।
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=फोल्डर टाइप गर्नुहोस्
 original=No existing folders found.
 translation=कुनै फोल्डर भेटिएन।
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=नेभिगेट गर्न
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=सार्नु
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=सिर्जना गर्न
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=खारिज गर्न
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=ट्याग मिलाउनुहोस्:
 original=No matches found.
 translation=कुनै पनि मेल भेटिएन।
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=सान्दर्भिकता
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... र {{count}} थप मेल।
@@ -5046,14 +5162,6 @@ translation=स्विचर
 original=Open quick switcher
 translation=द्रुत स्विचर खोल्नुहोस्
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=नेभिगेट गर्न
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=खोल्न
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=नयाँ ट्याबमा खोल्न
@@ -5065,14 +5173,6 @@ translation=दायाँ खोल्न
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=सिर्जना गर्न
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=खारिज गर्न
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=चयन गर्न
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=आह्वान गर्न आदेश टाइप गर्�
 original=Open command palette
 translation=कमाण्ड प्यालेट खोल्नुहोस्
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=नेभिगेट गर्न
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=प्रयोग गर्न
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=खारिज गर्न
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=कुनै आदेश भेटिएन।
@@ -6198,14 +6286,6 @@ translation=शब्द गणना
 original=Show word count in the status bar.
 translation=स्थिति पट्टीमा शब्द गणना देखाउनुहोस्।
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=यस भल्टमा Mermaid आरेखहरू देखाउने?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=यस भल्टका सामग्रीहरूमा विश्वास भए मात्र अनुमति दिनुहोस्।
-
 [plugins.slides.name]
 original=Slides
 translation=स्लाइडहरू
@@ -6325,18 +6405,6 @@ translation=टेम्प्लेट फाइलमा {{time}} लाई �
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=तपाईँले {{time:HH:mm}} लाई एक पटक ढाँचा ओभरराइड गर्न पनि प्रयोग गर्न सक्नुहुन्छ।
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=नेभिगेट गर्न
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=टेम्प्लेट घुसाउन
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=खारिज गर्न
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=पूरै फाइल मर्ज गर्नुहोस्..
 original=No files found.
 translation=कुनै फाइल भेटिएन।
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=नेभिगेट गर्न
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=मर्ज गर्न
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=नयाँ सिर्जना गर्न
@@ -8241,10 +8301,6 @@ translation=नयाँ सिर्जना गर्न
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=शीर्षमा मर्ज गर्न
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=खारिज गर्न
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=हालको चयन निकाल्नुहोस्...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=यो शीर्षक निकाल्नुहोस्...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=तलमा सार्न
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=नयाँ क्यानभास सिर्जना गर�
 original=Convert to file...
 translation=फाइलमा रूपान्तरण गर्नुहोस्...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=हेडिङ इम्बेड गर्न
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=ब्लक इम्बेड गर्न
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=समूहमा नेभिगेट गर्न
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=शीर्षकको नाम टाइप गर्नुहोस्
@@ -9194,6 +9234,14 @@ translation=सबै दृश्यहरू
 original=This view
 translation=यो दृश्य
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=सबै दृश्यहरूमा सार्नुहोस्
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=यस दृश्यमा सार्नुहोस्
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=फेला पार्नुहोस् वा सिर्जना गर्नुहोस्...
@@ -9246,10 +9294,6 @@ translation=दृश्य नाम
 original=View
 translation=दृश्य
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=तालिका
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=प्रदर्शन नाम
@@ -9287,8 +9331,8 @@ original=New
 translation=नयाँ
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} देखाउँदै
+original=Showing {{shown}} of {{total}}
+translation={{total}} मध्ये {{shown}} देखाउँदै
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=दृश्य "{{ view }}" फेला परेन
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=अज्ञात गुण प्रकार: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=दृश्यहरू एरे हुनुपर्छ
@@ -9653,6 +9701,10 @@ translation=कानबान
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=समूहहरू सम्पादन गर्नुहोस्...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=स्तम्भ लुकाउनुहोस्
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=टाइप गर्नुहोस् [[
 original=to link note
 translation=टिप्पणी लिंक गर्न
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=बन्द गर्न
-
 [properties.option-property-type]
 original=Property type
 translation=गुण प्रकार
@@ -10210,6 +10258,10 @@ translation=कलआउट प्रकार...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} शब्द
@@ -10257,6 +10309,14 @@ translation={{count}} फोल्डर
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} फोल्डरहरू
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} वस्तु
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} वस्तुहरू
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=यो लिङ्कले कार्यान्वयनयो
 original=File: {{path}}
 translation=फाइल: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=अर्को एपमा फाइल खोल्ने?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=यो फाइल Obsidian बाहिर खुल्नेछ। केही प्रकारका फाइलहरूले तपाईंको कम्प्युटरमा कोड चलाउन सक्छन्। यस फाइलको स्रोतमा विश्वास गर्नुहुन्छ भने मात्र अगाडि बढ्नुहोस्।
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=भल्ट फेला परेन।
@@ -10401,6 +10469,22 @@ translation=भल्ट फेला परेन।
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=URL {{url}} का लागि भल्ट फेला पार्न सकिएन
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian अपडेट हुँदा यसको स्थापना फोल्डर मेटिने भएकाले त्यसमा भल्टहरू राख्न मिल्दैन
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=यो भल्ट Obsidian को स्थापना फोल्डरभित्र छ
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian अपडेट हुँदा स्थापकले यो फोल्डर र यसभित्रको भल्ट मेटाउँछ। भल्ट बन्द गर्न "भल्टहरू व्यवस्थापन गर्नुहोस्" छान्नुहोस्, त्यसपछि यसलाई अन्यत्र सार्न उक्त भल्टको "भल्ट सार्नुहोस्..." विकल्प प्रयोग गर्नुहोस्।\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=भल्टहरू व्यवस्थापन गर्नुहोस्
 
 [main.supported-files]
 original=Supported files

@@ -266,14 +266,6 @@ translation=Αριστερά προς τα δεξιά (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Αλλάζει την κατεύθυνση κειμένου από αριστερά-στα-δεξιά.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Εμφάνιση διαγραμμάτων Mermaid στις σημειώσεις
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Απόδοση διαγραμμάτων ροής, διαγραμμάτων ακολουθίας και άλλων διαγραμμάτων από μπλοκ κώδικα «mermaid».
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Αυτόματη μετατροπή HTML
@@ -914,14 +906,6 @@ translation=Αιωρούμενη πλοήγηση
 original=Navigation buttons float over the content instead of being anchored.
 translation=Τα κουμπιά πλοήγησης αιωρούνται πάνω από το περιεχόμενο αντί να είναι αγκυρωμένα.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Συρόμενες πλευρικές γραμμές
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Οι πλευρικές γραμμές σύρονται στο πλάι του περιεχομένου αντί να αιωρούνται από πάνω του.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Πλήρης οθόνη
@@ -1498,6 +1482,14 @@ translation=Φιλτράρετε πρόσθετα κατά όνομα ή περ�
 original=Search plugins...
 translation=Αναζήτηση πρόσθετων...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Απενεργοποιημένο από την πολιτική του οργανισμού σας.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Απαιτείται από την πολιτική του οργανισμού σας.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Πρόσθετα κοινότητας
@@ -1741,6 +1733,14 @@ translation=Eγκατεστημένο πρόσθετο "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Αδυναμία εγκατάστασης προσθέτου "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Το πρόσθετο «{{name}}» δεν επιτρέπεται από την πολιτική του οργανισμού σας.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Δεν επιτρέπεται από την πολιτική του οργανισμού σας.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Αντικατάσταση
 original=Replace all
 translation=Αντικατάσταση όλων
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Εισάγεται #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=για σύνδεμο επικεφαλίδας
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Εισάγεται ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=για σύνδεσμο μπλοκ
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Εισάγεται |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Δεν βρέθηκε αποτέλεσμα
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Μέγεθος εικόνας: πλάτος {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=για αποδοχή
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Δεν βρέθηκε το αρχείο"{{name}}".
 original=Unrecognized URI action: {{action}}
 translation=Μη αναγνωρισμένη ενέργεια URI: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Η παράμετρος URI «{{param}}» απαιτεί «append» ή «prepend».
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Διαγραφή
@@ -2573,10 +2561,6 @@ translation=Κενό
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Κανένα ανοιγμένο αρχείο
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Δημιουργήσετε αρχείο
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Αποτυχία επαναποστολής του email.
 original=Vault location must be a folder.
 translation=Η τοποθεσία του θησαυροφυλακίου πρέπει να είναι φάκελος.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Δεν μπορείτε να αποκτήσετε πρόσβαση ή να δημιουργήσετε θησαυροφυλάκια στο iCloud, επειδή είναι απενεργοποιημένο για το Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Ρύθμιση του Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Αυτό το θησαυροφυλάκιο βρίσκεται στον φάκελο της εφαρμογής Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Αυτό το θησαυροφυλάκιο βρίσκεται στη διαδρομή {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Σε αυτή τη συσκευή
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Αρχεία
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Τελευταίο άνοιγμα
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} ενεργοποιημένα
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Απενεργοποιημένα
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Τα πρόσθετα κοινότητας χρειάστηκαν {{seconds}} δευτερόλεπτα για να φορτωθούν την τελευταία φορά. Αν αυτό το θησαυροφυλάκιο αργεί να ανοίξει, δοκιμάστε την περιορισμένη λειτουργία.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Το άνοιγμα αυτού του θησαυροφυλακίου δεν ολοκληρώθηκε την τελευταία φορά.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Το άνοιγμα αυτού του θησαυροφυλακίου δεν ολοκληρώθηκε την τελευταία φορά. Αν το πρόβλημα επιμένει, δοκιμάστε την περιορισμένη λειτουργία.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Άνοιγμα θησαυροφυλακίου
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Άνοιγμα θησαυροφυλακίου σε περιορισμένη λειτουργία
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Μετονομασία θησαυροφυλακίου...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Κατάργηση θησαυροφυλακίου από τη λίστα...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Μετακίνηση στον χώρο αποθήκευσης της συσκευής...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Διαγραφή θησαυροφυλακίου...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Μετονομασία θησαυροφυλακίου «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Διαγραφή θησαυροφυλακίου «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Η διαγραφή αυτού του θησαυροφυλακίου θα διαγράψει όλα τα αρχεία που περιέχει.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Επιβεβαιώστε ότι θέλετε να το διαγράψετε.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Κατάργηση θησαυροφυλακίου «{{name}}» από τη λίστα
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Αυτό το θησαυροφυλάκιο θα αφαιρεθεί από τη λίστα θησαυροφυλακίων χωρίς να διαγραφεί κανένα αρχείο.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Κατάργηση από τη λίστα
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Ενημέρωση του Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Η συσκευή σας Android δεν είναι ενημερωμένη και πρέπει να ενημερωθεί για να λειτουργήσει το Obsidian. Βρείτε έναν τρόπο να αναβαθμίσετε την εφαρμογή «Android WebView».
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Το όνομα του θησαυροφυλακίου δεν μπορεί να περιέχει κανέναν από τους εξής χαρακτήρες: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Το Obsidian δεν έχει άδεια πρόσβασης σε αυτή την τοποθεσία
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Αποτυχία διαγραφής του θησαυροφυλακίου.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Μετακίνηση από {{from}} σε {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Το θησαυροφυλάκιο μετακινήθηκε, αλλά δεν ήταν δυνατή η διαγραφή του παλιού αντιγράφου στον φάκελο της εφαρμογής Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Καλώς ορίσατε
@@ -3541,6 +3657,10 @@ translation=Φόρτωση φυλακίου...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Αδυναμία φόρτωσης φυλακίου: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Δεν είναι δυνατή η ανάγνωση της διαδρομής «{{path}}», επομένως τα αρχεία της δεν εμφανίζονται. Ελέγξτε τα δικαιώματα πρόσβασης και έπειτα επανεκκινήστε το Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Θα μεταφερθεί στα σκουπίδια Obsidian, που
 original=The file will be permanently deleted.
 translation=Το αρχείο θα διαγραφεί μόνιμα.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Αποτυχία μετακίνησης του στοιχείου {{item}} στον κάδο απορριμμάτων του συστήματος. Για διαγραφή ούτως ή άλλως, αλλάξτε τη ρύθμιση «Διαγραμμένα αρχεία».
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Ο φάκελος δεν είναι κενός.
@@ -4198,10 +4322,6 @@ translation=Επιβεβαίωση
 original=Cancel
 translation=Ακύρωση
 
-[dialogue.button-allow]
-original=Allow
-translation=Να επιτρέπεται
-
 [dialogue.button-skip]
 original=Skip
 translation=Παράλειψη
@@ -4289,6 +4409,10 @@ translation=Το Obsidian δεν μπορεί να ανοίξει αρχεία �
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Η επικεφαλίδα δεν μπορεί να είναι κενή
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Η επικεφαλίδα «{{heading}}» δεν βρέθηκε στο αρχείο.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Εισάγεται φάκελο
 original=No existing folders found.
 translation=Δεν βρέθηκαν φάκελοι.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=για πλοήγηση
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=για μετακίνηση
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=για δημιουργία
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=για απόρριψη
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Ταίριασμα ετικέτας:
 original=No matches found.
 translation=Δεν βρέθηκαν αποτελέσματα.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Συνάφεια
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... {{count}} ακόμα ταιριάζει.
@@ -5046,14 +5162,6 @@ translation=Αλλαγή
 original=Open quick switcher
 translation=Άνοιγμα γρήγορης αλλαγής
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=για πλοήγηση
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=για άνοιγμα
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=για άνοιγμα σε νέα καρτέλα
@@ -5065,14 +5173,6 @@ translation=για άνοιγμα στα δεξιά
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=για δημιουργία
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=για απόρριψη
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=για επιλογή
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Εισάγεται μια εντολή για να την καλέσ
 original=Open command palette
 translation=Άνοιγμα παλέτας εντολών
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=για πλοήγηση
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=για χρήση
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=για απόρριψη
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Δεν βρέθηκαν εντολές.
@@ -6198,14 +6286,6 @@ translation=Αρίθμηση λέξεων
 original=Show word count in the status bar.
 translation=Προβολή αριθμού λέξεων στην μπάρα κατάστασης.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Να εμφανίζονται τα διαγράμματα Mermaid σε αυτό το θησαυροφυλάκιο;
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Επιτρέψτε το μόνο εάν εμπιστεύεστε τα περιεχόμενα αυτού του θησαυροφυλακίου.
-
 [plugins.slides.name]
 original=Slides
 translation=Διαφάνειες
@@ -6325,18 +6405,6 @@ translation={{time}} στο πρότυπο αρχείο θα αντικατασ�
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Μπορείτε επίσης να χρησιμοποιήσετε {{time:HH:mm}} για να αντικαταστήσετε την μορφή μια φορά.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=για πλοήγηση
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=για εισαγωγή προτύπου
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=για απόρριψη
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Συγχώνευση ολόκληρου αρχείου με...
 original=No files found.
 translation=Δεν βρέθηκαν αρχεία.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=για πλοήγηση
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=για συγχώνευση
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=για δημιουργία νέου
@@ -8241,10 +8301,6 @@ translation=για δημιουργία νέου
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=συγχώνευση στην κορυφή
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=για απόρριψη
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Εξαγωγή τρέχουσας επιλογής...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Εξαγωγή επικεφαλίδας...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=μετακίνιση στον πάτο
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Δημιουργία νέου καμβά
 original=Convert to file...
 translation=Μετατροπή σε αρχείο...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=σε ενσωματωμένη επικεφαλίδα
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=σε ενσωματωμένο μπλοκ
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=σε πλοήγη σε ομάδα
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Εισάγετε όνομα επικεφαλίδας
@@ -9194,6 +9234,14 @@ translation=Όλες οι προβολές
 original=This view
 translation=Αυτή η προβολή
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Μετακίνηση σε όλες τις προβολές
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Μετακίνηση σε αυτή την προβολή
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Εύρεση ή δημιουργία...
@@ -9246,10 +9294,6 @@ translation=Όνομα προβολής
 original=View
 translation=Προβολή
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Πίνακας
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Εμφανιζόμενο όνομα
@@ -9287,8 +9331,8 @@ original=New
 translation=Νέο
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Εμφάνιση {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Εμφάνιση {{shown}} από {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Δεν βρέθηκε η προβολή "{{ view }}"
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Άγνωστος τύπος ιδιότητας: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Οι προβολές πρέπει να είναι ένας πίνακας
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Επεξεργασία ομάδων...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Απόκρυψη στήλης
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Πληκτρολογήστε [[
 original=to link note
 translation=για σύνδεση με σημείωση
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=για απόρριψη
-
 [properties.option-property-type]
 original=Property type
 translation=Τύπος ιδιότητας
@@ -10210,6 +10258,10 @@ translation=Τύπος πλαισίου επισήμανσης...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=«{{item}}»
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} λέξη
@@ -10257,6 +10309,14 @@ translation={{count}} φάκελος
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} φάκελοι
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} στοιχείο
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} στοιχεία
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Αυτός ο σύνδεσμος παραπέμπει σε ένα ε
 original=File: {{path}}
 translation=Αρχείο: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Άνοιγμα αρχείου σε άλλη εφαρμογή;
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Αυτό το αρχείο θα ανοίξει εκτός του Obsidian. Ορισμένοι τύποι αρχείων μπορούν να εκτελέσουν κώδικα στον υπολογιστή σας. Συνεχίστε μόνο αν εμπιστεύεστε την προέλευση αυτού του αρχείου.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Το θησαυροφυλάκιο δεν βρέθηκε.
@@ -10401,6 +10469,22 @@ translation=Το θησαυροφυλάκιο δεν βρέθηκε.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Δεν ήταν δυνατή η εύρεση θησαυροφυλακίου για τη διεύθυνση URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Τα θησαυροφυλάκια δεν μπορούν να αποθηκευτούν στον φάκελο εγκατάστασης του Obsidian, επειδή διαγράφεται κατά την ενημέρωση του Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Αυτό το θησαυροφυλάκιο βρίσκεται μέσα στον φάκελο εγκατάστασης του Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Το πρόγραμμα εγκατάστασης διαγράφει αυτόν τον φάκελο κατά την ενημέρωση του Obsidian, μαζί με αυτό το θησαυροφυλάκιο. Επιλέξτε «Διαχείριση θησαυροφυλακίων» για να κλείσετε το θησαυροφυλάκιο και έπειτα χρησιμοποιήστε την επιλογή «Μετακίνηση θησαυροφυλακίου...» για να το μετακινήσετε αλλού.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Διαχείριση θησαυροφυλακίων
 
 [main.supported-files]
 original=Supported files

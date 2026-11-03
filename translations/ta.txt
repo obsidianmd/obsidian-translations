@@ -266,14 +266,6 @@ translation=வலமிருந்து இடது (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=குறிப்புகளின் இயல்புநிலை உரை திசையை வலமிருந்து இடமாக அமைக்கிறது.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=குறிப்புகளில் Mermaid வரைபடங்களைக் காட்டு
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=“mermaid” குறியீட்டுத் தொகுதிகளிலிருந்து பாய்வுப்படங்கள், வரிசை வரைபடங்கள் மற்றும் பிற வரைபடங்களை உருவாக்கிக் காட்டு.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=ஒட்டப்பட்ட HTML-ஐ Markdown-ஆக மாற்று
@@ -914,14 +906,6 @@ translation=மிதக்கும் வழிசெலுத்தல்
 original=Navigation buttons float over the content instead of being anchored.
 translation=வழிசெலுத்தல் பொத்தான்கள் நிலைநிறுத்தப்படுவதற்குப் பதிலாக உள்ளடக்கத்தின் மீது மிதக்கும்.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=சறுக்கும் பக்கப்பட்டைகள்
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=பக்கப்பட்டைகள் உள்ளடக்கத்தின் மேலே மிதப்பதற்குப் பதிலாக அதன் பக்கவாட்டில் சறுக்கும்.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=முழுத்திரை
@@ -1498,6 +1482,14 @@ translation=பெயர் அல்லது விளக்கத்தின
 original=Search plugins...
 translation=செருகுநிரல்களைத் தேடுக...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=உங்கள் நிறுவனத்தின் கொள்கையால் முடக்கப்பட்டுள்ளது.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=உங்கள் நிறுவனத்தின் கொள்கைப்படி கட்டாயமானது.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=சமூகச் செருகுநிரல்கள்
@@ -1741,6 +1733,14 @@ translation="{{name}}" செருகுநிரலை நிறுவுக�
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation="{{name}}" செருகுநிரலை நிறுவ முடியவில்லை.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=உங்கள் நிறுவனத்தின் கொள்கைப்படி “{{name}}” செருகுநிரலுக்கு அனுமதி இல்லை.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=உங்கள் நிறுவனத்தின் கொள்கைப்படி அனுமதி இல்லை.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=மாற்று
 original=Replace all
 translation=எல்லாம் மாற்று
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=# தட்டச்சு செய்க
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=தலைப்பை இணைக்க
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=^ தட்டச்சு செய்க
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=தொகுதியை இணைக்க
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=| தட்டச்சு செய்க
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=பொருத்தம் இல்லை
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=பட அளவு: {{size}}px அகலம்
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=ஏற்க
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=“{{name}}” இல்லை.
 original=Unrecognized URI action: {{action}}
 translation=தெரியாத URI செயல்: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI அளவுருவுக்கு “append” அல்லது “prepend” தேவை.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=நீக்கு
@@ -2573,10 +2561,6 @@ translation=காலி
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=கோப்பு திறக்கப்படவில்லை
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=புதிய குறிப்பை உருவாக்கு
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=மின்னஞ்சலை மீண்டும் அனுப
 original=Vault location must be a folder.
 translation=பெட்டகத்தின் இருப்பிடம் ஒரு கோப்புறையாக இருக்க வேண்டும்.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Obsidian-க்கு iCloud முடக்கப்பட்டுள்ளதால், அதில் பெட்டகங்களை அணுகவோ உருவாக்கவோ முடியாது.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync-ஐ அமை
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=இந்தப் பெட்டகம் Obsidian செயலியின் கோப்புறையில் உள்ளது.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=இந்தப் பெட்டகம் {{path}} என்ற இடத்தில் உள்ளது
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=இந்தச் சாதனத்தில்
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=கோப்புகள்
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=கடைசியாகத் திறந்தது
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} இயக்கப்பட்டுள்ளன
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=முடக்கப்பட்டுள்ளன
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=கடந்த முறை சமூக செருகுநிரல்கள் ஏற்றப்பட {{seconds}} வினாடிகள் எடுத்தன. இந்தப் பெட்டகம் திறக்கத் தாமதமானால், கட்டுப்படுத்தப்பட்ட முறையை முயற்சிக்கவும்.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=கடந்த முறை இந்தப் பெட்டகம் முழுமையாகத் திறக்கப்படவில்லை.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=கடந்த முறை இந்தப் பெட்டகம் முழுமையாகத் திறக்கப்படவில்லை. இது தொடர்ந்து நிகழ்ந்தால், கட்டுப்படுத்தப்பட்ட முறையை முயற்சிக்கவும்.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=பெட்டகத்தைத் திற
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=கட்டுப்படுத்தப்பட்ட முறையில் பெட்டகத்தைத் திற
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=பெட்டகத்தை மறுபெயரிடு...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=பெட்டகத்தைப் பட்டியலிலிருந்து அகற்று...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=சாதனச் சேமிப்பகத்திற்கு நகர்த்து...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=பெட்டகத்தை நீக்கு...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” பெட்டகத்தை மறுபெயரிடு
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” பெட்டகத்தை நீக்கு
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=இந்தப் பெட்டகத்தை நீக்கினால், அதிலுள்ள எல்லாக் கோப்புகளும் நீக்கப்படும்.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=இந்தச் செயலைத் திரும்பப்பெற முடியாது. இதை நீக்க விரும்புவதை உறுதிப்படுத்தவும்.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” பெட்டகத்தைப் பட்டியலிலிருந்து அகற்று
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=இந்தப் பெட்டகத்தைப் பட்டியலிலிருந்து அகற்றினால், எந்தக் கோப்புகளும் நீக்கப்படாமல் பெட்டகப் பட்டியலிலிருந்து மட்டும் அகற்றப்படும்.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=பட்டியலிலிருந்து அகற்று
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView-ஐப் புதுப்பி
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=உங்கள் Android சாதனம் புதுப்பித்த நிலையில் இல்லை. Obsidian செயல்பட அதை புதுப்பிக்க வேண்டும். "Android WebView" செயலியை மேம்படுத்துவதற்கான வழியைக் கண்டறியவும்.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=பெட்டகத்தின் பெயரில் பின்வரும் எழுத்துக்குறிகள் எதுவும் இருக்கக்கூடாது: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=இந்த இடத்தை அணுக Obsidian-க்கு அனுமதி இல்லை
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=பெட்டகத்தை நீக்க முடியவில்லை.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}} என்பதிலிருந்து {{to}} என்பதற்கு நகர்த்தப்படுகிறது
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=பெட்டகம் நகர்த்தப்பட்டது, ஆனால் Obsidian செயலியின் கோப்புறையில் உள்ள பழைய நகலை நீக்க முடியவில்லை.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=வரவேற்பு
@@ -3541,6 +3657,10 @@ translation=பெட்டகம் ஏற்றப்படுகிறது.
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=பெட்டகத்தை ஏற்ற முடியவில்லை: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}” என்பதைப் படிக்க முடியாததால், அதிலுள்ள கோப்புகள் காட்டப்படவில்லை. அதன் அனுமதிகளைச் சரிபார்த்து, Obsidian-ஐ மறுதொடக்கம் செய்யவும்.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=கோப்பு Obsidian Trash-க்கு மாற்றப்
 original=The file will be permanently deleted.
 translation=கோப்பு நிரந்தரமாக அழிக்கப்படும்.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}} என்பதை கணினியின் குப்பைத்தொட்டிக்கு நகர்த்த முடியவில்லை. இருப்பினும் நீக்க, “நீக்கப்பட்ட கோப்புகள்” அமைப்பை மாற்றவும்.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=இந்தக் கோப்புறை காலியாக இல்லை.
@@ -4198,10 +4322,6 @@ translation=உறுதிப்படுத்து
 original=Cancel
 translation=ரத்துசெய்
 
-[dialogue.button-allow]
-original=Allow
-translation=அனுமதி
-
 [dialogue.button-skip]
 original=Skip
 translation=தவிர்
@@ -4289,6 +4409,10 @@ translation=Obsidian-ஆல் “.{{extension}}” கோப்புகளை�
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=தலைப்பு காலியாக இருக்கக்கூடாது
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=கோப்பில் “{{heading}}” என்ற தலைப்பு கிடைக்கவில்லை.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=கோப்புறையைத் தட்டச்சு செ
 original=No existing folders found.
 translation=கோப்புறைகள் இல்லை.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=நகர
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=நகர்த்த
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=உருவாக்க
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=மூட
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=குறிச்சொல்லைப் பொருத்து:
 original=No matches found.
 translation=பொருத்தங்கள் இல்லை.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=பொருத்தம்
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... மேலும் {{count}}.
@@ -5046,14 +5162,6 @@ translation=மாற்றி
 original=Open quick switcher
 translation=விரைவு மாற்றியைத் திற
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=நகர
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=திறக்க
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=புதிய தாவலில் திறக்க
@@ -5065,14 +5173,6 @@ translation=வலதுபுறம் திறக்க
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=உருவாக்க
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=மூட
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=தேர்ந்தெடுக்க
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=கட்டளையைத் தேட Cmd/Ctrl+P ஐப் பய
 original=Open command palette
 translation=கட்டளைத் தட்டைத் திற
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=நகர
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=பயன்படுத்த
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=மூட
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=கட்டளைகள் எதுவும் இல்லை.
@@ -6198,14 +6286,6 @@ translation=வார்த்தை எண்ணிக்கை
 original=Show word count in the status bar.
 translation=வார்த்தை எண்ணிக்கையை நிலைப்பட்டியில் காட்டும்.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=இந்தப் பெட்டகத்தில் Mermaid வரைபடங்களைக் காட்டவா?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=இந்தப் பெட்டகத்தின் உள்ளடக்கத்தை நீங்கள் நம்பினால் மட்டுமே அனுமதிக்கவும்.
-
 [plugins.slides.name]
 original=Slides
 translation=ஸ்லைடுகள்
@@ -6325,18 +6405,6 @@ translation=வார்ப்புரு கோப்பில் உள்ள
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=வடிவத்தை ஒருமுறை மாற்ற {{time:HH:mm}} ஐயும் பயன்படுத்தலாம்.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=வழிசெலுத்த
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=வார்ப்புருவைச் செருக
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=நிராகரிக்க
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=முழு கோப்பையும் இதனுடன் �
 original=No files found.
 translation=கோப்புகள் எதுவும் இல்லை.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=வழிசெலுத்த
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=ஒன்றிணைக்க
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=புதிதாக உருவாக்க
@@ -8241,10 +8301,6 @@ translation=புதிதாக உருவாக்க
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=மேலே ஒன்றிணைக்க
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=நிராகரிக்க
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=தற்போதைய தேர்வைப் பிரித்
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=இந்தத் தலைப்பைப் பிரித்தெடு...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=கீழே நகர்த்த
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=புதிய கேன்வாஸை உருவாக்கு
 original=Convert to file...
 translation=கோப்பாக மாற்று...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=தலைப்பை உட்பொதிக்க
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=தொகுதியை உட்பொதிக்க
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=குழுவிற்குச் செல்ல
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=கோப்பு, தலைப்பு அல்லது தொகுதியைத் தேட தட்டச்சு செய்யவும்
@@ -9194,6 +9234,14 @@ translation=அனைத்து பார்வைகள்
 original=This view
 translation=இந்தப் பார்வை
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=எல்லாப் பார்வைகளுக்கும் நகர்த்து
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=இந்தப் பார்வைக்கு நகர்த்து
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=கண்டுபிடி அல்லது உருவாக்கு...
@@ -9246,10 +9294,6 @@ translation=பார்வை பெயர்
 original=View
 translation=பார்வை
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=அட்டவணை
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=காட்சிப் பெயர்
@@ -9287,8 +9331,8 @@ original=New
 translation=புதிய
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} காட்டப்படுகிறது
+original=Showing {{shown}} of {{total}}
+translation={{total}}-இல் {{shown}} காட்டப்படுகிறது
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=பார்வை “{{ view }}” காணப்படவில�
 original=Unknown view type: {{ viewtype }}
 translation=தெரியாத பார்வை வகை: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=அறியப்படாத பண்பு வகை: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=பார்வைகள் ஒரு வரிசையாக இருக்க வேண்டும்
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=குழுக்களைத் திருத்து...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=நெடுவரிசையை மறை
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=[[ என தட்டச்சு செய்யவும்
 original=to link note
 translation=குறிப்பை இணைக்க
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=நிராகரிக்க
-
 [properties.option-property-type]
 original=Property type
 translation=பண்பு வகை
@@ -10210,6 +10258,10 @@ translation=Callout வகை...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} வார்த்தை
@@ -10257,6 +10309,14 @@ translation={{count}} கோப்புறை
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} கோப்புறைகள்
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} உருப்படி
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} உருப்படிகள்
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=இந்த இணைப்பு இயக்கக்கூடி
 original=File: {{path}}
 translation=கோப்பு: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=கோப்பை வேறொரு செயலியில் திறக்கவா?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=இந்தக் கோப்பு Obsidian-க்கு வெளியே திறக்கப்படும். சில கோப்பு வகைகள் உங்கள் கணினியில் குறியீட்டை இயக்கக்கூடும். இந்தக் கோப்பின் மூலத்தை நம்பினால் மட்டுமே தொடரவும்.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=பெட்டகம் கிடைக்கவில்லை.
@@ -10401,6 +10469,22 @@ translation=பெட்டகம் கிடைக்கவில்லை.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL-க்கான பெட்டகத்தைக் கண்டறிய முடியவில்லை
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian புதுப்பிக்கப்படும்போது அதன் நிறுவல் கோப்புறை அழிக்கப்படுவதால், அதில் பெட்டகங்களைச் சேமிக்க முடியாது
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=இந்தப் பெட்டகம் Obsidian-இன் நிறுவல் கோப்புறைக்குள் உள்ளது
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian புதுப்பிக்கப்படும்போது, நிறுவி இந்தக் கோப்புறையையும் அதனுடன் இந்தப் பெட்டகத்தையும் அழித்துவிடும். பெட்டகத்தை மூட "பெட்டகங்களை நிர்வகி" என்பதைத் தேர்ந்தெடுக்கவும். பின்னர், அதை வேறொரு இடத்திற்கு நகர்த்த "பெட்டகத்தை நகர்த்து..." என்பதைப் பயன்படுத்தவும்.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=பெட்டகங்களை நிர்வகி
 
 [main.supported-files]
 original=Supported files

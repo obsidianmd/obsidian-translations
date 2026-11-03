@@ -266,14 +266,6 @@ translation=दक्षिणतः वामतः (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=दक्षिणतः वामे प्रदर्शयितुं टिप्पणीनां पाठदिशां इति करोति
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=टिप्पणीषु Mermaid-आरेखान् दर्शयतु
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=“mermaid” विधिलेखखण्डेभ्यः प्रवाहचित्राणि, अनुक्रम-आरेखान्, अन्यांश्च आरेखान् प्रदर्शयतु।
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=HTML स्वतः परिवर्तयन्तु
@@ -914,14 +906,6 @@ translation=प्लवमानं मार्गणम्(Navigation)
 original=Navigation buttons float over the content instead of being anchored.
 translation=स्थिरीकृताः भवितुम् अपेक्षया मार्गणम्-कुञ्जीपटलानि विषयवस्तुना उपरि प्लवन्ते।
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=सरन्ती पार्श्व-पट्टिका
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=उपर्येव प्लवमानाः भवितुम् अपेक्षया पार्श्व-पट्टिकाः विषयवस्तुनः पार्श्वे सरन्ति।
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=पूर्ण-पटलम्
@@ -1498,6 +1482,14 @@ translation=Plugins नामेन वा विवरणेन वा शो�
 original=Search plugins...
 translation=Plugins अन्वेषणम् करोतु...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=भवतः संस्थायाः नीत्या निष्क्रियीकृतम्।
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=भवतः संस्थायाः नीत्या अनिवार्यम्।
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=तृतीय-पक्षः plugin
@@ -1741,6 +1733,14 @@ translation=Plugin "{{name}}" संस्थापनम्...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Plugin "{{name}}" संस्थापनं कर्तुं असफलम्
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=भवतः संस्थायाः नीत्या “{{name}}” प्लगिन् नानुमतम्।
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=भवतः संस्थायाः नीत्या नानुमतम्।
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=पुनरादधातु
 original=Replace all
 translation=सर्वे पुनरादधातु
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=टङ्कयतु #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=शीर्षकं परिसन्धिं कुर्वन्तु
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=टङ्कयतु ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=खण्डान् परिसन्धिं कुर्वन्तु
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=टङ्कयतु |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=कोऽपि मेलः न लब्धः
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=चित्रस्य आकारः: {{size}}px विस्तृतः
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=स्वीकर्तुम्
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=सञ्चिका "{{name}}" न प्राप्ता
 original=Unrecognized URI action: {{action}}
 translation=अपरिचितः URI-कार्यः: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=“{{param}}” URI-प्राचलाय “append” अथवा “prepend” आवश्यकम्।
+
 [interface.delete-action-short-name]
 original=Delete
 translation=निष्कासयतु
@@ -2573,10 +2561,6 @@ translation=रिक्तम्‌
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=कोऽपि सञ्चिका उद्घाटिता नास्ति
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=नूतनं टिप्पणीं(note) रचयतु
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=वैद्युतकपतत्रं पुनः प्रे
 original=Vault location must be a folder.
 translation=कोशस्य स्थानं सञ्चयं भवेत्।
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Obsidian इत्यस्य कृते iCloud निष्क्रियीकृतम् अस्ति, अतः तत्र तिजोरीषु प्रवेशः अथवा तासां निर्माणं न शक्यम्।
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync विन्यस्यतु
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=इयं तिजोरी Obsidian-अनुप्रयोगस्य पुटके स्थिता अस्ति।
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=इयं तिजोरी {{path}} इत्यत्र स्थिता अस्ति
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=अस्मिन् उपकरणे
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=सञ्चिकाः
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=अन्तिमवारम् उद्घाटितम्
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} सक्रियीकृतानि
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=निष्क्रियीकृतानि
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=गतवारं समुदाय-प्लगिन् इत्येतेषां लोडनाय {{seconds}} क्षणाः अपेक्षिताः। यदि इयं तिजोरी मन्दम् उद्घाट्यते, तर्हि नियन्त्रितं प्रकारं प्रयतताम्।
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=गतवारम् अस्याः तिजोर्याः उद्घाटनं न सम्पूर्णम्।
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=गतवारम् अस्याः तिजोर्याः उद्घाटनं न सम्पूर्णम्। यदि एतत् पुनः पुनः भवति, तर्हि नियन्त्रितं प्रकारं प्रयतताम्।
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=तिजोरीम् उद्घाटयतु
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=नियन्त्रिते प्रकारे तिजोरीम् उद्घाटयतु
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=तिजोर्याः नाम परिवर्तयतु...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=तिजोरीं विस्मरतु...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=उपकरणस्य भण्डारणे स्थानान्तरयतु...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=तिजोरीं लोपयतु...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=“{{name}}” तिजोर्याः नाम परिवर्तयतु
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=“{{name}}” तिजोरीं लोपयतु
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=अस्याः तिजोर्याः लोपनेन तदन्तर्गताः सर्वाः सञ्चिकाः लुप्ताः भविष्यन्ति।
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=इदं कार्यं पूर्ववत् कर्तुं न शक्यते। कृपया अस्याः लोपनम् इच्छतीति पुष्टिं करोतु।
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=“{{name}}” तिजोरीं विस्मरतु
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=अस्याः तिजोर्याः विस्मरणेन कापि सञ्चिका न लुप्ता भविष्यति, केवलं तिजोरीणां सूचीतः इयं निष्कासिता भविष्यति।
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=विस्मरतु
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView अद्यतनीकरोतु
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=भवतः Android-उपकरणम् अद्यतनीकृतं नास्ति। Obsidian इत्यस्य कार्याय तस्य अद्यतनम् आवश्यकम्। कृपया "Android WebView" अनुप्रयोगस्य उन्नयनाय उपायम् अन्विष्यतु।
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=तिजोर्याः नाम्नि एतेषु किमपि अक्षरं न भवितुम् अर्हति: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=अस्मिन् स्थाने प्रवेशाय Obsidian इत्यस्य अनुमतिः नास्ति
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=तिजोर्याः लोपनं विफलम्।
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation={{from}} इत्यस्मात् {{to}} इत्यत्र स्थानान्तरणं प्रचलति
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=तिजोरी स्थानान्तरिता, किन्तु Obsidian-अनुप्रयोगस्य पुटके स्थिता पुरातनप्रतिलिपिः लोपयितुं न शकिता।
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=स्वागतम्
@@ -3541,6 +3657,10 @@ translation=तिजोरी आरोपणम् कुर्वन्तु
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=तिजोरी आरोपणम् कर्तुं असफलम् : 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=“{{path}}” पठितुं न शक्यते, अतः तस्य सञ्चिकाः न प्रदर्श्यन्ते। तस्य अनुमतीः परीक्ष्य Obsidian पुनः आरभताम्।
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=इदं भवतः Obsidian कचरायां - मध्य
 original=The file will be permanently deleted.
 translation=सञ्चिका स्थायिरूपेण विलोपिता भविष्यति।
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation={{item}} इत्यस्य प्रणाली-कचरापात्रे स्थानान्तरणं विफलम्। तथापि लोपनाय “लुप्ताः सञ्चिकाः” इति समायोजनं परिवर्तयतु।
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=एतत् सञ्चयं रिक्तं नास्ति
@@ -4198,10 +4322,6 @@ translation=पुष्टि करोतु
 original=Cancel
 translation=निरसयतु
 
-[dialogue.button-allow]
-original=Allow
-translation=अनुमन्यताम्
-
 [dialogue.button-skip]
 original=Skip
 translation=क्षिपतु
@@ -4289,6 +4409,10 @@ translation=Obsidian “.{{extension}}” सञ्चिकाः उद्घ�
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=शीर्षकं रिक्तं भवितुं न शक्नोति
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=सञ्चिकायां “{{heading}}” शीर्षकः न प्राप्तः।
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=सञ्चय नाम लिखन्तु
 original=No existing folders found.
 translation=न कोऽपि सञ्चयः प्राप्तः
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=चालनाय
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=स्थानान्तरणाय
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=सृजनार्थम्
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=बहिष्कर्तुं
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Tag मेलयन्तु :
 original=No matches found.
 translation=कोऽपि मेलः न लब्धः
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=प्रासङ्गिकता
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... तथा {{count}} अधिकाः मेलनाः।
@@ -5046,14 +5162,6 @@ translation=परिवर्तकः
 original=Open quick switcher
 translation=शीघ्र-परिवर्तकं उद्घाटयन्तु
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=चालनाय
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=उद्घाटनाय
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=नूतन-tab मध्ये उद्घाटयितुम्
@@ -5065,14 +5173,6 @@ translation=दक्षिणतः उद्घाटयितुम्
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=सृजनार्थम्
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=बहिष्कर्तुं
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=चयनार्थम्
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=तस्य आह्वानार्थं आदेशं ट�
 original=Open command palette
 translation=समादेश वर्णफलकम् उद्घाटयतु
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=चालनाय
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=प्रयोगार्थम्
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=बहिष्कर्तुं
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=न आदेशाः प्राप्ताः
@@ -6198,14 +6286,6 @@ translation=शब्दगणना
 original=Show word count in the status bar.
 translation=स्थितिशलाकायां शब्दगणनां दर्शयतु
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=अस्यां तिजोर्यां Mermaid-आरेखाः प्रदर्श्यन्ताम्?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=अस्याः तिजोर्याः सामग्रीं विश्वसिति चेत् एव अनुमन्यताम्।
-
 [plugins.slides.name]
 original=Slides
 translation=Slides
@@ -6325,18 +6405,6 @@ translation=आकृति सञ्चिकायां {{time}} इत्य
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=एकवारं प्रारूपं अधिलिखितुं {{time:HH:mm}} इत्यस्य उपयोगं अपि कर्तुं शक्नुवन्ति
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=चालनाय
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=प्रारूपं निवेशनार्थम्
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=बहिष्कर्तुं
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=सम्पूर्णां सञ्चिकां अन्य
 original=No files found.
 translation=न सञ्चिकाः प्राप्ताः
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=चालनाय (to navigate)
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=विलयनाय (to merge)
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=नूतनं सृजन्तु (to create new)
@@ -8241,10 +8301,6 @@ translation=नूतनं सृजन्तु (to create new)
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=उपरि विलीनीकरणं कुर्वन्तु (to merge at top)
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=बहिष्कर्तुम् (to dismiss)
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=वर्तमान-चयनं निष्कासयन्त
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=एतां शीर्षकं निष्कासयन्तु
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=अधः नुदन्तु (to move to bottom)
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=नूतनं Canvas सृजन्तुनूतनं स्�
 original=Convert to file...
 translation=Convert to file...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=शीर्षकस्य अन्तरस्थापनार्थम्
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=खण्डस्य अन्तरस्थापनार्थम्
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=समूहं प्रति चालनार्थम्
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=सञ्चिका, शीर्षकं, खण्डं च अन्वेष्ॅूं लिखन्तु
@@ -9194,6 +9234,14 @@ translation=सर्वे दृश्याः
 original=This view
 translation=इदं दृश्यम्
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=सर्वेषु दृश्येषु स्थानान्तरयतु
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=अस्मिन् दृश्ये स्थानान्तरयतु
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=अन्वेषयन्तु सृजन्तु च...
@@ -9246,10 +9294,6 @@ translation=नाम दर्श्यतु
 original=View
 translation=दृश्यम्
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=सारणी
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=प्रदर्शन-नाम
@@ -9287,8 +9331,8 @@ original=New
 translation=नूतनम्
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} दर्शयति (Showing {{count}})
+original=Showing {{shown}} of {{total}}
+translation={{total}} मध्ये {{shown}} दर्शयति
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation="{{ view }}" दृश्यं न प्राप्तम्
 original=Unknown view type: {{ viewtype }}
 translation={{ viewtype }} अज्आत-दृश्य-प्रकारः
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=अज्ञातः गुणप्रकारः: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=दृश्याः array भवेयुः (Views must be an array)
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=समूहान् सम्पादयतु...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=स्तम्भं गोपयतु
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Type [[
 original=to link note
 translation=सम्बन्धं योजयन्तु (to link note)
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=बहिष्कुर्वन्तु (to dismiss)
-
 [properties.option-property-type]
 original=Property type
 translation=गुणस्य प्रकारः
@@ -10210,6 +10258,10 @@ translation=Callout प्रकारः...
 original={{count}}
 translation={{count}} ({{count}})
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} शब्दः
@@ -10257,6 +10309,14 @@ translation={{count}} सञ्चयः
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} सञ्चयाः
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} वस्तु
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} वस्तूनि
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=अयं सम्पर्कः निष्पादनीया
 original=File: {{path}}
 translation=सञ्चिका: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=अन्यस्मिन् अनुप्रयोगे सञ्चिकाम् उद्घाटयतु?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=इयं सञ्चिका Obsidian इत्यस्मात् बहिः उद्घाटिता भविष्यति। केचन सञ्चिकाप्रकाराः भवतः सङ्गणके विधिलेखं चालयितुं शक्नुवन्ति। अस्याः सञ्चिकायाः स्रोतसि विश्वासः अस्ति चेत् एव अग्रे गच्छतु।
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=तिजोरी न प्राप्ता।
@@ -10401,6 +10469,22 @@ translation=तिजोरी न प्राप्ता।
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation={{url}} URL कृते तिजोरीं अन्वेष्टुं न शक्यते
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Obsidian इत्यस्य स्थापनापुटके तिजोरीः सञ्चयितुं न शक्यते, यतः Obsidian इत्यस्य अद्यतनकाले सः पुटकः लुप्तः भवति
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=इयं तिजोरी Obsidian इत्यस्य स्थापनापुटकस्य अन्तः अस्ति
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian इत्यस्य अद्यतनकाले स्थापकः इमं पुटकं तेन सह इमां तिजोरीम् अपि लोपयति। तिजोरीं पिधातुं "तिजोरीणां प्रबन्धनम्" चिनोतु, ततः ताम् अन्यत्र स्थानान्तरयितुं तस्याः "तिजोरीं स्थानान्तरयतु..." विकल्पम् उपयोजयतु।\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=तिजोरीणां प्रबन्धनम्
 
 [main.supported-files]
 original=Supported files

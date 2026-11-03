@@ -266,14 +266,6 @@ translation=Kanan-ke-Kiri (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Atur arah teks dari catatan untuk ditampilkan secara kanan-ke-kiri.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Tampilkan diagram Mermaid dalam catatan
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Render diagram alir, diagram urutan, dan diagram lainnya dari blok kode “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Ubah HTML otomatis
@@ -914,14 +906,6 @@ translation=Navigasi mengambang
 original=Navigation buttons float over the content instead of being anchored.
 translation=Tombol navigasi mengambang di atas konten alih-alih ditambatkan.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Bilah samping geser
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Bilah samping bergeser ke sisi konten alih-alih mengambang di atasnya.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Layar penuh
@@ -1498,6 +1482,14 @@ translation=Saring plugin berdasarkan nama atau deskripsi.
 original=Search plugins...
 translation=Cari plugin...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Dinonaktifkan oleh kebijakan organisasi Anda.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Diwajibkan oleh kebijakan organisasi Anda.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Plugin komunitas
@@ -1741,6 +1733,14 @@ translation=Memasang plugin "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Gagal memasang plugin "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Plugin “{{name}}” tidak diizinkan oleh kebijakan organisasi Anda.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Tidak diizinkan oleh kebijakan organisasi Anda.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Ganti
 original=Replace all
 translation=Ganti semua
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Ketik #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=untuk hubungkan ke judul
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Ketik ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=untuk hubungkan ke blok
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Ketik |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Tidak ditemukan kecocokan
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Ukuran gambar: lebar {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=untuk menerima
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Berkas "{{name}}" tidak ditemukan.
 original=Unrecognized URI action: {{action}}
 translation=Tindakan URI tidak dikenali: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Parameter URI “{{param}}” memerlukan “append” atau “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Hapus
@@ -2573,10 +2561,6 @@ translation=Kosong
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Tidak ada berkas terbuka
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Buat berkas baru
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Gagal mengirim ulang email.
 original=Vault location must be a folder.
 translation=Lokasi brankas harus berupa folder.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Anda tidak dapat mengakses atau membuat brankas di iCloud karena iCloud dinonaktifkan untuk Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Siapkan Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Brankas ini berada di folder aplikasi Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Brankas ini berada di {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Di perangkat ini
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=File
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Terakhir dibuka
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} diaktifkan
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Dinonaktifkan
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Plugin komunitas memerlukan waktu {{seconds}} detik untuk dimuat terakhir kali. Jika brankas ini lambat dibuka, coba mode terbatas.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Brankas ini tidak selesai dibuka terakhir kali.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Brankas ini tidak selesai dibuka terakhir kali. Jika hal ini terus terjadi, coba mode terbatas.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Buka brankas
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Buka brankas dalam mode terbatas
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Ganti nama brankas...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Lupakan brankas...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Pindahkan ke penyimpanan perangkat...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Hapus brankas...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Ganti nama brankas “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Hapus brankas “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Menghapus brankas ini akan menghapus semua file di dalamnya.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Tindakan ini tidak dapat diurungkan. Konfirmasikan bahwa Anda ingin menghapusnya.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Lupakan brankas “{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Melupakan brankas ini akan menghapusnya dari daftar brankas tanpa menghapus file apa pun.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Lupakan
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Perbarui Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Perangkat Android Anda belum diperbarui dan harus diperbarui agar Obsidian dapat berfungsi. Cari cara untuk memperbarui aplikasi "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Nama brankas tidak boleh mengandung karakter berikut: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian tidak memiliki izin untuk mengakses lokasi ini
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Gagal menghapus brankas.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Memindahkan dari {{from}} ke {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Brankas telah dipindahkan, tetapi salinan lama di folder aplikasi Obsidian tidak dapat dihapus.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Selamat datang
@@ -3541,6 +3657,10 @@ translation=Memuat vault...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Gagal memuat vault: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Tidak dapat membaca “{{path}}”, sehingga file di dalamnya tidak ditampilkan. Periksa izinnya, lalu mulai ulang Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Berkas akan dipindahkan ke tempat sampah Obsidian, yang terletak di 
 original=The file will be permanently deleted.
 translation=File akan dihapus secara permanen.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Gagal memindahkan {{item}} ke tempat sampah sistem. Untuk tetap menghapusnya, ubah pengaturan “File yang dihapus”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Folder ini tidak kosong.
@@ -4198,10 +4322,6 @@ translation=Konfirmasi
 original=Cancel
 translation=Batal
 
-[dialogue.button-allow]
-original=Allow
-translation=Izinkan
-
 [dialogue.button-skip]
 original=Skip
 translation=Lewati
@@ -4289,6 +4409,10 @@ translation=Obsidian tidak dapat membuka file “.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Judul tidak boleh kosong
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Judul “{{heading}}” tidak ditemukan dalam file.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Ketikkan folder
 original=No existing folders found.
 translation=Folder tidak ditemukan.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=untuk pindah
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=untuk membuat
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Cocokkan tag:
 original=No matches found.
 translation=Tidak ditemukan kecocokan.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevansi
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... dan {{count}} kecocokan.
@@ -5046,14 +5162,6 @@ translation=Peralih
 original=Open quick switcher
 translation=Buka peralih cepat
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=untuk membuka
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=untuk membuka di tab baru
@@ -5065,14 +5173,6 @@ translation=untuk membuka ke kanan
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=untuk membuat
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=untuk menutup
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=untuk memilih
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Gunakan Cmd/Ctrl+P dan mulai mengetik untuk menggunakan perintah.
 original=Open command palette
 translation=Buka palet perintah
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=untuk gunakan
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Perintah tidak ditemukan.
@@ -6198,14 +6286,6 @@ translation=Penghitung kata
 original=Show word count in the status bar.
 translation=Tampilkan penghitung kata di bilah status.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Tampilkan diagram Mermaid di brankas ini?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Izinkan hanya jika Anda memercayai isi brankas ini.
-
 [plugins.slides.name]
 original=Slides
 translation=Slide
@@ -6325,18 +6405,6 @@ translation={{time}} di berkas template akan diganti dengan nilai ini.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Anda juga bisa menggunakan {{time:HH:mm}} untuk menimpa format sekali.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=untuk navigasi
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=untuk masukkan template
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Gabungkan kesemua berkas dengan...
 original=No files found.
 translation=Tidak ditemukan berkas.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=untuk navigasikan
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=untuk gabungkan
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=untuk buat baru
@@ -8241,10 +8301,6 @@ translation=untuk buat baru
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=untuk gabungkan ke atas
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=untuk tutup
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Ekstrak seleksi ini...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Ekstrak judul ini...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=pindah ke bawah
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Buat kanvas baru
 original=Convert to file...
 translation=Ubah ke berkas...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=untuk menanamkan judul
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=untuk menanamkan blok
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=untuk bernavigasi ke grup
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Ketikkan judul
@@ -9194,6 +9234,14 @@ translation=Semua tampilan
 original=This view
 translation=Tampilan ini
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Pindahkan ke semua tampilan
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Pindahkan ke tampilan ini
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Cari atau buat...
@@ -9246,10 +9294,6 @@ translation=Nama tampilan
 original=View
 translation=Tampilan
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabel
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Nama tampilan
@@ -9287,8 +9331,8 @@ original=New
 translation=Baru
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Menampilkan {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Menampilkan {{shown}} dari {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Tampilan "{{ view }}" tidak ditemukan
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Jenis properti tidak dikenal: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Tampilan harus berupa array
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Edit kelompok...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Sembunyikan kolom
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Ketik [[
 original=to link note
 translation=untuk menautkan catatan
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=untuk melepas
-
 [properties.option-property-type]
 original=Property type
 translation=Tipe properti
@@ -10210,6 +10258,10 @@ translation=Jenis callout...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} kata
@@ -10257,6 +10309,14 @@ translation={{count}} folder
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} folder
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} item
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} item
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Tautan ini mengarah ke file eksekutabel. Menjalankannya dapat membah
 original=File: {{path}}
 translation=File: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Buka file di aplikasi lain?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=File ini akan dibuka di luar Obsidian. Beberapa jenis file dapat menjalankan kode di komputer Anda. Lanjutkan hanya jika Anda memercayai sumber file ini.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Brankas tidak ditemukan.
@@ -10401,6 +10469,22 @@ translation=Brankas tidak ditemukan.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Tidak dapat menemukan brankas untuk URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Brankas tidak dapat disimpan di folder instalasi Obsidian karena folder tersebut dihapus saat Obsidian diperbarui
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Brankas ini berada di dalam folder instalasi Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Penginstal menghapus folder ini saat Obsidian diperbarui, beserta brankas ini. Pilih "Kelola brankas" untuk menutup brankas, lalu gunakan "Pindahkan brankas..." pada brankas tersebut untuk memindahkannya ke lokasi lain.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Kelola brankas
 
 [main.supported-files]
 original=Supported files

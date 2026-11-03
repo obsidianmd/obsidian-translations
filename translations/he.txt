@@ -266,14 +266,6 @@ translation=מימין לשמאל (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=מגדיר את כיוון ברירת המחדל של הטקסט בהערות לימין לשמאל.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=הצג דיאגרמות Mermaid בהערות
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=הצג תרשימי זרימה, דיאגרמות רצף ודיאגרמות אחרות מבלוקי קוד של “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=המר HTML מודבק ל־Markdown
@@ -914,14 +906,6 @@ translation=ניווט צף
 original=Navigation buttons float over the content instead of being anchored.
 translation=כפתורי הניווט צפים מעל התוכן במקום להיות מעוגנים.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=סרגלי צד נגללים
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=סרגלי הצד נגללים לצד התוכן במקום לצוף מעליו.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=מסך מלא
@@ -1498,6 +1482,14 @@ translation=סנן תוספים לפי שם או תיאור.
 original=Search plugins...
 translation=חיפוש תוספים...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=מושבת לפי מדיניות הארגון שלך.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=נדרש לפי מדיניות הארגון שלך.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=תוספים קהילתיים
@@ -1741,6 +1733,14 @@ translation=מתקין את התוסף "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=התקנת התוסף "{{name}}" נכשלה.
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=התוסף „{{name}}” אינו מורשה לפי מדיניות הארגון שלך.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=אינו מורשה לפי מדיניות הארגון שלך.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=החלף
 original=Replace all
 translation=החלף הכל
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=הקלד #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=כדי לקשר לכותרת
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=הקלד ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=כדי לקשר לבלוקים
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=הקלד |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=לא נמצאה התאמה
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=גודל תמונה: רוחב {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=כדי לאשר
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=הקובץ "{{name}}" לא נמצא.
 original=Unrecognized URI action: {{action}}
 translation=פעולת URI לא מזוהה: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=פרמטר ה־URI „{{param}}” מחייב שימוש ב־„append” או ב־„prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=מחק
@@ -2573,10 +2561,6 @@ translation=ריק
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=אין קובץ פתוח
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=צור הערה חדשה
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=שליחת האימייל מחדש נכשלה.
 original=Vault location must be a folder.
 translation=מיקום הכספת חייב להיות תיקייה.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=לא ניתן לגשת לכספות ב־iCloud או ליצור בו כספות כי הוא מושבת עבור Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=הגדרת Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=כספת זו נמצאת בתיקיית האפליקציה Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=כספת זו נמצאת בנתיב {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=במכשיר זה
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=קבצים
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=פתיחה אחרונה
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} מופעלים
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=מושבתים
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=טעינת התוספים הקהילתיים ארכה {{seconds}} שניות בפעם האחרונה. אם פתיחת הכספת איטית, כדאי לנסות מצב מוגבל.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=פתיחת כספת זו לא הושלמה בפעם האחרונה.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=פתיחת כספת זו לא הושלמה בפעם האחרונה. אם הדבר חוזר על עצמו, כדאי לנסות מצב מוגבל.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=פתח כספת
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=פתח כספת במצב מוגבל
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=שנה שם כספת...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=הסר כספת מהרשימה...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=העבר לאחסון המכשיר...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=מחק כספת...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=שינוי שם הכספת „{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=מחיקת הכספת „{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=מחיקת כספת זו תמחק את כל הקבצים שבה.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=לא ניתן לבטל פעולה זו. יש לאשר את מחיקת הכספת.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=הסרת הכספת „{{name}}” מהרשימה
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=הסרת כספת זו מרשימת הכספות לא תמחק קבצים כלשהם.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=הסר מהרשימה
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=עדכון Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=מכשיר ה־Android שלך אינו מעודכן, ויש לעדכן אותו כדי ש־Obsidian יפעל. יש למצוא דרך לשדרג את האפליקציה "Android WebView".
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=שם הכספת אינו יכול להכיל אף אחד מהתווים הבאים: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=ל־Obsidian אין הרשאה לגשת למיקום זה
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=מחיקת הכספת נכשלה.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=העברה מ־{{from}} אל {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=הכספת הועברה, אך לא ניתן היה למחוק את העותק הישן בתיקיית האפליקציה Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=ברוך הבא
@@ -3541,6 +3657,10 @@ translation=טוען כספת...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=טעינת הכספת נכשלה:
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=לא ניתן לקרוא את „{{path}}”, ולכן הקבצים שבו אינם מוצגים. יש לבדוק את ההרשאות שלו ולאחר מכן להפעיל מחדש את Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=הוא יועבר לאשפה של Obsidian, שנמצאת בתיקי�
 original=The file will be permanently deleted.
 translation=הקובץ יימחק לצמיתות.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=העברת {{item}} לסל המחזור של המערכת נכשלה. כדי למחוק בכל זאת, יש לשנות את ההגדרה „קבצים שנמחקו”.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=תיקייה זו אינה ריקה.
@@ -4198,10 +4322,6 @@ translation=אישור
 original=Cancel
 translation=בטל
 
-[dialogue.button-allow]
-original=Allow
-translation=אפשר
-
 [dialogue.button-skip]
 original=Skip
 translation=דלג
@@ -4289,6 +4409,10 @@ translation=Obsidian לא יכול לפתוח קובצי „.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=כותרת לא יכולה להיות ריקה
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=הכותרת „{{heading}}” לא נמצאה בקובץ.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=הקלד תיקייה
 original=No existing folders found.
 translation=לא נמצאו תיקיות.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=לניווט
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=להעברה
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=ליצירה
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=לביטול
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=התאמת תגית:
 original=No matches found.
 translation=אין תוצאות מתאימות.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=רלוונטיות
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... ועוד {{count}} התאמה.
@@ -5046,14 +5162,6 @@ translation=מחליף
 original=Open quick switcher
 translation=פתח את המחליף המהיר
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=לניווט
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=לפתיחה
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=לפתיחה בכרטיסייה חדשה
@@ -5065,14 +5173,6 @@ translation=לפתיחה ימינה
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=ליצירה
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=לביטול
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=לבחירה
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=השתמש ב־Cmd/Ctrl+P והתחל להקליד כדי להפעי�
 original=Open command palette
 translation=פתח את לוח הפקודות
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=לניווט
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=לשימוש
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=לביטול
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=לא נמצאו פקודות.
@@ -6198,14 +6286,6 @@ translation=ספירת מילים
 original=Show word count in the status bar.
 translation=הצג ספירת מילים בשורת המצב.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=להציג דיאגרמות Mermaid בכספת זו?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=אפשר רק אם תוכן הכספת מהימן בעיניך.
-
 [plugins.slides.name]
 original=Slides
 translation=שקופיות
@@ -6325,18 +6405,6 @@ translation={{time}} בקובץ התבנית יוחלף בערך זה.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=ניתן גם להשתמש ב־{{time:HH:mm}} כדי לעקוף את הפורמט פעם אחת.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=לניווט
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=להוספת תבנית
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=לביטול
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=מיזוג הקובץ כולו עם...
 original=No files found.
 translation=לא נמצאו קבצים.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=לניווט
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=למיזוג
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=ליצירת הערה חדשה
@@ -8241,10 +8301,6 @@ translation=ליצירת הערה חדשה
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=למיזוג למעלה
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=לביטול
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=חלץ את הבחירה הנוכחית...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=חלץ את הכותרת הזו...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=להעברה למטה
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=צור קנבס חדש
 original=Convert to file...
 translation=המר לקובץ...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=להטמעת כותרת
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=להטמעת בלוק
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=לניווט לקבוצה
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=הקלד כדי למצוא קובץ, כותרת או בלוק
@@ -9194,6 +9234,14 @@ translation=כל התצוגות
 original=This view
 translation=תצוגה זו
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=העבר לכל התצוגות
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=העבר לתצוגה זו
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=מצא או צור...
@@ -9246,10 +9294,6 @@ translation=שם התצוגה
 original=View
 translation=תצוגה
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=טבלה
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=שם תצוגה
@@ -9287,8 +9331,8 @@ original=New
 translation=חדש
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=מוצגים {{count}}
+original=Showing {{shown}} of {{total}}
+translation=מוצגים {{shown}} מתוך {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=התצוגה "{{ view }}" לא נמצאה
 original=Unknown view type: {{ viewtype }}
 translation=סוג תצוגה לא ידוע: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=סוג מאפיין לא מוכר: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=תצוגות חייבות להיות מערך
@@ -9653,6 +9701,10 @@ translation=קנבן
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=עריכת קבוצות...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=הסתר עמודה
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=הקלד [[
 original=to link note
 translation=לקישור הערה
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=לביטול
-
 [properties.option-property-type]
 original=Property type
 translation=סוג מאפיין
@@ -10210,6 +10258,10 @@ translation=סוג Callout...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=„{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} מילה
@@ -10257,6 +10309,14 @@ translation={{count}} תיקייה
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} תיקיות
+
+[nouns.item-with-count]
+original={{count}} item
+translation=פריט {{count}}
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} פריטים
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=קישור זה מצביע על קובץ הפעלה. הרצתו על
 original=File: {{path}}
 translation=קובץ: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=לפתוח את הקובץ באפליקציה אחרת?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=קובץ זה ייפתח מחוץ ל־Obsidian. סוגי קבצים מסוימים יכולים להריץ קוד במחשב שלך. יש להמשיך רק אם מקור הקובץ מהימן.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=הכספת לא נמצאה.
@@ -10401,6 +10469,22 @@ translation=הכספת לא נמצאה.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=לא ניתן למצוא כספת עבור כתובת ה־URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=לא ניתן לאחסן כספות בתיקיית ההתקנה של Obsidian, משום שהיא נמחקת בעת עדכון Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=כספת זו נמצאת בתוך תיקיית ההתקנה של Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=תוכנית ההתקנה מוחקת תיקייה זו בעת עדכון Obsidian, ואיתה גם את הכספת הזו. יש לבחור באפשרות "ניהול כספות" כדי לסגור את הכספת, ואז להשתמש באפשרות "העבר כספת..." שלה כדי להעביר אותה למיקום אחר.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=ניהול כספות
 
 [main.supported-files]
 original=Supported files

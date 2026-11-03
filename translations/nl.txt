@@ -266,14 +266,6 @@ translation=Rechts-naar-links
 original=Sets the default text direction of notes to right-to-left.
 translation=Stelt de tekstrichting van de te tonen notities in van rechts naar links.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Mermaid-diagrammen in notities tonen
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Render stroomdiagrammen, sequentiediagrammen en andere diagrammen uit “mermaid”-codeblokken.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Automatisch HTML omzetten
@@ -914,14 +906,6 @@ translation=Zwevende navigatie
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigatieknoppen zweven boven de inhoud in plaats van vast te staan.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Schuivende zijbalken
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Zijbalken schuiven naast de inhoud in plaats van erboven te zweven.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Volledig scherm
@@ -1498,6 +1482,14 @@ translation=Filter plug-ins op naam of beschrijving.
 original=Search plugins...
 translation=Doorzoek plug-ins...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Uitgeschakeld door het beleid van je organisatie.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Vereist door het beleid van je organisatie.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Externe plug-in
@@ -1741,6 +1733,14 @@ translation=Plug-in installeren "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Kan plug-in niet installeren "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Plug-in “{{name}}” is niet toegestaan volgens het beleid van je organisatie.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Niet toegestaan volgens het beleid van je organisatie.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Vervangen
 original=Replace all
 translation=Vervang alles
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Typ #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=linken van kop
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Typ ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=linken van blok
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Typ |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=geen overeenkomst gevonden
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Afbeeldingsgrootte: {{size}}px breed
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=om te accepteren
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Bestand "{{name}}" niet gevonden.
 original=Unrecognized URI action: {{action}}
 translation=Onbekende URI-actie: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=De URI-parameter “{{param}}” vereist “append” of “prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Verwijderen
@@ -2573,10 +2561,6 @@ translation=Leeg
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Er is geen bestand geopend
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Maak een nieuw bestand
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=E-mail opnieuw verzenden mislukt.
 original=Vault location must be a folder.
 translation=Kluislocatie moet een map zijn.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Je kunt geen kluizen in iCloud openen of aanmaken, omdat iCloud is uitgeschakeld voor Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Obsidian Sync instellen
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Deze kluis bevindt zich in de appmap van Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Deze kluis bevindt zich op {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=Op dit apparaat
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Bestanden
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Laatst geopend
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} ingeschakeld
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Uitgeschakeld
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Het laden van community-plugins duurde de vorige keer {{seconds}} seconden. Als deze kluis langzaam opent, probeer dan de beperkte modus.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Deze kluis is de vorige keer niet volledig geopend.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Deze kluis is de vorige keer niet volledig geopend. Als dit blijft gebeuren, probeer dan de beperkte modus.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Kluis openen
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Kluis openen in beperkte modus
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Naam van kluis wijzigen...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Kluis vergeten...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Verplaatsen naar apparaatopslag...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Kluis verwijderen...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Naam van kluis “{{name}}” wijzigen
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Kluis “{{name}}” verwijderen
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Als je deze kluis verwijdert, worden alle bestanden erin verwijderd.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Deze actie kan niet ongedaan worden gemaakt. Bevestig dat je de kluis wilt verwijderen.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Kluis “{{name}}” vergeten
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Als je deze kluis vergeet, wordt deze uit de lijst met kluizen verwijderd zonder bestanden te verwijderen.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Vergeten
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Android WebView bijwerken
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Je Android-apparaat is niet up-to-date en moet worden bijgewerkt om Obsidian te laten werken. Zoek een manier om de app "Android WebView" bij te werken.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=De naam van de kluis mag geen van deze tekens bevatten: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian heeft geen toestemming om deze locatie te openen
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Kan de kluis niet verwijderen.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Verplaatsen van {{from}} naar {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=De kluis is verplaatst, maar de oude kopie in de appmap van Obsidian kon niet worden verwijderd.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Welkom
@@ -3541,6 +3657,10 @@ translation=Kluis laden...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Kluis laden mislukt: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Kan “{{path}}” niet lezen, waardoor de bestanden niet worden weergegeven. Controleer de toegangsrechten en start Obsidian daarna opnieuw op.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Het wordt verplaatst naar de Obsidian-prullenbak. Deze bevindt zich 
 original=The file will be permanently deleted.
 translation=Het bestand wordt permanent verwijderd.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Kan {{item}} niet naar de prullenbak van het systeem verplaatsen. Wijzig de instelling “Verwijderde bestanden” om toch te verwijderen.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Deze map is niet leeg.
@@ -4198,10 +4322,6 @@ translation=Bevestigen
 original=Cancel
 translation=Annuleren
 
-[dialogue.button-allow]
-original=Allow
-translation=Toestaan
-
 [dialogue.button-skip]
 original=Skip
 translation=Overslaan
@@ -4289,6 +4409,10 @@ translation=Obsidian kan ‘.{{extension}}’-bestanden niet openen.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Kop mag niet leeg zijn
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Kop “{{heading}}” niet gevonden in het bestand.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Typ een mapnaam
 original=No existing folders found.
 translation=Geen mappen gevonden.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=navigeren
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=verplaatsen
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=aanmaken
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=afwijzen
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Match label:
 original=No matches found.
 translation=Geen match gevonden.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevantie
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... en {{count}} verdere match.
@@ -5046,14 +5162,6 @@ translation=Wisselen
 original=Open quick switcher
 translation=Open snel wisselen
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=navigeren
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=openen
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=om in een tabblad te openen
@@ -5065,14 +5173,6 @@ translation=om rechts te openen
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=aanmaken
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=afwijzen
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=om te selecteren
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Typ een opdracht om het te gebruiken. De gebruikersinterface gebruik
 original=Open command palette
 translation=Open opdrachtenpaneel
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=navigeren
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=gebruiken
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=afwijzen
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Geen opdrachten gevonden.
@@ -6198,14 +6286,6 @@ translation=Woordenaantal
 original=Show word count in the status bar.
 translation=Toon woordenaantal in de statusbalk
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Mermaid-diagrammen in deze kluis weergeven?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Sta dit alleen toe als je de inhoud van deze kluis vertrouwt.
-
 [plugins.slides.name]
 original=Slides
 translation=Dia's
@@ -6325,18 +6405,6 @@ translation={{time}} in het sjabloon wordt door deze waarde vervangen.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Je kunt ook {{time:HH:mm}} gebruiken om de indeling eenmalig te overschrijven.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=navigeren
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=sjabloon invoegen
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=afwijzen
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Volledig bestand samenvoegen met...
 original=No files found.
 translation=Geen bestanden gevonden.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=Navigeer
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=Voeg samen
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=Nieuwe aanmaken
@@ -8241,10 +8301,6 @@ translation=Nieuwe aanmaken
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=bovenaan samenvoegen
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=Wijs af
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Huidige selectie extraheren...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Deze op extraheren...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=naar bodem verplaatsen
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Nieuw doek aanmaken
 original=Convert to file...
 translation=Naar bestand omzetten...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=om kop in te sluiten
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=om blok in te sluiten
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=om naar groep te navigeren
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Naam van de kop invoeren
@@ -9194,6 +9234,14 @@ translation=Alle weergaven
 original=This view
 translation=Deze weergave
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Verplaatsen naar alle weergaven
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Verplaatsen naar deze weergave
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Zoeken of maken...
@@ -9246,10 +9294,6 @@ translation=Naam van weergave
 original=View
 translation=Weergave
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabel
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Weergavenaam
@@ -9287,8 +9331,8 @@ original=New
 translation=Nieuw
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation={{count}} weergegeven
+original=Showing {{shown}} of {{total}}
+translation={{shown}} van {{total}} weergegeven
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Weergave "{{ view }}" niet gevonden
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Onbekend eigenschapstype: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Weergaven moeten een array zijn
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Groepen bewerken...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Kolom verbergen
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Typ [[
 original=to link note
 translation=om een notitie te linken
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=te stoppen
-
 [properties.option-property-type]
 original=Property type
 translation=Eigenschapstype
@@ -10210,6 +10258,10 @@ translation=Berichttype...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} woord
@@ -10257,6 +10309,14 @@ translation={{count}} map
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} mappen
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} item
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} items
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Deze koppeling verwijst naar een uitvoerbaar bestand. Het uitvoeren 
 original=File: {{path}}
 translation=Bestand: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Bestand openen in een andere app?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Dit bestand wordt buiten Obsidian geopend. Sommige bestandstypen kunnen code uitvoeren op je computer. Ga alleen verder als je de bron van dit bestand vertrouwt.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Kluis niet gevonden.
@@ -10401,6 +10469,22 @@ translation=Kluis niet gevonden.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Kan geen kluis vinden voor de URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Kluizen kunnen niet worden opgeslagen in de installatiemap van Obsidian, omdat deze wordt gewist wanneer Obsidian wordt bijgewerkt
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Deze kluis bevindt zich in de installatiemap van Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Het installatieprogramma wist deze map wanneer Obsidian wordt bijgewerkt, en daarmee ook deze kluis. Kies "Kluizen beheren" om de kluis te sluiten en gebruik vervolgens "Kluis verplaatsen..." om deze naar een andere locatie te verplaatsen.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Kluizen beheren
 
 [main.supported-files]
 original=Supported files

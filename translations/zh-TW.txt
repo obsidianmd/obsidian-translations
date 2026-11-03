@@ -266,14 +266,6 @@ translation=右至左 (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=設定筆記的文字方向，讓文字能從右至左顯示。
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=在筆記中顯示 Mermaid 圖表
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=從「mermaid」程式碼區塊算繪流程圖、時序圖和其他圖表。
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=自動轉換 HTML
@@ -914,14 +906,6 @@ translation=浮動導覽
 original=Navigation buttons float over the content instead of being anchored.
 translation=導覽按鈕會浮在內容上方，而不是固定在介面上。
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=滑動側邊欄
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=側邊欄會滑動到內容旁邊，而不是浮在上方。
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=全螢幕
@@ -1498,6 +1482,14 @@ translation=以名稱或描述過濾外掛程式。
 original=Search plugins...
 translation=搜尋外掛程式……
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=已依據貴組織的政策關閉。
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=貴組織的政策要求啟用。
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=第三方外掛程式
@@ -1741,6 +1733,14 @@ translation=正在安裝「{{name}}」外掛程式……
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=無法安裝「{{name}}」外掛程式。
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=貴組織的政策不允許使用外掛「{{name}}」。
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=貴組織的政策不允許使用。
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=取代
 original=Replace all
 translation=全部取代
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=輸入 #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=以連結到標題
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=輸入 ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=以連結到區塊
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=輸入 |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=未找到符合結果
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=圖片大小: {{size}}px 寬
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=接受
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=找不到檔案「{{name}}」。
 original=Unrecognized URI action: {{action}}
 translation=無法辨識的 URI 動作：{{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI 參數「{{param}}」必須搭配「append」或「prepend」使用。
+
 [interface.delete-action-short-name]
 original=Delete
 translation=刪除
@@ -2573,10 +2561,6 @@ translation=空白
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=未開啟檔案
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=建立新檔案
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=重寄電子郵件失敗。
 original=Vault location must be a folder.
 translation=儲存庫位置必須是資料夾
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=由於 Obsidian 的 iCloud 存取功能已停用，您無法存取或建立 iCloud 中的保管庫。
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=設定 Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=此保管庫位於 Obsidian 應用程式資料夾中。
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=此保管庫位於 {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=此裝置上
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=檔案
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=上次開啟
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation=已啟用 {{count}} 個
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=已停用
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=上次載入社群外掛花費了 {{seconds}} 秒。如果此保管庫開啟緩慢，請嘗試使用受限模式。
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=此保管庫上次未完成開啟。
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=此保管庫上次未完成開啟。如果持續發生此情況，請嘗試使用受限模式。
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=開啟保管庫
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=以受限模式開啟保管庫
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=重新命名保管庫⋯
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=忘記保管庫⋯
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=移至裝置儲存空間⋯
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=刪除保管庫⋯
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=重新命名保管庫「{{name}}」
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=刪除保管庫「{{name}}」
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=刪除此保管庫將刪除其中的所有檔案。
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=此操作無法復原。請確認您要將其刪除。
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=忘記保管庫「{{name}}」
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=忘記此保管庫會將其從保管庫清單中移除，但不會刪除任何檔案。
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=忘記
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=更新 Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=您的 Android 裝置尚未更新至最新版本，必須更新才能讓 Obsidian 正常運作。請設法升級「Android WebView」應用程式。
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=保管庫名稱不能包含下列任何字元：
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian 沒有存取此位置的權限
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=無法刪除保管庫。
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=正在從 {{from}} 移至 {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=保管庫已移動，但無法刪除 Obsidian 應用程式資料夾中的舊副本。
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=歡迎
@@ -3541,6 +3657,10 @@ translation=正在載入儲存庫……
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=無法載入儲存庫：
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=無法讀取「{{path}}」，因此未顯示其中的檔案。請檢查其權限，然後重新啟動 Obsidian。
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=會將其移動至 Obsidian 回收筒（即儲存庫目錄中隱藏�
 original=The file will be permanently deleted.
 translation=會將其永久刪除。
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=無法將 {{item}} 移至系統垃圾桶。若仍要刪除，請變更「已刪除的檔案」設定。
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=這不是空資料夾。
@@ -4198,10 +4322,6 @@ translation=確認
 original=Cancel
 translation=取消
 
-[dialogue.button-allow]
-original=Allow
-translation=允許
-
 [dialogue.button-skip]
 original=Skip
 translation=跳過
@@ -4289,6 +4409,10 @@ translation=Obsidian 無法開啟「.{{extension}}」檔案。
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=標題不能空白
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=在檔案中找不到標題「{{heading}}」。
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=輸入資料夾名稱
 original=No existing folders found.
 translation=找不到資料夾。
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=導覽
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=搬移
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=建立
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=退出
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=符合標籤：
 original=No matches found.
 translation=未找到符合結果。
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=相關性
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=……文中還有 {{count}} 處符合。
@@ -5046,14 +5162,6 @@ translation=切換
 original=Open quick switcher
 translation=開啟快速切換
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=導覽
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=開啟
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=以在新分頁開啟
@@ -5065,14 +5173,6 @@ translation=以在右側開啟
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=建立
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=退出
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=選取
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=無需介面或快速鍵操作，輸入一個命令即可完成相�
 original=Open command palette
 translation=開啟命令面板
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=導覽
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=使用
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=離開
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=找不到命令。
@@ -6198,14 +6286,6 @@ translation=字數統計
 original=Show word count in the status bar.
 translation=在狀態列中顯示字數。
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=要在此保管庫中顯示 Mermaid 圖表嗎？
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=只有在你信任此保管庫的內容時才允許。
-
 [plugins.slides.name]
 original=Slides
 translation=幻燈片
@@ -6325,18 +6405,6 @@ translation=模板檔案內的 {{time}} 會被置換成此值。
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=可使用 {{time:HH:mm}} 來取代設定的時間格式。
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=導覽
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=插入模板
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=取消動作
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=合併所有檔案內容…
 original=No files found.
 translation=找不到檔案。
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=導覽
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=合併
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=建立新檔
@@ -8241,10 +8301,6 @@ translation=建立新檔
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=合併至頂端
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=放棄
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=擷取目前選取內容到其他檔案…
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=擷取目前標題段落到其他檔案…
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=移至底端
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=建立新畫布
 original=Convert to file...
 translation=轉換成檔案…
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=以內嵌標題
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=以內嵌區塊
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=以導覽至群組
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=輸入標題名稱
@@ -9194,6 +9234,14 @@ translation=所有檢視
 original=This view
 translation=這個檢視
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=移至所有檢視
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=移至此檢視
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=搜尋或建立...
@@ -9246,10 +9294,6 @@ translation=檢視名稱
 original=View
 translation=檢視
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=表格
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=顯示名稱
@@ -9287,8 +9331,8 @@ original=New
 translation=新項目
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=顯示 {{count}}
+original=Showing {{shown}} of {{total}}
+translation=顯示 {{total}} 項中的 {{shown}} 項
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=找不到檢視 "{{ view }}"
 original=Unknown view type: {{ viewtype }}
 translation=Base 設定為未知的檢視類型: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=未知的屬性類型：{{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=檢視必須是陣列
@@ -9653,6 +9701,10 @@ translation=看板
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=編輯群組...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=隱藏欄
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=輸入 [[
 original=to link note
 translation=來連結筆記
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=來關閉
-
 [properties.option-property-type]
 original=Property type
 translation=屬性類型
@@ -10210,6 +10258,10 @@ translation=Callout 類型...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=「{{item}}」
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} 個詞
@@ -10257,6 +10309,14 @@ translation={{count}} 個資料夾
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} 個資料夾
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} 個項目
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} 個項目
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=此連結指向可執行檔。執行它可能會損害你的電腦�
 original=File: {{path}}
 translation=檔案：{{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=要在其他應用程式中開啟檔案嗎？
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=此檔案將在 Obsidian 以外的應用程式中開啟。某些檔案類型可以在您的電腦上執行程式碼。請僅在信任此檔案來源的情況下繼續。
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=找不到保管庫。
@@ -10401,6 +10469,22 @@ translation=找不到保管庫。
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=無法找到 URL {{url}} 對應的保管庫
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=保管庫不能儲存在 Obsidian 的安裝資料夾中，因為 Obsidian 更新時會清除此資料夾
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=此保管庫位於 Obsidian 的安裝資料夾中
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Obsidian 更新時，安裝程式會清除此資料夾及其中的保管庫。請選擇「管理保管庫」以關閉保管庫，再使用該保管庫的「移動保管庫⋯」將其移至其他位置。\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=管理保管庫
 
 [main.supported-files]
 original=Supported files

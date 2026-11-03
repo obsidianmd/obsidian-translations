@@ -266,14 +266,6 @@ translation=Skriv från höger till vänster (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Gör så att texten går från höger till vänster.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Visa Mermaid-diagram i anteckningar
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Rendera flödesscheman, sekvensdiagram och andra diagram från ”mermaid”-kodblock.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Konvertera HTML automatiskt
@@ -914,14 +906,6 @@ translation=Flytande navigering
 original=Navigation buttons float over the content instead of being anchored.
 translation=Navigeringsknapparna flyter ovanpå innehållet i stället för att vara förankrade.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Skjutbara sidofält
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Sidofält skjuts till sidan av innehållet i stället för att flyta ovanpå.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Fullskärm
@@ -1498,6 +1482,14 @@ translation=Filtrera grundtillägg efter namn eller beskrivning.
 original=Search plugins...
 translation=Sök efter grundtillägg...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Inaktiverat enligt din organisations policy.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Krävs enligt din organisations policy.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Användartillägg
@@ -1741,6 +1733,14 @@ translation=Installerar tillägg "{{name}}" ...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Misslyckades med att installera tillägg "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Tillägget ”{{name}}” tillåts inte enligt din organisations policy.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Tillåts inte enligt din organisations policy.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Ersätt
 original=Replace all
 translation=Ersätt alla
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Skriv #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=för att länka rubrik
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Skriv ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=för att länka block
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Skriv |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Inga träffar
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Bildstorlek: {{size}}px bred
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=för att acceptera
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Filen "{{name}}" hittades inte.
 original=Unrecognized URI action: {{action}}
 translation=Okänd URI-åtgärd: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=URI-parametern ”{{param}}” kräver ”append” eller ”prepend”.
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Radera
@@ -2573,10 +2561,6 @@ translation=Tomt
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Ingen fil är öppen
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Skapa ny fil
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Misslyckades med att skicka om e-post.
 original=Vault location must be a folder.
 translation=Valvplats måste vara en mapp.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Du kan inte komma åt eller skapa valv i iCloud eftersom iCloud är inaktiverat för Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Konfigurera Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Det här valvet finns i Obsidians appmapp.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Det här valvet finns på {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=På den här enheten
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Filer
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Senast öppnat
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation={{count}} aktiverade
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Inaktiverade
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Gemenskapstilläggen tog {{seconds}} sekunder att läsa in senast. Om det tar lång tid att öppna det här valvet kan du prova begränsat läge.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Det här valvet öppnades inte fullständigt senast.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Det här valvet öppnades inte fullständigt senast. Om det fortsätter att hända kan du prova begränsat läge.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Öppna valv
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Öppna valv i begränsat läge
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Byt namn på valv...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Glöm valv...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Flytta till enhetens lagring...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Radera valv...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Byt namn på valvet ”{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Radera valvet ”{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Om du raderar det här valvet raderas alla filer i det.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Den här åtgärden kan inte ångras. Bekräfta att du vill radera valvet.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Glöm valvet ”{{name}}”
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Om du glömmer det här valvet tas det bort från listan över valv utan att några filer raderas.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Glöm
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Uppdatera Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Din Android-enhet är inte uppdaterad och måste uppdateras för att Obsidian ska fungera. Hitta ett sätt att uppgradera appen ”Android WebView”.
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Valvets namn får inte innehålla något av dessa tecken: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian har inte behörighet att komma åt den här platsen
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Det gick inte att radera valvet.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Flyttar från {{from}} till {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Valvet flyttades, men den gamla kopian i Obsidians appmapp kunde inte raderas.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Välkommen
@@ -3541,6 +3657,10 @@ translation=Laddar valv ...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Misslyckades med att ladda valv: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Det går inte att läsa ”{{path}}”, så filerna där visas inte. Kontrollera behörigheterna och starta sedan om Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Den kommer att flyttas till Obsidians papperskorg, som finns i den d
 original=The file will be permanently deleted.
 translation=Filen kommer att raderas permanent.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Det gick inte att flytta {{item}} till systemets papperskorg. Ändra inställningen ”Raderade filer” för att radera ändå.
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Denna mapp är inte tom.
@@ -4198,10 +4322,6 @@ translation=Bekräfta
 original=Cancel
 translation=Avbryt
 
-[dialogue.button-allow]
-original=Allow
-translation=Tillåt
-
 [dialogue.button-skip]
 original=Skip
 translation=Hoppa över
@@ -4289,6 +4409,10 @@ translation=Obsidian kan inte öppna filer av typen ”.{{extension}}”.
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Rubrik kan inte vara tom
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Rubriken ”{{heading}}” hittades inte i filen.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Skriv en mapp
 original=No existing folders found.
 translation=Inga mappar hittades.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=för att navigera
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=för att flytta
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=för att skapa
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=för att avfärda
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Matcha tagg:
 original=No matches found.
 translation=Inga träffar hittades.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Relevans
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... och {{count}} till träff.
@@ -5046,14 +5162,6 @@ translation=Växlare
 original=Open quick switcher
 translation=Öppna snabbväxlare
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=för att navigera
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=för att öppna
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=för att öppna i ny flik
@@ -5065,14 +5173,6 @@ translation=för att öppna till höger
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=för att skapa
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=för att avfärda
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=för att välja
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Skriv ett kommando för att köra det. Inget behov av att använda g
 original=Open command palette
 translation=Öppna kommandopalett
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=för att navigera
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=för att använda
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=för att avfärda
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Inga kommandon hittades.
@@ -6198,14 +6286,6 @@ translation=Ordräkning
 original=Show word count in the status bar.
 translation=Visa ordräkning i statusfältet.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Visa Mermaid-diagram i detta valv?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Tillåt endast om du litar på innehållet i detta valv.
-
 [plugins.slides.name]
 original=Slides
 translation=Bildspel
@@ -6325,18 +6405,6 @@ translation={{time}} i mallfilen kommer att ersättas med detta värde.
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Du kan också använda {{time:HH:mm}} för att åsidosätta formatet en gång.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=för att navigera
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=för att infoga mall
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=för att avfärda
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Slå samman hela filen med...
 original=No files found.
 translation=Inga filer hittades.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=för att navigera
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=för att slå samman
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=för att skapa ny
@@ -8241,10 +8301,6 @@ translation=för att skapa ny
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=för att slå samman överst
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=för att avfärda
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Extrahera aktuell markering...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Extrahera denna rubrik...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=för att flytta till botten
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Skapa ny canvas
 original=Convert to file...
 translation=Konvertera till fil...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=för att bädda in rubrik
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=för att bädda in block
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=för att navigera till grupp
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Skriv namn på rubrik
@@ -9194,6 +9234,14 @@ translation=Alla vyer
 original=This view
 translation=Denna vy
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Flytta till alla vyer
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Flytta till den här vyn
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Hitta eller skapa...
@@ -9246,10 +9294,6 @@ translation=Vynamn
 original=View
 translation=Vy
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Tabell
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Visningsnamn
@@ -9287,8 +9331,8 @@ original=New
 translation=Ny
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Visar {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Visar {{shown}} av {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Vyn "{{ view }}" hittades inte
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Okänd egenskapstyp: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Vyer måste vara en array
@@ -9653,6 +9701,10 @@ translation=Kanban
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Redigera grupper...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Dölj kolumn
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Typ [[
 original=to link note
 translation=för att länka anteckning
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=för att avfärda
-
 [properties.option-property-type]
 original=Property type
 translation=Egenskapstyp
@@ -10210,6 +10258,10 @@ translation=Callout-typ...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=”{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} ord
@@ -10257,6 +10309,14 @@ translation={{count}} mapp
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} mappar
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} objekt
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} objekt
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Den här länken pekar på en körbar fil. Att köra den kan skada d
 original=File: {{path}}
 translation=Fil: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Öppna filen i en annan app?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Den här filen öppnas utanför Obsidian. Vissa filtyper kan köra kod på din dator. Fortsätt bara om du litar på filens källa.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Valvet hittades inte.
@@ -10401,6 +10469,22 @@ translation=Valvet hittades inte.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Det gick inte att hitta ett valv för URL:en {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Valv kan inte lagras i Obsidians installationsmapp eftersom den raderas när Obsidian uppdateras
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Det här valvet finns i Obsidians installationsmapp
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Installationsprogrammet raderar den här mappen när Obsidian uppdateras, och därmed även valvet. Välj ”Hantera valv” för att stänga valvet och använd sedan ”Flytta valv...” för att flytta det till en annan plats.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Hantera valv
 
 [main.supported-files]
 original=Supported files

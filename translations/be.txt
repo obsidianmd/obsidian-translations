@@ -266,14 +266,6 @@ translation=Напрамак напісання (RTL)
 original=Sets the default text direction of notes to right-to-left.
 translation=Устанаўлівае кірунак напісання нататак справа налева.
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=Паказваць дыяграмы Mermaid у нататках
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=Адлюстроўваць блок-схемы, дыяграмы паслядоўнасцей і іншыя дыяграмы з блокаў кода “mermaid”.
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=Канвертаваць HTML
@@ -914,14 +906,6 @@ translation=Плаўная навігацыя
 original=Navigation buttons float over the content instead of being anchored.
 translation=Кнопкі навігацыі плаваюць над зместам замест таго, каб быць замацаванымі.
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=Высоўныя бакавыя панэлі
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=Бакавыя панэлі з’язджаюць у бок зместу замест таго, каб плаваць над ім.
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=Поўны экран
@@ -1498,6 +1482,14 @@ translation=Пошук плагінаў па назве і апісанні.
 original=Search plugins...
 translation=Пошук плагінаў...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=Выключана палітыкай вашай арганізацыі.
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=Патрабуецца палітыкай вашай арганізацыі.
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=Плагіны супольнасці
@@ -1741,6 +1733,14 @@ translation=Усталяванне плагіну "{{name}}"...
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=Не атрымалася ўсталяваць плагін "{{name}}".
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=Убудова «{{name}}» не дазволена палітыкай вашай арганізацыі.
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=Не дазволена палітыкай вашай арганізацыі.
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=Замяніць
 original=Replace all
 translation=Замяніць усе
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=Напішыце #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=каб спасылацца на загаловак
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=Напішыце ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=каб спасылацца на блок
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=Напішыце |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=Супадзенняў не знойдзена
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=Памер відарыса: шырыня {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=прыняць
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=Файл "{{name}}" не знойдзены.
 original=Unrecognized URI action: {{action}}
 translation=Нераспазнанае дзеянне URI: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=Параметр URI «{{param}}» патрабуе «append» або «prepend».
+
 [interface.delete-action-short-name]
 original=Delete
 translation=Выдаліць
@@ -2573,10 +2561,6 @@ translation=Пуста
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=Няма адкрытых файлаў
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=Стварыць новы файл
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=Не атрымалася паўторна адправіць ліс
 original=Vault location must be a folder.
 translation=Месцам захоўвання павінна быць папка.
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=Вы не можаце атрымаць доступ да сховішчаў у iCloud або стварыць іх там, бо iCloud выключаны для Obsidian.
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=Наладзіць Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=Гэта сховішча знаходзіцца ў папцы праграмы Obsidian.
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=Гэта сховішча знаходзіцца ў {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=На гэтай прыладзе
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=Файлы
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=Апошняе адкрыццё
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation=Уключана: {{count}}
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=Выключаны
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=Мінулым разам загрузка плагінаў супольнасці заняла {{seconds}} с. Калі гэта сховішча адкрываецца павольна, паспрабуйце абмежаваны рэжым.
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=Мінулым разам адкрыццё гэтага сховішча не завяршылася.
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=Мінулым разам адкрыццё гэтага сховішча не завяршылася. Калі гэта паўтараецца, паспрабуйце абмежаваны рэжым.
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=Адкрыць сховішча
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=Адкрыць сховішча ў абмежаваным рэжыме
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=Перайменаваць сховішча...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=Забыць сховішча...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=Перамясціць у памяць прылады...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=Выдаліць сховішча...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=Перайменаваць сховішча «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=Выдаліць сховішча «{{name}}»
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=Выдаленне гэтага сховішча прывядзе да выдалення ўсіх файлаў у ім.
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=Гэта дзеянне незваротнае. Пацвердзіце, што хочаце выдаліць сховішча.
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=Забыць сховішча «{{name}}»
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=Гэта сховішча будзе прыбрана са спіса сховішчаў без выдалення файлаў.
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=Забыць
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=Абнавіць Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=Ваша прылада Android не абноўлена, і для працы Obsidian патрабуецца абнаўленне. Знайдзіце спосаб абнавіць праграму «Android WebView».
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=Назва сховішча не можа змяшчаць наступныя сімвалы: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian не мае дазволу на доступ да гэтага месца
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=Не ўдалося выдаліць сховішча.
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=Перамяшчэнне з {{from}} у {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=Сховішча перамешчана, але не ўдалося выдаліць старую копію ў папцы праграмы Obsidian.
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=Вітаем
@@ -3541,6 +3657,10 @@ translation=Загрузка сховішча...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=Не атрымалася загрузіць сховішча: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=Не ўдалося прачытаць «{{path}}», таму файлы адтуль не паказваюцца. Праверце правы доступу, затым перазапусціце Obsidian.
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=Будзе перамешчаны ў кошык Obsidian, якая �
 original=The file will be permanently deleted.
 translation=Файл будзе выдалены назаўсёды.
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=Не ўдалося перамясціць {{item}} у сістэмную сметніцу. Каб усё роўна выдаліць, змяніце наладу «Выдаленыя файлы».
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=Гэта папка не пустая.
@@ -4198,10 +4322,6 @@ translation=Пацвердзіць
 original=Cancel
 translation=Скасаваць
 
-[dialogue.button-allow]
-original=Allow
-translation=Дазволіць
-
 [dialogue.button-skip]
 original=Skip
 translation=Прапусціць
@@ -4289,6 +4409,10 @@ translation=Obsidian не можа адкрываць файлы «.{{extension}
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=Загаловак не можа быць пусты
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=Загаловак «{{heading}}» не знойдзены ў файле.
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=Увядзіце імя папкі
 original=No existing folders found.
 translation=Папка з такім імем не знойдзена.
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=навігацыя
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=перамясціць
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=стварыць
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=скасаваць
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=Супадзенне з тэгам:
 original=No matches found.
 translation=Супадзенняў не знойдзена.
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=Рэлевантнасць
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... і яшчэ {{count}} супадзенне.
@@ -5046,14 +5162,6 @@ translation=Пераход
 original=Open quick switcher
 translation=Меню хуткай навігацыі
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=навігацыя
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=адкрыць
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=адкрыць у новай укладцы
@@ -5065,14 +5173,6 @@ translation=адкрыць у вобласці справа
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=стварыць
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=скасаваць
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=выбраць
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=Увядзіце каманду, якую хочаце запусц�
 original=Open command palette
 translation=Адкрыць камандную панэль
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=навігацыя
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=выкарыстоўваць
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=скасаваць
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=Каманда не знойдзена.
@@ -6198,14 +6286,6 @@ translation=Колькасць слоў
 original=Show word count in the status bar.
 translation=Паказвае колькасць слоў у радку стану.
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=Паказваць дыяграмы Mermaid у гэтым сховішчы?
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=Дазваляйце толькі калі давяраеце змесціву гэтага сховішча.
-
 [plugins.slides.name]
 original=Slides
 translation=Слайды
@@ -6325,18 +6405,6 @@ translation={{time}} у файле шаблону заменіцца на гэт
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=Выкарыстоўвайце канструкцыю {{time:HH:mm}}, каб задаць фармат прама ў шаблоне.
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=навігацыя
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=уставіць шаблон
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=скасаваць
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=Аб'яднаць увесь файл з...
 original=No files found.
 translation=Не знойдзена файлаў.
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=перайсці
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=аб'яднаць
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=стварыць новы
@@ -8241,10 +8301,6 @@ translation=стварыць новы
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=аб'яднаць зверху
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=скасаваць
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=Выняць бягучае вылучэнне...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=Выняць гэты загаловак...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=змясціць у канец
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=Стварыць новае палатно
 original=Convert to file...
 translation=Канвертаваць у файл...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=выбраць загаловак
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=выбраць блок
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=перайсці да групы
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Увядзіце імя блока
@@ -9194,6 +9234,14 @@ translation=Усе прагляды
 original=This view
 translation=Гэты прагляд
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=Перамясціць ва ўсе выгляды
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=Перамясціць у гэты выгляд
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=Знайсці або стварыць...
@@ -9246,10 +9294,6 @@ translation=Назва прагляду
 original=View
 translation=Прагляд
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=Табліца
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=Імя для адлюстравання
@@ -9287,8 +9331,8 @@ original=New
 translation=Новы
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=Паказваецца: {{count}}
+original=Showing {{shown}} of {{total}}
+translation=Паказваецца {{shown}} з {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=Прагляд "{{ view }}" не знойдзены
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=Невядомы тып уласцівасці: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=Прагляды павінны быць масівам
@@ -9653,6 +9701,10 @@ translation=Канбан
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=Рэдагаваць групы...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=Схаваць слупок
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=Напішыце [[
 original=to link note
 translation=каб звязаць нататку
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=скасаваць
-
 [properties.option-property-type]
 original=Property type
 translation=Тып уласцівасці
@@ -10210,6 +10258,10 @@ translation=Увядзіце тып выноснага блока...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=«{{item}}»
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} слова
@@ -10257,6 +10309,14 @@ translation={{count}} папка
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} папак
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} элемент
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} элементаў
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=Гэта спасылка паказвае на выканальны
 original=File: {{path}}
 translation=Файл: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=Адкрыць файл у іншай праграме?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=Гэты файл адкрыецца па-за Obsidian. Некаторыя тыпы файлаў могуць выконваць код на вашым камп'ютары. Працягвайце, толькі калі давяраеце крыніцы гэтага файла.
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=Сховішча не знойдзена.
@@ -10401,6 +10469,22 @@ translation=Сховішча не знойдзена.
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=Не ўдалося знайсці сховішча для URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=Сховішчы нельга захоўваць у папцы ўсталявання Obsidian, бо яна ачышчаецца пры абнаўленні Obsidian
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=Гэта сховішча знаходзіцца ў папцы ўсталявання Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=Пры абнаўленні Obsidian усталёўшчык выдаляе змесціва гэтай папкі разам з гэтым сховішчам. Выберыце «Кіраванне сховішчамі», каб закрыць сховішча, затым скарыстайцеся для яго пунктам «Перамясціць сховішча...», каб перамясціць яго ў іншае месца.\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=Кіраванне сховішчамі
 
 [main.supported-files]
 original=Supported files

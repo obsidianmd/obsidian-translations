@@ -266,14 +266,6 @@ translation=อ่าน-เขียนจากขวาไปซ้าย (RT
 original=Sets the default text direction of notes to right-to-left.
 translation=ตั้งค่าการแสดงผลทิศทางการอ่านและเขียนให้เป็นจากขวาไปซ้าย
 
-[setting.editor.option-mermaid-allow]
-original=Show Mermaid diagrams in notes
-translation=แสดงไดอะแกรม Mermaid ในโน้ต
-
-[setting.editor.option-mermaid-allow-description]
-original=Render flowcharts, sequence diagrams, and other diagrams from “mermaid” code blocks.
-translation=เรนเดอร์ผังงาน ไดอะแกรมลำดับ และไดอะแกรมอื่น ๆ จากบล็อกโค้ด “mermaid”
-
 [setting.editor.option-auto-convert-html]
 original=Convert pasted HTML to Markdown
 translation=แปลงไวยากรณ์ HTML โดยอัตโนมัติ
@@ -914,14 +906,6 @@ translation=การนำทางแบบลอย
 original=Navigation buttons float over the content instead of being anchored.
 translation=ปุ่มนำทางจะลอยอยู่เหนือเนื้อหาแทนที่จะถูกยึดติด
 
-[setting.appearance.option-sliding-sidebar]
-original=Sliding sidebars
-translation=แถบด้านข้างแบบเลื่อน
-
-[setting.appearance.option-sliding-sidebar-desc]
-original=Sidebars slide to the side of the content instead of floating above.
-translation=แถบด้านข้างจะเลื่อนไปที่ด้านข้างของเนื้อหาแทนที่จะลอยอยู่ด้านบน
-
 [setting.appearance.option-auto-full-screen]
 original=Full screen
 translation=เต็มหน้าจอ
@@ -1498,6 +1482,14 @@ translation=ค้นหาปลั๊กอินด้วยชื่อห�
 original=Search plugins...
 translation=ค้นหาปลั๊กอิน...
 
+[setting.core-plugin.tooltip-turned-off-by-policy]
+original=Turned off by your organization's policy.
+translation=ปิดใช้งานตามนโยบายขององค์กรของคุณ
+
+[setting.core-plugin.tooltip-required-by-policy]
+original=Required by your organization's policy.
+translation=จำเป็นต้องเปิดใช้งานตามนโยบายขององค์กรของคุณ
+
 [setting.third-party-plugin.name]
 original=Community plugins
 translation=ปลั๊กอินโดยชุมชน
@@ -1741,6 +1733,14 @@ translation=กำลังติดตั้งปลั๊กอิน "{{name
 [setting.third-party-plugin.msg-failed-to-install-plugin]
 original=Failed to install plugin “{{name}}”.
 translation=ติดตั้งปลั๊กอิน "{{name}}" ไม่สำเร็จ
+
+[setting.third-party-plugin.msg-plugin-not-permitted]
+original=Plugin “{{name}}” is not permitted by your organization's policy.
+translation=นโยบายขององค์กรของคุณไม่อนุญาตให้ใช้ปลั๊กอิน “{{name}}”
+
+[setting.third-party-plugin.tooltip-not-permitted-by-policy]
+original=Not permitted by your organization's policy.
+translation=ไม่ได้รับอนุญาตตามนโยบายขององค์กรของคุณ
 
 [setting.third-party-plugin.msg-successfully-installed-plugin]
 original=Successfully installed plugin “{{name}}”.
@@ -2070,25 +2070,13 @@ translation=แทนที่
 original=Replace all
 translation=แทนที่ทั้งหมด
 
-[editor.link-suggestion.label-type-hash]
-original=Type #
-translation=พิมพ์ #
-
 [editor.link-suggestion.label-link-heading]
 original=to link heading
 translation=เพื่อลิงค์กับหัวข้อ
 
-[editor.link-suggestion.label-type-block]
-original=Type ^
-translation=พิมพ์ ^
-
 [editor.link-suggestion.label-link-block]
 original=to link blocks
 translation=เพื่อลิงค์กับบล็อคข้อความ
-
-[editor.link-suggestion.label-type-pipe]
-original=Type |
-translation=พิมพ์ |
 
 [editor.link-suggestion.label-change-display-text]
 original=to change display text
@@ -2109,10 +2097,6 @@ translation=ไม่พบลิงค์
 [editor.link-suggestion.label-image-size]
 original=Image size: {{size}}px wide
 translation=ขนาดรูปภาพ: กว้าง {{size}}px
-
-[editor.link-suggestion.label-accept]
-original=to accept
-translation=เพื่อยอมรับ
 
 [editor.link-suggestion.label-new-footnote]
 original=New footnote...
@@ -2370,6 +2354,10 @@ translation=ไม่มีไฟล์ "{{name}}"
 original=Unrecognized URI action: {{action}}
 translation=การกระทำ URI ที่ไม่รู้จัก: {{action}}
 
+[interface.msg-insert-param-requires-mode]
+original=The “{{param}}” URI parameter requires “append” or “prepend.”
+translation=พารามิเตอร์ URI “{{param}}” ต้องใช้ร่วมกับ “append” หรือ “prepend”
+
 [interface.delete-action-short-name]
 original=Delete
 translation=ลบ
@@ -2573,10 +2561,6 @@ translation=ว่างเปล่า
 [interface.empty-state.no-file-open]
 original=No file is open
 translation=ไม่มีไฟล์ที่เปิดอยู่
-
-[interface.empty-state.create-new-file]
-original=Create new note
-translation=สร้างไฟล์ใหม่
 
 [interface.empty-state.go-to-file]
 original=Go to file
@@ -3454,6 +3438,138 @@ translation=ส่งอีเมลซ้ำไม่สำเร็จ
 original=Vault location must be a folder.
 translation=ตำแหน่งห้องนิรภัยต้องเป็นโฟลเดอร์
 
+[interface.start-screen.mobile.label-icloud-disabled]
+original=You cannot access or create vaults in iCloud because it's disabled for Obsidian.
+translation=คุณไม่สามารถเข้าถึงหรือสร้างห้องนิรภัยใน iCloud ได้ เนื่องจาก iCloud ถูกปิดใช้งานสำหรับ Obsidian
+
+[interface.start-screen.mobile.button-setup-obsidian-sync]
+original=Set up Obsidian Sync
+translation=ตั้งค่า Obsidian Sync
+
+[interface.start-screen.mobile.label-vault-in-app-folder]
+original=This vault is located in the Obsidian app folder.
+translation=ห้องนิรภัยนี้อยู่ในโฟลเดอร์แอป Obsidian
+
+[interface.start-screen.mobile.label-vault-located-at]
+original=This vault is located at {{path}}
+translation=ห้องนิรภัยนี้อยู่ที่ {{path}}
+
+[interface.start-screen.mobile.label-stored-in-i-cloud]
+original=iCloud
+translation=iCloud
+
+[interface.start-screen.mobile.label-stored-on-device]
+original=On this device
+translation=บนอุปกรณ์นี้
+
+[interface.start-screen.mobile.label-files]
+original=Files
+translation=ไฟล์
+
+[interface.start-screen.mobile.label-last-opened]
+original=Last opened
+translation=เปิดล่าสุด
+
+[interface.start-screen.mobile.label-enabled-plugin-count]
+original={{count}} enabled
+translation=เปิดใช้งาน {{count}} รายการ
+
+[interface.start-screen.mobile.label-plugins-disabled]
+original=Disabled
+translation=ปิดใช้งาน
+
+[interface.start-screen.mobile.label-slow-community-plugins]
+original=Community plugins took {{seconds}} seconds to load last time. If this vault is slow to open, try restricted mode.
+translation=ครั้งล่าสุดปลั๊กอินชุมชนใช้เวลาโหลด {{seconds}} วินาที หากห้องนิรภัยนี้เปิดช้า ให้ลองใช้โหมดจำกัด
+
+[interface.start-screen.mobile.label-open-incomplete]
+original=This vault didn't finish opening last time.
+translation=ครั้งล่าสุดห้องนิรภัยนี้เปิดไม่สำเร็จ
+
+[interface.start-screen.mobile.label-open-incomplete-try-restricted]
+original=This vault didn't finish opening last time. If it keeps happening, try restricted mode.
+translation=ครั้งล่าสุดห้องนิรภัยนี้เปิดไม่สำเร็จ หากยังเกิดปัญหานี้อยู่ ให้ลองใช้โหมดจำกัด
+
+[interface.start-screen.mobile.button-open-vault]
+original=Open vault
+translation=เปิดห้องนิรภัย
+
+[interface.start-screen.mobile.button-open-vault-restricted]
+original=Open vault in restricted mode
+translation=เปิดห้องนิรภัยในโหมดจำกัด
+
+[interface.start-screen.mobile.menu-opt-rename-vault]
+original=Rename vault...
+translation=เปลี่ยนชื่อห้องนิรภัย...
+
+[interface.start-screen.mobile.menu-opt-forget-vault]
+original=Forget vault...
+translation=นำห้องนิรภัยออกจากรายการ...
+
+[interface.start-screen.mobile.menu-opt-move-to-device-storage]
+original=Move to device storage...
+translation=ย้ายไปยังพื้นที่จัดเก็บข้อมูลของอุปกรณ์...
+
+[interface.start-screen.mobile.menu-opt-delete-vault]
+original=Delete vault...
+translation=ลบห้องนิรภัย...
+
+[interface.start-screen.mobile.label-rename-vault]
+original=Rename vault “{{name}}”
+translation=เปลี่ยนชื่อห้องนิรภัย “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault]
+original=Delete vault “{{name}}”
+translation=ลบห้องนิรภัย “{{name}}”
+
+[interface.start-screen.mobile.label-delete-vault-warning]
+original=Deleting this vault will delete all files in it.
+translation=การลบห้องนิรภัยนี้จะลบไฟล์ทั้งหมดที่อยู่ภายใน
+
+[interface.start-screen.mobile.label-delete-vault-confirm]
+original=This action is irreversible. Please confirm you want to delete it.
+translation=การดำเนินการนี้ไม่สามารถย้อนกลับได้ โปรดยืนยันว่าคุณต้องการลบ
+
+[interface.start-screen.mobile.label-forget-vault]
+original=Forget vault “{{name}}”
+translation=นำห้องนิรภัย “{{name}}” ออกจากรายการ
+
+[interface.start-screen.mobile.label-forget-vault-desc]
+original=Forgetting this vault will remove it from the list of vaults without deleting any files.
+translation=การนำห้องนิรภัยนี้ออกจากรายการห้องนิรภัยจะไม่ลบไฟล์ใดๆ
+
+[interface.start-screen.mobile.button-forget]
+original=Forget
+translation=นำออกจากรายการ
+
+[interface.start-screen.mobile.label-outdated-web-view]
+original=Update Android WebView
+translation=อัปเดต Android WebView
+
+[interface.start-screen.mobile.label-outdated-web-view-desc]
+original=Your Android device is not up to date, and must be updated for Obsidian to work. Please find a way to upgrade the app "Android WebView".
+translation=อุปกรณ์ Android ของคุณยังไม่เป็นเวอร์ชันล่าสุด และจำเป็นต้องอัปเดตเพื่อให้ Obsidian ทำงานได้ โปรดหาวิธีอัปเกรดแอป "Android WebView"
+
+[interface.start-screen.mobile.msg-invalid-vault-name-characters]
+original=Vault name cannot contain any of these characters: 
+translation=ชื่อห้องนิรภัยต้องไม่มีอักขระต่อไปนี้: 
+
+[interface.start-screen.mobile.msg-no-location-permission]
+original=Obsidian does not have permission to access this location
+translation=Obsidian ไม่มีสิทธิ์เข้าถึงตำแหน่งนี้
+
+[interface.start-screen.mobile.msg-delete-failed]
+original=Failed to delete vault.
+translation=ลบห้องนิรภัยไม่สำเร็จ
+
+[interface.start-screen.mobile.msg-moving-vault]
+original=Moving from {{from}} to {{to}}
+translation=กำลังย้ายจาก {{from}} ไปยัง {{to}}
+
+[interface.start-screen.mobile.msg-move-old-copy-not-deleted]
+original=The vault was moved, but the old copy in the Obsidian app folder could not be deleted.
+translation=ย้ายห้องนิรภัยแล้ว แต่ไม่สามารถลบสำเนาเดิมในโฟลเดอร์แอป Obsidian ได้
+
 [interface.starter-content.welcome-filename]
 original=Welcome
 translation=ยินดีต้อนรับ
@@ -3541,6 +3657,10 @@ translation=กำลังโหลดห้องนิรภัย...
 [interface.start-up.msg-failed-to-load-vault]
 original=Failed to load vault: 
 translation=ไม่สามารถโหลดห้องนิรภัยได้: 
+
+[interface.start-up.msg-unreadable-path]
+original=Unable to read “{{path}}”, so its files aren’t shown. Check its permissions, then restart Obsidian.
+translation=ไม่สามารถอ่าน “{{path}}” ได้ จึงไม่แสดงไฟล์ภายใน โปรดตรวจสอบสิทธิ์การเข้าถึง แล้วรีสตาร์ต Obsidian
 
 [interface.start-up.loading-cache]
 original=Loading cache...
@@ -4110,6 +4230,10 @@ translation=ไฟล์จะถูกย้ายไปยังถังข�
 original=The file will be permanently deleted.
 translation=ไฟล์นี้จะถูกลบอย่างถาวร
 
+[dialogue.msg-failed-to-move-to-system-trash]
+original=Failed to move {{item}} to the system trash. To delete anyway, change the “Deleted files” setting.
+translation=ย้าย {{item}} ไปยังถังขยะของระบบไม่สำเร็จ หากยังต้องการลบ ให้เปลี่ยนการตั้งค่า “ไฟล์ที่ถูกลบ”
+
 [dialogue.label-non-empty-folder]
 original=This folder is not empty.
 translation=โฟลเดอร์นี้มีไฟล์อยู่ข้างใน
@@ -4198,10 +4322,6 @@ translation=ยืนยัน
 original=Cancel
 translation=ยกเลิก
 
-[dialogue.button-allow]
-original=Allow
-translation=อนุญาต
-
 [dialogue.button-skip]
 original=Skip
 translation=ข้าม
@@ -4289,6 +4409,10 @@ translation=Obsidian ไม่สามารถเปิดไฟล์ “.{{e
 [dialogue.msg-heading-empty]
 original=Heading cannot be empty
 translation=หัวเรื่องต้องไม่ว่างเปล่า
+
+[dialogue.msg-heading-not-found]
+original=Heading “{{heading}}” not found in file.
+translation=ไม่พบหัวเรื่อง “{{heading}}” ในไฟล์
 
 [dialogue.msg-block-id-empty]
 original=Block ID cannot be empty
@@ -4650,21 +4774,9 @@ translation=พืมพ์ชื่อโฟลเดอร์
 original=No existing folders found.
 translation=ไม่พบโฟลเดอร์
 
-[plugins.file-explorer.instruction-navigate]
-original=to navigate
-translation=เพื่อเลื่อน
-
-[plugins.file-explorer.instruction-move]
-original=to move
-translation=เพื่อย้าย
-
 [plugins.file-explorer.instruction-create]
 original=to create
 translation=เพื่อสร้าง
-
-[plugins.file-explorer.instruction-dismiss]
-original=to dismiss
-translation=เพื่อยกเลิก
 
 [plugins.file-explorer.label-sort-a-to-z]
 original=File name (A to Z)
@@ -4898,6 +5010,10 @@ translation=แท็กตรงกัน:
 original=No matches found.
 translation=ไม่เจอคำค้นหาที่ตรงกัน
 
+[plugins.search.label-sort-relevance]
+original=Relevance
+translation=ความเกี่ยวข้อง
+
 [plugins.search.matches-with-count]
 original=... and {{count}} more match.
 translation=... และอีก {{count}} ผลการค้นหาที่ตรงกัน
@@ -5046,14 +5162,6 @@ translation=Switcher
 original=Open quick switcher
 translation=เปิด quick switcher
 
-[plugins.quick-switcher.instruction-navigate]
-original=to navigate
-translation=เพื่อเลื่อน
-
-[plugins.quick-switcher.instruction-open]
-original=to open
-translation=เพื่อเปิด
-
 [plugins.quick-switcher.instruction-open-in-new-tab]
 original=to open in new tab
 translation=เพื่อเปิดในแท็บใหม่
@@ -5065,14 +5173,6 @@ translation=เพื่อเปิดทางขวา
 [plugins.quick-switcher.instruction-create]
 original=to create
 translation=เพื่อสร้างใหม่
-
-[plugins.quick-switcher.instruction-dismiss]
-original=to dismiss
-translation=เพื่อยกเลิก
-
-[plugins.quick-switcher.instruction-select]
-original=to select
-translation=เพื่อเลือก
 
 [plugins.quick-switcher.label-no-note-create-new]
 original=No notes found. Enter to create a new one.
@@ -5890,18 +5990,6 @@ translation=พิมพ์คำสั่งเพื่อใช้งาน�
 original=Open command palette
 translation=เปิดกระดานคำสั่ง
 
-[plugins.command-palette.instruction-navigate]
-original=to navigate
-translation=เพื่อเลื่อน
-
-[plugins.command-palette.instruction-use]
-original=to use
-translation=เพื่อใช้งาน
-
-[plugins.command-palette.instruction-dismiss]
-original=to dismiss
-translation=เพื่อยกเลิก
-
 [plugins.command-palette.label-no-commands]
 original=No commands found.
 translation=ไม่พบคำสั่ง
@@ -6198,14 +6286,6 @@ translation=การนับคำ
 original=Show word count in the status bar.
 translation=แสดงการนับคำบนแถบสถานะ
 
-[plugins.mermaid.label-guard-title]
-original=Display Mermaid diagrams in this vault?
-translation=แสดงไดอะแกรม Mermaid ในห้องนิรภัยนี้หรือไม่
-
-[plugins.mermaid.label-guard-desc]
-original=Only allow if you trust this vault's contents.
-translation=อนุญาตเฉพาะเมื่อคุณเชื่อถือเนื้อหาในห้องนิรภัยนี้เท่านั้น
-
 [plugins.slides.name]
 original=Slides
 translation=สไลด์
@@ -6325,18 +6405,6 @@ translation={{time}} ในไฟล์เทมเพลตจะถูกแ�
 [plugins.templates.option-template-time-format-description2]
 original=You can also use {{time:HH:mm}} to override the format once.
 translation=คุณสามารถใช้ฟอร์แมต {{time:HH:mm}} เพื่อแทนที่ฟอร์แมตที่ตั้งไว้เป็นครั้งๆ ไป
-
-[plugins.templates.instruction-navigate]
-original=to navigate
-translation=เพื่อเลื่อน
-
-[plugins.templates.instruction-insert]
-original=to insert template
-translation=เพื่อแทรกเทมเพลต
-
-[plugins.templates.instruction-dismiss]
-original=to dismiss
-translation=เพื่อยกเลิก
 
 [plugins.templates.msg-no-templates-found]
 original=No templates found
@@ -8226,14 +8294,6 @@ translation=รวมไฟล์ทั้งไฟล์กับ...
 original=No files found.
 translation=ไม่พบไฟล์
 
-[plugins.note-composer.instruction-navigate]
-original=to navigate
-translation=เพื่อเลื่อน
-
-[plugins.note-composer.instruction-merge]
-original=to merge
-translation=เพื่อรวม
-
 [plugins.note-composer.instruction-create-new]
 original=to create new
 translation=เพื่อสร้างไฟล์ใหม่
@@ -8241,10 +8301,6 @@ translation=เพื่อสร้างไฟล์ใหม่
 [plugins.note-composer.instruction-merge-at-top]
 original=to merge at top
 translation=เพื่อรวมทีด้านบนสุด
-
-[plugins.note-composer.instruction-dismiss]
-original=to dismiss
-translation=เพื่อยกเลิก
 
 [plugins.note-composer.prompt-select-file-to-merge]
 original=Select file to merge into...
@@ -8269,10 +8325,6 @@ translation=แยกข้อความที่เลือก...
 [plugins.note-composer.command-extract-heading]
 original=Extract this heading...
 translation=แยกหัวข้อนี้...
-
-[plugins.note-composer.instruction-append]
-original=to move to bottom
-translation=เพื่อแทรกด้านล่างสุด
 
 [plugins.note-composer.instruction-prepend]
 original=to move to top
@@ -8910,18 +8962,6 @@ translation=สร้างผืนผ้าใบใหม่
 original=Convert to file...
 translation=แปลงเป็นไฟล์...
 
-[plugins.canvas.instruction-narrow-heading]
-original=to embed heading
-translation=เพื่อฝังหัวเรื่อง
-
-[plugins.canvas.instruction-narrow-block]
-original=to embed block
-translation=เพื่อฝังบล็อก
-
-[plugins.canvas.instruction-jump-to-group]
-original=to navigate to group
-translation=เพื่อนำทางไปยังกลุ่ม
-
 [plugins.canvas.prompt-to-narrow]
 original=Type to find file, heading, or block
 translation=Type name of heading
@@ -9194,6 +9234,14 @@ translation=มุมมองทั้งหมด
 original=This view
 translation=มุมมองนี้
 
+[plugins.bases.action-move-to-all-views]
+original=Move to all views
+translation=ย้ายไปยังทุกมุมมอง
+
+[plugins.bases.action-move-to-this-view]
+original=Move to this view
+translation=ย้ายไปยังมุมมองนี้
+
 [plugins.bases.placeholder-search-property]
 original=Find or create...
 translation=ค้นหาหรือสร้าง...
@@ -9246,10 +9294,6 @@ translation=ชื่อมุมมอง
 original=View
 translation=มุมมอง
 
-[plugins.bases.label-view-type-table]
-original=Table
-translation=ตาราง
-
 [plugins.bases.label-display-name]
 original=Display name
 translation=ชื่อที่แสดง
@@ -9287,8 +9331,8 @@ original=New
 translation=ใหม่
 
 [plugins.bases.label-search-results]
-original=Showing {{count}}
-translation=กำลังแสดง {{count}}
+original=Showing {{shown}} of {{total}}
+translation=กำลังแสดง {{shown}} จาก {{total}}
 
 [plugins.bases.label-new-item-template-file]
 original=New item template file
@@ -9490,6 +9534,10 @@ translation=ไม่พบมุมมอง "{{ view }}"
 original=Unknown view type: {{ viewtype }}
 translation=Base configured with an unknown view type: {{ viewtype }}
 
+[plugins.bases.msg-error-unknown-property-type]
+original=Unknown property type: {{ type }}
+translation=ไม่รู้จักประเภทคุณสมบัติ: {{ type }}
+
 [plugins.bases.msg-error-view-type]
 original=Views must be an array
 translation=มุมมองต้องเป็นอาร์เรย์
@@ -9653,6 +9701,10 @@ translation=คัมบัง
 [plugins.bases.kanban.action-edit-columns]
 original=Edit groups...
 translation=แก้ไขกลุ่ม...
+
+[plugins.bases.kanban.action-hide-column]
+original=Hide column
+translation=ซ่อนคอลัมน์
 
 [plugins.bases.kanban.label-column-width]
 original=Column width
@@ -9998,10 +10050,6 @@ translation=พิมพ์ [[
 original=to link note
 translation=เพื่อเชื่อมโยงโน้ต
 
-[properties.value-suggestion.instruction-dismiss]
-original=to dismiss
-translation=เพื่อปิด
-
 [properties.option-property-type]
 original=Property type
 translation=ประเภทคุณสมบัติ
@@ -10210,6 +10258,10 @@ translation=ประเภทบล็อกเน้น...
 original={{count}}
 translation={{count}}
 
+[nouns.quotes]
+original=“{{item}}”
+translation=“{{item}}”
+
 [nouns.word-with-count]
 original={{count}} word
 translation={{count}} คำ
@@ -10257,6 +10309,14 @@ translation={{count}} โฟลเดอร์
 [nouns.folder-with-count_plural]
 original={{count}} folders
 translation={{count}} โฟลเดอร์
+
+[nouns.item-with-count]
+original={{count}} item
+translation={{count}} รายการ
+
+[nouns.item-with-count_plural]
+original={{count}} items
+translation={{count}} รายการ
 
 [nouns.backlink-with-count]
 original={{count}} backlink
@@ -10394,6 +10454,14 @@ translation=ลิงก์นี้ชี้ไปยังไฟล์ปฏ�
 original=File: {{path}}
 translation=ไฟล์: {{path}}
 
+[main.unknown-file-title]
+original=Open file in another app?
+translation=เปิดไฟล์ในแอปอื่นหรือไม่?
+
+[main.unknown-file-message]
+original=This file will open outside of Obsidian. Some file types can run code on your computer. Only proceed if you trust the source of this file.
+translation=ไฟล์นี้จะเปิดภายนอก Obsidian ไฟล์บางประเภทสามารถเรียกใช้โค้ดบนคอมพิวเตอร์ของคุณได้ โปรดดำเนินการต่อเมื่อคุณเชื่อถือแหล่งที่มาของไฟล์นี้เท่านั้น
+
 [main.vault-not-found-title]
 original=Vault not found.
 translation=ไม่พบห้องนิรภัย
@@ -10401,6 +10469,22 @@ translation=ไม่พบห้องนิรภัย
 [main.vault-not-found-message]
 original=Unable to find a vault for the URL {{url}}
 translation=ไม่พบห้องนิรภัยสำหรับ URL {{url}}
+
+[main.vault-in-install-folder-message]
+original=Vaults can't be stored in Obsidian's installation folder because it's erased when Obsidian updates
+translation=ไม่สามารถจัดเก็บห้องนิรภัยไว้ในโฟลเดอร์ติดตั้งของ Obsidian ได้ เนื่องจากโฟลเดอร์นี้จะถูกล้างเมื่อ Obsidian อัปเดต
+
+[main.vault-in-install-folder-title]
+original=This vault is inside Obsidian's installation folder
+translation=ห้องนิรภัยนี้อยู่ภายในโฟลเดอร์ติดตั้งของ Obsidian
+
+[main.vault-in-install-folder-detail]
+original=The installer erases this folder when Obsidian updates, and this vault with it. Choose "Manage vaults" to close the vault, then use "Move vault..." on it to move it somewhere else.\n\n{{path}}
+translation=ตัวติดตั้งจะล้างโฟลเดอร์นี้เมื่อ Obsidian อัปเดต ซึ่งจะลบห้องนิรภัยนี้ไปด้วย เลือก "จัดการห้องนิรภัย" เพื่อปิดห้องนิรภัย จากนั้นใช้ "ย้ายห้องนิรภัย..." กับห้องนิรภัยนี้เพื่อย้ายไปที่อื่น\n\n{{path}}
+
+[main.button-manage-vaults]
+original=Manage vaults
+translation=จัดการห้องนิรภัย
 
 [main.supported-files]
 original=Supported files
