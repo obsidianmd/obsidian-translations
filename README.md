@@ -6,11 +6,12 @@ Help translate Obsidian into your language.
 
 To add a new language, follow these steps:
 
-1. Copy all of the content of the raw `en.json`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/en.json
-2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master
+1. Copy all of the content of `en.txt`: https://raw.githubusercontent.com/obsidianmd/obsidian-translations/master/translations/en.txt
+2. Paste into here: https://github.com/obsidianmd/obsidian-translations/new/master/translations
 3. Translate some strings to your language
-4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes
-5. Name the new file "[language code].json" and submit
+4. Find the language code of the language you're contributing: https://www.wikiwand.com/en/List_of_ISO_639-1_codes and name the new file `[language code].txt`.
+6. In the description of the pull request, or in a comment, please include the [endonym](<https://en.wikipedia.org/wiki/Endonym_and_exonym#:~:text=An%20endonym%20(also%20known%20as,their%20homeland%2C%20or%20their%20language.>) of the language, this is how the language will be displayed in the app.
+7. Submit your pull request.
 
 ## Staying up-to-date
 
@@ -20,35 +21,39 @@ If you want to do multiple translation pull requests, before doing work each tim
 
 ## Submit changes
 
-To translate, [fork this repo](https://guides.github.com/activities/forking/) and edit the JSON file of your language. After that, [submit a pull request](https://guides.github.com/activities/forking/).
+To translate, [fork this repo](https://guides.github.com/activities/forking/) and edit the txt file of your language. After that, [submit a pull request](https://guides.github.com/activities/forking/).
 
-Note that you don't have to clone your fork to make the edits; you can do everything on GitHub's web UI. Simply open a file in your own forked repo and click on the pencil icon to start editing.
+Note that you don't have to use git to clone your fork to make the edits; you can do everything on GitHub's web UI. Simply open a file in your own forked repo and click on the pencil icon to start editing.
 
 ## Translating
 
-The translation JSON file consists of key-value pairs. The key should give you a good idea of where the text is in the app.
+The translation file consists of blocks. Each block header is the key that should give you a good idea of where the text is in the app.
 
-To translate, simply edit the value. For example, let's say you see
+To translate, simply write after `translation=`. For example, let's say you see
 
-```json
-"plugin": "Plugin"
+```
+[setting.label-example]
+original=The original english text.
+translation=
 ```
 
 Simply change it to:
 
-```json
-"plugin": "pLU9IN"
 ```
-
-where "pLU9IN" is the phrase "plugin" in the target language. I'm using leetspeak as an example here.
+[setting.label-example]
+original=The original english text.
+translation=Le texte original en anglais.
+```
 
 If you encounter something like
 
-```json
-"label-welcome": "Welcome, {{name}}!"
+```
+[setting.label-welcome]
+original=Welcome, {{name}}!
+translation=Bienvenue, {{name}} !
 ```
 
-leave the `{{name}}` part alone and do not translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
+leave the `{{name}}` part alone and DO NOT translate it. "name" is not part of the text and will be replaced by the appropriate value when the app runs.
 
 ### Translating an update
 
@@ -69,69 +74,109 @@ If you spot a missing phrase while using Obsidian, here's what to do:
 
 ### Testing translation
 
-Once you have the JSON file, you can test it by opening up developer console and enter `selectLanguageFileLocation()`. The app will prompt you for a JSON file location. After that, the app will reboot itself with the selected translation JSON file applied.
+Once you have the txt file, you can test it by opening up developer console and enter `selectLanguageFileLocation()`. The app will prompt you for a txt file location. After that, the app will reboot itself with the selected translation file applied.
 
 To revert to using the default language pack, open developer console and enter `localStorage.removeItem('language')`.
 
+## Website translations
+
+The `website/` directory contains translations for the [Obsidian website](https://obsidian.md). These are JSON files used by the static site generator to produce localized versions of the marketing pages.
+
+- `website/locales.json` — lists enabled locales and their display names
+- `website/{locale}.txt` — translations for each locale
+
+Website translations cover the header, footer, navigation, and all marketing page content.
+
+### Workflow
+
+1. **English is the source of truth.** Add or change strings in `website/en.txt` first.
+2. **Run `node scripts/check-website.mjs`** to see which locales have missing or extra keys.
+3. **Translators update their locale files** to match. Missing keys automatically fall back to English on the site.
+
+### Guidelines for website translations
+
+- **Brand names stay in English** in running text: Obsidian, Obsidian Sync, Obsidian Publish, Catalyst, Web Clipper, Markdown.
+- **Feature names in navigation** should match the app translations (e.g. Sync = 同期 in Japanese, 同步 in Chinese).
+- Use `%LOCALE_PATH%` in links that need locale prefixing (e.g. `<a href="%LOCALE_PATH%/sync">`).
+
 ## Existing languages
 
-Here is a table of language code to language name, in alphabetical order. These languages have their template files ready, but are not necessarily ready to be used in the app.
+Here is a table of language code to language name, in alphabetical order. The "App" column indicates the status of the app translation. The "Website" column indicates whether a website translation is available. The "Help" column indicates whether a [help documentation](https://github.com/obsidianmd/obsidian-help) translation is available.
 
-| Language code | Language name | Native name | Status |
-| --- | --- | --- | :---: |
-| `en` (default) | English | English | ✅ |
-| `af` | Afrikaans | Afrikaans | 🚧 |
-| `am` | Amharic |  አማርኛ | ✅ |
-| `ar` | Arabic | العربية | 🚧 |
-| `eu` | Basque | Euskara | 🚧 |
-| `be` | Belarusian | беларуская мова | ✅ |
-| `bg` | Bulgarian | български език | 🚧 |
-| `bn` | Bengali | বাংলা | 🚧 |
-| `ca` | Catalan | català | 🚧 |
-| `cs` | Czech | čeština | 🚧 |
-| `da` | Danish | Dansk | ✅ |
-| `de` | German | Deutsch | ✅ |
-| `dv` | Dhivehi | ދިވެހި | 🚧 |
-| `el` | Greek | Ελληνικά | 🚧 |
-| `eo` | Esperanto | Esperanto | 🚧 |
-| `es` | Spanish | Español | ✅ |
-| `fa` | Persian | فارسی | 🚧 |
-| `fi-fi` | Finnish | suomi | 🚧 |
-| `fr` | French | français | ✅ |
-| `gl` | Galician  | Galego | 🚧 |
-| `he` | Hebrew  | עברית 🇮🇱 | 🚧 |
-| `hi` | Hindi | हिन्दी | 🚧 |
-| `hu` | Hungarian | Magyar nyelv | 🚧 |
-| `id` | Indonesian | Bahasa Indonesia | ✅ |
-| `it` | Italian | Italiano | ✅ |
-| `ja` | Japanese | 日本語 | ✅ |
-| `ko` | Korean | 한국어 | ✅ |
-| `lv` | Latvian | Latviešu valoda | 🚧 |
-| `ml` | Malayalam | മലയാളം | 🚧 |
-| `ms` | Malay | Bahasa Melayu | 🚧 |
-| `nl` | Dutch | Nederlands | ✅ |
-| `no` | Norwegian | Norsk | ✅ |
-| `oc` | Occitan | Occitan | 🚧 |
-| `pl` | Polish | język polski | ✅ |
-| `pt` | Portuguese | Português | ✅ |
-| `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ |
-| `ro` | Romanian | Română | 🚧 |
-| `ru` | Russian | Русский | ✅ |
-| `sa` | Sanskrit | संस्कृतम् | 🚧 |
-| `sr` | Serbian | српски језик | 🚧 |
-| `se` | Swedish | Svenska | 🚧 |
-| `sk` | Slovak | Slovenčina | 🚧 |
-| `sq` | Albanian | Shqip | ✅ |
-| `ta` | Tamil | தமிழ் | 🚧 |
-| `te` | Telugu | తెలుగు | 🚧 |
-| `th` | Thai | ไทย | ✅ |
-| `tl` | Filipino (Tagalog) | Tagalog | 🚧 |
-| `tr` | Turkish | Türkçe | ✅ |
-| `uk` | Ukrainian | Українська | 🚧 |
-| `ur` | Urdu | اردو | 🚧 |
-| `vi` | Vietnamese | Tiếng Việt | ✅ |
-| `zh` (see note below) | Chinese (Simplified) | 简体中文 | ✅ |
-| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ |
+| Language code | Language name | Native name | App | Website | Help |
+| --- | --- | --- | :---: | :---: | :---: |
+| `en` | English | English | ✅ | ✅ | ✅ |
+| `af` | Afrikaans | Afrikaans | 🚧 | | |
+| `am` | Amharic |  አማርኛ | ✅ | | |
+| `ar` | Arabic | العربية | ✅ | ✅ | ✅ |
+| `az` | Azerbaijani | ? | 🚧 | | |
+| `be` | Belarusian | Беларуская мова | ✅ | | |
+| `bg` | Bulgarian | български език | ✅ | | |
+| `bn` | Bengali | বাংলা | ✅ | ✅ | ✅ |
+| `ca` | Catalan | català | ✅ | | ✅ |
+| `cs` | Czech | čeština | ✅ | | ✅ |
+| `da` | Danish | Dansk | ✅ | | ✅ |
+| `de` | German | Deutsch | ✅ | ✅ | ✅ |
+| `dv` | Dhivehi | ދިވެހި | 🚧 | | |
+| `el` | Greek | Ελληνικά | ✅ | | ✅ |
+| `en-GB` | English (GB) | English (GB) | ✅ | | |
+| `eo` | Esperanto | Esperanto | 🚧 | | |
+| `es` | Spanish | Español | ✅ | ✅ | ✅ |
+| `eu` | Basque | Euskara | 🚧 | | |
+| `fa` | Persian | فارسی | ✅ | | ✅ |
+| `fi` | Finnish | suomi | ✅ | | ✅ |
+| `fr` | French | français | ✅ | ✅ | ✅ |
+| `ga` | Irish | Gaeilge | ✅ | | |
+| `gl` | Galician  | Galego | ✅ | | |
+| `he` | Hebrew  | עברית 🇮🇱 | ✅ | | ✅ |
+| `hi` | Hindi | हिन्दी | 🚧 | | |
+| `hr` | Croatian | ? | 🚧 | | |
+| `hu` | Hungarian | Magyar | ✅ | | ✅ |
+| `id` | Indonesian | Bahasa Indonesia | ✅ | | ✅ |
+| `it` | Italian | Italiano | ✅ | ✅ | ✅ |
+| `ja` | Japanese | 日本語 | ✅ | ✅ | ✅ |
+| `ka` | Georgian | ქართული | ✅ | | |
+| `kab` | Kabyle | Taqbaylit | ✅ | | |
+| `km` | Khmer | ខេមរភាសា | ✅ | | |
+| `kn` | Kannada | ಕನ್ನಡ | 🚧 | | |
+| `ko` | Korean | 한국어 | ✅ | ✅ | ✅ |
+| `ky` | Kyrgyz | Кыргызча | 🚧 | | |
+| `la` | Latin | Latina | 🚧 | | |
+| `lt` | Lithuanian | ? | 🚧 | | |
+| `lv` | Latvian | Latviešu | ✅ | | |
+| `ml` | Malayalam | മലയാളം | 🚧 | | |
+| `ms` | Malay | Bahasa Melayu | ✅ | | |
+| `nan-TW` | Taiwanese (Min Nan) | Tâi-gí (Lô-má-jī) | 🚧 | | |
+| `ne` | Nepali | नेपाली | ✅ | | |
+| `nl` | Dutch | Nederlands | ✅ | | ✅ |
+| `nn` | Norwegian Nynorsk | ? | 🚧 | | |
+| `no` | Norwegian | Norsk | ✅ | | ✅ |
+| `oc` | Occitan | Occitan | 🚧 | | |
+| `or` | Odia | ଓଡ଼ିଆ | 🚧 | | |
+| `pl` | Polish | język polski | ✅ | ✅ | ✅ |
+| `pt` | Portuguese | Português | ✅ | | ✅ |
+| `pt-BR` | Brazilian Portuguese | Portugues do Brasil | ✅ | ✅ | ✅ |
+| `ro` | Romanian | Română | ✅ | ✅ | ✅ |
+| `ru` | Russian | Русский | ✅ | ✅ | ✅ |
+| `sa` | Sanskrit | संस्कृतम् | ✅ | | |
+| `si` | Sinhalese | සිංහල | ✅ | | |
+| `sk` | Slovak | Slovenčina | ✅ | | ✅ |
+| `sl` | Slovenian | ? | 🚧 | | |
+| `sq` | Albanian | Shqip | ✅ | | |
+| `sr` | Serbian | српски језик | ✅ | | |
+| `sv` | Swedish | Svenska | ✅ | ✅ | ✅ |
+| `sw` | Swahili | ? | 🚧 | | |
+| `ta` | Tamil | தமிழ் | ✅ | | |
+| `te` | Telugu | తెలుగు | 🚧 | | |
+| `th` | Thai | ไทย | ✅ | | ✅ |
+| `tl` | Filipino (Tagalog) | Tagalog | 🚧 | | |
+| `tr` | Turkish | Türkçe | ✅ | | ✅ |
+| `tt` | Tatar | Татарча | 🚧 | | |
+| `uk` | Ukrainian | Українська | ✅ | | ✅ |
+| `ur` | Urdu | اردو | 🚧 | | |
+| `uz` | Uzbek | oʻzbekcha | ✅ | | |
+| `vi` | Vietnamese | Tiếng Việt | ✅ | | ✅ |
+| `zh` | Chinese (Simplified) | 简体中文 | ✅ | ✅ | ✅ |
+| `zh-TW` | Chinese (Traditional) | 繁體中文 | ✅ | | ✅ |
 
 > Note: the Chinese translation is maintained by Obsidian.zh. If you want to discuss it, please come here: https://github.com/obsidianzh/obsidian-translations.
-
